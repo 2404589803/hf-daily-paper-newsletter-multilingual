@@ -23,12 +23,17 @@ class PaperTranslator:
         Args:
             api_key: InternLM API密钥
         """
-        self.client = OpenAI(
-            api_key=api_key,
-            base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1/"
-        )
-        self.max_retries = 3
-        self.retry_delay = 2  # 重试延迟（秒）
+        try:
+            self.client = OpenAI(
+                api_key=api_key,
+                base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1/",
+            )
+            self.max_retries = 3
+            self.retry_delay = 2  # 重试延迟（秒）
+            logger.info("成功初始化 InternLM API 客户端")
+        except Exception as e:
+            logger.error(f"初始化 InternLM API 客户端时发生错误: {str(e)}")
+            raise
         
     def _translate_text(self, text, target_lang, retry_count=0):
         """
