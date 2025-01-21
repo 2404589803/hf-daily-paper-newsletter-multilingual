@@ -1,0 +1,33 @@
+name: Daily Paper Download
+
+on:
+  schedule:
+    - cron: '0 1 * * *'  # 每天北京时间 9:00 运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  download-papers:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Download papers
+      run: python download_papers.py
+        
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add Paper_metadata_download/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update papers $(date +'%Y-%m-%d')" && git push) 
