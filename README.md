@@ -1,1 +1,1 @@
-# 2404589803-hf-daily-paper-newsletter-multilingual
+# hf-daily-paper-newsletter-multilingual
