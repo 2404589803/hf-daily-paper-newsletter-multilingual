@@ -30,8 +30,9 @@ class PaperTranslator:
                 base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1",
                 timeout=60.0  # 设置超时时间为60秒
             )
-            self.max_retries = 3
-            self.retry_delay = 2  # 重试延迟（秒）
+            self.max_retries = 5  # 增加最大重试次数
+            self.retry_delay = 5  # 增加重试延迟到5秒
+            self.request_delay = 3  # 每次请求之间的延迟时间（秒）
             logger.info("成功初始化 InternLM API 客户端")
         except Exception as e:
             logger.error(f"初始化 InternLM API 客户端时发生错误: {str(e)}")
@@ -48,6 +49,12 @@ class PaperTranslator:
             str: 翻译后的文本
         """
         try:
+            # 添加请求延迟
+            if retry_count > 0:
+                time.sleep(self.retry_delay)
+            else:
+                time.sleep(self.request_delay)
+                
             prompt = f"""请将以下英文文本翻译成{SUPPORTED_LANGUAGES[target_lang]}，保持专业性和准确性：
 
 {text}
@@ -78,7 +85,6 @@ class PaperTranslator:
             if retry_count < self.max_retries:
                 retry_count += 1
                 logger.info(f"正在进行第 {retry_count} 次重试...")
-                time.sleep(self.retry_delay)
                 return self._translate_text(text, target_lang, retry_count)
             
             return None
