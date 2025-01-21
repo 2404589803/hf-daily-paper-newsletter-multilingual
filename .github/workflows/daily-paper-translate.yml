@@ -26,16 +26,22 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip list  # 显示安装的包版本
         
     - name: Get current date
       id: date
       run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
         
+    - name: Check environment
+      run: |
+        python -c "import openai; print(f'OpenAI version: {openai.__version__}')"
+        python -c "import sys; print(f'Python version: {sys.version}')"
+        
     - name: Translate papers
       env:
         INTERNLM_API_KEY: ${{ secrets.INTERNLM_API_KEY }}
       run: |
-        python translate_papers.py --date ${{ steps.date.outputs.date }} --api_key "$INTERNLM_API_KEY"
+        python -X dev translate_papers.py --date ${{ steps.date.outputs.date }} --api_key "$INTERNLM_API_KEY"
         
     - name: Commit and push if changed
       env:
