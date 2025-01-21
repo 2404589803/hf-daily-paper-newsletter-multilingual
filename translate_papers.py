@@ -24,15 +24,14 @@ class PaperTranslator:
             api_key: InternLM API密钥
         """
         try:
-            # 初始化客户端，只使用必要的参数
+            # 初始化客户端，使用最简单的配置
             self.client = OpenAI(
                 api_key=api_key,
-                base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1",
-                timeout=60.0  # 设置超时时间为60秒
+                base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1"
             )
-            self.max_retries = 5  # 增加最大重试次数
-            self.retry_delay = 5  # 增加重试延迟到5秒
-            self.request_delay = 3  # 每次请求之间的延迟时间（秒）
+            self.max_retries = 5
+            self.retry_delay = 5
+            self.request_delay = 3
             logger.info("成功初始化 InternLM API 客户端")
         except Exception as e:
             logger.error(f"初始化 InternLM API 客户端时发生错误: {str(e)}")
@@ -174,15 +173,13 @@ def process_papers(api_key, date_str):
         return False
 
 if __name__ == "__main__":
-    import argparse
+    import sys
     
-    parser = argparse.ArgumentParser(description='翻译HuggingFace每日论文到多种语言')
-    parser.add_argument('--date', type=str, required=True, help='要处理的日期 (YYYY-MM-DD格式)')
-    parser.add_argument('--api_key', type=str, required=True, help='InternLM API密钥')
+    # 获取命令行参数
+    date = sys.argv[2]  # --date 后面的值
+    api_key = sys.argv[4]  # --api_key 后面的值
     
-    args = parser.parse_args()
-    
-    if process_papers(args.api_key, args.date):
+    if process_papers(api_key, date):
         logger.info("论文翻译处理完成")
         exit(0)
     else:
