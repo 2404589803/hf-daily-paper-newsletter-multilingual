@@ -24,10 +24,11 @@ class PaperTranslator:
             api_key: InternLM API密钥
         """
         try:
-            # 只使用必需的参数初始化客户端
+            # 初始化客户端，只使用必要的参数
             self.client = OpenAI(
                 api_key=api_key,
-                base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1"
+                base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1",
+                timeout=60.0  # 设置超时时间为60秒
             )
             self.max_retries = 3
             self.retry_delay = 2  # 重试延迟（秒）
