@@ -24,10 +24,10 @@ class PaperTranslator:
             api_key: InternLM API密钥
         """
         try:
-            # 简化客户端初始化，只保留必要参数
+            # 根据官方文档初始化客户端
             self.client = OpenAI(
-                api_key=api_key,
-                base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1/"
+                api_key=api_key,  # 不带 Bearer 前缀
+                base_url="https://internlm-chat.intern-ai.org.cn/puyu/api/v1"  # 移除末尾的斜杠
             )
             self.max_retries = 3
             self.retry_delay = 2  # 重试延迟（秒）
@@ -54,10 +54,14 @@ class PaperTranslator:
 只需返回翻译结果，不要添加任何解释或额外的文本。"""
             
             logger.info(f"正在将文本翻译成 {SUPPORTED_LANGUAGES[target_lang]}")
+            
+            # 根据官方文档设置参数
             response = self.client.chat.completions.create(
                 model="internlm3-latest",
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.3
+                temperature=0.3,
+                top_p=0.9,
+                n=1
             )
             
             translated_text = response.choices[0].message.content.strip()
