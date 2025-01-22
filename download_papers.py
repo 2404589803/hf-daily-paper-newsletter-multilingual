@@ -104,11 +104,14 @@ if __name__ == "__main__":
         if args.date:
             logger.warning("同时指定了单个日期和日期范围，将优先处理日期范围")
         results = download_papers_in_range(args.start_date, args.end_date)
-        if isinstance(results, dict) and any(r.get("status") == "error" for r in results.values()):
-            exit(1)
+        if isinstance(results, dict):
+            # 只有在有真正的错误时才返回错误状态码，没有数据不算错误
+            if any(r.get("status") == "error" for r in results.values()):
+                exit(1)
     else:
         # 使用指定的日期或默认使用当前日期
         result = download_papers(args.date)
+        # 只有在有真正的错误时才返回错误状态码，没有数据不算错误
         if result["status"] == "error":
             exit(1)
     exit(0) 

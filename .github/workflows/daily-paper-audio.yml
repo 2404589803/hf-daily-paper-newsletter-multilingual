@@ -45,7 +45,25 @@ jobs:
       id: date
       run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
         
+    - name: Check if translations exist
+      id: check_translations
+      run: |
+        DATE="${{ github.event.inputs.single_date }}"
+        if [[ -z "$DATE" ]]; then
+          DATE="${{ steps.date.outputs.date }}"
+        fi
+        # 检查是否至少有一种语言的翻译文件
+        for LANG in "ja" "ko" "es" "fr"; do
+          if [[ -d "Translated_papers/$LANG" ]] && [[ -f "Translated_papers/$LANG/$DATE.json" ]]; then
+            echo "has_translations=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+        done
+        echo "has_translations=false" >> $GITHUB_OUTPUT
+        echo "No translations found for date $DATE, skipping audio generation"
+        
     - name: Generate audio
+      if: steps.check_translations.outputs.has_translations == 'true'
       run: |
         if [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
           python generate_audio.py --start_date "${{ github.event.inputs.start_date }}" --end_date "${{ github.event.inputs.end_date }}"
@@ -56,6 +74,7 @@ jobs:
         fi
         
     - name: Commit and push if changed
+      if: steps.check_translations.outputs.has_translations == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |

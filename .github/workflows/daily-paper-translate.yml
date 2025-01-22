@@ -26,12 +26,12 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.12'
         
@@ -50,7 +50,22 @@ jobs:
         python -c "import openai; print(f'OpenAI version: {openai.__version__}')"
         python -c "import sys; print(f'Python version: {sys.version}')"
         
+    - name: Check if papers exist
+      id: check_papers
+      run: |
+        DATE="${{ github.event.inputs.single_date }}"
+        if [[ -z "$DATE" ]]; then
+          DATE="${{ steps.date.outputs.date }}"
+        fi
+        if [[ -d "Paper_metadata_download" ]] && [[ -f "Paper_metadata_download/$DATE.json" ]]; then
+          echo "has_papers=true" >> $GITHUB_OUTPUT
+        else
+          echo "has_papers=false" >> $GITHUB_OUTPUT
+          echo "No papers found for date $DATE, skipping translation"
+        fi
+        
     - name: Translate papers
+      if: steps.check_papers.outputs.has_papers == 'true'
       env:
         INTERNLM_API_KEY: ${{ secrets.INTERNLM_API_KEY }}
       run: |
@@ -63,6 +78,7 @@ jobs:
         fi
         
     - name: Commit and push if changed
+      if: steps.check_papers.outputs.has_papers == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
