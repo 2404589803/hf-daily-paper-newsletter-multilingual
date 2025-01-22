@@ -6,6 +6,7 @@ import sys
 import argparse
 import openai
 from utils import setup_logger
+from datetime import datetime
 
 # 设置日志记录器
 logger = setup_logger()
@@ -182,7 +183,6 @@ def process_papers(api_key, date_str):
     try:
         # 验证日期格式
         try:
-            from datetime import datetime
             datetime.strptime(date_str, '%Y-%m-%d')
         except ValueError:
             logger.error(f"无效的日期格式: {date_str}，应为 YYYY-MM-DD")
@@ -268,20 +268,81 @@ def process_papers(api_key, date_str):
         logger.error(f"处理论文数据时发生错误: {str(e)}")
         return False
 
+def process_papers_in_range(api_key, start_date_str, end_date_str):
+    """
+    处理指定日期范围内的论文数据并翻译成多种语言
+    Args:
+        api_key: InternLM API密钥
+        start_date_str: 开始日期，格式为YYYY-MM-DD
+        end_date_str: 结束日期，格式为YYYY-MM-DD
+    Returns:
+        bool: 处理是否成功
+    """
+    try:
+        # 验证日期格式
+        try:
+            start_date = datetime.strptime(start_date_str, '%Y-%m-%d')
+            end_date = datetime.strptime(end_date_str, '%Y-%m-%d')
+            if start_date > end_date:
+                logger.error("开始日期不能晚于结束日期")
+                return False
+        except ValueError as e:
+            logger.error(f"日期格式错误: {str(e)}")
+            return False
+
+        success_count = 0
+        total_days = (end_date - start_date).days + 1
+        current_date = start_date
+
+        while current_date <= end_date:
+            current_date_str = current_date.strftime('%Y-%m-%d')
+            logger.info(f"正在处理日期: {current_date_str}")
+            
+            if process_papers(api_key, current_date_str):
+                success_count += 1
+            
+            current_date += datetime.timedelta(days=1)
+
+        # 如果至少有一天处理成功，就认为整体处理成功
+        if success_count > 0:
+            logger.info(f"日期范围处理完成，共 {total_days} 天，成功 {success_count} 天")
+            return True
+        else:
+            logger.error("所有日期的处理都失败了")
+            return False
+
+    except Exception as e:
+        logger.error(f"处理日期范围内的论文数据时发生错误: {str(e)}")
+        return False
+
 def main():
     """主函数"""
     parser = argparse.ArgumentParser(description='翻译论文数据')
-    parser.add_argument('--date', required=True, help='论文日期 (YYYY-MM-DD)')
+    parser.add_argument('--date', type=str, help='论文日期 (YYYY-MM-DD)')
+    parser.add_argument('--start_date', type=str, help='翻译范围的开始日期 (YYYY-MM-DD)')
+    parser.add_argument('--end_date', type=str, help='翻译范围的结束日期 (YYYY-MM-DD)')
     parser.add_argument('--api_key', required=True, help='InternLM API密钥')
     
     args = parser.parse_args()
     
-    if process_papers(args.api_key, args.date):
-        logger.info("论文翻译处理完成")
-        return 0
+    # 处理日期范围翻译
+    if args.start_date and args.end_date:
+        if args.date:
+            logger.warning("同时指定了单个日期和日期范围，将优先处理日期范围")
+        if process_papers_in_range(args.api_key, args.start_date, args.end_date):
+            logger.info("日期范围内的论文翻译处理完成")
+            return 0
+        else:
+            logger.error("日期范围内的论文翻译处理失败")
+            return 1
     else:
-        logger.error("论文翻译处理失败")
-        return 1
+        # 处理单个日期
+        if process_papers(args.api_key, args.date):
+            logger.info("论文翻译处理完成")
+            return 0
+        else:
+            logger.error("论文翻译处理失败")
+            return 1
 
 if __name__ == "__main__":
     sys.exit(main())

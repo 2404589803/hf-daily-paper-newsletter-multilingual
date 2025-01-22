@@ -55,17 +55,60 @@ def download_papers(date_str=None):
         logger.error(f"下载论文数据时发生错误: {str(e)}")
         return {"status": "error", "date": date_str, "message": str(e)}
 
+def download_papers_in_range(start_date_str, end_date_str):
+    """
+    下载指定日期范围内的论文数据
+    Args:
+        start_date_str: 开始日期，格式为YYYY-MM-DD
+        end_date_str: 结束日期，格式为YYYY-MM-DD
+    Returns:
+        dict: 包含每个日期下载结果的字典
+    """
+    try:
+        # 验证日期格式
+        try:
+            start_date = datetime.datetime.strptime(start_date_str, '%Y-%m-%d')
+            end_date = datetime.datetime.strptime(end_date_str, '%Y-%m-%d')
+            if start_date > end_date:
+                logger.error("开始日期不能晚于结束日期")
+                return {"status": "error", "message": "开始日期不能晚于结束日期"}
+        except ValueError as e:
+            logger.error(f"日期格式错误: {str(e)}")
+            return {"status": "error", "message": f"日期格式错误: {str(e)}"}
+
+        results = {}
+        current_date = start_date
+        while current_date <= end_date:
+            current_date_str = current_date.strftime('%Y-%m-%d')
+            logger.info(f"正在处理日期: {current_date_str}")
+            result = download_papers(current_date_str)
+            results[current_date_str] = result
+            current_date += datetime.timedelta(days=1)
+
+        return results
+
+    except Exception as e:
+        logger.error(f"下载日期范围内的论文数据时发生错误: {str(e)}")
+        return {"status": "error", "message": str(e)}
+
 if __name__ == "__main__":
     # 解析命令行参数
     parser = argparse.ArgumentParser(description='下载HuggingFace每日论文数据')
     parser.add_argument('--date', type=str, help='指定要下载的日期 (YYYY-MM-DD格式)')
+    parser.add_argument('--start_date', type=str, help='下载范围的开始日期 (YYYY-MM-DD格式)')
+    parser.add_argument('--end_date', type=str, help='下载范围的结束日期 (YYYY-MM-DD格式)')
     args = parser.parse_args()
 
-    # 使用指定的日期或默认使用当前日期
-    result = download_papers(args.date)
-    logger.info(f"下载结果: {result}")
-    # 只有在发生错误时才返回非零状态码
-    if result["status"] == "error":
-        exit(1)
-    # 没有数据时返回状态码 0
+    # 处理日期范围下载
+    if args.start_date and args.end_date:
+        if args.date:
+            logger.warning("同时指定了单个日期和日期范围，将优先处理日期范围")
+        results = download_papers_in_range(args.start_date, args.end_date)
+        if isinstance(results, dict) and any(r.get("status") == "error" for r in results.values()):
+            exit(1)
+    else:
+        # 使用指定的日期或默认使用当前日期
+        result = download_papers(args.date)
+        if result["status"] == "error":
+            exit(1)
     exit(0) 

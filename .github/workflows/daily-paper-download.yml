@@ -4,6 +4,19 @@ on:
   schedule:
     - cron: '0 1 * * *'  # 每天北京时间 9:00 运行
   workflow_dispatch:  # 允许手动触发
+    inputs:
+      start_date:
+        description: '开始日期 (YYYY-MM-DD格式)'
+        required: false
+        type: string
+      end_date:
+        description: '结束日期 (YYYY-MM-DD格式)'
+        required: false
+        type: string
+      single_date:
+        description: '单个日期 (YYYY-MM-DD格式)'
+        required: false
+        type: string
 
 jobs:
   download-papers:
@@ -25,7 +38,14 @@ jobs:
         pip install -r requirements.txt
         
     - name: Download papers
-      run: python download_papers.py
+      run: |
+        if [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
+          python download_papers.py --start_date "${{ github.event.inputs.start_date }}" --end_date "${{ github.event.inputs.end_date }}"
+        elif [[ -n "${{ github.event.inputs.single_date }}" ]]; then
+          python download_papers.py --date "${{ github.event.inputs.single_date }}"
+        else
+          python download_papers.py
+        fi
         
     - name: Commit and push if changed
       env:
