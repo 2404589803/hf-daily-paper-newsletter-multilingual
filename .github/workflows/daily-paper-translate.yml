@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: '指定日期 (YYYY-MM-DD)'
+        description: '指定日期 (YYYY-MM-DD，留空则使用当天日期)'
         required: false
         type: string
       start_date:
@@ -23,12 +23,18 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
+        
+    - name: Set timezone
+      run: |
+        sudo timedatectl set-timezone Asia/Shanghai
+        echo "设置时区为北京时间"
+        date
         
     - name: Install dependencies
       run: |
@@ -37,6 +43,21 @@ jobs:
         
     - name: Run translation
       run: |
+        # 设置日期
+        if [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
+          # 使用日期范围
+          CMD_DATE="--start_date ${{ github.event.inputs.start_date }} --end_date ${{ github.event.inputs.end_date }}"
+        else
+          # 使用单个日期（指定日期或当天日期）
+          if [[ -n "${{ github.event.inputs.date }}" ]]; then
+            DATE="${{ github.event.inputs.date }}"
+          else
+            DATE=$(TZ='Asia/Shanghai' date '+%Y-%m-%d')
+          fi
+          echo "使用日期: $DATE"
+          CMD_DATE="--date $DATE"
+        fi
+        
         # 如果设置了 MASTER_KEY，则加密 API key
         if [[ -n "${{ secrets.MASTER_KEY }}" ]]; then
           python -c "
@@ -58,19 +79,12 @@ jobs:
           API_KEY=${{ secrets.INTERNLM_API_KEY }}
         fi
         
-        # 构建命令行参数
-        CMD="python translate_papers.py --api_key \"$API_KEY\""
-        if [[ -n "${{ github.event.inputs.date }}" ]]; then
-          CMD="$CMD --date ${{ github.event.inputs.date }}"
-        elif [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
-          CMD="$CMD --start_date ${{ github.event.inputs.start_date }} --end_date ${{ github.event.inputs.end_date }}"
-        fi
-        
         # 执行翻译
-        eval $CMD
+        python translate_papers.py --api_key "$API_KEY" $CMD_DATE
       env:
         MASTER_KEY: ${{ secrets.MASTER_KEY }}
         INTERNLM_API_KEY: ${{ secrets.INTERNLM_API_KEY }}
+        TZ: Asia/Shanghai
         
     - name: Commit and push if changed
       run: |
