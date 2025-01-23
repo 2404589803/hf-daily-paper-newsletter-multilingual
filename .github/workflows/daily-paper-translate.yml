@@ -1,88 +1,77 @@
 name: Daily Paper Translation
 
 on:
-  workflow_run:
-    workflows: ["Daily Paper Download"]
-    types:
-      - completed
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:
     inputs:
+      date:
+        description: '指定日期 (YYYY-MM-DD)'
+        required: false
+        type: string
       start_date:
-        description: '开始日期 (YYYY-MM-DD格式)'
+        description: '开始日期 (YYYY-MM-DD)'
         required: false
         type: string
       end_date:
-        description: '结束日期 (YYYY-MM-DD格式)'
+        description: '结束日期 (YYYY-MM-DD)'
         required: false
         type: string
-      single_date:
-        description: '单个日期 (YYYY-MM-DD格式)'
-        required: false
-        type: string
+  schedule:
+    - cron: '0 7 * * *'  # UTC 7:00 (Beijing 15:00)
 
 jobs:
-  translate-papers:
+  translate:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     
+    env:
+      MASTER_KEY: ${{ secrets.MASTER_KEY }}
+      
     steps:
-    - uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        
+    - uses: actions/checkout@v3
+    
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v4
       with:
-        python-version: '3.12'
+        python-version: '3.9'
         
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip list  # 显示安装的包版本
         
-    - name: Get current date
-      id: date
-      run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-        
-    - name: Check environment
+    - name: Encrypt API key and translate papers
       run: |
-        python -c "import openai; print(f'OpenAI version: {openai.__version__}')"
-        python -c "import sys; print(f'Python version: {sys.version}')"
+        python -c "
+        from utils import APIKeyManager
+        import os
         
-    - name: Check if papers exist
-      id: check_papers
-      run: |
-        DATE="${{ github.event.inputs.single_date }}"
-        if [[ -z "$DATE" ]]; then
-          DATE="${{ steps.date.outputs.date }}"
-        fi
-        if [[ -d "Paper_metadata_download" ]] && [[ -f "Paper_metadata_download/$DATE.json" ]]; then
-          echo "has_papers=true" >> $GITHUB_OUTPUT
-        else
-          echo "has_papers=false" >> $GITHUB_OUTPUT
-          echo "No papers found for date $DATE, skipping translation"
+        # 加密 API key
+        key_manager = APIKeyManager(os.environ['MASTER_KEY'])
+        encrypted_key = key_manager.encrypt_api_key(os.environ['INTERNLM_API_KEY'])
+        
+        # 将加密后的 key 写入临时文件
+        with open('.key_temp', 'w') as f:
+            f.write(encrypted_key)
+        "
+        
+        # 构建命令行参数
+        CMD="python translate_papers.py --api_key $(cat .key_temp)"
+        if [[ -n "${{ github.event.inputs.date }}" ]]; then
+          CMD="$CMD --date ${{ github.event.inputs.date }}"
+        elif [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
+          CMD="$CMD --start_date ${{ github.event.inputs.start_date }} --end_date ${{ github.event.inputs.end_date }}"
         fi
         
-    - name: Translate papers
-      if: steps.check_papers.outputs.has_papers == 'true'
+        # 执行翻译
+        eval $CMD
+        
+        # 清理临时文件
+        rm .key_temp
       env:
         INTERNLM_API_KEY: ${{ secrets.INTERNLM_API_KEY }}
-      run: |
-        if [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
-          python -X dev translate_papers.py --start_date "${{ github.event.inputs.start_date }}" --end_date "${{ github.event.inputs.end_date }}" --api_key "$INTERNLM_API_KEY"
-        elif [[ -n "${{ github.event.inputs.single_date }}" ]]; then
-          python -X dev translate_papers.py --date "${{ github.event.inputs.single_date }}" --api_key "$INTERNLM_API_KEY"
-        else
-          python -X dev translate_papers.py --date "${{ steps.date.outputs.date }}" --api_key "$INTERNLM_API_KEY"
-        fi
         
     - name: Commit and push if changed
-      if: steps.check_papers.outputs.has_papers == 'true'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add Translated_papers/
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Add translations $(date +'%Y-%m-%d')" && git push) 
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update translated papers" && git push) 

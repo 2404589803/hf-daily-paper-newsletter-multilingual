@@ -5,7 +5,7 @@ import logging
 import sys
 import argparse
 import openai
-from utils import setup_logger
+from utils import setup_logger, APIKeyManager
 from datetime import datetime
 
 # 设置日志记录器
@@ -20,20 +20,27 @@ SUPPORTED_LANGUAGES = {
 }
 
 class PaperTranslator:
-    def __init__(self, api_key):
+    def __init__(self, encrypted_api_key):
         """
         初始化翻译器
         Args:
-            api_key: InternLM API密钥 (JWT 格式)
+            encrypted_api_key: 加密后的 API key
         """
         try:
-            if not api_key or api_key == "your_api_key_here":
-                raise ValueError("请提供有效的 InternLM API 密钥")
+            # 初始化 API Key 管理器（使用环境变量中的主密钥）
+            master_key = os.getenv('MASTER_KEY')
+            if not master_key:
+                raise ValueError("未设置 MASTER_KEY 环境变量")
+            
+            key_manager = APIKeyManager(master_key)
+            api_key = key_manager.decrypt_api_key(encrypted_api_key)
+            
+            if not api_key:
+                raise ValueError("API key 无效或已过期")
                 
-            # 使用 0.28.1 版本的配置方式
+            # 使用解密后的 API key 配置 openai
             openai.api_key = api_key
             openai.api_base = "https://internlm-chat.intern-ai.org.cn/puyu/api/v1"
-            # 添加 JWT 认证头
             openai.api_type = "open_ai"
             openai.default_headers = {
                 "Authorization": f"Bearer {api_key}",
@@ -316,33 +323,36 @@ def process_papers_in_range(api_key, start_date_str, end_date_str):
         return False
 
 def main():
-    """主函数"""
-    parser = argparse.ArgumentParser(description='翻译论文数据')
-    parser.add_argument('--date', type=str, help='论文日期 (YYYY-MM-DD)')
-    parser.add_argument('--start_date', type=str, help='翻译范围的开始日期 (YYYY-MM-DD)')
-    parser.add_argument('--end_date', type=str, help='翻译范围的结束日期 (YYYY-MM-DD)')
-    parser.add_argument('--api_key', required=True, help='InternLM API密钥')
+    parser = argparse.ArgumentParser(description='翻译 HuggingFace 论文')
+    parser.add_argument('--api_key', required=True, help='加密后的 InternLM API key')
+    parser.add_argument('--date', help='指定日期 (YYYY-MM-DD)')
+    parser.add_argument('--start_date', help='开始日期 (YYYY-MM-DD)')
+    parser.add_argument('--end_date', help='结束日期 (YYYY-MM-DD)')
     
     args = parser.parse_args()
     
-    # 处理日期范围翻译
-    if args.start_date and args.end_date:
-        if args.date:
-            logger.warning("同时指定了单个日期和日期范围，将优先处理日期范围")
-        if process_papers_in_range(args.api_key, args.start_date, args.end_date):
-            logger.info("日期范围内的论文翻译处理完成")
-            return 0
+    try:
+        # 检查日期参数的有效性
+        if args.start_date or args.end_date:
+            # 如果提供了任一日期范围参数，则两个都必须提供
+            if not (args.start_date and args.end_date):
+                logger.error("使用日期范围时，必须同时提供 start_date 和 end_date")
+                sys.exit(1)
+            success = process_papers_in_range(args.api_key, args.start_date, args.end_date)
+        elif args.date:
+            # 使用指定的单个日期
+            success = process_papers(args.api_key, args.date)
         else:
-            logger.error("日期范围内的论文翻译处理失败")
-            return 1
-    else:
-        # 处理单个日期
-        if process_papers(args.api_key, args.date):
-            logger.info("论文翻译处理完成")
-            return 0
-        else:
-            logger.error("论文翻译处理失败")
-            return 1
+            # 如果没有提供任何日期参数，使用当前日期
+            today = datetime.now().strftime('%Y-%m-%d')
+            logger.info(f"未指定日期，使用当前日期: {today}")
+            success = process_papers(args.api_key, today)
+            
+        sys.exit(0 if success else 1)
+        
+    except Exception as e:
+        logger.error(f"程序执行过程中发生错误: {str(e)}")
+        sys.exit(1)
 
-if __name__ == "__main__":
-    sys.exit(main())
+if __name__ == '__main__':
+    main()
