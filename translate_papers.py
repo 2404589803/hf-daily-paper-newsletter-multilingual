@@ -20,25 +20,32 @@ SUPPORTED_LANGUAGES = {
 }
 
 class PaperTranslator:
-    def __init__(self, encrypted_api_key):
+    def __init__(self, api_key):
         """
         初始化翻译器
         Args:
-            encrypted_api_key: 加密后的 API key
+            api_key: API key (可以是加密的 token 或直接的 API key)
         """
         try:
-            # 初始化 API Key 管理器（使用环境变量中的主密钥）
+            # 尝试获取 MASTER_KEY
             master_key = os.getenv('MASTER_KEY')
-            if not master_key:
-                raise ValueError("未设置 MASTER_KEY 环境变量")
             
-            key_manager = APIKeyManager(master_key)
-            api_key = key_manager.decrypt_api_key(encrypted_api_key)
+            if master_key:
+                # 如果有 MASTER_KEY，尝试解密
+                try:
+                    key_manager = APIKeyManager(master_key)
+                    decrypted_key = key_manager.decrypt_api_key(api_key)
+                    if decrypted_key:
+                        api_key = decrypted_key
+                except:
+                    # 解密失败，可能是直接提供的 API key
+                    pass
             
-            if not api_key:
-                raise ValueError("API key 无效或已过期")
+            # 验证 API key 格式
+            if not api_key or api_key == "your_api_key_here":
+                raise ValueError("请提供有效的 API key")
                 
-            # 使用解密后的 API key 配置 openai
+            # 配置 API 客户端
             openai.api_key = api_key
             openai.api_base = "https://internlm-chat.intern-ai.org.cn/puyu/api/v1"
             openai.api_type = "open_ai"
@@ -52,10 +59,10 @@ class PaperTranslator:
             self.request_delay = 1
             logger.info("成功初始化 InternLM API 客户端")
         except ValueError as ve:
-            logger.error(f"API 密钥错误: {str(ve)}")
+            logger.error(f"API key 错误: {str(ve)}")
             raise
         except Exception as e:
-            logger.error(f"初始化 InternLM API 客户端时发生错误: {str(e)}")
+            logger.error(f"初始化 API 客户端时发生错误: {str(e)}")
             raise
         
     def translate_paper(self, paper_data, target_lang, paper_index=None, total_papers=None):

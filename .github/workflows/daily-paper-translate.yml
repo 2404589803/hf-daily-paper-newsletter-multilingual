@@ -22,9 +22,6 @@ jobs:
   translate:
     runs-on: ubuntu-latest
     
-    env:
-      MASTER_KEY: ${{ secrets.MASTER_KEY }}
-      
     steps:
     - uses: actions/checkout@v3
     
@@ -38,23 +35,31 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Encrypt API key and translate papers
+    - name: Run translation
       run: |
-        python -c "
-        from utils import APIKeyManager
-        import os
-        
-        # 加密 API key
-        key_manager = APIKeyManager(os.environ['MASTER_KEY'])
-        encrypted_key = key_manager.encrypt_api_key(os.environ['INTERNLM_API_KEY'])
-        
-        # 将加密后的 key 写入临时文件
-        with open('.key_temp', 'w') as f:
-            f.write(encrypted_key)
-        "
+        # 如果设置了 MASTER_KEY，则加密 API key
+        if [[ -n "${{ secrets.MASTER_KEY }}" ]]; then
+          python -c "
+          from utils import APIKeyManager
+          import os
+          
+          # 加密 API key
+          key_manager = APIKeyManager(os.environ['MASTER_KEY'])
+          encrypted_key = key_manager.encrypt_api_key(os.environ['INTERNLM_API_KEY'])
+          
+          # 将加密后的 key 写入临时文件
+          with open('.key_temp', 'w') as f:
+              f.write(encrypted_key)
+          "
+          API_KEY=$(cat .key_temp)
+          rm .key_temp
+        else
+          # 直接使用 API key
+          API_KEY=${{ secrets.INTERNLM_API_KEY }}
+        fi
         
         # 构建命令行参数
-        CMD="python translate_papers.py --api_key $(cat .key_temp)"
+        CMD="python translate_papers.py --api_key \"$API_KEY\""
         if [[ -n "${{ github.event.inputs.date }}" ]]; then
           CMD="$CMD --date ${{ github.event.inputs.date }}"
         elif [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
@@ -63,10 +68,8 @@ jobs:
         
         # 执行翻译
         eval $CMD
-        
-        # 清理临时文件
-        rm .key_temp
       env:
+        MASTER_KEY: ${{ secrets.MASTER_KEY }}
         INTERNLM_API_KEY: ${{ secrets.INTERNLM_API_KEY }}
         
     - name: Commit and push if changed
