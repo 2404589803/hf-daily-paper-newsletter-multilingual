@@ -17,22 +17,31 @@ on:
         type: string
   schedule:
     - cron: '0 7 * * *'  # UTC 7:00 (Beijing 15:00)
+  workflow_run:
+    workflows: ["Daily Paper Download"]
+    types:
+      - completed
 
 jobs:
   translate:
     runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule') ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v3
       with:
         python-version: '3.9'
         
     - name: Set timezone
       run: |
-        sudo timedatectl set-timezone Asia/Shanghai
+        sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+        echo "Asia/Shanghai" | sudo tee /etc/timezone
         echo "设置时区为北京时间"
         date
         
@@ -43,6 +52,10 @@ jobs:
         
     - name: Run translation
       run: |
+        # 确保目录存在
+        mkdir -p Paper_metadata_download
+        mkdir -p Translated_papers
+        
         # 设置日期
         if [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
           # 使用日期范围
