@@ -1,84 +1,84 @@
 name: Daily Paper Audio Generation
 
 on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '指定日期 (YYYY-MM-DD，留空则使用当天日期)'
+        required: false
+        type: string
+      start_date:
+        description: '开始日期 (YYYY-MM-DD)'
+        required: false
+        type: string
+      end_date:
+        description: '结束日期 (YYYY-MM-DD)'
+        required: false
+        type: string
+  schedule:
+    - cron: '0 8 * * 1-5'  # UTC 8:00 (Beijing 16:00) 仅在工作日运行
   workflow_run:
     workflows: ["Daily Paper Translation"]
     types:
       - completed
-  workflow_dispatch:  # 允许手动触发
-    inputs:
-      start_date:
-        description: '开始日期 (YYYY-MM-DD格式)'
-        required: false
-        type: string
-      end_date:
-        description: '结束日期 (YYYY-MM-DD格式)'
-        required: false
-        type: string
-      single_date:
-        description: '单个日期 (YYYY-MM-DD格式)'
-        required: false
-        type: string
 
 jobs:
   generate-audio:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule' && github.event.schedule != '0 8 * * 0' && github.event.schedule != '0 8 * * 6') ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && 
+       (formatTime(github.event.workflow_run.created_at, 'E') != 'Sun' && formatTime(github.event.workflow_run.created_at, 'E') != 'Sat'))
     
     steps:
-    - uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        
+    - uses: actions/checkout@v2
+    
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.12'
+        python-version: '3.9'
+        
+    - name: Set timezone
+      run: |
+        sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+        echo "Asia/Shanghai" | sudo tee /etc/timezone
+        echo "设置时区为北京时间"
+        date
         
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip list  # 显示安装的包版本
         
-    - name: Get current date
-      id: date
-      run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-        
-    - name: Check if translations exist
-      id: check_translations
+    - name: Run audio generation
       run: |
-        DATE="${{ github.event.inputs.single_date }}"
-        if [[ -z "$DATE" ]]; then
-          DATE="${{ steps.date.outputs.date }}"
-        fi
-        # 检查是否至少有一种语言的翻译文件
-        for LANG in "ja" "ko" "es" "fr"; do
-          if [[ -d "Translated_papers/$LANG" ]] && [[ -f "Translated_papers/$LANG/$DATE.json" ]]; then
-            echo "has_translations=true" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-        done
-        echo "has_translations=false" >> $GITHUB_OUTPUT
-        echo "No translations found for date $DATE, skipping audio generation"
+        # 确保目录存在
+        mkdir -p Audio_papers
         
-    - name: Generate audio
-      if: steps.check_translations.outputs.has_translations == 'true'
-      run: |
+        # 设置日期
         if [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
-          python generate_audio.py --start_date "${{ github.event.inputs.start_date }}" --end_date "${{ github.event.inputs.end_date }}"
-        elif [[ -n "${{ github.event.inputs.single_date }}" ]]; then
-          python generate_audio.py --date "${{ github.event.inputs.single_date }}"
+          # 使用日期范围
+          CMD_DATE="--start_date ${{ github.event.inputs.start_date }} --end_date ${{ github.event.inputs.end_date }}"
         else
-          python generate_audio.py --date "${{ steps.date.outputs.date }}"
+          # 使用单个日期（指定日期或当天日期）
+          if [[ -n "${{ github.event.inputs.date }}" ]]; then
+            DATE="${{ github.event.inputs.date }}"
+          else
+            DATE=$(TZ='Asia/Shanghai' date '+%Y-%m-%d')
+          fi
+          echo "使用日期: $DATE"
+          CMD_DATE="--date $DATE"
         fi
+        
+        # 执行音频生成
+        python generate_audio.py $CMD_DATE
+      env:
+        TZ: Asia/Shanghai
         
     - name: Commit and push if changed
-      if: steps.check_translations.outputs.has_translations == 'true'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add Audio_papers/
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Add audio files $(date +'%Y-%m-%d')" && git push) 
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update audio files" && git push) 

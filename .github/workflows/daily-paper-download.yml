@@ -1,57 +1,78 @@
 name: Daily Paper Download
 
 on:
-  schedule:
-    - cron: '0 1 * * *'  # 每天北京时间 9:00 运行
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:
     inputs:
+      date:
+        description: '指定日期 (YYYY-MM-DD，留空则使用当天日期)'
+        required: false
+        type: string
       start_date:
-        description: '开始日期 (YYYY-MM-DD格式)'
+        description: '开始日期 (YYYY-MM-DD)'
         required: false
         type: string
       end_date:
-        description: '结束日期 (YYYY-MM-DD格式)'
+        description: '结束日期 (YYYY-MM-DD)'
         required: false
         type: string
-      single_date:
-        description: '单个日期 (YYYY-MM-DD格式)'
-        required: false
-        type: string
+  schedule:
+    - cron: '0 6 * * 1-5'  # UTC 6:00 (Beijing 14:00) 仅在工作日运行
 
 jobs:
-  download-papers:
+  download:
     runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule' && github.event.schedule != '0 6 * * 0' && github.event.schedule != '0 6 * * 6')
     
     steps:
-    - uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        
+    - uses: actions/checkout@v2
+    
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.12'
+        python-version: '3.9'
+        
+    - name: Set timezone
+      run: |
+        sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+        echo "Asia/Shanghai" | sudo tee /etc/timezone
+        echo "设置时区为北京时间"
+        date
         
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Download papers
+    - name: Run download
       run: |
+        # 确保目录存在
+        mkdir -p Paper_metadata_download
+        
+        # 设置日期
         if [[ -n "${{ github.event.inputs.start_date }}" && -n "${{ github.event.inputs.end_date }}" ]]; then
-          python download_papers.py --start_date "${{ github.event.inputs.start_date }}" --end_date "${{ github.event.inputs.end_date }}"
-        elif [[ -n "${{ github.event.inputs.single_date }}" ]]; then
-          python download_papers.py --date "${{ github.event.inputs.single_date }}"
+          # 使用日期范围
+          CMD_DATE="--start_date ${{ github.event.inputs.start_date }} --end_date ${{ github.event.inputs.end_date }}"
         else
-          python download_papers.py
+          # 使用单个日期（指定日期或当天日期）
+          if [[ -n "${{ github.event.inputs.date }}" ]]; then
+            DATE="${{ github.event.inputs.date }}"
+          else
+            DATE=$(TZ='Asia/Shanghai' date '+%Y-%m-%d')
+          fi
+          echo "使用日期: $DATE"
+          CMD_DATE="--date $DATE"
         fi
         
-    - name: Commit and push if changed
+        # 执行下载
+        python download_papers.py $CMD_DATE
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TZ: Asia/Shanghai
+        
+    - name: Commit and push if changed
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add Paper_metadata_download/
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update papers $(date +'%Y-%m-%d')" && git push) 
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update paper metadata" && git push) 

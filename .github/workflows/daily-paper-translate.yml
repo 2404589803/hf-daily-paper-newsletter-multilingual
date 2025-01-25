@@ -16,7 +16,7 @@ on:
         required: false
         type: string
   schedule:
-    - cron: '0 7 * * *'  # UTC 7:00 (Beijing 15:00)
+    - cron: '0 7 * * 1-5'  # UTC 7:00 (Beijing 15:00) 仅在工作日运行
   workflow_run:
     workflows: ["Daily Paper Download"]
     types:
@@ -27,14 +27,15 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'schedule') ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+      (github.event_name == 'schedule' && github.event.schedule != '0 7 * * 0' && github.event.schedule != '0 7 * * 6') ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && 
+       (formatTime(github.event.workflow_run.created_at, 'E') != 'Sun' && formatTime(github.event.workflow_run.created_at, 'E') != 'Sat'))
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     
     - name: Set up Python
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v2
       with:
         python-version: '3.9'
         
