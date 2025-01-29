@@ -1,0 +1,645 @@
+[
+  {
+    "paper": {
+      "id": "2501.17161",
+      "authors": [
+        {
+          "_id": "6799b39b15f4661561c22968",
+          "name": "Tianzhe Chu",
+          "hidden": false
+        },
+        {
+          "_id": "6799b39b15f4661561c22969",
+          "name": "Yuexiang Zhai",
+          "hidden": false
+        },
+        {
+          "_id": "6799b39b15f4661561c2296a",
+          "name": "Jihan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6799b39b15f4661561c2296b",
+          "name": "Shengbang Tong",
+          "hidden": false
+        },
+        {
+          "_id": "6799b39b15f4661561c2296c",
+          "name": "Saining Xie",
+          "hidden": false
+        },
+        {
+          "_id": "6799b39b15f4661561c2296d",
+          "name": "Dale Schuurmans",
+          "hidden": false
+        },
+        {
+          "_id": "6799b39b15f4661561c2296e",
+          "name": "Quoc V. Le",
+          "hidden": false
+        },
+        {
+          "_id": "6799b39b15f4661561c2296f",
+          "name": "Sergey Levine",
+          "hidden": false
+        },
+        {
+          "_id": "6799b39b15f4661561c22970",
+          "name": "Yi Ma",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-28T18:59:44.000Z",
+      "title": "SFT記憶、RL一般化：基礎モデルの後テスト比較研究",
+      "summary": "Supervised fine-tuning (SFT)とreinforcement learning (RL)は、基盤モデルに対して広く使用されるトレーニング後の技術ですが、それらがモデルの一般化能力を向上させることについては明確な議論がありません。本論文では、SFTとRLの一般化と記憶過程の違いを調査し、文脈ベースのルール変体と視覚変体を焦点に置いています。また、GeneralPoints（一般化ポイント）という算術推理カードゲーム、V-IRL（ベースルールの実世界ナビゲーション環境）を用いて、SFTとRLでトレーニングされたモデルが文脈的および視覚的な未見の変体にどのように一般化するかを評価しています。これらの結果から、RLは、特に結果ベースの報酬を用いてトレーニングされた場合、ルールベースの文脈的および視覚的な変体にも一般化することができることが示されています。一方、SFTは、トレーニングデータを記憶し、分布外のシナリオに一般化することが難しいことが示されています。進めた分析から、RLはモデルの潜在的な視覚認識能力を向上させ、視覚的な領域での一般化を促進していることが明らかになりました。RLの優れた一般化能力にもかかわらず、SFTは効果的なRLトレーニングにおいて重要であることが示されています。SFTは、モデルの出力形式を安定させ、次節のRLで性能の向上を実現することができることを示しています。これらの発見は、複雑な多めモーダルタスクで一般化可能な知識を得るRLの能力を示しています。",
+      "upvotes": 11,
+      "discussionId": "6799b39d15f4661561c229e6"
+    },
+    "publishedAt": "2025-01-28T23:50:56.664Z",
+    "title": "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.17161.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5850
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.17116",
+      "authors": [
+        {
+          "_id": "6799b367d30dc065a2d51592",
+          "name": "Ruizhe Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6799b367d30dc065a2d51593",
+          "name": "Yeyun Gong",
+          "hidden": false
+        },
+        {
+          "_id": "6799b367d30dc065a2d51594",
+          "name": "Xiao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6799b367d30dc065a2d51595",
+          "name": "Guoshuai Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6799b367d30dc065a2d51596",
+          "name": "Ziyue Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6799b367d30dc065a2d51597",
+          "name": "Baining Guo",
+          "hidden": false
+        },
+        {
+          "_id": "6799b367d30dc065a2d51598",
+          "name": "Zhengjun Zha",
+          "hidden": false
+        },
+        {
+          "_id": "6799b367d30dc065a2d51599",
+          "user": {
+            "_id": "653feb7ccf1f9c88f4928910",
+            "avatarUrl": "/avatars/23a6a6818116683ea9485e1470a0062f.svg",
+            "isPro": false,
+            "fullname": "Peng Cheng",
+            "user": "cp5555",
+            "type": "user"
+          },
+          "name": "Peng Cheng",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-01-29T04:49:44.372Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-28T18:04:50.000Z",
+      "title": "FP4 データ型を使用して大規模言語モデルの訓練を最適化する方法",
+      "summary": "大語言モデル（LLMs）の訓練における計算要求の増加により、より効率的な方法が必要となります。Quantized trainingは低ビット計算を可能にしてこれらのコストを削減するために望ましい解決策として紹介されています。FP8の精度では実現の可能性が示されているが、FP4の利用は大きな量子化エラーと限られた表現力により課題となっています。本稿では、LLMsの最初のFP4訓練フレームワークを紹介し、以下の2つのキーのイノベーションでこれらの課題を解決しています：微分可能な量子化エスティマーとアクティベーションの崩壊を防ぐ異常値のキャップと補正戦略。安定性を確保するために、フレームワークは混合精度訓練シナプスとベクトルワイズの量子化を組み合わせています。実験結果によると、我々のFP4フレームワークはBF16とFP8と同等の精度を達成し、最小限の損失を伴って、13BパラメータのLLMsを100Bトークンで訓練することができます。次世代のハードウェアがFP4をサポートすることにより、我々のフレームワークは効率的な超低精度訓練の基盤となることを示しています。",
+      "upvotes": 9,
+      "discussionId": "6799b368d30dc065a2d515bf"
+    },
+    "publishedAt": "2025-01-28T23:50:12.472Z",
+    "title": "Optimizing Large Language Model Training Using FP4 Quantization",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.17116.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5850
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.16975",
+      "authors": [
+        {
+          "_id": "6799b345a66ae6b357bef986",
+          "name": "Hongzhi Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6799b345a66ae6b357bef987",
+          "name": "Defa Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "6799b345a66ae6b357bef988",
+          "name": "Banggu Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6799b345a66ae6b357bef989",
+          "name": "Yutao Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "6799b345a66ae6b357bef98a",
+          "name": "Ya Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6799b345a66ae6b357bef98b",
+          "name": "Qiyang Min",
+          "hidden": false
+        },
+        {
+          "_id": "6799b345a66ae6b357bef98c",
+          "name": "Xun Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-28T14:15:42.000Z",
+      "title": "Over-Tokenized Transformer: Vocabulary is Generally Worth Scaling",
+      "summary": "トークナイゼーションは、大規模な言語モデル（LLMs）の基本的な構成要素であり、その影響が完全に調査されていません。本論文では、入力と出力のボキャブラリーを独立し、言語モデリングの性能を向上させるために新しいフレームワーク「Over-Tokenized Transformers」を紹介します。特に、我々のアプローチは入力ボキャブラリーを拡大し、マルチグラムトークンを利用することでスケーリングを実現します。詳細な実験を通じて、入力ボキャブラリーのサイズと訓練損失の間の対数線形関係を明らかにし、モデルサイズに関係なく、大きな入力ボキャブラリーはモデルの性能を一貫して向上させることを示します。大きな入力ボキャブラリーを使用して、追加のコストを負担しないで、ベースラインの2倍サイズと同等の性能を達成します。我々の発見は、スケーリング法則におけるトークナイゼーションの重要性を強調し、トークナイザーの設計に実用的なインサイトを提供し、より効率的で強力なLLMsのための道を開けます。",
+      "upvotes": 6,
+      "discussionId": "6799b346a66ae6b357bef9e3"
+    },
+    "publishedAt": "2025-01-28T23:49:26.959Z",
+    "title": "Over-Tokenized Transformer: Vocabulary is Generally Worth Scaling",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.16975.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5850
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.16764",
+      "authors": [
+        {
+          "_id": "6799aa5a311dbfe3c96724cd",
+          "name": "Chenguo Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6799aa5a311dbfe3c96724ce",
+          "name": "Panwang Pan",
+          "hidden": false
+        },
+        {
+          "_id": "6799aa5a311dbfe3c96724cf",
+          "name": "Bangbang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6799aa5a311dbfe3c96724d0",
+          "name": "Zeming Li",
+          "hidden": false
+        },
+        {
+          "_id": "6799aa5a311dbfe3c96724d1",
+          "name": "Yadong Mu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-28T07:38:59.000Z",
+      "title": "DiffSplat: スケーラブルなガウススプラット生成に向けた画像ディフューションモデルの再利用",
+      "summary": "最近の3Dコンテンツ生成の進歩は、高品質な3Dデータセットの限界と2D多角度生成の不確実性に課題があります。我々は、大規模な文字から画像への拡散モデルを利用して3Dガウススプラットを原生生成する新しい3D生成フレームワーク「DiffSplat」を紹介します。これは、前の3D生成モデルと違って、ウェブサイズの2D先驅を効果的に利用しながら、統一的なモデルで3Dの一貫性を維持しています。トレーニングをスタートアップするために、軽量の再構成モデルを提案し、スケーラブルなデータセットの編集に対応した多角度のガウススプラットグリッドをすぐに生成できます。これらのグリッドに対する通常の拡散損失と併用して、3Dの一貫性を促進する3Dレンダリング損失を追加します。画像拡散モデルとの相性があり、画像生成のための多数の技術を3D領域に無難に適用できます。拡張された実験は、DiffSplatの文字と画像による生成タスクとその下流アプリケーションでの優れている性能を明らかにしました。詳細な消去試験は、各重要な設計選択の効果性を証明し、裏技術についての見解を提供しました。",
+      "upvotes": 4,
+      "discussionId": "6799aa5c311dbfe3c9672542"
+    },
+    "publishedAt": "2025-01-29T01:12:02.839Z",
+    "title": "DiffSplat: Repurposing Image Diffusion Models for Scalable Gaussian Splat Generation",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/654866e8cd0a5621395f8287/TFJMeKzXxMLOnq8NH8ltZ.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/654866e8cd0a5621395f8287/6kn1RLEUsUV-W6S0Taylo.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.16764.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "654866e8cd0a5621395f8287",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/654866e8cd0a5621395f8287/4Bccwd1ehn-Ee4T1rId5S.jpeg",
+      "fullname": "Panwang Pan",
+      "name": "paulpanwang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.16496",
+      "authors": [
+        {
+          "_id": "6799b2fbfe3c29ec219d7d99",
+          "name": "Lee Sharkey",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7d9a",
+          "user": {
+            "_id": "64ad563f4beffa272de6efac",
+            "avatarUrl": "/avatars/f1a4902a95830cc3936058449626f8e4.svg",
+            "isPro": false,
+            "fullname": "Bilal Chughtai",
+            "user": "bilalchughtai",
+            "type": "user"
+          },
+          "name": "Bilal Chughtai",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-01-29T04:47:56.702Z",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7d9b",
+          "name": "Joshua Batson",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7d9c",
+          "name": "Jack Lindsey",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7d9d",
+          "name": "Jeff Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7d9e",
+          "name": "Lucius Bushnaq",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7d9f",
+          "name": "Nicholas Goldowsky-Dill",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da0",
+          "name": "Stefan Heimersheim",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da1",
+          "name": "Alejandro Ortega",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da2",
+          "name": "Joseph Bloom",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da3",
+          "name": "Stella Biderman",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da4",
+          "name": "Adria Garriga-Alonso",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da5",
+          "name": "Arthur Conmy",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da6",
+          "name": "Neel Nanda",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da7",
+          "name": "Jessica Rumbelow",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da8",
+          "name": "Martin Wattenberg",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7da9",
+          "name": "Nandi Schoots",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7daa",
+          "name": "Joseph Miller",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7dab",
+          "name": "Eric J. Michaud",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7dac",
+          "name": "Stephen Casper",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7dad",
+          "name": "Max Tegmark",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7dae",
+          "name": "William Saunders",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7daf",
+          "name": "David Bau",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7db0",
+          "name": "Eric Todd",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7db1",
+          "name": "Atticus Geiger",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7db2",
+          "name": "Mor Geva",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7db3",
+          "name": "Jesse Hoogland",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7db4",
+          "name": "Daniel Murfet",
+          "hidden": false
+        },
+        {
+          "_id": "6799b2fbfe3c29ec219d7db5",
+          "name": "Tom McGrath",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-27T20:57:18.000Z",
+      "title": "機械的説明の開放的な問題",
+      "summary": "機械的な解釈性は、神経ネットワークの計算的機構を理解することで、具体的な科学的および工学的目標を達成することを目指しています。この分野の進歩は、AIシステムの行動におけるより高い信頼性を提供し、脳の性質に関する興味深い科学的問題に光をかけることを承諾しています。最近の進歩にもかかわらず、この分野には、多くの開放的な問題があり、それらの解決が記録される前に、多くの科学的および実用的な利益を実現することはできません: 私たちの方法は、概念的および実用的な改善が必要であり、深い洞察を明らかにすることができます; 私たちは、特定の目標に向けて私たちの方法を最適に適用する方法を明確にする必要があります; そして、この分野は、私たちの仕事に影響を与えているもしくは影響を受けている社会技術的な課題に直面する必要があります。この先進的なレビューでは、機械的な解釈性の現在の境界と、この分野が優先して取り扱うべき開放的な問題について議論しています。",
+      "upvotes": 4,
+      "discussionId": "6799b2fcfe3c29ec219d7dca"
+    },
+    "publishedAt": "2025-01-28T23:48:30.888Z",
+    "title": "Open Problems in Mechanistic Interpretability",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.16496.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5850
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.15747",
+      "authors": [
+        {
+          "_id": "6799946c18cb282841d42639",
+          "name": "Sankalp KJ",
+          "hidden": false
+        },
+        {
+          "_id": "6799946c18cb282841d4263a",
+          "name": "Ashutosh Kumar",
+          "hidden": false
+        },
+        {
+          "_id": "6799946c18cb282841d4263b",
+          "user": {
+            "_id": "66707b60405252abeefd4c50",
+            "avatarUrl": "/avatars/ee2728f115376e234e96820b8b376849.svg",
+            "isPro": false,
+            "fullname": "Laxmaan Balaji",
+            "user": "laxmaanb",
+            "type": "user"
+          },
+          "name": "Laxmaan Balaji",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-01-29T02:37:34.240Z",
+          "hidden": false
+        },
+        {
+          "_id": "6799946c18cb282841d4263c",
+          "name": "Nikunj Kotecha",
+          "hidden": false
+        },
+        {
+          "_id": "6799946c18cb282841d4263d",
+          "name": "Vinija Jain",
+          "hidden": false
+        },
+        {
+          "_id": "6799946c18cb282841d4263e",
+          "user": {
+            "_id": "63a4754927f1f64ed7238dac",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4754927f1f64ed7238dac/aH-eJF-31g4vof9jv2gmI.jpeg",
+            "isPro": false,
+            "fullname": "Aman Chadha",
+            "user": "amanchadha",
+            "type": "user"
+          },
+          "name": "Aman Chadha",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-01-29T08:55:14.312Z",
+          "hidden": false
+        },
+        {
+          "_id": "6799946c18cb282841d4263f",
+          "name": "Sreyoshi Bhaduri",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-27T03:19:03.000Z",
+      "title": "IndicMMLU-Pro: アジア諸国の大規模言語モデルの多タスク言語理解ベンチマーク",
+      "summary": "インドサブコンティニエンの15億人以上が知られるインド諸語は、豊かな文化遺産、言語多様性と複雑な構造により、自然言語処理（NLP）研究に特別な課題と機会を提供しています。IndicMMLU-Proは、インド諸語の大語言モデル（LLMs）の評価を行うための詳細なベンチマークで、MMLU Pro（マスイブルマルチタスク言語理解）フレームワークに基づいて設計されています。ハンディ、ベナギア、ギャラタイ、マラタイ、カナダ、パンチバイ、タミル、テルグ、ウーダー等の主要な言語を対象とし、インドサブコンティニエンの言語多様性による特別な課題と機会を解決することを目的としています。このベンチマークは、言語理解、理由論理、ジェネレーションなどの幅広いタスクにおいて、インド諸語の複雑な調子を極めて詳細に捉えることを目的としています。IndicMMLU-Proは、インド諸語のAI研究のフィードバックを提供し、正確性、効率性と文化的な敏感性を持つモデルの開発に裏付けるための標準化された評価フレームワークを提供しています。この論文は、ベンチマークの設計原則、タスクタクノロジー、データ収集方法と最新の多言語モデルのベースライン結果を示しています。",
+      "upvotes": 3,
+      "discussionId": "6799946e18cb282841d426d6"
+    },
+    "publishedAt": "2025-01-28T21:38:17.182Z",
+    "title": "IndicMMLU-Pro: Benchmarking Indic Large Language Models on Multi-Task Language Understanding",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.15747.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63a4754927f1f64ed7238dac",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4754927f1f64ed7238dac/aH-eJF-31g4vof9jv2gmI.jpeg",
+      "fullname": "Aman Chadha",
+      "name": "amanchadha",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2501.16372",
+      "authors": [
+        {
+          "_id": "67999c3dc1e34886f90320ee",
+          "name": "J. Pablo Muñoz",
+          "hidden": false
+        },
+        {
+          "_id": "67999c3dc1e34886f90320ef",
+          "name": "Jinjie Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67999c3dc1e34886f90320f0",
+          "name": "Nilesh Jain",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-23T02:14:08.000Z",
+      "title": "低順位アダプターとニューラルアーキテクチャサーチがLLMコンパクションに会い合う",
+      "summary": "LLMの急速な拡大は、微調節および部署に必要な計算コンピューティングリソースに関する重大な課題を帯びています。低ランクアダプターの最近の進歩は、これらのモデルのパラメータ効率的な微調節（PEFT）の効果を示しています。本記録論文では、低ランク表現とニューラルアーキテクチャ検索（NAS）手法、特に重み共有スーパーネットワークとの協調をめぐる革新的なアプローチを詳しく議論します。これらの手法を統合することで、大規模な事前学習モデルの圧縮および微調節の強固な解決策が開発されます。我々の分析は、これらの組み合わせた戦略の民主化の可能性を特に強調し、リソース制限付き環境での部署によりもっとアクセス可能なLLMの使用を促進することを示しています。結果として得られるモデルはメモリフットプリントを減らし、推論時間を短縮し、LLMの実用的なおよびスケーラブルなアプリケーションの実現につながります。モデルとコードは、https://github.com/IntelLabs/Hardware-Aware-Automated-Machine-Learning から利用可能です。",
+      "upvotes": 2,
+      "discussionId": "67999c3dc1e34886f9032140"
+    },
+    "publishedAt": "2025-01-28T22:11:04.472Z",
+    "title": "Low-Rank Adapters Meet Neural Architecture Search for LLM Compression",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.16372.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5850
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.17117",
+      "authors": [
+        {
+          "_id": "6799e5f9121155210e4fa48c",
+          "name": "Thibaud Leteno",
+          "hidden": false
+        },
+        {
+          "_id": "6799e5f9121155210e4fa48d",
+          "name": "Irina Proskurina",
+          "hidden": false
+        },
+        {
+          "_id": "6799e5f9121155210e4fa48e",
+          "name": "Antoine Gourru",
+          "hidden": false
+        },
+        {
+          "_id": "6799e5f9121155210e4fa48f",
+          "name": "Julien Velcin",
+          "hidden": false
+        },
+        {
+          "_id": "6799e5f9121155210e4fa490",
+          "name": "Charlotte Laclau",
+          "hidden": false
+        },
+        {
+          "_id": "6799e5f9121155210e4fa491",
+          "name": "Guillaume Metzler",
+          "hidden": false
+        },
+        {
+          "_id": "6799e5f9121155210e4fa492",
+          "name": "Christophe Gravier",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-28T18:07:30.000Z",
+      "title": "モラルアライメントの評価に向けてのフランス語データセット「モラルノリマル」",
+      "summary": "言語モデルを人類の価値観に合わせることは重要です、特にそれらが日常生活によりもっと組み込まれる場合はそれが非常に重要です。モデルはよくユーザーの好みに合わせられるが、それは同時に実世界的な社会の価値観と行動を合わせることも同等の重要です。英語や中国語においては進歩が大きいが、フランス語においてはこの分野に少しの注意が与えられていません、これによりフランス語でLLMsがどのように価値観の理由を扱うかを理解することが間違いなく間違いなくできないようになっています。この空間を補うために、我々は「モラルな物語」というフランス語のデータセットを紹介します。これは、モラルな物語から翻訳されたものであり、フランス語の母語者の助けを受けて文法の正確性とフランス文化のコンテキストに適合することを確認しています。また、データセット内の価値観のアノテーションをもとに、フランスの価値観に合わせることを確認しています。「モラルな物語」は、さまざまな社会の状況を収めています。その中には、チャンスの差、関係の中での正直さの表現、もしくは動物に対する責任などが含まれています。将来の研究を促進するために、我々はフランス語データと英語データの多言語モデルの合わせ方と、その合わせ方の強固性についても初期の実験を行います。我々は、モデルは通常ユーザーの好みを最適化することで価値観や不道德なデータにも容易に影響されることを見出しました。",
+      "upvotes": 0,
+      "discussionId": "6799e5fb121155210e4fa500"
+    },
+    "publishedAt": "2025-01-29T03:32:09.927Z",
+    "title": "Histoires Morales: A French Dataset for Assessing Moral Alignment",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.17117.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "629a3dbcd496c6dcdebf41cc",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1655113762275-629a3dbcd496c6dcdebf41cc.jpeg",
+      "fullname": "Irina Proskurina",
+      "name": "iproskurina",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  }
+]
