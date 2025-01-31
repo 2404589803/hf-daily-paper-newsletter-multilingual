@@ -1,0 +1,823 @@
+[
+  {
+    "paper": {
+      "id": "2501.18492",
+      "authors": [
+        {
+          "_id": "679c4ac5e2c0dbf282597d35",
+          "user": {
+            "_id": "64b708351a4d97b5d7edd369",
+            "avatarUrl": "/avatars/960c1033f9cf218220f86de22c06915b.svg",
+            "isPro": false,
+            "fullname": "Yue Liu",
+            "user": "yueliu1998",
+            "type": "user"
+          },
+          "name": "Yue Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:41:25.697Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d36",
+          "user": {
+            "_id": "62728f4f6253fe2068da1021",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62728f4f6253fe2068da1021/KZ65X0EH98AF3zXemPiap.jpeg",
+            "isPro": false,
+            "fullname": "Hongcheng Gao",
+            "user": "HongchengGao",
+            "type": "user"
+          },
+          "name": "Hongcheng Gao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-01-31T08:35:51.645Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d37",
+          "user": {
+            "_id": "6366429195204b4649c658b8",
+            "avatarUrl": "/avatars/5d80e9ebe0b57fd815f36796b9187248.svg",
+            "isPro": false,
+            "fullname": "Shengfang Zhai",
+            "user": "zsf",
+            "type": "user"
+          },
+          "name": "Shengfang Zhai",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:41:32.474Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d38",
+          "user": {
+            "_id": "679c68bbfc30f43de85206f5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/IJWda9ZYtjzlhr2ehsLHu.jpeg",
+            "isPro": false,
+            "fullname": "Jun Xia",
+            "user": "JunXia97",
+            "type": "user"
+          },
+          "name": "Jun Xia",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:41:53.366Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d39",
+          "name": "Tianyi Wu",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d3a",
+          "user": {
+            "_id": "63f42ca3520c1461892ee929",
+            "avatarUrl": "/avatars/095241acfe7c783d2406abf63ff81f65.svg",
+            "isPro": false,
+            "fullname": "xuezhiwei",
+            "user": "lakxtxue",
+            "type": "user"
+          },
+          "name": "Zhiwei Xue",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:42:30.842Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d3b",
+          "user": {
+            "_id": "65efc25828426de60f977dfc",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/u8ZcIoo58JPLdnjm-jZeo.png",
+            "isPro": false,
+            "fullname": "Yulin Chen",
+            "user": "CallMeChen",
+            "type": "user"
+          },
+          "name": "Yulin Chen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:42:41.013Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d3c",
+          "name": "Kenji Kawaguchi",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d3d",
+          "user": {
+            "_id": "669e19e5dac1eb34c0f5f505",
+            "avatarUrl": "/avatars/bec7d1d1dac2ad6570844d1f00e7df0a.svg",
+            "isPro": false,
+            "fullname": "Jiaheng Zhang",
+            "user": "jiaheng233",
+            "type": "user"
+          },
+          "name": "Jiaheng Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:37:04.493Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4ac5e2c0dbf282597d3e",
+          "user": {
+            "_id": "651d8032c50012d33e914f2f",
+            "avatarUrl": "/avatars/0a44c9f51fc50ce86582e328c361ea00.svg",
+            "isPro": false,
+            "fullname": "Bryan Hooi",
+            "user": "bhooi",
+            "type": "user"
+          },
+          "name": "Bryan Hooi",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:42:50.273Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-30T17:06:06.000Z",
+      "title": "GuardReasoner: Towards Reasoning-based LLM Safeguards",
+      "summary": "As LLMs increasingly impact safety-critical applications, ensuring their\nsafety using guardrails remains a key challenge. This paper proposes\nGuardReasoner, a new safeguard for LLMs, by guiding the guard model to learn to\nreason. Concretely, we first create the GuardReasonerTrain dataset, which\nconsists of 127K samples with 460K detailed reasoning steps. Then, we introduce\nreasoning SFT to unlock the reasoning capability of guard models. In addition,\nwe present hard sample DPO to further strengthen their reasoning ability. In\nthis manner, GuardReasoner achieves better performance, explainability, and\ngeneralizability. Extensive experiments and analyses on 13 benchmarks of 3\nguardrail tasks demonstrate its superiority. Remarkably, GuardReasoner 8B\nsurpasses GPT-4o+CoT by 5.74% and LLaMA Guard 3 8B by 20.84% F1 score on\naverage. We release the training data, code, and models with different scales\n(1B, 3B, 8B) of GuardReasoner : https://github.com/yueliu1999/GuardReasoner/.",
+      "upvotes": 29,
+      "discussionId": "679c4ac6e2c0dbf282597d80"
+    },
+    "publishedAt": "2025-01-30T23:01:47.466Z",
+    "title": "GuardReasoner: Towards Reasoning-based LLM Safeguards",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6650c77a74664a42ddfb9187/Kza1q-PVKsgu_6SaQ9Oze.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/6650c77a74664a42ddfb9187/rqViZgnFQQJcAfgC1a17n.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/6650c77a74664a42ddfb9187/5Dk0HJkhOCoSXoWdVUzBo.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/6650c77a74664a42ddfb9187/DWg1wTHDx939H4bZPVj1W.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18492.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6650c77a74664a42ddfb9187",
+      "avatarUrl": "/avatars/92001bbe0ae9b14309730316b639cede.svg",
+      "fullname": "yueliu1999",
+      "name": "yueliu1999",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18362",
+      "authors": [
+        {
+          "_id": "679c5b0034f5df4416915177",
+          "name": "Yuxin Zuo",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0034f5df4416915178",
+          "user": {
+            "_id": "65597738deee83130a1301d5",
+            "avatarUrl": "/avatars/9bcc40aebe4db079927675d95c00463c.svg",
+            "isPro": false,
+            "fullname": "Shang (Lindsay) Qu",
+            "user": "lindsay-qu",
+            "type": "user"
+          },
+          "name": "Shang Qu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-01-31T08:35:48.269Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0034f5df4416915179",
+          "name": "Yifei Li",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0034f5df441691517a",
+          "name": "Zhangren Chen",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0034f5df441691517b",
+          "name": "Xuekai Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0034f5df441691517c",
+          "name": "Ermo Hua",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0034f5df441691517d",
+          "name": "Kaiyan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0034f5df441691517e",
+          "user": {
+            "_id": "60cf4bcb1ce3775ebb86e5d5",
+            "avatarUrl": "/avatars/12bcd18d215abf91f297f93007733148.svg",
+            "isPro": false,
+            "fullname": "Ning Ding",
+            "user": "stingning",
+            "type": "user"
+          },
+          "name": "Ning Ding",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-01-31T09:50:45.999Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0034f5df441691517f",
+          "name": "Bowen Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-30T14:07:56.000Z",
+      "title": "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and\n  Understanding",
+      "summary": "We introduce MedXpertQA, a highly challenging and comprehensive benchmark to\nevaluate expert-level medical knowledge and advanced reasoning. MedXpertQA\nincludes 4,460 questions spanning 17 specialties and 11 body systems. It\nincludes two subsets, Text for text evaluation and MM for multimodal\nevaluation. Notably, MM introduces expert-level exam questions with diverse\nimages and rich clinical information, including patient records and examination\nresults, setting it apart from traditional medical multimodal benchmarks with\nsimple QA pairs generated from image captions. MedXpertQA applies rigorous\nfiltering and augmentation to address the insufficient difficulty of existing\nbenchmarks like MedQA, and incorporates specialty board questions to improve\nclinical relevance and comprehensiveness. We perform data synthesis to mitigate\ndata leakage risk and conduct multiple rounds of expert reviews to ensure\naccuracy and reliability. We evaluate 16 leading models on MedXpertQA.\nMoreover, medicine is deeply connected to real-world decision-making, providing\na rich and representative setting for assessing reasoning abilities beyond\nmathematics and code. To this end, we develop a reasoning-oriented subset to\nfacilitate the assessment of o1-like models.",
+      "upvotes": 7,
+      "discussionId": "679c5b0234f5df44169151e9"
+    },
+    "publishedAt": "2025-01-31T04:14:53.856Z",
+    "title": "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18362.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65597738deee83130a1301d5",
+      "avatarUrl": "/avatars/9bcc40aebe4db079927675d95c00463c.svg",
+      "fullname": "Shang (Lindsay) Qu",
+      "name": "lindsay-qu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2501.18585",
+      "authors": [
+        {
+          "_id": "679c5ca666c379e215bc9e74",
+          "name": "Yue Wang",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e75",
+          "user": {
+            "_id": "63e60ff62d704152abac8af8",
+            "avatarUrl": "/avatars/a54c34fb87a7ed5aeba792852747de92.svg",
+            "isPro": false,
+            "fullname": "Qiuzhi Liu",
+            "user": "Dennis364",
+            "type": "user"
+          },
+          "name": "Qiuzhi Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:45:37.562Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e76",
+          "user": {
+            "_id": "660399710f1fc2f16de18072",
+            "avatarUrl": "/avatars/c22a749cc45db693c2d9ea877c7cace4.svg",
+            "isPro": false,
+            "fullname": "Jiahao Xu",
+            "user": "Jiahao004",
+            "type": "user"
+          },
+          "name": "Jiahao Xu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:45:31.807Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e77",
+          "name": "Tian Liang",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e78",
+          "name": "Xingyu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e79",
+          "user": {
+            "_id": "638439ca834d3558a398d035",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669609868550-noauth.png",
+            "isPro": false,
+            "fullname": "Zhiwei He",
+            "user": "zwhe99",
+            "type": "user"
+          },
+          "name": "Zhiwei He",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:44:45.300Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e7a",
+          "user": {
+            "_id": "64c94eddcb2f1bf0e7db5a4d",
+            "avatarUrl": "/avatars/f7e2532d3c85d5e5b5a02c579ea68c3a.svg",
+            "isPro": false,
+            "fullname": "Linfeng Song",
+            "user": "freesunshine0316",
+            "type": "user"
+          },
+          "name": "Linfeng Song",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:44:29.221Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e7b",
+          "user": {
+            "_id": "62d58fd53bf5e059f7cc3245",
+            "avatarUrl": "/avatars/7a4f3ee4a37245f67efd26749d66a706.svg",
+            "isPro": false,
+            "fullname": "Dian Yu",
+            "user": "yudian",
+            "type": "user"
+          },
+          "name": "Dian Yu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:44:23.114Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e7c",
+          "user": {
+            "_id": "6670e285b0c03c4e9d6e0985",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/uCZHm4gKSHZ2b0hpHWgZv.jpeg",
+            "isPro": false,
+            "fullname": "Juntao Li",
+            "user": "douvleplus",
+            "type": "user"
+          },
+          "name": "Juntao Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:44:12.069Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e7d",
+          "user": {
+            "_id": "5f82f9f7f0801648bf8844b2",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669627733134-5f82f9f7f0801648bf8844b2.jpeg",
+            "isPro": false,
+            "fullname": "Zhuosheng Zhang",
+            "user": "cooelf",
+            "type": "user"
+          },
+          "name": "Zhuosheng Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:44:05.749Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e7e",
+          "name": "Rui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e7f",
+          "user": {
+            "_id": "67485743561b1e6f9579389f",
+            "avatarUrl": "/avatars/8a4cc63bd7be388010bc329bb74582a1.svg",
+            "isPro": false,
+            "fullname": "Zhaopeng Tu",
+            "user": "zptu",
+            "type": "user"
+          },
+          "name": "Zhaopeng Tu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:43:27.683Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e80",
+          "user": {
+            "_id": "65147a1426fbd558dbd08f1b",
+            "avatarUrl": "/avatars/86574ee2d5c22e940be1c4e50be88675.svg",
+            "isPro": false,
+            "fullname": "Haitao Mi",
+            "user": "haitaominlp",
+            "type": "user"
+          },
+          "name": "Haitao Mi",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:43:21.871Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5ca666c379e215bc9e81",
+          "name": "Dong Yu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-30T18:58:18.000Z",
+      "title": "Thoughts Are All Over the Place: On the Underthinking of o1-Like LLMs",
+      "summary": "Large language models (LLMs) such as OpenAI's o1 have demonstrated remarkable\nabilities in complex reasoning tasks by scaling test-time compute and\nexhibiting human-like deep thinking. However, we identify a phenomenon we term\nunderthinking, where o1-like LLMs frequently switch between different reasoning\nthoughts without sufficiently exploring promising paths to reach a correct\nsolution. This behavior leads to inadequate depth of reasoning and decreased\nperformance, particularly on challenging mathematical problems. To\nsystematically analyze this issue, we conduct experiments on three challenging\ntest sets and two representative open-source o1-like models, revealing that\nfrequent thought switching correlates with incorrect responses. We introduce a\nnovel metric to quantify underthinking by measuring token efficiency in\nincorrect answers. To address underthinking, we propose a decoding strategy\nwith thought switching penalty TIP that discourages premature transitions\nbetween thoughts, encouraging deeper exploration of each reasoning path.\nExperimental results demonstrate that our approach improves accuracy across\nchallenging datasets without requiring model fine-tuning. Our findings\ncontribute to understanding reasoning inefficiencies in o1-like LLMs and offer\na practical solution to enhance their problem-solving capabilities.",
+      "upvotes": 6,
+      "discussionId": "679c5ca766c379e215bc9eb1"
+    },
+    "publishedAt": "2025-01-31T00:16:36.453Z",
+    "title": "Thoughts Are All Over the Place: On the Underthinking of o1-Like LLMs",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18585.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5875
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.16411",
+      "authors": [
+        {
+          "_id": "679c4f344061a1ab60ebe6fa",
+          "user": {
+            "_id": "644b71ddb2e7823a76abcf91",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/644b71ddb2e7823a76abcf91/JPF7Eqeq2jx8i79nQ962K.jpeg",
+            "isPro": false,
+            "fullname": "zhou wei",
+            "user": "WeiChow",
+            "type": "user"
+          },
+          "name": "Wei Chow",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-01-31T08:35:49.674Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4f344061a1ab60ebe6fb",
+          "name": "Jiageng Mao",
+          "hidden": false
+        },
+        {
+          "_id": "679c4f344061a1ab60ebe6fc",
+          "user": {
+            "_id": "620dd3888528f797e88cb9b5",
+            "avatarUrl": "/avatars/af04728788d78fe7d6375e19e32a535e.svg",
+            "isPro": false,
+            "fullname": "Boyi Li",
+            "user": "Boyiliee",
+            "type": "user"
+          },
+          "name": "Boyi Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:46:09.305Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c4f344061a1ab60ebe6fd",
+          "name": "Daniel Seita",
+          "hidden": false
+        },
+        {
+          "_id": "679c4f344061a1ab60ebe6fe",
+          "name": "Vitor Guizilini",
+          "hidden": false
+        },
+        {
+          "_id": "679c4f344061a1ab60ebe6ff",
+          "name": "Yue Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-27T18:59:58.000Z",
+      "title": "PhysBench: Benchmarking and Enhancing Vision-Language Models for\n  Physical World Understanding",
+      "summary": "Understanding the physical world is a fundamental challenge in embodied AI,\ncritical for enabling agents to perform complex tasks and operate safely in\nreal-world environments. While Vision-Language Models (VLMs) have shown great\npromise in reasoning and task planning for embodied agents, their ability to\ncomprehend physical phenomena remains extremely limited. To close this gap, we\nintroduce PhysBench, a comprehensive benchmark designed to evaluate VLMs'\nphysical world understanding capability across a diverse set of tasks.\nPhysBench contains 10,002 entries of interleaved video-image-text data,\ncategorized into four major domains: physical object properties, physical\nobject relationships, physical scene understanding, and physics-based dynamics,\nfurther divided into 19 subclasses and 8 distinct capability dimensions. Our\nextensive experiments, conducted on 75 representative VLMs, reveal that while\nthese models excel in common-sense reasoning, they struggle with understanding\nthe physical world -- likely due to the absence of physical knowledge in their\ntraining data and the lack of embedded physical priors. To tackle the\nshortfall, we introduce PhysAgent, a novel framework that combines the\ngeneralization strengths of VLMs with the specialized expertise of vision\nmodels, significantly enhancing VLMs' physical understanding across a variety\nof tasks, including an 18.4\\% improvement on GPT-4o. Furthermore, our results\ndemonstrate that enhancing VLMs' physical world understanding capabilities can\nhelp embodied agents such as MOKA. We believe that PhysBench and PhysAgent\noffer valuable insights and contribute to bridging the gap between VLMs and\nphysical world understanding.",
+      "upvotes": 6,
+      "discussionId": "679c4f394061a1ab60ebe7f0"
+    },
+    "publishedAt": "2025-01-30T23:19:24.751Z",
+    "title": "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.16411.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "644b71ddb2e7823a76abcf91",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/644b71ddb2e7823a76abcf91/JPF7Eqeq2jx8i79nQ962K.jpeg",
+      "fullname": "zhou wei",
+      "name": "WeiChow",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2501.18438",
+      "authors": [
+        {
+          "_id": "679c7d0ebd893fb2b7159aa3",
+          "user": {
+            "_id": "657b3a44de028a439ea2ed9d",
+            "avatarUrl": "/avatars/9f05e8eb6809a0ce1b50cd1fc9b5a044.svg",
+            "isPro": false,
+            "fullname": "Aitor Arrieta",
+            "user": "aitorarrieta",
+            "type": "user"
+          },
+          "name": "Aitor Arrieta",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-01-31T07:34:38.875Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c7d0ebd893fb2b7159aa4",
+          "name": "Miriam Ugarte",
+          "hidden": false
+        },
+        {
+          "_id": "679c7d0ebd893fb2b7159aa5",
+          "user": {
+            "_id": "65001514f322f9156663f096",
+            "avatarUrl": "/avatars/e8712f60d4e8b7c70ac02c532ad547ef.svg",
+            "isPro": false,
+            "fullname": "Pablo Valle",
+            "user": "pablovalle",
+            "type": "user"
+          },
+          "name": "Pablo Valle",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-01-31T08:35:44.931Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c7d0ebd893fb2b7159aa6",
+          "user": {
+            "_id": "63527de67e4cc3135fd16651",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63527de67e4cc3135fd16651/bkeQlJEwsPs3E4EsvmmLB.jpeg",
+            "isPro": false,
+            "fullname": "José Antonio Parejo Maestre",
+            "user": "japarejo",
+            "type": "user"
+          },
+          "name": "José Antonio Parejo",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:49:45.440Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c7d0ebd893fb2b7159aa7",
+          "user": {
+            "_id": "6790d642a1863df579840ae3",
+            "avatarUrl": "/avatars/a10a6f4af327c1bb67513c56d7f84820.svg",
+            "isPro": false,
+            "fullname": "Sergio Segura",
+            "user": "ssegura",
+            "type": "user"
+          },
+          "name": "Sergio Segura",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-01-31T07:34:38.876Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-30T15:45:56.000Z",
+      "title": "o3-mini vs DeepSeek-R1: Which One is Safer?",
+      "summary": "The irruption of DeepSeek-R1 constitutes a turning point for the AI industry\nin general and the LLMs in particular. Its capabilities have demonstrated\noutstanding performance in several tasks, including creative thinking, code\ngeneration, maths and automated program repair, at apparently lower execution\ncost. However, LLMs must adhere to an important qualitative property, i.e.,\ntheir alignment with safety and human values. A clear competitor of DeepSeek-R1\nis its American counterpart, OpenAI's o3-mini model, which is expected to set\nhigh standards in terms of performance, safety and cost. In this paper we\nconduct a systematic assessment of the safety level of both, DeepSeek-R1 (70b\nversion) and OpenAI's o3-mini (beta version). To this end, we make use of our\nrecently released automated safety testing tool, named ASTRAL. By leveraging\nthis tool, we automatically and systematically generate and execute a total of\n1260 unsafe test inputs on both models. After conducting a semi-automated\nassessment of the outcomes provided by both LLMs, the results indicate that\nDeepSeek-R1 is highly unsafe as compared to OpenAI's o3-mini. Based on our\nevaluation, DeepSeek-R1 answered unsafely to 11.98% of the executed prompts\nwhereas o3-mini only to 1.19%.",
+      "upvotes": 4,
+      "discussionId": "679c7d0ebd893fb2b7159af5"
+    },
+    "publishedAt": "2025-01-31T02:35:40.107Z",
+    "title": "o3-mini vs DeepSeek-R1: Which One is Safer?",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18438.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65001514f322f9156663f096",
+      "avatarUrl": "/avatars/e8712f60d4e8b7c70ac02c532ad547ef.svg",
+      "fullname": "Pablo Valle",
+      "name": "pablovalle",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2501.18511",
+      "authors": [
+        {
+          "_id": "679c9419a01fd6df443d5729",
+          "user": {
+            "_id": "62f7f4efe7c1c9bf10c81465",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f7f4efe7c1c9bf10c81465/AYlOg0fkP1o4GAP-8Y3xt.jpeg",
+            "isPro": true,
+            "fullname": "Benjamin Feuer",
+            "user": "penfever",
+            "type": "user"
+          },
+          "name": "Benjamin Feuer",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T09:35:53.653Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c9419a01fd6df443d572a",
+          "name": "Chinmay Hegde",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-30T17:21:44.000Z",
+      "title": "WILDCHAT-50M: A Deep Dive Into the Role of Synthetic Data in\n  Post-Training",
+      "summary": "Language model (LLM) post-training, from DPO to distillation, can refine\nbehaviors and unlock new skills, but the open science supporting these\npost-training techniques is still in its infancy. One limiting factor has been\nthe difficulty of conducting large-scale comparative analyses of synthetic data\ngenerating models and LLM judges. To close this gap, we introduce WILDCHAT-50M,\nthe largest public chat dataset to date. We extend the existing WildChat\ndataset to include responses not only from GPT, but from over 50 different\nopen-weight models, ranging in size from 0.5B to 104B parameters. We conduct an\nextensive comparative analysis and demonstrate the potential of this dataset by\ncreating RE-WILD, our own public SFT mix, which outperforms the recent Tulu-3\nSFT mixture from Allen AI with only 40% as many samples. Our dataset, samples\nand code are available at https://github.com/penfever/wildchat-50m.",
+      "upvotes": 2,
+      "discussionId": "679c941da01fd6df443d5907"
+    },
+    "publishedAt": "2025-01-31T04:13:28.061Z",
+    "title": "WILDCHAT-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18511.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60107b385ac3e86b3ea4fc34",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1627505688463-60107b385ac3e86b3ea4fc34.jpeg",
+      "fullname": "Daniel van Strien",
+      "name": "davanstrien",
+      "type": "user",
+      "isPro": true,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 519
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18009",
+      "authors": [
+        {
+          "_id": "679c5b0259e9218a222ab742",
+          "user": {
+            "_id": "6689f7fb8c440fe1955a51b5",
+            "avatarUrl": "/avatars/9b23ee2f05f55615c6174a678436b30d.svg",
+            "isPro": false,
+            "fullname": "Lan Pan",
+            "user": "louanna",
+            "type": "user"
+          },
+          "name": "Lan Pan",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-01-31T06:33:49.785Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0259e9218a222ab743",
+          "user": {
+            "_id": "63fd543a3c880680af459cad",
+            "avatarUrl": "/avatars/2a90a4b002fe0d09e28ce0e111357748.svg",
+            "isPro": false,
+            "fullname": "Hanbo Xie",
+            "user": "xhb120633",
+            "type": "user"
+          },
+          "name": "Hanbo Xie",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-01-31T08:51:40.573Z",
+          "hidden": false
+        },
+        {
+          "_id": "679c5b0259e9218a222ab744",
+          "name": "Robert C. Wilson",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-29T21:51:17.000Z",
+      "title": "Large Language Models Think Too Fast To Explore Effectively",
+      "summary": "Large Language Models have emerged many intellectual capacities. While\nnumerous benchmarks assess their intelligence, limited attention has been given\nto their ability to explore, an essential capacity for discovering new\ninformation and adapting to novel environments in both natural and artificial\nsystems. The extent to which LLMs can effectively explore, particularly in\nopen-ended tasks, remains unclear. This study investigates whether LLMs can\nsurpass humans in exploration during an open-ended task, using Little Alchemy 2\nas a paradigm, where agents combine elements to discover new ones. Results show\nmost LLMs underperform compared to humans, except for the o1 model, with those\ntraditional LLMs relying primarily on uncertainty driven strategies, unlike\nhumans who balance uncertainty and empowerment. Representational analysis of\nthe models with Sparse Autoencoders revealed that uncertainty and choices are\nrepresented at earlier transformer blocks, while empowerment values are\nprocessed later, causing LLMs to think too fast and make premature decisions,\nhindering effective exploration. These findings shed light on the limitations\nof LLM exploration and suggest directions for improving their adaptability.",
+      "upvotes": 2,
+      "discussionId": "679c5b0359e9218a222ab76f"
+    },
+    "publishedAt": "2025-01-31T00:09:40.077Z",
+    "title": "Large Language Models Think Too Fast To Explore Effectively",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18009.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5875
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18512",
+      "authors": [
+        {
+          "_id": "679ca01ecad2402cec0a939a",
+          "name": "Arthur Douillard",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a939b",
+          "name": "Yanislav Donchev",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a939c",
+          "name": "Keith Rush",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a939d",
+          "name": "Satyen Kale",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a939e",
+          "name": "Zachary Charles",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a939f",
+          "name": "Zachary Garrett",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a93a0",
+          "name": "Gabriel Teston",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a93a1",
+          "name": "Dave Lacey",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a93a2",
+          "name": "Ross McIlroy",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a93a3",
+          "name": "Jiajun Shen",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a93a4",
+          "name": "Alexandre Ramé",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a93a5",
+          "name": "Arthur Szlam",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a93a6",
+          "name": "Marc'Aurelio Ranzato",
+          "hidden": false
+        },
+        {
+          "_id": "679ca01ecad2402cec0a93a7",
+          "name": "Paul Barham",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-30T17:23:50.000Z",
+      "title": "Streaming DiLoCo with overlapping communication: Towards a Distributed\n  Free Lunch",
+      "summary": "Training of large language models (LLMs) is typically distributed across a\nlarge number of accelerators to reduce training time. Since internal states and\nparameter gradients need to be exchanged at each and every single gradient\nstep, all devices need to be co-located using low-latency high-bandwidth\ncommunication links to support the required high volume of exchanged bits.\nRecently, distributed algorithms like DiLoCo have relaxed such co-location\nconstraint: accelerators can be grouped into ``workers'', where\nsynchronizations between workers only occur infrequently. This in turn means\nthat workers can afford being connected by lower bandwidth communication links\nwithout affecting learning quality. However, in these methods, communication\nacross workers still requires the same peak bandwidth as before, as the\nsynchronizations require all parameters to be exchanged across all workers. In\nthis paper, we improve DiLoCo in three ways. First, we synchronize only subsets\nof parameters in sequence, rather than all at once, which greatly reduces peak\nbandwidth. Second, we allow workers to continue training while synchronizing,\nwhich decreases wall clock time. Third, we quantize the data exchanged by\nworkers, which further reduces bandwidth across workers. By properly combining\nthese modifications, we show experimentally that we can distribute training of\nbillion-scale parameters and reach similar quality as before, but reducing\nrequired bandwidth by two orders of magnitude.",
+      "upvotes": 1,
+      "discussionId": "679ca01fcad2402cec0a9404"
+    },
+    "publishedAt": "2025-01-31T05:07:14.120Z",
+    "title": "Streaming DiLoCo with overlapping communication: Towards a Distributed Free Lunch",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18512.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "622792366303bf1dc304f49f",
+      "avatarUrl": "/avatars/975c1cc3eb2f97cf8e848162056d5bea.svg",
+      "fullname": "Arthur Douillard",
+      "name": "ArthurDouillard",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  }
+]
