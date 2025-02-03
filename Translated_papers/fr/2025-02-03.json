@@ -1,0 +1,623 @@
+[
+  {
+    "paper": {
+      "id": "2501.19393",
+      "authors": [
+        {
+          "_id": "67a02dd80e751b0476a1bcc6",
+          "name": "Niklas Muennighoff",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcc7",
+          "name": "Zitong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcc8",
+          "name": "Weijia Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcc9",
+          "name": "Xiang Lisa Li",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcca",
+          "name": "Li Fei-Fei",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bccb",
+          "name": "Hannaneh Hajishirzi",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bccc",
+          "name": "Luke Zettlemoyer",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bccd",
+          "name": "Percy Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcce",
+          "name": "Emmanuel Candès",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bccf",
+          "name": "Tatsunori Hashimoto",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-31T18:48:08.000Z",
+      "title": "s1: Tests de temps simples de programmation",
+      "summary": "L'escalament lors du test est un approche novatrice pour les modèles de langage. Cette méthode peut améliorer le rendement en utilisant un calcul supplémentaire lors du test. Récemment, le modèle o1 de OpenAI a démontré cette capacité, mais le méthode n'a pas été publiée. Cela a conduit à plusieurs efforts de reproduction. Nous cherchons l'approche la plus simple pour atteindre un escalament lors du test et un excellent rendement logique.\n\nTout d'abord, nous avons sélectionné un petit ensemble de données s1K, combinant 1 000 problèmes et traces d'inférence logique, en basant nous sur trois critères : la difficulté, la diversité et la qualité. Nous avons testé cet ensemble avec des tests d'élimination. Ensuite, nous avons contrôlé le calcul lors du test, en forceant le processus de pensée du modèle à se terminer ou en ajoutant plusieurs \"Wait\" pour le faire tarder, de cette manière, le modèle peut réviser sa réponse et corriger les erreurs dans les phases logiques incorrectes. Après avoir entraîné le modèle Qwen2.5-32B-Instruct avec s1K et ajouté des contrôles, le modèle s1 a amélioré significativement dans les problèmes mathématiques, dépassant o1-preview de 27% sur MATH et de 24% sur AIME24. De plus, en utilisant le contrôle pour escaler s1 et réduire l'interférence lors du test, nous estimons son rendement sur AIME24 de 50% à 57%. Notre modèle, données et code sont disponibles sous licence open source sur https://github.com/simplescaling/s1.",
+      "upvotes": 21,
+      "discussionId": "67a02dd90e751b0476a1bd02"
+    },
+    "publishedAt": "2025-02-02T21:45:49.841Z",
+    "title": "s1: Simple test-time scaling",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.19393.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5912
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.19324",
+      "authors": [
+        {
+          "_id": "67a04151dd7b3a4aba880589",
+          "name": "Baohao Liao",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058a",
+          "name": "Yuhui Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058b",
+          "name": "Hanze Dong",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058c",
+          "name": "Junnan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058d",
+          "name": "Christof Monz",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058e",
+          "name": "Silvio Savarese",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058f",
+          "name": "Doyen Sahoo",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba880590",
+          "name": "Caiming Xiong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-31T17:19:57.000Z",
+      "title": "L'utilisation du spectre de Venise pour décoder efficacement les calculs de modèles de langage grands (LLM)",
+      "summary": "RSD (Reward-Guided Speculative Decoding) est un nouveau cadre de travail qui vise à optimiser l'efficacité de l'inférence dans les modèles de langage grands (LLMs). RSD combine de manière collaborative un modèle de base léger et un modèle plus puissant de but, adoptant une vision contrôlée qui prioritise les résultats avec des récompenses élevées, et diffère des méthodes de décodage actuelles qui ne mettent pas une impartialité stricte en place. RSD utilise des modèles d'évaluation de processus pour évaluer les étapes de décodage intermédiaires, décide dynamiquement les appels au modèle de but, et optimise l'équilibre entre les coûts de calcul et la qualité de la sortie. Théoriquement, il a été montré que la stratégie de micros de seuil de passage est la plus appropriée pour atteindre l'équilibre optimal entre échelle et performance. Les tests dans des cadres de référence difficiles (par exemple, des tâches d'un niveau olympique) montrent que RSD fournit une amélioration significative de l'efficacité dans la décodage unique du modèle de but, et en moyenne, atteint une précision notablement meilleure que les méthodes de décodage parallèles (maximum +3,5). Ces résultats démontrent l'importance de RSD comme une façon efficace de réduire les coûts pour introduire les LLMs dans des scénarios riches en ressources.",
+      "upvotes": 15,
+      "discussionId": "67a04152dd7b3a4aba8805c0"
+    },
+    "publishedAt": "2025-02-02T23:10:16.068Z",
+    "title": "Reward-Guided Speculative Decoding for Efficient LLM Reasoning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.19324.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6602869253a0518b2a98cafd",
+      "avatarUrl": "/avatars/c14b5953a716f42c83ad28147f8308ae.svg",
+      "fullname": "Yuhui Xu",
+      "name": "yuhuixu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18837",
+      "authors": [
+        {
+          "_id": "67a04e7ab6fd93f91c65457b",
+          "name": "Mrinank Sharma",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65457c",
+          "name": "Meg Tong",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65457d",
+          "name": "Jesse Mu",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65457e",
+          "name": "Jerry Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65457f",
+          "name": "Jorrit Kruthoff",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654580",
+          "name": "Scott Goodfriend",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654581",
+          "name": "Euan Ong",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654582",
+          "name": "Alwin Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654583",
+          "name": "Raj Agarwal",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654584",
+          "name": "Cem Anil",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654585",
+          "name": "Amanda Askell",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654586",
+          "name": "Nathan Bailey",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654587",
+          "name": "Joe Benton",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654588",
+          "name": "Emma Bluemke",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654589",
+          "name": "Samuel R. Bowman",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458a",
+          "name": "Eric Christiansen",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458b",
+          "name": "Hoagy Cunningham",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458c",
+          "name": "Andy Dau",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458d",
+          "name": "Anjali Gopal",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458e",
+          "name": "Rob Gilson",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458f",
+          "name": "Logan Graham",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654590",
+          "name": "Logan Howard",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654591",
+          "user": {
+            "_id": "66fc4c692408eb3bdeba876f",
+            "avatarUrl": "/avatars/66ba18ccb95d150e66d7b6930d4eb938.svg",
+            "isPro": false,
+            "fullname": "Nimit Kalra",
+            "user": "nimitkalra",
+            "type": "user"
+          },
+          "name": "Nimit Kalra",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-03T08:14:42.317Z",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654592",
+          "name": "Taesung Lee",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654593",
+          "name": "Kevin Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654594",
+          "name": "Peter Lofgren",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654595",
+          "name": "Francesco Mosconi",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654596",
+          "name": "Clare O'Hara",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654597",
+          "name": "Catherine Olsson",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654598",
+          "name": "Linda Petrini",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654599",
+          "name": "Samir Rajani",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459a",
+          "name": "Nikhil Saxena",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459b",
+          "name": "Alex Silverstein",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459c",
+          "name": "Tanya Singh",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459d",
+          "name": "Theodore Sumers",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459e",
+          "name": "Leonard Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459f",
+          "name": "Kevin K. Troy",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a0",
+          "name": "Constantin Weisser",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a1",
+          "name": "Ruiqi Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a2",
+          "name": "Giulio Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a3",
+          "name": "Jan Leike",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a4",
+          "name": "Jared Kaplan",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a5",
+          "name": "Ethan Perez",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-31T01:09:32.000Z",
+      "title": "Constructeurs de Classificateurs : Pour prévenir différents Jailbreaks Universels, la lutte entre les équipes de test de districts.",
+      "summary": "Les grands modèles de langue (LLMs) sont vulnérables aux jailbreaks généralisés. Cela se produit à cause du fait que les modèles évitent systématiquement les fonctions de surveillance de sécurité et que les utilisateurs utilisent plusieurs interfaces de modèle pour réaliser des processus nocifs. Pour faire face à ces menaces, nous présentons les « classifieurs constitutionnels » (Constitutional Classifiers). Ces dispositifs de surveillance de sécurité sont entraînés sur des données synthétiques générées en fonction de règles de langage naturel (c'est-à-dire, la constitution), permettant aux utilisateurs d'éviter la surveillance initiale. À travers les résultats de 3 000 heures de travail de équipe de red teaming, presque dans tous les cas, les utilisateurs n'ont pas pu trouver un jailbreak généralisé permettant d'extraire la même information détaillée que les LLMs surveillés initialement. Dans des évaluations automatiques, les classifieurs étendus ont démontré des fortes défenses face aux jailbreaks spécifiques. Ces classifieurs ont également maintenu une taux de rejet absolu de données produites de 0,38% et un surcharge d'inférence de 23,7%, tout en maintenant une fonctionnalité pratique. Notre étude montre qu'il est possible de prévenir les jailbreaks généralisés tout en maintenant une fonctionnalité pratique.",
+      "upvotes": 2,
+      "discussionId": "67a04e7bb6fd93f91c6545bc"
+    },
+    "publishedAt": "2025-02-03T00:05:21.087Z",
+    "title": "Constitutional Classifiers: Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18837.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5912
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18841",
+      "authors": [
+        {
+          "_id": "67a02c75221b701e4c04da7f",
+          "name": "Wojciech Zaremba",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da80",
+          "name": "Evgenia Nitishinskaya",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da81",
+          "name": "Boaz Barak",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da82",
+          "name": "Stephanie Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da83",
+          "name": "Sam Toyer",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da84",
+          "name": "Yaodong Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da85",
+          "name": "Rachel Dias",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da86",
+          "name": "Eric Wallace",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da87",
+          "name": "Kai Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da88",
+          "name": "Johannes Heidecke",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da89",
+          "name": "Amelia Glaese",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-31T01:20:44.000Z",
+      "title": "Nous proposons un méthode pour échanger l'infrastructure commerciale et la robustesse réciproque.",
+      "summary": "Les sont réalisés des expériences pour étudier l'impact de l'augmentation du calcul dans l'inférence sur la robustesse face aux attaques de combat dans les modèles logiques (spécifiquement OpenAI ou1-preview et o1-mini). Pour diverses attaques, il a été confirmé que l'augmentation du calcul dans l'inférence améliore la robustesse. Dans la plupart des cas (excluant certaines exceptions importantes), la proportion de modèles attaqués avec succès diminue significativement lorsque le calcul augmente. Aucun entraînement de combat n'a été effectué pour les tâches étudiées. Pour augmenter le calcul dans l'inférence, le modèle calcule la quantité de calcul nécessaire. Enfin, il est montré que l'augmentation du calcul dans l'inférence peut être un facteur potentiel pour améliorer la robustesse des modèles de langage de haut niveau. De plus, des nouveaux attaques sont étudiés, simulant l'efficacité de l'augmentation du calcul dans l'inférence pour améliorer la fiabilité et examinant les raisons et les solutions pour cela.",
+      "upvotes": 2,
+      "discussionId": "67a02c76221b701e4c04daf5"
+    },
+    "publishedAt": "2025-02-02T21:40:11.158Z",
+    "title": "Trading Inference-Time Compute for Adversarial Robustness",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18841.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5912
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2404.07097",
+      "authors": [
+        {
+          "_id": "67a07a4b605a6c919dea84ec",
+          "name": "Yoni Kasten",
+          "hidden": false
+        },
+        {
+          "_id": "67a07a4b605a6c919dea84ed",
+          "name": "Wuyue Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67a07a4b605a6c919dea84ee",
+          "name": "Haggai Maron",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2024-04-10T15:37:00.000Z",
+      "title": "Un encodeur rapide basé sur 3D est extrait à travers des tracés de points à partir de vidéos capturées de manière aléatoire.",
+      "summary": "Cet article se concentre sur le défi de reconstruire la structure 3D dans des contenus dynamiques de vidéos. Les méthodes actuelles non seulement traitent des vidéos capturées avec des caméras standard, mais nécessitent également de longues durées d'optimisation.\n\nPour améliorer significativement l'efficacité des méthodes précédentes, on propose un approche basée sur l'apprentissage appelé TracksTo4D. Ce méthode permet une estimation efficace de la structure 3D et de la position de la caméra à partir de contenu dynamique dans des vidéos capturées avec des caméras standard. Pour y parvenir, on manipule le déplacement de points 2D directement et on conceve une architecture adaptée à ce type de déplacement. L'architecture proposée a été conçue en considérant deux aspects clés : (1) la symétrie inhérente dans les données de déplacement de points 2D, et (2) on suppose que les patrons dynamiques peuvent être représentés efficacement par des approximations de faible rang. TracksTo4D peut être entraîné sans limites sur des ensembles de données de vidéos Cassu, et est entraîné en utilisant uniquement les déplacements de points 2D extraits de la vidéo, sans nécessité de supervision 3D. Les résultats des expériences montrent que TracksTo4D a la même précision que le méthode de référence, permet de reconstruire le polydore temporel et la position de la caméra, et réduit significativement le temps d'exécution (réduction de 95%). De plus, lors de l'inférence, on observe une meilleure généralisation aux catégories et aux vidéos non vues précédemment.",
+      "upvotes": 1,
+      "discussionId": "67a07a4d605a6c919dea8555"
+    },
+    "publishedAt": "2025-02-03T03:12:19.292Z",
+    "title": "Fast Encoder-Based 3D from Casual Videos via Point Track Processing",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2404.07097.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5f1158120c833276f61f1a84",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg",
+      "fullname": "Niels Rogge",
+      "name": "nielsr",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 742
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2411.04983",
+      "authors": [
+        {
+          "_id": "67a0783a1b24595484396c4d",
+          "name": "Gaoyue Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67a0783a1b24595484396c4e",
+          "name": "Hengkai Pan",
+          "hidden": false
+        },
+        {
+          "_id": "67a0783a1b24595484396c4f",
+          "name": "Yann LeCun",
+          "hidden": false
+        },
+        {
+          "_id": "67a0783a1b24595484396c50",
+          "name": "Lerrel Pinto",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2024-11-07T18:54:37.000Z",
+      "title": "DINO-WM : Planification de 0-shot basée sur des caractéristiques visuelles préalablement entraînées",
+      "summary": "Le comportement de contrôle basé sur les résultats prédits est une compétence fondamentale basée sur des raisons physiques. Cependant, ces modèles de prédiction, généralement appelés 'modèles du monde', sont difficiles à entraîner, s'adaptent à des solutions spécialisées pour des tâches spécifiques et utilisent un apprentissage en ligne. Nous affirmons que le potentiel fondamental d'un 'modèle du monde' est la capacité de planifier par causalité pour aborder diverses problèmes. Spécifiquement, un 'modèle du monde' doit avoir les trois caractéristiques suivantes : 1) être entraînable en ligne sur des trajectoires recueillies préalablement, 2) soutenir l'optimisation des actions lors de l'évaluation, et 3) promouvoir des causes indépendantes de la tâche. Pour atteindre ceci, nous présentons le 'Modèle du Monde DINO' (DINO-WM). Le DINO-WM modélise la dynamique visuelle sans reconstruire le monde visuel. Il utilise des caractéristiques de motifs spatiaux prédites à partir de DINOv2 pour entraîner en ligne des trajectoires d'actions. Cette architecture permet d'optimiser des séquences d'actions pour atteindre des objectifs observés et de promouvoir des plans d'actions indépendants de la tâche grâce à la prédiction de caractéristiques de motifs objectifs. Le DINO-WM a été évalué dans diverses domaines, comme l'exploration de labyrinthes, le gestion de positions sur une table et la manipulation de particules. Les expériences montrent que le DINO-WM peut générer des solutions d'actions sans exécution préalable, indépendamment de l'orientation des guides experts, du modèle de récompense ou des modèles inverses entraînés préalablement. En particulier, comparé à la meilleure recherche actuelle, il montre une forte capacité de généralisation et sa capacité à aborder des familles de tâches différentes. Par exemple, l'exploration de labyrinthes arbitraires, la manipulation d'objets de formes différentes ou des scénarios multi-particules.",
+      "upvotes": 1,
+      "discussionId": "67a0783d1b24595484396cca"
+    },
+    "publishedAt": "2025-02-03T03:10:08.761Z",
+    "title": "DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2411.04983.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5f1158120c833276f61f1a84",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg",
+      "fullname": "Niels Rogge",
+      "name": "nielsr",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 742
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18128",
+      "authors": [
+        {
+          "_id": "679e04b792d873dfa23d0ba6",
+          "user": {
+            "_id": "647d79a736e109abce419102",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/647d79a736e109abce419102/S8Hby6eO4WdPQrct0Ix3c.png",
+            "isPro": false,
+            "fullname": "Abdurrahman Odabaşı",
+            "user": "odabashi",
+            "type": "user"
+          },
+          "name": "Abdurrahman Odabaşı",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-03T08:14:51.873Z",
+          "hidden": false
+        },
+        {
+          "_id": "679e04b792d873dfa23d0ba7",
+          "name": "Göksel Biricik",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-30T04:20:16.000Z",
+      "title": "Comprendre la nouvelle de résumé des modèles de langue",
+      "summary": "Récemment, l'introduction de modèles multilingues et la demande constante d'améliorations dans les tâches de traitement du langage naturel (NLP) ont été persistantes. Dans ce contexte, cette étude fournit des benchmarks détaillés pour 20 modèles de langage récents, avec un accent particulier sur le problème de résumé de nouvelles. Dans cette étude, la capacité et l'efficacité de ces modèles pour résumer des textes d'articles de nouvelles écrits dans différents styles sont vérifiées systématiquement. En particulier, l'étude se concentre sur l'évaluation des modèles dans des environnements d'apprentissage à partir de zéro (zero-shot learning) et avec peu d'exemples (few-shot learning), en utilisant des métriques d'évaluation automatique, d'évaluation humaine et le concept de \"LLM-as-a-judge\" comme méthodes d'évaluation robustes. Intéressamment, il a été constaté que l'inclusion d'exemples dans l'entraînement dans l'environnement de few-shot learning ne améliore pas le rendement du modèle, mais plutôt, il diminue la qualité des résumés générés. Ce problème est principalement causé par la qualité réduite des résumés générés, ce qui a un impact négatif sur le rendement du modèle. De plus, les résultats de l'étude révèlent que des modèles comme GPT-3.5-Turbo et GPT-4, avec leurs capacités développées, ont occupé une position dominante dans le domaine de l'NLP. Cependant, parmi les modèles évalués, on souligne Qwen1.5-7B, SOLAR-10.7B-Instruct-v1.0, Meta-Llama-3-8B et Zephyr-7B-Beta, qui montrent des résultats attendus et concurent avec les grands modèles, constituant des alternatives prometteuses pour aborder le problème de résumé de nouvelles.",
+      "upvotes": 0,
+      "discussionId": "679e04b892d873dfa23d0bd3"
+    },
+    "publishedAt": "2025-02-03T04:01:13.509Z",
+    "title": "Unraveling the Capabilities of Language Models in News Summarization",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18128.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "647d79a736e109abce419102",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/647d79a736e109abce419102/S8Hby6eO4WdPQrct0Ix3c.png",
+      "fullname": "Abdurrahman Odabaşı",
+      "name": "odabashi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  }
+]

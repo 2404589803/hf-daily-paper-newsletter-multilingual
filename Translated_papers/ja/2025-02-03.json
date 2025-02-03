@@ -1,0 +1,623 @@
+[
+  {
+    "paper": {
+      "id": "2501.19393",
+      "authors": [
+        {
+          "_id": "67a02dd80e751b0476a1bcc6",
+          "name": "Niklas Muennighoff",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcc7",
+          "name": "Zitong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcc8",
+          "name": "Weijia Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcc9",
+          "name": "Xiang Lisa Li",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcca",
+          "name": "Li Fei-Fei",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bccb",
+          "name": "Hannaneh Hajishirzi",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bccc",
+          "name": "Luke Zettlemoyer",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bccd",
+          "name": "Percy Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bcce",
+          "name": "Emmanuel Candès",
+          "hidden": false
+        },
+        {
+          "_id": "67a02dd80e751b0476a1bccf",
+          "name": "Tatsunori Hashimoto",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-31T18:48:08.000Z",
+      "title": "s1: 簡単なテストタイムスケーリング",
+      "summary": "テスト時スケーリングは、言語モデルに対して新しいプロミシンなアプローチです。これは、テスト時に追加した計算量を使用して性能を向上させることができます。最近、OpenAIのo1モデルはこの能力を示したが、メソッドオフを公開していませんでした。そのため、複数の再現努力が起きました。私たちは、最も簡単なアプローチを見つけ、テスト時スケーリングと強い理由論性能を達成することを目指しています。\n\nまず、私たちは、難易度、多様性、品質の3つの基準を通じて、1,000問の問題と理由論トレースを組み合わせた小さなデータセットs1Kを選択します。これを確認するために、消去試験を行います。次に、テスト時の計算量を制御するために、モデルの思考過程を強制的に終了させるもしくは、モデルが終了しようとするときに「Wait」を複数回追加して長くすることでマナジメントを行います。これにより、モデルは答えを再確認することができ、間違った理由論ステップを修正することができます。Qwen2.5-32B-Instruct言語モデルにs1Kを学習させ、マナジメントを追加した後、モデルs1はo1-previewより比較的数学問題で27%以上の改善を収めました（MATHとAIME24）。また、マナジメントを使用してs1をスケーリングすることで、テスト時の干渉を除いて性能を推定することができます：AIME24では50%から57%まで。私たちのモデル、データ、コードは、https://github.com/simplescaling/s1 でオープンソースです。",
+      "upvotes": 21,
+      "discussionId": "67a02dd90e751b0476a1bd02"
+    },
+    "publishedAt": "2025-02-02T21:45:49.841Z",
+    "title": "s1: Simple test-time scaling",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.19393.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5912
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.19324",
+      "authors": [
+        {
+          "_id": "67a04151dd7b3a4aba880589",
+          "name": "Baohao Liao",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058a",
+          "name": "Yuhui Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058b",
+          "name": "Hanze Dong",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058c",
+          "name": "Junnan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058d",
+          "name": "Christof Monz",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058e",
+          "name": "Silvio Savarese",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba88058f",
+          "name": "Doyen Sahoo",
+          "hidden": false
+        },
+        {
+          "_id": "67a04151dd7b3a4aba880590",
+          "name": "Caiming Xiong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-31T17:19:57.000Z",
+      "title": "リベンジガイドドスペクティブデコーディングを用いた効率的なLLM計算",
+      "summary": "RSD（Reward-Guided Speculative Decoding）は、大規模言語モデル（LLMs）の推論の効率化を目的とした新しいフレームワークです。RSDは軽量デフォルトモデルとより強力なターゲットモデルを協調的に組み合わせ、高報酬の出力を優先するコントロールバイアスを採用し、現在の推論デコーディング方法と比較して厳格な無偏さを強制しないことに違いがあります。RSDは過程評価モデルを使用して、中間のデコーディングステップを評価し、ターゲットモデルの呼び出しを動的に決定し、計算コストと出力品質のバランスを最適化します。理論的には、スケール利用と性能の最適なバランスを達成するためにステップ閾値ミックス戦略が最適であることが示されます。難しい理由ベンチマーク（例えばオリンピックレベルのタスク）での検証は、ターゲットモデルのみのデコーディングに対しては過去に比べて大幅な効率向上（最高4.4倍のFLOPs減少）を示し、平均的に並列デコーディングメソッドよりも显著に良い精度を達成します（最高+3.5）。これらの結果は、RSDが資源豊かなシナリオでのLLMsの採用において強固で費用効果的なアプローチとしての重要性を示しています。",
+      "upvotes": 15,
+      "discussionId": "67a04152dd7b3a4aba8805c0"
+    },
+    "publishedAt": "2025-02-02T23:10:16.068Z",
+    "title": "Reward-Guided Speculative Decoding for Efficient LLM Reasoning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.19324.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6602869253a0518b2a98cafd",
+      "avatarUrl": "/avatars/c14b5953a716f42c83ad28147f8308ae.svg",
+      "fullname": "Yuhui Xu",
+      "name": "yuhuixu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18837",
+      "authors": [
+        {
+          "_id": "67a04e7ab6fd93f91c65457b",
+          "name": "Mrinank Sharma",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65457c",
+          "name": "Meg Tong",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65457d",
+          "name": "Jesse Mu",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65457e",
+          "name": "Jerry Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65457f",
+          "name": "Jorrit Kruthoff",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654580",
+          "name": "Scott Goodfriend",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654581",
+          "name": "Euan Ong",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654582",
+          "name": "Alwin Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654583",
+          "name": "Raj Agarwal",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654584",
+          "name": "Cem Anil",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654585",
+          "name": "Amanda Askell",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654586",
+          "name": "Nathan Bailey",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654587",
+          "name": "Joe Benton",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654588",
+          "name": "Emma Bluemke",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654589",
+          "name": "Samuel R. Bowman",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458a",
+          "name": "Eric Christiansen",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458b",
+          "name": "Hoagy Cunningham",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458c",
+          "name": "Andy Dau",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458d",
+          "name": "Anjali Gopal",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458e",
+          "name": "Rob Gilson",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65458f",
+          "name": "Logan Graham",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654590",
+          "name": "Logan Howard",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654591",
+          "user": {
+            "_id": "66fc4c692408eb3bdeba876f",
+            "avatarUrl": "/avatars/66ba18ccb95d150e66d7b6930d4eb938.svg",
+            "isPro": false,
+            "fullname": "Nimit Kalra",
+            "user": "nimitkalra",
+            "type": "user"
+          },
+          "name": "Nimit Kalra",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-03T08:14:42.317Z",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654592",
+          "name": "Taesung Lee",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654593",
+          "name": "Kevin Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654594",
+          "name": "Peter Lofgren",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654595",
+          "name": "Francesco Mosconi",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654596",
+          "name": "Clare O'Hara",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654597",
+          "name": "Catherine Olsson",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654598",
+          "name": "Linda Petrini",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c654599",
+          "name": "Samir Rajani",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459a",
+          "name": "Nikhil Saxena",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459b",
+          "name": "Alex Silverstein",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459c",
+          "name": "Tanya Singh",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459d",
+          "name": "Theodore Sumers",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459e",
+          "name": "Leonard Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c65459f",
+          "name": "Kevin K. Troy",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a0",
+          "name": "Constantin Weisser",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a1",
+          "name": "Ruiqi Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a2",
+          "name": "Giulio Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a3",
+          "name": "Jan Leike",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a4",
+          "name": "Jared Kaplan",
+          "hidden": false
+        },
+        {
+          "_id": "67a04e7ab6fd93f91c6545a5",
+          "name": "Ethan Perez",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-31T01:09:32.000Z",
+      "title": "コンストラクチャル・クラスフィェーターズ：様々なUniversal Jailbreaksを防ぐために、数千時間のテストチームでの戦闘を通じて",
+      "summary": "大語言モデル（LLMs）は、普遍的なジャイルブレイク（universal jailbreaks）に脆弱です。これらはモデルのセキュリティガードをシステマティックに回避し、ユーザーが複数のモデルインターフェースを使用して損害的なプロセスを実行するための戦略です。これらの攻撃に対処するために、私たちは「憲法カテゴリファイナル」（Constitutional Classifiers）を紹介します。これらは、自然言語ルール（つまり、憲法）に基づいてシンテティックデータを生成し、LLMsにプロンプトしたもので訓練されたセキュリティガードです。3,000時間以上の推定デバッグチーム（red teaming）の結果、ほとんどすべてのターゲットクエリに対して、プレイヤーは早期のクラスファイナルガードされたLLMsから同じレベルの詳細な情報を抽出できる普遍的なジャイルブレイクを見つけませんでした。自動評価では、拡張されたクラスファイナルは、特定領域のジャイルブレイクに対して強固な防御を示しました。これらのクラスファイナルも、生産データの拒否率が絶対に0.38%増加し、推論オーバーヘッドが23.7%になりますが、実用的な機能性を維持します。私たちの研究は、普遍的なジャイルブレイクを防ぐ同時に実用的な機能性を維持することが可能であることを示しています。",
+      "upvotes": 2,
+      "discussionId": "67a04e7bb6fd93f91c6545bc"
+    },
+    "publishedAt": "2025-02-03T00:05:21.087Z",
+    "title": "Constitutional Classifiers: Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18837.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5912
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18841",
+      "authors": [
+        {
+          "_id": "67a02c75221b701e4c04da7f",
+          "name": "Wojciech Zaremba",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da80",
+          "name": "Evgenia Nitishinskaya",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da81",
+          "name": "Boaz Barak",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da82",
+          "name": "Stephanie Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da83",
+          "name": "Sam Toyer",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da84",
+          "name": "Yaodong Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da85",
+          "name": "Rachel Dias",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da86",
+          "name": "Eric Wallace",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da87",
+          "name": "Kai Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da88",
+          "name": "Johannes Heidecke",
+          "hidden": false
+        },
+        {
+          "_id": "67a02c75221b701e4c04da89",
+          "name": "Amelia Glaese",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-31T01:20:44.000Z",
+      "title": "トレーディングインフェアンスタイムコンピュートを相殺強固性に交換する",
+      "summary": "実験を行い、推論時計算量の増加が説理モデル（特にOpenAI o1-previewとo1-mini）の対戦攻撃に対する強固性に及ぼす影響を調査します。多様な攻撃において、推論時計算量の増加は強固性の向上を見出しました。多くの場合（重要な例外を除く）、テスト時計算量が増加すると攻撃が成功するモデルサンプルの割合はほぼ0になります。研究するタスクに対しては対戦訓練を行いませんでした。推論時計算量を増加させるためには、モデルが説理によって計算量を増やすことです。結果から推論時計算量が大規模言語モデルの対戦強固性向上において可能性があることを示します。また、新しい攻撃を調査し、推論時計算量が信頼性向上において効果がないシチュアンジングを調査し、その理由や解決策を検討しています。",
+      "upvotes": 2,
+      "discussionId": "67a02c76221b701e4c04daf5"
+    },
+    "publishedAt": "2025-02-02T21:40:11.158Z",
+    "title": "Trading Inference-Time Compute for Adversarial Robustness",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18841.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5912
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2404.07097",
+      "authors": [
+        {
+          "_id": "67a07a4b605a6c919dea84ec",
+          "name": "Yoni Kasten",
+          "hidden": false
+        },
+        {
+          "_id": "67a07a4b605a6c919dea84ed",
+          "name": "Wuyue Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67a07a4b605a6c919dea84ee",
+          "name": "Haggai Maron",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2024-04-10T15:37:00.000Z",
+      "title": "Fast Encoder-Based 3D from Casual Videos via Point Track Processing\n\nポイントトラック処理によるカサルビデオからの高速エンコーダーベース3D",
+      "summary": "この論文は、動的な内容を含むビデオから3D構造を再構築する長期的な課題に向けて取り組みます。現在の手法は、標準カメラで撮影されたカシュペルなビデオを対象に処理することや、長い最適化時間が必要とするものではありません。\n\n前の手法の効率を大幅に向上させることを目指し、TracksTo4Dという学習基づいたアプローチを提案します。これは、標準カメラで撮影されたカシュペルなビデオからの動的な内容から3D構造とカメラの位置を推定するための効率的なフォワードパスを使用することを可能にします。これを実現するために、2D点トラックを直接操作し、2D点トラックの処理に適したアーキテクチャを設計します。提案されたアーキテクチャは、2つのキープラインを考慮して設計されています：(1) 入力点トラックデータに存在する固有の対称性を考慮しています、(2) 動きパターンは低ランク近似を用いて効果的に表現できると仮定しています。TracksTo4Dは、カシュペルなビデオのデータセット上で無制限的に学習され、ビデオから抜き出された2D点トラックをそのみ使用し、3Dのスーパービジョンがない状態で学習されます。実験結果によると、TracksTo4Dは状態の最先端の方法と同等の精度で、時系列的な点ポリドールとカメラの位置を再構築でき、実行時間を大幅に削減できます（95%削減）。また、推論時に未見のカテゴリーの未見のビデオにもよりよく一般化しています。",
+      "upvotes": 1,
+      "discussionId": "67a07a4d605a6c919dea8555"
+    },
+    "publishedAt": "2025-02-03T03:12:19.292Z",
+    "title": "Fast Encoder-Based 3D from Casual Videos via Point Track Processing",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2404.07097.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5f1158120c833276f61f1a84",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg",
+      "fullname": "Niels Rogge",
+      "name": "nielsr",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 742
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2411.04983",
+      "authors": [
+        {
+          "_id": "67a0783a1b24595484396c4d",
+          "name": "Gaoyue Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67a0783a1b24595484396c4e",
+          "name": "Hengkai Pan",
+          "hidden": false
+        },
+        {
+          "_id": "67a0783a1b24595484396c4f",
+          "name": "Yann LeCun",
+          "hidden": false
+        },
+        {
+          "_id": "67a0783a1b24595484396c50",
+          "name": "Lerrel Pinto",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2024-11-07T18:54:37.000Z",
+      "title": "DINO-WM: 予習された視覚特徴上のワールドモデルによるゼロショットプランニング",
+      "summary": "予測未来の結果を与えた制御行動によって、物理的な理由における基本的な能力である。しかし、この予測モデル、通常は世界モデルと呼ばれるものは、学習が難しく、タスク専門的な解決策に特化して開発され、オンラインポリシー学習を用いている。私たちは、世界モデルの本質的な可能性は、それが多様な問題を理由と計画する能力を持つことにあると主張する。具體には、世界モデルは以下の3つの特性を持つ必要がある：1）オフラインで、事前収集されたトラジェクトで学習可能である、2）テスト時の行動最適化をサポートする、3）タスク無関係的な理由を促進する。これを実現するために、私たちはDINO World Model（DINO-WM）を紹介します。DINO-WMは、視覚的な世界を再構築しないための視覚的な動力学をモデル化する新しい方法です。DINO-WMは、DINOv2で予った空間パッチ特徴を利用し、オフラインの行動トラジェクトから学習することを可能にします。この設計は、行動シーケンス最適化を通じて観察的な目標を達成することを可能にし、欲しい目標パッチ特徴を予測ターゲットとして、タスク無関係的な行動計画を促進することを可能にします。DINO-WMは、迷路ナビゲーション、テーブル上のポッション、粒子操作などの様々な領域で評価されました。実験は、DINO-WMは、エキスパートの示唆、報酬モデリング、または事前学習された逆モデルを依存せず、テスト時にゼロショットの行動解決策を生成することを示しました。特に、先行の最先端の研究と比較して、強い一般化能力を示し、様々なタスクフamiliesを扱うことができることが顕著です。例えば、任意の設計の迷路、形状の異なる物体を用いたポッション操作、または多粒子シナリオなど。",
+      "upvotes": 1,
+      "discussionId": "67a0783d1b24595484396cca"
+    },
+    "publishedAt": "2025-02-03T03:10:08.761Z",
+    "title": "DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2411.04983.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5f1158120c833276f61f1a84",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg",
+      "fullname": "Niels Rogge",
+      "name": "nielsr",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 742
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2501.18128",
+      "authors": [
+        {
+          "_id": "679e04b792d873dfa23d0ba6",
+          "user": {
+            "_id": "647d79a736e109abce419102",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/647d79a736e109abce419102/S8Hby6eO4WdPQrct0Ix3c.png",
+            "isPro": false,
+            "fullname": "Abdurrahman Odabaşı",
+            "user": "odabashi",
+            "type": "user"
+          },
+          "name": "Abdurrahman Odabaşı",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-03T08:14:51.873Z",
+          "hidden": false
+        },
+        {
+          "_id": "679e04b792d873dfa23d0ba7",
+          "name": "Göksel Biricik",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-01-30T04:20:16.000Z",
+      "title": "ニュース要約における言語モデルの能力を解明する",
+      "summary": "最近、多言語モデルの導入と、自然言語処理(NLP)タスクの改善の要求が続けられていることを基に、この研究は、20つの最近の言語モデルを対象に、特にニュース要約の課題に焦点を当てて、詳細なベンチマークを提供しています。この研究では、ニュース記事の異なるスタイルで書かれたテキストを要約することでこれらのモデルの能力と効果性をシステマティックに検証しています。特に、この研究では、zero-shot学習とfew-shot学習の設定を焦点とし、自動的な評価指標、人間評価、LLM-as-a-judgeの評価概念の組み合わせを強固な評価方法として適用しています。有趣なことに、few-shot学習の設定で示唆例を含めることは、モデルの性能を向上させることではなく、生成される要約の質が悪化することを見出しました。この問題は、金書要約の質が低いための参照要約で、モデルの性能に負面影響を与えていることに主な原因です。また、本研究の結果は、GPT-3.5-TurboとGPT-4の優れた性能を特徴として、その先進的な能力によって一般的に支配的な位置を占めていることを明らかにしています。しかし、評価された公開モデルの中では、Qwen1.5-7B、SOLAR-10.7B-Instruct-v1.0、Meta-Llama-3-8B、Zephyr-7B-Betaなどのモデルが望ましい結果を示しています。これらのモデルは、大きなモデルと同等の競争力を示し、ニュース要約の課題に対しては有望な代替として位置付けされています。",
+      "upvotes": 0,
+      "discussionId": "679e04b892d873dfa23d0bd3"
+    },
+    "publishedAt": "2025-02-03T04:01:13.509Z",
+    "title": "Unraveling the Capabilities of Language Models in News Summarization",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2501.18128.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "647d79a736e109abce419102",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/647d79a736e109abce419102/S8Hby6eO4WdPQrct0Ix3c.png",
+      "fullname": "Abdurrahman Odabaşı",
+      "name": "odabashi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  }
+]
