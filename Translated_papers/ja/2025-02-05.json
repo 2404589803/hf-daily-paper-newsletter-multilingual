@@ -1,0 +1,476 @@
+[
+  {
+    "paper": {
+      "id": "2502.01362",
+      "authors": [
+        {
+          "_id": "67a2ad6ac7caec9bf5a45e61",
+          "name": "Nikita Gushchin",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ad6ac7caec9bf5a45e62",
+          "name": "David Li",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ad6ac7caec9bf5a45e63",
+          "name": "Daniil Selikhanovych",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ad6ac7caec9bf5a45e64",
+          "name": "Evgeny Burnaev",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ad6ac7caec9bf5a45e65",
+          "name": "Dmitry Baranchuk",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ad6ac7caec9bf5a45e66",
+          "name": "Alexander Korotin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-03T13:56:03.000Z",
+      "title": "逆ブリッジマッチングディスティルーション",
+      "summary": "学習ディフュージョンブリッジモデルは簡単ですが、それを高速化して実用的にするのは芸術的です。ディフュージョンブリッジモデル（DBMs）は、画像変換の適用分野でのディフュージョンモデルの有望な拡張です。しかし、多数の現代的なディフュージョンモデルとフローモデルと同様に、DBMsは推論速度の遅さに苦戦します。これに対して、私たちは逆ブリッジマッチングの公式に基づく新しい煙突技術を提案し、実用的な解決策を求めるために可計算的な目的関数を計算します。以前開発されたDBM煙突技術と異なり、提案された方法は条件付きおよび非条件付きの両方のDBMsを煙突でき、一ステップジェネレータで煙突し、そしてそれだけに破壊された画像を使用して訓練することができます。条件付きおよび非条件付きの両方のブリッジマッチングに対して広範囲の設定で評価し、スーパーレスオルティヒョン、JPEGリフターリング、スクラッチから画像への変換および他のタスクを含む、私たちの煙突技術がDBMsの推論速度を4倍から100倍まで加速し、そして特定の設定によっては教師モデルの生成質量を超えることを示します。",
+      "upvotes": 16,
+      "discussionId": "67a2ad70c7caec9bf5a45fb0"
+    },
+    "publishedAt": "2025-02-05T03:01:40.464Z",
+    "title": "Inverse Bridge Matching Distillation",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.01362.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "672503c59f68afdd63cc81a2",
+      "avatarUrl": "/avatars/91207207b56a1fc2b4a8197b1ab3a7f9.svg",
+      "fullname": "Nikita Gushchin",
+      "name": "ngushchin",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.01718",
+      "authors": [
+        {
+          "_id": "67a2d995c97974764a8c294c",
+          "name": "Huaye Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d995c97974764a8c294d",
+          "name": "Dongfu Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d995c97974764a8c294e",
+          "name": "Haozhe Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d995c97974764a8c294f",
+          "name": "Ping Nie",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d995c97974764a8c2950",
+          "name": "Xiaotong Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d995c97974764a8c2951",
+          "name": "Wenhu Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-03T18:46:04.000Z",
+      "title": "ACECODER: 自動テストケース合成による優秀なコーダーRL",
+      "summary": "最近のコードモデルの進歩は、複数の監督学習（SFT）によって駆動されていますが、強化学習（RL）の可能性は、コード領域での信頼性のある報酬データやモデルの欠如により、主に探索されていません。本論文では、この挑戦を解決するために、自動化された大規模なテストケースの合成を活用してコードモデルの訓練を強化します。特に、現在のコードデータから広範囲の（問題、テストケース）ペアを生成するパイプラインを設計します。これらのテストケースを使用して、プログラムのパス率に基づいて偏好ペアを構築し、ブライディー〜テリー損失を使用して報酬モデルを訓練します。これにより、Llama-3.1-8B-Insでは平均10点の向上、Qwen2.5-Coder-7B-Insでは5点の向上が見られます（32つのサンプリングのうち最も良い3つを選択）。また、報酬モデルとテストケースのパス報酬を用いて強化学習を実施し、HumanEval、MBPP、BigCodeBench、LiveCodeBench（V4）の各テストで統一的な向上が見られました。特に、R1スタイルの訓練を始め、Qwen2.5-Coder-baseから直接訓練を開始し、HumanEval-plusで25％以上、MBPP-plusで6％の向上が見られました（80ステップの最適化）。私たちは、コードモデルでの強化学習の巨大な可能性を高めることを信じています。",
+      "upvotes": 12,
+      "discussionId": "67a2d996c97974764a8c29a1"
+    },
+    "publishedAt": "2025-02-04T22:23:07.858Z",
+    "title": "ACECODER: Acing Coder RL via Automated Test-Case Synthesis",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.01718.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 5946
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.02492",
+      "authors": [
+        {
+          "_id": "67a2ec904ea0e3138ac966f2",
+          "user": {
+            "_id": "6181c72cdcc1df2c9de8a4d8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1655248010394-6181c72cdcc1df2c9de8a4d8.jpeg",
+            "isPro": false,
+            "fullname": "Hila Chefer",
+            "user": "Hila",
+            "type": "user"
+          },
+          "name": "Hila Chefer",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-02-05T04:44:03.218Z",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ec904ea0e3138ac966f3",
+          "name": "Uriel Singer",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ec904ea0e3138ac966f4",
+          "name": "Amit Zohar",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ec904ea0e3138ac966f5",
+          "name": "Yuval Kirstain",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ec904ea0e3138ac966f6",
+          "name": "Adam Polyak",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ec904ea0e3138ac966f7",
+          "name": "Yaniv Taigman",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ec904ea0e3138ac966f8",
+          "name": "Lior Wolf",
+          "hidden": false
+        },
+        {
+          "_id": "67a2ec904ea0e3138ac966f9",
+          "name": "Shelly Sheynin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-04T17:07:10.000Z",
+      "title": "VideoJAM: ビデオモデルでの機能性の向上を図る出現と動きの共通表現手法",
+      "summary": "最近の頃の驚異的な進歩にもかかわらず、生成ビデオモデルは実世界的な動き、動力学、および物理を捉えやすくなっていません。私たちは、この制限が伝統的なピクセル再構成の目標関数によるモデルの外観忠実性に傾き、動きの一致性に優先していることから原因であることを示します。これに対処するために、私たちはVideoJAMという新しいフレームワークを導入し、効果的な動きの先駆をビデオジェネレーターに与えることで、外観と動きの共通表現を学習させるよう提唱します。VideoJAMは2つの補間するユニットから構成されています。訓練期間には、目標関数を拡張し、生成されたピクセルとその相対的な動きを予測することによって、学習された表現からのみで行うことを目指します。推論期間には、自らの動き予測の変化を動的なガイドライン信号として利用して、動きの一致性に向けて生成を指導するInner-Guidance機構を導入します。特に、我々のフレームワークは、最小限の変更を必要としないように、訓練データやモデルのサイズに関する変更を必要としません。VideoJAMは動きの一致性において最先端の性能を収め、高度な競争力のプロプライエモリモデルを超えながら、生成物の視覚質量を向上させます。これらの発見は、外観と動きが補間的であり、それらが有効に統合されると、ビデオ生成の視覚質量と一致性を両方向上させることができることを強調します。プロジェクトウェブサイト：https://hila-chefer.github.io/videojam-paper.github.io/",
+      "upvotes": 11,
+      "discussionId": "67a2ec934ea0e3138ac9678e"
+    },
+    "publishedAt": "2025-02-04T23:46:17.626Z",
+    "title": "VideoJAM: Joint Appearance-Motion Representations for Enhanced Motion Generation in Video Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.02492.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6181c72cdcc1df2c9de8a4d8",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1655248010394-6181c72cdcc1df2c9de8a4d8.jpeg",
+      "fullname": "Hila Chefer",
+      "name": "Hila",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.02584",
+      "authors": [
+        {
+          "_id": "67a2d59fd5ad3369a66ff394",
+          "name": "Zongyu Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d59fd5ad3369a66ff395",
+          "name": "Yao Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d59fd5ad3369a66ff396",
+          "name": "Xingcheng Yao",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d59fd5ad3369a66ff397",
+          "name": "Da Yin",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d59fd5ad3369a66ff398",
+          "name": "Ziniu Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d59fd5ad3369a66ff399",
+          "name": "Yizhou Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d59fd5ad3369a66ff39a",
+          "name": "Kai-Wei Chang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-04T18:58:31.000Z",
+      "title": "QLASS: Qガイドされたステップごとの探索による言語アウトプット推論の向上",
+      "summary": "言語アガントは、複雑なインタラクティブタスクに対しての有望な解決策となってきました。アガントの成功において重要な要素の一つは、アガントワークフローにおける経路上の報酬モデルです。これは、学習や推論の際に有價のガイドを提供します。しかし、中間的なインタラクションの注釈が不足しているため、現在の多くの研究は、結果の報酬モデルを用いて、全体の経路を構成する政策を最適化しています。これは、最適な政策を得ることを妨げ、全体の性能を抑えることがあります。この問題に対処するために、QLASS（Qガイドされた言語アガントステップワイズスチールド）を提案します。QLASSは、開放言語アガントに対して、ステップごとにQ値を計算して自動的に注釈を生成します。理由の木を挙げ、プロセス報酬モデリングを行い、QLASSは各ステップに効果的な中間的ガイドを提供します。ステップごとのガイドを受けて、QLASSは、長期的な価値によるより良い適応性を持って、複雑なインタラクティブアガントタスクのモデル推論時にその性能を大幅に向上させます。特に、半分近くの注釈データを使用しても、QLASSは強い性能を維持します。また、QLASSは、定性的な分析を通じて、より有効な決策を取ることを実験的に示しました。コードとデータを公開します。",
+      "upvotes": 7,
+      "discussionId": "67a2d5a0d5ad3369a66ff3d4"
+    },
+    "publishedAt": "2025-02-04T22:08:25.652Z",
+    "title": "QLASS: Boosting Language Agent Inference via Q-Guided Stepwise Search",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.02584.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "634e4670a51d5df8c2d92fce",
+      "avatarUrl": "/avatars/c52d7150b4de6a2eb2d83b345d35cbc2.svg",
+      "fullname": "Da Yin",
+      "name": "DaYin",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.01941",
+      "authors": [
+        {
+          "_id": "67a2e2a02dd2adbc88755a47",
+          "name": "Xiang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67a2e2a02dd2adbc88755a48",
+          "name": "Zhenheng Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67a2e2a02dd2adbc88755a49",
+          "name": "Hong Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67a2e2a02dd2adbc88755a4a",
+          "name": "Peijie Dong",
+          "hidden": false
+        },
+        {
+          "_id": "67a2e2a02dd2adbc88755a4b",
+          "name": "Zeyu Li",
+          "hidden": false
+        },
+        {
+          "_id": "67a2e2a02dd2adbc88755a4c",
+          "name": "Xiuze Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67a2e2a02dd2adbc88755a4d",
+          "name": "Bo Li",
+          "hidden": false
+        },
+        {
+          "_id": "67a2e2a02dd2adbc88755a4e",
+          "name": "Xuming Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67a2e2a02dd2adbc88755a4f",
+          "name": "Xiaowen Chu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-04T02:23:06.000Z",
+      "title": "LLMはKVキャッシュの圧縮の下で基本的な能力を維持できるか？",
+      "summary": "この論文は、大規模言語モデル（LLMs）における未調査された課題を調査しています：KVキャッシュの圧縮手法がLLMsの基本的な能力に与える影響。既存の手法は、長文脈ベンチマークで驚異的な圧縮比を達成しますが、それらがコアモデル能力に与える影響はまだ調査不足です。私たちは、世界知識、常識推理、算術推理、コード生成、安全性、長文脈理解と生成の多様なタスクにおいて、領先的なKVキャッシュ圧縮手法を評価する詳細な実験結果を提供します。分析により、KVキャッシュ圧縮手法はタスクによって特に性能低下を示します。算術推理タスクは、激しい圧縮に特に敏感で、17.4%-43.3%の性能低下が見られます。特に、DeepSeek R1 Distillモデルは、指示チューニングモデルに比べて圧縮の耐性が高く、9.67%-25.53%の性能低下します。私たちは、注意パターンとクロスタスク圧縮性能の分析に基づいて、ショットレベルの意味的な一貫性を維持する同時に、プリフィルと解碼フェイズを特別に処理する新しい圧縮アプローチを提案します。実験結果により、激しい圧縮比でも長文脈生成タスクにおいて9%-18%の性能向上が実現されます。",
+      "upvotes": 6,
+      "discussionId": "67a2e2a22dd2adbc88755ab4"
+    },
+    "publishedAt": "2025-02-04T23:04:25.888Z",
+    "title": "Can LLMs Maintain Fundamental Abilities under KV Cache Compression?",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63024676056ec3a2a8714b24/XcgjmhpXd3dH6LnFZGupJ.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63024676056ec3a2a8714b24/hxWz1iVOUcE76E_K5z-B0.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.01941.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63024676056ec3a2a8714b24",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1661093436322-noauth.jpeg",
+      "fullname": "Xiang Liu",
+      "name": "Dominic789654",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.02508",
+      "authors": [
+        {
+          "_id": "67a2d1f9bc9d072d9459e857",
+          "user": {
+            "_id": "6553c985a7aded0380b5f928",
+            "avatarUrl": "/avatars/36109d6f536d2b34d98822b88eac9608.svg",
+            "isPro": false,
+            "fullname": "Maohao Shen",
+            "user": "maohaos2",
+            "type": "user"
+          },
+          "name": "Maohao Shen",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-02-05T03:00:33.470Z",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e858",
+          "name": "Guangtao Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e859",
+          "name": "Zhenting Qi",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e85a",
+          "name": "Zhang-Wei Hong",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e85b",
+          "name": "Zhenfang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e85c",
+          "name": "Wei Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e85d",
+          "name": "Gregory Wornell",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e85e",
+          "name": "Subhro Das",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e85f",
+          "name": "David Cox",
+          "hidden": false
+        },
+        {
+          "_id": "67a2d1f9bc9d072d9459e860",
+          "name": "Chuang Gan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-04T17:26:58.000Z",
+      "title": "サトリ: 行動連鎖思考を用いた強化学習でLLMを強化する\n  自動帰納的検索による理由論理",
+      "summary": "大型言語モデル（LLMs）は、多様な領域で驚異的な理由論能力を示しています。最近の研究により、テスト時の計算量の増加がLLMsの理由論能力を向上させることがわかりました。これは通常、推論時に外部のLLMバリデーターによる広範囲のサンプリングを含むもので、これにより2プレイヤーシステムが形成されます。外部のガイドがあるにも関わらず、このシステムの効果性は、単一のLLMが複雑なタスクを手に入れることができることを示しています。そこで、私たちは新しい研究問題を提案します：単一のLLMの理由論能力を根本的に向上させるために、探索能力を内部化することができるか？この研究は、自動協調的探索（即、自己反省と新しい戦略の自己探索を含む拡張された理由論プロセス）に焦点を当てた、後学習のLLMsを中心とする正交方向に取り組みます。これを実現するために、Chain-of-Action-Thought（COAT）理由論と2ステップの学習パラダイムを提案します：1）COAT理由論の形式を内部化する小規模フォーマットチューニングステップと、2）大規模な自己改善ステップでの強化学習を活用します。私たちのアプローチにより、Satoriという7B LLMが開放ソースモデルとデータによって訓練されました。拡張的な実験評価により、Satoriは数学的な理由論ベンチマークで最先端の性能を達成し、領域外タスクに強い一般化能力を示しています。コード、データ、モデルは完全に開放ソースになります。",
+      "upvotes": 5,
+      "discussionId": "67a2d1fcbc9d072d9459e91b"
+    },
+    "publishedAt": "2025-02-04T21:55:09.693Z",
+    "title": "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.02508.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60ad0de755f970745d4ec28d",
+      "avatarUrl": "/avatars/b0de0222b8ed5fdac8dc7cb0336d2ec7.svg",
+      "fullname": "GtZeng",
+      "name": "chaoscodes",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 11
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.01720",
+      "authors": [
+        {
+          "_id": "67a2fddb4044bf1c86f765a3",
+          "name": "Nupur Kumari",
+          "hidden": false
+        },
+        {
+          "_id": "67a2fddb4044bf1c86f765a4",
+          "name": "Xi Yin",
+          "hidden": false
+        },
+        {
+          "_id": "67a2fddb4044bf1c86f765a5",
+          "name": "Jun-Yan Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67a2fddb4044bf1c86f765a6",
+          "name": "Ishan Misra",
+          "hidden": false
+        },
+        {
+          "_id": "67a2fddb4044bf1c86f765a7",
+          "name": "Samaneh Azadi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-03T18:59:41.000Z",
+      "title": "マルチイメージシンテティックデータの生成におけるテキストから画像のカスタマイズ",
+      "summary": "テキストモデルのカスタマイズ化使用者がカスタム概念を挿入し、見たことのない設定でその概念を生成できるようにすることができます。現在の方法は、コスト高いテスト時最適化を依存しているか、または、単一画像のトレーニングデータセットでエンコーダーをトレーニングしているため、画像の質が悪くなることがあります。私たちは両方の制限を解決する簡単なアプローチを提案します。まず、既存のテキストから画像モデルと3Dデータセットを利用して、同じ物体の様々な照明、背景、姿勢の画像を含む高品質の合成カスタマイズデータセット（SynCD）を作成します。次に、共有アテンション機構に基づいた新しいエンコーダーアーキテクチャを提案し、入力画像からより細かい可視的詳細をより良く組み込むことを目指します。最後に、推論時のオーバーエクスポーション問題を軽減するために、テキストと画像ガイドベクトルを正規化する新しい推論手法を提案します。拡張された実験で、提案されたエンコーダーと推論アルゴリズムを用いた合成データセットでトレーニングされたモデルが、標準的なカスタマイズバーチャーで現在のトーンフリー方法を上回ることを示します。",
+      "upvotes": 2,
+      "discussionId": "67a2fde34044bf1c86f767ba"
+    },
+    "publishedAt": "2025-02-05T00:59:11.275Z",
+    "title": "Generating Multi-Image Synthetic Data for Text-to-Image Customization",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.01720.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62f6a894c3372328414c7021",
+      "avatarUrl": "/avatars/e8b10912355712f38f10805c31bea962.svg",
+      "fullname": "Nupur Kumari",
+      "name": "nupurkmr9",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  }
+]
