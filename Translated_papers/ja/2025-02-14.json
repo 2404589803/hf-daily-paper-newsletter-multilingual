@@ -1,0 +1,1339 @@
+[
+  {
+    "paper": {
+      "id": "2502.08910",
+      "authors": [
+        {
+          "_id": "67aebd48225614bbe7f6f271",
+          "user": {
+            "_id": "62e622d08e0b2dc6707f8794",
+            "avatarUrl": "/avatars/8c47b5c862f82d4258ba707c932f7f87.svg",
+            "isPro": false,
+            "fullname": "Heejun Lee",
+            "user": "gmlwns5176",
+            "type": "user"
+          },
+          "name": "Heejun Lee",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:15.423Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aebd48225614bbe7f6f272",
+          "user": {
+            "_id": "646cae3093badbc8c2e891c7",
+            "avatarUrl": "/avatars/4aae2aca70ea9dc58dd6f9f9b2be15e1.svg",
+            "isPro": false,
+            "fullname": "Geon Park",
+            "user": "geonp",
+            "type": "user"
+          },
+          "name": "Geon Park",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:12.988Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aebd48225614bbe7f6f273",
+          "name": "Jaduk Suh",
+          "hidden": false
+        },
+        {
+          "_id": "67aebd48225614bbe7f6f274",
+          "name": "Sung Ju Hwang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T02:52:01.000Z",
+      "title": "InfiniteHiP: 1グラフィックポータル上で300万トークンの言語モデルコンテキストを拡張する",
+      "summary": "現代の大規模言語モデル（LLMs）では、非常に長いコンテキスト長を処理することには、推論速度の減速とメモリコストの増加が大きな課題です。また、現存する多くの事前学習されたLLMsは、元の学習シーケンス長を超えた場合に一般化できないことがあります。長コンテキストの効率的な実践的な利用を可能にするために、ここでは、新しいモジュール化ヒューリスティクストークンプリニングアルゴリズムを通じて、関連なしのコンテキストトークンを動的に削除することで処理速度を加速するInfiniteHiPフレームワークを紹介します。我々の方法は、LLMの内部の注意パターンに応じて、様々なRoPE調整方法を選択的に適用することで、長いシーケンスへの一般化を可能にします。また、推論時にキーバリューキャッシュをホストメモリにオフラインし、GPUメモリプレッシャーを大幅に減少させます。このように、InfiniteHiPは、1つのL40s 48GB GPUで300万トークンの処理を可能にし、コンテキスト情報の永久的な損失をなくしています。我々のフレームワークは、100万トークンのコンテキストでの注意の解码速度に18.95倍のスピードアップを達成し、追加の学習を必要としません。我々の方法はSGLangフレームワークに実装され、様々な評価により、その効果性と実践性を示します。",
+      "upvotes": 43,
+      "discussionId": "67aebd4a225614bbe7f6f2d6"
+    },
+    "publishedAt": "2025-02-13T22:57:03.709Z",
+    "title": "InfiniteHiP: Extending Language Model Context Up to 3 Million Tokens on a Single GPU",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/646cae3093badbc8c2e891c7/upRSt7mdOUX5vJZTWKG8D.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.08910.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "646cae3093badbc8c2e891c7",
+      "avatarUrl": "/avatars/4aae2aca70ea9dc58dd6f9f9b2be15e1.svg",
+      "fullname": "Geon Park",
+      "name": "geonp",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.08690",
+      "authors": [
+        {
+          "_id": "67aec0a203bf3301ec29ac39",
+          "user": {
+            "_id": "633e6f07309a99325095dd42",
+            "avatarUrl": "/avatars/57b91a488ac1745b3c0509c04eb6ad93.svg",
+            "isPro": false,
+            "fullname": "Hoigi Seo",
+            "user": "Agorium",
+            "type": "user"
+          },
+          "name": "Hoigi Seo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:10.420Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aec0a203bf3301ec29ac3a",
+          "name": "Wongi Jeong",
+          "hidden": false
+        },
+        {
+          "_id": "67aec0a203bf3301ec29ac3b",
+          "name": "Jae-sun Seo",
+          "hidden": false
+        },
+        {
+          "_id": "67aec0a203bf3301ec29ac3c",
+          "name": "Se Young Chun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-12T15:03:26.000Z",
+      "title": "スクリー：メモリエフェクティブなテキストエンコーダーレイヤーをスキップして再利用するテキストから画像生成",
+      "summary": "大規模文脈エンコーダーは、文脈プロンプトから高品質の画像を生成するために、テキストから画像（T2I）の拡散モデルでは、例外的な性能を示しています。デノイズモジュールは、複数の迭り返しステップを依存しているのに対して、文脈エンコーダーは、シングルの前向きパスでテキスト埋め込みを生成する必要があります。しかし、総計の推論時間と浮動小数点計算（FLOPs）に対して、文脈エンコーダーは、デノイズモジュールよりも大幅に高いメモリ使用量を要求します。この不適切さを解決するために、我々は、T2I拡散モデルの文脈エンコーダーに特に設計された簡単で効果的な削減戦略であるスキップと再利用層（Skrr）を提案します。Skrrは、トランジフォーマーブロックの内在的な過剰性を利用し、T2Iタスクに合わせたような特定のレイヤーを選択的にスキップまたは再利用することで、メモリ消費量を減少させ、性能を犠牲にしないように設計されています。拡張された実験により、Skrrは高いスパースレベルでも元のモデルと比較的画像質を維持し、現在のブロックごとの削減方法よりも優れています。また、Skrrは、FID、CLIP、DreamSim、GenEvalスコアなどの複数の評価指標で性能を維持しながら、最先端のメモリ効率を達成しています。",
+      "upvotes": 24,
+      "discussionId": "67aec0a903bf3301ec29adf3"
+    },
+    "publishedAt": "2025-02-13T23:10:44.295Z",
+    "title": "Skrr: Skip and Re-use Text Encoder Layers for Memory Efficient Text-to-Image Generation",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.08690.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "633e6f07309a99325095dd42",
+      "avatarUrl": "/avatars/57b91a488ac1745b3c0509c04eb6ad93.svg",
+      "fullname": "Hoigi Seo",
+      "name": "Agorium",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09604",
+      "authors": [
+        {
+          "_id": "67aeac4f2d48d9bf7728334e",
+          "user": {
+            "_id": "5df84571da6d0311fd3d5407",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1650651305661-5df84571da6d0311fd3d5407.png",
+            "isPro": false,
+            "fullname": "Yung-Sung Chuang",
+            "user": "voidism",
+            "type": "user"
+          },
+          "name": "Yung-Sung Chuang",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-02-14T02:37:32.909Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf7728334f",
+          "user": {
+            "_id": "639aaf82a4c528850bba2bfe",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/639aaf82a4c528850bba2bfe/nn23r8bsNiOJzVUxAPfo7.png",
+            "isPro": false,
+            "fullname": "Benjamin Cohen-Wang",
+            "user": "bencw",
+            "type": "user"
+          },
+          "name": "Benjamin Cohen-Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:17.696Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283350",
+          "name": "Shannon Zejiang Shen",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283351",
+          "user": {
+            "_id": "6351712b40dffad651f128c7",
+            "avatarUrl": "/avatars/87708c86c1baef548ef556f5d32dca71.svg",
+            "isPro": false,
+            "fullname": "Zhaofeng Wu",
+            "user": "ZhaofengWu",
+            "type": "user"
+          },
+          "name": "Zhaofeng Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:19.691Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283352",
+          "name": "Hu Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283353",
+          "name": "Xi Victoria Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283354",
+          "name": "James Glass",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283355",
+          "name": "Shang-Wen Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283356",
+          "name": "Wen-tau Yih",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:55:13.000Z",
+      "title": "SelfCite: 自己のサブジェクト調整による大規模言語モデルでのコンテキスト責任付与",
+      "summary": "SelfCiteは、生成されたレスポンスの文脈に対して、高品質で細かい文書レビューを生成するための新しい自動調教手法を紹介します。SelfCiteは、高額で労力費用のある記記語記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記記",
+      "upvotes": 19,
+      "discussionId": "67aeac502d48d9bf77283380"
+    },
+    "publishedAt": "2025-02-13T21:42:37.926Z",
+    "title": "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/5df84571da6d0311fd3d5407/YmJO6H2Wa0ZVw31qeHZi0.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09604.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5df84571da6d0311fd3d5407",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1650651305661-5df84571da6d0311fd3d5407.png",
+      "fullname": "Yung-Sung Chuang",
+      "name": "voidism",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09620",
+      "authors": [
+        {
+          "_id": "67aeec91b1bbfb68824df5d1",
+          "user": {
+            "_id": "6552f1ad5d55ccb20e9142a0",
+            "avatarUrl": "/avatars/0e3e80cba64b5ae0bc5638694ac33dbf.svg",
+            "isPro": false,
+            "fullname": "Ivan Tang",
+            "user": "IvanTang",
+            "type": "user"
+          },
+          "name": "Yiwen Tang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:00:57.216Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d2",
+          "name": "Zoey Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d3",
+          "name": "Zhuhao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d4",
+          "name": "Ray Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d5",
+          "name": "Qizhi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d6",
+          "name": "Junli Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d7",
+          "user": {
+            "_id": "64daecec888b7e9c400f59b5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64daecec888b7e9c400f59b5/f4pfOfWk6jYJX-Nf2-qHn.png",
+            "isPro": false,
+            "fullname": "Delin Qu",
+            "user": "delinqu",
+            "type": "user"
+          },
+          "name": "Delin Qu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:00:55.263Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d8",
+          "name": "Zhigang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d9",
+          "name": "Dong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5da",
+          "name": "Xuelong Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5db",
+          "name": "Bin Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:45.000Z",
+      "title": "探索ディープラーニングモデルの潜力を見つけるために、3D LMMsのEncoder-freeアーキテクチャーについて調査します。",
+      "summary": "エンコーダー無しアーキテクチャは、2次元可視領域では初步的に検討されましたが、3次元理解シナリオにどのように効果的に適用できるかは開放的な問題です。本論文では、3次元大規模多タイプモデル（LMMs）におけるエンコーダー無しアーキテクチャの可能性を最初に詳細に調査します。これらの挑戦は、点雲の変動する解像度に適応できないことと、エンコーダーからの点特徴が大規模言語モデル（LLMs）の語義的な需要に合わないことを含みます。3次元LMMsにおいてエンコーダーを除去しLLMが3次元エンコーダーの役割を果たすことを可能にするための重要な面では、1) 予ち練習ステージでLLMを埋め込みした語義エンコーディング戦略を提案し、点雲の自動認識損失の効果を調査します。また、高レベルの語義を抽出するために、統合的語義損失を紹介します。2) 指令チューニングステージでは、ヒューリスティックなジオメトリアグレギー戦略を導入し、LLMの早期層に導入して点雲の局所的な詳細を焦点化します。最終的に、エンコーダー無し3次元LMMの最初の例を紹介します。我々の7Bモデルは現在の最先端モデル、ShapeLLM-13Bと競い合い、分類、キャプチング、VQAタスクにおいては55.0%、50.92%、42.7%を収めました。我々の結果は、3次元理解領域でエンコーダー無しアーキテクチャがエンコーダー基準アーキテクチャを置き換えることができるかどうかを明らかにしています。コードはhttps://github.com/Ivan-Tang-3D/ENELでリリースされています。",
+      "upvotes": 17,
+      "discussionId": "67aeec92b1bbfb68824df61f"
+    },
+    "publishedAt": "2025-02-14T02:27:45.749Z",
+    "title": "Exploring the Potential of Encoder-free Architectures in 3D LMMs",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09620.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "647d9ab61a1fcad2fdbf2d3d",
+      "avatarUrl": "/avatars/48c8aeae8979d2c87df8bde922437d62.svg",
+      "fullname": "Ziyu Guo",
+      "name": "ZiyuG",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09082",
+      "authors": [
+        {
+          "_id": "67aee90c208d299238758622",
+          "name": "Xintao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758623",
+          "name": "Heng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758624",
+          "name": "Yifei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758625",
+          "name": "Xinfeng Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758626",
+          "name": "Rui Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758627",
+          "name": "Jen-tse Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758628",
+          "name": "Siyu Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758629",
+          "name": "Haoran Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d29923875862a",
+          "name": "Jiangjie Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d29923875862b",
+          "name": "Wei Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d29923875862c",
+          "name": "Yanghua Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d29923875862d",
+          "name": "Shuchang Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T08:55:24.000Z",
+      "title": "CoSER: 既存の役割に基づくLLMベースのパーソナシミュレーションの協調",
+      "summary": "ロールプレイティング言語アウトプット（RPLAs）は、大規模言語モデル（LLMs）の有望なアプリケーションとして登場しました。しかし、既存のキャラクターをシミュレートすることは、RPLAsにとっては、真実的なキャラクターデータセットの欠如と、そのデータを用いる微妙な評価方法の欠如によって難しい任務となっています。本論文では、既存のキャラクターの効果的なRPLAsを目指した高品質のデータセット、開放モデル、評価プロトコルを提供します。CoSERデータセットは771部の有名な本から17,966人のキャラクターを収録しています。このデータセットは、実世界的な複雑性を持つ真実的なダイアローグ、会話の設定、キャラクターの経験および内部的な思い出など、多様なデータタイプを提供しています。演技の方法をベースに、ロールプレイティングLLMsの訓練と評価にもたらした給与状況演技を導入しました。このデータセットをベースに、LLaMA-3.1モデルを用いて進歩的な開放ロールプレイティングLLMs、CoSER 8BとCoSER 70Bを開発しました。拡大の実験は、CoSERデータセットのRPLA訓練、評価、検索の値を示しました。また、CoSER 70Bは我々の評価と3つの既存のベンチマークで最先端の性能を示し、InCharacterベンチマークで75.80%、LifeChoiceベンチマークで93.47%の精度を達成しました。",
+      "upvotes": 15,
+      "discussionId": "67aee90f208d2992387586d1"
+    },
+    "publishedAt": "2025-02-14T02:50:35.108Z",
+    "title": "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09082.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64c7bf2c4524c2aea7eac0b3",
+      "avatarUrl": "/avatars/03e432e05c0f711cfe32fc07f195e11e.svg",
+      "fullname": "Xintao Wang",
+      "name": "Neph0s",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09056",
+      "authors": [
+        {
+          "_id": "67aea8d7926b659c7e959bbc",
+          "name": "Kunat Pipatanakul",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8d7926b659c7e959bbd",
+          "user": {
+            "_id": "615313b0793ef66b3324da1f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/615313b0793ef66b3324da1f/VyJniD3dxbV5a2CMgVVQ2.jpeg",
+            "isPro": false,
+            "fullname": "Pittawat Taveekitworachai",
+            "user": "pittawat",
+            "type": "user"
+          },
+          "name": "Pittawat Taveekitworachai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:21.838Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8d7926b659c7e959bbe",
+          "name": "Potsawee Manakul",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8d7926b659c7e959bbf",
+          "name": "Kasima Tharnpipitchai",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T08:10:45.000Z",
+      "title": "1日で言語特化モデルを理由論モデルに適用するためのオープンレシピ：モデル統合による適応",
+      "summary": "この論文は、DeepSeek R1のような先進的な理由論能力を言語特有の大語言モデル（LLMs）に統合するためのデータ選択とモデル統合手法に関する研究を行い、特にタイのLLMに焦点を当てています。私たちの目標は、言語特有のLLMsの理由論能力を向上させながら、それらの目標言語能力を維持することです。DeepSeek R1は理由論に優れていますが、主に英語と中国語のような豊富なリソース言語に利益を得ます。しかし、英語中心的なトレーニングデータとモデル最適化の優位性により、低リソース言語はこれらの言語の性能を制限しています。この制限は、言語間のコードスイッチの不信頼性と低リソース言語のタスクに対する効果性の低下につながります。一方、地域的なLLMイニシアティブは、言語特有のLLMの開発を通じてこの間違いを埋めることを試みています。私たちは、公開的なデータセットと$120の計算マナーズで、言語特有のLLMsの理由論能力をDeepSeek R1のレベルに向上させることが可能であることを示し、その目標言語タスクの性能を維持しない限りです。",
+      "upvotes": 15,
+      "discussionId": "67aea8d8926b659c7e959bee"
+    },
+    "publishedAt": "2025-02-13T22:01:48.364Z",
+    "title": "An Open Recipe: Adapting Language-Specific LLMs to a Reasoning Model in One Day via Model Merging",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09056.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6082
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.06608",
+      "authors": [
+        {
+          "_id": "67aebe57f47426f753bc3b07",
+          "name": "Yangguang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b08",
+          "name": "Zi-Xin Zou",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b09",
+          "name": "Zexiang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0a",
+          "name": "Dehu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0b",
+          "name": "Yuan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0c",
+          "name": "Zhipeng Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0d",
+          "name": "Xingchao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0e",
+          "name": "Yuan-Chen Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0f",
+          "name": "Ding Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b10",
+          "name": "Wanli Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b11",
+          "name": "Yan-Pei Cao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-10T16:07:54.000Z",
+      "title": "TripoSG: 高品質な3D形状合成を行う大規模な正規化フローモデルを使用して",
+      "summary": "最近の拡散手法の進歩は、画像とビデオの生成にとって前所未聞の品質を達成し、生成AIの採用と応用を大幅に加速しました。しかし、3D形状生成技術はまだ遅れています。3Dデータのスケール、3Dデータ処理の複雑性、3D領域の先進技術の不足が制約をかけています。現在の3D形状生成のアプローチは、出力品質、一般化能力、入力条件との一致性について大きな挑戦を受けています。我々は、TripoSG、新しいストリームライン化された形状拡散パラダイムを提案します。これは、入力画像に対する正確な対応を持つ高品質の3Dメッシュを生成することができます。具体的には、以下の3つの点を提案します：1) 大規模な正規化フロートランスフォーマガーを用いた3D形状生成、様々な高品質データによる訓練で最先端の品質を達成します。2) SDF、ノルマル、エイコーナル損失を組み合わせた統計的監視訓練戦略を用いた3D VAEの高品質3D再構成性能を実現します。3) 200万件の高品質3Dサンプルを生成するデータ処理プイルプリングを提案し、3D生成モデルの訓練におけるデータの品質と量の重要なルールを明らかにします。詳細な実験で、新しいフレームワークの各コンポーネントの効果性を検証しました。これらの部分の無間の統合により、TripoSGは3D形状生成に最先端の性能を達成しました。結果として、高解像度能力によるデタイルの向上が見られ、入力画像に対する例外的な品質を示します。また、TripoSGは、多様な画像スタイルと内容からの3Dモデルの生成において強力な一般化能力を示し、多様性を向上させます。3D生成領域の進歩とイノベーションを促進するために、我々はモデルを公開的に提供します。",
+      "upvotes": 11,
+      "discussionId": "67aebe5ef47426f753bc3d31"
+    },
+    "publishedAt": "2025-02-13T22:56:23.567Z",
+    "title": "TripoSG: High-Fidelity 3D Shape Synthesis using Large-Scale Rectified Flow Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.06608.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64d71083a787c9bc7b9f1238",
+      "avatarUrl": "/avatars/d0b0546dec7fc5792921154bec41385a.svg",
+      "fullname": "YG",
+      "name": "Lp256",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09100",
+      "authors": [
+        {
+          "_id": "67aeb0a3d58f4990b384d83e",
+          "name": "Hanmeng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d83f",
+          "name": "Zhizhang Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d840",
+          "name": "Mengru Ding",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d841",
+          "user": {
+            "_id": "62e47d1b6a82e063860c587e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62e47d1b6a82e063860c587e/jvFt1caSZNWDQTYKZQ9K-.jpeg",
+            "isPro": false,
+            "fullname": "ruoxining",
+            "user": "ruoxining",
+            "type": "user"
+          },
+          "name": "Ruoxi Ning",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-02-14T06:28:50.414Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d842",
+          "name": "Chaoli Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d843",
+          "name": "Xiaozhang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d844",
+          "name": "Yue Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T09:19:14.000Z",
+      "title": "大語言モデルのロジック推理：概覧",
+      "summary": "最新の先進的な推論モデル（例：OpenAI o3、DeepSeek-R1）が登場したことにより、大規模言語モデル（LLMs）は驚異的な推論能力を示している。しかし、それらが厳密なロジカル推論を行う能力は未解決の問題である。この調査では、LLMsのロジカル推論領域の最近の進展を合成し、AI研究の重要な分野であるこの領域における論理推論の範囲、理論的基礎、ロジカル推論の実践力を評価するベンチマークを説明している。これらのモデルの現在の能力を、演繹的、推論的、推論的、アナロジー的な推論パラダイムの各種において分析し、推論性能を向上させるための戦略（データセンタリッドチューニング、強化学習、解碼戦略、ニューロサイボードアプローチ）を評価している。レビューは、AIシステムのロジカル推論を強化するための進展方向を明らかにし、さらなる探索が必要とすることを強調して終わります。",
+      "upvotes": 11,
+      "discussionId": "67aeb0a4d58f4990b384d871"
+    },
+    "publishedAt": "2025-02-13T21:55:58.708Z",
+    "title": "Logical Reasoning in Large Language Models: A Survey",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09100.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6082
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09621",
+      "authors": [
+        {
+          "_id": "67aee0229e69670f49533146",
+          "user": {
+            "_id": "6349214f8146350b3a4c5cdf",
+            "avatarUrl": "/avatars/cfd24caac9a87efb528d0f4c375932bc.svg",
+            "isPro": false,
+            "fullname": "Dongzhi Jiang",
+            "user": "CaraJ",
+            "type": "user"
+          },
+          "name": "Dongzhi Jiang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:05.736Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533147",
+          "name": "Renrui Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533148",
+          "name": "Ziyu Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533149",
+          "name": "Yanwei Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314a",
+          "name": "Yu Qi",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314b",
+          "name": "Xinyan Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314c",
+          "name": "Liuhui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314d",
+          "name": "Jianhan Jin",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314e",
+          "name": "Claire Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314f",
+          "name": "Shen Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533150",
+          "name": "Bo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533151",
+          "name": "Chaoyou Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533152",
+          "name": "Peng Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533153",
+          "name": "Hongsheng Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:46.000Z",
+      "title": "MME-CoT: 大規模多模態モデルでのChain-of-Thoughtの評価における理由質、強固性、および効率性",
+      "summary": "Chain-of-Thought (CoT) で質問を答えることで、Large Language Models (LLMs) の理由論の能力が大幅に向上しましたが、その影響が Large Multimodal Models (LMMs) にどのように影響を与えているかは、系統的な評価と詳細な調査が不足しています。本論文では、MME-CoT という、LMMs の CoT 理由論の性能を評価する特殊化ベンチマークを紹介します。このベンチマークは、数学、科学、OCR、ロジック、時空、一般の場面の6つの領域を収めています。これは、この分野で最初の全面的な研究であり、理由論の質、強固性、エフエクティブさを詳細なレベルで評価する3つの新しいメトリックを採用した詳細な評価シートを提案します。高品質のデータと特別な評価戦略を活用し、最先端のLMMsについて詳細な分析を行い、以下のような重要なヒントを明らかにしました：1) 反省機能を持つモデルは、Kimi k1.5がGPT-4oを上回り、最高の質の結果を示しました；2) CoTプロンプティングは、観察力の重視されたタスクにおいてLMMの性能を低下させ、潜在的に有害な過度考えの行為を示します；3) その他、CoTの質が高いのに対して、反省を示すLMMsは、通常のレスポンスおよび自己補正フェーズでも显著な不適切さを示します。MME-CoTは、LMMsの多模様理由論の進歩を促進する基盤として役立つことを望みます。プロジェクトページ：https://mmecot.github.io/",
+      "upvotes": 10,
+      "discussionId": "67aee0249e69670f495331d8"
+    },
+    "publishedAt": "2025-02-14T01:34:58.800Z",
+    "title": "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09621.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6349214f8146350b3a4c5cdf",
+      "avatarUrl": "/avatars/cfd24caac9a87efb528d0f4c375932bc.svg",
+      "fullname": "Dongzhi Jiang",
+      "name": "CaraJ",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09042",
+      "authors": [
+        {
+          "_id": "67aea8c94d4cb38be4a40c55",
+          "user": {
+            "_id": "615313b0793ef66b3324da1f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/615313b0793ef66b3324da1f/VyJniD3dxbV5a2CMgVVQ2.jpeg",
+            "isPro": false,
+            "fullname": "Pittawat Taveekitworachai",
+            "user": "pittawat",
+            "type": "user"
+          },
+          "name": "Pittawat Taveekitworachai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:24.073Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8c94d4cb38be4a40c56",
+          "name": "Potsawee Manakul",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8c94d4cb38be4a40c57",
+          "name": "Kasima Tharnpipitchai",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8c94d4cb38be4a40c58",
+          "name": "Kunat Pipatanakul",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T07:55:54.000Z",
+      "title": "台風T1: 開放タイ論理モデル",
+      "summary": "この論文では、Typhoon T1という、開放的な泰国語の理由モデルの開発を目的とした開放的な試みを紹介します。理由モデルは、大規模な言語モデル（LLMs）の上に構築された新しいタイプの生成モデルです。理由モデルは、最終的な答えに到達するまで長い思いつきの鏈を生成します。このアプローチは複雑なタスクに対する性能向上において有用であることが調査されています。しかし、このようなモデルの開発に関する詳細は限られており、特に低リソース言語で理由ツレースを生成できる理由モデルについては、これらの詳細が限られています。Typhoon T1は、オープンデータセットを用いた規範的な微調校を活用して、コスト効率的な方法で理由モデルの開発を詳細に調査する開放的な試みです。この論文では、合成データの生成とトレーニング、およびデータセットとモデルの重みに関する詳細を共有します。また、ディスカーダーネスを拡張し、低リソース言語で理由ツレースを生成できる理由モデルの開発における得られたフィードバックを提供します。私たちは、この開放的な試みがこの分野の進展につながる基盤となることを望むと考えています。",
+      "upvotes": 10,
+      "discussionId": "67aea8ca4d4cb38be4a40cab"
+    },
+    "publishedAt": "2025-02-14T01:29:44.233Z",
+    "title": "Typhoon T1: An Open Thai Reasoning Model",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09042.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "615313b0793ef66b3324da1f",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/615313b0793ef66b3324da1f/VyJniD3dxbV5a2CMgVVQ2.jpeg",
+      "fullname": "Pittawat Taveekitworachai",
+      "name": "pittawat",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09560",
+      "authors": [
+        {
+          "_id": "67aec4285b9801b819449b84",
+          "name": "Rui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b85",
+          "user": {
+            "_id": "6700b1f93381f2db06857fb5",
+            "avatarUrl": "/avatars/c8b9ec7c00773c5a4055ba50de0c6b2f.svg",
+            "isPro": false,
+            "fullname": "Hanyang Chen",
+            "user": "Hanyang81",
+            "type": "user"
+          },
+          "name": "Hanyang Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:08.365Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b86",
+          "name": "Junyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b87",
+          "name": "Mark Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b88",
+          "name": "Cheng Qian",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b89",
+          "name": "Kangrui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8a",
+          "name": "Qineng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8b",
+          "name": "Teja Venkat Koripella",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8c",
+          "name": "Marziyeh Movahedi",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8d",
+          "name": "Manling Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8e",
+          "name": "Heng Ji",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8f",
+          "name": "Huan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b90",
+          "name": "Tong Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:11:34.000Z",
+      "title": "EmbodiedBench: 視覚をドライブするEmbodiedアガント向けの多様な言語モデルの全面的なベンチマーク",
+      "summary": "多モデル大語言モデル（MLLMs）を利用して具象化アガントを作成することは、実世界的なタスクを解決するための有望な道筋です。言語中心的な具象化アガントは相当の注目を集めていますが、MLLMベースの具象化アガントは評価フレームワークの欠陥により調査が不足しています。この隙を埋めるために、ここではEmbodiedBenchを紹介します。EmbodiedBenchは、視覚をドライブした具象化アガントの評価を行うための幅広いベンチマークです。EmbodiedBenchの特徴は以下の通りです：1）4つの環境での1,128タスクの多様性、高レベルの語義的タスク（例：家庭）から低レベルのアクションを含むタスクまで；2）常識的推理、複雑な指示の理解、空間認識、視覚認識、長期計画などのアガントの基本的な能力を評価する6つの細かく選ばれたサブセットです。広範囲の実験を通じて、EmbodiedBenchでは13つの先進的なプロプライエーチャーと開放ソースのMLLMsを評価しました。これらの結果は、MLLMsは高レベルのタスクでは優れていますが、低レベルの操作には苦戦しています。最も良いモデルであるGPT-4oは平均でその点では28.9%でした。EmbodiedBenchは、現在の課題を明らかにしながら、MLLMベースの具象化アガントの進歩に役立つ有價値なアインサイドを提供します。コードはhttps://embodiedbench.github.ioにアクセスできます。",
+      "upvotes": 9,
+      "discussionId": "67aec42b5b9801b819449bf5"
+    },
+    "publishedAt": "2025-02-13T23:23:42.492Z",
+    "title": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09560.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64d45451c34a346181b130dd",
+      "avatarUrl": "/avatars/9bb8205b889337df5d321539c9b5d69d.svg",
+      "fullname": "Rui Yang",
+      "name": "Ray2333",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09601",
+      "authors": [
+        {
+          "_id": "67aed173e6952709b47c0c5c",
+          "name": "Xinyin Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67aed173e6952709b47c0c5d",
+          "name": "Guangnian Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67aed173e6952709b47c0c5e",
+          "name": "Runpeng Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67aed173e6952709b47c0c5f",
+          "name": "Gongfan Fang",
+          "hidden": false
+        },
+        {
+          "_id": "67aed173e6952709b47c0c60",
+          "name": "Xinchao Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:52:36.000Z",
+      "title": "CoT-Valve: 長さ可変性の思考連鎖調整",
+      "summary": "Chain-of-Thoughtはモデルの理由能力を大幅に向上させますが、長いチェーンにより推論コストが大幅に上昇します。理由パスが容易なタスクで簡単に圧縮できることを観察し、難しいタスクでは困難になることを見出し、一つのモデルで理由パスの長さを弾性的に制御できるかどうかを調査し、タスクの難易度に応じて理由モデルの推論オーバーヘッドを減少する可能性を調査しました。新しい調整と推論戦略をCoT-Valveとして紹介し、理由連鎖の長さを変化させることを可能にするものとしています。これを実現するために、パラメータ空間の方向を特定し、その操作で生成されるCoTの長さを有効に制御できることを示します。また、この特性は理由連鎖の圧縮にも価値があることを示します。同じ質問からの長いから短いチェーンを持つデータセットを構築し、CoT-Valveの2つの拡張戦略を探索しました：(1) 正確な長さ圧縮可能なCoT調整方法、(2) 進歩的な連鎖長さ圧縮アプローチ。実験により、CoT-Valveは連鎖の制御可能さと圧縮可能さを成功して示し、提示ベースの制御よりもより良い性能を示しました。QwQ-32B-Previewにこの方法を適用し、GSM8Kでは741トークンから225トークンに減少し、性能の低下は少しでもありますが（95.07%から94.92%）、AIMEでは6827トークンから4629トークンに減少し、1つの不正解だけ追加されます。",
+      "upvotes": 8,
+      "discussionId": "67aed174e6952709b47c0ca1"
+    },
+    "publishedAt": "2025-02-14T00:16:30.034Z",
+    "title": "CoT-Valve: Length-Compressible Chain-of-Thought Tuning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09601.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64396ebc21221ac7411852b3",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64396ebc21221ac7411852b3/SR0dC8N0bdj9tZFxYPpSf.jpeg",
+      "fullname": "Xinyin Ma",
+      "name": "horseee",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09390",
+      "authors": [
+        {
+          "_id": "67aef17da9f929ce0ca3e36b",
+          "user": {
+            "_id": "62d93cd728f9c86a4031562e",
+            "avatarUrl": "/avatars/4619930d15512ec9b80b01c62e986217.svg",
+            "isPro": false,
+            "fullname": "Daniel Fleischer",
+            "user": "danf",
+            "type": "user"
+          },
+          "name": "Daniel Fleischer",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-02-14T07:32:14.019Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aef17da9f929ce0ca3e36c",
+          "name": "Moshe Berchansky",
+          "hidden": false
+        },
+        {
+          "_id": "67aef17da9f929ce0ca3e36d",
+          "name": "Gad Markovits",
+          "hidden": false
+        },
+        {
+          "_id": "67aef17da9f929ce0ca3e36e",
+          "name": "Moshe Wasserblat",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T15:07:20.000Z",
+      "title": "SQuARE: 長文言問答推論エンジンで大語言モデルのChain-of-Thoughtを強化する",
+      "summary": "自然言語処理の急速に進化している領域で、大規模言語モデル（LLMs）は複雑な理由論の挑戦を担うようになっています。連鎖的な考え方プロンプティングなどの伝統的な方法は優れた成果を示しますが、モデルの理由論能力を最大限に活用することは難しく、これらの方法はこれまでに限りました。本研究では、SQuARE（Sequential Question Answering Reasoning Engine）という新しいプロンプティング手法を紹介します。この手法は、自己質問パラダイムをベースに理由論を改善することを目的としています。CoTフレームワークに基づいて、SQuAREはモデルを幾つかの助言エキステンションの生成と解決に促すことで、主なクエリに対する処理を促進し、論理的なテーマの様々な面からの詳細な検討を推進します。本研究では、Llama 3とGPT-4oモデルを使用して、複数のクエストアンサーデータセットで幅広い評価を実施し、SQuAREが伝統的なCoTプロンプティングと既存の改語と応答の方法に比べて显著に優れていることを示しました。クエリをシステマティックに分解することで、SQuAREはLLMの理由論タスクの能力を向上させています。コードは、https://github.com/IntelLabs/RAG-FiT/tree/square に公開されています。",
+      "upvotes": 6,
+      "discussionId": "67aef17ea9f929ce0ca3e3bf"
+    },
+    "publishedAt": "2025-02-14T02:35:53.718Z",
+    "title": "SQuARE: Sequential Question Answering Reasoning Engine for Enhanced Chain-of-Thought in Large Language Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09390.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62d93cd728f9c86a4031562e",
+      "avatarUrl": "/avatars/4619930d15512ec9b80b01c62e986217.svg",
+      "fullname": "Daniel Fleischer",
+      "name": "danf",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09619",
+      "authors": [
+        {
+          "_id": "67aef6212c36e4d8bd23740e",
+          "name": "Jonathan Kahana",
+          "hidden": false
+        },
+        {
+          "_id": "67aef6212c36e4d8bd23740f",
+          "name": "Or Nathan",
+          "hidden": false
+        },
+        {
+          "_id": "67aef6212c36e4d8bd237410",
+          "name": "Eliahu Horwitz",
+          "hidden": false
+        },
+        {
+          "_id": "67aef6212c36e4d8bd237411",
+          "name": "Yedid Hoshen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:44.000Z",
+      "title": "このモデルは犬をもっともよく認識できますか？重みからのゼロショットモデル検索",
+      "summary": "プロテインモデルの公開数が増加している中、ユーザーが必要とする多くのタスクに対しては、プレチニングされたオンラインモデルが存在することは推定できる。しかし、現在のモデル検索方法は基本的で、ドキュメントに基づくテキストベースの検索であり、ユーザーは関連したモデルを見つけることができない。本論文では、モデルメタデータやトレーニングデータを参照しない限りに、特定の概念（例えば「犬」）を識別できる分類モデルを検索するための方法、ProbeLogを紹介します。前回のプローブメソッドと異なり、ProbeLogは各モデルの出力次元（logit）に対して、固定の入力（プローブ）に対する応答を観察して、ディスクライバーを計算します。本方法は、logitベースの検索（「このようなロジットを見つける」）とゼロショット、テキストベースの検索（「犬に対応するすべてのロジットを見つける」）をサポートします。プローブベースの表現には、モデルを通過させるコストが高いため、コラボレーションフィルタリングに基づいた方法を開発し、ディスクライバーのコストを3倍減らしました。ProbeLogは、実世界的や細分化された検索タスクで高い検索精度を達成し、フルサイズのディスクライバーにもスケーラブルであることを示します。",
+      "upvotes": 4,
+      "discussionId": "67aef6222c36e4d8bd237472"
+    },
+    "publishedAt": "2025-02-14T02:58:25.756Z",
+    "title": "Can this Model Also Recognize Dogs? Zero-Shot Model Search from Weights",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09619.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6465fd33dac127ac80f0b334",
+      "avatarUrl": "/avatars/113f02c1b1f8d33d3487daa867afcd3f.svg",
+      "fullname": "Jonathan Kahana",
+      "name": "jonkahana",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.08946",
+      "authors": [
+        {
+          "_id": "67aeb180cb3be2cefd46ed07",
+          "name": "Mo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed08",
+          "name": "Lemao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed09",
+          "name": "Junjie Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0a",
+          "name": "Tsz Ting Chung",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0b",
+          "name": "Shunchi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0c",
+          "name": "Jiangnan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0d",
+          "name": "Dit-Yan Yeung",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0e",
+          "name": "Jie Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T04:00:03.000Z",
+      "title": "LLMの肩にスローディングパワートル：物理概念理解の総合評価",
+      "summary": "システマティックに、広く問われる質問を調査します：LLMsは実際に何を言っているかを理解しているのか？これは「Stochastic Parrot」という認知に関連します。これに向けて、わずかに設計された物理的な概念理解の仕事における要約的な評価を提案します。この仕事は、抽象的に物理現象を説明するグリッドフォーマットの入力を使用して記憶問題を解決します。グリッドは、グリッドワールドでの他の抽象的なパターンとの類似性や、核心現象や応用例などの理解レベルを表します。我々の仕事についての詳細な研究は以下を示します：（1）最先端のLLMs、GPT-4o、o1やGemini 2.0 flash thinkingが、人間より約40%より落ちています；（2）Stochastic Parrot現象は、LLMsにおいて現れていることがわかり、グリッドフォーマットでの失敗により、自然言語で同じ概念を説明し認識することができます；（3）我々の仕事は、LLMsにとって固有の難しさで挑戦されていることを示し、同じフォーマットのデータにおけるフォーマット内学習や微調校は、その性能に少しだけ効果を与えません。",
+      "upvotes": 4,
+      "discussionId": "67aeb181cb3be2cefd46ed4c"
+    },
+    "publishedAt": "2025-02-13T21:59:28.400Z",
+    "title": "The Stochastic Parrot on LLM's Shoulder: A Summative Assessment of Physical Concept Understanding",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.08946.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6082
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.08468",
+      "authors": [
+        {
+          "_id": "67ad5f3fcad644864b4366ca",
+          "user": {
+            "_id": "66add675c7a575aa0e03d5f3",
+            "avatarUrl": "/avatars/b72b18130664c1de197c1f8df371aa70.svg",
+            "isPro": false,
+            "fullname": "Haonan Chen",
+            "user": "Haon-Chen",
+            "type": "user"
+          },
+          "name": "Haonan Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-13T08:21:55.329Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366cb",
+          "name": "Liang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366cc",
+          "name": "Nan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366cd",
+          "name": "Yutao Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366ce",
+          "name": "Ziliang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366cf",
+          "name": "Furu Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366d0",
+          "name": "Zhicheng Dou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-12T15:03:33.000Z",
+      "title": "mmE5: 高品質の合成データを用いた多モデル多言語埋め込みの向上",
+      "summary": "多模態エンベッディングモデルは、テキストや画像などの異なるモデールからのデータを統一的な表現空間にマッピングする能力により、重要な関心を集めています。しかし、限られたラベル付けされた多模態データが、エンベッディングの性能を妨げています。最近のアプローチは、この問題を解決するためにデータ合成を利用していますが、合成データの質が重要なボトルネックとなっています。本論文では、高品質の合成モノモデールデータのための3つの基準を識別します。最初、広い範囲は、生成されたデータが多様なタスクとモデールによる組み合わせを覆い、ダウンストリームシナリオに適用可能にします。第二、強固なクロスモードアラインメントは、異なるモデールが語意的に一貫していることを保証します。第三、高品質は、合成データがリアルな詳細を維持し、信頼性を向上させることを保証します。これらの原則に基づき、データセットを以下のように合成します：1）広範囲のタスク、モデールの組み合わせ、言語をカバーし、2）単一のパスでの多模態大語言モデルの深い思考過程を通じて生成され、3）写真を含め、正確かつ関連性のあるテキストを採用し、自己評価と改良を通じて信頼性を確保します。これらの高品質の合成データセットを利用して、多模態多言語E5モデルmmE5を訓練します。拡大の実験により、mmE5はMMEBベンチマークで最先端の性能を達成し、XTDベンチマークでは上位の多言語性能を示します。我々のコード、データセット、モデルは、https://github.com/haon-chen/mmE5で公開されています。",
+      "upvotes": 3,
+      "discussionId": "67ad5f3fcad644864b4366f5"
+    },
+    "publishedAt": "2025-02-13T23:32:15.420Z",
+    "title": "mmE5: Improving Multimodal Multilingual Embeddings via High-quality Synthetic Data",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.08468.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66add675c7a575aa0e03d5f3",
+      "avatarUrl": "/avatars/b72b18130664c1de197c1f8df371aa70.svg",
+      "fullname": "Haonan Chen",
+      "name": "Haon-Chen",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09614",
+      "authors": [
+        {
+          "_id": "67af107d6bd28b8bd4e13c38",
+          "name": "Xueyi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67af107d6bd28b8bd4e13c39",
+          "name": "Jianibieke Adalibieke",
+          "hidden": false
+        },
+        {
+          "_id": "67af107d6bd28b8bd4e13c3a",
+          "name": "Qianwei Han",
+          "hidden": false
+        },
+        {
+          "_id": "67af107d6bd28b8bd4e13c3b",
+          "name": "Yuzhe Qin",
+          "hidden": false
+        },
+        {
+          "_id": "67af107d6bd28b8bd4e13c3c",
+          "name": "Li Yi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:13.000Z",
+      "title": "DexTrack: 向シンテジック操作の一般化可能なニューラルトラッキング制御への向け",
+      "summary": "ヒトのデータを基にした適応的なニューラルトラッキングコントローラーの開発に挑戦します。このコントローラーは、様々な目的を達成するための様々な物体を操作するための適応的なディテックなロボット手を管理することを目指しています。このようなコントローラーの開発は、適応性、一般化性と強固性の必要性により複雑です。現在の強化学習と軌道最適化手法は、タスクの特定の報酬や精密なシステムモデルに依存して、これらの問題に対応していません。私たちは、大規模な成功したロボットトラッキングのディスプレイをカレードし、ニューラルコントローラーを訓練するためのヒトのデータとロボットのアクションのペアを構成するアプローチを紹介します。データフライワールを利用して、コントローラーの性能を進め、成功したトラッキングディスプレイの数と質をイテレーティブに向上させます。デバイスのトラッキングディスプレイを利用し、強化学習と学習済みディテックなトラッキングコントローラーを調和して動的な環境でのコントローラーの性能を向上させます。また、高品質のトラッキングディスプレイを得るためには、トライアルごとにトラッキングを個別に最適化します。ホモトピー最適化は、チェーンオブシンクスをミモールして、難しいトライアルトラッキング問題を解決し、ディスプレイの多様性を増やします。我々の成功を示すには、一般化可能なニューラルコントローラーを訓練し、シミュレーションと実世界で評価します。我々の方法は、先進的なベースラインと比較して10%以上の成功率の向上を実現します。プロジェクトのウェブサイトは、https://meowuu7.github.io/DexTrack/ でアニメーションの結果が表示されています。",
+      "upvotes": 1,
+      "discussionId": "67af10806bd28b8bd4e13ce5"
+    },
+    "publishedAt": "2025-02-14T04:50:27.474Z",
+    "title": "DexTrack: Towards Generalizable Neural Tracking Control for Dexterous Manipulation from Human References",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/65b8070ad49f4330ab0ca5f7/Ir-_GtsnqYII8yhrpJRD5.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09614.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65b8070ad49f4330ab0ca5f7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/t4fI-3djMfgXCchU_xpjL.png",
+      "fullname": "Xueyi Liu",
+      "name": "xymeow7",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.05761",
+      "authors": [
+        {
+          "_id": "67aee1cd7af05a21a72e793d",
+          "user": {
+            "_id": "648bf9afded4c3eb970eca85",
+            "avatarUrl": "/avatars/a4b7b7fd6c1fca0eac85da7383f58361.svg",
+            "isPro": false,
+            "fullname": "enquan yang",
+            "user": "enquan2022",
+            "type": "user"
+          },
+          "name": "Enquan Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:03.483Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e793e",
+          "name": "Peng Xing",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e793f",
+          "name": "Hanyang Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e7940",
+          "name": "Wenbo Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e7941",
+          "name": "Yuanwei Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e7942",
+          "name": "Zechao Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e7943",
+          "name": "Dan Zeng",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-09T03:37:54.000Z",
+      "title": "3CAD: ローカル世界での無制限ノンラベルデータセットでの3C産品の異常検出",
+      "summary": "工業的異常検出は、MVTec-ADやVisAのデータセットなどを利用して進歩していますが、ディーフェクトサンプルの数、ディーフェクトの種類、実世界的なシーンの可利用性についての制限があります。これらの制約は、研究者たちがより高精度で工業検出の性能を進めることを難しくします。このような視点から、私たちは、実世界的な3C生産線から得られる新しい大規模な異常検出データセットを提案します。特に、提案された3CADは、8種類の異なる製品部品を含み、27,039枚の高解像度画像を含み、ピクセルレベルの異常をラベル付けしています。3CADの主な特徴は、異常領域の種類やサイズ、複数の異常種類、または一枚の異常画像において複数の異常領域と異常種類の可能性を持つことです。これは、3C産品の品質管理に専門的な最大の異常検出データセットで、コミュニティの検討と開発に有用です。また、私たちは、簡単で効果的な無ラベル検出フレームワークを紹介します：Recovery Guidanceを採用したCoarse-to-Fine検出パラダイム（CFRG）。小さな欠陥の異常検出に対して、提案されたCFRGは、coarse localizationを行うためのheterogeneous distillationモデルを利用し、その後、segmentationモデルを用いてfine localizationを行います。また、正常パターンをより良く捉えるために、recovery featuresを検出ガイドにします。最後に、3CADデータセット上でのCFRGフレームワークと一般的な異常検出方法の結果を報告し、強い競争力を示し、異常検出領域の開発を促進する高度なベンチマークを提供します。データとコードは以下のURLから利用できます：https://github.com/EnquanYang2022/3CAD。",
+      "upvotes": 1,
+      "discussionId": "67aee1cf7af05a21a72e799b"
+    },
+    "publishedAt": "2025-02-14T04:00:29.585Z",
+    "title": "3CAD: A Large-Scale Real-World 3C Product Dataset for Unsupervised Anomaly",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/648bf9afded4c3eb970eca85/n-ufwo6Smo9TdMiTqKG8_.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.05761.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "648bf9afded4c3eb970eca85",
+      "avatarUrl": "/avatars/a4b7b7fd6c1fca0eac85da7383f58361.svg",
+      "fullname": "enquan yang",
+      "name": "enquan2022",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]

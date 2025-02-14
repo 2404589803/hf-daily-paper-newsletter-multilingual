@@ -1,0 +1,1339 @@
+[
+  {
+    "paper": {
+      "id": "2502.08910",
+      "authors": [
+        {
+          "_id": "67aebd48225614bbe7f6f271",
+          "user": {
+            "_id": "62e622d08e0b2dc6707f8794",
+            "avatarUrl": "/avatars/8c47b5c862f82d4258ba707c932f7f87.svg",
+            "isPro": false,
+            "fullname": "Heejun Lee",
+            "user": "gmlwns5176",
+            "type": "user"
+          },
+          "name": "Heejun Lee",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:15.423Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aebd48225614bbe7f6f272",
+          "user": {
+            "_id": "646cae3093badbc8c2e891c7",
+            "avatarUrl": "/avatars/4aae2aca70ea9dc58dd6f9f9b2be15e1.svg",
+            "isPro": false,
+            "fullname": "Geon Park",
+            "user": "geonp",
+            "type": "user"
+          },
+          "name": "Geon Park",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:12.988Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aebd48225614bbe7f6f273",
+          "name": "Jaduk Suh",
+          "hidden": false
+        },
+        {
+          "_id": "67aebd48225614bbe7f6f274",
+          "name": "Sung Ju Hwang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T02:52:01.000Z",
+      "title": "InfiniteHiP : 1 carte graphique portable élargit le contexte de 300 000 tokens d'un modèle de langage.",
+      "summary": "Dans les grands modèles de langue modernes (LLMs), la lenteur de la vitesse d'inférence et l'augmentation du coût de la mémoire lors du traitement de longues séquences de contexte sont des problèmes majeurs. De plus, beaucoup des modèles pré-entraînés existants ne généralisent pas lorsque la séquence d'entraînement dépasse la longueur d'un cercle. Pour faciliter l'utilisation efficace de longues séquences, nous présentons le cadre de travail InfiniteHiP. InfiniteHiP accélère la vitesse de traitement grâce à un nouvel algorithme de coupure de tokens modulaire heuristique, qui supprime de manière dynamique les tokens de contexte non pertinents. Notre méthode sélectionne de manière sélective différents méthodes d'ajustement de RoPE en fonction des motifs d'attention interne de l'LLM, atteignant ainsi une généralisation à des séquences longues. De plus, lors de l'inférence, le cache de clés-valeurs dans la mémoire hôte est désactivé pour réduire significativement la pression sur la mémoire GPU. Ainsi, InfiniteHiP permet de traiter 3 millions de tokens avec un seul GPU L40s 48GB, en éliminant la perte permanente d'information de contexte. Notre cadre de travail atteint un accroissement de vitesse dans la décodage de l'attention dans des contextes de 1 million de tokens d'un facteur de 18.95, sans nécessité d'entraînement supplémentaire. Notre méthode est implémentée dans le cadre de travail SGLang et a été testée par diverses évaluations, démontrant son efficacité et sa praticité.",
+      "upvotes": 43,
+      "discussionId": "67aebd4a225614bbe7f6f2d6"
+    },
+    "publishedAt": "2025-02-13T22:57:03.709Z",
+    "title": "InfiniteHiP: Extending Language Model Context Up to 3 Million Tokens on a Single GPU",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/646cae3093badbc8c2e891c7/upRSt7mdOUX5vJZTWKG8D.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.08910.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "646cae3093badbc8c2e891c7",
+      "avatarUrl": "/avatars/4aae2aca70ea9dc58dd6f9f9b2be15e1.svg",
+      "fullname": "Geon Park",
+      "name": "geonp",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.08690",
+      "authors": [
+        {
+          "_id": "67aec0a203bf3301ec29ac39",
+          "user": {
+            "_id": "633e6f07309a99325095dd42",
+            "avatarUrl": "/avatars/57b91a488ac1745b3c0509c04eb6ad93.svg",
+            "isPro": false,
+            "fullname": "Hoigi Seo",
+            "user": "Agorium",
+            "type": "user"
+          },
+          "name": "Hoigi Seo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:10.420Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aec0a203bf3301ec29ac3a",
+          "name": "Wongi Jeong",
+          "hidden": false
+        },
+        {
+          "_id": "67aec0a203bf3301ec29ac3b",
+          "name": "Jae-sun Seo",
+          "hidden": false
+        },
+        {
+          "_id": "67aec0a203bf3301ec29ac3c",
+          "name": "Se Young Chun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-12T15:03:26.000Z",
+      "title": "Scrí: Génération d'images à partir de texte sans utiliser une couche de codificateur de texte efficace en mémoire",
+      "summary": "Le contexte d'encodage à grande échelle montre un comportement particulier dans les modèles de diffusion (T2I) qui transforment le texte en images de haute qualité grâce au traitement du contexte. Le module de bruit nécessite plusieurs étapes d'itération, tandis que le contexte d'encodage doit codifier le texte en un seul pas. Cependant, en termes de temps d'inférence total et d'opérations de point flottant (FLOPs), le contexte d'encodage nécessite une quantité de mémoire plus importante que le module de bruit. Pour résoudre cette inefficacité, nous proposons une stratégie simple et efficace pour réduire la mémoire dans le contexte d'encodage de T2I, appelée \"Skrr\" (Réduction d'Échelle et Réutilisation de Layers). Skrr exploite l'excès interne des blocs transformateurs pour sélectionner et réduire de manière sélective ou réutiliser des couches spécifiques qui s'adaptent aux tâches de T2I, réduisant ainsi le consommateur de mémoire sans perdre la qualité des résultats. Les expériences extensives montrent que Skrr maintient une qualité d'images relativement bonne, même à des niveaux élevés de sparsité, par rapport au modèle original, et dépasse les techniques de réduction actuelles par bloc. De plus, Skrr maintient son rendement dans diverses métriques d'évaluation, comme FID, CLIP, DreamSim et GenEval, en atteignant la meilleure efficacité de mémoire.",
+      "upvotes": 24,
+      "discussionId": "67aec0a903bf3301ec29adf3"
+    },
+    "publishedAt": "2025-02-13T23:10:44.295Z",
+    "title": "Skrr: Skip and Re-use Text Encoder Layers for Memory Efficient Text-to-Image Generation",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.08690.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "633e6f07309a99325095dd42",
+      "avatarUrl": "/avatars/57b91a488ac1745b3c0509c04eb6ad93.svg",
+      "fullname": "Hoigi Seo",
+      "name": "Agorium",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09604",
+      "authors": [
+        {
+          "_id": "67aeac4f2d48d9bf7728334e",
+          "user": {
+            "_id": "5df84571da6d0311fd3d5407",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1650651305661-5df84571da6d0311fd3d5407.png",
+            "isPro": false,
+            "fullname": "Yung-Sung Chuang",
+            "user": "voidism",
+            "type": "user"
+          },
+          "name": "Yung-Sung Chuang",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-02-14T02:37:32.909Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf7728334f",
+          "user": {
+            "_id": "639aaf82a4c528850bba2bfe",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/639aaf82a4c528850bba2bfe/nn23r8bsNiOJzVUxAPfo7.png",
+            "isPro": false,
+            "fullname": "Benjamin Cohen-Wang",
+            "user": "bencw",
+            "type": "user"
+          },
+          "name": "Benjamin Cohen-Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:17.696Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283350",
+          "name": "Shannon Zejiang Shen",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283351",
+          "user": {
+            "_id": "6351712b40dffad651f128c7",
+            "avatarUrl": "/avatars/87708c86c1baef548ef556f5d32dca71.svg",
+            "isPro": false,
+            "fullname": "Zhaofeng Wu",
+            "user": "ZhaofengWu",
+            "type": "user"
+          },
+          "name": "Zhaofeng Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:19.691Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283352",
+          "name": "Hu Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283353",
+          "name": "Xi Victoria Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283354",
+          "name": "James Glass",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283355",
+          "name": "Shang-Wen Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aeac4f2d48d9bf77283356",
+          "name": "Wen-tau Yih",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:55:13.000Z",
+      "title": "SelfCite : Responsabilisation du contexte par des ajustements de ses sous-ensembles dans des grands modèles de langue",
+      "summary": "SelfCite présente un nouveau méthode d'entraînement automatique pour générer une révision détaillée et de haute qualité sur le contexte des réponses générées. SelfCite aborde les problèmes liés aux coûts associés à la haute offre de travail, offrant une solution efficace.",
+      "upvotes": 19,
+      "discussionId": "67aeac502d48d9bf77283380"
+    },
+    "publishedAt": "2025-02-13T21:42:37.926Z",
+    "title": "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/5df84571da6d0311fd3d5407/YmJO6H2Wa0ZVw31qeHZi0.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09604.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5df84571da6d0311fd3d5407",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1650651305661-5df84571da6d0311fd3d5407.png",
+      "fullname": "Yung-Sung Chuang",
+      "name": "voidism",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09620",
+      "authors": [
+        {
+          "_id": "67aeec91b1bbfb68824df5d1",
+          "user": {
+            "_id": "6552f1ad5d55ccb20e9142a0",
+            "avatarUrl": "/avatars/0e3e80cba64b5ae0bc5638694ac33dbf.svg",
+            "isPro": false,
+            "fullname": "Ivan Tang",
+            "user": "IvanTang",
+            "type": "user"
+          },
+          "name": "Yiwen Tang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:00:57.216Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d2",
+          "name": "Zoey Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d3",
+          "name": "Zhuhao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d4",
+          "name": "Ray Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d5",
+          "name": "Qizhi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d6",
+          "name": "Junli Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d7",
+          "user": {
+            "_id": "64daecec888b7e9c400f59b5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64daecec888b7e9c400f59b5/f4pfOfWk6jYJX-Nf2-qHn.png",
+            "isPro": false,
+            "fullname": "Delin Qu",
+            "user": "delinqu",
+            "type": "user"
+          },
+          "name": "Delin Qu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:00:55.263Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d8",
+          "name": "Zhigang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5d9",
+          "name": "Dong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5da",
+          "name": "Xuelong Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aeec91b1bbfb68824df5db",
+          "name": "Bin Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:45.000Z",
+      "title": "Recherche sur l'architecture encoder-free de LMMs 3D pour explorer le potentiel des modèles d'apprentissage profond.",
+      "summary": "Une architecture sans codageur en 2D est initialement observée dans le domaine visuel 2D, mais comment elle sera effectivement appliquée dans des scénarios 3D est un problème susceptible d'engendrer beaucoup d'opinion. Cet article explore pour la première fois la possibilité d'appliquer une architecture sans codageur dans des grands modèles multimodales 3D (LMMs). Cette recherche aborde des défis tels que l'adaptation à la variabilité de la résolution des nuages ponctuels et la manque de caractéristiques ponctuelles qui répondent aux exigences littéraires des grands modèles de langage (LLMs). Dans le 3D, l'élimination du codageur et le fait que l'un des LLMs joue le rôle du codageur 3D est un aspect crucial. Une stratégie de codage littéraire intégrée dans l'LLM pendant l'entraînement préalable est proposée, et l'effet de la perte de reconnaissance automatique des nuages ponctuels est évalué. De plus, une perte de grammaire intégrée est présentée pour extraire des grammaires de haut niveau. Pendant l'entraînement de commandes, une stratégie heuristique d'agression géométrique est introduite et appliquée dans les couches initiales de l'LLM pour mettre en valeur les détails locaux des nuages ponctuels. Enfin, un premier exemple d'un LMM 3D sans codageur est présenté. Notre modèle de 7B concurrence avec le meilleur modèle actuel, ShapeLLM-13B, et atteint des taux de 55.0% en classification, 50.92% en captation et 42.7% en VQA. Nos résultats explorent si l'architecture sans codageur peut remplacer l'architecture avec codageur dans le domaine 3D. Le code est disponible sur https://github.com/Ivan-Tang-3D/ENEL.",
+      "upvotes": 17,
+      "discussionId": "67aeec92b1bbfb68824df61f"
+    },
+    "publishedAt": "2025-02-14T02:27:45.749Z",
+    "title": "Exploring the Potential of Encoder-free Architectures in 3D LMMs",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09620.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "647d9ab61a1fcad2fdbf2d3d",
+      "avatarUrl": "/avatars/48c8aeae8979d2c87df8bde922437d62.svg",
+      "fullname": "Ziyu Guo",
+      "name": "ZiyuG",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09082",
+      "authors": [
+        {
+          "_id": "67aee90c208d299238758622",
+          "name": "Xintao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758623",
+          "name": "Heng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758624",
+          "name": "Yifei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758625",
+          "name": "Xinfeng Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758626",
+          "name": "Rui Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758627",
+          "name": "Jen-tse Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758628",
+          "name": "Siyu Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d299238758629",
+          "name": "Haoran Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d29923875862a",
+          "name": "Jiangjie Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d29923875862b",
+          "name": "Wei Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d29923875862c",
+          "name": "Yanghua Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "67aee90c208d29923875862d",
+          "name": "Shuchang Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T08:55:24.000Z",
+      "title": "CoSER : Basé sur le rôle existant, la collaboration de la personnalisation basée sur les modèles de langage grands (LLM)",
+      "summary": "Les RPLAs (Résultats de Langage de Personnages en Jeu) ont apparu comme une des applications potentielles des modèles de grands langages (LLMs). Cependant, les RPLAs ont rencontré des difficultés à simuler des personnages existants en raison de la rareté de jeux de données de personnages réalistes et de la manque de méthodes d'évaluation délicates pour utiliser ces données. Dans cet article, nous proposons un ensemble de données de haute qualité, un modèle ouvert et des protocoles d'évaluation pour les RPLAs efficaces pour des personnages existants. L'ensemble de données CoSER enregistre 17 966 personnages de 771 romans célèbres. Ce jeu de données fournit divers types de données, y compris des dialogues réalistes avec des complexités réelles, des contextes de conversation, des expériences et des souvenirs internes des personnages. En se basant sur le méthode d'action, nous introduisons une récompense pour l'état d'action dans l'entraînement et l'évaluation des RPLAs. En utilisant ce jeu de données, nous avons développé les modèles RPLAs ouverts CoSER 8B et CoSER 70B, basés sur l'évolution du modèle LLaMA-3.1. Les expériences étendues montrent la valeur de l'entraînement, l'évaluation et la recherche des RPLAs avec le jeu de données CoSER. De plus, CoSER 70B a démontré les meilleurs résultats dans notre évaluation et dans trois des benchmarks existants, atteignant une précision de 75,80% sur le benchmark InCharacter et de 93,47% sur le benchmark LifeChoice.",
+      "upvotes": 15,
+      "discussionId": "67aee90f208d2992387586d1"
+    },
+    "publishedAt": "2025-02-14T02:50:35.108Z",
+    "title": "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09082.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64c7bf2c4524c2aea7eac0b3",
+      "avatarUrl": "/avatars/03e432e05c0f711cfe32fc07f195e11e.svg",
+      "fullname": "Xintao Wang",
+      "name": "Neph0s",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09056",
+      "authors": [
+        {
+          "_id": "67aea8d7926b659c7e959bbc",
+          "name": "Kunat Pipatanakul",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8d7926b659c7e959bbd",
+          "user": {
+            "_id": "615313b0793ef66b3324da1f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/615313b0793ef66b3324da1f/VyJniD3dxbV5a2CMgVVQ2.jpeg",
+            "isPro": false,
+            "fullname": "Pittawat Taveekitworachai",
+            "user": "pittawat",
+            "type": "user"
+          },
+          "name": "Pittawat Taveekitworachai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:21.838Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8d7926b659c7e959bbe",
+          "name": "Potsawee Manakul",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8d7926b659c7e959bbf",
+          "name": "Kasima Tharnpipitchai",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T08:10:45.000Z",
+      "title": "Réception ouverte pour appliquer un modèle de spécialisation de langue à un modèle logique en un jour : Adaptation par intégration de modèles",
+      "summary": "Cet article réalise une étude sur les méthodes de sélection et d'intégration de modèles pour intégrer des fonctions avancées de logique, comme DeepSeek R1, dans des modèles de langage propres à la langue (LLMs), avec un accent particulier sur les LLMs coréens. Notre objectif est d'améliorer la capacité logique des LLMs propres à la langue, tout en maintenant leur efficacité en langage. DeepSeek R1 dépasse en logique, mais principalement bénéficie de ses avantages dans les langues riches en ressources comme l'anglais et le chinois. Cependant, le domaine des données et l'optimisation du modèle en anglais empêchent les langues de faibles ressources de bénéficier de ces avantages. Cette limitation est liée à la méfiance envers le changement de code et à l'efficacité réduite dans les tâches de langues de faibles ressources. D'autre part, les initiatives locales de LLMs visent à corriger ces erreurs en développant des LLMs propres à la langue. Nous montrons que, avec des ensembles de données publiques et $120 de main-d'œuvre, il est possible d'améliorer la capacité logique des LLMs propres à la langue à un niveau comparable à DeepSeek R1, tout en maintenant l'efficacité dans les tâches de la langue cible.",
+      "upvotes": 15,
+      "discussionId": "67aea8d8926b659c7e959bee"
+    },
+    "publishedAt": "2025-02-13T22:01:48.364Z",
+    "title": "An Open Recipe: Adapting Language-Specific LLMs to a Reasoning Model in One Day via Model Merging",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09056.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6082
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.06608",
+      "authors": [
+        {
+          "_id": "67aebe57f47426f753bc3b07",
+          "name": "Yangguang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b08",
+          "name": "Zi-Xin Zou",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b09",
+          "name": "Zexiang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0a",
+          "name": "Dehu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0b",
+          "name": "Yuan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0c",
+          "name": "Zhipeng Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0d",
+          "name": "Xingchao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0e",
+          "name": "Yuan-Chen Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b0f",
+          "name": "Ding Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b10",
+          "name": "Wanli Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "67aebe57f47426f753bc3b11",
+          "name": "Yan-Pei Cao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-10T16:07:54.000Z",
+      "title": "TripoSG : Pour réaliser la synthèse de formes 3D de qualité élevée, on utilise un grand modèle de formes normales.",
+      "summary": "L'évolution des méthodes de diffusion a atteint un niveau de qualité sans précédent dans la génération d'images et vidéos, accélérant considérablement l'introduction et l'application de l'IA de génération. Cependant, la technologie de la génération de formes 3D est toujours en un état insuffisant. L'échelle de données 3D, la complexité du traitement de données 3D et la manque de technologie avancée dans le domaine 3D sont des limites. Les méthodes actuelles de génération de formes 3D font face à de grands défis en termes de qualité de sortie, de capacité de généralisation et de cohérence avec les conditions d'entrée. Nous proposons TripoSG, un nouveau paradigme de diffusion en ligne pour la génération de formes 3D. Cette approche permet d'améliorer la qualité des meilleures maillages 3D qui correspondent précisément aux images d'entrée. Les détails sont les suivants : 1) Nous utilisons un flux de normalisation grand, Lance Formgazer, pour la génération de formes 3D et un entraînement avec différents données de haute qualité pour atteindre la meilleure qualité. 2) Nous combinons l'entraînement stochastique de surveillance avec l'utilisation de pertes SDF, normales et écorées pour atteindre la meilleure récupération 3D de la VAE 3D. 3) Nous proposons un traitement de données pour générer 2 millions de échantillons de haute qualité 3D, clarifiant les règles importantes pour la qualité et la quantité de données dans l'entraînement de modèles de génération 3D. Les tests détaillés ont validé l'efficacité de chaque composant du nouveau cadre. L'intégration continue de ces composants a conduit TripoSG à atteindre les meilleurs résultats en termes de génération de formes 3D. Enfin, nous avons confirmé un amélioration de la qualité des détails, une qualité particulièrement élevée par rapport aux images d'entrée, et une forte capacité de généralisation dans la génération de modèles 3D de différents styles et contenus, améliorant ainsi sa diversité. Pour favoriser le développement et l'innovation en génération 3D, nous sommes disponibles pour publier le modèle.",
+      "upvotes": 11,
+      "discussionId": "67aebe5ef47426f753bc3d31"
+    },
+    "publishedAt": "2025-02-13T22:56:23.567Z",
+    "title": "TripoSG: High-Fidelity 3D Shape Synthesis using Large-Scale Rectified Flow Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.06608.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64d71083a787c9bc7b9f1238",
+      "avatarUrl": "/avatars/d0b0546dec7fc5792921154bec41385a.svg",
+      "fullname": "YG",
+      "name": "Lp256",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09100",
+      "authors": [
+        {
+          "_id": "67aeb0a3d58f4990b384d83e",
+          "name": "Hanmeng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d83f",
+          "name": "Zhizhang Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d840",
+          "name": "Mengru Ding",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d841",
+          "user": {
+            "_id": "62e47d1b6a82e063860c587e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62e47d1b6a82e063860c587e/jvFt1caSZNWDQTYKZQ9K-.jpeg",
+            "isPro": false,
+            "fullname": "ruoxining",
+            "user": "ruoxining",
+            "type": "user"
+          },
+          "name": "Ruoxi Ning",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-02-14T06:28:50.414Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d842",
+          "name": "Chaoli Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d843",
+          "name": "Xiaozhang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb0a3d58f4990b384d844",
+          "name": "Yue Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T09:19:14.000Z",
+      "title": "Modèle logistique de langage : résumé",
+      "summary": "Récemment, l'apparition de modèles avancés d'inférence (par exemple, OpenAI o3, DeepSeek-R1) a conduit les modèles de langage de grande taille (LLMs) à montrer des capacités d'inférence surprenantes. Cependant, leur capacité à effectuer des inférences logiques strictes reste un problème non résolu. Ce travail analyse de manière intégrale les avancées récentes dans le domaine de l'inférence logique des LLMs, expliquant également l'étendue, la base théorique et les cadres de référence pour évaluer l'efficacité pratique de l'inférence logique, qui est l'une des zones les plus importantes de la recherche en IA. Ces modèles sont analysés en termes de leurs capacités actuelles dans chaque domaine du paradigme d'inférence logique, et des stratégies pour améliorer leur performance (apprentissage sur des données, apprentissage par renforcement, stratégies de décodage, approche neurocybernétique) sont évaluées. Cette revue clarifie les directions de développement pour renforcer l'inférence logique dans les systèmes d'IA et souligne la nécessité d'une plus grande recherche.",
+      "upvotes": 11,
+      "discussionId": "67aeb0a4d58f4990b384d871"
+    },
+    "publishedAt": "2025-02-13T21:55:58.708Z",
+    "title": "Logical Reasoning in Large Language Models: A Survey",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09100.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6082
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09621",
+      "authors": [
+        {
+          "_id": "67aee0229e69670f49533146",
+          "user": {
+            "_id": "6349214f8146350b3a4c5cdf",
+            "avatarUrl": "/avatars/cfd24caac9a87efb528d0f4c375932bc.svg",
+            "isPro": false,
+            "fullname": "Dongzhi Jiang",
+            "user": "CaraJ",
+            "type": "user"
+          },
+          "name": "Dongzhi Jiang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:05.736Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533147",
+          "name": "Renrui Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533148",
+          "name": "Ziyu Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533149",
+          "name": "Yanwei Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314a",
+          "name": "Yu Qi",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314b",
+          "name": "Xinyan Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314c",
+          "name": "Liuhui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314d",
+          "name": "Jianhan Jin",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314e",
+          "name": "Claire Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f4953314f",
+          "name": "Shen Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533150",
+          "name": "Bo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533151",
+          "name": "Chaoyou Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533152",
+          "name": "Peng Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67aee0229e69670f49533153",
+          "name": "Hongsheng Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:46.000Z",
+      "title": "MME-CoT : Raisons, Robustesse et Efficacité dans l'Évaluation de la Théorie de la Chaîne de Pensée dans les Modèles de Grandes Réseaux Multimodales",
+      "summary": "La capacité logique des Grands Modèles de Langue (GMLs) pour répondre à des questions a considérablement augmenté grâce à l'utilisation de la technique Chain-of-Thought (CoT), mais une manque de évaluations systématiques et de recherches détaillées sur son impact sur les Grands Modèles Multimodales (GMMs) a été observée. Dans cet article, nous présentons MME-CoT, un benchmark spécialisé pour évaluer la capacité logique des GMMs. Ce benchmark comprend six domaines : mathématiques, sciences, OCR, logique, temps-espace et situations générales, et offre la première recherche exhaustive dans ces domaines. Nous proposons un questionnaire détaillé pour évaluer la qualité, la robustesse et l'efficacité de la capacité logique, en utilisant trois nouvelles métriques. Grâce aux données de haute qualité et à des stratégies d'évaluation spécialisées, nous effectuons un analyse détaillée des GMMs les plus récents, et nous présentons les directives suivantes importantes : 1) Les modèles avec des fonctions de rétroaction, comme Kimi k1.5, montrent des résultats de qualité supérieurs à GPT-4o ; 2) La CoT peut dégrader le rendement des GMMs dans les tâches qui nécessitent une grande observation, montrant des comportements potentiellement détruisifs ; 3) D'autre part, les GMMs qui présentent une rétroaction comparativement à la CoT de haute qualité présentent des déficiences significatives dans les étapes de réponse générale et d'autocorrrection. MME-CoT peut servir de base pour encourager le développement de la capacité logique multimodale des GMMs. Page du projet : https://mmecot.github.io/",
+      "upvotes": 10,
+      "discussionId": "67aee0249e69670f495331d8"
+    },
+    "publishedAt": "2025-02-14T01:34:58.800Z",
+    "title": "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09621.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6349214f8146350b3a4c5cdf",
+      "avatarUrl": "/avatars/cfd24caac9a87efb528d0f4c375932bc.svg",
+      "fullname": "Dongzhi Jiang",
+      "name": "CaraJ",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09042",
+      "authors": [
+        {
+          "_id": "67aea8c94d4cb38be4a40c55",
+          "user": {
+            "_id": "615313b0793ef66b3324da1f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/615313b0793ef66b3324da1f/VyJniD3dxbV5a2CMgVVQ2.jpeg",
+            "isPro": false,
+            "fullname": "Pittawat Taveekitworachai",
+            "user": "pittawat",
+            "type": "user"
+          },
+          "name": "Pittawat Taveekitworachai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:24.073Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8c94d4cb38be4a40c56",
+          "name": "Potsawee Manakul",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8c94d4cb38be4a40c57",
+          "name": "Kasima Tharnpipitchai",
+          "hidden": false
+        },
+        {
+          "_id": "67aea8c94d4cb38be4a40c58",
+          "name": "Kunat Pipatanakul",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T07:55:54.000Z",
+      "title": "Tormenta T1 : Modèle de logique de type de type ouvert",
+      "summary": "Dans cet article, nous présentons Typhoon T1. Typhoon T1 est un projet ouvert qui se concentre sur le développement de modèles de raisonnement pour le mandarin taiwanais. Le modèle de raisonnement est un nouveau type de modèle génératif construit sur de grands modèles de langage (LLMs). Ce type de modèle génère une longue chaîne de pensée pour atteindre une réponse finale. Il a été étudié que cette approche peut améliorer le rendement dans des tâches complexes. Cependant, les détails sur le développement de ces modèles sont limités, surtout dans les langues de faible disponibilité, où les détails sur le développement de modèles de raisonnement ont été limités. Typhoon T1 est un projet ouvert qui explore le développement de modèles de raisonnement de manière coûte-efficace en utilisant des ensembles de données ouvertes via des réglages micro-régulateurs. Dans cet article, nous partageons des détails sur la génération et l'entraînement de données synthétiques, ainsi que des détails sur les ensembles de données et les poids du modèle. De plus, nous fournissons des feedback sur le développement de modèles de raisonnement capables de générer des entraînements. Nous considérons que ce projet ouvert peut être une base pour le développement de cette zone.",
+      "upvotes": 10,
+      "discussionId": "67aea8ca4d4cb38be4a40cab"
+    },
+    "publishedAt": "2025-02-14T01:29:44.233Z",
+    "title": "Typhoon T1: An Open Thai Reasoning Model",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09042.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "615313b0793ef66b3324da1f",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/615313b0793ef66b3324da1f/VyJniD3dxbV5a2CMgVVQ2.jpeg",
+      "fullname": "Pittawat Taveekitworachai",
+      "name": "pittawat",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09560",
+      "authors": [
+        {
+          "_id": "67aec4285b9801b819449b84",
+          "name": "Rui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b85",
+          "user": {
+            "_id": "6700b1f93381f2db06857fb5",
+            "avatarUrl": "/avatars/c8b9ec7c00773c5a4055ba50de0c6b2f.svg",
+            "isPro": false,
+            "fullname": "Hanyang Chen",
+            "user": "Hanyang81",
+            "type": "user"
+          },
+          "name": "Hanyang Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:08.365Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b86",
+          "name": "Junyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b87",
+          "name": "Mark Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b88",
+          "name": "Cheng Qian",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b89",
+          "name": "Kangrui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8a",
+          "name": "Qineng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8b",
+          "name": "Teja Venkat Koripella",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8c",
+          "name": "Marziyeh Movahedi",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8d",
+          "name": "Manling Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8e",
+          "name": "Heng Ji",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b8f",
+          "name": "Huan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aec4285b9801b819449b90",
+          "name": "Tong Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:11:34.000Z",
+      "title": "EmbodiedBench : Marqueur Général de Modèles de Langue pour des Agents Embodyés Guides par la Vision",
+      "summary": "Utiliser des modèles de langage et de vision (MLLMs) pour générer des agents spécifiques est un méthode potentielle pour résoudre des tâches réalistes. Les agents spécifiques axés sur le langage ont reçu beaucoup d'attention, mais les agents spécifiques basés sur des MLLMs ont été peu évalués en raison de lacunes dans les cadres d'évaluation. Pour corriger cela, on présente EmbodiedBench. EmbodiedBench est un large cadre d'évaluation pour l'évaluation d'agents spécifiques axés sur la vision. Ses caractéristiques comprennent : 1) 1,128 tâches différentes dans 4 environnements ; de tâches de haut niveau de signification (par exemple, le logement) à des actions basiques ; 2) six sous-ensembles spécifiques pour évaluer les capacités de base de l'agent, comme l'inférence de connaissances, la compréhension de commandes complexes, le reconnaissance spatiale, le reconnaissance visuelle et la planification à long terme. À travers une large gamme d'expérimentations, 13 modèles avancés et open-source de MLLMs ont été évalués sur EmbodiedBench. Les résultats montrent que les MLLMs ont démontré des performances exceptionnelles dans des tâches de haut niveau, mais ont rencontré des difficultés dans des actions de bas niveau. Le meilleur modèle, GPT-4o, a un taux moyen de 28,9 %. EmbodiedBench ne seulement met en lumière les problèmes actuels, mais joue également un rôle bénéfique dans le développement d'agents spécifiques basés sur des MLLMs. Le code est disponible sur https://embodiedbench.github.io.",
+      "upvotes": 9,
+      "discussionId": "67aec42b5b9801b819449bf5"
+    },
+    "publishedAt": "2025-02-13T23:23:42.492Z",
+    "title": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09560.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64d45451c34a346181b130dd",
+      "avatarUrl": "/avatars/9bb8205b889337df5d321539c9b5d69d.svg",
+      "fullname": "Rui Yang",
+      "name": "Ray2333",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09601",
+      "authors": [
+        {
+          "_id": "67aed173e6952709b47c0c5c",
+          "name": "Xinyin Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67aed173e6952709b47c0c5d",
+          "name": "Guangnian Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67aed173e6952709b47c0c5e",
+          "name": "Runpeng Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67aed173e6952709b47c0c5f",
+          "name": "Gongfan Fang",
+          "hidden": false
+        },
+        {
+          "_id": "67aed173e6952709b47c0c60",
+          "name": "Xinchao Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:52:36.000Z",
+      "title": "CoT-Valve : Régulation de la Chaîne de Pensée de la Variabilité de Longueur",
+      "summary": "La méthode Chain-of-Thought améliore considérablement la capacité logique du modèle, mais augmente également significativement le coût de l'inférence en raison des longs chemins d'inférence. On a observé que dans une série simple de tâches, les chemins logiques peuvent être facilement compris, mais des difficultés ont été rencontrées dans des tâches plus complexes. On a investigué si un modèle peut contrôler de manière flexible la longueur des chemins logiques et on a exploré la possibilité de réduire l'overhead d'inférence des modèles logiques en fonction de la difficulté de la série. On a présenté de nouvelles stratégies d'ajustement et d'inférence comme CoT-Valve, avec l'objectif de contrôler la longueur des chemins logiques. On a démontré que l'on peut spécifier la direction dans l'espace de paramètres et contrôler efficacement la longueur des chemins logiques générés par CoT. De plus, on a démontré que cette caractéristique a également de valeur pour la compression des chemins logiques. On a construit des ensembles de données avec des chemins logiques longs et courts pour la même question, et on a exploré deux stratégies d'expansion de CoT-Valve : (1) des méthodes d'ajustement de CoT qui permettent de compresser la longueur exacte, et (2) des approches pour la compression de la longueur des chemins logiques. Les expérimentations montrent que CoT-Valve a réussi à contrôler et à compresser les chemins logiques, et a montré des résultats meilleurs que le contrôle basé sur des prompts. En appliquant cette méthodologie sur QwQ-32B-Preview, on a réduit de 741 tokens à 225 tokens sur GSM8K, avec une légère perte de performance (de 95,07% à 94,92%), et sur AIME, de 6827 tokens à 4629 tokens, avec l'ajout d'un erreur.",
+      "upvotes": 8,
+      "discussionId": "67aed174e6952709b47c0ca1"
+    },
+    "publishedAt": "2025-02-14T00:16:30.034Z",
+    "title": "CoT-Valve: Length-Compressible Chain-of-Thought Tuning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09601.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64396ebc21221ac7411852b3",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64396ebc21221ac7411852b3/SR0dC8N0bdj9tZFxYPpSf.jpeg",
+      "fullname": "Xinyin Ma",
+      "name": "horseee",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09390",
+      "authors": [
+        {
+          "_id": "67aef17da9f929ce0ca3e36b",
+          "user": {
+            "_id": "62d93cd728f9c86a4031562e",
+            "avatarUrl": "/avatars/4619930d15512ec9b80b01c62e986217.svg",
+            "isPro": false,
+            "fullname": "Daniel Fleischer",
+            "user": "danf",
+            "type": "user"
+          },
+          "name": "Daniel Fleischer",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-02-14T07:32:14.019Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aef17da9f929ce0ca3e36c",
+          "name": "Moshe Berchansky",
+          "hidden": false
+        },
+        {
+          "_id": "67aef17da9f929ce0ca3e36d",
+          "name": "Gad Markovits",
+          "hidden": false
+        },
+        {
+          "_id": "67aef17da9f929ce0ca3e36e",
+          "name": "Moshe Wasserblat",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T15:07:20.000Z",
+      "title": "SQuARE : Moteur d'Inférence Logique qui Renforce Phrases de Grande Taille et Modèles de Langue sur la Ligne de Pensée Causale",
+      "summary": "Le rapide développement du traitement du langage naturel a conduit à ce que les modèles de langage à grande échelle (LLMs) se retrouvent confrontés à des défis complexes de logique. Les méthodes traditionnelles, comme le prompting de pensée continu, ont montré des résultats excellents, mais ne pouvaient pas maximiser la capacité logique du modèle, ce qui constituait jusqu'à présent un limite. Dans cette étude, nous présentons une nouvelle méthodologie de prompting appelée SQuARE (Système d'Analyse de Réasonnement par Questions Séquentielles). Cette méthode vise à améliorer la logique du modèle à partir de ses propres questions. Basée sur le cadre CoT (Chain of Thought), SQuARE génère plusieurs aides de langage et résout des problèmes, ce qui encourage le traitement des questions principales et la révision détaillée de différents thèmes logiques. Dans cette étude, des évaluations larges ont été effectuées sur différents ensembles de données de questions et de réponses en utilisant les modèles Llama 3 et GPT-4o. Nous avons démontré que SQuARE présente un rendement significativement supérieur par rapport au prompting traditionnel CoT et aux méthodes de modification et de réponse existantes. En décomposant systématiquement les questions, SQuARE améliore la capacité de l'LLM dans des tâches de logique. Le code est disponible sur https://github.com/IntelLabs/RAG-FiT/tree/square.",
+      "upvotes": 6,
+      "discussionId": "67aef17ea9f929ce0ca3e3bf"
+    },
+    "publishedAt": "2025-02-14T02:35:53.718Z",
+    "title": "SQuARE: Sequential Question Answering Reasoning Engine for Enhanced Chain-of-Thought in Large Language Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09390.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62d93cd728f9c86a4031562e",
+      "avatarUrl": "/avatars/4619930d15512ec9b80b01c62e986217.svg",
+      "fullname": "Daniel Fleischer",
+      "name": "danf",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09619",
+      "authors": [
+        {
+          "_id": "67aef6212c36e4d8bd23740e",
+          "name": "Jonathan Kahana",
+          "hidden": false
+        },
+        {
+          "_id": "67aef6212c36e4d8bd23740f",
+          "name": "Or Nathan",
+          "hidden": false
+        },
+        {
+          "_id": "67aef6212c36e4d8bd237410",
+          "name": "Eliahu Horwitz",
+          "hidden": false
+        },
+        {
+          "_id": "67aef6212c36e4d8bd237411",
+          "name": "Yedid Hoshen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:44.000Z",
+      "title": "Este modèle est-il capable de reconnaître mieux les chiens ? Recherche de modèles avec 0 photos d'entraînement.",
+      "summary": "Avec l'augmentation de la quantité de modèles de protéines publiés, on peut inférer que des modèles pré-entraînés en ligne existent pour diverses tâches différentes que les utilisateurs peuvent nécessiter. Cependant, les méthodes actuelles de recherche de modèles sont basiques et basées sur le texte, ce qui rend la recherche de modèles liés par les utilisateurs difficile. Dans cet article, on présente une nouvelle méthodologie appelée ProbeLog pour rechercher des modèles de classification qui peuvent reconnaître des concepts spécifiques (par exemple, \"chien\") sans nécessiter de métadonnées de modèles ou de données d'entraînement. A différence des méthodes de test précédentes, ProbeLog observe la réponse de chaque modèle à un input fixe (test) dans ses dimensions de sortie (logit) pour calculer un descripteur. Ce méthode permet des recherches basées sur le logit (\"recherche de modèles avec ces types de logit\") et des recherches de 0 shot et basées sur le texte (\"recherche de tous les logits liés au chien\"). En raison du coût élevé de passer le modèle par un méthode de test, un méthode basée sur le filtrage collaboratif a été développée pour réduire le coût du descripteur en un tiers. ProbeLog a démontré une haute précision dans des tâches de recherche réelle et distribuée, et a également montré son scalabilité dans un descripteur de taille complète.",
+      "upvotes": 4,
+      "discussionId": "67aef6222c36e4d8bd237472"
+    },
+    "publishedAt": "2025-02-14T02:58:25.756Z",
+    "title": "Can this Model Also Recognize Dogs? Zero-Shot Model Search from Weights",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09619.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6465fd33dac127ac80f0b334",
+      "avatarUrl": "/avatars/113f02c1b1f8d33d3487daa867afcd3f.svg",
+      "fullname": "Jonathan Kahana",
+      "name": "jonkahana",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.08946",
+      "authors": [
+        {
+          "_id": "67aeb180cb3be2cefd46ed07",
+          "name": "Mo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed08",
+          "name": "Lemao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed09",
+          "name": "Junjie Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0a",
+          "name": "Tsz Ting Chung",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0b",
+          "name": "Shunchi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0c",
+          "name": "Jiangnan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0d",
+          "name": "Dit-Yan Yeung",
+          "hidden": false
+        },
+        {
+          "_id": "67aeb180cb3be2cefd46ed0e",
+          "name": "Jie Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T04:00:03.000Z",
+      "title": "Le pouvoir de monter sur les épaules d'un modèle de langage : évaluation globale de la compréhension des concepts physiques",
+      "summary": "De manière systématique, des recherches à grande échelle sur des questions largement posées sont réalisées : Quelle est la véritable compréhension de ce que disent les LLMs ? Cela est lié à la perception de \"Aves Stochastiques\". La proposition d'évaluation est un examen résumé de travaux conçus pour comprendre des concepts physiques conçus physiquement. Ce travail résout des problèmes de mémoire en utilisant des entrées sous forme de grille pour expliquer des phénomènes physiques abstraits. La grille montre des niveaux de compréhension comme la similitude avec d'autres motifs abstraits dans le monde de la grille, des phénomènes clés et des cas d'application. L'étude détaillée de notre travail est la suivante : (1) Les plus récents LLMs, GPT-4, o1 et Gemini 2.0 avec le pensée rapide sont moins efficaces que l'humain dans environ 40% des cas ; (2) Le phénomène des \"Aves Stochastiques\" peut apparaître dans les LLMs et se manifeste comme un échec dans la grille, ce qui permet d'expliquer et de reconnaître le même concept dans le langage naturel ; (3) Notre travail montre les difficultés propres aux LLMs et que l'apprentissage et l'ajustement dans le même format de données n'ont pas un impact significatif sur leur performance.",
+      "upvotes": 4,
+      "discussionId": "67aeb181cb3be2cefd46ed4c"
+    },
+    "publishedAt": "2025-02-13T21:59:28.400Z",
+    "title": "The Stochastic Parrot on LLM's Shoulder: A Summative Assessment of Physical Concept Understanding",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.08946.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6082
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.08468",
+      "authors": [
+        {
+          "_id": "67ad5f3fcad644864b4366ca",
+          "user": {
+            "_id": "66add675c7a575aa0e03d5f3",
+            "avatarUrl": "/avatars/b72b18130664c1de197c1f8df371aa70.svg",
+            "isPro": false,
+            "fullname": "Haonan Chen",
+            "user": "Haon-Chen",
+            "type": "user"
+          },
+          "name": "Haonan Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-13T08:21:55.329Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366cb",
+          "name": "Liang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366cc",
+          "name": "Nan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366cd",
+          "name": "Yutao Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366ce",
+          "name": "Ziliang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366cf",
+          "name": "Furu Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67ad5f3fcad644864b4366d0",
+          "name": "Zhicheng Dou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-12T15:03:33.000Z",
+      "title": "Utilisant des données synthétiques de haute qualité pour améliorer le rendement du cartographage multi-modèle multilingue",
+      "summary": "Le modèle d'embedding multimodal a la capacité de cartographier des données de différents modèles de texte ou d'images dans un espace de représentation cohérent et a reçu beaucoup d'intérêt. Cependant, les données multimodal étiquetées limitées affectent le rendement des embeddings. Les méthodes récentes essaient de résoudre ce problème en utilisant la synthèse de données, mais la qualité des données synthétiques agit comme une limite importante. Dans cet article, on identifie trois critères pour obtenir des données synthétiques de haute qualité monomodal : premièrement, l'amplitude de la gamme, qui garantit que les données générées couvrent une variété de tâches et de combinaisons de modèles, ce qui permet leur application dans des scénarios descendants ; secondement, l'alignement multimodal fort, qui assure que les différents modèles maintiennent une cohérence significative ; et troisièmement, la qualité, qui garantit que les données synthétiques conservent des détails réels et améliorent la confiance. Avec ces principes, le jeu de données est synthétisé de la manière suivante : 1) couvre une large gamme de tâches, de combinaisons de modèles et de langues ; 2) est générée dans un processus profond de pensée d'un modèle multimodal de langue unie en un seul pas ; et 3) des images et des textes précis et pertinents sont sélectionnés, et leur confiance est garantie par auto-évaluation et amélioration. Avec ces données synthétiques de haute qualité, le modèle multilingue E5 de multimodal mmE5 est entraîné. Les expériences étendues montrent que mmE5 atteint les meilleurs rendements sur le benchmark MMEB et montre une excellente performance multilingue sur le benchmark XTD. Notre code, jeu de données et modèle sont disponibles sur https://github.com/haon-chen/mmE5.",
+      "upvotes": 3,
+      "discussionId": "67ad5f3fcad644864b4366f5"
+    },
+    "publishedAt": "2025-02-13T23:32:15.420Z",
+    "title": "mmE5: Improving Multimodal Multilingual Embeddings via High-quality Synthetic Data",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.08468.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66add675c7a575aa0e03d5f3",
+      "avatarUrl": "/avatars/b72b18130664c1de197c1f8df371aa70.svg",
+      "fullname": "Haonan Chen",
+      "name": "Haon-Chen",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.09614",
+      "authors": [
+        {
+          "_id": "67af107d6bd28b8bd4e13c38",
+          "name": "Xueyi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67af107d6bd28b8bd4e13c39",
+          "name": "Jianibieke Adalibieke",
+          "hidden": false
+        },
+        {
+          "_id": "67af107d6bd28b8bd4e13c3a",
+          "name": "Qianwei Han",
+          "hidden": false
+        },
+        {
+          "_id": "67af107d6bd28b8bd4e13c3b",
+          "name": "Yuzhe Qin",
+          "hidden": false
+        },
+        {
+          "_id": "67af107d6bd28b8bd4e13c3c",
+          "name": "Li Yi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:13.000Z",
+      "title": "DexTrack : Contrôle de Tracking Neural de Dexterité pour Opérations Synthétiques Généralisables",
+      "summary": "Nous travaillons sur le développement d'un contrôleur neuronal adaptatif basé sur des données humaines. Cette équipe de contrôle a pour objectif de gérer des mains robotiques adaptatives qui manipulent différents objets pour atteindre plusieurs objectifs. Le développement de ce contrôleur est complexe en raison de la nécessité d'adaptabilité, de généralisation et de robustesse. Les méthodes actuelles d'apprentissage par récompense et d'optimisation de chemins dépendent de récompenses spécifiques ou de modèles de systèmes précis, ce qui ne résout pas ces problèmes. Nous présentons un approche qui utilise des paires de données humaines et des actions de robots pour entraîner un contrôleur neuronal. En utilisant des flux de données, nous améliorons le rendement du contrôleur et augmentons répétitivement la quantité et la qualité des dispositifs qui effectuent un bon suivi. Nous utilisons le suivi des dispositifs pour améliorer le rendement du contrôleur dans des environnements dynamiques, tant par apprentissage par récompense que par un contrôleur de suivi détection entraîné. De plus, nous optimisons individuellement chaque tentative pour obtenir un bon suivi, ce qui permet d'augmenter la diversité du dispositif. L'optimisation homopia mimétise des chaînes d'objets pour résoudre des problèmes de suivi difficiles et d'augmenter la diversité du dispositif. Nous avons démontré notre succès en entraînant un contrôleur neuronal adaptatif et en évaluant-le en simulation et dans le monde réel. Notre méthode améliore le rendement d'un 10% plus que les normes les plus récentes. Le site web du projet est disponible sur https://meowuu7.github.io/DexTrack/, où sont présentés les résultats des animations.",
+      "upvotes": 1,
+      "discussionId": "67af10806bd28b8bd4e13ce5"
+    },
+    "publishedAt": "2025-02-14T04:50:27.474Z",
+    "title": "DexTrack: Towards Generalizable Neural Tracking Control for Dexterous Manipulation from Human References",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/65b8070ad49f4330ab0ca5f7/Ir-_GtsnqYII8yhrpJRD5.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09614.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65b8070ad49f4330ab0ca5f7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/t4fI-3djMfgXCchU_xpjL.png",
+      "fullname": "Xueyi Liu",
+      "name": "xymeow7",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.05761",
+      "authors": [
+        {
+          "_id": "67aee1cd7af05a21a72e793d",
+          "user": {
+            "_id": "648bf9afded4c3eb970eca85",
+            "avatarUrl": "/avatars/a4b7b7fd6c1fca0eac85da7383f58361.svg",
+            "isPro": false,
+            "fullname": "enquan yang",
+            "user": "enquan2022",
+            "type": "user"
+          },
+          "name": "Enquan Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-14T08:01:03.483Z",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e793e",
+          "name": "Peng Xing",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e793f",
+          "name": "Hanyang Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e7940",
+          "name": "Wenbo Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e7941",
+          "name": "Yuanwei Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e7942",
+          "name": "Zechao Li",
+          "hidden": false
+        },
+        {
+          "_id": "67aee1cd7af05a21a72e7943",
+          "name": "Dan Zeng",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-09T03:37:54.000Z",
+      "title": "3CAD : Détection d'Anomalies dans le Dataset de Données Non-Label dans le Monde Local des Produits 3C",
+      "summary": "La détection d'anomalies industrielles a évolué grâce à des ensembles de données tels que MVTec-AD et VisA, mais elle est limitée par le nombre d'échantillons de pic, la variété des types d'anomalies et l'application dans des scénarios réels. Ces limites rendent difficile pour les chercheurs d'atteindre une plus grande précision et d'améliorer le rendement de la détection d'anomalies industrielles. D'une telle perspective, nous proposons un nouveau ensemble de données d'anomalies industrielles à une échelle réaliste dans une ligne de production de 3C. En particulier, le proposé 3CAD inclut 8 types de produits différents et 27,039 images à haute résolution, avec des étiquettes d'anomalies au niveau de pixel. Les principales caractéristiques du 3CAD sont la variété des types et des tailles d'aires d'anomalies, plusieurs types d'anomalies dans la même image, ou plusieurs aires et types d'anomalies dans une seule image. C'est le plus grand ensemble de données de détection d'anomalies conçu pour la gestion de la qualité des produits de 3C, et il est utile pour la discussion et le développement de la communauté. De plus, nous présentons un cadre de détection simple et efficace sans étiquettes : le paradigme Coarse-to-Fine de détection utilisant la guidance de récupération (CFRG). Le CFRG proposé pour la détection de petits défauts utilise des modèles de distillation hétérogène pour la localisation grossière et des modèles de segmentation pour la localisation fine. De plus, des caractéristiques de récupération sont appliquées pour améliorer la capture de modèles normaux. Enfin, nous rapportons les résultats du cadre CFRG et des méthodes communes de détection d'anomalies dans l'ensemble de données 3CAD, démontrant une forte compétitivité et fournissant un haut niveau de test qui pousse le développement de la technologie. Les données et le code sont disponibles sur la URL suivante : https://github.com/EnquanYang2022/3CAD.",
+      "upvotes": 1,
+      "discussionId": "67aee1cf7af05a21a72e799b"
+    },
+    "publishedAt": "2025-02-14T04:00:29.585Z",
+    "title": "3CAD: A Large-Scale Real-World 3C Product Dataset for Unsupervised Anomaly",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/648bf9afded4c3eb970eca85/n-ufwo6Smo9TdMiTqKG8_.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.05761.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "648bf9afded4c3eb970eca85",
+      "avatarUrl": "/avatars/a4b7b7fd6c1fca0eac85da7383f58361.svg",
+      "fullname": "enquan yang",
+      "name": "enquan2022",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
