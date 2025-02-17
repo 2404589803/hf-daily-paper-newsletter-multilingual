@@ -1,0 +1,1578 @@
+[
+  {
+    "paper": {
+      "id": "2502.10389",
+      "authors": [
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff1",
+          "name": "Ziming Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff2",
+          "name": "Yifan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff3",
+          "name": "Chengruidong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff4",
+          "name": "Yiqi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff5",
+          "name": "Lili Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff6",
+          "name": "Yang You",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff7",
+          "name": "Yuqing Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T18:59:36.000Z",
+      "title": "地区適応サンプリングのディフュージョントランスフォーマー",
+      "summary": "Diffusionモデル（DMs）は、多様な領域で生成タスクの最も先進的な選択肢となりました。しかし、それらは複数の順次な正向パスを依存し、実時間性能を限界にしています。先進加速方法は主にサンプリングステップの数を減らすもしくは中間結果の再利用を焦点としていましたが、畳み込みU-Net構造の制約により、画像内の空間領域の変化を活用することができませんでした。Diffusion Transformers（DiTs）の変数数のトークンを処理する柔軟性を拡張し、RASという新しい、学習無制限のサンプリング戦略を導入します。この戦略は、DiTモデルの焦点に基づいて画像内の領域に対して動的に異なるサンプリング比率を割り当てます。私たちの主な観察は、サンプリングステップごとにモデルは意味的に意味のある領域に集中し、これらの領域の焦点は連続的に連続しています。この見解を活用し、RASは現在の焦点領域だけを更新し、他の領域は前ステップからキャッシュされたノイズを使用して更新します。モデルの焦点は前ステップの出力に基づき、我々が見出した時間的な一貫性を活用します。RASはStable Diffusion 3とLumina-Next-T2Iで評価され、生成品質の少なくとも減少しない状態で2.36倍と2.51倍のスピードアップを実現しました。また、ユーザーステージではRASは1.6倍のスピードアップを実現しながら、人間評価で比較的質量を提供します。私たちのアプローチは、実時間応用の可能性を高めるより効率的なDiffusion Transformersへの重大なステップを踏み出します。",
+      "upvotes": 34,
+      "discussionId": "67b2a8a4be31bfaa7cd2c1ad"
+    },
+    "publishedAt": "2025-02-16T22:22:08.102Z",
+    "title": "Region-Adaptive Sampling for Diffusion Transformers",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10389.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "62d18eb81e36881a57f29bf4",
+      "avatarUrl": "/avatars/104851421b4ee9641daaf15942fa7ea1.svg",
+      "fullname": "Yif Yang",
+      "name": "Yif29",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.10248",
+      "authors": [
+        {
+          "_id": "67b2a72e7a49eaea082b9dcf",
+          "name": "Guoqing Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd0",
+          "name": "Haoyang Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd1",
+          "name": "Kun Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd2",
+          "name": "Liangyu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd3",
+          "name": "Nan Duan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd4",
+          "name": "Shengming Yin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd5",
+          "name": "Changyi Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd6",
+          "name": "Ranchen Ming",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd7",
+          "name": "Xiaoniu Song",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd8",
+          "name": "Xing Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd9",
+          "name": "Yu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dda",
+          "name": "Deshan Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ddb",
+          "name": "Deyu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ddc",
+          "name": "Jian Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ddd",
+          "name": "Kaijun Tan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dde",
+          "name": "Kang An",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ddf",
+          "name": "Mei Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de0",
+          "name": "Wei Ji",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de1",
+          "name": "Qiling Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de2",
+          "name": "Wen Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de3",
+          "name": "Xin Han",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de4",
+          "name": "Yanan Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de5",
+          "name": "Zheng Ge",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de6",
+          "name": "Aojie Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de7",
+          "name": "Bin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de8",
+          "name": "Bizhu Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de9",
+          "name": "Bo Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dea",
+          "name": "Brian Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9deb",
+          "name": "Changxing Miao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dec",
+          "name": "Chen Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ded",
+          "name": "Chenfei Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dee",
+          "name": "Chenguang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9def",
+          "name": "Dapeng Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df0",
+          "name": "Dingyuan Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df1",
+          "name": "Enle Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df2",
+          "name": "Gang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df3",
+          "name": "Ge Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df4",
+          "name": "Guanzhe Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df5",
+          "name": "Gulin Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df6",
+          "name": "Haiyang Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df7",
+          "name": "Hao Nie",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df8",
+          "name": "Haonan Jia",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df9",
+          "name": "Hanpeng Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfa",
+          "name": "Hanqi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfb",
+          "name": "Haolong Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfc",
+          "name": "Heng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfd",
+          "name": "Hongcheng Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfe",
+          "name": "Huilin Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dff",
+          "name": "Huixin Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e00",
+          "name": "Jiahao Gong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e01",
+          "name": "Jianchang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e02",
+          "name": "Jiaoren Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e03",
+          "name": "Jie Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e04",
+          "name": "Jie Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e05",
+          "name": "Jiashuai Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e06",
+          "name": "Jiashuo Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e07",
+          "name": "Jingyang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e08",
+          "name": "Junjing Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e09",
+          "name": "Junzhe Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0a",
+          "name": "Kaixiang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0b",
+          "name": "Lei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0c",
+          "name": "Lei Xia",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0d",
+          "name": "Liang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0e",
+          "name": "Liguo Tan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0f",
+          "name": "Liwen Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e10",
+          "name": "Liying Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e11",
+          "name": "Ming Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e12",
+          "name": "Mingliang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e13",
+          "name": "Muhua Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e14",
+          "name": "Na Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e15",
+          "name": "Qiaohui Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e16",
+          "name": "Qinglin He",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e17",
+          "name": "Qiuyan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e18",
+          "name": "Quan Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e19",
+          "name": "Ran Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1a",
+          "name": "Rui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1b",
+          "name": "Shaoliang Pang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1c",
+          "name": "Shiliang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1d",
+          "name": "Sitong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1e",
+          "name": "Siqi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1f",
+          "name": "Shuli Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e20",
+          "name": "Tiancheng Cao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e21",
+          "name": "Tianyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e22",
+          "name": "Weipeng Ming",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e23",
+          "name": "Wenqing He",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e24",
+          "name": "Xu Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e25",
+          "name": "Xuelin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e26",
+          "name": "Xianfang Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e27",
+          "name": "Xiaojia Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e28",
+          "name": "Xuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e29",
+          "name": "Yaqi Dai",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2a",
+          "name": "Yanbo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2b",
+          "name": "Yang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2c",
+          "name": "Yineng Deng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2d",
+          "name": "Yingming Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2e",
+          "name": "Yilei Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2f",
+          "name": "Yuanwei Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e30",
+          "name": "Yu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e31",
+          "name": "Yu Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e32",
+          "name": "Yuchu Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e33",
+          "name": "Yuhe Yin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e34",
+          "name": "Yuheng Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e35",
+          "name": "Yuxiang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e36",
+          "name": "Zecheng Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e37",
+          "name": "Zekai Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e38",
+          "name": "Zidong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e39",
+          "name": "Binxing Jiao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3a",
+          "name": "Jiansheng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3b",
+          "name": "Jing Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3c",
+          "name": "Shuchang Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3d",
+          "name": "Xiangyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3e",
+          "name": "Xinhao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3f",
+          "name": "Yibo Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e40",
+          "name": "Heung-Yeung Shum",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e41",
+          "name": "Daxin Jiang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T15:58:10.000Z",
+      "title": "ステップビデオテクニカルレポート：ビデオファンダメンタルモデルの実践、課題と将来の展望",
+      "summary": "Step-Video-T2Vは、30Bパラメータを持つ最先端の文字からの映画モデルです。204フレームの長さの映画を生成できます。Deep Compression Variational Autoencoder、Video-VAEは、16x16の空間的なコンパクション比と8xの時間的なコンパクション比を達成し、例外的な映画の再構成質量を維持します。ユーザーのプロンプトは、英語と中国語を扱うための2つのバイリンガルテキストエンコーダーでエンコードされます。Flow Matchingを用いて3D全注意のDiTを訓練し、入力ノイズを潜在フレームにデノイズします。Video-DPOは、生成された映画の視覚質量を改善するために、アーティファクトを減らします。また、訓練戦略とキーの観察や洞察を詳しく説明しています。Step-Video-T2Vの性能は、新しい映画生成ベンチマーク、Step-Video-T2V-Evalで評価され、開源や商業エンジンと比較して最先端の文字からの映画質量を示します。また、現在のディフュージョンベースモデルパラダイムの制限と将来の方向性について議論し、映画ベースモデルの進化を促進し、映画内容のコンテンツエンジニアーズを強化しようとしています。Step-Video-T2VとStep-Video-T2V-Evalは、https://github.com/stepfun-ai/Step-Video-T2Vで提供され、オンライン版はhttps://yuewen.cn/videosからアクセスできます。我々の目標は、映画ベースモデルのイノベーションを加速し、映画内容のコンテンツエンジニアーズを強化しようとしています。",
+      "upvotes": 19,
+      "discussionId": "67b2a7357a49eaea082b9fbf"
+    },
+    "publishedAt": "2025-02-16T22:50:38.622Z",
+    "title": "Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10248.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60efceb38432bc401cd0abc8",
+      "avatarUrl": "/avatars/c3331d9a46da4afcb90a25691d47aed4.svg",
+      "fullname": "tongwang",
+      "name": "turrf",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09696",
+      "authors": [
+        {
+          "_id": "67b2aae22a4cd186392a18b2",
+          "name": "Jonathan Roberts",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b3",
+          "name": "Mohammad Reza Taesiri",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b4",
+          "name": "Ansh Sharma",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b5",
+          "name": "Akash Gupta",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b6",
+          "name": "Samuel Roberts",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b7",
+          "name": "Ioana Croitoru",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b8",
+          "name": "Simion-Vlad Bogolin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b9",
+          "name": "Jialu Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18ba",
+          "name": "Florian Langer",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18bb",
+          "name": "Vyas Raina",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18bc",
+          "name": "Vatsal Raina",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18bd",
+          "name": "Hanyi Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18be",
+          "name": "Vishaal Udandarao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18bf",
+          "name": "Jingyi Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c0",
+          "name": "Shiyang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c1",
+          "name": "Sam Purkis",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c2",
+          "name": "Tianshuo Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c3",
+          "name": "Wenye Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c4",
+          "name": "Gyungin Shin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c5",
+          "name": "Qiaochu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c6",
+          "name": "Anh Totti Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c7",
+          "name": "Kai Han",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c8",
+          "name": "Samuel Albanie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:11.000Z",
+      "title": "ZeroBench: 当代大規模多モデルの不可能な可視化ベンチマーク",
+      "summary": "大規模多模態モデル（LMMs）は、画像の解釈において大きな欠点を示す。それに加え、その空間認知能力は幼児や動物よりも劣らしいという指標である。これに対して、多くのビジュアルベンチマークで高いスコアを達成し、モデルの進歩によって急速にヘッドロウムが崩れている。この問題に対処するため、長期間にわたって適切で難しいベンチマークの必要性が急迫的にある。このアイデアを極限まで進めるために、ZeroBenchという軽量ビジュアル推理ベンチマークを紹介し、現代の先鋒のLMMsにとっては完全に不可能なものとして設計されている。ベンチマークは100問の手動で編集された質問と334問の比較的に難しくない付加質問からなり、20モデルをZeroBenchで評価し、すべてのスコアが0.0%であることを確認し、誤りを厳密に分析した。ビジュアル理解の進歩を促進するために、ZeroBenchを公開している。",
+      "upvotes": 16,
+      "discussionId": "67b2aae42a4cd186392a195b"
+    },
+    "publishedAt": "2025-02-16T22:20:53.227Z",
+    "title": "ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/QJdJ_pJPI20MjNz_q8PTw.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09696.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 60
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09992",
+      "authors": [
+        {
+          "_id": "67b2c31125f77e5fc242f4f8",
+          "name": "Shen Nie",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4f9",
+          "name": "Fengqi Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fa",
+          "name": "Zebin You",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fb",
+          "name": "Xiaolu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fc",
+          "name": "Jingyang Ou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fd",
+          "name": "Jun Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fe",
+          "name": "Jun Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4ff",
+          "name": "Yankai Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f500",
+          "name": "Ji-Rong Wen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f501",
+          "name": "Chongxuan Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T08:23:51.000Z",
+      "title": "大語言拡散モデル",
+      "summary": "自動回帰モデル（ARMs）は、大規模言語モデル（LLMs）の基礎として広く認知されています。我々はこの概念を挑戦し、LLaDAという、前学習と制御付き微調節（SFT）パラダイムでスタートから学習されたディフューションモデルを紹介します。LLaDAは、フロントデータマスクプロセスと逆プロセスを通じて分布をモデル化し、ベージャントTransformerで隠れタグを予測します。これにより、確率推論の原則的な生成的アプローチを提供します。拡張されたベンチマークでは、LLaDAは強いスケーラビリティを示し、我々が自前構築したARMベースラインに対して上回りました。特に、LLaDA 8Bは、LLaMA3 8Bと同等の力を示し、インコンテクスト学習での強力な性能を示します。SFT後、多ターンダイアローグなどのケーススタディで、指示を追跡する能力が驚異的に高まります。また、LLaDAは逆転の過程を解決し、GPT-4oを超えて、逆転の詩の完成タスクで優れた性能を示します。我々の発見は、ディフューションモデルがARMsに対して有効で有望な代替として機能することを示し、上記のLLMsの構造的な能力が本質的にARMsに結ばれているという仮説を否定します。",
+      "upvotes": 14,
+      "discussionId": "67b2c31225f77e5fc242f527"
+    },
+    "publishedAt": "2025-02-17T00:03:18.228Z",
+    "title": "Large Language Diffusion Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09992.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6115
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.10391",
+      "authors": [
+        {
+          "_id": "67b2ab548191c180b9c4eb83",
+          "name": "Yi-Fan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb84",
+          "name": "Tao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb85",
+          "name": "Haochen Tian",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb86",
+          "name": "Chaoyou Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb87",
+          "name": "Peiyan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb88",
+          "name": "Jianshu Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb89",
+          "name": "Wulin Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8a",
+          "name": "Yang Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8b",
+          "name": "Huanyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8c",
+          "name": "Junkang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8d",
+          "name": "Xue Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8e",
+          "name": "Yibo Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8f",
+          "name": "Bin Wen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb90",
+          "name": "Fan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb91",
+          "name": "Zhang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb92",
+          "name": "Tingting Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb93",
+          "name": "Di Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb94",
+          "name": "Liang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb95",
+          "name": "Rong Jin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb96",
+          "name": "Tieniu Tan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T18:59:51.000Z",
+      "title": "MM-RLHF: 次のステップに向かっての多モデルLLMのアラインメント",
+      "summary": "関数が実行されたので、ここに翻訳された結果が表示されます。",
+      "upvotes": 12,
+      "discussionId": "67b2ab598191c180b9c4ec10"
+    },
+    "publishedAt": "2025-02-16T22:51:55.408Z",
+    "title": "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/623d8ca4c29adf5ef6175615/YtpeHGys5Zs3bqPlOGs94.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/623d8ca4c29adf5ef6175615/8mE0hOEgm-if-9zaLyMGn.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10391.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "623d8ca4c29adf5ef6175615",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623d8ca4c29adf5ef6175615/q7lHao7UPwU1u7YLSP56m.jpeg",
+      "fullname": "Yi-Fan Zhang",
+      "name": "yifanzhang114",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09955",
+      "authors": [
+        {
+          "_id": "67b2c1ac0303a07acd3f9443",
+          "name": "Iddo Drori",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9444",
+          "name": "Gaston Longhitano",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9445",
+          "name": "Mao Mao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9446",
+          "name": "Seunghwan Hyun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9447",
+          "name": "Yuke Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9448",
+          "name": "Sungjun Park",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9449",
+          "name": "Zachary Meeks",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944a",
+          "name": "Xin-Yu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944b",
+          "name": "Ben Segev",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944c",
+          "name": "Howard Yong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944d",
+          "name": "Nakul Verma",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944e",
+          "name": "Avi Shporer",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944f",
+          "name": "Alon Amit",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9450",
+          "name": "Madeleine Udell",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T07:22:25.000Z",
+      "title": "多様な推論と検証の進歩的な理由",
+      "summary": "Reasoning LLMsら如OpenAI o1、o3、DeepSeek R1は、数学とコーディングにおいて重要な進展を達成していますが、国際数学オリンピック（IMO）の組み合わせ問題、Abstraction and Reasoning Corpus（ARC）のパズル、そして人類の最後の試験（HLE）の問題などの進歩的なタスクには難しいです。私たちは、テスト時に複数のモデルと方法を組み合わせた多様な推論アプローチを使用しています。私たちは、数学とコーディングの問題を検証すること、そして他の問題に対する拒否サンプリングが簡単で効果的であることを調査しました。私たちは、LeanでIMO問題の解答の正確性を自動的に検証し、ARCパズルはコードで検証し、それぞれの問題に最適な解答を得ることを調査しました。私たちのアプローチは、IMOの組み合わせ問題の答えの正確性は33.3%から77.8%に、HLEの問題の正確性は8%から37%に、948人の人間が解けなかったARCパズルの80%を解くことができ、o3の高計算で解けなかったARCパズルの26.5%を解くことができました。テスト時のシミュレーション、強化学習、推論のフライバックを用いたメタ学習は、アガントグラフの表現を適応し、プロンプト、コード、データセットを変更することで、一般化を改善します。私たちのアプローチは、信頼性のある、強固な、スケーラブルであり、可再現性の研究の精神に基づいて、公開に提供することを決意しています。",
+      "upvotes": 5,
+      "discussionId": "67b2c1b10303a07acd3f9532"
+    },
+    "publishedAt": "2025-02-16T23:57:43.710Z",
+    "title": "Diverse Inference and Verification for Advanced Reasoning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09955.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6115
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09935",
+      "authors": [
+        {
+          "_id": "67b2e6939edebc815a35eec8",
+          "name": "Łukasz Staniszewski",
+          "hidden": false
+        },
+        {
+          "_id": "67b2e6939edebc815a35eec9",
+          "name": "Bartosz Cywiński",
+          "hidden": false
+        },
+        {
+          "_id": "67b2e6939edebc815a35eeca",
+          "name": "Franziska Boenisch",
+          "hidden": false
+        },
+        {
+          "_id": "67b2e6939edebc815a35eecb",
+          "name": "Kamil Deja",
+          "hidden": false
+        },
+        {
+          "_id": "67b2e6939edebc815a35eecc",
+          "name": "Adam Dziedzic",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T06:11:23.000Z",
+      "title": "「ディフュージョンモデルにおける文脈生成の精密パラメーター局在」",
+      "summary": "新しいディフォーションモデルは、高品質のテキストを統合したまま写真のほぼ写実的な画像を合成できます。驚き的に、私たちはアテンションアクティベーションパッチを通じて、ディフォーションモデルのパラメータの少なくとも1%を含むすべてのアテンション層が、画像内のテキストの生成に影響を与えることを示しました。この見込みに基づいて、私たちはディフォーションモデルの交差アテンションと共通アテンション層を特定して、テキストの生成の効率と性能を向上させます。私たちは、テキストの生成を責任として持つ層を特定することから利益を得るための数々のアプリケーションを導入します。まず、特定された層のローラーベースの微調節を行って、大きなディフォーションモデルの一般的なテキスト生成能力をより強力にし、生成の品質と多様性を保っています。次に、特定された層を利用して生成画像のテキスト内容を編集する方法を示します。最後に、このアイデアを、無料で有毒なテキストの生成を防ぐ実用的なケースに拡張します。先行研究と比較して、私たちの特定アプローチは、U-Net（例：LDMとSDXL）、transformerベース（例：DeepFloyd IFとStable Diffusion 3）などの様々なディフォーションモデルアーキテクチャに広く適用可能です。プロジェクトページは、https://t2i-text-loc.github.io/ から利用できます。",
+      "upvotes": 4,
+      "discussionId": "67b2e6979edebc815a35efbc"
+    },
+    "publishedAt": "2025-02-17T03:06:17.932Z",
+    "title": "Precise Parameter Localization for Textual Generation in Diffusion Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09935.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c7c19721bd95f80ed8ed80",
+      "avatarUrl": "/avatars/0b1c1ace991e0290118d4f99f619d809.svg",
+      "fullname": "Lukasz Staniszewski",
+      "name": "lukasz-staniszewski",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09741",
+      "authors": [
+        {
+          "_id": "67b2b58f9edebc815a2a938c",
+          "name": "Tianyi Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2b58f9edebc815a2a938d",
+          "name": "Deqing Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2b58f9edebc815a2a938e",
+          "name": "Mahdi Soltanolkotabi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2b58f9edebc815a2a938f",
+          "name": "Robin Jia",
+          "hidden": false
+        },
+        {
+          "_id": "67b2b58f9edebc815a2a9390",
+          "name": "Vatsal Sharan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T19:54:59.000Z",
+      "title": "FoNE: Fourier Features をもっての精密な単一トークンの数値埋め込み",
+      "summary": "Large Language Models (LLMs) は通常、数値を複数のトークンで表現し、これによりモデルがこれらのトークンを集約して数値を解釈する必要がある。この分散は訓練および推論のよりもより低い効率性をもたらし、数値関連のタスクにおけるモデルの性能を悪化させる。予っさらって学習された LLMs 内部で数値トークンにフーリエフィーチャーらしい特徴を学習していることを観察した上で、Fourier Number Embedding (FoNE) という新しい方法を提案しています。これは数値をフーリエ特徴を持って直接的に埋め込み空間にマッピングする方法で、各数字を1つのトークンで表現し、そのみ2次元の埋め込みディメンションを持つことで、分散をなくして数値値を有効的に捉える。この圧縮表現は訓練および推論を両方加速します。傳統的なサブウォードと数字ごとの埋め込みよりも、FoNE は計算オーバーヘッドを減らし、加算、減算、かつかけ算の数値タスクにおいてもより高い精度を達成します。6桁の小数加算では、FoNE はサブウォードと数字ごとの埋め込みに比べて99%の精度を達成するために64倍のデータが必要なく、それぞれの数字に対して3倍と6倍のトークンが使用されることを示します。また、FoNE は加算、減算、かつかけ算のテスト例100,000以上において100%の精度を収める唯一の方法です。コードと可視化は https://fouriernumber.github.io/ に公開されています。",
+      "upvotes": 4,
+      "discussionId": "67b2b5919edebc815a2a93fc"
+    },
+    "publishedAt": "2025-02-16T23:07:53.170Z",
+    "title": "FoNE: Precise Single-Token Number Embeddings via Fourier Features",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09741.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "63c8454e46421a2efe82709d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63c8454e46421a2efe82709d/3BcSk4KOwAgWHEPVtsAV3.png",
+      "fullname": "Deqing Fu",
+      "name": "deqing",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.10177",
+      "authors": [
+        {
+          "_id": "67b29f472ea5fd965beb91ed",
+          "name": "Mingcong Lei",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91ee",
+          "name": "Yiming Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91ef",
+          "name": "Ge Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91f0",
+          "name": "Zhixin Mai",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91f1",
+          "name": "Shuguang Cui",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91f2",
+          "name": "Yatong Han",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91f3",
+          "name": "Jinke Ren",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T14:12:09.000Z",
+      "title": "STMA: スペクトラル・タイムメモリーアガント 長期ホライゾン軽体タスクの計画",
+      "summary": "構体化知能の主な目的は、動的な環境で長期的なタスクを行うことにより、強固な決定論と適応性を維持することである。この目標を達成するために、我々は時間と空間を含むメモリー（Spatio-Temporal Memory Agent, STMA）の新しいフレームワークを提案します。STMAは、時間と空間を含むメモリーを統合してタスクの計画と実行を強化するために設計されています。STMAは3つの重要なコンポーネントを構成しています：1）時間と空間を含むメモリーモジュール、2）動的な知識グラフ、3）計画者-批判者機構。TextWorld環境での32つのタスクでSTMAを評価し、多段階の計画と探索を行う際に異なる複雑度のレベルを試しました。実験結果によると、最先端のモデルに比べて成功率が31.25%上昇し、平均スコアが24.7%上昇しました。これらの結果は、時間と空間を含むメモリーが構体化エージェントのメモリー能力を進める効果を明らかにしています。",
+      "upvotes": 3,
+      "discussionId": "67b29f4a2ea5fd965beb9286"
+    },
+    "publishedAt": "2025-02-16T21:31:11.459Z",
+    "title": "STMA: A Spatio-Temporal Memory Agent for Long-Horizon Embodied Task Planning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10177.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6628c6107751d297d7025a71",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6628c6107751d297d7025a71/S1rm5VIwV2Uxfv8GetKMU.jpeg",
+      "fullname": "Lei Mingcong",
+      "name": "SP4595",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.07586",
+      "authors": [
+        {
+          "_id": "67b30146b02f929c82ce075e",
+          "name": "John Hewitt",
+          "hidden": false
+        },
+        {
+          "_id": "67b30146b02f929c82ce075f",
+          "name": "Robert Geirhos",
+          "hidden": false
+        },
+        {
+          "_id": "67b30146b02f929c82ce0760",
+          "name": "Been Kim",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-11T14:34:05.000Z",
+      "title": "私たちは既存の語彙を使用してAIを理解できません。",
+      "summary": "この立場論文は、AIを理解するためには、現在の人間の言葉の語彙を信じることはできないと主張しています。代わりに、新語を開発することを目指し、教えたい人間の具体的な概念や、学習したい機械の概念を表す新しい言葉を作成することを推奨します。人間と機械が異なる概念を持つ前提に立っています。これは、解釈性をコミュニケーション問題として構成できることを意味します：人間は機械の概念を参照し、制御でき、機械に人間の概念を伝えることができなければなりません。人間と機械の共有語を開発して新語を作成することで、このコミュニケーション問題を解決することができると信じています。成功した新語は、有用な抽象化を達成します：もっとも詳細ではなく、複数のコンテキストで再利用可能であり、もっとも高レベルではなく、正確な情報を伝えることができます。概念的な証明として、「長さ新語」がLLMのレスポンスの長さを制御でき、「多様性新語」がより変化のあるレスポンスをサンプリングできることを示します。合わせて、この立場論文は、現在の語彙でAIを理解することはできないと主張し、新語を通じて語彙を拡張することで、機械の制御と理解においてもモノクロームを持つ機会を生み出すことを主張しています。",
+      "upvotes": 2,
+      "discussionId": "67b30147b02f929c82ce079c"
+    },
+    "publishedAt": "2025-02-17T04:28:55.526Z",
+    "title": "We Can't Understand AI Using our Existing Vocabulary",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.07586.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5e7749883d77a72421292d07",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670231290373-5e7749883d77a72421292d07.jpeg",
+      "fullname": "Gabriele Sarti",
+      "name": "gsarti",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 212
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.07856",
+      "authors": [
+        {
+          "_id": "67b2dedc8a276e7b485a9bcd",
+          "name": "Ao Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bce",
+          "name": "Wei Fang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bcf",
+          "name": "Hongbo Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bd0",
+          "name": "Le Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bd1",
+          "name": "Ge Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bd2",
+          "name": "Minfeng Xu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-11T14:57:33.000Z",
+      "title": "ファストサンプライヤー マイン・リベーティング・ディフュージョン オーディエとSDE ソルバーに基づく",
+      "summary": "拡散モデルの応用では、制御可能な生成は実用的な重要性を持つが、同時にも難しい。現在の制御可能な生成の方法は主に拡散モデルのスコア関数の修正に焦点を当てているが、Mean Reverting (MR) Diffusionは確率微分方程式（SDE）の構造を直接修正し、画像条件の統合を簡単かつ自然に行うようになっている。しかし、現在のトレーニング無しの高速サンプライザはMR Diffusionに直接適用できない。そのため、MR Diffusionは高品質のサンプルを得るために数百のNFEs（関数評価の数）が必要となっている。本論文では、新しいアルゴリズムを提案し、それをMRS（MR Sampler）としている。MR Diffusionに関連する逆時間SDEと確率流の普通微分方程式（PF-ODE）を解くことで、半解析的な解を得る。これらの解は解析的な関数とニューラルネットワークでパラメーター化された積分からなる。この解を基に、少ないステップで高品質のサンプルを生成することができる。我々のアプローチはトレーニング不要で、主なパラメター化のすべてをサポートし、ノイズ予測、データ予測、速度予測を含む。拡散モデルのサンプリング手順を加速し、制御可能な生成において実用的になるようにすることを目的としている。極めて広い範囲の実験により、MR Samplerは10から20倍のスピードアップで高品質のサンプリングを維持していることが示された。",
+      "upvotes": 1,
+      "discussionId": "67b2dedd8a276e7b485a9c0b"
+    },
+    "publishedAt": "2025-02-17T02:03:05.624Z",
+    "title": "MRS: A Fast Sampler for Mean Reverting Diffusion based on ODE and SDE Solvers",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.07856.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64100834c025ddf6189c415e",
+      "avatarUrl": "/avatars/9b9bbecef5d5815540abf92d74012f55.svg",
+      "fullname": "Hongbo Zhao",
+      "name": "z-hb",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09638",
+      "authors": [
+        {
+          "_id": "67b2c3386ccf462ccaa45860",
+          "name": "Jeremy Kritz",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45861",
+          "name": "Vaughn Robinson",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45862",
+          "name": "Robert Vacareanu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45863",
+          "name": "Bijan Varjavand",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45864",
+          "name": "Michael Choi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45865",
+          "name": "Bobby Gogov",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45866",
+          "name": "Scale Red Team",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45867",
+          "name": "Summer Yue",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45868",
+          "name": "Willow E. Primack",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45869",
+          "user": {
+            "_id": "66976d1007b36ccd01586ce5",
+            "avatarUrl": "/avatars/5811e350907a29b71f6e4d57ffd53e66.svg",
+            "isPro": false,
+            "fullname": "Wang",
+            "user": "ZifanScale",
+            "type": "user"
+          },
+          "name": "Zifan Wang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-02-17T05:03:53.788Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-09T20:49:16.000Z",
+      "title": "Jailbreaking to Jailbreak",
+      "summary": "拒否訓練ラージュラングラウジングモデル（LLMs）は有害な出力を防ぐことができますが、この防御は自動化されたおよび人間が作り出したジャイルブレイクに脆弱です。私たちは、人間が拒否訓練されたLLMをジャイルブレイクすることで自分自身やその他のLLMをジャイルブレイクすることを願わせる新しいLLM-as-red-teamerアプローチを提案します。ジャイルブレイクされたLLMをJ_2攻撃者と呼び、様々な赤チーム戦略を用いて標的モデルをシステマティックに評価し、前回の失敗からインコンテキスト学習を通じて性能を向上させることができます。実験により、Sonnet 3.5とGemini 1.5 proはJ_2でGPT-4o（そして他の能力のあるLLMにおいて類似な結果）に対してジャイルブレイク成功率（ASRs）が93.0%と91.0%で、他のLLMを上回っています。私たちの研究は、人間の赤チームヤツからのインスピレーションをもって戦略的な赤チームニングのスケーラブルなアプローチを導入し、ジャイルブレイクへのジャイルブレイクが見落とされているフィーヤーモードとして特に注目します。特に、J_2を直接駆使することを防ぐことと同時にAI安全の研究を進めるために、私たちは具体的なプロンプティング詳細を非公開しながらメソッドを公開します。",
+      "upvotes": 1,
+      "discussionId": "67b2c3396ccf462ccaa458b3"
+    },
+    "publishedAt": "2025-02-17T00:04:19.389Z",
+    "title": "Jailbreaking to Jailbreak",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09638.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6115
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.10173",
+      "authors": [
+        {
+          "_id": "67b306ba817e86482ef224d5",
+          "name": "Bo Ni",
+          "hidden": false
+        },
+        {
+          "_id": "67b306ba817e86482ef224d6",
+          "name": "Markus J. Buehler",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T14:07:54.000Z",
+      "title": "Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a\n  言語ディフュージョンモデル",
+      "summary": "プロテインは、酵素催化、信号伝達、構造的適応性の幅広い生物学的機能を持つ動的な分子機械であり、その機能は、その動きに固有的に関連している。しかし、シーケンス、構造、分子動きの複雑な、退化的な関係により、特定の動的な特性を持つプロテインの設計は難しい。ここで、私たちは、正規モードの振動に基づく端末から端末までの新たなプロテインの設計を可能にする生成AIフレームワークVibeGenを紹介します。VibeGenは、指定された振動モードに基づいてシーケンス候補を生成するプロテイン設計者と、その動的な精度を評価するプロテイン予測者からなる効果的な二重モデルアーキテクチャを採用しています。このアプローチは、設計プロセス中に多様性、精度、新鮮性を融合させます。全原子分子シミュレーションを直接の評価として、設計されたプロテインが、構造主軸全体で規定された正規モードの振幅を正確に再現し、様々な安定した機能的に関連する構造を採用することを示します。特に、生成されたシーケンスは、自然のプロテインとの類似性が有意的にないように、進化の制約を超えてアクセス可能なプロテイン空間を拡大します。私たちの研究は、プロテインの動的性質を生産的なプロテイン設計に統合し、シーケンスと振動行動との直接的、双方向的な関係を確立し、特定の動的的および機能的な特性を持つ生物分子の工学に新たなパスワードを開きます。このフレームワークは、柔軟な酵素、動的なスキーフォード、ビオマテリアルの理性的な設計に広く影響を及ぼし、動的性質に基づくAI駆動のプロテイン工学の道をつなぎます。",
+      "upvotes": 0,
+      "discussionId": "67b306ba817e86482ef224fa"
+    },
+    "publishedAt": "2025-02-17T05:09:33.663Z",
+    "title": "Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a Language Diffusion Model",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/623ce1c6b66fedf374859fe7/rcgnOK5A9wV0qO9I3Mxny.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/623ce1c6b66fedf374859fe7/xD8WOPTgKHpIIPwHh9KHf.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10173.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "623ce1c6b66fedf374859fe7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623ce1c6b66fedf374859fe7/lhbMLg6BxLCb9DD4rgjfx.jpeg",
+      "fullname": "Markus Buehler",
+      "name": "mjbuehler",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 24
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09980",
+      "authors": [
+        {
+          "_id": "67b2d7e86a002d59a415fc99",
+          "name": "Hsu-kuang Chiu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9a",
+          "name": "Ryo Hachiuma",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9b",
+          "name": "Chien-Yi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9c",
+          "name": "Stephen F. Smith",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9d",
+          "name": "Yu-Chiang Frank Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9e",
+          "name": "Min-Hung Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T08:05:41.000Z",
+      "title": "V2V-LLM: 車車コピー協力自動運転による多モデル大規模言語モデル",
+      "summary": "現在の自動運転車は主に個々のセンサーを利用して周辺のシーンを理解し、将来の軌道を計画していますが、センサーが故障した場合や遮蔽された場合は不信頼です。この問題に対処するために、車車フォワード（V2V）コミュニケーションを通じた共同認識法が提案されていますが、それらは主に検出と追跡に焦点を当てています。これらのアプローチが共同計画の全体的な性能にどのような貢献をするかはまだ調査されていません。最近の進歩をヒントに、大語言モデル（LLM）を用いて自動運転システムを構築するための進歩に受け感じ、共同自動運転にLLMを統合した新しい問題設定を提案します。また、提案された車車フォワード問答データセットとベンチマークを含むことで、新しい研究方向を開拓します。我々の基線方法として、車車フォワード大語言モデル（V2V-LLM）を提案し、LLMを用いて複数の連結自動運転車（CAVs）からの認識情報を融合し、駆転き関連の質問に答えることを目的としています：基礎、特徴的なオブジェクト識別、計画。実験結果によると、我々の提案されたV2V-LLMは、共同自動運転における多様なタスクを実行するための有望な統合モデルアーキテクチャであることを示し、異なる融合アプローチを用いたベンチマーク方法に対しても優れています。我々の研究は、未来の自動運転システムの安全性を向上させる新しい研究方向を開拓します。我々のプロジェクトウェブサイトは、https://eddyhkchiu.github.io/v2vllm.github.io/ です。",
+      "upvotes": 0,
+      "discussionId": "67b2d7ee6a002d59a415fe34"
+    },
+    "publishedAt": "2025-02-17T01:33:15.971Z",
+    "title": "V2V-LLM: Vehicle-to-Vehicle Cooperative Autonomous Driving with Multi-Modal Large Language Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09980.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64ae22dd1aee69ece065cdcd",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ae22dd1aee69ece065cdcd/JG7QaHIrr4i2k4uwR4pZK.png",
+      "fullname": "Min-Hung Chen",
+      "name": "cmhungsteve",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  }
+]

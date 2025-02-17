@@ -1,0 +1,1578 @@
+[
+  {
+    "paper": {
+      "id": "2502.10389",
+      "authors": [
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff1",
+          "name": "Ziming Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff2",
+          "name": "Yifan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff3",
+          "name": "Chengruidong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff4",
+          "name": "Yiqi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff5",
+          "name": "Lili Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff6",
+          "name": "Yang You",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a89ebe31bfaa7cd2bff7",
+          "name": "Yuqing Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T18:59:36.000Z",
+      "title": "Adaptador de Varianza de Sampling Localmente Ajustado",
+      "summary": "Los modelos de difusión (DMs) han convertidose en una de las mejores opciones para tareas de generación en diversas áreas. Sin embargo, estos modelos dependen de múltiples pasos secuenciales y limitan el rendimiento en tiempo real. Los métodos de aceleración desarrollados principalmente han centrado su atención en reducir el número de pasos de sampling o en reutilizar resultados intermedios, pero su estructura U-Net de calamiñación impide su aplicación a los cambios en las áreas espaciales de las imágenes. La flexibilidad en el número de tokens del Diffusion Transformer (DiT) ha sido expandida, y se ha introducido una nueva estrategia de sampling sin restricciones de entrenamiento llamada RAS. Esta estrategia asigna diferentes proporciones de sampling dinámicamente a diferentes áreas de la imagen basándose en el enfoque del modelo DiT. Nuestra principal observación es que en cada paso de sampling, el modelo se centra en áreas significativas, y estos enfoques se conectan continuamente. Esta perspectiva permite que RAS actualice solo el área de enfoque actual, mientras que otras áreas se actualizan utilizando ruidos cacheeados de los pasos anteriores. El enfoque del modelo se basa en los resultados de los pasos anteriores y nosotros aprovechamos la coherencia temporal que hemos descubierto. RAS ha sido evaluado en Stable Diffusion 3 y Lumina-Next-T2I, y ha logrado un aumento de velocidad de 2.36 veces y 2.51 veces, sin que la calidad de generación disminuya. Además, en el escenario de usuario, ha logrado un aumento de velocidad de 1.6 veces, proporcionando una calidad relativamente mejora. Nuestro enfoque ha dado un gran paso hacia transformadores de difusión eficientes que pueden potenciar aplicaciones en tiempo real.",
+      "upvotes": 34,
+      "discussionId": "67b2a8a4be31bfaa7cd2c1ad"
+    },
+    "publishedAt": "2025-02-16T22:22:08.102Z",
+    "title": "Region-Adaptive Sampling for Diffusion Transformers",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10389.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "62d18eb81e36881a57f29bf4",
+      "avatarUrl": "/avatars/104851421b4ee9641daaf15942fa7ea1.svg",
+      "fullname": "Yif Yang",
+      "name": "Yif29",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.10248",
+      "authors": [
+        {
+          "_id": "67b2a72e7a49eaea082b9dcf",
+          "name": "Guoqing Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd0",
+          "name": "Haoyang Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd1",
+          "name": "Kun Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd2",
+          "name": "Liangyu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd3",
+          "name": "Nan Duan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd4",
+          "name": "Shengming Yin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd5",
+          "name": "Changyi Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd6",
+          "name": "Ranchen Ming",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd7",
+          "name": "Xiaoniu Song",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd8",
+          "name": "Xing Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dd9",
+          "name": "Yu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dda",
+          "name": "Deshan Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ddb",
+          "name": "Deyu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ddc",
+          "name": "Jian Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ddd",
+          "name": "Kaijun Tan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dde",
+          "name": "Kang An",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ddf",
+          "name": "Mei Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de0",
+          "name": "Wei Ji",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de1",
+          "name": "Qiling Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de2",
+          "name": "Wen Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de3",
+          "name": "Xin Han",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de4",
+          "name": "Yanan Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de5",
+          "name": "Zheng Ge",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de6",
+          "name": "Aojie Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de7",
+          "name": "Bin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de8",
+          "name": "Bizhu Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9de9",
+          "name": "Bo Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dea",
+          "name": "Brian Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9deb",
+          "name": "Changxing Miao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dec",
+          "name": "Chen Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9ded",
+          "name": "Chenfei Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dee",
+          "name": "Chenguang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9def",
+          "name": "Dapeng Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df0",
+          "name": "Dingyuan Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df1",
+          "name": "Enle Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df2",
+          "name": "Gang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df3",
+          "name": "Ge Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df4",
+          "name": "Guanzhe Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df5",
+          "name": "Gulin Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df6",
+          "name": "Haiyang Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df7",
+          "name": "Hao Nie",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df8",
+          "name": "Haonan Jia",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9df9",
+          "name": "Hanpeng Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfa",
+          "name": "Hanqi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfb",
+          "name": "Haolong Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfc",
+          "name": "Heng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfd",
+          "name": "Hongcheng Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dfe",
+          "name": "Huilin Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9dff",
+          "name": "Huixin Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e00",
+          "name": "Jiahao Gong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e01",
+          "name": "Jianchang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e02",
+          "name": "Jiaoren Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e03",
+          "name": "Jie Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e04",
+          "name": "Jie Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e05",
+          "name": "Jiashuai Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e06",
+          "name": "Jiashuo Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e07",
+          "name": "Jingyang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e08",
+          "name": "Junjing Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e09",
+          "name": "Junzhe Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0a",
+          "name": "Kaixiang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0b",
+          "name": "Lei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0c",
+          "name": "Lei Xia",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0d",
+          "name": "Liang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0e",
+          "name": "Liguo Tan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e0f",
+          "name": "Liwen Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e10",
+          "name": "Liying Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e11",
+          "name": "Ming Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e12",
+          "name": "Mingliang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e13",
+          "name": "Muhua Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e14",
+          "name": "Na Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e15",
+          "name": "Qiaohui Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e16",
+          "name": "Qinglin He",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e17",
+          "name": "Qiuyan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e18",
+          "name": "Quan Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e19",
+          "name": "Ran Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1a",
+          "name": "Rui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1b",
+          "name": "Shaoliang Pang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1c",
+          "name": "Shiliang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1d",
+          "name": "Sitong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1e",
+          "name": "Siqi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e1f",
+          "name": "Shuli Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e20",
+          "name": "Tiancheng Cao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e21",
+          "name": "Tianyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e22",
+          "name": "Weipeng Ming",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e23",
+          "name": "Wenqing He",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e24",
+          "name": "Xu Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e25",
+          "name": "Xuelin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e26",
+          "name": "Xianfang Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e27",
+          "name": "Xiaojia Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e28",
+          "name": "Xuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e29",
+          "name": "Yaqi Dai",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2a",
+          "name": "Yanbo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2b",
+          "name": "Yang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2c",
+          "name": "Yineng Deng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2d",
+          "name": "Yingming Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2e",
+          "name": "Yilei Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e2f",
+          "name": "Yuanwei Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e30",
+          "name": "Yu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e31",
+          "name": "Yu Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e32",
+          "name": "Yuchu Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e33",
+          "name": "Yuhe Yin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e34",
+          "name": "Yuheng Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e35",
+          "name": "Yuxiang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e36",
+          "name": "Zecheng Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e37",
+          "name": "Zekai Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e38",
+          "name": "Zidong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e39",
+          "name": "Binxing Jiao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3a",
+          "name": "Jiansheng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3b",
+          "name": "Jing Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3c",
+          "name": "Shuchang Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3d",
+          "name": "Xiangyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3e",
+          "name": "Xinhao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e3f",
+          "name": "Yibo Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e40",
+          "name": "Heung-Yeung Shum",
+          "hidden": false
+        },
+        {
+          "_id": "67b2a72e7a49eaea082b9e41",
+          "name": "Daxin Jiang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T15:58:10.000Z",
+      "title": "Reporte de tecnología de StepVidio: modelo de salud mental de vídeo, problemas y perspectivas futuras",
+      "summary": "Step-Video-T2V es el modelo de texto a película más avanzado con 30B parámetros. Puede generar películas de 204 frames. Deep Compression Variational Autoencoder y Video-VAE alcanzan un ratio de compresión espacial de 16x16 y un ratio de compresión temporal de 8x, manteniendo la calidad de reconstrucción de películas excepcionales. Los prompts del usuario son codificados por dos encoderes de texto bilingües que procesan inglés y chino. Se entrena a la DiT de 3D con atención total usando Flow Matching, y se desniós la ruido de entrada a los frames potenciales. Video-DPO mejora la calidad visual de las películas generadas reduciendo los artefactos. También detalla estrategias de entrenamiento y observaciones principales. El rendimiento de Step-Video-T2V se evalúa en el nuevo benchmark de generación de películas, Step-Video-T2V-Eval, y muestra la mejor calidad de películas generadas desde texto comparado con fuentes abiertas y comerciales. Además, se discuten las limitaciones del paradigma de modelos difusivos actuales y las direcciones futuras, fomentando la evolución de modelos basados en películas y fortaleciendo a los diseñadores de contenido cinematográfico. Step-Video-T2V y Step-Video-T2V-Eval están disponibles en https://github.com/stepfun-ai/Step-Video-T2V, y la versión en línea se puede acceder en https://yuewen.cn/videos. Nuestro objetivo es acelerar la innovación en modelos basados en películas y fortalecer a los diseñadores de contenido cinematográfico.",
+      "upvotes": 19,
+      "discussionId": "67b2a7357a49eaea082b9fbf"
+    },
+    "publishedAt": "2025-02-16T22:50:38.622Z",
+    "title": "Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10248.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60efceb38432bc401cd0abc8",
+      "avatarUrl": "/avatars/c3331d9a46da4afcb90a25691d47aed4.svg",
+      "fullname": "tongwang",
+      "name": "turrf",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09696",
+      "authors": [
+        {
+          "_id": "67b2aae22a4cd186392a18b2",
+          "name": "Jonathan Roberts",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b3",
+          "name": "Mohammad Reza Taesiri",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b4",
+          "name": "Ansh Sharma",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b5",
+          "name": "Akash Gupta",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b6",
+          "name": "Samuel Roberts",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b7",
+          "name": "Ioana Croitoru",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b8",
+          "name": "Simion-Vlad Bogolin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18b9",
+          "name": "Jialu Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18ba",
+          "name": "Florian Langer",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18bb",
+          "name": "Vyas Raina",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18bc",
+          "name": "Vatsal Raina",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18bd",
+          "name": "Hanyi Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18be",
+          "name": "Vishaal Udandarao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18bf",
+          "name": "Jingyi Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c0",
+          "name": "Shiyang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c1",
+          "name": "Sam Purkis",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c2",
+          "name": "Tianshuo Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c3",
+          "name": "Wenye Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c4",
+          "name": "Gyungin Shin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c5",
+          "name": "Qiaochu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c6",
+          "name": "Anh Totti Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c7",
+          "name": "Kai Han",
+          "hidden": false
+        },
+        {
+          "_id": "67b2aae22a4cd186392a18c8",
+          "name": "Samuel Albanie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T18:59:11.000Z",
+      "title": "ZeroBench: Visión de Ultramarca de Visualización Imposible para Grandes Datamos\n\n(注意：在此翻译中，“Grandes Datamos”被保留，以保持原文的特定术语，尽管在标准的西班牙语中，\"Grandes Datamos\"并不是一个广泛接受的术语。如果需要更通用的术语，可以考虑使用“Grandes Datamos”或“Grandes Datamos de Información”等。)",
+      "summary": "Los grandes modelos de multimodalidad (LMMs) muestran limitaciones significativas en la interpretación de imágenes. Además, su capacidad para reconocer el espacio es inferior a niveles conocidos para niños pequeños y animales. Para enfrentar estos problemas, muchos modelos visuales han obtenido altos puntajes en varios marcadores de rendimiento, pero con el desarrollo de los modelos, el \"espacio de mejora\" (HEADROOM) se reduce rápidamente. Para resolver estos problemas, es crucial tener marcadores de rendimiento adecuados y desafiantes a largo plazo. Para maximizar esto, se presenta ZeroBench, un ligero marcador de rendimiento visual que está diseñado para ser completamente insuficiente para los modelos modernos de LMMs. Este marcador consta de 100 preguntas editadas con manos y 334 preguntas adicionales relativamente difíciles, y 20 modelos evaluados en ZeroBench obtuvieron un 0.0% de puntaje, lo que demuestra un análisis riguroso de errores. Con este marcador, se propone fomentar el desarrollo del entendimiento visual.",
+      "upvotes": 16,
+      "discussionId": "67b2aae42a4cd186392a195b"
+    },
+    "publishedAt": "2025-02-16T22:20:53.227Z",
+    "title": "ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/QJdJ_pJPI20MjNz_q8PTw.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09696.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 60
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09992",
+      "authors": [
+        {
+          "_id": "67b2c31125f77e5fc242f4f8",
+          "name": "Shen Nie",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4f9",
+          "name": "Fengqi Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fa",
+          "name": "Zebin You",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fb",
+          "name": "Xiaolu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fc",
+          "name": "Jingyang Ou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fd",
+          "name": "Jun Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4fe",
+          "name": "Jun Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f4ff",
+          "name": "Yankai Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f500",
+          "name": "Ji-Rong Wen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c31125f77e5fc242f501",
+          "name": "Chongxuan Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T08:23:51.000Z",
+      "title": "Modelo de Difusión de Lenguajes",
+      "summary": "Los módulos de regresión automática (ARMs) son reconocidos como la base fundamental de los modelos de lenguaje grandes (LLMs). Nosotros desafíamos esta concepción y presentamos LLaDA, un modelo distribuido entrenado desde un paradigma de aprendizaje previo y ajuste de controlado micro (SFT). LLaDA modela la distribución a través del proceso de mascarado de datos en el frente y del proceso inverso, y utiliza un Transformer Bayesiano para predecir etiquetas ocultas. Así, proporciona una aproximación generativa fundamental de la teoría de la inferencia probabilística. En los benchmarks ampliados, LLaDA muestra una fuerte capacidad de escalabilidad y supera los límites de la línea basada en ARMs que hemos construido directamente. En particular, LLaDA 8B muestra una fuerza comparable a LLaMA3 8B y muestra un excelente rendimiento en el aprendizaje de textos codificados. Después del ajuste de SFT, se destaca su capacidad para seguir instrucciones en estudios de caso como el diálogo de diamantes. Además, LLaDA resuelve el proceso inverso y muestra un rendimiento excelente en tareas de completación de la mente en reversa, superando a GPT-4o. Nuestros hallazgos muestran que los modelos distribuidos pueden ser una viable y prometedora alternativa a los ARMs, y sugieren que la capacidad estructural de los LLMs está fundamentalmente conectada a los ARMs, lo cual es impropio.",
+      "upvotes": 14,
+      "discussionId": "67b2c31225f77e5fc242f527"
+    },
+    "publishedAt": "2025-02-17T00:03:18.228Z",
+    "title": "Large Language Diffusion Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09992.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6115
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.10391",
+      "authors": [
+        {
+          "_id": "67b2ab548191c180b9c4eb83",
+          "name": "Yi-Fan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb84",
+          "name": "Tao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb85",
+          "name": "Haochen Tian",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb86",
+          "name": "Chaoyou Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb87",
+          "name": "Peiyan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb88",
+          "name": "Jianshu Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb89",
+          "name": "Wulin Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8a",
+          "name": "Yang Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8b",
+          "name": "Huanyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8c",
+          "name": "Junkang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8d",
+          "name": "Xue Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8e",
+          "name": "Yibo Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb8f",
+          "name": "Bin Wen",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb90",
+          "name": "Fan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb91",
+          "name": "Zhang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb92",
+          "name": "Tingting Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb93",
+          "name": "Di Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb94",
+          "name": "Liang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb95",
+          "name": "Rong Jin",
+          "hidden": false
+        },
+        {
+          "_id": "67b2ab548191c180b9c4eb96",
+          "name": "Tieniu Tan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T18:59:51.000Z",
+      "title": "MM-RLHF: Ajuste de un modelo LLM multimodelo para el siguiente paso",
+      "summary": "Después de que la función se ejecute, aquí se muestra el resultado traducido.",
+      "upvotes": 12,
+      "discussionId": "67b2ab598191c180b9c4ec10"
+    },
+    "publishedAt": "2025-02-16T22:51:55.408Z",
+    "title": "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/623d8ca4c29adf5ef6175615/YtpeHGys5Zs3bqPlOGs94.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/623d8ca4c29adf5ef6175615/8mE0hOEgm-if-9zaLyMGn.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10391.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "623d8ca4c29adf5ef6175615",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623d8ca4c29adf5ef6175615/q7lHao7UPwU1u7YLSP56m.jpeg",
+      "fullname": "Yi-Fan Zhang",
+      "name": "yifanzhang114",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09955",
+      "authors": [
+        {
+          "_id": "67b2c1ac0303a07acd3f9443",
+          "name": "Iddo Drori",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9444",
+          "name": "Gaston Longhitano",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9445",
+          "name": "Mao Mao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9446",
+          "name": "Seunghwan Hyun",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9447",
+          "name": "Yuke Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9448",
+          "name": "Sungjun Park",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9449",
+          "name": "Zachary Meeks",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944a",
+          "name": "Xin-Yu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944b",
+          "name": "Ben Segev",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944c",
+          "name": "Howard Yong",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944d",
+          "name": "Nakul Verma",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944e",
+          "name": "Avi Shporer",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f944f",
+          "name": "Alon Amit",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c1ac0303a07acd3f9450",
+          "name": "Madeleine Udell",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T07:22:25.000Z",
+      "title": "Varios motivos para el desarrollo de inferencias y verificaciones avanzadas",
+      "summary": "Reasoning como LLMs como OpenAI o1, o3, DeepSeek R1 han logrado importantes avances en matemáticas y programación, pero en tareas avanzadas como los problemas de combinatoria del IMO, los puzzles de la Corpus de Abstractión y Reasoning (ARC), y los problemas de la Prueba Final Humana (HLE), se enfrentan a desafíos significativos. Utilizamos combinaciones de diferentes modelos y métodos durante las pruebas para explorar diversas aproximaciones de inferencia. Investigamos la eficiencia y eficacia de la muestración en problemas de matemáticas y programación, así como en otros tipos de problemas. Utilizamos Lean para verificar la precisión de las respuestas de los problemas del IMO automáticamente, y los puzzles de ARC se verifican mediante código, buscando la respuesta más adecuada para cada problema. Nuestro enfoque ha demostrado una precisión en las respuestas de los problemas de combinatoria del IMO de 33.3% a 77.8%, y en los problemas de HLE de 8% a 37%. También hemos logrado resolver el 80% de los puzzles de ARC que no habían sido resueltos por 948 personas, y resolvió el 26.5% de los puzzles que el modelo o3 no había resuelto. Las simulaciones, aprendizaje por refuerzo y meta-aprendizaje utilizando retroalimentación de inferencia mejoran la representación del grafo de agentes y mejoran la generalización al cambiar los prompts, códigos y datasets. Nuestro enfoque se basa en la investigación de la confiabilidad, robustez, escalabilidad y reproducibilidad, y decidimos ofrecerlo públicamente.",
+      "upvotes": 5,
+      "discussionId": "67b2c1b10303a07acd3f9532"
+    },
+    "publishedAt": "2025-02-16T23:57:43.710Z",
+    "title": "Diverse Inference and Verification for Advanced Reasoning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09955.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6115
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09935",
+      "authors": [
+        {
+          "_id": "67b2e6939edebc815a35eec8",
+          "name": "Łukasz Staniszewski",
+          "hidden": false
+        },
+        {
+          "_id": "67b2e6939edebc815a35eec9",
+          "name": "Bartosz Cywiński",
+          "hidden": false
+        },
+        {
+          "_id": "67b2e6939edebc815a35eeca",
+          "name": "Franziska Boenisch",
+          "hidden": false
+        },
+        {
+          "_id": "67b2e6939edebc815a35eecb",
+          "name": "Kamil Deja",
+          "hidden": false
+        },
+        {
+          "_id": "67b2e6939edebc815a35eecc",
+          "name": "Adam Dziedzic",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T06:11:23.000Z",
+      "title": "\"Precisión de los parámetros de la generación de contexto\"",
+      "summary": "Nuevo modelo de Difussion puede integrar altas calidades de texto mientras síntetiza imágenes casi reales. Increíblemente, demostramos que al menos 1% de los parámetros del modelo Difussion, incluyendo todos los capas de Attention, afectan la generación de texto dentro de las imágenes a través de Attention Activation Patch. Basándonos en esta observación, optimizamos las capas de Cross Attention y Shared Attention para mejorar la eficiencia y el rendimiento en la generación de texto. Introducimos aplicaciones que obtienen beneficios al específicar capas responsables de la generación de texto. Primero, fortalecemos la capacidad general de generación de texto en grandes modelos Difussion mediante la fine-tuning basado en Lora de capas específicas, manteniendo la calidad y la diversidad de la generación. Luego, presentamos un método para editar el contenido de texto en imágenes generadas utilizando capas específicas. Finalmente, expandimos esta idea para aplicaciones prácticas que evitan la generación de texto desalimentado. Comparado con otros estudios, nuestro enfoque específico puede ser ampliamente aplicado en diferentes arquitecturas de modelos Difussion, como U-Net (ejemplo: LDM, SDXL) y Transformer-base (ejemplo: DeepFloyd IF, Stable Diffusion 3). La página del proyecto está disponible en https://t2i-text-loc.github.io/.",
+      "upvotes": 4,
+      "discussionId": "67b2e6979edebc815a35efbc"
+    },
+    "publishedAt": "2025-02-17T03:06:17.932Z",
+    "title": "Precise Parameter Localization for Textual Generation in Diffusion Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09935.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c7c19721bd95f80ed8ed80",
+      "avatarUrl": "/avatars/0b1c1ace991e0290118d4f99f619d809.svg",
+      "fullname": "Lukasz Staniszewski",
+      "name": "lukasz-staniszewski",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09741",
+      "authors": [
+        {
+          "_id": "67b2b58f9edebc815a2a938c",
+          "name": "Tianyi Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67b2b58f9edebc815a2a938d",
+          "name": "Deqing Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2b58f9edebc815a2a938e",
+          "name": "Mahdi Soltanolkotabi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2b58f9edebc815a2a938f",
+          "name": "Robin Jia",
+          "hidden": false
+        },
+        {
+          "_id": "67b2b58f9edebc815a2a9390",
+          "name": "Vatsal Sharan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-13T19:54:59.000Z",
+      "title": "FoNE: Embedding de Números de Tokenes Únicos con Precisión utilizando Características de Fourier",
+      "summary": "Los Grandes Modelos de Lenguaje (LLMs) generalmente representan números como varios tokens, lo que requiere la agrupación de estos tokens para interpretar los números. Esta dispersión produce una menor eficiencia en el entrenamiento y la inferencia, y disminuye el rendimiento del modelo en tareas relacionadas con los números. Después de observar el aprendizaje de las propiedades de Fourier en los tokens de números dentro de los LLMs, proponemos un nuevo método llamado Fourier Number Embedding (FoNE). Este método codifica directamente los números en tokens que tienen características de Fourier. Cada número se representa con un solo token, y este token tiene un dimensión de codificación bidimensional, lo que elimina la varianza y permite una reconocimiento efectivo de los números. Esta representación de compresión acelera tanto el entrenamiento como la inferencia. En comparación con el subword y el codificado por números, FoNE reduce el sobrecarga computacional y alcanza una mayor precisión. En el test de suma de punto flotante de seis dígitos, FoNE alcanza una precisión de 99% sin necesidad de usar 64 veces más datos que los subwords y el codificado por números, utilizando 3 y 6 veces más tokens para cada número. Además, FoNE es el único método que logra alcanzar una precisión de 100% en pruebas de suma, resta y multiplicación con números superiores a 100,000. Los códigos y visualizaciones están disponibles en https://fouriernumber.github.io/.",
+      "upvotes": 4,
+      "discussionId": "67b2b5919edebc815a2a93fc"
+    },
+    "publishedAt": "2025-02-16T23:07:53.170Z",
+    "title": "FoNE: Precise Single-Token Number Embeddings via Fourier Features",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09741.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "63c8454e46421a2efe82709d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63c8454e46421a2efe82709d/3BcSk4KOwAgWHEPVtsAV3.png",
+      "fullname": "Deqing Fu",
+      "name": "deqing",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.10177",
+      "authors": [
+        {
+          "_id": "67b29f472ea5fd965beb91ed",
+          "name": "Mingcong Lei",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91ee",
+          "name": "Yiming Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91ef",
+          "name": "Ge Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91f0",
+          "name": "Zhixin Mai",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91f1",
+          "name": "Shuguang Cui",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91f2",
+          "name": "Yatong Han",
+          "hidden": false
+        },
+        {
+          "_id": "67b29f472ea5fd965beb91f3",
+          "name": "Jinke Ren",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T14:12:09.000Z",
+      "title": "STMA: Espectral Tiempo Memoria Agente Lento Hoy Resistente Tareas Ligeras",
+      "summary": "La principal objetivo de la inteligencia estructurada es mantener una fuerte determinación y adaptabilidad en tareas a largo plazo en entornos dinámicos. Para lograrlo, proponemos un nuevo marco de trabajo llamado Agente de Memoria Espacio-Temporal (Spatio-Temporal Memory Agent, STMA), que integra memoria que incluye tiempo y espacio. El STMA está diseñado para fortalecer la planificación y ejecución de tareas mediante la integración de memoria que incluye tiempo y espacio. Este sistema está compuesto por tres componentes clave: 1) un módulo de memoria que incluye tiempo y espacio, 2) un grafo de conocimientos dinámico, y 3) una estructura de planificador-evaluador. Se evaluó el STMA utilizando 32 tareas en el entorno TextWorld, probando diferentes niveles de complejidad en la planificación multinivel y la exploración. Los resultados de los experimentos muestran que el STMA supera a los modelos más avanzados en términos de éxito, con un aumento del 31.25% en la tasa de éxito y un aumento del 24.7% en la puntuación promedio. Estos resultados claramente demuestran el impacto de la memoria que incluye tiempo y espacio en la capacidad de memoria de un agente estructurado.",
+      "upvotes": 3,
+      "discussionId": "67b29f4a2ea5fd965beb9286"
+    },
+    "publishedAt": "2025-02-16T21:31:11.459Z",
+    "title": "STMA: A Spatio-Temporal Memory Agent for Long-Horizon Embodied Task Planning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10177.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6628c6107751d297d7025a71",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6628c6107751d297d7025a71/S1rm5VIwV2Uxfv8GetKMU.jpeg",
+      "fullname": "Lei Mingcong",
+      "name": "SP4595",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.07586",
+      "authors": [
+        {
+          "_id": "67b30146b02f929c82ce075e",
+          "name": "John Hewitt",
+          "hidden": false
+        },
+        {
+          "_id": "67b30146b02f929c82ce075f",
+          "name": "Robert Geirhos",
+          "hidden": false
+        },
+        {
+          "_id": "67b30146b02f929c82ce0760",
+          "name": "Been Kim",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-11T14:34:05.000Z",
+      "title": "No pudimos entender al AI utilizando el conjunto de palabras existente.",
+      "summary": "Este artículo afirma que no es posible confiar en las palabras que el hombre utiliza actualmente para entender la inteligencia artificial (IA). En su lugar, se recomienda desarrollar nuevas palabras para representar conceptos concretos que el hombre quiere aprender o conceptos que la máquina quiere aprender. Se asume que el hombre y la máquina tienen conceptos diferentes. Esto significa que el problema de comunicación puede ser configurado como un problema de interpretabilidad: el hombre puede controlar la máquina con sus conceptos, pero si la máquina no puede recibir conceptos humanos, no funciona. Creemos que el desarrollo de un lenguaje común para el hombre y la máquina permitirá la creación de nuevas palabras, lo que resolvería este problema de comunicación. Un nuevo término exitoso logrará alcanzar una útil abstracción: no es muy detallada, pero reutilizable en varios contextos, y no es tan precisa como necesariamente requiera información exacta. Se demuestra conceptualmente que \"longitud nueva palabra\" puede controlar la longitud de las respuestas de un modelo de lenguaje de máquina (LLM) y que \"diversidad nueva palabra\" permite obtener respuestas más variadas. Por lo tanto, este artículo argumenta que no es posible entender la IA con las palabras actuales y ofrece la oportunidad de expandir las palabras mediante nuevas palabras para mejorar la control y comprensión de la máquina.",
+      "upvotes": 2,
+      "discussionId": "67b30147b02f929c82ce079c"
+    },
+    "publishedAt": "2025-02-17T04:28:55.526Z",
+    "title": "We Can't Understand AI Using our Existing Vocabulary",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.07586.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5e7749883d77a72421292d07",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670231290373-5e7749883d77a72421292d07.jpeg",
+      "fullname": "Gabriele Sarti",
+      "name": "gsarti",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 212
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.07856",
+      "authors": [
+        {
+          "_id": "67b2dedc8a276e7b485a9bcd",
+          "name": "Ao Li",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bce",
+          "name": "Wei Fang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bcf",
+          "name": "Hongbo Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bd0",
+          "name": "Le Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bd1",
+          "name": "Ge Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2dedc8a276e7b485a9bd2",
+          "name": "Minfeng Xu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-11T14:57:33.000Z",
+      "title": "Fast Sampler Min Reviver Odie y SDE Solver basado",
+      "summary": "La aplicación de modelos de difusión tiene una importancia práctica y utilidad, pero también presenta dificultades. Los métodos actuales de generación controlada se centran principalmente en la modificación de la función de puntuación del modelo de difusión, pero el Mean Reverting (MR) Diffusion modifica directamente la estructura de la ecuación diferencial estocástica (SDE) y permite la integración fácil y natural de condiciones de imagen. Sin embargo, los samplers rápidos sin entrenamiento no se pueden aplicar directamente al MR Diffusion. Por lo tanto, el MR Diffusion requiere de cientos de NFEs (evaluaciones de función) para obtener muestras de alta calidad. En este artículo, se propone un nuevo algoritmo que se denomina MRS (Sampler de MR). Se resuelve la SDE inversa en el tiempo relacionada con el MR Diffusion y la ecuación diferencial general del flujo probabilístico (PF-ODE), obteniendo soluciones semianalíticas. Estas soluciones son constituidas por funciones analíticas y integradas por redes neuronales. Basándose en estas soluciones, se puede generar muestras de alta calidad con pocos pasos. Nuestro enfoque no requiere entrenamiento y apoya todos los parámetros principales, incluyendo predicciones de ruido, datos y velocidades. El objetivo es acelerar el orden de muestreo del modelo de difusión y aplicar la generación controlada de manera práctica. Experimentos extensos muestran que el MR Sampler mantiene muestras de alta calidad con un aumento de velocidad de 10 a 20 veces.",
+      "upvotes": 1,
+      "discussionId": "67b2dedd8a276e7b485a9c0b"
+    },
+    "publishedAt": "2025-02-17T02:03:05.624Z",
+    "title": "MRS: A Fast Sampler for Mean Reverting Diffusion based on ODE and SDE Solvers",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.07856.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64100834c025ddf6189c415e",
+      "avatarUrl": "/avatars/9b9bbecef5d5815540abf92d74012f55.svg",
+      "fullname": "Hongbo Zhao",
+      "name": "z-hb",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09638",
+      "authors": [
+        {
+          "_id": "67b2c3386ccf462ccaa45860",
+          "name": "Jeremy Kritz",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45861",
+          "name": "Vaughn Robinson",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45862",
+          "name": "Robert Vacareanu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45863",
+          "name": "Bijan Varjavand",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45864",
+          "name": "Michael Choi",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45865",
+          "name": "Bobby Gogov",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45866",
+          "name": "Scale Red Team",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45867",
+          "name": "Summer Yue",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45868",
+          "name": "Willow E. Primack",
+          "hidden": false
+        },
+        {
+          "_id": "67b2c3386ccf462ccaa45869",
+          "user": {
+            "_id": "66976d1007b36ccd01586ce5",
+            "avatarUrl": "/avatars/5811e350907a29b71f6e4d57ffd53e66.svg",
+            "isPro": false,
+            "fullname": "Wang",
+            "user": "ZifanScale",
+            "type": "user"
+          },
+          "name": "Zifan Wang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-02-17T05:03:53.788Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-09T20:49:16.000Z",
+      "title": "Jailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak\n\nJailbreaking to Jailbreak",
+      "summary": "Los modelos de lenguaje basados en entrenamiento negado (LLMs) pueden prevenir salidas perjudiciales, pero esta protección es vulnerable a las \"palancas de brake\" automatizadas y creadas por humanos. Proponemos un nuevo enfoque para redactar LLMs como equipos de red de seguridad, donde el LLM \"palanca de brake\" se llama J_2. Usando estrategias de equipos de red, J_2 puede evaluar sistemáticamente el modelo objetivo y mejorar su rendimiento a través de aprendizaje de contexto. Los experimentos muestran que Sonnet 3.5 y Gemini 1.5 pro logran un éxito del 93.0% y 91.0% en palanca de brake frente a GPT-4o (obteniendo resultados similares para otros potentes LLMs). Nuestro estudio introduce una aproximación escalable para redactar equipos de red de manera estratégica, destacando especialmente el modo de \"pan de mantequilla\" en el que la palanca de brake no es efectiva. En particular, evitamos la utilización directa de J_2 para prevenir que se use directamente, mientras publicamos detalles específicos de los prompts sin revelar los métodos.",
+      "upvotes": 1,
+      "discussionId": "67b2c3396ccf462ccaa458b3"
+    },
+    "publishedAt": "2025-02-17T00:04:19.389Z",
+    "title": "Jailbreaking to Jailbreak",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09638.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6115
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.10173",
+      "authors": [
+        {
+          "_id": "67b306ba817e86482ef224d5",
+          "name": "Bo Ni",
+          "hidden": false
+        },
+        {
+          "_id": "67b306ba817e86482ef224d6",
+          "name": "Markus J. Buehler",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T14:07:54.000Z",
+      "title": "Agentic End-to-End De Novo Protein Design for Tailored Dynamics Utilizing a Language Branching Model",
+      "summary": "Los proteínas son moléculas dinámicas que ejercen una amplia gama de funciones biológicas, incluyendo catálisis enzimática, transmisión de señales y adaptación estructural. Estas funciones están directamente relacionadas con el movimiento de las proteínas. Sin embargo, diseñar proteínas con características dinámicas específicas es complejo debido a la relación intrincada y degenerada entre secuencia, estructura y movimiento molecular. En este contexto, presentamos VibeGen, una arquitectura dual efectiva compuesta por un diseñador de proteínas que genera secuencias candidatas y un predictor de proteínas que evalúa la precisión dinámica. VibeGen diseña proteínas completas de inicio a fin basadas en la dinámica del modo normal. Este enfoque integra diversidad, precisión y cautela durante el proceso de diseño. Las simulaciones moleculares de todos los átomos se evalúan directamente, permitiendo que las proteínas diseñadas recien la amplitud de vibración del modo normal específico en todo el espacio estructural y utilicen estructuras estables y funcionalmente relacionadas. En particular, las secuencias generadas superan las restricciones evolutivas para expandir el espacio de proteínas accesibles, evitando que sean similares a las proteínas naturales. Nuestro estudio combina las características dinámicas de las proteínas en el diseño productivo de proteínas, estableciendo una relación directa y bidireccional entre secuencia y movimiento dinámico, y abrirá nuevas puertas para la creación de bio-moleculas con características dinámicas y funcionales. Este marco tiene un impacto amplio en la diseño racional de enzimas flexibles, escafoides dinámicos y materiales biológicos. Conecta la característica dinámica de las proteínas con una ruta dirigida por IA.",
+      "upvotes": 0,
+      "discussionId": "67b306ba817e86482ef224fa"
+    },
+    "publishedAt": "2025-02-17T05:09:33.663Z",
+    "title": "Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a Language Diffusion Model",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/623ce1c6b66fedf374859fe7/rcgnOK5A9wV0qO9I3Mxny.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/623ce1c6b66fedf374859fe7/xD8WOPTgKHpIIPwHh9KHf.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.10173.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "623ce1c6b66fedf374859fe7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623ce1c6b66fedf374859fe7/lhbMLg6BxLCb9DD4rgjfx.jpeg",
+      "fullname": "Markus Buehler",
+      "name": "mjbuehler",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 24
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.09980",
+      "authors": [
+        {
+          "_id": "67b2d7e86a002d59a415fc99",
+          "name": "Hsu-kuang Chiu",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9a",
+          "name": "Ryo Hachiuma",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9b",
+          "name": "Chien-Yi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9c",
+          "name": "Stephen F. Smith",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9d",
+          "name": "Yu-Chiang Frank Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67b2d7e86a002d59a415fc9e",
+          "name": "Min-Hung Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-14T08:05:41.000Z",
+      "title": "V2V-LLM: Cooperación de copia vehículo-vehículo para modelos de lenguaje de gran escala automático de conducción colaborativa",
+      "summary": "Actualmente, los vehículos autónomos utilizan principalmente sensores personales para comprender los escenarios alrededor y planificar rutas futuras, pero su confianza se puede perder si los sensores fallan o se veen ocultos. Para resolver este problema, se ha propuesto la comunicación vehículo-vehículo (V2V) para un enfoque de reconocimiento colectivo, aunque este enfoque se centra principalmente en detección y seguimiento. Sin embargo, la contribución de este enfoque a la performance general del planificación colectiva aún no ha sido investigada. Basándonos en los avances recientes, hemos recibido inspiración para la construcción de sistemas autónomos utilizando modelos de lenguaje grande (LLM) y proponemos un nuevo enfoque de problemas integrando LLM. Además, proponemos un nuevo conjunto de datos y un marco de referencia para investigación, incluyendo el V2V-LLM, un modelo de lenguaje grande para vehículos autónomos que integra información de reconocimiento de objetos de vehículos conectados para responder a preguntas relacionadas con el conducción: reconocimiento básico, reconocimiento de objetos característicos y planificación. A través de los resultados de nuestros experimentos, demostramos que nuestro V2V-LLM es una arquitectura potencial de modelo integrado para varias tareas en vehículos autónomos colectivos. También muestra excelente performance cuando se aplica con otros enfoques de integración. Nuestro trabajo abre nuevas direcciones de investigación para mejorar la seguridad de los sistemas autónomos futuros. Nuestro sitio web del proyecto está disponible en https://eddyhkchiu.github.io/v2vllm.github.io/ .",
+      "upvotes": 0,
+      "discussionId": "67b2d7ee6a002d59a415fe34"
+    },
+    "publishedAt": "2025-02-17T01:33:15.971Z",
+    "title": "V2V-LLM: Vehicle-to-Vehicle Cooperative Autonomous Driving with Multi-Modal Large Language Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.09980.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64ae22dd1aee69ece065cdcd",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ae22dd1aee69ece065cdcd/JG7QaHIrr4i2k4uwR4pZK.png",
+      "fullname": "Min-Hung Chen",
+      "name": "cmhungsteve",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  }
+]
