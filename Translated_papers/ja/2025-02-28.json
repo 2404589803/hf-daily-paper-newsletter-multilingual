@@ -1,0 +1,1061 @@
+[
+  {
+    "paper": {
+      "id": "2502.19613",
+      "authors": [
+        {
+          "_id": "67c12987505a88e4a185e0d7",
+          "name": "Wei Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0d8",
+          "name": "Hanning Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0d9",
+          "name": "Chenlu Ye",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0da",
+          "name": "Lichang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0db",
+          "name": "Nan Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0dc",
+          "name": "Tong Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-26T23:01:16.000Z",
+      "title": "数学推理の自報酬補正",
+      "summary": "私たちは、自報酬論理の大規模言語モデル（LLMs）について研究しています。これらのモデルは、推論時に同時にステップごとの論理を生成し、その出力の正確性を評価することができます。この統合的なアプローチにより、単一のモデルが独立に論理プロセスをガイドすることができ、モデルの採用による計算的な優勢を提供します。特に、自動調整の代表的なタスクに焦点を当てています。これにおいて、モデルは自動的に対応を誤っていることを検出し、出力を修正し、反復的な精練ループをやめることを決定します。これを実現するために、私たちは、自生成データのみを用いて構築する自報酬論理モデルのための二段階アルゴリズムフレームワークを提案しています。最初の段階では、順次の拒否サンプリングを用いて、自報酬と自動調整機構を併せて長いコンシェンストラジェクトを合成します。これらのデータによる微調節で、モデルは自報酬と自動調整のパターンを学習することができます。二番目の段階では、ルールベースの信号を用いた強化学習をさらにモデルの出力精度の評価と出力の精練の能力を向上させます。Llama-3とQwen-2.5の実験により、私たちのアプローチは固有の自動調整能力を超え、外部報酬モデルを依存するシステムと比較して相当の性能を達成しました。",
+      "upvotes": 42,
+      "discussionId": "67c12989505a88e4a185e115"
+    },
+    "publishedAt": "2025-02-27T22:15:54.222Z",
+    "title": "Self-rewarding correction for mathematical reasoning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19613.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "643e59806db6ba8c5ee123f3",
+      "avatarUrl": "/avatars/4052f2a250107f43b3634c3ee3cc30a1.svg",
+      "fullname": "Wei Xiong",
+      "name": "weqweasdas",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 15
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20395",
+      "authors": [
+        {
+          "_id": "67c12b5def9af74902537b98",
+          "name": "Zhongyang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b5def9af74902537b99",
+          "name": "Ziyue Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b5def9af74902537b9a",
+          "name": "Tianyi Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T18:59:32.000Z",
+      "title": "R2-T2: テスト時にの再路由処理のための多モデル混合エキスパート",
+      "summary": "在大型多模态模型（LMMs）中，非语言模态（例如视觉表示）的感知通常无法与大型语言模型（LLMs）强大的推理能力相匹敌，这限制了LMMs在具有挑战性的下游任务中的表现。这一弱点最近通过用混合专家（MoE）替换视觉编码器得到了缓解，MoE提供了下游任务所需的丰富、多粒度和多样化的表示。多模态MoE的性能在很大程度上取决于其路由器，路由器为每个输入重新加权和混合不同专家的表示。然而，我们发现端到端训练的路由器并不总是为每个测试样本生成最优的路由权重。为了弥补这一差距，我们提出了一种新颖且高效的方法“测试时间重路由（R2-T2）”，该方法通过将路由权重向量移动到测试样本邻域中正确预测样本的向量来局部优化路由权重向量。我们提出了三种具有不同优化目标和邻域搜索空间的R2-T2策略。R2-T2在多种任务的具有挑战性的基准测试中始终且显著地提高了最先进的LMMs的性能，而无需训练任何基础模型参数。",
+      "upvotes": 20,
+      "discussionId": "67c12b5eef9af74902537c00"
+    },
+    "publishedAt": "2025-02-27T22:27:24.486Z",
+    "title": "R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/PaZkWIhqZBRCSfBA-k4OX.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/FASlyPDiSb9VHZaeWMj9H.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/kGeIJVMDDAbIassiuYIb2.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/Tw2Bf_RsFTPARKLJWIlKM.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20395.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "647f5af5b0e96764589f3b2a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+      "fullname": "Tianyi Zhou",
+      "name": "zhoutianyi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 12
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20082",
+      "authors": [
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce8e",
+          "name": "Ning Shang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce8f",
+          "name": "Li Lyna Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce90",
+          "name": "Siyuan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce91",
+          "name": "Gaokai Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce92",
+          "name": "Gilsinia Lopez",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce93",
+          "name": "Fan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce94",
+          "name": "Weizhu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce95",
+          "name": "Mao Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T13:41:07.000Z",
+      "title": "LongRoPE2: 近失真LLMコンテキストウィンドウスケーリング",
+      "summary": "LongRoPE2は、長いコンテキストウィンドウを保持しながら、予習された大規模言語モデル（LLMs）の有效なコンテキストウィンドウを目標の長さに拡張する新しいアプローチです。これは3つの貢献によって実現されます：1）高いRoPE次元での不足の訓練が、現在の方法で見落とされている持続的なout-of-distribution（OOD）問題の原因となる仮説；2）「ニードル駆動」構文不明確度による進化計算検索をガイドする効果的なRoPEスケーリングアルゴリズム；3）混合コンテキストウィンドウトレーニングアプローチで、元のRoPEを用いて短いコンテキスト性能を保持しながら、長コンテキストシーケンスに適用されたスケーリングされたRoPEでのモデル重みの微調節。LLaMA3-8BとPhi3-mini-3.8Bの各ベンチマークでの拡張的な実験は、この仮説を裏付け、LongRoPE2の効果性を示しました。特に、LongRoPE2はLLaMA3-8Bを128Kの有效なコンテキスト長に拡張し、98.5%以上の短コンテキスト性能を維持しながら、Metaのアプローチより80倍少ない10Bトークンを使用して実現しました。コードは、https://github.com/microsoft/LongRoPEに公開されます。",
+      "upvotes": 19,
+      "discussionId": "67c12b6e25c74ee5b6e2ceb5"
+    },
+    "publishedAt": "2025-02-27T22:22:53.713Z",
+    "title": "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20082.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62b0009c72043b05d29492b2",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62b0009c72043b05d29492b2/NqRkX2YLhlfOLvYysa7dD.png",
+      "fullname": "Li Lyna Zhang",
+      "name": "lynazhang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 27
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.19634",
+      "authors": [
+        {
+          "_id": "67c12bf3505a88e4a1866a01",
+          "name": "Jiazhen Pan",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a02",
+          "user": {
+            "_id": "631b9ff5824f2502e3557c7e",
+            "avatarUrl": "/avatars/076043c9dba07644a570692563ef8114.svg",
+            "isPro": false,
+            "fullname": "liu",
+            "user": "che111",
+            "type": "user"
+          },
+          "name": "Che Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-28T09:28:38.598Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a03",
+          "name": "Junde Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a04",
+          "name": "Fenglin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a05",
+          "name": "Jiayuan Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a06",
+          "name": "Hongwei Bran Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a07",
+          "name": "Chen Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a08",
+          "name": "Cheng Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a09",
+          "name": "Daniel Rueckert",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-26T23:57:34.000Z",
+      "title": "MedVLM-R1: 視覚言語モデル（VLMs）の医学論理能力を奨励するリンク学習",
+      "summary": "推理は、医学画像解析の進歩の重要な境界であり、医師の信頼と規制認可において透明性と信頼性が中心的な役割を果たしています。雖然、医学可視語言モデル（VLMs）は放射学タスクにおいて望ましい結果を示しているが、多くの既存のVLMsは、最終的な答えを出力するだけで、裏の理由を明記していません。この空間を填ぐために、私たちは、自然言語の理由を明記して透明性と信頼性を向上させるためのモデルを介して、MedVLM-R1を紹介します。このモデルは、通常の規範化訓練（SFT）による過学習と真の理由の養成による失敗を避けるために、強化学習フレームワークを使用して、理由を理解できる人間の理由のパスを発見させるように奨励します。限られた訓練データ（600件の画像クエスト回答サンプル）とモデルパラメータ（2B）を設定しても、MedVLM-R1は、MRI、CT、X射線のベンチマークで精度を55.11%から78.22%に向上させ、100万以上のサンプルで訓練された大きなモデルを上回ります。また、適応性の強いドメイン拡張性を示し、分布外のタスクでも強力です。医学画像解析と明記した理由を統合することで、MedVLM-R1は、診療実践で信頼性と解釈性のあるAIのための重要なステップを示します。",
+      "upvotes": 17,
+      "discussionId": "67c12bf4505a88e4a1866a35"
+    },
+    "publishedAt": "2025-02-28T04:36:05.045Z",
+    "title": "MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19634.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "631b9ff5824f2502e3557c7e",
+      "avatarUrl": "/avatars/076043c9dba07644a570692563ef8114.svg",
+      "fullname": "liu",
+      "name": "che111",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.20238",
+      "authors": [
+        {
+          "_id": "67c15306333e2f71f01c8e35",
+          "name": "Guizhen Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e36",
+          "name": "Weiwen Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e37",
+          "name": "Hao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e38",
+          "name": "Hou Pong Chan",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e39",
+          "name": "Chaoqun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e3a",
+          "name": "Lidong Bing",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e3b",
+          "name": "Deli Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e3c",
+          "name": "Anh Tuan Luu",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e3d",
+          "name": "Yu Rong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T16:23:25.000Z",
+      "title": "FINEREASON: 評価と改善によるLLMsの慎重な理由論を通じて\n  反省的なパズル解決法",
+      "summary": "多くの難しい理由タスクは、速い直感的な反応だけでなく、より慎重な、多段階的なアプローチが必要です。大語言モデル（LLMs）の最近の進展は、「System 1」の迅速な反応のような方法から、「System 2」の反省と補正の問題解決のスタイルへの重要な移行を明らかにしています。しかし、現在のベンチマークは、最終的な答えの精度を中心に、モデルの中間的な理由のステップを多く調査していません。これは、モデルが理由過程内で反省し、誤りを修正する能力を評価することができないことを示しています。この隙を埋めるために、私たちは、LLMsの理由能力の細かい評価に適したロジックプジャーブランク「FINEREASON」を紹介します。各プジャーブは原子的なステップに分解でき、中間的な正確性の厳密な検証に最適です。これにより、私たちは、現在の状況を評価し、次の手順を計画することを詳細に評価するための、状態チェックと状態移行の2つのタスクを紹介します。プローブストレーディングの拡張を支援するために、また、一般的な数学タスクの性能向上を目指したプジャーブトレーニングセットを提供します。私たちは、私たちの状態チェックと移行データによって訓練されたモデルが、GSM8Kで数学理由について最高で5.1%の効果を示していることを示しています。",
+      "upvotes": 13,
+      "discussionId": "67c15307333e2f71f01c8ebc"
+    },
+    "publishedAt": "2025-02-28T01:14:11.268Z",
+    "title": "FINEREASON: Evaluating and Improving LLMs' Deliberate Reasoning through Reflective Puzzle Solving",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20238.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64e85b3edb3767299865e0e3",
+      "avatarUrl": "/avatars/fdbe121535dea940edd2766161393485.svg",
+      "fullname": "Chen",
+      "name": "Guizhen",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.16645",
+      "authors": [
+        {
+          "_id": "67c12e60d8247a49b805694f",
+          "name": "Chenlong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056950",
+          "name": "Zhaoyang Chu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056951",
+          "user": {
+            "_id": "669096da35cddb688a352ca8",
+            "avatarUrl": "/avatars/d01f34d99d89447d27c0fd43734ae6d9.svg",
+            "isPro": false,
+            "fullname": "zxiang",
+            "user": "zx10086",
+            "type": "user"
+          },
+          "name": "Zhengxiang Cheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-28T09:28:33.569Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056952",
+          "user": {
+            "_id": "6743e9d4303e7ce5b9d13e9b",
+            "avatarUrl": "/avatars/cdaf150380e9c8916547185b968a2670.svg",
+            "isPro": false,
+            "fullname": "xy",
+            "user": "yxy0807",
+            "type": "user"
+          },
+          "name": "Xuyi Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-28T09:28:31.564Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056953",
+          "name": "Kaiyue Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056954",
+          "name": "Yao Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056955",
+          "name": "Zhou Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056956",
+          "name": "Xuanhua Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056957",
+          "name": "Dongping Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-23T16:46:18.000Z",
+      "title": "CODESYNC: ダイナミックコードとの大規模言語モデルの同期\nスケール上の進化",
+      "summary": "大型言語モデル（LLMs）はソフトウェア開発において卓越した性能を示していますが、第三者ライブラリのAPIの頻繁な更新に対応することに難しい問題があります。この制限は静的な事前学習データセットに起因し、通常は実行可能なコードや安全性と効率性の低い実装につながります。この点に焦点を当て、本論文ではCODESYNCというデータエンジンを紹介します。CODESYNCは、Pythonの第三者ライブラリからの時間変化のコードキャパティの更新を識別し、実時間のコードキャパティの更新を集めるものです。CODESYNCに基づいて、CODESYNCBENCHという詳細なベンチマークを開発し、220つのAPIのリアルウェア更新を含むコード進化に対応するLLMsの能力を評価するものです。本ベンチマークは、3,300つのテストケースを提供し、3つの評価タスクを挟み、2,200つの訓練サンプルからなる更新に関心のある指導チューニングデータセットを含みます。14つの最先端のLLMsに対しての拡張な実験により、それらは動的なコード進化に難しく、進捗知識更新メソッド（例：DPO、ORPO、SimPO）のサポートを受けてもまた難しいことが明らかになりました。私たちは、このベンチマークが将来の実時間コードキャパティ更新の有效な方法の開発に強い基盤を提供することを信じています。実験コードとデータセットは、以下のURLで公開されています。\nhttps://github.com/Lucky-voyage/Code-Sync",
+      "upvotes": 12,
+      "discussionId": "67c12e61d8247a49b805698f"
+    },
+    "publishedAt": "2025-02-27T23:04:14.619Z",
+    "title": "CODESYNC: Synchronizing Large Language Models with Dynamic Code Evolution at Scale",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.16645.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "643be8879f5d314db2d9ed23",
+      "avatarUrl": "/avatars/64e9bb2c4e10fbe03e2b81afedf40865.svg",
+      "fullname": "Chen Dongping",
+      "name": "shuaishuaicdp",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.16944",
+      "authors": [
+        {
+          "_id": "67be807e8a5a805423137ca2",
+          "name": "Chenghua Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca3",
+          "name": "Lu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca4",
+          "user": {
+            "_id": "669dcf6200970c3b27aafa5d",
+            "avatarUrl": "/avatars/bb9ed5ff86326fdaeb184c6b0e40f74f.svg",
+            "isPro": false,
+            "fullname": "kaikai yang",
+            "user": "keanudicap",
+            "type": "user"
+          },
+          "name": "Fangkai Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-27T09:17:46.382Z",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca5",
+          "name": "Pu Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca6",
+          "name": "Zhixu Li",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca7",
+          "name": "Qingwei Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca8",
+          "name": "Dongmei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca9",
+          "name": "Saravan Rajmohan",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137caa",
+          "name": "Qi Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-24T08:11:33.000Z",
+      "title": "Lean and Mean: 全局価値のガイドラインを持つ解結された価値ポリシー最適化",
+      "summary": "Proximal Policy Optimization (PPO) に基づく Reinforcement Learning from Human Feedback (RLHF) は、大規模な言語モデル (LLMs) を人間の好みに合わせるために不可欠です。これは、演出者と評価者の共同訓練を行うために、事前学習された固定した報酬モデルを用いる必要があります。このアプローチは、演出者と評価者の相互依存関係により計算複雑性と不穩定な性質を増します。また、PPO は LLM のタスクでは真の環境報酬にアクセスできないため、適応性が限られています。このような条件において、値モデルまたは報酬モデルの事前学習は同値になり、両方は新しい真のフィードバックを提供しない固定的な視聴者信号を提供します。これらの問題を解決するために、Decoupled Value Policy Optimization (DVPO) を提案します。DVPO は、従来の報酬モデリングを事前学習されたグローバル値モデル (GVM) に置き換える綺麗なフレームワークです。GVM は、政策トラジェクトに条件付けられ、トークンレベルの return-to-go 推定を行います。値モデルと政策訓練を分離するために、GVM を固定した RL 目的関数を使用することで、DVPO は演出者と評価者の相互依存関係を排除し、伝統的な RLHF に比べて GPU メモリ使用量を 40% 削減し、訓練時間を 35% 削減します。ベンチマーク上の実験は、DVPO が効率的な RLHF 方法 (例: DPO) を超え、性能において最先端の PPO と匹敵します。",
+      "upvotes": 8,
+      "discussionId": "67be807e8a5a805423137cc2"
+    },
+    "publishedAt": "2025-02-28T01:55:41.427Z",
+    "title": "Lean and Mean: Decoupled Value Policy Optimization with Global Value Guidance",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.16944.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "669dcf6200970c3b27aafa5d",
+      "avatarUrl": "/avatars/bb9ed5ff86326fdaeb184c6b0e40f74f.svg",
+      "fullname": "kaikai yang",
+      "name": "keanudicap",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.20321",
+      "authors": [
+        {
+          "_id": "67c13c68d8247a49b808fdac",
+          "name": "Chuofan Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdad",
+          "name": "Yi Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdae",
+          "name": "Junfeng Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdaf",
+          "name": "Jihan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdb0",
+          "name": "Xin Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdb1",
+          "name": "Zehuan Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdb2",
+          "name": "Bingyue Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdb3",
+          "name": "Xiaojuan Qi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T17:47:01.000Z",
+      "title": "UniTok: ビジュアル生成と理解の統一トークナイザー",
+      "summary": "ビジュアル生成と理解の表現の差異は、これらの機能を一つのフレームワークに統合するために重要な隙間を生み出しています。この隙間を埋めるために、私たちはUniTokを紹介します。UniTokは、生成に必要な細かい詳細をエンコードしながら、理解のための高レベル的語義を捉える離散的なビジュアルトークナイザーです。最近の研究は、これらの目標がトレーニング中の損失の衝突を引き起こすことを示していますが、私たちは、この衝突の根本的な原因は、離散トークンの表現力の限界であることを明らかにしました。これを解決するために、多コードブックオフィシャリゼーションを導入しました。これは、過大なコードブックによるトレーニング不穩定を避けながら、潜在的な特徴空間を拡大するために、ベクトルフォーマティキュアリゼーションを複数の独立したサブコードーブックに分けます。私たちの方法は、統一的な離散トークナイザーの上限を大幅に上げ、領域専門的な連続トークナイザーに匹敵したり、超えることができます。例えば、UniTokはImageNet上で、0.38の驚異なrFID（SD-VAEの0.87を対照）と、CLIPの76.2%を超える78.6%のゼロショット精度を実現しました。私たちのコードは、https://github.com/FoundationVision/UniTokに公開されています。",
+      "upvotes": 8,
+      "discussionId": "67c13c6ad8247a49b8090003"
+    },
+    "publishedAt": "2025-02-27T23:34:45.416Z",
+    "title": "UniTok: A Unified Tokenizer for Visual Generation and Understanding",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20321.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6344dcb1cd37e44d9ed46508",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6344dcb1cd37e44d9ed46508/J92UKSxKR3iziD2WJfih4.jpeg",
+      "fullname": "Yi Jiang",
+      "name": "JiangYi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20126",
+      "authors": [
+        {
+          "_id": "67c14524af5eaa8dd062a216",
+          "name": "Sotiris Anagnostidis",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a217",
+          "name": "Gregor Bachmann",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a218",
+          "name": "Yeongmin Kim",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a219",
+          "name": "Jonas Kohler",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21a",
+          "name": "Markos Georgopoulos",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21b",
+          "name": "Artsiom Sanakoyeu",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21c",
+          "name": "Yuming Du",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21d",
+          "name": "Albert Pumarola",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21e",
+          "name": "Ali Thabet",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21f",
+          "name": "Edgar Schönfeld",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T14:16:56.000Z",
+      "title": "FlexiDiT: あなたのDiffusion Transformerは、より少ない計算量で高品質なサンプルを簡単に生成できます。",
+      "summary": "現代なDiffusion Transformersは、推論時に固定した大きな計算量の資源要求により、卓越した実績を誇るが、これは各ノイズ削減ステップに必要な計算量の固定と大きさに起因している。本論文では、静的パラダイムによる固定計算バッジの割り当てを再考し、動的戦略を提案しています。私たちの簡単でサンプルエフゼンシブルなフレームワークで、事前学習されたDiTモデルを変形し、FlexiDiTと呼ばれる柔軟なモデルに変換できるようにします。これらの変形されたモデルは、変動する計算バッジで入力を処理することができます。私たちは、クラス条件付きと文脈条件付きの画像生成において、静的モデルと比較して40％以上のFLOPsを削減できることを示しています。私たちの方法は、入力と条件付きモデルに依存しない一般的であり、ビデオ生成においても容易に拡張可能です。FlexiDiTモデルは、性能を損なさずに75％の計算量を削減できることを示しています。",
+      "upvotes": 6,
+      "discussionId": "67c14529af5eaa8dd062a38c"
+    },
+    "publishedAt": "2025-02-28T00:10:30.864Z",
+    "title": "FlexiDiT: Your Diffusion Transformer Can Easily Generate High-Quality Samples with Less Compute",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20126.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6246
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.19587",
+      "authors": [
+        {
+          "_id": "67c13aa6a43d7939d60eb02e",
+          "name": "Lola Le Breton",
+          "hidden": false
+        },
+        {
+          "_id": "67c13aa6a43d7939d60eb02f",
+          "name": "Quentin Fournier",
+          "hidden": false
+        },
+        {
+          "_id": "67c13aa6a43d7939d60eb030",
+          "name": "Mariam El Mezouar",
+          "hidden": false
+        },
+        {
+          "_id": "67c13aa6a43d7939d60eb031",
+          "name": "Sarath Chandar",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-26T22:00:22.000Z",
+      "title": "NeoBERT: 次世代のBERT",
+      "summary": "最近の建築、予ティング、ファインチューニングの革新は、LLaMAやDeepSeekなどの大規模な自動後退語言モデルの頭脳語学能力と推理能力を驚異的に向上させています。反対に、BERTやRoBERTaのエンコーダーは、多くの下流のNLPアプリケーションの基盤としても同じレベルの進歩を見せていません。この隙を埋めるために、私たちはNeoBERTを紹介します。NeoBERTは、最新の建築、データ、最適化予ティング手法の進歩を統合して、バイデリクションモデルの能力を再定義する次世代のエンコーダーです。NeoBERTは、既存のベースモデルのプラッグとパックとして無難に採用できるように設計されています。最適な深さと幅の比率を使用し、4,096トークンの拡張コンテキスト長を利用しています。250Mパラメータの小さなフィットを持つのに対し、MTEBベンチマークで最先端の結果を収め、同じファインチューニング条件でBERT large、RoBERTa large、NomicBERT、ModernBERTを上回ります。また、GLUEに対して厳密な評価を行い、MTEBの一連のファインチューニングと評価フレームワークを設計しました。すべてのコード、データ、チェックポイント、チューニングスクリプトを公開し、研究や実世界的な採用を促進します。",
+      "upvotes": 5,
+      "discussionId": "67c13aa7a43d7939d60eb065"
+    },
+    "publishedAt": "2025-02-28T03:27:32.294Z",
+    "title": "NeoBERT: A Next-Generation BERT",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19587.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "6317233cc92fd6fee317e030",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6317233cc92fd6fee317e030/cJHSvvimr1kqgQfHOjO5n.png",
+      "fullname": "Tom Aarsen",
+      "name": "tomaarsen",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 1591
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20307",
+      "authors": [
+        {
+          "_id": "67c1460201cef6d4b9b9ac73",
+          "name": "Xiuli Bi",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac74",
+          "name": "Jianfei Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac75",
+          "name": "Bo Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac76",
+          "name": "Yong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac77",
+          "name": "Xiaodong Cun",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac78",
+          "name": "Chi-Man Pun",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac79",
+          "name": "Bin Xiao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T17:33:51.000Z",
+      "title": "モビウス: 潜在変換によるテキストからの無間接続リンキングビデオ生成",
+      "summary": "モビウス、テキスト記述から無料用注釈を含むシームレスなループ動画を生成する新しい方法を紹介します。この方法は、多様なメディア表現に新しい視覚素材を提供します。我々の方法は、テキストプロンプトからループ動画を生成するための事前学習された動画潜在扩散モデルを再利用します。推論時には、動画の開始と終了のノイズを結びつけて潜在サイクルを構築します。動画の時系列一致性を維持することが可能であるため、フレームごとに最初のフレームの潜在値を最終フレームに進めて多フレーム潜在デノイズ処理を実行します。このように、推論プロセス中にもデノイズケースが変化しながら一致性を維持します。また、我々の方法での潜在サイクルは、モデルのケースを超えて任意の長さになります。これにより、モビウスモデルのケースを超えてシームレスなループ動画を生成できます。以前のシネマグラフと異なり、提案された方法は、出現を制限する画像を必要としません。それにより、生成される動作がより動的で視覚品質がより良くなります。複数の実験と比較を行い、提案された方法の効果を証明します。すべてのコードは利用可能になります。",
+      "upvotes": 5,
+      "discussionId": "67c1460501cef6d4b9b9addf"
+    },
+    "publishedAt": "2025-02-28T00:14:01.841Z",
+    "title": "Mobius: Text to Seamless Looping Video Generation via Latent Shift",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20307.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6246
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20127",
+      "authors": [
+        {
+          "_id": "67c12de08cd49ca63e230b99",
+          "user": {
+            "_id": "654da66fb36f85a025bc24b6",
+            "avatarUrl": "/avatars/e5542856ab4bf1845e8f546b5f17cd99.svg",
+            "isPro": false,
+            "fullname": "Zexiong Ma",
+            "user": "mizersy",
+            "type": "user"
+          },
+          "name": "Zexiong Ma",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-28T09:28:35.503Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9a",
+          "name": "Chao Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9b",
+          "name": "Pengfei Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9c",
+          "name": "Xiangxin Meng",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9d",
+          "name": "Yanzhen Zou",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9e",
+          "name": "Bing Xie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T14:19:45.000Z",
+      "title": "SoRFT: サブタスク向けの強化調整での問題解決",
+      "summary": "主流の問題解決フレームワークは主に商業モデルを基にしていることで、高いコストとプライバシーの懸念が生じています。現在の問題解決の訓練アプローチは、一般化能力の悪いことと、オープンソース開発リソースの充分な活用ができないことに取り組んでいます。私たちは、LLMの問題解決能力を高めるための新しい訓練アプローチとして、Subtask-oriented Reinforced Fine-Tuning (SoRFT)を提案します。問題解決を構造化されたサブタスクに分解します：ファイル定位、関数定位、行定位、コード編集生成。SoRFTは2つの訓練ステージからなります：(1) 拒否サンプリングされた観測学微調節、Chain of Thought (CoT)データを事実によってフィルタリングし、LLMを微調節します。(2) ルールベースの強化学習、PPOを使って事実に基づく報酬を利用します。SoRFTによる訓練モデルは、SWE-Bench VerifiedとSWE-Bench Liteで評価され、オープンソースモデルの中で最先端の性能を達成しました（例：SWE-Bench VerifiedではSoRFT-Qwen-7Bで21.4%の問題を解決しました）。実験結果は、SoRFTが問題解決性能を大幅に向上させ、モデルの一般化能力を向上させ、商業モデルのコスト効率的な代替となることを示しました。",
+      "upvotes": 5,
+      "discussionId": "67c12de08cd49ca63e230bd1"
+    },
+    "publishedAt": "2025-02-27T22:38:04.562Z",
+    "title": "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20127.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "654da66fb36f85a025bc24b6",
+      "avatarUrl": "/avatars/e5542856ab4bf1845e8f546b5f17cd99.svg",
+      "fullname": "Zexiong Ma",
+      "name": "mizersy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.20172",
+      "authors": [
+        {
+          "_id": "67c17b8f60206395233b7e46",
+          "name": "Liang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e47",
+          "name": "Shuai Bai",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e48",
+          "name": "Wenhao Chai",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e49",
+          "name": "Weichu Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e4a",
+          "name": "Haozhe Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e4b",
+          "name": "Leon Vinci",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e4c",
+          "name": "Junyang Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e4d",
+          "name": "Baobao Chang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T15:08:39.000Z",
+      "title": "マルチモーダル表現の調整と画像生成：テキスト画像の交差制御は、それほど難しくないことを思い出さないように",
+      "summary": "先進なテキストから画像生成の分野では、パワフルなテキストエンコーダー（例：CLIP、T5）とDiffusion Transformerバックボーンを統合する統合フレームワークが出現し始めています。それに加えて、カンニーやデプスマップなどの追加条件で出力画像を制御するエフォートもありますが、任意のテキストと画像の交差制御のための一構成フレームワークはまだ存在しません。特に、生成プロセスで複数の画像からの概念や視覚的要素を統合する場合にこの空白が明らかになります。この空白を補うために、私たちは大規模な多模態モデル（LMMs）を用いた予備的な実験を行い、画像とテキストがより良く対応し、外部のDiffusionモデルの条件として使用できる共有的な表現空間を提供することができることを示しました。この発見に基づいて、私たちは、任意のテキストと画像の交差制御を目的とする画像生成モデルに向けた効率的な統合フレームワークを提案します。パワフルなテキストから画像モデル（例：SD3.5）を基盤に、元のテキストだけのエンコーダーを換え、QwenVLなどの多様性のある多模態情報エンコーダーを組み込みます。私たちのアプローチは、共通的なテキストと画像の対応と多模態交差制御の協調訓練の2段階パラダイムを利用しています。実験により、この訓練方法は効果的であり、GenEvalベンチマークで全体的なスコア0.69を達成し、最先端のテキストから画像モデル（例：SD3.5、FLUX）と同等の性能を示しました。",
+      "upvotes": 4,
+      "discussionId": "67c17b9160206395233b7e9c"
+    },
+    "publishedAt": "2025-02-28T04:02:19.534Z",
+    "title": "Multimodal Representation Alignment for Image Generation: Text-Image Interleaved Control Is Easier Than You Think",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20172.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63468720dd6d90d82ccf3450",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63468720dd6d90d82ccf3450/tVBFlmZNz8FRMkOrDaDID.jpeg",
+      "fullname": "YSH",
+      "name": "BestWishYsh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 31
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.19735",
+      "authors": [
+        {
+          "_id": "67c1438fd7ffcd1cab1fc412",
+          "user": {
+            "_id": "6727998d4fc2e4f7cc0c85d3",
+            "avatarUrl": "/avatars/ac18eaadd606f7fae64996502f393cf2.svg",
+            "isPro": false,
+            "fullname": "he",
+            "user": "boommmmm",
+            "type": "user"
+          },
+          "name": "Minggui He",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-02-28T05:03:12.675Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc413",
+          "name": "Yilun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc414",
+          "name": "Shimin Tao",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc415",
+          "name": "Yuanchang Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc416",
+          "name": "Hongyong Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc417",
+          "name": "Chang Su",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc418",
+          "name": "Li Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc419",
+          "name": "Hongxia Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41a",
+          "name": "Daimeng Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41b",
+          "name": "Weibin Meng",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41c",
+          "name": "Hao Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41d",
+          "name": "Boxing Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41e",
+          "name": "Osamu Yoshie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T03:57:00.000Z",
+      "title": "R1-T1: 理由と学習によるLLMの完全な翻訳能力の奨励",
+      "summary": "最近のDeepSeek-R1などの理由論的な大語言モデル（LLMs）の進歩にもとづいて、機械翻訳（MT）に推論時の理由論を採用し、人間翻訳者が自然に使いますが、構造化された、多層の理由論の連鎖（CoTs）を採用したものはまだ調査が不足しています。現在の方法は、特定のMTのサブタスクに適合された固定のCoTを設計するか、人間とのCoTとの不対称性を含む合成されたCoTを利用し、規範的な学習（SFT）によるカタストロフィックな忘却が発生することを恐れています。この論文では、R1-Translator（R1-T1）という新しいフレームワークを紹介し、一般的なMTにおいて推論時の理由論を実現するために、人間に沿ったCoTを用いた強化学習（RL）を用います。我々のアプローチは、3つの革新的な点を導入します：（1）理由論に基づく翻訳をMTのサブタスクを超えて6言語と多様なタスク（例：法律/医学領域の適応、成語の解決）に拡張します；（2）6つの専門家がカスタマイズしたCoTテンプレートを正式化し、プライマリーの人間の戦略を反映するものを作成します；（3）KL制約された報酬を用いたRLによるCoTの自動的な進化と反忘却的な適応を可能にします。実験結果は、Flores-101テストセットで21言語と80の翻訳方向で穩定な翻訳性能の向上を示し、特に学習時に見ぬ15言語でも一般的な多言語能力を維持し、規範的なSFTと比較してもその効果が見られます。",
+      "upvotes": 3,
+      "discussionId": "67c14390d7ffcd1cab1fc479"
+    },
+    "publishedAt": "2025-02-28T00:03:34.893Z",
+    "title": "R1-T1: Fully Incentivizing Translation Capability in LLMs via Reasoning Learning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19735.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6246
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.19459",
+      "authors": [
+        {
+          "_id": "67c185f46a31b8fe77434551",
+          "name": "Yu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434552",
+          "name": "Baoxiong Jia",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434553",
+          "name": "Ruijie Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434554",
+          "name": "Junfeng Ni",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434555",
+          "name": "Song-Chun Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434556",
+          "name": "Siyuan Huang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-26T10:25:32.000Z",
+      "title": "コンピュータグラフィックスデザインにおける複雑な可動物体のインタラクティブなリプリカの構築にわたる高斯スプレッティング法",
+      "summary": "アートGSは、3Dガウスを柔軟かつ効率的な表現として利用して、連結物体の構造を解析する難題を解決する新しいアプローチです。現在の方法は、物体の違う状態間で情報を整合的に取り扱うことができないことが多いため、部品のメッシュ再構築と部品の動力学モデリングの精度が限定され、特に複雑な多部連結物体に対しては特に問題があります。我々の方法は、粗略から細かくなるイニシャライションとアルゴリズムの更新を用いて、連結物体の情報を整合的に取り扱うことを目的とし、スキンニングをモデルとして部品の動力学モデリングを改善し、部品のメッシュ再構築とアルゴリズムの学習を両方とも向上させます。合成データセットと実世界データセットの両方で、特に複雑な多部連結物体の新しいベンチマークを含む拡散的な実験により、アートGSは連結パラメータの計算と部品メッシュ再構築の最先端の性能を達成します。我々のアプローチは、特に多部連結物体に対して再構築の品質と効率を大幅に向上させます。また、我々は設計選択の詳細な分析を提供し、各要素の効果を証明し、将来の改良の可能性を明らかにします。",
+      "upvotes": 1,
+      "discussionId": "67c185f66a31b8fe774345d2"
+    },
+    "publishedAt": "2025-02-28T04:47:08.197Z",
+    "title": "Building Interactable Replicas of Complex Articulated Objects via Gaussian Splatting",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19459.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c7a33121bd95f80ed74652",
+      "avatarUrl": "/avatars/7dd59afea785a2bff0ec2b757abd474e.svg",
+      "fullname": "Siyuan Huang",
+      "name": "thuhsy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  }
+]

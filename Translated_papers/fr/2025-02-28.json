@@ -1,0 +1,1061 @@
+[
+  {
+    "paper": {
+      "id": "2502.19613",
+      "authors": [
+        {
+          "_id": "67c12987505a88e4a185e0d7",
+          "name": "Wei Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0d8",
+          "name": "Hanning Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0d9",
+          "name": "Chenlu Ye",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0da",
+          "name": "Lichang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0db",
+          "name": "Nan Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12987505a88e4a185e0dc",
+          "name": "Tong Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-26T23:01:16.000Z",
+      "title": "La correction d'auto-compensation en inférence mathématique",
+      "summary": "Nous effectuons des recherches sur les grands modèles de langue (LLMs) dans la théorie de l'auto-compensation logique. Ces modèles génèrent des logiques de manière progressive et peuvent évaluer la précision de leurs sorties. Cette méthodologie intégrale permet qu'un seul modèle guide le traitement logique de manière indépendante et offre des avantages computationnels. En particulier, nous nous concentrons sur les travaux d'ajustement automatique représentatifs. Dans ce contexte, le modèle détecte automatiquement des erreurs dans les réponses, modifie les sorties et décide de terminer les cycles d'entraînement itératifs. Pour y parvenir, nous proposons un cadre d'algorithmes à deux étapes pour construire des modèles d'auto-compensation logique. Dans la première étape, nous utilisons un échantillonnage séquentiel pour synthétiser des projets logiques étendus en combinant des structures d'auto-compensation et d'ajustement automatique. Cette finesse basée sur les données permet que le modèle apprenne des patrons d'auto-compensation et d'ajustement automatique. Dans la deuxième étape, nous utilisons l'apprentissage par renforcement avec des signaux basés sur des règles pour améliorer la précision de la sortie du modèle et sa capacité d'entraînement. Selon les résultats des expérimentations avec Llama-3 et Qwen-2.5, notre approche dépasse la capacité d'ajustement automatique unique et atteint des améliorations significatives par rapport aux systèmes qui dépendent de modèles de compensation externe.",
+      "upvotes": 42,
+      "discussionId": "67c12989505a88e4a185e115"
+    },
+    "publishedAt": "2025-02-27T22:15:54.222Z",
+    "title": "Self-rewarding correction for mathematical reasoning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19613.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "643e59806db6ba8c5ee123f3",
+      "avatarUrl": "/avatars/4052f2a250107f43b3634c3ee3cc30a1.svg",
+      "fullname": "Wei Xiong",
+      "name": "weqweasdas",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 15
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20395",
+      "authors": [
+        {
+          "_id": "67c12b5def9af74902537b98",
+          "name": "Zhongyang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b5def9af74902537b99",
+          "name": "Ziyue Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b5def9af74902537b9a",
+          "name": "Tianyi Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T18:59:32.000Z",
+      "title": "R2-T2 : Processeur Hybrid de Modèles pour le Réarrangement de R2 dans des Scénarios de Test",
+      "summary": "Dans les grands modèles multimodales (LMMs), le reconnaissance des modalités non linguistiques (par exemple, représentations visuelles) ne dépasse pas la puissante capacité d'inférence des grands modèles de langage (LLMs), ce qui limite le rendement des LMMs dans les tâches de bas niveau. Récemment, pour pallier cette faiblesse, l'encodeur visuel a été remplacé par un ensemble d'experts (MoE) pour fournir aux tâches de bas niveau une représentation riche, multiéchelle et diversifiée. Le rendement des MoE multimodales dépend significativement du routageur, qui ré-échelle et mélange l'entrée pour chaque représentation d'un expert différent. Cependant, nous avons découvert que un routageur entraîné de manière end-to-end ne génère pas les poids de routage optimaux pour les échantillons de test. Pour corriger cela, nous proposons une nouvelle et efficace méthodologie appelée \"Router Reentraînement en Temps de Test (R2-T2)\". Cette méthodologie optimise les vecteurs de poids de routage de manière locale en déplaçant les vecteurs qui effectuent de bonnes prédictions dans la zone voisine des échantillons de test. R2-T2 propose trois stratégies selon différents objectifs d'optimisation et des espaces de recherche de voisins. R2-T2 améliore continuellement et significativement le rendement des LMMs les plus récents dans les défis des tests de référence, sans nécessité d'entraîner les paramètres fondamentaux du modèle.",
+      "upvotes": 20,
+      "discussionId": "67c12b5eef9af74902537c00"
+    },
+    "publishedAt": "2025-02-27T22:27:24.486Z",
+    "title": "R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/PaZkWIhqZBRCSfBA-k4OX.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/FASlyPDiSb9VHZaeWMj9H.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/kGeIJVMDDAbIassiuYIb2.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/Tw2Bf_RsFTPARKLJWIlKM.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20395.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "647f5af5b0e96764589f3b2a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+      "fullname": "Tianyi Zhou",
+      "name": "zhoutianyi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 12
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20082",
+      "authors": [
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce8e",
+          "name": "Ning Shang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce8f",
+          "name": "Li Lyna Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce90",
+          "name": "Siyuan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce91",
+          "name": "Gaokai Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce92",
+          "name": "Gilsinia Lopez",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce93",
+          "name": "Fan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce94",
+          "name": "Weizhu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c12b6d25c74ee5b6e2ce95",
+          "name": "Mao Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T13:41:07.000Z",
+      "title": "LongRoPE2 : Erreurs d'approximation dans l'échelle du contexte de la fenêtre d'un modèle de langage largement modélisé",
+      "summary": "LongRoPE2 est un nouvel approche qui permet d'étendre la fenêtre de contexte longue tout en maintenant l'intégrité de cette fenêtre de contexte longue dans des modèles de langage grands et entraînés précédemment (LLMs). Pour atteindre cet objectif, trois contributions clés sont présentées : 1) l'hypothèse selon laquelle le peu d'entraînement dans les dimensions RoPE de haut indice, non visibles avec les méthodes actuelles, est la cause des problèmes de distribution hors de la distribution (OOD) ; 2) un algorithme efficace de mise à l'échelle de RoPE qui guide la recherche de calcul évolutif dans l'incertitude de la structure des nœuds ; 3) un approche d'entraînement de fenêtre de contexte mixte qui maintient le rendement dans les contextes courts en utilisant le RoPE original, tout en étendant RoPE pour les séquences de contexte longues pour ajuster les poids du modèle. Les expérimentations sur les benchmarks de LLaMA3-8B et Phi3-mini-3.8B soutiennent ces hypothèses et démontrent l'efficacité de LongRoPE2. En particulier, LongRoPE2 peut étendre LLaMA3-8B à une longueur de contexte valide de 128K, tout en maintenant un rendement dans les contextes courts de 98,5% ou plus, en utilisant seulement 80 fois moins de 10B tokens que la méthodologie de Meta. Le code est disponible sur https://github.com/microsoft/LongRoPE.",
+      "upvotes": 19,
+      "discussionId": "67c12b6e25c74ee5b6e2ceb5"
+    },
+    "publishedAt": "2025-02-27T22:22:53.713Z",
+    "title": "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20082.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62b0009c72043b05d29492b2",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62b0009c72043b05d29492b2/NqRkX2YLhlfOLvYysa7dD.png",
+      "fullname": "Li Lyna Zhang",
+      "name": "lynazhang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 27
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.19634",
+      "authors": [
+        {
+          "_id": "67c12bf3505a88e4a1866a01",
+          "name": "Jiazhen Pan",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a02",
+          "user": {
+            "_id": "631b9ff5824f2502e3557c7e",
+            "avatarUrl": "/avatars/076043c9dba07644a570692563ef8114.svg",
+            "isPro": false,
+            "fullname": "liu",
+            "user": "che111",
+            "type": "user"
+          },
+          "name": "Che Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-28T09:28:38.598Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a03",
+          "name": "Junde Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a04",
+          "name": "Fenglin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a05",
+          "name": "Jiayuan Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a06",
+          "name": "Hongwei Bran Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a07",
+          "name": "Chen Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a08",
+          "name": "Cheng Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12bf3505a88e4a1866a09",
+          "name": "Daniel Rueckert",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-26T23:57:34.000Z",
+      "title": "MedVLM-R1 : Amélioration de la capacité logique médicale par l'apprentissage de relations dans les modèles de langage visuolinguistique (VLMs)",
+      "summary": "La théorie est un pas important dans le développement de l'analyse d'images médicales et joue un rôle crucial dans la confiance des médecins et l'approbation réglementaire, offrant une transparence et une confiance. Cependant, les modèles de langage visuel médical (VLMs) montrent de bons résultats dans des tâches radiologiques, mais beaucoup d'entre eux se concentrent uniquement sur présenter une réponse finale sans expliquer clairement les motifs. Pour combler cette lacune, nous présentons MedVLM-R1, un modèle qui explique les raisons en langue naturelle pour augmenter la transparence et la confiance. Ce modèle évite l'overfitting et le défaillance par manque de raisons vraies, en utilisant un approche d'apprentissage par répétition pour trouver des voies de raisons compréhensibles pour les humains. Avec un ensemble de données limitée (600 exemples de réponses à des questions d'images) et des paramètres du modèle (2B), MedVLM-R1 améliore la précision de 55.11% à 78.22% dans les benchmarks de MRI, CT et radiographies, dépassant les modèles grands entraînés avec plus d'un million d'exemples. De plus, il montre une forte capacité d'extension et un excellent rendement dans des tâches hors de son domaine. En intégrant l'analyse d'images médicales avec des raisons claires, MedVLM-R1 démontre un pas important dans la confiance et la compréhension de l'IA dans le traitement.",
+      "upvotes": 17,
+      "discussionId": "67c12bf4505a88e4a1866a35"
+    },
+    "publishedAt": "2025-02-28T04:36:05.045Z",
+    "title": "MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19634.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "631b9ff5824f2502e3557c7e",
+      "avatarUrl": "/avatars/076043c9dba07644a570692563ef8114.svg",
+      "fullname": "liu",
+      "name": "che111",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.20238",
+      "authors": [
+        {
+          "_id": "67c15306333e2f71f01c8e35",
+          "name": "Guizhen Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e36",
+          "name": "Weiwen Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e37",
+          "name": "Hao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e38",
+          "name": "Hou Pong Chan",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e39",
+          "name": "Chaoqun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e3a",
+          "name": "Lidong Bing",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e3b",
+          "name": "Deli Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e3c",
+          "name": "Anh Tuan Luu",
+          "hidden": false
+        },
+        {
+          "_id": "67c15306333e2f71f01c8e3d",
+          "name": "Yu Rong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T16:23:25.000Z",
+      "title": "FINEREASON : Évaluation et amélioration par la réflexion logique critique des méthodes de résolution de problèmes des LLMs",
+      "summary": "Varios motifs de tâches difficiles nécessitent une réaction rapide, mais nécessitent un approfondissement et une stratégie plus soignée. Le développement récent des modèles de langage grands (LLMs) a montré un changement important depuis la forme de réponse rapide, connue comme 'System 1', vers un style de résolution de problèmes impliquant une réflexion et une correction, connu comme 'System 2'. Cependant, les benchmarks actuels se concentrent principalement sur la précision finale de la réponse, sans explorer significativement les étapes intermédiaires du modèle. Cela limite l'évaluation de la capacité des modèles à réfléchir et à corriger les erreurs lors du processus de raisonnement. Pour compléter cette lacune, nous présentons 'FINEREASON', une logique de perte adaptée à la capacité de raisonnement des LLMs. Chaque perte peut être décomposée en étapes individuelles et est optimisée pour la validation de la précision intermédiaire. Ainsi, nous présentons deux tâches : vérification de l'état et mouvement de l'état, pour évaluer l'état actuel et planifier le prochain pas. Nous proposons un ensemble d'entraînement de pertes pour étendre l'entraînement de pertes et améliorer le rendement dans des tâches mathématiques générales. Nous montrons que nos modèles entraînés, grâce aux données de vérification de l'état et de mouvement, obtiennent un amélioration de 5,1% en raisonnement mathématique dans le jeu GSM8K.",
+      "upvotes": 13,
+      "discussionId": "67c15307333e2f71f01c8ebc"
+    },
+    "publishedAt": "2025-02-28T01:14:11.268Z",
+    "title": "FINEREASON: Evaluating and Improving LLMs' Deliberate Reasoning through Reflective Puzzle Solving",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20238.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64e85b3edb3767299865e0e3",
+      "avatarUrl": "/avatars/fdbe121535dea940edd2766161393485.svg",
+      "fullname": "Chen",
+      "name": "Guizhen",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.16645",
+      "authors": [
+        {
+          "_id": "67c12e60d8247a49b805694f",
+          "name": "Chenlong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056950",
+          "name": "Zhaoyang Chu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056951",
+          "user": {
+            "_id": "669096da35cddb688a352ca8",
+            "avatarUrl": "/avatars/d01f34d99d89447d27c0fd43734ae6d9.svg",
+            "isPro": false,
+            "fullname": "zxiang",
+            "user": "zx10086",
+            "type": "user"
+          },
+          "name": "Zhengxiang Cheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-28T09:28:33.569Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056952",
+          "user": {
+            "_id": "6743e9d4303e7ce5b9d13e9b",
+            "avatarUrl": "/avatars/cdaf150380e9c8916547185b968a2670.svg",
+            "isPro": false,
+            "fullname": "xy",
+            "user": "yxy0807",
+            "type": "user"
+          },
+          "name": "Xuyi Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-28T09:28:31.564Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056953",
+          "name": "Kaiyue Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056954",
+          "name": "Yao Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056955",
+          "name": "Zhou Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056956",
+          "name": "Xuanhua Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67c12e60d8247a49b8056957",
+          "name": "Dongping Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-23T16:46:18.000Z",
+      "title": "CODESYNC : Synchronisation Dynamique du Code et des Modèles de Langue à Grande Échelle\nEvolution Scalable",
+      "summary": "Les modèles de langage grands (LLMs) montrent un excellent rendement dans le développement de logiciels, mais rencontrent des difficultés à s'adapter aux mises à jour fréquentes des API de tiers. Cette limitation est associée à l'utilisation de jeux de données d'entraînement statiques, ce qui conduit généralement à des implémentations de codes exécutables insecuris et peu efficaces. Dans ce contexte, cet article présente CODESYNC, un moteur de données. CODESYNC identifie les mises à jour de la capacité de code des bibliothèques de tiers en fonction du temps et collecte les mises à jour de code en temps réel. Avec CODESYNC, un cadre de test détaillé, CODESYNCBENCH, a été développé pour évaluer la capacité des LLMs à s'adapter à l'évolution du code, comprenant 220 mises à jour d'API dans le monde réel. Ce cadre de test fournit 3 300 cas de test et comprend trois tâches d'évaluation, ainsi qu'un jeu de données d'entraînement supervisé intéressant composé de 2 200 échantillons. Les expériences larges sur 14 des plus avancés LLMs révèlent que ceux-ci rencontrent des difficultés avec l'évolution dynamique du code, et même avec l'appui de méthodes d'actualisation de connaissance dynamique (comme DPO, ORPO et SimPO) continuent de rencontrer des défis. Nous pensons que ce cadre de test fournit une base solide pour le développement de méthodes valides pour l'actualisation en temps réel du code. Les codes expérimentaux et jeux de données sont disponibles sur la suivante URL.\nhttps://github.com/Lucky-voyage/Code-Sync",
+      "upvotes": 12,
+      "discussionId": "67c12e61d8247a49b805698f"
+    },
+    "publishedAt": "2025-02-27T23:04:14.619Z",
+    "title": "CODESYNC: Synchronizing Large Language Models with Dynamic Code Evolution at Scale",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.16645.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "643be8879f5d314db2d9ed23",
+      "avatarUrl": "/avatars/64e9bb2c4e10fbe03e2b81afedf40865.svg",
+      "fullname": "Chen Dongping",
+      "name": "shuaishuaicdp",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.16944",
+      "authors": [
+        {
+          "_id": "67be807e8a5a805423137ca2",
+          "name": "Chenghua Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca3",
+          "name": "Lu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca4",
+          "user": {
+            "_id": "669dcf6200970c3b27aafa5d",
+            "avatarUrl": "/avatars/bb9ed5ff86326fdaeb184c6b0e40f74f.svg",
+            "isPro": false,
+            "fullname": "kaikai yang",
+            "user": "keanudicap",
+            "type": "user"
+          },
+          "name": "Fangkai Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-27T09:17:46.382Z",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca5",
+          "name": "Pu Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca6",
+          "name": "Zhixu Li",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca7",
+          "name": "Qingwei Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca8",
+          "name": "Dongmei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137ca9",
+          "name": "Saravan Rajmohan",
+          "hidden": false
+        },
+        {
+          "_id": "67be807e8a5a805423137caa",
+          "name": "Qi Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-24T08:11:33.000Z",
+      "title": "Thin and Thick : Guidelines pour les Valeurs Mondiales pour les Politiques de Valeur Décomposées Optimisées",
+      "summary": "La Optimisation des Politiques Prochaines (PPO) basée sur l'Apprentissage par Refeudrement avec Rétroalimentation Humaine (RLHF) est essentielle pour ajuster les grands modèles de langage (LLMs) aux préférences humaines. Pour cela, il est nécessaire de réaliser un apprentissage conjoint d'un joueur qui apprend avec un modèle de récompense pré-entraîné et d'un évaluateur. Cette méthodologie augmente la complexité computationnelle et les caractéristiques instables en raison de la relation d'interdépendance entre le joueur et l'évaluateur. De plus, la PPO est limitée en termes d'adaptabilité car elle ne peut accéder aux récompenses réelles dans les tâches des LLMs. Dans ces conditions, l'apprentissage pré-entraîné de modèles de valeur ou de récompense est insuffisant, car les deux fournissent seulement des signaux fixes d'audience et pas de nouveaux feedbacks réels. Pour résoudre ces problèmes, on propose le Découplage de la Valorisation et de l'Optimisation de Politiques (DVPO). DVPO est un cadre élégant qui remplace le modèle de récompense pré-entraîné par un modèle de valeur global pré-entraîné (GVM). Le GVM est conditionnel aux traçages de politique et estime le retour à la condition token par token. En séparant l'apprentissage du modèle de valeur et de politique, DVPO fixe le GVM et utilise une fonction d'apprentissage par RL, ce qui élimine la relation d'interdépendance entre le joueur et l'évaluateur, réduit l'utilisation de mémoire GPU d'un 40% et le temps d'apprentissage d'un 35%. Les expériences de référence montrent que DVPO dépasse les méthodes efficaces de RLHF (par exemple, DPO) et concurrence avec le PPO le plus avancé en termes de performance.",
+      "upvotes": 8,
+      "discussionId": "67be807e8a5a805423137cc2"
+    },
+    "publishedAt": "2025-02-28T01:55:41.427Z",
+    "title": "Lean and Mean: Decoupled Value Policy Optimization with Global Value Guidance",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.16944.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "669dcf6200970c3b27aafa5d",
+      "avatarUrl": "/avatars/bb9ed5ff86326fdaeb184c6b0e40f74f.svg",
+      "fullname": "kaikai yang",
+      "name": "keanudicap",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.20321",
+      "authors": [
+        {
+          "_id": "67c13c68d8247a49b808fdac",
+          "name": "Chuofan Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdad",
+          "name": "Yi Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdae",
+          "name": "Junfeng Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdaf",
+          "name": "Jihan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdb0",
+          "name": "Xin Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdb1",
+          "name": "Zehuan Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdb2",
+          "name": "Bingyue Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67c13c68d8247a49b808fdb3",
+          "name": "Xiaojuan Qi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T17:47:01.000Z",
+      "title": "UniTok : Vision génération et compréhension intégrées dans le tokenisateur",
+      "summary": "La différence entre la génération visuelle et la représentation de compréhension est que ces fonctions créent un important vide à combler pour les intégrer dans un seul cadre. Pour combler ce vide, nous présentons UniTok. UniTok est un tokenisateur visuel distribué qui codifie des informations détaillées nécessaires à la génération, tout en fournissant un contexte d'altitude pour la compréhension. Les études récentes ont montré que cet objectif peut causer des conflits de perte lors de l'entraînement, mais nous avons découvert que la racine de ce conflit est la limitation de la représentation des tokens distribués. Pour résoudre ce problème, nous avons introduit la multi-codebook offshoring. Ce méthode évite l'instabilité d'entraînement causée par des codebooks excessifs, en élargissant l'espace de caractéristiques potentielles en distribuant la vector quantisation dans plusieurs sous-codebooks indépendants. Notre méthode peut considérablement améliorer la capacité d'un tokenisateur distribué uniforme et les rendre compétitifs, voire supérieurs, aux tokenisateurs continus de domaine spécifique. Par exemple, UniTok a atteint un score de rFID impressionnant de 0,38 sur ImageNet (en comparaison avec 0,87 de SD-VAE) et une précision de 0-shot de 78,6%, qui dépasse le 76,2% du CLIP. Notre code est disponible sur https://github.com/FoundationVision/UniTok.",
+      "upvotes": 8,
+      "discussionId": "67c13c6ad8247a49b8090003"
+    },
+    "publishedAt": "2025-02-27T23:34:45.416Z",
+    "title": "UniTok: A Unified Tokenizer for Visual Generation and Understanding",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20321.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6344dcb1cd37e44d9ed46508",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6344dcb1cd37e44d9ed46508/J92UKSxKR3iziD2WJfih4.jpeg",
+      "fullname": "Yi Jiang",
+      "name": "JiangYi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20126",
+      "authors": [
+        {
+          "_id": "67c14524af5eaa8dd062a216",
+          "name": "Sotiris Anagnostidis",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a217",
+          "name": "Gregor Bachmann",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a218",
+          "name": "Yeongmin Kim",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a219",
+          "name": "Jonas Kohler",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21a",
+          "name": "Markos Georgopoulos",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21b",
+          "name": "Artsiom Sanakoyeu",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21c",
+          "name": "Yuming Du",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21d",
+          "name": "Albert Pumarola",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21e",
+          "name": "Ali Thabet",
+          "hidden": false
+        },
+        {
+          "_id": "67c14524af5eaa8dd062a21f",
+          "name": "Edgar Schönfeld",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T14:16:56.000Z",
+      "title": "FlexiDiT : Tu Transformateur de Diffusion peut générer des échantillons de haute qualité avec peu de calcul.",
+      "summary": "Les modèles modernes de Transformers de diffusion célèbrent des résultats exceptionnels dans l'inférence, mais nécessitent une grande quantité fixe de ressources computationnelles en raison de la fixation et du taille des calculs nécessaires à chaque étape de la suppression de bruit. Dans cet article, nous réévaluons la façon d'attribuer des ressources fixes basée sur le paradigme statique et proposons une stratégie dynamique. Grâce à notre cadre simple et amortissable, les modèles DiT pré-entraînés sont transformés en modèles flexibles appelés FlexiDiT. Ces modèles peuvent traiter des entrées dans des ressources computationnelles variables. Nous montrons que, dans la génération d'images conditionnées à la classe et au contexte, il est possible de réduire de plus de 40% des FLOPs par rapport aux modèles statiques. Notre méthode est un méthode générale qui ne dépend pas de l'entrée ni du modèle conditionné et peut facilement être étendue à la génération de vidéos. Le modèle FlexiDiT peut réduire de 75% des calculs sans compromettre le rendement.",
+      "upvotes": 6,
+      "discussionId": "67c14529af5eaa8dd062a38c"
+    },
+    "publishedAt": "2025-02-28T00:10:30.864Z",
+    "title": "FlexiDiT: Your Diffusion Transformer Can Easily Generate High-Quality Samples with Less Compute",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20126.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6246
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.19587",
+      "authors": [
+        {
+          "_id": "67c13aa6a43d7939d60eb02e",
+          "name": "Lola Le Breton",
+          "hidden": false
+        },
+        {
+          "_id": "67c13aa6a43d7939d60eb02f",
+          "name": "Quentin Fournier",
+          "hidden": false
+        },
+        {
+          "_id": "67c13aa6a43d7939d60eb030",
+          "name": "Mariam El Mezouar",
+          "hidden": false
+        },
+        {
+          "_id": "67c13aa6a43d7939d60eb031",
+          "name": "Sarath Chandar",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-26T22:00:22.000Z",
+      "title": "NeoBERT: Siècle de BERT",
+      "summary": "Las dernières innovations en architecture, prédiction et manipulation ont réveillé l'admiration en montrant le pouvoir cérébral et la capacité d'inférence des modèles grands comme LLaMA et DeepSeek. D'un autre côté, les encodeurs de BERT et RoBERTa, qui forment la base de nombreuses applications NLP, n'ont pas montré le même niveau de progrès. Pour combler cette lacune, nous présentons NeoBERT. NeoBERT est un encodeur de la prochaine génération qui redefinit les capacités des modèles bidirectionnels en intégrant les derniers avancées en architecture, données et prédiction. NeoBERT est conçu pour être facilement introduit comme un plug-in et un paquet de modèles existants. Il utilise une proportion optimale de profondeur et de largeur, ainsi qu'une longueur de contexte étendue de 4,096 tokens. Il inclut un petit modèle de 250M paramètres qui enregistre les résultats les plus avancés sur le benchmark MTEB, dépassant BERT large, RoBERTa large, NomicBERT et ModernBERT sous les mêmes conditions de manipulation. De plus, il a effectué une évaluation stricte sur GLUE et a conçu un cadre de travail continu de manipulation et d'évaluation pour MTEB. Tout le code, les données, les checkpoints et les scripts de manipulation sont publics pour encourager la recherche et l'introduction dans la réalité.",
+      "upvotes": 5,
+      "discussionId": "67c13aa7a43d7939d60eb065"
+    },
+    "publishedAt": "2025-02-28T03:27:32.294Z",
+    "title": "NeoBERT: A Next-Generation BERT",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19587.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "6317233cc92fd6fee317e030",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6317233cc92fd6fee317e030/cJHSvvimr1kqgQfHOjO5n.png",
+      "fullname": "Tom Aarsen",
+      "name": "tomaarsen",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 1591
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20307",
+      "authors": [
+        {
+          "_id": "67c1460201cef6d4b9b9ac73",
+          "name": "Xiuli Bi",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac74",
+          "name": "Jianfei Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac75",
+          "name": "Bo Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac76",
+          "name": "Yong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac77",
+          "name": "Xiaodong Cun",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac78",
+          "name": "Chi-Man Pun",
+          "hidden": false
+        },
+        {
+          "_id": "67c1460201cef6d4b9b9ac79",
+          "name": "Bin Xiao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T17:33:51.000Z",
+      "title": "Mobius : Génération de vidéos par liens non indirects à partir de texte par transformation potentielle",
+      "summary": "Mobius introduit une nouvelle méthode pour générer des animations en boucle transparentes qui incluent un rétroaction visuelle à partir de descriptions textuelles. Cette approche fournit de nouveaux matériaux visuels pour diverses expressions médiatiques. Notre méthode réutilise un modèle pré-entraîné de diffusion potentielle vidéo pour générer des animations en boucle à partir de prompts textuels. Pendant l'inférence, le bruit au début et à la fin de la vidéo est connecté pour construire un cycle potentiel. Pour maintenir la cohérence temporelle, la valeur potentielle de la première frame est déplacée à la dernière frame pour une traitement de débruitage sur chaque frame. Cela garantit que le processus d'inférence maintient la cohérence alors que les cas de bruit changent. De plus, le cycle potentiel de notre méthode peut être de n'importe quelle longueur, dépassant les cas du modèle. Cela permet à Mobius de générer des animations en boucle transparentes qui dépassent les méthodes précédentes. Contrairement aux cinémagraphes précédents, la méthode proposée ne nécessite pas de limiter les images à apparaître. Cela résulte en des actions générées plus dynamiques et visuellement supérieures. L'efficacité de la méthode proposée est démontrée par plusieurs expériences et comparaisons. Tout le code est maintenant disponible.",
+      "upvotes": 5,
+      "discussionId": "67c1460501cef6d4b9b9addf"
+    },
+    "publishedAt": "2025-02-28T00:14:01.841Z",
+    "title": "Mobius: Text to Seamless Looping Video Generation via Latent Shift",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20307.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6246
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.20127",
+      "authors": [
+        {
+          "_id": "67c12de08cd49ca63e230b99",
+          "user": {
+            "_id": "654da66fb36f85a025bc24b6",
+            "avatarUrl": "/avatars/e5542856ab4bf1845e8f546b5f17cd99.svg",
+            "isPro": false,
+            "fullname": "Zexiong Ma",
+            "user": "mizersy",
+            "type": "user"
+          },
+          "name": "Zexiong Ma",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-02-28T09:28:35.503Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9a",
+          "name": "Chao Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9b",
+          "name": "Pengfei Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9c",
+          "name": "Xiangxin Meng",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9d",
+          "name": "Yanzhen Zou",
+          "hidden": false
+        },
+        {
+          "_id": "67c12de08cd49ca63e230b9e",
+          "name": "Bing Xie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T14:19:45.000Z",
+      "title": "SoRFT : Solution de Problèmes en Régulation de Fortification pour Sous-Tâches",
+      "summary": "Le cadre principal pour la résolution de problèmes est principalement basé sur des modèles commerciaux, ce qui implique des coûts élevés et des préoccupations de confidentialité. L'approche actuelle pour l'entraînement de problèmes de résolution est affectée par une perte de capacité de généralisation et une insuffisance dans l'utilisation de ressources de développement ouvertes. Nous proposons un nouvel approche d'entraînement pour améliorer la capacité de résolution de problèmes par des modèles de langage de machine (LLM), appelée Subtask-oriented Reinforced Fine-Tuning (SoRFT). Les problèmes sont décomposés en sous-tâches structurées : localisation du fichier, localisation de la fonction, localisation de la ligne, génération d'éditions de code. SoRFT est configuré en deux étapes d'entraînement : (1) ajustement micro avec des échantillons rejetés et des observations, en utilisant des données de CoT (Chain of Thought) filtrées en fonction de la réalité pour ajuster l'LLM. (2) Entraînement d'apprentissage réinforcé basé sur des règles, en utilisant PPO pour appliquer des récompenses basées sur la réalité. Les modèles entraînés avec SoRFT ont été évalués sur SWE-Bench Verified et SWE-Bench Lite, et ont obtenu les meilleurs résultats parmi les modèles open-source (par exemple, SoRFT-Qwen-7B a résolu 21,4% des problèmes sur SWE-Bench Verified). Les résultats des expériences montrent que SoRFT améliore significativement la capacité de résolution de problèmes, améliore la capacité de généralisation du modèle et fournit une alternative plus rentable en termes de coût par rapport aux modèles commerciaux.",
+      "upvotes": 5,
+      "discussionId": "67c12de08cd49ca63e230bd1"
+    },
+    "publishedAt": "2025-02-27T22:38:04.562Z",
+    "title": "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20127.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "654da66fb36f85a025bc24b6",
+      "avatarUrl": "/avatars/e5542856ab4bf1845e8f546b5f17cd99.svg",
+      "fullname": "Zexiong Ma",
+      "name": "mizersy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2502.20172",
+      "authors": [
+        {
+          "_id": "67c17b8f60206395233b7e46",
+          "name": "Liang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e47",
+          "name": "Shuai Bai",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e48",
+          "name": "Wenhao Chai",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e49",
+          "name": "Weichu Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e4a",
+          "name": "Haozhe Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e4b",
+          "name": "Leon Vinci",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e4c",
+          "name": "Junyang Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67c17b8f60206395233b7e4d",
+          "name": "Baobao Chang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T15:08:39.000Z",
+      "title": "La régulation des expressions multimodales et la génération d'images : ne vous doutez pas que le contrôle croisé entre texte et image ne soit pas aussi difficile.",
+      "summary": "Dans le domaine de la génération d'images à partir de texte avancée, un développement de cadre intégré a commencé, combinant un puissant codificateur de texte (par exemple, CLIP, T5) et un transformeur de diffusion avec bonus. De plus, des effets sont disponibles pour contrôler l'image générée en utilisant des conditions supplémentaires comme des cartes de Canny ou de profondeur, mais il n'existe pas un seul cadre de conception pour contrôler l'intersection arbitraire entre le texte et les images. En particulier, lorsque des concepts ou éléments visuels extraits de plusieurs images sont intégrés lors du processus de génération, ce vide est évident. Pour corriger cela, nous avons effectué des expériences préliminaires avec des modèles de grande échelle multimodal (LMMs) pour fournir une représentation commune qui permette aux images et au texte de répondre mieux et d'utiliser des conditions de modèles de diffusion externes. En se basant sur ces observations, nous proposons un cadre intégré efficace pour les modèles de génération d'images utilisés pour le contrôle croisé de texte et d'images. En fonction de modèles d'images générées à partir de texte robustes (par exemple, SD3.5), nous remplaçons seulement le codificateur de texte original et intéguons différents codificateurs multimodales comme QwenVL. Notre approche utilise un modèle d'apprentissage à deux étapes pour la collaboration entre la correspondance commune de texte et d'images et le contrôle croisé multimodal. Selon les résultats des expériences, cette méthode d'apprentissage est efficace et atteint un score global de 0.69 sur le benchmark GenEval, montrant un rendement équivalent aux modèles texte à image plus avancés (par exemple, SD3.5, FLUX).",
+      "upvotes": 4,
+      "discussionId": "67c17b9160206395233b7e9c"
+    },
+    "publishedAt": "2025-02-28T04:02:19.534Z",
+    "title": "Multimodal Representation Alignment for Image Generation: Text-Image Interleaved Control Is Easier Than You Think",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.20172.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63468720dd6d90d82ccf3450",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63468720dd6d90d82ccf3450/tVBFlmZNz8FRMkOrDaDID.jpeg",
+      "fullname": "YSH",
+      "name": "BestWishYsh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 31
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.19735",
+      "authors": [
+        {
+          "_id": "67c1438fd7ffcd1cab1fc412",
+          "user": {
+            "_id": "6727998d4fc2e4f7cc0c85d3",
+            "avatarUrl": "/avatars/ac18eaadd606f7fae64996502f393cf2.svg",
+            "isPro": false,
+            "fullname": "he",
+            "user": "boommmmm",
+            "type": "user"
+          },
+          "name": "Minggui He",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-02-28T05:03:12.675Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc413",
+          "name": "Yilun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc414",
+          "name": "Shimin Tao",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc415",
+          "name": "Yuanchang Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc416",
+          "name": "Hongyong Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc417",
+          "name": "Chang Su",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc418",
+          "name": "Li Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc419",
+          "name": "Hongxia Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41a",
+          "name": "Daimeng Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41b",
+          "name": "Weibin Meng",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41c",
+          "name": "Hao Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41d",
+          "name": "Boxing Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c1438fd7ffcd1cab1fc41e",
+          "name": "Osamu Yoshie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-27T03:57:00.000Z",
+      "title": "R1-T1 : Motivation et apprentissage pour l'amélioration de la capacité de traduction complète des modèles de langage grands (LLM)",
+      "summary": "Récemment, le développement de modèles logiques comme DeepSeek-R1 a conduit à l'introduction de la logique dans l'inférence en traduction automatique (TA), mais les études qui appliquent des structures logiques multiniveaux, comme les CoTs (Continuités de Théorie de la Logique) utilisées naturellement par les traducteurs humains, restent insuffisantes. Les méthodes actuelles concevoient des CoTs fixes pour des sous-tâches spécifiques de TA ou utilisent des CoTs synthétiques qui incluent l'asymétrie par rapport aux humains, avec le risque de l'oubli catastrophique due à la normalisation d'apprentissage (SFT). Dans cet article, nous présentons un nouveau cadre appelé R1-Translator (R1-T1), qui applique un apprentissage par renforcement (RL) pour réaliser la logique dans l'inférence de TA en utilisant des CoTs adaptés aux humains. Notre approche introduit trois innovations : (1) la traduction basée sur la logique qui s'étend plus loin que les sous-tâches de TA à 6 langues et diverses tâches (par exemple, applications dans des domaines juridiques ou médicaux, et la résolution de vocabulaire); (2) six experts formalisent des modèles de CoT personnalisés et créent des stratégies humaines; (3) une récompense basée sur la restriction de KL est utilisée pour faciliter l'évolution automatique des CoT et l'adaptation à l'oubli. Les résultats des expérimentations montrent un amélioration de la qualité de traduction stable dans 21 langues et 80 directions de traduction dans le jeu de données Flores-101, en maintenant particulièrement la capacité multilingue générale dans 15 langues qui n'ont pas été vues pendant l'entraînement, et en démontrant également son efficacité face à la SFT normalisée.",
+      "upvotes": 3,
+      "discussionId": "67c14390d7ffcd1cab1fc479"
+    },
+    "publishedAt": "2025-02-28T00:03:34.893Z",
+    "title": "R1-T1: Fully Incentivizing Translation Capability in LLMs via Reasoning Learning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19735.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6246
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.19459",
+      "authors": [
+        {
+          "_id": "67c185f46a31b8fe77434551",
+          "name": "Yu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434552",
+          "name": "Baoxiong Jia",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434553",
+          "name": "Ruijie Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434554",
+          "name": "Junfeng Ni",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434555",
+          "name": "Song-Chun Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67c185f46a31b8fe77434556",
+          "name": "Siyuan Huang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-26T10:25:32.000Z",
+      "title": "Application du méthode de dispersion de Gauss dans le design de graphiques informatiques pour la construction de demandes d'interaction entre objets dynamiques complexes",
+      "summary": "ArtGS est un nouvel approche qui utilise des représentations efficaces et flexibles de 3D Gauss pour résoudre les problèmes d'analyse de la structure d'objets connectés. Les méthodes actuelles ne peuvent pas traiter de manière cohérente l'information entre différents états des objets, ce qui limite la précision de la reconfiguration de la maille et la modélisation dynamique des composants, surtout dans les structures complexes à plusieurs composants. Notre approche utilise la densité et l'actualisation des algorithmes pour traiter de manière cohérente l'information des objets connectés, améliorant ainsi la modélisation dynamique des composants par le biais du skinning, et améliorant à la fois la reconfiguration de la maille et l'apprentissage de l'algorithme. Grâce à des expériences distribuées qui comprennent des ensembles de données synthétiques et réelles, incluant un nouveau benchmark pour les structures complexes à plusieurs composants, ArtGS atteint le meilleur rendement dans le calcul des paramètres de connexion et dans la reconfiguration de la maille. Notre approche améliore significativement la qualité et l'efficacité de la reconfiguration dans les structures à plusieurs composants. De plus, nous fournissons un analyse détaillée des décisions de conception, nous testons l'effet de chaque élément et révélons les possibilités d'améliorations futures.",
+      "upvotes": 1,
+      "discussionId": "67c185f66a31b8fe774345d2"
+    },
+    "publishedAt": "2025-02-28T04:47:08.197Z",
+    "title": "Building Interactable Replicas of Complex Articulated Objects via Gaussian Splatting",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.19459.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c7a33121bd95f80ed74652",
+      "avatarUrl": "/avatars/7dd59afea785a2bff0ec2b757abd474e.svg",
+      "fullname": "Siyuan Huang",
+      "name": "thuhsy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  }
+]
