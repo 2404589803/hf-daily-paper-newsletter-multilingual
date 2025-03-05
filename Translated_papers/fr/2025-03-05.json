@@ -1,0 +1,852 @@
+[
+  {
+    "paper": {
+      "id": "2503.02682",
+      "authors": [
+        {
+          "_id": "67c7c3d073299239b63f5378",
+          "name": "Weimin Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3d073299239b63f5379",
+          "name": "Yifan Song",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3d073299239b63f537a",
+          "name": "Qingxiu Dong",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3d073299239b63f537b",
+          "name": "Bingchan Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3d073299239b63f537c",
+          "name": "Feifan Song",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3d073299239b63f537d",
+          "name": "Xun Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3d073299239b63f537e",
+          "name": "Sujian Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-04T14:54:45.000Z",
+      "title": "MPO : Optimisation Méta pour Améliorer les Agents de LLM",
+      "summary": "Récemment, le développement des grands modèles de langue (LLMs) a permis aux agents basés sur ces modèles de résoudre efficacement des tâches de planification interactive. Cependant, leur succès a été limité par des problèmes tels que les hallucinations de planification, ce qui nécessite le retraining d'agents nouveaux. Pour aborder ces problèmes, nous proposons le cadre d'optimisation des méta-plans (MPO). Ce méthode renforce la capacité de planification des agents directement à travers des instructions explicites. Contrairement aux méthodes précédentes qui peuvent se baser sur des connaissances complexes nécessitant un effort considérable humain ou ne garantissant pas la qualité, l'MPO utilise des instructions générales de haut niveau à travers des méta-plans, optimisant de manière continue la méta-plan en se basant sur la rétroaction de l'exécution des tâches. Des expérimentations sur deux tâches représentatives montrent que l'MPO produit des résultats significativement meilleurs par rapport aux normes actuelles. De plus, l'analyse révèle que l'MPO améliore à la fois l'efficacité du travail et la capacité de généralisation dans des scénarios non vus avant, ce qui constitue une amélioration bidirectionnelle.",
+      "upvotes": 12,
+      "discussionId": "67c7c3d173299239b63f53d6",
+      "githubRepo": "https://github.com/WeiminXiong/MPO"
+    },
+    "publishedAt": "2025-03-04T22:30:53.253Z",
+    "title": "MPO: Boosting LLM Agents with Meta Plan Optimization",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.02682.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6225a9983207dfc568407204",
+      "avatarUrl": "/avatars/c970db6232d84ae8c0fa5f11d561d67c.svg",
+      "fullname": "xwm",
+      "name": "xwm",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.02846",
+      "authors": [
+        {
+          "_id": "67c7c3ce6f68759bf368533c",
+          "name": "Yuzhe Gu",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3ce6f68759bf368533d",
+          "name": "Wenwei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3ce6f68759bf368533e",
+          "name": "Chengqi Lyu",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3ce6f68759bf368533f",
+          "name": "Dahua Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c3ce6f68759bf3685340",
+          "name": "Kai Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-04T18:20:24.000Z",
+      "title": "Mask-DPO : Présentation des tableaux de généralisation et détails de la réalité du modèle",
+      "summary": "Les modèles de langage grand (LLMs) jouent un rôle d'assistant dans diverses domaines, mais présentent également la bruitasse, c'est-à-dire, des informations fausses ou non pertinentes. En raison du fait que les réponses des LLMs contiennent toujours du contenu factuel, les méthodes de consistance factuelle passées ne pouvaient pas capturer le bruit lors du processus d'entraînement. Par conséquent, dans cet article, nous proposons une méthodologie d'ajustement de consistance factuelle basée sur l'Optimisation de Préférence Directe (DPO), appelée Mask-DPO. Nous utilisons la masque de document pour la consistance factuelle, et Mask-DPO apprend des documents factuels uniquement dans des échantillons de préférence, évitant du contenu factuel dans des échantillons non de préférence, ainsi que de résoudre l'incertitude de la préférence. Les résultats d'expériences larges montrent que Mask-DPO améliore significativement la consistance factuelle des réponses des LLMs et traite effectivement des questions et des thèmes qui n'ont pas été vus pendant l'entraînement, autant en dehors que dans le domaine du jeu de données. De plus, le score de Llama3.1-8B-Instruct sur le jeu de tests ANAH a augmenté de 49.19% à 77.53%, et la consistance factuelle sur le jeu de données de biographie, un domaine extrême, a augmenté de 30.29% à 39.39%. De plus, nous avons étudié la généralisation de Mask-DPO en utilisant différentes stratégies d'échelle des échantillons d'entraînement et concluons que l'échelle du nombre de thèmes est plus efficace que l'échelle du problème. De plus, des expériences ont été réalisées pour comprendre comment se produit la consistance factuelle dans les LLMs et pour tester son signification. Ces études ouvrent de nouvelles perspectives pour la recherche sur l'échelle de la consistance factuelle.",
+      "upvotes": 11,
+      "discussionId": "67c7c3d06f68759bf3685489",
+      "githubRepo": "https://github.com/open-compass/ANAH"
+    },
+    "publishedAt": "2025-03-04T22:25:15.163Z",
+    "title": "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.02846.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6601196cc91ba4c08ad6e270",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6601196cc91ba4c08ad6e270/X2YPNzUOQXBz5Gv-xR9LW.jpeg",
+      "fullname": "yuzhe gu",
+      "name": "vanilla1116",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.01935",
+      "authors": [
+        {
+          "_id": "67c7ba7f19b236e0564d1172",
+          "user": {
+            "_id": "66554507e6ea63012f35824c",
+            "avatarUrl": "/avatars/b82de75bd60890e7bb524fc3754b131c.svg",
+            "isPro": false,
+            "fullname": "Kunlun_Zhu",
+            "user": "Leozkl",
+            "type": "user"
+          },
+          "name": "Kunlun Zhu",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-05T02:44:18.739Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d1173",
+          "name": "Hongyi Du",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d1174",
+          "name": "Zhaochen Hong",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d1175",
+          "name": "Xiaocheng Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d1176",
+          "name": "Shuyi Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d1177",
+          "name": "Zhe Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d1178",
+          "name": "Zhenhailong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d1179",
+          "name": "Cheng Qian",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d117a",
+          "name": "Xiangru Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d117b",
+          "name": "Heng Ji",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ba7f19b236e0564d117c",
+          "name": "Jiaxuan You",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-03T05:18:50.000Z",
+      "title": "MultiAgentBench : Évaluation de la Collaboration et de la Compétition des Agents IA",
+      "summary": "Les modèles de langage grand (LLMs) montrent une excellente capacité en tant que traducteurs automatiques, mais les benchmarks actuels se concentrent uniquement sur des tâches d'un seul agent ou sont limités à un espace réduit, ne peuvent pas capturer la dynamique de la coopération et de la compétition entre plusieurs agents. Dans cet article, nous présentons le benchmark des agents multiples (MultiAgentBench). Ce benchmark est conçu pour évaluer le rendement des systèmes basés sur les LLMs dans des scénarios d'interaction multiple, offrant une évaluation détaillée. Le cadre utilise de nouvelles stratégies et des paramètres basés sur les \"margin-stone\" comme principaux critères pour évaluer la qualité de la coopération et de la compétition. De plus, il évalue les protocoles de coopération comme types, chaînes, arbres et graphes, ainsi que des stratégies innovantes comme des discussions collectives et la planification cognitive. Spécifiquement, gpt-4o-mini atteint un score moyen supérieur dans les tâches, et dans les scénarios de recherche, la structure graphique est la plus efficace, et la planification cognitive augmente de 3% la taux de réussite des \"margin-stone\". Le code et les ensembles de données sont disponibles sur https://github.com/MultiagentBench/MARBLE.",
+      "upvotes": 7,
+      "discussionId": "67c7ba8219b236e0564d124a",
+      "githubRepo": "https://github.com/MultiagentBench/MARBLE"
+    },
+    "publishedAt": "2025-03-04T21:46:46.873Z",
+    "title": "MultiAgentBench: Evaluating the Collaboration and Competition of LLM agents",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.01935.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "64c090a9f613170e7be93d2f",
+      "avatarUrl": "/avatars/ccbdf444e1f2386d2281e8e42059ebb0.svg",
+      "fullname": "KunlunZhu",
+      "name": "KunlunZhu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.01328",
+      "authors": [
+        {
+          "_id": "67c7b5900b05ab9c7e805433",
+          "name": "Xinyi Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67c7b5900b05ab9c7e805434",
+          "name": "Penghui Qi",
+          "hidden": false
+        },
+        {
+          "_id": "67c7b5900b05ab9c7e805435",
+          "name": "Guangxing Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7b5900b05ab9c7e805436",
+          "name": "Jialin Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c7b5900b05ab9c7e805437",
+          "name": "Min Lin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-03T09:11:06.000Z",
+      "title": "PipeOffload : Amélioration de l'échellabilité de la parallélisation de pipelines par des opérations de mémoire",
+      "summary": "PP est utilisé largement dans l'entraînement de modèles de langage grands (LLMs), mais la scalabilité de PP est limitée par le fort consommateur de ACTIVE_MEMORY lorsque le nombre de gradients par lot atteint le niveau de PP. Dans cet article, on étudie la stratégie de MEMORY_OFFLOAD en PP, qui n'a pas été suffisamment examinée. À travers des études expérimentales, on a démontré que, dans de nombreux cas de configuration standard, on peut OFFLOAD au moins la moitié de ACTIVE_MEMORY, et dans certains cas, tout, avec un micro-overhead potentiellement minimal. Si OFFLOAD tout n'est pas possible, on introduit une nouvelle stratégie de OFFLOAD sélectif qui réduit de manière linéaire la quantité maximale de ACTIVE_MEMORY. De plus, on intègre la MEMORY_OFFLOAD avec d'autres technologies et on considère les restrictions globales des transactions et de la mémoire. Les expérimentations montrent que la ACTIVE_MEMORY de chaque dispositif est réduite efficacement en fonction de la quantité d'étapes, et que PP devient une option plus puissante que TP, démontrant un consommateur de mémoire moins élevé et un augmentation de 19%. La mise en œuvre est disponible dans le dépôt open sur la URL suivante :\nhttps://github.com/sail-sg/zero-bubble-pipeline-parallelism{Esta URL}",
+      "upvotes": 7,
+      "discussionId": "67c7b5970b05ab9c7e8055a1",
+      "githubRepo": "https://github.com/sail-sg/zero-bubble"
+    },
+    "publishedAt": "2025-03-04T21:30:49.808Z",
+    "title": "PipeOffload: Improving Scalability of Pipeline Parallelism with Memory Optimization",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.01328.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "63510eea0b94548566dad923",
+      "avatarUrl": "/avatars/629eaaf810718259bf7588dc2e6cc0d5.svg",
+      "fullname": "Xinyi Wan",
+      "name": "ufotalent",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.02879",
+      "authors": [
+        {
+          "_id": "67c7c42269d99dd25c5ba0ce",
+          "name": "Siming Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c42269d99dd25c5ba0cf",
+          "name": "Yuliang Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c42269d99dd25c5ba0d0",
+          "user": {
+            "_id": "67890323f8796231c857231e",
+            "avatarUrl": "/avatars/f5ccd5186968d880fee9c36324a5f713.svg",
+            "isPro": false,
+            "fullname": "Mingmeng Geng",
+            "user": "mgeng",
+            "type": "user"
+          },
+          "name": "Mingmeng Geng",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-05T03:25:23.013Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c42269d99dd25c5ba0d1",
+          "name": "Yao Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c42269d99dd25c5ba0d2",
+          "name": "Dongping Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-04T18:58:13.000Z",
+      "title": "Le temps des documents de Wikipedia : l'évolution et le risque",
+      "summary": "Cet article analyse en détail l'influence des Modèles de Langue Grande (LLMs) sur Wikipedia, en utilisant des données actualisées pour explorer leur développement et les risques possibles par simulation. Tout d'abord, les pages et les contenus des articles sont analysés pour étudier les transformations récentes sur Wikipedia et évaluer l'impact des LLMs. Ensuite, les effets des LLMs sur diverses tâches de traitement du langage naturel (NLP) liées à Wikipedia sont évalués. À partir de ces résultats et de ces simulations, il est conclu que les articles de Wikipedia sont affectés par les LLMs, avec un impact d'environ 1% à 2% dans des catégories spécifiques. Il est également considéré la possibilité que les cadres d'évaluation de traduction automatique basés sur Wikipedia soient affectés par les LLMs, ce qui pourrait augmenter les scores des modèles et modifier les résultats de comparaison entre modèles. De plus, il est considéré que l'effet de la RAG (Retrieval-Augmented Generation) peut être que le contenu généré par les LLMs soit contaminé par des bases de connaissances contaminées. Bien que les LLMs ne changent pas complètement la langue et la structure des connaissances de Wikipedia, nous pensons qu'il est nécessaire une révision rigoureuse des risques futurs basée sur les découvertes expérimentales.",
+      "upvotes": 6,
+      "discussionId": "67c7c42369d99dd25c5ba103",
+      "githubRepo": "https://github.com/HSM316/LLM_Wikipedia"
+    },
+    "publishedAt": "2025-03-04T22:25:53.653Z",
+    "title": "Wikipedia in the Era of LLMs: Evolution and Risks",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.02879.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "643be8879f5d314db2d9ed23",
+      "avatarUrl": "/avatars/64e9bb2c4e10fbe03e2b81afedf40865.svg",
+      "fullname": "Chen Dongping",
+      "name": "shuaishuaicdp",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.02368",
+      "authors": [
+        {
+          "_id": "67c80f94ccc2e04adfa67079",
+          "name": "Zhenhua Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67c80f94ccc2e04adfa6707a",
+          "name": "Lijun Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c80f94ccc2e04adfa6707b",
+          "name": "Ruizhe Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c80f94ccc2e04adfa6707c",
+          "name": "Yuxian Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67c80f94ccc2e04adfa6707d",
+          "name": "Tong Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67c80f94ccc2e04adfa6707e",
+          "name": "Wenliang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c80f94ccc2e04adfa6707f",
+          "name": "Jing Shao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-04T07:49:10.000Z",
+      "title": "Itération de décodage de la guidance avec optimisation de la fonction de valeur d'itération",
+      "summary": "RLHF (Apprentissage par Référence avec Rétroaction Humaine) a devenu l'un des principaux méthodes pour contrôler la sortie des modèles de langue, mais il en face des défis en raison de coûts computationnels élevés et d'instabilités lors de l'entraînement. La décodification guidée, en particulier les méthodes induites par valeur, ont été proposées comme alternatives efficaces pour contrôler la sortie sans requier réentraînement du modèle. Cependant, la précision de la fonction de valeur est cruciale pour la précision de la décodification induite par valeur. Une incertitude peut conduire à des décisions optimales et à une perte de performance. Les méthodes actuelles rencontrent des difficultés pour estimer précisément la fonction de valeur, ce qui n'a pas été très réussi. Nous proposons un nouveau cadre de travail appelé Optimisation itérative de la fonction de valeur, introduisant deux éléments clés : l'estimation de valeur par Monte Carlo et l'optimisation itérative sur-politique. Ces éléments réduisent la variance de l'estimation en explorant plusieurs directions et améliorent l'estimation de valeur grâce à la collecte de trajectoires à partir de la politique induite par valeur. Nous démontrons l'efficacité de cette approche à travers une large gamme d'expériences, qui comprennent le résumé de documents, les dialogues alternatifs et les instructions, et qui utilisent l'optimisation fondamentale de la fonction de valeur pour atteindre un contrôle efficace et efficace, réduisant significativement les coûts computationnels.",
+      "upvotes": 5,
+      "discussionId": "67c80f94ccc2e04adfa670b2"
+    },
+    "publishedAt": "2025-03-05T03:48:51.408Z",
+    "title": "Iterative Value Function Optimization for Guided Decoding",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.02368.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "619b00dd4b0db5ca9d3ea35f",
+      "avatarUrl": "/avatars/fce5ac388b7f10cbbc63e9992a5a799f.svg",
+      "fullname": "Zhenhua Liu",
+      "name": "zhliu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2502.14856",
+      "authors": [
+        {
+          "_id": "67bee83509a4524abf899511",
+          "name": "Weilin Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf899512",
+          "name": "Tengyu Pan",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf899513",
+          "name": "Xu Han",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf899514",
+          "name": "Yudi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf899515",
+          "name": "Ao Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf899516",
+          "name": "Yuxiang Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf899517",
+          "name": "Kaihuo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf899518",
+          "name": "Weilun Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf899519",
+          "name": "Yuxuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf89951a",
+          "name": "Jianyong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf89951b",
+          "name": "Zhiyuan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67bee83509a4524abf89951c",
+          "name": "Maosong Sun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-02-20T18:58:10.000Z",
+      "title": "FR-Spec : Accélérer le modèle de langue par la prédiction de la répartition d'une grande base de mots triée par note.",
+      "summary": "La spécification de échantillons est un méthode importante qui a émergé pour accélérer le processus de génération automatique de régression dans les modèles de langage de grande échelle (LLMs). Ce méthode utilise un mécanisme qui vérifie le drop de multiples tokens en un seul pas pour générer. La spécification de échantillons avancée utilise un modèle de drop qui supprime une couche et la tête de modélisation de langage (LM) pour atteindre une compression impressionnante de couches, mais son amélioration d'efficacité est significativement réduite dans les modèles de grande échelle vidéo (par exemple, Llama-3-8B, 128k tokens vidéo). En réponse à cela, nous proposons un cadre de spécification de échantillons FR-Spec, qui optimise la sélection de candidats de drop dans l'espace vidéo à travers l'attribution de priorités de fréquence. En limitant la recherche de drop dans des sous-ensembles de tokens de fréquence, notre méthode réduit de 75% le surchargement du calcul de la tête de modélisation de langage, assurant l'équivalence de la distribution finale de sortie. Les expériences sur de nombreux ensembles de données ont montré un accroissement moyen de 1,12 fois plus rapide que la méthode de spécification de échantillons avancée EAGLE-2.",
+      "upvotes": 5,
+      "discussionId": "67bee83609a4524abf899550",
+      "githubRepo": "https://github.com/thunlp/FR-Spec"
+    },
+    "publishedAt": "2025-03-05T00:36:34.146Z",
+    "title": "FR-Spec: Accelerating Large-Vocabulary Language Models via Frequency-Ranked Speculative Sampling",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2502.14856.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b8ff3d95bd42c770878042",
+      "avatarUrl": "/avatars/564a4dccdf9e5b813a99979b0ef58183.svg",
+      "fullname": "Weilin Zhao",
+      "name": "Achazwl",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.00955",
+      "authors": [
+        {
+          "_id": "67c7dbff25d0b3348ddace44",
+          "name": "Nam V. Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "67c7dbff25d0b3348ddace45",
+          "name": "Dien X. Tran",
+          "hidden": false
+        },
+        {
+          "_id": "67c7dbff25d0b3348ddace46",
+          "name": "Thanh T. Tran",
+          "hidden": false
+        },
+        {
+          "_id": "67c7dbff25d0b3348ddace47",
+          "name": "Anh T. Hoang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7dbff25d0b3348ddace48",
+          "name": "Tai V. Duong",
+          "hidden": false
+        },
+        {
+          "_id": "67c7dbff25d0b3348ddace49",
+          "name": "Di T. Le",
+          "hidden": false
+        },
+        {
+          "_id": "67c7dbff25d0b3348ddace4a",
+          "name": "Phuc-Lu Le",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-02T16:22:46.000Z",
+      "title": "SemViQA : Système de Réponse aux Questions pour Comprendre le Sens de l'Information en Vietnamita Şnkrkeck",
+      "summary": "La croissance constante de données incorrectes a conduit à la nécessité d'une solution robuste de vérification de faits pour les langues comme le vietnamien, surtout pour des modèles de langage grands tels que GPT et Gemini. Les méthodes actuelles rencontrent des difficultés avec l'incertitude de signification, les homophones et les structures linguistiques complexes, en maintenant un équilibre entre précision et efficacité. Nous présentons SemViQA, un nouveau cadre de vérification de faits pour le vietnamien qui intègre la recherche d'évidences basée sur le sens (SER) et la classification de jugements en deux étapes (TVC). Notre approche atteint un équilibre entre précision et vitesse, en registrant un 78,97% de précision stricte sur ISE-DSC01 et un 80,82% sur ViWikiFC, ainsi que d'obtenir le premier rang dans le UIT Data Science Challenge. De plus, SemViQA Faster augmente la vitesse d'inférence de 7 fois tout en maintenant la précision. SemViQA établit un nouveau standard en matière de vérification de faits du vietnamien et encourage la lutte contre les données incorrectes. Le code source est disponible sur la suivante URL : https://github.com/DAVID-NGUYEN-S16/SemViQA.",
+      "upvotes": 5,
+      "discussionId": "67c7dc0025d0b3348ddace64",
+      "githubRepo": "https://github.com/DAVID-NGUYEN-S16/SemViQA"
+    },
+    "publishedAt": "2025-03-05T00:08:53.214Z",
+    "title": "SemViQA: A Semantic Question Answering System for Vietnamese Information Fact-Checking",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.00955.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64c2bea2ada7df214276913b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c2bea2ada7df214276913b/QFCtmCn439Afsr7uqyoMT.jpeg",
+      "fullname": "Nguyen Van Nam",
+      "name": "DavidNguyen",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.01342",
+      "authors": [
+        {
+          "_id": "67c6b46e8389d77f5ba87179",
+          "user": {
+            "_id": "6585493b53c37507639fe3ba",
+            "avatarUrl": "/avatars/b7e71d4fa5ebb89a7ed6b2a8313687b5.svg",
+            "isPro": false,
+            "fullname": "Hao Tang",
+            "user": "kanashi6",
+            "type": "user"
+          },
+          "name": "Hao Tang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-04T08:34:43.034Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c6b46e8389d77f5ba8717a",
+          "name": "Chenwei Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67c6b46e8389d77f5ba8717b",
+          "name": "Haiyang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67c6b46e8389d77f5ba8717c",
+          "name": "Xiaoyi Bao",
+          "hidden": false
+        },
+        {
+          "_id": "67c6b46e8389d77f5ba8717d",
+          "name": "Tingyu Weng",
+          "hidden": false
+        },
+        {
+          "_id": "67c6b46e8389d77f5ba8717e",
+          "name": "Pandeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c6b46e8389d77f5ba8717f",
+          "name": "Yun Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "67c6b46e8389d77f5ba87180",
+          "name": "Liwei Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-03T09:27:24.000Z",
+      "title": "UFO : Méthode Intégrée pour la Reconnaissance Visuelle Détaillée à Travers des Interfaces de Langage à Portée Ouverte",
+      "summary": "Les modèles généralisés ont réussi à obtenir un succès notable dans des tâches de langue et de vision-langue, démontrant la possibilité de modélisation continue. Cependant, intégrer efficacement des tâches de détection ou de segmentation et d'autres tâches de reconnaissance visuelle précise dans ces modèles est une tâche très difficile. Cela se doit à ce que la majorité de ces tâches dépendent de conceptions spécifiques ou d'architectures qui compliquent le processus de modélisation. Pour résoudre ces problèmes, nous proposons un cadre qui utilise des interfaces de langue ouvertes pour intégrer des tâches de reconnaissance visuelle précise. Tous les objectifs de reconnaissance se transforment en espaces de langue, et notre cadre intègre la détection au niveau d'objet, le segmentation au niveau de pixel et des tâches de vision-langue au niveau d'image dans un seul modèle. De plus, nous introduisons une nouvelle approche de recherche d'embedding qui dépend uniquement de l'interface de langue et soutient la tâche de segmentation. Notre cadre relie les lacunes entre les tâches de reconnaissance visuelle précise et la vision-langue, simplifie significativement le design structurel et la stratégie d'entraînement, et atteint une rendition relativement élevée par rapport aux conceptions spécialisées pour des tâches complexes. Après avoir entraîné notre cadre sur 5 ensembles de données standards de reconnaissance visuelle, nous dépassons le meilleur rendement des modèles généralisés dans la segmentation d'instances du COCO avec un mAP de 12,3 et dans la segmentation de sens de ADE20K avec un mIoU de 3,3. De plus, notre méthode s'intègre facilement avec les MLLM existants et avec des aspects sémantiques, combinant efficacement la capacité de reconnaissance visuelle précise et le développement de compétences linguistiques, ce qui permet de réaliser des tâches difficiles comme la segmentation par raison. Les codes et les modèles sont disponibles publiquement.",
+      "upvotes": 4,
+      "discussionId": "67c6b4728389d77f5ba8724d",
+      "githubRepo": "https://github.com/nnnth/UFO"
+    },
+    "publishedAt": "2025-03-04T23:55:08.057Z",
+    "title": "UFO: A Unified Approach to Fine-grained Visual Perception via Open-ended Language Interface",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.01342.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6585493b53c37507639fe3ba",
+      "avatarUrl": "/avatars/b7e71d4fa5ebb89a7ed6b2a8313687b5.svg",
+      "fullname": "Hao Tang",
+      "name": "kanashi6",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.02197",
+      "authors": [
+        {
+          "_id": "67c7c183203958ca9c09171a",
+          "name": "Zhixun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c183203958ca9c09171b",
+          "name": "Ming Li",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c183203958ca9c09171c",
+          "name": "Yuxuan Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c183203958ca9c09171d",
+          "name": "Yali Du",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c183203958ca9c09171e",
+          "name": "Meng Fang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7c183203958ca9c09171f",
+          "name": "Tianyi Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-04T02:14:55.000Z",
+      "title": "ATLaS : Phase importante de l'apprentissage par ajustement d'agents",
+      "summary": "Les modèles de langage grand (LLM) d'agents ont démontré une capacité impressionnante de généralisation dans diverses tâches de données. L'approche actuelle pour ajuster les agents généralement effectue un ajustement normatif pour tous les projets d'experts. Cependant, le suivi visuel de tous les projets peut générer des biais en faveur des experts et peut affaiblir la capacité de généralisation vers les données d'experts. De plus, la planification, les sous-tâches complexes et les étapes de décisions stratégiques sont essentielles pour le succès des tâches des agents. L'apprentissage de ces étapes est crucial pour améliorer les agents de LLM. Pour atteindre un ajustement plus efficace et efficace, on propose ATLaS. ATLaS identifie les étapes importantes des projets d'experts et ajuste les LLMs pour réduire les coûts. Se concentrer sur ces étapes importantes est fondamental pour réduire le risque d'overfitting dans tous les projets et promouvoir la généralisation dans différents environnements et tâches. Dans des expériences étendues, les LLMs ajustés par ATLaS dans 30% des étapes importantes ont dépassé les LLMs ajustés dans toutes les étapes et les agents de LLM ouverts de développement récent. ATLaS maintient et améliore les techniques basiques et fondamentales pour interagir avec différents environnements et écosystèmes de chatbots.",
+      "upvotes": 4,
+      "discussionId": "67c7c185203958ca9c091751"
+    },
+    "publishedAt": "2025-03-04T22:17:48.386Z",
+    "title": "ATLaS: Agent Tuning via Learning Critical Steps",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.02197.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "647f5af5b0e96764589f3b2a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+      "fullname": "Tianyi Zhou",
+      "name": "zhoutianyi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 12
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.02878",
+      "authors": [
+        {
+          "_id": "67c7bf7c40de8b1b534d23fa",
+          "user": {
+            "_id": "635d76ce94e5b275ca74b967",
+            "avatarUrl": "/avatars/5d9a389e5fd558c0b8f0724bf0838a3e.svg",
+            "isPro": false,
+            "fullname": "Ethan Mendes",
+            "user": "emendes3",
+            "type": "user"
+          },
+          "name": "Ethan Mendes",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-03-05T03:06:00.588Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c7bf7c40de8b1b534d23fb",
+          "name": "Alan Ritter",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-04T18:58:11.000Z",
+      "title": "Le modèle de langue améliore automatiquement l'évaluation du valeur de l'état et peut effectuer des recherches plus efficaces.",
+      "summary": "Les tâches d'inférence multi-niveau pour collecter récompenses de données vertes ou de guidage humain généralement nécessitent des coûts et du temps, surtout dans des domaines d'interaction comme les tâches web, où elles peuvent être encore plus difficiles à mettre en œuvre. Pour résoudre ces problèmes, nous proposons un méthode d'apprentissage automatique de transitions basée sur les dynamiques de changement d'état. Cette méthode aide à entraîner un modèle de valeur qui guide efficacement l'exploration contrôlée par des modèles de langage. Nous avons confirmé que un modèle de valeur de taille moyenne (800 millions de paramètres) d'une réseau neuronal à poids ouverts, entraîné par l'apprentissage automatique de transitions, peut atteindre des performances comparables à ceux des modèles de valeur de pointe, comme les modèles de LLM (par exemple, gpt-4o). De plus, nous avons observé une amélioration de 20% du rendement par rapport aux explorations arborescentes basées sur des modèles de LLM précédents, ainsi qu'une réduction du coût d'un facteur de 37, améliorant ainsi la dépendance des récompenses de données vertes.",
+      "upvotes": 4,
+      "discussionId": "67c7bf7e40de8b1b534d2491",
+      "githubRepo": "https://github.com/ethanm88/self-taught-lookahead"
+    },
+    "publishedAt": "2025-03-04T22:07:18.480Z",
+    "title": "Language Models can Self-Improve at State-Value Estimation for Better Search",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.02878.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "635d76ce94e5b275ca74b967",
+      "avatarUrl": "/avatars/5d9a389e5fd558c0b8f0724bf0838a3e.svg",
+      "fullname": "Ethan Mendes",
+      "name": "emendes3",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.02876",
+      "authors": [
+        {
+          "_id": "67c7bd7149b52e85403758f8",
+          "user": {
+            "_id": "6308bae5c038bf42d56a98e5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/yrslTwUe_vy_ZJha1H83m.png",
+            "isPro": false,
+            "fullname": "Dmitry Nechaev",
+            "user": "mgvz",
+            "type": "user"
+          },
+          "name": "Dmitry Nechaev",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-03-05T03:07:52.944Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c7bd7149b52e85403758f9",
+          "user": {
+            "_id": "6655b0b9d6c043f39719eaaf",
+            "avatarUrl": "/avatars/66138e67ef3be41f29857b285b37adff.svg",
+            "isPro": false,
+            "fullname": "Alex Pchelnikov",
+            "user": "alpchel",
+            "type": "user"
+          },
+          "name": "Alexey Pchelnikov",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-03-05T03:07:35.092Z",
+          "hidden": false
+        },
+        {
+          "_id": "67c7bd7149b52e85403758fa",
+          "name": "Ekaterina Ivanova",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-04T18:57:12.000Z",
+      "title": "L'araignée : un ensemble détaillé de données sur les sous-structures multiarticulaires et un modèle de référence",
+      "summary": "L'évolution de la pathologie informatique de l'intelligence artificielle nécessite des ensembles de données à grande échelle de haute qualité, mais les ensembles de données publiés actuellement présentent des limitations en termes de diversité à long terme, de couverture de classes et de qualité des annotations. Pour corriger ce problème, nous présentons SPIDER (Répertoire de Disclaimer de Patchness de l'Image). SPIDER est l'ensemble de données la plus grande publiée, qui inclut diverses typologies d'organes, comme la peau, le coléochique et le sébacé. SPIDER fournit des annotations de haute qualité grâce à des révisions de patchness par des experts, et offre un contexte spatiaux en incluant des patchness proches, ce qui améliore le rendement de classification.\n\nEn conjonction avec l'ensemble de données de SPIDER, nous présentons un modèle de base de SPIDER, qui utilise le modèle de base de HIBOR-L comme caractéristiques d'extraction, et est combiné avec une tête de classification basée sur l'attention. Ce modèle atteint les meilleurs résultats en classification de différents organes et peut être utilisé comme un fort benchmark pour futures recherches numériques en patchness. Au-delà de la classification de patchness, ce modèle permet un reconnaissance rapide d'aires importantes, la mesure quantitative de métriques de tissu et la construction d'une base pour un accès multimodal.\n\nL'ensemble de données et le modèle entraîné sont disponibles pour la recherche, la reproductibilité et le développement de l'intelligence artificielle en patchness. Pour accéder, utilisez le URL suivant : https://github.com/HistAI/SPIDER",
+      "upvotes": 2,
+      "discussionId": "67c7bd7649b52e8540375a34"
+    },
+    "publishedAt": "2025-03-04T22:08:26.811Z",
+    "title": "SPIDER: A Comprehensive Multi-Organ Supervised Pathology Dataset and Baseline Models",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.02876.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6308bae5c038bf42d56a98e5",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/yrslTwUe_vy_ZJha1H83m.png",
+      "fullname": "Dmitry Nechaev",
+      "name": "mgvz",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.02268",
+      "authors": [
+        {
+          "_id": "67c7ebafdf15f5978ac987c3",
+          "name": "Wenjia Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ebafdf15f5978ac987c4",
+          "name": "Yangyang Zhuang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ebafdf15f5978ac987c5",
+          "name": "Chenxi Song",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ebafdf15f5978ac987c6",
+          "name": "Xu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67c7ebafdf15f5978ac987c7",
+          "name": "Chi Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-04T04:34:09.000Z",
+      "title": "Le Développement des Agents d'Interface - Fonctionnalité comme Spécialiste des Dispositifs Mobiles",
+      "summary": "Récemment, le développement des grands modèles de langue (LLM) a conduit à un progrès dans le développement d'agents basés sur les LLM capables d'interagir avec des interfaces graphiques (GUI). Ces agents montrent une puissante capacité d'intelligence artificielle et d'adaptabilité, permettant de réaliser des tâches complexes qui nécessitent des règles définies. Cependant, les agents basés sur les LLM présentent une efficacité réduite dans des tâches générales en raison de la faible relation causale entre les étapes, spécialement dans des tâches routinières. D'autre part, les systèmes traditionnels basés sur des règles sont efficaces mais manquent d'adaptabilité et d'intelligence pour de nouveaux scénarios. Pour résoudre ces problèmes, nous proposons un nouveau cadre évolutif pour les agents GUI qui vise à améliorer l'efficience tout en maintenant l'intelligence et la flexibilité. Notre approche utilise une fonction de mémoire pour enregistrer les registres d'exécution de tâches des agents. En analysant ces registres, les agents peuvent identifier des séquences d'actions reproductibles et évoluer vers des actions de haut niveau, remplaçant des actions de bas niveau pour améliorer l'efficience. Ainsi, les agents peuvent se concentrer sur des tâches qui nécessitent des raisons complexes et réaliser des actions routinières de manière efficace. Les résultats des expérimentations sur diverses tâches de benchmark démontrent que notre approche améliore significativement l'efficience et la précision par rapport aux méthodes actuelles. Le code est disponible sous licence open source et soutient la recherche en cours.",
+      "upvotes": 1,
+      "discussionId": "67c7ebb5df15f5978ac98975"
+    },
+    "publishedAt": "2025-03-05T01:15:42.467Z",
+    "title": "AppAgentX: Evolving GUI Agents as Proficient Smartphone Users",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64196320ed725fef64419c2a/dUDWK6xfRd9uVZz77V0K6.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.02268.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64196320ed725fef64419c2a",
+      "avatarUrl": "/avatars/96feb22fb5e8931d6c9e0ea06148266f.svg",
+      "fullname": "Chi Zhang",
+      "name": "DrChiZhang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  }
+]
