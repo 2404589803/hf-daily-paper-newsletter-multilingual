@@ -1,0 +1,991 @@
+[
+  {
+    "paper": {
+      "id": "2503.09566",
+      "authors": [
+        {
+          "_id": "67d274c467e782a7eeb4ab70",
+          "name": "Lingmin Ran",
+          "hidden": false
+        },
+        {
+          "_id": "67d274c467e782a7eeb4ab71",
+          "name": "Mike Zheng Shou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T17:33:22.000Z",
+      "title": "TPDiff: Pirámide de Tiempo de Difusión de Vídeo",
+      "summary": "En el desarrollo de modelos de difusión por vídeo, se han identificado importantes problemas, entre los cuales destaca la demanda significativa de cálculos. Para mitigar esta cuestión, hemos comprobado que el proceso inverso de difusión tiene la característica interna de disminución de entropía. Considerando la inutilidad entre los frames de un modelo de vídeo, no es necesario mantener la velocidad de frames total en un alto nivel de entropía. Basándonos en esta perspectiva, proponemos un marco unificado llamado TPDiff. En este marco, dividimos la difusión en etapas y solo la última etapa opera en la velocidad de frames total, optimizando la eficiencia de cálculos. En el entrenamiento de modelos de difusión multietapa, introducimos un marco de entrenamiento especial llamado \"difusión etapa a etapa\". En este estrategia de entrenamiento, resolvemos la ecuación diferencial de flujo generalizado de difusión y ruido (ODE) para datos correspondientes y ruido, lo que permite aplicar diferentes formas de difusión y mejora la eficiencia del entrenamiento. Según los resultados de evaluación experimentales específicos, se ha probado la generalidad de nuestro método, con un descenso del costo de entrenamiento del 50% y un aumento de la eficiencia de inferencia en un 1.5 veces.",
+      "upvotes": 27,
+      "discussionId": "67d274c567e782a7eeb4abb0",
+      "ai_keywords": [
+        "video diffusion models",
+        "entropy-reducing nature",
+        "inter-frame redundancy",
+        "TPDiff",
+        "unified framework",
+        "frame rate",
+        "diffusion stages",
+        "stage-wise diffusion",
+        "partitioned probability flow ordinary differential equations (ODE)",
+        "diffusion forms"
+      ]
+    },
+    "publishedAt": "2025-03-12T13:33:22.000Z",
+    "title": "TPDiff: Temporal Pyramid Video Diffusion Model",
+    "summary": "The development of video diffusion models unveils a significant challenge:\nthe substantial computational demands. To mitigate this challenge, we note that\nthe reverse process of diffusion exhibits an inherent entropy-reducing nature.\nGiven the inter-frame redundancy in video modality, maintaining full frame\nrates in high-entropy stages is unnecessary. Based on this insight, we propose\nTPDiff, a unified framework to enhance training and inference efficiency. By\ndividing diffusion into several stages, our framework progressively increases\nframe rate along the diffusion process with only the last stage operating on\nfull frame rate, thereby optimizing computational efficiency. To train the\nmulti-stage diffusion model, we introduce a dedicated training framework:\nstage-wise diffusion. By solving the partitioned probability flow ordinary\ndifferential equations (ODE) of diffusion under aligned data and noise, our\ntraining strategy is applicable to various diffusion forms and further enhances\ntraining efficiency. Comprehensive experimental evaluations validate the\ngenerality of our method, demonstrating 50% reduction in training cost and 1.5x\nimprovement in inference efficiency.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09566.png",
+    "numComments": 1,
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.09151",
+      "authors": [
+        {
+          "_id": "67d2784fbe3b4e06086d8eec",
+          "user": {
+            "_id": "656ee8008bb9f4f8d95bd8f7",
+            "avatarUrl": "/avatars/4069d70f1279d928da521211c495d638.svg",
+            "isPro": true,
+            "fullname": "Hyeonho Jeong",
+            "user": "hyeonho-jeong-video",
+            "type": "user"
+          },
+          "name": "Hyeonho Jeong",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-13T08:23:54.861Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d2784fbe3b4e06086d8eed",
+          "name": "Suhyeon Lee",
+          "hidden": false
+        },
+        {
+          "_id": "67d2784fbe3b4e06086d8eee",
+          "name": "Jong Chul Ye",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T08:26:15.000Z",
+      "title": "Reangle-A-Video: Generación de Video 4D como Traducción Video-a-Video",
+      "summary": "Reangle-A-Video es un marco integrado para generar videos de poliedros sincronizados a partir de un solo video de entrada. Diferente de la forma de acceso predominante, no se utiliza un método de entrenamiento de modelos de expansión de poliedros utilizando conjuntos de datos 4D grandes. Nuestro enfoque utiliza proyecciones de expansión de imágenes y videos disponibles públicamente para reconstruir la tarea de traducción de video a video. En esencia, Reangle-A-Video funciona en dos etapas: 1) Entrenamiento de la expansión de poliedros: se entrena una transformación de expansión de imágenes a video automáticamente y se ajusta micro para sincronizarse, extrayendo gradualmente movimientos no variables de videos deslizantes. 2) Traducción de imagenes de coincidencia de poliedros a imagenes: la primera frame del video de entrada se utiliza con DUSt3R para generar una imagen de inicio de coincidencia de poliedros bajo las guías de coincidencia de vistas cruzadas, sometiendo movimientos y inflación. Experimentos de expansión de movimientos estáticos y controles de cámara dinámicos demuestran que Reangle-A-Video supera los métodos existentes y proporciona una nueva solución para la generación de videos de poliedros. Nuestro código y datos están disponibles. Página del proyecto: https://hyeonho99.github.io/reangle-a-video/",
+      "upvotes": 21,
+      "discussionId": "67d27857be3b4e06086d9160",
+      "projectPage": "https://hyeonho99.github.io/reangle-a-video/",
+      "githubRepo": "https://github.com/HyeonHo99/Reangle-Video",
+      "ai_keywords": [
+        "image-to-video diffusion transformer",
+        "self-supervised manner",
+        "view-invariant motion",
+        "warped videos",
+        "Multi-View Consistent Image-to-Images Translation",
+        "cross-view consistency",
+        "DUSt3R",
+        "multi-view video generation",
+        "static view transport",
+        "dynamic camera control"
+      ]
+    },
+    "publishedAt": "2025-03-12T04:26:15.000Z",
+    "title": "Reangle-A-Video: 4D Video Generation as Video-to-Video Translation",
+    "summary": "We introduce Reangle-A-Video, a unified framework for generating synchronized\nmulti-view videos from a single input video. Unlike mainstream approaches that\ntrain multi-view video diffusion models on large-scale 4D datasets, our method\nreframes the multi-view video generation task as video-to-videos translation,\nleveraging publicly available image and video diffusion priors. In essence,\nReangle-A-Video operates in two stages. (1) Multi-View Motion Learning: An\nimage-to-video diffusion transformer is synchronously fine-tuned in a\nself-supervised manner to distill view-invariant motion from a set of warped\nvideos. (2) Multi-View Consistent Image-to-Images Translation: The first frame\nof the input video is warped and inpainted into various camera perspectives\nunder an inference-time cross-view consistency guidance using DUSt3R,\ngenerating multi-view consistent starting images. Extensive experiments on\nstatic view transport and dynamic camera control show that Reangle-A-Video\nsurpasses existing methods, establishing a new solution for multi-view video\ngeneration. We will publicly release our code and data. Project page:\nhttps://hyeonho99.github.io/reangle-a-video/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09151.png",
+    "numComments": 1,
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.09573",
+      "authors": [
+        {
+          "_id": "67d2511e7d0fc37e67269f85",
+          "name": "Marianne Arriola",
+          "hidden": false
+        },
+        {
+          "_id": "67d2511e7d0fc37e67269f86",
+          "name": "Aaron Gokaslan",
+          "hidden": false
+        },
+        {
+          "_id": "67d2511e7d0fc37e67269f87",
+          "name": "Justin T Chiu",
+          "hidden": false
+        },
+        {
+          "_id": "67d2511e7d0fc37e67269f88",
+          "name": "Zhihan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67d2511e7d0fc37e67269f89",
+          "name": "Zhixuan Qi",
+          "hidden": false
+        },
+        {
+          "_id": "67d2511e7d0fc37e67269f8a",
+          "name": "Jiaqi Han",
+          "hidden": false
+        },
+        {
+          "_id": "67d2511e7d0fc37e67269f8b",
+          "name": "Subham Sekhar Sahoo",
+          "hidden": false
+        },
+        {
+          "_id": "67d2511e7d0fc37e67269f8c",
+          "name": "Volodymyr Kuleshov",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T17:43:40.000Z",
+      "title": "Bloque Difusor: Interplàsma Entre Auto-Regresión y Difusor\nModelo de Lenguaje",
+      "summary": "Los modelos de lenguaje difusión tienen características únicas en comparación con los modelos de regresión automática, caracterizados por la posibilidad de generación paralela y la controlabilidad, mientras que suelen presentar lentidumbres en el modelado probabilístico y se limitan a la generación de longitudes fijas. En este estudio, mediante la introducción de la clase de modelos de lenguaje difusión bloquearios que abarcan el espacio intermedio entre los modelos de difusión y los de regresión automática, se logra superar las principales limitaciones de ambos modelos, proporcionando una generación de longitudes flexibles y mejorando la eficiencia de inferencia mediante el uso de la captura de KV y la muestración de tokens paralela. Se propone un algoritmo que incluye estimación del gradiente, escalonamiento de ruido de datos y minimización de la varianza, para la construcción de modelos de difusión bloquearios eficientes. Este tipo de modelos registran los mejores resultados en los benchmarks de modelado de lenguaje, permitiendo la generación de secuencias de longitudes arbitrarias. Los códigos, los pesos del modelo y el blog del proyecto pueden encontrarse en: https://m-arriola.com/bd3lms/",
+      "upvotes": 15,
+      "discussionId": "67d2511e7d0fc37e67269fbf",
+      "projectPage": "https://m-arriola.com/bd3lms/",
+      "ai_keywords": [
+        "diffusion language models",
+        "autoregressive models",
+        "parallelized generation",
+        "controllability",
+        "likelihood modeling",
+        "fixed-length generation",
+        "block diffusion language models",
+        "discrete denoising diffusion",
+        "flexible-length generation",
+        "inference efficiency",
+        "KV caching",
+        "parallel token sampling",
+        "efficient training algorithm",
+        "gradient variance estimators",
+        "data-driven noise schedules",
+        "arbitrary-length sequences"
+      ]
+    },
+    "publishedAt": "2025-03-12T13:43:40.000Z",
+    "title": "Block Diffusion: Interpolating Between Autoregressive and Diffusion\n  Language Models",
+    "summary": "Diffusion language models offer unique benefits over autoregressive models\ndue to their potential for parallelized generation and controllability, yet\nthey lag in likelihood modeling and are limited to fixed-length generation. In\nthis work, we introduce a class of block diffusion language models that\ninterpolate between discrete denoising diffusion and autoregressive models.\nBlock diffusion overcomes key limitations of both approaches by supporting\nflexible-length generation and improving inference efficiency with KV caching\nand parallel token sampling. We propose a recipe for building effective block\ndiffusion models that includes an efficient training algorithm, estimators of\ngradient variance, and data-driven noise schedules to minimize the variance.\nBlock diffusion sets a new state-of-the-art performance among diffusion models\non language modeling benchmarks and enables generation of arbitrary-length\nsequences. We provide the code, along with the model weights and blog post on\nthe project page: https://m-arriola.com/bd3lms/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09573.png",
+    "numComments": 1,
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.08525",
+      "authors": [
+        {
+          "_id": "67d280f20a6a6dd4a0ffe9e8",
+          "name": "Tong Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67d280f20a6a6dd4a0ffe9e9",
+          "name": "Yijun Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67d280f20a6a6dd4a0ffe9ea",
+          "name": "Junliang Xing",
+          "hidden": false
+        },
+        {
+          "_id": "67d280f20a6a6dd4a0ffe9eb",
+          "name": "Yuanchun Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67d280f20a6a6dd4a0ffe9ec",
+          "name": "Zongqing Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67d280f20a6a6dd4a0ffe9ed",
+          "name": "Deheng Ye",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-11T15:17:02.000Z",
+      "title": "GTR: Guía de Estimulo de Fuerza Cerrada para Prevenir la Rotura de la Memoria en Agentes de RL basados en VLM",
+      "summary": "RLVR (Reinforcement Learning with Verifiable Rewards) es efectivamente aplicada para escalar el pensamiento continuo (CoT) en modelos de lenguaje grandes (LLMs). Sin embargo, esta efectividad no se manifiesta en la entrenamiento de agentes VLM (Vision-Language Models) que orientan sus acciones hacia objetivos en entornos visuales. En este estudio, mediante una amplia gama de experimentos, investigamos este problema utilizando tareas concretas como juegos de cartas (por ejemplo, el juego de 24 puntos) o tareas en ALFWorld. Encontramos que, cuando la recompensa se basa solo en los resultados de las acciones, el RL no puede fomentar la lógica de CoT de los VLMs, y observamos un fenómeno que llamamos \"Destruir la Mente\" (Thought Breakdown). Este fenómeno se caracteriza por una rápida pérdida de la diversidad de pensamientos de los agentes y una lógica incompleta y estado-independiente que continuamente genera acciones y recompensas negativas. Para enfrentar este fenómeno, proponemos un marco de trabajo GTR (Reinforcement Learning de Pensamiento Guiado) que evalúa y mejora de manera automática la lógica de los agentes en pasos. Este marco no requiere una entrenamiento estrechamente relacionado con etiquetas humanas en cada paso, permitiendo al mismo tiempo el aprendizaje simultáneo de lógica y acciones. Nuestros experimentos muestran que el GTR mejora significativamente la capacidad de rendimiento y generalización de la modelo LLaVA-7b, alcanzando un rendimiento de entre 3 y 5 veces superior a los modelos de estado de la arte en términos de éxito en tareas.",
+      "upvotes": 8,
+      "discussionId": "67d280f30a6a6dd4a0ffea45",
+      "ai_keywords": [
+        "reinforcement learning",
+        "verifiable outcome rewards",
+        "chain-of-thought (CoT) reasoning",
+        "large language models (LLMs)",
+        "vision-language model (VLM)",
+        "goal-directed action reasoning",
+        "visual environments",
+        "complex card games",
+        "24 points",
+        "embodied tasks",
+        "ALFWorld",
+        "action outcomes",
+        "thought collapse",
+        "diversity",
+        "state-irrelevant",
+        "incomplete reasoning",
+        "invalid actions",
+        "negative rewards",
+        "process guidance",
+        "automated corrector",
+        "GTR (Guided Thought Reinforcement)",
+        "simultaneous training",
+        "human labeling",
+        "performance",
+        "generalization",
+        "task success rates",
+        "state-of-the-art (SoTA) models",
+        "model sizes"
+      ]
+    },
+    "publishedAt": "2025-03-11T11:17:02.000Z",
+    "title": "GTR: Guided Thought Reinforcement Prevents Thought Collapse in RL-based\n  VLM Agent Training",
+    "summary": "Reinforcement learning with verifiable outcome rewards (RLVR) has effectively\nscaled up chain-of-thought (CoT) reasoning in large language models (LLMs).\nYet, its efficacy in training vision-language model (VLM) agents for\ngoal-directed action reasoning in visual environments is less established. This\nwork investigates this problem through extensive experiments on complex card\ngames, such as 24 points, and embodied tasks from ALFWorld. We find that when\nrewards are based solely on action outcomes, RL fails to incentivize CoT\nreasoning in VLMs, instead leading to a phenomenon we termed thought collapse,\ncharacterized by a rapid loss of diversity in the agent's thoughts,\nstate-irrelevant and incomplete reasoning, and subsequent invalid actions,\nresulting in negative rewards. To counteract thought collapse, we highlight the\nnecessity of process guidance and propose an automated corrector that evaluates\nand refines the agent's reasoning at each RL step. This simple and scalable GTR\n(Guided Thought Reinforcement) framework trains reasoning and action\nsimultaneously without the need for dense, per-step human labeling. Our\nexperiments demonstrate that GTR significantly enhances the performance and\ngeneralization of the LLaVA-7b model across various visual environments,\nachieving 3-5 times higher task success rates compared to SoTA models with\nnotably smaller model sizes.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.08525.png",
+    "numComments": 1,
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.04388",
+      "authors": [
+        {
+          "_id": "67d05aa2348bae81a8ae572e",
+          "name": "Shahar Levy",
+          "hidden": false
+        },
+        {
+          "_id": "67d05aa2348bae81a8ae572f",
+          "name": "Nir Mazor",
+          "hidden": false
+        },
+        {
+          "_id": "67d05aa2348bae81a8ae5730",
+          "user": {
+            "_id": "63b433ee7af2e415f25b1a7b",
+            "avatarUrl": "/avatars/0b03f66d263bffd22ed864d1241fe28b.svg",
+            "isPro": false,
+            "fullname": "Lihi Shalmon",
+            "user": "LihiShalmon",
+            "type": "user"
+          },
+          "name": "Lihi Shalmon",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-11T16:09:23.471Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d05aa2348bae81a8ae5731",
+          "name": "Michael Hassid",
+          "hidden": false
+        },
+        {
+          "_id": "67d05aa2348bae81a8ae5732",
+          "name": "Gabriel Stanovsky",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-06T12:38:17.000Z",
+      "title": "Más registros, misma longitud: separar múltiples registros para identificar problemas en el RAG",
+      "summary": "RAG proporciona documentos relacionados con LLMs. En estudios pasados, se ha notado que la búsqueda de múltiples documentos puede afectar el rendimiento, pero no se determinó cómo afecta la cantidad de documentos al largo del contexto. Evaluamos varios modelos de lenguaje usando conjuntos de datos de tareas de pregunta y respuesta personalizados. Modificamos la cantidad de documentos mientras manteníamos fija la longitud del contexto y la ubicación de la información relevante. Encontramos que aumentar la cantidad de documentos en el conjunto RAG puede ser un gran problema para los LLMs. Además, nuestros resultados indican que el procesamiento de múltiples documentos es una problema independiente del procesamiento de contextos largos. Los conjuntos de datos y el código están disponibles en: https://github.com/shaharl6000/MoreDocsSameLen",
+      "upvotes": 8,
+      "discussionId": "67d05aa3348bae81a8ae5780",
+      "githubRepo": "https://github.com/shaharl6000/MoreDocsSameLen",
+      "ai_keywords": [
+        "Retrieval-augmented generation (RAG)",
+        "LLMs",
+        "relevant documents",
+        "multi-hop QA task",
+        "document count",
+        "long contexts"
+      ]
+    },
+    "publishedAt": "2025-03-06T07:38:17.000Z",
+    "title": "More Documents, Same Length: Isolating the Challenge of Multiple\n  Documents in RAG",
+    "summary": "Retrieval-augmented generation (RAG) provides LLMs with relevant documents.\nAlthough previous studies noted that retrieving many documents can degrade\nperformance, they did not isolate how the quantity of documents affects\nperformance while controlling for context length. We evaluate various language\nmodels on custom datasets derived from a multi-hop QA task. We keep the context\nlength and position of relevant information constant while varying the number\nof documents, and find that increasing the document count in RAG settings poses\nsignificant challenges for LLMs. Additionally, our results indicate that\nprocessing multiple documents is a separate challenge from handling long\ncontexts. We also make the datasets and code available:\nhttps://github.com/shaharl6000/MoreDocsSameLen .",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.04388.png",
+    "numComments": 1,
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.09601",
+      "authors": [
+        {
+          "_id": "67d29b617d0fc37e673c7e65",
+          "name": "Itay Chachy",
+          "hidden": false
+        },
+        {
+          "_id": "67d29b617d0fc37e673c7e66",
+          "name": "Guy Yariv",
+          "hidden": false
+        },
+        {
+          "_id": "67d29b617d0fc37e673c7e67",
+          "name": "Sagie Benaim",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T17:59:47.000Z",
+      "title": "Integración de puntuaciones mediante muestreo ponderado de recompensas",
+      "summary": "El Score Distillation Style Sampling (SDS) ha aparecido como una métrica efectiva para tareas como la generación de 3D a partir de texto, utilizando el principio de difusión 2D. Sin embargo, a pesar de ser potente, SDS enfrenta dificultades en el ajuste preciso de los fines de interés de los usuarios. Para superar esto, presentamos una nueva aproximación, RewardSDS, que utiliza un peso basado en los puntajes de alineación de la modelo de recompensas para el sampling de ruido. Esta función de pérdida prioriza el gradiente de la sampling de ruido que produce altas recompensas. Nuestro enfoque es ampliable y permite extender los métodos basados en SDS. En particular, presentamos RewardVSD para la Variación de Score Distillation (VSD), evaluando tanto RewardSDS como RewardVSD en tareas como la generación de imágenes a partir de texto, edición 2D y generación de 3D a partir de texto. En una variedad de métricas, incluyendo la calidad de la generación y el ajuste con respecto al modelo de recompensas, RewardSDS y RewardVSD muestran significativas mejoras frente a SDS y VSD, alcanzando performances líder del campo. El sitio web del proyecto está disponible en https://itaychachy.github.io/reward-sds/.",
+      "upvotes": 7,
+      "discussionId": "67d29b637d0fc37e673c7efc",
+      "projectPage": "https://itaychachy.github.io/reward-sds/",
+      "githubRepo": "https://github.com/itaychachy/RewardSDS",
+      "ai_keywords": [
+        "score distillation sampling (SDS)",
+        "2D diffusion priors",
+        "text-to-3D generation",
+        "reward model",
+        "weighted SDS loss",
+        "gradients",
+        "high-reward output",
+        "variational score distillation (VSD)",
+        "RewardVSD",
+        "text-to-image",
+        "2D editing",
+        "generation quality",
+        "alignment to desired reward models"
+      ]
+    },
+    "publishedAt": "2025-03-12T13:59:47.000Z",
+    "title": "RewardSDS: Aligning Score Distillation via Reward-Weighted Sampling",
+    "summary": "Score Distillation Sampling (SDS) has emerged as an effective technique for\nleveraging 2D diffusion priors for tasks such as text-to-3D generation. While\npowerful, SDS struggles with achieving fine-grained alignment to user intent.\nTo overcome this, we introduce RewardSDS, a novel approach that weights noise\nsamples based on alignment scores from a reward model, producing a weighted SDS\nloss. This loss prioritizes gradients from noise samples that yield aligned\nhigh-reward output. Our approach is broadly applicable and can extend SDS-based\nmethods. In particular, we demonstrate its applicability to Variational Score\nDistillation (VSD) by introducing RewardVSD. We evaluate RewardSDS and\nRewardVSD on text-to-image, 2D editing, and text-to-3D generation tasks,\nshowing significant improvements over SDS and VSD on a diverse set of metrics\nmeasuring generation quality and alignment to desired reward models, enabling\nstate-of-the-art performance. Project page is available at https://itaychachy.\ngithub.io/reward-sds/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09601.png",
+    "numComments": 1,
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.06955",
+      "authors": [
+        {
+          "_id": "67d2748117d5cbff7c23621e",
+          "user": {
+            "_id": "64ec877bb93654d4ca5c92e9",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ec877bb93654d4ca5c92e9/GvHk_KSdE9Rhnk_o-NaZX.jpeg",
+            "isPro": false,
+            "fullname": "Zeyu Zhang",
+            "user": "SteveZeyuZhang",
+            "type": "user"
+          },
+          "name": "Zeyu Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-13T08:23:56.553Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c23621f",
+          "name": "Yiran Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c236220",
+          "name": "Wei Mao",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c236221",
+          "name": "Danning Li",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c236222",
+          "name": "Rui Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c236223",
+          "name": "Biao Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c236224",
+          "name": "Zirui Song",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c236225",
+          "name": "Bohan Zhuang",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c236226",
+          "name": "Ian Reid",
+          "hidden": false
+        },
+        {
+          "_id": "67d2748117d5cbff7c236227",
+          "name": "Richard Hartley",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-10T06:04:31.000Z",
+      "title": "Móvimiento Total: Eso es la generación de movimiento",
+      "summary": "La generación de movimientos condicionados es un campo de investigación en la visión computacional que ha desarrollado diversas investigaciones, pero aún permanecen dos problemas importantes. El primero es que los métodos automáticos de amplificación condicionada recientemente han superado los métodos basados en ramas, pero los modelos de máscara actuales no tienen la estructura necesaria para priorizar en función de las condiciones dinámicas de los frames o de partes del cuerpo. El segundo problema es que los métodos actuales no pueden efectivamente integrar múltiples modelos condicionados, lo que limita el control y la coherencia de los movimientos generados. Para abordar estos problemas, introducimos un enfoque de modelado de máscara basado en atención y proponemos el marco de trabajo de generación de movimientos para múltiples modelos llamado Motion Anything, que permite un control espacial y temporal detallado de los frames clave y las acciones. Nuestro modelo mejora la capacidad de control mediante la codificación adaptativa de condiciones múltiples, como texto y música. Además, hemos introducido un nuevo conjunto de datos de movimientos Text-Music-Dance (TMD), que incluye 2,153 pares de texto, música y baile, y que es dos veces más grande que AIST++. Este conjunto de datos completa importantes deficiencias en la comunidad. Los experimentos extendidos muestran que Motion Anything supera los métodos más avanzados en múltiples benchmarks, mejorando el FID en HumanML3D en un 15% y mostrando el mismo incremento en AIST++ y TMD. Puede encontrar más información sobre el proyecto en el sitio web: https://steve-zeyu-zhang.github.io/MotionAnything.",
+      "upvotes": 5,
+      "discussionId": "67d2748317d5cbff7c2362f2",
+      "projectPage": "https://steve-zeyu-zhang.github.io/MotionAnything",
+      "githubRepo": "https://github.com/steve-zeyu-zhang/MotionAnything",
+      "ai_keywords": [
+        "masked autoregressive methods",
+        "diffusion-based approaches",
+        "masking models",
+        "dynamic frames",
+        "body parts",
+        "conditional motion generation",
+        "multimodal motion generation framework",
+        "Attention-based Mask Modeling",
+        "key frames",
+        "actions",
+        "multimodal conditions",
+        "Text-Music-Dance (TMD)",
+        "FID",
+        "HumanML3D",
+        "AIST++"
+      ]
+    },
+    "publishedAt": "2025-03-10T02:04:31.000Z",
+    "title": "Motion Anything: Any to Motion Generation",
+    "summary": "Conditional motion generation has been extensively studied in computer\nvision, yet two critical challenges remain. First, while masked autoregressive\nmethods have recently outperformed diffusion-based approaches, existing masking\nmodels lack a mechanism to prioritize dynamic frames and body parts based on\ngiven conditions. Second, existing methods for different conditioning\nmodalities often fail to integrate multiple modalities effectively, limiting\ncontrol and coherence in generated motion. To address these challenges, we\npropose Motion Anything, a multimodal motion generation framework that\nintroduces an Attention-based Mask Modeling approach, enabling fine-grained\nspatial and temporal control over key frames and actions. Our model adaptively\nencodes multimodal conditions, including text and music, improving\ncontrollability. Additionally, we introduce Text-Music-Dance (TMD), a new\nmotion dataset consisting of 2,153 pairs of text, music, and dance, making it\ntwice the size of AIST++, thereby filling a critical gap in the community.\nExtensive experiments demonstrate that Motion Anything surpasses\nstate-of-the-art methods across multiple benchmarks, achieving a 15%\nimprovement in FID on HumanML3D and showing consistent performance gains on\nAIST++ and TMD. See our project website\nhttps://steve-zeyu-zhang.github.io/MotionAnything",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.06955.png",
+    "numComments": 1,
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.07103",
+      "authors": [
+        {
+          "_id": "67d27d4c6fbfb8ee21886b60",
+          "user": {
+            "_id": "663486a1f64712540644cb68",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/663486a1f64712540644cb68/YZFR41ERY6UrC6rCC6Nan.jpeg",
+            "isPro": true,
+            "fullname": "Alessandro",
+            "user": "Devy1",
+            "type": "user"
+          },
+          "name": "Alessandro Giagnorio",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-13T08:23:50.840Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d27d4c6fbfb8ee21886b61",
+          "name": "Antonio Mastropaolo",
+          "hidden": false
+        },
+        {
+          "_id": "67d27d4c6fbfb8ee21886b62",
+          "name": "Saima Afrin",
+          "hidden": false
+        },
+        {
+          "_id": "67d27d4c6fbfb8ee21886b63",
+          "user": {
+            "_id": "63f378004745321de351a554",
+            "avatarUrl": "/avatars/3be79f0f6eb0bcfdc9f31b46d2bafc14.svg",
+            "isPro": false,
+            "fullname": "Max Di Penta",
+            "user": "mdiipenta",
+            "type": "user"
+          },
+          "name": "Massimiliano Di Penta",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-13T06:38:05.744Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d27d4c6fbfb8ee21886b64",
+          "name": "Gabriele Bavota",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-10T09:26:08.000Z",
+      "title": "La digitalización aplicada al código de Raytheon Longbow Mowtow para su reproducción independiente",
+      "summary": "Los modelos de lenguaje grande (LLMs) muestran una capacidad sorprendente para la generación de código, especialmente en la implementación automática de solicitudes escritas en naturaleza. La eficiencia de los LLMs generalmente aumenta al crecer en tamaño: mayor número de parámetros entrenables del modelo implica un mejor rendimiento en la implementación de código. Sin embargo, cuando se introducen generadores de código basados en LLMs, se enfrentan grandes desafíos en su adecuación al memoria (y a su vez, a los cores sobre los que opera) del dispositivo. En investigaciones previas, Wei et al. propusieron la utilización de generadores de código basados en LLMs para mejorar la adecuación al memoria, y trabajaron para evitar una reducción efectiva. En resumen, tomando como ejemplo un LLM con 16B parámetros, se demostró que se puede reducir la precisión desde el tipo de punto flotante de 32 bits hasta 8 bits de entero, y que este efecto es limitado. Mientras la capacidad de los LLMs y las tecnologías de reducción continúan evolucionando rápidamente, este artículo reproduce los resultados de Wei et al. y investiga guías para el proceso de reducción de modelos de código relacionados (con 34B parámetros), tecnologías de reducción modelo (nivel de reducción máxima de parámetros del modelo de 2 bits), y conjuntos de datos. Según la evaluación experimental, la reducción de los LLMs alcanza un nuevo límite de precisión de 4 bits, con una reducción promedio del 70% en la adecuación al memoria, sin observarse una gran pérdida de rendimiento. Además, en casos de reducción más extremos (3 bits y 2 bits), los conjuntos de datos de código pueden limitar la pérdida de rendimiento.",
+      "upvotes": 4,
+      "discussionId": "67d27d4d6fbfb8ee21886bab",
+      "githubRepo": "https://github.com/Devy99/lowbit-quantization",
+      "ai_keywords": [
+        "Large Language Models (LLMs)",
+        "code generation",
+        "trainable parameters",
+        "memory footprint",
+        "quantization techniques",
+        "precision",
+        "floating point 32 bits",
+        "int 8 bits",
+        "code generation performance",
+        "calibration datasets",
+        "code-specific calibration datasets"
+      ]
+    },
+    "publishedAt": "2025-03-10T05:26:08.000Z",
+    "title": "Quantizing Large Language Models for Code Generation: A Differentiated\n  Replication",
+    "summary": "Large Language Models (LLMs) have shown an impressive capability in code\ngeneration and, specifically, to automatically implement requirements described\nin natural language. The LLM effectiveness generally increases with its size:\nThe higher the number of LLM's trainable parameters the better its ability to\nimplement code. However, when it comes to deploying LLM-based code generators,\nlarger LLMs pose significant challenges related to their memory (and,\nconsequently, carbon) footprint. A previous work by Wei et al. proposed to\nleverage quantization techniques to reduce the memory footprint of LLM-based\ncode generators without substantially degrading their effectiveness. In short,\nthey studied LLMs featuring up to 16B parameters, quantizing their precision\nfrom floating point 32 bits down to int 8 bits and showing their limited impact\non code generation performance. Given the fast pace at which LLM capabilities\nand quantization techniques are evolving, in this work we present a\ndifferentiated replication of the work by Wei et al. in which we consider (i)\non the one side, more recent and larger code-related LLMs, of up to 34B\nparameters; (ii) the latest advancements in model quantization techniques,\nwhich allow pushing the compression to the extreme quantization level of 2 bits\nper model parameter and; (iii) different types of calibration datasets to guide\nthe quantization process, including code-specific ones. Our empirical\nevaluation reveals that the new frontier for LLM quantization is 4-bit\nprecision, resulting in an average memory footprint reduction of 70% compared\nto the original model without observing any significant decrease in\nperformance. Additionally, when the quantization becomes even more extreme (3\nand 2 bits), a code-specific calibration dataset helps to limit the loss of\nperformance.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.07103.png",
+    "numComments": 1,
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.09402",
+      "authors": [
+        {
+          "_id": "67d27a9117d5cbff7c2519f6",
+          "user": {
+            "_id": "64440be5af034cdfd69ca3a7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64440be5af034cdfd69ca3a7/qmx24QiDFT29vleCxL9TX.jpeg",
+            "isPro": true,
+            "fullname": "Qinghong (Kevin) Lin",
+            "user": "KevinQHLin",
+            "type": "user"
+          },
+          "name": "Kevin Qinghong Lin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-13T08:23:53.060Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d27a9117d5cbff7c2519f7",
+          "name": "Mike Zheng Shou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T13:53:30.000Z",
+      "title": "VLog: Búsqueda de explicaciones generativas sobre modelos de lenguaje de video\n   Vocabulario",
+      "summary": "Las actividades diarias humanas pueden ser expresadas como una secuencia de eventos regulares, como apagar el alarma, y forman el exterior de estas actividades. Basándonos en esto, introducimos en el nuevo marco de comprensión de imágenes VLog, un método para definir el exterior de la descripción de imágenes, superando los exteriores generales de los modelos de lenguaje de imágenes generativos existentes. VLog se construye sobre un modelo GPT-2 ligero y tiene tres innovaciones significativas: (i) un modelo de búsqueda generativo que combina el poder lógico complejo del modelo de lenguaje con una búsqueda relativamente eficiente; (ii) un exterior heurístico obtenido de las descripciones de imágenes grandes de un modelo de radiación, que permite indexar de manera eficiente eventos específicos (por ejemplo, cortar un tomate) utilizando el algoritmo de codificación de pares de descripción; (iii) una estrategia para actualizar el exterior cuando se detecta un nuevo evento, utilizando el modelo generativo. Para validar nuestro enfoque, presentamos VidCap-Eval, un conjunto de evaluación que requiere de la evaluación conjunta de imágenes y descripciones. Los experimentos en EgoSchema, COIN y HiREST destacan la efectividad de VLog, destacando su capacidad para generar descripciones claras, contextuales y eficientes, y ofreciendo una nueva perspectiva en la comprensión de imágenes. El código está disponible en GitHub en https://github.com/showlab/VLog.",
+      "upvotes": 3,
+      "discussionId": "67d27a9517d5cbff7c251b41",
+      "githubRepo": "https://github.com/showlab/VLog",
+      "ai_keywords": [
+        "generative retrieval model",
+        "contrastive retrieval",
+        "hierarchical vocabulary",
+        "narration pair encoding algorithm",
+        "expressive postfixes",
+        "vocabulary update strategy",
+        "generative models",
+        "VidCap-Eval",
+        "EgoSchema",
+        "COIN",
+        "HiREST",
+        "concise narrations",
+        "reasoning relationships"
+      ]
+    },
+    "publishedAt": "2025-03-12T09:53:30.000Z",
+    "title": "VLog: Video-Language Models by Generative Retrieval of Narration\n  Vocabulary",
+    "summary": "Human daily activities can be concisely narrated as sequences of routine\nevents (e.g., turning off an alarm) in video streams, forming an event\nvocabulary. Motivated by this, we introduce VLog, a novel video understanding\nframework that define video narrations as vocabulary, going beyond the typical\nsubword vocabularies in existing generative video-language models. Built on the\nlightweight language model GPT-2, VLog feature three key innovations: (i) A\ngenerative retrieval model, marrying language model's complex reasoning\ncapabilities with contrastive retrieval's efficient similarity search. (ii) A\nhierarchical vocabulary derived from large-scale video narrations using our\nnarration pair encoding algorithm, enabling efficient indexing of specific\nevents (e.g., cutting a tomato) by identifying broader scenarios (e.g.,\nkitchen) with expressive postfixes (e.g., by the left hand). (iii) A vocabulary\nupdate strategy leveraging generative models to extend the vocabulary for novel\nevents encountered during inference. To validate our approach, we introduce\nVidCap-Eval, a development set requiring concise narrations with reasoning\nrelationships (e.g., before and after). Experiments on EgoSchema, COIN, and\nHiREST further demonstrate the effectiveness of VLog, highlighting its ability\nto generate concise, contextually accurate, and efficient narrations, offering\na novel perspective on video understanding. Codes are released at\nhttps://github.com/showlab/VLog.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09402.png",
+    "numComments": 1,
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.06573",
+      "authors": [
+        {
+          "_id": "67d02a147d82f613a31ed396",
+          "name": "Gili Lior",
+          "hidden": false
+        },
+        {
+          "_id": "67d02a147d82f613a31ed397",
+          "name": "Asaf Yehudai",
+          "hidden": false
+        },
+        {
+          "_id": "67d02a147d82f613a31ed398",
+          "name": "Ariel Gera",
+          "hidden": false
+        },
+        {
+          "_id": "67d02a147d82f613a31ed399",
+          "name": "Liat Ein-Dor",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-09T12:06:29.000Z",
+      "title": "WildIFEval: Sigue las pautas del natural.",
+      "summary": "Recientemente, los LLMs han demostrado éxito al satisfacer las instrucciones de los usuarios, pero procesar instrucciones que incluyen múltiples restricciones es un gran desafío. En este artículo, se presenta un grande conjunto de datos llamado \"WildIFEval\", que incluye 12,000 instrucciones de usuarios reales. Diferente a los conjuntos de datos previos, este conjunto recopila instrucciones naturales de usuarios que abordan diversas gramáticas y temas. Estas restricciones se clasifican en 8 categorías de alto nivel para comprender su distribución y tendencias en escenarios reales. Utilizando \"WildIFEval\", se realizaron experimentos ampliados para evaluar la capacidad de los LLMs para seguir instrucciones. Se descubrió que todos los modelos evaluados suelen perder eficiencia cuando las restricciones aumentan. Estos resultados demuestran que todos los modelos tienen mucho potencial para mejorar. Además, se encontró que la naturaleza específica de las restricciones tiene un gran impacto en el rendimiento de los modelos. El objetivo de publicar este conjunto de datos es fomentar la investigación sobre la seguimiento de instrucciones bajo condiciones complejas y prácticas.",
+      "upvotes": 3,
+      "discussionId": "67d02a167d82f613a31ed44b"
+    },
+    "publishedAt": "2025-03-09T08:06:29.000Z",
+    "title": "WildIFEval: Instruction Following in the Wild",
+    "summary": "Recent LLMs have shown remarkable success in following user instructions, yet\nhandling instructions with multiple constraints remains a significant\nchallenge. In this work, we introduce WildIFEval - a large-scale dataset of 12K\nreal user instructions with diverse, multi-constraint conditions. Unlike prior\ndatasets, our collection spans a broad lexical and topical spectrum of\nconstraints, in natural user prompts. We categorize these constraints into\neight high-level classes to capture their distribution and dynamics in\nreal-world scenarios. Leveraging WildIFEval, we conduct extensive experiments\nto benchmark the instruction-following capabilities of leading LLMs. Our\nfindings reveal that all evaluated models experience performance degradation\nwith an increasing number of constraints. Thus, we show that all models have a\nlarge room for improvement on such tasks. Moreover, we observe that the\nspecific type of constraint plays a critical role in model performance. We\nrelease our dataset to promote further research on instruction-following under\ncomplex, realistic conditions.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.06573.png",
+    "numComments": 2,
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.09579",
+      "authors": [
+        {
+          "_id": "67d26ae40a955727b9687d8f",
+          "user": {
+            "_id": "6144e4667f2544bb450787b2",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6144e4667f2544bb450787b2/5wSDDqJbI4TGtBLP9IvjY.png",
+            "isPro": false,
+            "fullname": "Yingfa Chen",
+            "user": "chen-yingfa",
+            "type": "user"
+          },
+          "name": "Yingfa Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-13T08:24:03.831Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d26ae40a955727b9687d90",
+          "name": "Yutong Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67d26ae40a955727b9687d91",
+          "name": "Xu Han",
+          "hidden": false
+        },
+        {
+          "_id": "67d26ae40a955727b9687d92",
+          "name": "Zhiyuan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67d26ae40a955727b9687d93",
+          "name": "Maosong Sun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T17:50:42.000Z",
+      "title": "Aplicación de la Attención de Consultas Agrupadas de Costo óptimo (Cost-Optimal Grouped-Query Attention) en LLMs con Largo Contexto",
+      "summary": "Transformer-basada efectivas y eficientes grandes modelos de lenguaje (LLMs) han sido el foco de la investigación reciente, necesitando aumentar la capacidad de lenguaje del modelo y minimizar los costos de entrenamiento y de lote. Los intentos previos principalmente explicaron las complejas relaciones entre el rendimiento del modelo, el tamaño de parámetros y el tamaño de datos, y buscaron el óptimo de distribución de cálculos para los LLMs. Sin embargo, estos intentos no consideraron el impacto de la longitud de contexto y la diseño de los cabezas de atención (número de cabezas de consulta y de clave-valor agrupadas). En este artículo, se comparan de manera sistemática diferentes modelos considerando el tamaño de parámetros, la longitud de contexto y el diseño de las cabezas de atención. Nuestro objetivo es expandir los métodos actuales de escalado (basados en el tamaño de parámetros y en el cálculo de entrenamiento) para guiar la construcción de LLMs optimizados en costos tanto de entrenamiento como de inferencia. Según nuestro estudio de escalado cuantitativo, cuando se procesan secuencias suficientemente largas, modelos grandes con pocas cabezas de atención pueden reducir la pérdida, el costo de cálculo y el costo de memoria. Nuestros hallazgos son particularmente valiosos para el desarrollo de LLMs en escalas largas, demostrando que modelos grandes con pocas cabezas de atención son eficientes en términos de pérdida, costo de cálculo y memoria.",
+      "upvotes": 2,
+      "discussionId": "67d26ae90a955727b9687eff",
+      "githubRepo": "https://github.com/thunlp/cost-optimal-gqa",
+      "ai_keywords": [
+        "Transformer-based",
+        "large language models (LLMs)",
+        "parameter size",
+        "context length",
+        "attention head configuration",
+        "grouped-query attention",
+        "query and key-value heads",
+        "model performance",
+        "computational cost",
+        "memory cost",
+        "cost-optimal LLMs"
+      ]
+    },
+    "publishedAt": "2025-03-12T13:50:42.000Z",
+    "title": "Cost-Optimal Grouped-Query Attention for Long-Context LLMs",
+    "summary": "Building effective and efficient Transformer-based large language models\n(LLMs) has recently become a research focus, requiring maximizing model\nlanguage capabilities and minimizing training and deployment costs. Existing\nefforts have primarily described complex relationships among model performance,\nparameter size, and data size, as well as searched for the optimal compute\nallocation to train LLMs. However, they overlook the impacts of context length\nand attention head configuration (the number of query and key-value heads in\ngrouped-query attention) on training and inference. In this paper, we\nsystematically compare models with different parameter sizes, context lengths,\nand attention head configurations in terms of model performance, computational\ncost, and memory cost. Then, we extend the existing scaling methods, which are\nbased solely on parameter size and training compute, to guide the construction\nof cost-optimal LLMs during both training and inference. Our quantitative\nscaling studies show that, when processing sufficiently long sequences, a\nlarger model with fewer attention heads can achieve a lower loss while\nincurring lower computational and memory costs. Our findings provide valuable\ninsights for developing practical LLMs, especially in long-context processing\nscenarios. We will publicly release our code and data.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09579.png",
+    "numComments": 1,
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.09419",
+      "authors": [
+        {
+          "_id": "67d27032825fbe674d2e4109",
+          "user": {
+            "_id": "64a63f9449b08110f761cd73",
+            "avatarUrl": "/avatars/61860202fc818b105ef24e74dd4f7d3c.svg",
+            "isPro": false,
+            "fullname": "Yifan Zhou",
+            "user": "SingleZombie",
+            "type": "user"
+          },
+          "name": "Yifan Zhou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-13T08:24:00.485Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d27032825fbe674d2e410a",
+          "name": "Zeqi Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "67d27032825fbe674d2e410b",
+          "name": "Shuai Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67d27032825fbe674d2e410c",
+          "name": "Xingang Pan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T14:16:30.000Z",
+      "title": "El modelo de difuñción de la laténica de la plata: mejora de la simetría y la calidad de la difuñción en el espacio de los puntos de corte de la difuñción",
+      "summary": "Los modelos de difusión potenciales (LDMs) son conocidos por su proceso de generación instable, lo que puede resultar en grandes diferencias en la salida gráfica a partir de pequeños cambios o perturbaciones en el ruido de entrada. Esto impide su aplicación en dominios que requieren una consistencia en los resultados. En este artículo, se propone re-diseñar a los LDMs para fortalecer la simetría en torno a la esquina (ES) y mejorar la consistencia de los resultados. La introducción de operaciones de caricaturización puede mejorar parcialmente la simetría en torno a la esquina, pero aún se mantienen problemas inherentes en los LDMs, como la expansión de la caricaturización, el entrenamiento de la VAE y la inferencia de múltiples U-Nets, que generan resultados instables. Para resolver estos problemas, se propone re-diseñar un arquitecturo de U-Net con simetría en torno a la esquina (ES) y una pérdida de simetría en torno a la esquina (ES) que efectivamente suprime las características en el dominio de la frecuencia. Así obtenido, el LDM sin caricaturización (AF-LDM) presenta una fuerte simetría en torno a la esquina y es robusto a reducciones y amplificaciones no regulares. Los experimentos extendidos muestran que el AF-LDM genera resultados más uniformes en aplicaciones variadas, como edición de videos y traducción de imágenes a imágenes, comparados con los modelos base de LDMs. El código está disponible en https://github.com/SingleZombie/AFLDM.",
+      "upvotes": 2,
+      "discussionId": "67d27034825fbe674d2e4185",
+      "projectPage": "https://zhouyifan.net/AF-LDM-Page/",
+      "githubRepo": "https://github.com/SingleZombie/AFLDM",
+      "ai_keywords": [
+        "Latent Diffusion Models (LDMs)",
+        "shift-equivariant",
+        "anti-aliasing operations",
+        "aliasing amplification",
+        "VAE training",
+        "U-Net",
+        "self-attention modules",
+        "attention modules",
+        "equivariance loss",
+        "alias-free LDM (AF-LDM)",
+        "video editing",
+        "image-to-image translation"
+      ]
+    },
+    "publishedAt": "2025-03-12T10:16:30.000Z",
+    "title": "Alias-Free Latent Diffusion Models:Improving Fractional Shift\n  Equivariance of Diffusion Latent Space",
+    "summary": "Latent Diffusion Models (LDMs) are known to have an unstable generation\nprocess, where even small perturbations or shifts in the input noise can lead\nto significantly different outputs. This hinders their applicability in\napplications requiring consistent results. In this work, we redesign LDMs to\nenhance consistency by making them shift-equivariant. While introducing\nanti-aliasing operations can partially improve shift-equivariance, significant\naliasing and inconsistency persist due to the unique challenges in LDMs,\nincluding 1) aliasing amplification during VAE training and multiple U-Net\ninferences, and 2) self-attention modules that inherently lack\nshift-equivariance. To address these issues, we redesign the attention modules\nto be shift-equivariant and propose an equivariance loss that effectively\nsuppresses the frequency bandwidth of the features in the continuous domain.\nThe resulting alias-free LDM (AF-LDM) achieves strong shift-equivariance and is\nalso robust to irregular warping. Extensive experiments demonstrate that AF-LDM\nproduces significantly more consistent results than vanilla LDM across various\napplications, including video editing and image-to-image translation. Code is\navailable at: https://github.com/SingleZombie/AFLDM",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09419.png",
+    "numComments": 1,
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.09600",
+      "authors": [
+        {
+          "_id": "67d270d88f3def6bcbb87b6b",
+          "user": {
+            "_id": "658e85bb5b7553ca5c29ba89",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/658e85bb5b7553ca5c29ba89/KK6UpS9agtrxevvBoup5N.jpeg",
+            "isPro": false,
+            "fullname": "Jihao Zhao",
+            "user": "Robot2050",
+            "type": "user"
+          },
+          "name": "Jihao Zhao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-13T08:23:58.864Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d270d88f3def6bcbb87b6c",
+          "name": "Zhiyuan Ji",
+          "hidden": false
+        },
+        {
+          "_id": "67d270d88f3def6bcbb87b6d",
+          "name": "Zhaoxin Fan",
+          "hidden": false
+        },
+        {
+          "_id": "67d270d88f3def6bcbb87b6e",
+          "name": "Hanyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67d270d88f3def6bcbb87b6f",
+          "name": "Simin Niu",
+          "hidden": false
+        },
+        {
+          "_id": "67d270d88f3def6bcbb87b70",
+          "name": "Bo Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67d270d88f3def6bcbb87b71",
+          "name": "Feiyu Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67d270d88f3def6bcbb87b72",
+          "name": "Zhiyu Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T17:59:42.000Z",
+      "title": "Mock: Sistema de generación de búsquedas a través del uso de la confusión de un chatbot de texto",
+      "summary": "El REVIEW AGUAJE (RAG) desempeña un papel de asistencia práctico para los modelos de lenguaje grandes (LLMs), pero mal comprende aspectos importantes del texto corte (chunking). En este artículo, se presenta una metodología de evaluación doble que integra equilibrio y coherencia de corte, permitiendo la cuantificación directa de la calidad del cuidado del corte. Utilizando esta evaluación, se demuestra que el cuidado del corte individual y semántico tienen límites para abordar problemas subtil y complejos en contextos extensos, lo que demuestra la necesidad de integrar los LLMs en el proceso de cuidado del corte para mejorar el rendimiento de los sistemas RAG. Para resolver el compromiso inherente entre eficiencia de cálculo y precisión del corte en enfoques basados en LLMs, proponemos un marco de trabajo Mixture-of-Chunkers (MoC) para el grado de corte. Este marco de trabajo consiste en una estructura de procesamiento de tres etapas, con el objetivo de generar listas estructuradas de cuidado del corte y extraer las expresiones regulares de cuidado del corte del texto original. Los experimentos extendidos muestran que nuestro método y el marco de trabajo MoC resuelven los problemas del cuidado del corte y mejoran el rendimiento de los sistemas RAG.",
+      "upvotes": 1,
+      "discussionId": "67d270d98f3def6bcbb87bfb",
+      "ai_keywords": [
+        "Retrieval-Augmented Generation (RAG)",
+        "Large language models (LLMs)",
+        "text chunking",
+        "dual-metric evaluation method",
+        "Boundary Clarity",
+        "Chunk Stickiness",
+        "chunking quality",
+        "traditional chunking",
+        "semantic chunking",
+        "contextual nuances",
+        "granularity-aware Mixture-of-Chunkers (MoC)",
+        "three-stage processing mechanism",
+        "chunking regular expressions",
+        "chunk extraction",
+        "chunking task",
+        "chunking kernel"
+      ]
+    },
+    "publishedAt": "2025-03-12T13:59:42.000Z",
+    "title": "MoC: Mixtures of Text Chunking Learners for Retrieval-Augmented\n  Generation System",
+    "summary": "Retrieval-Augmented Generation (RAG), while serving as a viable complement to\nlarge language models (LLMs), often overlooks the crucial aspect of text\nchunking within its pipeline. This paper initially introduces a dual-metric\nevaluation method, comprising Boundary Clarity and Chunk Stickiness, to enable\nthe direct quantification of chunking quality. Leveraging this assessment\nmethod, we highlight the inherent limitations of traditional and semantic\nchunking in handling complex contextual nuances, thereby substantiating the\nnecessity of integrating LLMs into chunking process. To address the inherent\ntrade-off between computational efficiency and chunking precision in LLM-based\napproaches, we devise the granularity-aware Mixture-of-Chunkers (MoC)\nframework, which consists of a three-stage processing mechanism. Notably, our\nobjective is to guide the chunker towards generating a structured list of\nchunking regular expressions, which are subsequently employed to extract chunks\nfrom the original text. Extensive experiments demonstrate that both our\nproposed metrics and the MoC framework effectively settle challenges of the\nchunking task, revealing the chunking kernel while enhancing the performance of\nthe RAG system.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09600.png",
+    "numComments": 2,
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.09427",
+      "authors": [
+        {
+          "_id": "67d247c2a48964532e40e78e",
+          "name": "Yaorui Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67d247c2a48964532e40e78f",
+          "name": "Jiaqi Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67d247c2a48964532e40e790",
+          "name": "Sihang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67d247c2a48964532e40e791",
+          "name": "Junfeng Fang",
+          "hidden": false
+        },
+        {
+          "_id": "67d247c2a48964532e40e792",
+          "name": "Xiang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67d247c2a48964532e40e793",
+          "name": "Zhiyuan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67d247c2a48964532e40e794",
+          "name": "Yang Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T14:26:16.000Z",
+      "title": "Modelado de Modalidades de Transcriptivos de Celdas Únicas por Modelos de Lenguaje de Alta Precisión en el Domó-Dal",
+      "summary": "Los modelos de lenguaje previamente entrenados (PLMs) están impulsando innovaciones en la investigación científica, pero su aplicación en el análisis de células únicas está limitada. Los PLMs de contexto no pueden procesar datos de RNA de células únicas, mientras que los PLMs de células no tienen la capacidad de procesar frases libres, lo que limita su uso en tareas de tipo multimodal. El efecto de la cruzada entre modelos actuales puede llevar a pérdidas de información o a un rendimiento subóptimo debido a la falta de aprendizaje previo suficiente en modelos únicos. Para resolver estos problemas, proponemos el Single-Cell MultiModal Generative Pre-trained Transformer (scMMGPT), un PLM integrado para modelos de células únicas. El scMMGPT integra eficazmente los mejores PLMs de células y contexto, promoviendo la compartir de conocimientos cruzados para mejorar el rendimiento. Para cerrar la brecha entre modelos de contexto y células, el scMMGPT utiliza un productor cruzado de modelos, y se ha entrenado con el mayor conjunto de datos hasta el momento, compuesto por 27 millones de datos de 27 millones de células únicas.",
+      "upvotes": 1,
+      "discussionId": "67d247c4a48964532e40e802",
+      "ai_keywords": [
+        "single-cell RNA sequencing data",
+        "pre-trained language models (PLMs)",
+        "cell PLMs",
+        "cross-modal tasks",
+        "information loss",
+        "single-modal pre-training",
+        "Single-Cell MultiModal Generative Pre-trained Transformer (scMMGPT)",
+        "cross-modal projectors",
+        "multimodal cell-text PLMs",
+        "cell description generation",
+        "cell type annotation",
+        "$k$-NN accuracy",
+        "text-conditioned pseudo-cell generation"
+      ]
+    },
+    "publishedAt": "2025-03-12T10:26:16.000Z",
+    "title": "Multimodal Language Modeling for High-Accuracy Single Cell\n  Transcriptomics Analysis and Generation",
+    "summary": "Pre-trained language models (PLMs) have revolutionized scientific research,\nyet their application to single-cell analysis remains limited. Text PLMs cannot\nprocess single-cell RNA sequencing data, while cell PLMs lack the ability to\nhandle free text, restricting their use in multimodal tasks. Existing efforts\nto bridge these modalities often suffer from information loss or inadequate\nsingle-modal pre-training, leading to suboptimal performances. To address these\nchallenges, we propose Single-Cell MultiModal Generative Pre-trained\nTransformer (scMMGPT), a unified PLM for joint cell and text modeling. scMMGPT\neffectively integrates the state-of-the-art cell and text PLMs, facilitating\ncross-modal knowledge sharing for improved performance. To bridge the text-cell\nmodality gap, scMMGPT leverages dedicated cross-modal projectors, and undergoes\nextensive pre-training on 27 million cells -- the largest dataset for\nmultimodal cell-text PLMs to date. This large-scale pre-training enables\nscMMGPT to excel in joint cell-text tasks, achieving an 84\\% relative\nimprovement of textual discrepancy for cell description generation, 20.5\\%\nhigher accuracy for cell type annotation, and 4\\% improvement in k-NN\naccuracy for text-conditioned pseudo-cell generation, outperforming baselines.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09427.png",
+    "numComments": 1,
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.07588",
+      "authors": [
+        {
+          "_id": "67d1808e13d7b3f8c6ea9147",
+          "name": "Junwei Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67d1808e13d7b3f8c6ea9148",
+          "name": "Yingying Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d1808e13d7b3f8c6ea9149",
+          "name": "Xue Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67d1808e13d7b3f8c6ea914a",
+          "name": "Kang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67d1808e13d7b3f8c6ea914b",
+          "name": "Qi Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67d1808e13d7b3f8c6ea914c",
+          "name": "Lei Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67d1808e13d7b3f8c6ea914d",
+          "name": "Jingdong Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67d1808e13d7b3f8c6ea914e",
+          "name": "Yansheng Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-10T17:51:16.000Z",
+      "title": "El encuentro del lenguaje de modelo de visión de escenas y las imágenes de observación remota a gran escala:\n  programación de tokens desde la base hasta los temas de pintura\n\n(Nota: Aunque se ha pedido mantener la profesionalidad y precisión, las palabras como \"코어스\" y \"핀이슈\" pueden necesitarse ajustar en función del contexto específico para asegurar la exactitud total.)",
+      "summary": "La comprensión eficiente del lenguaje visual y lingüístico en imágenes de sensoriamiento barato (RSIs) de gran escala tiene un valor pero es difícil. Los modelos de visión gran escala lenguaje (LVLMs) actuales procesan generalmente las imágenes utilizando un uso de grillas limitado, lo que provoca pérdida de información cuando se tratan RSIs de gigapixel. Por otro lado, el uso de grillas ilimitadas aumenta significativamente los costos computacionales. Para preservar los detalles de las imágenes mientras reducimos la complejidad computacional, proponemos un método de reducción de tokens en modelos de texto guíado por imágenes que integra la pirámide gráfica de cinema (DIP). Nuestro enfoque incluye: (i) un módulo de foco de áreas (RFM) que detecta regiones relacionadas con el texto y específica tokens visuales importantes. (ii) Una estrategia de selección de resaltado de imágenes basada en DIP y reducción de tokens visuales, que se basan en el output del RFM. Además, los marcos de referencia existentes para evaluar la capacidad de observación de LVLMs están acompañados de una diversidad limitada de problemas y tamaños de imágenes. Hemos construido un nuevo marco de referencia y establecido LRS-VQA, que incluye 7,333 pares de preguntas y respuestas en 8 categorías, y la longitud de las imágenes puede extenderse hasta 27,328 píxeles. Nuestro método supera a las estrategias de alta resolución en cuatro conjuntos de datos utilizando la misma información, y muestra una mayor eficiencia en configuraciones de alta resolución comparado con métodos de reducción de tokens existentes. Los conjuntos de datos y el código están disponibles en https://github.com/VisionXLab/LRS-VQA.",
+      "upvotes": 1,
+      "discussionId": "67d1809013d7b3f8c6ea9271",
+      "ai_keywords": [
+        "Large Vision-Language Models (LVLMs)",
+        "gigapixel RSIs",
+        "Dynamic Image Pyramid (DIP)",
+        "text-guided token pruning",
+        "Region Focus Module (RFM)",
+        "text-aware region localization",
+        "vision tokens",
+        "coarse-to-fine image tile selection",
+        "vision token pruning strategy",
+        "large imagery",
+        "LRS-VQA",
+        "QA pairs",
+        "high-resolution strategies",
+        "token reduction methods"
+      ]
+    },
+    "publishedAt": "2025-03-10T13:51:16.000Z",
+    "title": "When Large Vision-Language Model Meets Large Remote Sensing Imagery:\n  Coarse-to-Fine Text-Guided Token Pruning",
+    "summary": "Efficient vision-language understanding of large Remote Sensing Images (RSIs)\nis meaningful but challenging. Current Large Vision-Language Models (LVLMs)\ntypically employ limited pre-defined grids to process images, leading to\ninformation loss when handling gigapixel RSIs. Conversely, using unlimited\ngrids significantly increases computational costs. To preserve image details\nwhile reducing computational complexity, we propose a text-guided token pruning\nmethod with Dynamic Image Pyramid (DIP) integration. Our method introduces: (i)\na Region Focus Module (RFM) that leverages text-aware region localization\ncapability to identify critical vision tokens, and (ii) a coarse-to-fine image\ntile selection and vision token pruning strategy based on DIP, which is guided\nby RFM outputs and avoids directly processing the entire large imagery.\nAdditionally, existing benchmarks for evaluating LVLMs' perception ability on\nlarge RSI suffer from limited question diversity and constrained image sizes.\nWe construct a new benchmark named LRS-VQA, which contains 7,333 QA pairs\nacross 8 categories, with image length up to 27,328 pixels. Our method\noutperforms existing high-resolution strategies on four datasets using the same\ndata. Moreover, compared to existing token reduction methods, our approach\ndemonstrates higher efficiency under high-resolution settings. Dataset and code\nare in https://github.com/VisionXLab/LRS-VQA.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.07588.png",
+    "numComments": 1,
+    "isAuthorParticipating": false
+  }
+]
