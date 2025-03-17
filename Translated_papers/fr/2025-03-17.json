@@ -1,0 +1,2212 @@
+[
+  {
+    "paper": {
+      "id": "2503.07677",
+      "authors": [
+        {
+          "_id": "67d2ca0767366130cccad93d",
+          "user": {
+            "_id": "63973ee44e7b4959dc98028f",
+            "avatarUrl": "/avatars/2e166fee60844729479bfa4291796c8a.svg",
+            "isPro": false,
+            "fullname": "Kwanyoung",
+            "user": "kwanyoung",
+            "type": "user"
+          },
+          "name": "Kwanyoung Kim",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-14T08:58:03.528Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d2ca0767366130cccad93e",
+          "user": {
+            "_id": "668377232d89090894bea7b4",
+            "avatarUrl": "/avatars/1a74a08d645a352db4a460036b9fb6db.svg",
+            "isPro": false,
+            "fullname": "byeongsu sim",
+            "user": "byeongsus",
+            "type": "user"
+          },
+          "name": "Byeongsu Sim",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:47:11.835Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-10T07:23:19.000Z",
+      "submittedOnDailyAt": "2025-03-17T00:44:05.364Z",
+      "title": "PLADIS : Nous recommandons un modèle qui utilise la sparsité pour concentrer l'attention sur un intervalle limité, réduisant ainsi le temps de calcul.",
+      "submittedOnDailyBy": {
+        "_id": "63973ee44e7b4959dc98028f",
+        "avatarUrl": "/avatars/2e166fee60844729479bfa4291796c8a.svg",
+        "isPro": false,
+        "fullname": "Kwanyoung",
+        "user": "kwanyoung",
+        "type": "user"
+      },
+      "summary": "Les modèles de diffusion génèrent des échantillons de haute qualité conditionnés en utilisant des techniques comme la Guidance Classifier-Free (CFG), produisant des résultats surprenants. Cependant, les méthodes actuelles nécessitent des entraînements supplémentaires ou des évaluations de fonctions neuronales (NFEs) lorsqu'ils sont confrontés à des modèles distillés de guidance, ce qui peut constituer un défi. De plus, ces méthodes dépendent d'approches heuristiques pour déterminer les couches cibles. Dans cette étude, une nouvelle méthodologie efficace appelée PLADIS est proposée. Cette méthodologie renforce les modèles pré-entraînés (U-Net/Transformer) en utilisant une attention sparse. Spécifiquement, lors de l'inférence, des couches d'attention croisées sont utilisées, où la softmax et sa version sparse sont appliquées pour abstracter les relations clé-clé, évitant ainsi l'entraînement supplémentaire ou les NFEs nécessaires. En profitant de la résistance au bruit de l'attention sparse, PLADIS libère le potentiel des modèles de génération d'images à partir du texte et produit de nouveaux effets, même dans des situations où des efforts précédents ont été déployés. PLADIS s'adapte bien aux méthodes de guidance et à leurs modèles distillés, montrant des améliorations significatives en termes de cohérence du contexte et d'ajustement aux préférences humaines, tout en offrant une grande efficacité et une grande possibilité d'application générale.",
+      "upvotes": 58,
+      "discussionId": "67d2ca0b67366130cccada34",
+      "ai_keywords": [
+        "diffusion models",
+        "Classifier-Free Guidance (CFG)",
+        "neural function evaluations (NFEs)",
+        "guidance-distilled models",
+        "PLADIS",
+        "pre-trained models (U-Net/Transformer)",
+        "sparse attention",
+        "query-key correlations",
+        "softmax",
+        "cross-attention layer",
+        "noise robustness",
+        "text-to-image diffusion models",
+        "text alignment",
+        "human preference"
+      ]
+    },
+    "publishedAt": "2025-03-10T03:23:19.000Z",
+    "title": "PLADIS: Pushing the Limits of Attention in Diffusion Models at Inference\n  Time by Leveraging Sparsity",
+    "summary": "Diffusion models have shown impressive results in generating high-quality\nconditional samples using guidance techniques such as Classifier-Free Guidance\n(CFG). However, existing methods often require additional training or neural\nfunction evaluations (NFEs), making them incompatible with guidance-distilled\nmodels. Also, they rely on heuristic approaches that need identifying target\nlayers. In this work, we propose a novel and efficient method, termed PLADIS,\nwhich boosts pre-trained models (U-Net/Transformer) by leveraging sparse\nattention. Specifically, we extrapolate query-key correlations using softmax\nand its sparse counterpart in the cross-attention layer during inference,\nwithout requiring extra training or NFEs. By leveraging the noise robustness of\nsparse attention, our PLADIS unleashes the latent potential of text-to-image\ndiffusion models, enabling them to excel in areas where they once struggled\nwith newfound effectiveness. It integrates seamlessly with guidance techniques,\nincluding guidance-distilled models. Extensive experiments show notable\nimprovements in text alignment and human preference, offering a highly\nefficient and universally applicable solution.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.07677.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63973ee44e7b4959dc98028f",
+      "avatarUrl": "/avatars/2e166fee60844729479bfa4291796c8a.svg",
+      "fullname": "Kwanyoung",
+      "name": "kwanyoung",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.11647",
+      "authors": [
+        {
+          "_id": "67d785fa473d4edd330edee1",
+          "user": {
+            "_id": "6530bf50f145530101ec03a2",
+            "avatarUrl": "/avatars/c61c00c314cf202b64968e51e855694d.svg",
+            "isPro": false,
+            "fullname": "Jianhong Bai",
+            "user": "jianhongbai",
+            "type": "user"
+          },
+          "name": "Jianhong Bai",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:47:22.245Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edee2",
+          "user": {
+            "_id": "63401c89f81b9d101361f712",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1665146415483-63401c89f81b9d101361f712.png",
+            "isPro": false,
+            "fullname": "Richard",
+            "user": "menghanxia",
+            "type": "user"
+          },
+          "name": "Menghan Xia",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:47:41.792Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edee3",
+          "name": "Xiao Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edee4",
+          "user": {
+            "_id": "60e272ca6c78a8c122b12127",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60e272ca6c78a8c122b12127/xldEGBzGrU-bX6IwAw0Ie.jpeg",
+            "isPro": false,
+            "fullname": "Xintao Wang",
+            "user": "Xintao",
+            "type": "user"
+          },
+          "name": "Xintao Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:47:51.145Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edee5",
+          "user": {
+            "_id": "6672dd6d239ba86f129c5384",
+            "avatarUrl": "/avatars/6209afb551995b12d5e0d4d95e495694.svg",
+            "isPro": false,
+            "fullname": "Lianrui Mu",
+            "user": "Mu437",
+            "type": "user"
+          },
+          "name": "Lianrui Mu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:47:58.483Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edee6",
+          "name": "Jinwen Cao",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edee7",
+          "user": {
+            "_id": "6458b8d0990172cd1d703715",
+            "avatarUrl": "/avatars/55f0695e3cb9933c3903fde5a8f740d5.svg",
+            "isPro": false,
+            "fullname": "Zuozhu Liu",
+            "user": "Zuozhu",
+            "type": "user"
+          },
+          "name": "Zuozhu Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:48:17.243Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edee8",
+          "user": {
+            "_id": "66c46129d67297a9b93e03c5",
+            "avatarUrl": "/avatars/cffd8b07fa3655e240efc8e81f99d97d.svg",
+            "isPro": false,
+            "fullname": "Haoji Hu",
+            "user": "garland1979",
+            "type": "user"
+          },
+          "name": "Haoji Hu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:48:23.846Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edee9",
+          "user": {
+            "_id": "641790e2f1e86908935d82a0",
+            "avatarUrl": "/avatars/ced7a137c6344c74b7ac0d5c84833fc8.svg",
+            "isPro": false,
+            "fullname": "Xiang Bai",
+            "user": "baixianger",
+            "type": "user"
+          },
+          "name": "Xiang Bai",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:48:29.804Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edeea",
+          "name": "Pengfei Wan",
+          "hidden": false
+        },
+        {
+          "_id": "67d785fa473d4edd330edeeb",
+          "user": {
+            "_id": "644c8324f02250233d0d67d9",
+            "avatarUrl": "/avatars/feb39d281457c1750f3eada3c060a23e.svg",
+            "isPro": false,
+            "fullname": "Di Zhang",
+            "user": "dizhang",
+            "type": "user"
+          },
+          "name": "Di Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:48:49.559Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6530bf50f145530101ec03a2/RzQL-WqDDCxBy_j4rJuMl.mp4"
+      ],
+      "publishedAt": "2025-03-14T17:59:31.000Z",
+      "submittedOnDailyAt": "2025-03-17T00:50:10.251Z",
+      "title": "ReCamMaster : Contrôleur de caméras générateur de rendu (vidéo unique)",
+      "submittedOnDailyBy": {
+        "_id": "6530bf50f145530101ec03a2",
+        "avatarUrl": "/avatars/c61c00c314cf202b64968e51e855694d.svg",
+        "isPro": false,
+        "fullname": "Jianhong Bai",
+        "user": "jianhongbai",
+        "type": "user"
+      },
+      "summary": "La contrôle des caméras est largement étudié dans des tâches de génération de vidéo basées sur des documents ou des images. Cependant, modifier la trajectoire des caméras dans un vidéo donné est un aspect important dans le domaine de la production de vidéos, mais a reçu peu d'attention. Cela se complique parce qu'il est nécessaire de respecter des contraintes supplémentaires pour maintenir l'extérieur de plusieurs cadres tout en maintenant une dynamique de motivation. Dans ce sens, nous proposons un cadre de travail pour redimensionner des vidéos générées qui inclut un contrôle des caméras appelé ReCamMaster. Ce méthode récrée la scène dynamique du vidéo d'entrée dans une nouvelle trajectoire des caméras. L'innovation clé est l'utilisation d'une structure simple et puissante pour assigner des conditions vidéo, ce qui permet d'exploiter les capacités génératives souvent négligées dans la recherche actuelle. Pour surmonter la pénurie de données d'entraînement de haute qualité, nous avons construit un ensemble de données de vidéos multi-caméras avec des détails ajustés aux caractéristiques de la production cinématographique réelle en utilisant l'engine Unreal Engine 5. Ces données permettent que le modèle s'adapte aux vidéos naturelles. Enfin, nous avons introduit une stratégie d'entraînement conçue pour améliorer la robustesse face à plusieurs entrées. Les expériences étendues montrent que notre méthode dépasse significativement les dernières approches avancées et solides. Notre méthode présente des applications prometteuses en stabilisation de vidéos, mises en valeur et invention ouverte. Page du projet : https://jianhongbai.github.io/ReCamMaster/",
+      "upvotes": 55,
+      "discussionId": "67d785fb473d4edd330edf77",
+      "ai_keywords": [
+        "ReCamMaster",
+        "text-to-video models",
+        "video conditioning mechanism",
+        "multi-camera synchronized video dataset",
+        "Unreal Engine 5",
+        "video stabilization",
+        "super-resolution",
+        "outpainting"
+      ]
+    },
+    "publishedAt": "2025-03-14T13:59:31.000Z",
+    "title": "ReCamMaster: Camera-Controlled Generative Rendering from A Single Video",
+    "summary": "Camera control has been actively studied in text or image conditioned video\ngeneration tasks. However, altering camera trajectories of a given video\nremains under-explored, despite its importance in the field of video creation.\nIt is non-trivial due to the extra constraints of maintaining multiple-frame\nappearance and dynamic synchronization. To address this, we present\nReCamMaster, a camera-controlled generative video re-rendering framework that\nreproduces the dynamic scene of an input video at novel camera trajectories.\nThe core innovation lies in harnessing the generative capabilities of\npre-trained text-to-video models through a simple yet powerful video\nconditioning mechanism -- its capability often overlooked in current research.\nTo overcome the scarcity of qualified training data, we construct a\ncomprehensive multi-camera synchronized video dataset using Unreal Engine 5,\nwhich is carefully curated to follow real-world filming characteristics,\ncovering diverse scenes and camera movements. It helps the model generalize to\nin-the-wild videos. Lastly, we further improve the robustness to diverse inputs\nthrough a meticulously designed training strategy. Extensive experiments tell\nthat our method substantially outperforms existing state-of-the-art approaches\nand strong baselines. Our method also finds promising applications in video\nstabilization, super-resolution, and outpainting. Project page:\nhttps://jianhongbai.github.io/ReCamMaster/",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6530bf50f145530101ec03a2/RzQL-WqDDCxBy_j4rJuMl.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11647.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "6530bf50f145530101ec03a2",
+      "avatarUrl": "/avatars/c61c00c314cf202b64968e51e855694d.svg",
+      "fullname": "Jianhong Bai",
+      "name": "jianhongbai",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.11646",
+      "authors": [
+        {
+          "_id": "67d78c194fd0e3fa3a082f8d",
+          "user": {
+            "_id": "634e4120038b5879133552f5",
+            "avatarUrl": "/avatars/34ec861b4bbf1aecf927a7d6e726c7a4.svg",
+            "isPro": true,
+            "fullname": "Siyuan",
+            "user": "SiyuanH",
+            "type": "user"
+          },
+          "name": "Siyuan Huang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:21.620Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78c194fd0e3fa3a082f8e",
+          "user": {
+            "_id": "670f827bb94a3734d270f707",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/D6qCPBMJAUgozfG7YTwky.png",
+            "isPro": false,
+            "fullname": "Yue Liao",
+            "user": "morninghaze",
+            "type": "user"
+          },
+          "name": "Yue Liao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:49:27.927Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78c194fd0e3fa3a082f8f",
+          "user": {
+            "_id": "620326e962b2b0e46e79971b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/620326e962b2b0e46e79971b/1FVPRpsWng5q3An4qbuYQ.jpeg",
+            "isPro": false,
+            "fullname": "Siyuan Feng",
+            "user": "Eralien",
+            "type": "user"
+          },
+          "name": "Siyuan Feng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:19.837Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78c194fd0e3fa3a082f90",
+          "name": "Shu Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67d78c194fd0e3fa3a082f91",
+          "name": "Si Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67d78c194fd0e3fa3a082f92",
+          "user": {
+            "_id": "65c04e9c27a5fdca81abcbd9",
+            "avatarUrl": "/avatars/12a155683c824fa23da4a9e2bed4f64e.svg",
+            "isPro": false,
+            "fullname": "Hongsheng LI",
+            "user": "hsli-cuhk",
+            "type": "user"
+          },
+          "name": "Hongsheng Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:49:51.674Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78c194fd0e3fa3a082f93",
+          "user": {
+            "_id": "67739bfa64e8b7438ae68eb4",
+            "avatarUrl": "/avatars/15193bfbce487b2de4ce8c86bd18885a.svg",
+            "isPro": false,
+            "fullname": "Maoqing Yao",
+            "user": "AutobotZero",
+            "type": "user"
+          },
+          "name": "Maoqing Yao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:49:59.798Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78c194fd0e3fa3a082f94",
+          "user": {
+            "_id": "646ec9b135f55eb49e405faa",
+            "avatarUrl": "/avatars/a17194be585d20e2a021e77a5a20e213.svg",
+            "isPro": false,
+            "fullname": "Guanghui Ren",
+            "user": "sundrops",
+            "type": "user"
+          },
+          "name": "Guanghui Ren",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:50:05.432Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/634e4120038b5879133552f5/2Cb7g14KRbbgg6yotocsP.mp4"
+      ],
+      "publishedAt": "2025-03-14T17:59:07.000Z",
+      "submittedOnDailyAt": "2025-03-17T01:30:24.394Z",
+      "title": "Colecta de données adversaires : apprentissage de réplication efficace et robuste de robots grâce à la collaboration avec des êtres humains pour la patente.",
+      "submittedOnDailyBy": {
+        "_id": "634e4120038b5879133552f5",
+        "avatarUrl": "/avatars/34ec861b4bbf1aecf927a7d6e726c7a4.svg",
+        "isPro": true,
+        "fullname": "Siyuan",
+        "user": "SiyuanH",
+        "type": "user"
+      },
+      "summary": "La recherche de l'efficacité des données et la reconnaissance que la qualité est plus importante que la quantité, se base sur l'hypothèse de coûts élevés associés à la collecte de données réelles, ce qui a conduit à occuper un rôle fondamental dans la manipulation de robots. Une méthodologie est proposée pour maximiser la densité d'information d'une seule instruction, réduire significativement la dépendance de grands ensembles de données et améliorer le rendement du travail. Pour cela, on présente la collection de données ennemies (Adversarial Data Collection, ADC). Cette méthodologie redefinit la collecte de données de robots par un lien humain dans le cycle (Human-in-the-Loop, HiL), grâce à une interaction bidirectionnelle temporelle entre l'humain et l'environnement. Contrairement aux systèmes traditionnels, la ADC ne registre pas des instructions dynamiques mais adopte un paradigme coopératif : dans un épisode, les opérateurs ennemis modifient dynamiquement l'état de l'objet, les conditions de l'environnement et les instructions de langage, tandis que le téléopérateur ajuste son comportement pour résoudre ces problèmes évolutifs. Dans ce processus, les changements ennemis de l'environnement, la récupération d'erreurs, l'évolution des tâches et la modification structurelle de l'environnement sont minimisés avec un minimum d'instructions. Les expériences montrent que les modèles entraînés sur ADC présentent une généralisation structurale pour des instructions non vues, une robustesse face aux changements visuels ennemis et une capacité améliorée de récupération d'erreurs. En particulier, un modèle qui utilise seulement 20% des instructions collectées sur ADC présente un rendement significativement supérieur à celui des méthodes traditionnelles qui utilisent tout l'ensemble des données. Ces avancées ferment la breche entre le paradigme d'apprentissage axé sur les données et l'introduction de robots pratiques, démontrant l'importance de la collecte et du traitement stratégique de données dans l'apprentissage de robots échelonnables. De plus, des grands ensembles de données pour des tâches d'action réelles sont construits à travers la collection de données ennemies. Ce benchmark est publié sous forme de code ouvert pour favoriser le développement de l'apprentissage lent des robots.",
+      "upvotes": 28,
+      "discussionId": "67d78c1b4fd0e3fa3a08301c",
+      "projectPage": " https://sites.google.com/view/adc-robot",
+      "ai_keywords": [
+        "Adversarial Data Collection",
+        "Human-in-the-Loop (HiL)",
+        "real-time, bidirectional human-environment interactions",
+        "collaborative perturbation paradigm",
+        "adversarial operator",
+        "tele-operator",
+        "compositional generalization",
+        "perceptual perturbations",
+        "error recovery capabilities",
+        "ADC-trained models",
+        "ADC-Robotics dataset",
+        "robotic imitation learning"
+      ]
+    },
+    "publishedAt": "2025-03-14T13:59:07.000Z",
+    "title": "Adversarial Data Collection: Human-Collaborative Perturbations for\n  Efficient and Robust Robotic Imitation Learning",
+    "summary": "The pursuit of data efficiency, where quality outweighs quantity, has emerged\nas a cornerstone in robotic manipulation, especially given the high costs\nassociated with real-world data collection. We propose that maximizing the\ninformational density of individual demonstrations can dramatically reduce\nreliance on large-scale datasets while improving task performance. To this end,\nwe introduce Adversarial Data Collection, a Human-in-the-Loop (HiL) framework\nthat redefines robotic data acquisition through real-time, bidirectional\nhuman-environment interactions. Unlike conventional pipelines that passively\nrecord static demonstrations, ADC adopts a collaborative perturbation paradigm:\nduring a single episode, an adversarial operator dynamically alters object\nstates, environmental conditions, and linguistic commands, while the\ntele-operator adaptively adjusts actions to overcome these evolving challenges.\nThis process compresses diverse failure-recovery behaviors, compositional task\nvariations, and environmental perturbations into minimal demonstrations. Our\nexperiments demonstrate that ADC-trained models achieve superior compositional\ngeneralization to unseen task instructions, enhanced robustness to perceptual\nperturbations, and emergent error recovery capabilities. Strikingly, models\ntrained with merely 20% of the demonstration volume collected through ADC\nsignificantly outperform traditional approaches using full datasets. These\nadvances bridge the gap between data-centric learning paradigms and practical\nrobotic deployment, demonstrating that strategic data acquisition, not merely\npost-hoc processing, is critical for scalable, real-world robot learning.\nAdditionally, we are curating a large-scale ADC-Robotics dataset comprising\nreal-world manipulation tasks with adversarial perturbations. This benchmark\nwill be open-sourced to facilitate advancements in robotic imitation learning.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/634e4120038b5879133552f5/2Cb7g14KRbbgg6yotocsP.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11646.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "634e4120038b5879133552f5",
+      "avatarUrl": "/avatars/34ec861b4bbf1aecf927a7d6e726c7a4.svg",
+      "fullname": "Siyuan",
+      "name": "SiyuanH",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.11224",
+      "authors": [
+        {
+          "_id": "67d788b6ba098a0651e1e235",
+          "user": {
+            "_id": "663f07d029be04778ba97871",
+            "avatarUrl": "/avatars/fb7c9d4a2c537d918a3267e7cbc03f04.svg",
+            "isPro": false,
+            "fullname": "Xingtai Lv",
+            "user": "XingtaiHF",
+            "type": "user"
+          },
+          "name": "Xingtai Lv",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:34.410Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e236",
+          "user": {
+            "_id": "679ce8c048ebd7903d76a832",
+            "avatarUrl": "/avatars/5f3fecaacfee6e2d5a72dd19fe87055a.svg",
+            "isPro": false,
+            "fullname": "Youbang Sun",
+            "user": "Youbang",
+            "type": "user"
+          },
+          "name": "Youbang Sun",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:50:17.568Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e237",
+          "user": {
+            "_id": "60bc94cd85a3ab33829b6211",
+            "avatarUrl": "/avatars/b57d36c7577fbbb42ea5b963eef4144a.svg",
+            "isPro": false,
+            "fullname": "Kaiyan Zhang",
+            "user": "iseesaw",
+            "type": "user"
+          },
+          "name": "Kaiyan Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:26.057Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e238",
+          "name": "Shang Qu",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e239",
+          "user": {
+            "_id": "647ffddeb82adfa7cc1a10d9",
+            "avatarUrl": "/avatars/26aa168d6b2068298ebb16584aa52b6c.svg",
+            "isPro": false,
+            "fullname": "zhu",
+            "user": "xuekai",
+            "type": "user"
+          },
+          "name": "Xuekai Zhu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:50:38.118Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e23a",
+          "user": {
+            "_id": "672c2d7816766a76a747b7b5",
+            "avatarUrl": "/avatars/12c7b26d2b81721ccac3a5c71e32a1a1.svg",
+            "isPro": false,
+            "fullname": "Yuchen Fan",
+            "user": "yuchenFan",
+            "type": "user"
+          },
+          "name": "Yuchen Fan",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:50:54.445Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e23b",
+          "name": "Yi Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e23c",
+          "user": {
+            "_id": "6445fa2ffc22e309d78bef3e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fa2ffc22e309d78bef3e/FQaINLd0PjgY9EnK_APRk.jpeg",
+            "isPro": false,
+            "fullname": "Messi Hua",
+            "user": "Messi-Hua",
+            "type": "user"
+          },
+          "name": "Ermo Hua",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:30.639Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e23d",
+          "user": {
+            "_id": "667e577139b49eba118d569f",
+            "avatarUrl": "/avatars/1a26dd96b4b352b8968561750ecae9a7.svg",
+            "isPro": false,
+            "fullname": "Xinwei Long",
+            "user": "xinwei666",
+            "type": "user"
+          },
+          "name": "Xinwei Long",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:51:02.068Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e23e",
+          "user": {
+            "_id": "677b80e31ad30ab2c798e776",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/X8IFnIK3TDHOGKZCzLTe8.jpeg",
+            "isPro": false,
+            "fullname": "Ning Ding",
+            "user": "BradPitt2025",
+            "type": "user"
+          },
+          "name": "Ning Ding",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:51:08.621Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d788b6ba098a0651e1e23f",
+          "user": {
+            "_id": "669f614b59adf5b56e05bce3",
+            "avatarUrl": "/avatars/ffd4189efbceb0e63a03db273065a44b.svg",
+            "isPro": false,
+            "fullname": "BowenZhou",
+            "user": "bowenZhou",
+            "type": "user"
+          },
+          "name": "Bowen Zhou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:51:15.825Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-14T09:20:31.000Z",
+      "submittedOnDailyAt": "2025-03-17T01:26:02.931Z",
+      "title": "Résumé du modèle statistique spatial sur l'effet et l'efficacité de la technologie",
+      "submittedOnDailyBy": {
+        "_id": "6445fa2ffc22e309d78bef3e",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fa2ffc22e309d78bef3e/FQaINLd0PjgY9EnK_APRk.jpeg",
+        "isPro": false,
+        "fullname": "Messi Hua",
+        "user": "Messi-Hua",
+        "type": "user"
+      },
+      "summary": "Les modèles d'état d'espace (SSMs) sont une alternative prometteuse aux modèles basés sur les transformateurs et reçoivent de plus en plus d'attention. En comparaison avec les transformateurs, les SSMs montrent des résultats exceptionnels dans des tâches qui comprennent des données séquentielles ou de grands contextes, et démontrent des améliorations efficaces indépendamment du rendement relatif. Dans cette recherche, une synthèse systématique et cohérente des SSMs est fournie, incluant leurs causes théoriques, formulations mathématiques, comparaisons avec des classes de modèles existants et une vision générale de leurs applications diverses. En divisant les SSMs en trois principales zones : l'original SSM, S4 (SSM structuré) et Manbaara (SSM sélectif), une introduction détaillée est présentée pour chaque zone. L'accent est mis sur les aspects techniques et différentes technologies importantes liées à l'efficacité et à l'efficacité des SSMs sont soulignées. Cet article vise à présenter la base théorique des SSMs aux chercheurs.",
+      "upvotes": 18,
+      "discussionId": "67d788b7ba098a0651e1e2a4",
+      "ai_keywords": [
+        "State Space Models (SSMs)",
+        "transformer-based models",
+        "sequential data",
+        "theoretical motivations",
+        "mathematical formulations",
+        "comparison",
+        "model classes",
+        "original SSM",
+        "structured SSM",
+        "S4",
+        "selective SSM",
+        "Mamba",
+        "effectiveness",
+        "efficiency"
+      ]
+    },
+    "publishedAt": "2025-03-14T05:20:31.000Z",
+    "title": "Technologies on Effectiveness and Efficiency: A Survey of State Spaces\n  Models",
+    "summary": "State Space Models (SSMs) have emerged as a promising alternative to the\npopular transformer-based models and have been increasingly gaining attention.\nCompared to transformers, SSMs excel at tasks with sequential data or longer\ncontexts, demonstrating comparable performances with significant efficiency\ngains. In this survey, we provide a coherent and systematic overview for SSMs,\nincluding their theoretical motivations, mathematical formulations, comparison\nwith existing model classes, and various applications. We divide the SSM series\ninto three main sections, providing a detailed introduction to the original\nSSM, the structured SSM represented by S4, and the selective SSM typified by\nMamba. We put an emphasis on technicality, and highlight the various key\ntechniques introduced to address the effectiveness and efficiency of SSMs. We\nhope this manuscript serves as an introduction for researchers to explore the\ntheoretical foundations of SSMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11224.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6445fa2ffc22e309d78bef3e",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fa2ffc22e309d78bef3e/FQaINLd0PjgY9EnK_APRk.jpeg",
+      "fullname": "Messi Hua",
+      "name": "Messi-Hua",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.11069",
+      "authors": [
+        {
+          "_id": "67d785458678eaf139e3c594",
+          "user": {
+            "_id": "654dbac9938fbf1e696be8aa",
+            "avatarUrl": "/avatars/b3c4035c48169c1bfb04a439fce3499f.svg",
+            "isPro": false,
+            "fullname": "Chaoyun Zhang",
+            "user": "vyokky",
+            "type": "user"
+          },
+          "name": "Chaoyun Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:51:30.401Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785458678eaf139e3c595",
+          "user": {
+            "_id": "62c6df026a092eda1f1ab6e5",
+            "avatarUrl": "/avatars/d58fff1a157b189ce2617889ef5f6e2f.svg",
+            "isPro": false,
+            "fullname": "Shilin He",
+            "user": "shilhe",
+            "type": "user"
+          },
+          "name": "Shilin He",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:51:37.539Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785458678eaf139e3c596",
+          "user": {
+            "_id": "666933c97bf97e24f7b5266e",
+            "avatarUrl": "/avatars/283961b37d463a386b08ad33dacca0f4.svg",
+            "isPro": false,
+            "fullname": "Liqun Li",
+            "user": "liqul",
+            "type": "user"
+          },
+          "name": "Liqun Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:51:57.886Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785458678eaf139e3c597",
+          "user": {
+            "_id": "67481846f47628abdd8c4397",
+            "avatarUrl": "/avatars/b43f2988ac17bd2bb2369133934ce75d.svg",
+            "isPro": false,
+            "fullname": "Si Qin",
+            "user": "SiQin88",
+            "type": "user"
+          },
+          "name": "Si Qin",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:52:05.644Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785458678eaf139e3c598",
+          "name": "Yu Kang",
+          "hidden": false
+        },
+        {
+          "_id": "67d785458678eaf139e3c599",
+          "user": {
+            "_id": "652fc9f39bc50a6c0e435224",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/652fc9f39bc50a6c0e435224/70OBVDHHBsxG2giJ-E3_1.jpeg",
+            "isPro": false,
+            "fullname": "Lin Qingwei",
+            "user": "Eliblo1969",
+            "type": "user"
+          },
+          "name": "Qingwei Lin",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:52:17.826Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d785458678eaf139e3c59a",
+          "user": {
+            "_id": "66473d2c7abe6ad66e81a3dd",
+            "avatarUrl": "/avatars/82f40244806c06ffeaa1c4265e9725ea.svg",
+            "isPro": false,
+            "fullname": "ZHANGDONGMEI",
+            "user": "ZDM6426",
+            "type": "user"
+          },
+          "name": "Dongmei Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:52:31.623Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-14T04:26:21.000Z",
+      "submittedOnDailyAt": "2025-03-17T00:43:33.225Z",
+      "title": "API Agents et GUI Agents : Séparation et Intégration",
+      "submittedOnDailyBy": {
+        "_id": "654dbac9938fbf1e696be8aa",
+        "avatarUrl": "/avatars/b3c4035c48169c1bfb04a439fce3499f.svg",
+        "isPro": false,
+        "fullname": "Chaoyun Zhang",
+        "user": "vyokky",
+        "type": "user"
+      },
+      "summary": "Les modèles de langage grand (LLMs) ne se limitent pas à la génération de simples phrases, mais renforcent les agents de logiciel qui transforment directement des commandes naturelles en actions. Les agents basés sur des API de LLMs ont atteint un niveau de premium grâce à leur puissante capacité d'automatisation et à leur intégration sans filtre avec les points d'entrée de programmation. Cependant, avec le développement récent des recherches sur les LLMs multimodales, les agents de LLMs basés sur des interfaces graphiques (GUI) ont évolué pour interagir de manière similaire à celle des humains, en utilisant des interfaces utilisateur graphiques. Ces deux paradigmes partagent la possibilité d'automatiser des tâches menées par les LLMs, mais présentent des différences notables en termes de complexité structurelle, de flux de travail de développement et de modèles d'interface utilisateur.\n\nCet article fournit une première comparaison détaillée entre les agents de LLMs basés sur des API et basés sur des GUI, en analysant systématiquement leurs différences et les points de convergence potentiels. Nous examinons ces dimensions clés et décrivons spécifiquement les scénarios où un approche hybride peut être utilisée. Nous présentons des critères de décision clairs et fournissons des exemples de cas pratiques pour guider les professionnels et les chercheurs dans la choix, la combinaison ou le mouvement vers ces paradigmes. Enfin, le développement de l'automatisation basée sur les LLMs mélange les frontières des agents d'API et GUI, offrant des solutions plus larges et adaptables pour une vaste gamme d'applications réelles, offrant une flexibilité et une adaptabilité accrues.",
+      "upvotes": 16,
+      "discussionId": "67d785468678eaf139e3c5ee"
+    },
+    "publishedAt": "2025-03-14T00:26:21.000Z",
+    "title": "API Agents vs. GUI Agents: Divergence and Convergence",
+    "summary": "Large language models (LLMs) have evolved beyond simple text generation to\npower software agents that directly translate natural language commands into\ntangible actions. While API-based LLM agents initially rose to prominence for\ntheir robust automation capabilities and seamless integration with programmatic\nendpoints, recent progress in multimodal LLM research has enabled GUI-based LLM\nagents that interact with graphical user interfaces in a human-like manner.\nAlthough these two paradigms share the goal of enabling LLM-driven task\nautomation, they diverge significantly in architectural complexity, development\nworkflows, and user interaction models.\n  This paper presents the first comprehensive comparative study of API-based\nand GUI-based LLM agents, systematically analyzing their divergence and\npotential convergence. We examine key dimensions and highlight scenarios in\nwhich hybrid approaches can harness their complementary strengths. By proposing\nclear decision criteria and illustrating practical use cases, we aim to guide\npractitioners and researchers in selecting, combining, or transitioning between\nthese paradigms. Ultimately, we indicate that continuing innovations in\nLLM-based automation are poised to blur the lines between API- and GUI-driven\nagents, paving the way for more flexible, adaptive solutions in a wide range of\nreal-world applications.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11069.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "654dbac9938fbf1e696be8aa",
+      "avatarUrl": "/avatars/b3c4035c48169c1bfb04a439fce3499f.svg",
+      "fullname": "Chaoyun Zhang",
+      "name": "vyokky",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.11514",
+      "authors": [
+        {
+          "_id": "67d778325121a10e6fc650b3",
+          "user": {
+            "_id": "668f440894dfc0ed1a7006ed",
+            "avatarUrl": "/avatars/fa0d328300b03bcbbf9b3a7532f28458.svg",
+            "isPro": false,
+            "fullname": "Pengxin Guo",
+            "user": "gpx333",
+            "type": "user"
+          },
+          "name": "Pengxin Guo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:42.855Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650b4",
+          "user": {
+            "_id": "65a28d30c0e637bd9cbddc15",
+            "avatarUrl": "/avatars/50be3e38617a51f7f8c22fa219a4d10a.svg",
+            "isPro": false,
+            "fullname": "Runxi Wang",
+            "user": "Rx-Wang",
+            "type": "user"
+          },
+          "name": "Runxi Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:39.377Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650b5",
+          "user": {
+            "_id": "66712ff09c609c2484ce4aa0",
+            "avatarUrl": "/avatars/717b96ddef8a4c19ce07ea1fd9e9fd66.svg",
+            "isPro": false,
+            "fullname": "Shuang Zeng",
+            "user": "stevezs",
+            "type": "user"
+          },
+          "name": "Shuang Zeng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:53:09.089Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650b6",
+          "user": {
+            "_id": "6479ea5effe1b559f5408453",
+            "avatarUrl": "/avatars/6077dcc62fbd41dac92ee33b3133ceec.svg",
+            "isPro": false,
+            "fullname": "Zhu",
+            "user": "Jinjing08",
+            "type": "user"
+          },
+          "name": "Jinjing Zhu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:53:22.627Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650b7",
+          "user": {
+            "_id": "66ff619fe48de0216cd43531",
+            "avatarUrl": "/avatars/e4642e02b6475cfbd677c6e28640b5b0.svg",
+            "isPro": false,
+            "fullname": "HaoningJiang",
+            "user": "haoning666",
+            "type": "user"
+          },
+          "name": "Haoning Jiang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:36.769Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650b8",
+          "user": {
+            "_id": "656f698c80ff527c44e3c33b",
+            "avatarUrl": "/avatars/19ea552ed0bb36260ab0f6e41421f9b3.svg",
+            "isPro": false,
+            "fullname": "Yanran Wang",
+            "user": "yanranw1",
+            "type": "user"
+          },
+          "name": "Yanran Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:53:29.620Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650b9",
+          "user": {
+            "_id": "66c7fb4ce2c92fe5b132f314",
+            "avatarUrl": "/avatars/22d915fa339a70803c5c748255250256.svg",
+            "isPro": false,
+            "fullname": "Yuyin Zhou",
+            "user": "RitaCoding",
+            "type": "user"
+          },
+          "name": "Yuyin Zhou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:53:35.758Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650ba",
+          "user": {
+            "_id": "653d6970885338b011d283d8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/653d6970885338b011d283d8/FNViRXsMdrhrjOurBVBSf.jpeg",
+            "isPro": false,
+            "fullname": "Feifei Wang",
+            "user": "feifeiwang",
+            "type": "user"
+          },
+          "name": "Feifei Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:53:43.569Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650bb",
+          "name": "Hui Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67d778325121a10e6fc650bc",
+          "user": {
+            "_id": "663058bc2653ec94f4a6235f",
+            "avatarUrl": "/avatars/f55b8c3c8100d6b6d65ba61abc4fb014.svg",
+            "isPro": false,
+            "fullname": "Liangqiong Qu",
+            "user": "Liangqiong-QU",
+            "type": "user"
+          },
+          "name": "Liangqiong Qu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:53:51.160Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-13T08:08:44.000Z",
+      "submittedOnDailyAt": "2025-03-17T00:38:48.278Z",
+      "title": "Exploration de la vulnérabilité de PaddlePaddle : Il faut des pratiques profondes pour le défi de l'inversion de Jenominia.",
+      "submittedOnDailyBy": {
+        "_id": "668f440894dfc0ed1a7006ed",
+        "avatarUrl": "/avatars/fa0d328300b03bcbbf9b3a7532f28458.svg",
+        "isPro": false,
+        "fullname": "Pengxin Guo",
+        "user": "gpx333",
+        "type": "user"
+      },
+      "summary": "La Federated Learning (FL) a évolué en un paradigme d'apprentissage collaboratif qui contribue à la protection de l'information personnelle en ne partageant pas les données propres. Cependant, des études récentes ont révélé que l'information personnelle peut être compromise par l'information des gradients partagés et peut être attaquée par la technique des attaques inverses de gradients (GIA). Les méthodes de GIA ont de nombreuses variantes, mais l'analyse, l'évaluation et le résumé de ces méthodes sont encore insuffisants. De plus, plusieurs articles résument les attaques à l'information personnelle dans le FL, mais les expériences larges liées aux effets et aux facteurs limitants de GIA sont rares, et la recherche dans ce domaine reste insuffisante. Pour corriger cela, nous avons effectué une revue systématique de GIA et nous avons classifié les méthodes existantes en trois catégories : GIA basées sur l'optimisation (OP-GIA), GIA basées sur la génération (GEN-GIA) et GIA basées sur l'analyse (ANA-GIA). Nous avons ensuite analysé en détail les trois formes de GIA dans le FL et évalué leur impact en termes de performance, praticité et risques potentiels. Nos résultats montrent que l'OP-GIA satisfait le rendement mais est l'attaque la plus pratique, tandis que le GEN-GIA a de nombreuses dépendances et l'ANA-GIA est facile à détecter, ce qui démontre que les deux ont une faible praticité. Finalement, nous avons fourni une structure de défense en trois étapes pour les cadres et les protocoles de FL qui mettent l'accent sur la protection de l'information personnelle et avons partagé les perspectives d'études futures à la fois des attaquants et des défenseurs. Nous espérons que notre étude puisse contribuer au design de cadres de FL plus robustes pour protéger l'information personnelle.",
+      "upvotes": 13,
+      "discussionId": "67d778395121a10e6fc652eb",
+      "ai_keywords": [
+        "Gradient Inversion Attacks (GIA)",
+        "optimization-based GIA (OP-GIA)",
+        "generation-based GIA (GEN-GIA)",
+        "analytics-based GIA (ANA-GIA)"
+      ]
+    },
+    "publishedAt": "2025-03-13T04:08:44.000Z",
+    "title": "Exploring the Vulnerabilities of Federated Learning: A Deep Dive into\n  Gradient Inversion Attacks",
+    "summary": "Federated Learning (FL) has emerged as a promising privacy-preserving\ncollaborative model training paradigm without sharing raw data. However, recent\nstudies have revealed that private information can still be leaked through\nshared gradient information and attacked by Gradient Inversion Attacks (GIA).\nWhile many GIA methods have been proposed, a detailed analysis, evaluation, and\nsummary of these methods are still lacking. Although various survey papers\nsummarize existing privacy attacks in FL, few studies have conducted extensive\nexperiments to unveil the effectiveness of GIA and their associated limiting\nfactors in this context. To fill this gap, we first undertake a systematic\nreview of GIA and categorize existing methods into three types, i.e.,\noptimization-based GIA (OP-GIA), generation-based GIA\n(GEN-GIA), and analytics-based GIA (ANA-GIA). Then, we comprehensively\nanalyze and evaluate the three types of GIA in FL, providing insights into the\nfactors that influence their performance, practicality, and potential threats.\nOur findings indicate that OP-GIA is the most practical attack setting despite\nits unsatisfactory performance, while GEN-GIA has many dependencies and ANA-GIA\nis easily detectable, making them both impractical. Finally, we offer a\nthree-stage defense pipeline to users when designing FL frameworks and\nprotocols for better privacy protection and share some future research\ndirections from the perspectives of attackers and defenders that we believe\nshould be pursued. We hope that our study can help researchers design more\nrobust FL frameworks to defend against these attacks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11514.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "668f440894dfc0ed1a7006ed",
+      "avatarUrl": "/avatars/fa0d328300b03bcbbf9b3a7532f28458.svg",
+      "fullname": "Pengxin Guo",
+      "name": "gpx333",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.10970",
+      "authors": [
+        {
+          "_id": "67d771335e9c4135a570f57f",
+          "user": {
+            "_id": "6350fc5ba8822aadf571304f",
+            "avatarUrl": "/avatars/19686add3cbdaef5772b913152333f9b.svg",
+            "isPro": false,
+            "fullname": "gasvn",
+            "user": "shgao",
+            "type": "user"
+          },
+          "name": "Shanghua Gao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:49.587Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d771335e9c4135a570f580",
+          "name": "Richard Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67d771335e9c4135a570f581",
+          "name": "Zhenglun Kong",
+          "hidden": false
+        },
+        {
+          "_id": "67d771335e9c4135a570f582",
+          "user": {
+            "_id": "643b2ce2c5f633a7fa82d507",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/643b2ce2c5f633a7fa82d507/RFXzG5tiRqVYdF-bWbNl-.png",
+            "isPro": false,
+            "fullname": "Ayush",
+            "user": "ayushnoori",
+            "type": "user"
+          },
+          "name": "Ayush Noori",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:54:34.672Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d771335e9c4135a570f583",
+          "user": {
+            "_id": "660aef84362a1d713aea88ec",
+            "avatarUrl": "/avatars/7a16c54e1ee43d5366501d12e8087a7e.svg",
+            "isPro": false,
+            "fullname": "Xiaorui Su",
+            "user": "Blair1213",
+            "type": "user"
+          },
+          "name": "Xiaorui Su",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:54:42.342Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d771335e9c4135a570f584",
+          "name": "Curtis Ginder",
+          "hidden": false
+        },
+        {
+          "_id": "67d771335e9c4135a570f585",
+          "name": "Theodoros Tsiligkaridis",
+          "hidden": false
+        },
+        {
+          "_id": "67d771335e9c4135a570f586",
+          "user": {
+            "_id": "636826f95bb06007ea0e911e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1667770136112-636826f95bb06007ea0e911e.jpeg",
+            "isPro": false,
+            "fullname": "Marinka Zitnik",
+            "user": "marinkaz",
+            "type": "user"
+          },
+          "name": "Marinka Zitnik",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:55:18.525Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-14T00:28:15.000Z",
+      "submittedOnDailyAt": "2025-03-17T02:04:58.876Z",
+      "title": "Agent AI pour la prévention de la Terre",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "La Terapéutica Precisa nécessite divers de modèles adaptatifs et génère des recommandations thérapeutiques personnalisées. Nous présentons TxAgent. TxAgent utilise un ensemble de 211 outils au sein d'un ensemble de 211 boîtes à outils, en exploitant une inférence multiniveau et une recherche de connaissances biomédicales en temps réel, pour analyser les interactions pharmacologiques, les différences, et les stratégies thérapeutiques personnalisées à l'aide d'un agent intelligent. TxAgent évalue les interactions moléculaires, pharmacologiques et cliniques entre les médicaments, spécifie les différences basées sur la maladie du patient et les médicaments concomitants, et crée des stratégies thérapeutiques adaptées aux caractéristiques personnelles du patient. Il cherche et synthétise des preuves de multiples sources biomédicales, évaluant les interactions entre les médicaments et l'état du patient, et ajuste les recommandations thérapeutiques via des inférences itératives. Il sélectionne des outils basés sur des objectifs de tâche des médicaments et exécute des appels à des fonctions structurées pour résoudre des tâches cliniques qui nécessitent une inférence clinique et une validation croisée des sources. ToolUniverse rassemble 211 outils de sources fiables, y compris tous les médicaments autorisés par la FDA depuis 1939 et des études cliniques validées sur Open Targets. TxAgent dépasse les modèles de LLMs avancés, les modèles d'outils et les agents de raisonnement, en dépassant 3,168 tâches d'inférence pharmacologique et 456 scénarios thérapeutiques de patients, en utilisant 5 nouveaux benchmarks (DrugPC, BrandPC, GenericPC, TreatmentPC, DescriptionPC). En atteignant une précision de 92,1% dans les tâches d'inférence pharmacologique ouvertes, TxAgent dépasse GPT-4o et DeepSeek-R1 (671B). Il intègre la généralisation des noms et descriptions de médicaments, l'inférence multiniveau, la gestion du savoir temporel, et des décisions d'assistance des outils pour garantir que les recommandations thérapeutiques sont alignées avec les directives cliniques existantes et les preuves de la vie réelle, réduisant le risque d'effets secondaires et améliorant les décisions thérapeutiques.",
+      "upvotes": 8,
+      "discussionId": "67d771345e9c4135a570f5d0",
+      "ai_keywords": [
+        "AI agent",
+        "multi-step reasoning",
+        "biomedical knowledge retrieval",
+        "drug interactions",
+        "contraindications",
+        "patient-specific treatment strategies",
+        "molecular levels",
+        "pharmacokinetic levels",
+        "clinical levels",
+        "patient comorbidities",
+        "concurrent medications",
+        "ToolUniverse",
+        "FDA-approved drugs",
+        "Open Targets",
+        "DrugPC",
+        "BrandPC",
+        "GenericPC",
+        "TreatmentPC",
+        "DescriptionPC",
+        "drug reasoning tasks",
+        "personalized treatment scenarios",
+        "multi-step inference",
+        "knowledge grounding",
+        "tool-assisted decision-making",
+        "clinical guidelines",
+        "real-world evidence",
+        "adverse events",
+        "therapeutic decision-making"
+      ]
+    },
+    "publishedAt": "2025-03-13T20:28:15.000Z",
+    "title": "TxAgent: An AI Agent for Therapeutic Reasoning Across a Universe of\n  Tools",
+    "summary": "Precision therapeutics require multimodal adaptive models that generate\npersonalized treatment recommendations. We introduce TxAgent, an AI agent that\nleverages multi-step reasoning and real-time biomedical knowledge retrieval\nacross a toolbox of 211 tools to analyze drug interactions, contraindications,\nand patient-specific treatment strategies. TxAgent evaluates how drugs interact\nat molecular, pharmacokinetic, and clinical levels, identifies\ncontraindications based on patient comorbidities and concurrent medications,\nand tailors treatment strategies to individual patient characteristics. It\nretrieves and synthesizes evidence from multiple biomedical sources, assesses\ninteractions between drugs and patient conditions, and refines treatment\nrecommendations through iterative reasoning. It selects tools based on task\nobjectives and executes structured function calls to solve therapeutic tasks\nthat require clinical reasoning and cross-source validation. The ToolUniverse\nconsolidates 211 tools from trusted sources, including all US FDA-approved\ndrugs since 1939 and validated clinical insights from Open Targets. TxAgent\noutperforms leading LLMs, tool-use models, and reasoning agents across five new\nbenchmarks: DrugPC, BrandPC, GenericPC, TreatmentPC, and DescriptionPC,\ncovering 3,168 drug reasoning tasks and 456 personalized treatment scenarios.\nIt achieves 92.1% accuracy in open-ended drug reasoning tasks, surpassing\nGPT-4o and outperforming DeepSeek-R1 (671B) in structured multi-step reasoning.\nTxAgent generalizes across drug name variants and descriptions. By integrating\nmulti-step inference, real-time knowledge grounding, and tool-assisted\ndecision-making, TxAgent ensures that treatment recommendations align with\nestablished clinical guidelines and real-world evidence, reducing the risk of\nadverse events and improving therapeutic decision-making.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.10970.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6382
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.10781",
+      "authors": [
+        {
+          "_id": "67d78ff6f789a7b68993ab6b",
+          "user": {
+            "_id": "62f38b19261bc5fb2e06652c",
+            "avatarUrl": "/avatars/0a7f7d63e1096f5d52bcb3be8e236c87.svg",
+            "isPro": false,
+            "fullname": "Evangelos Kazakos",
+            "user": "ekazakos",
+            "type": "user"
+          },
+          "name": "Evangelos Kazakos",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:14.132Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78ff6f789a7b68993ab6c",
+          "name": "Cordelia Schmid",
+          "hidden": false
+        },
+        {
+          "_id": "67d78ff6f789a7b68993ab6d",
+          "name": "Josef Sivic",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-13T18:21:07.000Z",
+      "submittedOnDailyAt": "2025-03-17T07:19:07.091Z",
+      "title": "Génération de captures vidéo d'entités par apprentissage basique à grande échelle",
+      "submittedOnDailyBy": {
+        "_id": "62f38b19261bc5fb2e06652c",
+        "avatarUrl": "/avatars/0a7f7d63e1096f5d52bcb3be8e236c87.svg",
+        "isPro": false,
+        "fullname": "Evangelos Kazakos",
+        "user": "ekazakos",
+        "type": "user"
+      },
+      "summary": "Nous proposons un nouvel approche pour les sous-titres vidéo et la fixation d'objets. Les objets dans les sous-titres sont fixés comme des boîtes de bords temporellement denses dans le video. Nous présentons les contributions suivantes : premièrement, nous présentons un méthode d'auto-étiquetage grand pour recueillir des sous-titres fixés dans des boîtes de bords dans chaque frame et construire des étiquetages de boîtes de bords temporellement denses et cohérents. Cette approche est appliquée au dataset HowTo100M pour construire un grand dataset de formation HowToGround1M (1M). De plus, nous présentons le modèle de génération de sous-titres vidéo basé sur l'objet, GROVE, et nous le trainons sur HowToGround1M. Deuxièmement, nous présentons un nouveau dataset de 3500 vidéos appelé iGround. Ce dataset inclut des sous-titres annotés manuellement et des boîtes de bords spatialement et temporellement denses. Cela permet d'évaluer des défis complexes et d'ajuster des modèles avec de petits ensembles de haute qualité. Troisièmement, nous comparons notre approche avec divers modèles de référence sur le dataset iGround et VidSTG, ActivityNet-Entities. Nous démontrons que notre approche atteint des résultats récents. Nous soulignons l'importance de l'utilisation du dataset HowToGround1M pour la formation préalable et vérifions la contribution technique principale du modèle après ajustement avec le dataset iGround annoté manuellement.",
+      "upvotes": 8,
+      "discussionId": "67d78ffaf789a7b68993ac8f",
+      "projectPage": "https://ekazakos.github.io/grounded_video_caption_generation/",
+      "githubRepo": "https://github.com/ekazakos/grove",
+      "ai_keywords": [
+        "temporally dense bounding boxes",
+        "automatic annotation",
+        "pre-training dataset",
+        "Grounded Video Caption Generation",
+        "spatio-temporally grounded bounding boxes",
+        "fine-tuning",
+        "state-of-the-art results",
+        "VidSTG",
+        "ActivityNet-Entities",
+        "ablations"
+      ]
+    },
+    "publishedAt": "2025-03-13T14:21:07.000Z",
+    "title": "Large-scale Pre-training for Grounded Video Caption Generation",
+    "summary": "We propose a novel approach for captioning and object grounding in video,\nwhere the objects in the caption are grounded in the video via temporally dense\nbounding boxes. We introduce the following contributions. First, we present a\nlarge-scale automatic annotation method that aggregates captions grounded with\nbounding boxes across individual frames into temporally dense and consistent\nbounding box annotations. We apply this approach on the HowTo100M dataset to\nconstruct a large-scale pre-training dataset, named HowToGround1M. We also\nintroduce a Grounded Video Caption Generation model, dubbed GROVE, and\npre-train the model on HowToGround1M. Second, we introduce a new dataset,\ncalled iGround, of 3500 videos with manually annotated captions and dense\nspatio-temporally grounded bounding boxes. This allows us to measure progress\non this challenging problem, as well as to fine-tune our model on this\nsmall-scale but high-quality data. Third, we demonstrate that our approach\nachieves state-of-the-art results on the proposed iGround dataset compared to a\nnumber of baselines, as well as on the VidSTG and ActivityNet-Entities\ndatasets. We perform extensive ablations that demonstrate the importance of\npre-training using our automatically annotated HowToGround1M dataset followed\nby fine-tuning on the manually annotated iGround dataset and validate the key\ntechnical contributions of our model.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.10781.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62f38b19261bc5fb2e06652c",
+      "avatarUrl": "/avatars/0a7f7d63e1096f5d52bcb3be8e236c87.svg",
+      "fullname": "Evangelos Kazakos",
+      "name": "ekazakos",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.10772",
+      "authors": [
+        {
+          "_id": "67d78ce0b4d0fefa68385d7f",
+          "user": {
+            "_id": "661c9059bcd78151e5c06ea1",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/661c9059bcd78151e5c06ea1/27bfNo1LZeZQ77vWuAa10.png",
+            "isPro": false,
+            "fullname": "Ju He",
+            "user": "turkeyju",
+            "type": "user"
+          },
+          "name": "Ju He",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:17.453Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78ce0b4d0fefa68385d80",
+          "user": {
+            "_id": "677b60e17279b5c57354108b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/677b60e17279b5c57354108b/YOwDhVf9DkeRjOCOLErb6.png",
+            "isPro": false,
+            "fullname": "QihangYu",
+            "user": "QihangYu",
+            "type": "user"
+          },
+          "name": "Qihang Yu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:55:33.453Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78ce0b4d0fefa68385d81",
+          "user": {
+            "_id": "639f1e519f1f2baab2f00d22",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/639f1e519f1f2baab2f00d22/pFjd51WZuVZ3A11rItvmk.jpeg",
+            "isPro": true,
+            "fullname": "Qihao Liu",
+            "user": "QHL067",
+            "type": "user"
+          },
+          "name": "Qihao Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:55:40.463Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d78ce0b4d0fefa68385d82",
+          "name": "Liang-Chieh Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-13T18:06:13.000Z",
+      "submittedOnDailyAt": "2025-03-17T01:16:42.853Z",
+      "title": "FlowTok : Mouvement continu de tokens de texte et d'image",
+      "submittedOnDailyBy": {
+        "_id": "661c9059bcd78151e5c06ea1",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/661c9059bcd78151e5c06ea1/27bfNo1LZeZQ77vWuAa10.png",
+        "isPro": false,
+        "fullname": "Ju He",
+        "user": "turkeyju",
+        "type": "user"
+      },
+      "summary": "La connexion des valeurs entre modèles est un élément essentiel dans la génération croisée de modèles. Dans les méthodes précédentes, on considérait les modèles de texte comme des signaux conditionnels pour guider le processus de traitement de bruit gaussien vers un modèle d'image cible de manière progressive. Cependant, il est plus simple d'essayer cela de manière plus simple. Cela est réalisé en utilisant le Flow Matching pour provoquer des changements directs entre modèles de texte et d'image. Cela implique de projeter les deux modèles dans un espace potentiel commun, une tâche qui peut être très difficile en raison des représentations uniques de chacun. Les modèles de texte sont sémantiques de haute dimension et sont représentés par des tokens 1D, tandis que les images sont spatialement étendues et ont une représentation potentielle 2D. Pour résoudre cela, on introduit FlowTok. FlowTok codifie les images dans une simple représentation de tokens 1D, créant un cadre minimal pour que le flux soit naturel entre texte et image. Comparé aux méthodes existantes, cette découpe réduit le taille de l'espace potentiel d'un facteur de 3.3 à 256 de résolution d'image, réduisant la nécessité de structures conditionnelles complexes ou de programmation de bruit. De plus, FlowTok peut étendre la génération de texte à des images de manière nature en utilisant la même formule de calcul. Ce système se concentre sur une architecture de flux de tokens 1D, améliorant significativement la vitesse de sampling avec une efficacité de mémoire élevée et moins de ressources d'entraînement. Le code est disponible sur https://github.com/bytedance/1d-tokenizer.",
+      "upvotes": 8,
+      "discussionId": "67d78ce1b4d0fefa68385dc8",
+      "projectPage": "https://tacju.github.io/projects/flowtok.html",
+      "githubRepo": "https://github.com/bytedance/1d-tokenizer/",
+      "ai_keywords": [
+        "cross-modality generation",
+        "flow matching",
+        "latent space",
+        "denoising process",
+        "Gaussian noise",
+        "semantic",
+        "1D tokens",
+        "2D latent embeddings",
+        "FlowTok",
+        "compact 1D token representation",
+        "image-to-text generation",
+        "memory-efficient",
+        "sampling speeds",
+        "state-of-the-art models"
+      ]
+    },
+    "publishedAt": "2025-03-13T14:06:13.000Z",
+    "title": "FlowTok: Flowing Seamlessly Across Text and Image Tokens",
+    "summary": "Bridging different modalities lies at the heart of cross-modality generation.\nWhile conventional approaches treat the text modality as a conditioning signal\nthat gradually guides the denoising process from Gaussian noise to the target\nimage modality, we explore a much simpler paradigm-directly evolving between\ntext and image modalities through flow matching. This requires projecting both\nmodalities into a shared latent space, which poses a significant challenge due\nto their inherently different representations: text is highly semantic and\nencoded as 1D tokens, whereas images are spatially redundant and represented as\n2D latent embeddings. To address this, we introduce FlowTok, a minimal\nframework that seamlessly flows across text and images by encoding images into\na compact 1D token representation. Compared to prior methods, this design\nreduces the latent space size by 3.3x at an image resolution of 256,\neliminating the need for complex conditioning mechanisms or noise scheduling.\nMoreover, FlowTok naturally extends to image-to-text generation under the same\nformulation. With its streamlined architecture centered around compact 1D\ntokens, FlowTok is highly memory-efficient, requires significantly fewer\ntraining resources, and achieves much faster sampling speeds-all while\ndelivering performance comparable to state-of-the-art models. Code will be\navailable at https://github.com/bytedance/1d-tokenizer.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.10772.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "661c9059bcd78151e5c06ea1",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/661c9059bcd78151e5c06ea1/27bfNo1LZeZQ77vWuAa10.png",
+      "fullname": "Ju He",
+      "name": "turkeyju",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.10632",
+      "authors": [
+        {
+          "_id": "67d4f1b1643653fd1cea5b5a",
+          "user": {
+            "_id": "66d5279130d7ea0b28d6d5d2",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66d5279130d7ea0b28d6d5d2/oGFmux--lARBF4PKSkHAu.png",
+            "isPro": false,
+            "fullname": "Subhajit Maity",
+            "user": "maitysubhajit",
+            "type": "user"
+          },
+          "name": "Subhajit Maity",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-03-15T03:19:40.103Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d4f1b1643653fd1cea5b5b",
+          "name": "Killian Hitsman",
+          "hidden": false
+        },
+        {
+          "_id": "67d4f1b1643653fd1cea5b5c",
+          "name": "Xin Li",
+          "hidden": false
+        },
+        {
+          "_id": "67d4f1b1643653fd1cea5b5d",
+          "user": {
+            "_id": "67d58d156db0e6f0c33c0f60",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67d58d156db0e6f0c33c0f60/9KiFw0iEMZQHcHnm1k0ED.jpeg",
+            "isPro": false,
+            "fullname": "Aritra Dutta",
+            "user": "aritradutta",
+            "type": "user"
+          },
+          "name": "Aritra Dutta",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-03-15T14:35:55.373Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-13T17:59:52.000Z",
+      "submittedOnDailyAt": "2025-03-17T01:09:07.184Z",
+      "title": "\"Attention de Cormorant-Arnold : Est-ce que l'attention apprenable est la plus adaptée pour des canaux visuels ou visu-temporels ?\"",
+      "submittedOnDailyBy": {
+        "_id": "66d5279130d7ea0b28d6d5d2",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66d5279130d7ea0b28d6d5d2/oGFmux--lARBF4PKSkHAu.png",
+        "isPro": false,
+        "fullname": "Subhajit Maity",
+        "user": "maitysubhajit",
+        "type": "user"
+      },
+      "summary": "Les KANs (Réseaux de Kormogorov-Arnold) sont une innovation impressionnante qui permet de capturer des relations plus complexes à partir de données en utilisant des fonctions actives apprenables. Cependant, bien que utiles pour l'exploration de représentations symétriques et l'apprentissage continu, leur efficacité dans des tâches d'apprentissage automatique complexes est un sujet controversé. Actuellement, les KANs remplacent les perceptrons de couches multiples (MLPs) par des architectures de réseau profond. Dans cet article, on désigne d'abord les KArAt (Attention de Kormogorov-Arnold) générales et apprenables indépendamment de la base, en les ajoutant comme couches aux ViTs. Cependant, en raison des coûts computationnels et mémoires élevés, on propose des versions modulaires, et en particulier, on conceit la KArAt-Fourier comme une attention apprenable. Les versions de KArAt-Fourier et leurs variantes dépassent ou sont comparables aux versions de référence de ViTs sur les ensembles de données CIFAR-10, CIFAR-100 et ImageNet-1K. On analyse les capacités de rendement et de généralisation de ces architectures, en les comparant aux ViTs, à travers un analyse détaillée des scénarios de perte, de distribution des poids, des chemins d'optimisation, de visualisation de l'attention et du comportement spectral. L'objectif de l'article n'est pas de générer une attention efficace en termes de paramètres et de calcul, mais d'inviter la communauté à explorer la combinaison de KANs avec des architectures plus avancées. Les codes ouverts et détails d'implémentation sont disponibles sur la URL suivante : https://subhajitmaity.me/KArAt",
+      "upvotes": 5,
+      "discussionId": "67d4f1b6643653fd1cea5d20",
+      "projectPage": "https://subhajitmaity.me/KArAt",
+      "githubRepo": "https://github.com/MaitySubhajit/KArAt",
+      "ai_keywords": [
+        "Kolmogorov-Arnold networks (KANs)",
+        "learnable activation functions",
+        "multilayer perceptrons (MLPs)",
+        "vision Transformers (ViTs)",
+        "Kolmogorov-Arnold Attention (KArAt)",
+        "Fourier-KArAt",
+        "loss landscapes",
+        "weight distributions",
+        "optimizer path",
+        "attention visualization",
+        "spectral behavior"
+      ]
+    },
+    "publishedAt": "2025-03-13T13:59:52.000Z",
+    "title": "Kolmogorov-Arnold Attention: Is Learnable Attention Better For Vision\n  Transformers?",
+    "summary": "Kolmogorov-Arnold networks (KANs) are a remarkable innovation consisting of\nlearnable activation functions with the potential to capture more complex\nrelationships from data. Although KANs are useful in finding symbolic\nrepresentations and continual learning of one-dimensional functions, their\neffectiveness in diverse machine learning (ML) tasks, such as vision, remains\nquestionable. Presently, KANs are deployed by replacing multilayer perceptrons\n(MLPs) in deep network architectures, including advanced architectures such as\nvision Transformers (ViTs). In this paper, we are the first to design a general\nlearnable Kolmogorov-Arnold Attention (KArAt) for vanilla ViTs that can operate\non any choice of basis. However, the computing and memory costs of training\nthem motivated us to propose a more modular version, and we designed particular\nlearnable attention, called Fourier-KArAt. Fourier-KArAt and its variants\neither outperform their ViT counterparts or show comparable performance on\nCIFAR-10, CIFAR-100, and ImageNet-1K datasets. We dissect these architectures'\nperformance and generalization capacity by analyzing their loss landscapes,\nweight distributions, optimizer path, attention visualization, and spectral\nbehavior, and contrast them with vanilla ViTs. The goal of this paper is not to\nproduce parameter- and compute-efficient attention, but to encourage the\ncommunity to explore KANs in conjunction with more advanced architectures that\nrequire a careful understanding of learnable activations. Our open-source code\nand implementation details are available on: https://subhajitmaity.me/KArAt",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.10632.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66d5279130d7ea0b28d6d5d2",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66d5279130d7ea0b28d6d5d2/oGFmux--lARBF4PKSkHAu.png",
+      "fullname": "Subhajit Maity",
+      "name": "maitysubhajit",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.09279",
+      "authors": [
+        {
+          "_id": "67d2bd340860f2d7ff10e3dc",
+          "user": {
+            "_id": "66a9b3533d417b0baa9220a6",
+            "avatarUrl": "/avatars/adc372bd24df1d3bf43258833411e8af.svg",
+            "isPro": false,
+            "fullname": "Luozheng Qin",
+            "user": "Fr0zencr4nE",
+            "type": "user"
+          },
+          "name": "Luozheng Qin",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:56:11.189Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d2bd340860f2d7ff10e3dd",
+          "name": "Zhiyu Tan",
+          "hidden": false
+        },
+        {
+          "_id": "67d2bd340860f2d7ff10e3de",
+          "user": {
+            "_id": "6304d630dae2eb7d084148c7",
+            "avatarUrl": "/avatars/7d7a6ca99334bdae3ed1752ff40a8d94.svg",
+            "isPro": false,
+            "fullname": "mengping yang",
+            "user": "Kobeshegu",
+            "type": "user"
+          },
+          "name": "Mengping Yang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:56:25.200Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d2bd340860f2d7ff10e3df",
+          "user": {
+            "_id": "658ea92268d0b7633176b4ed",
+            "avatarUrl": "/avatars/40173c9126dccfe78bc46b12c6ced8c8.svg",
+            "isPro": false,
+            "fullname": "xiaomeng yang",
+            "user": "xiaomengyang",
+            "type": "user"
+          },
+          "name": "Xiaomeng Yang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:56:33.077Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d2bd340860f2d7ff10e3e0",
+          "name": "Hao Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T11:25:04.000Z",
+      "submittedOnDailyAt": "2025-03-17T00:46:46.368Z",
+      "title": "Córdoba : Capture vidéo détaillée basée sur des données synthétiques et apprentissage basé sur les activités humaines",
+      "submittedOnDailyBy": {
+        "_id": "66a9b3533d417b0baa9220a6",
+        "avatarUrl": "/avatars/adc372bd24df1d3bf43258833411e8af.svg",
+        "isPro": false,
+        "fullname": "Luozheng Qin",
+        "user": "Fr0zencr4nE",
+        "type": "user"
+      },
+      "summary": "Video Detailed Captioning (VDC) est un travail important qui relie le langage visuel, permettant des explications détaillées pour des contenus vidéo complexes. Dans cet article, nous évalue en détail la dernière technologie disponible et identifions deux limites cruciales : la capacité de se concentrer sur des descriptions spécifiques et la divergence avec les préférences humaines. Pour résoudre ces problèmes, nous proposons une nouvelle chaîne d'approfondissement d'entraînement en trois étapes appelée Cockatiel. Cette chaîne d'approfondissement combine l'entraînement synthétique et humain pour améliorer le rendement de VDC. Dans la première étape, nous obtenons des scores à partir de jeux de données détaillés, sélectionnant des explications synthétiques qui montrent un haut rendement en correspondance vidéo-description et qui sont alignées avec les préférences humaines, en ignorant les autres. Ensuite, nous entraînons Cockatiel-13B avec ce jeu d'entraînement ajusté, intégrant les forces du modèle avec les préférences humaines. Finalement, Cockatiel-8B évolue de Cockatiel-13B, en prioritisant l'utilisabilité. Des expériences étendues et de qualité reflètent l'effet de notre méthode, établissant de nouveaux rendements de pointe en VDCSCORE et dépassant les options avancées, démontrant une grande différenciation avec les préférences humaines et dépassant les résultats d'évaluation humaine.",
+      "upvotes": 4,
+      "discussionId": "67d2bd370860f2d7ff10e4da",
+      "ai_keywords": [
+        "Cockatiel",
+        "three-stage training pipeline",
+        "synthetic and human-aligned training",
+        "fine-grained video-caption alignment",
+        "scorer",
+        "meticulously annotated dataset",
+        "curated dataset",
+        "assembled model strengths",
+        "human preferences",
+        "VDCSCORE",
+        "dimension-balanced way",
+        "human evaluation results"
+      ]
+    },
+    "publishedAt": "2025-03-12T07:25:04.000Z",
+    "title": "Cockatiel: Ensembling Synthetic and Human Preferenced Training for\n  Detailed Video Caption",
+    "summary": "Video Detailed Captioning (VDC) is a crucial task for vision-language\nbridging, enabling fine-grained descriptions of complex video content. In this\npaper, we first comprehensively benchmark current state-of-the-art approaches\nand systematically identified two critical limitations: biased capability\ntowards specific captioning aspect and misalignment with human preferences. To\naddress these deficiencies, we propose Cockatiel, a novel three-stage training\npipeline that ensembles synthetic and human-aligned training for improving VDC\nperformance. In the first stage, we derive a scorer from a meticulously\nannotated dataset to select synthetic captions high-performing on certain\nfine-grained video-caption alignment and human-preferred while disregarding\nothers. Then, we train Cockatiel-13B, using this curated dataset to infuse it\nwith assembled model strengths and human preferences. Finally, we further\ndistill Cockatiel-8B from Cockatiel-13B for the ease of usage. Extensive\nquantitative and qualitative experiments reflect the effectiveness of our\nmethod, as we not only set new state-of-the-art performance on VDCSCORE in a\ndimension-balanced way but also surpass leading alternatives on human\npreference by a large margin as depicted by the human evaluation results.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.09279.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66a9b3533d417b0baa9220a6",
+      "avatarUrl": "/avatars/adc372bd24df1d3bf43258833411e8af.svg",
+      "fullname": "Luozheng Qin",
+      "name": "Fr0zencr4nE",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.10696",
+      "authors": [
+        {
+          "_id": "67d7e9bd93b8599318993db2",
+          "name": "Yefei He",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e9bd93b8599318993db3",
+          "name": "Yuanyu He",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e9bd93b8599318993db4",
+          "name": "Shaoxuan He",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e9bd93b8599318993db5",
+          "name": "Feng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e9bd93b8599318993db6",
+          "name": "Hong Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e9bd93b8599318993db7",
+          "name": "Kaipeng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e9bd93b8599318993db8",
+          "name": "Bohan Zhuang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T05:52:27.000Z",
+      "submittedOnDailyAt": "2025-03-17T07:53:13.467Z",
+      "title": "Visualisation Efficace par Modélisation de Régression sur des Arbres de Trees Adjacents",
+      "submittedOnDailyBy": {
+        "_id": "65a88c3d26598b995531fff1",
+        "avatarUrl": "/avatars/b1a524857d8572d0405476661b434160.svg",
+        "isPro": false,
+        "fullname": "Yefei He",
+        "user": "yefly",
+        "type": "user"
+      },
+      "summary": "Les modèles visuels autorégressifs typiquement se alignent sur un paradigme de \"prédiction du token suivant\" en ordre de raster, ce qui ignore la localité spatiale et temporelle inhérente au contenu visuel. Spécifiquement, les tokens visuels montrent des corrélations significativement plus fortes avec les tokens adjacents spatialement ou temporellement par rapport à ceux qui sont éloignés. Dans cet article, nous proposons le Modèle Autorégressif des Voisins (NAR), un nouveau paradigme qui formule la génération visuelle autorégressive comme un processus de projection progressive, suivant un mécanisme de \"prédiction du voisin proche\" de proche à loin. Partant d'un token initial, les autres tokens sont décodés dans l'ordre ascendant de leur distance de Manhattan par rapport au token initial dans l'espace espace-temporel, étendant progressivement la frontière de l'aire décodée. Pour permettre la prédiction parallèle de multiples tokens adjacents dans l'espace espace-temporel, nous introduisons un ensemble de têtes de décodage orientées par dimensions, chacune prédisant le token suivant le long d'une dimension orthogonale mutuelle. Pendant l'inférence, tous les tokens adjacents aux tokens décodés sont traités en parallèle, réduisant significativement les étapes de propagation du modèle pour la génération. Des expériences sur ImageNet256 x 256 et UCF101 montrent que NAR atteint un accroissement de la vitesse de travail de 2,4 fois et 8,6 fois respectivement, obtenant des meilleures scores de FID/FVD pour les deux tâches de génération d'images et de vidéos par rapport au approche PAR-4X. Lors de l'évaluation sur le benchmark de génération d'images à partir du texte GenEval, NAR avec 0,8B paramètres dépasse Chameleon-7B tout en utilisant seulement 0,4 des données d'entraînement. Le code est disponible sur https://github.com/ThisisBillhe/NAR.",
+      "upvotes": 3,
+      "discussionId": "67d7e9c093b8599318993e93",
+      "projectPage": "https://yuanyu0.github.io/nar/",
+      "githubRepo": "https://github.com/ThisisBillhe/NAR",
+      "ai_keywords": [
+        "Neighboring Autoregressive Modeling (NAR)",
+        "raster-order",
+        "next-token prediction",
+        "spatial and temporal locality",
+        "visual tokens",
+        "spatially or temporally adjacent tokens",
+        "outpainting procedure",
+        "near-to-far prediction",
+        "Manhattan distance",
+        "spatial-temporal space",
+        "dimension-oriented decoding heads",
+        "FID (Fréchet Inception Distance)",
+        "FVD (Fréchet Video Distance)",
+        "ImageNet$256\\times 256$",
+        "UCF101",
+        "text-to-image generation benchmark GenEval",
+        "Chameleon-7B",
+        "parameter-efficient fine-tuning"
+      ]
+    },
+    "publishedAt": "2025-03-12T01:52:27.000Z",
+    "title": "Neighboring Autoregressive Modeling for Efficient Visual Generation",
+    "summary": "Visual autoregressive models typically adhere to a raster-order ``next-token\nprediction\" paradigm, which overlooks the spatial and temporal locality\ninherent in visual content. Specifically, visual tokens exhibit significantly\nstronger correlations with their spatially or temporally adjacent tokens\ncompared to those that are distant. In this paper, we propose Neighboring\nAutoregressive Modeling (NAR), a novel paradigm that formulates autoregressive\nvisual generation as a progressive outpainting procedure, following a\nnear-to-far ``next-neighbor prediction\" mechanism. Starting from an initial\ntoken, the remaining tokens are decoded in ascending order of their Manhattan\ndistance from the initial token in the spatial-temporal space, progressively\nexpanding the boundary of the decoded region. To enable parallel prediction of\nmultiple adjacent tokens in the spatial-temporal space, we introduce a set of\ndimension-oriented decoding heads, each predicting the next token along a\nmutually orthogonal dimension. During inference, all tokens adjacent to the\ndecoded tokens are processed in parallel, substantially reducing the model\nforward steps for generation. Experiments on ImageNet256times 256 and UCF101\ndemonstrate that NAR achieves 2.4times and 8.6times higher throughput\nrespectively, while obtaining superior FID/FVD scores for both image and video\ngeneration tasks compared to the PAR-4X approach. When evaluating on\ntext-to-image generation benchmark GenEval, NAR with 0.8B parameters\noutperforms Chameleon-7B while using merely 0.4 of the training data. Code is\navailable at https://github.com/ThisisBillhe/NAR.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.10696.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "65a88c3d26598b995531fff1",
+      "avatarUrl": "/avatars/b1a524857d8572d0405476661b434160.svg",
+      "fullname": "Yefei He",
+      "name": "yefly",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.06674",
+      "authors": [
+        {
+          "_id": "67d6881cf997964e21f90598",
+          "user": {
+            "_id": "65f7e6856bd4bac5b6a4ecc3",
+            "avatarUrl": "/avatars/9c0c48310fb5e99c19700316a0ab531e.svg",
+            "isPro": false,
+            "fullname": "Yihong Luo",
+            "user": "Luo-Yihong",
+            "type": "user"
+          },
+          "name": "Yihong Luo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:52.452Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d6881cf997964e21f90599",
+          "user": {
+            "_id": "636a40faa6f948c4f0c62ae5",
+            "avatarUrl": "/avatars/30c35b194ba84d6e274df30e91a8cc45.svg",
+            "isPro": false,
+            "fullname": "Tianyang Hu",
+            "user": "whatlegequ",
+            "type": "user"
+          },
+          "name": "Tianyang Hu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:56:48.283Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d6881cf997964e21f9059a",
+          "user": {
+            "_id": "67b91a3c186bc4f8d83c94cf",
+            "avatarUrl": "/avatars/a79538be4b5ed02cd54556458375e4af.svg",
+            "isPro": false,
+            "fullname": "Jiacheng Sun",
+            "user": "JIACSUN96",
+            "type": "user"
+          },
+          "name": "Jiacheng Sun",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:56:55.114Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d6881cf997964e21f9059b",
+          "name": "Yujun Cai",
+          "hidden": false
+        },
+        {
+          "_id": "67d6881cf997964e21f9059c",
+          "user": {
+            "_id": "636d660056c0762cfd9dc8d5",
+            "avatarUrl": "/avatars/50ea2100e00b67ef10adc57556477184.svg",
+            "isPro": false,
+            "fullname": "jing tang",
+            "user": "jingtang",
+            "type": "user"
+          },
+          "name": "Jing Tang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-17T08:57:09.362Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-09T15:53:49.000Z",
+      "submittedOnDailyAt": "2025-03-17T02:34:51.976Z",
+      "title": "Les modèles de diffusion avec peu de pas d'apprentissage se alignent sur la distribution des orbites grâce à la correspondance de distributions.",
+      "submittedOnDailyBy": {
+        "_id": "65f7e6856bd4bac5b6a4ecc3",
+        "avatarUrl": "/avatars/9c0c48310fb5e99c19700316a0ab531e.svg",
+        "isPro": false,
+        "fullname": "Yihong Luo",
+        "user": "Luo-Yihong",
+        "type": "user"
+      },
+      "summary": "La vitesse accrue du sampling dans les modèles de diffusion est cruciale pour l'introduction d'une AIGC efficace. Le méthode de conception est un approche pour comparer des distributions statistiques, permettant de restreindre le sampling à un seul pas pour des tâches complexes (par exemple, la génération d'images à partir du texte), mais présente des limitations pour des tâches plus complexes. La génération en peu de pas équilibre bien la vitesse et la qualité, mais les approches actuelles ont des limitations : les méthodes de comparaison de distributions statistiques ont peu de flexibilité pour plusieurs pas de sampling, et les méthodes de comparaison de trajectoires réduisent souvent la qualité des images. Pour corriger ces erreurs, nous proposons d'apprendre une nouvelle distribution statistique intégrée qui combine les forces de la comparaison de distributions et de trajectoires. Notre méthode introduit un objectif pour ajuster la distribution statistique des résultats sans données d'entraînement, et sépare les objectifs d'apprentissage dans différents pas pour faciliter une plus grande flexibilité dans le sampling. Cet approche soutient la génération d'images de haute qualité dans des samplings déterministes et adapte aux multiples pas de sampling de manière flexible, atteignant le rendement de la pointe. Notre modèle, TDM, dépasse les méthodes actuelles par rapport à SDXL et PixArt-alpha, offrant une qualité supérieure et un coût d'entraînement significativement réduit. En particulier, notre méthode intègre la distribution statistique des résultats dans un générateur de 4 pas pour PixArt-alpha, dépassant les préférences réelles des utilisateurs. Cela est réalisé en 1024 itérations de résolution 1024 avec 2A800 heures (0.01% du coût d'entraînement du modèle d'entraînement). De plus, notre proposition TDM peut accélérer la génération de vidéos à partir du texte. En particulier, en utilisant VBench avec 4NFE, TDM dépasse le modèle d'entraînement (CogVideoX-2B), améliorant le score général de 80.91 à 81.65. Page du projet : https://tdm-t2x.github.io/",
+      "upvotes": 3,
+      "discussionId": "67d6881ef997964e21f90660",
+      "projectPage": "https://tdm-t2x.github.io/",
+      "githubRepo": "https://github.com/Luo-Yihong/TDM",
+      "ai_keywords": [
+        "diffusion model sampling",
+        "diffusion distillation",
+        "distribution matching",
+        "trajectory matching",
+        "few-step generation",
+        "Trajectory Distribution Matching (TDM)",
+        "data-free score distillation",
+        "sampling-steps-aware objective",
+        "deterministic sampling",
+        "state-of-the-art performance",
+        "SDXL",
+        "PixArt-$\\alpha$",
+        "TDM",
+        "text-to-video diffusion",
+        "CogVideoX-2B",
+        "VBench",
+        "NFE"
+      ]
+    },
+    "publishedAt": "2025-03-09T11:53:49.000Z",
+    "title": "Learning Few-Step Diffusion Models by Trajectory Distribution Matching",
+    "summary": "Accelerating diffusion model sampling is crucial for efficient AIGC\ndeployment. While diffusion distillation methods -- based on distribution\nmatching and trajectory matching -- reduce sampling to as few as one step, they\nfall short on complex tasks like text-to-image generation. Few-step generation\noffers a better balance between speed and quality, but existing approaches face\na persistent trade-off: distribution matching lacks flexibility for multi-step\nsampling, while trajectory matching often yields suboptimal image quality. To\nbridge this gap, we propose learning few-step diffusion models by Trajectory\nDistribution Matching (TDM), a unified distillation paradigm that combines the\nstrengths of distribution and trajectory matching. Our method introduces a\ndata-free score distillation objective, aligning the student's trajectory with\nthe teacher's at the distribution level. Further, we develop a\nsampling-steps-aware objective that decouples learning targets across different\nsteps, enabling more adjustable sampling. This approach supports both\ndeterministic sampling for superior image quality and flexible multi-step\nadaptation, achieving state-of-the-art performance with remarkable efficiency.\nOur model, TDM, outperforms existing methods on various backbones, such as SDXL\nand PixArt-alpha, delivering superior quality and significantly reduced\ntraining costs. In particular, our method distills PixArt-alpha into a\n4-step generator that outperforms its teacher on real user preference at 1024\nresolution. This is accomplished with 500 iterations and 2 A800 hours -- a mere\n0.01% of the teacher's training cost. In addition, our proposed TDM can be\nextended to accelerate text-to-video diffusion. Notably, TDM can outperform its\nteacher model (CogVideoX-2B) by using only 4 NFE on VBench, improving the total\nscore from 80.91 to 81.65. Project page: https://tdm-t2x.github.io/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.06674.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "65f7e6856bd4bac5b6a4ecc3",
+      "avatarUrl": "/avatars/9c0c48310fb5e99c19700316a0ab531e.svg",
+      "fullname": "Yihong Luo",
+      "name": "Luo-Yihong",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.06553",
+      "authors": [
+        {
+          "_id": "67cfcf664dac6ed12db8b10a",
+          "name": "Jiaxin Ai",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b10b",
+          "name": "Pengfei Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b10c",
+          "name": "Zhaopan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b10d",
+          "name": "Ming Li",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b10e",
+          "name": "Fanrui Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b10f",
+          "name": "Zizhen Li",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b110",
+          "name": "Jianwen Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b111",
+          "name": "Yukang Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b112",
+          "name": "Baojin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b113",
+          "name": "Zhongyuan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67cfcf664dac6ed12db8b114",
+          "name": "Kaipeng Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-09T10:55:51.000Z",
+      "submittedOnDailyAt": "2025-03-17T07:32:38.224Z",
+      "title": "ProJudge : Benchmark de l'Université de Damocles et le Dataset de Tuning de l'Instrumentation de Juges Procésaux basé sur le MLLM",
+      "submittedOnDailyBy": {
+        "_id": "65f1713552c38a91e0a445e8",
+        "avatarUrl": "/avatars/47ab3ada51c9b9976ac1cd0c4301c373.svg",
+        "isPro": false,
+        "fullname": "kaipeng",
+        "user": "kpzhang996",
+        "type": "user"
+      },
+      "summary": "Les modèles de langage multimodal d'IA (MLLMs) souvent committent des erreurs fréquemment lorsqu'ils abordent des problèmes scientifiques, ce qui rend l'évaluation de la validité de leurs raisons cruciale pour garantir la confiance et révéler les faiblesses subtiles du modèle. L'évaluation humaine est complexe et coûteuse, ce qui a conduit à la généralisation de l'utilisation de modèles de MLLMs dans l'automatisation des processus d'évaluation. Cependant, la confiance dans ces modèles d'évaluation est incertaine. Dans ce contexte, nous présentons ProJudgeBench, le premier benchmark détaillé spécifiquement conçu pour évaluer la capacité des jurés basés sur des MLLMs. ProJudgeBench s'étend à 4 domaines scientifiques, inclut différents niveaux de difficulté et de contenu, et comprend 2 400 cas de test et 50 118 étiquettes au niveau d'étape. Chaque étape est enregistrée avec précision, type d'erreur et explication par des experts humains, permettant d'évaluer la capacité du juré, la classification et le diagnostic. L'évaluation sur ProJudgeBench montre une grande différence de performance entre les modèles open-source et les institutions commerciales. Pour compenser cette différence, nous proposons ProJudge-173k et une stratégie de fine-tuning en deux étapes dynamiques. Cette proposition améliore significativement la capacité d'évaluation des processus dans les modèles open-source. Tous les ressources seront publiées pour des études futurs sur l'évaluation des processus d'IA avec confiance.",
+      "upvotes": 3,
+      "discussionId": "67cfcf684dac6ed12db8b185",
+      "ai_keywords": [
+        "ProJudgeBench",
+        "multi-modal large language models (MLLMs)",
+        "Reasoning processes",
+        "Automated process judges",
+        "Step-level labels",
+        "Scientific disciplines",
+        "Multi-modal content",
+        "Error classification",
+        "Dynamic Dual-Phase fine-tuning",
+        "Instruction-tuning dataset",
+        "Problem-solving reasoning"
+      ]
+    },
+    "publishedAt": "2025-03-09T06:55:51.000Z",
+    "title": "ProJudge: A Multi-Modal Multi-Discipline Benchmark and\n  Instruction-Tuning Dataset for MLLM-based Process Judges",
+    "summary": "As multi-modal large language models (MLLMs) frequently exhibit errors when\nsolving scientific problems, evaluating the validity of their reasoning\nprocesses is critical for ensuring reliability and uncovering fine-grained\nmodel weaknesses. Since human evaluation is laborious and costly, prompting\nMLLMs as automated process judges has become a common practice. However, the\nreliability of these model-based judges remains uncertain. To address this, we\nintroduce ProJudgeBench, the first comprehensive benchmark specifically\ndesigned for evaluating abilities of MLLM-based process judges. ProJudgeBench\ncomprises 2,400 test cases and 50,118 step-level labels, spanning four\nscientific disciplines with diverse difficulty levels and multi-modal content.\nIn ProJudgeBench, each step is meticulously annotated by human experts for\ncorrectness, error type, and explanation, enabling a systematic evaluation of\njudges' capabilities to detect, classify and diagnose errors. Evaluation on\nProJudgeBench reveals a significant performance gap between open-source and\nproprietary models. To bridge this gap, we further propose ProJudge-173k, a\nlarge-scale instruction-tuning dataset, and a Dynamic Dual-Phase fine-tuning\nstrategy that encourages models to explicitly reason through problem-solving\nbefore assessing solutions. Both contributions significantly enhance the\nprocess evaluation capabilities of open-source models. All the resources will\nbe released to foster future research of reliable multi-modal process\nevaluation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.06553.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65f1713552c38a91e0a445e8",
+      "avatarUrl": "/avatars/47ab3ada51c9b9976ac1cd0c4301c373.svg",
+      "fullname": "kaipeng",
+      "name": "kpzhang996",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.06542",
+      "authors": [
+        {
+          "_id": "67d7e4ec1414fcb6196e79ba",
+          "name": "Jianwen Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79bb",
+          "name": "Yukang Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79bc",
+          "name": "Chuanhao Li",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79bd",
+          "name": "Fanrui Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79be",
+          "name": "Zizhen Li",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79bf",
+          "name": "Jiaxin Ai",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79c0",
+          "name": "Sizhuo Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79c1",
+          "name": "Yu Dai",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79c2",
+          "name": "Shenglin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d7e4ec1414fcb6196e79c3",
+          "name": "Kaipeng Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-09T10:15:39.000Z",
+      "submittedOnDailyAt": "2025-03-17T07:32:00.469Z",
+      "title": "ARMOR v0.1 : Extension d'un Modèle d'Interprétation de la Polymorphisme Automatisée Utilisant la Génération Inter-Modèle avec des Scénarios Assamiques",
+      "submittedOnDailyBy": {
+        "_id": "65f1713552c38a91e0a445e8",
+        "avatarUrl": "/avatars/47ab3ada51c9b9976ac1cd0c4301c373.svg",
+        "isPro": false,
+        "fullname": "kaipeng",
+        "user": "kpzhang996",
+        "type": "user"
+      },
+      "summary": "Unified model (UniMs) a reçu beaucoup d'attention récentement dans les domaines de la vision et du langage. Actuellement, UniMs dépense beaucoup de ressources informatiques pour entraîner la compréhension et la capacité de génération de plusieurs modèles dans les deux domaines, et rencontre souvent des défis dans la génération croisée de texte et d'images. Dans ce contexte, nous présentons ARMOR, un cadenaire de mots automatique simple et efficace. ARMOR étend les grands modèles de langage multimodal (MLLMs) existants pour atteindre à la fois une compréhension et une génération. Concrètement, ARMOR étend les MLLMs dans trois aspects : 1. Dans l'architecture du modèle, il introduit une architecture codé-décodé symétrique et génère un espace d'embedding qui intègre des modèles de texte et de vision, facilitant la génération croisée de texte et d'images naturelles. 2. Dans les données d'entraînement, il sélectionne avec précision un ensemble de données croisées de haute qualité pour des fins d'adaptation de MLLMs. 3. Dans l'algorithme d'entraînement, il propose un algorithme pour \"comment générer\" pour améliorer la capacité de génération multimodale des MLLMs tout en maintenant leur compréhension. Les résultats des expériences montrent que ARMOR peut mettre à jour les MLLMs existants vers UniMs en utilisant des ressources d'entraînement limitées, démontrant une capacité de génération d'images attendue. Notre code sera publié bientôt sur https://armor.github.io.",
+      "upvotes": 3,
+      "discussionId": "67d7e4ee1414fcb6196e7a43",
+      "ai_keywords": [
+        "asymmetric encoder-decoder architecture",
+        "forward-switching mechanism",
+        "embedding space",
+        "textual modality",
+        "visual modality",
+        "natural text-image interleaved generation",
+        "computational overhead",
+        "high-quality interleaved dataset",
+        "multimodal large language models",
+        "``what or how to generate\" algorithm",
+        "progressive training stages",
+        "image generation capabilities",
+        "multimodal understanding capabilities"
+      ]
+    },
+    "publishedAt": "2025-03-09T06:15:39.000Z",
+    "title": "ARMOR v0.1: Empowering Autoregressive Multimodal Understanding Model\n  with Interleaved Multimodal Generation via Asymmetric Synergy",
+    "summary": "Unified models (UniMs) for multimodal understanding and generation have\nrecently received much attention in the area of vision and language. Existing\nUniMs are designed to simultaneously learn both multimodal understanding and\ngeneration capabilities, demanding substantial computational resources, and\noften struggle to generate interleaved text-image. We present ARMOR, a\nresource-efficient and pure autoregressive framework that achieves both\nunderstanding and generation by fine-tuning existing multimodal large language\nmodels (MLLMs). Specifically, ARMOR extends existing MLLMs from three\nperspectives: (1) For model architecture, an asymmetric encoder-decoder\narchitecture with a forward-switching mechanism is introduced to unify\nembedding space integrating textual and visual modalities for enabling natural\ntext-image interleaved generation with minimal computational overhead. (2) For\ntraining data, a meticulously curated, high-quality interleaved dataset is\ncollected for fine-tuning MLLMs. (3) For the training algorithm, we propose a\n``what or how to generate\" algorithm to empower existing MLLMs with multimodal\ngeneration capabilities while preserving their multimodal understanding\ncapabilities, through three progressive training stages based on the collected\ndataset. Experimental results demonstrate that ARMOR upgrades existing MLLMs to\nUniMs with promising image generation capabilities, using limited training\nresources. Our code will be released soon at https://armor.github.io.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.06542.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65f1713552c38a91e0a445e8",
+      "avatarUrl": "/avatars/47ab3ada51c9b9976ac1cd0c4301c373.svg",
+      "fullname": "kaipeng",
+      "name": "kpzhang996",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.05689",
+      "authors": [
+        {
+          "_id": "67d37c5c3b54e330517a545d",
+          "user": {
+            "_id": "665b2ac6e0e2374ca24ba000",
+            "avatarUrl": "/avatars/d5218c9fa3dceae7b91df2e1d396bcf3.svg",
+            "isPro": false,
+            "fullname": "Zebin Xing",
+            "user": "XXXXing",
+            "type": "user"
+          },
+          "name": "Zebin Xing",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-14T08:56:46.875Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d37c5c3b54e330517a545e",
+          "name": "Xingyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d37c5c3b54e330517a545f",
+          "name": "Yang Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67d37c5c3b54e330517a5460",
+          "name": "Bo Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67d37c5c3b54e330517a5461",
+          "name": "Tong He",
+          "hidden": false
+        },
+        {
+          "_id": "67d37c5c3b54e330517a5462",
+          "name": "Qian Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d37c5c3b54e330517a5463",
+          "name": "Xiaoxiao Long",
+          "hidden": false
+        },
+        {
+          "_id": "67d37c5c3b54e330517a5464",
+          "user": {
+            "_id": "654a2b1a83e7bfc4313a5cc7",
+            "avatarUrl": "/avatars/dc3dfc3fcd26bb7350a9db0d075c5ea0.svg",
+            "isPro": false,
+            "fullname": "Wei Yin",
+            "user": "WonderingWorld",
+            "type": "user"
+          },
+          "name": "Wei Yin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:44:54.732Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-07T18:52:08.000Z",
+      "submittedOnDailyAt": "2025-03-17T01:05:31.649Z",
+      "title": "GoalFlow : Flux de trajecto de Damodal, alignement des flux et opération automatique depuis le temps final jusqu'au temps final",
+      "submittedOnDailyBy": {
+        "_id": "654a2b1a83e7bfc4313a5cc7",
+        "avatarUrl": "/avatars/dc3dfc3fcd26bb7350a9db0d075c5ea0.svg",
+        "isPro": false,
+        "fullname": "Wei Yin",
+        "user": "WonderingWorld",
+        "type": "user"
+      },
+      "summary": "Nous proposons un méthode d'autocorrida end-to-end pour l'autocorrida automatique de l'extrême à l'extrême dans GolfFlow. Dans les scénarios d'autocorrida automatique, il n'existe pas de conception monomodal adéquate. Les méthodes récentes se concentrent sur la modélisation de la distribution des conceptions monomodales. Cependant, ces méthodes rencontrent des défis en raison de la forte dispersion des conceptions et de la discontinuité des guides et de l'information spatiale, ce qui affecte la qualité des conceptions et complique la définition du trafic. Pour résoudre ces problèmes, GolfFlow présente une nouvelle approche. Cette méthodologie limite efficacement le processus de génération et permet la création de conceptions monomodales de haute qualité. Pour aborder la dispersion du trafic dans les méthodes basées sur la diffusion, GolfFlow limite le trafic généré en ajoutant des points objectifs. GolfFlow construit un nouveau système de pondération basé sur l'information du scénario pour sélectionner les points objectifs les plus appropriés parmi les points candidats. De plus, GolfFlow utilise un méthode efficace de génération, le flux d'alignement, pour créer des conceptions monomodales et un système de pondération amélioré pour sélectionner le meilleur trafic parmi les candidats. Nos résultats expérimentaux, validés sur NavsimDauner2024_navsim, montrent que GolfFlow atteint les meilleurs résultats et fournit des conceptions monomodales robustes pour l'autocorrida automatique. GolfFlow atteint 90,3 % de PDMS et dépasse significativement d'autres méthodes. En comparaison avec les méthodes basées sur des politiques de diffusion, notre approche nécessite seulement un pas de débruitage pour obtenir un excellent rendement. Le code est disponible sur https://github.com/YvanYin/GoalFlow.",
+      "upvotes": 2,
+      "discussionId": "67d37c5d3b54e330517a54c7",
+      "ai_keywords": [
+        "GoalFlow",
+        "multimodal trajectories",
+        "trajectory selection complexity",
+        "trajectory divergence",
+        "diffusion-based methods",
+        "goal point",
+        "scoring mechanism",
+        "Flow Matching",
+        "Navsim",
+        "PDMS",
+        "diffusion-policy-based methods",
+        "denoising step"
+      ]
+    },
+    "publishedAt": "2025-03-07T13:52:08.000Z",
+    "title": "GoalFlow: Goal-Driven Flow Matching for Multimodal Trajectories\n  Generation in End-to-End Autonomous Driving",
+    "summary": "We propose GoalFlow, an end-to-end autonomous driving method for generating\nhigh-quality multimodal trajectories. In autonomous driving scenarios, there is\nrarely a single suitable trajectory. Recent methods have increasingly focused\non modeling multimodal trajectory distributions. However, they suffer from\ntrajectory selection complexity and reduced trajectory quality due to high\ntrajectory divergence and inconsistencies between guidance and scene\ninformation. To address these issues, we introduce GoalFlow, a novel method\nthat effectively constrains the generative process to produce high-quality,\nmultimodal trajectories. To resolve the trajectory divergence problem inherent\nin diffusion-based methods, GoalFlow constrains the generated trajectories by\nintroducing a goal point. GoalFlow establishes a novel scoring mechanism that\nselects the most appropriate goal point from the candidate points based on\nscene information. Furthermore, GoalFlow employs an efficient generative\nmethod, Flow Matching, to generate multimodal trajectories, and incorporates a\nrefined scoring mechanism to select the optimal trajectory from the candidates.\nOur experimental results, validated on the NavsimDauner2024_navsim,\ndemonstrate that GoalFlow achieves state-of-the-art performance, delivering\nrobust multimodal trajectories for autonomous driving. GoalFlow achieved PDMS\nof 90.3, significantly surpassing other methods. Compared with other\ndiffusion-policy-based methods, our approach requires only a single denoising\nstep to obtain excellent performance. The code is available at\nhttps://github.com/YvanYin/GoalFlow.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.05689.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "654a2b1a83e7bfc4313a5cc7",
+      "avatarUrl": "/avatars/dc3dfc3fcd26bb7350a9db0d075c5ea0.svg",
+      "fullname": "Wei Yin",
+      "name": "WonderingWorld",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.10624",
+      "authors": [
+        {
+          "_id": "67d5b604f58a6a411a5bb598",
+          "user": {
+            "_id": "65987383bf533e3c0dd1914b",
+            "avatarUrl": "/avatars/4b3c0e791ef24a439a43371c4d92bc4b.svg",
+            "isPro": false,
+            "fullname": "Boqian Li",
+            "user": "Boqian-Li",
+            "type": "user"
+          },
+          "name": "Boqian Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-16T21:12:23.978Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d5b604f58a6a411a5bb599",
+          "name": "Haiwen Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67d5b604f58a6a411a5bb59a",
+          "name": "Zeyu Cai",
+          "hidden": false
+        },
+        {
+          "_id": "67d5b604f58a6a411a5bb59b",
+          "name": "Michael J. Black",
+          "hidden": false
+        },
+        {
+          "_id": "67d5b604f58a6a411a5bb59c",
+          "name": "Yuliang Xiu",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/65987383bf533e3c0dd1914b/IP3jsn2w6NAUnlzaLby5W.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/65987383bf533e3c0dd1914b/YFQHw4OpnXHm7SDXX14x3.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/65987383bf533e3c0dd1914b/vWNGuO2-4RWYzKS3X5kip.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/65987383bf533e3c0dd1914b/VPNP0CWFQW0VbiSXgf39v.mp4"
+      ],
+      "publishedAt": "2025-03-13T17:59:14.000Z",
+      "submittedOnDailyAt": "2025-03-17T07:50:58.923Z",
+      "title": "ETCH : Adaptabilité volumétrique basée sur les bords avec densité variable applicable à la prêt-à-porter qui peut être utilisée par tous, avec un enfoque de technologie avancée.",
+      "submittedOnDailyBy": {
+        "_id": "65987383bf533e3c0dd1914b",
+        "avatarUrl": "/avatars/4b3c0e791ef24a439a43371c4d92bc4b.svg",
+        "isPro": false,
+        "fullname": "Boqian Li",
+        "user": "Boqian-Li",
+        "type": "user"
+      },
+      "summary": "Adapter des vêtements 3D à des groupes de points corporels est souvent un travail difficile. L'approche traditionnelle basée sur l'optimisation est de nature séquentielle et est sensible aux ajustements initiaux, tandis que les méthodes basées sur l'apprentissage récentes ont des difficultés à généraliser aux différents positions et types de vêtements. Nous proposons l'Équivariant Tightness Fitting pour les humains vêtus, ETCH. ETCH estime le mapping de la surface du vêtement en utilisant la symétrie localement approximée de SE(3) et simplifie le travail d'ajustement du vêtement avec des marqueurs corporels rares en utilisant des caractéristiques corporelles invariantes à la position, qui sont estimées à partir de ce mapping. Nous avons effectué des expériences variées sur CAPE et 4D-Dress, et ETCH améliore significativement la précision de l'ajustement corporel du vêtement doux, atteignant un intervalle de 16,7% à 69,5% et une précision moyenne de 49,9% en forme, comparé aux méthodes les plus récentes. Le design de la symétrie d'ETCH réduit l'erreur de direction de 67,2% à 89,8% lors d'un ajustement unique (ou hors de la distribution). Ce résultat de haute qualité démontre la puissante capacité de généralisation d'ETCH. Elle est indépendante des positions difficiles, des formes non vues, des vêtements doux et dynamiques non normales. Nous libérons le code et le modèle pour la recherche à https://boqian-li.github.io/ETCH/ avec une disponibilité immédiate.",
+      "upvotes": 1,
+      "discussionId": "67d5b607f58a6a411a5bb680",
+      "projectPage": "https://boqian-li.github.io/ETCH/",
+      "githubRepo": "https://github.com/boqian-li/ETCH",
+      "ai_keywords": [
+        "equivariant",
+        "tightness fitting",
+        "SE(3) equivariance",
+        "displacement vectors",
+        "pose-invariant body features",
+        "sparse body markers",
+        "inner-body marker fitting task",
+        "CAPE",
+        "4D-Dress",
+        "tightness-agnostic",
+        "tightness-aware",
+        "body fitting accuracy",
+        "shape accuracy",
+        "directional errors",
+        "one-shot",
+        "out-of-distribution",
+        "generalization"
+      ]
+    },
+    "publishedAt": "2025-03-13T13:59:14.000Z",
+    "title": "ETCH: Generalizing Body Fitting to Clothed Humans via Equivariant\n  Tightness",
+    "summary": "Fitting a body to a 3D clothed human point cloud is a common yet challenging\ntask. Traditional optimization-based approaches use multi-stage pipelines that\nare sensitive to pose initialization, while recent learning-based methods often\nstruggle with generalization across diverse poses and garment types. We propose\nEquivariant Tightness Fitting for Clothed Humans, or ETCH, a novel pipeline\nthat estimates cloth-to-body surface mapping through locally approximate SE(3)\nequivariance, encoding tightness as displacement vectors from the cloth surface\nto the underlying body. Following this mapping, pose-invariant body features\nregress sparse body markers, simplifying clothed human fitting into an\ninner-body marker fitting task. Extensive experiments on CAPE and 4D-Dress show\nthat ETCH significantly outperforms state-of-the-art methods -- both\ntightness-agnostic and tightness-aware -- in body fitting accuracy on loose\nclothing (16.7% ~ 69.5%) and shape accuracy (average 49.9%). Our equivariant\ntightness design can even reduce directional errors by (67.2% ~ 89.8%) in\none-shot (or out-of-distribution) settings. Qualitative results demonstrate\nstrong generalization of ETCH, regardless of challenging poses, unseen shapes,\nloose clothing, and non-rigid dynamics. We will release the code and models\nsoon for research purposes at https://boqian-li.github.io/ETCH/.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/65987383bf533e3c0dd1914b/IP3jsn2w6NAUnlzaLby5W.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/65987383bf533e3c0dd1914b/YFQHw4OpnXHm7SDXX14x3.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/65987383bf533e3c0dd1914b/vWNGuO2-4RWYzKS3X5kip.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/65987383bf533e3c0dd1914b/VPNP0CWFQW0VbiSXgf39v.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.10624.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65987383bf533e3c0dd1914b",
+      "avatarUrl": "/avatars/4b3c0e791ef24a439a43371c4d92bc4b.svg",
+      "fullname": "Boqian Li",
+      "name": "Boqian-Li",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.08111",
+      "authors": [
+        {
+          "_id": "67d69afb060a3df28c886b2b",
+          "name": "Jianhui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67d69afb060a3df28c886b2c",
+          "user": {
+            "_id": "6464c4ef92773d5eeb588525",
+            "avatarUrl": "/avatars/65fc839453d892016640249cc1acf277.svg",
+            "isPro": false,
+            "fullname": "Zhifei Yang",
+            "user": "yangzhifei",
+            "type": "user"
+          },
+          "name": "Zhifei Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-16T21:12:12.522Z",
+          "hidden": true
+        },
+        {
+          "_id": "67d69afb060a3df28c886b2d",
+          "name": "Yangfan He",
+          "hidden": false
+        },
+        {
+          "_id": "67d69afb060a3df28c886b2e",
+          "name": "Huixiong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d69afb060a3df28c886b2f",
+          "name": "Yuxuan Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67d69afb060a3df28c886b30",
+          "name": "Jingwei Huang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-11T07:23:11.000Z",
+      "submittedOnDailyAt": "2025-03-17T07:52:48.263Z",
+      "title": "MaRI : Intégration de recherche de données sur des zones",
+      "submittedOnDailyBy": {
+        "_id": "6464c4ef92773d5eeb588525",
+        "avatarUrl": "/avatars/65fc839453d892016640249cc1acf277.svg",
+        "isPro": false,
+        "fullname": "Zhifei Yang",
+        "user": "yangzhifei",
+        "type": "user"
+      },
+      "summary": "La recherche précise de matériaux est essentielle pour la création d'actifs 3D réalistes. Les méthodes actuelles se basent sur des ensembles de données qui gèrent l'invariance de forme et la diversité des sources de lumière, mais ces ensembles sont rares et limités en diversité, pas toujours suffisants pour relever les défis de la généralisation à la réalité. De nombreux approches actuelles adoptent des méthodologies traditionnelles de recherche d'images, mais leur capacité à comprendre les caractéristiques spécifiques de l'espace des matériaux est insuffisante, ce qui les empêche d'afficher un rendement optimal dans les tâches de recherche. Pour résoudre ces problèmes, nous présentons le cadre \"MaRI\" qui ferme le gap entre l'espace de caractéristiques de matériaux synthétiques et réels. MaRI entraîne ensemble un codageur d'images et un codageur de matériaux, construisant un espace de codification partagé qui intègre harmonieusement les caractéristiques visuelles et les propriétés des matériaux à travers une stratégie d'apprentissage contrastif. Cette stratégie permet d'approcher des images et des matériaux similaires et de séparer des paires qui ne correspondent pas dans l'espace de caractéristiques. Pour soutenir cette fonctionnalité, un ensemble de données de matériaux synthétiques de haute qualité a été construit, incluant des changements de forme contrôlés et des conditions de lumière différentes, ainsi que des matériaux réels qui ont été traités par des technologies de transmission de matériaux pour être standardisés. Les expériences étendues ont clairement démontré que MaRI montre un rendement supérieur, une précision et une capacité de généralisation dans diverses tâches de recherche de matériaux complexes.",
+      "upvotes": 1,
+      "discussionId": "67d69afd060a3df28c886c24",
+      "projectPage": "https://jianhuiwemi.github.io/MaRI/",
+      "ai_keywords": [
+        "contrastive learning",
+        "embedding space",
+        "feature space",
+        "image encoder",
+        "material encoder",
+        "material transfer techniques",
+        "synthetic materials",
+        "real-world materials",
+        "shape variations",
+        "lighting conditions",
+        "material retrieval tasks"
+      ]
+    },
+    "publishedAt": "2025-03-11T03:23:11.000Z",
+    "title": "MaRI: Material Retrieval Integration across Domains",
+    "summary": "Accurate material retrieval is critical for creating realistic 3D assets.\nExisting methods rely on datasets that capture shape-invariant and\nlighting-varied representations of materials, which are scarce and face\nchallenges due to limited diversity and inadequate real-world generalization.\nMost current approaches adopt traditional image search techniques. They fall\nshort in capturing the unique properties of material spaces, leading to\nsuboptimal performance in retrieval tasks. Addressing these challenges, we\nintroduce MaRI, a framework designed to bridge the feature space gap between\nsynthetic and real-world materials. MaRI constructs a shared embedding space\nthat harmonizes visual and material attributes through a contrastive learning\nstrategy by jointly training an image and a material encoder, bringing similar\nmaterials and images closer while separating dissimilar pairs within the\nfeature space. To support this, we construct a comprehensive dataset comprising\nhigh-quality synthetic materials rendered with controlled shape variations and\ndiverse lighting conditions, along with real-world materials processed and\nstandardized using material transfer techniques. Extensive experiments\ndemonstrate the superior performance, accuracy, and generalization capabilities\nof MaRI across diverse and complex material retrieval tasks, outperforming\nexisting methods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.08111.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6464c4ef92773d5eeb588525",
+      "avatarUrl": "/avatars/65fc839453d892016640249cc1acf277.svg",
+      "fullname": "Zhifei Yang",
+      "name": "yangzhifei",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
