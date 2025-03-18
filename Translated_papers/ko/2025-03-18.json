@@ -1,0 +1,2563 @@
+[
+  {
+    "paper": {
+      "id": "2503.06053",
+      "authors": [
+        {
+          "_id": "67cfd2d7bc539099da9ebecb",
+          "name": "Runze Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebecc",
+          "user": {
+            "_id": "6474a63f7d131daf633d10f2",
+            "avatarUrl": "/avatars/5e5d1ce5731987a810448835a1a69c91.svg",
+            "isPro": false,
+            "fullname": "GeorgeDu",
+            "user": "georgedu",
+            "type": "user"
+          },
+          "name": "Guoguang Du",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:45:36.478Z",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebecd",
+          "user": {
+            "_id": "66b01dc4e48856bb718f2ba8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66b01dc4e48856bb718f2ba8/MHZyIDd3BEtsnH9M2BvzM.jpeg",
+            "isPro": false,
+            "fullname": "Xiaochuan Li",
+            "user": "lixiaochuan",
+            "type": "user"
+          },
+          "name": "Xiaochuan Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:45:39.724Z",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebece",
+          "name": "Qi Jia",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebecf",
+          "name": "Liang Jin",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebed0",
+          "user": {
+            "_id": "66f67725cdcb9a4eaef04027",
+            "avatarUrl": "/avatars/fb5f4b467cc4d73e129fa9aa60ef344d.svg",
+            "isPro": false,
+            "fullname": "Ellen Liu",
+            "user": "EllenAP",
+            "type": "user"
+          },
+          "name": "Lu Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-17T08:45:32.476Z",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebed1",
+          "name": "Jingjing Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebed2",
+          "user": {
+            "_id": "6297889a64501abb8d002c6b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/-tfSq05d4nkLkU_E-N75e.png",
+            "isPro": false,
+            "fullname": "Cong Xu",
+            "user": "NeilXu",
+            "type": "user"
+          },
+          "name": "Cong Xu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T09:16:48.232Z",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebed3",
+          "name": "Zhenhua Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebed4",
+          "name": "Yaqian Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebed5",
+          "name": "Xiaoli Gong",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebed6",
+          "name": "Rengang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67cfd2d7bc539099da9ebed7",
+          "name": "Baoyu Fan",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/66b01dc4e48856bb718f2ba8/_R9279HPwaWKB34BDJmAv.png"
+      ],
+      "publishedAt": "2025-03-08T04:37:38.000Z",
+      "submittedOnDailyAt": "2025-03-18T05:40:31.378Z",
+      "title": "드롭 리츄버버디오: 공간 시간적인 일관성을 탐구하기 위한 데이터 세트와 접근법",
+      "submittedOnDailyBy": {
+        "_id": "66b01dc4e48856bb718f2ba8",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66b01dc4e48856bb718f2ba8/MHZyIDd3BEtsnH9M2BvzM.jpeg",
+        "isPro": false,
+        "fullname": "Xiaochuan Li",
+        "user": "lixiaochuan",
+        "type": "user"
+      },
+      "summary": "스펙트럴타임 일치성은 비디오 생성에서 중요한 연구 과제입니다. 올바르게 생성된 비디오 세그먼트는 시각적 일관성을 유지하는 데 필요하며,物体와 씬의 일관성을 보장하는 동시에, 플로팅의 가능성과 상호작용을 보장해야 합니다. 기존 연구에서는, 특히 오픈 소스 프로젝트에서, 시간적 또는 공간적 일관성 중 하나 또는 그 기본적인 조합에 초점을 맞추고 있습니다. 예를 들어, Prompt 이후에 카메라의 이동을 설명하는 데만, 이동의 결과를 제한하지 않습니다. 그러나 카메라의 이동은 새로운 물체를 씬에 추가하거나, 기존 물체를 제거할 수 있으며, 이로 인해 이전의 나뭇잎을 겹쳐 영향을 미칩니다. 특히, 카메라의 이동이 많은 비디오에서, 여러 플로팅 사이의 상호작용은 날로 복잡해지기 때문입니다. 본 논문에서는, 플로팅의 진행과 카메라 기술 간의 단순화, 이전 내용을 통해 후속 생성에 미치는 장기적인 영향을 고려하여, 통합적인 스펙트럴타임 일관성을 소개하고 검토합니다.本研究는 데이터셋 구축부터 모델 개발까지 광범위한 관점을 가지고 있습니다. 처음으로, Dynamic Camera Motion과 Object Actions를 포함하는 1000만개의 비디오를 DropletVideo-10M 데이터셋으로 구축했습니다. 각 비디오는 평균 206개의 캡션으로 설명되어 있으며, 다양한 카메라의 이동과 플로팅의 진행을 상세히 설명합니다. 이후 DropletVideo 모델을 개발하여, 비디오 생성 시 스펙트럴타임의 일관성을 유지하는 데 능숙합니다. DropletVideo 데이터셋과 모델은 https://dropletx.github.io 에서 접근할 수 있습니다.",
+      "upvotes": 47,
+      "discussionId": "67cfd2debc539099da9ec061",
+      "ai_keywords": [
+        "spatio-temporal consistency",
+        "video generation",
+        "plot plausibility",
+        "visual consistency",
+        "objects",
+        "scenes",
+        "viewpoints",
+        "camera movement",
+        "prompt",
+        "narrative",
+        "plot progression",
+        "camera techniques",
+        "long-term impact",
+        "dataset construction",
+        "DropletVideo-10M dataset",
+        "dynamic camera motion",
+        "object actions",
+        "caption",
+        "DropletVideo model",
+        "spatio-temporal coherence"
+      ]
+    },
+    "publishedAt": "2025-03-07T23:37:38.000Z",
+    "title": "DropletVideo: A Dataset and Approach to Explore Integral Spatio-Temporal\n  Consistent Video Generation",
+    "summary": "Spatio-temporal consistency is a critical research topic in video generation.\nA qualified generated video segment must ensure plot plausibility and coherence\nwhile maintaining visual consistency of objects and scenes across varying\nviewpoints. Prior research, especially in open-source projects, primarily\nfocuses on either temporal or spatial consistency, or their basic combination,\nsuch as appending a description of a camera movement after a prompt without\nconstraining the outcomes of this movement. However, camera movement may\nintroduce new objects to the scene or eliminate existing ones, thereby\noverlaying and affecting the preceding narrative. Especially in videos with\nnumerous camera movements, the interplay between multiple plots becomes\nincreasingly complex. This paper introduces and examines integral\nspatio-temporal consistency, considering the synergy between plot progression\nand camera techniques, and the long-term impact of prior content on subsequent\ngeneration. Our research encompasses dataset construction through to the\ndevelopment of the model. Initially, we constructed a DropletVideo-10M dataset,\nwhich comprises 10 million videos featuring dynamic camera motion and object\nactions. Each video is annotated with an average caption of 206 words,\ndetailing various camera movements and plot developments. Following this, we\ndeveloped and trained the DropletVideo model, which excels in preserving\nspatio-temporal coherence during video generation. The DropletVideo dataset and\nmodel are accessible at https://dropletx.github.io.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/66b01dc4e48856bb718f2ba8/_R9279HPwaWKB34BDJmAv.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.06053.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66b01dc4e48856bb718f2ba8",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66b01dc4e48856bb718f2ba8/MHZyIDd3BEtsnH9M2BvzM.jpeg",
+      "fullname": "Xiaochuan Li",
+      "name": "lixiaochuan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.12533",
+      "authors": [
+        {
+          "_id": "67d8eadc045f869fea1ce3f2",
+          "name": "Haoqi Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eadc045f869fea1ce3f3",
+          "name": "Yu Bai",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eadc045f869fea1ce3f4",
+          "user": {
+            "_id": "67d92b2218de6ef86c60f7d4",
+            "avatarUrl": "/avatars/9758522c99bc38bc7b60845eff8bf8d7.svg",
+            "isPro": false,
+            "fullname": "Yuhui Fu",
+            "user": "fuyh",
+            "type": "user"
+          },
+          "name": "Yuhui Fu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:17:46.443Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eadc045f869fea1ce3f5",
+          "name": "Bohan Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eadc045f869fea1ce3f6",
+          "user": {
+            "_id": "6655b86e607894ea80d74910",
+            "avatarUrl": "/avatars/663c0135c903c9c127fe1b8d8aaf279c.svg",
+            "isPro": false,
+            "fullname": "yicheng feng",
+            "user": "takenpeanut",
+            "type": "user"
+          },
+          "name": "Yicheng Feng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:17:31.771Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eadc045f869fea1ce3f7",
+          "user": {
+            "_id": "653238fdcd5377e9adee0c41",
+            "avatarUrl": "/avatars/78aea70cde6ab0050c7e18b5e148075c.svg",
+            "isPro": false,
+            "fullname": "Xinrun Xu",
+            "user": "SherryXu",
+            "type": "user"
+          },
+          "name": "Xinrun Xu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:17:05.200Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eadc045f869fea1ce3f8",
+          "name": "Yi Zhan",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eadc045f869fea1ce3f9",
+          "user": {
+            "_id": "61e52be53d6dbb1da842316a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61e52be53d6dbb1da842316a/gx0WGPcOCClXPymoKglc4.jpeg",
+            "isPro": false,
+            "fullname": "Börje Karlsson",
+            "user": "tellarin",
+            "type": "user"
+          },
+          "name": "Börje F. Karlsson",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:07:34.005Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eadc045f869fea1ce3fa",
+          "user": {
+            "_id": "67d905c0e27ba28109384f5c",
+            "avatarUrl": "/avatars/26712594ac9d43c8d1a3e75e36b5df16.svg",
+            "isPro": false,
+            "fullname": "Zongqing Lu",
+            "user": "chungtsing",
+            "type": "user"
+          },
+          "name": "Zongqing Lu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:16:58.409Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-16T14:53:53.000Z",
+      "submittedOnDailyAt": "2025-03-18T02:11:08.263Z",
+      "title": "인간형 로봇 에이전트: 비전 레이지 모델과 모듈화 기술의 도입",
+      "submittedOnDailyBy": {
+        "_id": "61e52be53d6dbb1da842316a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61e52be53d6dbb1da842316a/gx0WGPcOCClXPymoKglc4.jpeg",
+        "isPro": false,
+        "fullname": "Börje Karlsson",
+        "user": "tellarin",
+        "type": "user"
+      },
+      "summary": "自動軌動機人型ロボット의 연구에서 최종 목표는 현실 세계의 구체적인 태스크에서 인간 수준의 성능을 달성하는 자동로동인형형 ロボット의 개발입니다. 최근의 발전은 FM(Base Model)에 의한 고レ벨의 인지와 인형형 ロボット의 저レ벨스킬 개발에 있어서 뚜렷한 진전을 이룩했습니다. 그러나 이러한 구성 요소의 직접적인 통합은 장기간 태스크에서 오류의 누적과 각 모듈의 다른 지연으로 취약성과 효율성이 떨어질 수 있습니다. 여기서는 FM와 모듈화스킬 라이브러리를 통합하는 휴리스틱な 아그넌트 프레임워크 \"Being-0\"을 통해 이러한 오류를 보완하는 것을 목표로 합니다. FM는 명령 이해, 태스크 계획, 이유와 같은 고レ벨의 인지 태스크를 담당하고, 스킬 라이브러리는 저レ벨의 제어에서 안정적인 이동과 유연한 조작을 제공합니다. 이러한 레벨 간 간극을 메우는 데 새로운 Connector 모듈을 제안하고 있습니다. Connector는 가벼운 비지션 언어 모델(VLM)을 가지고 있으며, FM의 시각화 능력을 강화하고 언어 기반의 계획을 동작 가능한 스킬 커맨드로 번역하고 이동과 조작의 동적 협조를 수행하며 태스크의 성공율을 향상시킵니다. Being-0은 FM을 제외한 모든 구성 요소가 저비용의 가상 컴퓨팅 장치로 구현 가능한데, 시각화 도구의 소유자와 활성 비지션을 부여한 전체 계획인형형 ロボット으로 효율적인 시간 협조를 실현합니다. 대규모 실내 환경에서 분산된 실험은 Being-0이 복잡한 장기간 태스크를 해결하기 위해 필요한 어려운 네비게이션과 조작의 서브 태스크를 구현하는 효과를 보여주었습니다. 자세한 내용은 https://beingbeyond.github.io/being-0을 참고하세요.",
+      "upvotes": 35,
+      "discussionId": "67d8eadd045f869fea1ce44a",
+      "projectPage": "https://beingbeyond.github.io/Being-0/",
+      "ai_keywords": [
+        "Foundation Models (FMs)",
+        "modular skill library",
+        "high-level cognitive tasks",
+        "instruction understanding",
+        "task planning",
+        "reasoning",
+        "stable locomotion",
+        "dexterous manipulation",
+        "low-level control",
+        "Connector module",
+        "lightweight vision-language model (VLM",
+        "embodied capabilities",
+        "language-based plans",
+        "actionable skill commands",
+        "dynamic coordination",
+        "full-sized humanoid robot",
+        "dexterous hands",
+        "active vision",
+        "complex, long-horizon tasks",
+        "challenging navigation",
+        "manipulation subtasks"
+      ]
+    },
+    "publishedAt": "2025-03-16T10:53:53.000Z",
+    "title": "Being-0: A Humanoid Robotic Agent with Vision-Language Models and\n  Modular Skills",
+    "summary": "Building autonomous robotic agents capable of achieving human-level\nperformance in real-world embodied tasks is an ultimate goal in humanoid robot\nresearch. Recent advances have made significant progress in high-level\ncognition with Foundation Models (FMs) and low-level skill development for\nhumanoid robots. However, directly combining these components often results in\npoor robustness and efficiency due to compounding errors in long-horizon tasks\nand the varied latency of different modules. We introduce Being-0, a\nhierarchical agent framework that integrates an FM with a modular skill\nlibrary. The FM handles high-level cognitive tasks such as instruction\nunderstanding, task planning, and reasoning, while the skill library provides\nstable locomotion and dexterous manipulation for low-level control. To bridge\nthe gap between these levels, we propose a novel Connector module, powered by a\nlightweight vision-language model (VLM). The Connector enhances the FM's\nembodied capabilities by translating language-based plans into actionable skill\ncommands and dynamically coordinating locomotion and manipulation to improve\ntask success. With all components, except the FM, deployable on low-cost\nonboard computation devices, Being-0 achieves efficient, real-time performance\non a full-sized humanoid robot equipped with dexterous hands and active vision.\nExtensive experiments in large indoor environments demonstrate Being-0's\neffectiveness in solving complex, long-horizon tasks that require challenging\nnavigation and manipulation subtasks. For further details and videos, visit\nhttps://beingbeyond.github.io/being-0.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.12533.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "61e52be53d6dbb1da842316a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61e52be53d6dbb1da842316a/gx0WGPcOCClXPymoKglc4.jpeg",
+      "fullname": "Börje Karlsson",
+      "name": "tellarin",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 24
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.12885",
+      "authors": [
+        {
+          "_id": "67d8e23afa59a8b15a9057e8",
+          "user": {
+            "_id": "65eaa1e2b11eeb516a973508",
+            "avatarUrl": "/avatars/beecd135bb940fdc02406f9063b3fa67.svg",
+            "isPro": false,
+            "fullname": "Dewei Zhou",
+            "user": "limuloo1999",
+            "type": "user"
+          },
+          "name": "Dewei Zhou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:20:39.038Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e23afa59a8b15a9057e9",
+          "user": {
+            "_id": "64551bc2c9c0dcc8c2484cf6",
+            "avatarUrl": "/avatars/0d1ed4f4502f6f54ac6ba071e4c9a220.svg",
+            "isPro": false,
+            "fullname": "Mingwei Li",
+            "user": "aiJojosh",
+            "type": "user"
+          },
+          "name": "Mingwei Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:20:46.810Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e23afa59a8b15a9057ea",
+          "user": {
+            "_id": "619bf9b3cbedb87e1a92fb3b",
+            "avatarUrl": "/avatars/ee280db0232e21416c948ab9a9a2344e.svg",
+            "isPro": false,
+            "fullname": "Zongxin Yang",
+            "user": "z-x-yang",
+            "type": "user"
+          },
+          "name": "Zongxin Yang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:20:52.869Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e23afa59a8b15a9057eb",
+          "name": "Yi Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-17T07:30:16.000Z",
+      "submittedOnDailyAt": "2025-03-18T01:33:30.593Z",
+      "title": "DREAM-RENDER: 대규모 텍스트로부터 이미지로의 다인스탠스 속성 제어를 실현하는 기술",
+      "submittedOnDailyBy": {
+        "_id": "65eaa1e2b11eeb516a973508",
+        "avatarUrl": "/avatars/beecd135bb940fdc02406f9063b3fa67.svg",
+        "isPro": false,
+        "fullname": "Dewei Zhou",
+        "user": "limuloo1999",
+        "type": "user"
+      },
+      "summary": "그림 조건에 따라 생성하는 방법의 예로 깊은 깊이나 Canny 조건에 따라 접근하는 방법들은 정확한 이미지 합성을 위해 놀라운 능력을 보여주고 있습니다. 그러나 현재의 모델은 여러 인스턴스(또는 영역)의 내용을 정확히 제어하는 것이 어렵습니다. 그 중 가장 선진한 모델인 FLUX와 3DIS도 인스턴스 간의 속성 손실 등 문제를 발견하고 사용자의 제어를 제한하고 있습니다. 이러한 문제를 해결하기 위해 우리는 FLUX 모델에 기반한 학습 제한 접근 방식인 DreamRenderer를 소개합니다. DreamRenderer는 사용자가 Bounding Box나 마스크를 통해 각 인스턴스의 내용을 제어할 수 있도록 하고 전체의 시각적 조화성을 유지합니다. 우리는 두 가지 혁신적인 제안을 제안합니다: 1) 어려운 맥락 속성의 결합을 수행하는 이미지 토큰의 브릿지, 2) Vitral레이어에 한정된 엄격한 이미지 속성의 결합. FLUX의 분석을 통해 인스턴스 속성의 렌더링에 책임 있는 키플레이어를 특정하고 이들의 Vitral레이어에서만 엄격한 이미지 속성의 결합을 적용하고 나머지 레이어에서 소프트한 결합을 수행합니다. 이 접근 방식은 이미지의 질을 유지하면서 정밀한 제어를 가능하게 합니다. COCO-POS와 COCO-MIG 벤치마크의 평가에 따라 DreamRenderer는 FLUX보다 17.7%의 이미지 성공율을 향상시키고 GLIGEN과 3DIS 등 병렬 디자인으로부터 이미지로의 모델의 성능을 최대 26.8% 향상시킵니다. 프로젝트 페이지: https://limuloo.github.io/DreamRenderer/",
+      "upvotes": 24,
+      "discussionId": "67d8e23cfa59a8b15a9058ba",
+      "projectPage": "https://limuloo.github.io/DreamRenderer/",
+      "githubRepo": "https://github.com/limuloo/DreamRenderer",
+      "ai_keywords": [
+        "Bridge Image Tokens",
+        "Hard Text Attribute Binding",
+        "Replicated image tokens",
+        "T5 text embeddings",
+        "Joint Attention",
+        "Hard Image Attribute Binding",
+        "Vital layers",
+        "Soft binding",
+        "Image Success Ratio",
+        "COCO-POS",
+        "COCO-MIG",
+        "layout-to-image models",
+        "GLIGEN",
+        "3DIS"
+      ]
+    },
+    "publishedAt": "2025-03-17T03:30:16.000Z",
+    "title": "DreamRenderer: Taming Multi-Instance Attribute Control in Large-Scale\n  Text-to-Image Models",
+    "summary": "Image-conditioned generation methods, such as depth- and canny-conditioned\napproaches, have demonstrated remarkable abilities for precise image synthesis.\nHowever, existing models still struggle to accurately control the content of\nmultiple instances (or regions). Even state-of-the-art models like FLUX and\n3DIS face challenges, such as attribute leakage between instances, which limits\nuser control. To address these issues, we introduce DreamRenderer, a\ntraining-free approach built upon the FLUX model. DreamRenderer enables users\nto control the content of each instance via bounding boxes or masks, while\nensuring overall visual harmony. We propose two key innovations: 1) Bridge\nImage Tokens for Hard Text Attribute Binding, which uses replicated image\ntokens as bridge tokens to ensure that T5 text embeddings, pre-trained solely\non text data, bind the correct visual attributes for each instance during Joint\nAttention; 2) Hard Image Attribute Binding applied only to vital layers.\nThrough our analysis of FLUX, we identify the critical layers responsible for\ninstance attribute rendering and apply Hard Image Attribute Binding only in\nthese layers, using soft binding in the others. This approach ensures precise\ncontrol while preserving image quality. Evaluations on the COCO-POS and\nCOCO-MIG benchmarks demonstrate that DreamRenderer improves the Image Success\nRatio by 17.7% over FLUX and enhances the performance of layout-to-image models\nlike GLIGEN and 3DIS by up to 26.8%. Project Page:\nhttps://limuloo.github.io/DreamRenderer/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.12885.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "65eaa1e2b11eeb516a973508",
+      "avatarUrl": "/avatars/beecd135bb940fdc02406f9063b3fa67.svg",
+      "fullname": "Dewei Zhou",
+      "name": "limuloo1999",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.13327",
+      "authors": [
+        {
+          "_id": "67d8e00f0922c3dc8866520c",
+          "user": {
+            "_id": "640d704c8036cc2142299c19",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/640d704c8036cc2142299c19/Wt9AslcVxWOSSc11epk8l.jpeg",
+            "isPro": false,
+            "fullname": "Lan Chen",
+            "user": "Orannue",
+            "type": "user"
+          },
+          "name": "Lan Chen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:21:18.982Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e00f0922c3dc8866520d",
+          "name": "Qi Mao",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e00f0922c3dc8866520e",
+          "user": {
+            "_id": "63021630a35b21bd8a53305a",
+            "avatarUrl": "/avatars/7a7e8b39749eda61e57d8a1908726558.svg",
+            "isPro": true,
+            "fullname": "Gu Yuchao",
+            "user": "guyuchao",
+            "type": "user"
+          },
+          "name": "Yuchao Gu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:21:44.702Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e00f0922c3dc8866520f",
+          "user": {
+            "_id": "661ab3da2b14565c7acccf5c",
+            "avatarUrl": "/avatars/fa4fc03664803e02aede4d4c3d50b393.svg",
+            "isPro": false,
+            "fullname": "Mike Zheng Shou",
+            "user": "AnalMom",
+            "type": "user"
+          },
+          "name": "Mike Zheng Shou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:21:29.754Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-17T16:04:44.000Z",
+      "submittedOnDailyAt": "2025-03-18T01:26:49.605Z",
+      "title": "이미지 편집에서 시각적 맥락 관계 학습\n\n(Note: The translation is provided as requested, maintaining professionalism and accuracy while strictly adhering to the format instructions.)",
+      "submittedOnDailyBy": {
+        "_id": "640d704c8036cc2142299c19",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/640d704c8036cc2142299c19/Wt9AslcVxWOSSc11epk8l.jpeg",
+        "isPro": false,
+        "fullname": "Lan Chen",
+        "user": "Orannue",
+        "type": "user"
+      },
+      "summary": "새로운 설정「Edit Transfer」를 통해 모델은 단일의 소스 타겟 예를 학습하고 새로운 질문 이미지에 대해 변환을 적용합니다. 맥락 기반의 방법들은 맥락 프로ン퓰트를 통해 의미적인 작업을 뛰어넘지만, 높은 정확도의 기하학적인 세부 사항(예: 자세와 관점의 변화)에 대해서는 어려움을 겪습니다. 대상 기반의 편집은 일반적으로 스타일이나 외관에 초점을 맞추며, 비강성 변환에 성공하지 않습니다. Edit Transfer은 단일의 소스 타겟 쌍으로부터 명시적인 편집 변환을 학습함으로써, 맥락뿐만 아니라 외관이 중심인 참고 제한을 완화합니다. 대규모 언어 모델에서의 맥락 학습을 참고하여, DiT 기반의 맥락에서 이미지로 모델을 구축하고 시각적 관계를 위한 맥락 학습 패러다임을 제안합니다. 편집된 예와 질문 이미지를 하나의 4 페이지의 컴포넌트에 조합하여, 최소한의 예에서 복잡한 공간적인 변환을 감지하기 위해 경량 LoRA 微调을 적용합니다. 42개의 훈련 샘플만 사용하였지만, Edit Transfer은 다양한 비강성 스케일러에서 가장 先端的 TIE와 RIE의 방법보다 크게 뛰어넘으며, 적은 shot의 시각적 관계 학습의 효과를 보여줍니다.",
+      "upvotes": 19,
+      "discussionId": "67d8e0100922c3dc88665285",
+      "projectPage": "https://cuc-mipg.github.io/EditTransfer.github.io",
+      "githubRepo": "https://github.com/CUC-MIPG/Edit-Transfer",
+      "ai_keywords": [
+        "Edit Transfer",
+        "visual relation in-context learning",
+        "DiT-based text-to-image model",
+        "four-panel composite",
+        "LoRA fine-tuning",
+        "few-shot visual relation learning",
+        "non-rigid transformations",
+        "TIE methods",
+        "RIE methods"
+      ]
+    },
+    "publishedAt": "2025-03-17T12:04:44.000Z",
+    "title": "Edit Transfer: Learning Image Editing via Vision In-Context Relations",
+    "summary": "We introduce a new setting, Edit Transfer, where a model learns a\ntransformation from just a single source-target example and applies it to a new\nquery image. While text-based methods excel at semantic manipulations through\ntextual prompts, they often struggle with precise geometric details (e.g.,\nposes and viewpoint changes). Reference-based editing, on the other hand,\ntypically focuses on style or appearance and fails at non-rigid\ntransformations. By explicitly learning the editing transformation from a\nsource-target pair, Edit Transfer mitigates the limitations of both text-only\nand appearance-centric references. Drawing inspiration from in-context learning\nin large language models, we propose a visual relation in-context learning\nparadigm, building upon a DiT-based text-to-image model. We arrange the edited\nexample and the query image into a unified four-panel composite, then apply\nlightweight LoRA fine-tuning to capture complex spatial transformations from\nminimal examples. Despite using only 42 training samples, Edit Transfer\nsubstantially outperforms state-of-the-art TIE and RIE methods on diverse\nnon-rigid scenarios, demonstrating the effectiveness of few-shot visual\nrelation learning.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.13327.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "640d704c8036cc2142299c19",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/640d704c8036cc2142299c19/Wt9AslcVxWOSSc11epk8l.jpeg",
+      "fullname": "Lan Chen",
+      "name": "Orannue",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.12590",
+      "authors": [
+        {
+          "_id": "67d8de85f7809eea577c4805",
+          "name": "Haoran Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67d8de85f7809eea577c4806",
+          "user": {
+            "_id": "6375d136dee28348a9c63cbf",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6375d136dee28348a9c63cbf/gK465HBrQWIOZ-qtHb-Vh.jpeg",
+            "isPro": false,
+            "fullname": "zehuan-huang",
+            "user": "huanngzh",
+            "type": "user"
+          },
+          "name": "Zehuan Huang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:08:06.131Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8de85f7809eea577c4807",
+          "name": "Lin Li",
+          "hidden": false
+        },
+        {
+          "_id": "67d8de85f7809eea577c4808",
+          "user": {
+            "_id": "674ded8ee50d988a4b9e108b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/8oQITwlb7AB8LeIJjooYc.png",
+            "isPro": false,
+            "fullname": "Hairong Lv",
+            "user": "lvhairong",
+            "type": "user"
+          },
+          "name": "Hairong Lv",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:22:23.294Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8de85f7809eea577c4809",
+          "name": "Lu Sheng",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-16T17:51:16.000Z",
+      "submittedOnDailyAt": "2025-03-18T01:18:31.307Z",
+      "title": "Diffusion Transformer에서 어떤 것을 모두 자동으로 개별화할 수 있으며, 무료입니다.",
+      "submittedOnDailyBy": {
+        "_id": "6375d136dee28348a9c63cbf",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6375d136dee28348a9c63cbf/gK465HBrQWIOZ-qtHb-Vh.jpeg",
+        "isPro": false,
+        "fullname": "zehuan-huang",
+        "user": "huanngzh",
+        "type": "user"
+      },
+      "summary": "개인화 이미지 생성은 사용자 지정 개념의 이미지 생성과 유연한 편집 기능을 제공하는 것을 목표로 합니다. 최근의 훈련없이 접근 방식은 훈련 기반 방식보다 높은 계산 효율성을 보여주지만, 자기 동일성 유지, 적용성, Difusion Transformer (DiT)와의 호환성에 문제가 있습니다. 본 논문에서는 DiT의 개발되지 않은 잠재력을 발견하고, 참조 객체의 노이즈 토큰을 대체하면 0샷의 주제 재구성이 가능한 것을 보여주었습니다. 이 간단하고 효과적인 특징 입력 기술은 개인화부터 이미지 편집까지 다양한 시나리오를 해결할 수 있습니다. 이 발견을 기반으로 훈련없이 프레임워크 \"Personalize Anything\"를 제안하고, DiT를 사용하여 개인화 이미지 생성을 실현합니다. 1) 시간 단계 적응 토큰 대체로 초기 단계에 입력된 것을 통해 주제의 일치성을 강제하고, 후속 단계에서 정규화하여 유연성을 향상시킵니다. 2) 패치 페르치타틱스를 사용하여 구조적 다양성을 향상시킵니다. 우리 방식은 배치 지향된 생성, 다주제 개인화, 마스 컨트롤 편집을 지원합니다. 평가는 자기 동일성 유지와 다양성의 최상급 성능을 보여주었습니다. 우리의 연구는 DiT에 대해 새로운 통찰을 제공하고, 효율적인 개인화에 대한 실용적인 패러다임을 제공합니다.",
+      "upvotes": 18,
+      "discussionId": "67d8de89f7809eea577c4930",
+      "projectPage": "https://fenghora.github.io/Personalize-Anything-Page/",
+      "githubRepo": "https://github.com/fenghora/personalize-anything",
+      "ai_keywords": [
+        "diffusion transformers (DiTs)",
+        "denoising tokens",
+        "zero-shot subject reconstruction",
+        "timestep-adaptive token replacement",
+        "early-stage injection",
+        "late-stage regularization",
+        "patch perturbation strategies",
+        "layout-guided generation",
+        "multi-subject personalization",
+        "mask-controlled editing",
+        "identity preservation",
+        "versatility"
+      ]
+    },
+    "publishedAt": "2025-03-16T13:51:16.000Z",
+    "title": "Personalize Anything for Free with Diffusion Transformer",
+    "summary": "Personalized image generation aims to produce images of user-specified\nconcepts while enabling flexible editing. Recent training-free approaches,\nwhile exhibit higher computational efficiency than training-based methods,\nstruggle with identity preservation, applicability, and compatibility with\ndiffusion transformers (DiTs). In this paper, we uncover the untapped potential\nof DiT, where simply replacing denoising tokens with those of a reference\nsubject achieves zero-shot subject reconstruction. This simple yet effective\nfeature injection technique unlocks diverse scenarios, from personalization to\nimage editing. Building upon this observation, we propose Personalize\nAnything, a training-free framework that achieves personalized image\ngeneration in DiT through: 1) timestep-adaptive token replacement that enforces\nsubject consistency via early-stage injection and enhances flexibility through\nlate-stage regularization, and 2) patch perturbation strategies to boost\nstructural diversity. Our method seamlessly supports layout-guided generation,\nmulti-subject personalization, and mask-controlled editing. Evaluations\ndemonstrate state-of-the-art performance in identity preservation and\nversatility. Our work establishes new insights into DiTs while delivering a\npractical paradigm for efficient personalization.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.12590.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6375d136dee28348a9c63cbf",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6375d136dee28348a9c63cbf/gK465HBrQWIOZ-qtHb-Vh.jpeg",
+      "fullname": "zehuan-huang",
+      "name": "huanngzh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 24
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.13435",
+      "authors": [
+        {
+          "_id": "67d8dd0b924be985c277c8f6",
+          "user": {
+            "_id": "64fde4e252e82dd432b74ce9",
+            "avatarUrl": "/avatars/061a69d858b86d1600be916122cae7fc.svg",
+            "isPro": false,
+            "fullname": "Ling Yang",
+            "user": "Lingaaaaaaa",
+            "type": "user"
+          },
+          "name": "Ling Yang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:22:51.251Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8dd0b924be985c277c8f7",
+          "user": {
+            "_id": "6708920aeae29d1cd41a703b",
+            "avatarUrl": "/avatars/922427a86523b0aa810412fd2d75f88e.svg",
+            "isPro": false,
+            "fullname": "kaixin zhu",
+            "user": "czkk566",
+            "type": "user"
+          },
+          "name": "Kaixin Zhu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T09:16:44.192Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8dd0b924be985c277c8f8",
+          "user": {
+            "_id": "670880950e79a8b46f7ff9dd",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/670880950e79a8b46f7ff9dd/hA1TLhwlQblkFsq8wLrkB.jpeg",
+            "isPro": false,
+            "fullname": "Juanxi Tian",
+            "user": "Juanxi",
+            "type": "user"
+          },
+          "name": "Juanxi Tian",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:08:12.128Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8dd0b924be985c277c8f9",
+          "user": {
+            "_id": "6671214c92412fd4640714eb",
+            "avatarUrl": "/avatars/48fa84e7bc3bb92ad0192aa26b32de10.svg",
+            "isPro": false,
+            "fullname": "bohan zeng",
+            "user": "zbhpku",
+            "type": "user"
+          },
+          "name": "Bohan Zeng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:08:15.654Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8dd0b924be985c277c8fa",
+          "user": {
+            "_id": "64a2a8127adb12be606ec33e",
+            "avatarUrl": "/avatars/f85dc39a23727a4d50f8a5f5a3865b0d.svg",
+            "isPro": false,
+            "fullname": "Mingbao Lin",
+            "user": "mingbao",
+            "type": "user"
+          },
+          "name": "Mingbao Lin",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:22:58.991Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8dd0b924be985c277c8fb",
+          "name": "Hongjuan Pei",
+          "hidden": false
+        },
+        {
+          "_id": "67d8dd0b924be985c277c8fc",
+          "name": "Wentao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d8dd0b924be985c277c8fd",
+          "name": "Shuicheng Yan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-17T17:58:18.000Z",
+      "submittedOnDailyAt": "2025-03-18T01:44:02.731Z",
+      "title": "폭범위한 4D 재구성: 넓은 범위의 이동과 장면에 따라 고품질의 4D 재구성이 가능해짐.",
+      "submittedOnDailyBy": {
+        "_id": "64fde4e252e82dd432b74ce9",
+        "avatarUrl": "/avatars/061a69d858b86d1600be916122cae7fc.svg",
+        "isPro": false,
+        "fullname": "Ling Yang",
+        "user": "Lingaaaaaaa",
+        "type": "user"
+      },
+      "summary": "3D 재구성 기술의 급격한 발전에 따라, 4D 재구성 연구도 발전하고 있습니다. 현재의 4D 재구성 방법은 고품질의 4D 시나리오를 생성할 수 있습니다; however, 다각도 비디오 데이터의 획득에 문제가 있으며, 현재의 4D 재구성 벤치마크는 주로 제한된 시나리오 내의 동작(예: 춤)을 표현하고 있습니다. 실제적인 시나리오에서는 많은 시나리오에는 광범위한 공간적 이동이 포함되어 있으며, 현재의 4D 재구성 데이터셋의 제한이 명확히 드러납니다. 또한, 현재의 4D 재구성 방법은 3D 객체의 역학을 평가하기 위해 변형 필드를 의존하고 있지만, 변형 필드는 광범위한 공간적 이동에 대해 어려움을 겪으며, 이로 인해 광범위한 공간적 이동을 포함하는 고품질의 4D 시나리오 재구성 능력을 제한하고 있습니다. 본 논문에서는 광범위한 공간적 이동을 포함하는 4D 시나리오 재구성에 초점을 맞추고, 새로운 4D 재구성 벤치마크 \"WideRange4D\"를 제안합니다. 이 벤치마크는 큰 공간적 변화를 포함하는 풍부한 4D 시나리오 데이터로 구성되어 있으며, 4D 생성 방법의 생성 능력을 더욱 상세하게 평가할 수 있습니다. 또한, 새로운 4D 재구성 방법 \"Progress4D\"를 소개하고, 복잡한 4D 시나리오 재구성 태스크에서도 안정적으로 고품질의 4D 결과를 생성할 수 있음을 보여줍니다. WideRange4D에서 양적 및 질적 비교 실험을 수행하고, 우리의 Progress4D가 현재의 가장 선진적인 4D 재구성 방법보다 뛰어넘는 것을 보여주었습니다. 프로젝트: https://github.com/Gen-Verse/WideRange4D",
+      "upvotes": 14,
+      "discussionId": "67d8dd0d924be985c277c998",
+      "projectPage": "https://huggingface.co/datasets/Gen-Verse/WideRange4D",
+      "githubRepo": "https://github.com/Gen-Verse/WideRange4D",
+      "ai_keywords": [
+        "deformation fields",
+        "4D reconstruction",
+        "scene reconstruction",
+        "multi-view video",
+        "spatial movements",
+        "3D objects",
+        "4D scene data",
+        "generation capabilities",
+        "4D generation methods",
+        "WideRange4D",
+        "Progress4D"
+      ]
+    },
+    "publishedAt": "2025-03-17T13:58:18.000Z",
+    "title": "WideRange4D: Enabling High-Quality 4D Reconstruction with Wide-Range\n  Movements and Scenes",
+    "summary": "With the rapid development of 3D reconstruction technology, research in 4D\nreconstruction is also advancing, existing 4D reconstruction methods can\ngenerate high-quality 4D scenes. However, due to the challenges in acquiring\nmulti-view video data, the current 4D reconstruction benchmarks mainly display\nactions performed in place, such as dancing, within limited scenarios. In\npractical scenarios, many scenes involve wide-range spatial movements,\nhighlighting the limitations of existing 4D reconstruction datasets.\nAdditionally, existing 4D reconstruction methods rely on deformation fields to\nestimate the dynamics of 3D objects, but deformation fields struggle with\nwide-range spatial movements, which limits the ability to achieve high-quality\n4D scene reconstruction with wide-range spatial movements. In this paper, we\nfocus on 4D scene reconstruction with significant object spatial movements and\npropose a novel 4D reconstruction benchmark, WideRange4D. This benchmark\nincludes rich 4D scene data with large spatial variations, allowing for a more\ncomprehensive evaluation of the generation capabilities of 4D generation\nmethods. Furthermore, we introduce a new 4D reconstruction method, Progress4D,\nwhich generates stable and high-quality 4D results across various complex 4D\nscene reconstruction tasks. We conduct both quantitative and qualitative\ncomparison experiments on WideRange4D, showing that our Progress4D outperforms\nexisting state-of-the-art 4D reconstruction methods. Project:\nhttps://github.com/Gen-Verse/WideRange4D",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.13435.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64fde4e252e82dd432b74ce9",
+      "avatarUrl": "/avatars/061a69d858b86d1600be916122cae7fc.svg",
+      "fullname": "Ling Yang",
+      "name": "Lingaaaaaaa",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.13434",
+      "authors": [
+        {
+          "_id": "67d916b500030726e0df2a67",
+          "user": {
+            "_id": "6362801380c1a705a6ea54ac",
+            "avatarUrl": "/avatars/041ad5abf9be42e336938f51ebb8746c.svg",
+            "isPro": false,
+            "fullname": "Yaowei Li",
+            "user": "Yw22",
+            "type": "user"
+          },
+          "name": "Yaowei Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:23:48.215Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d916b500030726e0df2a68",
+          "user": {
+            "_id": "66837d3c48edefb453b0640a",
+            "avatarUrl": "/avatars/b16385eaa612578728e2c6460a76b38f.svg",
+            "isPro": false,
+            "fullname": "Lingen Li",
+            "user": "l-li",
+            "type": "user"
+          },
+          "name": "Lingen Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:23:54.498Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d916b500030726e0df2a69",
+          "user": {
+            "_id": "658409ceca19ccf6d9989add",
+            "avatarUrl": "/avatars/3ac1dbd25e52435185babdeb3da28875.svg",
+            "isPro": false,
+            "fullname": "Zhaoyang Zhang",
+            "user": "ZyZcuhk",
+            "type": "user"
+          },
+          "name": "Zhaoyang Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:07:22.583Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d916b500030726e0df2a6a",
+          "name": "Xiaoyu Li",
+          "hidden": false
+        },
+        {
+          "_id": "67d916b500030726e0df2a6b",
+          "user": {
+            "_id": "6422b973ef9e8971003cdd22",
+            "avatarUrl": "/avatars/8564a2e984e2e79e46d90cc9c35e5773.svg",
+            "isPro": false,
+            "fullname": "Guangzhi Wang",
+            "user": "daoyuan98",
+            "type": "user"
+          },
+          "name": "Guangzhi Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:24:18.787Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d916b500030726e0df2a6c",
+          "user": {
+            "_id": "653eb3bd4a52f10eaf72fbaf",
+            "avatarUrl": "/avatars/b525482b61c6f6054bf44bbc3113c29f.svg",
+            "isPro": false,
+            "fullname": "Hongxiang Li",
+            "user": "HongxiangLi",
+            "type": "user"
+          },
+          "name": "Hongxiang Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:24:25.700Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d916b500030726e0df2a6d",
+          "user": {
+            "_id": "63184c517ca1b876d99b7e0e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63184c517ca1b876d99b7e0e/b-qDExoeJuDXK0cJBZKnz.jpeg",
+            "isPro": false,
+            "fullname": "Xiaodong Cun",
+            "user": "vinthony",
+            "type": "user"
+          },
+          "name": "Xiaodong Cun",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:24:32.118Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d916b500030726e0df2a6e",
+          "user": {
+            "_id": "63ca3ddc04c979828310bfcb",
+            "avatarUrl": "/avatars/615e0d8622950b4408b40d550f02a894.svg",
+            "isPro": false,
+            "fullname": "Ying Shan",
+            "user": "yshan2u",
+            "type": "user"
+          },
+          "name": "Ying Shan",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:24:39.725Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d916b500030726e0df2a6f",
+          "name": "Yuexian Zou",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/658409ceca19ccf6d9989add/fhyGe83BiDhDf9a71kUyP.mp4"
+      ],
+      "publishedAt": "2025-03-17T17:58:05.000Z",
+      "submittedOnDailyAt": "2025-03-18T05:20:30.708Z",
+      "title": "BlobCtrl: 요소 레벨 이미지의 생성과 편집을 일관적으로 관리하고 유연한 프레임워크 제공",
+      "submittedOnDailyBy": {
+        "_id": "658409ceca19ccf6d9989add",
+        "avatarUrl": "/avatars/3ac1dbd25e52435185babdeb3da28875.svg",
+        "isPro": false,
+        "fullname": "Zhaoyang Zhang",
+        "user": "ZyZcuhk",
+        "type": "user"
+      },
+      "summary": "요소レ벨의 시각화 작업은 디지털 콘텐츠 제작에 중요하지만, 현재의 확산 기반의 방법은 전통적인 도구와 비교하여 정밀도와 유연성이 부족합니다. 본 논문에서는, 확률론적인 블로브 기반 표현을 사용하여 요소 레벨의 생성과 편집을 통합하는 프레임워크인 BlobCtrl를 소개합니다. 블로브를 시각화의 기본으로 사용하는 것이므로, 우리의 접근법은 공간 위치, 문학적 내용, 정체성 정보를 적절하게 분리하여 표현할 수 있으며, 정밀한 요소 레벨의 조작이 가능합니다. 주요 기여점은 다음과 같습니다: 1) 계층적 특성 융합을 사용한 더블 브랜isher 구조의 연속적인 포로건・백그라운드 통합; 2) 데이터 확장과 점수 함수를 튜닝한 자기 관측 학습 패러다임; 3) 피드백과 다양성의 균형을 조정할 수 있는 드롭아웃 전략. 향후 연구를 위해, 큰 규모의 훈련을 지원하는 BlobData와 체계적인 평가를 수행하는 BlobBench를 소개합니다. 실험 결과를 통해, BlobCtrl는 여러 요소 레벨의 조작 태스크에서 뛰어난 성능을 보입니다. 한편, 계산 효율성을 유지하면서, 정밀하고 유연한 시각화 콘텐츠 제작의 실질적인 해결책의 가능성을 보여주고 있습니다. 프로젝트 페이지: https://liyaowei-stu.github.io/project/BlobCtrl/",
+      "upvotes": 12,
+      "discussionId": "67d916bc00030726e0df2c3e",
+      "projectPage": "https://liyaowei-stu.github.io/project/BlobCtrl/",
+      "githubRepo": "https://github.com/TencentARC/BlobCtrl",
+      "ai_keywords": [
+        "probabilistic blob-based representation",
+        "dual-branch diffusion architecture",
+        "hierarchical feature fusion",
+        "self-supervised training paradigm",
+        "tailored data augmentation",
+        "score functions",
+        "controllable dropout strategies",
+        "BlobData",
+        "BlobBench"
+      ]
+    },
+    "publishedAt": "2025-03-17T13:58:05.000Z",
+    "title": "BlobCtrl: A Unified and Flexible Framework for Element-level Image\n  Generation and Editing",
+    "summary": "Element-level visual manipulation is essential in digital content creation,\nbut current diffusion-based methods lack the precision and flexibility of\ntraditional tools. In this work, we introduce BlobCtrl, a framework that\nunifies element-level generation and editing using a probabilistic blob-based\nrepresentation. By employing blobs as visual primitives, our approach\neffectively decouples and represents spatial location, semantic content, and\nidentity information, enabling precise element-level manipulation. Our key\ncontributions include: 1) a dual-branch diffusion architecture with\nhierarchical feature fusion for seamless foreground-background integration; 2)\na self-supervised training paradigm with tailored data augmentation and score\nfunctions; and 3) controllable dropout strategies to balance fidelity and\ndiversity. To support further research, we introduce BlobData for large-scale\ntraining and BlobBench for systematic evaluation. Experiments show that\nBlobCtrl excels in various element-level manipulation tasks while maintaining\ncomputational efficiency, offering a practical solution for precise and\nflexible visual content creation. Project page:\nhttps://liyaowei-stu.github.io/project/BlobCtrl/",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/658409ceca19ccf6d9989add/fhyGe83BiDhDf9a71kUyP.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.13434.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "658409ceca19ccf6d9989add",
+      "avatarUrl": "/avatars/3ac1dbd25e52435185babdeb3da28875.svg",
+      "fullname": "Zhaoyang Zhang",
+      "name": "ZyZcuhk",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.11751",
+      "authors": [
+        {
+          "_id": "67d8e861fa59a8b15a921052",
+          "user": {
+            "_id": "6351712b40dffad651f128c7",
+            "avatarUrl": "/avatars/87708c86c1baef548ef556f5d32dca71.svg",
+            "isPro": false,
+            "fullname": "Zhaofeng Wu",
+            "user": "ZhaofengWu",
+            "type": "user"
+          },
+          "name": "Zhaofeng Wu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:27:29.372Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e861fa59a8b15a921053",
+          "user": {
+            "_id": "621e9388345a1d9ab65391c3",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/621e9388345a1d9ab65391c3/RxurNzyAWJOUdgeSHQi1R.jpeg",
+            "isPro": false,
+            "fullname": "Michihiro Yasunaga",
+            "user": "michiyasunaga",
+            "type": "user"
+          },
+          "name": "Michihiro Yasunaga",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:27:35.318Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e861fa59a8b15a921054",
+          "name": "Andrew Cohen",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e861fa59a8b15a921055",
+          "name": "Yoon Kim",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e861fa59a8b15a921056",
+          "name": "Asli Celikyilmaz",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e861fa59a8b15a921057",
+          "user": {
+            "_id": "660f0fd377a1e2509aa5a679",
+            "avatarUrl": "/avatars/e04ef05bed0bf6cefdc7e3e39674e2f9.svg",
+            "isPro": false,
+            "fullname": "Marjan Ghazvininejad",
+            "user": "mghazvininejad",
+            "type": "user"
+          },
+          "name": "Marjan Ghazvininejad",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:28:15.386Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-14T17:59:41.000Z",
+      "submittedOnDailyAt": "2025-03-18T01:59:35.073Z",
+      "title": "reWordBench: 변환된 입력을 사용한 보상 모델의 견고성 평가 및 향상",
+      "submittedOnDailyBy": {
+        "_id": "6351712b40dffad651f128c7",
+        "avatarUrl": "/avatars/87708c86c1baef548ef556f5d32dca71.svg",
+        "isPro": false,
+        "fullname": "Zhaofeng Wu",
+        "user": "ZhaofengWu",
+        "type": "user"
+      },
+      "summary": "레보リュードモデル는 현대의 NLP에서 표준적인 기능으로 사용되고 있습니다. 그것은 scalable한 텍스트 평가기이며, 다수의 alignment 레시피와 추론 시 알고리즘의 필수적인 구성 요소로 구성되어 있습니다. 그러나 최근의 레보リュードモデル는 표준 벤치마크에서 성능 향상을 보여주지만, 이는 일부는 과적합의 영향을 받은 것으로 나타내고, 이는 그 본질적인 능력을 이해하는 것을 방해할 수 있는 가능성을 나타냅니다. 본 논문에서는 레보リュードモデル의 강건성과 과적합의 정도를 자세히 조사합니다. 우리는 **reWordBench**을 구축하고, 레보リュードモデル의 입력을 의미와 순위를 유지하도록 체계적으로 변환합니다. 우리는 가장 최신의 레보リュードモデル은 약간의 입력 변환만으로 성능이 크게 떨어지고, 때로는 랜덤 정확도보다도 현저히 낮은 것을 보여, 취약성을 보여줍니다. 레보リュードモデル의 강건성을 향상시키기 위해, 우리는 같은 점수를 의미적인 변형된 문장에 할당하도록 명확하게 학습시키는 것을 제안하며, 이 접근법은 다른 다른 변환에도 강건성을 향상시킬 수 있음을 보여줍니다. 예를 들어, 우리의 강건한 레보リュードモデル은 RewardBench의 Chat Hard 서브셋에서 이러한 하락을 약 절반 정도로 억제할 수 있습니다. 또한, alignment을 사용할 경우, 우리의 강건한 레보リュードモデル은 더 좋은 효율을 보여주고, 고품질의 출력을 생성하며, 표준적으로 학습된 RM와 비교하여 59%의 경우를 이길 수 있습니다.",
+      "upvotes": 12,
+      "discussionId": "67d8e866fa59a8b15a92117c",
+      "ai_keywords": [
+        "reward models",
+        "NLP",
+        "text evaluator",
+        "alignment",
+        "inference-time algorithms",
+        "overfitting",
+        "reWordBench",
+        "meaning-preserving",
+        "ranking-preserving",
+        "state-of-the-art",
+        "performance degradation",
+        "below-random accuracy",
+        "brittleness",
+        "paraphrases",
+        "robust reward model",
+        "Chat Hard subset",
+        "RewardBench",
+        "utility",
+        "higher-quality outputs"
+      ]
+    },
+    "publishedAt": "2025-03-14T13:59:41.000Z",
+    "title": "reWordBench: Benchmarking and Improving the Robustness of Reward Models\n  with Transformed Inputs",
+    "summary": "Reward models have become a staple in modern NLP, serving as not only a\nscalable text evaluator, but also an indispensable component in many alignment\nrecipes and inference-time algorithms. However, while recent reward models\nincrease performance on standard benchmarks, this may partly be due to\noverfitting effects, which would confound an understanding of their true\ncapability. In this work, we scrutinize the robustness of reward models and the\nextent of such overfitting. We build **reWordBench**, which systematically\ntransforms reward model inputs in meaning- or ranking-preserving ways. We show\nthat state-of-the-art reward models suffer from substantial performance\ndegradation even with minor input transformations, sometimes dropping to\nsignificantly below-random accuracy, suggesting brittleness. To improve reward\nmodel robustness, we propose to explicitly train them to assign similar scores\nto paraphrases, and find that this approach also improves robustness to other\ndistinct kinds of transformations. For example, our robust reward model reduces\nsuch degradation by roughly half for the Chat Hard subset in RewardBench.\nFurthermore, when used in alignment, our robust reward models demonstrate\nbetter utility and lead to higher-quality outputs, winning in up to 59% of\ninstances against a standardly trained RM.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11751.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6351712b40dffad651f128c7",
+      "avatarUrl": "/avatars/87708c86c1baef548ef556f5d32dca71.svg",
+      "fullname": "Zhaofeng Wu",
+      "name": "ZhaofengWu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.13399",
+      "authors": [
+        {
+          "_id": "67d8d99a0983992037cdf33f",
+          "user": {
+            "_id": "650871aeb44445e9b3625c7b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/650871aeb44445e9b3625c7b/mtx3EnkuNF4z29IosnhaQ.png",
+            "isPro": false,
+            "fullname": "James Burgess",
+            "user": "jmhb",
+            "type": "user"
+          },
+          "name": "James Burgess",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:08:18.287Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf340",
+          "name": "Jeffrey J Nirschl",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf341",
+          "name": "Laura Bravo-Sánchez",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf342",
+          "name": "Alejandro Lozano",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf343",
+          "name": "Sanket Rajan Gupte",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf344",
+          "name": "Jesus G. Galaz-Montoya",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf345",
+          "name": "Yuhui Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf346",
+          "user": {
+            "_id": "666aa5183263a8feca6b7003",
+            "avatarUrl": "/avatars/6ac4d52e8abea0df9f83da408502c076.svg",
+            "isPro": false,
+            "fullname": "Yuchang Su",
+            "user": "suyc21",
+            "type": "user"
+          },
+          "name": "Yuchang Su",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:27:03.753Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf347",
+          "name": "Disha Bhowmik",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf348",
+          "name": "Zachary Coman",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf349",
+          "name": "Sarina M. Hasan",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf34a",
+          "name": "Alexandra Johannesson",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf34b",
+          "name": "William D. Leineweber",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf34c",
+          "name": "Malvika G Nair",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf34d",
+          "name": "Ridhi Yarlagadda",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf34e",
+          "name": "Connor Zuraski",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf34f",
+          "name": "Wah Chiu",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf350",
+          "user": {
+            "_id": "655b8dbb83186f133f7f8a98",
+            "avatarUrl": "/avatars/15f41d0efb3a59a2e389cdb5338e0c1e.svg",
+            "isPro": false,
+            "fullname": "Sarah Cohen",
+            "user": "shcohen",
+            "type": "user"
+          },
+          "name": "Sarah Cohen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:26:24.760Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf351",
+          "name": "Jan N. Hansen",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf352",
+          "name": "Manuel D Leonetti",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf353",
+          "user": {
+            "_id": "64fc5c1cc45dd732acc2ec48",
+            "avatarUrl": "/avatars/b1f072cbfec014f1a054d4a433cff93c.svg",
+            "isPro": false,
+            "fullname": "Chad Liu",
+            "user": "chadliu",
+            "type": "user"
+          },
+          "name": "Chad Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:25:42.249Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf354",
+          "user": {
+            "_id": "678af263320331c7e008f842",
+            "avatarUrl": "/avatars/e2cde80f018f3dd278000270fdbc104d.svg",
+            "isPro": false,
+            "fullname": "emma lundberg",
+            "user": "lundbergemma",
+            "type": "user"
+          },
+          "name": "Emma Lundberg",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:25:33.946Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8d99a0983992037cdf355",
+          "name": "Serena Yeung-Levy",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-17T17:33:10.000Z",
+      "submittedOnDailyAt": "2025-03-18T01:06:54.667Z",
+      "title": "미크로VQA: 미크로 규모 비지버 비지션 기반 과학 연구의 다모달 구조론 벤치마크",
+      "submittedOnDailyBy": {
+        "_id": "650871aeb44445e9b3625c7b",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/650871aeb44445e9b3625c7b/mtx3EnkuNF4z29IosnhaQ.png",
+        "isPro": false,
+        "fullname": "James Burgess",
+        "user": "jmhb",
+        "type": "user"
+      },
+      "summary": "과학 연구는 다중 모드 데이터에 대한 복잡한 추론을 요구하며, 이 도전은 생물학에서尤为 일반적이다. 최근 다중 모드 대 언어 모델(MLLMs)에 대한 발전이 있었지만, 현재의 다중 모드 추론 기준 테스트는 대학 수준의 난이도를 대상으로 하고 있으며, 연구 수준의 기준 테스트는 낮은 수준의 감각을 강조하여 과학 발견에 필요한 복잡한 다중 모드 추론을 충족하지 못한다. 이러한 공백을 메우기 위해, 우리는 MicroVQA를 소개한다. 이는 연구 작업 프로세스에서 중요한 세 가지 추론 능력을 평가하기 위한 시각적 질문 대답(VQA) 기준 테스트다. MicroVQA는 1,042 개의 다항 선택 문제(MCQs)를 포함하며, 다양한 현미경 모드의 생물학 전문가가 신중하게 선택되어 실제 과학 실습을 대표하는 VQA 샘플을 보장한다. 기준 테스트를 구축할 때, 표준의 MCQ 생성 방법이 언어捷경으로 이어질 수 있다는 것을 발견하여, 우리는 새로운 두 단계 파이프라인을 제안한다. 첫째, 최적화된 LLM 힌트를 통해 문제-정답 쌍을 다항 선택 문제로 구조화하고, 둘째, `RefineBot'을 기반으로 이 문제를捷경 제거한다. 가장 선진된 MLLMs를 사용하여 기준 테스트를 수행할 때, 우리는 최고 성능이 53%로 나타났다. 더 작은 LLM 모델은 최상위 모델에 약간 떨어지지만, 이는 언어 기반의 추론이 다중 모드 추론보다 더 도전적이지 않다는 것을 보여준다. 과학 논문을 微调하여 성능을 향상시킬 수 있음을 보였다. 체인思维 응답의 전문가 분석에 따르면, 감각 오류가 가장 흔하며, 다음으로는 지식 오류, 그리고 그 다음은 과도 generalization 오류이다. 이러한 통찰은 다중 모드 과학 추론의 도전을 강조하며, MicroVQA는 인공지능을 주도한 바이오의학 연구를 추진하는 유익한 자원임을 나타낸다. MicroVQA는 https://huggingface.co/datasets/jmhb/microvqa에서 얻을 수 있으며, 프로젝트 페이지는 https://jmhb0.github.io/microvqa에 위치한다.",
+      "upvotes": 10,
+      "discussionId": "67d8d99f0983992037cdf47e",
+      "projectPage": "https://jmhb0.github.io/microvqa/",
+      "githubRepo": "https://github.com/jmhb0/microvqa",
+      "ai_keywords": [
+        "multimodal large language models",
+        "visual-question answering (VQA)",
+        "multiple-choice questions (MCQs)",
+        "biology experts",
+        "microscopy modalities",
+        "standard MCQ generation methods",
+        "optimized LLM prompt",
+        "agent-based `RefineBot'",
+        "chain-of-thought responses",
+        "perception errors",
+        "knowledge errors",
+        "overgeneralization errors"
+      ]
+    },
+    "publishedAt": "2025-03-17T13:33:10.000Z",
+    "title": "MicroVQA: A Multimodal Reasoning Benchmark for Microscopy-Based\n  Scientific Research",
+    "summary": "Scientific research demands sophisticated reasoning over multimodal data, a\nchallenge especially prevalent in biology. Despite recent advances in\nmultimodal large language models (MLLMs) for AI-assisted research, existing\nmultimodal reasoning benchmarks only target up to college-level difficulty,\nwhile research-level benchmarks emphasize lower-level perception, falling short\nof the complex multimodal reasoning needed for scientific discovery. To bridge\nthis gap, we introduce MicroVQA, a visual-question answering (VQA) benchmark\ndesigned to assess three reasoning capabilities vital in research workflows:\nexpert image understanding, hypothesis generation, and experiment proposal.\nMicroVQA consists of 1,042 multiple-choice questions (MCQs) curated by biology\nexperts across diverse microscopy modalities, ensuring VQA samples represent\nreal scientific practice. In constructing the benchmark, we find that standard\nMCQ generation methods induce language shortcuts, motivating a new two-stage\npipeline: an optimized LLM prompt structures question-answer pairs into MCQs;\nthen, an agent-based `RefineBot' updates them to remove shortcuts. Benchmarking\non state-of-the-art MLLMs reveal a peak performance of 53\\%; models with\nsmaller LLMs only slightly underperform top models, suggesting that\nlanguage-based reasoning is less challenging than multimodal reasoning; and\ntuning with scientific articles enhances performance. Expert analysis of\nchain-of-thought responses shows that perception errors are the most frequent,\nfollowed by knowledge errors and then overgeneralization errors. These insights\nhighlight the challenges in multimodal scientific reasoning, showing MicroVQA\nis a valuable resource advancing AI-driven biomedical research. MicroVQA is\navailable at https://huggingface.co/datasets/jmhb/microvqa, and project page at\nhttps://jmhb0.github.io/microvqa.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.13399.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "650871aeb44445e9b3625c7b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/650871aeb44445e9b3625c7b/mtx3EnkuNF4z29IosnhaQ.png",
+      "fullname": "James Burgess",
+      "name": "jmhb",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.12605",
+      "authors": [
+        {
+          "_id": "67d939f6fa59a8b15aa931a8",
+          "user": {
+            "_id": "64ff369d9abcc85a5519b33e",
+            "avatarUrl": "/avatars/4b99cdaf5f970d930b196eddf1e5e499.svg",
+            "isPro": false,
+            "fullname": "Yaoting Wang",
+            "user": "Gh0stAR",
+            "type": "user"
+          },
+          "name": "Yaoting Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:29:33.845Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d939f6fa59a8b15aa931a9",
+          "user": {
+            "_id": "64c139d867eff857ea51caa8",
+            "avatarUrl": "/avatars/4b7b3f41c2e2cfa21dd43bbac6e081ae.svg",
+            "isPro": false,
+            "fullname": "Shengqiong Wu",
+            "user": "ChocoWu",
+            "type": "user"
+          },
+          "name": "Shengqiong Wu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:29:41.386Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d939f6fa59a8b15aa931aa",
+          "name": "Yuecheng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d939f6fa59a8b15aa931ab",
+          "name": "William Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67d939f6fa59a8b15aa931ac",
+          "user": {
+            "_id": "62ab1ac1d48b4d8b048a3473",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1656826685333-62ab1ac1d48b4d8b048a3473.png",
+            "isPro": false,
+            "fullname": "Ziwei Liu",
+            "user": "liuziwei7",
+            "type": "user"
+          },
+          "name": "Ziwei Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:30:17.710Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d939f6fa59a8b15aa931ad",
+          "name": "Jiebo Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67d939f6fa59a8b15aa931ae",
+          "user": {
+            "_id": "647773a1168cb428e00e9a8f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/647773a1168cb428e00e9a8f/NiRR3ScY6Plzjibfwy1hC.jpeg",
+            "isPro": false,
+            "fullname": "Hao Fei",
+            "user": "scofield7419",
+            "type": "user"
+          },
+          "name": "Hao Fei",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T09:30:49.867Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64ff369d9abcc85a5519b33e/YhPHIT3BwUWkXcOT1r1LJ.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/64ff369d9abcc85a5519b33e/7SvBogepNT-uNYcY5dAgv.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/64ff369d9abcc85a5519b33e/VqwQO1NsLKrjaKEBZxXUb.png"
+      ],
+      "publishedAt": "2025-03-16T18:39:13.000Z",
+      "submittedOnDailyAt": "2025-03-18T07:53:47.429Z",
+      "title": "다모달코어스오비신크스구현: 완전한 조사",
+      "submittedOnDailyBy": {
+        "_id": "64ff369d9abcc85a5519b33e",
+        "avatarUrl": "/avatars/4b99cdaf5f970d930b196eddf1e5e499.svg",
+        "isPro": false,
+        "fullname": "Yaoting Wang",
+        "user": "Gh0stAR",
+        "type": "user"
+      },
+      "summary": "MCoT（Multi-Type Chain of Thought）논리는 인간처럼 단계별로 진행되는 프로세스의 우점이 다양한 컨텍스트에 확장되어 있으며, 특히 멀티 타입 대 언어 모델(MLLMs)과 통합에 최근에 주목을 받고 있으며, 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에 매우 성공적으로 사용되고 있습니다.MCoT는 로봇, 의료, 자율주행, 그리고 멀티 타입 생성과 같은 기능의 적용에",
+      "upvotes": 8,
+      "discussionId": "67d939f7fa59a8b15aa9322a",
+      "projectPage": "https://github.com/yaotingwangofficial/Awesome-MCoT",
+      "githubRepo": "https://github.com/yaotingwangofficial/Awesome-MCoT",
+      "ai_keywords": [
+        "chain-of-thought (CoT) reasoning",
+        "multimodal CoT (MCoT) reasoning",
+        "multimodal large language models (MLLMs)",
+        "image",
+        "video",
+        "speech",
+        "audio",
+        "3D",
+        "structured data",
+        "robotics",
+        "healthcare",
+        "autonomous driving",
+        "multimodal generation",
+        "multimodal AGI"
+      ]
+    },
+    "publishedAt": "2025-03-16T14:39:13.000Z",
+    "title": "Multimodal Chain-of-Thought Reasoning: A Comprehensive Survey",
+    "summary": "By extending the advantage of chain-of-thought (CoT) reasoning in human-like\nstep-by-step processes to multimodal contexts, multimodal CoT (MCoT) reasoning\nhas recently garnered significant research attention, especially in the\nintegration with multimodal large language models (MLLMs). Existing MCoT\nstudies design various methodologies and innovative reasoning paradigms to\naddress the unique challenges of image, video, speech, audio, 3D, and\nstructured data across different modalities, achieving extensive success in\napplications such as robotics, healthcare, autonomous driving, and multimodal\ngeneration. However, MCoT still presents distinct challenges and opportunities\nthat require further focus to ensure consistent thriving in this field, where,\nunfortunately, an up-to-date review of this domain is lacking. To bridge this\ngap, we present the first systematic survey of MCoT reasoning, elucidating the\nrelevant foundational concepts and definitions. We offer a comprehensive\ntaxonomy and an in-depth analysis of current methodologies from diverse\nperspectives across various application scenarios. Furthermore, we provide\ninsights into existing challenges and future research directions, aiming to\nfoster innovation toward multimodal AGI.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64ff369d9abcc85a5519b33e/YhPHIT3BwUWkXcOT1r1LJ.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/64ff369d9abcc85a5519b33e/7SvBogepNT-uNYcY5dAgv.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/64ff369d9abcc85a5519b33e/VqwQO1NsLKrjaKEBZxXUb.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.12605.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64ff369d9abcc85a5519b33e",
+      "avatarUrl": "/avatars/4b99cdaf5f970d930b196eddf1e5e499.svg",
+      "fullname": "Yaoting Wang",
+      "name": "Gh0stAR",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.12937",
+      "authors": [
+        {
+          "_id": "67d8eb0c18de6ef86c4eb457",
+          "name": "Jingyi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eb0c18de6ef86c4eb458",
+          "user": {
+            "_id": "65237910b80dc49ba03a96d9",
+            "avatarUrl": "/avatars/9d81c4c8fb2d597079e8dd9d9b79a8d8.svg",
+            "isPro": false,
+            "fullname": "jiaxing",
+            "user": "huangjiaxing",
+            "type": "user"
+          },
+          "name": "Jiaxing Huang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:31:01.731Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eb0c18de6ef86c4eb459",
+          "user": {
+            "_id": "6590e03454f8826173ed5ee6",
+            "avatarUrl": "/avatars/b2fbaaf444e1e53c5e914cd42a41389a.svg",
+            "isPro": false,
+            "fullname": "Huanjin Yao",
+            "user": "HuanjinYao",
+            "type": "user"
+          },
+          "name": "Huanjin Yao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:31:08.069Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eb0c18de6ef86c4eb45a",
+          "user": {
+            "_id": "6713afea187a20dc579e121b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6713afea187a20dc579e121b/ELxVQLVF9ifuT-TCWPK22.jpeg",
+            "isPro": false,
+            "fullname": "Shunyu Liu",
+            "user": "liushunyu",
+            "type": "user"
+          },
+          "name": "Shunyu Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:31:15.587Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eb0c18de6ef86c4eb45b",
+          "user": {
+            "_id": "6274a9620d11b4f675085fbc",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1651812606924-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Xikun Zhang",
+            "user": "Xikun",
+            "type": "user"
+          },
+          "name": "Xikun Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:31:21.950Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eb0c18de6ef86c4eb45c",
+          "name": "Shijian Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eb0c18de6ef86c4eb45d",
+          "name": "Dacheng Tao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-17T08:51:44.000Z",
+      "submittedOnDailyAt": "2025-03-18T02:10:10.429Z",
+      "title": "R1-VL: 다모둠 대언어 모델을 활용한 논리학 학습을 위한 단계별 그룹 상대적 정책 최적화 방법",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "최근의 연구는 고품질의 콘텐츠의 추론 데이터에 기반한 규범적인 미세 조정 논리 모델（MLLMs）의 추론 능력을 향상시키지만, 이는 일반적으로 성공하는 추론 패스를 모방하면서 어떤 부분이 잘못되어 있는지에 대한 이해가 부족하여, 단순히 그 것을 모방하는 데만 집중하는 경향이 있습니다. 본 논문에서는 MLLMs의 추론 능력을 간접적으로 모방하는 것을 초월하여 목표를 세웁니다. 이를 위해, 새로운 온라인 재학습 효율성 학습 프레임워크 \"Step-wise Group Relative Policy Optimization（StepGRPO）\"를 설계했습니다. 이 프레임워크는 간단하고 효과적인, 밀도 높은 단계별 보상을 통해 MLLMs의 자기 개선의 추론 능력을 가능하게 합니다. 특히, StepGRPO는 두 개의 새로운 규칙 기반의 추론 보상을 도입합니다: \"Step-wise Reasoning Accuracy Reward（StepRAR）\"와 \"Step-wise Reasoning Validity Reward（StepRVR）\". StepRAR는 필요한 중간 추론 단계를 포함하는 추론 패스를 통해 유연한 키 스텝 매칭 방법을 통해 보상을 제공하고, StepRVR는 로직적으로 일관된 추론 프로세스를 통해 추론의 완전성과 로직 평가 전략을 통해 보상을 제공합니다. 제안된 StepGRPO에 의해, R1-VL이라는 단계별 추론의 우수한 능력을 가진 MLLMs의 시리즈를 도입했습니다. 8개의 벤치마크에서 확장된 실험은 우리의 방법의 우수한 성능을 보여주었습니다.",
+      "upvotes": 7,
+      "discussionId": "67d8eb0d18de6ef86c4eb4aa",
+      "ai_keywords": [
+        "Step-wise Group Relative Policy Optimization (StepGRPO)",
+        "online reinforcement learning",
+        "Step-wise Reasoning Accuracy Reward (StepRAR)",
+        "Step-wise Reasoning Validity Reward (StepRVR)",
+        "soft key-step matching",
+        "reasoning completeness",
+        "logic evaluation",
+        "R1-VL",
+        "step-by-step reasoning"
+      ]
+    },
+    "publishedAt": "2025-03-17T04:51:44.000Z",
+    "title": "R1-VL: Learning to Reason with Multimodal Large Language Models via\n  Step-wise Group Relative Policy Optimization",
+    "summary": "Recent studies generally enhance MLLMs' reasoning capabilities via supervised\nfine-tuning on high-quality chain-of-thought reasoning data, which often leads\nmodels to merely imitate successful reasoning paths without understanding what\nthe wrong reasoning paths are. In this work, we aim to enhance the MLLMs'\nreasoning ability beyond passively imitating positive reasoning paths. To this\nend, we design Step-wise Group Relative Policy Optimization (StepGRPO), a new\nonline reinforcement learning framework that enables MLLMs to self-improve\nreasoning ability via simple, effective and dense step-wise rewarding.\nSpecifically, StepGRPO introduces two novel rule-based reasoning rewards:\nStep-wise Reasoning Accuracy Reward (StepRAR) and Step-wise Reasoning Validity\nReward (StepRVR). StepRAR rewards the reasoning paths that contain necessary\nintermediate reasoning steps via a soft key-step matching technique, while\nStepRAR rewards reasoning paths that follow a well-structured and logically\nconsistent reasoning process through a reasoning completeness and logic\nevaluation strategy. With the proposed StepGRPO, we introduce R1-VL, a series\nof MLLMs with outstanding capabilities in step-by-step reasoning. Extensive\nexperiments over 8 benchmarks demonstrate the superiority of our methods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.12937.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isMod": false,
+      "followerCount": 6390
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.13444",
+      "authors": [
+        {
+          "_id": "67d8eeb17e184aa2954d19f4",
+          "name": "Ye Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eeb17e184aa2954d19f5",
+          "user": {
+            "_id": "64440be5af034cdfd69ca3a7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64440be5af034cdfd69ca3a7/qmx24QiDFT29vleCxL9TX.jpeg",
+            "isPro": true,
+            "fullname": "Qinghong (Kevin) Lin",
+            "user": "KevinQHLin",
+            "type": "user"
+          },
+          "name": "Kevin Qinghong Lin",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:28:47.081Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eeb17e184aa2954d19f6",
+          "name": "Chang Wen Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67d8eeb17e184aa2954d19f7",
+          "user": {
+            "_id": "661ab3da2b14565c7acccf5c",
+            "avatarUrl": "/avatars/fa4fc03664803e02aede4d4c3d50b393.svg",
+            "isPro": false,
+            "fullname": "Mike Zheng Shou",
+            "user": "AnalMom",
+            "type": "user"
+          },
+          "name": "Mike Zheng Shou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:29:07.309Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-17T17:59:33.000Z",
+      "submittedOnDailyAt": "2025-03-18T02:25:58.731Z",
+      "title": "VideoMind: 긴 비디오 논리의 Chain-of-LoRA 알고리즘\n\n(注意：由于原文中的“長ビデオ論理”在韩语中没有直接对应的词汇，这里保留了原文的表述，但为了更符合韩语习惯，可以考虑使用“긴 비디오 논리”作为翻译。)",
+      "submittedOnDailyBy": {
+        "_id": "64440be5af034cdfd69ca3a7",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64440be5af034cdfd69ca3a7/qmx24QiDFT29vleCxL9TX.jpeg",
+        "isPro": true,
+        "fullname": "Qinghong (Kevin) Lin",
+        "user": "KevinQHLin",
+        "type": "user"
+      },
+      "summary": "Videos, with their unique temporal dimension, demand precise grounded understanding, where answers are directly linked to visual, interpretable evidence. Despite significant breakthroughs in reasoning capabilities within Large Language Models, multi-modal reasoning - especially for videos - remains unexplored. In this work, we introduce VideoMind, a novel video-language agent designed for temporal-grounded video understanding. VideoMind incorporates two key innovations: (i) We identify essential capabilities for video temporal reasoning and develop a role-based agentic workflow, including a planner for coordinating different roles, a grounder for temporal localization, a verifier to assess temporal interval accuracy, and an answerer for question-answering. (ii) To efficiently integrate these diverse roles, we propose a novel Chain-of-LoRA strategy, enabling seamless role-switching via lightweight LoRA adaptors while avoiding the overhead of multiple models, thus balancing efficiency and flexibility. Extensive experiments on 14 public benchmarks demonstrate that our agent achieves state-of-the-art performance on diverse video understanding tasks, including 3 on grounded video question-answering, 6 on video temporal grounding, and 5 on general video question-answering, underscoring its effectiveness in advancing video agent and long-form temporal reasoning.",
+      "upvotes": 6,
+      "discussionId": "67d8eeb37e184aa2954d1a39",
+      "ai_keywords": [
+        "VideoMind",
+        "temporal-grounded video understanding",
+        "role-based agentic workflow",
+        "planner",
+        "grounder",
+        "temporale localization",
+        "verifier",
+        "temporal interval accuracy",
+        "answerer",
+        "question-answering",
+        "Chain-of-LoRA",
+        "LoRA adaptors",
+        "grounded video question-answering",
+        "video temporal grounding",
+        "general video question-answering",
+        "temporal reasoning"
+      ]
+    },
+    "publishedAt": "2025-03-17T13:59:33.000Z",
+    "title": "VideoMind: A Chain-of-LoRA Agent for Long Video Reasoning",
+    "summary": "Videos, with their unique temporal dimension, demand precise grounded\nunderstanding, where answers are directly linked to visual, interpretable\nevidence. Despite significant breakthroughs in reasoning capabilities within\nLarge Language Models, multi-modal reasoning - especially for videos - remains\nunexplored. In this work, we introduce VideoMind, a novel video-language agent\ndesigned for temporal-grounded video understanding. VideoMind incorporates two\nkey innovations: (i) We identify essential capabilities for video temporal\nreasoning and develop a role-based agentic workflow, including a planner for\ncoordinating different roles, a grounder for temporal localization, a verifier\nto assess temporal interval accuracy, and an answerer for question-answering.\n(ii) To efficiently integrate these diverse roles, we propose a novel\nChain-of-LoRA strategy, enabling seamless role-switching via lightweight LoRA\nadaptors while avoiding the overhead of multiple models, thus balancing\nefficiency and flexibility. Extensive experiments on 14 public benchmarks\ndemonstrate that our agent achieves state-of-the-art performance on diverse\nvideo understanding tasks, including 3 on grounded video question-answering, 6\non video temporal grounding, and 5 on general video question-answering,\nunderscoring its effectiveness in advancing video agent and long-form temporal\nreasoning.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.13444.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64440be5af034cdfd69ca3a7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64440be5af034cdfd69ca3a7/qmx24QiDFT29vleCxL9TX.jpeg",
+      "fullname": "Qinghong (Kevin) Lin",
+      "name": "KevinQHLin",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 21
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.13070",
+      "authors": [
+        {
+          "_id": "67d8fbf641d31cc626e4d7b9",
+          "user": {
+            "_id": "65f7e6856bd4bac5b6a4ecc3",
+            "avatarUrl": "/avatars/9c0c48310fb5e99c19700316a0ab531e.svg",
+            "isPro": false,
+            "fullname": "Yihong Luo",
+            "user": "Luo-Yihong",
+            "type": "user"
+          },
+          "name": "Yihong Luo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:07:30.236Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8fbf641d31cc626e4d7ba",
+          "user": {
+            "_id": "636a40faa6f948c4f0c62ae5",
+            "avatarUrl": "/avatars/30c35b194ba84d6e274df30e91a8cc45.svg",
+            "isPro": false,
+            "fullname": "Tianyang Hu",
+            "user": "whatlegequ",
+            "type": "user"
+          },
+          "name": "Tianyang Hu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:33:01.489Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8fbf641d31cc626e4d7bb",
+          "name": "Weijian Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67d8fbf641d31cc626e4d7bc",
+          "name": "Kenji Kawaguchi",
+          "hidden": false
+        },
+        {
+          "_id": "67d8fbf641d31cc626e4d7bd",
+          "name": "Jing Tang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-17T11:21:43.000Z",
+      "submittedOnDailyAt": "2025-03-18T03:24:24.806Z",
+      "title": "보상은 고속의 사진 품질의 이미지를 생성하기 위해 충분합니다.",
+      "submittedOnDailyBy": {
+        "_id": "65f7e6856bd4bac5b6a4ecc3",
+        "avatarUrl": "/avatars/9c0c48310fb5e99c19700316a0ab531e.svg",
+        "isPro": false,
+        "fullname": "Yihong Luo",
+        "user": "Luo-Yihong",
+        "type": "user"
+      },
+      "summary": "生成된 이미지가 복잡한 텍스트플랜트 및 인간의 취향에 맞는 것이 인공지능 생성 콘텐츠(AIGC)의 핵심적인 문제입니다. 문장을 이미지로 변환하는 모델의 제어 가능성과 신뢰도를 향상시키기 위해 보상을 강화한 분산디스테일러먼트가 우수한 접근법으로 발전하고 있습니다. 이로 인해 조건이 특정화되고 보상 신호가 강해지는 것이므로 보상 자체가 생성의 주도력이 되는 기본적인 패러다임의 변화가 확인됩니다. 반대로 분산 손실은 과도한 조정으로 간주됩니다. 이러한 가설을 자세히 검증하기 위해 새로운 조건付き 생성 접근법인 R0를 제안합니다. R0는 복잡한 조건에서 보상의 주도력을 보여주며 분산 손실을 믿지 않고 이미지 생성을 데이터 공간에서 최적화 문제로 취급하는 새로운 시각을 제안합니다. 생성자 파라미터의 고유한 설계와 적절한 조정 방법론을 기반으로 R0를 사용하여 가장 先端的文から画像への生成モデルを 단순한 스텝で 훈련합니다. 이로 인해 분산의 후처리와 조건付き 생성의 전통적인 관점을 도전하고 복잡한 조건에서 보상의 주도력을 보여주는 것을 확인합니다. 우리의 연구 결과는 AIGC의 더 넓은 분야에서 인간 중심적이고 보상 중심적인 생성 패러다임의 발전에 기여하고자 합니다. 코드는 https://github.com/Luo-Yihong/R0에 제공됩니다.",
+      "upvotes": 5,
+      "discussionId": "67d8fbf841d31cc626e4d812",
+      "githubRepo": "https://github.com/Luo-Yihong/R0",
+      "ai_keywords": [
+        "reward-enhanced diffusion distillation",
+        "diffusion losses",
+        "R0",
+        "regularized reward maximization",
+        "optimization problem in data space",
+        "compositional rewards",
+        "generator parameterization",
+        "state-of-the-art few-step text-to-image generative models",
+        "diffusion post-training",
+        "human-centric generation",
+        "reward-centric generation paradigms"
+      ]
+    },
+    "publishedAt": "2025-03-17T07:21:43.000Z",
+    "title": "Rewards Are Enough for Fast Photo-Realistic Text-to-image Generation",
+    "summary": "Aligning generated images to complicated text prompts and human preferences\nis a central challenge in Artificial Intelligence-Generated Content (AIGC).\nWith reward-enhanced diffusion distillation emerging as a promising approach\nthat boosts controllability and fidelity of text-to-image models, we identify a\nfundamental paradigm shift: as conditions become more specific and reward\nsignals stronger, the rewards themselves become the dominant force in\ngeneration. In contrast, the diffusion losses serve as an overly expensive form\nof regularization. To thoroughly validate our hypothesis, we introduce R0, a\nnovel conditional generation approach via regularized reward maximization.\nInstead of relying on tricky diffusion distillation losses, R0 proposes a new\nperspective that treats image generations as an optimization problem in data\nspace which aims to search for valid images that have high compositional\nrewards. By innovative designs of the generator parameterization and proper\nregularization techniques, we train state-of-the-art few-step text-to-image\ngenerative models with R0 at scales. Our results challenge the conventional\nwisdom of diffusion post-training and conditional generation by demonstrating\nthat rewards play a dominant role in scenarios with complex conditions. We hope\nour findings can contribute to further research into human-centric and\nreward-centric generation paradigms across the broader field of AIGC. Code is\navailable at https://github.com/Luo-Yihong/R0.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.13070.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65f7e6856bd4bac5b6a4ecc3",
+      "avatarUrl": "/avatars/9c0c48310fb5e99c19700316a0ab531e.svg",
+      "fullname": "Yihong Luo",
+      "name": "Luo-Yihong",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.11495",
+      "authors": [
+        {
+          "_id": "67d8ca56e94f1237cb3ba3ca",
+          "user": {
+            "_id": "667ee096b0fad0fdee319ed4",
+            "avatarUrl": "/avatars/d9df687e8522d47f7fcefe40fd9b575b.svg",
+            "isPro": false,
+            "fullname": "Zixu Cheng",
+            "user": "Cade921",
+            "type": "user"
+          },
+          "name": "Zixu Cheng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:31:58.589Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8ca56e94f1237cb3ba3cb",
+          "user": {
+            "_id": "65e1b6e9501590df0173cbd3",
+            "avatarUrl": "/avatars/a73e2139700e23eff455734c99cef5ba.svg",
+            "isPro": false,
+            "fullname": "Jian Hu",
+            "user": "lwpyh",
+            "type": "user"
+          },
+          "name": "Jian Hu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:08:20.643Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8ca56e94f1237cb3ba3cc",
+          "name": "Ziquan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67d8ca56e94f1237cb3ba3cd",
+          "user": {
+            "_id": "635f8ed47c05eb9f59963d3a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/635f8ed47c05eb9f59963d3a/uQf4p9N9pSaFy87Wg9v4k.jpeg",
+            "isPro": false,
+            "fullname": "ChenyangSi",
+            "user": "ChenyangSi",
+            "type": "user"
+          },
+          "name": "Chenyang Si",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:32:21.924Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8ca56e94f1237cb3ba3ce",
+          "name": "Wei Li",
+          "hidden": false
+        },
+        {
+          "_id": "67d8ca56e94f1237cb3ba3cf",
+          "name": "Shaogang Gong",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/65e1b6e9501590df0173cbd3/A2JrOm6FBAq5keCRRdVMK.png"
+      ],
+      "publishedAt": "2025-03-14T15:21:44.000Z",
+      "submittedOnDailyAt": "2025-03-18T01:11:08.161Z",
+      "title": "V-STaR: 이미지 스펙트럴 공간 시간 이유론의 벤치마크를 수행하는 이미지 LLMs",
+      "submittedOnDailyBy": {
+        "_id": "65e1b6e9501590df0173cbd3",
+        "avatarUrl": "/avatars/a73e2139700e23eff455734c99cef5ba.svg",
+        "isPro": false,
+        "fullname": "Jian Hu",
+        "user": "lwpyh",
+        "type": "user"
+      },
+      "summary": "인간은 순차적 공간-시간 논리로 영화의 이유를 이해합니다. 먼저, 관련 프레임 (\"어떤 시간인가\")를 특정하고, 다음으로 키 오브젝트의 공간 관계 (\"어디에 있는가\")를 분석하고, 마지막으로 이러한 관계를 사용하여 추론 (\"어떤 일이나 하는가\")를 수행합니다. 그러나 영화의 대규모 언어 모델 (Video-LLMs)도 영화에서 \"순차적 공간-시간 논리를 통해 이유를 찾아낼 수 있는가\"는 불확실합니다. 현재의 Video-LLM 벤치마크는 주로 오브젝트의 존재를 평가하고, 관계적 논리를 뛰어넘습니다. 따라서, 모델이 영화의 오브젝트의 상호작용 (행동/イベント)을 진정으로 이해하고 있거나, 그 상호작용의 \"메모리\"를 기반으로 답변을 생성하고 있는지 평가하는 것이 어렵습니다. 본 논문에서는 이러한 결함을 해결하기 위해, 영화의 공간-시간 논리 (V-STaR) 벤치마크를 도입합니다. 주요 아이디어는 영화의 이해를 역방향 공간-시간 논리 (RSTR) 태스크로 분해하고, 오브젝트의 존재,イベント의 발생 시간, 그 위치를 동시에 평가하고, 그 하단의 Chain-of-thought (CoT) 논리를 이해하는 것입니다. 이를 평가하기 위해, Video-LLMs의 공간-시간 논리 처리를 추출하는 데이터 세트를 구축합니다. 이는 명시적인 논리연쇄를 포함하여 인간의 인지를 미니멈하는 GPT-4 기반의 코어프eedback 작업에서 자동화 프로세스로 생성됩니다. 14개의 Video-LLMs 실험에서, 우리 V-STaR에서 현재의 Video-LLMs와 강건하고 일관된 공간-시간 논리의 필요性与 차이를 명확히 나타났습니다.",
+      "upvotes": 5,
+      "discussionId": "67d8ca59e94f1237cb3ba47c",
+      "ai_keywords": [
+        "Video Large Language Models (Video-LLMs)",
+        "Reverse Spatio-Temporal Reasoning (RSTR)",
+        "Chain-of-thought (CoT)",
+        "GPT-4",
+        "Video Spatio-Temporal Reasoning (V-STaR)",
+        "CoT questions",
+        "CoT logic",
+        "human cognition"
+      ]
+    },
+    "publishedAt": "2025-03-14T11:21:44.000Z",
+    "title": "V-STaR: Benchmarking Video-LLMs on Video Spatio-Temporal Reasoning",
+    "summary": "Human processes video reasoning in a sequential spatio-temporal reasoning\nlogic, we first identify the relevant frames (\"when\") and then analyse the\nspatial relationships (\"where\") between key objects, and finally leverage these\nrelationships to draw inferences (\"what\"). However, can Video Large Language\nModels (Video-LLMs) also \"reason through a sequential spatio-temporal logic\" in\nvideos? Existing Video-LLM benchmarks primarily focus on assessing object\npresence, neglecting relational reasoning. Consequently, it is difficult to\nmeasure whether a model truly comprehends object interactions (actions/events)\nin videos or merely relies on pre-trained \"memory\" of co-occurrences as biases\nin generating answers. In this work, we introduce a Video Spatio-Temporal\nReasoning (V-STaR) benchmark to address these shortcomings. The key idea is to\ndecompose video understanding into a Reverse Spatio-Temporal Reasoning (RSTR)\ntask that simultaneously evaluates what objects are present, when events occur,\nand where they are located while capturing the underlying Chain-of-thought\n(CoT) logic. To support this evaluation, we construct a dataset to elicit the\nspatial-temporal reasoning process of Video-LLMs. It contains coarse-to-fine\nCoT questions generated by a semi-automated GPT-4-powered pipeline, embedding\nexplicit reasoning chains to mimic human cognition. Experiments from 14\nVideo-LLMs on our V-STaR reveal significant gaps between current Video-LLMs and\nthe needs for robust and consistent spatio-temporal reasoning.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/65e1b6e9501590df0173cbd3/A2JrOm6FBAq5keCRRdVMK.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11495.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65e1b6e9501590df0173cbd3",
+      "avatarUrl": "/avatars/a73e2139700e23eff455734c99cef5ba.svg",
+      "fullname": "Jian Hu",
+      "name": "lwpyh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.11412",
+      "authors": [
+        {
+          "_id": "67d8f8b77f61dda9ea6512b7",
+          "name": "Shiyuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f8b77f61dda9ea6512b8",
+          "user": {
+            "_id": "678f49878af7a399877b87c0",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/3IHnM4AKbIW_wmL15wdZf.png",
+            "isPro": false,
+            "fullname": "GuZheng",
+            "user": "GuZheng",
+            "type": "user"
+          },
+          "name": "Zheng Gu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:33:49.096Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f8b77f61dda9ea6512b9",
+          "user": {
+            "_id": "64560a2aaaaf85a98fa9a4b9",
+            "avatarUrl": "/avatars/e81e21f353baf48f0d91bf29ad200eea.svg",
+            "isPro": false,
+            "fullname": "Liang Hou",
+            "user": "lianghou",
+            "type": "user"
+          },
+          "name": "Liang Hou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:33:57.501Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f8b77f61dda9ea6512ba",
+          "name": "Xin Tao",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f8b77f61dda9ea6512bb",
+          "user": {
+            "_id": "662f93942510ef5735d7ad00",
+            "avatarUrl": "/avatars/dc9486db75869ce902d0a638eea126bd.svg",
+            "isPro": false,
+            "fullname": "magicwpf",
+            "user": "magicwpf",
+            "type": "user"
+          },
+          "name": "Pengfei Wan",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-03-18T04:42:06.437Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f8b77f61dda9ea6512bc",
+          "user": {
+            "_id": "67be7cd21616162fc336cb44",
+            "avatarUrl": "/avatars/e58cc3c2d1484419222a5ccfc11f5c48.svg",
+            "isPro": false,
+            "fullname": "Xiaodong Chen",
+            "user": "XiaodongChen",
+            "type": "user"
+          },
+          "name": "Xiaodong Chen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:34:15.858Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f8b77f61dda9ea6512bd",
+          "user": {
+            "_id": "65e77726767bfc7d109c45bf",
+            "avatarUrl": "/avatars/24e68c86e06055ea1209598ba49ce8b9.svg",
+            "isPro": false,
+            "fullname": "Jing Liao",
+            "user": "CeciliaJL",
+            "type": "user"
+          },
+          "name": "Jing Liao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:34:23.653Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63316d499e3604f3f17f5d89/jV8ETjZh0NTDoFBhSNv8I.mp4"
+      ],
+      "publishedAt": "2025-03-14T13:54:10.000Z",
+      "submittedOnDailyAt": "2025-03-18T03:20:01.050Z",
+      "title": "MTV-Inpaint: 다 태스크 긴 비디오 인풋플레이닝",
+      "submittedOnDailyBy": {
+        "_id": "63316d499e3604f3f17f5d89",
+        "avatarUrl": "/avatars/c7e0c8bdd7e598276cfd133d5222c5e8.svg",
+        "isPro": false,
+        "fullname": "catfood",
+        "user": "ysy31415926",
+        "type": "user"
+      },
+      "summary": "Video inpainting는 영상 내의 특정 영역을 변경하고 공간적 및 시간적 일관성을 보장하는 것을 포함합니다. 현재의 방법들은 주로 공간복원(Space Completion, 즉 결손 영역을 채우는 것)에 초점을 맞추고 있으며, 새로운 물체를 공간에 제어된 방식으로 삽입할 능력이 부족합니다. 다행히도, 최근 텍스트에서 영상으로의 (T2V) 확산 모델의 발전은 텍스트를 안내한 영상 inpainting에 연결되었습니다. 그러나 T2V 모델을 직접 inpainting에 적용하는 것은 완성과 삽입의 두 가지 태스크의 통합, 입력의 제어 가능성, 긴 영상 처리에서 한계가 있으며, 그 적용 가능성과 유연성이 제한되어 있습니다. 이러한 문제를 해결하기 위해, 우리는 단일 프레임워크에서 공간복원과 새로운 물체 삽입의 두 가지 태스크를 처리할 수 있는 통합적인 다 태스크 영상 inpainting 프레임워크인 MTV-Inpaint를 제안하고 있습니다. 이러한 다른 태스크를 통합하기 위해, T2V 확산 U-Net 내부에서 공간 어텐션 구조를 이중 구조로 설계하여 공간복원과 물체 삽입의 무간 차이를 통합할 수 있게 되었습니다. 텍스트 안내는 물론, MTV-Inpaint는 우리가 제안한 이미지에서 영상으로의 (I2V) inpainting 모드를 포함하며, 다양한 제어를 지원하고 있습니다. 또한, 우리는 키 프레임 inpainting과 간접 프레임의 전파를 결합한 2 단계 파이프라인을 제안하고 있으며, MTV-Inpaint는数百 프레임의 긴 영상도 효과적으로 처리할 수 있도록 합니다. 확장된 실험에 따르면 MTV-Inpaint는 공간복원과 물체 삽입의 두 가지 태스크에서 가장 先端의 성능을 보였으며, 멀티 모드 inpainting, 물체 편집, 제거, 이미지 물체 브레이시, 긴 영상 처리 능력 등 확장 가능한 응용 프로그램의 다양성을 보여주고 있습니다. 프로젝트 페이지는 https://mtv-inpaint.github.io/ 입니다.",
+      "upvotes": 5,
+      "discussionId": "67d8f8bf7f61dda9ea6514a7",
+      "projectPage": "https://mtv-inpaint.github.io/",
+      "ai_keywords": [
+        "text-to-video (T2V) diffusion models",
+        "text-guided video inpainting",
+        "dual-branch spatial attention mechanism",
+        "T2V diffusion U-Net",
+        "multimodal control",
+        "image-to-video (I2V) inpainting mode",
+        "keyframe inpainting",
+        "in-between frame propagation",
+        "multi-modal inpainting",
+        "object editing",
+        "object removal",
+        "image object brush"
+      ]
+    },
+    "publishedAt": "2025-03-14T09:54:10.000Z",
+    "title": "MTV-Inpaint: Multi-Task Long Video Inpainting",
+    "summary": "Video inpainting involves modifying local regions within a video, ensuring\nspatial and temporal consistency. Most existing methods focus primarily on\nscene completion (i.e., filling missing regions) and lack the capability to\ninsert new objects into a scene in a controllable manner. Fortunately, recent\nadvancements in text-to-video (T2V) diffusion models pave the way for\ntext-guided video inpainting. However, directly adapting T2V models for\ninpainting remains limited in unifying completion and insertion tasks, lacks\ninput controllability, and struggles with long videos, thereby restricting\ntheir applicability and flexibility. To address these challenges, we propose\nMTV-Inpaint, a unified multi-task video inpainting framework capable of\nhandling both traditional scene completion and novel object insertion tasks. To\nunify these distinct tasks, we design a dual-branch spatial attention mechanism\nin the T2V diffusion U-Net, enabling seamless integration of scene completion\nand object insertion within a single framework. In addition to textual\nguidance, MTV-Inpaint supports multimodal control by integrating various image\ninpainting models through our proposed image-to-video (I2V) inpainting mode.\nAdditionally, we propose a two-stage pipeline that combines keyframe inpainting\nwith in-between frame propagation, enabling MTV-Inpaint to effectively handle\nlong videos with hundreds of frames. Extensive experiments demonstrate that\nMTV-Inpaint achieves state-of-the-art performance in both scene completion and\nobject insertion tasks. Furthermore, it demonstrates versatility in derived\napplications such as multi-modal inpainting, object editing, removal, image\nobject brush, and the ability to handle long videos. Project page:\nhttps://mtv-inpaint.github.io/.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63316d499e3604f3f17f5d89/jV8ETjZh0NTDoFBhSNv8I.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11412.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63316d499e3604f3f17f5d89",
+      "avatarUrl": "/avatars/c7e0c8bdd7e598276cfd133d5222c5e8.svg",
+      "fullname": "catfood",
+      "name": "ysy31415926",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.10704",
+      "authors": [
+        {
+          "_id": "67d7eba831dd5b46c3e6fdcb",
+          "user": {
+            "_id": "633c2310c0fb6fd232f0accf",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633c2310c0fb6fd232f0accf/AnvEvxMtd-BpSZbaoA4ha.jpeg",
+            "isPro": false,
+            "fullname": "Wang Jing",
+            "user": "k-nick",
+            "type": "user"
+          },
+          "name": "Jing Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:09:01.169Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d7eba831dd5b46c3e6fdcc",
+          "user": {
+            "_id": "64b8c1a995bd42c7707f7918",
+            "avatarUrl": "/avatars/08c2929f8f150ecd6f8e5a06c4cb9034.svg",
+            "isPro": false,
+            "fullname": "Fengzhuo Zhang",
+            "user": "Fengzhuo",
+            "type": "user"
+          },
+          "name": "Fengzhuo Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:34:37.712Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d7eba831dd5b46c3e6fdcd",
+          "user": {
+            "_id": "67aa01782183876b1ec5760f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/hZd1iBn_2yjHVoavcXPQo.png",
+            "isPro": false,
+            "fullname": "xiaolili",
+            "user": "xiaolili",
+            "type": "user"
+          },
+          "name": "Xiaoli Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:34:47.006Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d7eba831dd5b46c3e6fdce",
+          "name": "Vincent Y. F. Tan",
+          "hidden": false
+        },
+        {
+          "_id": "67d7eba831dd5b46c3e6fdcf",
+          "user": {
+            "_id": "661a4a556fb488fa078c60aa",
+            "avatarUrl": "/avatars/c77401fa9c6d2db896b4a337bb3f8add.svg",
+            "isPro": false,
+            "fullname": "Tianyu Pang",
+            "user": "TIanyupang",
+            "type": "user"
+          },
+          "name": "Tianyu Pang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:35:17.732Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d7eba831dd5b46c3e6fdd0",
+          "user": {
+            "_id": "632407c892e07e3ca20aca28",
+            "avatarUrl": "/avatars/23b51b37b12b51a0947f687d1de4d3b5.svg",
+            "isPro": false,
+            "fullname": "Chao Du",
+            "user": "duchao",
+            "type": "user"
+          },
+          "name": "Chao Du",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:35:29.239Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d7eba831dd5b46c3e6fdd1",
+          "user": {
+            "_id": "664aab898fa42b4fe70ebf52",
+            "avatarUrl": "/avatars/a38455fd17bbc74ce3111f2c3da9aa59.svg",
+            "isPro": false,
+            "fullname": "Aixin Sun",
+            "user": "aixinsun",
+            "type": "user"
+          },
+          "name": "Aixin Sun",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:35:35.567Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d7eba831dd5b46c3e6fdd2",
+          "user": {
+            "_id": "6397873ec0b27f432db8693f",
+            "avatarUrl": "/avatars/1db65fe55002ad5c137c4a59bbcd239d.svg",
+            "isPro": false,
+            "fullname": "Zhuoran Yang",
+            "user": "zhuoran",
+            "type": "user"
+          },
+          "name": "Zhuoran Yang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-17T09:30:18.764Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-12T15:32:44.000Z",
+      "submittedOnDailyAt": "2025-03-18T03:10:46.254Z",
+      "title": "오류 분석의 자동 회귀 비디오 디퓨저 모델: 한 개의 통합 프레임워크",
+      "submittedOnDailyBy": {
+        "_id": "633c2310c0fb6fd232f0accf",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633c2310c0fb6fd232f0accf/AnvEvxMtd-BpSZbaoA4ha.jpeg",
+        "isPro": false,
+        "fullname": "Wang Jing",
+        "user": "k-nick",
+        "type": "user"
+      },
+      "summary": "다양한 자동 역회귀 비디오 확산 모델(ARVDM)은 현실적인 긴 비디오의 생성에 놀라운 성공을 거뒀습니다. 그러나 이러한 모델의 이론적 분석은 부족합니다. 본 논문에서는 이러한 모델의 이론적 기반을 개발하고, 이를 기존 모델의 성능 향상에 활용합니다. 우선, Meta-ARVDM, 즉, 현재 존재하는 방법들을 통합하는 ARVDM의 통합적인 프레임워크를 개발합니다. Meta-ARVDM을 사용하여, Meta-ARVDM이 생성한 비디오와 실제 비디오 사이의 KL 분산을 분석합니다. 분석에서는 ARVDM에 고유한 두 가지 중요한 현상을 밝혀냅니다 -- 오류의 축적과 메모리 부트neck. 정보 이론적인 불가능성 결과를 계산하여, 메모리 부트neck 현상은 피할 수 없다고 보여줍니다. 메모리 부트neck을 완화하기 위해, 과거의 프레임을 명시적으로 사용하도록 다양한 네트워크 구조를 설계합니다. 또한, 프레임을 압축하여 메모리 부트neck의 완화와 추론 효율의 향상을 크게 개선합니다. DMLab와 Minecraft에서 수행한 실험 결과를 통해, 본 논문에서 제안된 방법의 효과가 입증됩니다. 또한, 오류의 축적과 메모리 부트neck의 파도러 파이어를 보여줍니다.",
+      "upvotes": 4,
+      "discussionId": "67d7ebaa31dd5b46c3e6fe5a",
+      "projectPage": "https://sail-sg.github.io/AR-Video-Diffusion",
+      "ai_keywords": [
+        "Auto-Regressive Video Diffusion Models",
+        "Meta-ARVDM",
+        "KL-divergence",
+        "error accumulation",
+        "memory bottleneck",
+        "information-theoretic impossibility result",
+        "network structures",
+        "frame compression",
+        "DMLab",
+        "Minecraft",
+        "Pareto-frontier"
+      ]
+    },
+    "publishedAt": "2025-03-12T11:32:44.000Z",
+    "title": "Error Analyses of Auto-Regressive Video Diffusion Models: A Unified\n  Framework",
+    "summary": "A variety of Auto-Regressive Video Diffusion Models (ARVDM) have achieved\nremarkable successes in generating realistic long-form videos. However,\ntheoretical analyses of these models remain scant. In this work, we develop\ntheoretical underpinnings for these models and use our insights to improve the\nperformance of existing models. We first develop Meta-ARVDM, a unified\nframework of ARVDMs that subsumes most existing methods. Using Meta-ARVDM, we\nanalyze the KL-divergence between the videos generated by Meta-ARVDM and the\ntrue videos. Our analysis uncovers two important phenomena inherent to ARVDM --\nerror accumulation and memory bottleneck. By deriving an information-theoretic\nimpossibility result, we show that the memory bottleneck phenomenon cannot be\navoided. To mitigate the memory bottleneck, we design various network\nstructures to explicitly use more past frames. We also achieve a significantly\nimproved trade-off between the mitigation of the memory bottleneck and the\ninference efficiency by compressing the frames. Experimental results on DMLab\nand Minecraft validate the efficacy of our methods. Our experiments also\ndemonstrate a Pareto-frontier between the error accumulation and memory\nbottleneck across different methods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.10704.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "633c2310c0fb6fd232f0accf",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633c2310c0fb6fd232f0accf/AnvEvxMtd-BpSZbaoA4ha.jpeg",
+      "fullname": "Wang Jing",
+      "name": "k-nick",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.10719",
+      "authors": [
+        {
+          "_id": "67d91dadb533888991ade4e1",
+          "user": {
+            "_id": "672c6f3d4c1e2de12c6f174e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/mv-8GX6OBBpJLzVvyPYbz.png",
+            "isPro": false,
+            "fullname": "Yehang Zhang",
+            "user": "Buzz-lightyear",
+            "type": "user"
+          },
+          "name": "Yehang Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:07:19.937Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d91dadb533888991ade4e2",
+          "user": {
+            "_id": "64b4ab62eec33e27dcd733b5",
+            "avatarUrl": "/avatars/0a9bf220c9a5efe7279f9b287b087d36.svg",
+            "isPro": false,
+            "fullname": "Xinli XU",
+            "user": "Xxlbigbrother",
+            "type": "user"
+          },
+          "name": "Xinli Xu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:35:50.412Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d91dadb533888991ade4e3",
+          "name": "Xiaojie Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67d91dadb533888991ade4e4",
+          "name": "Li Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67d91dadb533888991ade4e5",
+          "user": {
+            "_id": "655cba1d87b67834000590e8",
+            "avatarUrl": "/avatars/3bd43b7c9351f65b8f38f4c8237a0146.svg",
+            "isPro": false,
+            "fullname": "Yingcong Chen",
+            "user": "yingcongchen",
+            "type": "user"
+          },
+          "name": "Yingcong Chen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:36:19.820Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-13T07:58:23.000Z",
+      "submittedOnDailyAt": "2025-03-18T06:41:21.358Z",
+      "title": "长视频音频合成에서의 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과적인 효과",
+      "submittedOnDailyBy": {
+        "_id": "672c6f3d4c1e2de12c6f174e",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/mv-8GX6OBBpJLzVvyPYbz.png",
+        "isPro": false,
+        "fullname": "Yehang Zhang",
+        "user": "Buzz-lightyear",
+        "type": "user"
+      },
+      "summary": "ビデオから의 음성 합성은 시각적 콘텐츠에 동기화된 음성을 생성하는 기술로, 영화나 상호작용 미디어에서 시청자의 몰입감과 일관된 나레이션을 크게 향상시킬 수 있습니다. 그러나 긴 콘텐츠에 대한 비디오로부터의 음성 번역은 동적인 의미의 이동, 시간적인 조정 불일치, 특정 데이터 세트의 부족으로 해결되지 않은 문제로 남아 있습니다. 기존의 방법은 짧은 비디오에서 잘 작동하지만, 긴 경우(예: 영화)에서는 합성의 분할과 스펙트럴의 일관성 부족으로 실패합니다. 우리는 전문적인 번역 작업 흐름을 모방하는 새로운 다 에이전트 프레임워크 \"LVAS-Agent\"를 제안하고 있습니다. 우리의 접근법은 시나rio 분할, 스크립트 생성, 소리 디자인, 음성 합성의 4단계로 분해됩니다. 주요 혁신은 시나rio/스크립트의 정밀화의 논의 수정 기능과 시간적, 의미적인 조정의 생성·검색 루프를 포함합니다. 시스템적 평가가 가능하도록, 우리는 207명의 전문가들이 편집한 다양한 경우의 긴 유형의 비디오를 포함하는 첫 번째 벤치마크 \"LVAS-Bench\"를 소개합니다. 실험은 기준 방법보다 높은 음성 및 시각적 조정을 보여주고 있습니다. 프로젝트 페이지: https://lvas-agent.github.io",
+      "upvotes": 2,
+      "discussionId": "67d91dafb533888991ade557",
+      "projectPage": "https://lvas-agent.github.io/",
+      "ai_keywords": [
+        "scene segmentation",
+        "script generation",
+        "sound design",
+        "audio synthesis",
+        "discussion-correction mechanism",
+        "generation-retrieval loop",
+        "temporal-semantic alignment",
+        "LVAS-Agent",
+        "LVAS-Bench",
+        "audio-visual alignment"
+      ]
+    },
+    "publishedAt": "2025-03-13T03:58:23.000Z",
+    "title": "Long-Video Audio Synthesis with Multi-Agent Collaboration",
+    "summary": "Video-to-audio synthesis, which generates synchronized audio for visual\ncontent, critically enhances viewer immersion and narrative coherence in film\nand interactive media. However, video-to-audio dubbing for long-form content\nremains an unsolved challenge due to dynamic semantic shifts, temporal\nmisalignment, and the absence of dedicated datasets. While existing methods\nexcel in short videos, they falter in long scenarios (e.g., movies) due to\nfragmented synthesis and inadequate cross-scene consistency. We propose\nLVAS-Agent, a novel multi-agent framework that emulates professional dubbing\nworkflows through collaborative role specialization. Our approach decomposes\nlong-video synthesis into four steps including scene segmentation, script\ngeneration, sound design and audio synthesis. Central innovations include a\ndiscussion-correction mechanism for scene/script refinement and a\ngeneration-retrieval loop for temporal-semantic alignment. To enable systematic\nevaluation, we introduce LVAS-Bench, the first benchmark with 207\nprofessionally curated long videos spanning diverse scenarios. Experiments\ndemonstrate superior audio-visual alignment over baseline methods. Project\npage: https://lvas-agent.github.io",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.10719.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "672c6f3d4c1e2de12c6f174e",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/mv-8GX6OBBpJLzVvyPYbz.png",
+      "fullname": "Yehang Zhang",
+      "name": "Buzz-lightyear",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.13369",
+      "authors": [
+        {
+          "_id": "67d8e38e5fde3b1be16874e4",
+          "user": {
+            "_id": "64b214c4f4361a032002cdcf",
+            "avatarUrl": "/avatars/3188a4edec4d6c945a0ed9f36050a03c.svg",
+            "isPro": false,
+            "fullname": "Andrew Wan Ju Kang",
+            "user": "soarhigh",
+            "type": "user"
+          },
+          "name": "Wan Ju Kang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-18T08:08:01.967Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e38e5fde3b1be16874e5",
+          "user": {
+            "_id": "628e3b87a2cb9819d4391ba6",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1653488512816-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Eunki Kim",
+            "user": "eunkey",
+            "type": "user"
+          },
+          "name": "Eunki Kim",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:36:36.532Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e38e5fde3b1be16874e6",
+          "user": {
+            "_id": "65cccd8c80d3c4b865d3b262",
+            "avatarUrl": "/avatars/e6f6d8f06dd54e1e7b6d686835a9c075.svg",
+            "isPro": false,
+            "fullname": "Na Min An",
+            "user": "namin0202",
+            "type": "user"
+          },
+          "name": "Na Min An",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:36:43.821Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e38e5fde3b1be16874e7",
+          "user": {
+            "_id": "62f2638d04674e28535d40f8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1672818467177-62f2638d04674e28535d40f8.png",
+            "isPro": false,
+            "fullname": "Sangryul Kim",
+            "user": "sangryul",
+            "type": "user"
+          },
+          "name": "Sangryul Kim",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:36:49.867Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e38e5fde3b1be16874e8",
+          "user": {
+            "_id": "6639807fc9648d06126d7ec4",
+            "avatarUrl": "/avatars/d996b5102ae9092da6db5f44f5142b54.svg",
+            "isPro": false,
+            "fullname": "haemin choi",
+            "user": "hammnii",
+            "type": "user"
+          },
+          "name": "Haemin Choi",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:36:55.951Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e38e5fde3b1be16874e9",
+          "name": "Ki Hoon Kwak",
+          "hidden": false
+        },
+        {
+          "_id": "67d8e38e5fde3b1be16874ea",
+          "name": "James Thorne",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-17T16:52:46.000Z",
+      "submittedOnDailyAt": "2025-03-18T06:53:48.028Z",
+      "title": "신호 수: 시각자의 피드백을 활용하여 BLV에 맞는 디아그램 설명 데이터셋의 구축",
+      "submittedOnDailyBy": {
+        "_id": "64b214c4f4361a032002cdcf",
+        "avatarUrl": "/avatars/3188a4edec4d6c945a0ed9f36050a03c.svg",
+        "isPro": false,
+        "fullname": "Andrew Wan Ju Kang",
+        "user": "soarhigh",
+        "type": "user"
+      },
+      "summary": "通常, Annotation Group과 Final User Group의 요구 사항 및 시각적 능력은 다르다. Blind people and low vision users (BLV)와 같은 사용자에 대한 세부적인 그림 설명을 생성하는 것은 한 가지 어려운 영역이다. 시각가 있는 Annotation Group은 시각적 콘텐츠에 쉽게 설명할 수 있지만, 기존의 연구에 따르면, 이들을 직접 생성하는 것은 비용이 높고, 편향이 있고, BLV의 표준에 부족하다. 본 연구에서는 시각가 있는 사람을 그림 설명을 평가하는 것을 요구하고, 그들을 생성하는 것을 요구하지 않습니다. Vision Language Model (VLM)은 잠재적인 서브젝트에 의해 안내되어 여러 단계의 추론을 통해 생성된 그림 설명을 평가합니다. 시각가 있는 사람의 평가는 자신의 BLV인 시각 장애자 학습자를 가르치는 전문적인 교육자에게 효과적이고 유용한 것으로 평가될 수 있습니다. Sightation, 즉 5k 그림 설명 데이터 세트와 137k 샘플을 기록한 집합을 공개하고, 완료, 취향, 검색, 질문응답, 논리론의 훈련을 위해 사용하며, 그 微调의 가능성도 보여주었습니다.",
+      "upvotes": 1,
+      "discussionId": "67d8e3905fde3b1be168759f",
+      "projectPage": "https://huggingface.co/Sightation",
+      "ai_keywords": [
+        "vision-language models (VLM)",
+        "latent supervision",
+        "multi-pass inference",
+        "diagram description datasets",
+        "fine-tuning"
+      ]
+    },
+    "publishedAt": "2025-03-17T12:52:46.000Z",
+    "title": "Sightation Counts: Leveraging Sighted User Feedback in Building a\n  BLV-aligned Dataset of Diagram Descriptions",
+    "summary": "Often, the needs and visual abilities differ between the annotator group and\nthe end user group. Generating detailed diagram descriptions for blind and\nlow-vision (BLV) users is one such challenging domain. Sighted annotators could\ndescribe visuals with ease, but existing studies have shown that direct\ngenerations by them are costly, bias-prone, and somewhat lacking by BLV\nstandards. In this study, we ask sighted individuals to assess -- rather than\nproduce -- diagram descriptions generated by vision-language models (VLM) that\nhave been guided with latent supervision via a multi-pass inference. The\nsighted assessments prove effective and useful to professional educators who\nare themselves BLV and teach visually impaired learners. We release Sightation,\na collection of diagram description datasets spanning 5k diagrams and 137k\nsamples for completion, preference, retrieval, question answering, and\nreasoning training purposes and demonstrate their fine-tuning potential in\nvarious downstream tasks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.13369.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b214c4f4361a032002cdcf",
+      "avatarUrl": "/avatars/3188a4edec4d6c945a0ed9f36050a03c.svg",
+      "fullname": "Andrew Wan Ju Kang",
+      "name": "soarhigh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.12530",
+      "authors": [
+        {
+          "_id": "67d8f0fa53f713733d6c6b1c",
+          "user": {
+            "_id": "6737d99b728a96aa64a2b00a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/p3vMX0xkvL_4IpWwyURLM.png",
+            "isPro": false,
+            "fullname": "Hunter Sawyer",
+            "user": "HTSawyer",
+            "type": "user"
+          },
+          "name": "Hunter Sawyer",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:37:16.399Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f0fa53f713733d6c6b1d",
+          "user": {
+            "_id": "63c19eb3a0ffa3857eae2efa",
+            "avatarUrl": "/avatars/35b06ca092f615a6d11ee99683d0376a.svg",
+            "isPro": false,
+            "fullname": "Jesse Roberts",
+            "user": "JesseTNRoberts",
+            "type": "user"
+          },
+          "name": "Jesse Roberts",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-18T04:05:16.739Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f0fa53f713733d6c6b1e",
+          "user": {
+            "_id": "675ec603e4d6d0e820ad9d3f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/ruPDRCZlcbDhZ6zp4xi_P.png",
+            "isPro": false,
+            "fullname": "Olzhas",
+            "user": "KyleMoore",
+            "type": "user"
+          },
+          "name": "Kyle Moore",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-18T09:37:25.148Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-16T14:50:54.000Z",
+      "submittedOnDailyAt": "2025-03-18T02:37:23.781Z",
+      "title": "기본 카테고리의 사용 방법 (Vision Language Models)",
+      "submittedOnDailyBy": {
+        "_id": "63c19eb3a0ffa3857eae2efa",
+        "avatarUrl": "/avatars/35b06ca092f615a6d11ee99683d0376a.svg",
+        "isPro": false,
+        "fullname": "Jesse Roberts",
+        "user": "JesseTNRoberts",
+        "type": "user"
+      },
+      "summary": "심리학의 분야는 1976년 Rosch가 제시한 시각적 자극의 라벨링에 대한 기본적인 분류 수준을 오랜 시간 동안 인식하고 있습니다. 이 분류 수준은 시각 언어 태스크에 포함되는 덧시닝을 포함하며, 정보 밀도가 높고, 인간의 이해를 촉진합니다. 이 논문에서는 최근 공개된 두 개의 오픈 소스 비지니스 언어 모델(VLMs)에서 기본적인 수준의 분류를 조사합니다. 이 논문에서는 Llama 3.2 Vision Instruct(11B)와 Molmo 7B-D가 인간 행동과 일치하는 기본적인 수준의 분류를 선호하고, 생물학적인 및 비생물학적인 기본적인 수준의 효과, 그리고 기존의 전문가의 기본적인 수준의 변동 등을 통해 복잡한 인간 행동에 일치합니다. 이러한 결과를 통해, VLMs은 훈련된 데이터로부터 인간적인 인지적 분류 행동을 학습하고 있음을 한 단계 더 증명합니다.",
+      "upvotes": 1,
+      "discussionId": "67d8f0fc53f713733d6c6b89",
+      "ai_keywords": [
+        "vision-language models (VLMs)",
+        "basic level categorization",
+        "biological versus non-biological basic level effects",
+        "expert basic level shift",
+        "cognitive categorization behaviors"
+      ]
+    },
+    "publishedAt": "2025-03-16T10:50:54.000Z",
+    "title": "Basic Category Usage in Vision Language Models",
+    "summary": "The field of psychology has long recognized a basic level of categorization\nthat humans use when labeling visual stimuli, a term coined by Rosch in 1976.\nThis level of categorization has been found to be used most frequently, to have\nhigher information density, and to aid in visual language tasks with priming in\nhumans. Here, we investigate basic level categorization in two recently\nreleased, open-source vision-language models (VLMs). This paper demonstrates\nthat Llama 3.2 Vision Instruct (11B) and Molmo 7B-D both prefer basic level\ncategorization consistent with human behavior. Moreover, the models'\npreferences are consistent with nuanced human behaviors like the biological\nversus non-biological basic level effects and the well established expert basic\nlevel shift, further suggesting that VLMs acquire cognitive categorization\nbehaviors from the human data on which they are trained.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.12530.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c19eb3a0ffa3857eae2efa",
+      "avatarUrl": "/avatars/35b06ca092f615a6d11ee99683d0376a.svg",
+      "fullname": "Jesse Roberts",
+      "name": "JesseTNRoberts",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.12528",
+      "authors": [
+        {
+          "_id": "67d8f044f8b0e148f60cef0d",
+          "name": "Kyle Moore",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f044f8b0e148f60cef0e",
+          "user": {
+            "_id": "63c19eb3a0ffa3857eae2efa",
+            "avatarUrl": "/avatars/35b06ca092f615a6d11ee99683d0376a.svg",
+            "isPro": false,
+            "fullname": "Jesse Roberts",
+            "user": "JesseTNRoberts",
+            "type": "user"
+          },
+          "name": "Jesse Roberts",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-18T04:02:14.260Z",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f044f8b0e148f60cef0f",
+          "name": "Daryl Watson",
+          "hidden": false
+        },
+        {
+          "_id": "67d8f044f8b0e148f60cef10",
+          "name": "Pamela Wisniewski",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-16T14:45:43.000Z",
+      "submittedOnDailyAt": "2025-03-18T02:34:14.582Z",
+      "title": "인간대응 대언어 모델의 불확실성 조사",
+      "submittedOnDailyBy": {
+        "_id": "63c19eb3a0ffa3857eae2efa",
+        "avatarUrl": "/avatars/35b06ca092f615a6d11ee99683d0376a.svg",
+        "isPro": false,
+        "fullname": "Jesse Roberts",
+        "user": "JesseTNRoberts",
+        "type": "user"
+      },
+      "summary": "최근의 연구는 대규모 언어 모델의 불확실성을 정량화하고 모델의 제어와 사용자의 신뢰관계를 조정하는 데 노력을 기울이고 있습니다. 선행 연구는 이론적으로 기반을 둔 불확실성의 측정법과 모델의 평균 외견 행동을 반영하는 측정법을 중점으로 다루었습니다. 본 연구에서는 다양한 불확실성의 측정법을 조사하고 사용자의 그룹 수준의 불확실성과 관련된 측정법을 특정하는 것을 목표로 합니다. 우리는 베이지안 측정법과 엔트로피 측정법의 변형 버전(top-k 엔트로피)이 모델의 크기에 따라 사용자의 행동과 일치함을 발견했습니다. 또한 일부 강력한 측정법은 모델의 크기에 따라 사용자의 유사성이 떨어지는 것을 발견했지만, 여러 선형 회귀 분석을 통해 여러 불확실성의 측정법을 조합하여 크기 의존성을 줄일 수 있는 동시에 사용자의 대응성을 상대적으로 높일 수 있음을 확인했습니다.",
+      "upvotes": 1,
+      "discussionId": "67d8f046f8b0e148f60cef95",
+      "ai_keywords": [
+        "Bayesian measures",
+        "entropy measures",
+        "top-k entropy",
+        "human-similarity",
+        "human-alignment",
+        "multiple linear regression"
+      ]
+    },
+    "publishedAt": "2025-03-16T10:45:43.000Z",
+    "title": "Investigating Human-Aligned Large Language Model Uncertainty",
+    "summary": "Recent work has sought to quantify large language model uncertainty to\nfacilitate model control and modulate user trust. Previous works focus on\nmeasures of uncertainty that are theoretically grounded or reflect the average\novert behavior of the model. In this work, we investigate a variety of\nuncertainty measures, in order to identify measures that correlate with human\ngroup-level uncertainty. We find that Bayesian measures and a variation on\nentropy measures, top-k entropy, tend to agree with human behavior as a\nfunction of model size. We find that some strong measures decrease in\nhuman-similarity with model size, but, by multiple linear regression, we find\nthat combining multiple uncertainty measures provide comparable human-alignment\nwith reduced size-dependency.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.12528.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c19eb3a0ffa3857eae2efa",
+      "avatarUrl": "/avatars/35b06ca092f615a6d11ee99683d0376a.svg",
+      "fullname": "Jesse Roberts",
+      "name": "JesseTNRoberts",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
