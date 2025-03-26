@@ -1,0 +1,1577 @@
+[
+  {
+    "paper": {
+      "id": "2503.19325",
+      "authors": [
+        {
+          "_id": "67e35f6fc9d8214b5e1c64c3",
+          "name": "Yuchao Gu",
+          "hidden": false
+        },
+        {
+          "_id": "67e35f6fc9d8214b5e1c64c4",
+          "name": "Weijia Mao",
+          "hidden": false
+        },
+        {
+          "_id": "67e35f6fc9d8214b5e1c64c5",
+          "name": "Mike Zheng Shou",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63021630a35b21bd8a53305a/SL0MQs7OvQpNlGBhroTW3.png"
+      ],
+      "publishedAt": "2025-03-25T03:38:06.000Z",
+      "submittedOnDailyAt": "2025-03-26T00:37:14.940Z",
+      "title": "장문맥상 자동회귀 비디오 모델링과 다음 프레임 예측",
+      "submittedOnDailyBy": {
+        "_id": "63021630a35b21bd8a53305a",
+        "avatarUrl": "/avatars/7a7e8b39749eda61e57d8a1908726558.svg",
+        "isPro": true,
+        "fullname": "Gu Yuchao",
+        "user": "guyuchao",
+        "type": "user"
+      },
+      "summary": "장문맥 자동회귀 모델링은 언어 생성에서 크게 발전했습니다が, 영상 생성은 장기간 시간 맥락을 충분히 활용하는 것이 어려워졌습니다. 장문맥 영상 모델링을 조사하기 위해, Frame AutoRegressive (FAR)를 통해 영상 자동회귀 모델링의 강력한 기준을 제안합니다. 언어 모델은 토큰 (Token)의 원인적 의존관계를 학습하지만, FAR는 연속된 프레임의 시간의 원인적 의존관계를 모델링하고, 토큰 AR이나 영상 디퓨전 트랜스포머보다 더 좋은 수렴을 달성합니다. FAR를 기반으로, 장문맥 시각 모델링은 시각적冗長성으로 인해 문제가 드러났습니다. 현재의 RoPE는 먼 문맥에 대한 유효한 시간의 감쇠를 갖지 않고, 긴 영상 시퀀스에서도 좋은 추론을 할 수 없습니다. 또한, 긴 영상의 훈련은 계산적으로 비싸며, 시각적 토큰은 언어의 토큰보다 급격히 증가하고 있습니다. 이러한 문제를 해결하기 위해, 지역성과 장기간 의존관계의 균형을 조정하기 위해 FlexRoPE를 제안합니다. FlexRoPE는 RoPE에 유연한 시간의 감쇠를 추가하고, 16배 더 긴 시각적 문맥에 대한 추론을 가능하게 합니다. 또한, 장단시각 모델링을 제안합니다. 고해상도의 단기 시각적 컨텍스트 윈도우를 통해 미세한 시간의 일관성을 보장하고, 무한한 장기 시각적 컨텍스트 윈도우에서도 적은 토큰으로 긴 거리 정보를 인코딩합니다. 이 접근 방식에서, 긴 영상 시퀀스를 훈련할 수 있습니다. FAR는 짧은 및 긴 영상 생성에서 가장 先端의 성능을 달성하고, 영상 자동회귀 모델링의 간단하고 효과적인 기준을 제공합니다.",
+      "upvotes": 49,
+      "discussionId": "67e35f72c9d8214b5e1c659b",
+      "ai_keywords": [
+        "Frame AutoRegressive (FAR)",
+        "Token AR",
+        "video autoregressive modeling",
+        "visual redundancy",
+        "RoPE (Rotary Position Embedding)",
+        "temporal decay",
+        "FlexRoPE",
+        "long short-term context modeling",
+        "high-resolution short-term context window",
+        "long-term context window",
+        "state-of-the-art performance",
+        "video generation"
+      ]
+    },
+    "publishedAt": "2025-03-24T23:38:06.000Z",
+    "title": "Long-Context Autoregressive Video Modeling with Next-Frame Prediction",
+    "summary": "Long-context autoregressive modeling has significantly advanced language\ngeneration, but video generation still struggles to fully utilize extended\ntemporal contexts. To investigate long-context video modeling, we introduce\nFrame AutoRegressive (FAR), a strong baseline for video autoregressive\nmodeling. Just as language models learn causal dependencies between tokens\n(i.e., Token AR), FAR models temporal causal dependencies between continuous\nframes, achieving better convergence than Token AR and video diffusion\ntransformers. Building on FAR, we observe that long-context vision modeling\nfaces challenges due to visual redundancy. Existing RoPE lacks effective\ntemporal decay for remote context and fails to extrapolate well to long video\nsequences. Additionally, training on long videos is computationally expensive,\nas vision tokens grow much faster than language tokens. To tackle these issues,\nwe propose balancing locality and long-range dependency. We introduce FlexRoPE,\nan test-time technique that adds flexible temporal decay to RoPE, enabling\nextrapolation to 16x longer vision contexts. Furthermore, we propose long\nshort-term context modeling, where a high-resolution short-term context window\nensures fine-grained temporal consistency, while an unlimited long-term context\nwindow encodes long-range information using fewer tokens. With this approach,\nwe can train on long video sequences with a manageable token context length. We\ndemonstrate that FAR achieves state-of-the-art performance in both short- and\nlong-video generation, providing a simple yet effective baseline for video\nautoregressive modeling.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63021630a35b21bd8a53305a/SL0MQs7OvQpNlGBhroTW3.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.19325.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63021630a35b21bd8a53305a",
+      "avatarUrl": "/avatars/7a7e8b39749eda61e57d8a1908726558.svg",
+      "fullname": "Gu Yuchao",
+      "name": "guyuchao",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.18931",
+      "authors": [
+        {
+          "_id": "67e25c4d1908043170bd551d",
+          "user": {
+            "_id": "64651db3611ae99d14d392ea",
+            "avatarUrl": "/avatars/b818dc0dddc999758ab5737d5053e8c3.svg",
+            "isPro": false,
+            "fullname": "cyt",
+            "user": "Row11n",
+            "type": "user"
+          },
+          "name": "Yitong Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-25T08:18:45.692Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e25c4d1908043170bd551e",
+          "name": "Lingchen Meng",
+          "hidden": false
+        },
+        {
+          "_id": "67e25c4d1908043170bd551f",
+          "name": "Wujian Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67e25c4d1908043170bd5520",
+          "name": "Zuxuan Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67e25c4d1908043170bd5521",
+          "name": "Yu-Gang Jiang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-24T17:52:47.000Z",
+      "submittedOnDailyAt": "2025-03-26T01:10:42.553Z",
+      "title": "CoMP: 연속적인 다모델화 준비 학습을 이용한 시각기반 모델",
+      "submittedOnDailyBy": {
+        "_id": "64651db3611ae99d14d392ea",
+        "avatarUrl": "/avatars/b818dc0dddc999758ab5737d5053e8c3.svg",
+        "isPro": false,
+        "fullname": "cyt",
+        "user": "Row11n",
+        "type": "user"
+      },
+      "summary": "予ったビジョン基盤モデル（VFMs）는 광범위한 애플리케이션에 강력한 시각적 표현을 제공합니다. 本文에서는 VFMs를 다모달적인 방법으로 지속적으로 예측하여 다양한 크기의 시각적 입력을 쉽게 처리할 수 있으며, 언어 표현에 따라 더 일치하는 시각적 표현을 생성하도록 합니다. 이를 위해, CoMP(Continuous Multimodal Pre-training)라는 엄격한 다모달 예측 프로세스를 도입합니다. CoMP는 Continual Rotary Position Embedding을 사용하여 원생 리조ル의 연속 예측 프로세스를 지원하며, 시각적 및 텍스트적 특징 간의 어레이먼트 손실을 통해 언어 프로토타입을 사용하여 다모달 표현을 어레이먼트합니다. 세 단계의 훈련을 통해 VFMs는 다모달 이해뿐만 아니라 클래스 분류 및 분할 등 하류 태스크에도 눈에 띄게 개선됩니다. 특히, CoMP-SigLIP는 ChartQA에서 66.7, DocVQA에서 75.9의 점수를 달성하며, 0.5B LLM을 사용하지만, ImageNet-1K에서 87.4%의 정확도, ADE20K에서 49.5mIoU를 유지합니다.",
+      "upvotes": 19,
+      "discussionId": "67e25c4f1908043170bd55a8",
+      "projectPage": "https://slimm-x.github.io/comp/",
+      "githubRepo": "https://github.com/SliMM-X/CoMP-MM",
+      "ai_keywords": [
+        "Vision Foundation Models (VFMs)",
+        "Continual Rotary Position Embedding",
+        "Alignment Loss",
+        "language prototypes",
+        "multimodal pre-training pipeline",
+        "three-stage training",
+        "multimodal understanding",
+        "classification",
+        "segmentation",
+        "ChartQA",
+        "DocVQA",
+        "LLM",
+        "ImageNet-1K",
+        "ADE20K",
+        "frozen chunk evaluation"
+      ]
+    },
+    "publishedAt": "2025-03-24T13:52:47.000Z",
+    "title": "CoMP: Continual Multimodal Pre-training for Vision Foundation Models",
+    "summary": "Pre-trained Vision Foundation Models (VFMs) provide strong visual\nrepresentations for a wide range of applications. In this paper, we continually\npre-train prevailing VFMs in a multimodal manner such that they can\neffortlessly process visual inputs of varying sizes and produce visual\nrepresentations that are more aligned with language representations, regardless\nof their original pre-training process. To this end, we introduce CoMP, a\ncarefully designed multimodal pre-training pipeline. CoMP uses a Continual\nRotary Position Embedding to support native resolution continual pre-training,\nand an Alignment Loss between visual and textual features through language\nprototypes to align multimodal representations. By three-stage training, our\nVFMs achieve remarkable improvements not only in multimodal understanding but\nalso in other downstream tasks such as classification and segmentation.\nRemarkably, CoMP-SigLIP achieves scores of 66.7 on ChartQA and 75.9 on DocVQA\nwith a 0.5B LLM, while maintaining an 87.4% accuracy on ImageNet-1K and a 49.5\nmIoU on ADE20K under frozen chunk evaluation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.18931.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64651db3611ae99d14d392ea",
+      "avatarUrl": "/avatars/b818dc0dddc999758ab5737d5053e8c3.svg",
+      "fullname": "cyt",
+      "name": "Row11n",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.19385",
+      "authors": [
+        {
+          "_id": "67e36241d8da46951f858026",
+          "name": "Jaihoon Kim",
+          "hidden": false
+        },
+        {
+          "_id": "67e36241d8da46951f858027",
+          "name": "Taehoon Yoon",
+          "hidden": false
+        },
+        {
+          "_id": "67e36241d8da46951f858028",
+          "name": "Jisung Hwang",
+          "hidden": false
+        },
+        {
+          "_id": "67e36241d8da46951f858029",
+          "name": "Minhyuk Sung",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-25T06:30:45.000Z",
+      "submittedOnDailyAt": "2025-03-26T00:49:38.583Z",
+      "title": "推論 시의 스케일링을 수행하는 흐름 모델에서 확률 생성과 로라바ッ킷 강제법",
+      "submittedOnDailyBy": {
+        "_id": "6342796a0875f2c99cfd313b",
+        "avatarUrl": "/avatars/98575092404c4197b20c929a6499a015.svg",
+        "isPro": false,
+        "fullname": "Yuseung \"Phillip\" Lee",
+        "user": "phillipinseoul",
+        "type": "user"
+      },
+      "summary": "우리는 예측된 flow 모델의 추론 시 스케일링 접근 방식을 제안합니다. 최근, 추론 시 스케일링은 LLMs와 diffusion 모델에서도 중요한 관심을 불러일으키며, 추가 계산을 사용하여 샘플의 품질 향상 및 사용자 취향의 매칭을 개선하는 데 중요합니다. diffusion 모델에서는, 입자 샘플링은 중간 단계의 노이즈의 랜덤성을 통해 효율적으로 스케일링을 수행할 수 있습니다. 반면, flow 모델은 최신 이미지와 비디오 생성 모델에서 빠른 생성과 고품질의 출력을 제공하여, diffusion 모델의 대체로 인기를 얻으며, 그러나 결정적인 생성 과정에서 diffusion 모델의 스케일링 방법은 직접 적용되지 않습니다. flow 모델의 효율적인 추론 시 스케일링을 실현하기 위해, 우리는 세 가지 주요 아이디어에 대해 제안합니다: 1) SDE 기반의 생성, flow 모델에서 입자 샘플링을 가능하게 하는 것, 2) 인터 프로테인 변환, 검색 공간을 넓게 하여 샘플의 다양성을 향상시키는 것, 3) Rollover Budget Forcing (RBF), 시간 단계별로 계산 채널의 적응적인 배분을 통해 최대의 활용도를 추구하는 것입니다. 우리의 실험 결과에 따르면, SDE 기반의 생성, 특히variance-preserving (VP) 인터 프로테인 기반의 생성은 flow 모델의 추론 시 스케일링에 있어서 입자 샘플링 방법의 성능을 향상시킵니다. 또한, VP-SDE와 RBF의 조합은 모든 기존의 추론 시 스케일링 접근 방식보다 최고의 성능을 보여주고 있습니다.",
+      "upvotes": 17,
+      "discussionId": "67e36245d8da46951f85802c",
+      "ai_keywords": [
+        "flow models",
+        "inference-time scaling",
+        "LLMs",
+        "diffusion models",
+        "sample quality",
+        "user preferences",
+        "particle sampling",
+        "stochasticity",
+        "denoising steps",
+        "generative process",
+        "SDE-based generation",
+        "interpolant conversion",
+        "sample diversity",
+        "Rollover Budget Forcing (RBF)",
+        "adaptive allocation",
+        "computational resources",
+        "timesteps",
+        "budget utilization",
+        "variance-preserving (VP)",
+        "VP interpolant-based generation"
+      ]
+    },
+    "publishedAt": "2025-03-25T02:30:45.000Z",
+    "title": "Inference-Time Scaling for Flow Models via Stochastic Generation and\n  Rollover Budget Forcing",
+    "summary": "We propose an inference-time scaling approach for pretrained flow models.\nRecently, inference-time scaling has gained significant attention in LLMs and\ndiffusion models, improving sample quality or better aligning outputs with user\npreferences by leveraging additional computation. For diffusion models,\nparticle sampling has allowed more efficient scaling due to the stochasticity\nat intermediate denoising steps. On the contrary, while flow models have gained\npopularity as an alternative to diffusion models--offering faster generation\nand high-quality outputs in state-of-the-art image and video generative\nmodels--efficient inference-time scaling methods used for diffusion models\ncannot be directly applied due to their deterministic generative process. To\nenable efficient inference-time scaling for flow models, we propose three key\nideas: 1) SDE-based generation, enabling particle sampling in flow models, 2)\nInterpolant conversion, broadening the search space and enhancing sample\ndiversity, and 3) Rollover Budget Forcing (RBF), an adaptive allocation of\ncomputational resources across timesteps to maximize budget utilization. Our\nexperiments show that SDE-based generation, particularly variance-preserving\n(VP) interpolant-based generation, improves the performance of particle\nsampling methods for inference-time scaling in flow models. Additionally, we\ndemonstrate that RBF with VP-SDE achieves the best performance, outperforming\nall previous inference-time scaling approaches.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.19385.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "6342796a0875f2c99cfd313b",
+      "avatarUrl": "/avatars/98575092404c4197b20c929a6499a015.svg",
+      "fullname": "Yuseung \"Phillip\" Lee",
+      "name": "phillipinseoul",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.19622",
+      "authors": [
+        {
+          "_id": "67e3706bc9d8214b5e219149",
+          "name": "Hongcheng Gao",
+          "hidden": false
+        },
+        {
+          "_id": "67e3706bc9d8214b5e21914a",
+          "name": "Jiashu Qu",
+          "hidden": false
+        },
+        {
+          "_id": "67e3706bc9d8214b5e21914b",
+          "name": "Jingyi Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67e3706bc9d8214b5e21914c",
+          "name": "Baolong Bi",
+          "hidden": false
+        },
+        {
+          "_id": "67e3706bc9d8214b5e21914d",
+          "name": "Yue Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e3706bc9d8214b5e21914e",
+          "name": "Hongyu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67e3706bc9d8214b5e21914f",
+          "name": "Li Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67e3706bc9d8214b5e219150",
+          "name": "Li Su",
+          "hidden": false
+        },
+        {
+          "_id": "67e3706bc9d8214b5e219151",
+          "name": "Qingming Huang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-25T13:12:17.000Z",
+      "submittedOnDailyAt": "2025-03-26T01:44:03.080Z",
+      "title": "비디오에서 대규모 다모델의 훅네킹 조사 기준평가, 분석 및 대책",
+      "submittedOnDailyBy": {
+        "_id": "62728f4f6253fe2068da1021",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62728f4f6253fe2068da1021/KZ65X0EH98AF3zXemPiap.jpeg",
+        "isPro": false,
+        "fullname": "Hongcheng Gao",
+        "user": "HongchengGao",
+        "type": "user"
+      },
+      "summary": "대규모 다모달 모댈(LMMs)의 환상 문제는 실제적으로 잘못된 답변을 제공하여 신뢰성과 적용 가능성에 제한을 가하고 있습니다. 본 논문에서는 이 문제를 연구하고, 동적 모델과 비교하여 더 복잡한 BANK 모델의 환상 문제를 조사하기 위해 LMMs의 영상 이해 태스크에서 환상을 평가하기 위한 세부적인 벤치마크 \"HAVEN\"을 제안합니다. 이 벤치마크는 환상의 원인, 환상의 면, 질문의 형식의 3차원으로 6K의 질문을 제공하며, 16개의 LMMs의 실험에서 7개의 영향적인 요인(영상의 시간, 모델의 크기, 모델의 이유)에 대해 정량적으로 연구합니다. 또한, 최근의 OpenAI o1처럼 사고 모델의 뉴アルゲス트를 참고하여, SRFT(보충적 이유 훈련)과 TDPO(직접한 취향 최적화)를 사용하여 LMMs의 환상을 억제하기 위한 영상 사고 모델을 제안합니다. SRFT는 이유론의 능력을 높이고, TDPO는 사고 과정에서 환상을 줄입니다. 광범위한 실험과 분석은 환상 평가의 정확도를 7.65% 개선하고 편향 점수를 4.5% 줄이는 것으로 나타내며, 이 모델의 효과를 명확히 합니다. 코드와 데이터는 https://github.com/Hongcheng-Gao/HAVEN에서 공개되어 있습니다.",
+      "upvotes": 16,
+      "discussionId": "67e3706dc9d8214b5e2191e0",
+      "githubRepo": "https://github.com/Hongcheng-Gao/HAVEN",
+      "ai_keywords": [
+        "multimodal models (LMMs)",
+        "hallucination",
+        "video modality",
+        "video understanding",
+        "HAVEN",
+        "hallucination causes",
+        "hallucination aspects",
+        "question formats",
+        "duration time",
+        "model sizes",
+        "model reasoning",
+        "supervised reasoning fine-tuning (SRFT)",
+        "direct preference optimization (TDPO)",
+        "video-thinking model",
+        "accuracy",
+        "bias score"
+      ]
+    },
+    "publishedAt": "2025-03-25T09:12:17.000Z",
+    "title": "Exploring Hallucination of Large Multimodal Models in Video\n  Understanding: Benchmark, Analysis and Mitigation",
+    "summary": "The hallucination of large multimodal models (LMMs), providing responses that\nappear correct but are actually incorrect, limits their reliability and\napplicability. This paper aims to study the hallucination problem of LMMs in\nvideo modality, which is dynamic and more challenging compared to static\nmodalities like images and text. From this motivation, we first present a\ncomprehensive benchmark termed HAVEN for evaluating hallucinations of LMMs in\nvideo understanding tasks. It is built upon three dimensions, i.e.,\nhallucination causes, hallucination aspects, and question formats, resulting in\n6K questions. Then, we quantitatively study 7 influential factors on\nhallucinations, e.g., duration time of videos, model sizes, and model\nreasoning, via experiments of 16 LMMs on the presented benchmark. In addition,\ninspired by recent thinking models like OpenAI o1, we propose a video-thinking\nmodel to mitigate the hallucinations of LMMs via supervised reasoning\nfine-tuning (SRFT) and direct preference optimization (TDPO)-- where SRFT\nenhances reasoning capabilities while TDPO reduces hallucinations in the\nthinking process. Extensive experiments and analyses demonstrate the\neffectiveness. Remarkably, it improves the baseline by 7.65% in accuracy on\nhallucination evaluation and reduces the bias score by 4.5%. The code and data\nare public at https://github.com/Hongcheng-Gao/HAVEN.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.19622.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "62728f4f6253fe2068da1021",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62728f4f6253fe2068da1021/KZ65X0EH98AF3zXemPiap.jpeg",
+      "fullname": "Hongcheng Gao",
+      "name": "HongchengGao",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.14905",
+      "authors": [
+        {
+          "_id": "67e250450487eeecfd9a5880",
+          "name": "Siwei Wen",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5881",
+          "name": "Junyan Ye",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5882",
+          "name": "Peilin Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5883",
+          "name": "Hengrui Kang",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5884",
+          "name": "Zichen Wen",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5885",
+          "name": "Yize Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5886",
+          "name": "Jiang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5887",
+          "name": "Wenjun Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5888",
+          "name": "Conghui He",
+          "hidden": false
+        },
+        {
+          "_id": "67e250450487eeecfd9a5889",
+          "name": "Weijia Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-19T05:14:44.000Z",
+      "submittedOnDailyAt": "2025-03-26T04:00:13.753Z",
+      "title": "スポット・ザ・ファイク: 대규모 다모룽 모델 기반의 합성 이미지 검출과artifact 설명",
+      "submittedOnDailyBy": {
+        "_id": "653b8c3e97a4d71d950e2f20",
+        "avatarUrl": "/avatars/b68880022e14556d0be58c69615db3be.svg",
+        "isPro": false,
+        "fullname": "Zichen Wen",
+        "user": "zichenwen",
+        "type": "user"
+      },
+      "summary": "AIGC 기술의 급속한 발전으로 합성 이미지는 일상 생활에서 더 자연스럽게 사용되고 있으며, 사실성 평가와 감지에 새로운 문제를 제기하고 있습니다. 현재의 방법들은 이미지의 사실성을 평가하고 폴레로 특정하기 위해 효과적이지만, 이러한 방법들은 일반적으로 인간이 이해할 수 있는 수준이 낮고, 합성 데이터의 확장된 복잡성에 대해 충분한 대응을 하지 않습니다. 이러한 문제를 해결하기 위해, 우리는 FakeVLM, 즉 특화된 대형 다모형에 의한, 일반적인 합성 이미지 및 DeepFake 감지 태스크에 적합한 것을 소개합니다. FakeVLM은 이미지가 사실인지 아닌지 단순히 구분하는 것이 아니라, 이미지의 아티팩트에 대한 자연스러운 언어로 설명을 제공하여 해석 가능성을 높입니다. 또한, 우리는 FakeClue라는 세부적인 아티팩트의 코랩을 포함하여 7개 카테고리에 걸쳐 100,000개 이상의 이미지를 포함하는 상세한 데이터셋을 소개합니다. FakeVLM은 전문가 모델과 같은 성능을示し, 추가적인 분류기의 필요성을 제거하고, 합성 데이터 감지의 강력한 해결책의 가능성을 제시합니다. 여러 데이터셋에서 광범위한 평가는, 사실성 분류 및 아티팩트 설명 태스크에서 FakeVLM의 우수한 성능을 확인하고, 합성 이미지 감지의 새로운 벤치마크를 설정합니다. 데이터셋과 코드는 다음 URL에서 공개됩니다: https://github.com/opendatalab/FakeVLM.",
+      "upvotes": 12,
+      "discussionId": "67e250490487eeecfd9a599e",
+      "githubRepo": "https://github.com/opendatalab/FakeVLM",
+      "ai_keywords": [
+        "large multimodal model",
+        "FakeVLM",
+        "DeepFake detection",
+        "image artifacts",
+        "natural language explanations",
+        "FakeClue",
+        "fine-grained artifact clues"
+      ]
+    },
+    "publishedAt": "2025-03-19T01:14:44.000Z",
+    "title": "Spot the Fake: Large Multimodal Model-Based Synthetic Image Detection\n  with Artifact Explanation",
+    "summary": "With the rapid advancement of Artificial Intelligence Generated Content\n(AIGC) technologies, synthetic images have become increasingly prevalent in\neveryday life, posing new challenges for authenticity assessment and detection.\nDespite the effectiveness of existing methods in evaluating image authenticity\nand locating forgeries, these approaches often lack human interpretability and\ndo not fully address the growing complexity of synthetic data. To tackle these\nchallenges, we introduce FakeVLM, a specialized large multimodal model designed\nfor both general synthetic image and DeepFake detection tasks. FakeVLM not only\nexcels in distinguishing real from fake images but also provides clear, natural\nlanguage explanations for image artifacts, enhancing interpretability.\nAdditionally, we present FakeClue, a comprehensive dataset containing over\n100,000 images across seven categories, annotated with fine-grained artifact\nclues in natural language. FakeVLM demonstrates performance comparable to\nexpert models while eliminating the need for additional classifiers, making it\na robust solution for synthetic data detection. Extensive evaluations across\nmultiple datasets confirm the superiority of FakeVLM in both authenticity\nclassification and artifact explanation tasks, setting a new benchmark for\nsynthetic image detection. The dataset and code will be released in:\nhttps://github.com/opendatalab/FakeVLM.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.14905.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "653b8c3e97a4d71d950e2f20",
+      "avatarUrl": "/avatars/b68880022e14556d0be58c69615db3be.svg",
+      "fullname": "Zichen Wen",
+      "name": "zichenwen",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.19903",
+      "authors": [
+        {
+          "_id": "67e375d3cc93cc8c42da7699",
+          "name": "Baifeng Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da769a",
+          "name": "Boyi Li",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da769b",
+          "name": "Han Cai",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da769c",
+          "name": "Yao Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da769d",
+          "name": "Sifei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da769e",
+          "name": "Marco Pavone",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da769f",
+          "name": "Jan Kautz",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da76a0",
+          "name": "Song Han",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da76a1",
+          "name": "Trevor Darrell",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da76a2",
+          "name": "Pavlo Molchanov",
+          "hidden": false
+        },
+        {
+          "_id": "67e375d3cc93cc8c42da76a3",
+          "name": "Hongxu Yin",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/649004218f7cbbc94c782db6/F0o61glyGm9fib9Pl1i-L.mp4"
+      ],
+      "publishedAt": "2025-03-25T17:58:37.000Z",
+      "submittedOnDailyAt": "2025-03-26T02:13:20.800Z",
+      "title": "4K 해상도 확장된 스케일링 비슷슭 연습 연습",
+      "submittedOnDailyBy": {
+        "_id": "649004218f7cbbc94c782db6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/AdgLVfAIpWlug4jXTaEK-.jpeg",
+        "isPro": false,
+        "fullname": "Baifeng Shi",
+        "user": "bfshi",
+        "type": "user"
+      },
+      "summary": "고해상도 시각적 디테일의 인식은 일상적인 업무에서 중요합니다. 그러나 현재의 시각적 사전 학습은 큰 이미지를 처리하는 비용이 2차원과 관련이 있어, 저해상도(예: 378 x 378 픽셀)에 제한되어 있습니다. 우리는 CLIP 스타일의 시각적 사전 학습을 4K 해상도로 확장하는 방법을 도입합니다. PS3은 상대적 학습에 의한 이미지의 전체적인 표현을 대신하여, 선택적으로 국부 영역을 처리하고, 이들과 국부적인 세부적인 캡처를 비교하여 고해상도의 표현 학습을 가능하게 합니다. 이로 인해 계산 비용이 크게 줄일 수 있습니다. PS3은 전체 이미지를 저해상도로 인코딩할 수 있으며, 또는 텍스트 프롬프트와 관련된 영역을 선택적으로 고해상도로 처리할 수 있습니다. PS3을 다모달 LLM(MLLM)에 적용하면 VILA-HD라는 모델이 생성되며, 고해상도의 시각적 인식을 크게 향상시키고, AnyRes나 S^2와 같은 고해상도의 시각적 사전 학습이 없는 기준과 비교하여 4.3배의 토큰을 사용하더라도 고해상도의 시각적 인식을 향상시킬 수 있습니다. VILA-HD는 최신 기술과 비교하여 NVILA나 Qwen2-VL과 같은 선행 MLLM을 초월하고, 여러 벤치마크에서 우수한 성적을 보입니다. 또한, 최신 토큰 프리닝 접근법보다 효율적입니다. 마지막으로, 현재의 벤치마크는 4K 해상도의 인식이 필요하지 않습니다が, 이로 인해 4KPro라는 새로운 벤치마크를 제안합니다. 4KPro에서 VILA-HD는 이전의 MLLM을 모두 초월하며, GPT-4o에 대해 14.5%의 향상, Qwen2-VL에 대해 3.2%의 향상과 2.96배의 속도 업그레이드를 거칩니다.",
+      "upvotes": 9,
+      "discussionId": "67e375d9cc93cc8c42da785f",
+      "projectPage": "https://nvlabs.github.io/PS3/",
+      "githubRepo": "https://github.com/NVlabs/PS3",
+      "ai_keywords": [
+        "PS3",
+        "CLIP-style vision pre-training",
+        "contrastive learning",
+        "local regions",
+        "local detailed captions",
+        "high-resolution representation learning",
+        "computational overhead",
+        "saliency",
+        "text prompt",
+        "VILA-HD",
+        "multi-modal LLM",
+        "high-resolution visual perception",
+        "AnyRes",
+        "S^2",
+        "scaling properties",
+        "test-time compute",
+        "NVILA",
+        "Qwen2-VL",
+        "benchmarks",
+        "token pruning approaches",
+        "4KPer",
+        "image QA",
+        "GPT-4o"
+      ]
+    },
+    "publishedAt": "2025-03-25T13:58:37.000Z",
+    "title": "Scaling Vision Pre-Training to 4K Resolution",
+    "summary": "High-resolution perception of visual details is crucial for daily tasks.\nCurrent vision pre-training, however, is still limited to low resolutions\n(e.g., 378 x 378 pixels) due to the quadratic cost of processing larger images.\nWe introduce PS3 that scales CLIP-style vision pre-training to 4K resolution\nwith a near-constant cost. Instead of contrastive learning on global image\nrepresentation, PS3 is pre-trained by selectively processing local regions and\ncontrasting them with local detailed captions, enabling high-resolution\nrepresentation learning with greatly reduced computational overhead. The\npre-trained PS3 is able to both encode the global image at low resolution and\nselectively process local high-resolution regions based on their saliency or\nrelevance to a text prompt. When applying PS3 to multi-modal LLM (MLLM), the\nresulting model, named VILA-HD, significantly improves high-resolution visual\nperception compared to baselines without high-resolution vision pre-training\nsuch as AnyRes and S^2 while using up to 4.3x fewer tokens. PS3 also unlocks\nappealing scaling properties of VILA-HD, including scaling up resolution for\nfree and scaling up test-time compute for better performance. Compared to state\nof the arts, VILA-HD outperforms previous MLLMs such as NVILA and Qwen2-VL\nacross multiple benchmarks and achieves better efficiency than latest token\npruning approaches. Finally, we find current benchmarks do not require\n4K-resolution perception, which motivates us to propose 4KPro, a new benchmark\nof image QA at 4K resolution, on which VILA-HD outperforms all previous MLLMs,\nincluding a 14.5% improvement over GPT-4o, and a 3.2% improvement and 2.96x\nspeedup over Qwen2-VL.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/649004218f7cbbc94c782db6/F0o61glyGm9fib9Pl1i-L.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.19903.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "649004218f7cbbc94c782db6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/AdgLVfAIpWlug4jXTaEK-.jpeg",
+      "fullname": "Baifeng Shi",
+      "name": "bfshi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.19855",
+      "authors": [
+        {
+          "_id": "67e36792a281c900d76a93c8",
+          "name": "Xiaoyu Tian",
+          "hidden": false
+        },
+        {
+          "_id": "67e36792a281c900d76a93c9",
+          "name": "Sitong Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67e36792a281c900d76a93ca",
+          "name": "Haotian Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e36792a281c900d76a93cb",
+          "name": "Shuaiting Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67e36792a281c900d76a93cc",
+          "name": "Yunjie Ji",
+          "hidden": false
+        },
+        {
+          "_id": "67e36792a281c900d76a93cd",
+          "name": "Yiping Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67e36792a281c900d76a93ce",
+          "name": "Han Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67e36792a281c900d76a93cf",
+          "name": "Xiangang Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-25T17:19:38.000Z",
+      "submittedOnDailyAt": "2025-03-26T01:04:39.479Z",
+      "title": "「2회째로 생각하여：검증 시의 반복적인 테스트 피드백을 스케일링하여 LLM의 논리론을 향상시키는 이유」",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "최근의 대언어 모델(LLMs)의 발전, 예를 들어 OpenAI-o1과 DeepSeek-R1에 대해, 테스트 시 스케일링의 효과성을 보여주고 있습니다. 이는 확장된 논리 과정이 모델의 성능을 크게 향상시키는 것을 보여줍니다. 그러나 현재의 모델은 긴 문장의 처리와 강화학습(RL)의 훈련 효율에 의해 제한을 받고 있습니다. 이러한 문제를 대처하기 위해 우리는 간단하고 효과적인 테스트 시 스케일링 접근법 \"Multi-round Thinking\"을 제안하고 있습니다. 이 방법은 이전의 답변을 Prompt로 삼아서 모델의 논리를 재구성하는 방식으로, 모델의 논리를 발전시키며, QwQ-32B나 DeepSeek-R1 등 여러 모델에 대해 AIME 2024, MATH-500, GPQA-diamond, LiveCodeBench 등 다양한 벤치마크에서 광범위한 실험을 수행했으며, 그 결과는 모델의 성능의 향상을 보여주고 있습니다. 예를 들어, AIME 2024 데이터셋에서 QwQ-32B의 정확도는 Round 1에서 80.3%에서 Round 2에서 82.1%로 증가하고, DeepSeek-R1도 마찬가지로 79.7%에서 82.0%로 증가했습니다. 이러한 결과를 통해 Multi-round Thinking은 광범위하게 적용 가능하며, 간단한 접근으로 모델의 성능의 안정적인 향상을 실현할 수 있다는 것을 보여줍니다. 미래의 테스트 시 스케일링 기술 개발의 가능성을 강조하고 있습니다. 주된 Prompt: {원래의 질문 Prompt} 아시스턴트의 이전의 답변은: <answer> {이전의 답변}</answer>입니다. 이에 기반하여 다시 답변해주세요.",
+      "upvotes": 7,
+      "discussionId": "67e36793a281c900d76a9459",
+      "ai_keywords": [
+        "large language models",
+        "OpenAI-o1",
+        "DeepSeek-R1",
+        "test-time scaling",
+        "extended reasoning processes",
+        "reinforcement learning",
+        "Multi-round Thinking",
+        "iterative refinement",
+        "AIME 2024",
+        "MATH-500",
+        "GPQA-diamond",
+        "LiveCodeBench",
+        "accuracy",
+        "stable enhancements",
+        "test-time scaling techniques"
+      ]
+    },
+    "publishedAt": "2025-03-25T13:19:38.000Z",
+    "title": "Think Twice: Enhancing LLM Reasoning by Scaling Multi-round Test-time\n  Thinking",
+    "summary": "Recent advances in large language models (LLMs), such as OpenAI-o1 and\nDeepSeek-R1, have demonstrated the effectiveness of test-time scaling, where\nextended reasoning processes substantially enhance model performance. Despite\nthis, current models are constrained by limitations in handling long texts and\nreinforcement learning (RL) training efficiency. To address these issues, we\npropose a simple yet effective test-time scaling approach Multi-round Thinking.\nThis method iteratively refines model reasoning by leveraging previous answers\nas prompts for subsequent rounds. Extensive experiments across multiple models,\nincluding QwQ-32B and DeepSeek-R1, consistently show performance improvements\non various benchmarks such as AIME 2024, MATH-500, GPQA-diamond, and\nLiveCodeBench. For instance, the accuracy of QwQ-32B improved from 80.3% (Round\n1) to 82.1% (Round 2) on the AIME 2024 dataset, while DeepSeek-R1 showed a\nsimilar increase from 79.7% to 82.0%. These results confirm that Multi-round\nThinking is a broadly applicable, straightforward approach to achieving stable\nenhancements in model performance, underscoring its potential for future\ndevelopments in test-time scaling techniques. The key prompt: {Original\nquestion prompt} The assistant's previous answer is: <answer> {last round\nanswer} </answer>, and please re-answer.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.19855.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": true,
+      "isMod": false,
+      "followerCount": 6471
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.19910",
+      "authors": [
+        {
+          "_id": "67e35e4cff080b9ee71e3295",
+          "name": "Chuong Huynh",
+          "hidden": false
+        },
+        {
+          "_id": "67e35e4cff080b9ee71e3296",
+          "name": "Jinyu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67e35e4cff080b9ee71e3297",
+          "name": "Ashish Tawari",
+          "hidden": false
+        },
+        {
+          "_id": "67e35e4cff080b9ee71e3298",
+          "name": "Mubarak Shah",
+          "hidden": false
+        },
+        {
+          "_id": "67e35e4cff080b9ee71e3299",
+          "name": "Son Tran",
+          "hidden": false
+        },
+        {
+          "_id": "67e35e4cff080b9ee71e329a",
+          "name": "Raffay Hamid",
+          "hidden": false
+        },
+        {
+          "_id": "67e35e4cff080b9ee71e329b",
+          "name": "Trishul Chilimbi",
+          "hidden": false
+        },
+        {
+          "_id": "67e35e4cff080b9ee71e329c",
+          "name": "Abhinav Shrivastava",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-25T17:59:50.000Z",
+      "submittedOnDailyAt": "2025-03-26T00:26:00.764Z",
+      "title": "CoLLM: 합성 이미지 검색을 위한 대규모 언어 모델",
+      "submittedOnDailyBy": {
+        "_id": "63a4d196cde2b28f82a56bd9",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4d196cde2b28f82a56bd9/iqVFOtDteRMUScFGRcx0L.png",
+        "isPro": false,
+        "fullname": "Chuong Huynh",
+        "user": "chuonghm",
+        "type": "user"
+      },
+      "summary": "Composed Image Retrieval (CIR)는, 여러 모델의 요청에 기반하여 이미지 검색하는 복잡한 작업입니다. 일반적인 훈련 데이터는, 참조 이미지, 원하는 변경의 문자 설명, 그리고 목표 이미지를 포함하는 세 가지로 구성됩니다. 이러한 데이터의 획득은 비용과 시간이 필요합니다. CIR 데이터 세트의 부족은 합성 세 가지를 활용하는 0-shot 접근법과, 시각 언어 모델(VLMs)을 사용하여 웹 크롤링된 이미지 댓글 페어를 활용하는 데 해결되었습니다. 그러나 이러한 방법들은 다음과 같은 한계를 가지고 있습니다: 합성 세 가지는 규모의 한계, 다양성, 비자연적인 변경 텍스트가 있고, 이미지 댓글 페어는 세 가지 데이터가 없기 때문에, 여러 모델의 요청에 대한 공유 학습을 방해합니다. 또한, 현재의 접근법은 복잡한 변경 텍스트에 대응하지 않습니다. 우리는 이러한 한계를 해결하기 위해 CoLLM을 제안합니다. 우리의 접근법은, 이미지 댓글 페어에서 세 가지를 기계적으로 생성하고, 손동적 설명을 필요로 하지 않는 서브 객체 훈련을 가능하게 합니다. 우리는 대규모 언어 모델(LLMs)을 사용하여 참조 이미지와 변경 텍스트의 공유 학습을 생성하고, 깊은 여러 모델 융합을 촉진합니다. 또한, 우리는 Multi-Text CIR(MTCIR)를 도입합니다. MTCIR은 340만 샘플을 포함하고 있으며, 현재의 CIR 벤치마크(CIRR와 Fashion-IQ)를 개선하고, 평가 신뢰성을 향상시킵니다. 실험 결과를 통해, CoLLM은 여러 CIR 벤치마크와 설정에서 가장 최신의 성능을 달성했습니다. MTCIR은 15%의 성능 향상을 얻으며, 우리의 개선 벤치마크는 CIR 모델의 평가 지표를 더 신뢰할 수 있는 것으로 만들고, 이 중요한 분야의 발전에 기여합니다.",
+      "upvotes": 6,
+      "discussionId": "67e35e4eff080b9ee71e3353",
+      "projectPage": "https://collm-cvpr25.github.io/",
+      "ai_keywords": [
+        "Composed Image Retrieval (CIR)",
+        "multimodal query",
+        "triplets",
+        "reference image",
+        "textual description",
+        "target image",
+        "zero-shot approaches",
+        "synthetic triplets",
+        "vision-language models (VLMs)",
+        "web-crawled image-caption pairs",
+        "joint embedding learning",
+        "complex and nuanced modification texts",
+        "multimodal fusion",
+        "CoLLM",
+        "Large Language Models (LLMs)",
+        "Multi-Text CIR (MTCIR)",
+        "CIRR benchmark",
+        "Fashion-IQ benchmark",
+        "state-of-the-art performance"
+      ]
+    },
+    "publishedAt": "2025-03-25T13:59:50.000Z",
+    "title": "CoLLM: A Large Language Model for Composed Image Retrieval",
+    "summary": "Composed Image Retrieval (CIR) is a complex task that aims to retrieve images\nbased on a multimodal query. Typical training data consists of triplets\ncontaining a reference image, a textual description of desired modifications,\nand the target image, which are expensive and time-consuming to acquire. The\nscarcity of CIR datasets has led to zero-shot approaches utilizing synthetic\ntriplets or leveraging vision-language models (VLMs) with ubiquitous\nweb-crawled image-caption pairs. However, these methods have significant\nlimitations: synthetic triplets suffer from limited scale, lack of diversity,\nand unnatural modification text, while image-caption pairs hinder joint\nembedding learning of the multimodal query due to the absence of triplet data.\nMoreover, existing approaches struggle with complex and nuanced modification\ntexts that demand sophisticated fusion and understanding of vision and language\nmodalities. We present CoLLM, a one-stop framework that effectively addresses\nthese limitations. Our approach generates triplets on-the-fly from\nimage-caption pairs, enabling supervised training without manual annotation. We\nleverage Large Language Models (LLMs) to generate joint embeddings of reference\nimages and modification texts, facilitating deeper multimodal fusion.\nAdditionally, we introduce Multi-Text CIR (MTCIR), a large-scale dataset\ncomprising 3.4M samples, and refine existing CIR benchmarks (CIRR and\nFashion-IQ) to enhance evaluation reliability. Experimental results demonstrate\nthat CoLLM achieves state-of-the-art performance across multiple CIR benchmarks\nand settings. MTCIR yields competitive results, with up to 15% performance\nimprovement. Our refined benchmarks provide more reliable evaluation metrics\nfor CIR models, contributing to the advancement of this important field.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.19910.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63a4d196cde2b28f82a56bd9",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4d196cde2b28f82a56bd9/iqVFOtDteRMUScFGRcx0L.png",
+      "fullname": "Chuong Huynh",
+      "name": "chuonghm",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.18446",
+      "authors": [
+        {
+          "_id": "67e367ee4363e3c4bbbaca3a",
+          "name": "Jinho Jeong",
+          "hidden": false
+        },
+        {
+          "_id": "67e367ee4363e3c4bbbaca3b",
+          "name": "Sangmin Han",
+          "hidden": false
+        },
+        {
+          "_id": "67e367ee4363e3c4bbbaca3c",
+          "name": "Jinwoo Kim",
+          "hidden": false
+        },
+        {
+          "_id": "67e367ee4363e3c4bbbaca3d",
+          "name": "Seon Joo Kim",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-24T08:50:15.000Z",
+      "submittedOnDailyAt": "2025-03-26T01:07:15.007Z",
+      "title": "잠시만 기다려주세요. 번역 작업이 진행 중입니다.",
+      "submittedOnDailyBy": {
+        "_id": "66b5f733f0c16f37f307f35e",
+        "avatarUrl": "/avatars/29a97e10b4d65aa23d7eae238f809499.svg",
+        "isPro": false,
+        "fullname": "JinHo Jeong",
+        "user": "3587jjh",
+        "type": "user"
+      },
+      "summary": "이 논문에서는 잠재 공간에서 초해상도(1K 이상) 이미지 생성을 위한 새로운 프레임워크 LSRNA를 제안합니다. 현재의 확산 모델은 학습해상도를 초과하는 것을 어려워하고, 구조적 이상 및 콘텐츠 재현에 많은 문제가 발생합니다. 참고 기반의 방법들은 낮은 해상도를 참고하여 고해상도 생성을 가이드하는 방법으로 문제를 해결하지만, 잠재 공간에서 업샘플링은 출력 품질을 저하시키는 다형성의 편향을招く 것입니다. 반면, RGB 공간에서 업샘플링은 과도하게 평활화된 출력을 생성합니다. 이러한 제한을 극복하기 위해, LSRNA는 다형성의 조정을 목표로 하는 잠재 공간에서 초해상도(LSR)와, 고주파의 세부을 강화하기 위한 영역별 노이즈 추가(RNA)를 조합합니다. 확산 모델의 최신 참고 기반의 방법과 비교하여 이점을 보여주고, 잠재 공간에서 업샘플링의 중요성을 다형성과 첨성 유지에 대해 밝혀줍니다. 코드는 https://github.com/3587jjh/LSRNA에 공개되어 있습니다.",
+      "upvotes": 4,
+      "discussionId": "67e367f14363e3c4bbbacae1",
+      "ai_keywords": [
+        "LSRNA",
+        "diffusion models",
+        "latent space",
+        "super-resolution",
+        "structural distortions",
+        "content repetition",
+        "reference-based methods",
+        "manifold deviation",
+        "RGB space",
+        "manifold alignment",
+        "Region-wise Noise Addition (RNA)",
+        "high-frequency details"
+      ]
+    },
+    "publishedAt": "2025-03-24T04:50:15.000Z",
+    "title": "Latent Space Super-Resolution for Higher-Resolution Image Generation\n  with Diffusion Models",
+    "summary": "In this paper, we propose LSRNA, a novel framework for higher-resolution\n(exceeding 1K) image generation using diffusion models by leveraging\nsuper-resolution directly in the latent space. Existing diffusion models\nstruggle with scaling beyond their training resolutions, often leading to\nstructural distortions or content repetition. Reference-based methods address\nthe issues by upsampling a low-resolution reference to guide higher-resolution\ngeneration. However, they face significant challenges: upsampling in latent\nspace often causes manifold deviation, which degrades output quality. On the\nother hand, upsampling in RGB space tends to produce overly smoothed outputs.\nTo overcome these limitations, LSRNA combines Latent space Super-Resolution\n(LSR) for manifold alignment and Region-wise Noise Addition (RNA) to enhance\nhigh-frequency details. Our extensive experiments demonstrate that integrating\nLSRNA outperforms state-of-the-art reference-based methods across various\nresolutions and metrics, while showing the critical role of latent space\nupsampling in preserving detail and sharpness. The code is available at\nhttps://github.com/3587jjh/LSRNA.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.18446.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "66b5f733f0c16f37f307f35e",
+      "avatarUrl": "/avatars/29a97e10b4d65aa23d7eae238f809499.svg",
+      "fullname": "JinHo Jeong",
+      "name": "3587jjh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.13964",
+      "authors": [
+        {
+          "_id": "67e20852c0c932395394dbb0",
+          "name": "Siwei Han",
+          "hidden": false
+        },
+        {
+          "_id": "67e20852c0c932395394dbb1",
+          "name": "Peng Xia",
+          "hidden": false
+        },
+        {
+          "_id": "67e20852c0c932395394dbb2",
+          "name": "Ruiyi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e20852c0c932395394dbb3",
+          "name": "Tong Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67e20852c0c932395394dbb4",
+          "name": "Yun Li",
+          "hidden": false
+        },
+        {
+          "_id": "67e20852c0c932395394dbb5",
+          "name": "Hongtu Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67e20852c0c932395394dbb6",
+          "name": "Huaxiu Yao",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/643e9ee6f6bb3c31a26e7bc4/smmwVmcnReTUxH6xDnyU1.png"
+      ],
+      "publishedAt": "2025-03-18T06:57:21.000Z",
+      "submittedOnDailyAt": "2025-03-26T03:52:37.520Z",
+      "title": "MDocAgent: 문서 이해를 위한 다모델 멀티 계정 프레임워크",
+      "submittedOnDailyBy": {
+        "_id": "643e9ee6f6bb3c31a26e7bc4",
+        "avatarUrl": "/avatars/acfaa7d6a23dada24c86b954c3be116a.svg",
+        "isPro": false,
+        "fullname": "Peng Xia",
+        "user": "richardxp888",
+        "type": "user"
+      },
+      "summary": "DocQA는 매우 일반적인 작업입니다. 기존 방법들은 대규모 언어 모델(LLMs) 또는 대규모 시각 언어 모델(LVLMs)를 사용하며, 검색 강화 생성(RAG)를 수행하지만, 이러한 방법들은 단일 모델으로부터의 정보를 우선시하고, 텍스트와 이미지의 분리를 효과적으로 통합할 수 없습니다. 이러한 접근 방식은 복잡한 다 모델 논리로 어려워져 있으며, 실제 세계적인 문서의 성능에 한계가 있습니다. 우리는 문서 이해를 위한 새로운 RAG와 다 에이전트 프레임워크인 MDocAgent(다 모델 다 에이전트 프레임워크)를 소개합니다. 이 프레임워크는 텍스트와 이미지를 모두 사용합니다. 시스템은 5개의 전문 에이전트를 사용합니다: 일반 에이전트, 평가 에이전트, 텍스트 에이전트, 이미지 에이전트 및 요약 에이전트. 이러한 에이전트는 다 모델 컨텍스트 검색에 몰두하며, 개별적인 시각을 결합하여 문서의 내용을 더 자세히 이해합니다. 이 협력적인 접근 방식에 의해, 시스템은 텍스트와 시각적인 구성 요소로부터의 정보를 합성하고, 질문의 답변의 정확도를 향상시킵니다. MMLongBench, LongDocURL 등 5개의 벤치마크에서 초기 실험은 우리의 MDocAgent의 효과를 보여주며, 현재의 최상위 방법과 비교하여 평균적으로 12.1%의 개선을 달성했습니다. 이 연구는 실제 세계적인 문서의 복잡성을 조화시키기 위해 더 강건하고 상세한 DocQA 시스템의 개발에 기여합니다. 데이터와 코드는 https://github.com/aiming-lab/MDocAgent에 공개되어 있습니다.",
+      "upvotes": 4,
+      "discussionId": "67e20858c0c932395394dde6",
+      "ai_keywords": [
+        "Large Language Models (LLMs)",
+        "Large Vision Language Models (LVLMs)",
+        "Retrieval Augmented Generation (RAG)",
+        "multi-modal reasoning",
+        "multi-modal multi-agent framework",
+        "general agent",
+        "critical agent",
+        "text agent",
+        "image agent",
+        "summarizing agent",
+        "multi-modal context retrieval"
+      ]
+    },
+    "publishedAt": "2025-03-18T02:57:21.000Z",
+    "title": "MDocAgent: A Multi-Modal Multi-Agent Framework for Document\n  Understanding",
+    "summary": "Document Question Answering (DocQA) is a very common task. Existing methods\nusing Large Language Models (LLMs) or Large Vision Language Models (LVLMs) and\nRetrieval Augmented Generation (RAG) often prioritize information from a single\nmodal, failing to effectively integrate textual and visual cues. These\napproaches struggle with complex multi-modal reasoning, limiting their\nperformance on real-world documents. We present MDocAgent (A Multi-Modal\nMulti-Agent Framework for Document Understanding), a novel RAG and multi-agent\nframework that leverages both text and image. Our system employs five\nspecialized agents: a general agent, a critical agent, a text agent, an image\nagent and a summarizing agent. These agents engage in multi-modal context\nretrieval, combining their individual insights to achieve a more comprehensive\nunderstanding of the document's content. This collaborative approach enables\nthe system to synthesize information from both textual and visual components,\nleading to improved accuracy in question answering. Preliminary experiments on\nfive benchmarks like MMLongBench, LongDocURL demonstrate the effectiveness of\nour MDocAgent, achieve an average improvement of 12.1% compared to current\nstate-of-the-art method. This work contributes to the development of more\nrobust and comprehensive DocQA systems capable of handling the complexities of\nreal-world documents containing rich textual and visual information. Our data\nand code are available at https://github.com/aiming-lab/MDocAgent.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/643e9ee6f6bb3c31a26e7bc4/smmwVmcnReTUxH6xDnyU1.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.13964.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "643e9ee6f6bb3c31a26e7bc4",
+      "avatarUrl": "/avatars/acfaa7d6a23dada24c86b954c3be116a.svg",
+      "fullname": "Peng Xia",
+      "name": "richardxp888",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.19470",
+      "authors": [
+        {
+          "_id": "67e365b0dcfc2aeae1bf3da2",
+          "name": "Mingyang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3da3",
+          "name": "Tianpeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3da4",
+          "name": "Haoze Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3da5",
+          "name": "Yijie Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3da6",
+          "name": "Chenzheng Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3da7",
+          "name": "Fan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3da8",
+          "name": "Zenan Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3da9",
+          "name": "Weipeng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3daa",
+          "name": "Haofen Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3dab",
+          "name": "Jeff Z. Pan",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3dac",
+          "name": "Wen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e365b0dcfc2aeae1bf3dad",
+          "name": "Huajun Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-25T09:00:58.000Z",
+      "submittedOnDailyAt": "2025-03-26T00:56:07.098Z",
+      "title": "연구: LLMs에서 검색을 이용한 추론의 학습을 강화학습을 통해 실현하기",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "대규모 언어 모델(LLMs)는 논리론의 우수한 능력을 보여주고 있으며, OpenAI-o1와 DeepSeek-R1의 성공이 그 예로 꼽힌다. 그러나 논리론과 외부 검색 프로세스의 통합은 복잡한 다단계 질문에 대한 여러 검색 단계가 필요할 때 특히 어려워진다. 우리는 새로운 프레임워크인 ReSearch를 제안하고, 强化学習을 사용하여 검색으로 학습하는 논리론을 개발하여 논리론 단계에 대한 감독 데이터가 필요하지 않다. 우리의 접근 방식은 검색 동작을 논리론 체인의 일체적인 구성 요소로 간주하고, 검색을 수행하는 시간과 방법은 문장 기반의 사고에 의해 가이드가 되고, 검색 결과를 그 후의 논리론에 영향을 미친다. ReSearch는 Qwen2.5-7B(-Instruct)와 Qwen2.5-32B(-Instruct) 모델을 사용하여 훈련되어 확장된 실험을 수행했다. 한 데이터 세트의 훈련에도 불구하고, 우리의 모델은 다양한 벤치마크에서 강력한 일반화 성능을 나타냈다. 분석에 따르면 ReSearch는 强化学習 프로세스 중 자연스럽게 발전적인 논리론 능력을 발휘하는 것을 알 수 있었다. 그 외에도 반성과 자기 보정 등 다양한 측면에서 효과적으로 작동한다.",
+      "upvotes": 3,
+      "discussionId": "67e365b1dcfc2aeae1bf3df6",
+      "ai_keywords": [
+        "Large Language Models (LLMs)",
+        "OpenAI-o1",
+        "DeepSeek-R1",
+        "complex multi-hop questions",
+        "ReSearch",
+        "reinforcement learning",
+        "text-based thinking",
+        "reflection",
+        "self-correction",
+        "Qwen2.5-7B(-Instruct)",
+        "Qwen2.5-32B(-Instruct)"
+      ]
+    },
+    "publishedAt": "2025-03-25T05:00:58.000Z",
+    "title": "ReSearch: Learning to Reason with Search for LLMs via Reinforcement\n  Learning",
+    "summary": "Large Language Models (LLMs) have shown remarkable capabilities in reasoning,\nexemplified by the success of OpenAI-o1 and DeepSeek-R1. However, integrating\nreasoning with external search processes remains challenging, especially for\ncomplex multi-hop questions requiring multiple retrieval steps. We propose\nReSearch, a novel framework that trains LLMs to Reason with Search via\nreinforcement learning without using any supervised data on reasoning steps.\nOur approach treats search operations as integral components of the reasoning\nchain, where when and how to perform searches is guided by text-based thinking,\nand search results subsequently influence further reasoning. We train ReSearch\non Qwen2.5-7B(-Instruct) and Qwen2.5-32B(-Instruct) models and conduct\nextensive experiments. Despite being trained on only one dataset, our models\ndemonstrate strong generalizability across various benchmarks. Analysis reveals\nthat ReSearch naturally elicits advanced reasoning capabilities such as\nreflection and self-correction during the reinforcement learning process.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.19470.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": true,
+      "isMod": false,
+      "followerCount": 6471
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.19041",
+      "authors": [
+        {
+          "_id": "67e35da0b1b97cc3392024b1",
+          "name": "Kangwei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024b2",
+          "name": "Mengru Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024b3",
+          "name": "Yujie Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024b4",
+          "name": "Lin Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024b5",
+          "name": "Mengshu Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024b6",
+          "name": "Ningyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024b7",
+          "name": "Lei Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024b8",
+          "name": "Zhiqiang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024b9",
+          "name": "Jun Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67e35da0b1b97cc3392024ba",
+          "name": "Huajun Chen",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/620b3bbb0668e435407c8d0a/f0fTHNDhXrS7zWpmuxVU-.png"
+      ],
+      "publishedAt": "2025-03-24T18:11:42.000Z",
+      "submittedOnDailyAt": "2025-03-26T00:22:20.466Z",
+      "title": "LookAhead Tuning: Safer Language Models via Partial Answer Previews\n\n이 문장은 \"LookAhead Tuning: Safer Language Models via Partial Answer Previews\"로 번역됩니다. 이 제목은 \"LookAhead Tuning\"라는 새로운 언어 모델 조정 기법을 소개하고, 이 기법은 \"Partial Answer Previews\"를 통해 더 안전한 언어 모델을 개발함을 의미합니다. \"Partial Answer Previews\"는 모델이 답을 제공하기 전에 일부 답을 미리 보여주는 것을 의미하며, 이는 모델의 정확성과 신뢰성을 향상시키는 데 도움이 됩니다. 이 논문은 이러한 새로운 기술의 원리와 적용을 설명하고, 이 기술이 언어 모델의 성능을 향상시킬 수 있음을 강조합니다.",
+      "submittedOnDailyBy": {
+        "_id": "620b3bbb0668e435407c8d0a",
+        "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+        "isPro": false,
+        "fullname": "Ningyu Zhang",
+        "user": "Ningyu",
+        "type": "user"
+      },
+      "summary": "Fine-tuning에서, 대규모 언어 모델(LLMs)가 특정 영역에 적응할 수 있지만, 그대로 사용하면 그 정도의 안전성 조정이 무너질 수 있습니다. 이 문제를 해결하기 위해 LookAhead Tuning을 도입하였으며, 이는 2가지 간단하고 리소스 필요도가 낮은 효과적인 데이터 주도 방법들로 구성되어 있습니다. 이 방법들은 학습 데이터의 일부 답변을 사전에 예측하여 변경함으로써, 모델의 고유한 안전 구조를 유지하고 초기 토큰 분포의 변동을 최소화하여 모델의 안전성을 유지하는 것을 목표로 합니다. 구체적인 실험은 LookAhead Tuning이 하류 태스크의 강력한 성능을 희생시키지 않고 안전성을 유지하는 것을 효과적으로 보여주고 있습니다. 우리의 발견은 LLMs의 안전하고 효과적인 적응을 위해 신뢰할 수 있는 리카비티티와 효율적인 해결책으로 자리잡습니다. 코드는 https://github.com/zjunlp/LookAheadTuning에 릴리즈되었습니다.",
+      "upvotes": 3,
+      "discussionId": "67e35da1b1b97cc339202525",
+      "ai_keywords": [
+        "LookAhead Tuning",
+        "safety alignment",
+        "data-driven methods",
+        "partial answer prefixes",
+        "token distributions",
+        "robust performance",
+        "downstream tasks"
+      ]
+    },
+    "publishedAt": "2025-03-24T14:11:42.000Z",
+    "title": "LookAhead Tuning: Safer Language Models via Partial Answer Previews",
+    "summary": "Fine-tuning enables large language models (LLMs) to adapt to specific\ndomains, but often undermines their previously established safety alignment. To\nmitigate the degradation of model safety during fine-tuning, we introduce\nLookAhead Tuning, which comprises two simple, low-resource, and effective\ndata-driven methods that modify training data by previewing partial answer\nprefixes. Both methods aim to preserve the model's inherent safety mechanisms\nby minimizing perturbations to initial token distributions. Comprehensive\nexperiments demonstrate that LookAhead Tuning effectively maintains model\nsafety without sacrificing robust performance on downstream tasks. Our findings\nposition LookAhead Tuning as a reliable and efficient solution for the safe and\neffective adaptation of LLMs. Code is released at\nhttps://github.com/zjunlp/LookAheadTuning.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/620b3bbb0668e435407c8d0a/f0fTHNDhXrS7zWpmuxVU-.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.19041.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "620b3bbb0668e435407c8d0a",
+      "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+      "fullname": "Ningyu Zhang",
+      "name": "Ningyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 20
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.18783",
+      "authors": [
+        {
+          "_id": "67e2a43d5116df47da357eec",
+          "user": {
+            "_id": "642438eaa3adbc7142c3ca0f",
+            "avatarUrl": "/avatars/8deff70e0c93d259a42ee47f00a31e3e.svg",
+            "isPro": false,
+            "fullname": "CharlesChen",
+            "user": "CharlesChen2023",
+            "type": "user"
+          },
+          "name": "Linwei Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-25T14:36:22.430Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e2a43d5116df47da357eed",
+          "name": "Lin Gu",
+          "hidden": false
+        },
+        {
+          "_id": "67e2a43d5116df47da357eee",
+          "name": "Liang Li",
+          "hidden": false
+        },
+        {
+          "_id": "67e2a43d5116df47da357eef",
+          "name": "Chenggang Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67e2a43d5116df47da357ef0",
+          "name": "Ying Fu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-24T15:32:06.000Z",
+      "submittedOnDailyAt": "2025-03-26T01:08:28.390Z",
+      "title": "Frequency Dynamic Convolution for Dense Image Prediction",
+      "submittedOnDailyBy": {
+        "_id": "642438eaa3adbc7142c3ca0f",
+        "avatarUrl": "/avatars/8deff70e0c93d259a42ee47f00a31e3e.svg",
+        "isPro": false,
+        "fullname": "CharlesChen",
+        "user": "CharlesChen2023",
+        "type": "user"
+      },
+      "summary": "DY-Conv는 복수 개의 병렬 웨이트와 어텐션 기능을 조합하여 적응적인 웨이트 선택을 가능하게 하고, 눈에 띄는 성능을 보여주지만, 이러한 웨이트의 주파수 응답은 높은 유사성을示し고, 높은 파라미터 비용과 제한적인 적응성을 동반합니다. 본 논문에서는 주파수 영역에서 고정된 파라미터 백지터를 학습하여 이러한 제한을 완화하기 위한 새로운 접근 방식인 Frequency Dynamic Convolution (FDConv)을 소개합니다. FDConv은 서로 다른 주파수 인덱스를 가진 주파수 기반의 그룹에 파라미터 백지터를 분할하고, 주파수 다양성을 유지하면서 파라미터 비용 증가를 방지할 수 있습니다. 적응성을 향상시키기 위해, Kernel Spatial Modulation (KSM)과 Frequency Band Modulation (FBM)을 제안합니다. KSM은 각 필터의 주파수 응답을 공간 수준에서 동적으로 조정하고, FBM은 주파수 영역에서 다른 주파수 BAND에 분해된 가중치를 로컬 콘텐츠에 기반하여 동적으로 조정함으로써 적응성을 향상시킵니다. 물체 검출, 분할, 분류 분야에서 다양한 실험을 수행하여 FDConv의 효과를 증명합니다. ResNet-50에 FDConv을 적용하면 파라미터 비용의 약간의 증가 (+3.6M 파라미터)으로 최상위 성능을 달성하고, CondConv (+90M 파라미터)이나 KW (+76.5M 파라미터)와 비교하여 큰 파라미터 비용 증가를 필요로 하지 않습니다. 또한 FDConv은 ConvNeXt, Swin-Transformer 등 다양한 아키텍처에 쉽게 통합할 수 있으며, 현대적인 시각 태스크에 대해 유연하고 효율적인 해결책을 제공합니다. 코드는 https://github.com/Linwei-Chen/FDConv 에서 공개되어 있습니다.",
+      "upvotes": 2,
+      "discussionId": "67e2a4405116df47da357ff7",
+      "ai_keywords": [
+        "Dynamic Convolution (DY-Conv)",
+        "Frequency Dynamic Convolution (FDConv)",
+        "attention mechanism",
+        "parameter budget",
+        "Fourier domain",
+        "frequency-based groups",
+        "disjoint Fourier indices",
+        "frequency-diverse weights",
+        "Kernel Spatial Modulation (KSM)",
+        "Frequency Band Modulation (FBM)",
+        "frequency response",
+        "spatial level",
+        "frequency bands",
+        "local content",
+        "object detection",
+        "segmentation",
+        "classification",
+        "ResNet-50",
+        "ConvNeXt",
+        "Swin-Transformer",
+        "parameter-efficient"
+      ]
+    },
+    "publishedAt": "2025-03-24T11:32:06.000Z",
+    "title": "Frequency Dynamic Convolution for Dense Image Prediction",
+    "summary": "While Dynamic Convolution (DY-Conv) has shown promising performance by\nenabling adaptive weight selection through multiple parallel weights combined\nwith an attention mechanism, the frequency response of these weights tends to\nexhibit high similarity, resulting in high parameter costs but limited\nadaptability. In this work, we introduce Frequency Dynamic Convolution\n(FDConv), a novel approach that mitigates these limitations by learning a fixed\nparameter budget in the Fourier domain. FDConv divides this budget into\nfrequency-based groups with disjoint Fourier indices, enabling the construction\nof frequency-diverse weights without increasing the parameter cost. To further\nenhance adaptability, we propose Kernel Spatial Modulation (KSM) and Frequency\nBand Modulation (FBM). KSM dynamically adjusts the frequency response of each\nfilter at the spatial level, while FBM decomposes weights into distinct\nfrequency bands in the frequency domain and modulates them dynamically based on\nlocal content. Extensive experiments on object detection, segmentation, and\nclassification validate the effectiveness of FDConv. We demonstrate that when\napplied to ResNet-50, FDConv achieves superior performance with a modest\nincrease of +3.6M parameters, outperforming previous methods that require\nsubstantial increases in parameter budgets (e.g., CondConv +90M, KW +76.5M).\nMoreover, FDConv seamlessly integrates into a variety of architectures,\nincluding ConvNeXt, Swin-Transformer, offering a flexible and efficient\nsolution for modern vision tasks. The code is made publicly available at\nhttps://github.com/Linwei-Chen/FDConv.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.18783.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "642438eaa3adbc7142c3ca0f",
+      "avatarUrl": "/avatars/8deff70e0c93d259a42ee47f00a31e3e.svg",
+      "fullname": "CharlesChen",
+      "name": "CharlesChen2023",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.17361",
+      "authors": [
+        {
+          "_id": "67e35ca7363374850440d91d",
+          "name": "Sophia Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67e35ca7363374850440d91e",
+          "name": "Yinuo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e35ca7363374850440d91f",
+          "name": "Alexander Tong",
+          "hidden": false
+        },
+        {
+          "_id": "67e35ca7363374850440d920",
+          "user": {
+            "_id": "64cd5b3f0494187a9e8b7c69",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/eo9HiGbvCxHQZ-QJB1Y_o.jpeg",
+            "isPro": false,
+            "fullname": "Pranam Chatterjee",
+            "user": "pranamanam",
+            "type": "user"
+          },
+          "name": "Pranam Chatterjee",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-03-26T01:57:51.167Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-21T17:59:43.000Z",
+      "submittedOnDailyAt": "2025-03-26T00:18:51.908Z",
+      "title": "ゲルマルソフトマッチング フロー와 직통 GUI를 활용한 제어 가능한 생물학적 배열 생성",
+      "submittedOnDailyBy": {
+        "_id": "64cd5b3f0494187a9e8b7c69",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/eo9HiGbvCxHQZ-QJB1Y_o.jpeg",
+        "isPro": false,
+        "fullname": "Pranam Chatterjee",
+        "user": "pranamanam",
+        "type": "user"
+      },
+      "summary": "コンティニュース簡約体에서의 フローマッチングは、DNA配列設計のために有望な戦略として登場しましたが、ペプチドおよびプロテインの生成に必要な高次元の簡約体にスケールすることが難しい。我々は、時間依存性の温度を持つ新しい ゴメルバル・ソフトマックスインタープレーター を基にした 簡約体上の生成フレームワーク、 ゴメルバル・ソフトマックスフロー と スコアマッチング を導入します。このインタープレーター を用いて、 ゴメルバル・ソフトマックスフローマッチング を導出し、平滑な カテゴリカル分布 から 簡約体 の一つの頂点に集中した分布 への移動を実現する パラメーター された 速度フィールド を導入します。また、 ゴメルバル・ソフトマックススコアマッチング を提案し、確率密度の勾配を学習して ロジスティック回帰 を行います。我々の フレームワーク は、高品質で多様な生成を可能にし、高次元の簡約体にスケール可能です。トレーニング無しの ガイド を可能にするために、クラスファイザー に基づく ガイドフロー（STGFlow） を提案し、クリーンな配列に プレトレーン された クラスファイザー を利用して 推論時の ガイド を効率的に行うことができます。STGFlow は、任意の離散フロー方法と組み合わせることができ、制御可能な デュノロジー配列生成 のための強固な フレームワーク を形成します。条件付き DNA プロモーター 設計、 シーケンスだけの プロテイン 生成、稀少病症治療のための 目標結合 ペプチド 設計 の最先端の性能を示します。",
+      "upvotes": 1,
+      "discussionId": "67e35caa363374850440d9df",
+      "ai_keywords": [
+        "Gumbel-Softmax Flow",
+        "Score Matching",
+        "simplex",
+        "Gumbel-Softmax interpolant",
+        "time-dependent temperature",
+        "parameterized velocity field",
+        "smooth categorical distributions",
+        "Gumbel-Softmax Flow Matching",
+        "Straight-Through Guided Flows",
+        "STGFlow",
+        "straight-through estimators",
+        "classifiers",
+        "de novo sequence generation",
+        "conditional DNA promoter design",
+        "sequence-only protein generation",
+        "target-binding peptide design"
+      ]
+    },
+    "publishedAt": "2025-03-21T13:59:43.000Z",
+    "title": "Gumbel-Softmax Flow Matching with Straight-Through Guidance for\n  Controllable Biological Sequence Generation",
+    "summary": "Flow matching in the continuous simplex has emerged as a promising strategy\nfor DNA sequence design, but struggles to scale to higher simplex dimensions\nrequired for peptide and protein generation. We introduce Gumbel-Softmax Flow\nand Score Matching, a generative framework on the simplex based on a novel\nGumbel-Softmax interpolant with a time-dependent temperature. Using this\ninterpolant, we introduce Gumbel-Softmax Flow Matching by deriving a\nparameterized velocity field that transports from smooth categorical\ndistributions to distributions concentrated at a single vertex of the simplex.\nWe alternatively present Gumbel-Softmax Score Matching which learns to regress\nthe gradient of the probability density. Our framework enables high-quality,\ndiverse generation and scales efficiently to higher-dimensional simplices. To\nenable training-free guidance, we propose Straight-Through Guided Flows\n(STGFlow), a classifier-based guidance method that leverages straight-through\nestimators to steer the unconditional velocity field toward optimal vertices of\nthe simplex. STGFlow enables efficient inference-time guidance using\nclassifiers pre-trained on clean sequences, and can be used with any discrete\nflow method. Together, these components form a robust framework for\ncontrollable de novo sequence generation. We demonstrate state-of-the-art\nperformance in conditional DNA promoter design, sequence-only protein\ngeneration, and target-binding peptide design for rare disease treatment.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.17361.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64cd5b3f0494187a9e8b7c69",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/eo9HiGbvCxHQZ-QJB1Y_o.jpeg",
+      "fullname": "Pranam Chatterjee",
+      "name": "pranamanam",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.17237",
+      "authors": [
+        {
+          "_id": "67e2b68e08c6a250edda264a",
+          "user": {
+            "_id": "67e2063e1ee7f6db889849d6",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67e2063e1ee7f6db889849d6/ihiwCCqbXlxQ2V_SSGnng.jpeg",
+            "isPro": false,
+            "fullname": "Yu-Hsi Chen",
+            "user": "wish44165",
+            "type": "user"
+          },
+          "name": "Yu-Hsi Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-25T14:35:46.455Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/67e2063e1ee7f6db889849d6/Dn_qgqu4a6nI8HIAdpDvW.mp4"
+      ],
+      "publishedAt": "2025-03-21T15:40:18.000Z",
+      "submittedOnDailyAt": "2025-03-26T04:35:14.607Z",
+      "title": "강력한 베이스라인: 다유버 플라이닝을 수행하는 YOLOv12와 BoT-SORT-ReID",
+      "submittedOnDailyBy": {
+        "_id": "67e2063e1ee7f6db889849d6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67e2063e1ee7f6db889849d6/ihiwCCqbXlxQ2V_SSGnng.jpeg",
+        "isPro": false,
+        "fullname": "Yu-Hsi Chen",
+        "user": "wish44165",
+        "type": "user"
+      },
+      "summary": "摂氏インフラレッドビデオ에서 다수의 무인 비행기(UAV)를 검출하고 추적하는 것은 낮은 대비, 환경 노이즈, 작은 타겟 크기에 의해 본질적으로 어려워질 수밖에 없는 문제입니다. 본 논문은 최근 검출과 추적의 발전을 활용하여, 간단한 접근 방식을 제공하여, 摂氏インフラレッドビデオ에서 다수의 UAV 추적을 해결하는 데 도움을 줍니다. YOLOv5와 DeepSORT 패이플레인에 의존하지 않고, YOLOv12와 BoT-SORT를 기반으로 구축한 추적 프레임워크를 제안하고, 적절한 훈련과 추론 전략을 적용하여 강화하였습니다. 4세대의 UAV 도전에 사용되는 메트릭에 기반하여 평가하였으며, 강력한 성능을 보여주었습니다. 특히, 대비 강화와 시퀀스 정보 융합을 사용하지 않고, UAV의 특징을 강화한 것이 아니라, 다수의 UAV 추적을 위한 \"강력한 기본라인\"으로 특징적인 결과를 얻었습니다. 구현의 세부 사항, 상세한 실험 분석, 가능성 있는 개선점의 논의를 제공하며, 코드는 https://github.com/wish44165/YOLOv12-BoT-SORT-ReID에 공개되어 있습니다.",
+      "upvotes": 1,
+      "discussionId": "67e2b69108c6a250edda279f",
+      "githubRepo": "https://github.com/wish44165/YOLOv12-BoT-SORT-ReID",
+      "ai_keywords": [
+        "YOLOv12",
+        "BoT-SORT",
+        "multi-UAV tracking",
+        "thermal infrared video",
+        "detection",
+        "tracking",
+        "tailored training",
+        "inference strategies",
+        "4th Anti-UAV Challenge",
+        "contrast enhancement",
+        "temporal information fusion",
+        "UAV features",
+        "Strong Baseline"
+      ]
+    },
+    "publishedAt": "2025-03-21T11:40:18.000Z",
+    "title": "Strong Baseline: Multi-UAV Tracking via YOLOv12 with BoT-SORT-ReID",
+    "summary": "Detecting and tracking multiple unmanned aerial vehicles (UAVs) in thermal\ninfrared video is inherently challenging due to low contrast, environmental\nnoise, and small target sizes. This paper provides a straightforward approach\nto address multi-UAV tracking in thermal infrared video, leveraging recent\nadvances in detection and tracking. Instead of relying on the YOLOv5 with the\nDeepSORT pipeline, we present a tracking framework built on YOLOv12 and\nBoT-SORT, enhanced with tailored training and inference strategies. We evaluate\nour approach following the metrics from the 4th Anti-UAV Challenge and\ndemonstrate competitive performance. Notably, we achieve strong results without\nusing contrast enhancement or temporal information fusion to enrich UAV\nfeatures, highlighting our approach as a \"Strong Baseline\" for the multi-UAV\ntracking task. We provide implementation details, in-depth experimental\nanalysis, and a discussion of potential improvements. The code is available at\nhttps://github.com/wish44165/YOLOv12-BoT-SORT-ReID .",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/67e2063e1ee7f6db889849d6/Dn_qgqu4a6nI8HIAdpDvW.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.17237.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "67e2063e1ee7f6db889849d6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67e2063e1ee7f6db889849d6/ihiwCCqbXlxQ2V_SSGnng.jpeg",
+      "fullname": "Yu-Hsi Chen",
+      "name": "wish44165",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.16965",
+      "authors": [
+        {
+          "_id": "67e35c3bf049c252c672b824",
+          "name": "Zhe Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67e35c3bf049c252c672b825",
+          "name": "Jing Li",
+          "hidden": false
+        },
+        {
+          "_id": "67e35c3bf049c252c672b826",
+          "name": "Yu Yin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-21T09:25:23.000Z",
+      "submittedOnDailyAt": "2025-03-26T00:20:32.465Z",
+      "title": "단어가 시각보다 뛰어난 경우: VLMs는 텍스트만 가지고 자동으로 개선할 수 있는, 인간 중심의 판단에 대한 훈련을 수행할 수 있습니다.",
+      "submittedOnDailyBy": {
+        "_id": "63999a6fe657365725d0d0a4",
+        "avatarUrl": "/avatars/99736de1bc0d5decf4a6eda86e3c7937.svg",
+        "isPro": false,
+        "fullname": "Derek Zhe Hu",
+        "user": "zhehuderek",
+        "type": "user"
+      },
+      "summary": "軌体 결정을행은 AI 에이전트가 실세계 환경에서 동작하는 데 필수적이다. 시각 언어 모델(VLMs)은 이 능력을 발전시켰지만, 특히 인간 중심적인 상황에서 깊은 이유를 필요로 하는 복잡한 판단에 대해 여전히 어려움을 겪고 있다. 본 연구에서는 인간 중심적인 다양한 판단 처리 태스크에 대해 오픈 소스의 VLMs를 체계적으로 평가하였다. LLMs는 실제 이미지 처리와 같은 VLMs와 같은 규모를 가정하지만, 그밖에는 문맥에서만 놀라워 보이는 수준의 성능을 보였다. 이는 VLMs의 능력을 저해하는 이미지 대응이 있음을 나타낸다. 이러한 도전에대하여, 합성된 문맥 데이터를 이용한 새로운 문맥만의 훈련 접근 방식을 제안하였다. 이 방법은 VLMs의 언어 요소를 강화하고 학습된 능력이 다양한 추론에 옮기고, 고가의 이미지-문맥 페어 데이터의 필요성을 제거할 수 있다. 또한, VLMs는 LLM의 컨텍스트를 통해 생성된 훈련 데이터를 사용하여 자기 개선을 수행하고, GPT-4의 더 큰 교사 모델에 의존하지 않고, 큰 성능 향상을 실현할 수 있음을 보여주었다. 이러한 발견은 VLMs의 인간 중심적인 판단 능력을 강화하기 위한 더 효율적이고 확장 가능한 접근 방식을 권장하고, VLMs를 자기 개선 구조를 통해 최적화하는 새로운 길을 개척한다.",
+      "upvotes": 1,
+      "discussionId": "67e35c3cf049c252c672b859",
+      "ai_keywords": [
+        "Visual Language Models (VLMs)",
+        "multimodal human-centered decision-making tasks",
+        "Large Language Models (LLMs)",
+        "textual descriptions",
+        "visual alignment",
+        "text-only training approach",
+        "synthesized textual data",
+        "self-improvement",
+        "training data",
+        "GPT-4",
+        "human-centered decision-making capabilities"
+      ]
+    },
+    "publishedAt": "2025-03-21T05:25:23.000Z",
+    "title": "When Words Outperform Vision: VLMs Can Self-Improve Via Text-Only\n  Training For Human-Centered Decision Making",
+    "summary": "Embodied decision-making is fundamental for AI agents operating in real-world\nenvironments. While Visual Language Models (VLMs) have advanced this\ncapability, they still struggle with complex decisions, particularly in\nhuman-centered situations that require deep reasoning about human needs and\nvalues. In this study, we systematically evaluate open-sourced VLMs on\nmultimodal human-centered decision-making tasks. We find that LLMs receiving\nonly textual descriptions unexpectedly outperform their VLM counterparts of\nsimilar scale that process actual images, suggesting that visual alignment may\nhinder VLM abilities. To address this challenge, we propose a novel text-only\ntraining approach with synthesized textual data. This method strengthens VLMs'\nlanguage components and transfers the learned abilities to multimodal\ninference, eliminating the need for expensive image-text paired data.\nFurthermore, we show that VLMs can achieve substantial performance gains\nthrough self-improvement, using training data generated by their LLM\ncounterparts rather than relying on larger teacher models like GPT-4. Our\nfindings establish a more efficient and scalable approach to enhancing VLMs'\nhuman-centered decision-making capabilities, opening new avenues for optimizing\nVLMs through self-improvement mechanisms.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.16965.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63999a6fe657365725d0d0a4",
+      "avatarUrl": "/avatars/99736de1bc0d5decf4a6eda86e3c7937.svg",
+      "fullname": "Derek Zhe Hu",
+      "name": "zhehuderek",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.11849",
+      "authors": [
+        {
+          "_id": "67e3d0ac304f166b665e4a67",
+          "name": "Yi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a68",
+          "name": "Zhitong Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a69",
+          "name": "Chenying Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a6a",
+          "name": "Adam J. Stewart",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a6b",
+          "name": "Thomas Dujardin",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a6c",
+          "name": "Nikolaos Ioannis Bountos",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a6d",
+          "name": "Angelos Zavras",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a6e",
+          "name": "Franziska Gerken",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a6f",
+          "name": "Ioannis Papoutsis",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a70",
+          "name": "Laura Leal-Taixé",
+          "hidden": false
+        },
+        {
+          "_id": "67e3d0ac304f166b665e4a71",
+          "name": "Xiao Xiang Zhu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-14T20:16:48.000Z",
+      "submittedOnDailyAt": "2025-03-26T08:34:37.209Z",
+      "title": "关于Copernican 模型的地球观",
+      "submittedOnDailyBy": {
+        "_id": "64cba974a81988d0734c9925",
+        "avatarUrl": "/avatars/645c326ca38eb751144f356076cef60f.svg",
+        "isPro": false,
+        "fullname": "Yi Wang",
+        "user": "wangyi111",
+        "type": "user"
+      },
+      "summary": "지구관측(EO)의 기초모델의 발전은 대규모의 위성데이터로부터 공간에서의 일반적인 표현을 학습하는 가능성을 개발하고, 지구에 대한 중요한 다양한 하류 애플리케이션에 도움을 주며, 이는 중요합니다. 그러나 현재의 거의 모든 노력을 고정스펙트럼 센서에 제한하고, 지구의 표면만 집중하고, 이미지보다 유익한 메타데이터를 무시하고 있습니다. 이 연구에서는, 다음세대의 EO 기초모델에 대한 단계를 내고, 3가지의 핵심 구성 요소를 도입합니다: 1) Copernicus-Pretrain, 1870만 개의 센타리스트 미션으로부터의 어레이 이미지로 통합된 큰 규모의 예측 데이터셋, 지구의 표면부터 대기까지 광범위하게 범위를 넓혔습니다. 2) Copernicus-FM, 확장된 동적 하이퍼네트워크와 유연한 메타데이터 인코딩을 사용하여, 어떤 스펙트럼이나 비스펙트럼 센서 모델을 처리할 수 있는 통일된 기초모델입니다. 3) Copernicus-Bench, 전처리부터 각 센타리스트 미션의 특화된 애플리케이션까지의 15개의 계층적인 하류 태스크를 구성하고, 시스템적으로 평가하는 벤치마크입니다. 우리 데이터셋, 모델, 벤치마크는, EO 기초모델의 scalability, variation, 모델 다양성을 크게 향상시키고, EO, 기상, 기후 연구와의 연결성을 새롭게 창조합니다. 코드, 데이터셋, 모델은, https://github.com/zhu-xlab/Copernicus-FM 에서 이용할 수 있습니다.",
+      "upvotes": 0,
+      "discussionId": "67e3d0af304f166b665e4b68",
+      "githubRepo": "https://github.com/zhu-xlab/Copernicus-FM"
+    },
+    "publishedAt": "2025-03-14T16:16:48.000Z",
+    "title": "Towards a Unified Copernicus Foundation Model for Earth Vision",
+    "summary": "Advances in Earth observation (EO) foundation models have unlocked the\npotential of big satellite data to learn generic representations from space,\nbenefiting a wide range of downstream applications crucial to our planet.\nHowever, most existing efforts remain limited to fixed spectral sensors, focus\nsolely on the Earth's surface, and overlook valuable metadata beyond imagery.\nIn this work, we take a step towards next-generation EO foundation models with\nthree key components: 1) Copernicus-Pretrain, a massive-scale pretraining\ndataset that integrates 18.7M aligned images from all major Copernicus Sentinel\nmissions, spanning from the Earth's surface to its atmosphere; 2)\nCopernicus-FM, a unified foundation model capable of processing any spectral or\nnon-spectral sensor modality using extended dynamic hypernetworks and flexible\nmetadata encoding; and 3) Copernicus-Bench, a systematic evaluation benchmark\nwith 15 hierarchical downstream tasks ranging from preprocessing to specialized\napplications for each Sentinel mission. Our dataset, model, and benchmark\ngreatly improve the scalability, versatility, and multimodal adaptability of EO\nfoundation models, while also creating new opportunities to connect EO,\nweather, and climate research. Codes, datasets and models are available at\nhttps://github.com/zhu-xlab/Copernicus-FM.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.11849.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64cba974a81988d0734c9925",
+      "avatarUrl": "/avatars/645c326ca38eb751144f356076cef60f.svg",
+      "fullname": "Yi Wang",
+      "name": "wangyi111",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  }
+]
