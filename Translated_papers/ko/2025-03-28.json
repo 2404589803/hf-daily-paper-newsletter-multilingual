@@ -1,0 +1,3079 @@
+[
+  {
+    "paper": {
+      "id": "2503.21776",
+      "authors": [
+        {
+          "_id": "67e6090248742d6df75853ae",
+          "user": {
+            "_id": "67079840a9bcb7459b8d2a46",
+            "avatarUrl": "/avatars/32466863c5554f20cb2775b138832ac3.svg",
+            "isPro": false,
+            "fullname": "Kaituo Feng",
+            "user": "KaituoFeng",
+            "type": "user"
+          },
+          "name": "Kaituo Feng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:40:54.494Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6090248742d6df75853af",
+          "user": {
+            "_id": "642e427f6748dd4f8eeb2f38",
+            "avatarUrl": "/avatars/07158ff6aa1803c846403594c5d55a34.svg",
+            "isPro": false,
+            "fullname": "Kaixiong Gong",
+            "user": "kxgong",
+            "type": "user"
+          },
+          "name": "Kaixiong Gong",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:41:00.671Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6090248742d6df75853b0",
+          "user": {
+            "_id": "6310b7e70a43f97f6c56191e",
+            "avatarUrl": "/avatars/4a24c76e34d12c3d6230a4a081115f72.svg",
+            "isPro": false,
+            "fullname": "Bohao Li",
+            "user": "BreakLee",
+            "type": "user"
+          },
+          "name": "Bohao Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:22.901Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6090248742d6df75853b1",
+          "user": {
+            "_id": "6491af36c1741666238f3bff",
+            "avatarUrl": "/avatars/0ee7d2ec1566e2cc5e8f144140e17f00.svg",
+            "isPro": false,
+            "fullname": "Zonghao Guo",
+            "user": "guozonghao96",
+            "type": "user"
+          },
+          "name": "Zonghao Guo",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:41:07.167Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6090248742d6df75853b2",
+          "name": "Yibing Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e6090248742d6df75853b3",
+          "user": {
+            "_id": "6538dd471ad9b3ba7c2df861",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6538dd471ad9b3ba7c2df861/MbEa7KHAK6u7PRb7WiPUC.jpeg",
+            "isPro": false,
+            "fullname": "Tianshuo Peng",
+            "user": "Potentialts",
+            "type": "user"
+          },
+          "name": "Tianshuo Peng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:41:29.644Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6090248742d6df75853b4",
+          "user": {
+            "_id": "637c6703ca8542a0ba900ccb",
+            "avatarUrl": "/avatars/288ed63a1efa566c3f01e850c6ba5dd5.svg",
+            "isPro": false,
+            "fullname": "Wang",
+            "user": "Benyou",
+            "type": "user"
+          },
+          "name": "Benyou Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:41:41.619Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6090248742d6df75853b5",
+          "user": {
+            "_id": "666a8f24e2990b0cb16b7bf9",
+            "avatarUrl": "/avatars/fcbaf8f1e3e53a2a4a819b7cb2c53aa4.svg",
+            "isPro": false,
+            "fullname": "Xiangyu Yue",
+            "user": "xyyue",
+            "type": "user"
+          },
+          "name": "Xiangyu Yue",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:41:48.267Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T17:59:51.000Z",
+      "submittedOnDailyAt": "2025-03-28T01:02:30.945Z",
+      "title": "Video-R1: MLLM을 통해 ビデオ認識의理由論를 강화하는 연구\n\nNote: The original text \"ビデオ認識の理由論を強化するMLLM\" was not fully translated due to the presence of non-English characters. The translation provided above is based on the context and the closest Korean equivalents. If you have a specific translation for these characters, please provide it for a more accurate translation.",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "DeepSeek-R1가 규칙 기반의 강화학습(RL)을 통해 추론 능력을 발휘하는 성공을 감안하여, 우리는 Video-R1을 소개하여 R1 패턴을 체계적으로 활용하여 멀티모달 대형 언어 모델(MLLMs)에서 비디오 추론을 촉발시키는 시도를 시도합니다. 그러나 GRPO 알고리즘의 RL 훈련을 직접 비디오 추론에 적용할 때 두 가지 주요 도전이 존재합니다: (i) 비디오 추론의 시간 모델링의 부족, (ii) 고품질 비디오 추론 데이터의 희귀성. 이러한 문제를 해결하기 위해, 우리는 먼저 T-GRPO 알고리즘을 제안하여 모델이 비디오의 시간 정보를 활용하여 추론하도록 유도합니다. 또한, 우리는 단순히 비디오 데이터를 의존하지 않고, 고품질의 이미지 추론 데이터를 훈련 과정에 포함시켰습니다. 우리는 Video-R1-COT-165k(SFT 냉시작용)과 Video-R1-260k(RL 훈련용) 두 개의 데이터셋을 구축했습니다. 이 두 데이터셋 모두 이미지와 비디오 데이터를 포함합니다. 실험 결과, Video-R1은 VideoMMMU와 VSI-Bench 등 비디오 추론 기준, 그리고 MVBench와 TempCompass 등 일반적인 비디오 기준에서 상당한 개선을 보였습니다. 특히, Video-R1-7B은 VSI-Bench의 비디오 공간 추론 기준에서 35.8%의 정확도를 달성하여, 상업专用 모델인 GPT-4o를 초과했습니다. 모든 코드, 모델 및 데이터는 공개되었습니다.",
+      "upvotes": 42,
+      "discussionId": "67e6090348742d6df75853de",
+      "ai_keywords": [
+        "rule-based reinforcement learning (RL)",
+        "GRPO algorithm",
+        "temporal modeling",
+        "Video-R1-COT-165k",
+        "Video-R1-260k",
+        "SFT cold start",
+        "VideoMMMU",
+        "VSI-Bench",
+        "MVBench",
+        "TempCompass",
+        "video spatial reasoning",
+        "GPT-4o",
+        "T-GRPO algorithm"
+      ]
+    },
+    "publishedAt": "2025-03-27T13:59:51.000Z",
+    "title": "Video-R1: Reinforcing Video Reasoning in MLLMs",
+    "summary": "Inspired by DeepSeek-R1's success in eliciting reasoning abilities through\nrule-based reinforcement learning (RL), we introduce Video-R1 as the first\nattempt to systematically explore the R1 paradigm for eliciting video reasoning\nwithin multimodal large language models (MLLMs). However, directly applying RL\ntraining with the GRPO algorithm to video reasoning presents two primary\nchallenges: (i) a lack of temporal modeling for video reasoning, and (ii) the\nscarcity of high-quality video-reasoning data. To address these issues, we\nfirst propose the T-GRPO algorithm, which encourages models to utilize temporal\ninformation in videos for reasoning. Additionally, instead of relying solely on\nvideo data, we incorporate high-quality image-reasoning data into the training\nprocess. We have constructed two datasets: Video-R1-COT-165k for SFT cold start\nand Video-R1-260k for RL training, both comprising image and video data.\nExperimental results demonstrate that Video-R1 achieves significant\nimprovements on video reasoning benchmarks such as VideoMMMU and VSI-Bench, as\nwell as on general video benchmarks including MVBench and TempCompass, etc.\nNotably, Video-R1-7B attains a 35.8% accuracy on video spatial reasoning\nbenchmark VSI-bench, surpassing the commercial proprietary model GPT-4o. All\ncodes, models, data are released.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21776.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": true,
+      "isMod": false,
+      "followerCount": 6494
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21620",
+      "authors": [
+        {
+          "_id": "67e606fb6c44ab0376a498a1",
+          "user": {
+            "_id": "676127cf11b19ea602bb202a",
+            "avatarUrl": "/avatars/dfd802a24bd63e509728159ebb1769f6.svg",
+            "isPro": false,
+            "fullname": "Zhengxi Lu",
+            "user": "LZXzju",
+            "type": "user"
+          },
+          "name": "Zhengxi Lu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:42:01.155Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e606fb6c44ab0376a498a2",
+          "user": {
+            "_id": "6458ce236fa580137af5aa95",
+            "avatarUrl": "/avatars/db65a7332e375eb5daad5c1b076b1e3b.svg",
+            "isPro": false,
+            "fullname": "Yuxiang Chai",
+            "user": "Yuxiang007",
+            "type": "user"
+          },
+          "name": "Yuxiang Chai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:39.852Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e606fb6c44ab0376a498a3",
+          "user": {
+            "_id": "65c237220c57a7141888363e",
+            "avatarUrl": "/avatars/ce43c52f47d524c5b747523058946325.svg",
+            "isPro": false,
+            "fullname": "guoyaxuan",
+            "user": "guoyaxuan0106",
+            "type": "user"
+          },
+          "name": "Yaxuan Guo",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:42:12.269Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e606fb6c44ab0376a498a4",
+          "name": "Xi Yin",
+          "hidden": false
+        },
+        {
+          "_id": "67e606fb6c44ab0376a498a5",
+          "name": "Liang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e606fb6c44ab0376a498a6",
+          "name": "Hao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e606fb6c44ab0376a498a7",
+          "name": "Guanjing Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "67e606fb6c44ab0376a498a8",
+          "user": {
+            "_id": "65c04e9c27a5fdca81abcbd9",
+            "avatarUrl": "/avatars/12a155683c824fa23da4a9e2bed4f64e.svg",
+            "isPro": false,
+            "fullname": "Hongsheng LI",
+            "user": "hsli-cuhk",
+            "type": "user"
+          },
+          "name": "Hongsheng Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:43:30.298Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T15:39:30.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:48:51.950Z",
+      "title": "그래프릭 에이전트의 행동 예측을 강화학습을 통해 향상시키기",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "최근의 DeepSeek-R1은 규칙 기반의 보상을 사용한 강화학습(RL)에 의한 논리적인 능력을 발전시켰습니다. 이 아이디어에 따라, 우리는 규칙 기반의 RL이 그래픽 사용자 인터페이스(GUI) 액션 예측 태스크를 위한 다형성 큰 언어 모델(MLLMs)의 논리적인 능력을 향상시킬 수 있는지 조사했습니다. 이를 위해, 5가지 일반적인 액션 타입을 포함하는 136개의 어려운 태스크를 가진 작은 고품질 데이터셋을 만들었습니다. 또한, 그룹 상대적 정책 최적화(GRPO)와 같은 정책 기반 알고리즘을 사용하여 모델 최적화를 가능하게 하기 위해 일련의 규칙 기반 액션 보상을 도입했습니다. 실험 결과, 우리는 제안한 데이터 효과적인 모델, UI-R1-3B는 데이터셋 내(ID)과 데이터셋 외(OOD) 모두 크게 향상했습니다. 특히, ID 벤치마크 AndroidControl에서 액션 타입의 정확도는 15% 이상 증가했습니다.基础模型(Qwen2.5-VL-3B)과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과 비교하여, 기본 모델과",
+      "upvotes": 27,
+      "discussionId": "67e606fe6c44ab0376a49962",
+      "ai_keywords": [
+        "reinforcement learning (RL)",
+        "multimodal large language models (MLLMs)",
+        "graphical user interface (GUI) action prediction tasks",
+        "rule-based action reward",
+        "Group Relative Policy Optimization (GRPO)",
+        "in-domain (ID) tasks",
+        "out-of-domain (OOD) tasks",
+        "action type accuracy",
+        "grounding accuracy",
+        "supervised fine-tuning (SFT)",
+        "GUI grounding benchmark ScreenSpot-Pro",
+        "OS-Atlas-7B"
+      ]
+    },
+    "publishedAt": "2025-03-27T11:39:30.000Z",
+    "title": "UI-R1: Enhancing Action Prediction of GUI Agents by Reinforcement\n  Learning",
+    "summary": "The recent DeepSeek-R1 has showcased the emergence of reasoning capabilities\nin LLMs through reinforcement learning (RL) with rule-based rewards. Building\non this idea, we are the first to explore how rule-based RL can enhance the\nreasoning capabilities of multimodal large language models (MLLMs) for graphic\nuser interface (GUI) action prediction tasks. To this end, we curate a small\nyet high-quality dataset of 136 challenging tasks, encompassing five common\naction types on mobile devices. We also introduce a unified rule-based action\nreward, enabling model optimization via policy-based algorithms such as Group\nRelative Policy Optimization (GRPO). Experimental results demonstrate that our\nproposed data-efficient model, UI-R1-3B, achieves substantial improvements on\nboth in-domain (ID) and out-of-domain (OOD) tasks. Specifically, on the ID\nbenchmark AndroidControl, the action type accuracy improves by 15%, while\ngrounding accuracy increases by 10.3%, compared with the base model (i.e.\nQwen2.5-VL-3B). On the OOD GUI grounding benchmark ScreenSpot-Pro, our model\nsurpasses the base model by 6.0% and achieves competitive performance with\nlarger models (e.g., OS-Atlas-7B), which are trained via supervised fine-tuning\n(SFT) on 76K data. These results underscore the potential of rule-based\nreinforcement learning to advance GUI understanding and control, paving the way\nfor future research in this domain.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21620.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": true,
+      "isMod": false,
+      "followerCount": 6494
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21380",
+      "authors": [
+        {
+          "_id": "67e5f4ad147ee85622ad0df1",
+          "user": {
+            "_id": "65df408822d66a997b4d5f6e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65df408822d66a997b4d5f6e/poROuCSvB39NZSiLzxLZf.jpeg",
+            "isPro": false,
+            "fullname": "Haoxiang Sun",
+            "user": "CoderBak",
+            "type": "user"
+          },
+          "name": "Haoxiang Sun",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:46:46.418Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5f4ad147ee85622ad0df2",
+          "user": {
+            "_id": "6703ac76ea890f0ca5b225eb",
+            "avatarUrl": "/avatars/5f56c49a1940143d47dd484782a4abbf.svg",
+            "isPro": false,
+            "fullname": "Yingqian Min",
+            "user": "EliverQ",
+            "type": "user"
+          },
+          "name": "Yingqian Min",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:38:03.334Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5f4ad147ee85622ad0df3",
+          "user": {
+            "_id": "629b765ce1af194c641fcbc6",
+            "avatarUrl": "/avatars/7c53a4c2a1e528c19641a2b601731754.svg",
+            "isPro": false,
+            "fullname": "Zhipeng Chen",
+            "user": "TimothyCzp",
+            "type": "user"
+          },
+          "name": "Zhipeng Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:38:01.177Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5f4ad147ee85622ad0df4",
+          "name": "Wayne Xin Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67e5f4ad147ee85622ad0df5",
+          "name": "Zheng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e5f4ad147ee85622ad0df6",
+          "name": "Zhongyuan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e5f4ad147ee85622ad0df7",
+          "name": "Lei Fang",
+          "hidden": false
+        },
+        {
+          "_id": "67e5f4ad147ee85622ad0df8",
+          "user": {
+            "_id": "64b8c89052b7353d8c6a1013",
+            "avatarUrl": "/avatars/cd59fffe81f6b07b4519540b8ff3d95f.svg",
+            "isPro": false,
+            "fullname": "Ji-Rong Wen",
+            "user": "jrwen",
+            "type": "user"
+          },
+          "name": "Ji-Rong Wen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:47:20.525Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T11:20:17.000Z",
+      "submittedOnDailyAt": "2025-03-28T01:15:16.769Z",
+      "title": "경계에 도전하는 이유: 올림픽 수준의 수학의 벤치마크로의 도전",
+      "submittedOnDailyBy": {
+        "_id": "648e6a4567aa8ab0e0e4c30f",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/648e6a4567aa8ab0e0e4c30f/b9OsE6C0a5iJE1yAlFG-_.jpeg",
+        "isPro": false,
+        "fullname": "Beichen Zhang",
+        "user": "ToheartZhang",
+        "type": "user"
+      },
+      "summary": "최근, 대규모 추론 모형의 급속한 개발로 수학적 추론을 평가하기 위한 현재의 벤치마크가 포화되고, 더 어려워진 엄격한 평가 프레임워크의 필요성이 급시히 제기되어 있습니다. 이러한 공간에 대응하기 위해, 올림픽 수준의 수학 벤치마크 \"OlymMATH\"를 소개합니다. 이 벤치마크는 LLM의 복잡한 추론 능력을 엄격하게 검증하기 위해 설계되었습니다. OlymMATH는 200문제의 엄격하게 선택된 문제를 특징으로 하고, 각각 손으로 검증되어 있으며, 영어와 중국어로 둘 다 사용할 수 있습니다. 문제는 (1) AIME 수준의 문제(쉬움)과 (2) 더 어려운 문제(어려움)의 두 가지 다른 난이도 레벨로 구성되어 있습니다. 첫 번째는 수학적 추론을 평가하는 기준을 확립하고, 두 번째는 현재의 최선 모델의 한계를 초월하기 위해 설계되었습니다. 이 벤치마크에서 4가지 핵심적인 수학 분야의 문제를 가지고 있으며, 각 문제에는 증명 가능한 수치해가 포함되어 있으며, 주관적인 평가를 피하고 규칙에 기초한 평가가 가능합니다. 실험 결과를 통해 OlymMATH에서 드러난 큰 문제들을 밝혀내고, 가장 선진 모델인 DeepSeek-R1과 OpenAI의 o3-mini는 어려운 세트에서 상당한 정확도를 보여주고 있습니다. 또한, 이 벤치마크는主流의 수학적 추론 벤치마크에서 주로 해결되지 않은 중요한 차원에서, 수학적 추론 능력의 세부적인 바이리언 평가가 가능합니다. OlymMATH 벤치마크는 \"STILL\" 프로젝트에서 공개되어 있습니다: https://github.com/RUCAIBox/Slow_Thinking_with_LLMs.",
+      "upvotes": 24,
+      "discussionId": "67e5f4ae147ee85622ad0e27",
+      "ai_keywords": [
+        "DeepSeek-R1",
+        "o3-mini"
+      ]
+    },
+    "publishedAt": "2025-03-27T07:20:17.000Z",
+    "title": "Challenging the Boundaries of Reasoning: An Olympiad-Level Math\n  Benchmark for Large Language Models",
+    "summary": "In recent years, the rapid development of large reasoning models has resulted\nin the saturation of existing benchmarks for evaluating mathematical reasoning,\nhighlighting the urgent need for more challenging and rigorous evaluation\nframeworks. To address this gap, we introduce OlymMATH, a novel Olympiad-level\nmathematical benchmark, designed to rigorously test the complex reasoning\ncapabilities of LLMs. OlymMATH features 200 meticulously curated problems, each\nmanually verified and available in parallel English and Chinese versions. The\nproblems are systematically organized into two distinct difficulty tiers: (1)\nAIME-level problems (easy) that establish a baseline for mathematical reasoning\nassessment, and (2) significantly more challenging problems (hard) designed to\npush the boundaries of current state-of-the-art models. In our benchmark, these\nproblems span four core mathematical fields, each including a verifiable\nnumerical solution to enable objective, rule-based evaluation. Empirical\nresults underscore the significant challenge presented by OlymMATH, with\nstate-of-the-art models including DeepSeek-R1 and OpenAI's o3-mini\ndemonstrating notably limited accuracy on the hard subset. Furthermore, the\nbenchmark facilitates comprehensive bilingual assessment of mathematical\nreasoning abilities-a critical dimension that remains largely unaddressed in\nmainstream mathematical reasoning benchmarks. We release the OlymMATH benchmark\nat the STILL project: https://github.com/RUCAIBox/Slow_Thinking_with_LLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21380.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "648e6a4567aa8ab0e0e4c30f",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/648e6a4567aa8ab0e0e4c30f/b9OsE6C0a5iJE1yAlFG-_.jpeg",
+      "fullname": "Beichen Zhang",
+      "name": "ToheartZhang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21755",
+      "authors": [
+        {
+          "_id": "67e60823284844fd3014f62b",
+          "name": "Dian Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f62c",
+          "user": {
+            "_id": "60efe7fa0d920bc7805cada5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60efe7fa0d920bc7805cada5/2LBrJBjSCOP5ilZIpWLHl.png",
+            "isPro": false,
+            "fullname": "Ziqi Huang",
+            "user": "Ziqi",
+            "type": "user"
+          },
+          "name": "Ziqi Huang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:48:07.968Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f62d",
+          "user": {
+            "_id": "6690dfd73bbfdee5f43ffc4d",
+            "avatarUrl": "/avatars/88ff9b61663299d7751037696a75f1d7.svg",
+            "isPro": false,
+            "fullname": "Hongbo Liu",
+            "user": "HongboLiu",
+            "type": "user"
+          },
+          "name": "Hongbo Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:48:14.875Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f62e",
+          "user": {
+            "_id": "647993d9f966f086918da59e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/647993d9f966f086918da59e/NDxz3PEpo3srZQNhwT7Qf.jpeg",
+            "isPro": false,
+            "fullname": "kzou",
+            "user": "jackyhate",
+            "type": "user"
+          },
+          "name": "Kai Zou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:25.760Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f62f",
+          "user": {
+            "_id": "65b9d9961fe588f824fde191",
+            "avatarUrl": "/avatars/a9245958cc998a4b4b870bf2490fdaee.svg",
+            "isPro": false,
+            "fullname": "Yinan He",
+            "user": "yinanhe",
+            "type": "user"
+          },
+          "name": "Yinan He",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:48:21.118Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f630",
+          "name": "Fan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f631",
+          "name": "Yuanhan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f632",
+          "user": {
+            "_id": "670749a9d827da9f37508209",
+            "avatarUrl": "/avatars/f14fc05ad405f3967b9af0bcc73d4207.svg",
+            "isPro": false,
+            "fullname": "he jingwen",
+            "user": "mimihe",
+            "type": "user"
+          },
+          "name": "Jingwen He",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:48:30.978Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f633",
+          "name": "Wei-Shi Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f634",
+          "name": "Yu Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "67e60823284844fd3014f635",
+          "user": {
+            "_id": "62ab1ac1d48b4d8b048a3473",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1656826685333-62ab1ac1d48b4d8b048a3473.png",
+            "isPro": false,
+            "fullname": "Ziwei Liu",
+            "user": "liuziwei7",
+            "type": "user"
+          },
+          "name": "Ziwei Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:48:49.191Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T17:57:01.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:53:44.602Z",
+      "title": "VBench-2.0: 내재적 충실도에 대한 비디오 생성 벤치마크 세트의 발전",
+      "submittedOnDailyBy": {
+        "_id": "60efe7fa0d920bc7805cada5",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60efe7fa0d920bc7805cada5/2LBrJBjSCOP5ilZIpWLHl.png",
+        "isPro": false,
+        "fullname": "Ziqi Huang",
+        "user": "Ziqi",
+        "type": "user"
+      },
+      "summary": "비디오 생성이 크게 발전하고, 비현실적인 출력으로부터 시각적으로 신뢰할 수 있는 비디오를 생성하는 방식이 되었습니다. 이러한 비디오 생성 모델을 평가하기 위해, VBench 등 벤치마크가 개발되어, 정확도를 평가하고, 한 프레임의 예술성, 시퀀셜한 일관성, 기본적인 Prompt의 준수성 등 요소를 측정합니다. 그러나 이러한 면에서는 주로 표면적의 정확도를 보여주고, 비디오가 시각적으로 신뢰할 수 있는지를 중점으로 하지만, 실제 세계의 원칙에 충실해야 하는지에 대한 중점을 두고 있지 않습니다. 최근의 모델은 이러한 메트릭에 대해 점차 좋은 성능을 보여주고 있지만, 비디오가 시각적으로 신뢰할 수 있는 것만으로는 충분하지 않고, 본질적으로 실제적인 것이라는 것을 느끼는 어려움이 있습니다. 실제의 「월드 모델」을 통해 비디오 생성을 달성하고자 하는 경우, 다음 프론티어는 내재적인 정확성 확보에 있습니다. 생성된 비디오가 물리적 법칙, 통상적인 추론, 解剖학적 정확성, 구성의 일관성 등에 충실해야 하는 것이 중요합니다. 이 수준의 현실성을 달성하는 것은 AI 직접 영화 제작이나 기록 세계 모델링 등 애플리케이션에서 중요합니다. 이 gap을 덮기 위해, VBench-2.0라는 다음 세대 벤치마크를 소개합니다. VBench-2.0는 비디오 생성 모델의 내재적인 정확성을 자동으로 평가하기 위해 설계되었습니다. VBench-2.0는 Human Fidelity, Controllability, Creativity, Physics, Commonsense의 5가지 주요 지표에 대한 평가를 수행하며, 각 지표에 대해 더 나은 능력을 포함합니다. 각 주요 지표에 맞게 설계된 평가 프레임워크는, 가장 先端의 VLMs와 LLMs 등 장르별 전문가와, 비디오 생성에 대한 이상검출 방법 등 전문가를 조합하여 있습니다. 인간의 판단과 일치성을 보장하기 위해, 확장된 注釈를 수행합니다. 표면적의 정확성을 내재적인 정확성으로 진화하는 VBench-2.0는, 다음 세대의 비디오 생성 모델의 개발에 새로운 기준을 설정하려고 합니다.",
+      "upvotes": 21,
+      "discussionId": "67e60824284844fd3014f68e",
+      "ai_keywords": [
+        "VBench",
+        "VBench-2.0",
+        "visual generation",
+        "per-frame aesthetics",
+        "temporal consistency",
+        "prompt adherence",
+        "intrinsic faithfulness",
+        "physical laws",
+        "commonsense reasoning",
+        "anatomical correctness",
+        "compositional integrity",
+        "AI-assisted filmmaking",
+        "simulated world modeling",
+        "VLMs",
+        "LLMs",
+        "anomaly detection"
+      ]
+    },
+    "publishedAt": "2025-03-27T13:57:01.000Z",
+    "title": "VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic\n  Faithfulness",
+    "summary": "Video generation has advanced significantly, evolving from producing\nunrealistic outputs to generating videos that appear visually convincing and\ntemporally coherent. To evaluate these video generative models, benchmarks such\nas VBench have been developed to assess their faithfulness, measuring factors\nlike per-frame aesthetics, temporal consistency, and basic prompt adherence.\nHowever, these aspects mainly represent superficial faithfulness, which focus\non whether the video appears visually convincing rather than whether it adheres\nto real-world principles. While recent models perform increasingly well on\nthese metrics, they still struggle to generate videos that are not just\nvisually plausible but fundamentally realistic. To achieve real \"world models\"\nthrough video generation, the next frontier lies in intrinsic faithfulness to\nensure that generated videos adhere to physical laws, commonsense reasoning,\nanatomical correctness, and compositional integrity. Achieving this level of\nrealism is essential for applications such as AI-assisted filmmaking and\nsimulated world modeling. To bridge this gap, we introduce VBench-2.0, a\nnext-generation benchmark designed to automatically evaluate video generative\nmodels for their intrinsic faithfulness. VBench-2.0 assesses five key\ndimensions: Human Fidelity, Controllability, Creativity, Physics, and\nCommonsense, each further broken down into fine-grained capabilities. Tailored\nfor individual dimensions, our evaluation framework integrates generalists such\nas state-of-the-art VLMs and LLMs, and specialists, including anomaly detection\nmethods proposed for video generation. We conduct extensive annotations to\nensure alignment with human judgment. By pushing beyond superficial\nfaithfulness toward intrinsic faithfulness, VBench-2.0 aims to set a new\nstandard for the next generation of video generative models in pursuit of\nintrinsic faithfulness.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21755.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60efe7fa0d920bc7805cada5",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60efe7fa0d920bc7805cada5/2LBrJBjSCOP5ilZIpWLHl.png",
+      "fullname": "Ziqi Huang",
+      "name": "Ziqi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 11
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21749",
+      "authors": [
+        {
+          "_id": "67e6041d9a97e46f3102f7cc",
+          "user": {
+            "_id": "62c66504031996c36c86976a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62c66504031996c36c86976a/wIq0YJhkWnEhlzsh-TGYO.png",
+            "isPro": true,
+            "fullname": "steve z",
+            "user": "stzhao",
+            "type": "user"
+          },
+          "name": "Shitian Zhao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:47.519Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7cd",
+          "user": {
+            "_id": "64379d79fac5ea753f1c10f3",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64379d79fac5ea753f1c10f3/clfjIaMTVDTG9K04dRud_.png",
+            "isPro": false,
+            "fullname": "Jerry Wu",
+            "user": "QJerry",
+            "type": "user"
+          },
+          "name": "Qilong Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:55.109Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7ce",
+          "user": {
+            "_id": "66aba287b0f0b7411f511a47",
+            "avatarUrl": "/avatars/1450f182c38e80066ae5ea5df4fa218f.svg",
+            "isPro": false,
+            "fullname": "Xinyue Li",
+            "user": "Xxxy13",
+            "type": "user"
+          },
+          "name": "Xinyue Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:52.434Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7cf",
+          "name": "Bo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d0",
+          "user": {
+            "_id": "6794cd79b72b1721ea69f4f2",
+            "avatarUrl": "/avatars/4e4fb9e9e127a0c031131ace705687cd.svg",
+            "isPro": false,
+            "fullname": "Ming Li",
+            "user": "afdsafas",
+            "type": "user"
+          },
+          "name": "Ming Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:49.525Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d1",
+          "user": {
+            "_id": "66bb136002fd8eb58bc84ffb",
+            "avatarUrl": "/avatars/122cb8f59c502392768099b3c2afe043.svg",
+            "isPro": false,
+            "fullname": "qinqi",
+            "user": "Dakerqi",
+            "type": "user"
+          },
+          "name": "Qi Qin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:58:27.757Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d2",
+          "user": {
+            "_id": "646f1bef075e11ca78da3bb7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/646f1bef075e11ca78da3bb7/gNS-ikyZXYeMrf4a7HTQE.jpeg",
+            "isPro": false,
+            "fullname": "Dongyang Liu (Chris Liu)",
+            "user": "Cxxs",
+            "type": "user"
+          },
+          "name": "Dongyang Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:49:23.924Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d3",
+          "user": {
+            "_id": "63527f4e7d071f23d085ad45",
+            "avatarUrl": "/avatars/99a51adef5673b3ac1a8c02eb47759c4.svg",
+            "isPro": false,
+            "fullname": "KAIPENG ZHANG",
+            "user": "kpzhang",
+            "type": "user"
+          },
+          "name": "Kaipeng Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:49:30.453Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d4",
+          "user": {
+            "_id": "65c04e9c27a5fdca81abcbd9",
+            "avatarUrl": "/avatars/12a155683c824fa23da4a9e2bed4f64e.svg",
+            "isPro": false,
+            "fullname": "Hongsheng LI",
+            "user": "hsli-cuhk",
+            "type": "user"
+          },
+          "name": "Hongsheng Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:49:37.542Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d5",
+          "name": "Yu Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d6",
+          "user": {
+            "_id": "67b299cc6f6dc4376d9e6c76",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/UniMpmfOUlyiSOrf47wuT.png",
+            "isPro": false,
+            "fullname": "Peng Gao",
+            "user": "cosumosu25",
+            "type": "user"
+          },
+          "name": "Peng Gao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:49:44.411Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d7",
+          "name": "Bin Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67e6041d9a97e46f3102f7d8",
+          "user": {
+            "_id": "6285a9133ab6642179158944",
+            "avatarUrl": "/avatars/6e10fa07c94141fcdbe0cab02bb731ca.svg",
+            "isPro": false,
+            "fullname": "Zhen Li",
+            "user": "Paper99",
+            "type": "user"
+          },
+          "name": "Zhen Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:58:29.550Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T17:56:15.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:54:19.590Z",
+      "title": "LeX-Art: Scalable High-Quality Data Synthesis for Rethinking Text Generation",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "LeX-Art은 プロンプト의 표현력과 문자描画의 정확도 사이의 불일치를 체계적으로 해결하기 위한 고품질의 텍스트・イメー지 합성 시스템 중 하나입니다. 우리의 접근 방식은 데이터 중심의 패러다임에 기반하며, Deepseek-R1에 기반한 고품질의 데이터 합성 프로세스를 구축하여, LeX-10K라는 10K 장의 고해상도, 예술적으로 꾸며진 1024×1024 이미지 데이터 세트를 편집합니다. 데이터 세트의 구축을 넘어서, 우리는 강력한 プロンプト 강화 모델인 LeX-Enhancer를 개발하고, LeX-FLUX와 LeX-Lumina라는 두 개의 텍스트・イメー지 모델을 훈련하여, 가장 최신의 텍스트描画 성능을 달성합니다. 시각적 텍스트 생성의 체계적인 평가에 대한 새로운 지표인 Pairwise Normalized Edit Distance (PNED)를 사용하여, 정확도, 예술성, 일관성을 평가하는 LeX-Bench라는 벤치마크를 도입합니다. 실험 결과, LeX-Lumina는 CreateBench에서 79.81%의 PNED 이득을 달성했으며, LeX-FLUX는 색상(+3.18%), 위치(+4.45%), 폰트 정확도(+3.81%)에서 기준을 초과한 효과를 보였습니다. 우리의 코드, 모델, 데이터 세트, デモ는 공개적으로 이용할 수 있습니다.",
+      "upvotes": 15,
+      "discussionId": "67e6041f9a97e46f3102f89b",
+      "projectPage": "https://zhaoshitian.github.io/lexart/",
+      "githubRepo": "https://github.com/zhaoshitian/LeX-Art/",
+      "ai_keywords": [
+        "Deepseek-R1",
+        "LeX-Enhancer",
+        "LeX-FLUX",
+        "LeX-Lumina",
+        "LeX-Bench",
+        "Pairwise Normalized Edit Distance (PNED)"
+      ]
+    },
+    "publishedAt": "2025-03-27T13:56:15.000Z",
+    "title": "LeX-Art: Rethinking Text Generation via Scalable High-Quality Data\n  Synthesis",
+    "summary": "We introduce LeX-Art, a comprehensive suite for high-quality text-image\nsynthesis that systematically bridges the gap between prompt expressiveness and\ntext rendering fidelity. Our approach follows a data-centric paradigm,\nconstructing a high-quality data synthesis pipeline based on Deepseek-R1 to\ncurate LeX-10K, a dataset of 10K high-resolution, aesthetically refined\n1024times1024 images. Beyond dataset construction, we develop LeX-Enhancer,\na robust prompt enrichment model, and train two text-to-image models, LeX-FLUX\nand LeX-Lumina, achieving state-of-the-art text rendering performance. To\nsystematically evaluate visual text generation, we introduce LeX-Bench, a\nbenchmark that assesses fidelity, aesthetics, and alignment, complemented by\nPairwise Normalized Edit Distance (PNED), a novel metric for robust text\naccuracy evaluation. Experiments demonstrate significant improvements, with\nLeX-Lumina achieving a 79.81% PNED gain on CreateBench, and LeX-FLUX\noutperforming baselines in color (+3.18%), positional (+4.45%), and font\naccuracy (+3.81%). Our codes, models, datasets, and demo are publicly\navailable.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21749.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": true,
+      "isMod": false,
+      "followerCount": 6494
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.21460",
+      "authors": [
+        {
+          "_id": "67e609ee389245233f0d316f",
+          "user": {
+            "_id": "642da1cd99f3110ac27caca5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642da1cd99f3110ac27caca5/C1QJY3R_ZdaeANG1y8iW7.jpeg",
+            "isPro": false,
+            "fullname": "junyu",
+            "user": "luojunyu",
+            "type": "user"
+          },
+          "name": "Junyu Luo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:10.158Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3170",
+          "name": "Weizhi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3171",
+          "name": "Ye Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3172",
+          "user": {
+            "_id": "668388cb549c1b932c9fe699",
+            "avatarUrl": "/avatars/aa7523fbde4c2a8508cff13c74291e6a.svg",
+            "isPro": false,
+            "fullname": "Yusheng Zhao",
+            "user": "yszhao",
+            "type": "user"
+          },
+          "name": "Yusheng Zhao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:54:38.409Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3173",
+          "name": "Junwei Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3174",
+          "user": {
+            "_id": "6329a8ff688ad82b783b0e54",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1663674611122-noauth.png",
+            "isPro": false,
+            "fullname": "Yiyang Gu",
+            "user": "evan-gyy",
+            "type": "user"
+          },
+          "name": "Yiyang Gu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:55:04.907Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3175",
+          "name": "Bohan Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3176",
+          "name": "Binqi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3177",
+          "user": {
+            "_id": "67d3e9f53c8b9f6c843aacaf",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/LTPxPALNDWWTGnP_K30hH.png",
+            "isPro": false,
+            "fullname": "Ziyue Qiao",
+            "user": "joeyleo",
+            "type": "user"
+          },
+          "name": "Ziyue Qiao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:55:52.770Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3178",
+          "user": {
+            "_id": "648c0620c2e1388f44e2eddc",
+            "avatarUrl": "/avatars/ab093add13d5eb6032e47aea356ca9f2.svg",
+            "isPro": false,
+            "fullname": "Qingqing Long",
+            "user": "qqlong",
+            "type": "user"
+          },
+          "name": "Qingqing Long",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:56:00.392Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3179",
+          "name": "Rongcheng Tu",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d317a",
+          "name": "Xiao Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d317b",
+          "name": "Wei Ju",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d317c",
+          "user": {
+            "_id": "66ab566e30c55e83b02aa050",
+            "avatarUrl": "/avatars/62692be88b9ad34ad3f474fb0359ae20.svg",
+            "isPro": false,
+            "fullname": "Zhiping Xiao",
+            "user": "Shockzipper",
+            "type": "user"
+          },
+          "name": "Zhiping Xiao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:56:14.710Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d317d",
+          "name": "Yifan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d317e",
+          "name": "Meng Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d317f",
+          "name": "Chenwu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3180",
+          "name": "Jingyang Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3181",
+          "user": {
+            "_id": "64b6d98861dc301f1326341a",
+            "avatarUrl": "/avatars/14df7497a1a982894f5889903793773f.svg",
+            "isPro": false,
+            "fullname": "Shichang Zhang",
+            "user": "shichangzh",
+            "type": "user"
+          },
+          "name": "Shichang Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:56:59.067Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3182",
+          "user": {
+            "_id": "60d596784cf0297c143fcd33",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60d596784cf0297c143fcd33/phknQ4Z2VuUj3akhcoxLC.png",
+            "isPro": false,
+            "fullname": "Yiqiao Jin",
+            "user": "Ahren09",
+            "type": "user"
+          },
+          "name": "Yiqiao Jin",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:57:05.559Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3183",
+          "name": "Fan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3184",
+          "name": "Xian Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3185",
+          "name": "Hanqing Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3186",
+          "name": "Dacheng Tao",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3187",
+          "user": {
+            "_id": "67a088c531bab0a2a39665d4",
+            "avatarUrl": "/avatars/7188815ff8b5e4a475e7ebc09687e10d.svg",
+            "isPro": false,
+            "fullname": "Philip Yu",
+            "user": "philipyu",
+            "type": "user"
+          },
+          "name": "Philip S. Yu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:57:54.103Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e609ee389245233f0d3188",
+          "name": "Ming Zhang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/642da1cd99f3110ac27caca5/hXVaNIVxOX8326Ri2Px11.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/642da1cd99f3110ac27caca5/UuH6cO5owx0fzF8WFnGq5.png"
+      ],
+      "publishedAt": "2025-03-27T12:50:17.000Z",
+      "submittedOnDailyAt": "2025-03-28T01:08:58.527Z",
+      "title": "대 언어 모델 에이전트: 방법, 적용 및 문제 조사",
+      "submittedOnDailyBy": {
+        "_id": "642da1cd99f3110ac27caca5",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642da1cd99f3110ac27caca5/C1QJY3R_ZdaeANG1y8iW7.jpeg",
+        "isPro": false,
+        "fullname": "junyu",
+        "user": "luojunyu",
+        "type": "user"
+      },
+      "summary": "智能アガント의 시대는 대언어 모델의 혁신적인 발전으로 다가왔습니다. 대언어 모델(LLM) 아ガント는 목표에 따라 행동하고 동적으로 적응할 수 있는 능력으로, 인공지능의 일반적인 지능을 향해 중요한 패스웨이로 잠재적으로 중요합니다. 이 조사는 아ガン트 시스템을 방법론 엔사인의 탤소로지로 체계적으로 분해하고 아키텍처의 기초, 협업 구조, 에피지엔트 팜 타워를 연결합니다. 우리는 아ガン트 설계 원리와 복잡한 환경에서 에피지엔트 행동의 기본적인 관계를 밝혀, 연구의 세부적인 선을 하나로 합칩니다. 우리의 작업은 아ガン트가 어떻게 구축되고, 어떻게 협업하며, 어떻게 시간이 지나면서 진화하는지에 대한 일련의 아키텍처적 시각을 제공하며, 평가의 방법론, 도구의 적용, 실용적인 문제, 다양한 적용 분야를 다루고 있습니다. 이 급속히 발전하는 분야의 최신 진보를 조사하고, 연구자에게 LLM 아ガン트에 대한 구조화된 탤소로지를 제공하며, 미래의 연구의 잠재적인 방향을 정립합니다. 이 컬렉션은 https://github.com/luo-junyu/Awesome-Agent-Papers에서 이용할 수 있습니다.",
+      "upvotes": 12,
+      "discussionId": "67e609ef389245233f0d31c0",
+      "projectPage": "https://huggingface.co/spaces/luojunyu/Agent-Papers",
+      "githubRepo": "https://github.com/luo-junyu/Awesome-Agent-Papers",
+      "ai_keywords": [
+        "Large Language Model (LLM) agents",
+        "goal-driven behaviors",
+        "dynamic adaptation capabilities",
+        "artificial general intelligence",
+        "methodology-centered taxonomy",
+        "architectural foundations",
+        "collaboration mechanisms",
+        "evolutionary pathways",
+        "agent design principles",
+        "emergent behaviors",
+        "complex environments",
+        "unified architectural perspective",
+        "evaluation methodologies",
+        "practical challenges",
+        "diverse application domains"
+      ]
+    },
+    "publishedAt": "2025-03-27T08:50:17.000Z",
+    "title": "Large Language Model Agent: A Survey on Methodology, Applications and\n  Challenges",
+    "summary": "The era of intelligent agents is upon us, driven by revolutionary\nadvancements in large language models. Large Language Model (LLM) agents, with\ngoal-driven behaviors and dynamic adaptation capabilities, potentially\nrepresent a critical pathway toward artificial general intelligence. This\nsurvey systematically deconstructs LLM agent systems through a\nmethodology-centered taxonomy, linking architectural foundations, collaboration\nmechanisms, and evolutionary pathways. We unify fragmented research threads by\nrevealing fundamental connections between agent design principles and their\nemergent behaviors in complex environments. Our work provides a unified\narchitectural perspective, examining how agents are constructed, how they\ncollaborate, and how they evolve over time, while also addressing evaluation\nmethodologies, tool applications, practical challenges, and diverse application\ndomains. By surveying the latest developments in this rapidly evolving field,\nwe offer researchers a structured taxonomy for understanding LLM agents and\nidentify promising directions for future research. The collection is available\nat https://github.com/luo-junyu/Awesome-Agent-Papers.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/642da1cd99f3110ac27caca5/hXVaNIVxOX8326Ri2Px11.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/642da1cd99f3110ac27caca5/UuH6cO5owx0fzF8WFnGq5.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21460.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "642da1cd99f3110ac27caca5",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642da1cd99f3110ac27caca5/C1QJY3R_ZdaeANG1y8iW7.jpeg",
+      "fullname": "junyu",
+      "name": "luojunyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21758",
+      "authors": [
+        {
+          "_id": "67e6092a40fb111ac9342c39",
+          "user": {
+            "_id": "66bb136002fd8eb58bc84ffb",
+            "avatarUrl": "/avatars/122cb8f59c502392768099b3c2afe043.svg",
+            "isPro": false,
+            "fullname": "qinqi",
+            "user": "Dakerqi",
+            "type": "user"
+          },
+          "name": "Qi Qin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:18.440Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c3a",
+          "user": {
+            "_id": "6358a167f56b03ec9147074d",
+            "avatarUrl": "/avatars/e54ea7bf0c240cf76d538296efb3976c.svg",
+            "isPro": false,
+            "fullname": "Le Zhuo",
+            "user": "JackyZhuo",
+            "type": "user"
+          },
+          "name": "Le Zhuo",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:50:03.385Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c3b",
+          "name": "Yi Xin",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c3c",
+          "user": {
+            "_id": "64a54586c0f13de8e7093314",
+            "avatarUrl": "/avatars/389e43e9a32cf2fc95f8f3a23b8f0508.svg",
+            "isPro": false,
+            "fullname": "Ruoyi Du",
+            "user": "RuoyiDu",
+            "type": "user"
+          },
+          "name": "Ruoyi Du",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:50:09.220Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c3d",
+          "user": {
+            "_id": "6285a9133ab6642179158944",
+            "avatarUrl": "/avatars/6e10fa07c94141fcdbe0cab02bb731ca.svg",
+            "isPro": false,
+            "fullname": "Zhen Li",
+            "user": "Paper99",
+            "type": "user"
+          },
+          "name": "Zhen Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:58:25.783Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c3e",
+          "name": "Bin Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c3f",
+          "user": {
+            "_id": "6467ec2f374fe5728d4216e0",
+            "avatarUrl": "/avatars/4d14f64572c9c0707edb54993e331a49.svg",
+            "isPro": false,
+            "fullname": "Yiting Lu",
+            "user": "luyiting",
+            "type": "user"
+          },
+          "name": "Yiting Lu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:50:17.491Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c40",
+          "user": {
+            "_id": "64a3d1ddb3239f3e3892b24b",
+            "avatarUrl": "/avatars/7ce585f5fc1d077fb1d70cc18c4da2c1.svg",
+            "isPro": false,
+            "fullname": "Jiakang Yuan",
+            "user": "JiakangYuan",
+            "type": "user"
+          },
+          "name": "Jiakang Yuan",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:50:23.000Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c41",
+          "user": {
+            "_id": "66aba287b0f0b7411f511a47",
+            "avatarUrl": "/avatars/1450f182c38e80066ae5ea5df4fa218f.svg",
+            "isPro": false,
+            "fullname": "Xinyue Li",
+            "user": "Xxxy13",
+            "type": "user"
+          },
+          "name": "Xinyue Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:20.809Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c42",
+          "user": {
+            "_id": "646f1bef075e11ca78da3bb7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/646f1bef075e11ca78da3bb7/gNS-ikyZXYeMrf4a7HTQE.jpeg",
+            "isPro": false,
+            "fullname": "Dongyang Liu (Chris Liu)",
+            "user": "Cxxs",
+            "type": "user"
+          },
+          "name": "Dongyang Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:50:37.419Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c43",
+          "name": "Xiangyang Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c44",
+          "name": "Manyuan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c45",
+          "user": {
+            "_id": "629aed605ab4232a3fe266f7",
+            "avatarUrl": "/avatars/53e1f4a9fc2bad17b05a80b14118442e.svg",
+            "isPro": false,
+            "fullname": "Will Beddow",
+            "user": "willbeddow",
+            "type": "user"
+          },
+          "name": "Will Beddow",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:51:18.703Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c46",
+          "user": {
+            "_id": "62a2712903bf94c3ac3ae004",
+            "avatarUrl": "/avatars/2f11b73ecd7a4cb561b42c676b70b7f8.svg",
+            "isPro": false,
+            "fullname": "Erwann Millon",
+            "user": "erwann",
+            "type": "user"
+          },
+          "name": "Erwann Millon",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:51:24.290Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c47",
+          "name": "Victor Perez",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c48",
+          "user": {
+            "_id": "64d1c560c0c627dfa71bdbe0",
+            "avatarUrl": "/avatars/f42794fe25bffcd870a1bcee69b95298.svg",
+            "isPro": false,
+            "fullname": "wenhai.wang",
+            "user": "wangwhcore",
+            "type": "user"
+          },
+          "name": "Wenhai Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:51:42.390Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c49",
+          "user": {
+            "_id": "63f9fca8d4349b157a109eec",
+            "avatarUrl": "/avatars/fa1f2ae7972d7cde99dab178136ccbb0.svg",
+            "isPro": false,
+            "fullname": "Conghui He",
+            "user": "conghui",
+            "type": "user"
+          },
+          "name": "Conghui He",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:51:48.715Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c4a",
+          "name": "Bo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c4b",
+          "name": "Xiaohong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c4c",
+          "user": {
+            "_id": "65c04e9c27a5fdca81abcbd9",
+            "avatarUrl": "/avatars/12a155683c824fa23da4a9e2bed4f64e.svg",
+            "isPro": false,
+            "fullname": "Hongsheng LI",
+            "user": "hsli-cuhk",
+            "type": "user"
+          },
+          "name": "Hongsheng Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:52:25.823Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c4d",
+          "name": "Yu Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c4e",
+          "user": {
+            "_id": "6391fa34e110d51320389b06",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1670510944260-noauth.jpeg",
+            "isPro": false,
+            "fullname": "chang xu",
+            "user": "changxu-2022",
+            "type": "user"
+          },
+          "name": "Chang Xu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:52:36.782Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6092a40fb111ac9342c4f",
+          "name": "Peng Gao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T17:57:07.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:59:52.114Z",
+      "title": "Lumina-Image 2.0: 통합적이고 효율적인 이미지 생성 프레임워크",
+      "submittedOnDailyBy": {
+        "_id": "6285a9133ab6642179158944",
+        "avatarUrl": "/avatars/6e10fa07c94141fcdbe0cab02bb731ca.svg",
+        "isPro": false,
+        "fullname": "Zhen Li",
+        "user": "Paper99",
+        "type": "user"
+      },
+      "summary": "Lumina-Image 2.0를 소개합니다. 이것은 지난주의 Lumina-Next와 비교하여 상당한 진전을 거쳤고, 先進的な文字から 이미지 생성 프레임워크입니다. Lumina-Image 2.0는 두 가지 핵심 원칙에 기반하여 구축되었습니다.\n\n1. 통일화 - 이것은 통일된 아키텍처(Unified Next-DiT)를 사용하며, 문자와 이미지 토큰을 공통의 시퀀스로 취급하여 자연스러운クロスモード 상호작용을 가능하게 하고, 쉽게 확장 가능한 태스크 확장을 가능하게 합니다. 또한, 고품질의 캡처나서를 의미적으로 문자-이미지의 훈련 쌍을 제공할 수 있기 때문에, T2I 생성 태스크에 특화된 통합된 캡처 시스템인 Unified Captioner(UniCap)를 도입합니다. UniCap는 세부적이고 정확한 캡처를 생성하며, 수렴을 가속화하고, 프롬프트의 순응성을 향상시킵니다.\n\n2. 효율성 - 모델의 효율을 향상시키기 위해, 단계별 발전적인 훈련 전략을 개발하고, 이미지의 품질을 훼손하지 않는 한 추론 가속 기술을 도입합니다. 학문적인 벤치마크와 공개된 문자부터 이미지로의 프레임에서의 검증은, Lumina-Image 2.0는 26억 파라미터에서도 강력한 성능을 보여주며, scalability와 설계의 효율성을 특징으로 보여주고 있습니다. 훈련의 세부 사항, 코드, 모델은 다음과 같은 URL에서 공개되어 있습니다.\n\nhttps://github.com/Alpha-VLLM/Lumina-Image-2.0",
+      "upvotes": 11,
+      "discussionId": "67e6092e40fb111ac9342d4e",
+      "projectPage": "https://github.com/Alpha-VLLM/Lumina-Image-2.0",
+      "githubRepo": "https://github.com/Alpha-VLLM/Lumina-Image-2.0",
+      "ai_keywords": [
+        "Unified Next-DiT",
+        "text and image tokens",
+        "cross-modal interactions",
+        "Unified Captioner (UniCap)",
+        "text-to-image (T2I)",
+        "multi-stage progressive training",
+        "inference acceleration techniques",
+        "academic benchmarks",
+        "public text-to-image arenas"
+      ]
+    },
+    "publishedAt": "2025-03-27T13:57:07.000Z",
+    "title": "Lumina-Image 2.0: A Unified and Efficient Image Generative Framework",
+    "summary": "We introduce Lumina-Image 2.0, an advanced text-to-image generation framework\nthat achieves significant progress compared to previous work, Lumina-Next.\nLumina-Image 2.0 is built upon two key principles: (1) Unification - it adopts\na unified architecture (Unified Next-DiT) that treats text and image tokens as\na joint sequence, enabling natural cross-modal interactions and allowing\nseamless task expansion. Besides, since high-quality captioners can provide\nsemantically well-aligned text-image training pairs, we introduce a unified\ncaptioning system, Unified Captioner (UniCap), specifically designed for T2I\ngeneration tasks. UniCap excels at generating comprehensive and accurate\ncaptions, accelerating convergence and enhancing prompt adherence. (2)\nEfficiency - to improve the efficiency of our proposed model, we develop\nmulti-stage progressive training strategies and introduce inference\nacceleration techniques without compromising image quality. Extensive\nevaluations on academic benchmarks and public text-to-image arenas show that\nLumina-Image 2.0 delivers strong performances even with only 2.6B parameters,\nhighlighting its scalability and design efficiency. We have released our\ntraining details, code, and models at\nhttps://github.com/Alpha-VLLM/Lumina-Image-2.0.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21758.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6285a9133ab6642179158944",
+      "avatarUrl": "/avatars/6e10fa07c94141fcdbe0cab02bb731ca.svg",
+      "fullname": "Zhen Li",
+      "name": "Paper99",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 17
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21729",
+      "authors": [
+        {
+          "_id": "67e610ee6e73232cf0903b73",
+          "user": {
+            "_id": "652542861e9db26e407aa1fc",
+            "avatarUrl": "/avatars/4c47ef4564f498a7f34b4a17a1e209a8.svg",
+            "isPro": false,
+            "fullname": "Lee Zhicheng",
+            "user": "ZhiCheng0326",
+            "type": "user"
+          },
+          "name": "Zhicheng Lee",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:06.279Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e610ee6e73232cf0903b74",
+          "user": {
+            "_id": "62c924a6334a6ee11c2e8dfa",
+            "avatarUrl": "/avatars/3dbc37af162b94d68cb83665ac4528c3.svg",
+            "isPro": false,
+            "fullname": "ShulinCao",
+            "user": "caoshulin",
+            "type": "user"
+          },
+          "name": "Shulin Cao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:52:53.008Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e610ee6e73232cf0903b75",
+          "name": "Jinxin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67e610ee6e73232cf0903b76",
+          "user": {
+            "_id": "66cdd285c51a915bd5f2d017",
+            "avatarUrl": "/avatars/14e5794307e4672b1b51d26b31227e0f.svg",
+            "isPro": false,
+            "fullname": "Jiajie Zhang",
+            "user": "NeoZ123",
+            "type": "user"
+          },
+          "name": "Jiajie Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:53:38.290Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e610ee6e73232cf0903b77",
+          "user": {
+            "_id": "61132a7ab75d3040e6e88a3a",
+            "avatarUrl": "/avatars/faf9d96770251f31e7e4edbf1fee9798.svg",
+            "isPro": false,
+            "fullname": "liuweichuan",
+            "user": "liuweichuan",
+            "type": "user"
+          },
+          "name": "Weichuan Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:53:49.672Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e610ee6e73232cf0903b78",
+          "user": {
+            "_id": "65d66cb2b06abf924b07ff76",
+            "avatarUrl": "/avatars/de94e2fe07040b7dc3053bcaafa64ffe.svg",
+            "isPro": false,
+            "fullname": "Xiaoyin Chen",
+            "user": "chenyn66",
+            "type": "user"
+          },
+          "name": "Xiaoyin Che",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:53:55.317Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e610ee6e73232cf0903b79",
+          "name": "Lei Hou",
+          "hidden": false
+        },
+        {
+          "_id": "67e610ee6e73232cf0903b7a",
+          "user": {
+            "_id": "65df8cbc2705d9672f55d1aa",
+            "avatarUrl": "/avatars/63e46f15bb76bd9d4508fd0f54f39829.svg",
+            "isPro": false,
+            "fullname": "Juanzi Li",
+            "user": "juanli",
+            "type": "user"
+          },
+          "name": "Juanzi Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:54:01.074Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/652542861e9db26e407aa1fc/OFvhHK9WLS_twsPoDxlpU.png"
+      ],
+      "publishedAt": "2025-03-27T17:44:18.000Z",
+      "submittedOnDailyAt": "2025-03-28T01:51:24.016Z",
+      "title": "ReaRAG: 지식 가이드 드롬 모델의 이유론을 강화한 사실성 향상의 반복적인 리비우스 리지컬 제네레이션",
+      "submittedOnDailyBy": {
+        "_id": "652542861e9db26e407aa1fc",
+        "avatarUrl": "/avatars/4c47ef4564f498a7f34b4a17a1e209a8.svg",
+        "isPro": false,
+        "fullname": "Lee Zhicheng",
+        "user": "ZhiCheng0326",
+        "type": "user"
+      },
+      "summary": "Large Reasoning Models (LRMs)는 놀라운 추론 능력을 보여주지만, 주로 파라미터 지식에 의존하며, 사실적인 정확도를 제한하고 있습니다. 최근의 연구에서는 강화학습(RL)에 기반한 LRMs에 검색 기능을 추가하고 있지만, 이들은 과도한 생각과 추론의 강건성 부족으로, 문제 답하기(QA) 태스크의 효율성을 저하시킵니다. 이에 대해, 우리는 사실성 향상을 목표로 하는 추론 모델로서, 다양한 쿼리를 탐색하기 위해 과도한 반복을 피하는 ReaRAG를 제안하고 있습니다. 우리의 해결책에는, 이유연쇄의 길이에 상한을 설정한 새로운 데이터 구축 프레임워크가 포함됩니다. 구체적으로는, LRM을 활용하여 깊은 생각 방식을 생성하고, 사전 정의된 행동 공간에서 행동을 선택합니다(검색 및 완료). 검색 행동의 경우, RAG 엔진에 대한 쿼리가 실행되어, 후속의 추론 단계를 가이드하는 관찰과 같이 반환됩니다. 이 과정은 완료 행동이 선택될 때까지 반복됩니다. ReaRAG의 강력한 추론 능력을 활용하여, 우리의 접근법은 기존의 baseline보다 여러 단계의 QA에 대해 뛰어납니다.进一步的分析는, 오류의 인식과 추론 프로세스의 정밀화의 강력한 반성 능력을 밝혀냅니다. 우리의 연구는, LRM의 사실성을 향상시키고, 강력한 추론을 가지는 검색 확장 생성(RAG)에 효과적으로 통합합니다.",
+      "upvotes": 11,
+      "discussionId": "67e610ee6e73232cf0903ba6",
+      "ai_keywords": [
+        "reinforcement learning (RL)",
+        "parametric knowledge",
+        "retrieval capabilities",
+        "overthinking",
+        "robustness",
+        "question answering (QA)",
+        "ReaRAG",
+        "factuality-enhanced reasoning model",
+        "reasoning chain length",
+        "LRM",
+        "deliberate thinking",
+        "predefined action space",
+        "Search",
+        "Finish",
+        "RAG engine",
+        "observation",
+        "multi-hop QA",
+        "reflective ability",
+        "reasoning trajectory",
+        "Retrieval-Augmented Generation (RAG)"
+      ]
+    },
+    "publishedAt": "2025-03-27T13:44:18.000Z",
+    "title": "ReaRAG: Knowledge-guided Reasoning Enhances Factuality of Large\n  Reasoning Models with Iterative Retrieval Augmented Generation",
+    "summary": "Large Reasoning Models (LRMs) exhibit remarkable reasoning abilities but rely\nprimarily on parametric knowledge, limiting factual accuracy. While recent\nworks equip reinforcement learning (RL)-based LRMs with retrieval capabilities,\nthey suffer from overthinking and lack robustness in reasoning, reducing their\neffectiveness in question answering (QA) tasks. To address this, we propose\nReaRAG, a factuality-enhanced reasoning model that explores diverse queries\nwithout excessive iterations. Our solution includes a novel data construction\nframework with an upper bound on the reasoning chain length. Specifically, we\nfirst leverage an LRM to generate deliberate thinking, then select an action\nfrom a predefined action space (Search and Finish). For Search action, a query\nis executed against the RAG engine, where the result is returned as observation\nto guide reasoning steps later. This process iterates until a Finish action is\nchosen. Benefiting from ReaRAG's strong reasoning capabilities, our approach\noutperforms existing baselines on multi-hop QA. Further analysis highlights its\nstrong reflective ability to recognize errors and refine its reasoning\ntrajectory. Our study enhances LRMs' factuality while effectively integrating\nrobust reasoning for Retrieval-Augmented Generation (RAG).",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/652542861e9db26e407aa1fc/OFvhHK9WLS_twsPoDxlpU.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21729.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "652542861e9db26e407aa1fc",
+      "avatarUrl": "/avatars/4c47ef4564f498a7f34b4a17a1e209a8.svg",
+      "fullname": "Lee Zhicheng",
+      "name": "ZhiCheng0326",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21248",
+      "authors": [
+        {
+          "_id": "67e63581e8a16f38741f4baa",
+          "user": {
+            "_id": "661980b46a43b2760d8d551f",
+            "avatarUrl": "/avatars/e4743d55303fe3a88688c29dd4c67a69.svg",
+            "isPro": false,
+            "fullname": "Yujie Liu",
+            "user": "yujieliu",
+            "type": "user"
+          },
+          "name": "Yujie Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:58:09.374Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4bab",
+          "user": {
+            "_id": "646a11791556443f24b582e9",
+            "avatarUrl": "/avatars/b54d416ddca2f124492ba51bc4b95fd2.svg",
+            "isPro": false,
+            "fullname": "Zonglin Yang",
+            "user": "ZonglinY",
+            "type": "user"
+          },
+          "name": "Zonglin Yang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:58:40.651Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4bac",
+          "name": "Tong Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4bad",
+          "user": {
+            "_id": "62a7362fd1e7a011fd4e31a7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62a7362fd1e7a011fd4e31a7/ZY_mwH-sI0o05SHpLqwc7.png",
+            "isPro": false,
+            "fullname": "Jinjie Ni",
+            "user": "jinjieni",
+            "type": "user"
+          },
+          "name": "Jinjie Ni",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:58:47.888Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4bae",
+          "user": {
+            "_id": "64fe3c6b4c8924c4fed6d97b",
+            "avatarUrl": "/avatars/5e0a49372af19aae9ec5ee84b299d111.svg",
+            "isPro": false,
+            "fullname": "Ben Gao",
+            "user": "bgao22182",
+            "type": "user"
+          },
+          "name": "Ben Gao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:58:54.480Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4baf",
+          "user": {
+            "_id": "65cb61ba0390fce629de99d1",
+            "avatarUrl": "/avatars/9b4b4556ffd8de215dc37b02366d781b.svg",
+            "isPro": false,
+            "fullname": "Yuqiang Li",
+            "user": "yuqiangli",
+            "type": "user"
+          },
+          "name": "Yuqiang Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:59:07.268Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4bb0",
+          "user": {
+            "_id": "6436403bf3b08e267d9f0329",
+            "avatarUrl": "/avatars/a5d9c3d47073e71e4cea124d9c17356d.svg",
+            "isPro": false,
+            "fullname": "SHIXIANG TANG",
+            "user": "tangshixiang",
+            "type": "user"
+          },
+          "name": "Shixiang Tang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:59:12.700Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4bb1",
+          "name": "Wanli Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4bb2",
+          "name": "Erik Cambria",
+          "hidden": false
+        },
+        {
+          "_id": "67e63581e8a16f38741f4bb3",
+          "user": {
+            "_id": "6538b861613fe158bd581e35",
+            "avatarUrl": "/avatars/6817dbfe903675721fd227058b0a91ac.svg",
+            "isPro": false,
+            "fullname": "Dongzhan Zhou",
+            "user": "schrodingers-tiger",
+            "type": "user"
+          },
+          "name": "Dongzhan Zhou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T08:59:22.218Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T08:09:15.000Z",
+      "submittedOnDailyAt": "2025-03-28T04:07:23.222Z",
+      "title": "연구 벤치마크：과학적 발견에서 LLM의 벤치마크화를 인스킵레이션 기반의 태스크 분해에 의한方式로 추진합니다.",
+      "submittedOnDailyBy": {
+        "_id": "646a11791556443f24b582e9",
+        "avatarUrl": "/avatars/b54d416ddca2f124492ba51bc4b95fd2.svg",
+        "isPro": false,
+        "fullname": "Zonglin Yang",
+        "user": "ZonglinY",
+        "type": "user"
+      },
+      "summary": "대 언어 모형(LLMs)은 과학 연구에 도움이 될 가능성의 가능성을 보여주고 있지만, 전문적인 벤치마크가 없기 때문에, 고품질의 연구 가설을 발견하는 능력은 평가되지 않았습니다. 이러한 단점을 해결하기 위해, 우리는 과학 발견의 근적 만족스러운 서브 태스크를 평가하기 위한 최초의 대규모 벤치마크를 소개합니다: 인스픈서치, 가설 생성, 가설 순위링. 우리는 12 분야의 과학 논문에서 연구 문제, 배경 조사, 인스픈서치, 가설을 구성하는 중요한 요소를 자동화된 프레임워크를 통해 추출하고, 전문가 평가로 그 정확성을 확인했습니다. 데이터 오염을 방지하기 위해, 2024년에 발행된 논문을 전문적으로 집중하여, LLM의 사전 학습 데이터와 중복을 최소화했습니다. 평가 결과를 통해, LLMs는 인스픈서의 검색에서 잘 작동하며, 분포 외의 태스크에서도 좋은 성능을 보여주며, 새로운 지식 관련성을 드러내는 능력을 보입니다. 이로써, LLMs는 \"연구 가설의 미네랄\"으로 자리잡으며, 인간적인 도움을 거의 필요하지 않고, 혁신적인 가설을 대량으로 생성하고, 자동화된 과학 발견을 촉진할 수 있습니다.",
+      "upvotes": 9,
+      "discussionId": "67e63582e8a16f38741f4c16",
+      "ai_keywords": [
+        "large language models (LLMs)",
+        "scientific discovery",
+        "inspiration retrieval",
+        "hypothesis composition",
+        "hypothesis ranking",
+        "automated framework",
+        "research questions",
+        "background surveys",
+        "inspirations",
+        "hypotheses",
+        "out-of-distribution task",
+        "automated scientific discovery",
+        "innovative hypotheses"
+      ]
+    },
+    "publishedAt": "2025-03-27T04:09:15.000Z",
+    "title": "ResearchBench: Benchmarking LLMs in Scientific Discovery via\n  Inspiration-Based Task Decomposition",
+    "summary": "Large language models (LLMs) have demonstrated potential in assisting\nscientific research, yet their ability to discover high-quality research\nhypotheses remains unexamined due to the lack of a dedicated benchmark. To\naddress this gap, we introduce the first large-scale benchmark for evaluating\nLLMs with a near-sufficient set of sub-tasks of scientific discovery:\ninspiration retrieval, hypothesis composition, and hypothesis ranking. We\ndevelop an automated framework that extracts critical components - research\nquestions, background surveys, inspirations, and hypotheses - from scientific\npapers across 12 disciplines, with expert validation confirming its accuracy.\nTo prevent data contamination, we focus exclusively on papers published in\n2024, ensuring minimal overlap with LLM pretraining data. Our evaluation\nreveals that LLMs perform well in retrieving inspirations, an\nout-of-distribution task, suggesting their ability to surface novel knowledge\nassociations. This positions LLMs as \"research hypothesis mines\", capable of\nfacilitating automated scientific discovery by generating innovative hypotheses\nat scale with minimal human intervention.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21248.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "646a11791556443f24b582e9",
+      "avatarUrl": "/avatars/b54d416ddca2f124492ba51bc4b95fd2.svg",
+      "fullname": "Zonglin Yang",
+      "name": "ZonglinY",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21696",
+      "authors": [
+        {
+          "_id": "67e64ff17fe72aad5c26ab2f",
+          "user": {
+            "_id": "6485bd278d14bcd5cdbb7c8d",
+            "avatarUrl": "/avatars/1427cf1a72b5db0cb263ad45885cf925.svg",
+            "isPro": false,
+            "fullname": "Wenqi Zhang",
+            "user": "zwq2018",
+            "type": "user"
+          },
+          "name": "Wenqi Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:10:00.794Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab30",
+          "name": "Mengna Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab31",
+          "user": {
+            "_id": "64bb986ac733e8552fa4c5d1",
+            "avatarUrl": "/avatars/78dc5f802def0bdebd890438fcb1f966.svg",
+            "isPro": false,
+            "fullname": "Gangao Liu",
+            "user": "Gangao",
+            "type": "user"
+          },
+          "name": "Gangao Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:09:24.111Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab32",
+          "name": "Xu Huixin",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab33",
+          "user": {
+            "_id": "60abbe1fe3de7c7440abb84d",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1621868056572-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Yiwei Jiang",
+            "user": "yijiang",
+            "type": "user"
+          },
+          "name": "Yiwei Jiang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:09:05.352Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab34",
+          "user": {
+            "_id": "5e1058e9fcf41d740b69966d",
+            "avatarUrl": "/avatars/ce74839ba871f2b54313a670a233ba82.svg",
+            "isPro": false,
+            "fullname": "Yongliang Shen",
+            "user": "tricktreat",
+            "type": "user"
+          },
+          "name": "Yongliang Shen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:08:58.629Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab35",
+          "user": {
+            "_id": "67c03110e8c7d56a8e135ac8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/eP3y_8_tyB8tcrT7py4L7.png",
+            "isPro": false,
+            "fullname": "Hou",
+            "user": "Guiyang1001",
+            "type": "user"
+          },
+          "name": "Guiyang Hou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:08:43.400Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab36",
+          "name": "Zhe Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab37",
+          "name": "Hang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab38",
+          "name": "Xin Li",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab39",
+          "name": "Weiming Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab3a",
+          "name": "Peng Li",
+          "hidden": false
+        },
+        {
+          "_id": "67e64ff17fe72aad5c26ab3b",
+          "name": "Yueting Zhuang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6485bd278d14bcd5cdbb7c8d/eTJU1eLh0tSYvjN5T6Tj4.mp4"
+      ],
+      "publishedAt": "2025-03-27T17:00:51.000Z",
+      "submittedOnDailyAt": "2025-03-28T06:01:25.299Z",
+      "title": "체언-리론: 시각검색, 이유론과 행동의 조화로 체험적 상호작용 태스크를 실현합니다.",
+      "submittedOnDailyBy": {
+        "_id": "6485bd278d14bcd5cdbb7c8d",
+        "avatarUrl": "/avatars/1427cf1a72b5db0cb263ad45885cf925.svg",
+        "isPro": false,
+        "fullname": "Wenqi Zhang",
+        "user": "zwq2018",
+        "type": "user"
+      },
+      "summary": "최근의 심층 모델의 발전은 수학과 코딩 태스크에서 놀라운 추론 능력을 보여주었습니다. 그러나 이들이 환경과 지속적인 상호작용을 통해 신체적인 영역에서 효과적인 역할을 하는 데에 대한 탐색은 크게 이루어지지 않았습니다. 우리는 Interactive Embodied Search 태스크에서 o1 스타일의 추론을 확장한 Embodied Reasoner 모델을 소개합니다. 수학적인 추론은 주로 로직적 추론에 의존하지만, 신체적인 스케너는 공간 이해, 시간 추론, 그리고 상호작용의 기록에 기반한 지속적인 자기 반성 요구를 가지고 있습니다. 이러한 문제를 해결하기 위해, 9.3k 개의 코라럴적인 Observation-Thought-Action 트레이크를 포함하여 64k 개의 상호작용적인 이미지와 90k 개의 다양한 사고 과정(분석, 공간 추론, 반성, 계획, 검증)을 합성했습니다. 우리는 모형 학습, 부정 샘플링에 의한 자기 탐색, 자기 보정을 통한 반성 튜닝을 통해 3 단계의 훈련 파이프라인을 개발했습니다. 평가에 따르면, 우리의 모델은 예를 들어 OpenAI o1, o3-mini, Claude-3.7을 +9%, 24%, +13% 더 뛰어넘었습니다. 분석에 따르면, 우리의 모델은 반복적인 탐색과 로직적 불적절성을 줄이고, 복잡한 장기 예측 태스크에 특히 뛰어납니다. 실제 세계적인 환경에서도 반복적인 탐색과 로직적 불적절성을 줄인 것이 우리의 우수한 성능을 보여주는 데 기여합니다.",
+      "upvotes": 8,
+      "discussionId": "67e64ff37fe72aad5c26ac06",
+      "projectPage": "https://embodied-reasoner.github.io/",
+      "githubRepo": "https://github.com/zwq2018/embodied_reasoner",
+      "ai_keywords": [
+        "Embodied Reasoner",
+        "Observation-Thought-Action trajectories",
+        "imitation learning",
+        "rejection sampling",
+        "reflection tuning",
+        "visual reasoning models",
+        "long-horizon tasks"
+      ]
+    },
+    "publishedAt": "2025-03-27T13:00:51.000Z",
+    "title": "Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for\n  Embodied Interactive Tasks",
+    "summary": "Recent advances in deep thinking models have demonstrated remarkable\nreasoning capabilities on mathematical and coding tasks. However, their\neffectiveness in embodied domains which require continuous interaction with\nenvironments through image action interleaved trajectories remains largely\n-unexplored. We present Embodied Reasoner, a model that extends o1 style\nreasoning to interactive embodied search tasks. Unlike mathematical reasoning\nthat relies primarily on logical deduction, embodied scenarios demand spatial\nunderstanding, temporal reasoning, and ongoing self-reflection based on\ninteraction history. To address these challenges, we synthesize 9.3k coherent\nObservation-Thought-Action trajectories containing 64k interactive images and\n90k diverse thinking processes (analysis, spatial reasoning, reflection,\nplanning, and verification). We develop a three-stage training pipeline that\nprogressively enhances the model's capabilities through imitation learning,\nself-exploration via rejection sampling, and self-correction through reflection\ntuning. The evaluation shows that our model significantly outperforms those\nadvanced visual reasoning models, e.g., it exceeds OpenAI o1, o3-mini, and\nClaude-3.7 by +9\\%, 24\\%, and +13\\%. Analysis reveals our model exhibits fewer\nrepeated searches and logical inconsistencies, with particular advantages in\ncomplex long-horizon tasks. Real-world environments also show our superiority\nwhile exhibiting fewer repeated searches and logical inconsistency cases.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6485bd278d14bcd5cdbb7c8d/eTJU1eLh0tSYvjN5T6Tj4.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21696.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6485bd278d14bcd5cdbb7c8d",
+      "avatarUrl": "/avatars/1427cf1a72b5db0cb263ad45885cf925.svg",
+      "fullname": "Wenqi Zhang",
+      "name": "zwq2018",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21774",
+      "authors": [
+        {
+          "_id": "67e6094c48742d6df7586714",
+          "name": "Jianning Pei",
+          "hidden": false
+        },
+        {
+          "_id": "67e6094c48742d6df7586715",
+          "name": "Han Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67e6094c48742d6df7586716",
+          "user": {
+            "_id": "64c38fcf573c5a427e12cd37",
+            "avatarUrl": "/avatars/2b9de06f29147ed2c212e920afba0eaf.svg",
+            "isPro": false,
+            "fullname": "cientgu",
+            "user": "cientgu",
+            "type": "user"
+          },
+          "name": "Shuyang Gu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:01:17.103Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T17:59:46.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:58:59.244Z",
+      "title": "최적 스텝 사이즈의 분산 샘플링",
+      "submittedOnDailyBy": {
+        "_id": "64c38fcf573c5a427e12cd37",
+        "avatarUrl": "/avatars/2b9de06f29147ed2c212e920afba0eaf.svg",
+        "isPro": false,
+        "fullname": "cientgu",
+        "user": "cientgu",
+        "type": "user"
+      },
+      "summary": "Diffusionモデル는 높은 생성품질을 달성하지만, 불적절한ス텝의離散化으로 인해 큰計算量のサンプリングが問題になります。現在の研究は, ノイズの除去方向の最適化に焦点を当てていますが, 我々はステップサイズスケジュールの原則的な設計に取り組んでいます。本論文では, Referenceタラクトローイズムからの知識を汲み取った理論的に最適なスケジュールを抽出するための動的計画法フレームワーク「Optimal Stepsize Distillation」を提案します。ステップサイズ最適化を再構成し、関数を最小化するようにして, 我々の方法は最適部分構造を利用してグローバル的な離散化の制限を保証します。重要なことに, 汲み取ったスケジュールは構造、ODEソルバー、ノイズスケジュールに対して強い軽率性を示します。実験では, GenEvalの性能を99.4%保つながら10倍速くの文脈から画像の生成を加速しました。コードは, https://github.com/bebebe666/OptimalSteps に公開されています。",
+      "upvotes": 7,
+      "discussionId": "67e6095248742d6df75868db",
+      "ai_keywords": [
+        "diffusion models",
+        "generation quality",
+        "computational intensive sampling",
+        "step discretization",
+        "denoising directions",
+        "Optimal Stepsize Distillation",
+        "dynamic programming framework",
+        "theoretical optimal schedules",
+        "knowledge distillation",
+        "reference trajectories",
+        "stepsize optimization",
+        "recursive error minimization",
+        "global discretization bounds",
+        "optimal substructure exploitation",
+        "robustness",
+        "ODE solvers",
+        "noise schedules",
+        "text-to-image generation",
+        "GenEval"
+      ]
+    },
+    "publishedAt": "2025-03-27T13:59:46.000Z",
+    "title": "Optimal Stepsize for Diffusion Sampling",
+    "summary": "Diffusion models achieve remarkable generation quality but suffer from\ncomputational intensive sampling due to suboptimal step discretization. While\nexisting works focus on optimizing denoising directions, we address the\nprincipled design of stepsize schedules. This paper proposes Optimal Stepsize\nDistillation, a dynamic programming framework that extracts theoretically\noptimal schedules by distilling knowledge from reference trajectories. By\nreformulating stepsize optimization as recursive error minimization, our method\nguarantees global discretization bounds through optimal substructure\nexploitation. Crucially, the distilled schedules demonstrate strong robustness\nacross architectures, ODE solvers, and noise schedules. Experiments show 10x\naccelerated text-to-image generation while preserving 99.4% performance on\nGenEval. Our code is available at https://github.com/bebebe666/OptimalSteps.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21774.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64c38fcf573c5a427e12cd37",
+      "avatarUrl": "/avatars/2b9de06f29147ed2c212e920afba0eaf.svg",
+      "fullname": "cientgu",
+      "name": "cientgu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21765",
+      "authors": [
+        {
+          "_id": "67e60da88decdc7da4bf69a9",
+          "user": {
+            "_id": "67e617ebd0fd66b1f393eedc",
+            "avatarUrl": "/avatars/97a5ba0d0422f04e396399da1b74e8d4.svg",
+            "isPro": false,
+            "fullname": "Minghui Lin",
+            "user": "minnielin",
+            "type": "user"
+          },
+          "name": "Minghui Lin",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:01:37.704Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69aa",
+          "name": "Xiang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69ab",
+          "user": {
+            "_id": "65dcaf16287a93e081d9c2f0",
+            "avatarUrl": "/avatars/2db4e25c6924461abb5634f8ffd1ee87.svg",
+            "isPro": false,
+            "fullname": "Yishanwang",
+            "user": "yishanwang",
+            "type": "user"
+          },
+          "name": "Yishan Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:01:51.882Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69ac",
+          "user": {
+            "_id": "65fd82762bf2cd20ddaa193f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/yBYbWp_mT7UusYdkqtAvw.png",
+            "isPro": false,
+            "fullname": "Siteng Huang",
+            "user": "huangsiteng",
+            "type": "user"
+          },
+          "name": "Shu Wang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-28T02:47:05.703Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69ad",
+          "name": "Fengqi Dai",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69ae",
+          "name": "Pengxiang Ding",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69af",
+          "user": {
+            "_id": "65eaf755ab0a6a90da55ab58",
+            "avatarUrl": "/avatars/a46890a9d067a913513edf3759f12c85.svg",
+            "isPro": false,
+            "fullname": "Cunxiang Wang",
+            "user": "wangcunxiang",
+            "type": "user"
+          },
+          "name": "Cunxiang Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:02:15.357Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69b0",
+          "name": "Zhengrong Zuo",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69b1",
+          "name": "Nong Sang",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69b2",
+          "user": {
+            "_id": "65fd82762bf2cd20ddaa193f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/yBYbWp_mT7UusYdkqtAvw.png",
+            "isPro": false,
+            "fullname": "Siteng Huang",
+            "user": "huangsiteng",
+            "type": "user"
+          },
+          "name": "Siteng Huang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:02:43.147Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60da88decdc7da4bf69b3",
+          "user": {
+            "_id": "67597be2f3cd6492d4162ef8",
+            "avatarUrl": "/avatars/ba580c04b7057927d4a22dcb44c52400.svg",
+            "isPro": false,
+            "fullname": "DONGLIN",
+            "user": "wangdonglin130",
+            "type": "user"
+          },
+          "name": "Donglin Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:02:37.839Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T17:58:33.000Z",
+      "submittedOnDailyAt": "2025-03-28T01:19:58.442Z",
+      "title": "물리학 지식의 발전을 이미지 생성에 대한 조사: 목록",
+      "submittedOnDailyBy": {
+        "_id": "65fd82762bf2cd20ddaa193f",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/yBYbWp_mT7UusYdkqtAvw.png",
+        "isPro": false,
+        "fullname": "Siteng Huang",
+        "user": "huangsiteng",
+        "type": "user"
+      },
+      "summary": "최근의 이미지 생성의 발전에 있어서, 특히 확산 모델의 급속한 진보가 눈에 띈다. 그러나 이러한 물리적인 인식의 단점이, 생성된 콘텐츠가 물리학의 기본 법칙을 위반하고, '시각적 현실성과 물리적 무언가'의 두 난제로 빠질 수 있는 경우가 많아졌다. 연구자들은 이미지 생성에서 물리적인 진실성의 중요성을 일시히 높여, 동작 표현과 물리적 지식 등 유추적인 물리적인 인식을 생성 시스템에 통합하고, 실세계적인 동적인 시나리오를 시뮬레이션하는 시도를 했다. 이 분야에서 체계적인 개요가 없는 것을 고려하여, 이 조사는 이러한 단점을 메우기 위해 구조 설계의 상세한 요약과 그 응용을 제공하는 것을 목표로 한다. 특히, 우리는 인지 과학의 관점에서 물리적인 인식의 진화 과정에 대해 논의하고, 기본적인 스케마 인식, 물리적 지식의的被적 인식, 세계의 시뮬레이션의 主적 인식을 포함하는 세 단계 테크노로지치를 제안한다. 그리고 이 분야의 고유한 핵심적인 문제점을 강조하고, 향후 연구의 가능성의 패턴을 보여주고, 학술계와 산업계의 논의의 선두를 진전하는 것을 목표로 한다. 구조적인 검토와 다학련동 분석을 통해, 이 조사는 해석 가능, 제어 가능하며 물리적으로 일치하는 이미지 생성 패러다임의 개발을 방향성을 주어, 생성 모델을 '시각적 모사'의 단계에서 '인간적인 물리적 인식'의 새로운 단계로 진전하는 것을 목표로 한다.",
+      "upvotes": 7,
+      "discussionId": "67e60da98decdc7da4bf6a28",
+      "githubRepo": "https://github.com/minnie-lin/Awesome-Physics-Cognition-based-Video-Generation",
+      "ai_keywords": [
+        "diffusion models",
+        "physical cognition",
+        "motion representations",
+        "generative systems",
+        "real-world dynamic scenarios",
+        "cognitive science",
+        "schema perception",
+        "passive cognition",
+        "active cognition",
+        "state-of-the-art methods",
+        "classical paradigms",
+        "benchmarks",
+        "key challenges",
+        "interpretable",
+        "controllable",
+        "physically consistent",
+        "human-like physical comprehension"
+      ]
+    },
+    "publishedAt": "2025-03-27T13:58:33.000Z",
+    "title": "Exploring the Evolution of Physics Cognition in Video Generation: A\n  Survey",
+    "summary": "Recent advancements in video generation have witnessed significant progress,\nespecially with the rapid advancement of diffusion models. Despite this, their\ndeficiencies in physical cognition have gradually received widespread attention\n- generated content often violates the fundamental laws of physics, falling\ninto the dilemma of ''visual realism but physical absurdity\". Researchers began\nto increasingly recognize the importance of physical fidelity in video\ngeneration and attempted to integrate heuristic physical cognition such as\nmotion representations and physical knowledge into generative systems to\nsimulate real-world dynamic scenarios. Considering the lack of a systematic\noverview in this field, this survey aims to provide a comprehensive summary of\narchitecture designs and their applications to fill this gap. Specifically, we\ndiscuss and organize the evolutionary process of physical cognition in video\ngeneration from a cognitive science perspective, while proposing a three-tier\ntaxonomy: 1) basic schema perception for generation, 2) passive cognition of\nphysical knowledge for generation, and 3) active cognition for world\nsimulation, encompassing state-of-the-art methods, classical paradigms, and\nbenchmarks. Subsequently, we emphasize the inherent key challenges in this\ndomain and delineate potential pathways for future research, contributing to\nadvancing the frontiers of discussion in both academia and industry. Through\nstructured review and interdisciplinary analysis, this survey aims to provide\ndirectional guidance for developing interpretable, controllable, and physically\nconsistent video generation paradigms, thereby propelling generative models\nfrom the stage of ''visual mimicry'' towards a new phase of ''human-like\nphysical comprehension''.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21765.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65fd82762bf2cd20ddaa193f",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/yBYbWp_mT7UusYdkqtAvw.png",
+      "fullname": "Siteng Huang",
+      "name": "huangsiteng",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.21144",
+      "authors": [
+        {
+          "_id": "67e60e315f20b94fcd0d1f9b",
+          "name": "Jinwei Qi",
+          "hidden": false
+        },
+        {
+          "_id": "67e60e315f20b94fcd0d1f9c",
+          "name": "Chaonan Ji",
+          "hidden": false
+        },
+        {
+          "_id": "67e60e315f20b94fcd0d1f9d",
+          "user": {
+            "_id": "672d72751474234855223935",
+            "avatarUrl": "/avatars/dc8a79b7d5e1175725334b337702e1fd.svg",
+            "isPro": false,
+            "fullname": "Sheng Xu",
+            "user": "shengxu97",
+            "type": "user"
+          },
+          "name": "Sheng Xu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:10:43.747Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e60e315f20b94fcd0d1f9e",
+          "name": "Peng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e60e315f20b94fcd0d1f9f",
+          "name": "Bang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67e60e315f20b94fcd0d1fa0",
+          "user": {
+            "_id": "63d0cc736b985b0f25d0412c",
+            "avatarUrl": "/avatars/3eb8c79f9a7c4c819038ea7b04e323dd.svg",
+            "isPro": false,
+            "fullname": "Bo",
+            "user": "Liefeng",
+            "type": "user"
+          },
+          "name": "Liefeng Bo",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:11:02.629Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T04:18:53.000Z",
+      "submittedOnDailyAt": "2025-03-28T01:20:25.562Z",
+      "title": "チャットアニービー：스태일라이즈드 라이트코어 포터렛 비디오 생성에 대한 계층화 모멘트 디퓨저 모델\n\n(Note: The translation provided above is a direct translation of the given text. The term \"チャットアニービー\" is not a standard term in Korean and may not have a direct equivalent. If \"チャットアニービー\" refers to a specific product or service, it may need to be replaced with the appropriate Korean term. Additionally, \"スタイリズド・ライテコール\" and \"ポートレットビデオ\" are also not standard Korean terms and may need to be adjusted based on the specific context or product name.)",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "실시간 상호작용 비디오 챗봇 포터렛은, 특히 텍스트와 목소리의 챗봇 기술의 놀라운 발전에 의해, 미래의 추세로 더욱 인식되어 왔습니다. 그러나 현재의 방법들은 주로 머리의 움직임의 실시간 생성을 초점을 두고 있으며, 그 머리의 움직임에 맞춰 동기화된 신체의 움직임을 생성하는 것이 어렵습니다. 또한, 말하기의 경미와 얼굴의 표현의 미세한 제어를 실현하는 것이 어려워졌습니다. 이러한 제한을 해결하기 위해, 우리는 말하기의 경미와 얼굴의 표현의 스타일이즘과 신체의 움직임의 동기화를 가능하게 하는 실시간 포터렛 비디오 생성의 새로운 프레임워크를 소개합니다. 이 프레임워크는 말하기의 경미와 얼굴의 표현의 표현력과 유연성을 가진 비디오 챗봇을 구현하고, 머리부터 상반身的 상호작용까지 확장합니다. 우리의 접근법은 다음과 같은 2단계로 구성됩니다. 첫 번째 단계는, 음성 입력에 기반한 명시적이고 은닉한 움직임 표현을 고려한 효율적인 계층적인 움직임 디피러시 모델로, 스타일이즘과 머리와 신체의 움직임의 동기화를 가능하게 하여 다양한 얼굴 표현을 생성할 수 있습니다. 두 번째 단계는, 상반身的 움직임을 포함하는 포터렛 비디오의 생성을 목표로 합니다. 우리는 드라이버에 명시적인 손의 제어 신호를 注入하여 더 상세한 손의 움직임을 생성하고, 얼굴의 리파이닝을 수행하여 포터렛 비디오 전체의 현실성과 표현력을 향상시킵니다. 또한, 우리의 접근법은 4090 GPU에서 최대 512 * 768 해상도로 효율적인 연속적인 상반身的 포터렛 비디오의 생성을 가능하게 하고, 실시간 상호작용 비디오 챗봇을 지원합니다. 실험 결과를 통해, 우리의 접근법이 풍부한 표현력과 자연스러운 상반身的 움직임을 가진 포터렛 비디오를 생성하는 능력을 보여줍니다.",
+      "upvotes": 5,
+      "discussionId": "67e60e325f20b94fcd0d1fff",
+      "ai_keywords": [
+        "hierarchical motion diffusion models",
+        "explicit and implicit motion representations",
+        "stylistic control",
+        "synchronization between head and body movements",
+        "face refinement",
+        "continous generation",
+        "upper-body portrait video",
+        "interactive video-chat"
+      ]
+    },
+    "publishedAt": "2025-03-27T00:18:53.000Z",
+    "title": "ChatAnyone: Stylized Real-time Portrait Video Generation with\n  Hierarchical Motion Diffusion Model",
+    "summary": "Real-time interactive video-chat portraits have been increasingly recognized\nas the future trend, particularly due to the remarkable progress made in text\nand voice chat technologies. However, existing methods primarily focus on\nreal-time generation of head movements, but struggle to produce synchronized\nbody motions that match these head actions. Additionally, achieving\nfine-grained control over the speaking style and nuances of facial expressions\nremains a challenge. To address these limitations, we introduce a novel\nframework for stylized real-time portrait video generation, enabling expressive\nand flexible video chat that extends from talking head to upper-body\ninteraction. Our approach consists of the following two stages. The first stage\ninvolves efficient hierarchical motion diffusion models, that take both\nexplicit and implicit motion representations into account based on audio\ninputs, which can generate a diverse range of facial expressions with stylistic\ncontrol and synchronization between head and body movements. The second stage\naims to generate portrait video featuring upper-body movements, including hand\ngestures. We inject explicit hand control signals into the generator to produce\nmore detailed hand movements, and further perform face refinement to enhance\nthe overall realism and expressiveness of the portrait video. Additionally, our\napproach supports efficient and continuous generation of upper-body portrait\nvideo in maximum 512 * 768 resolution at up to 30fps on 4090 GPU, supporting\ninteractive video-chat in real-time. Experimental results demonstrate the\ncapability of our approach to produce portrait videos with rich expressiveness\nand natural upper-body movements.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21144.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": true,
+      "isMod": false,
+      "followerCount": 6494
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.21088",
+      "authors": [
+        {
+          "_id": "67e602b6dabfd9d4bbf10849",
+          "user": {
+            "_id": "66f4bdbdc51768d9d4498d16",
+            "avatarUrl": "/avatars/0f6ded5fd9cf4e6f0b180b5aa329ea33.svg",
+            "isPro": false,
+            "fullname": "Haoming Xu",
+            "user": "HaomingXu",
+            "type": "user"
+          },
+          "name": "Haoming Xu",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-28T02:00:25.958Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e602b6dabfd9d4bbf1084a",
+          "user": {
+            "_id": "66d270dc5ae47374c27c9e9a",
+            "avatarUrl": "/avatars/556094d864e8e779b15bfc4360e91a44.svg",
+            "isPro": false,
+            "fullname": "Shuxun Wang",
+            "user": "Saberlve",
+            "type": "user"
+          },
+          "name": "Shuxun Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:57.087Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e602b6dabfd9d4bbf1084b",
+          "name": "Yanqiu Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67e602b6dabfd9d4bbf1084c",
+          "name": "Yi Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "67e602b6dabfd9d4bbf1084d",
+          "name": "Ziyan Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67e602b6dabfd9d4bbf1084e",
+          "name": "Ningyuan Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67e602b6dabfd9d4bbf1084f",
+          "name": "Shumin Deng",
+          "hidden": false
+        },
+        {
+          "_id": "67e602b6dabfd9d4bbf10850",
+          "name": "Huajun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67e602b6dabfd9d4bbf10851",
+          "name": "Ningyu Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-27T02:03:25.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:32:00.822Z",
+      "title": "ZJUKLAB at SemEval-2025 Task 4: 모델 통합에 의한 잊힘",
+      "submittedOnDailyBy": {
+        "_id": "620b3bbb0668e435407c8d0a",
+        "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+        "isPro": false,
+        "fullname": "Ningyu Zhang",
+        "user": "Ningyu",
+        "type": "user"
+      },
+      "summary": "이 논문은 ZJUKLAB 팀이 참여한 2025년 SemEval TASK4 \"대규모 언어 모델로부터의 민감 콘텐츠의 잊힘\"에 대한 제출을 보고 있습니다. 이 TASK는 선택적으로 대규모 언어 모델에서 민감한 콘텐츠를 제거하는 것을 목표로 하고, 과도한 잊힘이나 결손의 문제를 피하려고 있습니다. 우리는 Model Merging(특히 TIES-Merging)을 활용한 잊힘 시스템을 제안하고, 두 가지 특화된 모델을 통합하여 균형있는 잊힘 모델을 만들었습니다. 우리의 시스템은 26 팀 중 2위에서, TASK AGREEGATE의 온라인 점수는 0.944, 전체 AGREEGATE의 온라인 점수는 0.487로, 경쟁적인 결과를 얻었습니다. 이 논문에서는 지역적인 실험을 수행하고, 잊힘 프로세스의 상세한 분석을 수행하고, 성능의 트래지ectory, 손실의 동적, 가중치의 관점에서 등을 예상하고, 추가적인 실험을 수행하여 우리의 방법의 효과성을 이해하는 것을 목표로 합니다. 또한, 우리의 방법의 단점과 평가 지표에 대해 분석하고, MIA 점수와 ROUGE에 기반한 지표만 사용하여 완전히 잊힘의 성공을 평가할 수 없다는 점을 강조합니다. 마지막으로, 미래의 연구에서 잊힘의 목표의 재고와 더 나은 평가 방법의 필요성을 강조합니다. 코드는 https://github.com/zjunlp/unlearn/tree/main/semeval25에서 사용 가능합니다.",
+      "upvotes": 4,
+      "discussionId": "67e602badabfd9d4bbf10973",
+      "githubRepo": "https://github.com/zjunlp/unlearn",
+      "ai_keywords": [
+        "Model Merging",
+        "TIES-Merging",
+        "large language models",
+        "unlearning",
+        "over-forgetting",
+        "under-forgetting",
+        "unlearned model",
+        "performance trajectories",
+        "loss dynamics",
+        "weight perspectives",
+        "MIA scores",
+        "ROUGE-based metrics"
+      ]
+    },
+    "publishedAt": "2025-03-26T22:03:25.000Z",
+    "title": "ZJUKLAB at SemEval-2025 Task 4: Unlearning via Model Merging",
+    "summary": "This paper presents the ZJUKLAB team's submission for SemEval-2025 Task 4:\nUnlearning Sensitive Content from Large Language Models. This task aims to\nselectively erase sensitive knowledge from large language models, avoiding both\nover-forgetting and under-forgetting issues. We propose an unlearning system\nthat leverages Model Merging (specifically TIES-Merging), combining two\nspecialized models into a more balanced unlearned model. Our system achieves\ncompetitive results, ranking second among 26 teams, with an online score of\n0.944 for Task Aggregate and 0.487 for overall Aggregate. In this paper, we\nalso conduct local experiments and perform a comprehensive analysis of the\nunlearning process, examining performance trajectories, loss dynamics, and\nweight perspectives, along with several supplementary experiments, to\nunderstand the effectiveness of our method. Furthermore, we analyze the\nshortcomings of our method and evaluation metrics, emphasizing that MIA scores\nand ROUGE-based metrics alone are insufficient to fully evaluate successful\nunlearning. Finally, we emphasize the need for more comprehensive evaluation\nmethodologies and rethinking of unlearning objectives in future research. Code\nis available at https://github.com/zjunlp/unlearn/tree/main/semeval25.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.21088.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "620b3bbb0668e435407c8d0a",
+      "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+      "fullname": "Ningyu Zhang",
+      "name": "Ningyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 20
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.20990",
+      "authors": [
+        {
+          "_id": "67e626a9cb305c5a3ee11fac",
+          "user": {
+            "_id": "62dd8f328456396d4f8aa894",
+            "avatarUrl": "/avatars/af8f5dc7ff937e3e849ecdfd9ca4750b.svg",
+            "isPro": false,
+            "fullname": "Yupeng Cao",
+            "user": "YupengCao",
+            "type": "user"
+          },
+          "name": "Yupeng Cao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:11:18.739Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fad",
+          "user": {
+            "_id": "634cabd104491d9f7111eea3",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1665969099097-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Haohang Li",
+            "user": "Acatsama",
+            "type": "user"
+          },
+          "name": "Haohang Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:11:24.664Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fae",
+          "user": {
+            "_id": "64f757c6016d60f3199ef5e6",
+            "avatarUrl": "/avatars/2659ba698081265d0480b08161718013.svg",
+            "isPro": false,
+            "fullname": "Yangyang Yu",
+            "user": "ShirleyY",
+            "type": "user"
+          },
+          "name": "Yangyang Yu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:11:30.611Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11faf",
+          "user": {
+            "_id": "6265db3f637f6ec042b2c4d7",
+            "avatarUrl": "/avatars/7bb20dce7c96059d2c4f06890344af86.svg",
+            "isPro": false,
+            "fullname": "Shashidhar Reddy Javaji",
+            "user": "Shashidhar",
+            "type": "user"
+          },
+          "name": "Shashidhar Reddy Javaji",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:11:36.871Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb0",
+          "user": {
+            "_id": "65bd14e8ce846f8aa94db1d1",
+            "avatarUrl": "/avatars/76eaad15bf32eba75271f3dc315527c2.svg",
+            "isPro": false,
+            "fullname": "Yueru He",
+            "user": "Yueru1",
+            "type": "user"
+          },
+          "name": "Yueru He",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:12:00.574Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb1",
+          "user": {
+            "_id": "63b58ed5889aa6707f0bb0f4",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63b58ed5889aa6707f0bb0f4/znl74_aMswlV8VtHrfj3G.jpeg",
+            "isPro": true,
+            "fullname": "Jimin Huang",
+            "user": "jiminHuang",
+            "type": "user"
+          },
+          "name": "Jimin Huang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:12:09.888Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb2",
+          "user": {
+            "_id": "62d63a9dc5ada8ef841b4787",
+            "avatarUrl": "/avatars/a79a4ac07984d9a8623c99bdce9add54.svg",
+            "isPro": false,
+            "fullname": "Zining Zhu",
+            "user": "ZiningZhu",
+            "type": "user"
+          },
+          "name": "Zining Zhu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:12:18.401Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb3",
+          "user": {
+            "_id": "6479f4317c18dca75e9a9324",
+            "avatarUrl": "/avatars/9aa709230b057f57ee4415c04a622c63.svg",
+            "isPro": false,
+            "fullname": "Xie",
+            "user": "QianqianXie1994",
+            "type": "user"
+          },
+          "name": "Qianqian Xie",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:12:33.144Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb4",
+          "user": {
+            "_id": "642de494b42737f9e1e0046b",
+            "avatarUrl": "/avatars/01ebcb41b89b1da557abdb9cf867331f.svg",
+            "isPro": false,
+            "fullname": "Xiao-Yang Liu Yanglet",
+            "user": "yanglet",
+            "type": "user"
+          },
+          "name": "Xiao-yang Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:12:40.590Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb5",
+          "name": "Koduvayur Subbalakshmi",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb6",
+          "name": "Meikang Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb7",
+          "user": {
+            "_id": "66f6cb352c5d4ef3578a9c3f",
+            "avatarUrl": "/avatars/0a70c94072bc5e1d018cf12da0904ff0.svg",
+            "isPro": false,
+            "fullname": "Sophia Ananiadou",
+            "user": "Effoula",
+            "type": "user"
+          },
+          "name": "Sophia Ananiadou",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:12:56.712Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e626a9cb305c5a3ee11fb8",
+          "name": "Jian-Yun Nie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-26T21:07:51.000Z",
+      "submittedOnDailyAt": "2025-03-28T03:07:27.038Z",
+      "title": "FinAudio: FinAudio는 금융 애플리케이션에서 음성 대 언어 모델의 벤치마크입니다.",
+      "submittedOnDailyBy": {
+        "_id": "63a0c0803c8841cfe2cd1f15",
+        "avatarUrl": "/avatars/bbe216db7a33612f23d23ce4ed4ba3f9.svg",
+        "isPro": false,
+        "fullname": "Xueqing Peng",
+        "user": "Xueqing",
+        "type": "user"
+      },
+      "summary": "Audio Large Language Models (AudioLLMs)는 대화, 음성 이해, 자동 음성 인식(ASR) 등 음성 작업의 성능을 크게 향상시켰습니다. 이러한 발전 과정에서, 금융 시나리오에서 AudioLLMs의 평가에 대한 벤치마크는 존재하지 않습니다. 금융 분석과 투자 결정의 중요한 자원으로, 수익 콘퍼런스, CEO의 연설 등 음성 데이터를 포함합니다. 본 논문에서는 금융 분야에서 AudioLLMs의 평가 능력을 평가하기 위해 처음으로 FinAudio를 소개합니다. 금융 분야의 고유한 특성에 기반하여 3가지의 태스크를 정의합니다: 1) 짧은 금융 음성의 ASR, 2) 긴 금융 음성의 ASR, 3) 긴 금융 음성의 요약. 그리고 2가지의 짧은, 2가지의 긴 음성 데이터 세트를 결합하여, 금융 음성 요약의 새로운 데이터 세트를 개발하고 FinAudio 벤치마크로 구성합니다. 그리고 FinAudio에서 7가지의 주요 AudioLLMs를 평가합니다. 평가 결과, 금융 분야에서 기존 AudioLLMs의 한계를 명확히 하고, AudioLLMs의 개선을 위한 아이디어를 제공합니다. 모든 데이터 세트와 코드는 공개됩니다.",
+      "upvotes": 4,
+      "discussionId": "67e626aacb305c5a3ee12027",
+      "ai_keywords": [
+        "Audio Large Language Models (AudioLLMs)",
+        "automatic speech recognition (ASR)",
+        "financial scenarios",
+        "benchmark",
+        "financial analysis",
+        "investment decisions",
+        "summarization",
+        "ASR for short financial audio",
+        "ASR for long financial audio",
+        "summarization of long financial audio",
+        "\\textsc{FinAudio}"
+      ]
+    },
+    "publishedAt": "2025-03-26T17:07:51.000Z",
+    "title": "FinAudio: A Benchmark for Audio Large Language Models in Financial\n  Applications",
+    "summary": "Audio Large Language Models (AudioLLMs) have received widespread attention\nand have significantly improved performance on audio tasks such as\nconversation, audio understanding, and automatic speech recognition (ASR).\nDespite these advancements, there is an absence of a benchmark for assessing\nAudioLLMs in financial scenarios, where audio data, such as earnings conference\ncalls and CEO speeches, are crucial resources for financial analysis and\ninvestment decisions. In this paper, we introduce FinAudio, the first\nbenchmark designed to evaluate the capacity of AudioLLMs in the financial\ndomain. We first define three tasks based on the unique characteristics of the\nfinancial domain: 1) ASR for short financial audio, 2) ASR for long financial\naudio, and 3) summarization of long financial audio. Then, we curate two short\nand two long audio datasets, respectively, and develop a novel dataset for\nfinancial audio summarization, comprising the FinAudio benchmark.\nThen, we evaluate seven prevalent AudioLLMs on FinAudio. Our\nevaluation reveals the limitations of existing AudioLLMs in the financial\ndomain and offers insights for improving AudioLLMs. All datasets and codes will\nbe released.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.20990.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63a0c0803c8841cfe2cd1f15",
+      "avatarUrl": "/avatars/bbe216db7a33612f23d23ce4ed4ba3f9.svg",
+      "fullname": "Xueqing Peng",
+      "name": "Xueqing",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.20776",
+      "authors": [
+        {
+          "_id": "67e6019af54a34f8a989d8eb",
+          "user": {
+            "_id": "642a276516d4d8293c9a47e8",
+            "avatarUrl": "/avatars/80e6db8bc2544f3486b11b57858a8692.svg",
+            "isPro": false,
+            "fullname": "Shijie Zhou",
+            "user": "shijiezhou",
+            "type": "user"
+          },
+          "name": "Shijie Zhou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-03-28T08:37:59.022Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8ec",
+          "name": "Hui Ren",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8ed",
+          "name": "Yijia Weng",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8ee",
+          "user": {
+            "_id": "67b3c26f3d0f54ab3805954d",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/beyNv649ZZ5A29CH3m8mj.png",
+            "isPro": false,
+            "fullname": "Shuwang Zhang",
+            "user": "ShuwangZhang00",
+            "type": "user"
+          },
+          "name": "Shuwang Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:13:30.134Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8ef",
+          "name": "Zhen Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8f0",
+          "user": {
+            "_id": "62f687a0c58915315c4ff75d",
+            "avatarUrl": "/avatars/b657180c7666735062782edd4f6a69c9.svg",
+            "isPro": false,
+            "fullname": "Dejia Xu",
+            "user": "ir1d",
+            "type": "user"
+          },
+          "name": "Dejia Xu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:13:40.451Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8f1",
+          "user": {
+            "_id": "6526386e1c6a09292d8d0a22",
+            "avatarUrl": "/avatars/471de830de2d775d35368678c1579f87.svg",
+            "isPro": false,
+            "fullname": "fan",
+            "user": "Fanzhiwen",
+            "type": "user"
+          },
+          "name": "Zhiwen Fan",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:16:41.739Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8f2",
+          "name": "Suya You",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8f3",
+          "name": "Zhangyang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8f4",
+          "name": "Leonidas Guibas",
+          "hidden": false
+        },
+        {
+          "_id": "67e6019af54a34f8a989d8f5",
+          "name": "Achuta Kadambi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-26T17:56:16.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:26:28.356Z",
+      "title": "Feature4X: 4D 아웃풋 AI와 연결되는 다양한 가우시안 특징 필드\n\n(Note: The original text seems to contain a mix of English and Japanese characters. The translation provided is based on the assumption that \"Feature4X\" is an English term and the rest of the text is in Japanese. If \"Feature4X\" is intended to be in Japanese, please provide clarification for a more accurate translation.)",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "최근의 2차원 및 다모달 모듈의 발전은 대규모 훈련을 통해 극대한 놀라움의 성공을 달성했습니다. 그러나 이러한 성공을 복잡한 3차원/4차원 스케인과 자유형의 인터랙션 및 고レ벨의 의미적 조작에 확장하는 것은 어려워집니다. 이러한 어려움은 대규모, 표준화된 3차원/4차원 또는 다각도 데이터셋의 유한한 이용가능성에 기반합니다. 이러한 데이터셋은 개방 박스의 분할, Prompt 기반의 분할, 언어로 안내된 편집, 시각적 질의응답(VQA) 등 일반적인 시각과 언어 태스크에 중요합니다. 본 논문에서는, 사용자 생성 콘텐츠에서 광범위하게 사용할 수 있는 단색 비디오 입력을 사용하여, 2차원 시각 Fundamental 모듈의 기능을 4차원 세계로 확장하기 위한 일반적인 프레임워크 Feature4X를 소개합니다. Feature4X의 'X'는 다양성을 나타내며, 모델 조건부인 4차원 특징 필드의 교련을 통해 어떤 태스크를 가능하게 할 수 있음을 나타냅니다. 이 프레임워크의 핵심은 여러 모형 능력을 하나의 표현에 통합하는 동적 최적화 전략입니다. 또한, Feature4X는 Gaussian Spreading을 사용하여, 비디오 Fundamental 모듈(예: SAM2, InternVideo2)의 특징을 명시적인 4차원 특징 필드로 교련하여 처음으로 실현하는 것을 처음으로 실현합니다. 본 논문에서는, LLM에 의한 기능 루프를 통해, 시간 스텝 전체에서의 새로운 시각 분할, 구조와 외형의 스케인 편집, 자유형의 VQA 등 새로운 태스크를 구현하는 것을 보여줍니다. 이러한 발전은 상호작용적인 동적인 4차원 스케인 인터랙션을 가능하게 하며, scalable, 시간 공간에 따라 인식 가능한 시스템을 제공하며, 아웃풋의 AI 애플리케이션의 범위를 넓히게 됩니다.",
+      "upvotes": 4,
+      "discussionId": "67e6019ff54a34f8a989d9d6",
+      "ai_keywords": [
+        "Feature4X",
+        "4D feature field distillation",
+        "Gaussian Splatting",
+        "SAM2",
+        "InternVideo2",
+        "novel view segment anything",
+        "geometric and appearance scene editing",
+        "free-form VQA",
+        "LLMs",
+        "agentic AI applications",
+        "scalable systems",
+        "contextually aware",
+        "spatiotemporally aware",
+        "immersive dynamic 4D scene interaction"
+      ]
+    },
+    "publishedAt": "2025-03-26T13:56:16.000Z",
+    "title": "Feature4X: Bridging Any Monocular Video to 4D Agentic AI with Versatile\n  Gaussian Feature Fields",
+    "summary": "Recent advancements in 2D and multimodal models have achieved remarkable\nsuccess by leveraging large-scale training on extensive datasets. However,\nextending these achievements to enable free-form interactions and high-level\nsemantic operations with complex 3D/4D scenes remains challenging. This\ndifficulty stems from the limited availability of large-scale, annotated 3D/4D\nor multi-view datasets, which are crucial for generalizable vision and language\ntasks such as open-vocabulary and prompt-based segmentation, language-guided\nediting, and visual question answering (VQA). In this paper, we introduce\nFeature4X, a universal framework designed to extend any functionality from 2D\nvision foundation model into the 4D realm, using only monocular video input,\nwhich is widely available from user-generated content. The \"X\" in Feature4X\nrepresents its versatility, enabling any task through adaptable,\nmodel-conditioned 4D feature field distillation. At the core of our framework\nis a dynamic optimization strategy that unifies multiple model capabilities\ninto a single representation. Additionally, to the best of our knowledge,\nFeature4X is the first method to distill and lift the features of video\nfoundation models (e.g. SAM2, InternVideo2) into an explicit 4D feature field\nusing Gaussian Splatting. Our experiments showcase novel view segment anything,\ngeometric and appearance scene editing, and free-form VQA across all time\nsteps, empowered by LLMs in feedback loops. These advancements broaden the\nscope of agentic AI applications by providing a foundation for scalable,\ncontextually and spatiotemporally aware systems capable of immersive dynamic 4D\nscene interaction.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.20776.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": true,
+      "isMod": false,
+      "followerCount": 6494
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.20822",
+      "authors": [
+        {
+          "_id": "67e61017b116b3c559188a0f",
+          "name": "Qi Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67e61017b116b3c559188a10",
+          "user": {
+            "_id": "67b576e39b7058fa21ab72a3",
+            "avatarUrl": "/avatars/5393231dc585950d9579323521f41ff4.svg",
+            "isPro": false,
+            "fullname": "Xingyu Ni",
+            "user": "Univstar",
+            "type": "user"
+          },
+          "name": "Xingyu Ni",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:17:44.258Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e61017b116b3c559188a11",
+          "name": "Ziyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67e61017b116b3c559188a12",
+          "user": {
+            "_id": "65c3dfb180497543ca257ffd",
+            "avatarUrl": "/avatars/1eb9e114e2c4dc2dc2c3b2e3f387d214.svg",
+            "isPro": false,
+            "fullname": "Feng Cheng",
+            "user": "fengcheng1",
+            "type": "user"
+          },
+          "name": "Feng Cheng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:18:07.030Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e61017b116b3c559188a13",
+          "name": "Ziyan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67e61017b116b3c559188a14",
+          "name": "Lu Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67e61017b116b3c559188a15",
+          "name": "Bohan Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-26T00:45:07.000Z",
+      "submittedOnDailyAt": "2025-03-28T01:28:16.803Z",
+      "title": "합성 비디오가 비디오 합성에서 물리적인 정확도를 향상시키는 것입니다.",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "우리는 컴퓨터 그래픽스 파이프라인에서 합성 비디오를 사용하여 비디오 생성 모델의 물리적 정확도를 향상시키는 방법을 검토하고 있습니다. 이러한 렌더링 비디오는 3차원 일관성 등 현실의 물리 법칙을 존중하며, 비디오 생성 모델의 개선에 유익한 리소스로 사용됩니다. 이러한 가능성을 활용하기 위해, 우리는 합성 데이터를 선택·통합하는 방법을 제안하고, 물리적 특성을 모델에 전달하는 방법을 도입하고, 부적절한 아트팩트를 크게 줄이는 것을 목표로하고 있습니다. 물리적 일관성을 중시하는 세 가지 대표적인 태스크에 대해 실험을 수행하여 그 효과를 보여주었습니다. 그러나 우리의 모델은 깊은 물리적 이해를 가지고 있지 않지만, 우리의 연구는 합성 비디오가 비디오 합성의 물리적 정확도를 향상시키는 것을 처음 실험적으로 보여주는 것을 보여줍니다. 웹사이트: https://kevinz8866.github.io/simulation/",
+      "upvotes": 4,
+      "discussionId": "67e6101bb116b3c559188b67",
+      "ai_keywords": [
+        "video generation models",
+        "synthetic videos",
+        "computer graphics pipelines",
+        "3D consistency",
+        "transfering physical realism",
+        "unwanted artifacts",
+        "physical consistency",
+        "physical fidelity",
+        "video synthesis"
+      ]
+    },
+    "publishedAt": "2025-03-25T20:45:07.000Z",
+    "title": "Synthetic Video Enhances Physical Fidelity in Video Synthesis",
+    "summary": "We investigate how to enhance the physical fidelity of video generation\nmodels by leveraging synthetic videos derived from computer graphics pipelines.\nThese rendered videos respect real-world physics, such as maintaining 3D\nconsistency, and serve as a valuable resource that can potentially improve\nvideo generation models. To harness this potential, we propose a solution that\ncurates and integrates synthetic data while introducing a method to transfer\nits physical realism to the model, significantly reducing unwanted artifacts.\nThrough experiments on three representative tasks emphasizing physical\nconsistency, we demonstrate its efficacy in enhancing physical fidelity. While\nour model still lacks a deep understanding of physics, our work offers one of\nthe first empirical demonstrations that synthetic video enhances physical\nfidelity in video synthesis. Website: https://kevinz8866.github.io/simulation/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.20822.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": true,
+      "isMod": false,
+      "followerCount": 6494
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.20853",
+      "authors": [
+        {
+          "_id": "67e5ff24cce3913200f29387",
+          "user": {
+            "_id": "62f6bd1dd278a8f3e7867392",
+            "avatarUrl": "/avatars/7e5b6014d99909958eb0f95c486b2226.svg",
+            "isPro": false,
+            "fullname": "Alexander Swerdlow",
+            "user": "aswerdlow",
+            "type": "user"
+          },
+          "name": "Alexander Swerdlow",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:18:36.245Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5ff24cce3913200f29388",
+          "user": {
+            "_id": "6310ff7dd43c55e811f8772f",
+            "avatarUrl": "/avatars/0dcab81771329d13cc62b08e55a71c9a.svg",
+            "isPro": false,
+            "fullname": "Mihir Prabhudesai",
+            "user": "mihirpd",
+            "type": "user"
+          },
+          "name": "Mihir Prabhudesai",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:18:30.166Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5ff24cce3913200f29389",
+          "user": {
+            "_id": "67ad6a0924ad6fd76672ff2f",
+            "avatarUrl": "/avatars/141280d9d1b97740f0e8acf9b681411d.svg",
+            "isPro": false,
+            "fullname": "Siddharth Gandhi",
+            "user": "Sid1275",
+            "type": "user"
+          },
+          "name": "Siddharth Gandhi",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:18:42.006Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5ff24cce3913200f2938a",
+          "user": {
+            "_id": "653692e8ac570e90963cf2c5",
+            "avatarUrl": "/avatars/e391ca21c2292e916ab0ab00f8ee2ba6.svg",
+            "isPro": false,
+            "fullname": "Deepak pathak",
+            "user": "Deepak765",
+            "type": "user"
+          },
+          "name": "Deepak Pathak",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:18:48.839Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5ff24cce3913200f2938b",
+          "name": "Katerina Fragkiadaki",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-26T17:59:51.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:17:26.527Z",
+      "title": "통합 다중 모델 이산 확산",
+      "submittedOnDailyBy": {
+        "_id": "6310ff7dd43c55e811f8772f",
+        "avatarUrl": "/avatars/0dcab81771329d13cc62b08e55a71c9a.svg",
+        "isPro": false,
+        "fullname": "Mihir Prabhudesai",
+        "user": "mihirpd",
+        "type": "user"
+      },
+      "summary": "다형성 생성 모델은 여러 모듈로 이해하고 생성할 수 있는 모델이 주로 자동 순차 진행(AR) 방식에 의해 주도되어 있습니다. 이러한 모델은 왼쪽에서 오른쪽이나 위에서 아래로 순차적으로 태그를 처리합니다. 이 모델은 이미지 캡처, 질문응답, 이미지 생성 등 다양한 태스크를 처리할 수 있습니다. 본 연구에서는 최근 텍스트 생성의 성공을 기반으로, 문과 이미지의 균일한 생성 설정에서 처리하는 이산적 디퓨저 모델을 검토합니다. 이산적 디퓨저 모델은 AR 모델보다 여러 가지 장점이 있습니다. 그 중 하나는 생성 샘플의 품질과 다양성의 제어, 문과 이미지의 두 영역에서 모두 보간, 생성 과정에서의 제어 폭이 넓다는 것입니다. 이러한 장점을 활용하여, 첫 번째 균일한 다형성 이산적 디퓨저(UniDisc) 모델을 제안합니다. 이 모델은 다양한 하류 태스크에서 문과 이미지를 함께 이해하고 생성할 수 있습니다. UniDisc와 다형성 AR 모델을 비교하고, 스케일링 분석을 수행하여, 성능, 추론 시의 계산량, 제어성, 편집성, 보간, 추론 시간 및 생성 품질의 유연한 트레이드오프에 대해 UniDisc가 더 우수한 것을 보여줍니다. 코드와 추가적인 시각화는 https://unidisc.github.io에 접근 가능합니다.",
+      "upvotes": 2,
+      "discussionId": "67e5ff28cce3913200f2951e",
+      "projectPage": "https://unidisc.github.io/",
+      "githubRepo": "https://github.com/alexanderswerdlow/unidisc",
+      "ai_keywords": [
+        "autoregressive (AR) approaches",
+        "discrete diffusion models",
+        "multimodal inpainting",
+        "control over quality versus diversity",
+        "Unity Multimodal Discrete Diffusion (UniDisc)",
+        "scaling analysis",
+        "generation quality",
+        "inference-time compute",
+        "controllability",
+        "editability"
+      ]
+    },
+    "publishedAt": "2025-03-26T13:59:51.000Z",
+    "title": "Unified Multimodal Discrete Diffusion",
+    "summary": "Multimodal generative models that can understand and generate across multiple\nmodalities are dominated by autoregressive (AR) approaches, which process\ntokens sequentially from left to right, or top to bottom. These models jointly\nhandle images, text, video, and audio for various tasks such as image\ncaptioning, question answering, and image generation. In this work, we explore\ndiscrete diffusion models as a unified generative formulation in the joint text\nand image domain, building upon their recent success in text generation.\nDiscrete diffusion models offer several advantages over AR models, including\nimproved control over quality versus diversity of generated samples, the\nability to perform joint multimodal inpainting (across both text and image\ndomains), and greater controllability in generation through guidance.\nLeveraging these benefits, we present the first Unified Multimodal Discrete\nDiffusion (UniDisc) model which is capable of jointly understanding and\ngenerating text and images for a variety of downstream tasks. We compare\nUniDisc to multimodal AR models, performing a scaling analysis and\ndemonstrating that UniDisc outperforms them in terms of both performance and\ninference-time compute, enhanced controllability, editability, inpainting, and\nflexible trade-off between inference time and generation quality. Code and\nadditional visualizations are available at https://unidisc.github.io.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.20853.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6310ff7dd43c55e811f8772f",
+      "avatarUrl": "/avatars/0dcab81771329d13cc62b08e55a71c9a.svg",
+      "fullname": "Mihir Prabhudesai",
+      "name": "mihirpd",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.20578",
+      "authors": [
+        {
+          "_id": "67e5fd806e73232cf08af3bb",
+          "user": {
+            "_id": "659430138fec845e50a27558",
+            "avatarUrl": "/avatars/f5de806f55c90ae303cd94af7c15005c.svg",
+            "isPro": false,
+            "fullname": "Alif Al Hasan",
+            "user": "alifalhasan",
+            "type": "user"
+          },
+          "name": "Alif Al Hasan",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-03-28T04:39:45.135Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5fd806e73232cf08af3bc",
+          "user": {
+            "_id": "6664836f3038d313d1ac7867",
+            "avatarUrl": "/avatars/30de3b29cf06b5481f100ace55a85f29.svg",
+            "isPro": false,
+            "fullname": "Subarna Saha",
+            "user": "Subarna10",
+            "type": "user"
+          },
+          "name": "Subarna Saha",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-03-28T09:19:03.409Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5fd806e73232cf08af3bd",
+          "user": {
+            "_id": "6331c3f618711776b468e9ec",
+            "avatarUrl": "/avatars/af2c4bba031e474bf4fd2ea19e415aaf.svg",
+            "isPro": false,
+            "fullname": "Mia Mohammad Imran",
+            "user": "imranraad",
+            "type": "user"
+          },
+          "name": "Mia Mohammad Imran",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-03-28T01:38:09.589Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e5fd806e73232cf08af3be",
+          "name": "Tarannum Shaila Zaman",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-26T14:25:01.000Z",
+      "submittedOnDailyAt": "2025-03-28T00:08:31.084Z",
+      "title": "LLPut: 대규모 언어 모델의 검증 - 버그 보고 기반의 입력 생성에 관한 연구",
+      "submittedOnDailyBy": {
+        "_id": "6331c3f618711776b468e9ec",
+        "avatarUrl": "/avatars/af2c4bba031e474bf4fd2ea19e415aaf.svg",
+        "isPro": false,
+        "fullname": "Mia Mohammad Imran",
+        "user": "imranraad",
+        "type": "user"
+      },
+      "summary": "파일라인 데이터는 소프트웨어 버그의 진단과 분석에서 중요한 역할을 수행하고 있습니다. 버그 보고서는 일반적으로 이러한 데이터를 포함하고 있으며, 개발자들은 이를 추출하여 디버깅을 촉진합니다. 버그 보고는 자연어로 작성되어 있기 때문에, 기존 연구에서는 자연어 처리(NLP) 기술을 사용하여 자동적인 입력 추출을 실현했습니다. 대규모 언어 모델(LLMs)의 등장에 따라 중요한 연구 과제가 발생했습니다: 생성적인 LLMs는 버그 보고에서 파일라인 데이터를 어떻게 효과적으로 추출할 수 있는지? 본 논문에서는 LLPut라는 기술을 제안하고, LLaMA, Qwen, Qwen-Coder의 3가지 오픈소스 생성적인 LLMs의 성능을 실험적으로 평가하기 위해 목적을 설정합니다. 206건의 버그 보고를 포함하는 데이터 세트에 대해 실험적 평가를 수행하고, 이러한 모델의 정확성과 효율성을 평가합니다. 우리의 발견은 생성적인 LLMs의 자동적인 버그 진단 능력과 한계에 대한 설명을 제공합니다.",
+      "upvotes": 1,
+      "discussionId": "67e5fd816e73232cf08af3e2",
+      "projectPage": "https://zenodo.org/records/15092886",
+      "ai_keywords": [
+        "Large Language Models (LLMs)",
+        "generative LLMs",
+        "LLPut",
+        "LLaMA",
+        "Qwen",
+        "Qwen-Coder",
+        "natural language",
+        "empirical evaluation",
+        "bug diagnosis"
+      ]
+    },
+    "publishedAt": "2025-03-26T10:25:01.000Z",
+    "title": "LLPut: Investigating Large Language Models for Bug Report-Based Input\n  Generation",
+    "summary": "Failure-inducing inputs play a crucial role in diagnosing and analyzing\nsoftware bugs. Bug reports typically contain these inputs, which developers\nextract to facilitate debugging. Since bug reports are written in natural\nlanguage, prior research has leveraged various Natural Language Processing\n(NLP) techniques for automated input extraction. With the advent of Large\nLanguage Models (LLMs), an important research question arises: how effectively\ncan generative LLMs extract failure-inducing inputs from bug reports? In this\npaper, we propose LLPut, a technique to empirically evaluate the performance of\nthree open-source generative LLMs -- LLaMA, Qwen, and Qwen-Coder -- in\nextracting relevant inputs from bug reports. We conduct an experimental\nevaluation on a dataset of 206 bug reports to assess the accuracy and\neffectiveness of these models. Our findings provide insights into the\ncapabilities and limitations of generative LLMs in automated bug diagnosis.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.20578.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6331c3f618711776b468e9ec",
+      "avatarUrl": "/avatars/af2c4bba031e474bf4fd2ea19e415aaf.svg",
+      "fullname": "Mia Mohammad Imran",
+      "name": "imranraad",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
