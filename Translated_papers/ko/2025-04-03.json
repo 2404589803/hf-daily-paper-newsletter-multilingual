@@ -1,0 +1,1534 @@
+[
+  {
+    "paper": {
+      "id": "2504.00999",
+      "authors": [
+        {
+          "_id": "67ecc3973d267d266649e075",
+          "user": {
+            "_id": "640f7083208821a59b74c757",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1678735253848-640f7083208821a59b74c757.jpeg",
+            "isPro": false,
+            "fullname": "Siyuan Li",
+            "user": "Lupin1998",
+            "type": "user"
+          },
+          "name": "Siyuan Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T08:28:38.819Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e076",
+          "user": {
+            "_id": "671b4781d2f774c5ec9ebd62",
+            "avatarUrl": "/avatars/b4f1cbaa6e092eda005f81f199a35e19.svg",
+            "isPro": false,
+            "fullname": "Luyuan Zhang",
+            "user": "LuyuanZhang01",
+            "type": "user"
+          },
+          "name": "Luyuan Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T08:28:41.242Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e077",
+          "user": {
+            "_id": "6594d390674349122ce6f368",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6594d390674349122ce6f368/luDBiSMX_9l8QEpAQu3HJ.jpeg",
+            "isPro": false,
+            "fullname": "Zedong Wang",
+            "user": "ZedongWangAI",
+            "type": "user"
+          },
+          "name": "Zedong Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T07:52:39.150Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e078",
+          "user": {
+            "_id": "670880950e79a8b46f7ff9dd",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/670880950e79a8b46f7ff9dd/hA1TLhwlQblkFsq8wLrkB.jpeg",
+            "isPro": false,
+            "fullname": "Juanxi Tian",
+            "user": "Juanxi",
+            "type": "user"
+          },
+          "name": "Juanxi Tian",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T08:28:43.436Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e079",
+          "name": "Cheng Tan",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e07a",
+          "name": "Zicheng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e07b",
+          "name": "Chang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e07c",
+          "name": "Qingsong Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e07d",
+          "name": "Haonan Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e07e",
+          "name": "Haoqian Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67ecc3973d267d266649e07f",
+          "name": "Zhen Lei",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-01T17:39:19.000Z",
+      "submittedOnDailyAt": "2025-04-03T00:15:32.614Z",
+      "title": "MergeVQ: 이미지 생성과 표현을 통합하는 프레임워크에서 분리된 토큰의 결합과 숫화 방식을 사용합니다.",
+      "submittedOnDailyBy": {
+        "_id": "670880950e79a8b46f7ff9dd",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/670880950e79a8b46f7ff9dd/hA1TLhwlQblkFsq8wLrkB.jpeg",
+        "isPro": false,
+        "fullname": "Juanxi Tian",
+        "user": "Juanxi",
+        "type": "user"
+      },
+      "summary": "마스크된 이미지 모델링(MIM)와 벡터 디스크リ미네이션(VQ)를 결합한 방법은 자동 인식 학습의 사전 훈련과 이미지 생성에서 큰 성공을 거뒀습니다. 그러나 현재 대부분의 방법은 생성 품질과 표현 학습의 효율성 간의 조정을 해결하기 어렵습니다. 이러한 패러다임의 한계를 초월하기 위해 MergeVQ를 제안합니다. MergeVQ는 벡터 디스크リ미네이션 기반의 생성 모델에 토큰 머닝 기술을 통합하여 이미지 생성과 시각적 표현 학습 사이의 간격을 하나의 아키텍처로 균형을 잡습니다. 사전 훈련 기간, MergeVQ는 인코더의 자기 주의 블록 후에 토큰 머닝 모듈을 사용하여 잠재 공간에서 Top-k의 세ман틱을 분리하고 Look-up Free Quantization(LFQ)와 전역적인 어레이먼트를 수행하며, 디코더에서 크로스 注意를 사용하여 그 세부 사항을 복원합니다. 두 번째 단계의 생성에서 MergeAR를 도입하고 KV 캐시 압축을 수행하여 효율적인 라스트 순서 예측을 실현합니다. ImageNet에서 확장된 실험은 MergeVQ는 AR 생성 모델이며, 시각적 표현 학습과 이미지 생성 모두에서 우수한 성능을 거뒀으며, 토큰 효율성과 추론 속도의 최적화를 유지하는 것을 증명합니다. 코드와 모델은 https://apexgen-x.github.io/MergeVQ에서 공개됩니다.",
+      "upvotes": 52,
+      "discussionId": "67ecc3993d267d266649e10c",
+      "projectPage": "https://apexgen-x.github.io/MergeVQ/",
+      "githubRepo": "https://github.com/ApexGen-X/MergeVQ",
+      "ai_keywords": [
+        "Masked Image Modeling (MIM)",
+        "Vector Quantization (VQ)",
+        "shared latent space",
+        "generation quality",
+        "representation learning",
+        "token merging",
+        "generative models",
+        "token merge module",
+        "self-attention blocks",
+        "encoder",
+        "Look-up Free Quantization (LFQ)",
+        "global alignment",
+        "cross-attention",
+        "decoder",
+        "reconstruction",
+        "MergeAR",
+        "KV Cache compression",
+        "raster-order prediction",
+        "AR generative model",
+        "ImageNet",
+        "token efficiency",
+        "inference speed"
+      ]
+    },
+    "publishedAt": "2025-04-01T13:39:19.000Z",
+    "title": "MergeVQ: A Unified Framework for Visual Generation and Representation\n  with Disentangled Token Merging and Quantization",
+    "summary": "Masked Image Modeling (MIM) with Vector Quantization (VQ) has achieved great\nsuccess in both self-supervised pre-training and image generation. However,\nmost existing methods struggle to address the trade-off in shared latent space\nfor generation quality vs. representation learning and efficiency. To push the\nlimits of this paradigm, we propose MergeVQ, which incorporates token merging\ntechniques into VQ-based generative models to bridge the gap between image\ngeneration and visual representation learning in a unified architecture. During\npre-training, MergeVQ decouples top-k semantics from latent space with the\ntoken merge module after self-attention blocks in the encoder for subsequent\nLook-up Free Quantization (LFQ) and global alignment and recovers their\nfine-grained details through cross-attention in the decoder for reconstruction.\nAs for the second-stage generation, we introduce MergeAR, which performs KV\nCache compression for efficient raster-order prediction. Extensive experiments\non ImageNet verify that MergeVQ as an AR generative model achieves competitive\nperformance in both visual representation learning and image generation tasks\nwhile maintaining favorable token efficiency and inference speed. The code and\nmodel will be available at https://apexgen-x.github.io/MergeVQ.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.00999.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "670880950e79a8b46f7ff9dd",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/670880950e79a8b46f7ff9dd/hA1TLhwlQblkFsq8wLrkB.jpeg",
+      "fullname": "Juanxi Tian",
+      "name": "Juanxi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.00883",
+      "authors": [
+        {
+          "_id": "67edf28e042e8ba3e95d1960",
+          "name": "Zhenyi Liao",
+          "hidden": false
+        },
+        {
+          "_id": "67edf28e042e8ba3e95d1961",
+          "name": "Qingsong Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67edf28e042e8ba3e95d1962",
+          "name": "Yanhao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67edf28e042e8ba3e95d1963",
+          "name": "Zijian Kong",
+          "hidden": false
+        },
+        {
+          "_id": "67edf28e042e8ba3e95d1964",
+          "name": "Haonan Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67edf28e042e8ba3e95d1965",
+          "name": "Zhenyu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67edf28e042e8ba3e95d1966",
+          "user": {
+            "_id": "64bba541da140e461924dfed",
+            "avatarUrl": "/avatars/367993765b0ca3734b2b100db33ed787.svg",
+            "isPro": false,
+            "fullname": "zhijie deng",
+            "user": "zhijie3",
+            "type": "user"
+          },
+          "name": "Zhijie Deng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T07:52:14.204Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-01T15:11:11.000Z",
+      "submittedOnDailyAt": "2025-04-03T01:03:18.798Z",
+      "title": "R1-Zero-Like Training를 이용한 시각 스펙트럴 논리 향상",
+      "submittedOnDailyBy": {
+        "_id": "64bba541da140e461924dfed",
+        "avatarUrl": "/avatars/367993765b0ca3734b2b100db33ed787.svg",
+        "isPro": false,
+        "fullname": "zhijie deng",
+        "user": "zhijie3",
+        "type": "user"
+      },
+      "summary": "MLLMs의 성능 향상을 위해 많은 주목이 집중되고 있습니다. 물리적 영역에서 작동하는 AI 에이전트의 기초인 영화 기반 시각 공간 지능(VSI)은 MLLMs의 가장 중요한 기능 중 하나입니다. 본 논문에서는 R1-Zero 기반의 훈련을 사용하여 MLLMs의 시각 공간 기능 향상을 위한 첫 번째 상세한 연구를 수행합니다. 기술적으로는, 첫째, 작은 또는 중간 규모의 Qwen2-VL 모델의 시각 공간 기능은 Chain of Thought(CoT) 프로ン퓰트에서 동작하지 못함을 인식했습니다. 둘째, GRPO 훈련을 사용하여 시각 공간 기능 향상을 시도했으며, DeepSeek-R1-Zero로 조정된 VSI-100k 데이터 세트를 사용했습니다. 조사 중, GRPO의 KL 패널티(작은 값을 가진 것도 포함)을 유지하는 필요성을 인식했습니다. 120 GPU 시간 동안, Qwen2-VL-2B에서 微调된 vsGRPO-2B 모델은 기본 모델보다 12.1%의 우위를示し, GPT-4o를 초과했습니다. 또한, Qwen2-VL-7B에서 微调된 vsGRPO-7B 모델은 최고의 오픈 소스 모델 LLaVA-NeXT-Video-72B와 동일한 성능을 달성했습니다. 또한, vsGRPO와 서브 객체 微调, 직접적인 선호 최적화 기반의 비교를 수행했으며, 강력한 성능 우위를 보였습니다. 코드와 데이터 세트는 그대로입니다.",
+      "upvotes": 40,
+      "discussionId": "67edf28f042e8ba3e95d1a60",
+      "githubRepo": "https://github.com/zhijie-group/R1-Zero-VSI",
+      "ai_keywords": [
+        "multi-modal large language models (MLLMs)",
+        "video-based visual-spatial intelligence (VSI)",
+        "Chain of Thought (CoT)",
+        "GRPO training",
+        "VSI-100k dataset",
+        "DeepSeek-R1-Zero",
+        "KL penalty",
+        "vsGRPO-2B model",
+        "Qwen2-VL-2B",
+        "vsGRPO-7B model",
+        "Qwen2-VL-7B",
+        "LLaVA-NeXT-Video-72B",
+        "supervised fine-tuning",
+        "direct preference optimization"
+      ]
+    },
+    "publishedAt": "2025-04-01T11:11:11.000Z",
+    "title": "Improved Visual-Spatial Reasoning via R1-Zero-Like Training",
+    "summary": "Increasing attention has been placed on improving the reasoning capacities of\nmulti-modal large language models (MLLMs). As the cornerstone for AI agents\nthat function in the physical realm, video-based visual-spatial intelligence\n(VSI) emerges as one of the most pivotal reasoning capabilities of MLLMs. This\nwork conducts a first, in-depth study on improving the visual-spatial reasoning\nof MLLMs via R1-Zero-like training. Technically, we first identify that the\nvisual-spatial reasoning capacities of small- to medium-sized Qwen2-VL models\ncannot be activated via Chain of Thought (CoT) prompts. We then incorporate\nGRPO training for improved visual-spatial reasoning, using the carefully\ncurated VSI-100k dataset, following DeepSeek-R1-Zero. During the investigation,\nwe identify the necessity to keep the KL penalty (even with a small value) in\nGRPO. With just 120 GPU hours, our vsGRPO-2B model, fine-tuned from\nQwen2-VL-2B, can outperform the base model by 12.1% and surpass GPT-4o.\nMoreover, our vsGRPO-7B model, fine-tuned from Qwen2-VL-7B, achieves\nperformance comparable to that of the best open-source model\nLLaVA-NeXT-Video-72B. Additionally, we compare vsGRPO to supervised fine-tuning\nand direct preference optimization baselines and observe strong performance\nsuperiority. The code and dataset will be available soon.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.00883.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "64bba541da140e461924dfed",
+      "avatarUrl": "/avatars/367993765b0ca3734b2b100db33ed787.svg",
+      "fullname": "zhijie deng",
+      "name": "zhijie3",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.01014",
+      "authors": [
+        {
+          "_id": "67eca389e14049f5ff064ea6",
+          "user": {
+            "_id": "6506b77a773ceaa8d52ecea1",
+            "avatarUrl": "/avatars/0e769a0795063e1491c44760a4a83097.svg",
+            "isPro": false,
+            "fullname": "CJH",
+            "user": "Howe666",
+            "type": "user"
+          },
+          "name": "Junhao Cheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-02T08:22:27.228Z",
+          "hidden": false
+        },
+        {
+          "_id": "67eca389e14049f5ff064ea7",
+          "name": "Yuying Ge",
+          "hidden": false
+        },
+        {
+          "_id": "67eca389e14049f5ff064ea8",
+          "name": "Yixiao Ge",
+          "hidden": false
+        },
+        {
+          "_id": "67eca389e14049f5ff064ea9",
+          "name": "Jing Liao",
+          "hidden": false
+        },
+        {
+          "_id": "67eca389e14049f5ff064eaa",
+          "name": "Ying Shan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-01T17:57:18.000Z",
+      "submittedOnDailyAt": "2025-04-03T01:15:35.152Z",
+      "title": "アニメゲーマー：무한 애니 라이프 시뮬레이션과 다음 게임 상태 예측",
+      "submittedOnDailyBy": {
+        "_id": "6506b77a773ceaa8d52ecea1",
+        "avatarUrl": "/avatars/0e769a0795063e1491c44760a4a83097.svg",
+        "isPro": false,
+        "fullname": "CJH",
+        "user": "Howe666",
+        "type": "user"
+      },
+      "summary": "최근의 이미지 및 비디오 합성 기술의 발전은 생성게임에 새로운 가능성들을 열어주었습니다. 특히 흥미로운 응용 분야는 애니메이션 영화의 캐릭터를 상호작용 가능한, 실제로 움직일 수 있는 존재로 변환하는 것입니다. 이로 인해 플레이어는 자신의 취미의 캐릭터의 모습을 하고, 언어 지시를 통해 라이프 시뮬레이션을 통해 동적인 애니메이션 세계에 몰입할 수 있습니다. 이러한 게임은 예상되는 경계와 고정된 게임 규칙을 제외하고, 게임 월드와의 개방적인 언어를 통해 상호작용하여, 영원히 변화하는 스토리 라인과 환경에 대해 경험할 수 있기 때문에, 무한게임으로 정의됩니다. 최근, 무한 애니메이션 라이프 시뮬레이션의 발전적인 접근은 대규모 언어 모델(LLMs)을 사용하여, 여러 차례의 텍스트 대화를 이미지 생성의 언어 지시로 번역하는 것으로 실현되었습니다. 그러나 이는 역사적인 시각적인 컨텍스트를 무시하고, 불확실한 게임 플레이에 연결됩니다. 또한,静的な 이미지만 생성하고, 재미있는 게임 경험을 필요로 하는 동적인 특성을 갖출 수 없습니다. 본 논문에서는, 멀티모달 대형 언어 모델(MLLMs)을 기반으로 구축된 애니메이션 게임을 제안합니다. 애니메이션 게임은, 게임 상태의 생성에서, 인물의 움직임을 그리는 동적인 애니메이션샷과, 인물 상태의 업데이트를 포함한 것을 생성함으로써, 게임 상태를 생성합니다. 애니메이션 게임에서, 새로운 액션에 대한 다양한 표현을 도입하고, 비디오DIFY션 모델을 사용하여 고품질의 비디오 클립에 해석할 수 있습니다. 역사적인 애니메이션샷의 표현을 컨텍스트로, 다음 표현을 예측함으로써, 애니메이션 게임은, 컨텍스트의 일치와 만족스러운 동적인 특성을 가진 게임을 생성할 수 있습니다. 자동화된 메트릭과 인간 평가를 사용한 확장된 평가에 의해, 애니메이션 게임은 현재의 방법과 비교하여, 게임 경험을 다각적으로 빛을 뿜습니다. 코드와 체크포인트는, https://github.com/TencentARC/AnimeGamer에서 사용 가능합니다.",
+      "upvotes": 22,
+      "discussionId": "67eca39ce14049f5ff06535b",
+      "projectPage": "https://howe125.github.io/AnimeGamer.github.io/",
+      "githubRepo": "https://github.com/TencentARC/AnimeGamer",
+      "ai_keywords": [
+        "Multimodal Large Language Models (MLLMs)",
+        "video diffusion model",
+        "action-aware multimodal representations",
+        "automated metrics",
+        "human evaluations"
+      ]
+    },
+    "publishedAt": "2025-04-01T13:57:18.000Z",
+    "title": "AnimeGamer: Infinite Anime Life Simulation with Next Game State\n  Prediction",
+    "summary": "Recent advancements in image and video synthesis have opened up new promise\nin generative games. One particularly intriguing application is transforming\ncharacters from anime films into interactive, playable entities. This allows\nplayers to immerse themselves in the dynamic anime world as their favorite\ncharacters for life simulation through language instructions. Such games are\ndefined as infinite game since they eliminate predetermined boundaries and\nfixed gameplay rules, where players can interact with the game world through\nopen-ended language and experience ever-evolving storylines and environments.\nRecently, a pioneering approach for infinite anime life simulation employs\nlarge language models (LLMs) to translate multi-turn text dialogues into\nlanguage instructions for image generation. However, it neglects historical\nvisual context, leading to inconsistent gameplay. Furthermore, it only\ngenerates static images, failing to incorporate the dynamics necessary for an\nengaging gaming experience. In this work, we propose AnimeGamer, which is built\nupon Multimodal Large Language Models (MLLMs) to generate each game state,\nincluding dynamic animation shots that depict character movements and updates\nto character states, as illustrated in Figure 1. We introduce novel\naction-aware multimodal representations to represent animation shots, which can\nbe decoded into high-quality video clips using a video diffusion model. By\ntaking historical animation shot representations as context and predicting\nsubsequent representations, AnimeGamer can generate games with contextual\nconsistency and satisfactory dynamics. Extensive evaluations using both\nautomated metrics and human evaluations demonstrate that AnimeGamer outperforms\nexisting methods in various aspects of the gaming experience. Codes and\ncheckpoints are available at https://github.com/TencentARC/AnimeGamer.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.01014.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6506b77a773ceaa8d52ecea1",
+      "avatarUrl": "/avatars/0e769a0795063e1491c44760a4a83097.svg",
+      "fullname": "CJH",
+      "name": "Howe666",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.20783",
+      "authors": [
+        {
+          "_id": "67e97f581cb6fc648f642a05",
+          "user": {
+            "_id": "65f5392c68b8e0cb3c9977a2",
+            "avatarUrl": "/avatars/aa64772475098e8a135c13072fde6744.svg",
+            "isPro": false,
+            "fullname": "Zichen",
+            "user": "lkevinzc",
+            "type": "user"
+          },
+          "name": "Zichen Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T08:29:10.035Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e97f581cb6fc648f642a06",
+          "user": {
+            "_id": "64e416dc54e18f390ef79ba4",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/5n01J00ZaVRrebsON8iYA.jpeg",
+            "isPro": true,
+            "fullname": "Changyu Chen",
+            "user": "Cameron-Chen",
+            "type": "user"
+          },
+          "name": "Changyu Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T08:29:07.988Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e97f581cb6fc648f642a07",
+          "name": "Wenjun Li",
+          "hidden": false
+        },
+        {
+          "_id": "67e97f581cb6fc648f642a08",
+          "user": {
+            "_id": "63885f1d0bebb233d8ad6e5b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669881620925-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Penghui Qi",
+            "user": "QPHutu",
+            "type": "user"
+          },
+          "name": "Penghui Qi",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T08:29:05.240Z",
+          "hidden": false
+        },
+        {
+          "_id": "67e97f581cb6fc648f642a09",
+          "name": "Tianyu Pang",
+          "hidden": false
+        },
+        {
+          "_id": "67e97f581cb6fc648f642a0a",
+          "name": "Chao Du",
+          "hidden": false
+        },
+        {
+          "_id": "67e97f581cb6fc648f642a0b",
+          "name": "Wee Sun Lee",
+          "hidden": false
+        },
+        {
+          "_id": "67e97f581cb6fc648f642a0c",
+          "name": "Min Lin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-26T17:59:14.000Z",
+      "submittedOnDailyAt": "2025-04-03T03:47:54.547Z",
+      "title": "R1-Zero-Like Training 이해: 비판적 시각",
+      "submittedOnDailyBy": {
+        "_id": "65f5392c68b8e0cb3c9977a2",
+        "avatarUrl": "/avatars/aa64772475098e8a135c13072fde6744.svg",
+        "isPro": false,
+        "fullname": "Zichen",
+        "user": "lkevinzc",
+        "type": "user"
+      },
+      "summary": "DeepSeek-R1-Zero는 확장된 강화학습(RL)가 LLM의 설명능력을 직접적으로 향상시키는 방법을 보여주었습니다. 본 연구에서는 R1-Zero-like의 훈련을 비판적으로 재검토하고, 기초모델과 RL의 두 주요 요소를 분석하고 있습니다. 기초모델의 광범위한 범위를 조사하고, DeepSeek-V3-Base를 포함하여, 사전학습의 특성이 RL의 성능에 미치는 영향을 이해하고 있습니다. 분석에 따르면, DeepSeek-V3-Base는 \"Aha Moment\"를 보여주며, Qwen2.5의 기초모델은 Prompt Template이 필요하지 않아도 강력한 설명능력을 보여주고, 사전학습 Bias의 가능성은 시사되어 있습니다. 또한, Group Relative Policy Optimization(GRPO)에서 최적화 Bias를 인식하고, 부적절한 출력의 길이를 인공적으로 늘리는 것을 발견했습니다. 이를 대처하기 위해, Bias-Free의 최적화 방법인 Dr. GRPO를 도입하여, 토큰의 효율을 향상시키면서 설명능력을 유지하는 것을 목표로 합니다. 이러한 통찰을 활용하여, 7B의 기초모델을 사용하여 AIME 2024에서 43.3%의 정확도를 달성하는 최소한의 R1-Zero의 레시피를 제안하고, 새로운 최尖端를 이루었습니다. 코드는 https://github.com/sail-sg/understand-r1-zero에서 사용 가능합니다.",
+      "upvotes": 20,
+      "discussionId": "67e97f591cb6fc648f642a38",
+      "githubRepo": "https://github.com/sail-sg/understand-r1-zero",
+      "ai_keywords": [
+        "reinforcement learning (RL)",
+        "reasoning capabilities",
+        "LLMs",
+        "base models",
+        "DeepSeek-V3-Base",
+        "pretraining characteristics",
+        "Qwen2.5",
+        "prompt templates",
+        "pretraining biases",
+        "Group Relative Policy Optimization (GRPO)",
+        "optimization bias",
+        "response length",
+        "Dr. GRPO",
+        "token efficiency",
+        "minimalist R1-Zero recipe",
+        "AIME 2024",
+        "7B base model"
+      ]
+    },
+    "publishedAt": "2025-03-26T13:59:14.000Z",
+    "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+    "summary": "DeepSeek-R1-Zero has shown that reinforcement learning (RL) at scale can\ndirectly enhance the reasoning capabilities of LLMs without supervised\nfine-tuning. In this work, we critically examine R1-Zero-like training by\nanalyzing its two core components: base models and RL. We investigate a wide\nrange of base models, including DeepSeek-V3-Base, to understand how pretraining\ncharacteristics influence RL performance. Our analysis reveals that\nDeepSeek-V3-Base already exhibit ''Aha moment'', while Qwen2.5 base models\ndemonstrate strong reasoning capabilities even without prompt templates,\nsuggesting potential pretraining biases. Additionally, we identify an\noptimization bias in Group Relative Policy Optimization (GRPO), which\nartificially increases response length (especially for incorrect outputs)\nduring training. To address this, we introduce Dr. GRPO, an unbiased\noptimization method that improves token efficiency while maintaining reasoning\nperformance. Leveraging these insights, we present a minimalist R1-Zero recipe\nthat achieves 43.3% accuracy on AIME 2024 with a 7B base model, establishing a\nnew state-of-the-art. Our code is available at\nhttps://github.com/sail-sg/understand-r1-zero.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.20783.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65f5392c68b8e0cb3c9977a2",
+      "avatarUrl": "/avatars/aa64772475098e8a135c13072fde6744.svg",
+      "fullname": "Zichen",
+      "name": "lkevinzc",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.01956",
+      "authors": [
+        {
+          "_id": "67ee01265839c8a023344aee",
+          "user": {
+            "_id": "65c38f6c137aba2aee524989",
+            "avatarUrl": "/avatars/a93e29f55876df3e65e2532972e057e4.svg",
+            "isPro": false,
+            "fullname": "Hanyang Wang",
+            "user": "hanyang-21",
+            "type": "user"
+          },
+          "name": "Hanyang Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T07:52:06.284Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ee01265839c8a023344aef",
+          "name": "Fangfu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67ee01265839c8a023344af0",
+          "name": "Jiawei Chi",
+          "hidden": false
+        },
+        {
+          "_id": "67ee01265839c8a023344af1",
+          "name": "Yueqi Duan",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/65c38f6c137aba2aee524989/JKAKb_7rnf6eZT56AF6aM.mp4"
+      ],
+      "publishedAt": "2025-04-02T17:59:21.000Z",
+      "submittedOnDailyAt": "2025-04-03T02:07:36.716Z",
+      "title": "VideoScene: 한 번에 3D 스키뮬레이션을 생성하는 비디오 변환 모델의 결정화",
+      "submittedOnDailyBy": {
+        "_id": "65c38f6c137aba2aee524989",
+        "avatarUrl": "/avatars/a93e29f55876df3e65e2532972e057e4.svg",
+        "isPro": false,
+        "fullname": "Hanyang Wang",
+        "user": "hanyang-21",
+        "type": "user"
+      },
+      "summary": "희소 뷰에서 3D 스케닝을 복원하는 것은 그 고유의 부족한 문제를 야기하여 어려운 임무입니다. 전통적인 방법은 이 문제를 완화하기 위해 특화된 해결책(예: 일반화 조정이나 전진적인 확률적 모델)을 개발했습니다が, 입력 뷰 간 최소 교차점과 시각 정보의 부족으로 성능 저하를 받습니다. 다행히, 최근의 비디오 생성 모델은 3D 구조를 가진 논리적인 비디오 클립을 생성할 수 있는 것을 통해 이 문제를 해결할 가능성을 가지고 있습니다. 큰 사전 학습 비디오 디퓨전 모델을 보유한 프로덕티브한 연구는 비디오 생성의 놀라운 가능성을 평가하고 희소 뷰에서 3D 스케닝을 생성하는 것을 시도했습니다. 놀라운 개선을 보여주는 데도, 이들은 추론 시간의 길이와 3D 제약의 부족으로 제한되어 효율이나 재구성 아티팩트가 실제 세계의 일반적 구조에 맞지 않는 적절하지 않은 결과를 발생시키며, 이러한 문제를 개선하기 위해 VideoScene를 제안하고, 비디오에서 3D로의 간격을 효율적이고 효과적으로 연결하는 도구를 구축하는 것을 목표로 합니다. 특히, 3D에 대한 지식을 가진 램프 흐름의 소멸 전략을 설계하고, 추론 중의 최적의 램프 시간 단계를 적응적으로 결정하기 위한 동적인 노이즈 정책 네트워크를 훈련합니다. 확장된 실험은 이전의 비디오 디퓨전 모델보다 빠르게 우수한 3D 스케닝 결과를 구현하는 것을 보여주고, 향후 비디오에서 3D로의 응용의 효율적인 도구로서의 가능성을 밝혀냅니다. 프로젝트 페이지: https://hanyang-21.github.io/VideoScene",
+      "upvotes": 19,
+      "discussionId": "67ee012a5839c8a023344bdb",
+      "projectPage": "https://hanyang-21.github.io/VideoScene",
+      "githubRepo": "https://github.com/hanyang-21/VideoScene",
+      "ai_keywords": [
+        "video generative models",
+        "video diffusion models",
+        "3D scenes",
+        "sparse views",
+        "geometry regularization",
+        "feed-forward model",
+        "video generative prior",
+        "inference time",
+        "3D constraint",
+        "reconstruction artifacts",
+        "VideoScene",
+        "3D-aware leap flow distillation",
+        "dynamic denoising policy network"
+      ]
+    },
+    "publishedAt": "2025-04-02T13:59:21.000Z",
+    "title": "VideoScene: Distilling Video Diffusion Model to Generate 3D Scenes in\n  One Step",
+    "summary": "Recovering 3D scenes from sparse views is a challenging task due to its\ninherent ill-posed problem. Conventional methods have developed specialized\nsolutions (e.g., geometry regularization or feed-forward deterministic model)\nto mitigate the issue. However, they still suffer from performance degradation\nby minimal overlap across input views with insufficient visual information.\nFortunately, recent video generative models show promise in addressing this\nchallenge as they are capable of generating video clips with plausible 3D\nstructures. Powered by large pretrained video diffusion models, some pioneering\nresearch start to explore the potential of video generative prior and create 3D\nscenes from sparse views. Despite impressive improvements, they are limited by\nslow inference time and the lack of 3D constraint, leading to inefficiencies\nand reconstruction artifacts that do not align with real-world geometry\nstructure. In this paper, we propose VideoScene to distill the video diffusion\nmodel to generate 3D scenes in one step, aiming to build an efficient and\neffective tool to bridge the gap from video to 3D. Specifically, we design a\n3D-aware leap flow distillation strategy to leap over time-consuming redundant\ninformation and train a dynamic denoising policy network to adaptively\ndetermine the optimal leap timestep during inference. Extensive experiments\ndemonstrate that our VideoScene achieves faster and superior 3D scene\ngeneration results than previous video diffusion models, highlighting its\npotential as an efficient tool for future video to 3D applications. Project\nPage: https://hanyang-21.github.io/VideoScene",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/65c38f6c137aba2aee524989/JKAKb_7rnf6eZT56AF6aM.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.01956.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65c38f6c137aba2aee524989",
+      "avatarUrl": "/avatars/a93e29f55876df3e65e2532972e057e4.svg",
+      "fullname": "Hanyang Wang",
+      "name": "hanyang-21",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.01724",
+      "authors": [
+        {
+          "_id": "67edf7b6d277de0ec2aa5b6b",
+          "name": "Yuxuan Luo",
+          "hidden": false
+        },
+        {
+          "_id": "67edf7b6d277de0ec2aa5b6c",
+          "name": "Zhengkun Rong",
+          "hidden": false
+        },
+        {
+          "_id": "67edf7b6d277de0ec2aa5b6d",
+          "name": "Lizhen Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67edf7b6d277de0ec2aa5b6e",
+          "name": "Longhao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67edf7b6d277de0ec2aa5b6f",
+          "name": "Tianshu Hu",
+          "hidden": false
+        },
+        {
+          "_id": "67edf7b6d277de0ec2aa5b70",
+          "name": "Yongming Zhu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-02T13:30:32.000Z",
+      "submittedOnDailyAt": "2025-04-03T01:22:04.548Z",
+      "title": "DREAMETER-M1: Hollywood Guide를 통해 전체적인, 표현적인, 강건한 인간 이미지 Animation",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "최근의 이미지 기반의 인간 애니메이션 방법들은 현실적인 신체와 얼굴의 움직임의 합성을 실현하지만, 전체적인 조종 가능성, 다스케일 적응성, 장기적인 시간계열의 일관성 등에 중요한 약점이 존재하며, 이는 표현력과 강건성의 저하를 초래합니다. 우리는 이러한 제한을 극복하기 위해, 딥러닝 기반의 프레임워크인 다이오젠드라이버(DiT)를 기반으로한 DreamActor-M1을 제안합니다. 이 방법은 얼굴의 표현을 간접적으로 제어하고, 3D 얼굴 볼록, 3D 신체의 골격이 통합된 조합된 제어 신호를 사용하여, 얼굴의 표정과 신체의 움직임을 강건하게 조종하여, 표현적이고 일관된 애니메이션을 생성합니다. 다스케일 적응성에서, 포터레이트부터 전신까지 다양한 신체의 자세와 이미지 크기를 처리하기 위해, 변하는 해상도와 크기의 데이터로 진행된 훈련 전략을 수행합니다. 외형의 조종에 있어서, 연속적인 프레임에서의 움직임 패턴과 보간된 시각적 리퍼런스를 통합하여, 복잡한 동작 중 보이지 않는 영역에서도 장기적인 시간계열의 일관성을 보장합니다. 실험은 우리의 방법의 최신 작품을 초월하고, 포터레이트, 상반체, 전신의 생성에 표현적인 결과를 제공하며, 강한 장기적인 일관성을 구현함을 보여줍니다. 프로젝트 페이지: https://grisoon.github.io/DreamActor-M1/",
+      "upvotes": 16,
+      "discussionId": "67edf7bcd277de0ec2aa5d7b",
+      "ai_keywords": [
+        "diffusion transformer (DiT)",
+        "hybrid guidance",
+        "implicit facial representations",
+        "3D head spheres",
+        "3D body skeletons",
+        "facial expressions",
+        "body movements",
+        "expressive animations",
+        "identity-preserving animations",
+        "progressive training strategy",
+        "varying resolutions",
+        "varying scales",
+        "motion patterns",
+        "sequential frames",
+        "visual references",
+        "long-term temporal coherence",
+        "long-term consistency",
+        "expressive results",
+        "upper-body generation",
+        "full-body generation"
+      ]
+    },
+    "publishedAt": "2025-04-02T09:30:32.000Z",
+    "title": "DreamActor-M1: Holistic, Expressive and Robust Human Image Animation\n  with Hybrid Guidance",
+    "summary": "While recent image-based human animation methods achieve realistic body and\nfacial motion synthesis, critical gaps remain in fine-grained holistic\ncontrollability, multi-scale adaptability, and long-term temporal coherence,\nwhich leads to their lower expressiveness and robustness. We propose a\ndiffusion transformer (DiT) based framework, DreamActor-M1, with hybrid\nguidance to overcome these limitations. For motion guidance, our hybrid control\nsignals that integrate implicit facial representations, 3D head spheres, and 3D\nbody skeletons achieve robust control of facial expressions and body movements,\nwhile producing expressive and identity-preserving animations. For scale\nadaptation, to handle various body poses and image scales ranging from\nportraits to full-body views, we employ a progressive training strategy using\ndata with varying resolutions and scales. For appearance guidance, we integrate\nmotion patterns from sequential frames with complementary visual references,\nensuring long-term temporal coherence for unseen regions during complex\nmovements. Experiments demonstrate that our method outperforms the\nstate-of-the-art works, delivering expressive results for portraits,\nupper-body, and full-body generation with robust long-term consistency. Project\nPage: https://grisoon.github.io/DreamActor-M1/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.01724.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6570
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.01848",
+      "authors": [
+        {
+          "_id": "67edf3d579018bf61e050435",
+          "name": "Giulio Starace",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e050436",
+          "name": "Oliver Jaffe",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e050437",
+          "name": "Dane Sherburn",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e050438",
+          "name": "James Aung",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e050439",
+          "name": "Jun Shern Chan",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e05043a",
+          "name": "Leon Maksin",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e05043b",
+          "name": "Rachel Dias",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e05043c",
+          "name": "Evan Mays",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e05043d",
+          "name": "Benjamin Kinsella",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e05043e",
+          "name": "Wyatt Thompson",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e05043f",
+          "name": "Johannes Heidecke",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e050440",
+          "name": "Amelia Glaese",
+          "hidden": false
+        },
+        {
+          "_id": "67edf3d579018bf61e050441",
+          "name": "Tejal Patwardhan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-02T15:55:24.000Z",
+      "submittedOnDailyAt": "2025-04-03T01:05:22.442Z",
+      "title": "PaperBench: AI 연구를 재현하는 능력의 평가",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "PaperBench는 AIアガント가 가장 先端의 AI 연구를 재현할 수 있는 능력을 평가하기 위한 벤치마크입니다. AIアガント는 2024년 ICML의 Spotlight Paper와 Oral Paper를 Shortcut으로 재현해야 합니다. 이 작업에는 논문의 기여를 이해하고 코드 기반을 개발하고 실험을 성공적으로 수행하는 것이 포함됩니다. 목표의 평가를 위해 각 재현 작업은 명확한 평가 기준을 가지고 작은 SUBTASK로 나누는 리뷰 가이드를 개발했습니다. 총적으로 PaperBench는 8,316개의 개별 평가 가능한 TASK를 포함합니다. 리뷰 가이드는 각 ICML 논문의 저자와 공동으로 개발되어 정확성과 현실성을 보장하고 있습니다. 스케일러블한 평가가 가능하도록 LLM 기반의 평가자를 개발하고 평가자의 성능을 평가하기 위해 별도의 벤치마크를 만들었습니다. PaperBench에서 여러 선진 모델을 평가하고 최고의 기록을示した AIアガント는 Claude 3.5 Sonnet (New)와 오픈 소스 스키ーム를 사용했습니다. 평균 재현 점수는 21.0%입니다. 마지막으로 최고의 ML 전문가를 초청하여 PaperBench의 일부를 시도함으로써 모델이 아직 인간 기준을 초월하지 않은 것을 확인했습니다. 우리는 https://github.com/openai/preparedness{ 오픈 소스 코드}을 공개하고 AIアガント의 AI 기술 능력에 대한 미래 연구를 촉진하는 것을 목표로 합니다.",
+      "upvotes": 15,
+      "discussionId": "67edf3d679018bf61e0504c0",
+      "ai_keywords": [
+        "anLM-based judge",
+        "replication attempts"
+      ]
+    },
+    "publishedAt": "2025-04-02T11:55:24.000Z",
+    "title": "PaperBench: Evaluating AI's Ability to Replicate AI Research",
+    "summary": "We introduce PaperBench, a benchmark evaluating the ability of AI agents to\nreplicate state-of-the-art AI research. Agents must replicate 20 ICML 2024\nSpotlight and Oral papers from scratch, including understanding paper\ncontributions, developing a codebase, and successfully executing experiments.\nFor objective evaluation, we develop rubrics that hierarchically decompose each\nreplication task into smaller sub-tasks with clear grading criteria. In total,\nPaperBench contains 8,316 individually gradable tasks. Rubrics are co-developed\nwith the author(s) of each ICML paper for accuracy and realism. To enable\nscalable evaluation, we also develop an LLM-based judge to automatically grade\nreplication attempts against rubrics, and assess our judge's performance by\ncreating a separate benchmark for judges. We evaluate several frontier models\non PaperBench, finding that the best-performing tested agent, Claude 3.5 Sonnet\n(New) with open-source scaffolding, achieves an average replication score of\n21.0\\%. Finally, we recruit top ML PhDs to attempt a subset of PaperBench,\nfinding that models do not yet outperform the human baseline. We\nhttps://github.com/openai/preparedness{open-source our code} to\nfacilitate future research in understanding the AI engineering capabilities of\nAI agents.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.01848.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6570
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.00824",
+      "authors": [
+        {
+          "_id": "67ede79d21d7e74ee3e2832a",
+          "name": "Yubo Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e2832b",
+          "name": "Xueguang Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e2832c",
+          "name": "Ping Nie",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e2832d",
+          "name": "Huaye Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e2832e",
+          "name": "Zhiheng Lyu",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e2832f",
+          "name": "Yuxuan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e28330",
+          "name": "Benjamin Schneider",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e28331",
+          "name": "Yi Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e28332",
+          "name": "Xiang Yue",
+          "hidden": false
+        },
+        {
+          "_id": "67ede79d21d7e74ee3e28333",
+          "name": "Wenhu Chen",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6313a86154e6e5d9f0f94e04/uqsPar9J0O8bRmITeMkzM.png"
+      ],
+      "publishedAt": "2025-04-01T14:12:14.000Z",
+      "submittedOnDailyAt": "2025-04-03T00:13:20.491Z",
+      "title": "學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과 정확한 인용\n\n學術書籍의 작성을 더욱 발전시키기 위한 대규모 언어 모델의 훈련과",
+      "submittedOnDailyBy": {
+        "_id": "6313a86154e6e5d9f0f94e04",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1662232951344-6313a86154e6e5d9f0f94e04.jpeg",
+        "isPro": false,
+        "fullname": "Wenhu Chen",
+        "user": "wenhu",
+        "type": "user"
+      },
+      "summary": "학문적 문서 작성에 있어서, 꼼꼼한 텍스트 생성과 적절한 문헌 인용이 필요합니다. 과거의 Retrieval-Augmented Generation (RAG) 시스템은 일반적인 텍스트 생성의 사실적인 정확도를 크게 향상시켰지만, 그 효과는 학문적 전문적인 문서 작성에 적절하게 활용될 수 있는 한계가 있습니다. 본 연구에서는 ScholarCopilot라는 새로운 프레임워크를 소개합니다. 이 프레임워크는 기존의 큰 언어 모델을 강화하여, 정확한, 맥락에 맞는 인용을 포함하는 전문적인 학술 논문을 생성하는 것을 목표로 합니다. ScholarCopilot은生成된 텍스트 중 [RET] 토큰을 생성하여, 해당 표현을 사용하여 적절한 인용을 검색합니다. 검색된 인용은 모델에 입력되어, 생성 프로세스를 향상시킵니다. 생성 태스크와 인용 태스크를 하나의 프레임워크로 함께 최적화하고 효율을 높입니다. arXiv에서 500K 논문을 학습한 모델은 평가 데이터 세트에서 1위 검색 정확도는 40.1%입니다. E5-Mistral-7B-Instruct (15.0%)와 BM25 (9.8%)보다 뛰어납니다. 1,000개의 학문적 문서 샘플 데이터 세트에서, ScholarCopilot은 생성 품질 평가(관련성, 꼼꼼성, 학문적 엄밀성, 완전성, 혁신성)에서 16.2/25입니다. 10배 이상의 파라미터를 가진 모델보다 뛰어납니다. Qwen-2.5-72B-Instruct (15.8/25). 인간 평가에서도, 인용의 재현성, 문서의 효율성, 전체적인 사용자 경험에서 ScholarCopilot의 우수한 성능을 확인하고, 우리의 접근 방식의 효과도 확인했습니다.",
+      "upvotes": 15,
+      "discussionId": "67ede79e21d7e74ee3e2838c",
+      "githubRepo": "https://github.com/TIGER-AI-Lab/ScholarCopilot",
+      "ai_keywords": [
+        "Retrieval-Augmented Generation (RAG)",
+        "ScholarCopilot",
+        "large language models",
+        "retrieval token [RET]",
+        "scholarly references",
+        "top-1 retrieval accuracy",
+        "arXiv",
+        "generation quality",
+        "relevance",
+        "coherence",
+        "academic rigor",
+        "completeness",
+        "innovation",
+        "citation recall",
+        "writing efficiency",
+        "user experience"
+      ]
+    },
+    "publishedAt": "2025-04-01T10:12:14.000Z",
+    "title": "ScholarCopilot: Training Large Language Models for Academic Writing with\n  Accurate Citations",
+    "summary": "Academic writing requires both coherent text generation and precise citation\nof relevant literature. Although recent Retrieval-Augmented Generation (RAG)\nsystems have significantly improved factual accuracy in general-purpose text\ngeneration, their capacity to adequately support professional academic writing\nremains limited. In this work, we introduce ScholarCopilot, a unified framework\ndesigned to enhance existing large language models for generating professional\nacademic articles with accurate and contextually relevant citations.\nScholarCopilot dynamically determines when to retrieve scholarly references by\ngenerating a retrieval token [RET], and then utilizes its representation to\nlook up relevant citations from a database. The retrieved references are fed\ninto the model to augment the generation process. We jointly optimize both the\ngeneration and citation tasks within a single framework to increase efficiency.\nTrained on 500K papers from arXiv, our model achieves a top-1 retrieval\naccuracy of 40.1% on our evaluation dataset, outperforming baselines such as\nE5-Mistral-7B-Instruct (15.0%) and BM25 (9.8%). On a dataset of 1,000 academic\nwriting samples, ScholarCopilot scores 16.2/25 in generation quality (measured\nacross relevance, coherence, academic rigor, completeness, and innovation),\nsurpassing models with 10x more parameters such as Qwen-2.5-72B-Instruct\n(15.8/25). Human studies also confirm ScholarCopilot's superior performance in\ncitation recall, writing efficiency, and overall user experience, confirming\nthe effectiveness of our approach.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6313a86154e6e5d9f0f94e04/uqsPar9J0O8bRmITeMkzM.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.00824.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6313a86154e6e5d9f0f94e04",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1662232951344-6313a86154e6e5d9f0f94e04.jpeg",
+      "fullname": "Wenhu Chen",
+      "name": "wenhu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 36
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.01934",
+      "authors": [
+        {
+          "_id": "67edfe07f5d1509d1a990178",
+          "name": "Runhui Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a990179",
+          "name": "Chunwei Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a99017a",
+          "name": "Junwei Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a99017b",
+          "name": "Guansong Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a99017c",
+          "name": "Yunlong Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a99017d",
+          "name": "Jianhua Han",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a99017e",
+          "name": "Lu Hou",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a99017f",
+          "name": "Wei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a990180",
+          "name": "Lanqing Hong",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a990181",
+          "name": "Hengshuang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67edfe07f5d1509d1a990182",
+          "name": "Hang Xu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-02T17:45:00.000Z",
+      "submittedOnDailyAt": "2025-04-03T01:58:02.658Z",
+      "title": "ILLUME+: 이중 시각 토크나이션과 분기 리파이닝을 가진 통합 MLLM을 조명합니다.",
+      "submittedOnDailyBy": {
+        "_id": "630f0542cc8ed75decb03b68",
+        "avatarUrl": "/avatars/f76c3603b2700591f33a8a931f7ca664.svg",
+        "isPro": false,
+        "fullname": "huangrh9",
+        "user": "huangrh9",
+        "type": "user"
+      },
+      "summary": "ILLUME+는 이중 시각 토큰라이너와 분산 디코더를 사용하여 깊은 세ман틱 이해와 고품질 이미지 생성을 동시에 개선합니다. 현재의 통합 모델은 이해, 생성, 편집의 3가지 기본적인 능력을 동시에 통합 모델로 처리하기 어려웠습니다. Chameleon나 EMU3처럼 모델은 VQGAN을 사용하여 이미지의 분산화를 실현하고 있지만, 깊은 세ман틱 인터랙션의 부족으로 인해 LLaVA보다 시각 이해 태스크에 착안되지 않는 경우가 있습니다. 이를 완화하기 위해 LaViT와 ILLUME는 세ман틱 인코더를 사용하여 토큰라이너를 구현하지만, 이미지 편집에서 테크닉스 보존이 불량하여 문제가 있습니다. 반면에 Janus 시리즈는 입력과 출력의 이미지 표현을 분리하여 간접 결합된 이미지-텍스트의 이해와 생성을 처리할 수 있는 능력이 제한되어 있습니다. 반대로, ILLUME+는 테크닉스 보존과 텍스트 대응된 세ман틱을 유지하면서 다양한 이해와 생성을 가능하게 하는 미분 표현 전략을 도입하고 있습니다. 또한 분산 모델을 이미지 디터마인라이너로 사용하여 생성 품질의 향상과 효율적인 초해상 처리를 실현합니다. ILLUME+는 통합 MLLM 내의 지속적인 입력과 분산의 출력 시나리오를 사용하며, 시각 토큰라이너, MLLM, 분산 디코더의 적응적인 훈련 프로세스를 사용합니다. 이 설계는 다양한 태스크에서 유연하고 효율적인 컨텍스트 관계의 이미지 편집과 생성을 가능하게 합니다. ILLUME+ (3B)는 현재의 통합 모델과 전문 모델 사이에 다양한 이해, 생성, 편집 벤치마크에서 경쟁적인 성능을 나타냅니다. 강력한 성능을 가진 ILLUME+는 미래의 다양한 애플리케이션의 스케일러블 및 기능 광범위한 기초를 제공합니다. 프로젝트 페이지: https://illume-unified-mllm.github.io/",
+      "upvotes": 12,
+      "discussionId": "67edfe09f5d1509d1a990214",
+      "projectPage": "https://illume-unified-mllm.github.io/",
+      "githubRepo": "https://github.com/illume-unified-mllm/ILLUME_plus",
+      "ai_keywords": [
+        "dual visual tokenization",
+        "diffusion decoder",
+        "deep semantic understanding",
+        "high-fidelity image generation",
+        "VQGAN",
+        "LaViT",
+        "semantic encoders",
+        "DualViTok",
+        "texture preservation",
+        "multimodal understanding",
+        "continuous-input, discrete-output scheme",
+        "MLLM",
+        "progressive training procedure",
+        "dynamic resolution",
+        "context-aware image editing"
+      ]
+    },
+    "publishedAt": "2025-04-02T13:45:00.000Z",
+    "title": "ILLUME+: Illuminating Unified MLLM with Dual Visual Tokenization and\n  Diffusion Refinement",
+    "summary": "We present ILLUME+ that leverages dual visual tokenization and a diffusion\ndecoder to improve both deep semantic understanding and high-fidelity image\ngeneration. Existing unified models have struggled to simultaneously handle the\nthree fundamental capabilities in a unified model: understanding, generation,\nand editing. Models like Chameleon and EMU3 utilize VQGAN for image\ndiscretization, due to the lack of deep semantic interaction, they lag behind\nspecialist models like LLaVA in visual understanding tasks. To mitigate this,\nLaViT and ILLUME employ semantic encoders for tokenization, but they struggle\nwith image editing due to poor texture preservation. Meanwhile, Janus series\ndecouples the input and output image representation, limiting their abilities\nto seamlessly handle interleaved image-text understanding and generation. In\ncontrast, ILLUME+ introduces a unified dual visual tokenizer, DualViTok, which\npreserves both fine-grained textures and text-aligned semantics while enabling\na coarse-to-fine image representation strategy for multimodal understanding and\ngeneration. Additionally, we employ a diffusion model as the image detokenizer\nfor enhanced generation quality and efficient super-resolution. ILLUME+ follows\na continuous-input, discrete-output scheme within the unified MLLM and adopts a\nprogressive training procedure that supports dynamic resolution across the\nvision tokenizer, MLLM, and diffusion decoder. This design allows for flexible\nand efficient context-aware image editing and generation across diverse tasks.\nILLUME+ (3B) exhibits competitive performance against existing unified MLLMs\nand specialized models across multimodal understanding, generation, and editing\nbenchmarks. With its strong performance, ILLUME+ provides a scalable and\nversatile foundation for future multimodal applications. Project Page:\nhttps://illume-unified-mllm.github.io/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.01934.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "630f0542cc8ed75decb03b68",
+      "avatarUrl": "/avatars/f76c3603b2700591f33a8a931f7ca664.svg",
+      "fullname": "huangrh9",
+      "name": "huangrh9",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.01204",
+      "authors": [
+        {
+          "_id": "67edf4bf5e87fcaa485a0ad9",
+          "name": "Xuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67edf4bf5e87fcaa485a0ada",
+          "name": "Qianli Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67edf4bf5e87fcaa485a0adb",
+          "name": "Tsung-Yi Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67edf4bf5e87fcaa485a0adc",
+          "name": "Yongxin Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67edf4bf5e87fcaa485a0add",
+          "name": "Chenfanfu Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67edf4bf5e87fcaa485a0ade",
+          "name": "Ming-Yu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67edf4bf5e87fcaa485a0adf",
+          "name": "Donglai Xiang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-01T21:37:57.000Z",
+      "submittedOnDailyAt": "2025-04-03T01:09:40.312Z",
+      "title": "アーチュレート・キネマティクス・ディスティルデーション에서 부터 비디오・ディフュージョン・モデル로",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "Articulated Kinematics Distillation (AKD)를 소개합니다. AKD는 스켈eton 기반의 애니메이션과 현대의 생성 모델의 강점을 통합하여 고품질의 캐릭터 애니메이션을 생성하는 프레임워크입니다. AKD는 고정된 3D 자산에 대해 스켈eton 기반의 표현을 사용하며, 관절 수준의 제어를 중점으로 Degrees of Freedom (DoFs)를 크게 줄여 효율적인, 일관된 동작 합성을 가능하게 합니다. Score Distillation Sampling (SDS)와 사전 학습된 비디오DIFFUSION 모델을 사용하여, AKD는 복잡한, 아키텍처화된 동작을 구조적 특성을 유지하면서 구조를 극복합니다. 이 접근 방식은 물리 기반의 시뮬레이션과 자연적으로 호환하며, 물리적으로 가능한 상호작용을 확인할 수 있습니다. 실험은 AKD는 현재의 텍스트로부터 4D의 생성에 있어서 기존의 작업과 비교하여, 높은 3D 일치성과 동작 질량을 달성합니다. 프로젝트 페이지는 https://research.nvidia.com/labs/dir/akd/에 있습니다.",
+      "upvotes": 11,
+      "discussionId": "67edf4c65e87fcaa485a0cb7",
+      "ai_keywords": [
+        "skeleton-based representation",
+        "Degrees of Freedom (DoFs)",
+        "joint-level control",
+        "Score Distillation Sampling (SDS)",
+        "video diffusion models",
+        "articulated motions",
+        "structural integrity",
+        "physics-based simulation",
+        "text-to-4D generation"
+      ]
+    },
+    "publishedAt": "2025-04-01T17:37:57.000Z",
+    "title": "Articulated Kinematics Distillation from Video Diffusion Models",
+    "summary": "We present Articulated Kinematics Distillation (AKD), a framework for\ngenerating high-fidelity character animations by merging the strengths of\nskeleton-based animation and modern generative models. AKD uses a\nskeleton-based representation for rigged 3D assets, drastically reducing the\nDegrees of Freedom (DoFs) by focusing on joint-level control, which allows for\nefficient, consistent motion synthesis. Through Score Distillation Sampling\n(SDS) with pre-trained video diffusion models, AKD distills complex,\narticulated motions while maintaining structural integrity, overcoming\nchallenges faced by 4D neural deformation fields in preserving shape\nconsistency. This approach is naturally compatible with physics-based\nsimulation, ensuring physically plausible interactions. Experiments show that\nAKD achieves superior 3D consistency and motion quality compared with existing\nworks on text-to-4D generation. Project page:\nhttps://research.nvidia.com/labs/dir/akd/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.01204.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6570
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.01308",
+      "authors": [
+        {
+          "_id": "67ede544ed9c94861b82b29f",
+          "user": {
+            "_id": "64060b49a577649430bf6974",
+            "avatarUrl": "/avatars/74d0d6ed656b593e4c101b09edf18c7a.svg",
+            "isPro": false,
+            "fullname": "Jiawei Wang",
+            "user": "Jarvis1111",
+            "type": "user"
+          },
+          "name": "Jiawei Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T07:52:27.815Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ede544ed9c94861b82b2a0",
+          "name": "Yushen Zuo",
+          "hidden": false
+        },
+        {
+          "_id": "67ede544ed9c94861b82b2a1",
+          "user": {
+            "_id": "64756323d815855e4ef945a0",
+            "avatarUrl": "/avatars/29f5150805dafce2b3f9da441c8be988.svg",
+            "isPro": false,
+            "fullname": "Chai",
+            "user": "AllenChai",
+            "type": "user"
+          },
+          "name": "Yuanjun Chai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T07:52:23.962Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ede544ed9c94861b82b2a2",
+          "name": "Zhendong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67ede544ed9c94861b82b2a3",
+          "user": {
+            "_id": "6528ce81598467feb33d992d",
+            "avatarUrl": "/avatars/e98a7bf16e6fd5118e861d562f93bb9b.svg",
+            "isPro": false,
+            "fullname": "Yicheng Fu",
+            "user": "sofyc",
+            "type": "user"
+          },
+          "name": "Yichen Fu",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-03T01:32:57.886Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ede544ed9c94861b82b2a4",
+          "name": "Yichun Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67ede544ed9c94861b82b2a5",
+          "name": "Kin-man Lam",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-02T02:35:19.000Z",
+      "submittedOnDailyAt": "2025-04-03T00:10:56.307Z",
+      "title": "グイオーシャンノイズ에 대한 파바란스버드 공격의 취약성을 기반으로 한 비전・런그하우스 모델의 보안 보호",
+      "submittedOnDailyBy": {
+        "_id": "64060b49a577649430bf6974",
+        "avatarUrl": "/avatars/74d0d6ed656b593e4c101b09edf18c7a.svg",
+        "isPro": false,
+        "fullname": "Jiawei Wang",
+        "user": "Jarvis1111",
+        "type": "user"
+      },
+      "summary": "ビジョン・ラングワードモデル(VLMs)는 비전 정보를 통합하여 대규모 언어 모델(LLMs)의 기능을 확장하지만, 노이즈나 손상된 이미지를 처리할 때 젓가락 브레이크 공격에 취약합니다. 현재의 VLMs은 이러한 공격을 피하기 위해 훈련 시 안전책을 취하고 있지만, 노이즈가 포함된 비전 입력에 대한 취약성은 감각하지 않았습니다. 본 논문에서는 노이즈가 포함된 훈련의 결함이 중요한 안전 간섭을 원인으로 하는 것을 밝혀줍니다: 많은 VLMs은 가우시안 노이즈 등 간단한 변형에 취약합니다. 이러한 도전에 대한 해법으로 Robust-VLGuard를 제안합니다. 이는 대응되지 않은 이미지와 텍스트 페어로 구성된 다양성 있는 안전 데이터 세트를 포함하여 노이즈가 포함된 미세 조정을 수행하여 공격 성공률을 줄이면서 VLMs의 기능을 유지하는 것입니다. 더 강력한 최적화 기반의 시각화 변형 공격에 대해 DiffPure-VLM을 제안합니다. 이는 확산 모델을 사용하여 적의 변형을 가우시안 노이즈와 같은 노이즈로 변환하여 노이즈가 포함된 안전 최종 훈련으로 방어할 수 있습니다. 실험 결과를 통해 확산 모델의 분포 이동성은 미세 조정된 VLMs과 매우 일치하며, 변형의 강도에 따라 변화하는 적대적인 변형을 크게 완화할 수 있습니다. 데이터 세트와 코드는 https://github.com/JarvisUSTC/DiffPure-RobustVLM에서 사용 가능합니다.",
+      "upvotes": 10,
+      "discussionId": "67ede549ed9c94861b82b433",
+      "githubRepo": "https://github.com/JarvisUSTC/DiffPure-RobustVLM",
+      "ai_keywords": [
+        "Vision-Language Models (VLMs)",
+        "Large Language Models (LLMs)",
+        "noise-augmented training",
+        "Gaussian noise",
+        "Robust-VLGuard",
+        "multimodal safety dataset",
+        "aligned / misaligned image-text pairs",
+        "noise-augmented fine-tuning",
+        "diffusion models",
+        "DiffPure-VLM",
+        "diffusion model",
+        "distribution-shifting property",
+        "adversarial perturbations"
+      ]
+    },
+    "publishedAt": "2025-04-01T22:35:19.000Z",
+    "title": "Safeguarding Vision-Language Models: Mitigating Vulnerabilities to\n  Gaussian Noise in Perturbation-based Attacks",
+    "summary": "Vision-Language Models (VLMs) extend the capabilities of Large Language\nModels (LLMs) by incorporating visual information, yet they remain vulnerable\nto jailbreak attacks, especially when processing noisy or corrupted images.\nAlthough existing VLMs adopt security measures during training to mitigate such\nattacks, vulnerabilities associated with noise-augmented visual inputs are\noverlooked. In this work, we identify that missing noise-augmented training\ncauses critical security gaps: many VLMs are susceptible to even simple\nperturbations such as Gaussian noise. To address this challenge, we propose\nRobust-VLGuard, a multimodal safety dataset with aligned / misaligned\nimage-text pairs, combined with noise-augmented fine-tuning that reduces attack\nsuccess rates while preserving functionality of VLM. For stronger\noptimization-based visual perturbation attacks, we propose DiffPure-VLM,\nleveraging diffusion models to convert adversarial perturbations into\nGaussian-like noise, which can be defended by VLMs with noise-augmented safety\nfine-tuning. Experimental results demonstrate that the distribution-shifting\nproperty of diffusion model aligns well with our fine-tuned VLMs, significantly\nmitigating adversarial perturbations across varying intensities. The dataset\nand code are available at https://github.com/JarvisUSTC/DiffPure-RobustVLM.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.01308.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64060b49a577649430bf6974",
+      "avatarUrl": "/avatars/74d0d6ed656b593e4c101b09edf18c7a.svg",
+      "fullname": "Jiawei Wang",
+      "name": "Jarvis1111",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2405.20216",
+      "authors": [
+        {
+          "_id": "666e9b96bc840e67481f20f3",
+          "user": {
+            "_id": "6662b3ee280fb71780b85ef8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/wDr9CDlL40_gp-NBRm7gB.png",
+            "isPro": false,
+            "fullname": "Sanghyeon Na",
+            "user": "sanghyeonna",
+            "type": "user"
+          },
+          "name": "Sanghyeon Na",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2024-07-02T11:59:46.873Z",
+          "hidden": false
+        },
+        {
+          "_id": "666e9b96bc840e67481f20f4",
+          "name": "Yonggyu Kim",
+          "hidden": false
+        },
+        {
+          "_id": "666e9b96bc840e67481f20f5",
+          "name": "Hyunjoon Lee",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2024-05-30T16:18:05.000Z",
+      "submittedOnDailyAt": "2025-04-03T06:19:33.352Z",
+      "title": "Boost Your Own Human Image Generation Model via Direct Preference Optimization with AI Feedback",
+      "submittedOnDailyBy": {
+        "_id": "63a369d98c0c89dcae3b8329",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a369d98c0c89dcae3b8329/6OUJ7Hc9T1jXynYH3FGaf.png",
+        "isPro": false,
+        "fullname": "Adina Yakefu",
+        "user": "AdinaY",
+        "type": "user"
+      },
+      "summary": "高品質의 인간 이미지 생성을 텍스트에서 이미지로 변환하는 방법(T2I)은 중요하지만, 어려운 과제입니다. 일반적인 이미지 생성과 달리, 인간 이미지의 합성은 인간의 자세, 解剖학, 텍스트의 일치에 대한 엄격한 기준을 충족해야 하며, 현실적인 결과를 달성하는 것이 특히 어려워집니다. 최근, 확산 모델 기반의 T2I 생성의 발전은 기대가 되고 있지만, 인간 고유의 취향에 맞게 만드는 것이 여전히 어려운 문제입니다. 본 논문에서는, Direct Preference Optimization(DPO)를 인간 이미지 생성에 적합한 새로운 접근법으로 소개합니다. 구체적으로, DPO 데이터 세트의 효율적인 구성 방법을 제안하고, 고가의 인간 피드백을 필요로 하지 않도록 합니다. 또한, DPO의 훈련 과정의 효율성을 위해, 피드백의 최소화와 이미지의 정확도를 향상시키기 위한 개선된 손실 함수를 제안합니다. 우리 방법은, 인간 이미지의 생성에 대해, 개인화된 텍스트로부터 이미지 생성에 대한 실용성과 효율성을 보여주며, 세부적인 평가에 따르면, 우리의 접근법이 인간 이미지 생성의 상태를 크게 발전시켰고, 자연스러운解剖학, 자세, 텍스트 이미지의 일치에 있어 최상위의 결과를 달성하는 것을 입증합니다.",
+      "upvotes": 8,
+      "discussionId": "666e9b9cbc840e67481f2329",
+      "ai_keywords": [
+        "diffusion models",
+        "Direct Preference Optimization (DPO)",
+        "DPO dataset",
+        "specialized DPO dataset",
+        "modified loss function",
+        "artifacts",
+        "image fidelity",
+        "personalized text-to-image generation",
+        "natural anatomies",
+        "poses",
+        "text-image alignment"
+      ]
+    },
+    "publishedAt": "2024-05-30T12:18:05.000Z",
+    "title": "Boost Your Own Human Image Generation Model via Direct Preference\n  Optimization with AI Feedback",
+    "summary": "The generation of high-quality human images through text-to-image (T2I)\nmethods is a significant yet challenging task. Distinct from general image\ngeneration, human image synthesis must satisfy stringent criteria related to\nhuman pose, anatomy, and alignment with textual prompts, making it particularly\ndifficult to achieve realistic results. Recent advancements in T2I generation\nbased on diffusion models have shown promise, yet challenges remain in meeting\nhuman-specific preferences. In this paper, we introduce a novel approach\ntailored specifically for human image generation utilizing Direct Preference\nOptimization (DPO). Specifically, we introduce an efficient method for\nconstructing a specialized DPO dataset for training human image generation\nmodels without the need for costly human feedback. We also propose a modified\nloss function that enhances the DPO training process by minimizing artifacts\nand improving image fidelity. Our method demonstrates its versatility and\neffectiveness in generating human images, including personalized text-to-image\ngeneration. Through comprehensive evaluations, we show that our approach\nsignificantly advances the state of human image generation, achieving superior\nresults in terms of natural anatomies, poses, and text-image alignment.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2405.20216.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63a369d98c0c89dcae3b8329",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a369d98c0c89dcae3b8329/6OUJ7Hc9T1jXynYH3FGaf.png",
+      "fullname": "Adina Yakefu",
+      "name": "AdinaY",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 526
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.23135",
+      "authors": [
+        {
+          "_id": "67eb3d2110032c28d1ea109f",
+          "user": {
+            "_id": "628ece6054698ce61d1e7be3",
+            "avatarUrl": "/avatars/c6ab33843fd0d8ef003650c1094214c0.svg",
+            "isPro": false,
+            "fullname": "Ao Wang",
+            "user": "jameslahm",
+            "type": "user"
+          },
+          "name": "Ao Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-02T16:11:10.373Z",
+          "hidden": false
+        },
+        {
+          "_id": "67eb3d2110032c28d1ea10a0",
+          "name": "Hui Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67eb3d2110032c28d1ea10a1",
+          "name": "Zijia Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67eb3d2110032c28d1ea10a2",
+          "name": "Jungong Han",
+          "hidden": false
+        },
+        {
+          "_id": "67eb3d2110032c28d1ea10a3",
+          "name": "Guiguang Ding",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/628ece6054698ce61d1e7be3/5E8ul0VN002EtCsoCp3mt.png"
+      ],
+      "publishedAt": "2025-03-29T16:00:54.000Z",
+      "submittedOnDailyAt": "2025-04-03T00:26:03.944Z",
+      "title": "LSNet: 시 리그하드, 포커스 시보보드",
+      "submittedOnDailyBy": {
+        "_id": "628ece6054698ce61d1e7be3",
+        "avatarUrl": "/avatars/c6ab33843fd0d8ef003650c1094214c0.svg",
+        "isPro": false,
+        "fullname": "Ao Wang",
+        "user": "jameslahm",
+        "type": "user"
+      },
+      "summary": "비지온 네트워크의 설계, 특히 캘미캘미 뉴럴 네트워크와 비지온 트랜스포머는 컴퓨터 비전 분야에서 크게 발전하고 있습니다. 그러나 이러한 복잡한 계산은 실용적인 기능 구현에 문제점을 일으키고, 특히 실시간 애플리케이션에서는 엄격한 도전을 제시하고 있습니다. 이러한 문제를 해결하기 위해 연구자들은 다양한 가벼운 효율적인 네트워크의 설계를 검토하고 있습니다. 그러나 현재의 가벼운 모델은 주로 자기 어텐션 구조와 캘미캘미를 사용하여 토큰의 혼합을 수행합니다. 이 의존관계는 가벼운 네트워크의 인식과 어그레이션 프로세스에 효과와 효율의 한계를 가집니다. 이 논문에서는 효율적인 인간 시각 시스템의 동적 인간 시각 능력을 모델로 삼아, \"넓게 본다, 좁게 집중한다\"라는 전략을 제안하고 있습니다. LS(Large-Small) 캘미캘미를 도입하여, 큰 채널의 인식과 작은 채널의 어그레이션을 조합합니다. 이는 광범위한 인식 정보를 효율적으로捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉捉",
+      "upvotes": 3,
+      "discussionId": "67eb3d2310032c28d1ea1108",
+      "projectPage": "https://github.com/THU-MIG/lsnet",
+      "githubRepo": "https://github.com/THU-MIG/lsnet",
+      "ai_keywords": [
+        "Convolutional Neural Networks",
+        "Vision Transformers",
+        "lightweight and efficient network designs",
+        "self-attention mechanisms",
+        "token mixing",
+        "small-kernel aggregation",
+        "dynamic heteroscale vision ability",
+        "human vision system",
+        "``See Large, Focus Small'' strategy",
+        "LS (\\textbf{L}arge-\\textbf{S}mall) convolution",
+        "large-kernel perception",
+        "precise feature aggregation",
+        "visual representations",
+        "efficient processing of visual information",
+        "LSNet",
+        "superior performance",
+        "efficiency"
+      ]
+    },
+    "publishedAt": "2025-03-29T12:00:54.000Z",
+    "title": "LSNet: See Large, Focus Small",
+    "summary": "Vision network designs, including Convolutional Neural Networks and Vision\nTransformers, have significantly advanced the field of computer vision. Yet,\ntheir complex computations pose challenges for practical deployments,\nparticularly in real-time applications. To tackle this issue, researchers have\nexplored various lightweight and efficient network designs. However, existing\nlightweight models predominantly leverage self-attention mechanisms and\nconvolutions for token mixing. This dependence brings limitations in\neffectiveness and efficiency in the perception and aggregation processes of\nlightweight networks, hindering the balance between performance and efficiency\nunder limited computational budgets. In this paper, we draw inspiration from\nthe dynamic heteroscale vision ability inherent in the efficient human vision\nsystem and propose a ``See Large, Focus Small'' strategy for lightweight vision\nnetwork design. We introduce LS (Large-Small) convolution,\nwhich combines large-kernel perception and small-kernel aggregation. It can\nefficiently capture a wide range of perceptual information and achieve precise\nfeature aggregation for dynamic and complex visual representations, thus\nenabling proficient processing of visual information. Based on LS convolution,\nwe present LSNet, a new family of lightweight models. Extensive experiments\ndemonstrate that LSNet achieves superior performance and efficiency over\nexisting lightweight networks in various vision tasks. Codes and models are\navailable at https://github.com/jameslahm/lsnet.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/628ece6054698ce61d1e7be3/5E8ul0VN002EtCsoCp3mt.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.23135.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "628ece6054698ce61d1e7be3",
+      "avatarUrl": "/avatars/c6ab33843fd0d8ef003650c1094214c0.svg",
+      "fullname": "Ao Wang",
+      "name": "jameslahm",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 26
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.00406",
+      "authors": [
+        {
+          "_id": "67ee3e63e7defc1b8655c8f6",
+          "name": "Jiuzhou Han",
+          "hidden": false
+        },
+        {
+          "_id": "67ee3e63e7defc1b8655c8f7",
+          "name": "Wray Buntine",
+          "hidden": false
+        },
+        {
+          "_id": "67ee3e63e7defc1b8655c8f8",
+          "name": "Ehsan Shareghi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-01T04:05:03.000Z",
+      "submittedOnDailyAt": "2025-04-03T06:26:28.255Z",
+      "title": "VerifiAgent: 언어 모델 계산의 통일된 검증 에이전트",
+      "submittedOnDailyBy": {
+        "_id": "63b0e5a7f2eb87a4d695398a",
+        "avatarUrl": "/avatars/3a03fbb3edbb4aad848cd63c0bce6853.svg",
+        "isPro": false,
+        "fullname": "Jiuzhou Han",
+        "user": "Jiuzhouh",
+        "type": "user"
+      },
+      "summary": "대 언어 모뎀은 놀라운 논리 능력이 있지만, 일반적으로 불신뢰하거나 잘못된 답변을 생성합니다. 현재의 검증 방법은 일반적으로 모뎀专用 또는 영역 제한되어 있으며, 계산 자원의 많은 필요성과 다양한 논리 태스크의 scalability 부족을 포함합니다. 이러한 제한을 해결하기 위해, 우리는 VerifiAgent를 제안합니다. VerifiAgent는 모뎀의 완전성과 일관성을 평가하는 메타 검증과, 논리 유형에 따라 적절하게 검증 도구를 자동 선택하는 도구 기반의 적응 검증의 두 단계를 통합한 일련의 검증 에이전트입니다. 이 적응적인 접근은 다양한 검증 시나리오에서 에프카이지샬과 강건성을 보장합니다. 실험 결과에서, VerifiAgent는 모든 논리 태스크에서 기준 검증 방법(예: 추론 검증, 후진 검증)을 초과합니다. 또한, 검증 결과를 활용하여 논리의 정확도를 더욱 향상시킬 수 있습니다. VerifiAgent는 수학적 논리 분야의 기존 프로세스 보상 모형을 비교하여, 생성된 샘플과 비용이 적지만 더 좋은 결과를 구현할 수 있습니다. 코드는, https://github.com/Jiuzhouh/VerifiAgent에 접근할 수 있습니다.",
+      "upvotes": 1,
+      "discussionId": "67ee3e64e7defc1b8655c93b",
+      "githubRepo": "https://github.com/Jiuzhouh/VerifiAgent",
+      "ai_keywords": [
+        "reasoning capabilities",
+        "verification methods",
+        "unified verification agent",
+        "meta-verification",
+        "completeness",
+        "consistency",
+        "tool-based adaptive verification",
+        "verification tools",
+        "mathematical reasoning",
+        "logical reasoning",
+        "commonsense reasoning",
+        "adaptive approach",
+        "verification scenarios",
+        "baseline verification methods",
+        "deductive verifier",
+        "backward verifier",
+        "reasoning accuracy",
+        "feedback",
+        "inference scaling",
+        "generated samples",
+        "process reward models"
+      ]
+    },
+    "publishedAt": "2025-04-01T00:05:03.000Z",
+    "title": "VerifiAgent: a Unified Verification Agent in Language Model Reasoning",
+    "summary": "Large language models demonstrate remarkable reasoning capabilities but often\nproduce unreliable or incorrect responses. Existing verification methods are\ntypically model-specific or domain-restricted, requiring significant\ncomputational resources and lacking scalability across diverse reasoning tasks.\nTo address these limitations, we propose VerifiAgent, a unified verification\nagent that integrates two levels of verification: meta-verification, which\nassesses completeness and consistency in model responses, and tool-based\nadaptive verification, where VerifiAgent autonomously selects appropriate\nverification tools based on the reasoning type, including mathematical,\nlogical, or commonsense reasoning. This adaptive approach ensures both\nefficiency and robustness across different verification scenarios. Experimental\nresults show that VerifiAgent outperforms baseline verification methods (e.g.,\ndeductive verifier, backward verifier) among all reasoning tasks. Additionally,\nit can further enhance reasoning accuracy by leveraging feedback from\nverification results. VerifiAgent can also be effectively applied to inference\nscaling, achieving better results with fewer generated samples and costs\ncompared to existing process reward models in the mathematical reasoning\ndomain. Code is available at https://github.com/Jiuzhouh/VerifiAgent",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.00406.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63b0e5a7f2eb87a4d695398a",
+      "avatarUrl": "/avatars/3a03fbb3edbb4aad848cd63c0bce6853.svg",
+      "fullname": "Jiuzhou Han",
+      "name": "Jiuzhouh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.18817",
+      "authors": [
+        {
+          "_id": "67ede492bdd88c72dc99fbd7",
+          "user": {
+            "_id": "654b4c9cfabd2cc66874806c",
+            "avatarUrl": "/avatars/c48b423d3657ee27eed0d3d83738ec2e.svg",
+            "isPro": false,
+            "fullname": "jeonghyeon kim",
+            "user": "mawjdgus",
+            "type": "user"
+          },
+          "name": "Jeonghyeon Kim",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-03T07:52:31.201Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ede492bdd88c72dc99fbd8",
+          "name": "Sangheum Hwang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-24T16:00:21.000Z",
+      "submittedOnDailyAt": "2025-04-03T06:37:34.505Z",
+      "title": "다모달 표현의 크로스모달 어라인 매칭에 의한 확장 엑시드 디텍션",
+      "submittedOnDailyBy": {
+        "_id": "654b4c9cfabd2cc66874806c",
+        "avatarUrl": "/avatars/c48b423d3657ee27eed0d3d83738ec2e.svg",
+        "isPro": false,
+        "fullname": "jeonghyeon kim",
+        "user": "mawjdgus",
+        "type": "user"
+      },
+      "summary": "지난주 연구에서는 분포외 검출(OoDD)에 대해 주로 단일모달리티 모델을 중심으로 다루었습니다. 최근 CLIP와 같은 대형 이미지-라벨 모델의 등장에 따라, 0shot과 Prompt 학습의 스테레오제기법을 사용하여 모빌드 표현을 활용한 OoDD 방법들이 등장했습니다. 그러나 이러한 방법들은 일반적으로 학습된 가중치를 고정하거나 일부만 조정하여 수행되며, 이는 다운스트림 데이터셋에 대해 최적이 아닙니다. 본 논문에서는 모빌드 조정(MMFT)이 유의미한 OoDD 성능을 구현할 수 있음을 주장합니다. 최근 연구에서는 OoDD에 대한 조정 방법의 영향을 보여주지만, 성능 향상의 큰 가능성은 남아 있습니다. 기존 fine-tuning 방법의 한계를 조사하고 이를 위해 조정 방법들이 학습된 지식을 완전히 활용할 수 없는 이유를 밝혀줍니다. 실험적 분석에 따라 이 문제는 분포내(ID) 임베딩 모델 간의 오류로 인한 것이라는 것을 시사합니다. 이를 해결하기 위해, ID 데이터의 이미지와 텍스트 임베딩 사이의 거리를 정규화하여, 크로스 모드 어레이를 강화하는 훈련 목표를 제안합니다. 이 조정은 서로 다른 모드(텍스트와 이미지)로부터 유사한 의미로 더 가까운 방향으로 초구면 표현 공간에서 어레이하며, 프리트레이드 텍스트 정보를 더 잘 활용하도록 촉진합니다. 제안된 정규화는 초구면상의 에너지 기반 모델의 최대尤도 추정에 대응하는 것을 이론적으로 증명합니다. ImageNet-1k OoD 벤치마크 데이터셋을 사용하여, 본 방법에서는 프리트레이드 지식을 활용한 후처리 OoDD 방법(예: NegLabel)을 조합하여, 현재의 방법보다 크게 초월하고, 최신의 OoDD 성능과 높은 ID 정확도를 구현합니다.",
+      "upvotes": 1,
+      "discussionId": "67ede493bdd88c72dc99fc2d",
+      "githubRepo": "https://github.com/ma-kjh/CMA-OoDD",
+      "ai_keywords": [
+        "out-of-distribution detection (OoDD)",
+        "single-modality models",
+        "large-scale pretrained vision-language models",
+        "CLIP",
+        "zero-shot learning",
+        "prompt learning",
+        "multi-modal fine-tuning (MMFT)",
+        "downstream datasets",
+        "fine-tuning methods",
+        "modality gap",
+        "in-distribution (ID) embeddings",
+        "cross-modal alignment",
+        "regularization",
+        "image and text embeddings",
+        "hyperspherical representation space",
+        "energy-based model",
+        "NegLabel",
+        "post-hoc OoDD approaches",
+        "ImageNet-1k",
+        "state-of-the-art OoDD performance",
+        "ID accuracy"
+      ]
+    },
+    "publishedAt": "2025-03-24T12:00:21.000Z",
+    "title": "Enhanced OoD Detection through Cross-Modal Alignment of Multi-Modal\n  Representations",
+    "summary": "Prior research on out-of-distribution detection (OoDD) has primarily focused\non single-modality models. Recently, with the advent of large-scale pretrained\nvision-language models such as CLIP, OoDD methods utilizing such multi-modal\nrepresentations through zero-shot and prompt learning strategies have emerged.\nHowever, these methods typically involve either freezing the pretrained weights\nor only partially tuning them, which can be suboptimal for downstream datasets.\nIn this paper, we highlight that multi-modal fine-tuning (MMFT) can achieve\nnotable OoDD performance. Despite some recent works demonstrating the impact of\nfine-tuning methods for OoDD, there remains significant potential for\nperformance improvement. We investigate the limitation of na\\\"ive fine-tuning\nmethods, examining why they fail to fully leverage the pretrained knowledge.\nOur empirical analysis suggests that this issue could stem from the modality\ngap within in-distribution (ID) embeddings. To address this, we propose a\ntraining objective that enhances cross-modal alignment by regularizing the\ndistances between image and text embeddings of ID data. This adjustment helps\nin better utilizing pretrained textual information by aligning similar\nsemantics from different modalities (i.e., text and image) more closely in the\nhyperspherical representation space. We theoretically demonstrate that the\nproposed regularization corresponds to the maximum likelihood estimation of an\nenergy-based model on a hypersphere. Utilizing ImageNet-1k OoD benchmark\ndatasets, we show that our method, combined with post-hoc OoDD approaches\nleveraging pretrained knowledge (e.g., NegLabel), significantly outperforms\nexisting methods, achieving state-of-the-art OoDD performance and leading ID\naccuracy.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.18817.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "654b4c9cfabd2cc66874806c",
+      "avatarUrl": "/avatars/c48b423d3657ee27eed0d3d83738ec2e.svg",
+      "fullname": "jeonghyeon kim",
+      "name": "mawjdgus",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
