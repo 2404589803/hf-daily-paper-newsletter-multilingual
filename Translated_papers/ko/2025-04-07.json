@@ -1,0 +1,1213 @@
+[
+  {
+    "paper": {
+      "id": "2504.02605",
+      "authors": [
+        {
+          "_id": "67ef4d92c1e251f239495a13",
+          "name": "Daoguang Zan",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a14",
+          "name": "Zhirong Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a15",
+          "name": "Wei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a16",
+          "name": "Hanwu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a17",
+          "name": "Linhao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a18",
+          "name": "Shulin Xin",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a19",
+          "name": "Lu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a1a",
+          "name": "Qi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a1b",
+          "name": "Xiaojian Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a1c",
+          "name": "Aoyan Li",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a1d",
+          "name": "Siyao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a1e",
+          "name": "Yongsheng Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a1f",
+          "name": "Liangqiang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a20",
+          "name": "Yuyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a21",
+          "name": "Jing Su",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a22",
+          "name": "Tianyu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a23",
+          "name": "Rui Long",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a24",
+          "name": "Kai Shen",
+          "hidden": false
+        },
+        {
+          "_id": "67ef4d92c1e251f239495a25",
+          "name": "Liang Xiang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/61527edf8b55dbdae72874fa/PS_Q49kWYAB6DdJy5YY9k.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/61527edf8b55dbdae72874fa/GhnnOocFnA-YN2oyeNjPB.png"
+      ],
+      "publishedAt": "2025-04-03T14:06:17.000Z",
+      "submittedOnDailyAt": "2025-04-07T02:30:50.286Z",
+      "title": "Multi-SWE-bench: 문제 해결을 위한 다언어 벤치마크",
+      "submittedOnDailyBy": {
+        "_id": "61527edf8b55dbdae72874fa",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61527edf8b55dbdae72874fa/ZGWSBf_KSrDof6WyMoDMU.jpeg",
+        "isPro": false,
+        "fullname": "Daoguang Zan",
+        "user": "Daoguang",
+        "type": "user"
+      },
+      "summary": "문제 해결의 임무는 코드 기반을 변경하여 주어진 문제를 해결하는 폼을 생성하는 것입니다. 그러나 현재의 벤치마크의 예인 SWE-bench는 Python을 중심으로 초점을 맞추어 있으며, 이는 다양한 소프트웨어 생태계의 대규모 언어 모델(LLMs)의 평가에 충분하지 않습니다. 이에 대응하여, 우리는 Java, TypeScript, JavaScript, Go, Rust, C, C++를 포함하는 다언어 문제 해결 벤치마크인 Multi-SWE-bench를 소개합니다. 이 벤치마크는 68명의 전문가의 앨로테이터가 2,456명의 후보 중에서 1,632개의 고품질의 인스턴스를 생성하여 정확한 신뢰성을 보장하는 평가 제공을 보장하고 있습니다. Multi-SWE-bench에 기반하여, 우리는 Agentless, SWE-agent, OpenHands의 3가지 대표적인 방법을 사용하여 최신 모델을 평가하고 세부적인 분석 및 핵심적인 실증적인 인젝트를 제공합니다. 또한, 우리는 문제 해결 태스크를 위한 대규모 강화 학습(RL)의 훈련 데이터 세트를 구축하기 위해 Multi-SWE-RL 오픈소스 커뮤니티를 시작합니다. 초기의 기여로, 우리는 4,723개의 좋은 구조의 인스턴스를 7개의 프로그래밍 언어로 확장하여 이 분야의 RL 연구에 강력한 기초를 구축하고 있습니다. 더욱 중요한 점은, 우리는 데이터의 생산 파이프라인 및 상세한 튜토리얼을 오픈소스로 공개하여 오픈소스 커뮤니티가 지속적인 기여를 통해 데이터 세트를 확장하도록 촉구하고 있습니다. 우리는 Multi-SWE-bench와 그 확장된 Multi-SWE-RL 커뮤니티를 RL의 전능성으로 향한 진보를 촉진하는 카사이드로, 인공지능의黎明을 다가가는 것을 상상하고 있습니다.",
+      "upvotes": 28,
+      "discussionId": "67ef4d93c1e251f239495a9b",
+      "projectPage": "https://multi-swe-bench.github.io",
+      "githubRepo": "https://github.com/multi-swe-bench/multi-swe-bench",
+      "ai_keywords": [
+        "Large Language Models (LLMs)",
+        "Multi-SWE-bench",
+        "Agentless",
+        "SWE-agent",
+        "OpenHands",
+        "Multi-SWE-RL",
+        "reinforcement learning (RL)",
+        "AGI"
+      ]
+    },
+    "publishedAt": "2025-04-03T10:06:17.000Z",
+    "title": "Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving",
+    "summary": "The task of issue resolving is to modify a codebase to generate a patch that\naddresses a given issue. However, existing benchmarks, such as SWE-bench, focus\nalmost exclusively on Python, making them insufficient for evaluating Large\nLanguage Models (LLMs) across diverse software ecosystems. To address this, we\nintroduce a multilingual issue-resolving benchmark, called Multi-SWE-bench,\ncovering Java, TypeScript, JavaScript, Go, Rust, C, and C++. It includes a\ntotal of 1,632 high-quality instances, which were carefully annotated from\n2,456 candidates by 68 expert annotators, ensuring that the benchmark can\nprovide an accurate and reliable evaluation. Based on Multi-SWE-bench, we\nevaluate a series of state-of-the-art models using three representative methods\n(Agentless, SWE-agent, and OpenHands) and present a comprehensive analysis with\nkey empirical insights. In addition, we launch a Multi-SWE-RL open-source\ncommunity, aimed at building large-scale reinforcement learning (RL) training\ndatasets for issue-resolving tasks. As an initial contribution, we release a\nset of 4,723 well-structured instances spanning seven programming languages,\nlaying a solid foundation for RL research in this domain. More importantly, we\nopen-source our entire data production pipeline, along with detailed tutorials,\nencouraging the open-source community to continuously contribute and expand the\ndataset. We envision our Multi-SWE-bench and the ever-growing Multi-SWE-RL\ncommunity as catalysts for advancing RL toward its full potential, bringing us\none step closer to the dawn of AGI.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/61527edf8b55dbdae72874fa/PS_Q49kWYAB6DdJy5YY9k.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/61527edf8b55dbdae72874fa/GhnnOocFnA-YN2oyeNjPB.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.02605.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "61527edf8b55dbdae72874fa",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61527edf8b55dbdae72874fa/ZGWSBf_KSrDof6WyMoDMU.jpeg",
+      "fullname": "Daoguang Zan",
+      "name": "Daoguang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.03553",
+      "authors": [
+        {
+          "_id": "67f345c983edbd64f15deeb3",
+          "name": "Shuofei Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deeb4",
+          "name": "Zhisong Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deeb5",
+          "name": "Baochang Ren",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deeb6",
+          "name": "Xiaobin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deeb7",
+          "name": "Xiangyuan Ru",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deeb8",
+          "name": "Ningyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deeb9",
+          "name": "Xiang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deeba",
+          "name": "Yong Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deebb",
+          "name": "Pengjun Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deebc",
+          "name": "Fei Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67f345c983edbd64f15deebd",
+          "name": "Huajun Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-04T16:03:38.000Z",
+      "submittedOnDailyAt": "2025-04-07T02:45:21.106Z",
+      "title": "AGENTIC KNOWLEDGEABLE SELF-AWARENESS",
+      "submittedOnDailyBy": {
+        "_id": "620b3bbb0668e435407c8d0a",
+        "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+        "isPro": false,
+        "fullname": "Ningyu Zhang",
+        "user": "Ningyu",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLMs)은 많은 에이전트 계획 태스크에서 상당한 성능을 달성하고 있습니다. 그러나 전통적인 에이전트 계획 접근법은 \"물밭의 수배\" 기계로, 금의 타로, 외부의 피드백, 드라이브나스 캠퍼스 지식이 무선택적으로 에이전트 모델에 주입되어 있습니다. 이 실천은 결정 시의 시티가리닝 자기 인식의 기본적인 인간 인지 원칙을 뛰어넘고 있습니다. 이는 결정 시 상황에 대한 요구를 동적으로 평가하고 전략적으로 리소스를 사용하는 능력을 평가하고 있습니다. 우리는 이러한 공간을 채우기 위해 에이전트 지식적인 자기 인식을 제안합니다. 이것은 LLM 기반의 에이전트가 자동적으로 지식의 사용를 조정하기 위한 새로운 패러다임입니다. 구체적으로는, 우리는 KnowSelf라는 데이터 중심의 접근법을 제안합니다. 이는 인간처럼 지식적인 자기 인식을 가진 에이전트를 실현하는 것을 목표로 합니다. 실제로는, 우리는 에이전트의 자기 탐색 타로ック 위에 특수 토큰을 마크하기 위해 휴리스틱한 상태 판단 기준을 설계합니다. 2단계의 학습 프로세스를 통해, 에이전트 모델은 특정한 특수 토큰을 생성하여 다양한 상태를 변경하고 최소한의 비용으로 최적의 계획 효과를 달성할 수 있습니다. 우리의 실험은 KnowSelf는 외부의 지식을 최소한으로 사용하며, 다양한 태스크와 모델에서 다양한 강력한 기준을 초월하는 것을 보여줍니다. 코드는 https://github.com/zjunlp/KnowSelf에 액세스할 수 있습니다.",
+      "upvotes": 14,
+      "discussionId": "67f345cd83edbd64f15def73",
+      "githubRepo": "https://github.com/zjunlp/KnowSelf",
+      "ai_keywords": [
+        "agentic planning",
+        "flood irrigation methodology",
+        "gold trajectories",
+        "external feedback",
+        "domain knowledge",
+        "self-awareness",
+        "decision-making",
+        "agentic knowledgeable self-awareness",
+        "KnowSelf",
+        "data-centric approach",
+        "situation judgement criterion",
+        "special tokens",
+        "two-stage training process",
+        "trajectory-based training"
+      ]
+    },
+    "publishedAt": "2025-04-04T12:03:38.000Z",
+    "title": "Agentic Knowledgeable Self-awareness",
+    "summary": "Large Language Models (LLMs) have achieved considerable performance across\nvarious agentic planning tasks. However, traditional agent planning approaches\nadopt a \"flood irrigation\" methodology that indiscriminately injects gold\ntrajectories, external feedback, and domain knowledge into agent models. This\npractice overlooks the fundamental human cognitive principle of situational\nself-awareness during decision-making-the ability to dynamically assess\nsituational demands and strategically employ resources during decision-making.\nWe propose agentic knowledgeable self-awareness to address this gap, a novel\nparadigm enabling LLM-based agents to autonomously regulate knowledge\nutilization. Specifically, we propose KnowSelf, a data-centric approach that\napplies agents with knowledgeable self-awareness like humans. Concretely, we\ndevise a heuristic situation judgement criterion to mark special tokens on the\nagent's self-explored trajectories for collecting training data. Through a\ntwo-stage training process, the agent model can switch between different\nsituations by generating specific special tokens, achieving optimal planning\neffects with minimal costs. Our experiments demonstrate that KnowSelf can\noutperform various strong baselines on different tasks and models with minimal\nuse of external knowledge. Code is available at\nhttps://github.com/zjunlp/KnowSelf.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.03553.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "620b3bbb0668e435407c8d0a",
+      "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+      "fullname": "Ningyu Zhang",
+      "name": "Ningyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 21
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.03561",
+      "authors": [
+        {
+          "_id": "67f351f068751b2bb84cc751",
+          "name": "Runnan Fang",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc752",
+          "name": "Xiaobin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc753",
+          "name": "Yuan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc754",
+          "name": "Shuofei Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc755",
+          "name": "Jialong Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc756",
+          "name": "Zekun Xi",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc757",
+          "name": "Ningyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc758",
+          "name": "Yong Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc759",
+          "name": "Pengjun Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc75a",
+          "name": "Fei Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67f351f068751b2bb84cc75b",
+          "name": "Huajun Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-04T16:10:57.000Z",
+      "submittedOnDailyAt": "2025-04-07T02:48:19.567Z",
+      "title": "SynWorld: 아웃풋 시나리오 합성에 의한 아웃풋 액션 지식의 향상",
+      "submittedOnDailyBy": {
+        "_id": "620b3bbb0668e435407c8d0a",
+        "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+        "isPro": false,
+        "fullname": "Ningyu Zhang",
+        "user": "Ningyu",
+        "type": "user"
+      },
+      "summary": "효과적인 에이전트와 환경 사이의 상호작용에서, 에이전트는 전략적으로 행동을 계획하고 실행함으로써 능력이 확장됩니다. 그러나 LLM 기반의 에이전트는 새로운 환경에서 다루는 방식이나 행동 공간의 비표준적인 구조를 처리할 때 큰 문제를 발견합니다. 에이전트가 자동으로 환경을 탐색하고 작업 흐름을 최적화하고 행동의 이해를 향상시키기 위해, SynWorld 프레임워크를 제안합니다. 이 프레임워크에서, 행동 공간 내의 다단계 행동의 조합을 합성하고, MCTS 탐색을 수행하여 현재 환경에서 행동의 지식이 효과적으로 정밀화할 수 있습니다. 실험 결과를 통해 명확히 나타나는 것처럼, SynWorld는 새로운 환경에서 행동의 지식의 학습에 효과적이고 일반적인 접근 방식입니다. 코드는 https://github.com/zjunlp/SynWorld에서 사용 가능합니다.",
+      "upvotes": 9,
+      "discussionId": "67f351f168751b2bb84cc789",
+      "ai_keywords": [
+        "LLM-based agents",
+        "multi-step action invocation",
+        "Monte Carlo Tree Search (MCTS)"
+      ]
+    },
+    "publishedAt": "2025-04-04T12:10:57.000Z",
+    "title": "SynWorld: Virtual Scenario Synthesis for Agentic Action Knowledge\n  Refinement",
+    "summary": "In the interaction between agents and their environments, agents expand their\ncapabilities by planning and executing actions. However, LLM-based agents face\nsubstantial challenges when deployed in novel environments or required to\nnavigate unconventional action spaces. To empower agents to autonomously\nexplore environments, optimize workflows, and enhance their understanding of\nactions, we propose SynWorld, a framework that allows agents to synthesize\npossible scenarios with multi-step action invocation within the action space\nand perform Monte Carlo Tree Search (MCTS) exploration to effectively refine\ntheir action knowledge in the current environment. Our experiments demonstrate\nthat SynWorld is an effective and general approach to learning action knowledge\nin new environments. Code is available at https://github.com/zjunlp/SynWorld.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.03561.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "620b3bbb0668e435407c8d0a",
+      "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+      "fullname": "Ningyu Zhang",
+      "name": "Ningyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 21
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.02949",
+      "authors": [
+        {
+          "_id": "67f350a5e11bd4b05575a831",
+          "name": "Xianwei Zhuang",
+          "hidden": false
+        },
+        {
+          "_id": "67f350a5e11bd4b05575a832",
+          "name": "Yuxin Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67f350a5e11bd4b05575a833",
+          "name": "Yufan Deng",
+          "hidden": false
+        },
+        {
+          "_id": "67f350a5e11bd4b05575a834",
+          "name": "Dongchao Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67f350a5e11bd4b05575a835",
+          "name": "Liming Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67f350a5e11bd4b05575a836",
+          "name": "Jinghan Ru",
+          "hidden": false
+        },
+        {
+          "_id": "67f350a5e11bd4b05575a837",
+          "name": "Yuguo Yin",
+          "hidden": false
+        },
+        {
+          "_id": "67f350a5e11bd4b05575a838",
+          "name": "Yuexian Zou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-03T18:06:28.000Z",
+      "submittedOnDailyAt": "2025-04-07T02:42:39.671Z",
+      "title": "VARGPT-v1.1: 시각 자동 복원 통합 모델을 반복적 구조 훈련과 강화 학습에 의해 개선합니다.",
+      "submittedOnDailyBy": {
+        "_id": "63468720dd6d90d82ccf3450",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63468720dd6d90d82ccf3450/tVBFlmZNz8FRMkOrDaDID.jpeg",
+        "isPro": false,
+        "fullname": "YSH",
+        "user": "BestWishYsh",
+        "type": "user"
+      },
+      "summary": "이 연구에서는 이전에 소개된 VARGPT 기반의 발전된 통일된 시각적 자동복원 모델 VARGPT-v1.1을 제안합니다. 이 모델은 시각적 이해를 위해 다음 토큰 예측과 이미지 합성을 위해 다음 스케일 생성을 유지하는 이중 패러다임으로 구성되어 있습니다. 특히, VARGPT-v1.1은 다음과 같은 5가지 기능들을 통합하고 있습니다: (1) 새로운 훈련 전략, 반복적인 시각적 인스톰션 튜닝과 Direct Preference Optimization(DPO)를 통한 강화 학습의 조합, (2) 8.3M의 시각적 생성 인스톰션 쌍을 포함하는 확장된 훈련 코퍼스, (3) Qwen2를 사용하여 업그레이드 된 언어 모델 백보드, (4) 이미지 생성의 해상도의 향상, (5) 이미지 편집 기능을 발견한 아키텍처 변경 없이. 이러한 발전은 VARGPT-v1.1이 다양한 타입 이해와 문으로부터 이미지의 인스톰션을 따라하는 태스크에서 가장 선진적인 성능을 달성할 수 있게 하며, 이해와 생성의 두 측면에서 통계적으로 유의미한 향상을 나타냅니다. 특히, 시각적 인스톰션 튜닝에 의해 모델은 이전 모델과 같은 아키텍처를 유지하면서 이미지 편집 기능을 얻을 수 있으며, 통일된 시각적 이해, 생성, 편집의 가능성을 밝혀냅니다. 우리의 발견은 효과적인 통일된 시각적 자동복원 모델이, 큰 언어 모델(LLMs)으로부터 유연한 훈련 전략을 적용할 수 있으며, 기대되는 scalability를 보여주는 것을 보여줍니다. 코드베이스와 모델 가중치는 https://github.com/VARGPT-family/VARGPT-v1.1에서 공개되어 있습니다.",
+      "upvotes": 8,
+      "discussionId": "67f350a9e11bd4b05575a921",
+      "githubRepo": "https://github.com/VARGPT-family/VARGPT-v1.1",
+      "ai_keywords": [
+        "unified visual autoregressive model",
+        "next-token prediction",
+        "next-scale generation",
+        "iterative visual instruction tuning",
+        "reinforcement learning",
+        "Direct Preference Optimization (DPO)",
+        "visual-generative instruction pairs",
+        "Qwen2",
+        "image generation resolution",
+        "emergent image editing capabilities",
+        "multimodal understanding",
+        "text-to-image instruction-following tasks",
+        "comprehension and generation metrics",
+        "large language models (LLMs)"
+      ]
+    },
+    "publishedAt": "2025-04-03T14:06:28.000Z",
+    "title": "VARGPT-v1.1: Improve Visual Autoregressive Large Unified Model via\n  Iterative Instruction Tuning and Reinforcement Learning",
+    "summary": "In this work, we present VARGPT-v1.1, an advanced unified visual\nautoregressive model that builds upon our previous framework VARGPT. The model\npreserves the dual paradigm of next-token prediction for visual understanding\nand next-scale generation for image synthesis. Specifically, VARGPT-v1.1\nintegrates: (1) a novel training strategy combining iterative visual\ninstruction tuning with reinforcement learning through Direct Preference\nOptimization (DPO), (2) an expanded training corpus containing 8.3M\nvisual-generative instruction pairs, (3) an upgraded language model backbone\nusing Qwen2, (4) enhanced image generation resolution, and (5) emergent image\nediting capabilities without architectural modifications. These advancements\nenable VARGPT-v1.1 to achieve state-of-the-art performance in multimodal\nunderstanding and text-to-image instruction-following tasks, demonstrating\nsignificant improvements in both comprehension and generation metrics. Notably,\nthrough visual instruction tuning, the model acquires image editing\nfunctionality while maintaining architectural consistency with its predecessor,\nrevealing the potential for unified visual understanding, generation, and\nediting. Our findings suggest that well-designed unified visual autoregressive\nmodels can effectively adopt flexible training strategies from large language\nmodels (LLMs), exhibiting promising scalability. The codebase and model weights\nare publicly available at https://github.com/VARGPT-family/VARGPT-v1.1.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.02949.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63468720dd6d90d82ccf3450",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63468720dd6d90d82ccf3450/tVBFlmZNz8FRMkOrDaDID.jpeg",
+      "fullname": "YSH",
+      "name": "BestWishYsh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 43
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.03641",
+      "authors": [
+        {
+          "_id": "67f34f5dfb6d8a613926ac2b",
+          "name": "Wulin Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67f34f5dfb6d8a613926ac2c",
+          "name": "Yi-Fan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f34f5dfb6d8a613926ac2d",
+          "name": "Chaoyou Fu",
+          "hidden": false
+        },
+        {
+          "_id": "67f34f5dfb6d8a613926ac2e",
+          "name": "Yang Shi",
+          "hidden": false
+        },
+        {
+          "_id": "67f34f5dfb6d8a613926ac2f",
+          "name": "Bingyan Nie",
+          "hidden": false
+        },
+        {
+          "_id": "67f34f5dfb6d8a613926ac30",
+          "name": "Hongkai Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67f34f5dfb6d8a613926ac31",
+          "name": "Zhang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f34f5dfb6d8a613926ac32",
+          "name": "Liang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f34f5dfb6d8a613926ac33",
+          "name": "Tieniu Tan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-04T17:59:55.000Z",
+      "submittedOnDailyAt": "2025-04-07T02:38:07.467Z",
+      "title": "MME-Unify: 통일된 모노모달 이해와 생성 모둔의 전면적인 벤치마크",
+      "submittedOnDailyBy": {
+        "_id": "623d8ca4c29adf5ef6175615",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623d8ca4c29adf5ef6175615/q7lHao7UPwU1u7YLSP56m.jpeg",
+        "isPro": false,
+        "fullname": "Yi-Fan Zhang",
+        "user": "yifanzhang114",
+        "type": "user"
+      },
+      "summary": "현재의 MLLM 벤치마크는 U-MLLM（통합 모델）의 평가에 있어서 다음과 같은 두 가지 중대한 문제를 가지고 있습니다: 1) 전통적인 태스크에 대한 표준화된 벤치마크의 부족으로 비교의 불평등을 발생시키고, 2) 혼합 모델라이징 생성에 대한 벤치마크의 부족으로 다 모델라이징 이유 능력의 평가가 불가능합니다. 여기서는 U-MLLM의 체계적인 평가 프레임워크를 소개합니다. 벤치마크는 다음과 같은 세 부분으로 구성되어 있습니다: 1) 표준화된 전통적인 태스크 평가, 2) 통합 태스크 평가, 3) 전산적인 모델 벤치마크. 표준화된 전통적인 태스크 평가에서 12개의 데이터셋에서 샘플링하여 10개의 태스크의 30개의 서브태스크를 사용하며, 연구 간의 일관된 상호 비교를 보장합니다. 통합 태스크 평가에서 이미지 편집, 이미지 생성과의 일반적인 질문 QA, 그리고 기하학적인 이유 능력을 측정하는 5개의 새로운 태스크를 도입합니다. 또한 전산적인 모델 벤치마크에서 12개의 첨단 U-MLLM (예: Janus-Pro, EMU3, VILA-U, Gemini2-flash)과, 전문적인 이해 모델 (예: Claude-3.5-Sonnet)과 생성 모델 (예: DALL-E-3)을 평가합니다. 이러한 발견은 현재의 U-MLLM에서 큰 성능 간격을 명확히 하고, 효과적으로 혼합 모델라이징 태스크를 처리하기 위한 더 강력한 모델의 필요성을 강조합니다. 코드와 평가 데이터는 https://mme-unify.github.io/에서 다운로드 가능합니다.",
+      "upvotes": 7,
+      "discussionId": "67f34f64fb6d8a613926ada9",
+      "projectPage": "https://mme-unify.github.io/",
+      "githubRepo": "https://github.com/MME-Benchmarks/MME-Unify"
+    },
+    "publishedAt": "2025-04-04T13:59:55.000Z",
+    "title": "MME-Unify: A Comprehensive Benchmark for Unified Multimodal\n  Understanding and Generation Models",
+    "summary": "Existing MLLM benchmarks face significant challenges in evaluating Unified\nMLLMs (U-MLLMs) due to: 1) lack of standardized benchmarks for traditional\ntasks, leading to inconsistent comparisons; 2) absence of benchmarks for\nmixed-modality generation, which fails to assess multimodal reasoning\ncapabilities. We present a comprehensive evaluation framework designed to\nsystematically assess U-MLLMs. Our benchmark includes: Standardized Traditional\nTask Evaluation. We sample from 12 datasets, covering 10 tasks with 30\nsubtasks, ensuring consistent and fair comparisons across studies.\" 2. Unified\nTask Assessment. We introduce five novel tasks testing multimodal reasoning,\nincluding image editing, commonsense QA with image generation, and geometric\nreasoning. 3. Comprehensive Model Benchmarking. We evaluate 12 leading U-MLLMs,\nsuch as Janus-Pro, EMU3, VILA-U, and Gemini2-flash, alongside specialized\nunderstanding (e.g., Claude-3.5-Sonnet) and generation models (e.g., DALL-E-3).\nOur findings reveal substantial performance gaps in existing U-MLLMs,\nhighlighting the need for more robust models capable of handling mixed-modality\ntasks effectively. The code and evaluation data can be found in\nhttps://mme-unify.github.io/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.03641.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "623d8ca4c29adf5ef6175615",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623d8ca4c29adf5ef6175615/q7lHao7UPwU1u7YLSP56m.jpeg",
+      "fullname": "Yi-Fan Zhang",
+      "name": "yifanzhang114",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.03601",
+      "authors": [
+        {
+          "_id": "67f36505e11bd4b05579afbf",
+          "name": "Akshara Prabhakar",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc0",
+          "name": "Zuxin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc1",
+          "name": "Weiran Yao",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc2",
+          "name": "Jianguo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc3",
+          "name": "Ming Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc4",
+          "name": "Shiyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc5",
+          "name": "Zhiwei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc6",
+          "name": "Tulika Awalgaonkar",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc7",
+          "name": "Haolin Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc8",
+          "name": "Thai Hoang",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afc9",
+          "name": "Juan Carlos Niebles",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afca",
+          "name": "Shelby Heinecke",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afcb",
+          "name": "Huan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afcc",
+          "name": "Silvio Savarese",
+          "hidden": false
+        },
+        {
+          "_id": "67f36505e11bd4b05579afcd",
+          "name": "Caiming Xiong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-04T17:13:57.000Z",
+      "submittedOnDailyAt": "2025-04-07T04:10:25.529Z",
+      "title": "APIGen-MT: APIGen-MT는 Agantuki의 파이프라인에서 시뮬레이션된 Agantuki의 ヒマンインタラクション을 통해 다턴 데이터 생성을 수행합니다.",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "다대변환 인터랙션에 대응하는 유효한 AI 에이전트의 훈련에는 실제인자와 에이전트의 동적을 파악하기 위한 고품질 데이터가 필요하지만, 이러한 데이터가 부족하고, 수동으로 수집하는 것이 어려워, 비용도 높습니다. 우리는 다양한 다대변환 에이전트 데이터를 생성하기 위한 2단계 프레임워크 APIGen-MT를 소개합니다. 첫 번째 단계에서, 우리의 에이전트 파이프라인은 LLM 리뷰자의 커미티와 반복적인 피드백 루프를 활용하여, 세부적인 태스크 중심을 생성합니다. 이러한 중심은 다양한 다대변환 에이전트 데이터를 생성하기 위해, 기록된 인간과 에이전트의 상호작용을 기록하여 완성됩니다. 우리는 1B에서 70B 파라미터 범위 내의 xLAM-2-fc-r 시리즈의 모델 Famiiliy를 훈련합니다. 우리의 모델은 GPT-4o와 Claude 3.5의 선두 모델보다, tau-bench와 BFCL 벤치마크에서 상위에 위치하며, 작은 모델은 큰 모델을 초과하며, 특히 다대변환 설정에서, 여러 시도에서도 일관성이 높은 것을 보여주며, 신뢰도 높은, 효율적인, 능력 있는 에이전트의 개발에 연결됩니다. 자세한 실험은, 우리의 증명 가능한 중심에서 세부화된 접근 방식이 고품질의 훈련 데이터를 제공하며, 신뢰도 높은, 효율적인, 능력 있는 에이전트의 개발에 연결됩니다. 우리는 합성 데이터와 훈련된 xLAM-2-fc-r 모델을 오픈 소스로 제공하고, AI 에이전트의 연구 진화에 기여합니다. 모델은 다음 URL에서 HuggingFace에서 사용 가능합니다. https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4 프로젝트 웹 사이트는, https://apigen-mt.github.io입니다.",
+      "upvotes": 5,
+      "discussionId": "67f36507e11bd4b05579b020",
+      "ai_keywords": [
+        "agentic pipeline",
+        "task blueprints",
+        "ground-truth actions",
+        "LLM reviewers",
+        "iterative feedback loops",
+        "simulated human-agent interplay",
+        "xLAM-2-fc-r series",
+        "$\\tau$-bench",
+        "BFCL benchmarks",
+        "multi-turn settings",
+        "verified blueprint-to-details approach"
+      ]
+    },
+    "publishedAt": "2025-04-04T13:13:57.000Z",
+    "title": "APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation via Simulated\n  Agent-Human Interplay",
+    "summary": "Training effective AI agents for multi-turn interactions requires\nhigh-quality data that captures realistic human-agent dynamics, yet such data\nis scarce and expensive to collect manually. We introduce APIGen-MT, a\ntwo-phase framework that generates verifiable and diverse multi-turn agent\ndata. In the first phase, our agentic pipeline produces detailed task\nblueprints with ground-truth actions, leveraging a committee of LLM reviewers\nand iterative feedback loops. These blueprints are then transformed into\ncomplete interaction trajectories through simulated human-agent interplay. We\ntrain a family of models -- the xLAM-2-fc-r series with sizes ranging from 1B\nto 70B parameters. Our models outperform frontier models such as GPT-4o and\nClaude 3.5 on tau-bench and BFCL benchmarks, with the smaller models\nsurpassing their larger counterparts, particularly in multi-turn settings,\nwhile maintaining superior consistency across multiple trials. Comprehensive\nexperiments demonstrate that our verified blueprint-to-details approach yields\nhigh-quality training data, enabling the development of more reliable,\nefficient, and capable agents. We open-source both the synthetic data collected\nand the trained xLAM-2-fc-r models to advance research in AI agents. Models are\navailable on HuggingFace at\nhttps://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4\nand project website is https://apigen-mt.github.io",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.03601.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6594
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.03011",
+      "authors": [
+        {
+          "_id": "67f35d8bdb1a843e1ceff38f",
+          "name": "Junying Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff390",
+          "name": "Jingyuan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff391",
+          "name": "Xin Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff392",
+          "name": "Krishna Kumar Singh",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff393",
+          "name": "Zhixin Shu",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff394",
+          "name": "He Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff395",
+          "name": "Jimei Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff396",
+          "name": "Nanxuan Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff397",
+          "name": "Tuanfeng Y. Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff398",
+          "name": "Simon S. Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff399",
+          "name": "Ulrich Neumann",
+          "hidden": false
+        },
+        {
+          "_id": "67f35d8bdb1a843e1ceff39a",
+          "name": "Jae Shin Yoon",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-03T20:10:50.000Z",
+      "submittedOnDailyAt": "2025-04-07T03:39:50.539Z",
+      "title": "「전면적인 리라이트：일반화 가능한, 리스트적으로 일치하는 모노라이트 힙맨 리라이트팅과 조화」",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "이 논문에서는, 인간의 임의의 신체의 일부를 포함하는 이미지 또는 비디오에서 조명을 제어하고 조화시키는 첫 번째 360도 접근 방식인 'Complete Relighting'을 소개합니다. 이러한 일반화 가능한 모델의 구축은 데이터 세트의 부족으로 인해 매우 어려워서, 현재 이미지 기반의 조명 재구성 모델은 특정 시나리오(예: 얼굴이나 고정된 인물)에 제한되어 있습니다. 이러한 도전을 해결하기 위해, 우리는 사전 학습된 Difussion 모델을 일반적인 이미지 프로리에이터로 재활용하여, 인간의 조명 재구성과 배경의 조화를 미세한 단계로 모델링합니다. 또한, 조명의 시간적 일관성을 향상시키기 위해, 우리는 시간적 조명 모델을 도입하여 다양한 실세계 비디오에서 조명의 순환 일관성을 학습합니다. 추론 시에는, 시간적 조명 모델은 공간 시간적 특징 브렌딩 알고리즘을 통해 Difussion 모델과 결합되어, 추가적인 훈련이 필요하지 않습니다. 또한, 입력 이미지에서 고주파의 세부 정보를 보존하기 위해, 새로운 가이드된 리파이나리화를 추가 처리로 적용합니다. 실험 결과에 따르면, Complete Relighting은 강력한 일반화 가능한 성질과 조명의 시간적 일관성을 보여주며, 현재 이미지 기반의 인간 조명 재구성과 조화 방법의 수준을 초과합니다.",
+      "upvotes": 4,
+      "discussionId": "67f35d91db1a843e1ceff47c",
+      "ai_keywords": [
+        "diffusion models",
+        "image prior",
+        "coarse-to-fine framework",
+        "temporal lighting model",
+        "lighting cycle consistency",
+        "spatio-temporal feature blending",
+        "guided refinement"
+      ]
+    },
+    "publishedAt": "2025-04-03T16:10:50.000Z",
+    "title": "Comprehensive Relighting: Generalizable and Consistent Monocular Human\n  Relighting and Harmonization",
+    "summary": "This paper introduces Comprehensive Relighting, the first all-in-one approach\nthat can both control and harmonize the lighting from an image or video of\nhumans with arbitrary body parts from any scene. Building such a generalizable\nmodel is extremely challenging due to the lack of dataset, restricting existing\nimage-based relighting models to a specific scenario (e.g., face or static\nhuman). To address this challenge, we repurpose a pre-trained diffusion model\nas a general image prior and jointly model the human relighting and background\nharmonization in the coarse-to-fine framework. To further enhance the temporal\ncoherence of the relighting, we introduce an unsupervised temporal lighting\nmodel that learns the lighting cycle consistency from many real-world videos\nwithout any ground truth. In inference time, our temporal lighting module is\ncombined with the diffusion models through the spatio-temporal feature blending\nalgorithms without extra training; and we apply a new guided refinement as a\npost-processing to preserve the high-frequency details from the input image. In\nthe experiments, Comprehensive Relighting shows a strong generalizability and\nlighting temporal coherence, outperforming existing image-based human\nrelighting and harmonization methods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.03011.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6594
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.02402",
+      "authors": [
+        {
+          "_id": "67f0a09a2c873f5ba90cd14a",
+          "user": {
+            "_id": "67ee782979018bf61e2522a4",
+            "avatarUrl": "/avatars/819318421eb40b9ba7e4054770823a8a.svg",
+            "isPro": false,
+            "fullname": "HaoYin",
+            "user": "yyzqy",
+            "type": "user"
+          },
+          "name": "Hao Yin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-06T08:11:07.967Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f0a09a2c873f5ba90cd14b",
+          "name": "Shi Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67f0a09a2c873f5ba90cd14c",
+          "name": "Xu Jia",
+          "hidden": false
+        },
+        {
+          "_id": "67f0a09a2c873f5ba90cd14d",
+          "name": "Xudong XU",
+          "hidden": false
+        },
+        {
+          "_id": "67f0a09a2c873f5ba90cd14e",
+          "name": "Lu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f0a09a2c873f5ba90cd14f",
+          "name": "Si Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67f0a09a2c873f5ba90cd150",
+          "name": "Dong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f0a09a2c873f5ba90cd151",
+          "name": "Huchuan Lu",
+          "hidden": false
+        },
+        {
+          "_id": "67f0a09a2c873f5ba90cd152",
+          "name": "Tianfan Xue",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-03T08:51:17.000Z",
+      "submittedOnDailyAt": "2025-04-07T05:44:25.380Z",
+      "title": "イベント 기반의 비접촉 음향의 효과적인 공간 시간 모델링에서 음향의 복원",
+      "submittedOnDailyBy": {
+        "_id": "67ee782979018bf61e2522a4",
+        "avatarUrl": "/avatars/819318421eb40b9ba7e4054770823a8a.svg",
+        "isPro": false,
+        "fullname": "HaoYin",
+        "user": "yyzqy",
+        "type": "user"
+      },
+      "summary": "음파가 물체와 만나는 순간 발생하는 진동은 고주파와 미묘한 시각적인 변화를 일으키고, 이를 활용하여 음파를 복원할 수 있습니다. 초기 연구에서는 샘플링 레이트, 밴드 웨이브, 필드 오브제, 광학 패스의 단순성을 고려하여 보완을 취했습니다. 이벤트 카메라의 하드웨어의 최근 발전은 고주파 신호의 감수능도를 높였으며, 음파의 시각적인 복원에서도 좋은 잠재력을 보여주고 있습니다. 그러나 현재의 이벤트 기반의 진동 복원 방식은 음파 복원에 가장 적절하지 않습니다. 본 논문에서는, 이벤트 스트리밍으로부터의 공간 시간 정보를 완벽히 활용하는 비접촉 음파 복원의 새로운 패이프로리ン을 제안합니다. 우선, 새로운 시뮬레이션 패이프로리ン을 사용하여 큰 훈련 세트를 생성합니다. 다음으로, 이벤트의 희박성을 활용하여 공간 정보를 파악하고, Mamba를 사용하여 장기간의 시간 정보를 모델링하는 네트워크를 설계합니다. 마지막으로, 공간 정보를 통합하는 스펙트럴 아그레이션 블록을 훈련시키고, 신호 품질을 더욱 향상시킵니다. 음파로 이벤트 신호를 감지하기 위해, 라즈마트릭스를 사용하여 이미지 시스템을 설계하고, 테스트용으로 여러 데이터 시퀀스를 수집합니다. 합성 데이터와 실세계 데이터에 대한 실험 결과를 통해 본 방법에 대한 효과가 보이며, 음파 복원 분야의 발전을 촉진합니다.",
+      "upvotes": 4,
+      "discussionId": "67f0a09e2c873f5ba90cd26c",
+      "projectPage": "https://yyzq1.github.io/EvMic/",
+      "githubRepo": "https://github.com/yyzq1/EvMic",
+      "ai_keywords": [
+        "event camera",
+        "high-frequency signals",
+        "event stream",
+        "spatial-temporal information",
+        "novel simulation pipeline",
+        "Mamba",
+        "spatial aggregation block",
+        "laser matrix"
+      ]
+    },
+    "publishedAt": "2025-04-03T04:51:17.000Z",
+    "title": "EvMic: Event-based Non-contact sound recovery from effective\n  spatial-temporal modeling",
+    "summary": "When sound waves hit an object, they induce vibrations that produce\nhigh-frequency and subtle visual changes, which can be used for recovering the\nsound. Early studies always encounter trade-offs related to sampling rate,\nbandwidth, field of view, and the simplicity of the optical path. Recent\nadvances in event camera hardware show good potential for its application in\nvisual sound recovery, because of its superior ability in capturing\nhigh-frequency signals. However, existing event-based vibration recovery\nmethods are still sub-optimal for sound recovery. In this work, we propose a\nnovel pipeline for non-contact sound recovery, fully utilizing spatial-temporal\ninformation from the event stream. We first generate a large training set using\na novel simulation pipeline. Then we designed a network that leverages the\nsparsity of events to capture spatial information and uses Mamba to model\nlong-term temporal information. Lastly, we train a spatial aggregation block to\naggregate information from different locations to further improve signal\nquality. To capture event signals caused by sound waves, we also designed an\nimaging system using a laser matrix to enhance the gradient and collected\nmultiple data sequences for testing. Experimental results on synthetic and\nreal-world data demonstrate the effectiveness of our method.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.02402.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "67ee782979018bf61e2522a4",
+      "avatarUrl": "/avatars/819318421eb40b9ba7e4054770823a8a.svg",
+      "fullname": "HaoYin",
+      "name": "yyzqy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2503.24067",
+      "authors": [
+        {
+          "_id": "67ecb89d0210bff02fd3591e",
+          "user": {
+            "_id": "66b4e3d850b87d84498bbc89",
+            "avatarUrl": "/avatars/526c0cabf3a2c019a13bb82fcc7b43e9.svg",
+            "isPro": false,
+            "fullname": "YixingLi",
+            "user": "Yixinglee",
+            "type": "user"
+          },
+          "name": "Yixing Li",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-02T04:10:06.783Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd3591f",
+          "name": "Ruobing Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35920",
+          "user": {
+            "_id": "62c4057732fa66fedacca0db",
+            "avatarUrl": "/avatars/813e8c9fcd14dde1fdd415408f61bec2.svg",
+            "isPro": false,
+            "fullname": "AndyYang",
+            "user": "andyyang",
+            "type": "user"
+          },
+          "name": "Zhen Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-02T08:21:39.891Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35921",
+          "name": "Xingwu Sun",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35922",
+          "name": "Shuaipeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35923",
+          "name": "Weidong Han",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35924",
+          "name": "Zhanhui Kang",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35925",
+          "name": "Yu Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35926",
+          "name": "Chengzhong Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35927",
+          "name": "Di Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb89d0210bff02fd35928",
+          "name": "Jie Jiang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-31T13:26:24.000Z",
+      "submittedOnDailyAt": "2025-04-07T07:35:17.947Z",
+      "title": "TransMamba: 변환기와 Mamba를 적절하게 선택하기 위해 간편하게 변환합니다.",
+      "submittedOnDailyBy": {
+        "_id": "62c4057732fa66fedacca0db",
+        "avatarUrl": "/avatars/813e8c9fcd14dde1fdd415408f61bec2.svg",
+        "isPro": false,
+        "fullname": "AndyYang",
+        "user": "andyyang",
+        "type": "user"
+      },
+      "summary": "Transformers는 현대의 대규모 언어 모델의 근본으로 자리잡고 있으며, 긴 문장 순서 처리에서 두 번째 차원의 계산 복잡성이 존재하며, 이는 효율을 제한하고 있습니다. 최근, 상태 공간 모델(SSM)의 맵버(Mamba)에서 선형 복잡성을 가진 최신 발전은 효율적인 효과를 보여주지만, 불안정한 컨텍스트 인식과 다 태스크 확장성 측면에서 단점이 있습니다. 본 논문에서는 Transformer와 Mamba를 공유 파라미터 행렬(예: QKV와 CBx)로 통합하는 새로운 프레임워크인 TransMamba를 제안하고, 길이와 층으로 동적으로 注意기機構과 SSM 기구를 변경할 수 있음을 보여줍니다. 또한, Transformer와 Mamba를 연결하기 위해 메모리 컨버터를 설계하고, 변환이 이루어지는 TransPoint에서 연속적인 정보 흐름을 보장합니다. 또한, TransPoint의 스케줄링을 상세히 조사하고 발전을 추진하는 시도를 했습니다. 확장된 실험을 통해, TransMamba는 기준과 비교하여 우수한 학습 효율과 성능을 달성하며, Transformer와 Mamba 패러다임의 깊은 일치성을 증명하고, 다음 세대의 시퀀스 모델링의 Scalable 해결책을 제공합니다.",
+      "upvotes": 4,
+      "discussionId": "67ecb89e0210bff02fd3596b",
+      "ai_keywords": [
+        "Transformers",
+        "state space model (SSM)",
+        "attention",
+        "QKV",
+        "CBx",
+        "TransMamba",
+        "parameter matrices",
+        "Memory converter",
+        "TransPoints",
+        "TransPoint scheduling",
+        "next-generation sequence modeling"
+      ]
+    },
+    "publishedAt": "2025-03-31T09:26:24.000Z",
+    "title": "TransMamba: Flexibly Switching between Transformer and Mamba",
+    "summary": "Transformers are the cornerstone of modern large language models, but their\nquadratic computational complexity limits efficiency in long-sequence\nprocessing. Recent advancements in Mamba, a state space model (SSM) with linear\ncomplexity, offer promising efficiency gains but suffer from unstable\ncontextual learning and multitask generalization. This paper proposes\nTransMamba, a novel framework that unifies Transformer and Mamba through shared\nparameter matrices (e.g., QKV and CBx), and thus could dynamically switch\nbetween attention and SSM mechanisms at different token lengths and layers. We\ndesign the Memory converter to bridge Transformer and Mamba by converting\nattention outputs into SSM-compatible states, ensuring seamless information\nflow at TransPoints where the transformation happens. The TransPoint scheduling\nis also thoroughly explored for further improvements. We conducted extensive\nexperiments demonstrating that TransMamba achieves superior training efficiency\nand performance compared to baselines, and validated the deeper consistency\nbetween Transformer and Mamba paradigms, offering a scalable solution for\nnext-generation sequence modeling.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.24067.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62c4057732fa66fedacca0db",
+      "avatarUrl": "/avatars/813e8c9fcd14dde1fdd415408f61bec2.svg",
+      "fullname": "AndyYang",
+      "name": "andyyang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.03536",
+      "authors": [
+        {
+          "_id": "67f364118188d683931bec4a",
+          "name": "Boyuan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f364118188d683931bec4b",
+          "name": "Runqi Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "67f364118188d683931bec4c",
+          "name": "Xiaofeng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f364118188d683931bec4d",
+          "user": {
+            "_id": "656e9b562cd7a3e348011d26",
+            "avatarUrl": "/avatars/bcca51bdc27c664f8f132420e6ed99fa.svg",
+            "isPro": false,
+            "fullname": "Zheng Zhu",
+            "user": "ZhengZhu",
+            "type": "user"
+          },
+          "name": "Zheng Zhu",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-07T05:35:15.515Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f364118188d683931bec4e",
+          "name": "Guosheng Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67f364118188d683931bec4f",
+          "name": "Chaojun Ni",
+          "hidden": false
+        },
+        {
+          "_id": "67f364118188d683931bec50",
+          "name": "Guan Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67f364118188d683931bec51",
+          "name": "Lihong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67f364118188d683931bec52",
+          "name": "Xingang Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-04T15:35:14.000Z",
+      "submittedOnDailyAt": "2025-04-07T04:06:19.815Z",
+      "title": "HumanDreamer-X: 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진 사진",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "단일 이미지에서 인간 재구성은 디지털 인간 모델링 애플리케이션에서 중요한 요소이지만, 극단적으로 어려운 과제입니다. 현재의 접근 방식은 생성 모델을 활용하여 3D 재구성과 애니메이션을 위해 다각면 이미지를 합성하는 데 의존합니다. 그러나 단일의 인간 이미지에서 직접 다각면 이미지를 생성하는 것은 기하학적인 불연속성을 동반하고, 재구성 모델에서 부위의 분해 또는 집중 부족 등 문제를 초래합니다. 이러한 제한을 극복하기 위해 우리는 HumanDreamer-X라는 새로운 프레임워크를 제안합니다. 이 프레임워크에서, 다각면인 인간 생성과 재구성을 하나의 파이프라인에 통합하여 재구성된 3D 모델의 기하학적 일관성과 시각적 신뢰도를 크게 향상시킵니다. 이 프레임워크에서 3D 가우스 스플릿팅은 명시적인 3D 표현으로 초기의 기어메트릭과 적용의 우선 순위를 제공합니다. 이 기반으로 HumanFixer는 3DGS 렌더링 이미지의 복원을 학습하고 현실적인 결과를 보장합니다. 또한 다각면인 인간 생성에 동반된 주의 기능의 고유의 문제에 깊은 깊이를 돋보며, 기하학적인 세부 사항과 일관성을 효과적으로 향상시키기 위해 주의 기능의 조정 전략을 제안합니다. 실험 결과를 통해 우리의 접근 방식이 생성과 재구성의 PSNR 품질 측정을 각각 약 16.45%와 12.65% 정도 향상시키고, PSNR이 25.62dB까지 달성하며, 온라인 데이터에도 대응하며 다양한 인간 재구성 기반 모델에 적용할 수 있음을 보여줍니다.",
+      "upvotes": 3,
+      "discussionId": "67f364138188d683931beca2",
+      "ai_keywords": [
+        "3D Gaussian Splatting",
+        "HumanDreamer-X",
+        "HumanFixer",
+        "attention modulation",
+        "PSNR"
+      ]
+    },
+    "publishedAt": "2025-04-04T11:35:14.000Z",
+    "title": "HumanDreamer-X: Photorealistic Single-image Human Avatars Reconstruction\n  via Gaussian Restoration",
+    "summary": "Single-image human reconstruction is vital for digital human modeling\napplications but remains an extremely challenging task. Current approaches rely\non generative models to synthesize multi-view images for subsequent 3D\nreconstruction and animation. However, directly generating multiple views from\na single human image suffers from geometric inconsistencies, resulting in\nissues like fragmented or blurred limbs in the reconstructed models. To tackle\nthese limitations, we introduce HumanDreamer-X, a novel framework that\nintegrates multi-view human generation and reconstruction into a unified\npipeline, which significantly enhances the geometric consistency and visual\nfidelity of the reconstructed 3D models. In this framework, 3D Gaussian\nSplatting serves as an explicit 3D representation to provide initial geometry\nand appearance priority. Building upon this foundation, HumanFixer is\ntrained to restore 3DGS renderings, which guarantee photorealistic results.\nFurthermore, we delve into the inherent challenges associated with attention\nmechanisms in multi-view human generation, and propose an attention modulation\nstrategy that effectively enhances geometric details identity consistency\nacross multi-view. Experimental results demonstrate that our approach markedly\nimproves generation and reconstruction PSNR quality metrics by 16.45% and\n12.65%, respectively, achieving a PSNR of up to 25.62 dB, while also showing\ngeneralization capabilities on in-the-wild data and applicability to various\nhuman reconstruction backbone models.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.03536.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6594
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.24310",
+      "authors": [
+        {
+          "_id": "67ecb513c8ae971f9ad15bd1",
+          "user": {
+            "_id": "6478fc1512ae749b62ebbbd5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6478fc1512ae749b62ebbbd5/zw-wYy1vEWnG9-t6c9W_x.jpeg",
+            "isPro": false,
+            "fullname": "Alok Abhishek",
+            "user": "alokabhishek",
+            "type": "user"
+          },
+          "name": "Alok Abhishek",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-04-02T03:59:10.671Z",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb513c8ae971f9ad15bd2",
+          "name": "Lisa Erickson",
+          "hidden": false
+        },
+        {
+          "_id": "67ecb513c8ae971f9ad15bd3",
+          "user": {
+            "_id": "657372396da136b50f5489a0",
+            "avatarUrl": "/avatars/57a693058e9a05a2c32f02bab1d8e819.svg",
+            "isPro": false,
+            "fullname": "Tushar Bandopadhyay",
+            "user": "tbandopa",
+            "type": "user"
+          },
+          "name": "Tushar Bandopadhyay",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-04-02T08:13:38.947Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-31T16:56:52.000Z",
+      "submittedOnDailyAt": "2025-04-07T03:47:34.752Z",
+      "title": "BEATS: 대 언어 모델의 편향 평가 및 평가 테스트 시스템",
+      "submittedOnDailyBy": {
+        "_id": "6478fc1512ae749b62ebbbd5",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6478fc1512ae749b62ebbbd5/zw-wYy1vEWnG9-t6c9W_x.jpeg",
+        "isPro": false,
+        "fullname": "Alok Abhishek",
+        "user": "alokabhishek",
+        "type": "user"
+      },
+      "summary": "이 연구에서는 대규모 언어 모델(LLMs)에 대한 편견, 윤리, 공정성, 사실성 평가에 새로운 프레임워크 \"BEATS\"를 소개합니다. BEATS 프레임워크의 기초에 따라 LLMs에 대한 편견 벤치마크를 제안하고, 29가지의 다양한 메트릭으로 성능을 측정합니다. 이 메트릭들은 인구학적, 인지적, 사회적 편견, 윤리적인 이유, 그룹의 공정성, 사실성에 관련된 부정정보 리스크를 포함합니다. 이러한 메트릭은 LLM 생성된 답변이 사회의 편견을 이어가고 시스템의 불평등을 확대하는 것을 정량적으로 평가할 수 있습니다. 이 벤치마크에 높은 점수를 달성하기 위해 LLM의 답변에 매우 공정한 행동을 보여주는 것이 필요합니다. 이는 책임 있는 AI 평가의 엄격한 기준입니다. 실험 데이터에 기반한 실험 결과는 37.65%의 출력이 편견을 포함하고 있음을 명확히 나타내었고, 이러한 모델을 중요한 결정 시스템에 사용하게 되면相当한 위험이 있는 것을 알 수 있습니다. BEATS 프레임워크와 벤치마크는 LLMs의 벤치마크, 편견을 원인으로 하는 원인 진단, 그리고 대책 전략의 개발에 scalable하고 통계적으로 엄격한 방법을 제공합니다. BEATS 프레임워크를 기반으로 우리의 목표는 더 사회적으로 책임 있는 윤리적으로 일치하는 AI 모델의 개발에 도움을 줄 것입니다.",
+      "upvotes": 2,
+      "discussionId": "67ecb513c8ae971f9ad15c02",
+      "ai_keywords": [
+        "Large Language Models (LLMs)",
+        "Bias benchmark",
+        "Bias",
+        "Ethics",
+        "Fairness",
+        "Factuality",
+        "Demographic biases",
+        "Cognitive biases",
+        "Social biases",
+        "Ethical reasoning",
+        "Group fairness",
+        "Factuality related misinformation risk",
+        "Equitable behavior",
+        "Responsible AI evaluation",
+        "Critical decision making systems",
+        "Scalable methodology",
+        "Statistically rigorous methodology",
+        "Diagnose factors driving biases",
+        "Mitigation strategies",
+        "Socially responsible AI models",
+        "Ethically aligned AI models"
+      ]
+    },
+    "publishedAt": "2025-03-31T12:56:52.000Z",
+    "title": "BEATS: Bias Evaluation and Assessment Test Suite for Large Language\n  Models",
+    "summary": "In this research, we introduce BEATS, a novel framework for evaluating Bias,\nEthics, Fairness, and Factuality in Large Language Models (LLMs). Building upon\nthe BEATS framework, we present a bias benchmark for LLMs that measure\nperformance across 29 distinct metrics. These metrics span a broad range of\ncharacteristics, including demographic, cognitive, and social biases, as well\nas measures of ethical reasoning, group fairness, and factuality related\nmisinformation risk. These metrics enable a quantitative assessment of the\nextent to which LLM generated responses may perpetuate societal prejudices that\nreinforce or expand systemic inequities. To achieve a high score on this\nbenchmark a LLM must show very equitable behavior in their responses, making it\na rigorous standard for responsible AI evaluation. Empirical results based on\ndata from our experiment show that, 37.65\\% of outputs generated by industry\nleading models contained some form of bias, highlighting a substantial risk of\nusing these models in critical decision making systems. BEATS framework and\nbenchmark offer a scalable and statistically rigorous methodology to benchmark\nLLMs, diagnose factors driving biases, and develop mitigation strategies. With\nthe BEATS framework, our goal is to help the development of more socially\nresponsible and ethically aligned AI models.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.24310.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6478fc1512ae749b62ebbbd5",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6478fc1512ae749b62ebbbd5/zw-wYy1vEWnG9-t6c9W_x.jpeg",
+      "fullname": "Alok Abhishek",
+      "name": "alokabhishek",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  }
+]
