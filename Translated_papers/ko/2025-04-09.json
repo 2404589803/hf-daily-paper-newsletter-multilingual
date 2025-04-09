@@ -1,0 +1,1319 @@
+[
+  {
+    "paper": {
+      "id": "2504.05599",
+      "authors": [
+        {
+          "_id": "67f61a98af81b0685bf055cf",
+          "name": "Yi Peng",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d0",
+          "name": "Chris",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d1",
+          "name": "Xiaokun Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d2",
+          "name": "Yichen Wei",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d3",
+          "name": "Jiangbo Pei",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d4",
+          "name": "Weijie Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d5",
+          "name": "Ai Jian",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d6",
+          "name": "Yunzhuo Hao",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d7",
+          "name": "Jiachun Pan",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d8",
+          "name": "Tianyidan Xie",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055d9",
+          "name": "Li Ge",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055da",
+          "name": "Rongxian Zhuang",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055db",
+          "name": "Xuchen Song",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055dc",
+          "name": "Yang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67f61a98af81b0685bf055dd",
+          "name": "Yahui Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-08T01:19:20.000Z",
+      "submittedOnDailyAt": "2025-04-09T05:32:09.323Z",
+      "title": "Skywork R1V: 쇄도스무스의 선두에 서 있고 다양한 타입의 논리적 문제를 해결하는 선도적인 기업입니다.",
+      "submittedOnDailyBy": {
+        "_id": "6462b241b438438da3c25a5d",
+        "avatarUrl": "/avatars/606a67f1be639c9a5e36f293abd5f27a.svg",
+        "isPro": false,
+        "fullname": "Xuchen Song",
+        "user": "xuchensong",
+        "type": "user"
+      },
+      "summary": "スカイワーク R1V를 소개합니다. 이것은 R1 시리즈의 대규모 언어 모델(LLM)을 시각적 모델로 확장한 다모델 논리 모델입니다.スカイワーク R1V는 가벼운 시각적 프로젝터를 사용함으로써 기본적인 언어 모델이나 시각적 인코더의 재학습이 필요하지 않습니다. 또한 시각적 텍스트의 어레이먼트를 강화하기 위해, 반복적 지도 학습 미세 조정(SFT)과 그룹 상대 정책 최적화(GRPO)의 조합을 제안하여, 크로스 모델 통합의 효율을 크게 향상시킵니다. 또한, 이유 데이터의 생성을 위해 적응적인 길이의 Chain-of-Thought의 열처리 접근 방식을 도입하여, 이유의 길이를 동적으로 최적화하고 추론의 효율을 높임으로써, 과도한 이유의 생각을 방지합니다. 실험적 평가에 따르면, 스カイワーク R1V는 38B 파라미터로, MMMU 벤치마크에서 69.0의 점수, MathVista에서 67.5의 점수를 달성했습니다. 또한, AIME에서 72.0, MATH500에서 94.0의 점수를 나타내며, 강한 텍스트의 이유 성능을 유지합니다. 스カイワーク R1V 모델의 가중치는 공개되어 있으며, 개방성과 재현성을 촉진하고 있습니다.",
+      "upvotes": 43,
+      "discussionId": "67f61a9daf81b0685bf05731",
+      "githubRepo": "https://github.com/SkyworkAI/Skywork-R1V"
+    },
+    "publishedAt": "2025-04-07T21:19:20.000Z",
+    "title": "Skywork R1V: Pioneering Multimodal Reasoning with Chain-of-Thought",
+    "summary": "We introduce Skywork R1V, a multimodal reasoning model extending the an\nR1-series Large language models (LLM) to visual modalities via an efficient\nmultimodal transfer method. Leveraging a lightweight visual projector, Skywork\nR1V facilitates seamless multimodal adaptation without necessitating retraining\nof either the foundational language model or the vision encoder. To strengthen\nvisual-text alignment, we propose a hybrid optimization strategy that combines\nIterative Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization\n(GRPO), significantly enhancing cross-modal integration efficiency.\nAdditionally, we introduce an adaptive-length Chain-of-Thought distillation\napproach for reasoning data generation. This approach dynamically optimizes\nreasoning chain lengths, thereby enhancing inference efficiency and preventing\nexcessive reasoning overthinking. Empirical evaluations demonstrate that\nSkywork R1V, with only 38B parameters, delivers competitive performance,\nachieving a score of 69.0 on the MMMU benchmark and 67.5 on MathVista.\nMeanwhile, it maintains robust textual reasoning performance, evidenced by\nimpressive scores of 72.0 on AIME and 94.0 on MATH500. The Skywork R1V model\nweights have been publicly released to promote openness and reproducibility.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.05599.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6462b241b438438da3c25a5d",
+      "avatarUrl": "/avatars/606a67f1be639c9a5e36f293abd5f27a.svg",
+      "fullname": "Xuchen Song",
+      "name": "xuchensong",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.06263",
+      "authors": [
+        {
+          "_id": "67f5e3701b29460f6a087954",
+          "name": "Yiying Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67f5e3701b29460f6a087955",
+          "user": {
+            "_id": "64b914c8ace99c0723ad83a9",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64b914c8ace99c0723ad83a9/udUHjj6fby82zh8LDjXhL.jpeg",
+            "isPro": false,
+            "fullname": "Wei Cheng",
+            "user": "wchengad",
+            "type": "user"
+          },
+          "name": "Wei Cheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T07:34:51.924Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f5e3701b29460f6a087956",
+          "user": {
+            "_id": "6485b08e687d9e0c759121b0",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6485b08e687d9e0c759121b0/P_9F0izrQgUfEd-VEbhg8.jpeg",
+            "isPro": false,
+            "fullname": "sijin",
+            "user": "CH3COOK",
+            "type": "user"
+          },
+          "name": "Sijin Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T07:34:48.985Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f5e3701b29460f6a087957",
+          "name": "Xianfang Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "67f5e3701b29460f6a087958",
+          "name": "Jiaxu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f5e3701b29460f6a087959",
+          "name": "Liao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f5e3701b29460f6a08795a",
+          "name": "Gang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67f5e3701b29460f6a08795b",
+          "name": "Xingjun Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67f5e3701b29460f6a08795c",
+          "name": "Yu-Gang Jiang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6485b08e687d9e0c759121b0/goYk4m9KxOQvIKfjUy5Rn.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/6485b08e687d9e0c759121b0/oqnAsMzmh3Vtx0OIPv5ai.gif"
+      ],
+      "publishedAt": "2025-04-08T17:59:49.000Z",
+      "submittedOnDailyAt": "2025-04-09T01:51:00.484Z",
+      "title": "OmniSVG: 유닛 피드 스케일러블 벡터 그래픽스 생성 모델",
+      "submittedOnDailyBy": {
+        "_id": "6485b08e687d9e0c759121b0",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6485b08e687d9e0c759121b0/P_9F0izrQgUfEd-VEbhg8.jpeg",
+        "isPro": false,
+        "fullname": "sijin",
+        "user": "CH3COOK",
+        "type": "user"
+      },
+      "summary": "スケーラブルベクトルグラフィックス（SVG）는 그래픽 디자인에서 광범위하게 사용되고 있으며, 해상도 독립성과 편집 가능성으로 중요한 이미지 형식으로 평가되어 있습니다. 고품질 SVG 생성에 관한 연구는 AIGC 커뮤니티의 디자이너나 연구자들에게 오랜 기간 주목을 받았습니다. 그러나 현재의 방법들은 무구조적인 출력을 생성하는 데 큰 계산 비용과 함께 사용하거나, 간단한 흑백 이미지 생성에 제한되어 있습니다. 고품질 및 복잡한 SVG를 생성하기 위해, OmniSVG라는 통합 프레임워크를 제안합니다. 이는 다양한 SVG 생성을 위해终端から终端まで의 예측된 비지션 댄스 모델(VLMs)을 사용합니다. SVG 명령과 좌표를 이산 토큰으로 파라미터화함으로써, OmniSVG는 구조적 논리와 저급 일반성을 분리하고, 복잡한 SVG 구조 표현력을 유지하기 위해 효율적인 훈련을 수행합니다. 또한, SVG 합성의 발전을 촉진하기 위해, MMSVG-2M라는 다양한 데이터셋을 소개합니다. 이는 200만 개 이상의 풍부한 注解된 SVG 자산을 포함하고, 조건부 SVG 생성 태스크의 표준화된 평가 프로토콜을 제공합니다. 확장된 실험은, OmniSVG가 현재의 방법들을 초월하고, 전문적인 SVG 디자인 작업 흐름을 통합하는 가능성을 보여주고 있습니다.",
+      "upvotes": 40,
+      "discussionId": "67f5e3751b29460f6a087aa7",
+      "projectPage": "https://omnisvg.github.io/",
+      "githubRepo": "https://github.com/OmniSVG/OmniSVG"
+    },
+    "publishedAt": "2025-04-08T13:59:49.000Z",
+    "title": "OmniSVG: A Unified Scalable Vector Graphics Generation Model",
+    "summary": "Scalable Vector Graphics (SVG) is an important image format widely adopted in\ngraphic design because of their resolution independence and editability. The\nstudy of generating high-quality SVG has continuously drawn attention from both\ndesigners and researchers in the AIGC community. However, existing methods\neither produces unstructured outputs with huge computational cost or is limited\nto generating monochrome icons of over-simplified structures. To produce\nhigh-quality and complex SVG, we propose OmniSVG, a unified framework that\nleverages pre-trained Vision-Language Models (VLMs) for end-to-end multimodal\nSVG generation. By parameterizing SVG commands and coordinates into discrete\ntokens, OmniSVG decouples structural logic from low-level geometry for\nefficient training while maintaining the expressiveness of complex SVG\nstructure. To further advance the development of SVG synthesis, we introduce\nMMSVG-2M, a multimodal dataset with two million richly annotated SVG assets,\nalong with a standardized evaluation protocol for conditional SVG generation\ntasks. Extensive experiments show that OmniSVG outperforms existing methods and\ndemonstrates its potential for integration into professional SVG design\nworkflows.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6485b08e687d9e0c759121b0/goYk4m9KxOQvIKfjUy5Rn.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/6485b08e687d9e0c759121b0/oqnAsMzmh3Vtx0OIPv5ai.gif"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.06263.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6485b08e687d9e0c759121b0",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6485b08e687d9e0c759121b0/P_9F0izrQgUfEd-VEbhg8.jpeg",
+      "fullname": "sijin",
+      "name": "CH3COOK",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.05979",
+      "authors": [
+        {
+          "_id": "67f5d5416ceb820f2006d8a2",
+          "name": "Sixiang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8a3",
+          "user": {
+            "_id": "63fccdac93b993a4ebd7789a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63fccdac93b993a4ebd7789a/KRx8vpdoDjsZBRw0j8Vg8.jpeg",
+            "isPro": false,
+            "fullname": "Jinbin Bai",
+            "user": "BryanW",
+            "type": "user"
+          },
+          "name": "Jinbin Bai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T07:35:08.303Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8a4",
+          "name": "Zhuoran Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8a5",
+          "name": "Tian Ye",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8a6",
+          "user": {
+            "_id": "656724074f6ec72017754d33",
+            "avatarUrl": "/avatars/e61de248f6f53719b2375077340dd033.svg",
+            "isPro": false,
+            "fullname": "QingyuShi",
+            "user": "QingyuShi",
+            "type": "user"
+          },
+          "name": "Qingyu Shi",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T07:35:04.572Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8a7",
+          "user": {
+            "_id": "67136093d2e50f1e8c9fad52",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/0q49MyGuav8lJ9CIeyLhu.png",
+            "isPro": false,
+            "fullname": "Donghao Zhou",
+            "user": "donghao-zhou",
+            "type": "user"
+          },
+          "name": "Donghao Zhou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T07:35:02.400Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8a8",
+          "name": "Wenhao Chai",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8a9",
+          "name": "Xin Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8aa",
+          "name": "Jianzong Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8ab",
+          "name": "Chao Tang",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8ac",
+          "name": "Shilin Xu",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8ad",
+          "name": "Tao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8ae",
+          "name": "Haobo Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8af",
+          "name": "Yikang Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8b0",
+          "name": "Wei Chow",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8b1",
+          "name": "Linfeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8b2",
+          "name": "Xiangtai Li",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8b3",
+          "name": "Lei Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67f5d5416ceb820f2006d8b4",
+          "name": "Lu Qi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-08T12:34:36.000Z",
+      "submittedOnDailyAt": "2025-04-09T00:39:48.924Z",
+      "title": "GPT-4o의 이미지 생성 능력에 대한 실증 연구",
+      "submittedOnDailyBy": {
+        "_id": "63fccdac93b993a4ebd7789a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63fccdac93b993a4ebd7789a/KRx8vpdoDjsZBRw0j8Vg8.jpeg",
+        "isPro": false,
+        "fullname": "Jinbin Bai",
+        "user": "BryanW",
+        "type": "user"
+      },
+      "summary": "이미지 생성의 구조는 급격히 발전하고 있으며, 초기의 GAN 기반의 접근 방식부터 분화 모델까지, 최근에는 이해와 생성의 작업을 통합하기 위한 통합적인 생성 아키텍처로 발전하고 있습니다. 최근의 진보, 특히 GPT-4o는 고품질의 다양성 생성의 가능성에 대한 가능성을 보여주었지만, 아키텍처의 설계는 비밀로 공개되지 않았습니다. 이로 인해, 이미지와 텍스트의 생성이 이미 그 방법で 통합된 프레임워크에 성공했는지의 문제가 발생합니다. 본 논문에서는, GPT-4o의 이미지 생성 능력에 대한 실험적 조사를 수행하고, 선진한 오픈 소스와 상업 모델과의 비교를 수행합니다. 평가는 텍스트에서 이미지, 이미지에서 이미지, 이미지에서 3D, 이미지에서 X의 생성의 4가지 주요 분야에 대해 20개 이상의 태스크를 포함합니다. 분석에서는, GPT-4o의 다양한 설정에서의 강점과 한계를 밝혀, 생성 모델링의 대규모 발전 속에서 그 위치를 파악합니다. 이 조사를 통해, 향후 통합된 생성 모델의 가능성 있는 방향을 특정하고, 아키텍처의 설계와 데이터 스케일링의 역할에 강조합니다.",
+      "upvotes": 38,
+      "discussionId": "67f5d5496ceb820f2006da78"
+    },
+    "publishedAt": "2025-04-08T08:34:36.000Z",
+    "title": "An Empirical Study of GPT-4o Image Generation Capabilities",
+    "summary": "The landscape of image generation has rapidly evolved, from early GAN-based\napproaches to diffusion models and, most recently, to unified generative\narchitectures that seek to bridge understanding and generation tasks. Recent\nadvances, especially the GPT-4o, have demonstrated the feasibility of\nhigh-fidelity multimodal generation, their architectural design remains\nmysterious and unpublished. This prompts the question of whether image and text\ngeneration have already been successfully integrated into a unified framework\nfor those methods. In this work, we conduct an empirical study of GPT-4o's\nimage generation capabilities, benchmarking it against leading open-source and\ncommercial models. Our evaluation covers four main categories, including\ntext-to-image, image-to-image, image-to-3D, and image-to-X generation, with\nmore than 20 tasks. Our analysis highlights the strengths and limitations of\nGPT-4o under various settings, and situates it within the broader evolution of\ngenerative modeling. Through this investigation, we identify promising\ndirections for future unified generative models, emphasizing the role of\narchitectural design and data scaling.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.05979.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63fccdac93b993a4ebd7789a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63fccdac93b993a4ebd7789a/KRx8vpdoDjsZBRw0j8Vg8.jpeg",
+      "fullname": "Jinbin Bai",
+      "name": "BryanW",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.02160",
+      "authors": [
+        {
+          "_id": "67efd1cd40e0a904109cac33",
+          "user": {
+            "_id": "660114b38ae190912a61be5d",
+            "avatarUrl": "/avatars/abc4ab10d6f9769d2b5e697ccbf3fb70.svg",
+            "isPro": false,
+            "fullname": "ShaojinWu",
+            "user": "fenfan",
+            "type": "user"
+          },
+          "name": "Shaojin Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-08T06:54:08.610Z",
+          "hidden": false
+        },
+        {
+          "_id": "67efd1cd40e0a904109cac34",
+          "name": "Mengqi Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67efd1cd40e0a904109cac35",
+          "user": {
+            "_id": "635634171c93c1ef4e9eb1c2",
+            "avatarUrl": "/avatars/66b31b801960612057ecfd1e26410075.svg",
+            "isPro": false,
+            "fullname": "wuwenxu",
+            "user": "wuwx",
+            "type": "user"
+          },
+          "name": "Wenxu Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-08T06:54:06.171Z",
+          "hidden": false
+        },
+        {
+          "_id": "67efd1cd40e0a904109cac36",
+          "name": "Yufeng Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "67efd1cd40e0a904109cac37",
+          "name": "Fei Ding",
+          "hidden": false
+        },
+        {
+          "_id": "67efd1cd40e0a904109cac38",
+          "name": "Qian He",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/660114b38ae190912a61be5d/eLRIcZxGD19KgExwoJTKW.mp4"
+      ],
+      "publishedAt": "2025-04-02T22:20:21.000Z",
+      "submittedOnDailyAt": "2025-04-09T02:18:09.429Z",
+      "title": "「최소한으로도 많은 일반화：텍스트 내의 생성에 의한 더 다양한 제어성의 해방」",
+      "submittedOnDailyBy": {
+        "_id": "660114b38ae190912a61be5d",
+        "avatarUrl": "/avatars/abc4ab10d6f9769d2b5e697ccbf3fb70.svg",
+        "isPro": false,
+        "fullname": "ShaojinWu",
+        "user": "fenfan",
+        "type": "user"
+      },
+      "summary": "그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.\n\n그 영어의 일본어 번역은 다음과 같습니다.",
+      "upvotes": 18,
+      "discussionId": "67efd1d140e0a904109cad62",
+      "projectPage": "https://bytedance.github.io/UNO/",
+      "githubRepo": "https://github.com/bytedance/UNO",
+      "ai_keywords": [
+        "diffusion transformers",
+        "in-context generation",
+        "multi-subject paired data",
+        "UNO",
+        "progressive cross-modal alignment",
+        "universal rotary position embedding",
+        "multi-image conditioned",
+        "subject-to-image model",
+        "text-to-image model"
+      ]
+    },
+    "publishedAt": "2025-04-02T18:20:21.000Z",
+    "title": "Less-to-More Generalization: Unlocking More Controllability by\n  In-Context Generation",
+    "summary": "Although subject-driven generation has been extensively explored in image\ngeneration due to its wide applications, it still has challenges in data\nscalability and subject expansibility. For the first challenge, moving from\ncurating single-subject datasets to multiple-subject ones and scaling them is\nparticularly difficult. For the second, most recent methods center on\nsingle-subject generation, making it hard to apply when dealing with\nmulti-subject scenarios. In this study, we propose a highly-consistent data\nsynthesis pipeline to tackle this challenge. This pipeline harnesses the\nintrinsic in-context generation capabilities of diffusion transformers and\ngenerates high-consistency multi-subject paired data. Additionally, we\nintroduce UNO, which consists of progressive cross-modal alignment and\nuniversal rotary position embedding. It is a multi-image conditioned\nsubject-to-image model iteratively trained from a text-to-image model.\nExtensive experiments show that our method can achieve high consistency while\nensuring controllability in both single-subject and multi-subject driven\ngeneration.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/660114b38ae190912a61be5d/eLRIcZxGD19KgExwoJTKW.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.02160.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "660114b38ae190912a61be5d",
+      "avatarUrl": "/avatars/abc4ab10d6f9769d2b5e697ccbf3fb70.svg",
+      "fullname": "ShaojinWu",
+      "name": "fenfan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.05535",
+      "authors": [
+        {
+          "_id": "67f630091aed1b4344b57c1b",
+          "name": "M-A-P Team",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c1c",
+          "name": "Siwei Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c1d",
+          "user": {
+            "_id": "6704ee27386892c420db1938",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6704ee27386892c420db1938/lb5mtEwYhn47RawkynYPs.jpeg",
+            "isPro": false,
+            "fullname": "JinCheng Ren",
+            "user": "JinChengRen",
+            "type": "user"
+          },
+          "name": "Jincheng Ren",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T09:48:17.939Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c1e",
+          "name": "Xinrun Du",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c1f",
+          "name": "Shuyue Guo",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c20",
+          "name": "Xingwei Qu",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c21",
+          "name": "Yiming Liang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c22",
+          "name": "Jie Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c23",
+          "name": "Yunwen Li",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c24",
+          "user": {
+            "_id": "64ab99dcb76bfd863eba64c1",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ab99dcb76bfd863eba64c1/UBXwDPx17X-gl-SzBPvrc.jpeg",
+            "isPro": false,
+            "fullname": "TY.Zheng",
+            "user": "aaabiao",
+            "type": "user"
+          },
+          "name": "Tianyu Zheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T09:48:16.069Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c25",
+          "name": "Boyu Feng",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c26",
+          "name": "Huaqing Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c27",
+          "name": "Zenith Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c28",
+          "name": "Jiaheng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c29",
+          "name": "Wenhao Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c2a",
+          "name": "Chenglin Cai",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c2b",
+          "name": "Haoran Que",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c2c",
+          "name": "Jian Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c2d",
+          "name": "Yuelin Bai",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c2e",
+          "name": "Zekun Moore Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c2f",
+          "name": "Zhouliang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c30",
+          "name": "Qunshu Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c31",
+          "name": "Ding Pan",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c32",
+          "name": "Yuchen Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c33",
+          "name": "Tiannan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c34",
+          "name": "Wangchunshu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c35",
+          "name": "Shenzhi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c36",
+          "name": "Xingyuan Bu",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c37",
+          "user": {
+            "_id": "6417d9ea8f689506e7148417",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6417d9ea8f689506e7148417/bAYcruWNw4WvmuQcGgcwC.jpeg",
+            "isPro": false,
+            "fullname": "minghao",
+            "user": "Liam-Liu",
+            "type": "user"
+          },
+          "name": "Minghao Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T09:48:19.721Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c38",
+          "name": "Guoyin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c39",
+          "name": "Ge Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f630091aed1b4344b57c3a",
+          "name": "Chenghua Lin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-07T22:15:51.000Z",
+      "submittedOnDailyAt": "2025-04-09T07:58:42.888Z",
+      "title": "COIG-P: 인간의 가치관과의 조정을 위한 고품질의 대규모 중국어 취향 데이터셋",
+      "submittedOnDailyBy": {
+        "_id": "656d97b10bbc114fe64a96c5",
+        "avatarUrl": "/avatars/fd23bae1d85c5b96c42064a5ddcfad41.svg",
+        "isPro": false,
+        "fullname": "SiweiWu",
+        "user": "SiweiWu",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLMs)와 인간들의 취향을 일치시켜서 놀라운 성공을 거두었다. 그러나 현재의 중국어 취향 데이터 세트는 규모가 작고, 영역이 좁고, 데이터 검증이 엄격하지 않아서, 인간이 설명과 대답의 라벨付け에 의존하는 데 의해 인간들의 취향 데이터 세트의 규모가 제한되어 있다. 이러한 문제를 해결하기 위해 인간이 참여하지 않은 LLM 기반의 중국어 취향 데이터 세트의 라벨 프로кси를 설계했다. 특히, 92k의 고품질의 중국어 질문을 크롤링하고 선택된 거부의 응답 페어를 생성하고 점수를 기록했다. 이를 기반으로 COIG-P(Chinese Open Instruction Generalist - Preference)라는 고품질의, 규모가 큰 중국어 취향 데이터 세트를 도입하고, Chat, Code, Math, Logic, Novel, Role의 6가지의 다양한 영역을 확장한 1,009k의 중국어 취향 페어를 포함했다. COIG-P에 기반해서 LLM을 사용하여 점수의 오버헤드를 줄이기 위해 8B 크기의 중국어 보상 모델(CRM)을 훈련하고, 중국어 보상 벤치마크(CRBench)를 세밀하게 구축했다. AlignBench liu2024alignbenchbenchmarkingchinesealignment에 기반한 평가 결과에 따르면 COIG-P는 다른 중국어 취향 데이터 세트를 크게 초월하고, Qwen2/2.5와 Infinity-Instruct-3M-0625 모델 시리즈에 대해 2%에서 12%의 성능 향상을 거두었다. CRBench의 결과에 따르면 우리의 CRM은 강력한, 견고한 점수 계산 능력을 가지고 있다. COIG-P의 테스트 분할에서 선택된 거부의 응답 페어를 필터링하기 위해, GPT-4o와 같은 저품질의 샘플을 인식하는 능력을 보여주고 효율성과 비용 효율성을 유지했다. 우리의 코드와 데이터는 아래 URL에서 릴리즈되어 있습니다.\nhttps://github.com/multimodal-art-projection/COIG-P",
+      "upvotes": 8,
+      "discussionId": "67f6300b1aed1b4344b57cd0"
+    },
+    "publishedAt": "2025-04-07T18:15:51.000Z",
+    "title": "COIG-P: A High-Quality and Large-Scale Chinese Preference Dataset for\n  Alignment with Human Values",
+    "summary": "Aligning large language models (LLMs) with human preferences has achieved\nremarkable success. However, existing Chinese preference datasets are limited\nby small scale, narrow domain coverage, and lack of rigorous data validation.\nAdditionally, the reliance on human annotators for instruction and response\nlabeling significantly constrains the scalability of human preference datasets.\nTo address these challenges, we design an LLM-based Chinese preference dataset\nannotation pipeline with no human intervention. Specifically, we crawled and\ncarefully filtered 92k high-quality Chinese queries and employed 15 mainstream\nLLMs to generate and score chosen-rejected response pairs. Based on it, we\nintroduce COIG-P (Chinese Open Instruction Generalist - Preference), a\nhigh-quality, large-scale Chinese preference dataset, comprises 1,009k Chinese\npreference pairs spanning 6 diverse domains: Chat, Code, Math, Logic, Novel,\nand Role. Building upon COIG-P, to reduce the overhead of using LLMs for\nscoring, we trained a 8B-sized Chinese Reward Model (CRM) and meticulously\nconstructed a Chinese Reward Benchmark (CRBench). Evaluation results based on\nAlignBench liu2024alignbenchbenchmarkingchinesealignment show that that\nCOIG-P significantly outperforms other Chinese preference datasets, and it\nbrings significant performance improvements ranging from 2% to 12% for the\nQwen2/2.5 and Infinity-Instruct-3M-0625 model series, respectively. The results\non CRBench demonstrate that our CRM has a strong and robust scoring ability. We\napply it to filter chosen-rejected response pairs in a test split of COIG-P,\nand our experiments show that it is comparable to GPT-4o in identifying\nlow-quality samples while maintaining efficiency and cost-effectiveness. Our\ncodes and data are released in\nhttps://github.com/multimodal-art-projection/COIG-P.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.05535.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "656d97b10bbc114fe64a96c5",
+      "avatarUrl": "/avatars/fd23bae1d85c5b96c42064a5ddcfad41.svg",
+      "fullname": "SiweiWu",
+      "name": "SiweiWu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 13
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.02810",
+      "authors": [
+        {
+          "_id": "67f099de103cb604facd26cd",
+          "user": {
+            "_id": "63453f02a05b51f7ded3c579",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/u7p-wTj8zyeWpSFRI8Go0.png",
+            "isPro": false,
+            "fullname": "Andy Lin",
+            "user": "pkuHaowei",
+            "type": "user"
+          },
+          "name": "Haowei Lin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-06T08:11:10.909Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26ce",
+          "name": "Xiangyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26cf",
+          "name": "Ruilin Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26d0",
+          "name": "Baizhou Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26d1",
+          "name": "Haotian Ye",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26d2",
+          "name": "Jianhua Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26d3",
+          "name": "Zihao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26d4",
+          "name": "James Zou",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26d5",
+          "name": "Jianzhu Ma",
+          "hidden": false
+        },
+        {
+          "_id": "67f099de103cb604facd26d6",
+          "user": {
+            "_id": "64683a5776bb704aa14588b7",
+            "avatarUrl": "/avatars/e532756f52c5b95981470ace41a10556.svg",
+            "isPro": false,
+            "fullname": "Yitao Liang",
+            "user": "YitaoLiang",
+            "type": "user"
+          },
+          "name": "Yitao Liang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T07:38:09.311Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-03T17:54:18.000Z",
+      "submittedOnDailyAt": "2025-04-09T01:08:45.803Z",
+      "title": "복잡한 이유론을 포함하는 대규모 언어 모델의 생성 평가",
+      "submittedOnDailyBy": {
+        "_id": "63453f02a05b51f7ded3c579",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/u7p-wTj8zyeWpSFRI8Go0.png",
+        "isPro": false,
+        "fullname": "Andy Lin",
+        "user": "pkuHaowei",
+        "type": "user"
+      },
+      "summary": "대 언어 모형(LLMs)가 초인의 논리론 능력을 보여주는 데서 중요한 문제가 나타나게 됩니다: LLMs는 실제 논리론을 수행하고 있는가 아니면, 그들이는 광범위한, 웹 스크래핑된 훈련 데이터 세트로부터의 답을 단순히 재현하는가 아닌가요? 공개된 벤치마크는 후속의 LLMs의 훈련 데이터 세트에 삽입될 때 불가피하게 오염되어, 신뢰할 수 있는 진실한 평가가 되지 않습니다. 이를 대처하기 위해, 논리론을 평가하기 위해 특별히 설계된 생성 평가 프레임워크인 KUMO를 소개합니다. KUMO는 LLMs와 기호적 엔진을 협업적으로 조합하여, 부분적으로 관측 가능한, 난이도 조절 가능한 다양한, 단계별 논리론 태스크를 동적으로 생성합니다. 자동화 파이프라인을 통해, KUMO는 개방된 영역에서 새로운 태스크를 계속적으로 생성하고, 모델이 실제 일반화를 보여주는 것이 아니라 기억을 보여주는 것을 강제하게 됩니다. KUMO가 23개 선진 LLMs를 100개 분야의 5,000개 태스크로 평가하고, 대학 학생의 논리론 능력과 비교했습니다. 결과는 많은 LLMs는 쉬운 논리론 태스크에서 대학 수준의 성능을 초과하고, 논리론을 확장한 LLMs는 복잡한 논리론 도전에 대학 수준의 성능을 달성했습니다. 또한, KUMO의 태스크에서 LLM의 성능은 새로 공개된 현실적인 논리론 벤치마크의 결과를 강하게 상관하고, KUMO는 실제 LLM의 논리론 능력을 평가하기 위한 강력한, 영원한 평가 도구로서의 가치를 강조합니다.",
+      "upvotes": 8,
+      "discussionId": "67f099e1103cb604facd280e",
+      "githubRepo": "https://github.com/linhaowei1/kumo",
+      "ai_keywords": [
+        "large language models (LLMs)",
+        "superhuman reasoning capabilities",
+        "web-scraped training datasets",
+        "generative evaluation framework",
+        "symbolic engines",
+        "multi-turn reasoning tasks",
+        "partially observable",
+        "adjustable in difficulty",
+        "automated pipeline",
+        "open-ended domains",
+        "genuine generalization",
+        "memorization",
+        "reasoning abilities",
+        "reasoning-scaled LLMs",
+        "university-level performance",
+        "complex reasoning challenges",
+        "real-world reasoning benchmarks"
+      ]
+    },
+    "publishedAt": "2025-04-03T13:54:18.000Z",
+    "title": "Generative Evaluation of Complex Reasoning in Large Language Models",
+    "summary": "With powerful large language models (LLMs) demonstrating superhuman reasoning\ncapabilities, a critical question arises: Do LLMs genuinely reason, or do they\nmerely recall answers from their extensive, web-scraped training datasets?\nPublicly released benchmarks inevitably become contaminated once incorporated\ninto subsequent LLM training sets, undermining their reliability as faithful\nassessments. To address this, we introduce KUMO, a generative evaluation\nframework designed specifically for assessing reasoning in LLMs. KUMO\nsynergistically combines LLMs with symbolic engines to dynamically produce\ndiverse, multi-turn reasoning tasks that are partially observable and\nadjustable in difficulty. Through an automated pipeline, KUMO continuously\ngenerates novel tasks across open-ended domains, compelling models to\ndemonstrate genuine generalization rather than memorization. We evaluated 23\nstate-of-the-art LLMs on 5,000 tasks across 100 domains created by KUMO,\nbenchmarking their reasoning abilities against university students. Our\nfindings reveal that many LLMs have outperformed university-level performance\non easy reasoning tasks, and reasoning-scaled LLMs reach university-level\nperformance on complex reasoning challenges. Moreover, LLM performance on KUMO\ntasks correlates strongly with results on newly released real-world reasoning\nbenchmarks, underscoring KUMO's value as a robust, enduring assessment tool for\ngenuine LLM reasoning capabilities.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.02810.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "63453f02a05b51f7ded3c579",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/u7p-wTj8zyeWpSFRI8Go0.png",
+      "fullname": "Andy Lin",
+      "name": "pkuHaowei",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.05594",
+      "authors": [
+        {
+          "_id": "67f5dc86015730c161ce291b",
+          "name": "Qi Mao",
+          "hidden": false
+        },
+        {
+          "_id": "67f5dc86015730c161ce291c",
+          "name": "Lan Chen",
+          "hidden": false
+        },
+        {
+          "_id": "67f5dc86015730c161ce291d",
+          "name": "Yuchao Gu",
+          "hidden": false
+        },
+        {
+          "_id": "67f5dc86015730c161ce291e",
+          "name": "Mike Zheng Shou",
+          "hidden": false
+        },
+        {
+          "_id": "67f5dc86015730c161ce291f",
+          "name": "Ming-Hsuan Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-08T01:02:50.000Z",
+      "submittedOnDailyAt": "2025-04-09T01:06:41.710Z",
+      "title": "무튜닝 이미지 편집을 피드니티와 편집 가능성에 의한 통일된 잠재적 확산 모형",
+      "submittedOnDailyBy": {
+        "_id": "640d704c8036cc2142299c19",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/640d704c8036cc2142299c19/Wt9AslcVxWOSSc11epk8l.jpeg",
+        "isPro": false,
+        "fullname": "Lan Chen",
+        "user": "Orannue",
+        "type": "user"
+      },
+      "summary": "ファイドィリティ와 편집 가능성의 균형을 유지하는 것이 텍스트 기반의 이미지 편집(TIE)에서 중요합니다. 실패는 일반적으로 오버 편집이나 언더 편집의 문제로 인해 발생합니다. 기존의 방법은 일반적으로 구조 보존에 대한 注意를 부여하고, 사전 학습된 텍스트로부터 이미지로 변환(T2I) 모델의 고유한 텍스트 어레이멘트 능력을 활용하여 편집 가능성의 범위를 확장하지만, 이러한 두 가지 목표의 정확한 균형을 이루는 명확한 방법이 부족합니다. 본 논문에서는, UnifyEdit라는 튜닝이 없는 방법을 소개하며, Dif- ferentiation 잠재 변수 최적화를 사용하여 구조와 편집 가능성의 균형을 유닛 프레임워크 내에서 구현하는 방법을 설명합니다. 직접적인 注意의 부여와 달리, 우리는 두 가지 注意 기반의 제약을 개발하였습니다: 구조를 유지하는 자기 注意(SA) 보존 제약과 편집 가능성 향상을 위해 교차 注意(CA) 어레이멘트 제약. 그러나 두 제약을 동시에 적용할 경우, 그레이디언트 충돌을招く可能性가 있으며, 한 제약의 우선 순위에 따라 오버 편집이나 언더 편집으로 인한 문제로 이어집니다. 이러한 도전에 대처하기 위해, 우리는 이 제약의 영향을 동적으로 조정할 수 있는 적응적인 시간 스텝 스케줄러를 도입하였으며, Dif- ferentiation 잠재 변수를 적절한 균형에 맞추어 가이드합니다. 분산적인 평가와 질적인 실험을 수행하여, 우리의 접근 방식의 효과를 증명하고, 구조 보존과 텍스트 어레이멘트의 균형을 강하게 유지하며, 다른 최선 방법보다 뛰어난 결과를 보여주었습니다. 소스 코드는, https://github.com/CUC-MIPG/UnifyEdit 에서 제공됩니다.",
+      "upvotes": 7,
+      "discussionId": "67f5dc89015730c161ce2a50"
+    },
+    "publishedAt": "2025-04-07T21:02:50.000Z",
+    "title": "Tuning-Free Image Editing with Fidelity and Editability via Unified\n  Latent Diffusion Model",
+    "summary": "Balancing fidelity and editability is essential in text-based image editing\n(TIE), where failures commonly lead to over- or under-editing issues. Existing\nmethods typically rely on attention injections for structure preservation and\nleverage the inherent text alignment capabilities of pre-trained text-to-image\n(T2I) models for editability, but they lack explicit and unified mechanisms to\nproperly balance these two objectives. In this work, we introduce UnifyEdit, a\ntuning-free method that performs diffusion latent optimization to enable a\nbalanced integration of fidelity and editability within a unified framework.\nUnlike direct attention injections, we develop two attention-based constraints:\na self-attention (SA) preservation constraint for structural fidelity, and a\ncross-attention (CA) alignment constraint to enhance text alignment for\nimproved editability. However, simultaneously applying both constraints can\nlead to gradient conflicts, where the dominance of one constraint results in\nover- or under-editing. To address this challenge, we introduce an adaptive\ntime-step scheduler that dynamically adjusts the influence of these\nconstraints, guiding the diffusion latent toward an optimal balance. Extensive\nquantitative and qualitative experiments validate the effectiveness of our\napproach, demonstrating its superiority in achieving a robust balance between\nstructure preservation and text alignment across various editing tasks,\noutperforming other state-of-the-art methods. The source code will be available\nat https://github.com/CUC-MIPG/UnifyEdit.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.05594.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "640d704c8036cc2142299c19",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/640d704c8036cc2142299c19/Wt9AslcVxWOSSc11epk8l.jpeg",
+      "fullname": "Lan Chen",
+      "name": "Orannue",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.06261",
+      "authors": [
+        {
+          "_id": "67f60df2d0df7eccaae93eb0",
+          "name": "Gleb Rodionov",
+          "hidden": false
+        },
+        {
+          "_id": "67f60df2d0df7eccaae93eb1",
+          "name": "Roman Garipov",
+          "hidden": false
+        },
+        {
+          "_id": "67f60df2d0df7eccaae93eb2",
+          "name": "Alina Shutova",
+          "hidden": false
+        },
+        {
+          "_id": "67f60df2d0df7eccaae93eb3",
+          "name": "George Yakushev",
+          "hidden": false
+        },
+        {
+          "_id": "67f60df2d0df7eccaae93eb4",
+          "name": "Vage Egiazarian",
+          "hidden": false
+        },
+        {
+          "_id": "67f60df2d0df7eccaae93eb5",
+          "name": "Anton Sinitsin",
+          "hidden": false
+        },
+        {
+          "_id": "67f60df2d0df7eccaae93eb6",
+          "name": "Denis Kuznedelev",
+          "hidden": false
+        },
+        {
+          "_id": "67f60df2d0df7eccaae93eb7",
+          "name": "Dan Alistarh",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64ef52c2718f94ae8e78a5e7/79i2ecMWxf7tpYS3hvRP4.qt"
+      ],
+      "publishedAt": "2025-04-08T17:59:41.000Z",
+      "submittedOnDailyAt": "2025-04-09T04:36:08.129Z",
+      "title": "호구빌드！ 추론： 병렬 LLM 생성에 의한 병렬 어텐션",
+      "submittedOnDailyBy": {
+        "_id": "64ef52c2718f94ae8e78a5e7",
+        "avatarUrl": "/avatars/d169f4ee62786a3eb4a3fa9d1fec52e9.svg",
+        "isPro": false,
+        "fullname": "Alistarh",
+        "user": "d-alistarh",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLMs)은 발전적인 이유, 긴 문서의 내용을 생성하고, 도구의 사용에 따라 점점 복잡한 작업들을 수행할 수 있는 능력을 보여주고 있습니다. 이러한 작업들을 해결하기 위해 장기적인 계산 시간이 필요합니다. 인간 문제 해결 중, 작업 속도를 빠르게 하기 위한 공통적인 전략은 문제를 차례대로 분할하고, 서로 다른 전략을 병렬적으로 시도하는 등입니다. 최근의 연구는 LLMs도 명시적인 Collaboration Framework를 구현하여 병렬 처리를 수행할 수 있음을 보여주고 있습니다. 예를 들어, 투표기구나 독립적인 차례별 작업의 명시적인 구성 등입니다. 그러나 이러한 프레임워크들은 모두 모든 작업에 적합하지 않습니다. 본 연구에서는 다른 설계 접근 방식을 제안합니다: LLM \"Worker\"를 병렬로 실행시키고, 병렬 업데이트되는 Attention Cache를 통해 동기화하고, 이러한 Worker를 문제를 해결하기 위한 최적의 Collaboration을 결정하도록 촉구합니다. 우리의 접근 방식은 문제를 해결하기 위한 Collaboration 전략을 스스로 결정하고, 병렬 Cache로 \"보기\"가 가능한 방법을 제공합니다. 이 접근 방식은 Hogwild! Inference에 구현되어 있습니다. 이는 동일한 Attention Cache를 가진 동일한 LLM의 여러 인스턴스를 병렬로 실행하고, 생성된 토큰에 \"INSTANT\" 액세스를 제공하는 병렬 LLM 추론 엔진입니다. Hogwild! Inference는 Rotary Position Embeddings(RoPE)을 사용하여 재계산을 피하면서 병렬 하드웨어의 사용률을 높이는 것을 목표로 합니다. 우리들은 현대의 이유 능력을 가진 LLMs은, 공유된 Key-Value Cache를 활용하여 최종 튜닝을 필요로 하지 않는 추론을 수행할 수 있음을 발견했습니다.",
+      "upvotes": 6,
+      "discussionId": "67f60df3d0df7eccaae93eff"
+    },
+    "publishedAt": "2025-04-08T13:59:41.000Z",
+    "title": "Hogwild! Inference: Parallel LLM Generation via Concurrent Attention",
+    "summary": "Large Language Models (LLMs) have demonstrated the ability to tackle\nincreasingly complex tasks through advanced reasoning, long-form content\ngeneration, and tool use. Solving these tasks often involves long\ninference-time computations. In human problem solving, a common strategy to\nexpedite work is collaboration: by dividing the problem into sub-tasks,\nexploring different strategies concurrently, etc. Recent research has shown\nthat LLMs can also operate in parallel by implementing explicit cooperation\nframeworks, such as voting mechanisms or the explicit creation of independent\nsub-tasks that can be executed in parallel. However, each of these frameworks\nmay not be suitable for all types of tasks, which can hinder their\napplicability. In this work, we propose a different design approach: we run LLM\n\"workers\" in parallel , allowing them to synchronize via a concurrently-updated\nattention cache and prompt these workers to decide how best to collaborate. Our\napproach allows the instances to come up with their own collaboration strategy\nfor the problem at hand, all the while \"seeing\" each other's partial progress\nin the concurrent cache. We implement this approach via Hogwild! Inference: a\nparallel LLM inference engine where multiple instances of the same LLM run in\nparallel with the same attention cache, with \"instant\" access to each other's\ngenerated tokens. Hogwild! inference takes advantage of Rotary Position\nEmbeddings (RoPE) to avoid recomputation while improving parallel hardware\nutilization. We find that modern reasoning-capable LLMs can perform inference\nwith shared Key-Value cache out of the box, without additional fine-tuning.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64ef52c2718f94ae8e78a5e7/79i2ecMWxf7tpYS3hvRP4.qt"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.06261.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64ef52c2718f94ae8e78a5e7",
+      "avatarUrl": "/avatars/d169f4ee62786a3eb4a3fa9d1fec52e9.svg",
+      "fullname": "Alistarh",
+      "name": "d-alistarh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.00043",
+      "authors": [
+        {
+          "_id": "67ec9d4ad327ed17ec707488",
+          "name": "Jixuan Leng",
+          "hidden": false
+        },
+        {
+          "_id": "67ec9d4ad327ed17ec707489",
+          "name": "Chengsong Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67ec9d4ad327ed17ec70748a",
+          "name": "Langlin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "67ec9d4ad327ed17ec70748b",
+          "name": "Bill Yuchen Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67ec9d4ad327ed17ec70748c",
+          "name": "William W. Cohen",
+          "hidden": false
+        },
+        {
+          "_id": "67ec9d4ad327ed17ec70748d",
+          "name": "Haohan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67ec9d4ad327ed17ec70748e",
+          "name": "Jiaxin Huang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-30T20:03:36.000Z",
+      "submittedOnDailyAt": "2025-04-09T00:47:44.460Z",
+      "title": "交叉验证指导：LLMs与LVLMs在推理能力评估中的可控拼图生成",
+      "submittedOnDailyBy": {
+        "_id": "64efbf39b3610349e84db417",
+        "avatarUrl": "/avatars/9e09a20e88f8cf5ce119efc0dadc3b7b.svg",
+        "isPro": false,
+        "fullname": "Jiaxin Huang",
+        "user": "teapot123",
+        "type": "user"
+      },
+      "summary": "현재의 대규모 언어 모델(LLMs)와 대규모 시각 언어 모델(LVLMs)의 논리 평가 프레임워크는 주로 문서 기반의 논리 평가와 시각 언어 이해 능력을 평가하며, 문서와 시각의 제약 사이의 동적 상호작용이 제한되어 있습니다. 이러한 제한을 해결하기 위해 CrossWordBench라는 벤치마크를 도입합니다. 이것은 LLMs와 LVLMs의 논리 평가를 CrossWord 퍼즐의 중간으로 진행하며, 문서 기반의 튜링 테스트와 시각 그리드 구조로부터의 교차 제약을 포함한 여러 모드의 평가를 제공합니다. CrossWordBench는 제어 가능한 퍼즐 생성 프레임워크를 활용하여 텍스트와 이미지의 여러 형식의 퍼즐을 생성하고, 직접적인 퍼즐 해결부터 인터랙티브 모드까지의 평가 전략을 제공합니다. 20개 이상의 확장 평가에 의해 논리 평가가 있는 LLMs는 교차 문자 제약을 효과적으로 활용하여 논리 평가가 없는 모델을 크게 평가하며, LVLMs는 퍼즐 해결의 성능과 그리드 파서 자르기의 정확性与 강한 관련성을 나타냅니다. 이러한 발견은 현재의 LLMs와 LVLMs의 논리 평가 능력의 제한을 보여주고, 미래의 평가에 대한 여러 모드 제약 태스크의 효과적인 접근을 제공합니다.",
+      "upvotes": 5,
+      "discussionId": "67ec9d4fd327ed17ec707598",
+      "ai_keywords": [
+        "CrossWordBench",
+        "multimodal adherence",
+        "semantic constraints",
+        "intersectional constraints",
+        "controllable puzzle generation framework",
+        "direct puzzle solving",
+        "interactive modes",
+        "reasoning LLMs",
+        "non-reasoning models",
+        "crossing-letter constraints",
+        "grid-parsing accuracy",
+        "multimodal constrained tasks"
+      ]
+    },
+    "publishedAt": "2025-03-30T16:03:36.000Z",
+    "title": "CrossWordBench: Evaluating the Reasoning Capabilities of LLMs and LVLMs\n  with Controllable Puzzle Generation",
+    "summary": "Existing reasoning evaluation frameworks for Large Language Models (LLMs) and\nLarge Vision-Language Models (LVLMs) predominantly either assess text-based\nreasoning or vision-language understanding capabilities, with limited dynamic\ninterplay between textual and visual constraints. To address this limitation,\nwe introduce CrossWordBench, a benchmark designed to evaluate the reasoning\ncapabilities of both LLMs and LVLMs through the medium of crossword puzzles-a\ntask requiring multimodal adherence to semantic constraints from text-based\nclues and intersectional constraints from visual grid structures.\nCrossWordBench leverages a controllable puzzle generation framework that\nproduces puzzles in multiple formats (text and image) and offers different\nevaluation strategies ranging from direct puzzle solving to interactive modes.\nOur extensive evaluation of over 20 models reveals that reasoning LLMs\noutperform non-reasoning models substantially by effectively leveraging\ncrossing-letter constraints. We further demonstrate that LVLMs struggle with\nthe task, showing a strong correlation between their puzzle-solving performance\nand grid-parsing accuracy. Our findings offer insights into the limitations of\nthe reasoning capabilities of current LLMs and LVLMs, and provide an effective\napproach for creating multimodal constrained tasks for future evaluations.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.00043.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64efbf39b3610349e84db417",
+      "avatarUrl": "/avatars/9e09a20e88f8cf5ce119efc0dadc3b7b.svg",
+      "fullname": "Jiaxin Huang",
+      "name": "teapot123",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.06148",
+      "authors": [
+        {
+          "_id": "67f6310fe30d3e5d13a9cbfc",
+          "user": {
+            "_id": "673deee2afdcf84dddf74827",
+            "avatarUrl": "/avatars/d2e051ddef816342aa52b98ded109e66.svg",
+            "isPro": false,
+            "fullname": "XxZheng",
+            "user": "Fengx1nn",
+            "type": "user"
+          },
+          "name": "Xiangxi Zheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-09T09:48:14.241Z",
+          "hidden": false
+        },
+        {
+          "_id": "67f6310fe30d3e5d13a9cbfd",
+          "name": "Linjie Li",
+          "hidden": false
+        },
+        {
+          "_id": "67f6310fe30d3e5d13a9cbfe",
+          "name": "Zhengyuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "67f6310fe30d3e5d13a9cbff",
+          "name": "Ping Yu",
+          "hidden": false
+        },
+        {
+          "_id": "67f6310fe30d3e5d13a9cc00",
+          "name": "Alex Jinpeng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "67f6310fe30d3e5d13a9cc01",
+          "name": "Rui Yan",
+          "hidden": false
+        },
+        {
+          "_id": "67f6310fe30d3e5d13a9cc02",
+          "name": "Yuan Yao",
+          "hidden": false
+        },
+        {
+          "_id": "67f6310fe30d3e5d13a9cc03",
+          "name": "Lijuan Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-08T15:43:01.000Z",
+      "submittedOnDailyAt": "2025-04-09T07:04:38.598Z",
+      "title": "V-MAGE: 시각 중심 능력 평가 프레임워크를 위한 다 모드 대규모 언어 모델의 게임 평가",
+      "submittedOnDailyBy": {
+        "_id": "62333a88fd7bb4a39b92d387",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62333a88fd7bb4a39b92d387/e21AhpcXq37Ak_7rZ-Ca9.png",
+        "isPro": false,
+        "fullname": "Alex Jinpeng Wang",
+        "user": "Awiny",
+        "type": "user"
+      },
+      "summary": "최근의 다모둠 대언어 모둠(MLLM)의 발전은 다모둠 벤치마크에서 큰 개선을 보입니다. 그러나 평가가 정적 데이터 세트에서 개방된 세계로, 동적인 환경으로 이동하고, 현재의 게임 기반 벤치마크는 시각 중심 태스크를 미루어, 현실 세계의 결정에 필요한 다양한 이유론 스킬을 평가할 수 없게 되어 있습니다. 이에 대해, 우리는 시각 중심의 다능성 게임 평가(V-MAGE)을 소개합니다. V-MAGE는 MLLM의 시각 이유론 능력을 평가하기 위한 게임 기반 평가 프레임워크입니다. V-MAGE는 5가지의 다양한 게임과 30점 이상의 handcraft 레벨을 특징으로, 위치 데이터,궤도 추적, 타이밍, 시각 기억 등 핵심적인 시각 스킬을 모델에 테스트하고, 장기 계획과 상세한 이유론을 포함하여 더 높은 수준의 이유론을 평가합니다. V-MAGE를 사용하여, 발전된 MLLM을 평가하고, 그 시각 인식과 이유론에 대한 중요한 문제점을 밝혀 냈습니다. 모든 게임 환경에서, Elo 레이팅 비교로 결정적인 성능이 높은 MLLM은, 인간과 비교하여 큰 성능 차이를 보여줍니다. 우리의 발견은 모델이 보는 오류의 종류 등 중요한 제한을 보여주고, 아웃풋 프로젝트에서 개선의 가능성을 보여줍니다. 코드는, https://github.com/CSU-JPG/V-MAGE에 액세스 가능합니다.",
+      "upvotes": 4,
+      "discussionId": "67f63111e30d3e5d13a9cc85"
+    },
+    "publishedAt": "2025-04-08T11:43:01.000Z",
+    "title": "V-MAGE: A Game Evaluation Framework for Assessing Visual-Centric\n  Capabilities in Multimodal Large Language Models",
+    "summary": "Recent advancements in Multimodal Large Language Models (MLLMs) have led to\nsignificant improvements across various multimodal benchmarks. However, as\nevaluations shift from static datasets to open-world, dynamic environments,\ncurrent game-based benchmarks remain inadequate because they lack\nvisual-centric tasks and fail to assess the diverse reasoning skills required\nfor real-world decision-making. To address this, we introduce Visual-centric\nMultiple Abilities Game Evaluation (V-MAGE), a game-based evaluation framework\ndesigned to assess visual reasoning capabilities of MLLMs. V-MAGE features five\ndiverse games with 30+ handcrafted levels, testing models on core visual skills\nsuch as positioning, trajectory tracking, timing, and visual memory, alongside\nhigher-level reasoning like long-term planning and deliberation. We use V-MAGE\nto evaluate leading MLLMs, revealing significant challenges in their visual\nperception and reasoning. In all game environments, the top-performing MLLMs,\nas determined by Elo rating comparisons, exhibit a substantial performance gap\ncompared to humans. Our findings highlight critical limitations, including\nvarious types of perceptual errors made by the models, and suggest potential\navenues for improvement from an agent-centric perspective, such as refining\nagent strategies and addressing perceptual inaccuracies. Code is available at\nhttps://github.com/CSU-JPG/V-MAGE.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.06148.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62333a88fd7bb4a39b92d387",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62333a88fd7bb4a39b92d387/e21AhpcXq37Ak_7rZ-Ca9.png",
+      "fullname": "Alex Jinpeng Wang",
+      "name": "Awiny",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2503.20533",
+      "authors": [
+        {
+          "_id": "67f62f3a28b4852d4761e842",
+          "name": "Yijiong Yu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-03-26T13:28:57.000Z",
+      "submittedOnDailyAt": "2025-04-09T06:58:23.443Z",
+      "title": "한 퀀스 내의 병렬 디코딩을 통해 병렬 실행 가능한 논리를 가속화합니다.",
+      "submittedOnDailyBy": {
+        "_id": "6374c494958cd71fa7ea0a9d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6374c494958cd71fa7ea0a9d/2YCKv6tXCZXtsIOFIIXjs.png",
+        "isPro": false,
+        "fullname": "yuyijiong",
+        "user": "yuyijiong",
+        "type": "user"
+      },
+      "summary": "최근의 reason model의 발전은 복잡한 태스크의 정확도를 크게 향상시키는 중요한 개선을 보여주고 있습니다. 특히 수학 모델과 같은 복잡한 문제를 처리할 때, 상세하고 전적인 reason process를 사용하여 정확도가 크게 향상되었습니다. 그러나 이러한 긴 reason sequence의 생성은 많은 계산량과 시간이 소요됩니다. 이러한 효율성을 개선하기 위해, 특정 태스크의 고유한 병렬화 가능성을 활용하여 reason process를 가속화합니다. 특히, 여러 병렬 reason branch가 존재하는 경우,专用의 attention mask를 사용하여 1 스텝에 여러 토큰을 확인하고, 하나의 sequence 내에서 처리하며 추가 메모리 사용을 피합니다. 실험 결과를 통해, 우리의 방법은 답변의 품질을 유지하는 동시에 확인 시간으로 100% 이상의 속도 업을 달성합니다.",
+      "upvotes": 3,
+      "discussionId": "67f62f3b28b4852d4761e87c"
+    },
+    "publishedAt": "2025-03-26T09:28:57.000Z",
+    "title": "Accelerate Parallelizable Reasoning via Parallel Decoding within One\n  Sequence",
+    "summary": "Recent advances in reasoning models have demonstrated significant\nimprovements in accuracy, particularly for complex tasks such as mathematical\nreasoning, by employing detailed and comprehensive reasoning processes.\nHowever, generating these lengthy reasoning sequences is computationally\nexpensive and time-consuming. To address this inefficiency, we leverage the\ninherent parallelizability of certain tasks to accelerate the reasoning\nprocess. Specifically, when multiple parallel reasoning branches exist, we\ndecode multiple tokens per step using a specialized attention mask, processing\nthem within a single sequence, avoiding additional memory usage. Experimental\nresults show that our method achieves over 100% speedup in decoding time while\nmaintaining the answer quality.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2503.20533.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6374c494958cd71fa7ea0a9d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6374c494958cd71fa7ea0a9d/2YCKv6tXCZXtsIOFIIXjs.png",
+      "fullname": "yuyijiong",
+      "name": "yuyijiong",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 43
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.06232",
+      "authors": [
+        {
+          "_id": "67f6406e49525c856f4705c4",
+          "name": "Jiazi Bu",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705c5",
+          "name": "Pengyang Ling",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705c6",
+          "name": "Yujie Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705c7",
+          "name": "Pan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705c8",
+          "name": "Tong Wu",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705c9",
+          "name": "Xiaoyi Dong",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705ca",
+          "name": "Yuhang Zang",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705cb",
+          "name": "Yuhang Cao",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705cc",
+          "name": "Dahua Lin",
+          "hidden": false
+        },
+        {
+          "_id": "67f6406e49525c856f4705cd",
+          "name": "Jiaqi Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-08T17:30:40.000Z",
+      "submittedOnDailyAt": "2025-04-09T08:11:30.876Z",
+      "title": "HiFlow: 흐름에 따라 지도를 제공하는 고해상도 이미지 생성에 대한 훈련 필요 없음\n\n(Note: The original text \"HiFlow\" is a brand name and is not translated as it is a proper noun.)",
+      "submittedOnDailyBy": {
+        "_id": "64b4eec4faa3181a5eab9c46",
+        "avatarUrl": "/avatars/bcc9bf5cbf67546ad2b4c9ec8b96ac96.svg",
+        "isPro": true,
+        "fullname": "Jiaqi Wang",
+        "user": "myownskyW7",
+        "type": "user"
+      },
+      "summary": "텍스트로부터 이미지(T2I)의 확산 모델이나 플로우 모델은 최근에 더욱 적응 가능한 이미지의 생성이 가능해 많은 주목을 받고 있습니다. 그러나 고해상도 이미지의 합성은 고해상도 콘텐츠의 부족과 복잡성에 의해 큰 문제로 되어 있습니다. 여기서는, 우리는 HiFlow라는 학습이 필요하지 않고 모델 독립적인 프레임워크를 제안하고, 사전 학습된 플로우 모델의 해상도의 잠재력을 풀어내는 것을 목표로 합니다. 특히, HiFlow는 고해상도 공간 내에서 가상의 참조 플로우를 구축하고, 저해상도 플로우 정보의 특징을 효과적으로捉え, 고해상도 생성에서 3가지의 중요한 측면에서 가이드를 제공합니다. 이는 저주파의 일치성의 초기 배치, 구조의 보존을 위해 방향 배치, 그리고 세부의 정확성을 위해 가속 배치입니다. 이러한 플로우 배치를 활용하면, HiFlow는 T2I 모델의 고해상도 이미지 합성의 품질을 크게 향상시키고, 광범위한 기능성을 보여주는 데 성공합니다. 확장된 실험은 현재의 최상급 방법에서 고해상도 이미지의 품질을 초월하는 것을 증명합니다.",
+      "upvotes": 2,
+      "discussionId": "67f6407349525c856f470733"
+    },
+    "publishedAt": "2025-04-08T13:30:40.000Z",
+    "title": "HiFlow: Training-free High-Resolution Image Generation with Flow-Aligned\n  Guidance",
+    "summary": "Text-to-image (T2I) diffusion/flow models have drawn considerable attention\nrecently due to their remarkable ability to deliver flexible visual creations.\nStill, high-resolution image synthesis presents formidable challenges due to\nthe scarcity and complexity of high-resolution content. To this end, we present\nHiFlow, a training-free and model-agnostic framework to unlock the resolution\npotential of pre-trained flow models. Specifically, HiFlow establishes a\nvirtual reference flow within the high-resolution space that effectively\ncaptures the characteristics of low-resolution flow information, offering\nguidance for high-resolution generation through three key aspects:\ninitialization alignment for low-frequency consistency, direction alignment for\nstructure preservation, and acceleration alignment for detail fidelity. By\nleveraging this flow-aligned guidance, HiFlow substantially elevates the\nquality of high-resolution image synthesis of T2I models and demonstrates\nversatility across their personalized variants. Extensive experiments validate\nHiFlow's superiority in achieving superior high-resolution image quality over\ncurrent state-of-the-art methods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.06232.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b4eec4faa3181a5eab9c46",
+      "avatarUrl": "/avatars/bcc9bf5cbf67546ad2b4c9ec8b96ac96.svg",
+      "fullname": "Jiaqi Wang",
+      "name": "myownskyW7",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 17
+    },
+    "isAuthorParticipating": false
+  }
+]
