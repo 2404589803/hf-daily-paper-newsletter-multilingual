@@ -1,0 +1,808 @@
+[
+  {
+    "paper": {
+      "id": "2504.13835",
+      "authors": [
+        {
+          "_id": "6805b38355d3c792e1a9d0dd",
+          "name": "Yicheng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0de",
+          "name": "Yining Li",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0df",
+          "name": "Kai Hu",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0e0",
+          "name": "Zerun Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0e1",
+          "name": "Haochen Ye",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0e2",
+          "name": "Kai Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-18T17:59:46.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:39:08.191Z",
+      "title": "MIG: 정보수익을 최대화하는 의미공간에서의 자동 데이터 선택을 통한 명령어 튜닝",
+      "submittedOnDailyBy": {
+        "_id": "649988726677f66c2b486392",
+        "avatarUrl": "/avatars/b649a77370660e129726e29504daba34.svg",
+        "isPro": false,
+        "fullname": "Yining Li",
+        "user": "ly015",
+        "type": "user"
+      },
+      "summary": "데이터의 품질과 다양성은 유효한 인스톰션 튜닝 데이터 세트의 구축에서 중요합니다. 오픈 소스 인스톰션 튜닝 데이터 세트의 활용이 증가하는 가운데, 많은 데이터에서 고품질과 다양성을 가진 서브세트를 자동적으로 선택하는 것이 유리합니다. 현재의 방법은 일반적으로 인스톰스 quality를 우선시하고, 휴리스틱 규칙을 사용하여 다양성을 유지하지만, 이는 전체 컬렉션의 시각이 부족하여 최적의 결과를 도달하기 어려운 경우가 있습니다. 또한 휴리스틱 규칙은 일반적으로 인코딩 공간 내의 거리나 클러스터링을 중점적으로 다루기 때문에, 복잡한 인스톰션의 의도를 정확히 감지하는 것이 불가능합니다. 이를 보완하기 위해, 데이터 세트의 정보량을 정량화하는 일련의 방법을 제안합니다. 이 방법은 라벨 그래프를 구축하여 표기 공간을 모델화하고, 그래프 내의 정보의 분포에 기반하여 다양성을 정량화합니다. 이러한 평가에 기반하여, 효율적인 데이터 샘플링 방법을 도입하고, 표기 공간에서 정보 이득을 최대화하는 데이터 샘플링을 수행합니다. 다양한 데이터 세트와 베이스 모델에 대한 실험은 이 방법이 가장 先進한 방법(state-of-the-art)을 초과하는 것을 보여줍니다. 특히, MIG로 샘플링된 5%의 Tulu3 데이터로 微調節된 모델은 전체 데이터 세트에서 훈련된 공식의 SFT 모델과 비교하여 상대적인 성능을 나타내고, AlpacaEval에서 +5.73%와 Wildbench에서 +6.89%의 개선을 입혔습니다.",
+      "upvotes": 26,
+      "discussionId": "6805b38555d3c792e1a9d155",
+      "projectPage": "https://yichengchen24.github.io/projects/mig",
+      "githubRepo": "https://github.com/yichengchen24/MIG",
+      "ai_keywords": [
+        "label graph",
+        "semantic space",
+        "information content",
+        "Maximize the Information Gain (MIG)"
+      ]
+    },
+    "publishedAt": "2025-04-18T13:59:46.000Z",
+    "title": "MIG: Automatic Data Selection for Instruction Tuning by Maximizing\n  Information Gain in Semantic Space",
+    "summary": "Data quality and diversity are key to the construction of effective\ninstruction-tuning datasets. % With the increasing availability of open-source\ninstruction-tuning datasets, it is advantageous to automatically select\nhigh-quality and diverse subsets from a vast amount of data. % Existing methods\ntypically prioritize instance quality and use heuristic rules to maintain\ndiversity. % However, this absence of a comprehensive view of the entire\ncollection often leads to suboptimal results. % Moreover, heuristic rules\ngenerally focus on distance or clustering within the embedding space, which\nfails to accurately capture the intent of complex instructions in the semantic\nspace. % To bridge this gap, we propose a unified method for quantifying the\ninformation content of datasets. This method models the semantic space by\nconstructing a label graph and quantifies diversity based on the distribution\nof information within the graph. % Based on such a measurement, we further\nintroduce an efficient sampling method that selects data samples iteratively to\nMaximize the Information Gain (MIG) in semantic\nspace. % Experiments on various datasets and base models demonstrate that MIG\nconsistently outperforms state-of-the-art methods. % Notably, the model\nfine-tuned with 5\\% Tulu3 data sampled by MIG achieves comparable performance\nto the official SFT model trained on the full dataset, with improvements of\n+5.73\\% on AlpacaEval and +6.89\\% on Wildbench.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13835.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "649988726677f66c2b486392",
+      "avatarUrl": "/avatars/b649a77370660e129726e29504daba34.svg",
+      "fullname": "Yining Li",
+      "name": "ly015",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.13837",
+      "authors": [
+        {
+          "_id": "6805b9ec7c5fa8020f595642",
+          "name": "Yang Yue",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595643",
+          "name": "Zhiqi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595644",
+          "name": "Rui Lu",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595645",
+          "name": "Andrew Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595646",
+          "name": "Zhaokai Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595647",
+          "name": "Yang Yue",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595648",
+          "name": "Shiji Song",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595649",
+          "name": "Gao Huang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/649d475111592b1a765ac1a3/2KWQqFdVDUCAu-kSu87fa.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/649d475111592b1a765ac1a3/rF4cAa6DAI3EaejDV_dgG.mp4"
+      ],
+      "publishedAt": "2025-04-18T17:59:56.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:54:36.096Z",
+      "title": "강화학습은 기초 모델을 초과하여 LLM의 논리적 판단 능력을 촉진합니다가?",
+      "submittedOnDailyBy": {
+        "_id": "649d475111592b1a765ac1a3",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/649d475111592b1a765ac1a3/rjORJjErJq-mthghan08U.jpeg",
+        "isPro": false,
+        "fullname": "Yang Yue",
+        "user": "Yang130",
+        "type": "user"
+      },
+      "summary": "RLVR（Verifiable Rewards에 의한 강화학습）은 최근 LLM（대규모 언어 모델）의 문제 해결 능력을 특히 수학이나 프로그래밍 태스크에서 크게 향상시키는 데서 주목을 받고 있습니다. 일반적으로 RLVR는 LLM이 연속적으로 자기 개선할 수 있게 해 주고, 그 문제 해결 능력이 기본 모델의 능력보다 훨씬 뛰어난 새로운 문제 해결 능력을 얻는 것을 예상하고 있습니다. 그러나 본 연구에서는 이러한 가정을 비판적으로 재검토하고, 큰 k 값을 사용한 pass@k 메트릭을 평가하여 다양한 모델 familes와 벤치마크에서 문제 해결 능력을 탐색했습니다. 놀라운 사실로, RL은 실제로 새로운 문제 해결 패턴을 추출하지는 않았습니다. RL을 학습시킨 모델은 작은 k 값 (예: k=1)에서 기본 모델보다 상위를 초과하지만, 큰 k 값에서는 기본 모델이 상대적으로 또는 더 높은 pass@k 점수를 달성할 수 있습니다. RL을 학습시킨 모델이 생성하는 문제 해결 경로는 기본 모델의 샘플링 분포에 이미 포함되어 있음을 보여줍니다. 이러한 모델의 문제 해결 능력은 기본 모델에서 이미 얻은 것이라는 것을 보여줍니다.进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进みました。进",
+      "upvotes": 24,
+      "discussionId": "6805b9ed7c5fa8020f59568c",
+      "projectPage": "https://limit-of-rlvr.github.io/",
+      "githubRepo": "https://github.com/LeapLabTHU/limit-of-RLVR",
+      "ai_keywords": [
+        "Reinforcement Learning",
+        "Verifiable Rewards",
+        "RLVR",
+        "LLMs (Large Language Models)",
+        "reasoning capabilities",
+        "mathematics",
+        "programming tasks",
+        "pass@\\textit{k}",
+        "benchmark",
+        "RL-trained models",
+        "base models",
+        "reasoning paths",
+        "sampling distribution",
+        "performance",
+        "biasing",
+        "output distribution",
+        "visual reasoning tasks",
+        "distillation"
+      ]
+    },
+    "publishedAt": "2025-04-18T13:59:56.000Z",
+    "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in\n  LLMs Beyond the Base Model?",
+    "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has recently\ndemonstrated notable success in enhancing the reasoning capabilities of LLMs,\nparticularly in mathematics and programming tasks. It is widely believed that\nRLVR enables LLMs to continuously self-improve, thus acquiring novel reasoning\nabilities that exceed corresponding base models' capacity. In this study,\nhowever, we critically re-examines this assumption by measuring the\npass@k metric with large values of k to explore the reasoning\ncapability boundary of the models across a wide range of model families and\nbenchmarks. Surprisingly, the RL does not, in fact, elicit fundamentally\nnew reasoning patterns. While RL-trained models outperform their base models at\nsmaller values of k (\\eg, k=1), base models can achieve a comparable or\neven higher pass@k score compared to their RL counterparts at large k\nvalues. The reasoning paths generated by RL-trained models are already included\nin the base models' sampling distribution, suggesting that most reasoning\nabilities manifested in RL-trained models are already obtained by base models.\nFurther analysis shows that RL training boosts the performance by biasing the\nmodel's output distribution toward paths that are more likely to yield rewards,\ntherefore sampling correct responses more efficiently. But this also results in\na narrower reasoning capability boundary compared to base models. Similar\nresults are observed in visual reasoning tasks trained with RLVR. Moreover, we\nfind that distillation can genuinely introduce new knowledge into the model,\ndifferent from RLVR. These findings underscore a critical limitation of RLVR in\nadvancing LLM reasoning abilities which requires us to fundamentally rethink\nthe impact of RL training in reasoning LLMs and the need of a better paradigm.\nProject Page: https://limit-of-RLVR.github.io",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/649d475111592b1a765ac1a3/2KWQqFdVDUCAu-kSu87fa.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/649d475111592b1a765ac1a3/rF4cAa6DAI3EaejDV_dgG.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13837.png",
+    "numComments": 6,
+    "submittedBy": {
+      "_id": "649d475111592b1a765ac1a3",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/649d475111592b1a765ac1a3/rjORJjErJq-mthghan08U.jpeg",
+      "fullname": "Yang Yue",
+      "name": "Yang130",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.11833",
+      "authors": [
+        {
+          "_id": "6805bb01747a412bca737b53",
+          "name": "Changjiang Gao",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b54",
+          "name": "Xu Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b55",
+          "name": "Wenhao Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b56",
+          "name": "Shujian Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b57",
+          "name": "Lei Li",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b58",
+          "name": "Fei Yuan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-16T07:45:10.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:57:09.327Z",
+      "title": "언어의 다양성이 LLM의 추론 능력을 향상시킬 수 있는지 생각합니다.",
+      "submittedOnDailyBy": {
+        "_id": "65fed45b08d35929362dd651",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65fed45b08d35929362dd651/KLMxsyRN6_HhCZP1iDw6K.png",
+        "isPro": false,
+        "fullname": "FeiYuan",
+        "user": "FeYuan",
+        "type": "user"
+      },
+      "summary": "이전의 연구는 대규모 언어 모델이 \"영어를 편향하는\" 현상을 밝혀내줍니다. 즉, 영어로 태스크를 제공하면 그 성능이 크게 향상되는 것을 보여줍니다. 흥미로운 점은 특정 언어를 사용했을 때의 추론 태스크에서 영어보다 더 좋은 성능을 보여주는 것을 관찰했습니다. 그러나 이 현상은 아직 조사가 부족합니다. 본 논문에서는 다언어 모델의 추론 태스크의 한계를 평가하고, 다언어의 추론이 영어만 있는 추론보다 더 높고 안정적으로 (번역 품질과 언어 선택의 변화에 대한 견고성) 한계점을 높일 수 있음을 보여줍니다. 또한 한계의 원인과 이를 달성하는 문제점을 분석하고, 일반적인 답을 선택하는 방법들이 이 한계를 달성할 수 없다는 것을 보여줍니다. 이러한 관점은 향후 연구에서 LLM의 다언어 추론의 모든 잠재력을 활용하는 연구를 목표로 하는 연구에 도움이 될 것으로 기대합니다.",
+      "upvotes": 14,
+      "discussionId": "6805bb02747a412bca737b7e",
+      "githubRepo": "https://github.com/CONE-MT/multilingual_reasoning"
+    },
+    "publishedAt": "2025-04-16T03:45:10.000Z",
+    "title": "Could Thinking Multilingually Empower LLM Reasoning?",
+    "summary": "Previous work indicates that large language models exhibit a significant\n\"English bias\", i.e. they often perform better when tasks are presented in\nEnglish. Interestingly, we have observed that using certain other languages in\nreasoning tasks can yield better performance than English. However, this\nphenomenon remains under-explored. In this paper, we explore the upper bound of\nharnessing multilingualism in reasoning tasks, suggesting that multilingual\nreasoning promises significantly (by nearly 10 Acc@k points) and robustly\n(tolerance for variations in translation quality and language choice) higher\nupper bounds than English-only reasoning. Besides analyzing the reason behind\nthe upper bound and challenges in reaching it, we also find that common answer\nselection methods cannot achieve this upper bound, due to their limitations and\nbiases. These insights could pave the way for future research aimed at fully\nharnessing the potential of multilingual reasoning in LLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.11833.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65fed45b08d35929362dd651",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65fed45b08d35929362dd651/KLMxsyRN6_HhCZP1iDw6K.png",
+      "fullname": "FeiYuan",
+      "name": "FeYuan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 21
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.13072",
+      "authors": [
+        {
+          "_id": "6805bfc5e332a61dd90160b0",
+          "name": "Wenqi Dong",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b1",
+          "name": "Bangbang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b2",
+          "name": "Zesong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b3",
+          "name": "Yuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b4",
+          "name": "Tao Hu",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b5",
+          "name": "Hujun Bao",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b6",
+          "name": "Yuewen Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b7",
+          "name": "Zhaopeng Cui",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63d748ff6f49aa82306b7e48/DNTOfy5oOkjTJwLBeGOUH.qt"
+      ],
+      "publishedAt": "2025-04-17T16:33:39.000Z",
+      "submittedOnDailyAt": "2025-04-21T03:26:56.809Z",
+      "title": "히스케인： 등각 뷰 생성에 의한 계층적 3D 시선의 제작",
+      "submittedOnDailyBy": {
+        "_id": "63d748ff6f49aa82306b7e48",
+        "avatarUrl": "/avatars/9f0b8b8a09b14d76e52ed1bd312e6b63.svg",
+        "isPro": false,
+        "fullname": "BB Yang",
+        "user": "ybbbbt",
+        "type": "user"
+      },
+      "summary": "3D 생성은 멀티미디어 및 컴퓨터 그래픽 분야에서 중요한 프론티어 역할을 하지만, 현재의 접근 방식은 대상 물체의 분류가 제한되어있거나, 인터랙티브 애플리케이션에 대한 편집 유연성이 없는 문제점을 가지고 있습니다. 본 논문에서는 2D 이미지 생성과 3D 물체 생성 사이의 간격을 거의 채우는 새로운 휴리스틱 프레임워크 'HiScene'을 제안하고, 구조적 식별성과 예술적인 장면 콘텐츠를 갖춘 고정밀한 장면을 제공하기 위해 노력합니다. 우리의 주요 견해는 장면을 등거리 변환 뷰에서 휴리스틱인 '물체'로 취급하는 것입니다. 이를 통해 방은 더욱 복잡한 물체로 분해될 수 있으며, 분해 가능한 조작 가능한 아이템으로 분해될 수 있습니다. 이러한 휴리스틱적인 접근 방식에 의해, 2D 표현과 일치하면서 구조적 구조를 유지하기 위한 3D 콘텐츠의 생성이 가능합니다. 각 분해된 인스턴스의 완전성과 공간적 배정을 보장하기 위해, 은닉 처리를 효과적으로 수행하는 비디오 디퓨저 기반의 무시 컴파일 기술과 함께, 공간적 일관성을 보장하기 위해 형상 우선 주입을 도입하였습니다. 실험 결과를 통해, 우리의 방법론이 자연스러운 물체 배치와 인터랙티브 애플리케이션에 적합한 완전한 물체 인스턴스를 생성하고, 물리적 가능성과 사용자 입력과의 배정을 유지하는 것을 보여줍니다.",
+      "upvotes": 5,
+      "discussionId": "6805bfc9e332a61dd901618b",
+      "ai_keywords": [
+        "hierarchical framework",
+        "2D image generation",
+        "3D object generation",
+        "video-diffusion-based amodal completion",
+        "occlusions",
+        "shadows",
+        "shape prior injection",
+        "spatial coherence",
+        "natural object arrangements",
+        "complete object instances",
+        "interactive applications",
+        "physical plausibility",
+        "user inputs"
+      ]
+    },
+    "publishedAt": "2025-04-17T12:33:39.000Z",
+    "title": "HiScene: Creating Hierarchical 3D Scenes with Isometric View Generation",
+    "summary": "Scene-level 3D generation represents a critical frontier in multimedia and\ncomputer graphics, yet existing approaches either suffer from limited object\ncategories or lack editing flexibility for interactive applications. In this\npaper, we present HiScene, a novel hierarchical framework that bridges the gap\nbetween 2D image generation and 3D object generation and delivers high-fidelity\nscenes with compositional identities and aesthetic scene content. Our key\ninsight is treating scenes as hierarchical \"objects\" under isometric views,\nwhere a room functions as a complex object that can be further decomposed into\nmanipulatable items. This hierarchical approach enables us to generate 3D\ncontent that aligns with 2D representations while maintaining compositional\nstructure. To ensure completeness and spatial alignment of each decomposed\ninstance, we develop a video-diffusion-based amodal completion technique that\neffectively handles occlusions and shadows between objects, and introduce shape\nprior injection to ensure spatial coherence within the scene. Experimental\nresults demonstrate that our method produces more natural object arrangements\nand complete object instances suitable for interactive applications, while\nmaintaining physical plausibility and alignment with user inputs.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63d748ff6f49aa82306b7e48/DNTOfy5oOkjTJwLBeGOUH.qt"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13072.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63d748ff6f49aa82306b7e48",
+      "avatarUrl": "/avatars/9f0b8b8a09b14d76e52ed1bd312e6b63.svg",
+      "fullname": "BB Yang",
+      "name": "ybbbbt",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.13157",
+      "authors": [
+        {
+          "_id": "6804392129303a3402c4f38e",
+          "user": {
+            "_id": "631bfb21f6bc4be4a6592afc",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631bfb21f6bc4be4a6592afc/FRgc7nwHylQZ9QURrr88y.jpeg",
+            "isPro": false,
+            "fullname": "Khiem Vuong",
+            "user": "kvuong2711",
+            "type": "user"
+          },
+          "name": "Khiem Vuong",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-20T15:01:35.224Z",
+          "hidden": false
+        },
+        {
+          "_id": "6804392129303a3402c4f38f",
+          "name": "Anurag Ghosh",
+          "hidden": false
+        },
+        {
+          "_id": "6804392129303a3402c4f390",
+          "name": "Deva Ramanan",
+          "hidden": false
+        },
+        {
+          "_id": "6804392129303a3402c4f391",
+          "name": "Srinivasa Narasimhan",
+          "hidden": false
+        },
+        {
+          "_id": "6804392129303a3402c4f392",
+          "name": "Shubham Tulsiani",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/x2dR6H7Gl0l8qbXY9YxGP.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/Kf60HymR1YXGVqoSmQNYb.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/O0wHR9zr6E56IE7sjs0UI.jpeg"
+      ],
+      "publishedAt": "2025-04-17T17:57:05.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:28:10.375Z",
+      "title": "AerialMegaDepth: 뿌리상 MegaDepth: 뿌리상-지면 재구성 및 시각점 합성 학습",
+      "submittedOnDailyBy": {
+        "_id": "631bfb21f6bc4be4a6592afc",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631bfb21f6bc4be4a6592afc/FRgc7nwHylQZ9QURrr88y.jpeg",
+        "isPro": false,
+        "fullname": "Khiem Vuong",
+        "user": "kvuong2711",
+        "type": "user"
+      },
+      "summary": "우리는 지상과 공기에서 촬영된 이미지의 혼합으로 이루어진 그래픽 재구성 작업에 대해 조사하고 있습니다. 현재 가장 先端的한 학습 기반의 접근 방식은 공기에서 지상의 이미지 페어의 극한 시각의 변화에 처리할 수 없습니다. 우리의 추측은, 고품질의, 동시에 기록된 공기에서 지상의 데이터 세트의 부족이 이 실패의 주요 원인입니다. 이 데이터는 재구성하기 어렵기 때문에 확장 가능한 방법으로 재구성하기 어렵습니다. 이 도전을 극복하기 위해, 우리는 3차원 도시 월드맵에서의 팩트 시너티스틱의 그림과, 실제 지상 수준의 커뮤니티 사드 사드 이미지의 조합을 제안합니다 (예: Google Earth, MegaDepth). 팩트 시너티스틱 데이터는 광범위한 공기에서의 시각을 시뮬레이션하며, 실제 커뮤니티 사드 사드 이미지는 지도 기반의 그림이 충분한 세부 사항을 갖지 않을 때 지상 수준 이미지의 시각적 정확도를 향상시키고, 실제 이미지와 팩트 시너티스틱의 그림의 영역 간 간극을 효과적으로 닫습니다. 이 하이브리드 데이터 세트를 사용하여, 우리는 여러 가장 先端的한 알고리즘을 조정하고, 실제 세계적인, 0샷의 공기에서 지상의 작업에서 큰 개선을 실현했습니다. 예를 들어, 기본라인의 DUSt3R는 5도의 카메라 회전 오류를 포함하는 공기에서 지상의 페어를 5% 미만으로 위치시켰지만, 우리 데이터에 의한 조정으로 정확도가 근사 56%에 도달하며, 큰 시각의 변화에 대한 주요 실패점을 해결했습니다. 카메라의 측정과 시나리오의 재구성을 제외한 우리 데이터 세트는, 어려운 공기에서 지상의 스케너 쇼 샘플링과 같은 하류 작업의 성능을 향상시키고, 실제 세계적인 애플리케이션에서 우리의 접근 방식의 실용적인 가치를 보여주었습니다.",
+      "upvotes": 4,
+      "discussionId": "6804392329303a3402c4f3e8",
+      "projectPage": "https://aerial-megadepth.github.io/",
+      "githubRepo": "https://github.com/kvuong2711/aerial-megadepth",
+      "ai_keywords": [
+        "geometric reconstruction",
+        "learning-based approaches",
+        "extreme viewpoint variation",
+        "co-registered",
+        "aerial-ground datasets",
+        "pseudo-synthetic renderings",
+        "3D city-wide meshes",
+        "crowd-sourced images",
+        "visual fidelity",
+        "domain gap",
+        "mesh-based renderings",
+        "fine-tuning",
+        "DUSt3R",
+        "camera rotation error",
+        "scene reconstruction",
+        "novel-view synthesis",
+        "downstream tasks"
+      ]
+    },
+    "publishedAt": "2025-04-17T13:57:05.000Z",
+    "title": "AerialMegaDepth: Learning Aerial-Ground Reconstruction and View\n  Synthesis",
+    "summary": "We explore the task of geometric reconstruction of images captured from a\nmixture of ground and aerial views. Current state-of-the-art learning-based\napproaches fail to handle the extreme viewpoint variation between aerial-ground\nimage pairs. Our hypothesis is that the lack of high-quality, co-registered\naerial-ground datasets for training is a key reason for this failure. Such data\nis difficult to assemble precisely because it is difficult to reconstruct in a\nscalable way. To overcome this challenge, we propose a scalable framework\ncombining pseudo-synthetic renderings from 3D city-wide meshes (e.g., Google\nEarth) with real, ground-level crowd-sourced images (e.g., MegaDepth). The\npseudo-synthetic data simulates a wide range of aerial viewpoints, while the\nreal, crowd-sourced images help improve visual fidelity for ground-level images\nwhere mesh-based renderings lack sufficient detail, effectively bridging the\ndomain gap between real images and pseudo-synthetic renderings. Using this\nhybrid dataset, we fine-tune several state-of-the-art algorithms and achieve\nsignificant improvements on real-world, zero-shot aerial-ground tasks. For\nexample, we observe that baseline DUSt3R localizes fewer than 5% of\naerial-ground pairs within 5 degrees of camera rotation error, while\nfine-tuning with our data raises accuracy to nearly 56%, addressing a major\nfailure point in handling large viewpoint changes. Beyond camera estimation and\nscene reconstruction, our dataset also improves performance on downstream tasks\nlike novel-view synthesis in challenging aerial-ground scenarios, demonstrating\nthe practical value of our approach in real-world applications.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/x2dR6H7Gl0l8qbXY9YxGP.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/Kf60HymR1YXGVqoSmQNYb.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/O0wHR9zr6E56IE7sjs0UI.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13157.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "631bfb21f6bc4be4a6592afc",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631bfb21f6bc4be4a6592afc/FRgc7nwHylQZ9QURrr88y.jpeg",
+      "fullname": "Khiem Vuong",
+      "name": "kvuong2711",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.11544",
+      "authors": [
+        {
+          "_id": "6804ca9fd8538baa1c39ca93",
+          "name": "Tianyang Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca94",
+          "name": "Haojie Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca95",
+          "name": "Chengze Li",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca96",
+          "name": "Haoxiang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca97",
+          "name": "Yixin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca98",
+          "name": "Ruoxi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca99",
+          "name": "Lichao Sun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-15T18:24:00.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:38:46.380Z",
+      "title": "NodeRAG: 하이브리드 노드를 갖는 그래프 기반의 RAG 구축\n\n(注意：虽然您要求不添加任何解释或额外的文本，但为了确保翻译的准确性和专业性，我在翻译时尽量保持了原文的含义和格式。如果需要进一步的解释或格式调整，请告知。)",
+      "submittedOnDailyBy": {
+        "_id": "6610fb736504d9bed5890d58",
+        "avatarUrl": "/avatars/832b186fc51c639f1709025d442b3f4b.svg",
+        "isPro": false,
+        "fullname": "Tianyang Xu",
+        "user": "TerryXu666",
+        "type": "user"
+      },
+      "summary": "レビュアルアウゲーション（RAG）는 대규모 언어 모델이 외부 및 개인적인 코퍼스에 액세스할 수 있도록 하여, 특정 영역에서 사실적으로 일치하는 답변을 제공할 수 있습니다. 코퍼스의 내적 구조를 활용하여, 그래프 기반의 RAG 방법론은 그래프 인덱스를 구축하고, 그래프의 구조적 특성을 활용하여 이 과정을 진행합니다. 그러나 현재의 그래프 기반의 RAG 방법론은 그래프 구조 설계를 우선시하지 않습니다. 적절하지 않은 그래프는 다양한 그래프 알고리즘의 쉽게 통합을 방해하고, 작업 흐름의 불일치 및 성능 저하를招きます. 그래프의 RAG의 잠재력을 더욱 발휘하기 위해, 우리는 NodeRAG를 제안합니다. 이는 비정형적인 그래프 구조를 제시하고, 그래프 기반의 방법을 RAG 작업 흐름에 쉽게 통합할 수 있게 합니다. LLM의 능력을 밀접히 연계하여, 이 프레임워크는 연속적이고 효율적인 시작부터 종료까지의 일련의 프로세스를 보장합니다. 구체적인 실험을 통해, 우리는 NodeRAG가 이전 방법론（GraphRAG와 LightRAG）과 비교하여, 인덱스 시간, 쿼리 시간, 저장 효율성, 단계별 벤치마크 및 오픈된 헤드타운 평가에서 높은 질문응답 성능을 보여주는 것을 보여주었습니다. 우리의 GitHub 리포지토리는 https://github.com/Terry-Xu-666/NodeRAG에 있습니다.",
+      "upvotes": 4,
+      "discussionId": "6804caa0d8538baa1c39cac2",
+      "projectPage": "https://terry-xu-666.github.io/NodeRAG_web/",
+      "githubRepo": "https://github.com/Terry-Xu-666/NodeRAG",
+      "ai_keywords": [
+        "Retrieval-augmented generation (RAG)",
+        "external and private corpus",
+        "factually consistent responses",
+        "knowledge graph index",
+        "graph-based RAG methods",
+        "heterogeneous graph structures",
+        "seamless and holistic integration",
+        "end-to-end process",
+        "question-answering performance",
+        "multi-hop benchmarks",
+        "open-ended head-to-head evaluations",
+        "retrieval tokens"
+      ]
+    },
+    "publishedAt": "2025-04-15T14:24:00.000Z",
+    "title": "NodeRAG: Structuring Graph-based RAG with Heterogeneous Nodes",
+    "summary": "Retrieval-augmented generation (RAG) empowers large language models to access\nexternal and private corpus, enabling factually consistent responses in\nspecific domains. By exploiting the inherent structure of the corpus,\ngraph-based RAG methods further enrich this process by building a knowledge\ngraph index and leveraging the structural nature of graphs. However, current\ngraph-based RAG approaches seldom prioritize the design of graph structures.\nInadequately designed graph not only impede the seamless integration of diverse\ngraph algorithms but also result in workflow inconsistencies and degraded\nperformance. To further unleash the potential of graph for RAG, we propose\nNodeRAG, a graph-centric framework introducing heterogeneous graph structures\nthat enable the seamless and holistic integration of graph-based methodologies\ninto the RAG workflow. By aligning closely with the capabilities of LLMs, this\nframework ensures a fully cohesive and efficient end-to-end process. Through\nextensive experiments, we demonstrate that NodeRAG exhibits performance\nadvantages over previous methods, including GraphRAG and LightRAG, not only in\nindexing time, query time, and storage efficiency but also in delivering\nsuperior question-answering performance on multi-hop benchmarks and open-ended\nhead-to-head evaluations with minimal retrieval tokens. Our GitHub repository\ncould be seen at https://github.com/Terry-Xu-666/NodeRAG.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.11544.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6610fb736504d9bed5890d58",
+      "avatarUrl": "/avatars/832b186fc51c639f1709025d442b3f4b.svg",
+      "fullname": "Tianyang Xu",
+      "name": "TerryXu666",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.09621",
+      "authors": [
+        {
+          "_id": "6800ef5509eaa9d1d87a6eaf",
+          "name": "Jiuchen Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6800ef5509eaa9d1d87a6eb0",
+          "user": {
+            "_id": "6672c01fa6eb488f049ecb80",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6672c01fa6eb488f049ecb80/f6SetkETOWgyXy1KmBPhK.jpeg",
+            "isPro": false,
+            "fullname": "Xinyu Yan",
+            "user": "fengyanzi",
+            "type": "user"
+          },
+          "name": "Xinyu Yan",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-19T15:17:09.181Z",
+          "hidden": false
+        },
+        {
+          "_id": "6800ef5509eaa9d1d87a6eb1",
+          "name": "Qizhi Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6800ef5509eaa9d1d87a6eb2",
+          "name": "Kaiqi Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-13T15:41:25.000Z",
+      "submittedOnDailyAt": "2025-04-21T05:45:47.747Z",
+      "title": "토크나이즈 이미지 패치克斯： 대규모 이미지의 효과적인 뜰 제거의 글로벌 맥락 융합",
+      "submittedOnDailyBy": {
+        "_id": "6672c01fa6eb488f049ecb80",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6672c01fa6eb488f049ecb80/f6SetkETOWgyXy1KmBPhK.jpeg",
+        "isPro": false,
+        "fullname": "Xinyu Yan",
+        "user": "fengyanzi",
+        "type": "user"
+      },
+      "summary": "글로벌 컨텍스트 정보와 지역적 세부 특성은 짚짚 제거 작업에서 필수적입니다. 깊은 학습 모델은 작은 저해상도 이미지에 능숙하지만, 큰 고해상도 이미지에 대해 GPU 메모리의 제한으로 어려움을 겪습니다. 이를 보완하기 위해 이미지 자르기나 다운 샘플링을 많이 선택합니다. 이 두 가지 방법은 각각 글로벌 정보를 줄이고, 고주파의 세부 정보를 버립니다. 이러한 문제를 해결하기 위해 DehazeXL이라는 짚짚 제거 방법을 제안합니다. 이는 글로벌 컨텍스트와 지역적 특성 추출을 더 균등하게 처리함으로써,主流의 GPU 하드웨어에서 큰 이미지의 모델링을 가능하게 합니다. 또한 짚짚 제거 작업의 특성에 맞는 시각적 책임 분배 방식을 설계하고, 글로벌 컨텍스트의 효율적 사용 평가를 위해도 사용됩니다. 마지막으로, 큰 이미지의 짚짚 제거에 대한 벤치마크 데이터 세트의 부족을 인식하고, 8KDehaze라는 초고해상도 짚짚 제거 데이터 세트를 개발했습니다. 이는 10000개의 청晰한 및 짚짚된 원격 관측 이미지의 페어를 포함하며, 각 이미지는 8192×8192 픽셀의 크기입니다. 확장된 실험은 DehazeXL은 21GB의 메모리로 10240×10240 픽셀의 이미지 추론이 가능하고, 모든 평가된 방법 중 가장 先端한 결과를 구현하는 것을 보여줍니다. 소스 코드와 실험 데이터 세트는 https://github.com/CastleChen339/DehazeXL에서 사용할 수 있습니다.",
+      "upvotes": 4,
+      "discussionId": "6800ef5709eaa9d1d87a6f76",
+      "projectPage": "https://castlechen339.github.io/DehazeXL.github.io/",
+      "githubRepo": "https://github.com/CastleChen339/DehazeXL",
+      "ai_keywords": [
+        "haze removal",
+        "image slicing",
+        "downsampling",
+        "DehazeXL",
+        "global context",
+        "local feature extraction",
+        "end-to-end modeling",
+        "visual attribution",
+        "8KDehaze",
+        "ultra-high-resolution haze removal dataset",
+        "remote sensing images"
+      ]
+    },
+    "publishedAt": "2025-04-13T11:41:25.000Z",
+    "title": "Tokenize Image Patches: Global Context Fusion for Effective Haze Removal\n  in Large Images",
+    "summary": "Global contextual information and local detail features are essential for\nhaze removal tasks. Deep learning models perform well on small, low-resolution\nimages, but they encounter difficulties with large, high-resolution ones due to\nGPU memory limitations. As a compromise, they often resort to image slicing or\ndownsampling. The former diminishes global information, while the latter\ndiscards high-frequency details. To address these challenges, we propose\nDehazeXL, a haze removal method that effectively balances global context and\nlocal feature extraction, enabling end-to-end modeling of large images on\nmainstream GPU hardware. Additionally, to evaluate the efficiency of global\ncontext utilization in haze removal performance, we design a visual attribution\nmethod tailored to the characteristics of haze removal tasks. Finally,\nrecognizing the lack of benchmark datasets for haze removal in large images, we\nhave developed an ultra-high-resolution haze removal dataset (8KDehaze) to\nsupport model training and testing. It includes 10000 pairs of clear and hazy\nremote sensing images, each sized at 8192 times 8192 pixels. Extensive\nexperiments demonstrate that DehazeXL can infer images up to 10240 times\n10240 pixels with only 21 GB of memory, achieving state-of-the-art results\namong all evaluated methods. The source code and experimental dataset are\navailable at https://github.com/CastleChen339/DehazeXL.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.09621.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6672c01fa6eb488f049ecb80",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6672c01fa6eb488f049ecb80/f6SetkETOWgyXy1KmBPhK.jpeg",
+      "fullname": "Xinyu Yan",
+      "name": "fengyanzi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.13626",
+      "authors": [
+        {
+          "_id": "6805fa66fddd500b98039425",
+          "name": "Yule Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b98039426",
+          "name": "Jingyi Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b98039427",
+          "name": "Zhen Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b98039428",
+          "name": "Zifan Peng",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b98039429",
+          "name": "Wenhan Dong",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b9803942a",
+          "name": "Zeyang Sha",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b9803942b",
+          "name": "Shiwen Cui",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b9803942c",
+          "name": "Weiqiang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b9803942d",
+          "name": "Xinlei He",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-18T11:07:19.000Z",
+      "submittedOnDailyAt": "2025-04-21T06:29:28.134Z",
+      "title": "로그인 후 댓글을 남길 수 있습니다.",
+      "submittedOnDailyBy": {
+        "_id": "63da3d7ae697e5898cb86854",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1675246771355-noauth.jpeg",
+        "isPro": false,
+        "fullname": "Talha Rüzgar Akkuş",
+        "user": "Q-bert",
+        "type": "user"
+      },
+      "summary": "최근의 대규모 논리 모델(LRMs)의 발전은 검증 시의 계산량을 확장하여 다양한 태스크의 논리 능력에 효과적인 향상을 보여주고 있습니다. 그러나 LRMs는 일반적으로 \"초과적 생각\"의 문제에 직면하여, 모델이 제한된 성능 향상을 동반하지 않고 명확하게冗長한 논리 스텝을 생성하는 경우가 있습니다. 현재의 연구는 초과적 생각의 완화를 위해 미세 조정을 의존하고 있으며, 이는 추가 데이터, 비정상적인 훈련 설정, 안전성의 부적절한 조정, 그리고 일반화 능력의 저하를 동반합니다.\n\n실험적인 분석을 통해 LRM의 행동에 중요한 특징을 밝혀 냈습니다. 이는 작은 모델이 생성한 외부의 CoTs를 기억 토큰(<think>과 </think> 사이에 삽입함으로써, 모델이 적어도 기억을 생성하는 것을 효과적으로 제어할 수 있다는 것입니다. 이러한 지침에 기반하여 ThoughtMani라는 간단하고 효율적인 패이프 라인을 제안하고, LRMs가 불필요한 중간 스텝을 스킵하여 계산 비용을 크게 줄일 수 있음을 가능하게 합니다. ThoughtMani의 유용성과 효율성을 검증하기 위해 확장된 실험을 수행했습니다. 예를 들어, LiveBench/Code 데이터 세트에 QwQ-32B에 적용한 경우, ThoughtMani는 원래의 성능을 유지하면서 출력 토큰 수를 약 30% 줄일 수 있었으며, CoT 생성기에서의 오버헤드가 적거나 거의 없습니다. 또한 ThoughtMani는 안전성 조정을 평균 10% 정도 향상시키고, 모델 세러가 일반적으로 다른 크기의 모델을 동시에 제공하기 위해, 실제 세계적인 애플리케이션에서 더 효율적이고 접근 가능한 LRMs를 구축하는 효과적인 방법 제공합니다.",
+      "upvotes": 3,
+      "discussionId": "6805fa67fddd500b98039461",
+      "ai_keywords": [
+        "large reasoning models (LRMs)",
+        "overthinking problems",
+        "fine-tuning",
+        "thinking token",
+        "external CoTs (Chain of Thought)",
+        "ThoughtMani",
+        "unnecessary intermediate steps",
+        "computational costs",
+        "LiveBench/Code dataset",
+        "output token counts",
+        "safety alignment"
+      ]
+    },
+    "publishedAt": "2025-04-18T07:07:19.000Z",
+    "title": "Thought Manipulation: External Thought Can Be Efficient for Large\n  Reasoning Models",
+    "summary": "Recent advancements in large reasoning models (LRMs) have demonstrated the\neffectiveness of scaling test-time computation to enhance reasoning\ncapabilities in multiple tasks. However, LRMs typically suffer from\n\"overthinking\" problems, where models generate significantly redundant\nreasoning steps while bringing limited performance gains. Existing work relies\non fine-tuning to mitigate overthinking, which requires additional data,\nunconventional training setups, risky safety misalignment, and poor\ngeneralization.\n  Through empirical analysis, we reveal an important characteristic of LRM\nbehaviors that placing external CoTs generated by smaller models between the\nthinking token (<think> and </think>) can effectively\nmanipulate the model to generate fewer thoughts. Building on these insights, we\npropose a simple yet efficient pipeline, ThoughtMani, to enable LRMs to bypass\nunnecessary intermediate steps and reduce computational costs significantly. We\nconduct extensive experiments to validate the utility and efficiency of\nThoughtMani. For instance, when applied to QwQ-32B on the LiveBench/Code\ndataset, ThoughtMani keeps the original performance and reduces output token\ncounts by approximately 30%, with little overhead from the CoT generator.\nFurthermore, we find that ThoughtMani enhances safety alignment by an average\nof 10%. Since model vendors typically serve models of different sizes\nsimultaneously, ThoughtMani provides an effective way to construct more\nefficient and accessible LRMs for real-world applications.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13626.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63da3d7ae697e5898cb86854",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1675246771355-noauth.jpeg",
+      "fullname": "Talha Rüzgar Akkuş",
+      "name": "Q-bert",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 89
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.13173",
+      "authors": [
+        {
+          "_id": "6805c4dab15a57fcb59b6f08",
+          "name": "Ali Behrouz",
+          "hidden": false
+        },
+        {
+          "_id": "6805c4dab15a57fcb59b6f09",
+          "name": "Meisam Razaviyayn",
+          "hidden": false
+        },
+        {
+          "_id": "6805c4dab15a57fcb59b6f0a",
+          "name": "Peilin Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "6805c4dab15a57fcb59b6f0b",
+          "name": "Vahab Mirrokni",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-17T17:59:33.000Z",
+      "submittedOnDailyAt": "2025-04-21T02:39:28.607Z",
+      "title": "그것은 모두 연결되어 있습니다: 검증 시의 메모리, 주의의 편향, 저장, 온라인 최적화의 여정",
+      "submittedOnDailyBy": {
+        "_id": "65cccd5134a5d74cbaa9446c",
+        "avatarUrl": "/avatars/5255b734628992106598eae4f2c5848f.svg",
+        "isPro": false,
+        "fullname": "Ali Behrouz",
+        "user": "AliBehrouz",
+        "type": "user"
+      },
+      "summary": "디자인 효율성과 효과적인 아키텍처 백본은 기초 모델의 능력을 향상시키기 위한 연구의 핵심이었습니다. 인간의 인지현상인 注意偏差 (특정 이벤트나 자극을 자연스럽게 우선시하는 경향)을 모델링하고, Transformers, Titans, 그리고 현대의 선형 과거 이동 신경망들을 연관성 메모리 모듈로 재 개념화하며, 내부적인 객체(注意偏差)를 사용하여 키와 값의 매핑을 학습하는 방법을 제안합니다. 놀라울 정도로, 우리는 현재의 많은 시퀀스 모델이 (1) 점곱 유사도와 (2) L2 회귀 객체들을 注意偏差로 활용하는 것을 발견했습니다. 이러한 객체들을 초과하여, 우리는 注意偏差의 설정과 효과적인 근사법을 훈련 과정의 안정화에 연결하여 제안합니다. 그리고 현대의 심층 학습 아키텍처에 있는 잊기 구조를 리텐션 정규화로 재 해석하고, 시퀀스 모델에 새로운 잊기 게이트를 제공합니다. 이러한 지침을 기반으로, 우리는 Miras라는 일반적인 프레임워크를 제안하며, 연관성 메모리 아키텍처, 注意偏差 객체, 리텐션 게이트, 그리고 메모리 학습 알고리즘의 4가지 선택지를 기반으로 심층 학습 아키텍처를 설계하는 것을 제안합니다. 우리는 3가지 새로운 시퀀스 모델(Moneta, Yaad, Memora)을 소개하며, 현재의 선형 RNN의 능력을 초과하면서도 고속 가능한 병렬화 가능한 훈련 과정을 유지하는 것을 보여줍니다. 우리의 실험은 Miras의 다른 디자인 선택이 강도가 다른 모델을 생성하는 것을 보여줍니다. 예를 들어, 언어 모델링, 일반적인 추론, 그리고 기억 강조 태스크의 특수한 태스크에서 Transformers나 현대의 선형 과거 이동 모델을 초과하는 예외적인 성능을 보여주는 것입니다.",
+      "upvotes": 3,
+      "discussionId": "6805c4dbb15a57fcb59b6f3d",
+      "ai_keywords": [
+        "Transformers",
+        "Titans",
+        "linear recurrent neural networks",
+        "associative memory modules",
+        "attentional bias",
+        "dot-product similarity",
+        "L2 regression",
+        "retention regularization",
+        "forget gates",
+        "Miras",
+        "Moneta",
+        "Yaad",
+        "Memora",
+        "parallelizable training process",
+        "language modeling",
+        "commonsense reasoning",
+        "recall intensive tasks"
+      ]
+    },
+    "publishedAt": "2025-04-17T13:59:33.000Z",
+    "title": "It's All Connected: A Journey Through Test-Time Memorization,\n  Attentional Bias, Retention, and Online Optimization",
+    "summary": "Designing efficient and effective architectural backbones has been in the\ncore of research efforts to enhance the capability of foundation models.\nInspired by the human cognitive phenomenon of attentional bias-the natural\ntendency to prioritize certain events or stimuli-we reconceptualize neural\narchitectures, including Transformers, Titans, and modern linear recurrent\nneural networks as associative memory modules that learn a mapping of keys and\nvalues using an internal objective, referred to as attentional bias.\nSurprisingly, we observed that most existing sequence models leverage either\n(1) dot-product similarity, or (2) L2 regression objectives as their\nattentional bias. Going beyond these objectives, we present a set of\nalternative attentional bias configurations along with their effective\napproximations to stabilize their training procedure. We then reinterpret\nforgetting mechanisms in modern deep learning architectures as a form of\nretention regularization, providing a novel set of forget gates for sequence\nmodels. Building upon these insights, we present Miras, a general framework to\ndesign deep learning architectures based on four choices of: (i) associative\nmemory architecture, (ii) attentional bias objective, (iii) retention gate, and\n(iv) memory learning algorithm. We present three novel sequence models-Moneta,\nYaad, and Memora-that go beyond the power of existing linear RNNs while\nmaintaining a fast parallelizable training process. Our experiments show\ndifferent design choices in Miras yield models with varying strengths. For\nexample, certain instances of Miras achieve exceptional performance in special\ntasks such as language modeling, commonsense reasoning, and recall intensive\ntasks, even outperforming Transformers and other modern linear recurrent\nmodels.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13173.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65cccd5134a5d74cbaa9446c",
+      "avatarUrl": "/avatars/5255b734628992106598eae4f2c5848f.svg",
+      "fullname": "Ali Behrouz",
+      "name": "AliBehrouz",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  }
+]

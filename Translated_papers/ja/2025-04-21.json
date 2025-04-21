@@ -1,0 +1,808 @@
+[
+  {
+    "paper": {
+      "id": "2504.13835",
+      "authors": [
+        {
+          "_id": "6805b38355d3c792e1a9d0dd",
+          "name": "Yicheng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0de",
+          "name": "Yining Li",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0df",
+          "name": "Kai Hu",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0e0",
+          "name": "Zerun Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0e1",
+          "name": "Haochen Ye",
+          "hidden": false
+        },
+        {
+          "_id": "6805b38355d3c792e1a9d0e2",
+          "name": "Kai Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-18T17:59:46.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:39:08.191Z",
+      "title": "MIG: 語義空間で情報収益を最大化するインストラクションチューニングの自動的なデータ選択",
+      "submittedOnDailyBy": {
+        "_id": "649988726677f66c2b486392",
+        "avatarUrl": "/avatars/b649a77370660e129726e29504daba34.svg",
+        "isPro": false,
+        "fullname": "Yining Li",
+        "user": "ly015",
+        "type": "user"
+      },
+      "summary": "データの品質と多様性は、有効なインストラクションチューニングデータセットの構築において重要です。開放ソースインストラクションチューニングデータセットの利用が増加している中、大量のデータから高品質と多様性を持つサブセットを自動的に選択することが有利です。現在の方法は通常インスタンスの品質を優先し、ヒューリスティックルールを用いて多様性を維持しますが、これは全体のコレクションの視点が欠けて、最適な結果に至ることが難しいことがあります。また、ヒューリスティックルールは通常埋め込み空間内の距離またはクラスタリングを焦点にしているため、複雑なインストラクションの意図を正確に検出することができません。この隙を埋めるために、データセットの情報量を定量化する一連の方法を提案します。この方法はラベルグラフを構築して記号空間をモデル化し、グラフ内の情報の分布に基づいて多様性を定量化します。このような評価に基づいて、データサンプリング方法を効率的に導入し、記号空間での情報収益を最大化するデータサンプリングを行います。多様なデータセットとベースモデルに対する実験は、この方法が最先端の方法を上回ることを示します。特に、MIGでサンプリングされた5%のTulu3データで微調節されたモデルは、全体データセットで訓練された公式のSFTモデルと比較的性能を示し、AlpacaEvalで+5.73%とWildbenchで+6.89%の改善を収めました。",
+      "upvotes": 26,
+      "discussionId": "6805b38555d3c792e1a9d155",
+      "projectPage": "https://yichengchen24.github.io/projects/mig",
+      "githubRepo": "https://github.com/yichengchen24/MIG",
+      "ai_keywords": [
+        "label graph",
+        "semantic space",
+        "information content",
+        "Maximize the Information Gain (MIG)"
+      ]
+    },
+    "publishedAt": "2025-04-18T13:59:46.000Z",
+    "title": "MIG: Automatic Data Selection for Instruction Tuning by Maximizing\n  Information Gain in Semantic Space",
+    "summary": "Data quality and diversity are key to the construction of effective\ninstruction-tuning datasets. % With the increasing availability of open-source\ninstruction-tuning datasets, it is advantageous to automatically select\nhigh-quality and diverse subsets from a vast amount of data. % Existing methods\ntypically prioritize instance quality and use heuristic rules to maintain\ndiversity. % However, this absence of a comprehensive view of the entire\ncollection often leads to suboptimal results. % Moreover, heuristic rules\ngenerally focus on distance or clustering within the embedding space, which\nfails to accurately capture the intent of complex instructions in the semantic\nspace. % To bridge this gap, we propose a unified method for quantifying the\ninformation content of datasets. This method models the semantic space by\nconstructing a label graph and quantifies diversity based on the distribution\nof information within the graph. % Based on such a measurement, we further\nintroduce an efficient sampling method that selects data samples iteratively to\nMaximize the Information Gain (MIG) in semantic\nspace. % Experiments on various datasets and base models demonstrate that MIG\nconsistently outperforms state-of-the-art methods. % Notably, the model\nfine-tuned with 5\\% Tulu3 data sampled by MIG achieves comparable performance\nto the official SFT model trained on the full dataset, with improvements of\n+5.73\\% on AlpacaEval and +6.89\\% on Wildbench.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13835.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "649988726677f66c2b486392",
+      "avatarUrl": "/avatars/b649a77370660e129726e29504daba34.svg",
+      "fullname": "Yining Li",
+      "name": "ly015",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.13837",
+      "authors": [
+        {
+          "_id": "6805b9ec7c5fa8020f595642",
+          "name": "Yang Yue",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595643",
+          "name": "Zhiqi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595644",
+          "name": "Rui Lu",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595645",
+          "name": "Andrew Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595646",
+          "name": "Zhaokai Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595647",
+          "name": "Yang Yue",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595648",
+          "name": "Shiji Song",
+          "hidden": false
+        },
+        {
+          "_id": "6805b9ec7c5fa8020f595649",
+          "name": "Gao Huang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/649d475111592b1a765ac1a3/2KWQqFdVDUCAu-kSu87fa.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/649d475111592b1a765ac1a3/rF4cAa6DAI3EaejDV_dgG.mp4"
+      ],
+      "publishedAt": "2025-04-18T17:59:56.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:54:36.096Z",
+      "title": "強化学習は、基盤モデルを超えてLLMの理由論能力を奨励しますか？",
+      "submittedOnDailyBy": {
+        "_id": "649d475111592b1a765ac1a3",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/649d475111592b1a765ac1a3/rjORJjErJq-mthghan08U.jpeg",
+        "isPro": false,
+        "fullname": "Yang Yue",
+        "user": "Yang130",
+        "type": "user"
+      },
+      "summary": "RLVR（Verifiable Rewardsによる強化学習）は最近、LLM（大規模な言語モデル）の理由能力を特に数学やプログラミングタスクで向上させるために顕著な成功を示しています。一般的には、RLVRはLLMが連続的に自己改善することを可能にし、その理由能力が基礎モデルの能力を超える新しい理由能力を獲得することを想定しています。しかし、本研究では、この仮定を批判的に再検討し、大きなk値を用いたpass@kメトリックを評価して、様々なモデルフamilesとベンチマークでの理由能力の境界を探りました。驚くべきことに、RLは実際に根本的な新しい理由パターンを引き出さないことがわかりました。RLを学習させたモデルは、小さなk値（例えばk=1）で基礎モデルよりも上位を超えますが、大きなk値では、基礎モデルが比較的またはより高いpass@kスコアを達成することができます。RLを学習させたモデルが生成する理由パスは、基礎モデルのサンプリング分布に既に含まれていることを示し、これらのモデルが現れる理由能力は、基礎モデルですでに獲得しているものであることを示しています。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。進みました。",
+      "upvotes": 24,
+      "discussionId": "6805b9ed7c5fa8020f59568c",
+      "projectPage": "https://limit-of-rlvr.github.io/",
+      "githubRepo": "https://github.com/LeapLabTHU/limit-of-RLVR",
+      "ai_keywords": [
+        "Reinforcement Learning",
+        "Verifiable Rewards",
+        "RLVR",
+        "LLMs (Large Language Models)",
+        "reasoning capabilities",
+        "mathematics",
+        "programming tasks",
+        "pass@\\textit{k}",
+        "benchmark",
+        "RL-trained models",
+        "base models",
+        "reasoning paths",
+        "sampling distribution",
+        "performance",
+        "biasing",
+        "output distribution",
+        "visual reasoning tasks",
+        "distillation"
+      ]
+    },
+    "publishedAt": "2025-04-18T13:59:56.000Z",
+    "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in\n  LLMs Beyond the Base Model?",
+    "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has recently\ndemonstrated notable success in enhancing the reasoning capabilities of LLMs,\nparticularly in mathematics and programming tasks. It is widely believed that\nRLVR enables LLMs to continuously self-improve, thus acquiring novel reasoning\nabilities that exceed corresponding base models' capacity. In this study,\nhowever, we critically re-examines this assumption by measuring the\npass@k metric with large values of k to explore the reasoning\ncapability boundary of the models across a wide range of model families and\nbenchmarks. Surprisingly, the RL does not, in fact, elicit fundamentally\nnew reasoning patterns. While RL-trained models outperform their base models at\nsmaller values of k (\\eg, k=1), base models can achieve a comparable or\neven higher pass@k score compared to their RL counterparts at large k\nvalues. The reasoning paths generated by RL-trained models are already included\nin the base models' sampling distribution, suggesting that most reasoning\nabilities manifested in RL-trained models are already obtained by base models.\nFurther analysis shows that RL training boosts the performance by biasing the\nmodel's output distribution toward paths that are more likely to yield rewards,\ntherefore sampling correct responses more efficiently. But this also results in\na narrower reasoning capability boundary compared to base models. Similar\nresults are observed in visual reasoning tasks trained with RLVR. Moreover, we\nfind that distillation can genuinely introduce new knowledge into the model,\ndifferent from RLVR. These findings underscore a critical limitation of RLVR in\nadvancing LLM reasoning abilities which requires us to fundamentally rethink\nthe impact of RL training in reasoning LLMs and the need of a better paradigm.\nProject Page: https://limit-of-RLVR.github.io",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/649d475111592b1a765ac1a3/2KWQqFdVDUCAu-kSu87fa.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/649d475111592b1a765ac1a3/rF4cAa6DAI3EaejDV_dgG.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13837.png",
+    "numComments": 6,
+    "submittedBy": {
+      "_id": "649d475111592b1a765ac1a3",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/649d475111592b1a765ac1a3/rjORJjErJq-mthghan08U.jpeg",
+      "fullname": "Yang Yue",
+      "name": "Yang130",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.11833",
+      "authors": [
+        {
+          "_id": "6805bb01747a412bca737b53",
+          "name": "Changjiang Gao",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b54",
+          "name": "Xu Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b55",
+          "name": "Wenhao Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b56",
+          "name": "Shujian Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b57",
+          "name": "Lei Li",
+          "hidden": false
+        },
+        {
+          "_id": "6805bb01747a412bca737b58",
+          "name": "Fei Yuan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-16T07:45:10.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:57:09.327Z",
+      "title": "思考多语言是否能增强LLM推理能力？",
+      "submittedOnDailyBy": {
+        "_id": "65fed45b08d35929362dd651",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65fed45b08d35929362dd651/KLMxsyRN6_HhCZP1iDw6K.png",
+        "isPro": false,
+        "fullname": "FeiYuan",
+        "user": "FeYuan",
+        "type": "user"
+      },
+      "summary": "前の研究は、大規模言語モデルが「英語の偏った」という現象を明らかにしています。つまり、英語でタスクを提供するときには、その性能が上がることが多いことを示しています。興味深いながら、私たちは、特定の他の言語を使用した推理タスクでは、英語よりもより良い性能を示すことを観察しました。しかし、この現象はまだ調査不足のままです。本論文では、多言語モデルの推理タスクの上限を評価し、多言語の推理が英語だけの推理よりも高く、穩健に（翻訳質量と言語選択の変化に対する耐性）上限を上げることができることを示します。また、上限の理由とその達成にある課題を分析し、普通の答え選択方法がこの上限を達成できないことを示します。これらの見解は、将来の研究において、LLMの多言語推理の全ての潜力を活用することを目指した研究のために役立つことを期待します。",
+      "upvotes": 14,
+      "discussionId": "6805bb02747a412bca737b7e",
+      "githubRepo": "https://github.com/CONE-MT/multilingual_reasoning"
+    },
+    "publishedAt": "2025-04-16T03:45:10.000Z",
+    "title": "Could Thinking Multilingually Empower LLM Reasoning?",
+    "summary": "Previous work indicates that large language models exhibit a significant\n\"English bias\", i.e. they often perform better when tasks are presented in\nEnglish. Interestingly, we have observed that using certain other languages in\nreasoning tasks can yield better performance than English. However, this\nphenomenon remains under-explored. In this paper, we explore the upper bound of\nharnessing multilingualism in reasoning tasks, suggesting that multilingual\nreasoning promises significantly (by nearly 10 Acc@k points) and robustly\n(tolerance for variations in translation quality and language choice) higher\nupper bounds than English-only reasoning. Besides analyzing the reason behind\nthe upper bound and challenges in reaching it, we also find that common answer\nselection methods cannot achieve this upper bound, due to their limitations and\nbiases. These insights could pave the way for future research aimed at fully\nharnessing the potential of multilingual reasoning in LLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.11833.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65fed45b08d35929362dd651",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65fed45b08d35929362dd651/KLMxsyRN6_HhCZP1iDw6K.png",
+      "fullname": "FeiYuan",
+      "name": "FeYuan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 21
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.13072",
+      "authors": [
+        {
+          "_id": "6805bfc5e332a61dd90160b0",
+          "name": "Wenqi Dong",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b1",
+          "name": "Bangbang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b2",
+          "name": "Zesong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b3",
+          "name": "Yuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b4",
+          "name": "Tao Hu",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b5",
+          "name": "Hujun Bao",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b6",
+          "name": "Yuewen Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6805bfc5e332a61dd90160b7",
+          "name": "Zhaopeng Cui",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63d748ff6f49aa82306b7e48/DNTOfy5oOkjTJwLBeGOUH.qt"
+      ],
+      "publishedAt": "2025-04-17T16:33:39.000Z",
+      "submittedOnDailyAt": "2025-04-21T03:26:56.809Z",
+      "title": "ヒスケーン：等角ビュー生成による階層的3Dシーンの作成",
+      "submittedOnDailyBy": {
+        "_id": "63d748ff6f49aa82306b7e48",
+        "avatarUrl": "/avatars/9f0b8b8a09b14d76e52ed1bd312e6b63.svg",
+        "isPro": false,
+        "fullname": "BB Yang",
+        "user": "ybbbbt",
+        "type": "user"
+      },
+      "summary": "シーンレベルの3D生成は、マルチメディアとコンピューターグラフィックにおいて重要なフロンティアであるが、現在のアプローチは、対象の物体のカテゴリーが限定されているか、インタラクティブアプリケーションに対する編集柔軟性がない問題を抱えている。本論文では、2D画像生成と3D物体生成の間の隙をギリギリ埋める新しいヒューリスティックフレームワーク「HiScene」を提出し、構成的な識別性と美術的なシーン内容を持つ高精度のシーンを提供することを目的としています。私たちの主な見解は、シーンを等距変換ビュー下のヒューリスティックな「物体」として扱うことです。これにより、部屋は更に分解可能な複雑な物体として機能し、操作可能なアイテムに分解されることができます。このヒューリスティックなアプローチにより、2D表現に一致しながら構成的構造を維持するための3D内容の生成が可能になります。各分解されたインスタンスの完全性と空間的なアラインメントを確保するために、遮蔽や陰影の処理を効果的に行うビデオディフュージョンベースの無視コンプレーションテクニックを開発し、シーン内の空間的な一致性を確保するために形状先驅注入を導入しました。実験結果は、私たちの方法が自然な物体配置とインタラクティブアプリケーションに適した完全な物体インスタンスを生成し、物理的な可能性とユーザーの入力とのアラインメントを維持することを示しています。",
+      "upvotes": 5,
+      "discussionId": "6805bfc9e332a61dd901618b",
+      "ai_keywords": [
+        "hierarchical framework",
+        "2D image generation",
+        "3D object generation",
+        "video-diffusion-based amodal completion",
+        "occlusions",
+        "shadows",
+        "shape prior injection",
+        "spatial coherence",
+        "natural object arrangements",
+        "complete object instances",
+        "interactive applications",
+        "physical plausibility",
+        "user inputs"
+      ]
+    },
+    "publishedAt": "2025-04-17T12:33:39.000Z",
+    "title": "HiScene: Creating Hierarchical 3D Scenes with Isometric View Generation",
+    "summary": "Scene-level 3D generation represents a critical frontier in multimedia and\ncomputer graphics, yet existing approaches either suffer from limited object\ncategories or lack editing flexibility for interactive applications. In this\npaper, we present HiScene, a novel hierarchical framework that bridges the gap\nbetween 2D image generation and 3D object generation and delivers high-fidelity\nscenes with compositional identities and aesthetic scene content. Our key\ninsight is treating scenes as hierarchical \"objects\" under isometric views,\nwhere a room functions as a complex object that can be further decomposed into\nmanipulatable items. This hierarchical approach enables us to generate 3D\ncontent that aligns with 2D representations while maintaining compositional\nstructure. To ensure completeness and spatial alignment of each decomposed\ninstance, we develop a video-diffusion-based amodal completion technique that\neffectively handles occlusions and shadows between objects, and introduce shape\nprior injection to ensure spatial coherence within the scene. Experimental\nresults demonstrate that our method produces more natural object arrangements\nand complete object instances suitable for interactive applications, while\nmaintaining physical plausibility and alignment with user inputs.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63d748ff6f49aa82306b7e48/DNTOfy5oOkjTJwLBeGOUH.qt"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13072.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63d748ff6f49aa82306b7e48",
+      "avatarUrl": "/avatars/9f0b8b8a09b14d76e52ed1bd312e6b63.svg",
+      "fullname": "BB Yang",
+      "name": "ybbbbt",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.13157",
+      "authors": [
+        {
+          "_id": "6804392129303a3402c4f38e",
+          "user": {
+            "_id": "631bfb21f6bc4be4a6592afc",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631bfb21f6bc4be4a6592afc/FRgc7nwHylQZ9QURrr88y.jpeg",
+            "isPro": false,
+            "fullname": "Khiem Vuong",
+            "user": "kvuong2711",
+            "type": "user"
+          },
+          "name": "Khiem Vuong",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-20T15:01:35.224Z",
+          "hidden": false
+        },
+        {
+          "_id": "6804392129303a3402c4f38f",
+          "name": "Anurag Ghosh",
+          "hidden": false
+        },
+        {
+          "_id": "6804392129303a3402c4f390",
+          "name": "Deva Ramanan",
+          "hidden": false
+        },
+        {
+          "_id": "6804392129303a3402c4f391",
+          "name": "Srinivasa Narasimhan",
+          "hidden": false
+        },
+        {
+          "_id": "6804392129303a3402c4f392",
+          "name": "Shubham Tulsiani",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/x2dR6H7Gl0l8qbXY9YxGP.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/Kf60HymR1YXGVqoSmQNYb.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/O0wHR9zr6E56IE7sjs0UI.jpeg"
+      ],
+      "publishedAt": "2025-04-17T17:57:05.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:28:10.375Z",
+      "title": "AerialMegaDepth: 空中ディープグレイスト: 空中-地面再構造と視点合成の学習",
+      "submittedOnDailyBy": {
+        "_id": "631bfb21f6bc4be4a6592afc",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631bfb21f6bc4be4a6592afc/FRgc7nwHylQZ9QURrr88y.jpeg",
+        "isPro": false,
+        "fullname": "Khiem Vuong",
+        "user": "kvuong2711",
+        "type": "user"
+      },
+      "summary": "グリフィック再構築のタスクを、地面と空気から撮影された画像の混ぜ合わせによるものに調べています。現在の最先端の学習ベースのアプローチは、空気から地面の画像ペアの極端な視点の変化を処理できません。私たちの仮説は、高品質な、同時記録された空気から地面のデータセットの不足がこの失敗の主な理由です。このデータは、構築することが難しいため、拡大可能な方法で構築することが難しいです。この挑戦を克服するために、私たちは、3次元都市ワールドマップからのファクトシンテティックの描画と、本物の地面レベルのコミュニティサードサード画像の組み合わせを提案します（例：Google Earth、MegaDepth）。ファクトシンティックデータは、広範囲の空気からの視点をシミュレートし、本物のコミュニティサードサード画像は、マップベースの描画が十分な詳細を持たない場合の地面レベル画像の視覚的な忠実度を向上させ、本物の画像とファクトシンティックの描画の領域間のギャップを効果的に閉じます。このハイブリッドデータセットを使用して、私たちは数々の最先端のアルゴリズムを調整し、実世界的な、ゼロショットの空気から地面のタスクではその大きな改善を実現しました。例えば、ベースラインのDUSt3Rは、5度のカメラ回転誤差を内包した空気から地面のペアを5%未満で定位しますが、私たちのデータでの調整により、精度が近似56%に達し、大視点の変化を処理する際の主要な失敗点を解決します。カメラの計測とシーンの再構築を除き、私たちのデータセットは、難しい空気から地面のスケーナーショーサンプリングの新視点合成のような下流タスクの性能も向上させ、実世界的なアプリケーションでの我々のアプローチの実用的な価値を示します。",
+      "upvotes": 4,
+      "discussionId": "6804392329303a3402c4f3e8",
+      "projectPage": "https://aerial-megadepth.github.io/",
+      "githubRepo": "https://github.com/kvuong2711/aerial-megadepth",
+      "ai_keywords": [
+        "geometric reconstruction",
+        "learning-based approaches",
+        "extreme viewpoint variation",
+        "co-registered",
+        "aerial-ground datasets",
+        "pseudo-synthetic renderings",
+        "3D city-wide meshes",
+        "crowd-sourced images",
+        "visual fidelity",
+        "domain gap",
+        "mesh-based renderings",
+        "fine-tuning",
+        "DUSt3R",
+        "camera rotation error",
+        "scene reconstruction",
+        "novel-view synthesis",
+        "downstream tasks"
+      ]
+    },
+    "publishedAt": "2025-04-17T13:57:05.000Z",
+    "title": "AerialMegaDepth: Learning Aerial-Ground Reconstruction and View\n  Synthesis",
+    "summary": "We explore the task of geometric reconstruction of images captured from a\nmixture of ground and aerial views. Current state-of-the-art learning-based\napproaches fail to handle the extreme viewpoint variation between aerial-ground\nimage pairs. Our hypothesis is that the lack of high-quality, co-registered\naerial-ground datasets for training is a key reason for this failure. Such data\nis difficult to assemble precisely because it is difficult to reconstruct in a\nscalable way. To overcome this challenge, we propose a scalable framework\ncombining pseudo-synthetic renderings from 3D city-wide meshes (e.g., Google\nEarth) with real, ground-level crowd-sourced images (e.g., MegaDepth). The\npseudo-synthetic data simulates a wide range of aerial viewpoints, while the\nreal, crowd-sourced images help improve visual fidelity for ground-level images\nwhere mesh-based renderings lack sufficient detail, effectively bridging the\ndomain gap between real images and pseudo-synthetic renderings. Using this\nhybrid dataset, we fine-tune several state-of-the-art algorithms and achieve\nsignificant improvements on real-world, zero-shot aerial-ground tasks. For\nexample, we observe that baseline DUSt3R localizes fewer than 5% of\naerial-ground pairs within 5 degrees of camera rotation error, while\nfine-tuning with our data raises accuracy to nearly 56%, addressing a major\nfailure point in handling large viewpoint changes. Beyond camera estimation and\nscene reconstruction, our dataset also improves performance on downstream tasks\nlike novel-view synthesis in challenging aerial-ground scenarios, demonstrating\nthe practical value of our approach in real-world applications.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/x2dR6H7Gl0l8qbXY9YxGP.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/Kf60HymR1YXGVqoSmQNYb.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/631bfb21f6bc4be4a6592afc/O0wHR9zr6E56IE7sjs0UI.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13157.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "631bfb21f6bc4be4a6592afc",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631bfb21f6bc4be4a6592afc/FRgc7nwHylQZ9QURrr88y.jpeg",
+      "fullname": "Khiem Vuong",
+      "name": "kvuong2711",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.11544",
+      "authors": [
+        {
+          "_id": "6804ca9fd8538baa1c39ca93",
+          "name": "Tianyang Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca94",
+          "name": "Haojie Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca95",
+          "name": "Chengze Li",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca96",
+          "name": "Haoxiang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca97",
+          "name": "Yixin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca98",
+          "name": "Ruoxi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6804ca9fd8538baa1c39ca99",
+          "name": "Lichao Sun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-15T18:24:00.000Z",
+      "submittedOnDailyAt": "2025-04-21T01:38:46.380Z",
+      "title": "NodeRAG: ハイブリッドノードを持つグラフベースのRAGの構築",
+      "submittedOnDailyBy": {
+        "_id": "6610fb736504d9bed5890d58",
+        "avatarUrl": "/avatars/832b186fc51c639f1709025d442b3f4b.svg",
+        "isPro": false,
+        "fullname": "Tianyang Xu",
+        "user": "TerryXu666",
+        "type": "user"
+      },
+      "summary": "レビュアルアウゲーション（RAG）は、大規模言語モデルが外部および個人的なコーパスにアクセスできるようにし、特定の領域で事実的に一致する回答を提供することができます。コーパスの内在的な構造を利用することにより、グラフベースのRAG手法は、グラフインデックスを構築し、グラフの構造的な性質を活用することでこのプロセスを進めます。しかし、現在のグラフベースのRAG手法は、グラフ構造の設計を優先しません。不適切に設計されたグラフは、多様なグラフアルゴリズムの無難な統合を妨げ、ワークフローの不一致および性能の低下を招きます。グラフのRAGの潛力をさらに発揮するために、私たちは、NodeRAGを提案します。これは、ヘテロジネシックなグラフ構造を挙げ、グラフベースのメソッドをRAGワークフローに無難に統合することを可能にします。LLMの能力と密接に合わせることにより、このフレームワークは、一連の連続的で効率的な終始エンドエンドプロセスを確保します。詳細な実験を通じて、私たちはNodeRAGが、前の手法（GraphRAGとLightRAG）と比較してインデックス時間、クエリ時間、ストレージエフィシェンス、および多段階ベンチマークと開放的なヘッドタウン評価での上位の問答性能を示すことを示します。私たちのGitHubリポジトリは、https://github.com/Terry-Xu-666/NodeRAGにあります。",
+      "upvotes": 4,
+      "discussionId": "6804caa0d8538baa1c39cac2",
+      "projectPage": "https://terry-xu-666.github.io/NodeRAG_web/",
+      "githubRepo": "https://github.com/Terry-Xu-666/NodeRAG",
+      "ai_keywords": [
+        "Retrieval-augmented generation (RAG)",
+        "external and private corpus",
+        "factually consistent responses",
+        "knowledge graph index",
+        "graph-based RAG methods",
+        "heterogeneous graph structures",
+        "seamless and holistic integration",
+        "end-to-end process",
+        "question-answering performance",
+        "multi-hop benchmarks",
+        "open-ended head-to-head evaluations",
+        "retrieval tokens"
+      ]
+    },
+    "publishedAt": "2025-04-15T14:24:00.000Z",
+    "title": "NodeRAG: Structuring Graph-based RAG with Heterogeneous Nodes",
+    "summary": "Retrieval-augmented generation (RAG) empowers large language models to access\nexternal and private corpus, enabling factually consistent responses in\nspecific domains. By exploiting the inherent structure of the corpus,\ngraph-based RAG methods further enrich this process by building a knowledge\ngraph index and leveraging the structural nature of graphs. However, current\ngraph-based RAG approaches seldom prioritize the design of graph structures.\nInadequately designed graph not only impede the seamless integration of diverse\ngraph algorithms but also result in workflow inconsistencies and degraded\nperformance. To further unleash the potential of graph for RAG, we propose\nNodeRAG, a graph-centric framework introducing heterogeneous graph structures\nthat enable the seamless and holistic integration of graph-based methodologies\ninto the RAG workflow. By aligning closely with the capabilities of LLMs, this\nframework ensures a fully cohesive and efficient end-to-end process. Through\nextensive experiments, we demonstrate that NodeRAG exhibits performance\nadvantages over previous methods, including GraphRAG and LightRAG, not only in\nindexing time, query time, and storage efficiency but also in delivering\nsuperior question-answering performance on multi-hop benchmarks and open-ended\nhead-to-head evaluations with minimal retrieval tokens. Our GitHub repository\ncould be seen at https://github.com/Terry-Xu-666/NodeRAG.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.11544.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6610fb736504d9bed5890d58",
+      "avatarUrl": "/avatars/832b186fc51c639f1709025d442b3f4b.svg",
+      "fullname": "Tianyang Xu",
+      "name": "TerryXu666",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.09621",
+      "authors": [
+        {
+          "_id": "6800ef5509eaa9d1d87a6eaf",
+          "name": "Jiuchen Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6800ef5509eaa9d1d87a6eb0",
+          "user": {
+            "_id": "6672c01fa6eb488f049ecb80",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6672c01fa6eb488f049ecb80/f6SetkETOWgyXy1KmBPhK.jpeg",
+            "isPro": false,
+            "fullname": "Xinyu Yan",
+            "user": "fengyanzi",
+            "type": "user"
+          },
+          "name": "Xinyu Yan",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-19T15:17:09.181Z",
+          "hidden": false
+        },
+        {
+          "_id": "6800ef5509eaa9d1d87a6eb1",
+          "name": "Qizhi Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6800ef5509eaa9d1d87a6eb2",
+          "name": "Kaiqi Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-13T15:41:25.000Z",
+      "submittedOnDailyAt": "2025-04-21T05:45:47.747Z",
+      "title": "トークナイズ画像パチックス：大規模画像の効果的な霧除去のグローバルコンテキスト融合",
+      "submittedOnDailyBy": {
+        "_id": "6672c01fa6eb488f049ecb80",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6672c01fa6eb488f049ecb80/f6SetkETOWgyXy1KmBPhK.jpeg",
+        "isPro": false,
+        "fullname": "Xinyu Yan",
+        "user": "fengyanzi",
+        "type": "user"
+      },
+      "summary": "全球コンテキスト情報と地域的詳細特徴は、濃霧除去タスクには不可欠です。深層学習モデルは小さな低解像度画像に優れていますが、大きな高解像度画像に対してはGPUメモリの制限により困難を見せます。補償として、それほど画像切り出しまたはダウンサンプリングを選ぶことが多いです。前者はグローバル情報を減少させ、後者は高周波の詳細を捨てます。これらの課題に対処するために、DehazeXLという濃霧除去手法を提案します。これはグローバルコンテキストと地域的特徴抽出をより均等に取り扱うことで、主流のGPUハードウェア上での大きな画像の端末から端末までのモデリングを可能にします。また、濃霧除去タスクの特徴に合わせた視覚的責任付け方法を設計し、グローバルコンテキストの利用の効率を評価するためにも利用されます。最後に、大きな画像の濃霧除去に関するベンチマークデータセットの欠如を認識し、8KDehazeという超高解像度濃霧除去データセットを開発しました。これは10000個のクリアなお濃霧の遠隔観測画像のペアを含み、各画像は8192×8192ピクセルのサイズです。拡張された実験は、DehazeXLは21GBのメモリで10240×10240ピクセルの画像を推論でき、すべての評価された手法の中で最先端の結果を実現していることを示しました。ソースコードと実験データセットは、https://github.com/CastleChen339/DehazeXLから利用できます。",
+      "upvotes": 4,
+      "discussionId": "6800ef5709eaa9d1d87a6f76",
+      "projectPage": "https://castlechen339.github.io/DehazeXL.github.io/",
+      "githubRepo": "https://github.com/CastleChen339/DehazeXL",
+      "ai_keywords": [
+        "haze removal",
+        "image slicing",
+        "downsampling",
+        "DehazeXL",
+        "global context",
+        "local feature extraction",
+        "end-to-end modeling",
+        "visual attribution",
+        "8KDehaze",
+        "ultra-high-resolution haze removal dataset",
+        "remote sensing images"
+      ]
+    },
+    "publishedAt": "2025-04-13T11:41:25.000Z",
+    "title": "Tokenize Image Patches: Global Context Fusion for Effective Haze Removal\n  in Large Images",
+    "summary": "Global contextual information and local detail features are essential for\nhaze removal tasks. Deep learning models perform well on small, low-resolution\nimages, but they encounter difficulties with large, high-resolution ones due to\nGPU memory limitations. As a compromise, they often resort to image slicing or\ndownsampling. The former diminishes global information, while the latter\ndiscards high-frequency details. To address these challenges, we propose\nDehazeXL, a haze removal method that effectively balances global context and\nlocal feature extraction, enabling end-to-end modeling of large images on\nmainstream GPU hardware. Additionally, to evaluate the efficiency of global\ncontext utilization in haze removal performance, we design a visual attribution\nmethod tailored to the characteristics of haze removal tasks. Finally,\nrecognizing the lack of benchmark datasets for haze removal in large images, we\nhave developed an ultra-high-resolution haze removal dataset (8KDehaze) to\nsupport model training and testing. It includes 10000 pairs of clear and hazy\nremote sensing images, each sized at 8192 times 8192 pixels. Extensive\nexperiments demonstrate that DehazeXL can infer images up to 10240 times\n10240 pixels with only 21 GB of memory, achieving state-of-the-art results\namong all evaluated methods. The source code and experimental dataset are\navailable at https://github.com/CastleChen339/DehazeXL.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.09621.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6672c01fa6eb488f049ecb80",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6672c01fa6eb488f049ecb80/f6SetkETOWgyXy1KmBPhK.jpeg",
+      "fullname": "Xinyu Yan",
+      "name": "fengyanzi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.13626",
+      "authors": [
+        {
+          "_id": "6805fa66fddd500b98039425",
+          "name": "Yule Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b98039426",
+          "name": "Jingyi Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b98039427",
+          "name": "Zhen Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b98039428",
+          "name": "Zifan Peng",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b98039429",
+          "name": "Wenhan Dong",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b9803942a",
+          "name": "Zeyang Sha",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b9803942b",
+          "name": "Shiwen Cui",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b9803942c",
+          "name": "Weiqiang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6805fa66fddd500b9803942d",
+          "name": "Xinlei He",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-18T11:07:19.000Z",
+      "submittedOnDailyAt": "2025-04-21T06:29:28.134Z",
+      "title": "サインインしてコメントを残すことができます。",
+      "submittedOnDailyBy": {
+        "_id": "63da3d7ae697e5898cb86854",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1675246771355-noauth.jpeg",
+        "isPro": false,
+        "fullname": "Talha Rüzgar Akkuş",
+        "user": "Q-bert",
+        "type": "user"
+      },
+      "summary": "最近の大規模な理由論モデル（LRMs）の進歩は、検証時の計算量を拡大して多様なタスクの理由論能力を向上させることの効果性を示しています。しかし、LRMsは通常「過度考え」の問題に苦しむことがあり、モデルが限られた性能向上を伴わずに显著に冗長な理由論ステップを生成することがあります。現在の研究は、過度考えを軽減するために微調節を依存していますが、これは追加データ、非常規なトレーニング設定、安全性の不適切な調整、そして汎化能力の悪いことを伴います。\n\n実験的な分析を通じて、LRMの行為に重要な特徴を明らかにした。それは、小さなモデルが生成した外部のCoTsを思い出トークン（<think>と</think>）の間に置くことで、モデルが少なくとも思い出を生成することを効果的に制御できることです。これらのヒントに基づき、ThoughtManiという簡単で効率的なパイプラインを提案し、LRMsが不必要な中間ステップをスキップして計算コストを大幅に減少させることを可能にします。ThoughtManiの有用性と効率性を検証するために拡張的な実験を実施しました。例えば、LiveBench/Codeデータセットに対してQwQ-32Bに応用した場合、ThoughtManiは元の性能を維持しながら出力トークン数を約30%削減することができ、CoTジェネレータからのオーバーヘッドが少なく、ほとんどなしです。また、ThoughtManiは安全性の調整を平均10%程度に向上させ、モデルセーラーが通常に異なるサイズのモデルを同時に提供することを前提として、実世界的なアプリケーションにおいてより効率的かつアクセス可能なLRMsを構築するための効果的な方法を提供します。",
+      "upvotes": 3,
+      "discussionId": "6805fa67fddd500b98039461",
+      "ai_keywords": [
+        "large reasoning models (LRMs)",
+        "overthinking problems",
+        "fine-tuning",
+        "thinking token",
+        "external CoTs (Chain of Thought)",
+        "ThoughtMani",
+        "unnecessary intermediate steps",
+        "computational costs",
+        "LiveBench/Code dataset",
+        "output token counts",
+        "safety alignment"
+      ]
+    },
+    "publishedAt": "2025-04-18T07:07:19.000Z",
+    "title": "Thought Manipulation: External Thought Can Be Efficient for Large\n  Reasoning Models",
+    "summary": "Recent advancements in large reasoning models (LRMs) have demonstrated the\neffectiveness of scaling test-time computation to enhance reasoning\ncapabilities in multiple tasks. However, LRMs typically suffer from\n\"overthinking\" problems, where models generate significantly redundant\nreasoning steps while bringing limited performance gains. Existing work relies\non fine-tuning to mitigate overthinking, which requires additional data,\nunconventional training setups, risky safety misalignment, and poor\ngeneralization.\n  Through empirical analysis, we reveal an important characteristic of LRM\nbehaviors that placing external CoTs generated by smaller models between the\nthinking token (<think> and </think>) can effectively\nmanipulate the model to generate fewer thoughts. Building on these insights, we\npropose a simple yet efficient pipeline, ThoughtMani, to enable LRMs to bypass\nunnecessary intermediate steps and reduce computational costs significantly. We\nconduct extensive experiments to validate the utility and efficiency of\nThoughtMani. For instance, when applied to QwQ-32B on the LiveBench/Code\ndataset, ThoughtMani keeps the original performance and reduces output token\ncounts by approximately 30%, with little overhead from the CoT generator.\nFurthermore, we find that ThoughtMani enhances safety alignment by an average\nof 10%. Since model vendors typically serve models of different sizes\nsimultaneously, ThoughtMani provides an effective way to construct more\nefficient and accessible LRMs for real-world applications.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13626.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63da3d7ae697e5898cb86854",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1675246771355-noauth.jpeg",
+      "fullname": "Talha Rüzgar Akkuş",
+      "name": "Q-bert",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 89
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.13173",
+      "authors": [
+        {
+          "_id": "6805c4dab15a57fcb59b6f08",
+          "name": "Ali Behrouz",
+          "hidden": false
+        },
+        {
+          "_id": "6805c4dab15a57fcb59b6f09",
+          "name": "Meisam Razaviyayn",
+          "hidden": false
+        },
+        {
+          "_id": "6805c4dab15a57fcb59b6f0a",
+          "name": "Peilin Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "6805c4dab15a57fcb59b6f0b",
+          "name": "Vahab Mirrokni",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-17T17:59:33.000Z",
+      "submittedOnDailyAt": "2025-04-21T02:39:28.607Z",
+      "title": "それはすべて繋がっています：検証時のメモリ、注意の偏向、保存、オンライン最適化の旅程",
+      "submittedOnDailyBy": {
+        "_id": "65cccd5134a5d74cbaa9446c",
+        "avatarUrl": "/avatars/5255b734628992106598eae4f2c5848f.svg",
+        "isPro": false,
+        "fullname": "Ali Behrouz",
+        "user": "AliBehrouz",
+        "type": "user"
+      },
+      "summary": "設計効率的および有効なアーキテクチャルバックボーンは、基盤モデルの能力を向上させるための研究の核心であった。人間の認知現象としてのアテンションバイアス（特定のイベントや刺激を優先する自然的な傾向）をモデル化し、Transformers、Titans、そして現代の線形過去遷移ニューラルネットワークをアソシエーショナルメモリモジュールとして再概念化し、内部的なオブジェクティブ（アテンションバイアス）を使用してキーと値のマッピングを学習することを提案します。驚き的に、私たちは現在の多数のシーケンスモデルが（1）ドット積類似性や（2）L2回帰オブジェクティブをアテンションバイアスとして利用していることを見出しました。これらのオブジェクティブを超えて、私たちは、トレーニングプロセスの安定化にもつながるようなオプションのアテンションバイアスの設定やその効果的な近似を提案します。そして、現代の深層学習アーキテクチャにおける忘却機構をリテンション正規化として再詮釈し、シーケンスモデルに新たな忘却ゲートを提供します。これらのヒントをベースに、私たちはMirasという一般的なフレームワークを提案し、アソシエーショナルメモリアーキテクチャ、アテンションバイアスオブジェクティブ、リテンションゲート、そしてメモリ学習アルゴリズムの4つの選択肢を基に深層学習アーキテクチャを設計することを提案します。私たちは3つの新しいシーケンスモデル（Moneta、Yaad、Memora）を紹介し、現在の線形RNNの能力を超えながらも高速な並列化可能なトレーニングプロセスを維持することを示します。私たちの実験は、Mirasの異なるデザイン選択が強度の異なるモデルを生成することを示し、例えば、言語モデリング、常識推理、そして記憶強調タスクの特殊なタスクでは、もちろんTransformersや現代の線形過去遷移モデルを上回る例外的な性能を収めることを示します。",
+      "upvotes": 3,
+      "discussionId": "6805c4dbb15a57fcb59b6f3d",
+      "ai_keywords": [
+        "Transformers",
+        "Titans",
+        "linear recurrent neural networks",
+        "associative memory modules",
+        "attentional bias",
+        "dot-product similarity",
+        "L2 regression",
+        "retention regularization",
+        "forget gates",
+        "Miras",
+        "Moneta",
+        "Yaad",
+        "Memora",
+        "parallelizable training process",
+        "language modeling",
+        "commonsense reasoning",
+        "recall intensive tasks"
+      ]
+    },
+    "publishedAt": "2025-04-17T13:59:33.000Z",
+    "title": "It's All Connected: A Journey Through Test-Time Memorization,\n  Attentional Bias, Retention, and Online Optimization",
+    "summary": "Designing efficient and effective architectural backbones has been in the\ncore of research efforts to enhance the capability of foundation models.\nInspired by the human cognitive phenomenon of attentional bias-the natural\ntendency to prioritize certain events or stimuli-we reconceptualize neural\narchitectures, including Transformers, Titans, and modern linear recurrent\nneural networks as associative memory modules that learn a mapping of keys and\nvalues using an internal objective, referred to as attentional bias.\nSurprisingly, we observed that most existing sequence models leverage either\n(1) dot-product similarity, or (2) L2 regression objectives as their\nattentional bias. Going beyond these objectives, we present a set of\nalternative attentional bias configurations along with their effective\napproximations to stabilize their training procedure. We then reinterpret\nforgetting mechanisms in modern deep learning architectures as a form of\nretention regularization, providing a novel set of forget gates for sequence\nmodels. Building upon these insights, we present Miras, a general framework to\ndesign deep learning architectures based on four choices of: (i) associative\nmemory architecture, (ii) attentional bias objective, (iii) retention gate, and\n(iv) memory learning algorithm. We present three novel sequence models-Moneta,\nYaad, and Memora-that go beyond the power of existing linear RNNs while\nmaintaining a fast parallelizable training process. Our experiments show\ndifferent design choices in Miras yield models with varying strengths. For\nexample, certain instances of Miras achieve exceptional performance in special\ntasks such as language modeling, commonsense reasoning, and recall intensive\ntasks, even outperforming Transformers and other modern linear recurrent\nmodels.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.13173.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65cccd5134a5d74cbaa9446c",
+      "avatarUrl": "/avatars/5255b734628992106598eae4f2c5848f.svg",
+      "fullname": "Ali Behrouz",
+      "name": "AliBehrouz",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  }
+]
