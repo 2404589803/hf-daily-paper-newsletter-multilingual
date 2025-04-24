@@ -1,0 +1,1618 @@
+[
+  {
+    "paper": {
+      "id": "2504.15279",
+      "authors": [
+        {
+          "_id": "68070d3b5035e6d88636ae13",
+          "user": {
+            "_id": "649e5ee29420f68cf1c1470e",
+            "avatarUrl": "/avatars/7f6d1ec4fb3f85351e88044016d8ab42.svg",
+            "isPro": false,
+            "fullname": "Xu Wayen",
+            "user": "wilye",
+            "type": "user"
+          },
+          "name": "Weiye Xu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:11:19.332Z",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae14",
+          "user": {
+            "_id": "664b4a748dd1bfb5a3a970fe",
+            "avatarUrl": "/avatars/37aa9332ab3e8fbb6ae30b875a7e0e5a.svg",
+            "isPro": false,
+            "fullname": "Jiahao Wang",
+            "user": "GenuineWWD",
+            "type": "user"
+          },
+          "name": "Jiahao Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:11:17.358Z",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae15",
+          "name": "Weiyun Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae16",
+          "name": "Zhe Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae17",
+          "name": "Wengang Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae18",
+          "name": "Aijun Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae19",
+          "name": "Lewei Lu",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae1a",
+          "name": "Houqiang Li",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae1b",
+          "name": "Xiaohua Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae1c",
+          "name": "Xizhou Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae1d",
+          "name": "Wenhai Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae1e",
+          "name": "Jifeng Dai",
+          "hidden": false
+        },
+        {
+          "_id": "68070d3b5035e6d88636ae1f",
+          "name": "Jinguo Zhu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-21T17:59:53.000Z",
+      "submittedOnDailyAt": "2025-04-24T01:22:54.990Z",
+      "title": "Business Logic : Benchmark pour la Réasonnement dans la Visualisation des Modèles de Dialogue",
+      "submittedOnDailyBy": {
+        "_id": "664b4a748dd1bfb5a3a970fe",
+        "avatarUrl": "/avatars/37aa9332ab3e8fbb6ae30b875a7e0e5a.svg",
+        "isPro": false,
+        "fullname": "Jiahao Wang",
+        "user": "GenuineWWD",
+        "type": "user"
+      },
+      "summary": "La déduction visuelle est un élément fondamental de l'intelligence humaine et une capacité importante pour les modèles de haut niveau multimodal. Cependant, l'évaluation de la déduction dans les modèles de langage multimodal (MLLMs) actuels se base généralement sur des descriptions de phrases, laissant des espaces de déduction basées sur le langage sans mesurer de manière efficace la déduction centrée sur la vision. Pour aborder ce problème, nous présentons VisuLogic : une évaluation de 1 000 questions humainement validées dans 6 catégories (par exemple, mouvement de nombres, relations spatiales, comparaison de caractéristiques). Ces questions de différentes catégories permettent d'évaluer de différentes perspectives la capacité de déduction visuelle des MLLMs. Dans ce cadre de référence, nous évaluons les modèles avancés, analysons les résultats et identifions des patterns communs de défaut. De nombreux modèles ne dépassent pas la précision de 30 %, ce qui est légèrement supérieur à la ligne basée sur le hasard de 25 % et significativement inférieur à 51,4 % des résultats humains, ce qui clairement montre des erreurs significatives dans la déduction visuelle. De plus, nous fournissons des données d'entraînement supplémentaires et des lignes d'apprentissage renforcées pour encourager l'amélioration.",
+      "upvotes": 46,
+      "discussionId": "68070d3f5035e6d88636af56",
+      "projectPage": "https://visulogic-benchmark.github.io/VisuLogic/",
+      "githubRepo": "https://github.com/VisuLogic-Benchmark/VisuLogic-Eval",
+      "ai_keywords": [
+        "Visual reasoning",
+        "multimodal large language models (MLLMs)",
+        "text descriptions",
+        "language-based reasoning shortcuts",
+        "genuine vision-centric reasoning",
+        "VisuLogic",
+        "human-verified problems",
+        "quantitative shifts",
+        "spatial relations",
+        "attribute comparisons",
+        "supplementary training dataset",
+        "reinforcement-learning baseline"
+      ]
+    },
+    "publishedAt": "2025-04-21T13:59:53.000Z",
+    "title": "VisuLogic: A Benchmark for Evaluating Visual Reasoning in Multi-modal\n  Large Language Models",
+    "summary": "Visual reasoning is a core component of human intelligence and a critical\ncapability for advanced multimodal models. Yet current reasoning evaluations of\nmultimodal large language models (MLLMs) often rely on text descriptions and\nallow language-based reasoning shortcuts, failing to measure genuine\nvision-centric reasoning. To address this, we introduce VisuLogic: a benchmark\nof 1,000 human-verified problems across six categories (e.g., quantitative\nshifts, spatial relations, attribute comparisons). These various types of\nquestions can be evaluated to assess the visual reasoning capabilities of MLLMs\nfrom multiple perspectives. We evaluate leading MLLMs on this benchmark and\nanalyze their results to identify common failure modes. Most models score below\n30% accuracy-only slightly above the 25% random baseline and far below the\n51.4% achieved by humans-revealing significant gaps in visual reasoning.\nFurthermore, we provide a supplementary training dataset and a\nreinforcement-learning baseline to support further progress.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15279.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "664b4a748dd1bfb5a3a970fe",
+      "avatarUrl": "/avatars/37aa9332ab3e8fbb6ae30b875a7e0e5a.svg",
+      "fullname": "Jiahao Wang",
+      "name": "GenuineWWD",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.14509",
+      "authors": [
+        {
+          "_id": "6809dd092e04f68a3f5baa66",
+          "name": "Fulong Ye",
+          "hidden": false
+        },
+        {
+          "_id": "6809dd092e04f68a3f5baa67",
+          "name": "Miao Hua",
+          "hidden": false
+        },
+        {
+          "_id": "6809dd092e04f68a3f5baa68",
+          "name": "Pengze Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809dd092e04f68a3f5baa69",
+          "name": "Xinghui Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809dd092e04f68a3f5baa6a",
+          "name": "Qichao Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6809dd092e04f68a3f5baa6b",
+          "name": "Songtao Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6809dd092e04f68a3f5baa6c",
+          "name": "Qian He",
+          "hidden": false
+        },
+        {
+          "_id": "6809dd092e04f68a3f5baa6d",
+          "name": "Xinglong Wu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-20T06:53:00.000Z",
+      "submittedOnDailyAt": "2025-04-24T05:26:05.811Z",
+      "title": "Drimid : Approche de haute qualité et de haute vitesse dans l'échange de visages basée sur la diffusion par apprentissage de groupes de types de triples d'identifiants",
+      "submittedOnDailyBy": {
+        "_id": "6339029a76421c0543167075",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6339029a76421c0543167075/3npT0NxTMV-MLWDThyBy8.png",
+        "isPro": false,
+        "fullname": "fulong ye",
+        "user": "Alon77777",
+        "type": "user"
+      },
+      "summary": "Dans cet article, nous présentons le modèle d'échange de visages basé sur la diffusion appelé \"DreamID\", conçu pour atteindre des similitudes d'identité, la préservation de caractéristiques, la précision des images et une rapidité d'inférence. Au contraire des processus d'entraînement communs d'échange de visages, ils dépendent d'un sous-processus caché et sont plus difficiles à mettre en œuvre. DreamID construit le Dataset de Groupes d'Identité Triplet pour effectuer un sous-processus explicite et améliore significativement la similitude de visages et la préservation de caractéristiques. La nature récurrente du modèle de diffusion présente des problèmes dans l'utilisation efficace de la fonction de perte dans l'espace des images et il est difficile d'obtenir des images générées lors de l'entraînement avec plusieurs étapes pratiques. Pour résoudre ces problèmes, on utilise un modèle de diffusion amélioré appelé SD Turbo, qui réduit la phase d'inférence à un seul pas et permet un entraînement efficace à l'échelle des pixels associé au sous-processus explicite des Groupes d'Identité Triplet. De plus, on propose une architecture de modèle basée sur la diffusion améliorée intégrant SwapNet, FaceNet et ID Adapter, qui libère complètement le potentiel du sous-processus explicite des Groupes d'Identité Triplet. Enfin, pour l'extension du méthode, on modifie explicitement les données des Groupes d'Identité Triplet lors de l'entraînement et on ajuste spécifiquement des caractéristiques telles que le cristal ou la forme du visage pour les préserver. Les expériences étendues dépassent les méthodes les plus avancées en termes de similitude d'identité, de positions et d'expressions, et de précision des images. En général, DreamID atteint des résultats d'échange de visages de haute qualité à une résolution de 512*512 en moins de 0,6 secondes, montrant une excellente fonctionnalité même dans des scénarios difficiles tels que l'illumination complexe, les grands angles et les obstructions.",
+      "upvotes": 26,
+      "discussionId": "6809dd102e04f68a3f5babf5",
+      "projectPage": "https://superhero-7.github.io/DreamID/",
+      "githubRepo": "https://github.com/superhero-7/DreamID",
+      "ai_keywords": [
+        "diffusion-based model",
+        "Triplet ID Group",
+        "diffusion models",
+        "image-space loss functions",
+        "SD Turbo",
+        "SwapNet",
+        "FaceNet",
+        "ID Adapter",
+        "face swapping",
+        "explicit supervision",
+        "identity similarity",
+        "attribute preservation",
+        "image fidelity",
+        "pose preservation",
+        "expression preservation",
+        "high-quality face swapping"
+      ]
+    },
+    "publishedAt": "2025-04-20T02:53:00.000Z",
+    "title": "DreamID: High-Fidelity and Fast diffusion-based Face Swapping via\n  Triplet ID Group Learning",
+    "summary": "In this paper, we introduce DreamID, a diffusion-based face swapping model\nthat achieves high levels of ID similarity, attribute preservation, image\nfidelity, and fast inference speed. Unlike the typical face swapping training\nprocess, which often relies on implicit supervision and struggles to achieve\nsatisfactory results. DreamID establishes explicit supervision for face\nswapping by constructing Triplet ID Group data, significantly enhancing\nidentity similarity and attribute preservation. The iterative nature of\ndiffusion models poses challenges for utilizing efficient image-space loss\nfunctions, as performing time-consuming multi-step sampling to obtain the\ngenerated image during training is impractical. To address this issue, we\nleverage the accelerated diffusion model SD Turbo, reducing the inference steps\nto a single iteration, enabling efficient pixel-level end-to-end training with\nexplicit Triplet ID Group supervision. Additionally, we propose an improved\ndiffusion-based model architecture comprising SwapNet, FaceNet, and ID Adapter.\nThis robust architecture fully unlocks the power of the Triplet ID Group\nexplicit supervision. Finally, to further extend our method, we explicitly\nmodify the Triplet ID Group data during training to fine-tune and preserve\nspecific attributes, such as glasses and face shape. Extensive experiments\ndemonstrate that DreamID outperforms state-of-the-art methods in terms of\nidentity similarity, pose and expression preservation, and image fidelity.\nOverall, DreamID achieves high-quality face swapping results at 512*512\nresolution in just 0.6 seconds and performs exceptionally well in challenging\nscenarios such as complex lighting, large angles, and occlusions.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.14509.png",
+    "numComments": 7,
+    "submittedBy": {
+      "_id": "6339029a76421c0543167075",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6339029a76421c0543167075/3npT0NxTMV-MLWDThyBy8.png",
+      "fullname": "fulong ye",
+      "name": "Alon77777",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.15431",
+      "authors": [
+        {
+          "_id": "680879ead6dc8bf64565c975",
+          "name": "Sungjun Han",
+          "hidden": false
+        },
+        {
+          "_id": "680879ead6dc8bf64565c976",
+          "user": {
+            "_id": "6138cc1306dd10833d2db64b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6138cc1306dd10833d2db64b/IRX4y-8M4YlzR_8jOwkKp.jpeg",
+            "isPro": false,
+            "fullname": "Juyoung Suk",
+            "user": "scottsuk0306",
+            "type": "user"
+          },
+          "name": "Juyoung Suk",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-23T08:08:21.257Z",
+          "hidden": false
+        },
+        {
+          "_id": "680879ead6dc8bf64565c977",
+          "name": "Suyeong An",
+          "hidden": false
+        },
+        {
+          "_id": "680879ead6dc8bf64565c978",
+          "name": "Hyungguk Kim",
+          "hidden": false
+        },
+        {
+          "_id": "680879ead6dc8bf64565c979",
+          "name": "Kyuseok Kim",
+          "hidden": false
+        },
+        {
+          "_id": "680879ead6dc8bf64565c97a",
+          "name": "Wonsuk Yang",
+          "hidden": false
+        },
+        {
+          "_id": "680879ead6dc8bf64565c97b",
+          "user": {
+            "_id": "6257adfdb98dcaa7e0de7ab4",
+            "avatarUrl": "/avatars/ddfc2135104895d09cfce0cd6f10e5fb.svg",
+            "isPro": false,
+            "fullname": "Seungtaek Choi",
+            "user": "hist0613",
+            "type": "user"
+          },
+          "name": "Seungtaek Choi",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:11:03.864Z",
+          "hidden": false
+        },
+        {
+          "_id": "680879ead6dc8bf64565c97c",
+          "name": "Jamin Shin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-21T20:54:44.000Z",
+      "submittedOnDailyAt": "2025-04-24T01:09:32.264Z",
+      "title": "**Reporte Technique de Trillian 7B**",
+      "submittedOnDailyBy": {
+        "_id": "6138cc1306dd10833d2db64b",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6138cc1306dd10833d2db64b/IRX4y-8M4YlzR_8jOwkKp.jpeg",
+        "isPro": false,
+        "fullname": "Juyoung Suk",
+        "user": "scottsuk0306",
+        "type": "user"
+      },
+      "summary": "Cette traduction a été effectuée en français.\n\nSi vous avez besoin d'informations supplémentaires ou une traduction dans un autre langue, n'hésitez pas à nous informer.",
+      "upvotes": 18,
+      "discussionId": "680879ebd6dc8bf64565c9bb",
+      "ai_keywords": [
+        "Trillion-7B",
+        "Cross-lingual Document Attention (XLDA)",
+        "language-specific filtering",
+        "tailored tokenizer construction",
+        "multilingual data",
+        "multilingual performance",
+        "cross-lingual consistency"
+      ]
+    },
+    "publishedAt": "2025-04-21T16:54:44.000Z",
+    "title": "Trillion 7B Technical Report",
+    "summary": "We introduce Trillion-7B, the most token-efficient Korean-centric\nmultilingual LLM available. Our novel Cross-lingual Document Attention (XLDA)\nmechanism enables highly efficient and effective knowledge transfer from\nEnglish to target languages like Korean and Japanese. Combined with optimized\ndata mixtures, language-specific filtering, and tailored tokenizer\nconstruction, Trillion-7B achieves competitive performance while dedicating\nonly 10\\% of its 2T training tokens to multilingual data and requiring just\n59.4K H100 GPU hours (\\$148K) for full training. Comprehensive evaluations\nacross 27 benchmarks in four languages demonstrate Trillion-7B's robust\nmultilingual performance and exceptional cross-lingual consistency.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15431.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6138cc1306dd10833d2db64b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6138cc1306dd10833d2db64b/IRX4y-8M4YlzR_8jOwkKp.jpeg",
+      "fullname": "Juyoung Suk",
+      "name": "scottsuk0306",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 14
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.15843",
+      "authors": [
+        {
+          "_id": "6809948944114def75aaeb7d",
+          "name": "Junshu Pan",
+          "hidden": false
+        },
+        {
+          "_id": "6809948944114def75aaeb7e",
+          "name": "Wei Shen",
+          "hidden": false
+        },
+        {
+          "_id": "6809948944114def75aaeb7f",
+          "name": "Shulin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6809948944114def75aaeb80",
+          "name": "Qiji Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6809948944114def75aaeb81",
+          "name": "Yue Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-22T12:39:30.000Z",
+      "submittedOnDailyAt": "2025-04-24T00:02:36.679Z",
+      "title": "DPO Antérieur : Amélioration de l'utilisation des données pour l'optimisation préférentielle directe en utilisant le Modèle de Guide de Normes",
+      "submittedOnDailyBy": {
+        "_id": "6468823272d9180d4ac90bdf",
+        "avatarUrl": "/avatars/70cb7d65d30ecb944595000ceeeedb1b.svg",
+        "isPro": false,
+        "fullname": "Wei Shen",
+        "user": "Swtheking",
+        "type": "user"
+      },
+      "summary": "L'Optimisation des Préférences Directes (DPO) simplifie l'apprentissage par renforcement (RLHF) des modèles de langage large (LLMs) en abordant directement les réponses humaines. Pendant le processus d'apprentissage DPO, le modèle de référence agit comme un réglageur de pondération des données. Cependant, initialiser identiquement le modèle de politique et le modèle de référence dans le DPO entraîne une utilisation inefficace des données et expose des limites de performance. Au contraire, l'Optimisation Simple des Préférences (SimPO) apprend sans modèle de référence, ce qui entraîne une instabilité dans l'apprentissage et nécessite des conditions strictes pour prévenir la oubli cognitif. Ce papier propose un paradigme d'apprentissage efficace basé sur le DPO, appelé \"Pre-DPO\", qui utilise un modèle de référence guidant. Ce modèle de référence prédit l'état de politique optimale à partir des données de rétroaction d'apprentissage et fournit des conseils sur l'attribution de poids plus élevés aux données adaptées au modèle et de poids plus bas aux données non adaptées au modèle. Des expériences étendues sur les benchmarks AlpacaEval 2.0 et Arena-Hard v0.1 montrent que Pre-DPO améliore constamment la performance tant du DPO que du SimPO et fonctionne efficacement sans recourir à des modèles externes ou à de données supplémentaires.",
+      "upvotes": 12,
+      "discussionId": "6809948a44114def75aaebab",
+      "ai_keywords": [
+        "reinforcement learning from human feedback (RLHF)",
+        "large language models (LLMs)",
+        "Direct Preference Optimization (DPO)",
+        "human preferences",
+        "reference model",
+        "data weight adjuster",
+        "Simple Preference Optimization (SimPO)",
+        "catastrophic forgetting",
+        "Pre-DPO",
+        "guiding reference model",
+        "AlpacaEval 2.0",
+        "Arena-Hard v0.1"
+      ]
+    },
+    "publishedAt": "2025-04-22T08:39:30.000Z",
+    "title": "Pre-DPO: Improving Data Utilization in Direct Preference Optimization\n  Using a Guiding Reference Model",
+    "summary": "Direct Preference Optimization (DPO) simplifies reinforcement learning from\nhuman feedback (RLHF) for large language models (LLMs) by directly optimizing\nhuman preferences without an explicit reward model. We find that during DPO\ntraining, the reference model plays the role of a data weight adjuster.\nHowever, the common practice of initializing the policy and reference models\nidentically in DPO can lead to inefficient data utilization and impose a\nperformance ceiling. Meanwhile, the lack of a reference model in Simple\nPreference Optimization (SimPO) reduces training robustness and necessitates\nstricter conditions to prevent catastrophic forgetting. In this work, we\npropose Pre-DPO, a simple yet effective DPO-based training paradigm that\nenhances preference optimization performance by leveraging a guiding reference\nmodel. This reference model provides foresight into the optimal policy state\nachievable through the training preference data, serving as a guiding mechanism\nthat adaptively assigns higher weights to samples more suitable for the model\nand lower weights to those less suitable. Extensive experiments on AlpacaEval\n2.0 and Arena-Hard v0.1 benchmarks demonstrate that Pre-DPO consistently\nimproves the performance of both DPO and SimPO, without relying on external\nmodels or additional data.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15843.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6468823272d9180d4ac90bdf",
+      "avatarUrl": "/avatars/70cb7d65d30ecb944595000ceeeedb1b.svg",
+      "fullname": "Wei Shen",
+      "name": "Swtheking",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.16801",
+      "authors": [
+        {
+          "_id": "6809bebd0f6dfd7bd5159b76",
+          "user": {
+            "_id": "6545f8922a2a483042ebc8b3",
+            "avatarUrl": "/avatars/ab00da8aa841694f3f11093a9148e4c5.svg",
+            "isPro": false,
+            "fullname": "xiaoxing2001",
+            "user": "xiaoxing2001",
+            "type": "user"
+          },
+          "name": "Xiaoxing Hu",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-24T04:32:01.063Z",
+          "hidden": false
+        },
+        {
+          "_id": "6809bebd0f6dfd7bd5159b77",
+          "user": {
+            "_id": "63e202f352b7578dba448ab5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63e202f352b7578dba448ab5/8itVBLcv14m7OVsoF8h1o.jpeg",
+            "isPro": false,
+            "fullname": "Yang",
+            "user": "Kaichengalex",
+            "type": "user"
+          },
+          "name": "Kaicheng Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:10:22.302Z",
+          "hidden": false
+        },
+        {
+          "_id": "6809bebd0f6dfd7bd5159b78",
+          "name": "Jun Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809bebd0f6dfd7bd5159b79",
+          "name": "Haoran Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6809bebd0f6dfd7bd5159b7a",
+          "name": "Ziyong Feng",
+          "hidden": false
+        },
+        {
+          "_id": "6809bebd0f6dfd7bd5159b7b",
+          "name": "Yupei Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-23T15:20:53.000Z",
+      "submittedOnDailyAt": "2025-04-24T03:04:11.389Z",
+      "title": "Améliorer la compréhension intégrale par la coopération à l'échelle mondiale.",
+      "submittedOnDailyBy": {
+        "_id": "63e202f352b7578dba448ab5",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63e202f352b7578dba448ab5/8itVBLcv14m7OVsoF8h1o.jpeg",
+        "isPro": false,
+        "fullname": "Yang",
+        "user": "Kaichengalex",
+        "type": "user"
+      },
+      "summary": "Contrastive Language-Image Pre-training (CLIP) a ajusté des modèles d'images et de texte pour réussir efficacement diverses tâches multidimensionnelles. Cependant, en raison des caractéristiques de l'apprentissage contrastif global, CLIP ne peut pas comprendre des concepts structuraux (par exemple, relations et caractéristiques). Des recherches récentes visent à améliorer la compréhension structuraire en utilisant des échantillons négatifs difficiles à apprendre globalement, mais ces méthodes imposent de grandes pertes dans la capacité générale du modèle, réduisant son espace d'embédage d'images et de texte. Pour surmonter ces limites, on introduit le cadre DeGLA (Découpage d'Alignement Global-Local). Cette approche vise à améliorer la compréhension structurale tout en évitant de graves pertes de sa capacité générale. Pour optimiser le modèle sans perdre ses propres compétences, on introduit une structure d'auto-suppression pendant le processus d'ajustement global et on ajuste les encodeurs d'images et de texte à partir du mouvement pondéré. Sous la contrainte d'auto-suppression, on inhibe effectivement la \"mémoire fausse\" des connaissances pré-entraînées. Pour améliorer la compréhension structurale, on élargit les capacités d'apprentissage contextuel des Grands Modèles de Langage (LLMs) pour construire environ 2M captures de qualité élevée dans cinq catégories. De plus, on propose la perte de Contraste d'Images Maintenue (IGC) et la perte de Contraste de Texte Maintenue (TGC) pour renforcer la compréhension structurale du langage visuel. Les résultats d'expériences larges montrent l'effet du cadre DeGLA. Comparés aux méthodes les plus récentes, on atteint un accroissement moyen de 3,5% de l'efficacité sur les marques VALSE, SugarCrepe et ARO, et un accroissement moyen de 13,0% de rendement sur les tâches de classification sans exemples sur 11 ensembles de données. Notre code est disponible sur https://github.com/xiaoxing2001/DeGLA.",
+      "upvotes": 11,
+      "discussionId": "6809bec10f6dfd7bd5159c38",
+      "ai_keywords": [
+        "Decoupled Global-Local Alignment (DeGLA)",
+        "self-distillation mechanism",
+        "learnable image-text encoder",
+        "frozen teacher model",
+        "exponential moving average",
+        "catastrophic forgetting",
+        "in-context learning",
+        "Large Language Models (LLMs)",
+        "high-quality negative captions",
+        "Image-Grounded Contrast (IGC) loss",
+        "Text-Grounded Contrast (TGC) loss",
+        "vision-language compositionally",
+        "VALSE",
+        "SugarCrepe",
+        "ARO benchmarks",
+        "zero-shot classification tasks"
+      ]
+    },
+    "publishedAt": "2025-04-23T11:20:53.000Z",
+    "title": "Decoupled Global-Local Alignment for Improving Compositional\n  Understanding",
+    "summary": "Contrastive Language-Image Pre-training (CLIP) has achieved success on\nmultiple downstream tasks by aligning image and text modalities. However, the\nnature of global contrastive learning limits CLIP's ability to comprehend\ncompositional concepts, such as relations and attributes. Although recent\nstudies employ global hard negative samples to improve compositional\nunderstanding, these methods significantly compromise the model's inherent\ngeneral capabilities by forcibly distancing textual negative samples from\nimages in the embedding space. To overcome this limitation, we introduce a\nDecoupled Global-Local Alignment (DeGLA) framework that improves compositional\nunderstanding while substantially mitigating losses in general capabilities. To\noptimize the retention of the model's inherent capabilities, we incorporate a\nself-distillation mechanism within the global alignment process, aligning the\nlearnable image-text encoder with a frozen teacher model derived from an\nexponential moving average. Under the constraint of self-distillation, it\neffectively mitigates the catastrophic forgetting of pretrained knowledge\nduring fine-tuning. To improve compositional understanding, we first leverage\nthe in-context learning capability of Large Language Models (LLMs) to construct\nabout 2M high-quality negative captions across five types. Subsequently, we\npropose the Image-Grounded Contrast (IGC) loss and Text-Grounded Contrast (TGC)\nloss to enhance vision-language compositionally. Extensive experimental results\ndemonstrate the effectiveness of the DeGLA framework. Compared to previous\nstate-of-the-art methods, DeGLA achieves an average enhancement of 3.5% across\nthe VALSE, SugarCrepe, and ARO benchmarks. Concurrently, it obtains an average\nperformance improvement of 13.0% on zero-shot classification tasks across\neleven datasets. Our code will be released at\nhttps://github.com/xiaoxing2001/DeGLA",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.16801.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63e202f352b7578dba448ab5",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63e202f352b7578dba448ab5/8itVBLcv14m7OVsoF8h1o.jpeg",
+      "fullname": "Yang",
+      "name": "Kaichengalex",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.16929",
+      "authors": [
+        {
+          "_id": "6809ba7976a4f4f7268546a7",
+          "name": "Shaden Alshammari",
+          "hidden": false
+        },
+        {
+          "_id": "6809ba7976a4f4f7268546a8",
+          "name": "John Hershey",
+          "hidden": false
+        },
+        {
+          "_id": "6809ba7976a4f4f7268546a9",
+          "name": "Axel Feldmann",
+          "hidden": false
+        },
+        {
+          "_id": "6809ba7976a4f4f7268546aa",
+          "name": "William T. Freeman",
+          "hidden": false
+        },
+        {
+          "_id": "6809ba7976a4f4f7268546ab",
+          "name": "Mark Hamilton",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/62dae3734398e21bf7f53443/MT5eBEJkF1u7uejE382FI.png"
+      ],
+      "publishedAt": "2025-04-23T17:59:01.000Z",
+      "submittedOnDailyAt": "2025-04-24T02:45:09.509Z",
+      "title": "I-Con : Marco de l'Apprentissage Intégré de Représentations",
+      "submittedOnDailyBy": {
+        "_id": "62dae3734398e21bf7f53443",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1658512237806-noauth.jpeg",
+        "isPro": false,
+        "fullname": "Mark Hamilton",
+        "user": "mhamilton723",
+        "type": "user"
+      },
+      "summary": "Les champs d'apprentissage sont en expansion tout en augmentant les fonctions de perte pour différents types de problèmes. Nous présentons une équation théorique pour généraliser un grand ensemble de fonctions de perte modernes d'apprentissage automatique. En particulier, nous décrivons des méthodes pour minimiser la divergence KL cumulée de deux distributions conditionnelles (SUB-VIEW et représentation apprise) dans une large classe d'apprentissage automatique. Dès ce point de vue, nous découvrons le clustering, les méthodes spectrales, la réduction de dimensions, l'apprentissage comparatif et la géométrie de l'information cachée sous apprentissage supervisé. Ce cadre permet la combinaison de techniques réussies dans la littérature pour développer de nouvelles fonctions de perte. Nous présentons des tests qui relient plus de 23 approches, mais nous montrons également que, en utilisant ces résultats théoriques, il est possible d'atteindre un amélioration de 8% par rapport au meilleur niveau antérieur en classification sans SUB-VIEW sur ImageNet-1K et de créer un cluster d'images sans SUB-VIEW. De plus, nous montrons comment I-Con améliore le principe d'apprentissage de représentations comparatives en utilisant un méthode de traitement de base de données fondamentale.",
+      "upvotes": 9,
+      "discussionId": "6809ba7d76a4f4f72685478a",
+      "ai_keywords": [
+        "information-theoretic equation",
+        "KL divergence",
+        "conditional distributions",
+        "supervisory representations",
+        "learned representations",
+        "information geometry",
+        "clustering",
+        "spectral methods",
+        "dimensionality reduction",
+        "contrastive learning",
+        "supervised learning",
+        "I-Con",
+        "debiasing methods",
+        "contrastive representation learners"
+      ]
+    },
+    "publishedAt": "2025-04-23T13:59:01.000Z",
+    "title": "I-Con: A Unifying Framework for Representation Learning",
+    "summary": "As the field of representation learning grows, there has been a proliferation\nof different loss functions to solve different classes of problems. We\nintroduce a single information-theoretic equation that generalizes a large\ncollection of modern loss functions in machine learning. In particular, we\nintroduce a framework that shows that several broad classes of machine learning\nmethods are precisely minimizing an integrated KL divergence between two\nconditional distributions: the supervisory and learned representations. This\nviewpoint exposes a hidden information geometry underlying clustering, spectral\nmethods, dimensionality reduction, contrastive learning, and supervised\nlearning. This framework enables the development of new loss functions by\ncombining successful techniques from across the literature. We not only present\na wide array of proofs, connecting over 23 different approaches, but we also\nleverage these theoretical results to create state-of-the-art unsupervised\nimage classifiers that achieve a +8% improvement over the prior\nstate-of-the-art on unsupervised classification on ImageNet-1K. We also\ndemonstrate that I-Con can be used to derive principled debiasing methods which\nimprove contrastive representation learners.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/62dae3734398e21bf7f53443/MT5eBEJkF1u7uejE382FI.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.16929.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62dae3734398e21bf7f53443",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1658512237806-noauth.jpeg",
+      "fullname": "Mark Hamilton",
+      "name": "mhamilton723",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 12
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.16915",
+      "authors": [
+        {
+          "_id": "6809b14111003e54bd204d99",
+          "name": "Chong Mou",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204d9a",
+          "user": {
+            "_id": "639709c2be8a14bb9eeea8f6",
+            "avatarUrl": "/avatars/c142d71b541dccff91fcfd08a2cc0ce0.svg",
+            "isPro": false,
+            "fullname": "Yanze Wu",
+            "user": "yanze",
+            "type": "user"
+          },
+          "name": "Yanze Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:10:24.617Z",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204d9b",
+          "name": "Wenxu Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204d9c",
+          "name": "Zinan Guo",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204d9d",
+          "name": "Pengze Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204d9e",
+          "name": "Yufeng Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204d9f",
+          "name": "Yiming Luo",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204da0",
+          "name": "Fei Ding",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204da1",
+          "name": "Shiwen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204da2",
+          "name": "Xinghui Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204da3",
+          "name": "Mengtian Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204da4",
+          "name": "Songtao Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204da5",
+          "name": "Jian Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204da6",
+          "name": "Qian He",
+          "hidden": false
+        },
+        {
+          "_id": "6809b14111003e54bd204da7",
+          "name": "Xinglong Wu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-23T17:41:44.000Z",
+      "submittedOnDailyAt": "2025-04-24T02:18:39.286Z",
+      "title": "DreamO : Une référence de l'architecture de marche utilisateur définie pour des images",
+      "submittedOnDailyBy": {
+        "_id": "639709c2be8a14bb9eeea8f6",
+        "avatarUrl": "/avatars/c142d71b541dccff91fcfd08a2cc0ce0.svg",
+        "isPro": false,
+        "fullname": "Yanze Wu",
+        "user": "yanze",
+        "type": "user"
+      },
+      "summary": "Récemment, la recherche sur la personnalisation d'images (par exemple, identité, thème, style, fond, etc.) a démontré une capacité de personnalisation puissante dans des modèles de génération à grande échelle. Cependant, de nombreux méthodes d'accès sont conçues pour des tâches spécifiques et limitent la capacité d'intégration de différents types de conditions. Le développement de séries de cadres de travail pour la personnalisation d'images reste un défi ouvert. Dans cet article, nous présentons un cadre de travail pour la personnalisation d'images qui soutient diverses tâches et promeut l'intégration de multiples conditions sans restrictions. Spécifiquement, DreamO utilise le cadre de travail de transformateur de diffusion (DiT) pour traiter de manière cohérente différents types d'entrées. Pendant la période d'entraînement, un grand ensemble de données d'entraînement est construit qui inclut diverses tâches de personnalisation, et une restriction de rotation de caractéristiques est introduite pour combiner des informations liées aux images de référence. De plus, un plan de phases est conçu pour associer des post-traitements spécifiques et des conditions, ce qui permet de contrôler la distribution des conditions dans les données générées. De plus, une étape d'entraînement en trois étapes est introduite pour corriger le biais de qualité causé par des données de faible qualité. Au travers d'une large gamme d'expériences, nous démontrons que le proposé DreamO permet une intégration flexible de haute qualité et effectue efficacement diverses tâches de personnalisation d'images avec différents types de conditions de contrôle.",
+      "upvotes": 7,
+      "discussionId": "6809b14411003e54bd204e51",
+      "projectPage": "https://mc-e.github.io/project/DreamO/",
+      "githubRepo": "https://github.com/bytedance/DreamO",
+      "ai_keywords": [
+        "diffusion transformer (DiT)",
+        "feature routing constraint",
+        "placeholder strategy",
+        "progressive training strategy",
+        "baseline consistency",
+        "customization capabilities",
+        "quality alignment stage"
+      ]
+    },
+    "publishedAt": "2025-04-23T13:41:44.000Z",
+    "title": "DreamO: A Unified Framework for Image Customization",
+    "summary": "Recently, extensive research on image customization (e.g., identity, subject,\nstyle, background, etc.) demonstrates strong customization capabilities in\nlarge-scale generative models. However, most approaches are designed for\nspecific tasks, restricting their generalizability to combine different types\nof condition. Developing a unified framework for image customization remains an\nopen challenge. In this paper, we present DreamO, an image customization\nframework designed to support a wide range of tasks while facilitating seamless\nintegration of multiple conditions. Specifically, DreamO utilizes a diffusion\ntransformer (DiT) framework to uniformly process input of different types.\nDuring training, we construct a large-scale training dataset that includes\nvarious customization tasks, and we introduce a feature routing constraint to\nfacilitate the precise querying of relevant information from reference images.\nAdditionally, we design a placeholder strategy that associates specific\nplaceholders with conditions at particular positions, enabling control over the\nplacement of conditions in the generated results. Moreover, we employ a\nprogressive training strategy consisting of three stages: an initial stage\nfocused on simple tasks with limited data to establish baseline consistency, a\nfull-scale training stage to comprehensively enhance the customization\ncapabilities, and a final quality alignment stage to correct quality biases\nintroduced by low-quality data. Extensive experiments demonstrate that the\nproposed DreamO can effectively perform various image customization tasks with\nhigh quality and flexibly integrate different types of control conditions.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.16915.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "639709c2be8a14bb9eeea8f6",
+      "avatarUrl": "/avatars/c142d71b541dccff91fcfd08a2cc0ce0.svg",
+      "fullname": "Yanze Wu",
+      "name": "yanze",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 139
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.15585",
+      "authors": [
+        {
+          "_id": "6809c1f389b7cade55b32a6c",
+          "name": "Kun Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a6d",
+          "name": "Guibin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a6e",
+          "name": "Zhenhong Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a6f",
+          "name": "Jiahao Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a70",
+          "name": "Miao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a71",
+          "name": "Shiqian Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a72",
+          "name": "Chenlong Yin",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a73",
+          "name": "Jinhu Fu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a74",
+          "name": "Yibo Yan",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a75",
+          "name": "Hanjun Luo",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a76",
+          "name": "Liang Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a77",
+          "name": "Zhihao Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a78",
+          "name": "Haolang Lu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a79",
+          "name": "Xinye Cao",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a7a",
+          "name": "Xinyun Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a7b",
+          "name": "Weifei Jin",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a7c",
+          "name": "Fanci Meng",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a7d",
+          "name": "Junyuan Mao",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a7e",
+          "name": "Hao Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a7f",
+          "name": "Minghe Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a80",
+          "name": "Fan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a81",
+          "name": "Junfeng Fang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a82",
+          "name": "Chengwei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a83",
+          "name": "Yifan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a84",
+          "name": "Qiankun Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a85",
+          "name": "Chongye Guo",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a86",
+          "name": "Yalan Qin",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a87",
+          "name": "Yi Ding",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a88",
+          "name": "Donghai Hong",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a89",
+          "name": "Jiaming Ji",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a8a",
+          "name": "Xinfeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a8b",
+          "name": "Yifan Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a8c",
+          "name": "Dongxia Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a8d",
+          "name": "Yihao Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a8e",
+          "name": "Yufei Guo",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a8f",
+          "name": "Jen-tse Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a90",
+          "name": "Yanwei Yue",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a91",
+          "name": "Wenke Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a92",
+          "name": "Guancheng Wan",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a93",
+          "name": "Tianlin Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a94",
+          "name": "Lei Bai",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a95",
+          "name": "Jie Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a96",
+          "name": "Qing Guo",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a97",
+          "name": "Jingyi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a98",
+          "name": "Tianlong Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a99",
+          "name": "Joey Tianyi Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a9a",
+          "name": "Xiaojun Jia",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a9b",
+          "name": "Weisong Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a9c",
+          "name": "Cong Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a9d",
+          "name": "Jing Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a9e",
+          "name": "Xuming Hu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32a9f",
+          "name": "Yiming Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa0",
+          "name": "Xiao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa1",
+          "user": {
+            "_id": "620b3bbb0668e435407c8d0a",
+            "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+            "isPro": false,
+            "fullname": "Ningyu Zhang",
+            "user": "Ningyu",
+            "type": "user"
+          },
+          "name": "Ningyu Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:10:18.968Z",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa2",
+          "name": "Luu Anh Tuan",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa3",
+          "name": "Guowen Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa4",
+          "name": "Tianwei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa5",
+          "name": "Xingjun Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa6",
+          "name": "Xiang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa7",
+          "name": "Bo An",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa8",
+          "name": "Jun Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aa9",
+          "name": "Mohit Bansal",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aaa",
+          "name": "Shirui Pan",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aab",
+          "name": "Yuval Elovici",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aac",
+          "name": "Bhavya Kailkhura",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aad",
+          "name": "Bo Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aae",
+          "name": "Yaodong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aaf",
+          "name": "Hongwei Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab0",
+          "name": "Wenyuan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab1",
+          "name": "Yizhou Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab2",
+          "name": "Wei Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab3",
+          "name": "Qing Li",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab4",
+          "name": "Ke Tang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab5",
+          "name": "Yu-Gang Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab6",
+          "name": "Felix Juefei-Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab7",
+          "name": "Hui Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab8",
+          "name": "Xiaofeng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32ab9",
+          "name": "Shuicheng Yan",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32aba",
+          "name": "Dacheng Tao",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32abb",
+          "name": "Philip S. Yu",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32abc",
+          "name": "Qingsong Wen",
+          "hidden": false
+        },
+        {
+          "_id": "6809c1f389b7cade55b32abd",
+          "name": "Yang Liu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-22T05:02:49.000Z",
+      "submittedOnDailyAt": "2025-04-24T03:15:54.692Z",
+      "title": "Étude Intégrale de la Sécurité des Modèles de Langue Large (LLM(-Agent)) Full Stack : Données, Entraînement, Implémentation",
+      "submittedOnDailyBy": {
+        "_id": "620b3bbb0668e435407c8d0a",
+        "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+        "isPro": false,
+        "fullname": "Ningyu Zhang",
+        "user": "Ningyu",
+        "type": "user"
+      },
+      "summary": "L'échec spectaculaire des LLMs a émergé comme une voie de promesse pour la réalisation de l'AGI dans la communauté académique et industrielle. Les LLMs ont démontré des résultats sans précédent dans divers domaines d'application. L'importance des LLMs a augmenté dans les deux domaines de recherche et de commerce, et leur sécurité et influence ont également augmenté chez les chercheurs, les entreprises et les pays. Actuellement, les recherches sur la sécurité des LLMs se concentrent sur des étapes spécifiques (par exemple, l'étape d'implémentation ou de fine-tuning), ce qui résulte être insuffisant pour comprendre la \"chaîne de vie\" complète des LLMs. Pour corriger cela, cet article présente pour la première fois le concept de sécurité \"FULL STACK\" qui couvre tout le processus depuis l'apprentissage jusqu'à la commercialisation finale des LLMs. Comparé aux recherches de sécurité des LLMs actuelles, notre travail met en avant les caractéristiques suivantes : (I) Vision rigoureuse. La \"chaîne de vie\" complète des LLMs s'étend depuis la préparation des données, le pré-traitement, le post-traitement, l'implémentation jusqu'à la commercialisation finale, ce qui permet la première recherche de sécurité qui inclut toute la \"chaîne de vie\" des LLMs. (II) Support large de la littérature. Notre travail est basé sur une revue rigoureuse de plus de 800 articles, ce qui garantit une couverture intégrale et une organisation systématique des problèmes de sécurité. (III) Vision propre. A travers un analyse systématique de la littérature, nous avons développé des cartes et des vues fiables pour chaque chapitre. Notre travail identifie des directions de recherche prometteuses en matière de sécurité de la génération de données, des technologies d'alignement, de l'édition de modèles et des systèmes d'AGENTS basés sur les LLMs. Ces visions sont une guide précieuse pour les chercheurs qui cherchent à explorer l'avenir de ce domaine de recherche.",
+      "upvotes": 5,
+      "discussionId": "6809c1f789b7cade55b32bf4"
+    },
+    "publishedAt": "2025-04-22T01:02:49.000Z",
+    "title": "A Comprehensive Survey in LLM(-Agent) Full Stack Safety: Data, Training\n  and Deployment",
+    "summary": "The remarkable success of Large Language Models (LLMs) has illuminated a\npromising pathway toward achieving Artificial General Intelligence for both\nacademic and industrial communities, owing to their unprecedented performance\nacross various applications. As LLMs continue to gain prominence in both\nresearch and commercial domains, their security and safety implications have\nbecome a growing concern, not only for researchers and corporations but also\nfor every nation. Currently, existing surveys on LLM safety primarily focus on\nspecific stages of the LLM lifecycle, e.g., deployment phase or fine-tuning\nphase, lacking a comprehensive understanding of the entire \"lifechain\" of LLMs.\nTo address this gap, this paper introduces, for the first time, the concept of\n\"full-stack\" safety to systematically consider safety issues throughout the\nentire process of LLM training, deployment, and eventual commercialization.\nCompared to the off-the-shelf LLM safety surveys, our work demonstrates several\ndistinctive advantages: (I) Comprehensive Perspective. We define the complete\nLLM lifecycle as encompassing data preparation, pre-training, post-training,\ndeployment and final commercialization. To our knowledge, this represents the\nfirst safety survey to encompass the entire lifecycle of LLMs. (II) Extensive\nLiterature Support. Our research is grounded in an exhaustive review of over\n800+ papers, ensuring comprehensive coverage and systematic organization of\nsecurity issues within a more holistic understanding. (III) Unique Insights.\nThrough systematic literature analysis, we have developed reliable roadmaps and\nperspectives for each chapter. Our work identifies promising research\ndirections, including safety in data generation, alignment techniques, model\nediting, and LLM-based agent systems. These insights provide valuable guidance\nfor researchers pursuing future work in this field.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15585.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "620b3bbb0668e435407c8d0a",
+      "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+      "fullname": "Ningyu Zhang",
+      "name": "Ningyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 22
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.15777",
+      "authors": [
+        {
+          "_id": "6808452d16c1c427ac727816",
+          "user": {
+            "_id": "67469d6a8407f929491dce06",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67469d6a8407f929491dce06/7vd7zyApmT4rXe58gqmG1.png",
+            "isPro": true,
+            "fullname": "Shangshang Wang",
+            "user": "upup-ashton-wang",
+            "type": "user"
+          },
+          "name": "Shangshang Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:11:10.259Z",
+          "hidden": false
+        },
+        {
+          "_id": "6808452d16c1c427ac727817",
+          "name": "Julian Asilis",
+          "hidden": false
+        },
+        {
+          "_id": "6808452d16c1c427ac727818",
+          "name": "Ömer Faruk Akgül",
+          "hidden": false
+        },
+        {
+          "_id": "6808452d16c1c427ac727819",
+          "name": "Enes Burak Bilgin",
+          "hidden": false
+        },
+        {
+          "_id": "6808452d16c1c427ac72781a",
+          "name": "Ollie Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6808452d16c1c427ac72781b",
+          "name": "Willie Neiswanger",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-22T10:38:00.000Z",
+      "submittedOnDailyAt": "2025-04-24T06:51:34.876Z",
+      "title": "Tina: Modèle Laboling Tina redimensionné",
+      "submittedOnDailyBy": {
+        "_id": "67469d6a8407f929491dce06",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67469d6a8407f929491dce06/7vd7zyApmT4rXe58gqmG1.png",
+        "isPro": true,
+        "fullname": "Shangshang Wang",
+        "user": "upup-ashton-wang",
+        "type": "user"
+      },
+      "summary": "Cette traduction en français maintient la profondeur et la précision du texte original.",
+      "upvotes": 4,
+      "discussionId": "6808452f16c1c427ac7278b1",
+      "projectPage": "https://shangshangwang.notion.site/tina",
+      "githubRepo": "https://github.com/shangshang-wang/Tina",
+      "ai_keywords": [
+        "parameter-efficient updates",
+        "reinforcement learning (RL)",
+        "low-rank adaptation (LoRA)",
+        "traininng logs",
+        "checkpoints"
+      ]
+    },
+    "publishedAt": "2025-04-22T06:38:00.000Z",
+    "title": "Tina: Tiny Reasoning Models via LoRA",
+    "summary": "How cost-effectively can strong reasoning abilities be achieved in language\nmodels? Driven by this fundamental question, we present Tina, a family of tiny\nreasoning models achieved with high cost-efficiency. Notably, Tina demonstrates\nthat substantial reasoning performance can be developed using only minimal\nresources, by applying parameter-efficient updates during reinforcement\nlearning (RL), using low-rank adaptation (LoRA), to an already tiny 1.5B\nparameter base model. This minimalist approach produces models that achieve\nreasoning performance which is competitive with, and sometimes surpasses, SOTA\nRL reasoning models built upon the same base model. Crucially, this is achieved\nat a tiny fraction of the computational post-training cost employed by existing\nSOTA models. In fact, the best Tina model achieves a >20\\% reasoning\nperformance increase and 43.33\\% Pass@1 accuracy on AIME24, at only \\$9 USD\npost-training and evaluation cost (i.e., an estimated 260x cost reduction). Our\nwork reveals the surprising effectiveness of efficient RL reasoning via LoRA.\nWe validate this across multiple open-source reasoning datasets and various\nablation settings starting with a single, fixed set of hyperparameters.\nFurthermore, we hypothesize that this effectiveness and efficiency stem from\nLoRA rapidly adapting the model to the structural format of reasoning rewarded\nby RL, while largely preserving the base model's underlying knowledge. In\nservice of accessibility and open research, we fully open-source all code,\ntraining logs, and model weights \\& checkpoints.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15777.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "67469d6a8407f929491dce06",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67469d6a8407f929491dce06/7vd7zyApmT4rXe58gqmG1.png",
+      "fullname": "Shangshang Wang",
+      "name": "upup-ashton-wang",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.15707",
+      "authors": [
+        {
+          "_id": "6809f6b03e1d48a9bb7f5719",
+          "user": {
+            "_id": "650971dbce83a0c12a851000",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/ec7H2cZpaZz07W02FT5U9.png",
+            "isPro": false,
+            "fullname": "Yannic Neuhaus",
+            "user": "YanNeu",
+            "type": "user"
+          },
+          "name": "Yannic Neuhaus",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:09:36.629Z",
+          "hidden": false
+        },
+        {
+          "_id": "6809f6b03e1d48a9bb7f571a",
+          "name": "Matthias Hein",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-22T08:47:59.000Z",
+      "submittedOnDailyAt": "2025-04-24T07:02:13.584Z",
+      "title": "RePOPE : Étude sur le Benchmark POPE lié à l'Erreur d'Annotation",
+      "submittedOnDailyBy": {
+        "_id": "650971dbce83a0c12a851000",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/ec7H2cZpaZz07W02FT5U9.png",
+        "isPro": false,
+        "fullname": "Yannic Neuhaus",
+        "user": "YanNeu",
+        "type": "user"
+      },
+      "summary": "Lorsque l'annotation des données est coûteuse, les ensembles de données standards utilisent généralement des étiquettes d'images existantes. Dans cet article, nous évaluons l'impact des erreurs d'annotation sur les benchmarks d'objets couramment utilisés dans POPE, basés sur MSCOCO. Nous réannotons les images du benchmark et identifions l'inégalité dans l'erreur d'annotation dans chaque sous-ensemble. Nous évaluons les modèles avec les étiquettes réannotées sous le nom de RePOPE, révélant ainsi l'impact de la qualité de ces étiquettes. Le code et les données sont disponibles sur https://github.com/YanNeu/RePOPE.",
+      "upvotes": 4,
+      "discussionId": "6809f6b13e1d48a9bb7f5790",
+      "githubRepo": "https://github.com/YanNeu/RePOPE",
+      "ai_keywords": [
+        "MSCOCO",
+        "object hallucination",
+        "POPE",
+        "RePOPE"
+      ]
+    },
+    "publishedAt": "2025-04-22T04:47:59.000Z",
+    "title": "RePOPE: Impact of Annotation Errors on the POPE Benchmark",
+    "summary": "Since data annotation is costly, benchmark datasets often incorporate labels\nfrom established image datasets. In this work, we assess the impact of label\nerrors in MSCOCO on the frequently used object hallucination benchmark POPE. We\nre-annotate the benchmark images and identify an imbalance in annotation errors\nacross different subsets. Evaluating multiple models on the revised labels,\nwhich we denote as RePOPE, we observe notable shifts in model rankings,\nhighlighting the impact of label quality. Code and data are available at\nhttps://github.com/YanNeu/RePOPE .",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15707.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "650971dbce83a0c12a851000",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/ec7H2cZpaZz07W02FT5U9.png",
+      "fullname": "Yannic Neuhaus",
+      "name": "YanNeu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.11919",
+      "authors": [
+        {
+          "_id": "6809ae47c6faa064f324307d",
+          "user": {
+            "_id": "652f979c61ce8120849bb72f",
+            "avatarUrl": "/avatars/bac0c1697ef26ffbb455a8b59c16b783.svg",
+            "isPro": false,
+            "fullname": "Qianjin Yu",
+            "user": "USTCYu",
+            "type": "user"
+          },
+          "name": "Qianjin Yu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-24T09:10:26.728Z",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f324307e",
+          "name": "Keyu Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f324307f",
+          "name": "Zihan Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f3243080",
+          "name": "Chushu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f3243081",
+          "name": "Manlin Mei",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f3243082",
+          "name": "Lingjun Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f3243083",
+          "name": "Fang Tan",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f3243084",
+          "name": "Yongsheng Du",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f3243085",
+          "name": "Kunlin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6809ae47c6faa064f3243086",
+          "name": "Yurui Zhu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-16T09:55:34.000Z",
+      "submittedOnDailyAt": "2025-04-24T08:12:14.834Z",
+      "title": "Génération de données de contexte de haute qualité et évaluation du niveau de difficulté des questions appropriées pour les LLMs pour les inventaires",
+      "submittedOnDailyBy": {
+        "_id": "652f979c61ce8120849bb72f",
+        "avatarUrl": "/avatars/bac0c1697ef26ffbb455a8b59c16b783.svg",
+        "isPro": false,
+        "fullname": "Qianjin Yu",
+        "user": "USTCYu",
+        "type": "user"
+      },
+      "summary": "Récemment, DeepSeek-R1 (671B) (DeepSeek-AI et al., 2025) a démontré un excellent rendement dans des tâches complexes, montrant une excellente capacité logique, et a publié son méthode. Cela offre potentiellement des données de haute qualité de \"Chain-of-Thought\" (CoT) qui peuvent stimuler la capacité logique des modèles de langage grands à petite échelle (LLMs). On explore comment générer des données de haute qualité de CoT appropriées pour différents LLMs. Pour cela, on évalue la difficulté des problèmes selon la capacité logique des LLMs et on construit une base de données de problèmes avec LLM-Adaptive. Ensuite, on présente des exemples de problèmes de différents niveaux de difficulté en utilisant DeepSeek-R1 (671B) (DeepSeek-AI et al., 2025) pour générer des réponses précises et des données de haute qualité de CoT. En établissant les niveaux de difficulté dans LLM-Adaptive, on réduit significativement le coût de la génération de données et on améliore l'efficacité de l'adaptation du modèle (SFT). Finalement, on évalue l'efficacité et la généralisation des méthodes proposées dans des domaines de tâches de collaboration mathématique et de génération de code. Spécifiquement, avec 2k de données de haute qualité de CoT en mathématiques, notre ZMath-32B a dépassé à la DeepSeek-Distill-32B dans des tâches de logique mathématique. De la même manière, avec 2k de données de haute qualité de CoT de code, notre ZCode-32B a dépassé à la DeepSeek-Distill-32B dans des tâches de logique de code.",
+      "upvotes": 3,
+      "discussionId": "6809ae49c6faa064f32430d1",
+      "ai_keywords": [
+        "chain-of-thought (CoT) data",
+        "LLM-Adaptive questiondifficulty levels",
+        "LLM-Adaptive question database",
+        "model supervised fine-tuning (SFT)"
+      ]
+    },
+    "publishedAt": "2025-04-16T05:55:34.000Z",
+    "title": "Rethinking the Generation of High-Quality CoT Data from the Perspective\n  of LLM-Adaptive Question Difficulty Grading",
+    "summary": "Recently, DeepSeek-R1 (671B) (DeepSeek-AIet al., 2025) has demonstrated its\nexcellent reasoning ability in complex tasks and has publiclyshared its\nmethodology. This provides potentially high-quality chain-of-thought (CoT) data\nfor stimulating the reasoning abilities of small-sized large language models\n(LLMs). To generate high-quality CoT data for different LLMs, we seek an\nefficient method for generating high-quality CoT data with LLM-Adaptive\nquestiondifficulty levels. First, we grade the difficulty of the questions\naccording to the reasoning ability of the LLMs themselves and construct a\nLLM-Adaptive question database. Second, we sample the problem database based on\na distribution of difficulty levels of the questions and then use DeepSeek-R1\n(671B) (DeepSeek-AI et al., 2025) to generate the corresponding high-quality\nCoT data with correct answers. Thanks to the construction of CoT data with\nLLM-Adaptive difficulty levels, we have significantly reduced the cost of data\ngeneration and enhanced the efficiency of model supervised fine-tuning (SFT).\nFinally, we have validated the effectiveness and generalizability of the\nproposed method in the fields of complex mathematical competitions and code\ngeneration tasks. Notably, with only 2k high-quality mathematical CoT data, our\nZMath-32B surpasses DeepSeek-Distill-32B in math reasoning task. Similarly,\nwith only 2k high-quality code CoT data, our ZCode-32B surpasses\nDeepSeek-Distill-32B in code reasoning tasks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.11919.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "652f979c61ce8120849bb72f",
+      "avatarUrl": "/avatars/bac0c1697ef26ffbb455a8b59c16b783.svg",
+      "fullname": "Qianjin Yu",
+      "name": "USTCYu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.15254",
+      "authors": [
+        {
+          "_id": "6807bf3e70a0cec724b8a011",
+          "user": {
+            "_id": "6697abd4be7ce6de07140e72",
+            "avatarUrl": "/avatars/1598decabd9975d755082c8fb4e5962d.svg",
+            "isPro": false,
+            "fullname": "Anirudh Khatry",
+            "user": "anirudhkhatry",
+            "type": "user"
+          },
+          "name": "Anirudh Khatry",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-23T08:30:04.897Z",
+          "hidden": false
+        },
+        {
+          "_id": "6807bf3e70a0cec724b8a012",
+          "name": "Robert Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6807bf3e70a0cec724b8a013",
+          "name": "Jia Pan",
+          "hidden": false
+        },
+        {
+          "_id": "6807bf3e70a0cec724b8a014",
+          "name": "Ziteng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6807bf3e70a0cec724b8a015",
+          "name": "Qiaochu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6807bf3e70a0cec724b8a016",
+          "name": "Greg Durrett",
+          "hidden": false
+        },
+        {
+          "_id": "6807bf3e70a0cec724b8a017",
+          "name": "Isil Dillig",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-21T17:33:33.000Z",
+      "submittedOnDailyAt": "2025-04-24T05:15:24.237Z",
+      "title": "CRUST-Bench : Marc de tests complets pour la traduction sécurisée C-à-Rust",
+      "submittedOnDailyBy": {
+        "_id": "6697abd4be7ce6de07140e72",
+        "avatarUrl": "/avatars/1598decabd9975d755082c8fb4e5962d.svg",
+        "isPro": false,
+        "fullname": "Anirudh Khatry",
+        "user": "anirudhkhatry",
+        "type": "user"
+      },
+      "summary": "La transition C-to-Rust est crucial pour moderniser du code ancien et améliorer la sécurité et l'interface avec l'écosystème moderne de Rust. Cependant, actuellement, il n'existe pas de jeu de données qui évalue si un système peut traduire C en Rust de manière sûre. Nous présentons CRUST-Bench, un jeu de données qui comprend 100 dépôts de C, chacun avec une interface et des tests unitaires manuellement écrits en Rust sûrs. Ces tests unitaires permettent de vérifier la précision de la transition. CRUST-Bench ne se concentre pas uniquement sur des fonctions indépendantes, mais sur les défis de traduire des projets complexes avec des dépendances entre fichiers. Les interfaces Rust fournies garantissent des patterns idiomatiques et de mémoire sûre à travers des spécifications explicites et les tests unitaires assurent la précision fonctionnelle. Nous évaluons cette tâche avec les modèles de langage de haut rendement (LLMs) et nous constatons que la génération de code sûr et idiomatique en Rust est un défi difficile, même pour les méthodes et technologies les plus avancées actuelles. De plus, les LLMs expliquent les erreurs communes lors de la transition de C en Rust sûr. Le meilleur modèle, OpenAI ou1, ne peut résoudre que 15 tâches en un seul pas. L'amélioration de CRUST-Bench attend d'améliorer les systèmes de transition en considérant des scénarios complexes, aidant à migrer du code de langages de mémoire sûre (comme Rust) depuis C. Les données et le code sont disponibles sur https://github.com/anirudhkhatry/CRUST-bench.",
+      "upvotes": 1,
+      "discussionId": "6807bf3f70a0cec724b8a044",
+      "githubRepo": "https://github.com/anirudhkhatry/CRUST-bench"
+    },
+    "publishedAt": "2025-04-21T13:33:33.000Z",
+    "title": "CRUST-Bench: A Comprehensive Benchmark for C-to-safe-Rust Transpilation",
+    "summary": "C-to-Rust transpilation is essential for modernizing legacy C code while\nenhancing safety and interoperability with modern Rust ecosystems. However, no\ndataset currently exists for evaluating whether a system can transpile C into\nsafe Rust that passes a set of test cases. We introduce CRUST-Bench, a dataset\nof 100 C repositories, each paired with manually-written interfaces in safe\nRust as well as test cases that can be used to validate correctness of the\ntranspilation. By considering entire repositories rather than isolated\nfunctions, CRUST-Bench captures the challenges of translating complex projects\nwith dependencies across multiple files. The provided Rust interfaces provide\nexplicit specifications that ensure adherence to idiomatic, memory-safe Rust\npatterns, while the accompanying test cases enforce functional correctness. We\nevaluate state-of-the-art large language models (LLMs) on this task and find\nthat safe and idiomatic Rust generation is still a challenging problem for\nvarious state-of-the-art methods and techniques. We also provide insights into\nthe errors LLMs usually make in transpiling code from C to safe Rust. The best\nperforming model, OpenAI o1, is able to solve only 15 tasks in a single-shot\nsetting. Improvements on CRUST-Bench would lead to improved transpilation\nsystems that can reason about complex scenarios and help in migrating legacy\ncodebases from C into languages like Rust that ensure memory safety. You can\nfind the dataset and code at https://github.com/anirudhkhatry/CRUST-bench.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15254.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6697abd4be7ce6de07140e72",
+      "avatarUrl": "/avatars/1598decabd9975d755082c8fb4e5962d.svg",
+      "fullname": "Anirudh Khatry",
+      "name": "anirudhkhatry",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.10419",
+      "authors": [
+        {
+          "_id": "68026f762e2023f6cf7f0daa",
+          "user": {
+            "_id": "680268a7fd1fae58d58a2b49",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/P96qvBdInKYnVxij7-MM_.png",
+            "isPro": false,
+            "fullname": "Michał Turski",
+            "user": "mturski",
+            "type": "user"
+          },
+          "name": "Michał Turski",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-18T15:27:52.927Z",
+          "hidden": false
+        },
+        {
+          "_id": "68026f762e2023f6cf7f0dab",
+          "name": "Mateusz Chiliński",
+          "hidden": false
+        },
+        {
+          "_id": "68026f762e2023f6cf7f0dac",
+          "name": "Łukasz Borchmann",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-14T17:06:59.000Z",
+      "submittedOnDailyAt": "2025-04-24T03:55:04.111Z",
+      "title": "Checkbox Ignorado : Utiliser des checkboxes QA pour compléter la vision des checkboxes d'un modèle de langage à grande échelle.",
+      "submittedOnDailyBy": {
+        "_id": "680268a7fd1fae58d58a2b49",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/P96qvBdInKYnVxij7-MM_.png",
+        "isPro": false,
+        "fullname": "Michał Turski",
+        "user": "mturski",
+        "type": "user"
+      },
+      "summary": "Les boutons à cocher jouent un rôle important dans le traitement des documents réels, car la présence ou l'absence de marques fournissent des informations directes pour le processus d'extraction de données et de prise de décisions. Cependant, tandis que les grands modèles de vision et de langage montrent un excellent rendement sur diverses tâches, l'interprétation du contenu des boutons à cocher est un problème complexe. Pour aborder ce défi, nous évaluons le rendement des modèles sur des tâches liées aux boutons à cocher et présentons le jeu de données \"CheckboxQA\" pour améliorer le rendement. Ce jeu de données révèle les limites actuelles des modèles et constitue une outil valide pour le développement de systèmes de compréhension de documents. Il a également un impact significatif sur diverses domaines comme la technologie juridique et la gestion des actifs.\n\nLe jeu de données est disponible sur la URL suivante :\nhttps://github.com/Snowflake-Labs/CheckboxQA",
+      "upvotes": 1,
+      "discussionId": "68026f782e2023f6cf7f0e05"
+    },
+    "publishedAt": "2025-04-14T13:06:59.000Z",
+    "title": "Unchecked and Overlooked: Addressing the Checkbox Blind Spot in Large\n  Language Models with CheckboxQA",
+    "summary": "Checkboxes are critical in real-world document processing where the presence\nor absence of ticks directly informs data extraction and decision-making\nprocesses. Yet, despite the strong performance of Large Vision and Language\nModels across a wide range of tasks, they struggle with interpreting checkable\ncontent. This challenge becomes particularly pressing in industries where a\nsingle overlooked checkbox may lead to costly regulatory or contractual\noversights. To address this gap, we introduce the CheckboxQA dataset, a\ntargeted resource designed to evaluate and improve model performance on\ncheckbox-related tasks. It reveals the limitations of current models and serves\nas a valuable tool for advancing document comprehension systems, with\nsignificant implications for applications in sectors such as legal tech and\nfinance.\n  The dataset is publicly available at:\nhttps://github.com/Snowflake-Labs/CheckboxQA",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.10419.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "680268a7fd1fae58d58a2b49",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/P96qvBdInKYnVxij7-MM_.png",
+      "fullname": "Michał Turski",
+      "name": "mturski",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
