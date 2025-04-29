@@ -1,0 +1,1043 @@
+[
+  {
+    "paper": {
+      "id": "2504.19724",
+      "authors": [
+        {
+          "_id": "68104dd9ec94d9d54ebde2c8",
+          "user": {
+            "_id": "637745113a63a2983ffbde13",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669187672174-637745113a63a2983ffbde13.jpeg",
+            "isPro": false,
+            "fullname": "Haofan Wang",
+            "user": "wanghaofan",
+            "type": "user"
+          },
+          "name": "Haofan Wang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-29T03:56:15.248Z",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2c9",
+          "user": {
+            "_id": "66471d8f4356b3b33548ee95",
+            "avatarUrl": "/avatars/783beebc837d91684f8a959733b48e5b.svg",
+            "isPro": false,
+            "fullname": "Yujia Xu",
+            "user": "YujiaX",
+            "type": "user"
+          },
+          "name": "Yujia Xu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-29T09:20:54.897Z",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2ca",
+          "name": "Yimeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2cb",
+          "name": "Junchen Li",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2cc",
+          "name": "Chaowei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2cd",
+          "user": {
+            "_id": "6649b84af50d4711191ab04c",
+            "avatarUrl": "/avatars/dfe85eb28ae970e718c37cc6bc459457.svg",
+            "isPro": false,
+            "fullname": "WJ",
+            "user": "SNOWAI",
+            "type": "user"
+          },
+          "name": "Jing Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:03:03.819Z",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2ce",
+          "name": "Kejia Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2cf",
+          "name": "Zhibo Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-28T12:19:53.000Z",
+      "submittedOnDailyAt": "2025-04-29T02:27:56.443Z",
+      "title": "レプリカットビジュアルテキストレンダリング",
+      "submittedOnDailyBy": {
+        "_id": "637745113a63a2983ffbde13",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669187672174-637745113a63a2983ffbde13.jpeg",
+        "isPro": false,
+        "fullname": "Haofan Wang",
+        "user": "wanghaofan",
+        "type": "user"
+      },
+      "summary": "現代のテキストから画像生成モデルは、美しい画像の生成に関して驚異的な進歩を達成していますが、精密で柔軟なタイポグラフィック要素、特にラテンアルファベット以外の文字の生成能力は制限されています。これらの制限を解決するために、我々は、テキスト理解がテキスト描画の必要条件ではなく、そのみならず十分条件であるという質疑的な前提に基づいて、RepTextを提案します。RepTextは、既存の単語テキストから画像生成モデルに多言語の可視化テキストを正確に描画し、ユーザーが指定したフォントで描画する能力を持つことを目指しています。具体的には、ControlNetの設定を採用し、描画されたテキストの言語不問のグリフと位置を追加的に組み込み、和諧な可視化テキストを生成することを可能にし、ユーザーがテキストの内容、フォント、位置をカスタマイズできるようにします。正確性向上のために、テキスト視覚損失とディフュージョン損失を併用します。また、描画プロセスの安定化のために、推論ステップでは、ノイズフィードバックのグリフ潜在値で直接初期化し、背景の歪みを避けるために、領域マスクを使用して特徴量の注入をテキストエリアに限定します。我々は、RepTextの効果を確認するために拡大した実験を行い、現在のワークに比べて優れてい、ネイティブな多言語クローズドソースモデルと比較的な結果を実現しました。より公平に見ると、我々は最終的にその制限も詳細に議論します。",
+      "upvotes": 16,
+      "discussionId": "68104ddfec94d9d54ebde3f3",
+      "projectPage": "https://reptext.github.io/",
+      "githubRepo": "https://github.com/Shakker-Labs/RepText"
+    },
+    "publishedAt": "2025-04-28T08:19:53.000Z",
+    "title": "RepText: Rendering Visual Text via Replicating",
+    "summary": "Although contemporary text-to-image generation models have achieved\nremarkable breakthroughs in producing visually appealing images, their capacity\nto generate precise and flexible typographic elements, especially non-Latin\nalphabets, remains constrained. To address these limitations, we start from an\nnaive assumption that text understanding is only a sufficient condition for\ntext rendering, but not a necessary condition. Based on this, we present\nRepText, which aims to empower pre-trained monolingual text-to-image generation\nmodels with the ability to accurately render, or more precisely, replicate,\nmultilingual visual text in user-specified fonts, without the need to really\nunderstand them. Specifically, we adopt the setting from ControlNet and\nadditionally integrate language agnostic glyph and position of rendered text to\nenable generating harmonized visual text, allowing users to customize text\ncontent, font and position on their needs. To improve accuracy, a text\nperceptual loss is employed along with the diffusion loss. Furthermore, to\nstabilize rendering process, at the inference phase, we directly initialize\nwith noisy glyph latent instead of random initialization, and adopt region\nmasks to restrict the feature injection to only the text region to avoid\ndistortion of the background. We conducted extensive experiments to verify the\neffectiveness of our RepText relative to existing works, our approach\noutperforms existing open-source methods and achieves comparable results to\nnative multi-language closed-source models. To be more fair, we also\nexhaustively discuss its limitations in the end.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19724.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "637745113a63a2983ffbde13",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669187672174-637745113a63a2983ffbde13.jpeg",
+      "fullname": "Haofan Wang",
+      "name": "wanghaofan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 79
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.19838",
+      "authors": [
+        {
+          "_id": "6810317e007d579cbf5200ba",
+          "name": "Guangyi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200bb",
+          "user": {
+            "_id": "65a088f4300957620ba45c70",
+            "avatarUrl": "/avatars/56ed45e10d3455531979f30881b2d3f9.svg",
+            "isPro": false,
+            "fullname": "pengxiang zhao",
+            "user": "Pengxiangzhao",
+            "type": "user"
+          },
+          "name": "Pengxiang Zhao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T07:59:51.686Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200bc",
+          "user": {
+            "_id": "667b91162bfe908436900faa",
+            "avatarUrl": "/avatars/daeaf058ec1df5307996895a5cbba052.svg",
+            "isPro": false,
+            "fullname": "Liang Liu",
+            "user": "melpancake",
+            "type": "user"
+          },
+          "name": "Liang Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:16.707Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200bd",
+          "name": "Yaxuan Guo",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200be",
+          "name": "Han Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200bf",
+          "name": "Weifeng Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c0",
+          "user": {
+            "_id": "6458ce236fa580137af5aa95",
+            "avatarUrl": "/avatars/db65a7332e375eb5daad5c1b076b1e3b.svg",
+            "isPro": false,
+            "fullname": "Yuxiang Chai",
+            "user": "Yuxiang007",
+            "type": "user"
+          },
+          "name": "Yuxiang Chai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:19.091Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c1",
+          "name": "Yue Han",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c2",
+          "name": "Shuai Ren",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c3",
+          "name": "Hao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c4",
+          "name": "Xiaoyu Liang",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c5",
+          "name": "Wenhao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c6",
+          "name": "Tianze Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c7",
+          "name": "Linghao Li",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c8",
+          "name": "Hao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c9",
+          "name": "Guanjing Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200ca",
+          "name": "Yong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200cb",
+          "name": "Hongsheng Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-28T14:39:25.000Z",
+      "submittedOnDailyAt": "2025-04-29T00:30:25.482Z",
+      "title": "LLMドリブングGUIアゲントの電話自動化：進歩と展望を調査",
+      "submittedOnDailyBy": {
+        "_id": "64d761b98ebc40443831f82a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64d761b98ebc40443831f82a/DHBOtOstiFp2-lDY6b9gb.png",
+        "isPro": false,
+        "fullname": "lgy0404",
+        "user": "lgy0404",
+        "type": "user"
+      },
+      "summary": "LLM驅動のフォントGUIアウトセーブやびらについて系統的にレビューし、スクリプトベースの自動化から認知的な、適応的なシステムへの進化を特徴的にしています。まず、主な課題（i）一般性の限り、（ii）高い維持コスト、（iii）弱い意図理解を説明し、LLMがこれらの問題を解決する方法を示します。次に、基本的なアウトセーブやびらフレームワーク（シングルアウトセーブ、マルチアウトセーブ、計画して実行）、モデリングアプローチ（プロンプトエンジニアリング、訓練ベース）、もともとのデータセットとベンチマークを構成するタクロノミーを提案します。さらに、タスク専門的なアーキテクチャ、教師ありの微調校、強化学習戦略を詳細に説明し、ユーザーの意図とGUIの操作をつなぐことを目指します。最後に、データセットの多様性、デバイス上の実装エフィシェンス、ユーザーセンタードの適応、セキュリティの懸念などの開放されている課題を議論し、この急速に変化する分野についての先進的な見通しを提供します。この論文は、LLMを活用してスケーラブル、ユーザーフレンドリーなフォントGUIアウトセーブやびらを設計するための研究者や実践者にとって確率的なリソースとして役立ちます。",
+      "upvotes": 15,
+      "discussionId": "68103184007d579cbf5202d9",
+      "projectPage": "https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents"
+    },
+    "publishedAt": "2025-04-28T10:39:25.000Z",
+    "title": "LLM-Powered GUI Agents in Phone Automation: Surveying Progress and\n  Prospects",
+    "summary": "With the rapid rise of large language models (LLMs), phone automation has\nundergone transformative changes. This paper systematically reviews LLM-driven\nphone GUI agents, highlighting their evolution from script-based automation to\nintelligent, adaptive systems. We first contextualize key challenges, (i)\nlimited generality, (ii) high maintenance overhead, and (iii) weak intent\ncomprehension, and show how LLMs address these issues through advanced language\nunderstanding, multimodal perception, and robust decision-making. We then\npropose a taxonomy covering fundamental agent frameworks (single-agent,\nmulti-agent, plan-then-act), modeling approaches (prompt engineering,\ntraining-based), and essential datasets and benchmarks. Furthermore, we detail\ntask-specific architectures, supervised fine-tuning, and reinforcement learning\nstrategies that bridge user intent and GUI operations. Finally, we discuss open\nchallenges such as dataset diversity, on-device deployment efficiency,\nuser-centric adaptation, and security concerns, offering forward-looking\ninsights into this rapidly evolving field. By providing a structured overview\nand identifying pressing research gaps, this paper serves as a definitive\nreference for researchers and practitioners seeking to harness LLMs in\ndesigning scalable, user-friendly phone GUI agents.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19838.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "64d761b98ebc40443831f82a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64d761b98ebc40443831f82a/DHBOtOstiFp2-lDY6b9gb.png",
+      "fullname": "lgy0404",
+      "name": "lgy0404",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.19093",
+      "authors": [
+        {
+          "_id": "6810356ab91a093e4f4cc262",
+          "user": {
+            "_id": "671b852aa4fa4f8f5fb5404c",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/671b852aa4fa4f8f5fb5404c/TDLsgP8WgKW-qaA8Ys-iJ.jpeg",
+            "isPro": false,
+            "fullname": "YU LI",
+            "user": "yu0226",
+            "type": "user"
+          },
+          "name": "Yu Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:23.352Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc263",
+          "name": "Qizhi Pei",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc264",
+          "user": {
+            "_id": "67ad790c2b28204981be8e24",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67ad790c2b28204981be8e24/KstE5e5bUXXIvgPJqMO2B.jpeg",
+            "isPro": false,
+            "fullname": "Mengyuan Sun",
+            "user": "blue01223",
+            "type": "user"
+          },
+          "name": "Mengyuan Sun",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:29.740Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc265",
+          "name": "Honglin Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc266",
+          "name": "Chenlin Ming",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc267",
+          "name": "Xin Gao",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc268",
+          "name": "Jiang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc269",
+          "name": "Conghui He",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc26a",
+          "name": "Lijun Wu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-27T03:41:17.000Z",
+      "submittedOnDailyAt": "2025-04-29T04:39:29.218Z",
+      "title": "CipherBank: 暗号学チャレンジでLLMの理由能力の境界を探る",
+      "submittedOnDailyBy": {
+        "_id": "6397f6081323f19c578f142e",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6397f6081323f19c578f142e/it7FYYKjlLX8wSsMLm8EO.jpeg",
+        "isPro": false,
+        "fullname": "QizhiPei",
+        "user": "QizhiPei",
+        "type": "user"
+      },
+      "summary": "大語言モデル（LLMs）は、特に最近の理由能力の進歩（例えばo1とo3）により、驚異的な能力を示しています。数学やコーディングにおいて驚異的な達成を認めるにもかかわらず、LLMsの理由能力は、暗号技術の知識が必要な領域ではまだ詳細に調査されていません。本論文では、暗号復号タスクでのLLMsの理由能力を評価するための、厳密に作られた2,358問の評価ベンチマークCipherBankを紹介します。CipherBankは、5ブロックと14サブブロックを構成し、262種類の独自のプレインテキストを覆い、個人間関係の重要なプライバシーシナリオや実世界的な場合に必要な暗号化を焦点にしています。暗号の観点から、CipherBankは3つの主な暗号化方法を含み、9種類の異なるアルゴリズムを組み合わせ、古典的なシファーだけでなく、カスタムの暗号技術も含みます。CipherBankで最先端のLLMsを評価します。例えば、GPT-4o、DeepSeek-V3、そして理由能力を焦点にした先端モデルのo1とDeepSeek-R1を含みます。私たちの結果から、一般的なチャットLLMsと理由能力を焦点にしたLLMsの間で理由能力の間違い、そして現在の理由能力を焦点にしたモデルが古典的な暗号復号タスクに対しての実績においての間違いが明らかになります。これらの間違いを詳細に分析し、誤り検証を行い、LLMsの暗号理由の制限と改善の可能性のある領域を明らかにします。これらの発見は、LLMsの理由能力の進歩が必要とする必要性を強調します。",
+      "upvotes": 9,
+      "discussionId": "68103574b91a093e4f4cc57a",
+      "projectPage": "https://cipherbankeva.github.io/",
+      "githubRepo": "https://github.com/Goodman-liyu/CipherBank"
+    },
+    "publishedAt": "2025-04-26T23:41:17.000Z",
+    "title": "CipherBank: Exploring the Boundary of LLM Reasoning Capabilities through\n  Cryptography Challenges",
+    "summary": "Large language models (LLMs) have demonstrated remarkable capabilities,\nespecially the recent advancements in reasoning, such as o1 and o3, pushing the\nboundaries of AI. Despite these impressive achievements in mathematics and\ncoding, the reasoning abilities of LLMs in domains requiring cryptographic\nexpertise remain underexplored. In this paper, we introduce CipherBank, a\ncomprehensive benchmark designed to evaluate the reasoning capabilities of LLMs\nin cryptographic decryption tasks. CipherBank comprises 2,358 meticulously\ncrafted problems, covering 262 unique plaintexts across 5 domains and 14\nsubdomains, with a focus on privacy-sensitive and real-world scenarios that\nnecessitate encryption. From a cryptographic perspective, CipherBank\nincorporates 3 major categories of encryption methods, spanning 9 distinct\nalgorithms, ranging from classical ciphers to custom cryptographic techniques.\nWe evaluate state-of-the-art LLMs on CipherBank, e.g., GPT-4o, DeepSeek-V3, and\ncutting-edge reasoning-focused models such as o1 and DeepSeek-R1. Our results\nreveal significant gaps in reasoning abilities not only between general-purpose\nchat LLMs and reasoning-focused LLMs but also in the performance of current\nreasoning-focused models when applied to classical cryptographic decryption\ntasks, highlighting the challenges these models face in understanding and\nmanipulating encrypted data. Through detailed analysis and error\ninvestigations, we provide several key observations that shed light on the\nlimitations and potential improvement areas for LLMs in cryptographic\nreasoning. These findings underscore the need for continuous advancements in\nLLM reasoning capabilities.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19093.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "6397f6081323f19c578f142e",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6397f6081323f19c578f142e/it7FYYKjlLX8wSsMLm8EO.jpeg",
+      "fullname": "QizhiPei",
+      "name": "QizhiPei",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 23
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.18919",
+      "authors": [
+        {
+          "_id": "681039b2b02c157249d046b0",
+          "name": "Andrew M. Bean",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b1",
+          "name": "Rebecca Payne",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b2",
+          "name": "Guy Parsons",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b3",
+          "name": "Hannah Rose Kirk",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b4",
+          "name": "Juan Ciro",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b5",
+          "name": "Rafael Mosquera",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b6",
+          "name": "Sara Hincapié Monsalve",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b7",
+          "name": "Aruna S. Ekanayaka",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b8",
+          "name": "Lionel Tarassenko",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b9",
+          "name": "Luc Rocher",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046ba",
+          "name": "Adam Mahdi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-26T13:32:49.000Z",
+      "submittedOnDailyAt": "2025-04-29T01:01:48.840Z",
+      "title": "LLMの臨床知識は、人間の相互作用には対応しない",
+      "submittedOnDailyBy": {
+        "_id": "659bec4728676374f33ef921",
+        "avatarUrl": "/avatars/217ae547d6460e65c6d2a23012741830.svg",
+        "isPro": false,
+        "fullname": "Andrew Bean",
+        "user": "ambean",
+        "type": "user"
+      },
+      "summary": "全球的医疗保健提供者正在探索使用大型语言模型（LLMs）为公众提供医疗建议。LLMs目前在医学执照考试中几乎达到了完美的分数，但这并不一定意味着它们在现实世界中的表现也同样准确。我们在一项涉及1,298名参与者的控制研究中测试了LLMs是否能够帮助公众识别潜在的健康状况并选择行动方案（处置）。参与者被随机分配接受来自LLM（GPT-4o、Llama 3、Command R+）或他们选择的来源（对照组）的协助。单独测试时，LLMs能够准确地完成这些场景，平均正确识别94.9%的状况和56.3%的处置。然而，使用相同LLMs的参与者在识别相关状况方面正确率低于34.5%，在选择处置方面正确率低于44.2%，均不优于对照组。我们发现用户互动是LLMs在医疗建议中应用的一个挑战。标准的医学知识基准和模拟患者互动并不能预测我们在人类参与者中发现的失败。我们建议在医疗保健领域的公共部署前进行系统的人类用户测试，以评估互动能力。",
+      "upvotes": 4,
+      "discussionId": "681039b5b02c157249d04787"
+    },
+    "publishedAt": "2025-04-26T09:32:49.000Z",
+    "title": "Clinical knowledge in LLMs does not translate to human interactions",
+    "summary": "Global healthcare providers are exploring use of large language models (LLMs)\nto provide medical advice to the public. LLMs now achieve nearly perfect scores\non medical licensing exams, but this does not necessarily translate to accurate\nperformance in real-world settings. We tested if LLMs can assist members of the\npublic in identifying underlying conditions and choosing a course of action\n(disposition) in ten medical scenarios in a controlled study with 1,298\nparticipants. Participants were randomly assigned to receive assistance from an\nLLM (GPT-4o, Llama 3, Command R+) or a source of their choice (control). Tested\nalone, LLMs complete the scenarios accurately, correctly identifying conditions\nin 94.9% of cases and disposition in 56.3% on average. However, participants\nusing the same LLMs identified relevant conditions in less than 34.5% of cases\nand disposition in less than 44.2%, both no better than the control group. We\nidentify user interactions as a challenge to the deployment of LLMs for medical\nadvice. Standard benchmarks for medical knowledge and simulated patient\ninteractions do not predict the failures we find with human participants.\nMoving forward, we recommend systematic human user testing to evaluate\ninteractive capabilities prior to public deployments in healthcare.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.18919.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "659bec4728676374f33ef921",
+      "avatarUrl": "/avatars/217ae547d6460e65c6d2a23012741830.svg",
+      "fullname": "Andrew Bean",
+      "name": "ambean",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.17258",
+      "authors": [
+        {
+          "_id": "680edc612488a3b6b9feb9d0",
+          "user": {
+            "_id": "661e07e02a8496916011c08a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/6vIkL4LJ0bLeJL99E20F_.jpeg",
+            "isPro": false,
+            "fullname": "Md Ashiqur Rahman",
+            "user": "ashiq24",
+            "type": "user"
+          },
+          "name": "Md Ashiqur Rahman",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-04-28T03:56:25.436Z",
+          "hidden": false
+        },
+        {
+          "_id": "680edc612488a3b6b9feb9d1",
+          "name": "Raymond A. Yeh",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/661e07e02a8496916011c08a/_lIAAwBEVKqioepM0Mmfl.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/661e07e02a8496916011c08a/UUaV0uoeUWOTbfJopBnbV.png"
+      ],
+      "publishedAt": "2025-04-24T05:29:51.000Z",
+      "submittedOnDailyAt": "2025-04-29T02:41:40.480Z",
+      "title": "グループダウンサンプリングと同変性のアニアリーシング",
+      "submittedOnDailyBy": {
+        "_id": "661e07e02a8496916011c08a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/6vIkL4LJ0bLeJL99E20F_.jpeg",
+        "isPro": false,
+        "fullname": "Md Ashiqur Rahman",
+        "user": "ashiq24",
+        "type": "user"
+      },
+      "summary": "下采样層はCNNアーキテクチャの重要な構成要素で、高レベル特徴量の学習による受容野の拡大とモデルのメモリ/計算量の削減に貢献します。本論文では、G-CNNなどの群等対称性アーキテクチャに適用可能な一様下採样層の一般化を調査します。つまり、一般的有限群上の信号（特徴マップ）を下採样し、アンチアリアス効果を発揮することを目的としています。これには以下の点が含まれます：\n(a) 有限群と下採样率が与えられる場合、適切な次群の選択を行うアルゴリズムを提案します。\n(b) 群と次群が与えられる場合、バンドリミットされたものとしての概念とアンチアリアス効果の実行方法を研究します。\n特に、我々の方法は古典的なサンプリング理論に基づく下採样の概念を一般化しています。信号が循環群上にある場合、即、周期的な場合、我々の方法は理想的な低通フィルターの下採样操作の標準的な下採样を復元します。最後に、画像分類タスクにおいて実験を行い、提案された下採样操作が精度を向上させ、等対称性をより良く保持し、G-等対称ネットワークに採用されるとモデルサイズを削減することを示しました。",
+      "upvotes": 4,
+      "discussionId": "680edc622488a3b6b9feba0e",
+      "projectPage": "https://github.com/ashiq24/Group_Sampling",
+      "githubRepo": "https://github.com/ashiq24/Group_Sampling",
+      "ai_keywords": [
+        "downsampling layers",
+        "CNN architectures",
+        "receptive field",
+        "high-level features",
+        "memory/computation",
+        "group equivariant architectures",
+        "G-CNNs",
+        "finite groups",
+        "downsampling rate",
+        "subgroup",
+        "bandlimited-ness",
+        "anti-aliasing",
+        "classical sampling theory",
+        "cyclic group",
+        "periodic",
+        "ideal low-pass filter",
+        "subsampling operation",
+        "image classification tasks",
+        "equivariance",
+        "model size",
+        "G-equivariant networks"
+      ]
+    },
+    "publishedAt": "2025-04-24T01:29:51.000Z",
+    "title": "Group Downsampling with Equivariant Anti-aliasing",
+    "summary": "Downsampling layers are crucial building blocks in CNN architectures, which\nhelp to increase the receptive field for learning high-level features and\nreduce the amount of memory/computation in the model. In this work, we study\nthe generalization of the uniform downsampling layer for group equivariant\narchitectures, e.g., G-CNNs. That is, we aim to downsample signals (feature\nmaps) on general finite groups with anti-aliasing. This involves the following:\n(a) Given a finite group and a downsampling rate, we present an algorithm to\nform a suitable choice of subgroup. (b) Given a group and a subgroup, we study\nthe notion of bandlimited-ness and propose how to perform anti-aliasing.\nNotably, our method generalizes the notion of downsampling based on classical\nsampling theory. When the signal is on a cyclic group, i.e., periodic, our\nmethod recovers the standard downsampling of an ideal low-pass filter followed\nby a subsampling operation. Finally, we conducted experiments on image\nclassification tasks demonstrating that the proposed downsampling operation\nimproves accuracy, better preserves equivariance, and reduces model size when\nincorporated into G-equivariant networks",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/661e07e02a8496916011c08a/_lIAAwBEVKqioepM0Mmfl.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/661e07e02a8496916011c08a/UUaV0uoeUWOTbfJopBnbV.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.17258.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "661e07e02a8496916011c08a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/6vIkL4LJ0bLeJL99E20F_.jpeg",
+      "fullname": "Md Ashiqur Rahman",
+      "name": "ashiq24",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.15780",
+      "authors": [
+        {
+          "_id": "68104f85b442ffc234b670cd",
+          "name": "Daocheng Fu",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670ce",
+          "name": "Zijun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670cf",
+          "name": "Renqiu Xia",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d0",
+          "name": "Qi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d1",
+          "name": "Yuan Feng",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d2",
+          "name": "Hongbin Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d3",
+          "name": "Renrui Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d4",
+          "name": "Shiyang Feng",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d5",
+          "name": "Peng Gao",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d6",
+          "name": "Junchi Yan",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d7",
+          "name": "Botian Shi",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d8",
+          "name": "Bo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d9",
+          "name": "Yu Qiao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-22T10:45:23.000Z",
+      "submittedOnDailyAt": "2025-04-29T02:36:15.881Z",
+      "title": "TrustGeoGen: 信頼性のある多モードジェオメトリ問題解決のスケーラブルな正式証明付きデータエンジン",
+      "submittedOnDailyBy": {
+        "_id": "65b7ae76768464877cdb2e39",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65b7ae76768464877cdb2e39/uAWPo4tpkqbZoDeEkc7y0.jpeg",
+        "isPro": false,
+        "fullname": "Renqiu Xia",
+        "user": "renqiux0302",
+        "type": "user"
+      },
+      "summary": "数学幾何問題解決（GPS）は、多タイプ情報の効果的な統合と証明的なロジック的な一貫性の必要がある。一般的な問題解決において大規模言語モデルの急速な進歩があるが、方法とベンチマークの両方において解決されていないことがあり、既存の合成GPSベンチマークはLLMの幻覚により自証明できないこと、ノイズと自論的な情報を含んでいることが多い。本論文では、問題生成用のスケーラブルなデータエンジンをTrustGeoGenとして提案し、形式的な証明を通じて原則的なベンチマークを提供することで、GPSの方法の進展の基盤を立てていると信じています。このエンジンは4つのキーのイノベーションを通じて幾何データを合成しています：1) 図形、文字記述、ステップごとの解決策の多タイプアラインドコンプレックス生成、2) 形式的な証明によるルール適合的な理由のパスの確保、3) リファームプロセス機構による進歩的複雑性の向上、4) GeoExploreシリーズアルゴリズムによる多解のバリエーションと自反的なバックトラッキングトレースの同時生成。形式的なロジック的証明を通じて、TrustGeoGenはGeoTrust-200Kデータセットを生成し、モデルディープモデルの確保されたモデルディープモデルの確保されたモデルディープモデルの確保されたモデルディープモデルの確保されたモデルディープモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルディードモデルの確保されたモデルデ",
+      "upvotes": 4,
+      "discussionId": "68104f86b442ffc234b67113"
+    },
+    "publishedAt": "2025-04-22T06:45:23.000Z",
+    "title": "TrustGeoGen: Scalable and Formal-Verified Data Engine for Trustworthy\n  Multi-modal Geometric Problem Solving",
+    "summary": "Mathematical geometric problem solving (GPS) often requires effective\nintegration of multimodal information and verifiable logical coherence. Despite\nthe fast development of large language models in general problem solving, it\nremains unresolved regarding with both methodology and benchmarks, especially\ngiven the fact that exiting synthetic GPS benchmarks are often not\nself-verified and contain noise and self-contradicted information due to the\nillusion of LLMs. In this paper, we propose a scalable data engine called\nTrustGeoGen for problem generation, with formal verification to provide a\nprincipled benchmark, which we believe lays the foundation for the further\ndevelopment of methods for GPS. The engine synthesizes geometric data through\nfour key innovations: 1) multimodal-aligned generation of diagrams, textual\ndescriptions, and stepwise solutions; 2) formal verification ensuring\nrule-compliant reasoning paths; 3) a bootstrapping mechanism enabling\ncomplexity escalation via recursive state generation and 4) our devised\nGeoExplore series algorithms simultaneously produce multi-solution variants and\nself-reflective backtracking traces. By formal logical verification,\nTrustGeoGen produces GeoTrust-200K dataset with guaranteed modality integrity,\nalong with GeoTrust-test testset. Experiments reveal the state-of-the-art\nmodels achieve only 49.17\\% accuracy on GeoTrust-test, demonstrating its\nevaluation stringency. Crucially, models trained on GeoTrust achieve OOD\ngeneralization on GeoQA, significantly reducing logical inconsistencies\nrelative to pseudo-label annotated by OpenAI-o1. Our code is available at\nhttps://github.com/Alpha-Innovator/TrustGeoGen",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15780.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65b7ae76768464877cdb2e39",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65b7ae76768464877cdb2e39/uAWPo4tpkqbZoDeEkc7y0.jpeg",
+      "fullname": "Renqiu Xia",
+      "name": "renqiux0302",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.16083",
+      "authors": [
+        {
+          "_id": "68105d8632d635f02bc2976e",
+          "name": "Yucheng Li",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc2976f",
+          "user": {
+            "_id": "6278bd42541f3d2dfa77ea70",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6278bd42541f3d2dfa77ea70/ejn49eapnB3UXQckAYdTd.jpeg",
+            "isPro": true,
+            "fullname": "Huiqiang Jiang",
+            "user": "iofu728",
+            "type": "user"
+          },
+          "name": "Huiqiang Jiang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-29T05:03:03.400Z",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29770",
+          "name": "Chengruidong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29771",
+          "name": "Qianhui Wu",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29772",
+          "name": "Xufang Luo",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29773",
+          "name": "Surin Ahn",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29774",
+          "name": "Amir H. Abdi",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29775",
+          "name": "Dongsheng Li",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29776",
+          "name": "Jianfeng Gao",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29777",
+          "name": "Yuqing Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29778",
+          "name": "Lili Qiu",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6278bd42541f3d2dfa77ea70/K2pFSyL6PhhzhfK3ar9Ok.jpeg"
+      ],
+      "publishedAt": "2025-04-22T17:59:51.000Z",
+      "submittedOnDailyAt": "2025-04-29T03:34:32.012Z",
+      "title": "MMInference: 長文脈VLMsの予準補完を加速するためのモデル認識に基づく置換スパースアタション手法",
+      "submittedOnDailyBy": {
+        "_id": "6278bd42541f3d2dfa77ea70",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6278bd42541f3d2dfa77ea70/ejn49eapnB3UXQckAYdTd.jpeg",
+        "isPro": true,
+        "fullname": "Huiqiang Jiang",
+        "user": "iofu728",
+        "type": "user"
+      },
+      "summary": "長コンテキスト能力と視覚理解の統合は、ビジョン言語モデル（VLMs）に前所未聞の可能性を開きます。しかし、予約満たし時の二次元注意複雑性は、実世界的な機能において大きな障害となります。この制限を克服するために、MMInference（Multimodality Million tokens Inference）を紹介します。これは、長コンテキストの多タイプ入力の予約満たしステージを加速するための動的なスパース注意手法です。まず、我々の分析は、ビデオ入力の時間的および空間的な局在性が特徴的なスパースパターン、Gridパターンを引き出します。同時に、VLMsは異なるモデルのスパース分布が明らかに異なります。我々は、Permutationベースの方法を用いて、Gridパターンを活用し、モデルバリアリティ問題を解決することを目指します。オフラインで各ヘッドに最適なスパースパターンを探索し、MMInferenceは入力に基づいて動的にスパース分布を構築します。また、効率的なスパース計算に最適化されたGPUキャンバーも提供します。特に、MMInferenceは現在のVLMプインプリンスに無視できないように、モデルの改修や微調編集を行わずにセイフなにもかもなく統合します。Video QA、Captioning、VisionNIAH、Mixed-Modality NIAHなどの多タイプベンチマークでの実験は、最先端の長コンテキストVLMs（LongVila、LlavaVideo、VideoChat-Flash、Qwen2.5-VL）を用いて、MMInferenceは1Mトークンで予約満たしステージを8.3倍加速し、精度を維持します。コードは、https://aka.ms/MMInference から利用できます。",
+      "upvotes": 3,
+      "discussionId": "68105d8732d635f02bc297bb"
+    },
+    "publishedAt": "2025-04-22T13:59:51.000Z",
+    "title": "MMInference: Accelerating Pre-filling for Long-Context VLMs via\n  Modality-Aware Permutation Sparse Attention",
+    "summary": "The integration of long-context capabilities with visual understanding\nunlocks unprecedented potential for Vision Language Models (VLMs). However, the\nquadratic attention complexity during the pre-filling phase remains a\nsignificant obstacle to real-world deployment. To overcome this limitation, we\nintroduce MMInference (Multimodality Million tokens Inference), a dynamic\nsparse attention method that accelerates the prefilling stage for long-context\nmulti-modal inputs. First, our analysis reveals that the temporal and spatial\nlocality of video input leads to a unique sparse pattern, the Grid pattern.\nSimultaneously, VLMs exhibit markedly different sparse distributions across\ndifferent modalities. We introduce a permutation-based method to leverage the\nunique Grid pattern and handle modality boundary issues. By offline search the\noptimal sparse patterns for each head, MMInference constructs the sparse\ndistribution dynamically based on the input. We also provide optimized GPU\nkernels for efficient sparse computations. Notably, MMInference integrates\nseamlessly into existing VLM pipelines without any model modifications or\nfine-tuning. Experiments on multi-modal benchmarks-including Video QA,\nCaptioning, VisionNIAH, and Mixed-Modality NIAH-with state-of-the-art\nlong-context VLMs (LongVila, LlavaVideo, VideoChat-Flash, Qwen2.5-VL) show that\nMMInference accelerates the pre-filling stage by up to 8.3x at 1M tokens while\nmaintaining accuracy. Our code is available at https://aka.ms/MMInference.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6278bd42541f3d2dfa77ea70/K2pFSyL6PhhzhfK3ar9Ok.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.16083.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6278bd42541f3d2dfa77ea70",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6278bd42541f3d2dfa77ea70/ejn49eapnB3UXQckAYdTd.jpeg",
+      "fullname": "Huiqiang Jiang",
+      "name": "iofu728",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.18589",
+      "authors": [
+        {
+          "_id": "68106d0daa36fca4aeebb34a",
+          "user": {
+            "_id": "67132d16659c7cd704867365",
+            "avatarUrl": "/avatars/cab345716718965b87e29ac248fbc7e4.svg",
+            "isPro": false,
+            "fullname": "zhikai wang",
+            "user": "cloudcatcher2",
+            "type": "user"
+          },
+          "name": "Zhikai Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T07:57:55.121Z",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34b",
+          "name": "Jiashuo Sun",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34c",
+          "name": "Wenqi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34d",
+          "name": "Zhiqiang Hu",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34e",
+          "name": "Xin Li",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34f",
+          "name": "Fan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb350",
+          "name": "Deli Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-24T06:16:38.000Z",
+      "submittedOnDailyAt": "2025-04-29T06:53:11.886Z",
+      "title": "ビジュアル依存関係を明記した多モデル数学論理のベンチマーク",
+      "submittedOnDailyBy": {
+        "_id": "67132d16659c7cd704867365",
+        "avatarUrl": "/avatars/cab345716718965b87e29ac248fbc7e4.svg",
+        "isPro": false,
+        "fullname": "zhikai wang",
+        "user": "cloudcatcher2",
+        "type": "user"
+      },
+      "summary": "最近の大規模ビジョン言語モデル（LVLMs）の進展は、ビジョンと言語情報の統合能力を大幅に向上させ、物体識別、キャピティング、ビジョンクエスト回答などの課題に近い人間の専門性を達成している。しかし、現在のベンチマークは、知識コンテントの評価を中心にして、領域専門的知識を評価し、基本的数学的要素とビジョン概念の理由能力を多く見落としている。我々は、基本レベルの数学問題の評価に欠陥があることを見出し、明示的なビジョン依存関係を持つ問題で、モデルが複数の画像を理解、統合、理由し、一般知識を統合することが重要であることを認識している。この欠陥を解決するために、VCBENCHという、明示的なビジョン依存関係を持つ多モデル数学理由の評価基準を介している。VCBENCHは6つの認知領域にわたり、1,720問の問題を含み、6,697枚の画像（問題ごとに平均3.9枚）を特徴とし、複数の画像を理由することを確保している。26つの最先端のLVLMsをVCBENCHで評価し、大幅な性能の差異を明らかにし、最先端のモデルも50%の正確率を超えることができないことを示している。我々の見つけた結果は、ビジョンと数学の統合の課題を明らかにし、LVLMの将来的な進展の可能性を示している。",
+      "upvotes": 2,
+      "discussionId": "68106d0faa36fca4aeebb3a2",
+      "projectPage": "https://alibaba-damo-academy.github.io/VCBench/",
+      "githubRepo": "https://github.com/alibaba-damo-academy/VCBench"
+    },
+    "publishedAt": "2025-04-24T02:16:38.000Z",
+    "title": "Benchmarking Multimodal Mathematical Reasoning with Explicit Visual\n  Dependency",
+    "summary": "Recent advancements in Large Vision-Language Models (LVLMs) have\nsignificantly enhanced their ability to integrate visual and linguistic\ninformation, achieving near-human proficiency in tasks like object recognition,\ncaptioning, and visual question answering. However, current benchmarks\ntypically focus on knowledge-centric evaluations that assess domain-specific\nexpertise, often neglecting the core ability to reason about fundamental\nmathematical elements and visual concepts. We identify a gap in evaluating\nelementary-level math problems, which rely on explicit visual\ndependencies-requiring models to discern, integrate, and reason across multiple\nimages while incorporating commonsense knowledge, all of which are crucial for\nadvancing toward broader AGI capabilities. To address this gap, we introduce\nVCBENCH, a comprehensive benchmark for multimodal mathematical reasoning with\nexplicit visual dependencies. VCBENCH includes 1,720 problems across six\ncognitive domains, featuring 6,697 images (averaging 3.9 per question) to\nensure multi-image reasoning. We evaluate 26 state-of-the-art LVLMs on VCBENCH,\nrevealing substantial performance disparities, with even the top models unable\nto exceed 50% accuracy. Our findings highlight the ongoing challenges in\nvisual-mathematical integration and suggest avenues for future LVLM\nadvancements.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.18589.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "67132d16659c7cd704867365",
+      "avatarUrl": "/avatars/cab345716718965b87e29ac248fbc7e4.svg",
+      "fullname": "zhikai wang",
+      "name": "cloudcatcher2",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.19395",
+      "authors": [
+        {
+          "_id": "6810767a0f244cf14e5a3060",
+          "user": {
+            "_id": "6675c9305eaa9dd299dcdca0",
+            "avatarUrl": "/avatars/504a259033605e489809c8f202538d75.svg",
+            "isPro": false,
+            "fullname": "Zhouxiang Fang",
+            "user": "FocusV857",
+            "type": "user"
+          },
+          "name": "Zhouxiang Fang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:43.304Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810767a0f244cf14e5a3061",
+          "name": "Aayush Mishra",
+          "hidden": false
+        },
+        {
+          "_id": "6810767a0f244cf14e5a3062",
+          "name": "Muhan Gao",
+          "hidden": false
+        },
+        {
+          "_id": "6810767a0f244cf14e5a3063",
+          "name": "Anqi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6810767a0f244cf14e5a3064",
+          "name": "Daniel Khashabi",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6675c9305eaa9dd299dcdca0/DAhhWMnvctlmAuzzjp97v.png"
+      ],
+      "publishedAt": "2025-04-28T00:05:29.000Z",
+      "submittedOnDailyAt": "2025-04-29T05:22:18.705Z",
+      "title": "ICL CIPHERS: プロパティーの定量化「学習」を記述暗号によって実現するIn-Context Learning",
+      "submittedOnDailyBy": {
+        "_id": "6675c9305eaa9dd299dcdca0",
+        "avatarUrl": "/avatars/504a259033605e489809c8f202538d75.svg",
+        "isPro": false,
+        "fullname": "Zhouxiang Fang",
+        "user": "FocusV857",
+        "type": "user"
+      },
+      "summary": "最近の研究は、In-Context Learning (ICL) はデュアルモードで機能していることを示しています。これは、学習時に学んだパターンを記憶したタスク検索と、示唆より推論時の「学習」です。しかし、これらのモードを区別することは難しい目標です。私たちは、古典的な暗号学から借りた置換暗号に基づくタスク再設定のクラスを導入します。このアプローチでは、in-context 入力の一部のトークンを他の（関係ない）トークンに置換し、英語文の読解性を人の目にとって減らします。しかし、デザイン上、この置換には潜在的、固定したパターンがあり、逆算可能です。この逆算可能な暗号（ビジュアル暗号）は、変換のあることにもかかわらず、タスクは抽象的な意味で定義されたタスクとして維持されます。LLMs が BIJECTIVE マッピングで ICL CIPHERS を解くことができるかどうかは、逆算する潜在的な暗号を解読することが必要となるような興味深い問題です。私たちは、LLMs が BIJECTIVE マッピングで ICL CIPHERS を解くことが NON-BIJECTIVE (逆算不可能) ベースラインよりも良くなっていることを示し、ICL の「学習」を定量化する新しいアプローチを提供します。この間違いは小さいが、4つのデータセットと6つのモデルでコンテキストを通じて一致しています。最後に、LLMs の内部的な表現を検討し、暗号化された入力を解読する能力の証拠を見つけました。",
+      "upvotes": 1,
+      "discussionId": "6810767b0f244cf14e5a30dc",
+      "githubRepo": "https://github.com/jhu-CLSP/icl-ciphers"
+    },
+    "publishedAt": "2025-04-27T20:05:29.000Z",
+    "title": "ICL CIPHERS: Quantifying \"Learning'' in In-Context Learning via\n  Substitution Ciphers",
+    "summary": "Recent works have suggested that In-Context Learning (ICL) operates in dual\nmodes, i.e. task retrieval (remember learned patterns from pre-training) and\ntask learning (inference-time ``learning'' from demonstrations). However,\ndisentangling these the two modes remains a challenging goal. We introduce ICL\nCIPHERS, a class of task reformulations based on substitution ciphers borrowed\nfrom classic cryptography. In this approach, a subset of tokens in the\nin-context inputs are substituted with other (irrelevant) tokens, rendering\nEnglish sentences less comprehensible to human eye. However, by design, there\nis a latent, fixed pattern to this substitution, making it reversible. This\nbijective (reversible) cipher ensures that the task remains a well-defined task\nin some abstract sense, despite the transformations. It is a curious question\nif LLMs can solve ICL CIPHERS with a BIJECTIVE mapping, which requires\ndeciphering the latent cipher. We show that LLMs are better at solving ICL\nCIPHERS with BIJECTIVE mappings than the NON-BIJECTIVE (irreversible) baseline,\nproviding a novel approach to quantify ``learning'' in ICL. While this gap is\nsmall, it is consistent across the board on four datasets and six models.\nFinally, we examine LLMs' internal representations and identify evidence in\ntheir ability to decode the ciphered inputs.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6675c9305eaa9dd299dcdca0/DAhhWMnvctlmAuzzjp97v.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19395.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6675c9305eaa9dd299dcdca0",
+      "avatarUrl": "/avatars/504a259033605e489809c8f202538d75.svg",
+      "fullname": "Zhouxiang Fang",
+      "name": "FocusV857",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.19162",
+      "authors": [
+        {
+          "_id": "6810799e10b86ba322c27fb8",
+          "user": {
+            "_id": "61b859ddbdf1fac5ed499992",
+            "avatarUrl": "/avatars/2387fb9b8a46840bfc75248462f0a410.svg",
+            "isPro": false,
+            "fullname": "Jiaqi Chen",
+            "user": "judge",
+            "type": "user"
+          },
+          "name": "Jiaqi Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T07:58:59.273Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fb9",
+          "name": "Bang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fba",
+          "name": "Ruotian Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbb",
+          "name": "Peisong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbc",
+          "name": "Xiaodan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbd",
+          "name": "Zhaopeng Tu",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbe",
+          "name": "Xiaolong Li",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbf",
+          "name": "Kwan-Yee K. Wong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-27T08:45:06.000Z",
+      "submittedOnDailyAt": "2025-04-29T06:46:57.300Z",
+      "title": "SPC: 対抗的ゲームを通じた自己対戦評価の進化を用いたLLM推論",
+      "submittedOnDailyBy": {
+        "_id": "61b859ddbdf1fac5ed499992",
+        "avatarUrl": "/avatars/2387fb9b8a46840bfc75248462f0a410.svg",
+        "isPro": false,
+        "fullname": "Jiaqi Chen",
+        "user": "judge",
+        "type": "user"
+      },
+      "summary": "大語言モデル（LLM）のステップごとの信頼性の評価は、高品質のステップレベルのサブジェクションの取得に難しく、Chain-of-Thoughtなどの論理推理のステップの評価には難しい。本論文では、手動のステップレベルの注釈を必要とさらなくするSelf-Play Critic（SPC）の新しいアプローチを紹介します。SPCは、論理推理のステップの正確性を評価する能力を戦闘的な自分自身のゲームで進化させる評価モデルです。SPCは、基礎モデルの2つのコピーを微調整し、「スニーキージェネレーター」と「評価者」の2つの役割を演じるものです。「スニーキージェネレーター」は、誤りを含むステップを故意に生成し、検出に難しくなるように設計され、「評価者」は論理推理のステップの正確性を分析します。これらの2つのモデルは、ジェネレーターが評価者を愚弄しようとし、評価者モデルがジェネレーターの誤りを識別するための相殺的なゲームを行います。ゲームの結果に基づく強化学習を用いて、モデルは反復的に改善され、各相殺の勝者は正の報酬を受け、負け者は負の報酬を受け、連続的な自エボルバションを駆動します。\n\nProcessBench、PRM800K、DeltaBenchの3つの論理推理プロセスベンチマークの実験により、SPCは誤り検出能力を進歩的に向上させること（例えば、ProcessBenchでの精度は70.8%から77.7%に上がります）で、強いベースラインを超えます。また、SPCを多様なLLMのテスト時の検索にガイドすることで、MATH500とAIME2024での数学論理性能を大幅に向上させ、最先端のプロセス報酬モデルを超えます。",
+      "upvotes": 1,
+      "discussionId": "6810799f10b86ba322c27fea",
+      "ai_keywords": [
+        "Self-Play Critic (SPC)",
+        "adversarial self-play games",
+        "\"sneaky generator\"",
+        "\"critic\"",
+        "reinforcement learning",
+        "ProcessBench",
+        "PRM800K",
+        "DeltaBench",
+        "parameter-efficient fine-tuning",
+        "distilled R1 model",
+        "MATH500",
+        "AIME2024"
+      ]
+    },
+    "publishedAt": "2025-04-27T04:45:06.000Z",
+    "title": "SPC: Evolving Self-Play Critic via Adversarial Games for LLM Reasoning",
+    "summary": "Evaluating the step-by-step reliability of large language model (LLM)\nreasoning, such as Chain-of-Thought, remains challenging due to the difficulty\nand cost of obtaining high-quality step-level supervision. In this paper, we\nintroduce Self-Play Critic (SPC), a novel approach where a critic model evolves\nits ability to assess reasoning steps through adversarial self-play games,\neliminating the need for manual step-level annotation. SPC involves fine-tuning\ntwo copies of a base model to play two roles, namely a \"sneaky generator\" that\ndeliberately produces erroneous steps designed to be difficult to detect, and a\n\"critic\" that analyzes the correctness of reasoning steps. These two models\nengage in an adversarial game in which the generator aims to fool the critic,\nwhile the critic model seeks to identify the generator's errors. Using\nreinforcement learning based on the game outcomes, the models iteratively\nimprove; the winner of each confrontation receives a positive reward and the\nloser receives a negative reward, driving continuous self-evolution.\nExperiments on three reasoning process benchmarks (ProcessBench, PRM800K,\nDeltaBench) demonstrate that our SPC progressively enhances its error detection\ncapabilities (e.g., accuracy increases from 70.8% to 77.7% on ProcessBench) and\nsurpasses strong baselines, including distilled R1 model. Furthermore, applying\nSPC to guide the test-time search of diverse LLMs significantly improves their\nmathematical reasoning performance on MATH500 and AIME2024, outperforming\nstate-of-the-art process reward models.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19162.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "61b859ddbdf1fac5ed499992",
+      "avatarUrl": "/avatars/2387fb9b8a46840bfc75248462f0a410.svg",
+      "fullname": "Jiaqi Chen",
+      "name": "judge",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]

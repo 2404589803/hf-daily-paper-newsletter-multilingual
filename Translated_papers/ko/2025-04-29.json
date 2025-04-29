@@ -1,0 +1,1043 @@
+[
+  {
+    "paper": {
+      "id": "2504.19724",
+      "authors": [
+        {
+          "_id": "68104dd9ec94d9d54ebde2c8",
+          "user": {
+            "_id": "637745113a63a2983ffbde13",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669187672174-637745113a63a2983ffbde13.jpeg",
+            "isPro": false,
+            "fullname": "Haofan Wang",
+            "user": "wanghaofan",
+            "type": "user"
+          },
+          "name": "Haofan Wang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-29T03:56:15.248Z",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2c9",
+          "user": {
+            "_id": "66471d8f4356b3b33548ee95",
+            "avatarUrl": "/avatars/783beebc837d91684f8a959733b48e5b.svg",
+            "isPro": false,
+            "fullname": "Yujia Xu",
+            "user": "YujiaX",
+            "type": "user"
+          },
+          "name": "Yujia Xu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-29T09:20:54.897Z",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2ca",
+          "name": "Yimeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2cb",
+          "name": "Junchen Li",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2cc",
+          "name": "Chaowei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2cd",
+          "user": {
+            "_id": "6649b84af50d4711191ab04c",
+            "avatarUrl": "/avatars/dfe85eb28ae970e718c37cc6bc459457.svg",
+            "isPro": false,
+            "fullname": "WJ",
+            "user": "SNOWAI",
+            "type": "user"
+          },
+          "name": "Jing Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:03:03.819Z",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2ce",
+          "name": "Kejia Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68104dd9ec94d9d54ebde2cf",
+          "name": "Zhibo Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-28T12:19:53.000Z",
+      "submittedOnDailyAt": "2025-04-29T02:27:56.443Z",
+      "title": "레プリカット 비지우얼 테크스 렌더링",
+      "submittedOnDailyBy": {
+        "_id": "637745113a63a2983ffbde13",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669187672174-637745113a63a2983ffbde13.jpeg",
+        "isPro": false,
+        "fullname": "Haofan Wang",
+        "user": "wanghaofan",
+        "type": "user"
+      },
+      "summary": "현대의 텍스트로부터 이미지 생성 모델은 아름다운 이미지의 생성에 놀라울 정도로 큰 진전을 이루고 있지만, 정밀하고 유연한 타이포그래피 요소, 특히 라틴 알파벳을 제외한 문자의 생성 능력은 제한되어 있습니다. 이러한 제한을 해결하기 위해, 우리는 텍스트 이해는 텍스트 그리드의 필요 조건이 아니라, 그 이상 조건으로 여겨지는 의혹적인 가정에 기초하여, RepText를 제안합니다. RepText는 기존의 단어 텍스트로부터 이미지 생성 모델에 다양한 언어의 시각화 텍스트를 정확하게 그리기, 사용자가 지정한 폰트로 그리는 능력을 갖추기 위해 목표를 세웁니다. 구체적으로는, ControlNet의 설정을 적용하여 그리어진 텍스트의 언어에 상관없이 글자와 위치를 추가적으로 포함하여 조화로운 시각화 텍스트를 생성할 수 있도록 하고, 사용자가 텍스트의 내용, 폰트, 위치를 커스터마이징할 수 있도록 합니다. 정확도를 향상시키기 위해, 텍스트 시각 손실과 디퓨전 손실을 병합합니다. 또한, 그리기 프로세스의 안정화를 위해, 추론 단계에서 글자 잠재값으로 직접 초기화하고, 배경의 왜곡을 피하기 위해 영역 마스크를 사용하여 특징량의 注入을 텍스트 영역에 제한합니다. RepText의 효과를 확인하기 위해 확장된 실험을 수행하였으며, 현재의 작업에 비해 뛰어난 성능을 보였고, 비대칭적인 자연스러운 다언어 클로즈드 소스 모델과 비교하여 비슷한 결과를 달성했습니다. 더 공정하게 보면, 우리는 최종적으로 이러한 제한도 자세히 논의합니다.",
+      "upvotes": 16,
+      "discussionId": "68104ddfec94d9d54ebde3f3",
+      "projectPage": "https://reptext.github.io/",
+      "githubRepo": "https://github.com/Shakker-Labs/RepText"
+    },
+    "publishedAt": "2025-04-28T08:19:53.000Z",
+    "title": "RepText: Rendering Visual Text via Replicating",
+    "summary": "Although contemporary text-to-image generation models have achieved\nremarkable breakthroughs in producing visually appealing images, their capacity\nto generate precise and flexible typographic elements, especially non-Latin\nalphabets, remains constrained. To address these limitations, we start from an\nnaive assumption that text understanding is only a sufficient condition for\ntext rendering, but not a necessary condition. Based on this, we present\nRepText, which aims to empower pre-trained monolingual text-to-image generation\nmodels with the ability to accurately render, or more precisely, replicate,\nmultilingual visual text in user-specified fonts, without the need to really\nunderstand them. Specifically, we adopt the setting from ControlNet and\nadditionally integrate language agnostic glyph and position of rendered text to\nenable generating harmonized visual text, allowing users to customize text\ncontent, font and position on their needs. To improve accuracy, a text\nperceptual loss is employed along with the diffusion loss. Furthermore, to\nstabilize rendering process, at the inference phase, we directly initialize\nwith noisy glyph latent instead of random initialization, and adopt region\nmasks to restrict the feature injection to only the text region to avoid\ndistortion of the background. We conducted extensive experiments to verify the\neffectiveness of our RepText relative to existing works, our approach\noutperforms existing open-source methods and achieves comparable results to\nnative multi-language closed-source models. To be more fair, we also\nexhaustively discuss its limitations in the end.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19724.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "637745113a63a2983ffbde13",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1669187672174-637745113a63a2983ffbde13.jpeg",
+      "fullname": "Haofan Wang",
+      "name": "wanghaofan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 79
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.19838",
+      "authors": [
+        {
+          "_id": "6810317e007d579cbf5200ba",
+          "name": "Guangyi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200bb",
+          "user": {
+            "_id": "65a088f4300957620ba45c70",
+            "avatarUrl": "/avatars/56ed45e10d3455531979f30881b2d3f9.svg",
+            "isPro": false,
+            "fullname": "pengxiang zhao",
+            "user": "Pengxiangzhao",
+            "type": "user"
+          },
+          "name": "Pengxiang Zhao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T07:59:51.686Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200bc",
+          "user": {
+            "_id": "667b91162bfe908436900faa",
+            "avatarUrl": "/avatars/daeaf058ec1df5307996895a5cbba052.svg",
+            "isPro": false,
+            "fullname": "Liang Liu",
+            "user": "melpancake",
+            "type": "user"
+          },
+          "name": "Liang Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:16.707Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200bd",
+          "name": "Yaxuan Guo",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200be",
+          "name": "Han Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200bf",
+          "name": "Weifeng Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c0",
+          "user": {
+            "_id": "6458ce236fa580137af5aa95",
+            "avatarUrl": "/avatars/db65a7332e375eb5daad5c1b076b1e3b.svg",
+            "isPro": false,
+            "fullname": "Yuxiang Chai",
+            "user": "Yuxiang007",
+            "type": "user"
+          },
+          "name": "Yuxiang Chai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:19.091Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c1",
+          "name": "Yue Han",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c2",
+          "name": "Shuai Ren",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c3",
+          "name": "Hao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c4",
+          "name": "Xiaoyu Liang",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c5",
+          "name": "Wenhao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c6",
+          "name": "Tianze Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c7",
+          "name": "Linghao Li",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c8",
+          "name": "Hao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200c9",
+          "name": "Guanjing Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200ca",
+          "name": "Yong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6810317e007d579cbf5200cb",
+          "name": "Hongsheng Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-28T14:39:25.000Z",
+      "submittedOnDailyAt": "2025-04-29T00:30:25.482Z",
+      "title": "LLM Droving GUI Agent의 전화 자동화: 발전과 전망 조사",
+      "submittedOnDailyBy": {
+        "_id": "64d761b98ebc40443831f82a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64d761b98ebc40443831f82a/DHBOtOstiFp2-lDY6b9gb.png",
+        "isPro": false,
+        "fullname": "lgy0404",
+        "user": "lgy0404",
+        "type": "user"
+      },
+      "summary": "LLM를 주도하는 폰트 GUI 아웃풋을 체계적으로 검토하고, 스크립트 기반의 자동화부터 인지적, 적응적인 시스템으로의 진화특성을 강조합니다. 우선, 주요 문제 (i) 일반성, (ii) 높은 유지비, (iii) 약한 의도 이해를 설명하고, LLM이 이러한 문제를 해결하는 방법을 제시합니다. 다음으로, 기본적인 아웃풋 및 프레임워크 (싱글 아웃풋, 멀티 아웃풋, 계획된 실행), 모델링 접근법 (프로ン퓰트 엔지니어링, 훈련 기반), 원래 데이터 세트 및 벤치마크를 구성하는 테크노لوجيا에 대해 제안합니다. 또한, 태스크专用의 아키텍처, 교사가 있는 미세 조정, 강화학습 전략을 상세히 설명하고, 사용자의 의도와 GUI의 동작을 연결하는 것을 목표로 합니다. 마지막으로, 데이터 세트의 다양성, 장치상의 구현효율성, 사용자 중심의 적응성, 보안의 우려 등 열린 문제에 대해 논의하고, 이 빠르게 변화하는 분야에 대한 선진적인 전망을 제공합니다. 이 논문은 LLM을 활용하여 Scalable, User-friendly의 폰트 GUI 아웃풋을 설계하기 위한 연구자와 실천자에게 확실한 리소스로 도움이 됩니다.",
+      "upvotes": 15,
+      "discussionId": "68103184007d579cbf5202d9",
+      "projectPage": "https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents"
+    },
+    "publishedAt": "2025-04-28T10:39:25.000Z",
+    "title": "LLM-Powered GUI Agents in Phone Automation: Surveying Progress and\n  Prospects",
+    "summary": "With the rapid rise of large language models (LLMs), phone automation has\nundergone transformative changes. This paper systematically reviews LLM-driven\nphone GUI agents, highlighting their evolution from script-based automation to\nintelligent, adaptive systems. We first contextualize key challenges, (i)\nlimited generality, (ii) high maintenance overhead, and (iii) weak intent\ncomprehension, and show how LLMs address these issues through advanced language\nunderstanding, multimodal perception, and robust decision-making. We then\npropose a taxonomy covering fundamental agent frameworks (single-agent,\nmulti-agent, plan-then-act), modeling approaches (prompt engineering,\ntraining-based), and essential datasets and benchmarks. Furthermore, we detail\ntask-specific architectures, supervised fine-tuning, and reinforcement learning\nstrategies that bridge user intent and GUI operations. Finally, we discuss open\nchallenges such as dataset diversity, on-device deployment efficiency,\nuser-centric adaptation, and security concerns, offering forward-looking\ninsights into this rapidly evolving field. By providing a structured overview\nand identifying pressing research gaps, this paper serves as a definitive\nreference for researchers and practitioners seeking to harness LLMs in\ndesigning scalable, user-friendly phone GUI agents.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19838.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "64d761b98ebc40443831f82a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64d761b98ebc40443831f82a/DHBOtOstiFp2-lDY6b9gb.png",
+      "fullname": "lgy0404",
+      "name": "lgy0404",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.19093",
+      "authors": [
+        {
+          "_id": "6810356ab91a093e4f4cc262",
+          "user": {
+            "_id": "671b852aa4fa4f8f5fb5404c",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/671b852aa4fa4f8f5fb5404c/TDLsgP8WgKW-qaA8Ys-iJ.jpeg",
+            "isPro": false,
+            "fullname": "YU LI",
+            "user": "yu0226",
+            "type": "user"
+          },
+          "name": "Yu Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:23.352Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc263",
+          "name": "Qizhi Pei",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc264",
+          "user": {
+            "_id": "67ad790c2b28204981be8e24",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67ad790c2b28204981be8e24/KstE5e5bUXXIvgPJqMO2B.jpeg",
+            "isPro": false,
+            "fullname": "Mengyuan Sun",
+            "user": "blue01223",
+            "type": "user"
+          },
+          "name": "Mengyuan Sun",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:29.740Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc265",
+          "name": "Honglin Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc266",
+          "name": "Chenlin Ming",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc267",
+          "name": "Xin Gao",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc268",
+          "name": "Jiang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc269",
+          "name": "Conghui He",
+          "hidden": false
+        },
+        {
+          "_id": "6810356ab91a093e4f4cc26a",
+          "name": "Lijun Wu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-27T03:41:17.000Z",
+      "submittedOnDailyAt": "2025-04-29T04:39:29.218Z",
+      "title": "CipherBank: 암호학 도전에서 LLM의 이해력의 경계를 찾는 이유",
+      "submittedOnDailyBy": {
+        "_id": "6397f6081323f19c578f142e",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6397f6081323f19c578f142e/it7FYYKjlLX8wSsMLm8EO.jpeg",
+        "isPro": false,
+        "fullname": "QizhiPei",
+        "user": "QizhiPei",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLMs)은 최근의 인공 지능 발전(예: o1과 o3)에 의해 놀라운 능력을 보여주고 있습니다. 수학이나 코딩 분야에서 놀라운 성과를 거두는 데도 불구하고, LLMs의 인공 지능은 암호 기술에 필요한 분야에서 아직 상세하게 조사되지 않았습니다. 본 논문에서는 암호 복호 작업에서 LLMs의 인공 지능을 평가하기 위해 엄밀하게 제작된 2,358개의 평가 벤치마크 CipherBank을 소개합니다. CipherBank은 5개의 블록과 14개의 서브 블록으로 구성되며, 262가지의 고유한 평문을 덮고 있으며, 개인 관계의 중요성을 강조하는 프라이버시 시나리오나 현실적인 상황에서 필요한 암호화를 중점적으로 다루고 있습니다. 암호의 관점에서는 CipherBank은 3가지의 주요 암호화 방법와 9가지의 다른 알고리즘을 조합하여, 클래식의 시퍼를 제외하고도 개인화된 암호 기술도 포함하고 있습니다. CipherBank에서 가장 先端의 LLMs를 평가합니다. 예를 들어, GPT-4o, DeepSeek-V3, 그리고 인공 지능을 중점적으로 하는 先端 모델의 o1과 DeepSeek-R1을 포함합니다. 우리의 결과를 통해 일반적인 대화 LLMs와 인공 지능을 중점적으로 하는 LLMs 사이에 인공 지능의 차이를 확인하고, 현재 인공 지능을 중점적으로 하는 모델이 클래식의 암호 복호 작업에 대한 실적을 명확히 합니다. 이러한 차이를 자세히 분석하고 오류 검증을 수행하여 LLMs의 암호 인공 지능의 한계와 개선 가능한 영역을 밝혀줍니다. 이러한 발견은 LLMs의 인공 지능의 발전이 필요함을 강조합니다.",
+      "upvotes": 9,
+      "discussionId": "68103574b91a093e4f4cc57a",
+      "projectPage": "https://cipherbankeva.github.io/",
+      "githubRepo": "https://github.com/Goodman-liyu/CipherBank"
+    },
+    "publishedAt": "2025-04-26T23:41:17.000Z",
+    "title": "CipherBank: Exploring the Boundary of LLM Reasoning Capabilities through\n  Cryptography Challenges",
+    "summary": "Large language models (LLMs) have demonstrated remarkable capabilities,\nespecially the recent advancements in reasoning, such as o1 and o3, pushing the\nboundaries of AI. Despite these impressive achievements in mathematics and\ncoding, the reasoning abilities of LLMs in domains requiring cryptographic\nexpertise remain underexplored. In this paper, we introduce CipherBank, a\ncomprehensive benchmark designed to evaluate the reasoning capabilities of LLMs\nin cryptographic decryption tasks. CipherBank comprises 2,358 meticulously\ncrafted problems, covering 262 unique plaintexts across 5 domains and 14\nsubdomains, with a focus on privacy-sensitive and real-world scenarios that\nnecessitate encryption. From a cryptographic perspective, CipherBank\nincorporates 3 major categories of encryption methods, spanning 9 distinct\nalgorithms, ranging from classical ciphers to custom cryptographic techniques.\nWe evaluate state-of-the-art LLMs on CipherBank, e.g., GPT-4o, DeepSeek-V3, and\ncutting-edge reasoning-focused models such as o1 and DeepSeek-R1. Our results\nreveal significant gaps in reasoning abilities not only between general-purpose\nchat LLMs and reasoning-focused LLMs but also in the performance of current\nreasoning-focused models when applied to classical cryptographic decryption\ntasks, highlighting the challenges these models face in understanding and\nmanipulating encrypted data. Through detailed analysis and error\ninvestigations, we provide several key observations that shed light on the\nlimitations and potential improvement areas for LLMs in cryptographic\nreasoning. These findings underscore the need for continuous advancements in\nLLM reasoning capabilities.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19093.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "6397f6081323f19c578f142e",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6397f6081323f19c578f142e/it7FYYKjlLX8wSsMLm8EO.jpeg",
+      "fullname": "QizhiPei",
+      "name": "QizhiPei",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 23
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.18919",
+      "authors": [
+        {
+          "_id": "681039b2b02c157249d046b0",
+          "name": "Andrew M. Bean",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b1",
+          "name": "Rebecca Payne",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b2",
+          "name": "Guy Parsons",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b3",
+          "name": "Hannah Rose Kirk",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b4",
+          "name": "Juan Ciro",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b5",
+          "name": "Rafael Mosquera",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b6",
+          "name": "Sara Hincapié Monsalve",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b7",
+          "name": "Aruna S. Ekanayaka",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b8",
+          "name": "Lionel Tarassenko",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046b9",
+          "name": "Luc Rocher",
+          "hidden": false
+        },
+        {
+          "_id": "681039b2b02c157249d046ba",
+          "name": "Adam Mahdi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-26T13:32:49.000Z",
+      "submittedOnDailyAt": "2025-04-29T01:01:48.840Z",
+      "title": "LLM의 임상 지식은 인간과의 상호작용에 대응하지 않는다.",
+      "submittedOnDailyBy": {
+        "_id": "659bec4728676374f33ef921",
+        "avatarUrl": "/avatars/217ae547d6460e65c6d2a23012741830.svg",
+        "isPro": false,
+        "fullname": "Andrew Bean",
+        "user": "ambean",
+        "type": "user"
+      },
+      "summary": "글로벌 의료 서비스 제공자들이 대규모 언어 모델(LLMs)를 사용하여 대중에게 의료 조언을 제공하는 방법을 연구하고 있습니다. LLMs는 현재 의사면허 시험에서 거의 완벽한 점수를 얻지만, 이는 현실 세계에서의 성능이 같은지 확신할 수 없습니다. 1,298명의 참여자를 대상으로 제어 연구를 통해 LLMs가 대중이 잠재적인 건강 상태를 식별하고 행동 계획(처치)을 선택하는 데 도움이 되는지 테스트했습니다. 참여자들은 LLM(GPT-4o, Llama 3, Command R+) 또는 선택된 출처(조제군)으로부터 도움을 받았습니다. 단독 테스트 시, LLMs는 평균 94.9%의 상태와 56.3%의 처치를 정확하게 식별할 수 있었습니다. 그러나 동일한 LLMs를 사용하는 참여자들은 관련 상태를 식별하는 정확도가 34.5% 미만, 처치 선택의 정확도가 44.2% 미만이었으며, 이는 조제군에 비해 나쁩니다. 사용자 상호작용은 LLMs의 의료 조언에 대한 적용의 한 가지 도전임을 발견했습니다. 표준의 의료 지식 기준과 모의 환자 상호작용은 우리가 인간 참여자에서 발견한 실패를 예측하지 못했습니다. 의료 분야의 공공 배치 전에 체계적인 인간 사용자 테스트를 수행하여 상호작용 능력을 평가하는 것을 제안합니다.",
+      "upvotes": 4,
+      "discussionId": "681039b5b02c157249d04787"
+    },
+    "publishedAt": "2025-04-26T09:32:49.000Z",
+    "title": "Clinical knowledge in LLMs does not translate to human interactions",
+    "summary": "Global healthcare providers are exploring use of large language models (LLMs)\nto provide medical advice to the public. LLMs now achieve nearly perfect scores\non medical licensing exams, but this does not necessarily translate to accurate\nperformance in real-world settings. We tested if LLMs can assist members of the\npublic in identifying underlying conditions and choosing a course of action\n(disposition) in ten medical scenarios in a controlled study with 1,298\nparticipants. Participants were randomly assigned to receive assistance from an\nLLM (GPT-4o, Llama 3, Command R+) or a source of their choice (control). Tested\nalone, LLMs complete the scenarios accurately, correctly identifying conditions\nin 94.9% of cases and disposition in 56.3% on average. However, participants\nusing the same LLMs identified relevant conditions in less than 34.5% of cases\nand disposition in less than 44.2%, both no better than the control group. We\nidentify user interactions as a challenge to the deployment of LLMs for medical\nadvice. Standard benchmarks for medical knowledge and simulated patient\ninteractions do not predict the failures we find with human participants.\nMoving forward, we recommend systematic human user testing to evaluate\ninteractive capabilities prior to public deployments in healthcare.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.18919.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "659bec4728676374f33ef921",
+      "avatarUrl": "/avatars/217ae547d6460e65c6d2a23012741830.svg",
+      "fullname": "Andrew Bean",
+      "name": "ambean",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.17258",
+      "authors": [
+        {
+          "_id": "680edc612488a3b6b9feb9d0",
+          "user": {
+            "_id": "661e07e02a8496916011c08a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/6vIkL4LJ0bLeJL99E20F_.jpeg",
+            "isPro": false,
+            "fullname": "Md Ashiqur Rahman",
+            "user": "ashiq24",
+            "type": "user"
+          },
+          "name": "Md Ashiqur Rahman",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-04-28T03:56:25.436Z",
+          "hidden": false
+        },
+        {
+          "_id": "680edc612488a3b6b9feb9d1",
+          "name": "Raymond A. Yeh",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/661e07e02a8496916011c08a/_lIAAwBEVKqioepM0Mmfl.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/661e07e02a8496916011c08a/UUaV0uoeUWOTbfJopBnbV.png"
+      ],
+      "publishedAt": "2025-04-24T05:29:51.000Z",
+      "submittedOnDailyAt": "2025-04-29T02:41:40.480Z",
+      "title": "그룹 다운 샘플링과 동변의 아니알리싱",
+      "submittedOnDailyBy": {
+        "_id": "661e07e02a8496916011c08a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/6vIkL4LJ0bLeJL99E20F_.jpeg",
+        "isPro": false,
+        "fullname": "Md Ashiqur Rahman",
+        "user": "ashiq24",
+        "type": "user"
+      },
+      "summary": "下采样 레이어는 CNN 아키텍처의 중요한 구성 요소로, 고레벨 특징량의 학습에 의한 recepptive field의 확장과 모델의 메모리/계산량의 줄임에 기여합니다. 본 논문에서는 G-CNN 등 군 등대칭성 아키텍처에 적용 가능한 균일한 다운샘플링 레이어의 일반화를 조사합니다. 즉, 일반적인 유한 군 위에 있는 신호(특징 맵)을 다운샘플링하여 Anti-aliasing 효과를 발휘하는 것을 목표로 합니다. 이를 위해 다음과 같은 점이 포함됩니다:\n(a) 유한 군과 다운샘플링 비율이 주어질 경우, 적절한 하위 군의 선택을 위한 알고리즘을 제안합니다.\n(b) 군과 하위 군이 주어질 경우, 밴드 리미트된 것과 Anti-aliasing 효과의 실행 방법을 연구합니다.\n특히, 우리 방법은 전통적인 샘플링 이론에 기반한 다운샘플링의 개념을 일반화하고 있습니다. 신호가 순환 군 위에 있는 경우, 즉 주기적인 경우, 우리 방법은 표준적인 다운샘플링을 복원하는理想의 저통 필터의 다운샘플링 연산의 기준입니다. 마지막으로, 이미지 분류 태스크에서 실험을 수행하며, 제안된 다운샘플링 연산이 정확도를 향상시키고, 등대칭성을 더 잘 유지하고, G-등대칭 네트워크에 도입될 때 모델 크기를 줄일 수 있음을 보여줍니다.",
+      "upvotes": 4,
+      "discussionId": "680edc622488a3b6b9feba0e",
+      "projectPage": "https://github.com/ashiq24/Group_Sampling",
+      "githubRepo": "https://github.com/ashiq24/Group_Sampling",
+      "ai_keywords": [
+        "downsampling layers",
+        "CNN architectures",
+        "receptive field",
+        "high-level features",
+        "memory/computation",
+        "group equivariant architectures",
+        "G-CNNs",
+        "finite groups",
+        "downsampling rate",
+        "subgroup",
+        "bandlimited-ness",
+        "anti-aliasing",
+        "classical sampling theory",
+        "cyclic group",
+        "periodic",
+        "ideal low-pass filter",
+        "subsampling operation",
+        "image classification tasks",
+        "equivariance",
+        "model size",
+        "G-equivariant networks"
+      ]
+    },
+    "publishedAt": "2025-04-24T01:29:51.000Z",
+    "title": "Group Downsampling with Equivariant Anti-aliasing",
+    "summary": "Downsampling layers are crucial building blocks in CNN architectures, which\nhelp to increase the receptive field for learning high-level features and\nreduce the amount of memory/computation in the model. In this work, we study\nthe generalization of the uniform downsampling layer for group equivariant\narchitectures, e.g., G-CNNs. That is, we aim to downsample signals (feature\nmaps) on general finite groups with anti-aliasing. This involves the following:\n(a) Given a finite group and a downsampling rate, we present an algorithm to\nform a suitable choice of subgroup. (b) Given a group and a subgroup, we study\nthe notion of bandlimited-ness and propose how to perform anti-aliasing.\nNotably, our method generalizes the notion of downsampling based on classical\nsampling theory. When the signal is on a cyclic group, i.e., periodic, our\nmethod recovers the standard downsampling of an ideal low-pass filter followed\nby a subsampling operation. Finally, we conducted experiments on image\nclassification tasks demonstrating that the proposed downsampling operation\nimproves accuracy, better preserves equivariance, and reduces model size when\nincorporated into G-equivariant networks",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/661e07e02a8496916011c08a/_lIAAwBEVKqioepM0Mmfl.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/661e07e02a8496916011c08a/UUaV0uoeUWOTbfJopBnbV.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.17258.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "661e07e02a8496916011c08a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/6vIkL4LJ0bLeJL99E20F_.jpeg",
+      "fullname": "Md Ashiqur Rahman",
+      "name": "ashiq24",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.15780",
+      "authors": [
+        {
+          "_id": "68104f85b442ffc234b670cd",
+          "name": "Daocheng Fu",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670ce",
+          "name": "Zijun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670cf",
+          "name": "Renqiu Xia",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d0",
+          "name": "Qi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d1",
+          "name": "Yuan Feng",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d2",
+          "name": "Hongbin Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d3",
+          "name": "Renrui Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d4",
+          "name": "Shiyang Feng",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d5",
+          "name": "Peng Gao",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d6",
+          "name": "Junchi Yan",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d7",
+          "name": "Botian Shi",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d8",
+          "name": "Bo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68104f85b442ffc234b670d9",
+          "name": "Yu Qiao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-22T10:45:23.000Z",
+      "submittedOnDailyAt": "2025-04-29T02:36:15.881Z",
+      "title": "TrustGeoGen: 신뢰성 있는 다모드 GeoMetri 문제 해결의 scalable formal proof equipped 데이터 엔진",
+      "submittedOnDailyBy": {
+        "_id": "65b7ae76768464877cdb2e39",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65b7ae76768464877cdb2e39/uAWPo4tpkqbZoDeEkc7y0.jpeg",
+        "isPro": false,
+        "fullname": "Renqiu Xia",
+        "user": "renqiux0302",
+        "type": "user"
+      },
+      "summary": "수학 기하 문제 해결(GPS)는 다양한 정보의 효과적인 통합과 증명적인 로직적인 일관성의 필요성이 있습니다. 일반적인 문제 해결에서 대규모 언어 모델의 급격한 발전이 있지만, 방법과 벤치마크 모두에서 해결되지 않은 부분이 있으며, 기존의 합성 GPS 벤치마크는 LLM의 환상으로 자체 증명이 불가능하고, 노이즈와 자기론적인 정보가 많이 포함되어 있습니다. 본 논문에서는 문제 생성을 위한 scalable 데이터 엔진인 TrustGeoGen을 제안하고, 형식적인 증명을 통해 원칙적인 벤치마크를 제공하여 GPS의 방법의 발전의 기초를 구축하는 것으로 믿습니다. 이 엔진은 4개의 핵심적인 혁신을 통해 기하 데이터를 합성합니다: 1) 그림, 문자 설명, 단계별 해결책의 다형성 alignment, 2) 형식적인 증명에 의한 규칙적 이유의 경로의 보장, 3) 리프 프로세스 구조에 의한 발전적인 복잡성의 향상, 4) GeoExplore 시리즈 알고리즘에 의한 여러 해의 변이와 반사적인 백트래킹 트래CE의 동시에 생성합니다. 형식적인 로직적인 증명을 통해 TrustGeoGen은 GeoTrust-200K 데이터 세트를 생성하고, 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의 깊이를 보장한 모델의",
+      "upvotes": 4,
+      "discussionId": "68104f86b442ffc234b67113"
+    },
+    "publishedAt": "2025-04-22T06:45:23.000Z",
+    "title": "TrustGeoGen: Scalable and Formal-Verified Data Engine for Trustworthy\n  Multi-modal Geometric Problem Solving",
+    "summary": "Mathematical geometric problem solving (GPS) often requires effective\nintegration of multimodal information and verifiable logical coherence. Despite\nthe fast development of large language models in general problem solving, it\nremains unresolved regarding with both methodology and benchmarks, especially\ngiven the fact that exiting synthetic GPS benchmarks are often not\nself-verified and contain noise and self-contradicted information due to the\nillusion of LLMs. In this paper, we propose a scalable data engine called\nTrustGeoGen for problem generation, with formal verification to provide a\nprincipled benchmark, which we believe lays the foundation for the further\ndevelopment of methods for GPS. The engine synthesizes geometric data through\nfour key innovations: 1) multimodal-aligned generation of diagrams, textual\ndescriptions, and stepwise solutions; 2) formal verification ensuring\nrule-compliant reasoning paths; 3) a bootstrapping mechanism enabling\ncomplexity escalation via recursive state generation and 4) our devised\nGeoExplore series algorithms simultaneously produce multi-solution variants and\nself-reflective backtracking traces. By formal logical verification,\nTrustGeoGen produces GeoTrust-200K dataset with guaranteed modality integrity,\nalong with GeoTrust-test testset. Experiments reveal the state-of-the-art\nmodels achieve only 49.17\\% accuracy on GeoTrust-test, demonstrating its\nevaluation stringency. Crucially, models trained on GeoTrust achieve OOD\ngeneralization on GeoQA, significantly reducing logical inconsistencies\nrelative to pseudo-label annotated by OpenAI-o1. Our code is available at\nhttps://github.com/Alpha-Innovator/TrustGeoGen",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.15780.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65b7ae76768464877cdb2e39",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65b7ae76768464877cdb2e39/uAWPo4tpkqbZoDeEkc7y0.jpeg",
+      "fullname": "Renqiu Xia",
+      "name": "renqiux0302",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.16083",
+      "authors": [
+        {
+          "_id": "68105d8632d635f02bc2976e",
+          "name": "Yucheng Li",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc2976f",
+          "user": {
+            "_id": "6278bd42541f3d2dfa77ea70",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6278bd42541f3d2dfa77ea70/ejn49eapnB3UXQckAYdTd.jpeg",
+            "isPro": true,
+            "fullname": "Huiqiang Jiang",
+            "user": "iofu728",
+            "type": "user"
+          },
+          "name": "Huiqiang Jiang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-04-29T05:03:03.400Z",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29770",
+          "name": "Chengruidong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29771",
+          "name": "Qianhui Wu",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29772",
+          "name": "Xufang Luo",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29773",
+          "name": "Surin Ahn",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29774",
+          "name": "Amir H. Abdi",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29775",
+          "name": "Dongsheng Li",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29776",
+          "name": "Jianfeng Gao",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29777",
+          "name": "Yuqing Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68105d8632d635f02bc29778",
+          "name": "Lili Qiu",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6278bd42541f3d2dfa77ea70/K2pFSyL6PhhzhfK3ar9Ok.jpeg"
+      ],
+      "publishedAt": "2025-04-22T17:59:51.000Z",
+      "submittedOnDailyAt": "2025-04-29T03:34:32.012Z",
+      "title": "MMInference: 긴 문맥 VLMs의 사전완성을 빠르게 수행하기 위한 모델 인식에 기반한 대체 희소 액션 방법\n\n(Note: The translation is provided as requested, without additional explanation or text.)",
+      "submittedOnDailyBy": {
+        "_id": "6278bd42541f3d2dfa77ea70",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6278bd42541f3d2dfa77ea70/ejn49eapnB3UXQckAYdTd.jpeg",
+        "isPro": true,
+        "fullname": "Huiqiang Jiang",
+        "user": "iofu728",
+        "type": "user"
+      },
+      "summary": "장 코ン텍스트 능력과 시각 이해의 통합은 비전 언어 모델(VLMs)에 전례없는 가능성들을 열어줍니다. 그러나 예약이 가득 차는 두차원 注意 복잡성은 현실적인 기능에 큰 장애가 되어 있습니다. 이러한 한계를 극복하기 위해, MMInference(Multimodality Million tokens Inference)를 소개합니다. 이는 장 코ン텍스트의 다양한 입력을 빠르게 처리하는 동적稀疏 注意 기법입니다. 먼저, 우리의 분석은 비디오 입력의 시간적 및 공간적 지역성을 특징적인稀疏 패턴인 Grid 패턴으로 추출합니다. 동시에, VLMs은 다른 모델의稀疏 분포가 분명히 다릅니다. 우리는 Permutation 기반의 방법을 사용하여 Grid 패턴을 활용하여 모델 다양성 문제를 해결하려고 합니다. 오프라인에서 각 헤드에 최적의稀疏 패턴을 탐색하고, MMInference는 입력에 따라 동적으로稀疏 분포를 구축합니다. 또한, 효율적인稀疏 계산에 최적화된 GPU 캐너버를 제공합니다. 특히, MMInference는 현재의 VLM 피인프리이즈에 무시될 수 없도록, 모델의 수정이나 미세 조정을 하지 않고 안전하게 통합합니다. Video QA, Captioning, VisionNIAH, Mixed-Modality NIAH 등 다양한 타입의 벤치마크에서 실험을 통해, 가장 先端의 장 코ン텍스트 VLMs(LongVila, LlavaVideo, VideoChat-Flash, Qwen2.5-VL)을 사용하여, MMInference는 1M 토큰에서 예약이 가득 차는 단계를 8.3배 가속화하고 정확도를 유지합니다. 코드는 https://aka.ms/MMInference에서 사용 가능합니다.",
+      "upvotes": 3,
+      "discussionId": "68105d8732d635f02bc297bb"
+    },
+    "publishedAt": "2025-04-22T13:59:51.000Z",
+    "title": "MMInference: Accelerating Pre-filling for Long-Context VLMs via\n  Modality-Aware Permutation Sparse Attention",
+    "summary": "The integration of long-context capabilities with visual understanding\nunlocks unprecedented potential for Vision Language Models (VLMs). However, the\nquadratic attention complexity during the pre-filling phase remains a\nsignificant obstacle to real-world deployment. To overcome this limitation, we\nintroduce MMInference (Multimodality Million tokens Inference), a dynamic\nsparse attention method that accelerates the prefilling stage for long-context\nmulti-modal inputs. First, our analysis reveals that the temporal and spatial\nlocality of video input leads to a unique sparse pattern, the Grid pattern.\nSimultaneously, VLMs exhibit markedly different sparse distributions across\ndifferent modalities. We introduce a permutation-based method to leverage the\nunique Grid pattern and handle modality boundary issues. By offline search the\noptimal sparse patterns for each head, MMInference constructs the sparse\ndistribution dynamically based on the input. We also provide optimized GPU\nkernels for efficient sparse computations. Notably, MMInference integrates\nseamlessly into existing VLM pipelines without any model modifications or\nfine-tuning. Experiments on multi-modal benchmarks-including Video QA,\nCaptioning, VisionNIAH, and Mixed-Modality NIAH-with state-of-the-art\nlong-context VLMs (LongVila, LlavaVideo, VideoChat-Flash, Qwen2.5-VL) show that\nMMInference accelerates the pre-filling stage by up to 8.3x at 1M tokens while\nmaintaining accuracy. Our code is available at https://aka.ms/MMInference.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6278bd42541f3d2dfa77ea70/K2pFSyL6PhhzhfK3ar9Ok.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.16083.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6278bd42541f3d2dfa77ea70",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6278bd42541f3d2dfa77ea70/ejn49eapnB3UXQckAYdTd.jpeg",
+      "fullname": "Huiqiang Jiang",
+      "name": "iofu728",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.18589",
+      "authors": [
+        {
+          "_id": "68106d0daa36fca4aeebb34a",
+          "user": {
+            "_id": "67132d16659c7cd704867365",
+            "avatarUrl": "/avatars/cab345716718965b87e29ac248fbc7e4.svg",
+            "isPro": false,
+            "fullname": "zhikai wang",
+            "user": "cloudcatcher2",
+            "type": "user"
+          },
+          "name": "Zhikai Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T07:57:55.121Z",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34b",
+          "name": "Jiashuo Sun",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34c",
+          "name": "Wenqi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34d",
+          "name": "Zhiqiang Hu",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34e",
+          "name": "Xin Li",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb34f",
+          "name": "Fan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68106d0daa36fca4aeebb350",
+          "name": "Deli Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-24T06:16:38.000Z",
+      "submittedOnDailyAt": "2025-04-29T06:53:11.886Z",
+      "title": "ビジュアル依存関係를 명시한 다모형 수학논리의 벤치마크",
+      "submittedOnDailyBy": {
+        "_id": "67132d16659c7cd704867365",
+        "avatarUrl": "/avatars/cab345716718965b87e29ac248fbc7e4.svg",
+        "isPro": false,
+        "fullname": "zhikai wang",
+        "user": "cloudcatcher2",
+        "type": "user"
+      },
+      "summary": "최근의 대규모 비젼 언어 모델(LVLMs)의 발전은 비젼과 언어 정보의 통합 능력을 크게 향상시키고, 물체 인식, 캡쳐, 비젼 퀴즈 답변 등 인간의 전문성을 달성하고 있습니다. 그러나 현재의 벤치마크는 지식 콘텐츠 평가에 중점을 두고, 분야별 전문 지식 평가, 기본 수학 요소 및 비젼 개념의 이유 능력이 많이 미치지 않는 것으로 나타납니다. 우리는 기본 수준의 수학 문제를 평가하는 데 문제가 있음을 발견하고, 명시적인 비젼 의존 관계를 가지는 문제에서, 모델이 여러 이미지를 이해, 통합, 이유하고 일반 지식을 통합하는 것이 중요함을 인식하고 있습니다. 이러한 문제를 해결하기 위해, VCBENCH라는 명시적인 비젼 의존 관계를 가지는 다 모델 수학 이유 평가 기준을 도입하고 있습니다. VCBENCH는 6개의 인지 영역을 포함하고, 1,720개의 문제를 포함하며, 6,697개의 이미지(문제별로 평균 3.9개)를 특징으로 하며, 여러 이미지를 이유로 하는 것을 보장하고 있습니다. 26개의 가장 선진된 LVLMs를 VCBENCH에 평가하여, 큰 성능 차이를 명확히 하고, 가장 선진된 모델도 50%의 정확도를 초과하지 못하는 것을 보여줍니다. 우리가 발견한 결과는 비젼과 수학의 통합 문제를 명확히 하고, LVLM의 미래의 발전 가능성을 보여주고 있습니다.",
+      "upvotes": 2,
+      "discussionId": "68106d0faa36fca4aeebb3a2",
+      "projectPage": "https://alibaba-damo-academy.github.io/VCBench/",
+      "githubRepo": "https://github.com/alibaba-damo-academy/VCBench"
+    },
+    "publishedAt": "2025-04-24T02:16:38.000Z",
+    "title": "Benchmarking Multimodal Mathematical Reasoning with Explicit Visual\n  Dependency",
+    "summary": "Recent advancements in Large Vision-Language Models (LVLMs) have\nsignificantly enhanced their ability to integrate visual and linguistic\ninformation, achieving near-human proficiency in tasks like object recognition,\ncaptioning, and visual question answering. However, current benchmarks\ntypically focus on knowledge-centric evaluations that assess domain-specific\nexpertise, often neglecting the core ability to reason about fundamental\nmathematical elements and visual concepts. We identify a gap in evaluating\nelementary-level math problems, which rely on explicit visual\ndependencies-requiring models to discern, integrate, and reason across multiple\nimages while incorporating commonsense knowledge, all of which are crucial for\nadvancing toward broader AGI capabilities. To address this gap, we introduce\nVCBENCH, a comprehensive benchmark for multimodal mathematical reasoning with\nexplicit visual dependencies. VCBENCH includes 1,720 problems across six\ncognitive domains, featuring 6,697 images (averaging 3.9 per question) to\nensure multi-image reasoning. We evaluate 26 state-of-the-art LVLMs on VCBENCH,\nrevealing substantial performance disparities, with even the top models unable\nto exceed 50% accuracy. Our findings highlight the ongoing challenges in\nvisual-mathematical integration and suggest avenues for future LVLM\nadvancements.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.18589.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "67132d16659c7cd704867365",
+      "avatarUrl": "/avatars/cab345716718965b87e29ac248fbc7e4.svg",
+      "fullname": "zhikai wang",
+      "name": "cloudcatcher2",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.19395",
+      "authors": [
+        {
+          "_id": "6810767a0f244cf14e5a3060",
+          "user": {
+            "_id": "6675c9305eaa9dd299dcdca0",
+            "avatarUrl": "/avatars/504a259033605e489809c8f202538d75.svg",
+            "isPro": false,
+            "fullname": "Zhouxiang Fang",
+            "user": "FocusV857",
+            "type": "user"
+          },
+          "name": "Zhouxiang Fang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T08:01:43.304Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810767a0f244cf14e5a3061",
+          "name": "Aayush Mishra",
+          "hidden": false
+        },
+        {
+          "_id": "6810767a0f244cf14e5a3062",
+          "name": "Muhan Gao",
+          "hidden": false
+        },
+        {
+          "_id": "6810767a0f244cf14e5a3063",
+          "name": "Anqi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6810767a0f244cf14e5a3064",
+          "name": "Daniel Khashabi",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6675c9305eaa9dd299dcdca0/DAhhWMnvctlmAuzzjp97v.png"
+      ],
+      "publishedAt": "2025-04-28T00:05:29.000Z",
+      "submittedOnDailyAt": "2025-04-29T05:22:18.705Z",
+      "title": "ICL CIPHERS: 속성의 양적화 \"학습\"을 인코텍스트 학습에 의해 실현하는 암호화 방식",
+      "submittedOnDailyBy": {
+        "_id": "6675c9305eaa9dd299dcdca0",
+        "avatarUrl": "/avatars/504a259033605e489809c8f202538d75.svg",
+        "isPro": false,
+        "fullname": "Zhouxiang Fang",
+        "user": "FocusV857",
+        "type": "user"
+      },
+      "summary": "최근의 연구는 In-Context Learning (ICL)가 이중 모드로 작동하는 것을 보여주고 있습니다. 이는 학습 시 학습한 패턴을 기억하는 태스크 검색과, 지시에 의한 추론 시의 \"학습\"으로 구성되어 있습니다. 그러나 이러한 모드를 구분하는 것은 어려운 목표입니다. 우리는 고전적인 암호학에서 영문 암호를 기반으로 한 태스크 재설정 클래스를 도입합니다. 이 접근 방식에서, in-context 입력의 일부 토큰을 다른(관련없는) 토큰으로 대체하고, 사람의 눈으로 보기에 영어 문장의 읽기성을 줄입니다. 그러나 설계적으로, 이 대체에潜在적으로 고정된 패턴이 있고, 역산할 수 있습니다. 이 역산 가능한 암호(비지컬 암호)는 변환이 있어도, 태스크는 추상적인 의미에서 정의된 태스크로서 유지됩니다. LLMs가 ICL CIPHERS를 BIJECTIVE 매핑으로 해석할 수 있는지는 역산할 수 있는 잠재적인 암호를 해석하는 것이 필요로 하는 흥미로운 문제입니다. 우리는 LLMs가 ICL CIPHERS를 BIJECTIVE 매핑으로 해석할 수 NON-BIJECTIVE(역산 불가능) 기반 라인보다 더 잘 하는 것을 보여주고, ICL의 \"학습\"을定量화하는 새로운 접근 방식을 제공합니다. 이 오류는 작지만, 4개의 데이터 세트와 6개의 모델로 컨텍스트를 통해 일치합니다. 마지막으로, LLMs의 내부 표현을 검토하고 암호화된 입력을 해석하는 능력을 발견했습니다.",
+      "upvotes": 1,
+      "discussionId": "6810767b0f244cf14e5a30dc",
+      "githubRepo": "https://github.com/jhu-CLSP/icl-ciphers"
+    },
+    "publishedAt": "2025-04-27T20:05:29.000Z",
+    "title": "ICL CIPHERS: Quantifying \"Learning'' in In-Context Learning via\n  Substitution Ciphers",
+    "summary": "Recent works have suggested that In-Context Learning (ICL) operates in dual\nmodes, i.e. task retrieval (remember learned patterns from pre-training) and\ntask learning (inference-time ``learning'' from demonstrations). However,\ndisentangling these the two modes remains a challenging goal. We introduce ICL\nCIPHERS, a class of task reformulations based on substitution ciphers borrowed\nfrom classic cryptography. In this approach, a subset of tokens in the\nin-context inputs are substituted with other (irrelevant) tokens, rendering\nEnglish sentences less comprehensible to human eye. However, by design, there\nis a latent, fixed pattern to this substitution, making it reversible. This\nbijective (reversible) cipher ensures that the task remains a well-defined task\nin some abstract sense, despite the transformations. It is a curious question\nif LLMs can solve ICL CIPHERS with a BIJECTIVE mapping, which requires\ndeciphering the latent cipher. We show that LLMs are better at solving ICL\nCIPHERS with BIJECTIVE mappings than the NON-BIJECTIVE (irreversible) baseline,\nproviding a novel approach to quantify ``learning'' in ICL. While this gap is\nsmall, it is consistent across the board on four datasets and six models.\nFinally, we examine LLMs' internal representations and identify evidence in\ntheir ability to decode the ciphered inputs.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6675c9305eaa9dd299dcdca0/DAhhWMnvctlmAuzzjp97v.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19395.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6675c9305eaa9dd299dcdca0",
+      "avatarUrl": "/avatars/504a259033605e489809c8f202538d75.svg",
+      "fullname": "Zhouxiang Fang",
+      "name": "FocusV857",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.19162",
+      "authors": [
+        {
+          "_id": "6810799e10b86ba322c27fb8",
+          "user": {
+            "_id": "61b859ddbdf1fac5ed499992",
+            "avatarUrl": "/avatars/2387fb9b8a46840bfc75248462f0a410.svg",
+            "isPro": false,
+            "fullname": "Jiaqi Chen",
+            "user": "judge",
+            "type": "user"
+          },
+          "name": "Jiaqi Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-29T07:58:59.273Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fb9",
+          "name": "Bang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fba",
+          "name": "Ruotian Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbb",
+          "name": "Peisong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbc",
+          "name": "Xiaodan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbd",
+          "name": "Zhaopeng Tu",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbe",
+          "name": "Xiaolong Li",
+          "hidden": false
+        },
+        {
+          "_id": "6810799e10b86ba322c27fbf",
+          "name": "Kwan-Yee K. Wong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-27T08:45:06.000Z",
+      "submittedOnDailyAt": "2025-04-29T06:46:57.300Z",
+      "title": "SPC: 적대적인 게임에 의한 자기대결 평가에 의한 LLM 추론 진화",
+      "submittedOnDailyBy": {
+        "_id": "61b859ddbdf1fac5ed499992",
+        "avatarUrl": "/avatars/2387fb9b8a46840bfc75248462f0a410.svg",
+        "isPro": false,
+        "fullname": "Jiaqi Chen",
+        "user": "judge",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLM)의 단계별 신뢰도 평가는 고품질의 단계 수준의 서브젝션을 획득하는 데 어려움이 있으며, Chain-of-Thought 같은 논리적 추론 단계의 평가에도 어려움이 있습니다. 본 논문에서는, 손으로 단계 수준의 注釈를 필요로 하지 않는 Self-Play Critic(SPC)의 새로운 접근 방식을 소개합니다. SPC는 논리적 추론 단계의 정확성을 평가할 수 있는 능력을 자신의 게임에서 진화시켜 평가 모델입니다. SPC는 기본 모델의 두 개를 미세 조정하여, \"스니ー키 제너레이터\"와 \"평가자\"의 두 가지 역할을 수행합니다. \"스니ー키 제너레이터\"는 오류를 포함하는 단계를 의도적으로 생성하고, 검출하기 어려운 방향으로 설계되어, \"평가자\"는 논리적 추론 단계의 정확성을 분석합니다. 이 두 개의 모델은 제너레이터가 평가자를 속이고, 평가자 모델이 제너레이터의 오류를 인식하도록 경쟁적인 게임을 진행합니다. 게임의 결과를 기반으로 하는 강화학습을 사용하여, 모델은 반복적으로 개선되고, 각 경쟁의 승자는 양의 보상을 받습니다, 패자는 음의 보상을 받습니다. 연속적인 자기보상화를 구동합니다.\n\nProcessBench, PRM800K, DeltaBench의 3가지 논리적 추론 프로세스 벤치마크의 실험을 통해, SPC는 오류 검출 능력의 발전을 가집니다(예를 들어, ProcessBench에서 정확도는 70.8%에서 77.7%로 상승합니다). 또한, 다양한 LLM의 테스트 시의 검색을 가이드하여, MATH500과 AIME2024에서 수학 논리 성능을 크게 향상시키고, 최신 프로세스 보상 모델을 초과합니다.",
+      "upvotes": 1,
+      "discussionId": "6810799f10b86ba322c27fea",
+      "ai_keywords": [
+        "Self-Play Critic (SPC)",
+        "adversarial self-play games",
+        "\"sneaky generator\"",
+        "\"critic\"",
+        "reinforcement learning",
+        "ProcessBench",
+        "PRM800K",
+        "DeltaBench",
+        "parameter-efficient fine-tuning",
+        "distilled R1 model",
+        "MATH500",
+        "AIME2024"
+      ]
+    },
+    "publishedAt": "2025-04-27T04:45:06.000Z",
+    "title": "SPC: Evolving Self-Play Critic via Adversarial Games for LLM Reasoning",
+    "summary": "Evaluating the step-by-step reliability of large language model (LLM)\nreasoning, such as Chain-of-Thought, remains challenging due to the difficulty\nand cost of obtaining high-quality step-level supervision. In this paper, we\nintroduce Self-Play Critic (SPC), a novel approach where a critic model evolves\nits ability to assess reasoning steps through adversarial self-play games,\neliminating the need for manual step-level annotation. SPC involves fine-tuning\ntwo copies of a base model to play two roles, namely a \"sneaky generator\" that\ndeliberately produces erroneous steps designed to be difficult to detect, and a\n\"critic\" that analyzes the correctness of reasoning steps. These two models\nengage in an adversarial game in which the generator aims to fool the critic,\nwhile the critic model seeks to identify the generator's errors. Using\nreinforcement learning based on the game outcomes, the models iteratively\nimprove; the winner of each confrontation receives a positive reward and the\nloser receives a negative reward, driving continuous self-evolution.\nExperiments on three reasoning process benchmarks (ProcessBench, PRM800K,\nDeltaBench) demonstrate that our SPC progressively enhances its error detection\ncapabilities (e.g., accuracy increases from 70.8% to 77.7% on ProcessBench) and\nsurpasses strong baselines, including distilled R1 model. Furthermore, applying\nSPC to guide the test-time search of diverse LLMs significantly improves their\nmathematical reasoning performance on MATH500 and AIME2024, outperforming\nstate-of-the-art process reward models.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.19162.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "61b859ddbdf1fac5ed499992",
+      "avatarUrl": "/avatars/2387fb9b8a46840bfc75248462f0a410.svg",
+      "fullname": "Jiaqi Chen",
+      "name": "judge",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
