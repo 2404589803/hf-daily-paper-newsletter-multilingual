@@ -1,0 +1,1305 @@
+[
+  {
+    "paper": {
+      "id": "2504.20734",
+      "authors": [
+        {
+          "_id": "6811966ae20ba7d0683b8adc",
+          "user": {
+            "_id": "66d30f5fad293ffc4b7672bc",
+            "avatarUrl": "/avatars/6f164d813b947940a088820f8fd4dbe8.svg",
+            "isPro": false,
+            "fullname": "Woongyeong Yeo",
+            "user": "wgcyeo",
+            "type": "user"
+          },
+          "name": "Woongyeong Yeo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T07:56:03.853Z",
+          "hidden": false
+        },
+        {
+          "_id": "6811966ae20ba7d0683b8add",
+          "user": {
+            "_id": "66ed7737f2f27a5dfd81ef09",
+            "avatarUrl": "/avatars/f45eea356e92ac7b3db23c2c92dec9fa.svg",
+            "isPro": false,
+            "fullname": "Kangsan Kim",
+            "user": "KangsanKim71",
+            "type": "user"
+          },
+          "name": "Kangsan Kim",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T07:56:00.948Z",
+          "hidden": false
+        },
+        {
+          "_id": "6811966ae20ba7d0683b8ade",
+          "name": "Soyeong Jeong",
+          "hidden": false
+        },
+        {
+          "_id": "6811966ae20ba7d0683b8adf",
+          "user": {
+            "_id": "63036b6c5c70c21d0ea79d48",
+            "avatarUrl": "/avatars/a7eb03f5cbd4eaa09fe807bbed8bc0f7.svg",
+            "isPro": false,
+            "fullname": "Jinheon Baek",
+            "user": "jinheon",
+            "type": "user"
+          },
+          "name": "Jinheon Baek",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T07:56:07.351Z",
+          "hidden": false
+        },
+        {
+          "_id": "6811966ae20ba7d0683b8ae0",
+          "name": "Sung Ju Hwang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T13:18:58.000Z",
+      "submittedOnDailyAt": "2025-04-30T01:50:28.624Z",
+      "title": "UniversalRAG: 多コーパス、多様なモデライズとグラニュラリティの間での検索アウゲーションラジエーション生成",
+      "submittedOnDailyBy": {
+        "_id": "66d30f5fad293ffc4b7672bc",
+        "avatarUrl": "/avatars/6f164d813b947940a088820f8fd4dbe8.svg",
+        "isPro": false,
+        "fullname": "Woongyeong Yeo",
+        "user": "wgcyeo",
+        "type": "user"
+      },
+      "summary": "レタイブレーディングアウガイネーション（RAG）は、モデルの回答を質問に関連する外部知識に基づき事実的な正確性を大幅に向上させる可能性を示しています。しかし、現在のRAGアプローチは主にテキストだけのコーパスに限定されており、最近の努力は画像や映像などの他のモデールにもRAGを拡張していますが、通常はモデール特有のコーパスで動作します。実世界的な質問は、一つの知識源では調べることができないような知識の種類が極めて広くあります。これに対して、我々は、多様なモデールと粒度の知識を検索し、統合するための新しいRAGフレームワーク「UniversalRAG」を紹介します。特に、すべてのモデールを一つの統合コーパスから得られる統一表現空間に強制し、モデール間の隙間を引き起こすことを観察した上で、最適なモデール特有のコーパスを動的に特定し、その中で特定の検索を実施するモデール選択機構を提案しています。また、モデールのより広い範囲で、各モデールを複数の粒度レベルに組み立て、質問の複雑さと範囲に合わせた調査を可能にします。UniversalRAGは8モデールを跨ぐ8ベンチマークで検証され、モデール特有のベースラインと統一ベースラインを上回る優れた性能を示しています。",
+      "upvotes": 37,
+      "discussionId": "6811966ae20ba7d0683b8b0e",
+      "projectPage": "https://universalrag.github.io",
+      "githubRepo": "https://github.com/wgcyeo/UniversalRAG",
+      "ai_keywords": [
+        "Retrieval-Augmented Generation (RAG)",
+        "factual accuracy",
+        "external knowledge",
+        "text-only corpus",
+        "modality-specific corpus",
+        "heterogenous sources",
+        "diverse modalities",
+        "granularities",
+        "modality gap",
+        "modality-aware routing mechanism",
+        "targeted retrieval",
+        "granularity levels",
+        "fine-tuned retrieval",
+        "multi-modal benchmarks",
+        "modality-specific baselines",
+        "unified baselines"
+      ]
+    },
+    "publishedAt": "2025-04-29T09:18:58.000Z",
+    "title": "UniversalRAG: Retrieval-Augmented Generation over Multiple Corpora with\n  Diverse Modalities and Granularities",
+    "summary": "Retrieval-Augmented Generation (RAG) has shown substantial promise in\nimproving factual accuracy by grounding model responses with external knowledge\nrelevant to queries. However, most existing RAG approaches are limited to a\ntext-only corpus, and while recent efforts have extended RAG to other\nmodalities such as images and videos, they typically operate over a single\nmodality-specific corpus. In contrast, real-world queries vary widely in the\ntype of knowledge they require, which a single type of knowledge source cannot\naddress. To address this, we introduce UniversalRAG, a novel RAG framework\ndesigned to retrieve and integrate knowledge from heterogeneous sources with\ndiverse modalities and granularities. Specifically, motivated by the\nobservation that forcing all modalities into a unified representation space\nderived from a single combined corpus causes a modality gap, where the\nretrieval tends to favor items from the same modality as the query, we propose\na modality-aware routing mechanism that dynamically identifies the most\nappropriate modality-specific corpus and performs targeted retrieval within it.\nAlso, beyond modality, we organize each modality into multiple granularity\nlevels, enabling fine-tuned retrieval tailored to the complexity and scope of\nthe query. We validate UniversalRAG on 8 benchmarks spanning multiple\nmodalities, showing its superiority over modality-specific and unified\nbaselines.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20734.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66d30f5fad293ffc4b7672bc",
+      "avatarUrl": "/avatars/6f164d813b947940a088820f8fd4dbe8.svg",
+      "fullname": "Woongyeong Yeo",
+      "name": "wgcyeo",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.20571",
+      "authors": [
+        {
+          "_id": "681187ddda5ce4cbd7556714",
+          "user": {
+            "_id": "653586fae778506c5b38a3f1",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/653586fae778506c5b38a3f1/GL_RShZhAkEZmIinA5_8E.jpeg",
+            "isPro": false,
+            "fullname": "Yiping Wang",
+            "user": "ypwang61",
+            "type": "user"
+          },
+          "name": "Yiping Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T09:58:59.486Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd7556715",
+          "user": {
+            "_id": "673a83b99e6f1c0d81a771fc",
+            "avatarUrl": "/avatars/f3d8e1bf7d4c36b21adee632ea12ffe0.svg",
+            "isPro": false,
+            "fullname": "Qing Yang",
+            "user": "hushqyang",
+            "type": "user"
+          },
+          "name": "Qing Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T07:56:17.953Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd7556716",
+          "user": {
+            "_id": "64a85e23b6512b8328f9d9e2",
+            "avatarUrl": "/avatars/4a6b35752d3f76cb03278f52b3b43426.svg",
+            "isPro": false,
+            "fullname": "Zhiyuan Zeng",
+            "user": "ZhiyuanZeng",
+            "type": "user"
+          },
+          "name": "Zhiyuan Zeng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T09:59:12.620Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd7556717",
+          "user": {
+            "_id": "63815eff4761ddfa00903762",
+            "avatarUrl": "/avatars/3419b239d42e091586f1c51b526d88e5.svg",
+            "isPro": false,
+            "fullname": "Liliang Ren",
+            "user": "renll",
+            "type": "user"
+          },
+          "name": "Liliang Ren",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T09:59:18.310Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd7556718",
+          "name": "Lucas Liu",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd7556719",
+          "user": {
+            "_id": "61942296d5c2ba6daa290357",
+            "avatarUrl": "/avatars/594021cc183c4922d48b46f43772a062.svg",
+            "isPro": false,
+            "fullname": "Baolin Peng",
+            "user": "Baolin",
+            "type": "user"
+          },
+          "name": "Baolin Peng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T09:59:45.735Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd755671a",
+          "name": "Hao Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd755671b",
+          "user": {
+            "_id": "6310493158d83e8f64dc8c55",
+            "avatarUrl": "/avatars/5f91ac4dfec0d6a5bf7bad6094f0fd0f.svg",
+            "isPro": false,
+            "fullname": "Xuehai He",
+            "user": "Xuehai",
+            "type": "user"
+          },
+          "name": "Xuehai He",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T09:59:52.344Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd755671c",
+          "user": {
+            "_id": "633523b131a2be3938ca1016",
+            "avatarUrl": "/avatars/06a18f80927289bb949d9f19ffdc4bda.svg",
+            "isPro": false,
+            "fullname": "Kuan Wang",
+            "user": "Keynes",
+            "type": "user"
+          },
+          "name": "Kuan Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T09:59:58.392Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd755671d",
+          "user": {
+            "_id": "641904caf9d6f1d772ec7af7",
+            "avatarUrl": "/avatars/4a63eac71eb30f70b1a0e9d4708f26c1.svg",
+            "isPro": false,
+            "fullname": "Jianfeng Gao",
+            "user": "wyngjf",
+            "type": "user"
+          },
+          "name": "Jianfeng Gao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:00:04.685Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd755671e",
+          "user": {
+            "_id": "64da876370446182be5b608d",
+            "avatarUrl": "/avatars/e412fdc71404ecdf638e416846e3ebfb.svg",
+            "isPro": false,
+            "fullname": "Weizhu Chen",
+            "user": "chenweizhu",
+            "type": "user"
+          },
+          "name": "Weizhu Chen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:00:10.823Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd755671f",
+          "user": {
+            "_id": "6463b2247572c66a8e625a57",
+            "avatarUrl": "/avatars/7722fb5649d42d966ce1e478946d5f8f.svg",
+            "isPro": false,
+            "fullname": "Wang",
+            "user": "Shuohang",
+            "type": "user"
+          },
+          "name": "Shuohang Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:00:19.855Z",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd7556720",
+          "name": "Simon Shaolei Du",
+          "hidden": false
+        },
+        {
+          "_id": "681187ddda5ce4cbd7556721",
+          "user": {
+            "_id": "6454c337a13edf669cd5d8ea",
+            "avatarUrl": "/avatars/a383a0dda7c2ef6a0d6c3c64651f42ff.svg",
+            "isPro": false,
+            "fullname": "Yelong Shen",
+            "user": "uuu6",
+            "type": "user"
+          },
+          "name": "Yelong Shen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:00:33.179Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T09:24:30.000Z",
+      "submittedOnDailyAt": "2025-04-30T00:46:23.617Z",
+      "title": "1ポイント学習例での大規模言語モデルの理由論学習",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "We show that reinforcement learning with verifiable reward using one training\nexample (1-shot RLVR) is effective in incentivizing the math reasoning\ncapabilities of large language models (LLMs). Applying RLVR to the base model\nQwen2.5-Math-1.5B, we identify a single example that elevates model performance\non MATH500 from 36.0% to 73.6%, and improves the average performance across six\ncommon mathematical reasoning benchmarks from 17.6% to 35.7%. This result\nmatches the performance obtained using the 1.2k DeepScaleR subset (MATH500:\n73.6%, average: 35.9%), which includes the aforementioned example. Similar\nsubstantial improvements are observed across various models (Qwen2.5-Math-7B,\nLlama3.2-3B-Instruct, DeepSeek-R1-Distill-Qwen-1.5B), RL algorithms (GRPO and\nPPO), and different math examples (many of which yield approximately 30% or\ngreater improvement on MATH500 when employed as a single training example). In\naddition, we identify some interesting phenomena during 1-shot RLVR, including\ncross-domain generalization, increased frequency of self-reflection, and\nsustained test performance improvement even after the training accuracy has\nsaturated, a phenomenon we term post-saturation generalization. Moreover, we\nverify that the effectiveness of 1-shot RLVR primarily arises from the policy\ngradient loss, distinguishing it from the \"grokking\" phenomenon. We also show\nthe critical role of promoting exploration (e.g., by adding entropy loss with\nan appropriate coefficient) in 1-shot RLVR training. As a bonus, we observe\nthat applying entropy loss alone, without any outcome reward, significantly\nenhances Qwen2.5-Math-1.5B's performance on MATH500 by 27.4%. These findings\ncan inspire future work on RLVR data efficiency and encourage a re-examination\nof both recent progress and the underlying mechanisms in RLVR. Our code, model,\nand data are open source at https://github.com/ypwang61/One-Shot-RLVR",
+      "upvotes": 30,
+      "discussionId": "681187ddda5ce4cbd7556754",
+      "ai_keywords": [
+        "reinforcement learning with verifiable reward (RLVR)",
+        "1-shot RLVR",
+        "large language models (LLMs)",
+        "Qwen2.5-Math-1.5B",
+        "MATH500",
+        "mathematical reasoning benchmarks",
+        "Qwen2.5-Math-7B",
+        "Llama3.2-3B-Instruct",
+        "DeepSeek-R1-Distill-Qwen-1.5B",
+        "GRPO",
+        "PPO",
+        "cross-domain generalization",
+        "self-reflection",
+        "post-saturation generalization",
+        "policy gradient loss",
+        "entropic exploration",
+        "entropy loss"
+      ]
+    },
+    "publishedAt": "2025-04-29T05:24:30.000Z",
+    "title": "Reinforcement Learning for Reasoning in Large Language Models with One\n  Training Example",
+    "summary": "We show that reinforcement learning with verifiable reward using one training\nexample (1-shot RLVR) is effective in incentivizing the math reasoning\ncapabilities of large language models (LLMs). Applying RLVR to the base model\nQwen2.5-Math-1.5B, we identify a single example that elevates model performance\non MATH500 from 36.0% to 73.6%, and improves the average performance across six\ncommon mathematical reasoning benchmarks from 17.6% to 35.7%. This result\nmatches the performance obtained using the 1.2k DeepScaleR subset (MATH500:\n73.6%, average: 35.9%), which includes the aforementioned example. Similar\nsubstantial improvements are observed across various models (Qwen2.5-Math-7B,\nLlama3.2-3B-Instruct, DeepSeek-R1-Distill-Qwen-1.5B), RL algorithms (GRPO and\nPPO), and different math examples (many of which yield approximately 30% or\ngreater improvement on MATH500 when employed as a single training example). In\naddition, we identify some interesting phenomena during 1-shot RLVR, including\ncross-domain generalization, increased frequency of self-reflection, and\nsustained test performance improvement even after the training accuracy has\nsaturated, a phenomenon we term post-saturation generalization. Moreover, we\nverify that the effectiveness of 1-shot RLVR primarily arises from the policy\ngradient loss, distinguishing it from the \"grokking\" phenomenon. We also show\nthe critical role of promoting exploration (e.g., by adding entropy loss with\nan appropriate coefficient) in 1-shot RLVR training. As a bonus, we observe\nthat applying entropy loss alone, without any outcome reward, significantly\nenhances Qwen2.5-Math-1.5B's performance on MATH500 by 27.4%. These findings\ncan inspire future work on RLVR data efficiency and encourage a re-examination\nof both recent progress and the underlying mechanisms in RLVR. Our code, model,\nand data are open source at https://github.com/ypwang61/One-Shot-RLVR",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20571.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6748
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.20595",
+      "authors": [
+        {
+          "_id": "68118a9f4570c2ba44bf4418",
+          "user": {
+            "_id": "6334a0bd31a2be3938c59537",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6334a0bd31a2be3938c59537/kSetFUWAmJbPQ1KSlNKBr.jpeg",
+            "isPro": false,
+            "fullname": "Rulin Shao",
+            "user": "rulins",
+            "type": "user"
+          },
+          "name": "Rulin Shao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:02:20.688Z",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf4419",
+          "user": {
+            "_id": "64ff618c35ec9717626d1431",
+            "avatarUrl": "/avatars/941befd75925d6b691133f84cce525f9.svg",
+            "isPro": false,
+            "fullname": "Rui Qiao",
+            "user": "volpato30",
+            "type": "user"
+          },
+          "name": "Rui Qiao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:02:05.204Z",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf441a",
+          "name": "Varsha Kishore",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf441b",
+          "user": {
+            "_id": "5f1eb362eec0ad2a071ad6e2",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/5f1eb362eec0ad2a071ad6e2/IXMYkYKuTwn6kBdWnQeeY.png",
+            "isPro": false,
+            "fullname": "Niklas Muennighoff",
+            "user": "Muennighoff",
+            "type": "user"
+          },
+          "name": "Niklas Muennighoff",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:02:27.811Z",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf441c",
+          "name": "Xi Victoria Lin",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf441d",
+          "name": "Daniela Rus",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf441e",
+          "name": "Bryan Kian Hsiang Low",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf441f",
+          "user": {
+            "_id": "63a76d0de27a6dbd485fe863",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a76d0de27a6dbd485fe863/qJJwHOuvyQGq1o0KscOF_.jpeg",
+            "isPro": false,
+            "fullname": "Sewon Min",
+            "user": "sewon",
+            "type": "user"
+          },
+          "name": "Sewon Min",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:01:46.233Z",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf4420",
+          "name": "Wen-tau Yih",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf4421",
+          "user": {
+            "_id": "641b4263abfce26bcf7b27de",
+            "avatarUrl": "/avatars/e91b4205e4f74b0dd8c333c23203a924.svg",
+            "isPro": false,
+            "fullname": "Pang Wei Koh",
+            "user": "pangwei",
+            "type": "user"
+          },
+          "name": "Pang Wei Koh",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:01:57.373Z",
+          "hidden": false
+        },
+        {
+          "_id": "68118a9f4570c2ba44bf4422",
+          "name": "Luke Zettlemoyer",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T09:49:28.000Z",
+      "submittedOnDailyAt": "2025-04-30T00:58:16.950Z",
+      "title": "ReasonIR: 理由IRのトレーニングをサポートする検索ツールの開発",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "ReasonIR-8Bは、一般的な理由論的タスクに特に訓練された最初のリテラーです。現在のリテラーは、理由論的タスクに限らず、理由論的タスクにおいては限られた効果を示しています。現在の訓練データセットは、文書に対して直接的に答える簡単な事実的なクエリに集中しています。我々は、1つの文書に対して、難しいかつ関連性のあるクエリを生成し、関連性のあるが最終的に役に立たない難しい負の例を含むシンテティックデータ生成パイプラインを開発しました。このパイプラインを用いた合成データと現在の公開データの混雑での訓練により、ReasonIR-8Bは、BRIGHTという広く使用される理由論的な情報検索ベンチマークでは、rerankerを使用しない場合でも29.9のnDCG@10、rerankerを使用する場合でも36.9のnDCG@10の新たな最先端レベルを達成しました。RAGタスクに適用されると、ReasonIR-8Bは、閉じたブックベースラインに対するMMLUとGPQAの性能を6.4%と22.6%それぞれ向上させ、他のリテラーや検索エンジンを競うことができます。また、ReasonIR-8Bはテスト時の計算をより効率的に使用します：BRIGHTでは、長いや情報豊富な再書きのクエリを使用すると性能が一貫して向上し、LLM rerankerと組み合わせると他のリテラーを競うことができます。我々の訓練ドリーミングは一般的で、将来のLLMにも簡単に拡張できます。このため、我々はコード、データ、モデルをオープンソース化します。",
+      "upvotes": 22,
+      "discussionId": "68118aa44570c2ba44bf457b",
+      "ai_keywords": [
+        "retriever",
+        "ReasonIR-8B",
+        "general reasoning tasks",
+        "synthetic data generation pipeline",
+        "hard negative",
+        "nDCG@10",
+        "BRIGHT",
+        "information retrieval (IR) benchmark",
+        "RAG tasks",
+        "MMLU",
+        "GPQA",
+        "closed-book baseline",
+        "LLM reranker",
+        "test-time compute",
+        "rewritten queries",
+        "LLM"
+      ]
+    },
+    "publishedAt": "2025-04-29T05:49:28.000Z",
+    "title": "ReasonIR: Training Retrievers for Reasoning Tasks",
+    "summary": "We present ReasonIR-8B, the first retriever specifically trained for general\nreasoning tasks. Existing retrievers have shown limited gains on reasoning\ntasks, in part because existing training datasets focus on short factual\nqueries tied to documents that straightforwardly answer them. We develop a\nsynthetic data generation pipeline that, for each document, our pipeline\ncreates a challenging and relevant query, along with a plausibly related but\nultimately unhelpful hard negative. By training on a mixture of our synthetic\ndata and existing public data, ReasonIR-8B achieves a new state-of-the-art of\n29.9 nDCG@10 without reranker and 36.9 nDCG@10 with reranker on BRIGHT, a\nwidely-used reasoning-intensive information retrieval (IR) benchmark. When\napplied to RAG tasks, ReasonIR-8B improves MMLU and GPQA performance by 6.4%\nand 22.6% respectively, relative to the closed-book baseline, outperforming\nother retrievers and search engines. In addition, ReasonIR-8B uses test-time\ncompute more effectively: on BRIGHT, its performance consistently increases\nwith longer and more information-rich rewritten queries; it continues to\noutperform other retrievers when combined with an LLM reranker. Our training\nrecipe is general and can be easily extended to future LLMs; to this end, we\nopen-source our code, data, and model.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20595.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6748
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.20157",
+      "authors": [
+        {
+          "_id": "68119750ff0764f3840a7f93",
+          "user": {
+            "_id": "61e0c5053a1781f66b4e9aed",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1642120523097-61e0c5053a1781f66b4e9aed.jpeg",
+            "isPro": false,
+            "fullname": "Zae Myung Kim",
+            "user": "zaemyung",
+            "type": "user"
+          },
+          "name": "Zae Myung Kim",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T07:55:58.262Z",
+          "hidden": false
+        },
+        {
+          "_id": "68119750ff0764f3840a7f94",
+          "name": "Chanwoo Park",
+          "hidden": false
+        },
+        {
+          "_id": "68119750ff0764f3840a7f95",
+          "user": {
+            "_id": "60985a0547dc3dbf8a976607",
+            "avatarUrl": "/avatars/3c37bf4b7c9db83a46af7c473ee4eb86.svg",
+            "isPro": false,
+            "fullname": "Vipul Raheja",
+            "user": "machineteacher",
+            "type": "user"
+          },
+          "name": "Vipul Raheja",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:03:14.631Z",
+          "hidden": false
+        },
+        {
+          "_id": "68119750ff0764f3840a7f96",
+          "user": {
+            "_id": "64356b40a4bd75c62cbc5926",
+            "avatarUrl": "/avatars/5f4c603464e9c8ad613a3a25fa4cacbf.svg",
+            "isPro": false,
+            "fullname": "Dongyeop Kang",
+            "user": "dykang",
+            "type": "user"
+          },
+          "name": "Dongyeop Kang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:03:26.612Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6434b6619bd5a84b5dcfa4de/tHS8gWUK0ptmNTs6lZck6.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6434b6619bd5a84b5dcfa4de/uMD9av8pogPwYTW-KNFJ2.png"
+      ],
+      "publishedAt": "2025-04-28T18:02:35.000Z",
+      "submittedOnDailyAt": "2025-04-30T02:04:16.540Z",
+      "title": "「評価的思考への向け方：変化する報酬モデルを持つメタポリシー最適化」",
+      "submittedOnDailyBy": {
+        "_id": "6434b6619bd5a84b5dcfa4de",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6434b6619bd5a84b5dcfa4de/h8Q6kPNjFNc03wmdboHzq.jpeg",
+        "isPro": true,
+        "fullname": "Young-Jun Lee",
+        "user": "passing2961",
+        "type": "user"
+      },
+      "summary": "大語言モデル（LLMs）の報酬基準のアライメント方法において、2つの主な制限がある：報酬信号の悪い点を利用した報酬ハッキングの脆弱性と、LLMsを報酬モデルとして使用する際の脆弱な、労働費用の高いプロンプトエンジニアリングの依存性。私たちは、学習の過程中に報酬モデルのプロンプトを動的に補正するメタ報酬モデルを組み込み、これらの挑戦を解決するメタポリシー最適化（MPO）フレームワークを紹介する。MPOでは、メタ報酬モデルは変化する学習コンテキストを観測し、報酬モデルのプロンプトを継続的に調整し、高いアライメントを維持し、政策が採用することを防ぐ適応的な報酬信号を提供する。このメタ学習アプローチは、より安定した政策最適化を促進し、手動での報酬プロンプトの設計の必要性を大幅に減少する。この方法は、極めて手作りの報酬プロンプトをガイドするモデルと比較して、同等またはより良い性能を示す。また、MPOは、問題解決と数学的な理由のような多様なタスクでも効果的であり、特設の報酬デザインが不要であることを示す。標準のRLAIFよりも、MPOのメタ学習の構成は、高レベルのアライメントフレームワークに容易に拡張できる。全体として、この方法は、LLMsの報酬基準のRLアライメントにおける理論的と実用的な挑戦を解決し、より強固で適応性のあるアライメント戦略を導入することを許可する。コードとモデルは公開的に共有される。",
+      "upvotes": 17,
+      "discussionId": "68119751ff0764f3840a7fc5",
+      "ai_keywords": [
+        "Meta Policy Optimization (MPO)",
+        "meta-reward model",
+        "reward hacking",
+        "prompt engineering",
+        "policy optimization",
+        "adaptive reward signal",
+        "meta-learning approach",
+        "prompt design",
+        "reward-based RL alignment",
+        "question answering",
+        "mathematical reasoning"
+      ]
+    },
+    "publishedAt": "2025-04-28T14:02:35.000Z",
+    "title": "Toward Evaluative Thinking: Meta Policy Optimization with Evolving\n  Reward Models",
+    "summary": "Reward-based alignment methods for large language models (LLMs) face two key\nlimitations: vulnerability to reward hacking, where models exploit flaws in the\nreward signal; and reliance on brittle, labor-intensive prompt engineering when\nLLMs are used as reward models. We introduce Meta Policy Optimization (MPO), a\nframework that addresses these challenges by integrating a meta-reward model\nthat dynamically refines the reward model's prompt throughout training. In MPO,\nthe meta-reward model monitors the evolving training context and continuously\nadjusts the reward model's prompt to maintain high alignment, providing an\nadaptive reward signal that resists exploitation by the policy. This\nmeta-learning approach promotes a more stable policy optimization, and greatly\nreduces the need for manual reward prompt design. It yields performance on par\nwith or better than models guided by extensively hand-crafted reward prompts.\nFurthermore, we show that MPO maintains its effectiveness across diverse tasks,\nsuch as question answering and mathematical reasoning, without requiring\nspecialized reward designs. Beyond standard RLAIF, MPO's meta-learning\nformulation is readily extensible to higher-level alignment frameworks.\nOverall, this method addresses theoretical and practical challenges in\nreward-based RL alignment for LLMs, paving the way for more robust and\nadaptable alignment strategies. The code and models will be publicly shared.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6434b6619bd5a84b5dcfa4de/tHS8gWUK0ptmNTs6lZck6.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/6434b6619bd5a84b5dcfa4de/uMD9av8pogPwYTW-KNFJ2.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20157.png",
+    "numComments": 6,
+    "submittedBy": {
+      "_id": "6434b6619bd5a84b5dcfa4de",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6434b6619bd5a84b5dcfa4de/h8Q6kPNjFNc03wmdboHzq.jpeg",
+      "fullname": "Young-Jun Lee",
+      "name": "passing2961",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.20995",
+      "authors": [
+        {
+          "_id": "68118c049c2765c9323de70b",
+          "user": {
+            "_id": "6437c7dae282b4a48eaf065e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6437c7dae282b4a48eaf065e/AxodKQXyrviTFQRyjnL01.jpeg",
+            "isPro": false,
+            "fullname": "Haoyu Zhen",
+            "user": "anyeZHY",
+            "type": "user"
+          },
+          "name": "Haoyu Zhen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:04:19.238Z",
+          "hidden": false
+        },
+        {
+          "_id": "68118c049c2765c9323de70c",
+          "name": "Qiao Sun",
+          "hidden": false
+        },
+        {
+          "_id": "68118c049c2765c9323de70d",
+          "name": "Hongxin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68118c049c2765c9323de70e",
+          "name": "Junyan Li",
+          "hidden": false
+        },
+        {
+          "_id": "68118c049c2765c9323de70f",
+          "name": "Siyuan Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "68118c049c2765c9323de710",
+          "user": {
+            "_id": "63c9bd445fdc575773c732fe",
+            "avatarUrl": "/avatars/def472d1ab3fbf751225357c0932ae7e.svg",
+            "isPro": false,
+            "fullname": "Yilun Du",
+            "user": "yilundu",
+            "type": "user"
+          },
+          "name": "Yilun Du",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-04-30T10:03:42.041Z",
+          "hidden": false
+        },
+        {
+          "_id": "68118c049c2765c9323de711",
+          "name": "Chuang Gan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T17:59:30.000Z",
+      "submittedOnDailyAt": "2025-04-30T01:05:28.658Z",
+      "title": "TesserAct: 4次元ボディーモデルの学習",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "この論文では、新しい4次元の具象化世界モデルの学習に効果的なアプローチを提案します。これは、具象化アグエントの行動に対して3次元スペースの動的な進化を予測し、空間的かつ時間的な一貫性を提供します。私たちは、RGB-DN（RGB、デプス、ノルマル）ビデオを用いて4次元の世界モデルを学習することを提案します。これは、詳細な形状、構造、時間的変化をモデルの予測に含め、その上で具象化アグエントの逆動力学モデルを正確に学習することができます。特に、私たちは、オフショッルショートモデルを利用して、既存のロボット操作ビデオデータセットにデプスおよびノルマル情報を追加します。次に、このデータセットを用いて、RGB-DN（RGB、デプス、ノルマル）の予測を共に行うビデオ生成モデルを微調節します。そして、生成されたRGB、デプス、ノルマルビデオを高品質な4次元世界に直接変換するアルゴリズムを提案します。私たちの方法は、具象化スケーナriosからの4次元スペースの予測で時間的かつ空間的な一貫性を確保し、具象化環境の新視点合成を可能にし、先行のビデオベースの世界モデルから得られるものを大幅に超える策略学習を促進します。",
+      "upvotes": 9,
+      "discussionId": "68118c089c2765c9323de81d",
+      "ai_keywords": [
+        "embodied world models",
+        "4D world models",
+        "RGB-DN (RGB, Depth, and Normal) videos",
+        "video generation model",
+        "inverse dynamic models",
+        "robotic manipulation video datasets",
+        "temporal coherence",
+        "spatial coherence",
+        "novel view synthesis",
+        "policy learning"
+      ]
+    },
+    "publishedAt": "2025-04-29T13:59:30.000Z",
+    "title": "TesserAct: Learning 4D Embodied World Models",
+    "summary": "This paper presents an effective approach for learning novel 4D embodied\nworld models, which predict the dynamic evolution of 3D scenes over time in\nresponse to an embodied agent's actions, providing both spatial and temporal\nconsistency. We propose to learn a 4D world model by training on RGB-DN (RGB,\nDepth, and Normal) videos. This not only surpasses traditional 2D models by\nincorporating detailed shape, configuration, and temporal changes into their\npredictions, but also allows us to effectively learn accurate inverse dynamic\nmodels for an embodied agent. Specifically, we first extend existing robotic\nmanipulation video datasets with depth and normal information leveraging\noff-the-shelf models. Next, we fine-tune a video generation model on this\nannotated dataset, which jointly predicts RGB-DN (RGB, Depth, and Normal) for\neach frame. We then present an algorithm to directly convert generated RGB,\nDepth, and Normal videos into a high-quality 4D scene of the world. Our method\nensures temporal and spatial coherence in 4D scene predictions from embodied\nscenarios, enables novel view synthesis for embodied environments, and\nfacilitates policy learning that significantly outperforms those derived from\nprior video-based world models.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20995.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6748
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.16046",
+      "authors": [
+        {
+          "_id": "68119c70e8a3493171fadce2",
+          "user": {
+            "_id": "62fb40b59af1d16bc0ac60f4",
+            "avatarUrl": "/avatars/03ff66a419db8f2bc8e89a3b47aaaeac.svg",
+            "isPro": false,
+            "fullname": "Jack Zhang",
+            "user": "jackzhang",
+            "type": "user"
+          },
+          "name": "Jingyu Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T07:55:55.481Z",
+          "hidden": false
+        },
+        {
+          "_id": "68119c70e8a3493171fadce3",
+          "name": "Jiacan Yu",
+          "hidden": false
+        },
+        {
+          "_id": "68119c70e8a3493171fadce4",
+          "name": "Marc Marone",
+          "hidden": false
+        },
+        {
+          "_id": "68119c70e8a3493171fadce5",
+          "name": "Benjamin Van Durme",
+          "hidden": false
+        },
+        {
+          "_id": "68119c70e8a3493171fadce6",
+          "name": "Daniel Khashabi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-22T17:16:53.000Z",
+      "submittedOnDailyAt": "2025-04-30T02:15:12.625Z",
+      "title": "Certified ワーストケース LLM 著作権侵害の軽減",
+      "submittedOnDailyBy": {
+        "_id": "62fb40b59af1d16bc0ac60f4",
+        "avatarUrl": "/avatars/03ff66a419db8f2bc8e89a3b47aaaeac.svg",
+        "isPro": false,
+        "fullname": "Jack Zhang",
+        "user": "jackzhang",
+        "type": "user"
+      },
+      "summary": "大語言モデル（LLMs）の予約訓練期間に版権記念資料の暴露により、部署後で無意識的な版権侵害に関する懸念が生じています。これにより、「版権取り消し」メソッドの開発が進められ、モデルが版権記念資料に似た内容を生成することを防ぐための後編訓練アプローチが開発されました。現在の補償アプローチは平均的なリスクに対してはそれほど有効であるものの、モデルが長い、原文の引用を含んだ最悪の版権リスクを見逃していることが明らかになりました。ここで、BloomScrubという、ほんとうに簡単であるが非常に効果的な推論時のアプローチを提案します。この方法では、引用検出と書き換え手法を繰り返し交じり、潜在的に侵害しているセグメントを変形します。効率的なデータスキャップ（Bloomフィルタ）を活用し、このアプローチは大規模な実世界的なコーパスに対してもスケーラブルな版権スクリーニングを可能にします。引用の長さが閾値を超える場合、システムは回答を拒否することができ、確認可能なリスクの減少を提供します。実験結果から、BloomScrubは侵害リスクを減らし、ユーティリティを保持し、適応的な拒否を通じて強制のレベルを揃えることができます。この結果から、軽量な推論時の方法は、版権の防止にもっとも驚きのある効果を示すことがわかります。",
+      "upvotes": 7,
+      "discussionId": "68119c70e8a3493171fadd11",
+      "ai_keywords": [
+        "BloomScrub",
+        "Bloom filters",
+        "quotation detection",
+        "rewriting techniques",
+        "copyright screening",
+        "adaptive abstention"
+      ]
+    },
+    "publishedAt": "2025-04-22T13:16:53.000Z",
+    "title": "Certified Mitigation of Worst-Case LLM Copyright Infringement",
+    "summary": "The exposure of large language models (LLMs) to copyrighted material during\npre-training raises concerns about unintentional copyright infringement post\ndeployment. This has driven the development of \"copyright takedown\" methods,\npost-training approaches aimed at preventing models from generating content\nsubstantially similar to copyrighted ones. While current mitigation approaches\nare somewhat effective for average-case risks, we demonstrate that they\noverlook worst-case copyright risks exhibits by the existence of long, verbatim\nquotes from copyrighted sources. We propose BloomScrub, a remarkably simple yet\nhighly effective inference-time approach that provides certified copyright\ntakedown. Our method repeatedly interleaves quote detection with rewriting\ntechniques to transform potentially infringing segments. By leveraging\nefficient data sketches (Bloom filters), our approach enables scalable\ncopyright screening even for large-scale real-world corpora. When quotes beyond\na length threshold cannot be removed, the system can abstain from responding,\noffering certified risk reduction. Experimental results show that BloomScrub\nreduces infringement risk, preserves utility, and accommodates different levels\nof enforcement stringency with adaptive abstention. Our results suggest that\nlightweight, inference-time methods can be surprisingly effective for copyright\nprevention.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.16046.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62fb40b59af1d16bc0ac60f4",
+      "avatarUrl": "/avatars/03ff66a419db8f2bc8e89a3b47aaaeac.svg",
+      "fullname": "Jack Zhang",
+      "name": "jackzhang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.20998",
+      "authors": [
+        {
+          "_id": "6811899ba6198824c5589ed7",
+          "name": "Thao Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "6811899ba6198824c5589ed8",
+          "name": "Krishna Kumar Singh",
+          "hidden": false
+        },
+        {
+          "_id": "6811899ba6198824c5589ed9",
+          "name": "Jing Shi",
+          "hidden": false
+        },
+        {
+          "_id": "6811899ba6198824c5589eda",
+          "name": "Trung Bui",
+          "hidden": false
+        },
+        {
+          "_id": "6811899ba6198824c5589edb",
+          "name": "Yong Jae Lee",
+          "hidden": false
+        },
+        {
+          "_id": "6811899ba6198824c5589edc",
+          "name": "Yuheng Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T17:59:57.000Z",
+      "submittedOnDailyAt": "2025-04-30T00:54:06.806Z",
+      "title": "YoChameleon: 個人化ビジョンと言語生成",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "大規模多模態モデル（例：GPT-4、Gemini、Chameleon）は、数百万人のユーザーを持つ強力なツールとして進化しています。しかし、それらはジャンプ的なモデルであり、特定のユーザーの概念に関する個別化された知識を持っていません。先行研究は、テキスト生成の個別化について調査しましたが、これらの方法が新しいモデライズ（例：画像生成）にどのように適用できるかは明確ではありません。本論文では、大規模多模態モデルの個別化について研究する最初の試みを紹介します。特定の概念の3〜5枚の画像を与えると、Yo'Chameleonはソフトプロンプトチューニングを利用して、特定の主題に関連する情報を埋め込み、主題に関する問い合わせを答えることと、新しいコンテキストでの主題の画像の生成を行います。Yo'Chameleonは、モデルの性能の平衡を保ち、複数のモデライズにおいて効果的であるための自動プロンプティング最適化機構と、「ソフトポジティブ」画像生成アプローチを用いて、少ショット設定で画像の質を向上させるために訓練されています。",
+      "upvotes": 6,
+      "discussionId": "6811899ca6198824c5589f45",
+      "ai_keywords": [
+        "soft-prompt tuning",
+        "subject-specific information",
+        "self-prompting optimization mechanism",
+        "soft-positive image generation approach"
+      ]
+    },
+    "publishedAt": "2025-04-29T13:59:57.000Z",
+    "title": "YoChameleon: Personalized Vision and Language Generation",
+    "summary": "Large Multimodal Models (e.g., GPT-4, Gemini, Chameleon) have evolved into\npowerful tools with millions of users. However, they remain generic models and\nlack personalized knowledge of specific user concepts. Previous work has\nexplored personalization for text generation, yet it remains unclear how these\nmethods can be adapted to new modalities, such as image generation. In this\npaper, we introduce Yo'Chameleon, the first attempt to study personalization\nfor large multimodal models. Given 3-5 images of a particular concept,\nYo'Chameleon leverages soft-prompt tuning to embed subject-specific information\nto (i) answer questions about the subject and (ii) recreate pixel-level details\nto produce images of the subject in new contexts. Yo'Chameleon is trained with\n(i) a self-prompting optimization mechanism to balance performance across\nmultiple modalities, and (ii) a ``soft-positive\" image generation approach to\nenhance image quality in a few-shot setting.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20998.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6748
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.20879",
+      "authors": [
+        {
+          "_id": "6811ae6b7f4f553788e905b8",
+          "name": "Shivalika Singh",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905b9",
+          "name": "Yiyang Nan",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905ba",
+          "name": "Alex Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905bb",
+          "name": "Daniel D'Souza",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905bc",
+          "name": "Sayash Kapoor",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905bd",
+          "name": "Ahmet Üstün",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905be",
+          "name": "Sanmi Koyejo",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905bf",
+          "user": {
+            "_id": "63081e15a670ed10f9d44229",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63081e15a670ed10f9d44229/w1b9uq-9774bMMgJbSPsS.jpeg",
+            "isPro": true,
+            "fullname": "Yuntian Deng",
+            "user": "yuntian-deng",
+            "type": "user"
+          },
+          "name": "Yuntian Deng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T09:56:42.033Z",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905c0",
+          "name": "Shayne Longpre",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905c1",
+          "name": "Noah Smith",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905c2",
+          "name": "Beyza Ermis",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905c3",
+          "name": "Marzieh Fadaee",
+          "hidden": false
+        },
+        {
+          "_id": "6811ae6b7f4f553788e905c4",
+          "name": "Sara Hooker",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T15:48:49.000Z",
+      "submittedOnDailyAt": "2025-04-30T03:36:53.331Z",
+      "title": "The Leaderboard Illusion\n\nリーダブー幻想",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "進歩の評価は、どの科学分野も進展の基盤となっています。ベンチマークが中心的な役割を果たすことになるにつれて、それらは歪みに脆弱です。Chatbot Arenaは、最も能力の高いAIシステムをランキングするためのプライマリーのリーダボードとして立ち上がりました。しかし、この研究では、歪みの原因となっている体系的な問題を見出しました。私たちは、非公開テストプラクティスが一部の提供者に利またせ、公開リリース前に複数のバリエントをテストし、必要に応じてスコアを引き戻すことができることを見出しました。私たちは、これらの提供者が最も良いスコアを選択する能力が、選択的な公開による偏りのあるArenaスコアを生み出すことを明らかにしました。極端な場合、MetaがLlama-4リリース前にテストした27つの非公開LLMバリエントを見出しました。また、非公開モデルは、公開モデルやオープンソースのものよりも、バトル数が高く、オープンウェイトとオープンソースのモデルがArenaから削除されることが少ないことを明らかにしました。これらの政策は、時間の経過によって大きなデータアクセスの不平等を生み出します。GoogleとOpenAIのような提供者は、Arena上の全データの約19.2%と20.4%を受け取りました。一方、83つの公開モデルは、約29.7%のデータを受け取りました。私たちは、Chatbot Arenaデータのアクセスが大きな利益を与えることを示し、私たちの保守的な推定に基づいて、相対的な性能の向上が112%まで見出しました。これらの動態は、Arenaの特定の動態に過学習し、一般的なモデルの品質に対しては効果が低くなることを示します。Arenaは、組織者たちとそのプライベートコミュニティが維持している有價値な評価プラットフォームに基づいて構築されています。私たちは、Chatbot Arenaの評価フレームワークの改革と、さらに公平かつ透明なベンチマークの推進に対する具体的な実行可能なリカンダスを提供します。",
+      "upvotes": 6,
+      "discussionId": "6811ae6c7f4f553788e905fc"
+    },
+    "publishedAt": "2025-04-29T11:48:49.000Z",
+    "title": "The Leaderboard Illusion",
+    "summary": "Measuring progress is fundamental to the advancement of any scientific field.\nAs benchmarks play an increasingly central role, they also grow more\nsusceptible to distortion. Chatbot Arena has emerged as the go-to leaderboard\nfor ranking the most capable AI systems. Yet, in this work we identify\nsystematic issues that have resulted in a distorted playing field. We find that\nundisclosed private testing practices benefit a handful of providers who are\nable to test multiple variants before public release and retract scores if\ndesired. We establish that the ability of these providers to choose the best\nscore leads to biased Arena scores due to selective disclosure of performance\nresults. At an extreme, we identify 27 private LLM variants tested by Meta in\nthe lead-up to the Llama-4 release. We also establish that proprietary closed\nmodels are sampled at higher rates (number of battles) and have fewer models\nremoved from the arena than open-weight and open-source alternatives. Both\nthese policies lead to large data access asymmetries over time. Providers like\nGoogle and OpenAI have received an estimated 19.2% and 20.4% of all data on the\narena, respectively. In contrast, a combined 83 open-weight models have only\nreceived an estimated 29.7% of the total data. We show that access to Chatbot\nArena data yields substantial benefits; even limited additional data can result\nin relative performance gains of up to 112% on the arena distribution, based on\nour conservative estimates. Together, these dynamics result in overfitting to\nArena-specific dynamics rather than general model quality. The Arena builds on\nthe substantial efforts of both the organizers and an open community that\nmaintains this valuable evaluation platform. We offer actionable\nrecommendations to reform the Chatbot Arena's evaluation framework and promote\nfairer, more transparent benchmarking for the field",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20879.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 77
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.20630",
+      "authors": [
+        {
+          "_id": "6811ea47f8ca0d9acb45374b",
+          "user": {
+            "_id": "66569729ea21cfae5f5797c4",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66569729ea21cfae5f5797c4/IguwJzljFN3QiEd1bn5BP.jpeg",
+            "isPro": false,
+            "fullname": "Yu Zhang",
+            "user": "AaronZ345",
+            "type": "user"
+          },
+          "name": "Yu Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T09:56:39.194Z",
+          "hidden": false
+        },
+        {
+          "_id": "6811ea47f8ca0d9acb45374c",
+          "name": "Wenxiang Guo",
+          "hidden": false
+        },
+        {
+          "_id": "6811ea47f8ca0d9acb45374d",
+          "name": "Changhao Pan",
+          "hidden": false
+        },
+        {
+          "_id": "6811ea47f8ca0d9acb45374e",
+          "name": "Zhiyuan Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "6811ea47f8ca0d9acb45374f",
+          "name": "Tao Jin",
+          "hidden": false
+        },
+        {
+          "_id": "6811ea47f8ca0d9acb453750",
+          "name": "Zhou Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T10:56:44.000Z",
+      "submittedOnDailyAt": "2025-04-30T07:54:10.120Z",
+      "title": "ISDrama: 浸透スペクトラルドラマの生成を多モーダルプロンプティングによって",
+      "submittedOnDailyBy": {
+        "_id": "66569729ea21cfae5f5797c4",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66569729ea21cfae5f5797c4/IguwJzljFN3QiEd1bn5BP.jpeg",
+        "isPro": false,
+        "fullname": "Yu Zhang",
+        "user": "AaronZ345",
+        "type": "user"
+      },
+      "summary": "マルチモーダル浸潤スペースドラマ生成は、多様なプロンプトに基づいてデラマ的なプロサディオを含む連続的なマルチスピーカービノアルバイアルスピーチを生成することを焦点としています。このタスクは、スペース情報とデラマ的プロサディオの同時的なモデリングを行うことに必要であり、高いデータ収集コストが伴います。私たちの知識の限り、私たちの仕事はこれらの課題を解決する最初の試みであると考えられています。私たちは、最初のマルチモーダル記録されたスペースドラマデータセット「MRSDrama」を構築しました。このデータセットは、ビノアルバイアルドラマ音声、スクリプト、ビデオ、ジェオメトリポーズ、および文字列プロンプトを含みます。次に、私たちは、マルチモーダルプロンプティングを通じた最初の浸潤スペースドラマ生成モデル「ISDrama」を提案しました。ISDramaは以下の主要な構成要素を含みます：\n\n1) マルチモーダルポーズエンコーダー：対比的学習に基づいて、移動するスピーカーによるドフラップ効果を考慮し、マルチモーダルプロンプトから統一的なポーズ情報を抽出する。\n2) 浸潤ドラマトランスフォーマー：フローベースのマンダバー・トランスフォーマーモデルで、ドラマモーエ（Drama-MOE）を用いて、プロサディオとポーズの制御を強化するために適切なエキスプターを選択し、高品質のドラマを生成する。\nまた、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コンテキストの一貫性を確保するために、コ",
+      "upvotes": 3,
+      "discussionId": "6811ea48f8ca0d9acb4537cf",
+      "projectPage": "https://aaronz345.github.io/ISDramaDemo/",
+      "ai_keywords": [
+        "multimodal inputs",
+        "binaural speech",
+        "dramatic prosody",
+        "multimodal prompts",
+        "multimodal recorded dataset",
+        "contrastive learning",
+        "Doppler effect",
+        "Multimodal Pose Encoder",
+        "flow-based model",
+        "mamba-transformer",
+        "Drama-MOE",
+        "classifier-free guidance",
+        "context-consistent guidance"
+      ]
+    },
+    "publishedAt": "2025-04-29T06:56:44.000Z",
+    "title": "ISDrama: Immersive Spatial Drama Generation through Multimodal Prompting",
+    "summary": "Multimodal immersive spatial drama generation focuses on creating continuous\nmulti-speaker binaural speech with dramatic prosody based on multimodal\nprompts, with potential applications in AR, VR, and others. This task requires\nsimultaneous modeling of spatial information and dramatic prosody based on\nmultimodal inputs, with high data collection costs. To the best of our\nknowledge, our work is the first attempt to address these challenges. We\nconstruct MRSDrama, the first multimodal recorded spatial drama dataset,\ncontaining binaural drama audios, scripts, videos, geometric poses, and textual\nprompts. Then, we propose ISDrama, the first immersive spatial drama generation\nmodel through multimodal prompting. ISDrama comprises these primary components:\n1) Multimodal Pose Encoder, based on contrastive learning, considering the\nDoppler effect caused by moving speakers to extract unified pose information\nfrom multimodal prompts. 2) Immersive Drama Transformer, a flow-based\nmamba-transformer model that generates high-quality drama, incorporating\nDrama-MOE to select proper experts for enhanced prosody and pose control. We\nalso design a context-consistent classifier-free guidance strategy to\ncoherently generate complete drama. Experimental results show that ISDrama\noutperforms baseline models on objective and subjective metrics. The demos and\ndataset are available at https://aaronz345.github.io/ISDramaDemo.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20630.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66569729ea21cfae5f5797c4",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66569729ea21cfae5f5797c4/IguwJzljFN3QiEd1bn5BP.jpeg",
+      "fullname": "Yu Zhang",
+      "name": "AaronZ345",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.20996",
+      "authors": [
+        {
+          "_id": "6811c55384adfa26b82abd76",
+          "name": "Sicheng Mo",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd77",
+          "name": "Thao Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd78",
+          "name": "Xun Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd79",
+          "name": "Siddharth Srinivasan Iyer",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd7a",
+          "name": "Yijun Li",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd7b",
+          "name": "Yuchen Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd7c",
+          "name": "Abhishek Tandon",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd7d",
+          "name": "Eli Shechtman",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd7e",
+          "name": "Krishna Kumar Singh",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd7f",
+          "name": "Yong Jae Lee",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd80",
+          "name": "Bolei Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6811c55384adfa26b82abd81",
+          "name": "Yuheng Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T17:59:45.000Z",
+      "submittedOnDailyAt": "2025-04-30T05:08:54.031Z",
+      "title": "X-Fusion: 冻結された大規模言語モデルに新しいモデルテーターを紹介する",
+      "submittedOnDailyBy": {
+        "_id": "637c94d3f219c71f93eda9ad",
+        "avatarUrl": "/avatars/6dae0c30755196ccc0a5a06b3981c47f.svg",
+        "isPro": false,
+        "fullname": "Sicheng Mo",
+        "user": "Sichengmo",
+        "type": "user"
+      },
+      "summary": "X-Fusionは、多モデルタスクに対して拡張された学習済み大語言モデル（LLMs）のフレームワークですが、その言語能力を保持します。X-Fusionは、モデルタイプに関連付けられた重みを持つダブルタワーデザインを使用し、LLMのパラメーターを固定しながら、理解と生成に必要な画像の特定の情報を統合します。実験により、X-Fusionは画像から文と文から画像への両方のタスクで、代替的なアーキテクチャよりも一貫的に優れていることが示されます。理解を焦点とするデータの挿入は生成の品質を改善し、画像データのノイズの減少は全体の性能を向上させ、特徴量のアライメントは小さなモデルの収束を加速しますが、大きなモデルに対しては最小限の影響を持ちます。これらの発見は、効率的な統合された多モデルモデルの構築において有價値なフィードバックを提供します。",
+      "upvotes": 2,
+      "discussionId": "6811c55584adfa26b82abdfe",
+      "projectPage": "https://sichengmo.github.io/XFusion/",
+      "ai_keywords": [
+        "Large Language Models (LLMs)",
+        "multimodal tasks",
+        "dual-tower design",
+        "modality-specific weights",
+        "vision-specific information",
+        "image-to-text",
+        "text-to-image",
+        "understanding-focused data",
+        "feature alignment",
+        "unified multimodal models"
+      ]
+    },
+    "publishedAt": "2025-04-29T13:59:45.000Z",
+    "title": "X-Fusion: Introducing New Modality to Frozen Large Language Models",
+    "summary": "We propose X-Fusion, a framework that extends pretrained Large Language\nModels (LLMs) for multimodal tasks while preserving their language\ncapabilities. X-Fusion employs a dual-tower design with modality-specific\nweights, keeping the LLM's parameters frozen while integrating vision-specific\ninformation for both understanding and generation. Our experiments demonstrate\nthat X-Fusion consistently outperforms alternative architectures on both\nimage-to-text and text-to-image tasks. We find that incorporating\nunderstanding-focused data improves generation quality, reducing image data\nnoise enhances overall performance, and feature alignment accelerates\nconvergence for smaller models but has minimal impact on larger ones. Our\nfindings provide valuable insights into building efficient unified multimodal\nmodels.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20996.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "637c94d3f219c71f93eda9ad",
+      "avatarUrl": "/avatars/6dae0c30755196ccc0a5a06b3981c47f.svg",
+      "fullname": "Sicheng Mo",
+      "name": "Sichengmo",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2504.18087",
+      "authors": [
+        {
+          "_id": "6810746e4be021d4dcd8d4de",
+          "name": "Weipeng Tan",
+          "hidden": false
+        },
+        {
+          "_id": "6810746e4be021d4dcd8d4df",
+          "name": "Chuming Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6810746e4be021d4dcd8d4e0",
+          "user": {
+            "_id": "652fab9d04a34a9282bf29d6",
+            "avatarUrl": "/avatars/cd5967b37ebb1225e9ae1d46f196e2e2.svg",
+            "isPro": false,
+            "fullname": "Chengming Xu",
+            "user": "ChengmingX",
+            "type": "user"
+          },
+          "name": "Chengming Xu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-04-30T09:56:46.843Z",
+          "hidden": false
+        },
+        {
+          "_id": "6810746e4be021d4dcd8d4e1",
+          "name": "FeiFan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6810746e4be021d4dcd8d4e2",
+          "name": "Xiaobin Hu",
+          "hidden": false
+        },
+        {
+          "_id": "6810746e4be021d4dcd8d4e3",
+          "name": "Xiaozhong Ji",
+          "hidden": false
+        },
+        {
+          "_id": "6810746e4be021d4dcd8d4e4",
+          "name": "Junwei Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "6810746e4be021d4dcd8d4e5",
+          "name": "Chengjie Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6810746e4be021d4dcd8d4e6",
+          "name": "Yanwei Fu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-25T05:28:21.000Z",
+      "submittedOnDailyAt": "2025-04-30T07:13:30.231Z",
+      "title": "Disentangle Identity, Cooperate Emotion: Correlation-Aware Emotional Talking Portrait Generation",
+      "submittedOnDailyBy": {
+        "_id": "652fab9d04a34a9282bf29d6",
+        "avatarUrl": "/avatars/cd5967b37ebb1225e9ae1d46f196e2e2.svg",
+        "isPro": false,
+        "fullname": "Chengming Xu",
+        "user": "ChengmingX",
+        "type": "user"
+      },
+      "summary": "最近のTalking Head Generation（THG）の進展は、拡散モデルを通じて印象的な唇同期と視覚質量を達成しましたが、既存の方法は、情緒表現のある肖像画の生成に成功しない一方で、講演者の識別性を保持することが難しい。現在の情緒付きTalking Head Generationにおいて、3つの重要な限界点があることを識別しました。それは、音声の固有の情緒的なコードの不十分な利用、情緒表現の識別性の漏れ、そして、情緒関係の孤立した学習です。これらの挑戦に対処するために、私たちは、識別性と情緒を分離し、次に特性の似た情緒をコラボレーションすることを考えた新しいフレームワークを提案します。DICE-Talkと呼ばれます。まず、識別性に関係なく情緒を表現するために、音声ビデオの情緒的なコードを共通にモデル化するための分離された情緒エンベッダーを開発します。次に、学習可能なEmotion Banksを扱う相関強化された情緒条件付きモジュールを導入し、ベクトルクォータティゾンとアテンションによる特徴集約を通じて、情緒間の関係を明確に捉えます。最後に、拡散プロセス中の感情的な一貫性を強制する感情判別の目的を設計します。MEADとHDTFデータセットの拡散的な実験は、感情精度において最先端のアプローチを超えることを示し、唇同期の性能を維持することで、私たちの方法の優れた性能を確認しました。質的な結果とユーザーステージは、自然に適応した未見の識別性を持つ豊富な、関連付きの情緒表現を生成することで、私たちの方法の能力を進一に確認しました。",
+      "upvotes": 2,
+      "discussionId": "681074704be021d4dcd8d57c",
+      "projectPage": "https://toto222.github.io/DICE-Talk/",
+      "githubRepo": "https://github.com/toto222/DICE-Talk"
+    },
+    "publishedAt": "2025-04-25T01:28:21.000Z",
+    "title": "Disentangle Identity, Cooperate Emotion: Correlation-Aware Emotional\n  Talking Portrait Generation",
+    "summary": "Recent advances in Talking Head Generation (THG) have achieved impressive lip\nsynchronization and visual quality through diffusion models; yet existing\nmethods struggle to generate emotionally expressive portraits while preserving\nspeaker identity. We identify three critical limitations in current emotional\ntalking head generation: insufficient utilization of audio's inherent emotional\ncues, identity leakage in emotion representations, and isolated learning of\nemotion correlations. To address these challenges, we propose a novel framework\ndubbed as DICE-Talk, following the idea of disentangling identity with emotion,\nand then cooperating emotions with similar characteristics. First, we develop a\ndisentangled emotion embedder that jointly models audio-visual emotional cues\nthrough cross-modal attention, representing emotions as identity-agnostic\nGaussian distributions. Second, we introduce a correlation-enhanced emotion\nconditioning module with learnable Emotion Banks that explicitly capture\ninter-emotion relationships through vector quantization and attention-based\nfeature aggregation. Third, we design an emotion discrimination objective that\nenforces affective consistency during the diffusion process through\nlatent-space classification. Extensive experiments on MEAD and HDTF datasets\ndemonstrate our method's superiority, outperforming state-of-the-art approaches\nin emotion accuracy while maintaining competitive lip-sync performance.\nQualitative results and user studies further confirm our method's ability to\ngenerate identity-preserving portraits with rich, correlated emotional\nexpressions that naturally adapt to unseen identities.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.18087.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "652fab9d04a34a9282bf29d6",
+      "avatarUrl": "/avatars/cd5967b37ebb1225e9ae1d46f196e2e2.svg",
+      "fullname": "Chengming Xu",
+      "name": "ChengmingX",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  }
+]
