@@ -1,0 +1,1397 @@
+[
+  {
+    "paper": {
+      "id": "2504.20438",
+      "authors": [
+        {
+          "_id": "6814e35a19162d7749852c4b",
+          "user": {
+            "_id": "633d4630e1aec4b8b33ad5b8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633d4630e1aec4b8b33ad5b8/owFqnyCMW8yuo9VcjA1hx.jpeg",
+            "isPro": false,
+            "fullname": "Ziyang Xu",
+            "user": "Uyoung",
+            "type": "user"
+          },
+          "name": "Ziyang Xu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-04T10:04:40.638Z",
+          "hidden": false
+        },
+        {
+          "_id": "6814e35a19162d7749852c4c",
+          "name": "Kangsheng Duan",
+          "hidden": false
+        },
+        {
+          "_id": "6814e35a19162d7749852c4d",
+          "user": {
+            "_id": "627a34dac488a8ce15a2dc4a",
+            "avatarUrl": "/avatars/61aecef507dea6620fe5574493f83595.svg",
+            "isPro": false,
+            "fullname": "ShenXiaolei",
+            "user": "SmileTAT",
+            "type": "user"
+          },
+          "name": "Xiaolei Shen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:32:16.185Z",
+          "hidden": false
+        },
+        {
+          "_id": "6814e35a19162d7749852c4e",
+          "name": "Zhifeng Ding",
+          "hidden": false
+        },
+        {
+          "_id": "6814e35a19162d7749852c4f",
+          "user": {
+            "_id": "66c2e7fc934e2f07753542ac",
+            "avatarUrl": "/avatars/f6fa3f94435cf1c1d06daa6c925d07d0.svg",
+            "isPro": false,
+            "fullname": "LWY",
+            "user": "wenyuliu",
+            "type": "user"
+          },
+          "name": "Wenyu Liu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:32:31.210Z",
+          "hidden": false
+        },
+        {
+          "_id": "6814e35a19162d7749852c50",
+          "name": "Xiaohu Ruan",
+          "hidden": false
+        },
+        {
+          "_id": "6814e35a19162d7749852c51",
+          "user": {
+            "_id": "65389a669c474315d7425f96",
+            "avatarUrl": "/avatars/2fa3828ca489cfe1948129a0eccf264f.svg",
+            "isPro": false,
+            "fullname": "chenxiaoxin",
+            "user": "steelozazala",
+            "type": "user"
+          },
+          "name": "Xiaoxin Chen",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:32:55.012Z",
+          "hidden": false
+        },
+        {
+          "_id": "6814e35a19162d7749852c52",
+          "user": {
+            "_id": "62600de6d47e3dbae32ce1ce",
+            "avatarUrl": "/avatars/a536417cfec6e10ac415091bd1829426.svg",
+            "isPro": false,
+            "fullname": "Xinggang Wang",
+            "user": "xinggangw",
+            "type": "user"
+          },
+          "name": "Xinggang Wang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:33:01.396Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T05:28:36.000Z",
+      "submittedOnDailyAt": "2025-05-05T05:42:06.841Z",
+      "title": "PixelHacker: 구조적 및 의미적 일관성 있는 이미지 인풋팅",
+      "submittedOnDailyBy": {
+        "_id": "633d4630e1aec4b8b33ad5b8",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633d4630e1aec4b8b33ad5b8/owFqnyCMW8yuo9VcjA1hx.jpeg",
+        "isPro": false,
+        "fullname": "Ziyang Xu",
+        "user": "Uyoung",
+        "type": "user"
+      },
+      "summary": "그림의 인패인팅은 그림 편집과 그림 생성 사이에 존재하는 기본적인 연구 분야입니다. 최근의 가장 선진(SOTA)의 방법들은 새로운 어텐션 구조, 가벼운 구조, 맥락에 대한 모델링을 시도하고 놀라운 성능을 보여주고 있습니다. 그러나 이들은 복잡한 구조(예: 테크스처, 형상, 공간 관계)와 의미(예: 색의 일관성, 물체의 복원, 로직의 정확성)에 대해 어려움을 겪고 있습니다. 이로 인해 어티팩트와 부적절한 생성이 발생합니다. 이러한 도전에 대응하기 위해, 우리는 간단하고 효과적인 인패인팅 패러다임 \"잠시 카테고리 가이드\"를 설계하고, 또 분산 기반의 모델 \"PixelHacker\"를 제안했습니다. 특히, 우리는 처음으로 전경과 배경(잠시적으로 116과 21 카테고리)를 설명하는 1400만 장의 그림-마스크 페어를 포함하는 큰 데이터 세트를 구축했습니다. 다음으로, 두 개의 고정 크기의 매핑을 사용하여 잠재적인 전경과 배경의 표현을 따로 변환하고, 선형 어텐션을 통해 이러한 특징을 주기적으로 데노이징 프로세스에 주입했습니다. 마지막으로, 우리의 데이터 세트를 사전학습하고 오픈 소스 벤치마크에서 미세 조정하여, PixelHacker를 얻었습니다. 확장된 실험은 PixelHacker가 다양한 데이터 세트(Places2, CelebA-HQ, FFHQ)에서 SOTA를 전반적으로 초과하고, 구조와 의미의 양면에서 놀라운 일관성을 보여주는 것을 보여주었습니다. 프로젝트 페이지는, https://hustvl.github.io/PixelHacker.",
+      "upvotes": 17,
+      "discussionId": "6814e35c19162d7749852caa",
+      "projectPage": "https://hustvl.github.io/PixelHacker",
+      "githubRepo": "https://github.com/hustvl/PixelHacker",
+      "ai_keywords": [
+        "latent categories guidance",
+        "diffusion-based model",
+        "PixelHacker",
+        "image-mask pairs",
+        "fixed-size embeddings",
+        "linear attention",
+        "pre-training",
+        "fine-tuning",
+        "Places2",
+        "CelebA-HQ",
+        "FFHQ"
+      ]
+    },
+    "publishedAt": "2025-04-29T01:28:36.000Z",
+    "title": "PixelHacker: Image Inpainting with Structural and Semantic Consistency",
+    "summary": "Image inpainting is a fundamental research area between image editing and\nimage generation. Recent state-of-the-art (SOTA) methods have explored novel\nattention mechanisms, lightweight architectures, and context-aware modeling,\ndemonstrating impressive performance. However, they often struggle with complex\nstructure (e.g., texture, shape, spatial relations) and semantics (e.g., color\nconsistency, object restoration, and logical correctness), leading to artifacts\nand inappropriate generation. To address this challenge, we design a simple yet\neffective inpainting paradigm called latent categories guidance, and further\npropose a diffusion-based model named PixelHacker. Specifically, we first\nconstruct a large dataset containing 14 million image-mask pairs by annotating\nforeground and background (potential 116 and 21 categories, respectively).\nThen, we encode potential foreground and background representations separately\nthrough two fixed-size embeddings, and intermittently inject these features\ninto the denoising process via linear attention. Finally, by pre-training on\nour dataset and fine-tuning on open-source benchmarks, we obtain PixelHacker.\nExtensive experiments show that PixelHacker comprehensively outperforms the\nSOTA on a wide range of datasets (Places2, CelebA-HQ, and FFHQ) and exhibits\nremarkable consistency in both structure and semantics. Project page at\nhttps://hustvl.github.io/PixelHacker.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20438.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "633d4630e1aec4b8b33ad5b8",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633d4630e1aec4b8b33ad5b8/owFqnyCMW8yuo9VcjA1hx.jpeg",
+      "fullname": "Ziyang Xu",
+      "name": "Uyoung",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.01079",
+      "authors": [
+        {
+          "_id": "68183d9ae65ec5d5716c6d94",
+          "user": {
+            "_id": "636b20591340f879a2eb98d0",
+            "avatarUrl": "/avatars/4fc5cb13f916bcbc842ccf387bd5f6c0.svg",
+            "isPro": false,
+            "fullname": "Daneul Kim",
+            "user": "carpedkm",
+            "type": "user"
+          },
+          "name": "Daneul Kim",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-05T07:30:39.678Z",
+          "hidden": false
+        },
+        {
+          "_id": "68183d9ae65ec5d5716c6d95",
+          "name": "Jaeah Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68183d9ae65ec5d5716c6d96",
+          "name": "Jaesik Park",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-02T07:36:49.000Z",
+      "submittedOnDailyAt": "2025-05-05T02:56:01.277Z",
+      "title": "층별 메모리를 활용한 이미지 생성 편집 가능성 향상",
+      "submittedOnDailyBy": {
+        "_id": "636b20591340f879a2eb98d0",
+        "avatarUrl": "/avatars/4fc5cb13f916bcbc842ccf387bd5f6c0.svg",
+        "isPro": false,
+        "fullname": "Daneul Kim",
+        "user": "carpedkm",
+        "type": "user"
+      },
+      "summary": "대다수의 현실 세계의 이미지 편집 작업은 원하는 결과를 달성하기 위해 연속적인 여러 편집이 필요합니다. 현재의 편집 접근 방식은 주로 단일 객체의 설명에 설계되어 있기 때문에, 연속적인 편집에 어려움이 있으며, 특히 이전 편집을 유지하면서 새로운 객체를 자연스럽게 기존 콘텐츠에 통합하는 것이 어렵습니다. 이러한 제한은 여러 객체를 수정하면서 그 컨텍스트 관계를 유지하는 복잡한 편집 시나리오에 큰 영향을 미칩니다. 우리는 이러한 기본적인 문제를 해결하기 위해 두 가지 주요 제안을 제시하고 있습니다: 현재의 콘텐츠를 유지하기 위해 간략한 마스크를 사용하고, 새로운 요소를 자연스럽게 통합하는 것, 그리고 여러 수정을 수행할 때도 일관된 편집을 지원하는 것입니다. 우리의 프레임워크는 계층적 메모리를 사용하여 이전 편집 중 잠재적인 표현과 Prompt Embedding을 저장하여 이를 구현합니다. 우리는 기억된 잠재적인 표현을 사용하여 스펙트럴 일치도 가이드를 제안하고, 기존 콘텐츠에 자연스러운 대응을 보장하기 위해 Cross-Attention의 Multi-Query Desenting을 제안합니다. 우리의 방법을 평가하기 위해, 새로운 세ман틱な 어레이먼트 메트릭과 상호작용 편집 시나리오를 포함하는 벤치마크 데이터 세트를 제시하고 있습니다. 상세한 실험을 통해, 최소한의 사용자의 노력을 필요로 하는 동시에, 간략한 마스크를 사용하여 여러 편집 단계를 통해 고품질의 결과를 유지하는 반복적인 이미지 편집 작업에서 상위 성능을 보여주고 있습니다.",
+      "upvotes": 12,
+      "discussionId": "68183d9de65ec5d5716c6e78",
+      "projectPage": "https://carpedkm.github.io/projects/improving_edit/index.html",
+      "githubRepo": "https://github.com/carpedkm/improving-editability",
+      "ai_keywords": [
+        "layer-wise memory",
+        "latent representations",
+        "prompt embeddings",
+        "Background Consistency Guidance",
+        "Multi-Query Disentanglement",
+        "cross-attention",
+        "semantic alignment metrics",
+        "interactive editing scenarios",
+        "iterative image editing"
+      ]
+    },
+    "publishedAt": "2025-05-02T03:36:49.000Z",
+    "title": "Improving Editability in Image Generation with Layer-wise Memory",
+    "summary": "Most real-world image editing tasks require multiple sequential edits to\nachieve desired results. Current editing approaches, primarily designed for\nsingle-object modifications, struggle with sequential editing: especially with\nmaintaining previous edits along with adapting new objects naturally into the\nexisting content. These limitations significantly hinder complex editing\nscenarios where multiple objects need to be modified while preserving their\ncontextual relationships. We address this fundamental challenge through two key\nproposals: enabling rough mask inputs that preserve existing content while\nnaturally integrating new elements and supporting consistent editing across\nmultiple modifications. Our framework achieves this through layer-wise memory,\nwhich stores latent representations and prompt embeddings from previous edits.\nWe propose Background Consistency Guidance that leverages memorized latents to\nmaintain scene coherence and Multi-Query Disentanglement in cross-attention\nthat ensures natural adaptation to existing content. To evaluate our method, we\npresent a new benchmark dataset incorporating semantic alignment metrics and\ninteractive editing scenarios. Through comprehensive experiments, we\ndemonstrate superior performance in iterative image editing tasks with minimal\nuser effort, requiring only rough masks while maintaining high-quality results\nthroughout multiple editing steps.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.01079.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "636b20591340f879a2eb98d0",
+      "avatarUrl": "/avatars/4fc5cb13f916bcbc842ccf387bd5f6c0.svg",
+      "fullname": "Daneul Kim",
+      "name": "carpedkm",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.21117",
+      "authors": [
+        {
+          "_id": "681889891bcdcf80a49d9ef8",
+          "name": "Hanhua Hong",
+          "hidden": false
+        },
+        {
+          "_id": "681889891bcdcf80a49d9ef9",
+          "name": "Chenghao Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "681889891bcdcf80a49d9efa",
+          "user": {
+            "_id": "60f313f4adf471cbdf8bb66a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60f313f4adf471cbdf8bb66a/5NJFqnldE_0fdE_mEvz9V.jpeg",
+            "isPro": false,
+            "fullname": "Yang Wang",
+            "user": "yangwang825",
+            "type": "user"
+          },
+          "name": "Yang Wang",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-05-05T09:48:58.639Z",
+          "hidden": false
+        },
+        {
+          "_id": "681889891bcdcf80a49d9efb",
+          "name": "Yiqi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "681889891bcdcf80a49d9efc",
+          "name": "Wenge Rong",
+          "hidden": false
+        },
+        {
+          "_id": "681889891bcdcf80a49d9efd",
+          "name": "Chenghua Lin",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63108cc834c7d77420b0fd68/6pjQShgH8JjsuyXvDdwv1.png"
+      ],
+      "publishedAt": "2025-04-29T18:56:12.000Z",
+      "submittedOnDailyAt": "2025-05-05T08:29:07.779Z",
+      "title": "1사이즈는 아니다：역강화학습에 의한 고효율성 NLG의 평가 프로노트",
+      "submittedOnDailyBy": {
+        "_id": "63108cc834c7d77420b0fd68",
+        "avatarUrl": "/avatars/2721e573a417a8ec0b81ee048c4b42ba.svg",
+        "isPro": false,
+        "fullname": "chenghao xiao",
+        "user": "gowitheflow",
+        "type": "user"
+      },
+      "summary": "자연어 생성(NLG) 시스템의 평가는 유효한 출력의 다양성에 따라 어려워질 수 있습니다. 인간 평가는 표준으로 간주되어 있지만, 불균질성, 표준화의 부족, 인구학적 편견으로 인해 재현성이 제한되어 있습니다. LLM 기반의 평가는 scalable한 대체가 있지만, Prompt의 설계에 매우 민감하며, 작은 변화로 큰 차이를 유발할 수 있습니다. 본 논문에서는 모델의 출력으로부터 모델의 입력 지시에 역으로 효과적인 역변환을 학습하는 역방향 학습법을 제안하고, 높은 수준의 효과적인 모델 고유의 평가 Prompt의 자동 생성을 가능하게 합니다. 이 방법은 하나의 평가 샘플만 필요하며, 시간 측정의 테스트 Prompt 엔지니어링의 필요성을 제거하고, 효율성과 강건성을 향상시킵니다. 본 논문은 LLM 기반의 평가의 새로운 방향에 기여합니다.",
+      "upvotes": 5,
+      "discussionId": "6818898a1bcdcf80a49d9f28",
+      "ai_keywords": [
+        "natural language generation (NLG)",
+        "human evaluation",
+        "LLM-based evaluation",
+        "prompt design",
+        "inversion learning",
+        "reverse mappings",
+        "model outputs",
+        "input instructions",
+        "automatic generation",
+        "model-specific evaluation prompts",
+        "evaluation sample",
+        "manual prompt engineering"
+      ]
+    },
+    "publishedAt": "2025-04-29T14:56:12.000Z",
+    "title": "Beyond One-Size-Fits-All: Inversion Learning for Highly Effective NLG\n  Evaluation Prompts",
+    "summary": "Evaluating natural language generation (NLG) systems is challenging due to\nthe diversity of valid outputs. While human evaluation is the gold standard, it\nsuffers from inconsistencies, lack of standardisation, and demographic biases,\nlimiting reproducibility. LLM-based evaluation offers a scalable alternative\nbut is highly sensitive to prompt design, where small variations can lead to\nsignificant discrepancies. In this work, we propose an inversion learning\nmethod that learns effective reverse mappings from model outputs back to their\ninput instructions, enabling the automatic generation of highly effective,\nmodel-specific evaluation prompts. Our method requires only a single evaluation\nsample and eliminates the need for time-consuming manual prompt engineering,\nthereby improving both efficiency and robustness. Our work contributes toward a\nnew direction for more robust and efficient LLM-based evaluation.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63108cc834c7d77420b0fd68/6pjQShgH8JjsuyXvDdwv1.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.21117.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63108cc834c7d77420b0fd68",
+      "avatarUrl": "/avatars/2721e573a417a8ec0b81ee048c4b42ba.svg",
+      "fullname": "chenghao xiao",
+      "name": "gowitheflow",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 17
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.00023",
+      "authors": [
+        {
+          "_id": "6818413000ee590453feaf66",
+          "user": {
+            "_id": "65169ea3fbfe82f36fc6655c",
+            "avatarUrl": "/avatars/01714ad316a2e06488246e4fe7dcdb52.svg",
+            "isPro": false,
+            "fullname": "Hyun Ji Lee",
+            "user": "hyunjilee",
+            "type": "user"
+          },
+          "name": "Hyunji Lee",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:34:41.006Z",
+          "hidden": false
+        },
+        {
+          "_id": "6818413000ee590453feaf67",
+          "user": {
+            "_id": "62c5947524171688a9feb992",
+            "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+            "isPro": false,
+            "fullname": "Franck Dernoncourt",
+            "user": "Franck-Dernoncourt",
+            "type": "user"
+          },
+          "name": "Franck Dernoncourt",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-05T07:30:36.382Z",
+          "hidden": false
+        },
+        {
+          "_id": "6818413000ee590453feaf68",
+          "name": "Trung Bui",
+          "hidden": false
+        },
+        {
+          "_id": "6818413000ee590453feaf69",
+          "user": {
+            "_id": "6690ef3db70d356ed3e05cb0",
+            "avatarUrl": "/avatars/530f3a0bd7b93e1e7f385c2708335728.svg",
+            "isPro": false,
+            "fullname": "yoon seung-hyun",
+            "user": "aifactoryysh",
+            "type": "user"
+          },
+          "name": "Seunghyun Yoon",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:35:01.378Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-25T02:40:48.000Z",
+      "submittedOnDailyAt": "2025-05-05T03:10:26.249Z",
+      "title": "CORG: 복잡한, 상호작용이 있는 맥락에서 답을 생성",
+      "submittedOnDailyBy": {
+        "_id": "62c5947524171688a9feb992",
+        "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+        "isPro": false,
+        "fullname": "Franck Dernoncourt",
+        "user": "Franck-Dernoncourt",
+        "type": "user"
+      },
+      "summary": "실세계의 코퍼스 중에서는 지식이 문서 간에 빈번하게 재현하지만, 다양한 이유로 부적절한 정보가 포함되어 있으며, 이로 인해 문맥 간의 복잡한 상호관계가 발생합니다. 선행 연구들은 이러한 복잡성을 언어 모델이 극복하는 데 어려움을 겪고 있음을 보여주고 있습니다. 이러한 관계를 4가지 종류로 분류하였습니다: 데트럭터, 불확실, 반면사실, 덧셈. 분석 결과, 한 가지 접근으로 모든 관계를 동시에 처리할 수 없습니다. 이에 따라 Context Organizer (CORG)를 제안합니다. CORG는 독립적으로 처리되는 그룹에 문맥을 구성하는 프레임워크입니다. 이 설계에 따라 모델은 효율적으로 적절한 답을 찾아不明확성을 제거할 수 있습니다. CORG는 그래프 구축자, 리라닝, 아그라글레이저의 3가지 주요 구성 요소로 구성됩니다. 결과적으로, CORG는 성능과 효율의 균형을 잘 조정하며, 현재의 그룹화 방법을 초월하며, 단일 문맥 접근 방식과 비교하여 큰 계산량을 가진 상대적인 결과를 구현했습니다.",
+      "upvotes": 4,
+      "discussionId": "6818413100ee590453feaf97",
+      "ai_keywords": [
+        "graph constructor",
+        "reranker",
+        "aggregator",
+        "Context Organizer (CORG)"
+      ]
+    },
+    "publishedAt": "2025-04-24T22:40:48.000Z",
+    "title": "CORG: Generating Answers from Complex, Interrelated Contexts",
+    "summary": "In a real-world corpus, knowledge frequently recurs across documents but\noften contains inconsistencies due to ambiguous naming, outdated information,\nor errors, leading to complex interrelationships between contexts. Previous\nresearch has shown that language models struggle with these complexities,\ntypically focusing on single factors in isolation. We classify these\nrelationships into four types: distracting, ambiguous, counterfactual, and\nduplicated. Our analysis reveals that no single approach effectively addresses\nall these interrelationships simultaneously. Therefore, we introduce Context\nOrganizer (CORG), a framework that organizes multiple contexts into\nindependently processed groups. This design allows the model to efficiently\nfind all relevant answers while ensuring disambiguation. CORG consists of three\nkey components: a graph constructor, a reranker, and an aggregator. Our results\ndemonstrate that CORG balances performance and efficiency effectively,\noutperforming existing grouping methods and achieving comparable results to\nmore computationally intensive, single-context approaches.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.00023.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62c5947524171688a9feb992",
+      "avatarUrl": "/avatars/5a151713b9eae8dc566f5957acee3475.svg",
+      "fullname": "Franck Dernoncourt",
+      "name": "Franck-Dernoncourt",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.00174",
+      "authors": [
+        {
+          "_id": "681594746a80babbe28775ba",
+          "user": {
+            "_id": "66225f7100352aeea584d02a",
+            "avatarUrl": "/avatars/ca13f59bebf73d03a63a935f628aea5c.svg",
+            "isPro": false,
+            "fullname": "Ilan Strauss",
+            "user": "strauss-NYC",
+            "type": "user"
+          },
+          "name": "Ilan Strauss",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-04T10:04:25.496Z",
+          "hidden": false
+        },
+        {
+          "_id": "681594746a80babbe28775bb",
+          "user": {
+            "_id": "67535114d2a628475a0e7a6e",
+            "avatarUrl": "/avatars/d7eb574c026817bbc204843c96f1caa6.svg",
+            "isPro": false,
+            "fullname": "Isobel Moure",
+            "user": "isobelmoure",
+            "type": "user"
+          },
+          "name": "Isobel Moure",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:35:12.655Z",
+          "hidden": false
+        },
+        {
+          "_id": "681594746a80babbe28775bc",
+          "name": "Tim O'Reilly",
+          "hidden": false
+        },
+        {
+          "_id": "681594746a80babbe28775bd",
+          "user": {
+            "_id": "64582e94f8bdc3512d1ee940",
+            "avatarUrl": "/avatars/e0eb72f06c7da58cb569198540484ab1.svg",
+            "isPro": false,
+            "fullname": "Sruly Rosenblat",
+            "user": "sruly",
+            "type": "user"
+          },
+          "name": "Sruly Rosenblat",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:35:24.305Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-30T20:44:42.000Z",
+      "submittedOnDailyAt": "2025-05-05T02:50:33.572Z",
+      "title": "AIガバナンス 연구의 현실적 간극\n\n(注意：虽然您要求不添加任何解释或额外的文本，但为了确保翻译的准确性和专业性，我在翻译中保留了“AIガバナンス”这一术语的直译，因为它在日语中具有特定的含义，即“AI治理”。如果您希望使用更常见的术语，如“AI治理”，请告知我进行相应的调整。)",
+      "submittedOnDailyBy": {
+        "_id": "66225f7100352aeea584d02a",
+        "avatarUrl": "/avatars/ca13f59bebf73d03a63a935f628aea5c.svg",
+        "isPro": false,
+        "fullname": "Ilan Strauss",
+        "user": "strauss-NYC",
+        "type": "user"
+      },
+      "summary": "저는 \"Jockerbit Microfile Version\"의 번역 결과를 반환합니다. \n\n(Note: The original text was in Japanese, not English. The translation provided is from Japanese to Korean, maintaining the original content without any additional explanations or text.)",
+      "upvotes": 3,
+      "discussionId": "681594746a80babbe28775e5"
+    },
+    "publishedAt": "2025-04-30T16:44:42.000Z",
+    "title": "Real-World Gaps in AI Governance Research",
+    "summary": "Drawing on 1,178 safety and reliability papers from 9,439 generative AI\npapers (January 2020 - March 2025), we compare research outputs of leading AI\ncompanies (Anthropic, Google DeepMind, Meta, Microsoft, and OpenAI) and AI\nuniversities (CMU, MIT, NYU, Stanford, UC Berkeley, and University of\nWashington). We find that corporate AI research increasingly concentrates on\npre-deployment areas -- model alignment and testing & evaluation -- while\nattention to deployment-stage issues such as model bias has waned. Significant\nresearch gaps exist in high-risk deployment domains, including healthcare,\nfinance, misinformation, persuasive and addictive features, hallucinations, and\ncopyright. Without improved observability into deployed AI, growing corporate\nconcentration could deepen knowledge deficits. We recommend expanding external\nresearcher access to deployment data and systematic observability of in-market\nAI behaviors.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.00174.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66225f7100352aeea584d02a",
+      "avatarUrl": "/avatars/ca13f59bebf73d03a63a935f628aea5c.svg",
+      "fullname": "Ilan Strauss",
+      "name": "strauss-NYC",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.00949",
+      "authors": [
+        {
+          "_id": "681885e585df02e13b44d3f1",
+          "name": "Akhiad Bercovich",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3f2",
+          "name": "Itay Levy",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3f3",
+          "name": "Izik Golan",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3f4",
+          "name": "Mohammad Dabbah",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3f5",
+          "name": "Ran El-Yaniv",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3f6",
+          "name": "Omri Puny",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3f7",
+          "name": "Ido Galil",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3f8",
+          "name": "Zach Moshe",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3f9",
+          "name": "Tomer Ronen",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3fa",
+          "name": "Najeeb Nabwani",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3fb",
+          "name": "Ido Shahaf",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3fc",
+          "name": "Oren Tropp",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3fd",
+          "name": "Ehud Karpas",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3fe",
+          "name": "Ran Zilberstein",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d3ff",
+          "name": "Jiaqi Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d400",
+          "name": "Soumye Singhal",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d401",
+          "name": "Alexander Bukharin",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d402",
+          "name": "Yian Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d403",
+          "name": "Tugrul Konuk",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d404",
+          "name": "Gerald Shen",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d405",
+          "name": "Ameya Sunil Mahabaleshwarkar",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d406",
+          "name": "Bilal Kartal",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d407",
+          "name": "Yoshi Suhara",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d408",
+          "name": "Olivier Delalleau",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d409",
+          "name": "Zijia Chen",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d40a",
+          "name": "Zhilin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d40b",
+          "name": "David Mosallanezhad",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d40c",
+          "name": "Adi Renduchintala",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d40d",
+          "name": "Haifeng Qian",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d40e",
+          "name": "Dima Rekesh",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d40f",
+          "name": "Fei Jia",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d410",
+          "name": "Somshubra Majumdar",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d411",
+          "name": "Vahid Noroozi",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d412",
+          "name": "Wasi Uddin Ahmad",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d413",
+          "name": "Sean Narenthiran",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d414",
+          "name": "Aleksander Ficek",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d415",
+          "name": "Mehrzad Samadi",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d416",
+          "name": "Jocelyn Huang",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d417",
+          "name": "Siddhartha Jain",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d418",
+          "name": "Igor Gitman",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d419",
+          "name": "Ivan Moshkov",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d41a",
+          "name": "Wei Du",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d41b",
+          "name": "Shubham Toshniwal",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d41c",
+          "name": "George Armstrong",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d41d",
+          "name": "Branislav Kisacanin",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d41e",
+          "name": "Matvei Novikov",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d41f",
+          "name": "Daria Gitman",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d420",
+          "name": "Evelina Bakhturina",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d421",
+          "name": "Jane Polak Scowcroft",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d422",
+          "name": "John Kamalu",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d423",
+          "name": "Dan Su",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d424",
+          "name": "Kezhi Kong",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d425",
+          "name": "Markus Kliegl",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d426",
+          "name": "Rabeeh Karimi",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d427",
+          "name": "Ying Lin",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d428",
+          "name": "Sanjeev Satheesh",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d429",
+          "name": "Jupinder Parmar",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d42a",
+          "name": "Pritam Gundecha",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d42b",
+          "name": "Brandon Norick",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d42c",
+          "name": "Joseph Jennings",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d42d",
+          "name": "Shrimai Prabhumoye",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d42e",
+          "name": "Syeda Nahida Akter",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d42f",
+          "name": "Mostofa Patwary",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d430",
+          "name": "Abhinav Khattar",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d431",
+          "name": "Deepak Narayanan",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d432",
+          "name": "Roger Waleffe",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d433",
+          "name": "Jimmy Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d434",
+          "name": "Bor-Yiing Su",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d435",
+          "name": "Guyue Huang",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d436",
+          "name": "Terry Kong",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d437",
+          "name": "Parth Chadha",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d438",
+          "name": "Sahil Jain",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d439",
+          "name": "Christine Harvey",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d43a",
+          "name": "Elad Segal",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d43b",
+          "name": "Jining Huang",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d43c",
+          "name": "Sergey Kashirsky",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d43d",
+          "name": "Robert McQueen",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d43e",
+          "name": "Izzy Putterman",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d43f",
+          "name": "George Lam",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d440",
+          "name": "Arun Venkatesan",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d441",
+          "name": "Sherry Wu",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d442",
+          "name": "Vinh Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d443",
+          "name": "Manoj Kilaru",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d444",
+          "name": "Andrew Wang",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d445",
+          "name": "Anna Warno",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d446",
+          "name": "Abhilash Somasamudramath",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d447",
+          "name": "Sandip Bhaskar",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d448",
+          "name": "Maka Dong",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d449",
+          "name": "Nave Assaf",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d44a",
+          "name": "Shahar Mor",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d44b",
+          "name": "Omer Ullman Argov",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d44c",
+          "name": "Scot Junkin",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d44d",
+          "name": "Oleksandr Romanenko",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d44e",
+          "name": "Pedro Larroy",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d44f",
+          "name": "Monika Katariya",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d450",
+          "name": "Marco Rovinelli",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d451",
+          "name": "Viji Balas",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d452",
+          "name": "Nicholas Edelman",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d453",
+          "name": "Anahita Bhiwandiwalla",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d454",
+          "name": "Muthu Subramaniam",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d455",
+          "name": "Smita Ithape",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d456",
+          "name": "Karthik Ramamoorthy",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d457",
+          "name": "Yuting Wu",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d458",
+          "name": "Suguna Varshini Velury",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d459",
+          "name": "Omri Almog",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d45a",
+          "name": "Joyjit Daw",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d45b",
+          "name": "Denys Fridman",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d45c",
+          "name": "Erick Galinkin",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d45d",
+          "name": "Michael Evans",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d45e",
+          "name": "Katherine Luna",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d45f",
+          "name": "Leon Derczynski",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d460",
+          "name": "Nikki Pope",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d461",
+          "name": "Eileen Long",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d462",
+          "name": "Seth Schneider",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d463",
+          "name": "Guillermo Siman",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d464",
+          "name": "Tomasz Grzegorzek",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d465",
+          "name": "Pablo Ribalta",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d466",
+          "name": "Monika Katariya",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d467",
+          "name": "Joey Conway",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d468",
+          "name": "Trisha Saar",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d469",
+          "name": "Ann Guan",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d46a",
+          "name": "Krzysztof Pawelec",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d46b",
+          "name": "Shyamala Prayaga",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d46c",
+          "name": "Oleksii Kuchaiev",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d46d",
+          "name": "Boris Ginsburg",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d46e",
+          "name": "Oluwatobi Olabiyi",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d46f",
+          "name": "Kari Briski",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d470",
+          "name": "Jonathan Cohen",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d471",
+          "name": "Bryan Catanzaro",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d472",
+          "name": "Jonah Alben",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d473",
+          "name": "Yonatan Geifman",
+          "hidden": false
+        },
+        {
+          "_id": "681885e585df02e13b44d474",
+          "name": "Eric Chung",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-02T01:35:35.000Z",
+      "submittedOnDailyAt": "2025-05-05T08:04:15.299Z",
+      "title": "Llama-Nemotron: 효율적인 논리 모델",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": false,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "Llama-Nemotron 모델 시리즈를 소개합니다. 이 모델 시리즈는 개방형 가족으로 구성되어 있으며, 다양한 이유론 모델을 보유하고 있으며, 뛰어난 이유론 능력, 추론 효율성과 기업용 개방 허가를 제공합니다. 이 가족은 세 가지 크기로 구성되어 있으며, Nano(8B), Super(49B), Ultra(253B)입니다. DeepSeek-R1과 같은 수준의 최신 이유론 모델과 경쟁적으로 작동하며, 우수한 추론 트랜스포트와 메모리 효율성을 제공합니다. 이 보고서에서는 이러한 모델의 훈련 절차를 논의합니다. 이는 Llama 3 모델에서 사용된 신경 아키텍처 검색을 통해 가속 추론, 지식 변환, 연속 학습, 이유론 포커스의 후 훈련 단계(표준화 미세 조정과 대형 재학습의 두 가지 주요 부분)를 포함합니다. Llama-Nemotron 모델은 추론 중 표준 채팅과 이유론 모드를 동적으로 교환할 수 있는 최초의 개방 소스 모델이며, 첫 번째로 이러한 기능을 지원합니다. 또한, 더 나은 개방 연구 지원과 모델 개발 촉진의 목적에 따라 다음과 같은 리소스를 제공합니다: 1. 상업용 허가된 NVIDIA Open Model License Agreement 하에, LN-Nano, LN-Super, LN-Ultra의 Llama-Nemotron 이유론 모델을 릴리즈합니다. 2. 완전한 후 훈련 데이터 세트: Llama-Nemotron-Post-Training-Dataset을 릴리즈합니다. 3. 더 나아가, 훈련 코드 기반: NeMo, NeMo-Aligner, Megatron-LM을 릴리즈합니다.",
+      "upvotes": 2,
+      "discussionId": "681885e685df02e13b44d4b1",
+      "ai_keywords": [
+        "neural architecture search",
+        "knowledge distillation",
+        "supervised fine-tuning",
+        "reinforcement learning",
+        "dynamic reasoning toggle",
+        "NVIDIA Open Model License Agreement"
+      ]
+    },
+    "publishedAt": "2025-05-01T21:35:35.000Z",
+    "title": "Llama-Nemotron: Efficient Reasoning Models",
+    "summary": "We introduce the Llama-Nemotron series of models, an open family of\nheterogeneous reasoning models that deliver exceptional reasoning capabilities,\ninference efficiency, and an open license for enterprise use. The family comes\nin three sizes -- Nano (8B), Super (49B), and Ultra (253B) -- and performs\ncompetitively with state-of-the-art reasoning models such as DeepSeek-R1 while\noffering superior inference throughput and memory efficiency. In this report,\nwe discuss the training procedure for these models, which entails using neural\narchitecture search from Llama 3 models for accelerated inference, knowledge\ndistillation, and continued pretraining, followed by a reasoning-focused\npost-training stage consisting of two main parts: supervised fine-tuning and\nlarge scale reinforcement learning. Llama-Nemotron models are the first\nopen-source models to support a dynamic reasoning toggle, allowing users to\nswitch between standard chat and reasoning modes during inference. To further\nsupport open research and facilitate model development, we provide the\nfollowing resources: 1. We release the Llama-Nemotron reasoning models --\nLN-Nano, LN-Super, and LN-Ultra -- under the commercially permissive NVIDIA\nOpen Model License Agreement. 2. We release the complete post-training dataset:\nLlama-Nemotron-Post-Training-Dataset. 3. We also release our training\ncodebases: NeMo, NeMo-Aligner, and Megatron-LM.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.00949.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6779
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.00562",
+      "authors": [
+        {
+          "_id": "68184c3fb727bc3cb7301e15",
+          "user": {
+            "_id": "668e100b97171f3399e07f5d",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/pgzatAZut-uoXOBOwgiFB.jpeg",
+            "isPro": false,
+            "fullname": "Yue Meng",
+            "user": "yuemithucsd",
+            "type": "user"
+          },
+          "name": "Yue Meng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:36:14.168Z",
+          "hidden": false
+        },
+        {
+          "_id": "68184c3fb727bc3cb7301e16",
+          "name": "Chuchu Fan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-01T14:40:07.000Z",
+      "submittedOnDailyAt": "2025-05-05T03:58:02.420Z",
+      "title": "테로그래프: 시간계열 로직 계획에 의한 그래프 인코딩 흐름 매칭",
+      "submittedOnDailyBy": {
+        "_id": "668e100b97171f3399e07f5d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/pgzatAZut-uoXOBOwgiFB.jpeg",
+        "isPro": false,
+        "fullname": "Yue Meng",
+        "user": "yuemithucsd",
+        "type": "user"
+      },
+      "summary": "시그널 시간 논리(STL)의 규범으로 복잡한 작업들을 해결하는 기술은 다수의 실세계의 애플리케이션에 매우 중요합니다. 그러나 많은 선행 연구들은 다양한 STL 데이터 세트와 인코더의 부족으로 고정된, 파라미터화된 STL 규범을 고려하고 있습니다. 본 논문에서는 시간 논리 그래프 인코딩 플로우(Temporal Logic Graph-encoded Flow)이라는 방법을 제안합니다. 이 방법은 그래프 뉴럴 네트워크(GNN) 인코더와 플로우 매칭을 활용하여 일반적인 STL 규범을 해결하는 것을 목표로 합니다. 4가지 일반적인 STL 템플릿을 특정하고 200K의 규범을 모으고, 각 규범에 대응하는 조언을 쌍으로 얻었습니다. 5가지 시뮬레이션 환경에서 검증하였으며, 2차원 공간의 간단한 역학 모델부터 7자유도의 프란카 팜 드로보 팔까지, 안테나 페타르 모더나비게이션까지 광범위하게 실험을 수행하였습니다. 결과적으로, 우리의 방법은 STL 만족율에 있어서 다른 기준에 비해 뛰어납니다. 고전적인 STL 계획 알고리즘과 비교하여, 추론 시간으로 10-100배 빠르고, 어떤 시스템 역학에도 적용할 수 있습니다. 또한, 우리의 그래프 인코딩 방법의 복잡한 STL을 해결하는 능력과 외 분포의 STL 규범에 대한 강건성을 보여주었습니다. 코드는 https://github.com/mengyuest/TeLoGraF에서 이용할 수 있습니다.",
+      "upvotes": 1,
+      "discussionId": "68184c41b727bc3cb7301e6c",
+      "ai_keywords": [
+        "TeLoGraF",
+        "Temporal Logic Graph-encoded Flow",
+        "Graph Neural Networks (GNN)",
+        "flow-matching",
+        "STL specifications",
+        "STL templates",
+        "STL satisfaction rate",
+        "dynamical models",
+        "Franka Panda robot arm",
+        "Ant quadruped navigation",
+        "classical STL planning algorithms"
+      ]
+    },
+    "publishedAt": "2025-05-01T10:40:07.000Z",
+    "title": "TeLoGraF: Temporal Logic Planning via Graph-encoded Flow Matching",
+    "summary": "Learning to solve complex tasks with signal temporal logic (STL)\nspecifications is crucial to many real-world applications. However, most\nprevious works only consider fixed or parametrized STL specifications due to\nthe lack of a diverse STL dataset and encoders to effectively extract temporal\nlogic information for downstream tasks. In this paper, we propose TeLoGraF,\nTemporal Logic Graph-encoded Flow, which utilizes Graph Neural Networks (GNN)\nencoder and flow-matching to learn solutions for general STL specifications. We\nidentify four commonly used STL templates and collect a total of 200K\nspecifications with paired demonstrations. We conduct extensive experiments in\nfive simulation environments ranging from simple dynamical models in the 2D\nspace to high-dimensional 7DoF Franka Panda robot arm and Ant quadruped\nnavigation. Results show that our method outperforms other baselines in the STL\nsatisfaction rate. Compared to classical STL planning algorithms, our approach\nis 10-100X faster in inference and can work on any system dynamics. Besides, we\nshow our graph-encoding method's capability to solve complex STLs and\nrobustness to out-distribution STL specifications. Code is available at\nhttps://github.com/mengyuest/TeLoGraF",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.00562.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "668e100b97171f3399e07f5d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/pgzatAZut-uoXOBOwgiFB.jpeg",
+      "fullname": "Yue Meng",
+      "name": "yuemithucsd",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2504.20859",
+      "authors": [
+        {
+          "_id": "681713aec075e49c1b22500e",
+          "user": {
+            "_id": "630d180f3dc31beba6f061c3",
+            "avatarUrl": "/avatars/7cf70bff453b6e64fcac52f45c6b3730.svg",
+            "isPro": false,
+            "fullname": "guy hadad",
+            "user": "guyhadad01",
+            "type": "user"
+          },
+          "name": "Guy Hadad",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-05-04T07:14:56.074Z",
+          "hidden": false
+        },
+        {
+          "_id": "681713aec075e49c1b22500f",
+          "name": "Haggai Roitman",
+          "hidden": false
+        },
+        {
+          "_id": "681713aec075e49c1b225010",
+          "user": {
+            "_id": "638f42e4c4444c6ca8715a06",
+            "avatarUrl": "/avatars/aae741d00ed1f5ead516c07543e59f3e.svg",
+            "isPro": false,
+            "fullname": "yotam eshel",
+            "user": "yeshel",
+            "type": "user"
+          },
+          "name": "Yotam Eshel",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-05-04T07:13:50.951Z",
+          "hidden": false
+        },
+        {
+          "_id": "681713aec075e49c1b225011",
+          "user": {
+            "_id": "63aace84785b8279fe30b5f9",
+            "avatarUrl": "/avatars/7b4793f6f0a0a8b608d0395c0e92a7eb.svg",
+            "isPro": false,
+            "fullname": "Bracha Shapira",
+            "user": "Bshapira",
+            "type": "user"
+          },
+          "name": "Bracha Shapira",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:35:41.141Z",
+          "hidden": false
+        },
+        {
+          "_id": "681713aec075e49c1b225012",
+          "user": {
+            "_id": "64141f0365f4b23aa99507a4",
+            "avatarUrl": "/avatars/46d599acaa0f492139949dba0f00e030.svg",
+            "isPro": false,
+            "fullname": "Lior Rokach",
+            "user": "liorrokach",
+            "type": "user"
+          },
+          "name": "Lior Rokach",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-05T07:35:47.274Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-04-29T15:33:20.000Z",
+      "submittedOnDailyAt": "2025-05-05T03:47:16.624Z",
+      "title": "X-Cross: Cross-Domain Sequential Recommendation Towards Dynamic Integration of Language Models",
+      "submittedOnDailyBy": {
+        "_id": "630d180f3dc31beba6f061c3",
+        "avatarUrl": "/avatars/7cf70bff453b6e64fcac52f45c6b3730.svg",
+        "isPro": false,
+        "fullname": "guy hadad",
+        "user": "guyhadad01",
+        "type": "user"
+      },
+      "summary": "새로운 제품들이 매일 발표되는 가운데, 추천 시스템은 다양한 새로운 도메인에 빠르게 적응하기 위해, 확장된 재학습을 필요로 하지 않도록 요구되어 있습니다. 본 논문에서는 \"X-Cross\"라는 새로운 크로스 도메인 순서 추천 모형을 소개합니다. 이 모형은 여러 도메인专用의 언어 모형을 통합하여 새로운 도메인에서 제품을 추천할 수 있습니다. 각 모형은 LoRA(Low-Rank Adapter)를 사용하여 미세 조정되어 있습니다. 추천 프로ン탔을 제공하면 X-Cross는 계층별로 작동하여 모든 소스 언어 모형의 표현을 모든 모형으로부터의 지식으로 통합하여 동적으로 보완합니다. 이러한 보완된 표현은 각 도메인 адап터를 사용하여, 도메인 고유의 뉴アン스을 보존하면서 크로스 도메인의 적응성을 보장합니다. Sequential Recommendation의 Amazon 데이터 세트를 사용하여, X-Cross는 LoRA로 미세 조정된 모형과 동일한 성능을 달성하지만, 추가 파라미터의 25%만 사용합니다. 크로스 도메인 태스크의 예로는, Toys 도메인에서 Tool, Electronics 또는 Sports로 적응하는 경우, X-Cross는 안정적인 성능을 보여주고, LoRA의 미세 조정에 필요한 데이터량을 약 50%-75% 줄이면서, 효과적인 미세 조정을 수행할 수 있음을 나타냅니다. 또한, X-Cross는 대체 크로스 도메인 기반 라인과 비교하여 정확도를 크게 향상시킵니다. 전체적으로, X-Cross는 교환성 및 적응성 있는 크로스 도메인 추천을 가능하게 하며, 계산 오버헤드를 줄이고, 데이터 제한된 환경에서 효율적인 해결책을 제공합니다.",
+      "upvotes": 1,
+      "discussionId": "681713aec075e49c1b22503e",
+      "ai_keywords": [
+        "cross-domain sequential-recommendation",
+        "domain-specific language models",
+        "low-rank adapters (LoRA)",
+        "recommendation prompt",
+        "activations",
+        "domain-specific nuances",
+        "cross-domain tasks",
+        "computational overhead",
+        "data-constrained environments"
+      ]
+    },
+    "publishedAt": "2025-04-29T11:33:20.000Z",
+    "title": "X-Cross: Dynamic Integration of Language Models for Cross-Domain\n  Sequential Recommendation",
+    "summary": "As new products are emerging daily, recommendation systems are required to\nquickly adapt to possible new domains without needing extensive retraining.\nThis work presents ``X-Cross'' -- a novel cross-domain\nsequential-recommendation model that recommends products in new domains by\nintegrating several domain-specific language models; each model is fine-tuned\nwith low-rank adapters (LoRA). Given a recommendation prompt, operating layer\nby layer, X-Cross dynamically refines the representation of each source\nlanguage model by integrating knowledge from all other models. These refined\nrepresentations are propagated from one layer to the next, leveraging the\nactivations from each domain adapter to ensure domain-specific nuances are\npreserved while enabling adaptability across domains. Using Amazon datasets for\nsequential recommendation, X-Cross achieves performance comparable to a model\nthat is fine-tuned with LoRA, while using only 25% of the additional\nparameters. In cross-domain tasks, such as adapting from Toys domain to Tools,\nElectronics or Sports, X-Cross demonstrates robust performance, while requiring\nabout 50%-75% less fine-tuning data than LoRA to make fine-tuning effective.\nFurthermore, X-Cross achieves significant improvement in accuracy over\nalternative cross-domain baselines. Overall, X-Cross enables scalable and\nadaptive cross-domain recommendations, reducing computational overhead and\nproviding an efficient solution for data-constrained environments.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2504.20859.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "630d180f3dc31beba6f061c3",
+      "avatarUrl": "/avatars/7cf70bff453b6e64fcac52f45c6b3730.svg",
+      "fullname": "guy hadad",
+      "name": "guyhadad01",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  }
+]
