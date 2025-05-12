@@ -1,0 +1,570 @@
+[
+  {
+    "paper": {
+      "id": "2505.02550",
+      "authors": [
+        {
+          "_id": "6819ef0b2ff435c58da4d860",
+          "user": {
+            "_id": "63ecbccac8827dd0f0f59579",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63ecbccac8827dd0f0f59579/kz-2F9Z0QKllifgZmr8tH.jpeg",
+            "isPro": false,
+            "fullname": "Chris Ociepa",
+            "user": "chrisociepa",
+            "type": "user"
+          },
+          "name": "Krzysztof Ociepa",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T09:03:56.213Z",
+          "hidden": false
+        },
+        {
+          "_id": "6819ef0b2ff435c58da4d861",
+          "name": "Łukasz Flis",
+          "hidden": false
+        },
+        {
+          "_id": "6819ef0b2ff435c58da4d862",
+          "user": {
+            "_id": "61786d0b038518aa2827c6b7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61786d0b038518aa2827c6b7/d1UnfivoVreYebS5JM3P9.jpeg",
+            "isPro": false,
+            "fullname": "Remek Kinas",
+            "user": "Remek",
+            "type": "user"
+          },
+          "name": "Remigiusz Kinas",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T06:51:15.217Z",
+          "hidden": false
+        },
+        {
+          "_id": "6819ef0b2ff435c58da4d863",
+          "user": {
+            "_id": "5e47d3eb178ca95365287400",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633554153914-5e47d3eb178ca95365287400.png",
+            "isPro": true,
+            "fullname": "Krzysztof Wróbel",
+            "user": "djstrong",
+            "type": "user"
+          },
+          "name": "Krzysztof Wróbel",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T09:03:54.135Z",
+          "hidden": false
+        },
+        {
+          "_id": "6819ef0b2ff435c58da4d864",
+          "name": "Adrian Gwoździej",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-05T10:39:51.000Z",
+      "submittedOnDailyAt": "2025-05-12T07:26:20.895Z",
+      "title": "Bielik v3 Small: 技術報告",
+      "submittedOnDailyBy": {
+        "_id": "5e47d3eb178ca95365287400",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633554153914-5e47d3eb178ca95365287400.png",
+        "isPro": true,
+        "fullname": "Krzysztof Wróbel",
+        "user": "djstrong",
+        "type": "user"
+      },
+      "summary": "ビエリックv3を紹介します。これはパラメーター効率的生成テキストモデルのシリーズです（150Mと450M）で、ポーランド語の処理に最適化されています。これらのモデルは、大きなコンピュータリズムを必要としない小さいやフィールドのようなモデルで同等の性能を示します。私たちのアプローチには、数えられるキーのイノベーションが含まれています：ポーランド語のカスタムトークナイザー（APT4）でトークンの効率が大幅に向上し、インストラクションタイプの学習をバランスにするWeighted Instruction Cross-Entropy Loss、トレーニング進捗に基づいて動的に調整されるAdaptive Learning Rate。292億トークンからなる細心記録されたコーパスを元に、3030万のドキュメントを組み合わせたモデルは、Open PL LLM Leaderboard、複雑なポーランド語のテキスト理解ベンチマーク、ポーランドEQ-Bench、ポーランド医療ベンチマークの複数のベンチマークで優れています。450Mパラメーターモデルは、2-3倍のサイズのモデルとの競争的な結果を収め、150Mパラメーターモデルは、非常に緊張なプロフェイルでも強い性能を提供します。これらの進歩は、パラメーター効率的な言語モデリングの新たなベンチマークを設定し、資源制限されたアプリケーションで高品質なポーランド語のAIがより容易に利用できるようにします。",
+      "upvotes": 16,
+      "discussionId": "6819ef0c2ff435c58da4d892",
+      "projectPage": "https://bielik.ai/",
+      "githubRepo": "https://github.com/speakleash",
+      "ai_keywords": [
+        "parameter-efficient",
+        "generative text models",
+        "token efficiency",
+        "custom Polish tokenizer",
+        "Weighted Instruction Cross-Entropy Loss",
+        "Adaptive Learning Rate"
+      ]
+    },
+    "publishedAt": "2025-05-05T06:39:51.000Z",
+    "title": "Bielik v3 Small: Technical Report",
+    "summary": "We introduce Bielik v3, a series of parameter-efficient generative text\nmodels (1.5B and 4.5B) optimized for Polish language processing. These models\ndemonstrate that smaller, well-optimized architectures can achieve performance\ncomparable to much larger counterparts while requiring substantially fewer\ncomputational resources. Our approach incorporates several key innovations: a\ncustom Polish tokenizer (APT4) that significantly improves token efficiency,\nWeighted Instruction Cross-Entropy Loss to balance learning across instruction\ntypes, and Adaptive Learning Rate that dynamically adjusts based on training\nprogress. Trained on a meticulously curated corpus of 292 billion tokens\nspanning 303 million documents, these models excel across multiple benchmarks,\nincluding the Open PL LLM Leaderboard, Complex Polish Text Understanding\nBenchmark, Polish EQ-Bench, and Polish Medical Leaderboard. The 4.5B parameter\nmodel achieves results competitive with models 2-3 times its size, while the\n1.5B model delivers strong performance despite its extremely compact profile.\nThese advances establish new benchmarks for parameter-efficient language\nmodeling in less-represented languages, making high-quality Polish language AI\nmore accessible for resource-constrained applications.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.02550.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5e47d3eb178ca95365287400",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633554153914-5e47d3eb178ca95365287400.png",
+      "fullname": "Krzysztof Wróbel",
+      "name": "djstrong",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.02410",
+      "authors": [
+        {
+          "_id": "6819f19e5c7ea9f74284d3a3",
+          "user": {
+            "_id": "63ecbccac8827dd0f0f59579",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63ecbccac8827dd0f0f59579/kz-2F9Z0QKllifgZmr8tH.jpeg",
+            "isPro": false,
+            "fullname": "Chris Ociepa",
+            "user": "chrisociepa",
+            "type": "user"
+          },
+          "name": "Krzysztof Ociepa",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T09:03:52.265Z",
+          "hidden": false
+        },
+        {
+          "_id": "6819f19e5c7ea9f74284d3a4",
+          "name": "Łukasz Flis",
+          "hidden": false
+        },
+        {
+          "_id": "6819f19e5c7ea9f74284d3a5",
+          "user": {
+            "_id": "5e47d3eb178ca95365287400",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633554153914-5e47d3eb178ca95365287400.png",
+            "isPro": true,
+            "fullname": "Krzysztof Wróbel",
+            "user": "djstrong",
+            "type": "user"
+          },
+          "name": "Krzysztof Wróbel",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T09:03:50.340Z",
+          "hidden": false
+        },
+        {
+          "_id": "6819f19e5c7ea9f74284d3a6",
+          "name": "Adrian Gwoździej",
+          "hidden": false
+        },
+        {
+          "_id": "6819f19e5c7ea9f74284d3a7",
+          "user": {
+            "_id": "61786d0b038518aa2827c6b7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61786d0b038518aa2827c6b7/d1UnfivoVreYebS5JM3P9.jpeg",
+            "isPro": false,
+            "fullname": "Remek Kinas",
+            "user": "Remek",
+            "type": "user"
+          },
+          "name": "Remigiusz Kinas",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T06:51:13.426Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-05T07:03:41.000Z",
+      "submittedOnDailyAt": "2025-05-12T07:25:02.402Z",
+      "title": "ビエリック11B v2技術報告",
+      "submittedOnDailyBy": {
+        "_id": "5e47d3eb178ca95365287400",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633554153914-5e47d3eb178ca95365287400.png",
+        "isPro": true,
+        "fullname": "Krzysztof Wróbel",
+        "user": "djstrong",
+        "type": "user"
+      },
+      "summary": "ビエリック11B v2、ポーランド語の処理に最適化された最先端の言語モデルを紹介します。ミストラル7B v0.2アーキテクチャに基づいて、深さアップスケーリングを用いてパラメータ数を11Bに拡大し、ポーランド語のベンチマークで出色な性能を示し、クロスランゲージ能力も強いです。2つの主な技術革新を紹介します：Weighted Instruction Cross-Entropy LossとAdaptive Learning Rate。Weighted Instruction Cross-Entropy Lossは、学習例を品質ベースの重みを割り当てることで多様なインストラクションタイプの学習を最適化し、Adaptive Learning Rateはコンテキストの長さに基づいて動的に調整します。複数のベンチマークでの検証は、Bielik 11B v2がパラメータ数が2～6倍多いより大きなモデルを超え、言語理解から複雑な推理までの多様なポーランド語モデルで最も優れています。モデルのパラメータ効率と拡散化の機能が、様々なハードウェア構成での採用を可能にし、ポーランド語のAIの機能を進化させ、少め表現される言語の資源効率的な言語モデリングの新たなベンチマークを設定します。",
+      "upvotes": 16,
+      "discussionId": "6819f19e5c7ea9f74284d3cc",
+      "projectPage": "https://bielik.ai/",
+      "githubRepo": "https://github.com/speakleash",
+      "ai_keywords": [
+        "Weighted Instruction Cross-Entropy Loss",
+        "Adaptive Learning Rate",
+        "depth up-scaling",
+        "parameter efficiency",
+        "quantization"
+      ]
+    },
+    "publishedAt": "2025-05-05T03:03:41.000Z",
+    "title": "Bielik 11B v2 Technical Report",
+    "summary": "We present Bielik 11B v2, a state-of-the-art language model optimized for\nPolish text processing. Built on the Mistral 7B v0.2 architecture and scaled to\n11B parameters using depth up-scaling, this model demonstrates exceptional\nperformance across Polish language benchmarks while maintaining strong\ncross-lingual capabilities. We introduce two key technical innovations:\nWeighted Instruction Cross-Entropy Loss, which optimizes learning across\ndiverse instruction types by assigning quality-based weights to training\nexamples, and Adaptive Learning Rate, which dynamically adjusts based on\ncontext length. Comprehensive evaluation across multiple benchmarks\ndemonstrates that Bielik 11B v2 outperforms many larger models, including those\nwith 2-6 times more parameters, and significantly surpasses other specialized\nPolish language models on tasks ranging from linguistic understanding to\ncomplex reasoning. The model's parameter efficiency and extensive quantization\noptions enable deployment across various hardware configurations, advancing\nPolish language AI capabilities and establishing new benchmarks for\nresource-efficient language modeling in less-represented languages.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.02410.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5e47d3eb178ca95365287400",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633554153914-5e47d3eb178ca95365287400.png",
+      "fullname": "Krzysztof Wróbel",
+      "name": "djstrong",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.06046",
+      "authors": [
+        {
+          "_id": "6821af48696b63e207ae8474",
+          "user": {
+            "_id": "64cb98c6f103036e23c69b1d",
+            "avatarUrl": "/avatars/7ee33880ad39f5335b618dc53554124a.svg",
+            "isPro": false,
+            "fullname": "Harris",
+            "user": "Joshua-Harris",
+            "type": "user"
+          },
+          "name": "Joshua Harris",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T09:03:48.631Z",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae8475",
+          "name": "Fan Grayson",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae8476",
+          "name": "Felix Feldman",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae8477",
+          "name": "Timothy Laurence",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae8478",
+          "name": "Toby Nonnenmacher",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae8479",
+          "name": "Oliver Higgins",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae847a",
+          "name": "Leo Loman",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae847b",
+          "name": "Selina Patel",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae847c",
+          "name": "Thomas Finnie",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae847d",
+          "name": "Samuel Collins",
+          "hidden": false
+        },
+        {
+          "_id": "6821af48696b63e207ae847e",
+          "name": "Michael Borowitz",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-09T13:42:59.000Z",
+      "submittedOnDailyAt": "2025-05-12T07:35:55.202Z",
+      "title": "健康なLLMs? UK政府の公共衛生情報に関するLLM知識のベンチマーク",
+      "submittedOnDailyBy": {
+        "_id": "64cb98c6f103036e23c69b1d",
+        "avatarUrl": "/avatars/7ee33880ad39f5335b618dc53554124a.svg",
+        "isPro": false,
+        "fullname": "Harris",
+        "user": "Joshua-Harris",
+        "type": "user"
+      },
+      "summary": "LLMが広くアクセス可能になることに伴い、特定の領域での知識の詳細な理解が成功した実世界の使用に必要となります。特に、公共衛生領域では、関連した、正確な、現在の情報を取得できない場合、UKの居住者に重大な影響を与える可能性が高いため、これが特に重要です。しかし、現在、LLMがUK政府の公共衛生情報について知ることは少ないことがわかっています。この問題を解決するために、この論文では、LLMのMultiple Choice Question Answering (MCQA)と公共衛生の質問に対する自由形式の回答を評価するための新しいベンチマーク、PubHealthBenchを紹介します。これは、自動化プロセスで作成された8000点以上の質問を含みます。また、PubHealthBenchのソーステキストとして使用されたUK政府の公共衛生ガイドラインドキュメントの新しいデータセットをリリースします。PubHealthBenchで24つのLLMを評価した結果、最新の非公開LLM（GPT-4.5、GPT-4.1、o1）は高度な知識を持っていることがわかり、MCQAでは90%以上を達成し、検索エンジンの輕い使用での人間よりも優れています。しかし、自由形式の設定では、75%を超えるモデルはありません。したがって、最新のモデル（SOTA）が公共衛生情報の正確なサインを示していることはあるが、自由形式の回答を提供する場合には、追加の安全対策やツールが必要となる可能性があります。",
+      "upvotes": 6,
+      "discussionId": "6821af49696b63e207ae84c6",
+      "ai_keywords": [
+        "Large Language Models (LLMs)",
+        "Multiple Choice Question Answering (MCQA)",
+        "PubHealthBench",
+        "UK Government public health information",
+        "automated pipeline",
+        "extracted UK Government public health guidance documents",
+        "SOTA (state of the art) LLMs",
+        "GPT-4.5",
+        "GPT-4.1",
+        "o1"
+      ]
+    },
+    "publishedAt": "2025-05-09T09:42:59.000Z",
+    "title": "Healthy LLMs? Benchmarking LLM Knowledge of UK Government Public Health\n  Information",
+    "summary": "As Large Language Models (LLMs) become widely accessible, a detailed\nunderstanding of their knowledge within specific domains becomes necessary for\nsuccessful real world use. This is particularly critical in public health,\nwhere failure to retrieve relevant, accurate, and current information could\nsignificantly impact UK residents. However, currently little is known about LLM\nknowledge of UK Government public health information. To address this issue,\nthis paper introduces a new benchmark, PubHealthBench, with over 8000 questions\nfor evaluating LLMs' Multiple Choice Question Answering (MCQA) and free form\nresponses to public health queries, created via an automated pipeline. We also\nrelease a new dataset of the extracted UK Government public health guidance\ndocuments used as source text for PubHealthBench. Assessing 24 LLMs on\nPubHealthBench we find the latest private LLMs (GPT-4.5, GPT-4.1 and o1) have a\nhigh degree of knowledge, achieving >90% in the MCQA setup, and outperform\nhumans with cursory search engine use. However, in the free form setup we see\nlower performance with no model scoring >75%. Therefore, whilst there are\npromising signs that state of the art (SOTA) LLMs are an increasingly accurate\nsource of public health information, additional safeguards or tools may still\nbe needed when providing free form responses on public health topics.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.06046.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "64cb98c6f103036e23c69b1d",
+      "avatarUrl": "/avatars/7ee33880ad39f5335b618dc53554124a.svg",
+      "fullname": "Harris",
+      "name": "Joshua-Harris",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.06111",
+      "authors": [
+        {
+          "_id": "68218b847202d193249511b6",
+          "name": "Qingwen Bu",
+          "hidden": false
+        },
+        {
+          "_id": "68218b847202d193249511b7",
+          "name": "Yanting Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68218b847202d193249511b8",
+          "name": "Jisong Cai",
+          "hidden": false
+        },
+        {
+          "_id": "68218b847202d193249511b9",
+          "name": "Shenyuan Gao",
+          "hidden": false
+        },
+        {
+          "_id": "68218b847202d193249511ba",
+          "user": {
+            "_id": "646ec9b135f55eb49e405faa",
+            "avatarUrl": "/avatars/a17194be585d20e2a021e77a5a20e213.svg",
+            "isPro": false,
+            "fullname": "Guanghui Ren",
+            "user": "sundrops",
+            "type": "user"
+          },
+          "name": "Guanghui Ren",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T06:50:15.305Z",
+          "hidden": false
+        },
+        {
+          "_id": "68218b847202d193249511bb",
+          "name": "Maoqing Yao",
+          "hidden": false
+        },
+        {
+          "_id": "68218b847202d193249511bc",
+          "name": "Ping Luo",
+          "hidden": false
+        },
+        {
+          "_id": "68218b847202d193249511bd",
+          "name": "Hongyang Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-09T15:11:13.000Z",
+      "submittedOnDailyAt": "2025-05-12T04:30:20.087Z",
+      "title": "UniVLA: 任務センター化潜在アクションを用いてどこでも行動学習する",
+      "submittedOnDailyBy": {
+        "_id": "64ac1f169dcc5787461468a4",
+        "avatarUrl": "/avatars/c031a75989147009b7850df4eddfcb27.svg",
+        "isPro": false,
+        "fullname": "Qingwen Bu",
+        "user": "qwbu",
+        "type": "user"
+      },
+      "summary": "一般用機器人は、多様な環境で効果的に動作するべきです。しかし、現在の多くのアプローチは、動作標識されたデータのスケーリングを重視して、その能力を向上させるためにより多くのデータを使用しています。これにより、これらの機械人は、単一の物理的な特徴を持つものに限られ、異なる機体と環境での学習可能な知識を得ることが難しくなります。これらの制限に対処するために、私たちは、新しいフレームワーク「UniVLA」を提案します。これは、異なる機体での視覚・言語・動作（VLA）ポリシーの学習を行うことを目的としています。私たちの主な革新点は、潜在的な動作モデルを用いて、ビデオからタスクセンタリックな動作表現を得ることです。これにより、幅広い機体と視点の範囲での試験データを活用することができます。タスクに関係ない動作の影響を抑えるために、言語指示を採用し、DINO特徴空間内で潜在的な動作モデルを構築します。インターネットサイズのビデオから学習された一般用ポリシーは、効率的な潜在的な動作解釈により、多様なロボットに機能することができます。多様な操作とナビゲーションベンチマークにおいて最先端の結果を得、実際のロボットデポイトメントも実現しました。UniVLAは、OpenVLAよりも上位の性能を達成し、学習コンピューターの計算量が1/20、デポイトメントデータが1/10であることを証明します。異なるデータ、特に人間のビデオを含むデータを追加してテストプロセスに含めることにより、継続的な性能向上が見られます。これらの結果は、UniVLAがスケーラブルで効率的なロボットポリシー学習を促進することを示しています。",
+      "upvotes": 5,
+      "discussionId": "68218b857202d19324951214",
+      "githubRepo": "https://github.com/OpenDriveLab/UniVLA",
+      "ai_keywords": [
+        "UniVLA",
+        "vision-language-action (VLA) policies",
+        "latent action model",
+        "DINO feature space",
+        "latent action decoding",
+        "manipulation benchmarks",
+        "navigation benchmarks",
+        "real-robot deployments",
+        "OpenVLA"
+      ]
+    },
+    "publishedAt": "2025-05-09T11:11:13.000Z",
+    "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
+    "summary": "A generalist robot should perform effectively across various environments.\nHowever, most existing approaches heavily rely on scaling action-annotated data\nto enhance their capabilities. Consequently, they are often limited to single\nphysical specification and struggle to learn transferable knowledge across\ndifferent embodiments and environments. To confront these limitations, we\npropose UniVLA, a new framework for learning cross-embodiment\nvision-language-action (VLA) policies. Our key innovation is to derive\ntask-centric action representations from videos with a latent action model.\nThis enables us to exploit extensive data across a wide spectrum of embodiments\nand perspectives. To mitigate the effect of task-irrelevant dynamics, we\nincorporate language instructions and establish a latent action model within\nthe DINO feature space. Learned from internet-scale videos, the generalist\npolicy can be deployed to various robots through efficient latent action\ndecoding. We obtain state-of-the-art results across multiple manipulation and\nnavigation benchmarks, as well as real-robot deployments. UniVLA achieves\nsuperior performance over OpenVLA with less than 1/20 of pretraining compute\nand 1/10 of downstream data. Continuous performance improvements are observed\nas heterogeneous data, even including human videos, are incorporated into the\ntraining pipeline. The results underscore UniVLA's potential to facilitate\nscalable and efficient robot policy learning.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.06111.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64ac1f169dcc5787461468a4",
+      "avatarUrl": "/avatars/c031a75989147009b7850df4eddfcb27.svg",
+      "fullname": "Qingwen Bu",
+      "name": "qwbu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.05026",
+      "authors": [
+        {
+          "_id": "6821771ddf190eabf5f666d8",
+          "user": {
+            "_id": "655c44752205aab35222aca3",
+            "avatarUrl": "/avatars/57900539952382de0ce6892faf50b401.svg",
+            "isPro": false,
+            "fullname": "Jaehyun Jeon",
+            "user": "jeochris",
+            "type": "user"
+          },
+          "name": "Jaehyun Jeon",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-12T06:50:17.832Z",
+          "hidden": false
+        },
+        {
+          "_id": "6821771ddf190eabf5f666d9",
+          "name": "Jang Han Yoon",
+          "hidden": false
+        },
+        {
+          "_id": "6821771ddf190eabf5f666da",
+          "name": "Min Soo Kim",
+          "hidden": false
+        },
+        {
+          "_id": "6821771ddf190eabf5f666db",
+          "name": "Sumin Shim",
+          "hidden": false
+        },
+        {
+          "_id": "6821771ddf190eabf5f666dc",
+          "name": "Yejin Choi",
+          "hidden": false
+        },
+        {
+          "_id": "6821771ddf190eabf5f666dd",
+          "name": "Hanbin Kim",
+          "hidden": false
+        },
+        {
+          "_id": "6821771ddf190eabf5f666de",
+          "name": "Youngjae Yu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-08T08:00:32.000Z",
+      "submittedOnDailyAt": "2025-05-12T05:33:20.932Z",
+      "title": "G-FOCUS: ユーザインターフェイスデザインの說服力を評価するための強固な方法への向け",
+      "submittedOnDailyBy": {
+        "_id": "655c44752205aab35222aca3",
+        "avatarUrl": "/avatars/57900539952382de0ce6892faf50b401.svg",
+        "isPro": false,
+        "fullname": "Jaehyun Jeon",
+        "user": "jeochris",
+        "type": "user"
+      },
+      "summary": "UIデザインの効果性評価は美術性を超えて、ユーザーの行動に影響を与えることに焦点を当てています。これはDesign Persuasivenessの中心的な原則です。A/Bテストは、ユーザーの参加度を高めるUIの選択を決定する主な方法ですが、これは費用と時間がかかります。最近のVision-Language Models (VLMs)は自動化されたUI分析を処理することができますが、現在のアプローチは孤立したデザイン属性に焦点を当てて、比較的說服力を中心にしていません。これに対処するために、WiserUI-Benchを紹介します。これはPairwise UI Design Persuasiveness Assessmentタスクに向けて設計されたベンチマークで、300ペアの実世界的UI画像をA/Bテスト結果と専門家の理由でラベル付けされています。また、G-FOCUSを提案します。これはVLMベースの說服力評価を強化し、位置バイアスを減少し、評価の精度を向上させる新しい推論時の理由論の策です。実験結果から、G-FOCUSは現在の推論戦略を超えるPairwise UI評価の一致性と精度について説明します。VLMによるUI說服力の評価を促進することで、我々の研究はA/Bテストを補完するアプローチを提供し、可換算なUI好みモデリングとデザイン最適化の進歩を促進します。コードとデータは公開的にリリースされます。",
+      "upvotes": 5,
+      "discussionId": "68217722df190eabf5f66814",
+      "ai_keywords": [
+        "Vision-Language Models",
+        "WiserUI-Bench",
+        "Pairwise UI Design Persuasiveness Assessment",
+        "G-FOCUS",
+        "inference-time reasoning strategy",
+        "position bias",
+        "VLM-driven evaluation"
+      ]
+    },
+    "publishedAt": "2025-05-08T04:00:32.000Z",
+    "title": "G-FOCUS: Towards a Robust Method for Assessing UI Design Persuasiveness",
+    "summary": "Evaluating user interface (UI) design effectiveness extends beyond aesthetics\nto influencing user behavior, a principle central to Design Persuasiveness. A/B\ntesting is the predominant method for determining which UI variations drive\nhigher user engagement, but it is costly and time-consuming. While recent\nVision-Language Models (VLMs) can process automated UI analysis, current\napproaches focus on isolated design attributes rather than comparative\npersuasiveness-the key factor in optimizing user interactions. To address this,\nwe introduce WiserUI-Bench, a benchmark designed for Pairwise UI Design\nPersuasiveness Assessment task, featuring 300 real-world UI image pairs labeled\nwith A/B test results and expert rationales. Additionally, we propose G-FOCUS,\na novel inference-time reasoning strategy that enhances VLM-based\npersuasiveness assessment by reducing position bias and improving evaluation\naccuracy. Experimental results show that G-FOCUS surpasses existing inference\nstrategies in consistency and accuracy for pairwise UI evaluation. Through\npromoting VLM-driven evaluation of UI persuasiveness, our work offers an\napproach to complement A/B testing, propelling progress in scalable UI\npreference modeling and design optimization. Code and data will be released\npublicly.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.05026.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "655c44752205aab35222aca3",
+      "avatarUrl": "/avatars/57900539952382de0ce6892faf50b401.svg",
+      "fullname": "Jaehyun Jeon",
+      "name": "jeochris",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.02686",
+      "authors": [
+        {
+          "_id": "6821acfb2808328b91c0e365",
+          "name": "Xiaobao Wu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-05T14:33:49.000Z",
+      "submittedOnDailyAt": "2025-05-12T06:41:36.276Z",
+      "title": "星に乗り歩くAI: 大語言モデルのトレーニング後およびテスト時スケーリングにおける報酬従学の調査",
+      "submittedOnDailyBy": {
+        "_id": "64cb02869e30a46f7b80b355",
+        "avatarUrl": "/avatars/81ce4ba78826b54f0e1b53eeaff87ee6.svg",
+        "isPro": false,
+        "fullname": "Xiaobao Wu",
+        "user": "bobxwu",
+        "type": "user"
+      },
+      "summary": "最近の大語言モデル（LLMs）の進展は、事前学習スケーリングから後期学習とテスト時スケーリングに移行しました。これらの進展において、一つのキー的な統一的パラダイムが現れた：報酬から学習することで、報酬信号がLLMの行動を指導する星になります。これは、強化学習（RLHF、DPO、GRPO）、報酬ガイドされた解碼、後時的補正などの多様な技術に基づいています。重要なことに、このパラダイムは、静的なデータからの被動的な学習から動的なフィードバックからの活性的な学習への転移を可能にします。これにより、LLMsは一致した好みと深い理由論的機能を持ちます。この調査では、報酬から学習するパラダイムについての詳細な概要を提供します。このパラダイムの下での学習、推論、推論後ステージにおける戦略を分類し、分析します。また、報酬モデルのベンチマークと主なアプリケーションについても議論します。最後に、課題と将来の方向性を特徴的にします。ペーパーコレクションを保有しています：https://github.com/bobxwu/learning-from-rewards-llm-papers。",
+      "upvotes": 3,
+      "discussionId": "6821acfd2808328b91c0e3e3",
+      "githubRepo": "https://github.com/bobxwu/learning-from-rewards-llm-papers",
+      "ai_keywords": [
+        "reinforcement learning",
+        "RLHF",
+        "DPO",
+        "GRPO",
+        "reward-guided decoding",
+        "post-hoc correction",
+        "active learning",
+        "reward models"
+      ]
+    },
+    "publishedAt": "2025-05-05T10:33:49.000Z",
+    "title": "Sailing AI by the Stars: A Survey of Learning from Rewards in\n  Post-Training and Test-Time Scaling of Large Language Models",
+    "summary": "Recent developments in Large Language Models (LLMs) have shifted from\npre-training scaling to post-training and test-time scaling. Across these\ndevelopments, a key unified paradigm has arisen: Learning from Rewards, where\nreward signals act as the guiding stars to steer LLM behavior. It has\nunderpinned a wide range of prevalent techniques, such as reinforcement\nlearning (in RLHF, DPO, and GRPO), reward-guided decoding, and post-hoc\ncorrection. Crucially, this paradigm enables the transition from passive\nlearning from static data to active learning from dynamic feedback. This endows\nLLMs with aligned preferences and deep reasoning capabilities. In this survey,\nwe present a comprehensive overview of the paradigm of learning from rewards.\nWe categorize and analyze the strategies under this paradigm across training,\ninference, and post-inference stages. We further discuss the benchmarks for\nreward models and the primary applications. Finally we highlight the challenges\nand future directions. We maintain a paper collection at\nhttps://github.com/bobxwu/learning-from-rewards-llm-papers.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.02686.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64cb02869e30a46f7b80b355",
+      "avatarUrl": "/avatars/81ce4ba78826b54f0e1b53eeaff87ee6.svg",
+      "fullname": "Xiaobao Wu",
+      "name": "bobxwu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  }
+]
