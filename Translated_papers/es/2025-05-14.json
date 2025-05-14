@@ -1,0 +1,753 @@
+[
+  {
+    "paper": {
+      "id": "2505.07916",
+      "authors": [
+        {
+          "_id": "68244ea3bfb1b25f60400efd",
+          "name": "Bowen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400efe",
+          "name": "Congchao Guo",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400eff",
+          "name": "Geng Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f00",
+          "name": "Hang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f01",
+          "name": "Haozhe Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f02",
+          "name": "Heidi Lei",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f03",
+          "name": "Jialong Mai",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f04",
+          "user": {
+            "_id": "63390ce41718795719635b1e",
+            "avatarUrl": "/avatars/ad03a2b349f01c1ac1fedfb95d02d43e.svg",
+            "isPro": false,
+            "fullname": "JunjieYan",
+            "user": "JunjieYan",
+            "type": "user"
+          },
+          "name": "Junjie Yan",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:05:37.903Z",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f05",
+          "name": "Kaiyue Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f06",
+          "user": {
+            "_id": "65e29a93e142ecfc09bddf3a",
+            "avatarUrl": "/avatars/70168cae7aef1bb2c00392b926eabb18.svg",
+            "isPro": false,
+            "fullname": "Mingqi Yang",
+            "user": "mqyang1s",
+            "type": "user"
+          },
+          "name": "Mingqi Yang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:05:51.310Z",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f07",
+          "name": "Peikai Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f08",
+          "name": "Ruiyang Jin",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f09",
+          "name": "Sitan Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f0a",
+          "name": "Weihua Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f0b",
+          "name": "Yawei Li",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f0c",
+          "name": "Yichen Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f0d",
+          "name": "Yiying Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f0e",
+          "user": {
+            "_id": "64b655c3f44a33a87e73b866",
+            "avatarUrl": "/avatars/3a2c58eb10d4cf7040f63ea15284c574.svg",
+            "isPro": false,
+            "fullname": "yongmao zhang",
+            "user": "ymzhang0519",
+            "type": "user"
+          },
+          "name": "Yongmao Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:06:55.523Z",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f0f",
+          "name": "Yuan Lu",
+          "hidden": false
+        },
+        {
+          "_id": "68244ea3bfb1b25f60400f10",
+          "name": "Yucen He",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-12T14:25:20.000Z",
+      "submittedOnDailyAt": "2025-05-14T07:29:51.954Z",
+      "title": "MiniMax-Speech: Conversión de texto a voz en 0-Slot de texto interno utilizando un encoder de voz entrenable",
+      "submittedOnDailyBy": {
+        "_id": "676e38ad04af5bec20bc9faf",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/676e38ad04af5bec20bc9faf/AG8Q9wAUzGtPWyjd5QO2l.jpeg",
+        "isPro": false,
+        "fullname": "MiniMax",
+        "user": "MiniMax-AI",
+        "type": "user"
+      },
+      "summary": "MiniMax-Speech es un modelo de Texto a Speech (TTS) basado en Transformer que genera vozes de alta calidad. La innovación principal es el uso de un codificador de voz que es aprendible, lo que permite extraer características temporales de audios de referencia sin necesidad de realizar traducciones. Esto permite que MiniMax-Speech genere vozes con una alta expresión de características temporales que coinciden con la referencia, incluso en el caso de entrenamiento sin ejemplos (0 shot). Además, soporta el croning de voz de un solo ejemplo (1 shot), lo que muestra una alta similitud con la voz de referencia. Propone Flow-VAE para mejorar la calidad total de las vozes generadas. El modelo soporta 32 idiomas y muestra excelentes resultados en diferentes métricas de evaluación tanto objetivas como subjetivas. En particular, alcanza los mejores resultados en el índice de croning de voz objetivo (Error de Palabras y Similaridad de Hablante) y obtiene la posición de máxima calificación en el TTS Arena. Otro punto clave de MiniMax-Speech es que el codificador de voz genera representaciones fuertes y separadas, lo que permite expandir el modelo sin necesidad de cambiar el base modelo. Esto abre posibilidades para aplicaciones diversas, como el control de emociones en vozes arbitrarias (LoRA), la generación de voz a partir de texto (T2V), y el croning de voz profesional (PVC). Esperamos ver más ejemplos en el informe técnico de MiniMax-AI.",
+      "upvotes": 68,
+      "discussionId": "68244ea4bfb1b25f60400f4c",
+      "projectPage": "https://minimax-ai.github.io/tts_tech_report/",
+      "githubRepo": "https://github.com/MiniMax-AI/MiniMax-AI.github.io",
+      "ai_keywords": [
+        "autoregressive Transformer",
+        "Text-to-Speech (TTS)",
+        "learnable speaker encoder",
+        "timbre features",
+        "zero-shot",
+        "one-shot voice cloning",
+        "Flow-VAE",
+        "Word Error Rate",
+        "Speaker Similarity",
+        "TTS Arena leaderboard",
+        "robust and disentangled representations",
+        "arbitrary voice emotion control",
+        "LoRA (Low-Rank Adaptation)",
+        "text to voice (T2V)",
+        "professional voice cloning (PVC)"
+      ]
+    },
+    "publishedAt": "2025-05-12T10:25:20.000Z",
+    "title": "MiniMax-Speech: Intrinsic Zero-Shot Text-to-Speech with a Learnable\n  Speaker Encoder",
+    "summary": "We introduce MiniMax-Speech, an autoregressive Transformer-based\nText-to-Speech (TTS) model that generates high-quality speech. A key innovation\nis our learnable speaker encoder, which extracts timbre features from a\nreference audio without requiring its transcription. This enables\nMiniMax-Speech to produce highly expressive speech with timbre consistent with\nthe reference in a zero-shot manner, while also supporting one-shot voice\ncloning with exceptionally high similarity to the reference voice. In addition,\nthe overall quality of the synthesized audio is enhanced through the proposed\nFlow-VAE. Our model supports 32 languages and demonstrates excellent\nperformance across multiple objective and subjective evaluations metrics.\nNotably, it achieves state-of-the-art (SOTA) results on objective voice cloning\nmetrics (Word Error Rate and Speaker Similarity) and has secured the top\nposition on the public TTS Arena leaderboard. Another key strength of\nMiniMax-Speech, granted by the robust and disentangled representations from the\nspeaker encoder, is its extensibility without modifying the base model,\nenabling various applications such as: arbitrary voice emotion control via\nLoRA; text to voice (T2V) by synthesizing timbre features directly from text\ndescription; and professional voice cloning (PVC) by fine-tuning timbre\nfeatures with additional data. We encourage readers to visit\nhttps://minimax-ai.github.io/tts_tech_report for more examples.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.07916.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "676e38ad04af5bec20bc9faf",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/676e38ad04af5bec20bc9faf/AG8Q9wAUzGtPWyjd5QO2l.jpeg",
+      "fullname": "MiniMax",
+      "name": "MiniMax-AI",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 132
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.07591",
+      "authors": [
+        {
+          "_id": "6822e023b1df51252f95e958",
+          "user": {
+            "_id": "66384be673c2c55f2ded89fa",
+            "avatarUrl": "/avatars/1d8721074f0f51fab405f81474f2035f.svg",
+            "isPro": false,
+            "fullname": "Junjie Ye",
+            "user": "Junjie-Ye",
+            "type": "user"
+          },
+          "name": "Junjie Ye",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-14T07:35:57.239Z",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e959",
+          "name": "Caishuang Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e95a",
+          "name": "Zhuohan Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e95b",
+          "user": {
+            "_id": "636b5fd69560e7403d9150ff",
+            "avatarUrl": "/avatars/ffe3553a47624f6821b0b46f0da729dd.svg",
+            "isPro": false,
+            "fullname": "fuwenjie",
+            "user": "avonfwj",
+            "type": "user"
+          },
+          "name": "Wenjie Fu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:10:19.727Z",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e95c",
+          "name": "Chenyuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e95d",
+          "name": "Leyi Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e95e",
+          "user": {
+            "_id": "64e99648662874dbc9c53ee6",
+            "avatarUrl": "/avatars/10927024e137a3d43a5e8028c1d7c1c1.svg",
+            "isPro": false,
+            "fullname": "yilong",
+            "user": "wuyilong",
+            "type": "user"
+          },
+          "name": "Yilong Wu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:11:11.451Z",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e95f",
+          "name": "Peng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e960",
+          "name": "Meng Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e961",
+          "user": {
+            "_id": "643d91e737453b48a6febd9b",
+            "avatarUrl": "/avatars/dc5802c5b76239737fa182a6cdfdae1b.svg",
+            "isPro": false,
+            "fullname": "Xiaolong  yang",
+            "user": "sean-xl-y",
+            "type": "user"
+          },
+          "name": "Xiaolong Yang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:11:18.988Z",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e962",
+          "name": "Tao Gui",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e963",
+          "name": "Qi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e964",
+          "name": "Zhongchao Shi",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e965",
+          "name": "Jianping Fan",
+          "hidden": false
+        },
+        {
+          "_id": "6822e023b1df51252f95e966",
+          "user": {
+            "_id": "67f9c4ee171948c38302ae0f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/Cqb3ijr_sZkpLhEEEEybK.png",
+            "isPro": false,
+            "fullname": "Xuanjing Huang",
+            "user": "xjhuang",
+            "type": "user"
+          },
+          "name": "Xuanjing Huang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:11:25.379Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-12T14:16:55.000Z",
+      "submittedOnDailyAt": "2025-05-14T05:33:58.516Z",
+      "title": "Evaluación y Mejora de la Adherencia a la Instrumentación en Sistemas Multivariados de Restricciones",
+      "submittedOnDailyBy": {
+        "_id": "66384be673c2c55f2ded89fa",
+        "avatarUrl": "/avatars/1d8721074f0f51fab405f81474f2035f.svg",
+        "isPro": false,
+        "fullname": "Junjie Ye",
+        "user": "Junjie-Ye",
+        "type": "user"
+      },
+      "summary": "En la sección de Instrucción siguiendo, se evalúa la capacidad de los modelos de lenguaje grandes (LLMs) para generar salidas según restricciones definidas por el usuario. Sin embargo, actualmente, los marcos de referencia (benchmarks) generalmente se basan en restricciones templatizadas y no reflejan la diversidad de usos en el mundo real, lo que limita la evaluación de pequeñas diferencias en el rendimiento. Para complementar esto, proponemos un marco de restricciones que incluye 3 patrones de restricción, 4 categorías de restricción y 4 niveles de dificultad. Basándonos en este marco, desarrollamos una pipeline de generación automática de restricciones que incluye la expansión de restricciones, la detección de conflictos y la modificación de restricciones, y generamos 1,200 muestras de prueba de secuencias de restricciones visualizables. Evaluamos 19 modelos de LLMs pertenecientes a 7 familias y descubrimos grandes diferencias en el rendimiento según el tipo de restricción. Por ejemplo, el rendimiento promedio en el nivel I es del 77.67%, mientras que en el nivel IV es del 32.96%. Además, demostramos la utilidad de nuestro enfoque al generar datos para entrenamiento de aprendizaje por refuerzo que significativamente mejora la secuenciación de instrucciones. Estos efectos son claramente explicados por la modificación de los parámetros de los módulos de atención del modelo, lo que permite una mejor identificación de restricciones y una mejora en la secuenciación. Los códigos y datos están disponibles en https://github.com/Junjie-Ye/MulDimIF.",
+      "upvotes": 4,
+      "discussionId": "6822e024b1df51252f95e9be",
+      "ai_keywords": [
+        "instruction-following",
+        "constraint expansion",
+        "conflict detection",
+        "instruction rewriting",
+        "code-verifiable",
+        "attention modules"
+      ]
+    },
+    "publishedAt": "2025-05-12T10:16:55.000Z",
+    "title": "A Multi-Dimensional Constraint Framework for Evaluating and Improving\n  Instruction Following in Large Language Models",
+    "summary": "Instruction following evaluates large language models (LLMs) on their ability\nto generate outputs that adhere to user-defined constraints. However, existing\nbenchmarks often rely on templated constraint prompts, which lack the diversity\nof real-world usage and limit fine-grained performance assessment. To fill this\ngap, we propose a multi-dimensional constraint framework encompassing three\nconstraint patterns, four constraint categories, and four difficulty levels.\nBuilding on this framework, we develop an automated instruction generation\npipeline that performs constraint expansion, conflict detection, and\ninstruction rewriting, yielding 1,200 code-verifiable instruction-following\ntest samples. We evaluate 19 LLMs across seven model families and uncover\nsubstantial variation in performance across constraint forms. For instance,\naverage performance drops from 77.67% at Level I to 32.96% at Level IV.\nFurthermore, we demonstrate the utility of our approach by using it to generate\ndata for reinforcement learning, achieving substantial gains in instruction\nfollowing without degrading general performance. In-depth analysis indicates\nthat these gains stem primarily from modifications in the model's attention\nmodules parameters, which enhance constraint recognition and adherence. Code\nand data are available in https://github.com/Junjie-Ye/MulDimIF.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.07591.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66384be673c2c55f2ded89fa",
+      "avatarUrl": "/avatars/1d8721074f0f51fab405f81474f2035f.svg",
+      "fullname": "Junjie Ye",
+      "name": "Junjie-Ye",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.07215",
+      "authors": [
+        {
+          "_id": "68236b86102b1d3069ebafab",
+          "user": {
+            "_id": "64b88247e436bbca16603baf",
+            "avatarUrl": "/avatars/7bde6b0f75bccc3195fb72cbe5860a7e.svg",
+            "isPro": false,
+            "fullname": "Vivek Verma",
+            "user": "vivekverma",
+            "type": "user"
+          },
+          "name": "Vivek Verma",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-05-13T15:55:50.678Z",
+          "hidden": false
+        },
+        {
+          "_id": "68236b86102b1d3069ebafac",
+          "name": "David Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68236b86102b1d3069ebafad",
+          "name": "William Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68236b86102b1d3069ebafae",
+          "user": {
+            "_id": "632be88b3690fb57e70e0bf1",
+            "avatarUrl": "/avatars/74ff8f30b3662db2602495bdf493d397.svg",
+            "isPro": false,
+            "fullname": "Dan Klein",
+            "user": "danjklein",
+            "type": "user"
+          },
+          "name": "Dan Klein",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:09:04.358Z",
+          "hidden": false
+        },
+        {
+          "_id": "68236b86102b1d3069ebafaf",
+          "user": {
+            "_id": "6269d074a6a7bba9e46d8d50",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1651101782106-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Nicholas Tomlin",
+            "user": "nickatomlin",
+            "type": "user"
+          },
+          "name": "Nicholas Tomlin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-14T07:35:26.733Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6269d074a6a7bba9e46d8d50/RSzjacMbHw27QCpwl_Nte.png"
+      ],
+      "publishedAt": "2025-05-12T04:01:03.000Z",
+      "submittedOnDailyAt": "2025-05-14T06:11:56.396Z",
+      "title": "「Juego de generación para medir el inteligencia general」",
+      "submittedOnDailyBy": {
+        "_id": "6269d074a6a7bba9e46d8d50",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1651101782106-noauth.jpeg",
+        "isPro": false,
+        "fullname": "Nicholas Tomlin",
+        "user": "nickatomlin",
+        "type": "user"
+      },
+      "summary": "gg-bench es un conjunto de entornos de juego diseñado para evaluar los capacidades lógicas generales de modelos de lenguaje. A diferencia de los benchmarks estáticos, gg-bench es un proceso de generación de datos que puede crear nuevas instancias de evaluación aleatoriamente. En particular, gg-bench se genera de tres etapas: (1) utilizando un grande modelo de lenguaje de lenguaje (LLM) para crear una explicación en naturaleza de un nuevo juego, (2) utilizando el mismo LLM para implementar cada juego en código como un entorno de Gym, y (3) entrenar agentes de aprendizaje por refuerzo (RL) en un enfrentamiento entre ellos en los juegos generados. Para evaluar el modelo de lenguaje, se presentan a él la explicación del juego, el estado actual del tablero y la lista de movimientos válidos, y se evalúa la probabilidad de que el modelo elija un movimiento deseado mediante la evaluación del rendimiento de la RL. gg-bench logró un rendimiento del 7-9% para los modelos de lenguaje de vanguardia como GPT-4o o Claude 3.7 Sonnet, y un rendimiento promedio del 31-36% para modelos lógicos como o1, o3-mini o DeepSeek-R1. Se publican los juegos generados, el proceso de generación de datos y el código de evaluación, contribuyendo a futuras tareas de modelado y la expansión del benchmark.",
+      "upvotes": 4,
+      "discussionId": "68236b86102b1d3069ebb00e",
+      "ai_keywords": [
+        "large language model (LLM)",
+        "Gym environment",
+        "reinforcement learning (RL)",
+        "self-play",
+        "prompt",
+        "in-context learning",
+        "winrate"
+      ]
+    },
+    "publishedAt": "2025-05-12T00:01:03.000Z",
+    "title": "Measuring General Intelligence with Generated Games",
+    "summary": "We present gg-bench, a collection of game environments designed to evaluate\ngeneral reasoning capabilities in language models. Unlike most static\nbenchmarks, gg-bench is a data generating process where new evaluation\ninstances can be generated at will. In particular, gg-bench is synthetically\ngenerated by (1) using a large language model (LLM) to generate natural\nlanguage descriptions of novel games, (2) using the LLM to implement each game\nin code as a Gym environment, and (3) training reinforcement learning (RL)\nagents via self-play on the generated games. We evaluate language models by\ntheir winrate against these RL agents by prompting models with the game\ndescription, current board state, and a list of valid moves, after which models\noutput the moves they wish to take. gg-bench is challenging: state-of-the-art\nLLMs such as GPT-4o and Claude 3.7 Sonnet achieve winrates of 7-9% on gg-bench\nusing in-context learning, while reasoning models such as o1, o3-mini and\nDeepSeek-R1 achieve average winrates of 31-36%. We release the generated games,\ndata generation process, and evaluation code in order to support future\nmodeling work and expansion of our benchmark.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6269d074a6a7bba9e46d8d50/RSzjacMbHw27QCpwl_Nte.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.07215.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6269d074a6a7bba9e46d8d50",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1651101782106-noauth.jpeg",
+      "fullname": "Nicholas Tomlin",
+      "name": "nickatomlin",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.08665",
+      "authors": [
+        {
+          "_id": "68243bddd08d8e01109d5680",
+          "user": {
+            "_id": "622dc11fe27c88667db093fc",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1667052350862-622dc11fe27c88667db093fc.jpeg",
+            "isPro": false,
+            "fullname": "Edoardo Bianchi",
+            "user": "EdBianchi",
+            "type": "user"
+          },
+          "name": "Edoardo Bianchi",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-05-14T06:45:06.471Z",
+          "hidden": false
+        },
+        {
+          "_id": "68243bddd08d8e01109d5681",
+          "user": {
+            "_id": "66f2ab691e8b23ab0af8436e",
+            "avatarUrl": "/avatars/161a26e9444a860128282e553a95641c.svg",
+            "isPro": false,
+            "fullname": "Antonio Liotta",
+            "user": "ucaclio",
+            "type": "user"
+          },
+          "name": "Antonio Liotta",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:11:54.811Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-13T15:27:24.000Z",
+      "submittedOnDailyAt": "2025-05-14T05:16:45.606Z",
+      "title": "Skills Formarter: Estimación del Grado de Comprensión de Vídeos de Uniformat\n\n(注意：由于“스킬 포어메이터”在技术上可能指的是技能形成者或技能框架，但没有上下文，这里直接翻译为“Formador de Habilidades”。如果“포어메이터”有其特定含义，请提供更多信息以便更准确的翻译。)",
+      "submittedOnDailyBy": {
+        "_id": "622dc11fe27c88667db093fc",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1667052350862-622dc11fe27c88667db093fc.jpeg",
+        "isPro": false,
+        "fullname": "Edoardo Bianchi",
+        "user": "EdBianchi",
+        "type": "user"
+      },
+      "summary": "Evaluar el nivel de técnica humano en actividades complejas es un problema muy difícil que se aplica en deportes, realidad virtual y entrenamiento. En este artículo, se propone una arquitectura eficiente en parámetros llamada \"SkillFormer\", que permite evaluar la madurez de múltiples puntos de video de manera unificada, diferenciada de otros sistemas de evaluación automática. Basándose en TimeSformer, SkillFormer introduce un módulo de fusión de vistas (CrossViewFusion) que integra características únicas de cada punto mediante un enfoque de atención cruzada, un gating aprendible y una auto-regularización adaptativa. Utilizando la técnica de ajuste adaptativo, se logra reducir los costos de entrenamiento al ajustar parámetros de manera precisa. En evaluaciones realizadas en el conjunto de datos EgoExo4D, SkillFormer ha demostrado la mayor precisión en múltiples puntos, mostrando una eficiencia computacional práctica con un número de parámetros 4.5 veces menor y 3.75 veces menos épocas de entrenamiento que los estándares anteriores. También muestra excelentes resultados en tareas estructuradas. Esta evaluación de la tecnología microscópica para la evaluación de puntos de trabajo es de gran valor.",
+      "upvotes": 1,
+      "discussionId": "68243bded08d8e01109d56cc",
+      "ai_keywords": [
+        "parameter-efficient architecture",
+        "TimeSformer backbone",
+        "CrossViewFusion module",
+        "multi-head cross-attention",
+        "learnable gating",
+        "adaptive self-calibration",
+        "Low-Rank Adaptation",
+        "fine-tune",
+        "multi-view settings",
+        "structured tasks",
+        "multi-view integration"
+      ]
+    },
+    "publishedAt": "2025-05-13T11:27:24.000Z",
+    "title": "SkillFormer: Unified Multi-View Video Understanding for Proficiency\n  Estimation",
+    "summary": "Assessing human skill levels in complex activities is a challenging problem\nwith applications in sports, rehabilitation, and training. In this work, we\npresent SkillFormer, a parameter-efficient architecture for unified multi-view\nproficiency estimation from egocentric and exocentric videos. Building on the\nTimeSformer backbone, SkillFormer introduces a CrossViewFusion module that\nfuses view-specific features using multi-head cross-attention, learnable\ngating, and adaptive self-calibration. We leverage Low-Rank Adaptation to\nfine-tune only a small subset of parameters, significantly reducing training\ncosts. In fact, when evaluated on the EgoExo4D dataset, SkillFormer achieves\nstate-of-the-art accuracy in multi-view settings while demonstrating remarkable\ncomputational efficiency, using 4.5x fewer parameters and requiring 3.75x fewer\ntraining epochs than prior baselines. It excels in multiple structured tasks,\nconfirming the value of multi-view integration for fine-grained skill\nassessment.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.08665.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "622dc11fe27c88667db093fc",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1667052350862-622dc11fe27c88667db093fc.jpeg",
+      "fullname": "Edoardo Bianchi",
+      "name": "EdBianchi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.08712",
+      "authors": [
+        {
+          "_id": "682451c487e04e8c4ee5d13b",
+          "user": {
+            "_id": "66a347adb839c8994e6cb641",
+            "avatarUrl": "/avatars/efdeff32628b6c531109e047b45b2627.svg",
+            "isPro": false,
+            "fullname": "Wenzhe Cai",
+            "user": "WadeCai",
+            "type": "user"
+          },
+          "name": "Wenzhe Cai",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:12:04.232Z",
+          "hidden": false
+        },
+        {
+          "_id": "682451c487e04e8c4ee5d13c",
+          "name": "Jiaqi Peng",
+          "hidden": false
+        },
+        {
+          "_id": "682451c487e04e8c4ee5d13d",
+          "user": {
+            "_id": "670bbd8541e624a441f76306",
+            "avatarUrl": "/avatars/b606cabd30f1374b1ffa82ff1b7e9ae6.svg",
+            "isPro": false,
+            "fullname": "yuqiang yang",
+            "user": "fulifuli666",
+            "type": "user"
+          },
+          "name": "Yuqiang Yang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:12:17.389Z",
+          "hidden": false
+        },
+        {
+          "_id": "682451c487e04e8c4ee5d13e",
+          "name": "Yujian Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "682451c487e04e8c4ee5d13f",
+          "name": "Meng Wei",
+          "hidden": false
+        },
+        {
+          "_id": "682451c487e04e8c4ee5d140",
+          "name": "Hanqing Wang",
+          "hidden": false
+        },
+        {
+          "_id": "682451c487e04e8c4ee5d141",
+          "name": "Yilun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "682451c487e04e8c4ee5d142",
+          "name": "Tai Wang",
+          "hidden": false
+        },
+        {
+          "_id": "682451c487e04e8c4ee5d143",
+          "user": {
+            "_id": "65783ee6ee33d547aecc3ffc",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65783ee6ee33d547aecc3ffc/lWZX88c-0dCsN-yB9Jhlf.jpeg",
+            "isPro": false,
+            "fullname": "Jiangmiao Pang",
+            "user": "Jiangmiao",
+            "type": "user"
+          },
+          "name": "Jiangmiao Pang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:13:19.562Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-13T16:20:28.000Z",
+      "submittedOnDailyAt": "2025-05-14T06:48:31.831Z",
+      "title": "NavDP: Aprendizaje de la Política de Difusión de Navegación hacia la Realeza en Simulaciones de Guiado de Información Especial",
+      "submittedOnDailyBy": {
+        "_id": "64e6d9d229a548f66aff6e5b",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64e6d9d229a548f66aff6e5b/yQ9E2TyzM4CfSjMPigcey.jpeg",
+        "isPro": false,
+        "fullname": "Tai Wang",
+        "user": "taiwang",
+        "type": "user"
+      },
+      "summary": "Aprendiendo la dirección en entornos de soldadura abierta dinámica es una tecnología importante pero difícil para los robots. Hasta ahora, muchos métodos dependían de posiciones decisivas o aprendieron de mapas de mundo real muy caros. En este artículo, proponemos una Política de Navegación Difusión (NavDP) que se aprende en estructuras end-to-end en simulación y es capaz de transferir aprendizajes en diferentes tipos de robots y ambientes reales sin necesidad de entrenamiento (0-shot transfer). La red de NavDP combina el proceso de generación difusiva y la evaluación de la selección de proyectos, condicionados por tokens de observación locales obtenidos de un Transformer de políticas comunes. Utilizamos información exclusiva de la simulación para aumentar la calidad de las demostraciones, entrenar la política difusiva y ajustar los valores de sesgo de la función de evaluación comparando con muestras negativas. Nuestro enfoque de generación de demostraciones permitió crear un conjunto de datos de dirección de 363.2 km en 1244 escenarios, lo que implica una eficiencia de 20 veces más que la recopilación de datos en el mundo real, incluyendo aproximadamente 2,500 trayectorias/GPU por día. Los resultados muestran que NavDP presenta los mejores rendimientos y una alta generalización en diferentes entornos interiores y exteriores, tanto para robots de cultivo como para robots de ruedas y juguetes. Además, utilizamos la técnica de Gauss Splatting para recopilar datos variados y reducir la distancia entre simulación y realidad. Los experimentos demostraron que la adición de datos mejoró la tasa de éxito en un 30%, sin dañar la capacidad de generalización.",
+      "upvotes": 0,
+      "discussionId": "682451c787e04e8c4ee5d203",
+      "ai_keywords": [
+        "Navigation Diffusion Policy (NavDP)",
+        "diffusion-based trajectory generation",
+        "critic function",
+        "local observation tokens",
+        "policy transformer",
+        "contrastive negative samples",
+        "Gaussian Splatting"
+      ]
+    },
+    "publishedAt": "2025-05-13T12:20:28.000Z",
+    "title": "NavDP: Learning Sim-to-Real Navigation Diffusion Policy with Privileged\n  Information Guidance",
+    "summary": "Learning navigation in dynamic open-world environments is an important yet\nchallenging skill for robots. Most previous methods rely on precise\nlocalization and mapping or learn from expensive real-world demonstrations. In\nthis paper, we propose the Navigation Diffusion Policy (NavDP), an end-to-end\nframework trained solely in simulation and can zero-shot transfer to different\nembodiments in diverse real-world environments. The key ingredient of NavDP's\nnetwork is the combination of diffusion-based trajectory generation and a\ncritic function for trajectory selection, which are conditioned on only local\nobservation tokens encoded from a shared policy transformer. Given the\nprivileged information of the global environment in simulation, we scale up the\ndemonstrations of good quality to train the diffusion policy and formulate the\ncritic value function targets with contrastive negative samples. Our\ndemonstration generation approach achieves about 2,500 trajectories/GPU per\nday, 20times more efficient than real-world data collection, and results in\na large-scale navigation dataset with 363.2km trajectories across 1244 scenes.\nTrained with this simulation dataset, NavDP achieves state-of-the-art\nperformance and consistently outstanding generalization capability on\nquadruped, wheeled, and humanoid robots in diverse indoor and outdoor\nenvironments. In addition, we present a preliminary attempt at using Gaussian\nSplatting to make in-domain real-to-sim fine-tuning to further bridge the\nsim-to-real gap. Experiments show that adding such real-to-sim data can improve\nthe success rate by 30\\% without hurting its generalization capability.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.08712.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64e6d9d229a548f66aff6e5b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64e6d9d229a548f66aff6e5b/yQ9E2TyzM4CfSjMPigcey.jpeg",
+      "fullname": "Tai Wang",
+      "name": "taiwang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.07416",
+      "authors": [
+        {
+          "_id": "68238a5124c55c2bd5bec8b5",
+          "user": {
+            "_id": "68238b250a4767fd1572ce33",
+            "avatarUrl": "/avatars/7e824a30f9d07ed992633aba8ad11b6c.svg",
+            "isPro": false,
+            "fullname": "Truc Mai-Thanh Nguyen",
+            "user": "trucnguyen28",
+            "type": "user"
+          },
+          "name": "Truc Mai-Thanh Nguyen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-14T07:35:04.131Z",
+          "hidden": false
+        },
+        {
+          "_id": "68238a5124c55c2bd5bec8b6",
+          "name": "Dat Minh Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "68238a5124c55c2bd5bec8b7",
+          "user": {
+            "_id": "60bb728e29800c34660339e3",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60bb728e29800c34660339e3/kIscETb7-lF5u2jHOJ-dR.png",
+            "isPro": false,
+            "fullname": "Son T. Luu ",
+            "user": "sonlam1102",
+            "type": "user"
+          },
+          "name": "Son T. Luu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-05-14T10:13:35.878Z",
+          "hidden": false
+        },
+        {
+          "_id": "68238a5124c55c2bd5bec8b8",
+          "name": "Kiet Van Nguyen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-12T10:11:28.000Z",
+      "submittedOnDailyAt": "2025-05-14T06:09:57.940Z",
+      "title": "ViMRHP: Conjunto de datos ViMRHP es un marco de referencia para predecir la utilidad de diferentes tipos de reseñas basado en la cooperación entre humanos y IA.",
+      "submittedOnDailyBy": {
+        "_id": "68238b250a4767fd1572ce33",
+        "avatarUrl": "/avatars/7e824a30f9d07ed992633aba8ad11b6c.svg",
+        "isPro": false,
+        "fullname": "Truc Mai-Thanh Nguyen",
+        "user": "trucnguyen28",
+        "type": "user"
+      },
+      "summary": "MRHP es una tarea importante en sistemas de recomendación, especialmente en plataformas de mercado ecológico. Determinar la utilidad de las revisiones generadas por los usuarios mejora la experiencia del usuario y mejora las decisiones del consumidor, lo que, a su vez, mejora la experiencia del usuario y las decisiones del consumidor, y así sucesivamente, mejorando continuamente la experiencia del usuario y las decisiones del consumidor.",
+      "upvotes": 0,
+      "discussionId": "68238a5324c55c2bd5bec921",
+      "githubRepo": "https://github.com/trng28/ViMRHP"
+    },
+    "publishedAt": "2025-05-12T06:11:28.000Z",
+    "title": "ViMRHP: A Vietnamese Benchmark Dataset for Multimodal Review Helpfulness\n  Prediction via Human-AI Collaborative Annotation",
+    "summary": "Multimodal Review Helpfulness Prediction (MRHP) is an essential task in\nrecommender systems, particularly in E-commerce platforms. Determining the\nhelpfulness of user-generated reviews enhances user experience and improves\nconsumer decision-making. However, existing datasets focus predominantly on\nEnglish and Indonesian, resulting in a lack of linguistic diversity, especially\nfor low-resource languages such as Vietnamese. In this paper, we introduce\nViMRHP (Vietnamese Multimodal Review Helpfulness Prediction), a large-scale\nbenchmark dataset for MRHP task in Vietnamese. This dataset covers four\ndomains, including 2K products with 46K reviews. Meanwhile, a large-scale\ndataset requires considerable time and cost. To optimize the annotation\nprocess, we leverage AI to assist annotators in constructing the ViMRHP\ndataset. With AI assistance, annotation time is reduced (90 to 120 seconds per\ntask down to 20 to 40 seconds per task) while maintaining data quality and\nlowering overall costs by approximately 65%. However, AI-generated annotations\nstill have limitations in complex annotation tasks, which we further examine\nthrough a detailed performance analysis. In our experiment on ViMRHP, we\nevaluate baseline models on human-verified and AI-generated annotations to\nassess their quality differences. The ViMRHP dataset is publicly available at\nhttps://github.com/trng28/ViMRHP",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.07416.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "68238b250a4767fd1572ce33",
+      "avatarUrl": "/avatars/7e824a30f9d07ed992633aba8ad11b6c.svg",
+      "fullname": "Truc Mai-Thanh Nguyen",
+      "name": "trucnguyen28",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
