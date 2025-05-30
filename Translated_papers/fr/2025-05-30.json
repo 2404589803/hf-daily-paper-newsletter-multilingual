@@ -1,0 +1,494 @@
+[
+  {
+    "paper": {
+      "id": "2505.23747",
+      "authors": [
+        {
+          "_id": "68391565d762b7c617b1ba81",
+          "name": "Diankun Wu",
+          "hidden": false
+        },
+        {
+          "_id": "68391565d762b7c617b1ba82",
+          "name": "Fangfu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68391565d762b7c617b1ba83",
+          "name": "Yi-Hsin Hung",
+          "hidden": false
+        },
+        {
+          "_id": "68391565d762b7c617b1ba84",
+          "name": "Yueqi Duan",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6505a02f9310ce8c400edc63/eb5xv9-rlab_DrHLk4BMq.mp4"
+      ],
+      "publishedAt": "2025-05-29T17:59:04.000Z",
+      "submittedOnDailyAt": "2025-05-30T00:56:58.237Z",
+      "title": "Spectro-MLLM : Amélioration de la capacité de MLLM pour l'interprétation spectrale basée sur la vision",
+      "submittedOnDailyBy": {
+        "_id": "6505a02f9310ce8c400edc63",
+        "avatarUrl": "/avatars/bbf781594fc8c812316711aa8e2797aa.svg",
+        "isPro": false,
+        "fullname": "Fangfu Liu",
+        "user": "Liuff23",
+        "type": "user"
+      },
+      "summary": "Le développement récent des modèles de multiples images et de langage (MLLM) a considérablement amélioré les performances des tâches visuelles bidimensionnelles. Cependant, l'augmentation de l'espacité est un problème complexe. Les MLLM 3D actuels utilisent des données 3D ou 2.5D supplémentaires pour inclure la reconnaissance spatiale, mais ne sont pas utiles pour des cas où seulement une entrée 2D est disponible (graphiques, images, vidéos). Dans cet article, nous présentons un nouveau cadre de travail appelé \"Spatial-MLLM\" pour faire des inférences spatiales à partir d'observations 2D. Une différence avec les MLLM simples de vidéo est qu'il utilise un encodeur visuel basé sur CLIP pour optimiser la compréhension du sens. Notre principale idée est que la forte structuration préalable d'un modèle de généralisation visuelle peut être débloquée. Spécifiquement, nous proposons une architecture à double encodeur qui utilise un encodeur visuel 2D entraîné pour extraire des caractéristiques significatives et un encodeur spatial initialisé avec le modèle de généralisation visuelle pour extraire des caractéristiques structurées 3D. Ensuite, ces caractéristiques sont intégrées dans des tokens visuels. De plus, nous proposons une stratégie d'échantillonnage de frames pour la reconnaissance spatiale qui sélectionne des frames contenant de l'information spatiale lors du processus d'inférence. De cette manière, nous garantissons que le modèle se concentre sur les frames nécessaires pour l'inférence spatiale. En plus d'améliorer l'architecture, nous construisons le jeu de données Spatial-MLLM-120k et entraînons le modèle en utilisant la sous-provision et GRPO. Les résultats de validation avec des ensembles de données de la vie réelle montrent que notre MLLM spatial atteint le meilleur rendement dans les tâches de compréhension et d'inférence spatiales. Page du projet : https://diankun-wu.github.io/Spatial-MLLM/",
+      "upvotes": 39,
+      "discussionId": "68391566d762b7c617b1bae5",
+      "projectPage": "https://diankun-wu.github.io/Spatial-MLLM/",
+      "githubRepo": "https://github.com/diankun-wu/Spatial-MLLM",
+      "ai_summary": "Spatial-MLLM improves spatial reasoning in multimodal large language models using a dual-encoder architecture with pretrained 2D and 3D structure encoders, achieving state-of-the-art performance on visual spatial tasks.",
+      "ai_keywords": [
+        "spatial-mllm",
+        "dual-encoder architecture",
+        "visual geometry foundation model",
+        "CLIP-based visual encoders",
+        "semantic features",
+        "3D structure features",
+        "unified visual tokens",
+        "space-aware frame sampling",
+        "supervised fine-tuning",
+        "GRPO",
+        "spatial understanding",
+        "spatial reasoning"
+      ]
+    },
+    "publishedAt": "2025-05-29T13:59:04.000Z",
+    "title": "Spatial-MLLM: Boosting MLLM Capabilities in Visual-based Spatial\n  Intelligence",
+    "summary": "Recent advancements in Multimodal Large Language Models (MLLMs) have\nsignificantly enhanced performance on 2D visual tasks. However, improving their\nspatial intelligence remains a challenge. Existing 3D MLLMs always rely on\nadditional 3D or 2.5D data to incorporate spatial awareness, restricting their\nutility in scenarios with only 2D inputs, such as images or videos. In this\npaper, we present Spatial-MLLM, a novel framework for visual-based spatial\nreasoning from purely 2D observations. Unlike conventional video MLLMs which\nrely on CLIP-based visual encoders optimized for semantic understanding, our\nkey insight is to unleash the strong structure prior from the feed-forward\nvisual geometry foundation model. Specifically, we propose a dual-encoder\narchitecture: a pretrained 2D visual encoder to extract semantic features, and\na spatial encoder-initialized from the backbone of the visual geometry model-to\nextract 3D structure features. A connector then integrates both features into\nunified visual tokens for enhanced spatial understanding. Furthermore, we\npropose a space-aware frame sampling strategy at inference time, which selects\nthe spatially informative frames of a video sequence, ensuring that even under\nlimited token length, the model focuses on frames critical for spatial\nreasoning. Beyond architecture improvements, we construct the Spatial-MLLM-120k\ndataset and train the model on it using supervised fine-tuning and GRPO.\nExtensive experiments on various real-world datasets demonstrate that our\nspatial-MLLM achieves state-of-the-art performance in a wide range of\nvisual-based spatial understanding and reasoning tasks. Project page:\nhttps://diankun-wu.github.io/Spatial-MLLM/.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6505a02f9310ce8c400edc63/eb5xv9-rlab_DrHLk4BMq.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.23747.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6505a02f9310ce8c400edc63",
+      "avatarUrl": "/avatars/bbf781594fc8c812316711aa8e2797aa.svg",
+      "fullname": "Fangfu Liu",
+      "name": "Liuff23",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.23621",
+      "authors": [
+        {
+          "_id": "68391925d73e6015a1b0f305",
+          "name": "Zheyuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68391925d73e6015a1b0f306",
+          "name": "Lyuhao Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68391925d73e6015a1b0f307",
+          "name": "Arman Cohan",
+          "hidden": false
+        },
+        {
+          "_id": "68391925d73e6015a1b0f308",
+          "user": {
+            "_id": "62f662bcc58915315c4eccea",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+            "isPro": true,
+            "fullname": "Yilun",
+            "user": "yilunzhao",
+            "type": "user"
+          },
+          "name": "Yilun Zhao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-30T06:53:43.117Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-29T16:28:50.000Z",
+      "submittedOnDailyAt": "2025-05-30T01:04:47.042Z",
+      "title": "Escalado en la inferencia de tablas",
+      "submittedOnDailyBy": {
+        "_id": "62f662bcc58915315c4eccea",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+        "isPro": true,
+        "fullname": "Yilun",
+        "user": "yilunzhao",
+        "type": "user"
+      },
+      "summary": "Dans cette étude, une recherche initiale est présentée pour tester l'scalabilité dans le processus d'inférence. Deux stratégies sont développées après l'entraînement pour évaluer si il est possible d'escaler le processus d'inférence : la déventilation à partir de DeepSeek-R1 et la compensation d'apprentissage par renforcement avec justification (RLVR). Dans la déventilation, un ensemble de données de traces d'inférence générées par DeepSeek-R1 est utilisé pour ajuster un modèle de LLM à Table-R1-SFT. Dans RLVR, une fonction de récompense liée à la tâche est proposée et l'algorithme GRPO est appliqué pour obtenir le modèle Table-R1-Zero. Les modèles de la série Table-R1 sont évalués sur différentes tâches d'inférence de tableaux, et particulièrement, le modèle Table-R1-Zero compare ou dépasse le rendement de GPT-4.1 et DeepSeek-R1 en utilisant uniquement un modèle de LLM de 7B paramètres. De plus, il montre un fort rendement de généralisation sur des ensembles de données hors domaine. À travers des tests d'élimination étendue et un analyse qualitative, on découvre l'ajustement des instructions, la choix de la structure du modèle, la généralisation entre tâches et l'apparition de compétences importantes d'inférence de tableaux lors de l'entraînement RL.",
+      "upvotes": 38,
+      "discussionId": "68391928d73e6015a1b0f3a8",
+      "githubRepo": "https://github.com/Table-R1/Table-R1",
+      "ai_summary": "Two post-training strategies, distillation and RLVR, enable inference-time scaling in table reasoning tasks, resulting in a model (Table-R1-Zero) that matches GPT-4.1's performance using fewer parameters and shows strong generalization.",
+      "ai_keywords": [
+        "distillation",
+        "reinforcement learning",
+        "verifiable rewards",
+        "RLVR",
+        "reasoning traces",
+        "DeepSeek-R1",
+        "LLMs",
+        "Table-R1-SFT",
+        "GRPO",
+        "Table-R1-Zero",
+        "short-form QA",
+        "fact verification",
+        "free-form QA",
+        "instruction tuning",
+        "model architecture choices",
+        "cross-task generalization",
+        "table reasoning skills"
+      ]
+    },
+    "publishedAt": "2025-05-29T12:28:50.000Z",
+    "title": "Table-R1: Inference-Time Scaling for Table Reasoning",
+    "summary": "In this work, we present the first study to explore inference-time scaling on\ntable reasoning tasks. We develop and evaluate two post-training strategies to\nenable inference-time scaling: distillation from frontier model reasoning\ntraces and reinforcement learning with verifiable rewards (RLVR). For\ndistillation, we introduce a large-scale dataset of reasoning traces generated\nby DeepSeek-R1, which we use to fine-tune LLMs into the Table-R1-SFT model. For\nRLVR, we propose task-specific verifiable reward functions and apply the GRPO\nalgorithm to obtain the Table-R1-Zero model. We evaluate our Table-R1-series\nmodels across diverse table reasoning tasks, including short-form QA, fact\nverification, and free-form QA. Notably, the Table-R1-Zero model matches or\nexceeds the performance of GPT-4.1 and DeepSeek-R1, while using only a\n7B-parameter LLM. It also demonstrates strong generalization to out-of-domain\ndatasets. Extensive ablation and qualitative analyses reveal the benefits of\ninstruction tuning, model architecture choices, and cross-task generalization,\nas well as emergence of essential table reasoning skills during RL training.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.23621.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62f662bcc58915315c4eccea",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+      "fullname": "Yilun",
+      "name": "yilunzhao",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 12
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.22653",
+      "authors": [
+        {
+          "_id": "6838bb282b382ba50bdcddc4",
+          "name": "Ang Lv",
+          "hidden": false
+        },
+        {
+          "_id": "6838bb282b382ba50bdcddc5",
+          "user": {
+            "_id": "6622443b9b0614a760dd8123",
+            "avatarUrl": "/avatars/acb6c1c9c429af1112530dcf76a8e420.svg",
+            "isPro": false,
+            "fullname": "Ruobing Xie",
+            "user": "Ruobing-Xie",
+            "type": "user"
+          },
+          "name": "Ruobing Xie",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-30T06:54:45.319Z",
+          "hidden": false
+        },
+        {
+          "_id": "6838bb282b382ba50bdcddc6",
+          "name": "Xingwu Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6838bb282b382ba50bdcddc7",
+          "name": "Zhanhui Kang",
+          "hidden": false
+        },
+        {
+          "_id": "6838bb282b382ba50bdcddc8",
+          "name": "Rui Yan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-28T17:59:03.000Z",
+      "submittedOnDailyAt": "2025-05-30T00:44:54.555Z",
+      "title": "Dans Deng Rui, se cache une profondeur d'intelligence : un récompense confus pour le raisonnement sur le sens de l'apprentissage.",
+      "submittedOnDailyBy": {
+        "_id": "64b8ca3c5067873176d4b436",
+        "avatarUrl": "/avatars/b659d147b2454b47c9a7e89bbed525fc.svg",
+        "isPro": false,
+        "fullname": "AngLv",
+        "user": "AngLv",
+        "type": "user"
+      },
+      "summary": "Récemment, les études sur la logique computationnelle des modèles de langage d'apprentissage par renforcement (LLMs) dans l'apprentissage par renforcement (RL) se concentrent sur des tâches qui peuvent être validées, comme la résolution de problèmes mathématiques. En contraste, notre travail explore l'impact des modèles de récompense sur les LLMs dans la réalité. Nous avons constaté que les LLMs possèdent une forte capacité à faire face à des bruits forts dans les récompenses. Par exemple, en inversant directement 40% de la sortie de la fonction de récompense pour des tâches mathématiques, le modèle Qwen-2.5-7B converge rapidement, augmentant la précision de 5% à 72% par rapport à la précision sans bruit de récompense. Surprenant, lorsque la récompense est fournie seulement pour l'apparition de phrases de raisonnement (pattern de raisonnement de récompense, RPR), le modèle atteint une précision de 70% ou plus, bien que la précision de la réponse ne soit pas vérifiée. Comparé aux modèles utilisant des récompenses strictes et précises, le rendement a été amélioré. Nous reconnaissons que le processus de raisonnement, plutôt que la raison finale, est le plus important pour les résultats finaux. En combinant RPR avec des modèles de bruit de récompense, nous ajusteons les modèles de bruit de récompense, mitiguons la possibilité de champs négatifs et améliorons le rendement des tâches ouvertes dans les LLMs. Ces résultats améliorent les capacités de base du modèle lors du processus d'entraînement et offrent des conseils sur le développement de technologies futures. Notre code et nos scripts sont disponibles sur https://github.com/trestad/Noisy-Rewards-in-Learning-to-Reason.",
+      "upvotes": 36,
+      "discussionId": "6838bb2a2b382ba50bdcde1b",
+      "githubRepo": "https://github.com/trestad/Noisy-Rewards-in-Learning-to-Reason",
+      "ai_summary": "LLMs exhibit robustness to reward noise during post-training and achieve high performance using reasoning pattern rewards (RPR) in conjunction with noisy reward models.",
+      "ai_keywords": [
+        "large language models (LLMs)",
+        "post-training",
+        "reinforcement learning (RL)",
+        "reward noise",
+        "reward models",
+        "rapid convergence",
+        "reasoning pattern reward (RPR)",
+        "false negatives",
+        "open-ended tasks"
+      ]
+    },
+    "publishedAt": "2025-05-28T13:59:03.000Z",
+    "title": "The Climb Carves Wisdom Deeper Than the Summit: On the Noisy Rewards in\n  Learning to Reason",
+    "summary": "Recent studies on post-training large language models (LLMs) for reasoning\nthrough reinforcement learning (RL) typically focus on tasks that can be\naccurately verified and rewarded, such as solving math problems. In contrast,\nour research investigates the impact of reward noise, a more practical\nconsideration for real-world scenarios involving the post-training of LLMs\nusing reward models. We found that LLMs demonstrate strong robustness to\nsubstantial reward noise. For example, manually flipping 40% of the reward\nfunction's outputs in math tasks still allows a Qwen-2.5-7B model to achieve\nrapid convergence, improving its performance on math tasks from 5% to 72%,\ncompared to the 75% accuracy achieved by a model trained with noiseless\nrewards. Surprisingly, by only rewarding the appearance of key reasoning\nphrases (namely reasoning pattern reward, RPR), such as ``first, I need\nto''-without verifying the correctness of answers, the model achieved peak\ndownstream performance (over 70% accuracy for Qwen-2.5-7B) comparable to models\ntrained with strict correctness verification and accurate rewards. Recognizing\nthe importance of the reasoning process over the final results, we combined RPR\nwith noisy reward models. RPR helped calibrate the noisy reward models,\nmitigating potential false negatives and enhancing the LLM's performance on\nopen-ended tasks. These findings suggest the importance of improving models'\nfoundational abilities during the pre-training phase while providing insights\nfor advancing post-training techniques. Our code and scripts are available at\nhttps://github.com/trestad/Noisy-Rewards-in-Learning-to-Reason.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.22653.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b8ca3c5067873176d4b436",
+      "avatarUrl": "/avatars/b659d147b2454b47c9a7e89bbed525fc.svg",
+      "fullname": "AngLv",
+      "name": "AngLv",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.23693",
+      "authors": [
+        {
+          "_id": "68390e95b85141ce6c11b50f",
+          "user": {
+            "_id": "64dc29d9b5d625e0e9a6ecb9",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/QxGBsnk1cNsBEPqSx4ae-.jpeg",
+            "isPro": false,
+            "fullname": "Tingyu Song",
+            "user": "songtingyu",
+            "type": "user"
+          },
+          "name": "Tingyu Song",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-30T06:54:12.429Z",
+          "hidden": false
+        },
+        {
+          "_id": "68390e95b85141ce6c11b510",
+          "user": {
+            "_id": "66e83ec5deb449d8d856e78d",
+            "avatarUrl": "/avatars/c5e56be65fcacb3192ce10ba6d8f48e2.svg",
+            "isPro": false,
+            "fullname": "Tongyan Hu",
+            "user": "entropyhu",
+            "type": "user"
+          },
+          "name": "Tongyan Hu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-30T06:54:15.154Z",
+          "hidden": false
+        },
+        {
+          "_id": "68390e95b85141ce6c11b511",
+          "name": "Guo Gan",
+          "hidden": false
+        },
+        {
+          "_id": "68390e95b85141ce6c11b512",
+          "name": "Yilun Zhao",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64dc29d9b5d625e0e9a6ecb9/ZnHMXas2Khv3qS0RIvYR2.png"
+      ],
+      "publishedAt": "2025-05-29T17:31:13.000Z",
+      "submittedOnDailyAt": "2025-05-30T00:24:42.566Z",
+      "title": "VF-Eval : Évaluation des structures multimodales d'AMLs pour générer rétroaction sur des vidéos d'IAGC",
+      "submittedOnDailyBy": {
+        "_id": "64dc29d9b5d625e0e9a6ecb9",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/QxGBsnk1cNsBEPqSx4ae-.jpeg",
+        "isPro": false,
+        "fullname": "Tingyu Song",
+        "user": "songtingyu",
+        "type": "user"
+      },
+      "summary": "Les MLLMs effectuent actuellement de nombreux études sur des questions de films récents. Cependant, l'évaluation actuelle se concentre sur les films naturels et ignore les contenus de production artificielle (AIGC) de films synthétiques. D'autre part, l'évaluation de la qualité des films générés par les MLLMs est réalisée, mais le savoir des MLLMs sur les films de l'AIGC n'a pas été largement étudié. Dans ce contexte, nous proposons un nouveau critère d'évaluation appelé VF-Eval, qui introduit quatre tâches : validation de la cohérence, reconnaissance d'erreurs, détection de types d'erreurs et évaluation des raisons, pour évaluer précisément la capacité de comprendre les films de l'AIGC. À travers VF-Eval, nous évaluons 13 MLLMs plus récents, et bien que le modèle GPT-4.1 se démarre par son rendement, il n'a pas atteint un performance constantement excellent dans tous les cas. Cela souligne clairement la difficulté du nouveau critère d'évaluation. De plus, grâce à des expériences RePrompt, nous étudions comment VF-Eval peut être appliqué de manière pratique dans la génération de films, démontrant que les MLLMs peuvent être améliorés par une rétroaction humaine, ce qui peut être utile dans la génération de films.",
+      "upvotes": 34,
+      "discussionId": "68390e96b85141ce6c11b55c",
+      "githubRepo": "https://github.com/SighingSnow/VF-EVAL",
+      "ai_summary": "A new benchmark, VF-Eval, evaluates the capabilities of MLLMs in interpreting AI-generated content videos across four tasks, highlighting challenges and demonstrating benefits in video generation through human feedback alignment.",
+      "ai_keywords": [
+        "MLLMs",
+        "video question answering",
+        "synthetic videos",
+        "AI-generated content (AIGC)",
+        "VF-Eval",
+        "coherence validation",
+        "error awareness",
+        "error type detection",
+        "reasoning evaluation",
+        "GPT-4.1",
+        "RePrompt"
+      ]
+    },
+    "publishedAt": "2025-05-29T13:31:13.000Z",
+    "title": "VF-Eval: Evaluating Multimodal LLMs for Generating Feedback on AIGC\n  Videos",
+    "summary": "MLLMs have been widely studied for video question answering recently.\nHowever, most existing assessments focus on natural videos, overlooking\nsynthetic videos, such as AI-generated content (AIGC). Meanwhile, some works in\nvideo generation rely on MLLMs to evaluate the quality of generated videos, but\nthe capabilities of MLLMs on interpreting AIGC videos remain largely\nunderexplored. To address this, we propose a new benchmark, VF-Eval, which\nintroduces four tasks-coherence validation, error awareness, error type\ndetection, and reasoning evaluation-to comprehensively evaluate the abilities\nof MLLMs on AIGC videos. We evaluate 13 frontier MLLMs on VF-Eval and find that\neven the best-performing model, GPT-4.1, struggles to achieve consistently good\nperformance across all tasks. This highlights the challenging nature of our\nbenchmark. Additionally, to investigate the practical applications of VF-Eval\nin improving video generation, we conduct an experiment, RePrompt,\ndemonstrating that aligning MLLMs more closely with human feedback can benefit\nvideo generation.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64dc29d9b5d625e0e9a6ecb9/ZnHMXas2Khv3qS0RIvYR2.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.23693.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64dc29d9b5d625e0e9a6ecb9",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/QxGBsnk1cNsBEPqSx4ae-.jpeg",
+      "fullname": "Tingyu Song",
+      "name": "songtingyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.23762",
+      "authors": [
+        {
+          "_id": "68391353d8c153d346e1ddb5",
+          "user": {
+            "_id": "637f347a52229c639211bee8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/637f347a52229c639211bee8/I9_PET-_6SJQJ6hXrACV4.jpeg",
+            "isPro": false,
+            "fullname": "Chenyu Yang",
+            "user": "cyyang822",
+            "type": "user"
+          },
+          "name": "Chenyu Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-05-30T06:53:52.043Z",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddb6",
+          "name": "Shiqian Su",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddb7",
+          "name": "Shi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddb8",
+          "name": "Xuan Dong",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddb9",
+          "name": "Yue Yu",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddba",
+          "name": "Weijie Su",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddbb",
+          "name": "Xuehui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddbc",
+          "name": "Zhaoyang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddbd",
+          "name": "Jinguo Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddbe",
+          "name": "Hao Li",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddbf",
+          "name": "Wenhai Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddc0",
+          "name": "Yu Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddc1",
+          "name": "Xizhou Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "68391353d8c153d346e1ddc2",
+          "name": "Jifeng Dai",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-29T17:59:51.000Z",
+      "submittedOnDailyAt": "2025-05-30T00:41:52.864Z",
+      "title": "ZeroGUI : Automatisation de l'apprentissage des interfaces utilisateur en ligne basée sur le coût nul de Himañko",
+      "submittedOnDailyBy": {
+        "_id": "637f347a52229c639211bee8",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/637f347a52229c639211bee8/I9_PET-_6SJQJ6hXrACV4.jpeg",
+        "isPro": false,
+        "fullname": "Chenyu Yang",
+        "user": "cyyang822",
+        "type": "user"
+      },
+      "summary": "Le rapide développement des grands modèles de langue de vision (VLMs) a impulsé le développement d'agents d'interface graphique basés sur des prédictions, dotant-les de la capacité de reconnaître et de manipuler l'interface graphique utilisateur (GUI) pour satisfaire automatiquement les instructions du utilisateur. Cependant, l'approche actuelle utilise généralement un cadre d'apprentissage en ligne, présentant deux limites clés : 1) l'effort d'annotation manuelle de haute qualité pour les ajustements d'éléments et sous-lexiques d'actions, et 2) une adaptation limitée aux environnements dynamiques interactifs. Pour surmonter ces limites, on propose ZeroGUI, un cadre d'apprentissage en ligne flexible. ZeroGUI inclut : 1) la génération automatique de tâches basée sur les VLMs, créant des objectifs d'apprentissage divers dans l'environnement actuel, 2) l'évaluation automatique de récompense basée sur les VLMs, évaluant le succès des tâches créées par l'utilisateur sans nécessité de fonctions d'évaluation, et 3) un apprentissage en ligne en deux étapes, caractérisé par son interaction continue avec l'environnement de GUI. Les expériences avec les deux agents avancés d'interface graphique, UI-TARS et Aguvis, montrent que ZeroGUI a amélioré significativement le rendement dans les environnements OSWorld et AndroidLab. Le code est disponible sur https://github.com/OpenGVLab/ZeroGUI.",
+      "upvotes": 33,
+      "discussionId": "68391354d8c153d346e1de1a",
+      "githubRepo": "https://github.com/OpenGVLab/ZeroGUI",
+      "ai_summary": "ZeroGUI is an online learning framework that uses Vision-Language Models for task generation and reward estimation, enhancing GUI Agents' performance with minimal human intervention.",
+      "ai_keywords": [
+        "Vision-Language Models",
+        "GUI Agents",
+        "element grounding",
+        "action supervision",
+        "offline learning",
+        "automatic task generation",
+        "automatic reward estimation",
+        "reinforcement learning",
+        "OSWorld",
+        "AndroidLab"
+      ]
+    },
+    "publishedAt": "2025-05-29T13:59:51.000Z",
+    "title": "ZeroGUI: Automating Online GUI Learning at Zero Human Cost",
+    "summary": "The rapid advancement of large Vision-Language Models (VLMs) has propelled\nthe development of pure-vision-based GUI Agents, capable of perceiving and\noperating Graphical User Interfaces (GUI) to autonomously fulfill user\ninstructions. However, existing approaches usually adopt an offline learning\nframework, which faces two core limitations: (1) heavy reliance on high-quality\nmanual annotations for element grounding and action supervision, and (2)\nlimited adaptability to dynamic and interactive environments. To address these\nlimitations, we propose ZeroGUI, a scalable, online learning framework for\nautomating GUI Agent training at Zero human cost. Specifically, ZeroGUI\nintegrates (i) VLM-based automatic task generation to produce diverse training\ngoals from the current environment state, (ii) VLM-based automatic reward\nestimation to assess task success without hand-crafted evaluation functions,\nand (iii) two-stage online reinforcement learning to continuously interact with\nand learn from GUI environments. Experiments on two advanced GUI Agents\n(UI-TARS and Aguvis) demonstrate that ZeroGUI significantly boosts performance\nacross OSWorld and AndroidLab environments. The code is available at\nhttps://github.com/OpenGVLab/ZeroGUI.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.23762.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "637f347a52229c639211bee8",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/637f347a52229c639211bee8/I9_PET-_6SJQJ6hXrACV4.jpeg",
+      "fullname": "Chenyu Yang",
+      "name": "cyyang822",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  }
+]
