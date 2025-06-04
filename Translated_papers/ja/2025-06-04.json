@@ -1,0 +1,3723 @@
+[
+  {
+    "paper": {
+      "id": "2505.24120",
+      "authors": [
+        {
+          "_id": "683fc08da33aeee1124887c4",
+          "name": "Ai Jian",
+          "hidden": false
+        },
+        {
+          "_id": "683fc08da33aeee1124887c5",
+          "user": {
+            "_id": "660aab2c878289c5b34f9e97",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/660aab2c878289c5b34f9e97/yxx1-lR8x5o6KaEpZDXQq.jpeg",
+            "isPro": false,
+            "fullname": "weijie qiu",
+            "user": "qiuwj",
+            "type": "user"
+          },
+          "name": "Weijie Qiu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T09:56:39.772Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc08da33aeee1124887c6",
+          "user": {
+            "_id": "62be9b5aae56e75e4d689e7c",
+            "avatarUrl": "/avatars/6772bc09d6eeb4e86b1210481be91720.svg",
+            "isPro": false,
+            "fullname": "wangxiaokun",
+            "user": "shawn0wang",
+            "type": "user"
+          },
+          "name": "Xiaokun Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:55:01.766Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc08da33aeee1124887c7",
+          "name": "Peiyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fc08da33aeee1124887c8",
+          "name": "Yunzhuo Hao",
+          "hidden": false
+        },
+        {
+          "_id": "683fc08da33aeee1124887c9",
+          "name": "Jiangbo Pei",
+          "hidden": false
+        },
+        {
+          "_id": "683fc08da33aeee1124887ca",
+          "name": "Yichen Wei",
+          "hidden": false
+        },
+        {
+          "_id": "683fc08da33aeee1124887cb",
+          "name": "Yi Peng",
+          "hidden": false
+        },
+        {
+          "_id": "683fc08da33aeee1124887cc",
+          "name": "Xuchen Song",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/620f5a1c3f76c50e6458a9b6/l5zN70u8jAQBCjl41TWoi.png"
+      ],
+      "publishedAt": "2025-05-30T01:34:25.000Z",
+      "submittedOnDailyAt": "2025-06-04T05:57:36.826Z",
+      "title": "CSVQA: 中国の多モデルベンチマークで、VLMの理論科学推論能力を評価する",
+      "submittedOnDailyBy": {
+        "_id": "620f5a1c3f76c50e6458a9b6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/620f5a1c3f76c50e6458a9b6/pXh_f5F0UvufxuUa-eS-v.jpeg",
+        "isPro": false,
+        "fullname": "Peiyu Wang",
+        "user": "OrlandoHugBot",
+        "type": "user"
+      },
+      "summary": "視覚言語モデル（VLMs）は、多様的な理解に関して驚異的な進歩を示していますが、科学的な理由論理の能力は十分に評価されていません。現在の多様的なベンチマークは、一般的な画像理解またはテキストをドライバーとした理由論理を評価し、真実的な科学的なコンテキストを欠くことで、ビジュアルエビデンスの分析と領域特有の知識の統合が必要となる場合には評価が不足しています。この欠点を補うために、CSVQA（カテゴリーソートバージョンのバーチャルQA）を紹介します。CSVQAは、領域に基づく可視的な問答を通じて科学的な理由論理を評価するために特に設計された診断的な多様的なベンチマークです。ベンチマークは、1,378個のよく構築された問答ペアを特徴とし、多様なSTEM分野を拡張し、それぞれの問題には領域知識、ビジュアルエビデンスの統合、そして高次の理由論理が必要となります。先行の多様的なベンチマークに比べ、CSVQAは実世界的な科学的なコンテンツと複雑な理由論理に重点を置きます。また、モデルの予測が補間的な理由論理ステップに基づいて正当化されているかどうかをシステマティックに評価するための厳密な評価プロトコルを提案しています。15モデルのコンピューターラインテストの詳細な評価により、顕著な性能の差異が明らかになりました。特に、最も高位のプロプエリタリーモデルもそのままにしても49.6%の精度を達成しません。この実証的な証拠は、VLMsの科学的な理由論理能力の進歩が急務であることを強調します。CSVQAは、https://huggingface.co/datasets/Skywork/CSVQAで公開されています。",
+      "upvotes": 41,
+      "discussionId": "683fc091a33aeee1124888a8",
+      "ai_summary": "A new benchmark, CSVQA, evaluates scientific reasoning in vision-language models through domain-specific visual question answering, highlighting the need for improvement in these models.",
+      "ai_keywords": [
+        "Vision-Language Models",
+        "multimodal benchmark",
+        "scientific reasoning",
+        "domain-grounded",
+        "visual question answering",
+        "domain-specific knowledge",
+        "higher-order reasoning",
+        "evaluation protocol",
+        "intermediate reasoning steps",
+        "curated explanations"
+      ]
+    },
+    "publishedAt": "2025-05-29T21:34:25.000Z",
+    "title": "CSVQA: A Chinese Multimodal Benchmark for Evaluating STEM Reasoning\n  Capabilities of VLMs",
+    "summary": "Vision-Language Models (VLMs) have demonstrated remarkable progress in\nmultimodal understanding, yet their capabilities for scientific reasoning\nremains inadequately assessed. Current multimodal benchmarks predominantly\nevaluate generic image comprehension or text-driven reasoning, lacking\nauthentic scientific contexts that require domain-specific knowledge\nintegration with visual evidence analysis. To fill this gap, we present CSVQA,\na diagnostic multimodal benchmark specifically designed for evaluating\nscientific reasoning through domain-grounded visual question answering.Our\nbenchmark features 1,378 carefully constructed question-answer pairs spanning\ndiverse STEM disciplines, each demanding domain knowledge, integration of\nvisual evidence, and higher-order reasoning. Compared to prior multimodal\nbenchmarks, CSVQA places greater emphasis on real-world scientific content and\ncomplex reasoning.We additionally propose a rigorous evaluation protocol to\nsystematically assess whether model predictions are substantiated by valid\nintermediate reasoning steps based on curated explanations. Our comprehensive\nevaluation of 15 VLMs on this benchmark reveals notable performance\ndisparities, as even the top-ranked proprietary model attains only 49.6\\%\naccuracy.This empirical evidence underscores the pressing need for advancing\nscientific reasoning capabilities in VLMs. Our CSVQA is released at\nhttps://huggingface.co/datasets/Skywork/CSVQA.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/620f5a1c3f76c50e6458a9b6/l5zN70u8jAQBCjl41TWoi.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.24120.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "620f5a1c3f76c50e6458a9b6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/620f5a1c3f76c50e6458a9b6/pXh_f5F0UvufxuUa-eS-v.jpeg",
+      "fullname": "Peiyu Wang",
+      "name": "OrlandoHugBot",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.02387",
+      "authors": [
+        {
+          "_id": "683fa95ea0770843560c7ae3",
+          "user": {
+            "_id": "653a5b0f7c01c693a16dd184",
+            "avatarUrl": "/avatars/4b43d88709dc8037250404452e81adcf.svg",
+            "isPro": false,
+            "fullname": "Zelai Xu",
+            "user": "zelaix",
+            "type": "user"
+          },
+          "name": "Zelai Xu",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-06-04T02:03:11.372Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fa95ea0770843560c7ae4",
+          "name": "Zhexuan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "683fa95ea0770843560c7ae5",
+          "name": "Xiangmin Yi",
+          "hidden": false
+        },
+        {
+          "_id": "683fa95ea0770843560c7ae6",
+          "name": "Huining Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "683fa95ea0770843560c7ae7",
+          "name": "Xinlei Chen",
+          "hidden": false
+        },
+        {
+          "_id": "683fa95ea0770843560c7ae8",
+          "name": "Yi Wu",
+          "hidden": false
+        },
+        {
+          "_id": "683fa95ea0770843560c7ae9",
+          "name": "Chao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "683fa95ea0770843560c7aea",
+          "name": "Yu Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T02:57:38.000Z",
+      "submittedOnDailyAt": "2025-06-04T00:58:29.506Z",
+      "title": "VS-Bench: 多Agent環境での戦略的論理と決策のVLMsの評価",
+      "submittedOnDailyBy": {
+        "_id": "653a5b0f7c01c693a16dd184",
+        "avatarUrl": "/avatars/4b43d88709dc8037250404452e81adcf.svg",
+        "isPro": false,
+        "fullname": "Zelai Xu",
+        "user": "zelaix",
+        "type": "user"
+      },
+      "summary": "最近のビジョン言語モデル（VLMs）の進歩は、インタラクティブなアガントタスクにおける機能を拡大したが、現在のベンチマークは、単一アガントまたはテキストだけの環境に限定されている。対照的に、実世界的なスケーナーは、複数のアガントが豊富なビジョンと言語コンテキスト内で相互作用することを通じて、多モデル観測と戦略的な相互作用による課題を抱えている。この隙を埋めるために、ビジョンストラテジックベンチ（VS-Bench）を紹介し、多モデルベンチマークで、多アガント環境での戦略的な理由論と決策を評価するVLMsを評価する。VS-Benchは、協力的、競争的、または混合的な相互作用を範囲に含む8つのビジョンガラフづけされた環境を構成し、アガントが他のものの将来の移動を予測し、長期的な目標に最適化する能力を評価することを目的としている。我々は、次のアクション予測精度での戦略的な理由論のオフライン評価と、正規化エピソードリターンでの決策のオンライン評価の2つの補間的な評価次元を検討している。14つのリーディングVLMsの拡張実験により、現在のモデルと最適な性能の間に明らかに大きな間違いがあることが明らかになった。最良のモデルは、47.8%の予測精度と24.3%の正規化リターンを達成した。また、多モデル観測、テスト時スケーリング、社会的な行動、VLMアガントの失敗ケースについての詳細な分析を行い、現在のモデルの制限を明らかにすることで、VS-Benchは、戦略的な多モデルアガントの将来の研究の基盤として見える。コードとデータは、https://vs-bench.github.io から利用可能です。",
+      "upvotes": 34,
+      "discussionId": "683fa95fa0770843560c7b3d",
+      "projectPage": "https://vs-bench.github.io",
+      "githubRepo": "https://github.com/zelaix/VS-Bench",
+      "ai_summary": "VS-Bench is a multimodal benchmark designed to evaluate Vision Language Models' strategic reasoning and decision-making in complex multi-agent environments.",
+      "ai_keywords": [
+        "Vision Language Models",
+        "VS-Bench",
+        "multimodal benchmark",
+        "strategic reasoning",
+        "decision-making",
+        "multi-agent environments",
+        "vision-grounded environments",
+        "cooperative",
+        "competitive",
+        "mixed-motive interactions",
+        "next-action prediction",
+        "normalized episode return",
+        "multimodal observations",
+        "test-time scaling",
+        "social behaviors",
+        "failure cases"
+      ]
+    },
+    "publishedAt": "2025-06-02T22:57:38.000Z",
+    "title": "VS-Bench: Evaluating VLMs for Strategic Reasoning and Decision-Making in\n  Multi-Agent Environments",
+    "summary": "Recent advancements in Vision Language Models (VLMs) have expanded their\ncapabilities to interactive agent tasks, yet existing benchmarks remain limited\nto single-agent or text-only environments. In contrast, real-world scenarios\noften involve multiple agents interacting within rich visual and linguistic\ncontexts, posing challenges with both multimodal observations and strategic\ninteractions. To bridge this gap, we introduce Visual Strategic Bench\n(VS-Bench), a multimodal benchmark that evaluates VLMs for strategic reasoning\nand decision-making in multi-agent environments. VS-Bench comprises eight\nvision-grounded environments spanning cooperative, competitive, and\nmixed-motive interactions, designed to assess agents' ability to predict\nothers' future moves and optimize for long-term objectives. We consider two\ncomplementary evaluation dimensions, including offline evaluation of strategic\nreasoning by next-action prediction accuracy and online evaluation of\ndecision-making by normalized episode return. Extensive experiments of fourteen\nleading VLMs reveal a significant gap between current models and optimal\nperformance, with the best models attaining 47.8% prediction accuracy and 24.3%\nnormalized return. We further conduct in-depth analyses on multimodal\nobservations, test-time scaling, social behaviors, and failure cases of VLM\nagents. By standardizing the evaluation and highlighting the limitations of\nexisting models, we envision VS-Bench as a foundation for future research on\nstrategic multimodal agents. Code and data are available at\nhttps://vs-bench.github.io.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.02387.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "653a5b0f7c01c693a16dd184",
+      "avatarUrl": "/avatars/4b43d88709dc8037250404452e81adcf.svg",
+      "fullname": "Zelai Xu",
+      "name": "zelaix",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.03147",
+      "authors": [
+        {
+          "_id": "683fae55c6b71c5994ccd4fe",
+          "user": {
+            "_id": "6367a8175bb06007ea099b8f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6367a8175bb06007ea099b8f/IjG7HyWyWRlVt_XwRbxRW.jpeg",
+            "isPro": false,
+            "fullname": "linbin",
+            "user": "LanguageBind",
+            "type": "user"
+          },
+          "name": "Bin Lin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:56:49.923Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd4ff",
+          "name": "Zongjian Li",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd500",
+          "name": "Xinhua Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd501",
+          "name": "Yuwei Niu",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd502",
+          "name": "Yang Ye",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd503",
+          "name": "Xianyi He",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd504",
+          "user": {
+            "_id": "63468720dd6d90d82ccf3450",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63468720dd6d90d82ccf3450/tVBFlmZNz8FRMkOrDaDID.jpeg",
+            "isPro": false,
+            "fullname": "YSH",
+            "user": "BestWishYsh",
+            "type": "user"
+          },
+          "name": "Shenghai Yuan",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:56:52.748Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd505",
+          "name": "Wangbo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd506",
+          "name": "Shaodong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd507",
+          "name": "Yunyang Ge",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd508",
+          "name": "Yatian Pang",
+          "hidden": false
+        },
+        {
+          "_id": "683fae55c6b71c5994ccd509",
+          "name": "Li Yuan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T17:59:33.000Z",
+      "submittedOnDailyAt": "2025-06-04T00:55:35.016Z",
+      "title": "UniWorld: 高解析度セマンティックエンコーダーズの統合ビジュアル理解と生成",
+      "submittedOnDailyBy": {
+        "_id": "63468720dd6d90d82ccf3450",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63468720dd6d90d82ccf3450/tVBFlmZNz8FRMkOrDaDID.jpeg",
+        "isPro": false,
+        "fullname": "YSH",
+        "user": "BestWishYsh",
+        "type": "user"
+      },
+      "summary": "もちろん、以下の英語テキストを日本語に翻訳します。\n\n「もちろん、現在の統合モデルは、視覚言語理解と文から画像生成に強力な性能を提供しますが、画像の認識と操作タスクにおいては、ユーザーが急切に要望しているものであることについては、制限があります。最近、OpenAIは、視覚言語モデルから提供される意味的特徴を利用したモデルであるGPT-4o-Imageを発表し、視覚認識と操作の幅広い機能を実現し、コミュニティの興味を引き続けています。私たちの詳細な実験でGPT-4o-Imageの性能を見ていると、GPT-4o-ImageはVAE（Variational Autoencoder）ではなく、意味的エンコーダーから抽出された特徴を利用していることを推測しました。このような興奮的な見せ事に励まし、私たちは、強力な視覚言語モデルと対比的意味エンコーダーから提供される意味的特徴に基づく統合生成フレームワークを提案します。その結果、BAGELのデータの1%のみを使用して強力な統合モデルを構築し、画像編集ベンチマークでBAGELを超える性能を収めました。UniWorldは、画像理解と生成の強力な機能を保っており、複数の画像認識タスクでも強力な性能を収めます。私たちは、モデルの重み、学習と評価スクリプト、データセットを完全に開放ソースしています。」",
+      "upvotes": 33,
+      "discussionId": "683fae56c6b71c5994ccd548",
+      "githubRepo": "https://github.com/PKU-YuanGroup/UniWorld-V1",
+      "ai_summary": "A unified generative framework called UniWorld uses semantic features from visual-language models for image perception and manipulation, outperforming BAGEL with reduced data.",
+      "ai_keywords": [
+        "GPT-4o-Image",
+        "semantic encoders",
+        "VAE",
+        "UniWorld",
+        "visual-language models",
+        "contrastive semantic encoders",
+        "image editing benchmarks",
+        "image perception tasks"
+      ]
+    },
+    "publishedAt": "2025-06-03T13:59:33.000Z",
+    "title": "UniWorld: High-Resolution Semantic Encoders for Unified Visual\n  Understanding and Generation",
+    "summary": "Although existing unified models deliver strong performance on\nvision-language understanding and text-to-image generation, their models are\nlimited in exploring image perception and manipulation tasks, which are\nurgently desired by users for wide applications. Recently, OpenAI released\ntheir powerful GPT-4o-Image model for comprehensive image perception and\nmanipulation, achieving expressive capability and attracting community\ninterests. By observing the performance of GPT-4o-Image in our carefully\nconstructed experiments, we infer that GPT-4o-Image leverages features\nextracted by semantic encoders instead of VAE, while VAEs are considered\nessential components in many image manipulation models. Motivated by such\ninspiring observations, we present a unified generative framework named\nUniWorld based on semantic features provided by powerful visual-language models\nand contrastive semantic encoders. As a result, we build a strong unified model\nusing only 1% amount of BAGEL's data, which consistently outperforms BAGEL on\nimage editing benchmarks. UniWorld also maintains competitive image\nunderstanding and generation capabilities, achieving strong performance across\nmultiple image perception tasks. We fully open-source our models, including\nmodel weights, training and evaluation scripts, and datasets.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03147.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63468720dd6d90d82ccf3450",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63468720dd6d90d82ccf3450/tVBFlmZNz8FRMkOrDaDID.jpeg",
+      "fullname": "YSH",
+      "name": "BestWishYsh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 56
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.00123",
+      "authors": [
+        {
+          "_id": "683e709a3a4c2c3b2750fc32",
+          "name": "Gen Luo",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc33",
+          "user": {
+            "_id": "6565d7149afd51867e55520b",
+            "avatarUrl": "/avatars/027b17651e61df598af53f69b92e7771.svg",
+            "isPro": false,
+            "fullname": "Ganlin Yang",
+            "user": "ganlinyang",
+            "type": "user"
+          },
+          "name": "Ganlin Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-03T08:45:03.857Z",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc34",
+          "user": {
+            "_id": "660691330be1fbe3b9e4c33d",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/660691330be1fbe3b9e4c33d/TxrDFH_cRu3AlpMC3xmhv.jpeg",
+            "isPro": false,
+            "fullname": "ZiYang Gong",
+            "user": "Cusyoung",
+            "type": "user"
+          },
+          "name": "Ziyang Gong",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-03T08:45:00.364Z",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc35",
+          "name": "Guanzhou Chen",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc36",
+          "user": {
+            "_id": "66ab30dfd456f0408b93f27b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66ab30dfd456f0408b93f27b/nps4Kni_eOExO5Z92RiiF.jpeg",
+            "isPro": false,
+            "fullname": "Haonan Duan",
+            "user": "robot-haonan",
+            "type": "user"
+          },
+          "name": "Haonan Duan",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T09:03:03.236Z",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc37",
+          "name": "Erfei Cui",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc38",
+          "name": "Ronglei Tong",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc39",
+          "name": "Zhi Hou",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc3a",
+          "name": "Tianyi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc3b",
+          "name": "Zhe Chen",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc3c",
+          "name": "Shenglong Ye",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc3d",
+          "name": "Lewei Lu",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc3e",
+          "name": "Jingbo Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc3f",
+          "name": "Wenhai Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc40",
+          "name": "Jifeng Dai",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc41",
+          "name": "Yu Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc42",
+          "name": "Rongrong Ji",
+          "hidden": false
+        },
+        {
+          "_id": "683e709a3a4c2c3b2750fc43",
+          "name": "Xizhou Zhu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-30T18:00:34.000Z",
+      "submittedOnDailyAt": "2025-06-04T03:43:23.019Z",
+      "title": "Visual Embodied Brain: スペース内で視聴、思考、制御を行う多模態大脳言語モデル",
+      "submittedOnDailyBy": {
+        "_id": "6565d7149afd51867e55520b",
+        "avatarUrl": "/avatars/027b17651e61df598af53f69b92e7771.svg",
+        "isPro": false,
+        "fullname": "Ganlin Yang",
+        "user": "ganlinyang",
+        "type": "user"
+      },
+      "summary": "多模态大型语言模型（MLLMs）的显著进展吸引了越来越多的关注，将其扩展到物理实体如腿式机器人。这通常要求MLLMs不仅要具备多模态理解能力，还要整合视觉空间推理和物理交互能力。然而，由于这些能力的根本差异，现有方法在统一这些能力方面遇到了困难。本文提出了“视觉具身大脑”（VeBrain），一个用于现实世界感知、推理和控制的统一框架。VeBrain将机器人控制重新表述为2D视觉空间中的通用文本基础MLLM任务，从而统一了不同任务的目标和映射空间。然后，提出了一种新的机器人适配器，将MLLM的文本控制信号转换为真实机器人的运动策略。从数据角度来看，我们进一步引入了VeBrain-600k，一个高质量的指令数据集，涵盖了VeBrain的各种能力。在VeBrain-600k中，我们花费数百小时收集、精选和标注数据，并采用多模态思维链（CoT）将不同能力混合到单一对话中。在13个多模态基准测试和5个空间智能基准测试上的广泛实验表明，VeBrain相对于现有的MLLMs（如Qwen2.5-VL）表现出了卓越的性能。当部署到腿式机器人和机械臂时，VeBrain与现有方法相比展现出强大的适应性、灵活性和组合能力。例如，与Qwen2.5-VL相比，VeBrain不仅在MMVet上实现了显著的提升（+5.6%），而且在腿式机器人任务中平均提高了50%。",
+      "upvotes": 23,
+      "discussionId": "683e70a13a4c2c3b2750fd76",
+      "projectPage": "https://internvl.github.io/blog/2025-05-26-VeBrain/",
+      "githubRepo": "https://github.com/OpenGVLab/VeBrain",
+      "ai_summary": "VeBrain is a unified framework that integrates multimodal understanding, visual-spatial reasoning, and physical interaction for legged robots, demonstrating superior performance compared to existing methods across various benchmarks.",
+      "ai_keywords": [
+        "Multimodal Large Language Models",
+        "VeBrain",
+        "Visual Embodied Brain",
+        "text-based MLLM tasks",
+        "robotic adapter",
+        "VeBrain-600k",
+        "multimodal chain-of-thought",
+        "MMVet",
+        "compositional capabilities"
+      ]
+    },
+    "publishedAt": "2025-05-30T14:00:34.000Z",
+    "title": "Visual Embodied Brain: Let Multimodal Large Language Models See, Think,\n  and Control in Spaces",
+    "summary": "The remarkable progress of Multimodal Large Language Models (MLLMs) has\nattracted increasing attention to extend them to physical entities like legged\nrobot. This typically requires MLLMs to not only grasp multimodal understanding\nabilities, but also integrate visual-spatial reasoning and physical interaction\ncapabilities. Nevertheless,existing methods struggle to unify these\ncapabilities due to their fundamental differences.In this paper, we present the\nVisual Embodied Brain (VeBrain), a unified framework for perception, reasoning,\nand control in real world. VeBrain reformulates robotic control into common\ntext-based MLLM tasks in the 2D visual space, thus unifying the objectives and\nmapping spaces of different tasks. Then, a novel robotic adapter is proposed to\nconvert textual control signals from MLLMs to motion policies of real robots.\nFrom the data perspective, we further introduce VeBrain-600k, a high-quality\ninstruction dataset encompassing various capabilities of VeBrain. In\nVeBrain-600k, we take hundreds of hours to collect, curate and annotate the\ndata, and adopt multimodal chain-of-thought(CoT) to mix the different\ncapabilities into a single conversation. Extensive experiments on 13 multimodal\nbenchmarks and 5 spatial intelligence benchmarks demonstrate the superior\nperformance of VeBrain to existing MLLMs like Qwen2.5-VL. When deployed to\nlegged robots and robotic arms, VeBrain shows strong adaptability, flexibility,\nand compositional capabilities compared to existing methods. For example,\ncompared to Qwen2.5-VL, VeBrain not only achieves substantial gains on MMVet by\n+5.6%, but also excels in legged robot tasks with +50% average gains.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.00123.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "6565d7149afd51867e55520b",
+      "avatarUrl": "/avatars/027b17651e61df598af53f69b92e7771.svg",
+      "fullname": "Ganlin Yang",
+      "name": "ganlinyang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.03135",
+      "authors": [
+        {
+          "_id": "683fe55868402c738a8e5ee4",
+          "name": "Mengdi Jia",
+          "hidden": false
+        },
+        {
+          "_id": "683fe55868402c738a8e5ee5",
+          "user": {
+            "_id": "63c3e8abc7d7f4c63a515a02",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63c3e8abc7d7f4c63a515a02/npMHnVP2hHLbvoUGe7C4O.jpeg",
+            "isPro": false,
+            "fullname": "Zekun Qi",
+            "user": "qizekun",
+            "type": "user"
+          },
+          "name": "Zekun Qi",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:22.042Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fe55868402c738a8e5ee6",
+          "name": "Shaochen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683fe55868402c738a8e5ee7",
+          "name": "Wenyao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683fe55868402c738a8e5ee8",
+          "name": "Xinqiang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "683fe55868402c738a8e5ee9",
+          "name": "Jiawei He",
+          "hidden": false
+        },
+        {
+          "_id": "683fe55868402c738a8e5eea",
+          "name": "He Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fe55868402c738a8e5eeb",
+          "name": "Li Yi",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63c3e8abc7d7f4c63a515a02/ZZsfC9We_mrTAc2s-h5ng.mp4"
+      ],
+      "publishedAt": "2025-06-03T17:58:29.000Z",
+      "submittedOnDailyAt": "2025-06-04T05:47:51.969Z",
+      "title": "OmniSpatial: 幅広い空間論理のための完全なスペース論理ベンチマークに向けて",
+      "submittedOnDailyBy": {
+        "_id": "63c3e8abc7d7f4c63a515a02",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63c3e8abc7d7f4c63a515a02/npMHnVP2hHLbvoUGe7C4O.jpeg",
+        "isPro": false,
+        "fullname": "Zekun Qi",
+        "user": "qizekun",
+        "type": "user"
+      },
+      "summary": "空間推理は認知心理学の重要な面であり、現在の視覚言語モデル（VLMs）の主要なバランスとして残っています。従来の研究は基本的な空間関係の理解を評価または改善するために拠りをつけてきましたが、これらのタスクは空間推理の最も基本的なレベルのみです。本稿では、認知心理学に基づく詳細な空間推理の評価基準としてOmniSpatialを紹介します。OmniSpatialは、動的な推理、複雑な空間ロジック、空間的な相互作用、そして視点検討の4つの主要なカテゴリを含み、50つの細かいサブカテゴリを持ちます。インターネットデータのクローリングと認真な手動注釈を通じて、1,500点以上の質問・答えペアを構築しました。広範囲の実験により、開放的およびクローズドソースのVLMs、そして現在の理由論と空間理解モデルは、詳細な空間理解の欠陥を見出しました。さらに、失敗ケースを分析し、将来の研究の潜在的な方向を提案しました。",
+      "upvotes": 22,
+      "discussionId": "683fe55c68402c738a8e5ff4",
+      "ai_summary": "A comprehensive benchmark called OmniSpatial evaluates vision-language models' understanding of advanced spatial reasoning tasks, revealing significant limitations across various models.",
+      "ai_keywords": [
+        "vision-language models",
+        "spatial reasoning",
+        "cognitive psychology",
+        "dynamic reasoning",
+        "complex spatial logic",
+        "spatial interaction",
+        "perspective-taking",
+        "question-answer pairs"
+      ]
+    },
+    "publishedAt": "2025-06-03T13:58:29.000Z",
+    "title": "OmniSpatial: Towards Comprehensive Spatial Reasoning Benchmark for\n  Vision Language Models",
+    "summary": "Spatial reasoning is a key aspect of cognitive psychology and remains a major\nbottleneck for current vision-language models (VLMs). While extensive research\nhas aimed to evaluate or improve VLMs' understanding of basic spatial\nrelations, such as distinguishing left from right, near from far, and object\ncounting, these tasks represent only the most fundamental level of spatial\nreasoning. In this work, we introduce OmniSpatial, a comprehensive and\nchallenging benchmark for spatial reasoning, grounded in cognitive psychology.\nOmniSpatial covers four major categories: dynamic reasoning, complex spatial\nlogic, spatial interaction, and perspective-taking, with 50 fine-grained\nsubcategories. Through Internet data crawling and careful manual annotation, we\nconstruct over 1.5K question-answer pairs. Extensive experiments show that both\nopen- and closed-source VLMs, as well as existing reasoning and spatial\nunderstanding models, exhibit significant limitations in comprehensive spatial\nunderstanding. We further analyze failure cases and propose potential\ndirections for future research.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63c3e8abc7d7f4c63a515a02/ZZsfC9We_mrTAc2s-h5ng.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03135.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c3e8abc7d7f4c63a515a02",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63c3e8abc7d7f4c63a515a02/npMHnVP2hHLbvoUGe7C4O.jpeg",
+      "fullname": "Zekun Qi",
+      "name": "qizekun",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.01674",
+      "authors": [
+        {
+          "_id": "683faa6515abeae85e13336b",
+          "name": "Yipeng Du",
+          "hidden": false
+        },
+        {
+          "_id": "683faa6515abeae85e13336c",
+          "name": "Tiehan Fan",
+          "hidden": false
+        },
+        {
+          "_id": "683faa6515abeae85e13336d",
+          "name": "Kepan Nan",
+          "hidden": false
+        },
+        {
+          "_id": "683faa6515abeae85e13336e",
+          "name": "Rui Xie",
+          "hidden": false
+        },
+        {
+          "_id": "683faa6515abeae85e13336f",
+          "name": "Penghao Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "683faa6515abeae85e133370",
+          "name": "Xiang Li",
+          "hidden": false
+        },
+        {
+          "_id": "683faa6515abeae85e133371",
+          "name": "Jian Yang",
+          "hidden": false
+        },
+        {
+          "_id": "683faa6515abeae85e133372",
+          "name": "Zhenheng Yang",
+          "hidden": false
+        },
+        {
+          "_id": "683faa6515abeae85e133373",
+          "user": {
+            "_id": "65734004769f3ee9bde1af10",
+            "avatarUrl": "/avatars/d6310ed861972fd691687d8f47413f33.svg",
+            "isPro": false,
+            "fullname": "Ying Tai",
+            "user": "yingtai",
+            "type": "user"
+          },
+          "name": "Ying Tai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:56:59.253Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-02T13:44:56.000Z",
+      "submittedOnDailyAt": "2025-06-04T00:38:03.935Z",
+      "title": "MotionSight: 多モードでの細かい動き理解を向上させる",
+      "submittedOnDailyBy": {
+        "_id": "65927f3b754092f6b1e187a7",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65927f3b754092f6b1e187a7/gUrNvIQHmsl1vLwSUxpmL.jpeg",
+        "isPro": false,
+        "fullname": "tiehan fan",
+        "user": "AnonMegumi",
+        "type": "user"
+      },
+      "summary": "進歩したMultimodal Large Language Models (MLLMs)にもとっても、細かい運動の理解においても限られている。それらは通常の時系列差分を欠くことが多いで、ショット間の視覚的なカウンターが平均したり無視されることも多い。また、静的画像における視覚的プロンプトは潜在的な可能性を示したが、それを時系列的複雑性のための動画に適用することは、細かい運動の理解においてはまだ大きく探索されていない。我々は、内在的な能力を解放し、MLLMsの運動認識を向上させ、物体の動きとカメラの動きのカウンターを区別するための特別な視覚的なサインを作成することができるかどうかを調査している。本研究では、新しいzero-shot方法「MotionSight」を紹介し、物体中心的な視覚的スプライトと運動のブラーを視覚的プロンプトとして、学習を不要にして細かい運動の理解を効果的に向上させることを試みている。これを有價価なデータアセットに変換するために、我々は、SFTと好みデータを含むヒュリアルなアノテーションを持つMotionVid-QAという初めての大規模なデータセットを作成し、それにより40K程度のビデオクロップと87K程度のQAを構成している。実験結果は、MotionSightが最先端の開放ソース性能を達成し、商用モデルとの競争力を示していることを示している。特に、細かい運動の理解においては、新しいzero-shot技術と大規模な高品質データセットを提供している。すべてのコードとアノテーションは公開的に提供される。",
+      "upvotes": 19,
+      "discussionId": "683faa6615abeae85e1333c2",
+      "projectPage": "https://nju-pcalab.github.io/projects/MotionSight/",
+      "githubRepo": "https://github.com/NJU-PCALab/MotionSight",
+      "ai_summary": "MotionSight, a zero-shot method using object-centric visual spotlight and motion blur as prompts, enhances fine-grained video motion understanding and achieves state-of-the-art performance on MotionVid-QA, a large-scale dataset with hierarchical annotations.",
+      "ai_keywords": [
+        "Multimodal Large Language Models",
+        "MLLMs",
+        "fine-grained video motion understanding",
+        "inter-frame differencing",
+        "visual prompting",
+        "temporal complexities",
+        "MotionSight",
+        "object-centric visual spotlight",
+        "motion blur",
+        "MotionVid-QA",
+        "hierarchical annotations",
+        "SFT",
+        "preference data",
+        "state-of-the-art performance"
+      ]
+    },
+    "publishedAt": "2025-06-02T09:44:56.000Z",
+    "title": "MotionSight: Boosting Fine-Grained Motion Understanding in Multimodal\n  LLMs",
+    "summary": "Despite advancements in Multimodal Large Language Models (MLLMs), their\nproficiency in fine-grained video motion understanding remains critically\nlimited. They often lack inter-frame differencing and tend to average or ignore\nsubtle visual cues. Furthermore, while visual prompting has shown potential in\nstatic images, its application to video's temporal complexities, particularly\nfor fine-grained motion understanding, remains largely unexplored. We\ninvestigate whether inherent capability can be unlocked and boost MLLMs' motion\nperception and enable distinct visual signatures tailored to decouple object\nand camera motion cues. In this study, we introduce MotionSight, a novel\nzero-shot method pioneering object-centric visual spotlight and motion blur as\nvisual prompts to effectively improve fine-grained motion understanding without\ntraining. To convert this into valuable data assets, we curated MotionVid-QA,\nthe first large-scale dataset for fine-grained video motion understanding, with\nhierarchical annotations including SFT and preference data, {\\Theta}(40K) video\nclips and {\\Theta}(87K) QAs. Experiments show MotionSight achieves\nstate-of-the-art open-source performance and competitiveness with commercial\nmodels. In particular, for fine-grained motion understanding we present a novel\nzero-shot technique and a large-scale, high-quality dataset. All the code and\nannotations will be publicly available.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.01674.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65927f3b754092f6b1e187a7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65927f3b754092f6b1e187a7/gUrNvIQHmsl1vLwSUxpmL.jpeg",
+      "fullname": "tiehan fan",
+      "name": "AnonMegumi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.03065",
+      "authors": [
+        {
+          "_id": "683fc6241de14546d5e02775",
+          "user": {
+            "_id": "64c9bac33cfe45b07179568d",
+            "avatarUrl": "/avatars/4a8206cdb1770a8cdaae0d0a2b7b59f2.svg",
+            "isPro": false,
+            "fullname": "Pengtao Chen",
+            "user": "PengtaoChen",
+            "type": "user"
+          },
+          "name": "Pengtao Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:45.116Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc6241de14546d5e02776",
+          "name": "Xianfang Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "683fc6241de14546d5e02777",
+          "name": "Maosen Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "683fc6241de14546d5e02778",
+          "name": "Peng Ye",
+          "hidden": false
+        },
+        {
+          "_id": "683fc6241de14546d5e02779",
+          "name": "Mingzhu Shen",
+          "hidden": false
+        },
+        {
+          "_id": "683fc6241de14546d5e0277a",
+          "user": {
+            "_id": "64b914c8ace99c0723ad83a9",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64b914c8ace99c0723ad83a9/B4gxNByeVY_xaOcjwiN1j.jpeg",
+            "isPro": false,
+            "fullname": "Wei Cheng",
+            "user": "wchengad",
+            "type": "user"
+          },
+          "name": "Wei Cheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:42.268Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc6241de14546d5e0277b",
+          "user": {
+            "_id": "63417332c5565a4b8d43a0d8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63417332c5565a4b8d43a0d8/MmnYG7Wu2Z_lqCBvTfJmy.png",
+            "isPro": false,
+            "fullname": "Gang Yu",
+            "user": "skicy",
+            "type": "user"
+          },
+          "name": "Gang Yu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:39.068Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc6241de14546d5e0277c",
+          "name": "Tao Chen",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64b914c8ace99c0723ad83a9/iewcVFqJgelW9EQTlH_LH.png"
+      ],
+      "publishedAt": "2025-06-03T16:42:37.000Z",
+      "submittedOnDailyAt": "2025-06-04T04:37:13.352Z",
+      "title": "Sparse-vDiT: 稀疏Attentionの力を放って、ビデオDiffusion Transformerを加速する",
+      "submittedOnDailyBy": {
+        "_id": "64b914c8ace99c0723ad83a9",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64b914c8ace99c0723ad83a9/B4gxNByeVY_xaOcjwiN1j.jpeg",
+        "isPro": false,
+        "fullname": "Wei Cheng",
+        "user": "wchengad",
+        "type": "user"
+      },
+      "summary": "ディツ（DiTs）は、映画生成において進歩を達成しましたが、長いシーケンス生成の任務は、アテンション機構の二次元複雑性により制限され、大きな推論時間を伴います。映画ディフュージョントランスフォーマー（vDiT）のアテンションマップを詳細に分析し、3つの再現する稀疏性パターンを特定しました：対角、多対角、垂直ストライプ構造。それらのパターンは、強い層の深さとヘッドの位置関係を持ち、入力内容についての依存関係は限られています。これらの発見を活用し、Sparse-vDiTという稀疏性加速フレームワークを提案しました。Sparse-vDiTは、1) パターン最適化された稀疏カーネルを、各特定された稀疏性パターンに対して計算的に効率的な実装での密集アテンションを置き換えます。2) ハードウェアによるコストモデリングを通じて、各層とヘッドにおいて最適な稀疏計算戦略を選択するオフライン稀疏ディフュージョン探索アルゴリズムを含みます。最適な設定を決定した後、同じ層内で同じアテンション戦略を共有するヘッドを統合し、推論効率を向上させます。最先端のvDiTモデル（CogVideoX1.5、HunyuanVideo、Wan2.1）に組み込み、Sparse-vDiTは理論的なFLOP減少率が2.09倍、2.38倍、1.67倍で、実際の推論スピードアップが1.76倍、1.85倍、1.58倍であり、高い視覚フィデリティを維持し、PSNR値が24.13、27.09、22.59に達します。我々の研究は、vDiTの潜在的な構造的な稀疏性が長い映画合成においてシステマチックに利用できることを示します。",
+      "upvotes": 18,
+      "discussionId": "683fc62b1de14546d5e02931",
+      "githubRepo": "https://github.com/Peyton-Chen/Sparse-vDiT",
+      "ai_summary": "Sparse-vDiT accelerates Video Diffusion Transformer (vDiT) by leveraging sparsity patterns in attention maps, reducing theoretical FLOPs and improving inference speed without significant loss in visual quality.",
+      "ai_keywords": [
+        "Diffusion Transformers",
+        "DiTs",
+        "Video Diffusion Transformer",
+        "vDiT",
+        "sparsity patterns",
+        "diagonal",
+        "multi-diagonal",
+        "vertical-stripe structures",
+        "sparse kernels",
+        "sparse diffusion search algorithm",
+        "FLOP reduction",
+        "inference speedups",
+        "PSNR",
+        "latent structural sparsity"
+      ]
+    },
+    "publishedAt": "2025-06-03T12:42:37.000Z",
+    "title": "Sparse-vDiT: Unleashing the Power of Sparse Attention to Accelerate\n  Video Diffusion Transformers",
+    "summary": "While Diffusion Transformers (DiTs) have achieved breakthroughs in video\ngeneration, this long sequence generation task remains constrained by the\nquadratic complexity of attention mechanisms, resulting in significant\ninference latency. Through detailed analysis of attention maps in Video\nDiffusion Transformer (vDiT), we identify three recurring sparsity patterns:\ndiagonal, multi-diagonal, and vertical-stripe structures. And even 3-6\\%\nattention heads can be skipped. Crucially, these patterns exhibit strong\nlayer-depth and head-position correlations but show limited dependence on the\ninput content. Leveraging these findings, we propose Sparse-vDiT, a sparsity\nacceleration framework for vDiT comprising: 1) Pattern-optimized sparse kernels\nthat replace dense attention with computationally efficient implementations for\neach identified sparsity pattern. 2) An offline sparse diffusion search\nalgorithm that selects the optimal sparse computation strategy per layer and\nhead via hardware-aware cost modeling. After determining the optimal\nconfiguration, we fuse heads within the same layer that share the same\nattention strategy, enhancing inference efficiency. Integrated into\nstate-of-the-art vDiT models (CogVideoX1.5, HunyuanVideo, and Wan2.1),\nSparse-vDiT achieves 2.09times, 2.38times, and 1.67times theoretical\nFLOP reduction, and actual inference speedups of 1.76times, 1.85times,\nand 1.58times, respectively, while maintaining high visual fidelity, with\nPSNR values reaching 24.13, 27.09, and 22.59. Our work demonstrates that latent\nstructural sparsity in vDiTs can be systematically exploited for long video\nsynthesis.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64b914c8ace99c0723ad83a9/iewcVFqJgelW9EQTlH_LH.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03065.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b914c8ace99c0723ad83a9",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64b914c8ace99c0723ad83a9/B4gxNByeVY_xaOcjwiN1j.jpeg",
+      "fullname": "Wei Cheng",
+      "name": "wchengad",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.02096",
+      "authors": [
+        {
+          "_id": "683fa36f7ed99d0040761114",
+          "user": {
+            "_id": "626d268d5f7327906f05cad1",
+            "avatarUrl": "/avatars/18bda74612a3ee63a17f991bcc695106.svg",
+            "isPro": true,
+            "fullname": "Zijian Wu",
+            "user": "Jakumetsu",
+            "type": "user"
+          },
+          "name": "Zijian Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:57:09.765Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fa36f7ed99d0040761115",
+          "name": "Jinjie Ni",
+          "hidden": false
+        },
+        {
+          "_id": "683fa36f7ed99d0040761116",
+          "name": "Xiangyan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "683fa36f7ed99d0040761117",
+          "name": "Zichen Liu",
+          "hidden": false
+        },
+        {
+          "_id": "683fa36f7ed99d0040761118",
+          "name": "Hang Yan",
+          "hidden": false
+        },
+        {
+          "_id": "683fa36f7ed99d0040761119",
+          "name": "Michael Qizhe Shieh",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-02T17:45:16.000Z",
+      "submittedOnDailyAt": "2025-06-04T00:44:38.612Z",
+      "title": "SynthRL: データの合成による可証明性のある視覚的推理の拡大",
+      "submittedOnDailyBy": {
+        "_id": "6486b09e8315b19342f0bf5e",
+        "avatarUrl": "/avatars/bc5f22f231c884146d373fe1042d81bd.svg",
+        "isPro": false,
+        "fullname": "Xiangyan Liu",
+        "user": "xyliu6",
+        "type": "user"
+      },
+      "summary": "ビジョン・ラングラジウスモデル（VLMs）は、可証明可能な報酬（RLVR）による強化学習で構築されたもので、テスト時の計算量の効率的なスケーリングにおいて顕著な進歩を示しています。本論文では、合成されたRLデータがRLVRをさらに改善することを調査しています。そのために、理由的なRLトレーニングの自動データスケーリングのスケーラブルで保証されたパイプラインを提案しています。SynthRLは3つのキーステージから構成されています：（1）適切な分布を持つシードクエスチョンを選択、（2）それらをより難しい変体に増やしながら元の答えを保存し、（3）近乎完全な正確性と難易度の向上を確保する保証された確認ステージ。実験的な実験では、SynthRLのスケーリング性と効果性を示しています。MMK12データセットに対して適用された場合、SynthRLは約8Kのシードサンプルから3.3K以上の追加された可証明可能な難しいクエスチョンを合成します。合成されたデータでトレーニングされたモデルは、5つの異なる領域の可視的な数学語理テストベンチマークで継続的な収益を示し、シードデータだけでトレーニンされたベースラインモデルに対して顕著な向上を示します。特に、詳細な分析では、最も難しい評価サンプルでの収益が顕著であり、SynthRLが深いものより複雑な理由のパターンを引き出す効果性を明らかにしています。",
+      "upvotes": 18,
+      "discussionId": "683fa3707ed99d0040761154",
+      "ai_summary": "SynthRL, a scalable pipeline for data synthesis in reinforcement learning with verifiable rewards, enhances visual math reasoning VLMs by generating challenging, verifiable questions.",
+      "ai_keywords": [
+        "reinforcement learning",
+        "verifiable reward",
+        "RLVR",
+        "SynthRL",
+        "seed questions",
+        "data augmentation",
+        "verification stage",
+        "MMK12 dataset",
+        "visual math reasoning benchmarks"
+      ]
+    },
+    "publishedAt": "2025-06-02T13:45:16.000Z",
+    "title": "SynthRL: Scaling Visual Reasoning with Verifiable Data Synthesis",
+    "summary": "Vision-language models (VLMs) trained via reinforcement learning with\nverifiable reward (RLVR) have shown notable progress in scaling test-time\ncompute effectively. In this work, we investigate how synthesized RL data can\nfurther improve RLVR. To this end, we propose SynthRL-a scalable and\nguaranteed pipeline for automatic data scaling in reasoning-oriented RL\ntraining. SynthRL comprises three key stages: (1) selecting seed questions with\nappropriate distribution, (2) augmenting them into more challenging variants\nwhile preserving the original answers, and (3) a guaranteed verification stage\nthat ensures near-perfect correctness and difficulty enhancement. Our empirical\nexperiments demonstrate SynthRL's scalability and effectiveness. When applied\nto the MMK12 dataset, SynthRL synthesizes over 3.3K additional verifiable,\nchallenging questions from approximately 8K seed samples. Models trained with\nour synthesized data achieve consistent gains across five out-of-domain visual\nmath reasoning benchmarks, with a significant improvement over baseline models\ntrained on seed data alone. Notably, detailed analysis reveals that the gains\nare more pronounced on the most challenging evaluation samples, highlighting\nSynthRL's effectiveness in eliciting deeper and more complex reasoning\npatterns.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.02096.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6486b09e8315b19342f0bf5e",
+      "avatarUrl": "/avatars/bc5f22f231c884146d373fe1042d81bd.svg",
+      "fullname": "Xiangyan Liu",
+      "name": "xyliu6",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.03143",
+      "authors": [
+        {
+          "_id": "683fc5599363b50c19f17d42",
+          "user": {
+            "_id": "63ef330b1e695b35aa484e11",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63ef330b1e695b35aa484e11/bXwpGy0dl8JXeJwJ--ilr.jpeg",
+            "isPro": false,
+            "fullname": "Qianhui WU",
+            "user": "qianhuiwu",
+            "type": "user"
+          },
+          "name": "Qianhui Wu",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-06-04T04:21:31.171Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d43",
+          "user": {
+            "_id": "63340dbbd92c5842ae71d1e9",
+            "avatarUrl": "/avatars/3a3182996bd41b526dcbfa8687d91963.svg",
+            "isPro": false,
+            "fullname": "Kanzhi Cheng",
+            "user": "cckevinn",
+            "type": "user"
+          },
+          "name": "Kanzhi Cheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:48.476Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d44",
+          "user": {
+            "_id": "64d45451c34a346181b130dd",
+            "avatarUrl": "/avatars/9bb8205b889337df5d321539c9b5d69d.svg",
+            "isPro": false,
+            "fullname": "Rui Yang",
+            "user": "Ray2333",
+            "type": "user"
+          },
+          "name": "Rui Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:51.070Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d45",
+          "user": {
+            "_id": "654dbac9938fbf1e696be8aa",
+            "avatarUrl": "/avatars/b3c4035c48169c1bfb04a439fce3499f.svg",
+            "isPro": false,
+            "fullname": "Chaoyun Zhang",
+            "user": "vyokky",
+            "type": "user"
+          },
+          "name": "Chaoyun Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:54.267Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d46",
+          "name": "Jianwei Yang",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d47",
+          "name": "Huiqiang Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d48",
+          "name": "Jian Mu",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d49",
+          "name": "Baolin Peng",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d4a",
+          "name": "Bo Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d4b",
+          "name": "Reuben Tan",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d4c",
+          "name": "Si Qin",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d4d",
+          "name": "Lars Liden",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d4e",
+          "name": "Qingwei Lin",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d4f",
+          "name": "Huan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d50",
+          "name": "Tong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d51",
+          "name": "Jianbing Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d52",
+          "name": "Dongmei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683fc5599363b50c19f17d53",
+          "name": "Jianfeng Gao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T17:59:08.000Z",
+      "submittedOnDailyAt": "2025-06-04T02:44:41.730Z",
+      "title": "GUIアクター: 座標無し可視化グルーディングのGUIアガント",
+      "submittedOnDailyBy": {
+        "_id": "654dbac9938fbf1e696be8aa",
+        "avatarUrl": "/avatars/b3c4035c48169c1bfb04a439fce3499f.svg",
+        "isPro": false,
+        "fullname": "Chaoyun Zhang",
+        "user": "vyokky",
+        "type": "user"
+      },
+      "summary": "VLMプローティングGUIアガントの構築における一つの主な課題は、可視化ジョーカー、すなわち、可視内容と文脈計画に基づいて適切なスクリーン領域を検出することです。現在の多くの研究は、これをテキストベースの座標生成タスクとして扱いますが、これらのアプローチは以下の数多くの制限を見受けています：空間的・語義的なアラインメントの弱さ、不明確なサブジョーカーターゲットの処理不能、スクリーン座標の密な性質とVision Transformersなどのモデルから抽出される可視特徴量の粗粒さとの不適切なマッチ。本論文では、座標無しGUIジョーカーを提案します。GUI-Actorは、テキストベースの座標生成タスクとして扱われているような制限を克服するために、アタッチベースのアクションヘッドを導入し、特定の<ACTOR>トークンをすべての関連可視パッチトークンとアラインすることで、モデルが一回の正向パスで1つ以上のアクション領域を提案することを可能にします。この点に沿って、候補を提案したアクション領域から最も可能なアクション領域を評価し、選択するために、ジョーカーバリデーション機能を設計します。広範囲な実験は、GUI-Actorは複数のGUIアクションジョーカーベンチマーク上で先週の最先端の方法を超え、未見のスクリーン解像度とレイアウトに対する一般化性能を向上させました。特に、GUI-Actor-7BはScreenSpot-ProでUI-TARS-72Bを超え、Qwen2-VLとQwen2.5-VLをバックボードとして使用して40.7と44.6のスコアを達成しました。さらに、ジョーカーバリデーション機能を採用して、VLMバックボードを固定しながら新たに追加されたアクションヘッドのみを微調節することで、以前の最先端のモデルと同等の性能を達成できることを発見しました。これは、GUI-ActorはベースのVLMに効果的なジョーカー能力を賦与でき、その一般的な強みを失わずに証明します。",
+      "upvotes": 17,
+      "discussionId": "683fc55d9363b50c19f17e6b",
+      "projectPage": "https://microsoft.github.io/GUI-Actor/",
+      "githubRepo": "https://github.com/microsoft/GUI-Actor",
+      "ai_summary": "GUI-Actor, a VLM-based method using attention for coordinate-free GUI grounding, outperforms existing methods with better generalization and efficient fine-tuning.",
+      "ai_keywords": [
+        "visual grounding",
+        "text-based coordinate generation",
+        "spatial-semantic alignment",
+        "Vision Transformers",
+        "attention-based action head",
+        "grounding verifier",
+        "GUI action grounding benchmarks",
+        "GUI-Actor",
+        "GUI-Actor-7B",
+        "UI-TARS-72B",
+        "ScreenSpot-Pro",
+        "Qwen2-VL",
+        "Qwen2.5-VL",
+        "parameter-efficient fine-tuning"
+      ]
+    },
+    "publishedAt": "2025-06-03T13:59:08.000Z",
+    "title": "GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents",
+    "summary": "One of the principal challenges in building VLM-powered GUI agents is visual\ngrounding, i.e., localizing the appropriate screen region for action execution\nbased on both the visual content and the textual plans. Most existing work\nformulates this as a text-based coordinate generation task. However, these\napproaches suffer from several limitations: weak spatial-semantic alignment,\ninability to handle ambiguous supervision targets, and a mismatch between the\ndense nature of screen coordinates and the coarse, patch-level granularity of\nvisual features extracted by models like Vision Transformers. In this paper, we\npropose GUI-Actor, a VLM-based method for coordinate-free GUI grounding. At its\ncore, GUI-Actor introduces an attention-based action head that learns to align\na dedicated <ACTOR> token with all relevant visual patch tokens, enabling the\nmodel to propose one or more action regions in a single forward pass. In line\nwith this, we further design a grounding verifier to evaluate and select the\nmost plausible action region from the candidates proposed for action execution.\nExtensive experiments show that GUI-Actor outperforms prior state-of-the-art\nmethods on multiple GUI action grounding benchmarks, with improved\ngeneralization to unseen screen resolutions and layouts. Notably, GUI-Actor-7B\neven surpasses UI-TARS-72B (38.1) on ScreenSpot-Pro, achieving scores of 40.7\nwith Qwen2-VL and 44.6 with Qwen2.5-VL as backbones. Furthermore, by\nincorporating the verifier, we find that fine-tuning only the newly introduced\naction head (~100M parameters for 7B model) while keeping the VLM backbone\nfrozen is sufficient to achieve performance comparable to previous\nstate-of-the-art models, highlighting that GUI-Actor can endow the underlying\nVLM with effective grounding capabilities without compromising its\ngeneral-purpose strengths.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03143.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "654dbac9938fbf1e696be8aa",
+      "avatarUrl": "/avatars/b3c4035c48169c1bfb04a439fce3499f.svg",
+      "fullname": "Chaoyun Zhang",
+      "name": "vyokky",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.03131",
+      "authors": [
+        {
+          "_id": "683fb2786a2b978ca4e62493",
+          "user": {
+            "_id": "64b7aa374df206a3ed1947d2",
+            "avatarUrl": "/avatars/a7c7e703ccf8824259fc5a8a90a25746.svg",
+            "isPro": false,
+            "fullname": "wzd",
+            "user": "GoodEnough",
+            "type": "user"
+          },
+          "name": "Zidong Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:56:13.762Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb2786a2b978ca4e62494",
+          "name": "Lei Bai",
+          "hidden": false
+        },
+        {
+          "_id": "683fb2786a2b978ca4e62495",
+          "name": "Xiangyu Yue",
+          "hidden": false
+        },
+        {
+          "_id": "683fb2786a2b978ca4e62496",
+          "name": "Wanli Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "683fb2786a2b978ca4e62497",
+          "name": "Yiyuan Zhang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63176933b58b0184630d2c74/VS2G-SBuSY5ltQmCLAaq3.png"
+      ],
+      "publishedAt": "2025-06-03T17:57:33.000Z",
+      "submittedOnDailyAt": "2025-06-04T01:13:44.155Z",
+      "title": "ネイティブレジジョン画像合成",
+      "submittedOnDailyBy": {
+        "_id": "63176933b58b0184630d2c74",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63176933b58b0184630d2c74/53b5EASwW76zeyyqeJA3O.jpeg",
+        "isPro": false,
+        "fullname": "Yiyuan Zhang",
+        "user": "Yiyuan",
+        "type": "user"
+      },
+      "summary": "ノートーランス画像合成を紹介します。これは新しい生成モデリングパラダイムで、任意の解像度と横辺比を用いた画像合成が可能になります。このアプローチは、単一の固定解像度、正方形画像の方法の制限を克服し、変動長の可視トークンを原生的に処理します。これにより、傳統的な手法における中心的な課題を解決します。そこで、Native-resolution diffusion Transformer (NiT) を導入します。このアーキテクチャは、デノイズプロセス内で明示的に変動する解像度と横辺比をモデル化することを目的としています。固定フォーマットの制約から開放され、NiTは広範囲の解像度と横辺比を含む画像からの固有の可視分布を学習します。特に、一つのNiTモデルは、同時にImageNet-256x256と512x512ベンチマークで最先端の性能を達成します。驚くべきに、先進な大規模言語モデルの強固なゼロショット能力と同じく、ImageNetでのみ学習されたNiTは、ゼロショット拡張性能を示します。それは、以前見ぬ高解像度（例：1536 x 1536）と多様な横辺比（例：16:9、3:1、4:3）での高品質画像の生成を成功します。これらの発見は、ノートーランス画像モデリングが可視生成モデリングと先進なLLMマテリアルオフィシャル間の橋となる重大なポテンシャルを示しています。",
+      "upvotes": 13,
+      "discussionId": "683fb27e6a2b978ca4e625bd",
+      "projectPage": "https://wzdthu.github.io/NiT/",
+      "githubRepo": "https://github.com/WZDTHU/NiT",
+      "ai_summary": "A novel generative model, Native-resolution diffusion Transformer (NiT), synthesizes high-resolution and varied aspect ratio images with state-of-the-art performance and zero-shot generalization capabilities.",
+      "ai_keywords": [
+        "native-resolution image synthesis",
+        "generative modeling paradigm",
+        "variable-length visual tokens",
+        "diffusion Transformer",
+        "denoising process",
+        "ImageNet-256x256",
+        "ImageNet-512x512",
+        "high-fidelity images",
+        "aspect ratios",
+        "zero-shot generalization"
+      ]
+    },
+    "publishedAt": "2025-06-03T13:57:33.000Z",
+    "title": "Native-Resolution Image Synthesis",
+    "summary": "We introduce native-resolution image synthesis, a novel generative modeling\nparadigm that enables the synthesis of images at arbitrary resolutions and\naspect ratios. This approach overcomes the limitations of conventional\nfixed-resolution, square-image methods by natively handling variable-length\nvisual tokens, a core challenge for traditional techniques. To this end, we\nintroduce the Native-resolution diffusion Transformer (NiT), an architecture\ndesigned to explicitly model varying resolutions and aspect ratios within its\ndenoising process. Free from the constraints of fixed formats, NiT learns\nintrinsic visual distributions from images spanning a broad range of\nresolutions and aspect ratios. Notably, a single NiT model simultaneously\nachieves the state-of-the-art performance on both ImageNet-256x256 and 512x512\nbenchmarks. Surprisingly, akin to the robust zero-shot capabilities seen in\nadvanced large language models, NiT, trained solely on ImageNet, demonstrates\nexcellent zero-shot generalization performance. It successfully generates\nhigh-fidelity images at previously unseen high resolutions (e.g., 1536 x 1536)\nand diverse aspect ratios (e.g., 16:9, 3:1, 4:3), as shown in Figure 1. These\nfindings indicate the significant potential of native-resolution modeling as a\nbridge between visual generative modeling and advanced LLM methodologies.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63176933b58b0184630d2c74/VS2G-SBuSY5ltQmCLAaq3.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03131.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "63176933b58b0184630d2c74",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63176933b58b0184630d2c74/53b5EASwW76zeyyqeJA3O.jpeg",
+      "fullname": "Yiyuan Zhang",
+      "name": "Yiyuan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.00070",
+      "authors": [
+        {
+          "_id": "683fd7d79d4fb703271ad9ac",
+          "name": "Dongyoung Kim",
+          "hidden": false
+        },
+        {
+          "_id": "683fd7d79d4fb703271ad9ad",
+          "name": "Sumin Park",
+          "hidden": false
+        },
+        {
+          "_id": "683fd7d79d4fb703271ad9ae",
+          "name": "Huiwon Jang",
+          "hidden": false
+        },
+        {
+          "_id": "683fd7d79d4fb703271ad9af",
+          "name": "Jinwoo Shin",
+          "hidden": false
+        },
+        {
+          "_id": "683fd7d79d4fb703271ad9b0",
+          "name": "Jaehyung Kim",
+          "hidden": false
+        },
+        {
+          "_id": "683fd7d79d4fb703271ad9b1",
+          "name": "Younggyo Seo",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-29T16:41:12.000Z",
+      "submittedOnDailyAt": "2025-06-04T03:53:04.651Z",
+      "title": "ロボットR1: ロボット工学のための強化学習による機体化ロジックの向上",
+      "submittedOnDailyBy": {
+        "_id": "658d79663a5202a485a76d9b",
+        "avatarUrl": "/avatars/1893384f28a7cb82d4588576c4c264f1.svg",
+        "isPro": false,
+        "fullname": "dongyoung kim",
+        "user": "vangard703",
+        "type": "user"
+      },
+      "summary": "大型ビジョン言語モデル（LVLMs）は、機体化ロボット制御において統計的な学習を用いたロボット制御に関連した機体化ロジックを組み合わせて、ロボティクスの進歩に大きな可能性を示している。通常のアプローチは、Supervised Fine-Tuning（SFT）を用いた機体化ロジックタスクによる訓練を含むことが多いが、SFTデータセットは通常はヒューリスティックに構築され、ロボット制御の向上に明示的に最適化されていないことが多い。また、SFTは、カタストロフィック・フォーゲットや汎化性能の低下などの問題を伴うことが多い。これらの制限を解決するために、ロボット制御に特化された機体化ロジックを強化するための新しいフレームワークを介して、Reinforcement Learningを活用している。ロボットR1は、プロフェッショナルなデモンストレーションから得られる現在のシーン画像と環境メタデータに基づいて、タスクの完了に必要な次のキーポイント状態を予測することを学習している。DeepSeek-R1の学習アプローチにヒントを得て、ロボットR1は、理由に基づくレスポンスをサンプリングし、より正確な予測を実現するように強化する。実験結果によると、ロボットR1で訓練されたモデルは、機体化ロジックタスクに対してSFTメソッドよりも優れている。7Bパラメータを持つことにも限られているが、低レベルアクション制御に関連する理由タスクにおいては、GPT-4oを超えることができている。",
+      "upvotes": 13,
+      "discussionId": "683fd7d79d4fb703271ad9d9",
+      "ai_summary": "Robot-R1, a reinforcement learning framework, enhances embodied reasoning for robotics by predicting keypoint states, outperforming supervised fine-tuning methods and even surpassing GPT-4o in low-level action control tasks.",
+      "ai_keywords": [
+        "Large Vision-Language Models (LVLMs)",
+        "embodied reasoning",
+        "robot control",
+        "Supervised Fine-Tuning (SFT)",
+        "catastrophic forgetting",
+        "generalization performance",
+        "reinforcement learning",
+        "keypoint state",
+        "scene image",
+        "environment metadata",
+        "expert demonstrations",
+        "DeepSeek-R1",
+        "reasoning-based responses",
+        "parameter-efficient fine-tuning"
+      ]
+    },
+    "publishedAt": "2025-05-29T12:41:12.000Z",
+    "title": "Robot-R1: Reinforcement Learning for Enhanced Embodied Reasoning in\n  Robotics",
+    "summary": "Large Vision-Language Models (LVLMs) have recently shown great promise in\nadvancing robotics by combining embodied reasoning with robot control. A common\napproach involves training on embodied reasoning tasks related to robot control\nusing Supervised Fine-Tuning (SFT). However, SFT datasets are often\nheuristically constructed and not explicitly optimized for improving robot\ncontrol. Furthermore, SFT often leads to issues such as catastrophic forgetting\nand reduced generalization performance. To address these limitations, we\nintroduce Robot-R1, a novel framework that leverages reinforcement learning to\nenhance embodied reasoning specifically for robot control. Robot-R1 learns to\npredict the next keypoint state required for task completion, conditioned on\nthe current scene image and environment metadata derived from expert\ndemonstrations. Inspired by the DeepSeek-R1 learning approach, Robot-R1 samples\nreasoning-based responses and reinforces those that lead to more accurate\npredictions. Our experiments show that models trained with Robot-R1 outperform\nSFT methods on embodied reasoning tasks. Despite having only 7B parameters,\nRobot-R1 even surpasses GPT-4o on reasoning tasks related to low-level action\ncontrol, such as spatial and primitive movement reasoning.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.00070.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "658d79663a5202a485a76d9b",
+      "avatarUrl": "/avatars/1893384f28a7cb82d4588576c4c264f1.svg",
+      "fullname": "dongyoung kim",
+      "name": "vangard703",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.03136",
+      "authors": [
+        {
+          "_id": "683fa2ddbde0ae60c2f16183",
+          "name": "Yinjie Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fa2ddbde0ae60c2f16184",
+          "name": "Ling Yang",
+          "hidden": false
+        },
+        {
+          "_id": "683fa2ddbde0ae60c2f16185",
+          "name": "Ye Tian",
+          "hidden": false
+        },
+        {
+          "_id": "683fa2ddbde0ae60c2f16186",
+          "name": "Ke Shen",
+          "hidden": false
+        },
+        {
+          "_id": "683fa2ddbde0ae60c2f16187",
+          "name": "Mengdi Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T17:58:42.000Z",
+      "submittedOnDailyAt": "2025-06-04T00:39:07.151Z",
+      "title": "Co-Evolving LLM Coder and Unit Tester via Reinforcement Learning",
+      "submittedOnDailyBy": {
+        "_id": "64fde4e252e82dd432b74ce9",
+        "avatarUrl": "/avatars/061a69d858b86d1600be916122cae7fc.svg",
+        "isPro": false,
+        "fullname": "Ling Yang",
+        "user": "Lingaaaaaaa",
+        "type": "user"
+      },
+      "summary": "We propose CURE, a novel reinforcement learning framework with a dedicated reward design that co-evolves coding and unit test generation capabilities based on their interaction outcomes, without any ground-truth code as supervision. This approach enables flexible and scalable training and allows the unit tester to learn directly from the coder's mistakes. Our derived ReasonFlux-Coder-7B and 14B models improve code generation accuracy by 5.3% and Best-of-N accuracy by 9.0% after optimization on Qwen2.5-Instruct models, outperforming similarly sized Qwen-Coder, DeepSeek-Coder, and Seed-Coder. They naturally extend to downstream tasks such as test-time scaling and agentic coding, achieving a 8.1% improvement over the base model. For the long-CoT model, our ReasonFlux-Coder-4B consistently outperforms Qwen3-4B while achieving 64.8% inference efficiency in unit test generation. Notably, we also find that our model can serve as an effective reward model for reinforcement learning on base models. Project: https://github.com/Gen-Verse/CURE",
+      "upvotes": 12,
+      "discussionId": "683fa2debde0ae60c2f161cb",
+      "projectPage": "https://huggingface.co/collections/Gen-Verse/reasonflux-coder-6833109ed9300c62deb32c6b",
+      "githubRepo": "https://github.com/Gen-Verse/CURE",
+      "ai_summary": "CURE, a reinforcement learning framework, improves code and unit test generation accuracy without ground-truth supervision, enhancing performance in various coding and testing tasks.",
+      "ai_keywords": [
+        "reinforcement learning",
+        "reward design",
+        "coding",
+        "unit test generation",
+        "ReasonFlux-Coder",
+        "Qwen2.5-Instruct",
+        "Qwen-Coder",
+        "DeepSeek-Coder",
+        "Seed-Coder",
+        "test-time scaling",
+        "agentic coding",
+        "long-CoT",
+        "inference efficiency",
+        "reward model"
+      ]
+    },
+    "publishedAt": "2025-06-03T13:58:42.000Z",
+    "title": "Co-Evolving LLM Coder and Unit Tester via Reinforcement Learning",
+    "summary": "We propose CURE, a novel reinforcement learning framework with a dedicated\nreward design that co-evolves coding and unit test generation capabilities\nbased on their interaction outcomes, without any ground-truth code as\nsupervision. This approach enables flexible and scalable training and allows\nthe unit tester to learn directly from the coder's mistakes. Our derived\nReasonFlux-Coder-7B and 14B models improve code generation accuracy by 5.3% and\nBest-of-N accuracy by 9.0% after optimization on Qwen2.5-Instruct models,\noutperforming similarly sized Qwen-Coder, DeepSeek-Coder, and Seed-Coder. They\nnaturally extend to downstream tasks such as test-time scaling and agentic\ncoding-achieving a 8.1% improvement over the base model. For the long-CoT\nmodel, our ReasonFlux-Coder-4B consistently outperforms Qwen3-4B while\nachieving 64.8% inference efficiency in unit test generation. Notably, we also\nfind that our model can serve as an effective reward model for reinforcement\nlearning on base models. Project: https://github.com/Gen-Verse/CURE",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03136.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64fde4e252e82dd432b74ce9",
+      "avatarUrl": "/avatars/061a69d858b86d1600be916122cae7fc.svg",
+      "fullname": "Ling Yang",
+      "name": "Lingaaaaaaa",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.23061",
+      "authors": [
+        {
+          "_id": "683fc4028de3ffc5838c3fa8",
+          "name": "Tarun Suresh",
+          "hidden": false
+        },
+        {
+          "_id": "683fc4028de3ffc5838c3fa9",
+          "name": "Debangshu Banerjee",
+          "hidden": false
+        },
+        {
+          "_id": "683fc4028de3ffc5838c3faa",
+          "name": "Shubham Ugare",
+          "hidden": false
+        },
+        {
+          "_id": "683fc4028de3ffc5838c3fab",
+          "name": "Sasa Misailovic",
+          "hidden": false
+        },
+        {
+          "_id": "683fc4028de3ffc5838c3fac",
+          "name": "Gagandeep Singh",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-29T04:04:54.000Z",
+      "submittedOnDailyAt": "2025-06-04T02:27:09.092Z",
+      "title": "DINGO: ディフュージョンLLMの制約付き推論",
+      "submittedOnDailyBy": {
+        "_id": "65e7bb35e5e78134ab049942",
+        "avatarUrl": "/avatars/3c0972f0d59e51ebb5c218ee736d4458.svg",
+        "isPro": false,
+        "fullname": "Tarun Suresh",
+        "user": "tarsur909",
+        "type": "user"
+      },
+      "summary": "Diffusion LLMsは、単語順次生成を行う傳統的なautoregressive LLMsと比較して、実行時間の効率化において大きな可能性を示しています。しかし、現在のDiffusionモデルは、正規表現などのユーザーが指定した正式な制約を証明的に強制する能力を欠くことで、固定スキーマのJSONやそのような構造化された出力を必要とするタスクには信頼性が低いという問題があります。単語順次生成を行うautoregressiveモデルと異なり、Diffusion LLMsは一括的にトークンブロックを予測します。この並列化は、トークン順次予測に対して設計された傳統的な制約付き解码アルゴリズムが、真の出力分布を保存することができなくなります。この制限を解決するために、DINGOという、効率的で同時に分布を保持することが証明的であるダイナミックプログラミングに基づく制約付き解码戦略を提案しています。DINGOは、モデルの予測分布の最高確率で出力文字列をサンプリングすることを可能にし、ユーザーが指定した正規表現を厳密に満たすことを可能にします。標準的な記号的な数学およびJSON生成ベンチマークでは、DINGOは無制約推論より最大で68パーセント点の改善を達成します。",
+      "upvotes": 12,
+      "discussionId": "683fc4038de3ffc5838c3fd8",
+      "ai_summary": "DINGO, a dynamic programming-based decoding strategy, enhances diffusion language models by enforcing structured output constraints, significantly improving performance on symbolic math and JSON generation tasks.",
+      "ai_keywords": [
+        "diffusion LLMs",
+        "autoregressive LLMs",
+        "formal constraints",
+        "regular expressions",
+        "sequential token prediction",
+        "parallel token prediction",
+        "dynamic programming",
+        "constrained decoding",
+        "output distribution",
+        "symbolic math generation",
+        "JSON generation"
+      ]
+    },
+    "publishedAt": "2025-05-29T00:04:54.000Z",
+    "title": "DINGO: Constrained Inference for Diffusion LLMs",
+    "summary": "Diffusion LLMs have emerged as a promising alternative to conventional\nautoregressive LLMs, offering significant potential for improved runtime\nefficiency. However, existing diffusion models lack the ability to provably\nenforce user-specified formal constraints, such as regular expressions, which\nmakes them unreliable for tasks that require structured outputs, such as\nfixed-schema JSON generation. Unlike autoregressive models that generate tokens\nsequentially, diffusion LLMs predict a block of tokens in parallel. This\nparallelism makes traditional constrained decoding algorithms, which are\ndesigned for sequential token prediction, ineffective at preserving the true\noutput distribution. To address this limitation, we propose DINGO, a dynamic\nprogramming-based constrained decoding strategy that is both efficient and\nprovably distribution-preserving. DINGO enables sampling of output strings with\nthe highest probability under the model's predicted distribution, while\nstrictly satisfying any user-specified regular expression. On standard symbolic\nmath and JSON generation benchmarks, DINGO achieves up to a 68 percentage point\nimprovement over unconstrained inference",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.23061.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65e7bb35e5e78134ab049942",
+      "avatarUrl": "/avatars/3c0972f0d59e51ebb5c218ee736d4458.svg",
+      "fullname": "Tarun Suresh",
+      "name": "tarsur909",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.02528",
+      "authors": [
+        {
+          "_id": "683fb8bc3bcb592f18f5b866",
+          "name": "Yan Gong",
+          "hidden": false
+        },
+        {
+          "_id": "683fb8bc3bcb592f18f5b867",
+          "name": "Yiren Song",
+          "hidden": false
+        },
+        {
+          "_id": "683fb8bc3bcb592f18f5b868",
+          "name": "Yicheng Li",
+          "hidden": false
+        },
+        {
+          "_id": "683fb8bc3bcb592f18f5b869",
+          "name": "Chenglin Li",
+          "hidden": false
+        },
+        {
+          "_id": "683fb8bc3bcb592f18f5b86a",
+          "name": "Yin Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T07:06:35.000Z",
+      "submittedOnDailyAt": "2025-06-04T01:39:07.675Z",
+      "title": "RelationAdapter: ディフュージョン・トランスフォーマーを用いた視覚関係の学習と伝達",
+      "submittedOnDailyBy": {
+        "_id": "64311a95034ecbefddd141ef",
+        "avatarUrl": "/avatars/b6dc5ca373bedbaa368208517954c375.svg",
+        "isPro": true,
+        "fullname": "Yiren Song",
+        "user": "yiren98",
+        "type": "user"
+      },
+      "summary": "大語言モデル（LLMs）の上下文中学習機構をヒントに、一般化可能な画像編集の新しいパラダイムが登場しています。現在の単一参照メソッドは通常、スタイルや外観の調整に焦点を当て、非固定形変換には難しいことが多いです。これらの制限を解決するために、ソース画像とターゲット画像のペアを利用して、新しいクエリ画像に内容関連の編集インテントを抽出し、転送する方法を提案します。このために、RelationAdapterという軽量モジュールを導入し、Diffusion Transformer（DiT）ベースのモデルによって、最小限の例でも有効に可視化変換を捉え、適用することを可能にします。また、Relation252Kという、218種類の編集タスクを含む詳細なデータセットを導入し、モデルの一般化能力と適応性を評価することを目指します。Relation252K上の実験は、RelationAdapterが編集インテントの理解と転送能力を大幅に向上させ、生成品質と編集性能全体において顕著な効果を示したことを示しています。",
+      "upvotes": 11,
+      "discussionId": "683fb8bd3bcb592f18f5b89f",
+      "ai_summary": "RelationAdapter, a lightweight module, enhances Diffusion Transformer models to capture and apply visual transformations effectively using source-target image pairs, improving editing performance and generalization on diverse tasks.",
+      "ai_keywords": [
+        "RelationAdapter",
+        "Diffusion Transformer",
+        "DiT",
+        "visual prompt-based image editing",
+        "content-aware editing intent",
+        "Relation252K",
+        "visual transformations",
+        "editing intent",
+        "generation quality",
+        "overall editing performance"
+      ]
+    },
+    "publishedAt": "2025-06-03T03:06:35.000Z",
+    "title": "RelationAdapter: Learning and Transferring Visual Relation with\n  Diffusion Transformers",
+    "summary": "Inspired by the in-context learning mechanism of large language models\n(LLMs), a new paradigm of generalizable visual prompt-based image editing is\nemerging. Existing single-reference methods typically focus on style or\nappearance adjustments and struggle with non-rigid transformations. To address\nthese limitations, we propose leveraging source-target image pairs to extract\nand transfer content-aware editing intent to novel query images. To this end,\nwe introduce RelationAdapter, a lightweight module that enables Diffusion\nTransformer (DiT) based models to effectively capture and apply visual\ntransformations from minimal examples. We also introduce Relation252K, a\ncomprehensive dataset comprising 218 diverse editing tasks, to evaluate model\ngeneralization and adaptability in visual prompt-driven scenarios. Experiments\non Relation252K show that RelationAdapter significantly improves the model's\nability to understand and transfer editing intent, leading to notable gains in\ngeneration quality and overall editing performance.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.02528.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64311a95034ecbefddd141ef",
+      "avatarUrl": "/avatars/b6dc5ca373bedbaa368208517954c375.svg",
+      "fullname": "Yiren Song",
+      "name": "yiren98",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 21
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2505.24714",
+      "authors": [
+        {
+          "_id": "683d04c751706d12b2c262ea",
+          "user": {
+            "_id": "642da1cd99f3110ac27caca5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642da1cd99f3110ac27caca5/C1QJY3R_ZdaeANG1y8iW7.jpeg",
+            "isPro": false,
+            "fullname": "junyu",
+            "user": "luojunyu",
+            "type": "user"
+          },
+          "name": "Junyu Luo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T09:03:26.483Z",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262eb",
+          "user": {
+            "_id": "65a9c8652bf3e0cbbfcab2c8",
+            "avatarUrl": "/avatars/fc690a78b5f2e94e08a40059ae40625c.svg",
+            "isPro": false,
+            "fullname": "Alan KOU",
+            "user": "alan1027",
+            "type": "user"
+          },
+          "name": "Zhizhuo Kou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T09:03:22.133Z",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262ec",
+          "user": {
+            "_id": "6434c115a5aed21dd11981c5",
+            "avatarUrl": "/avatars/d51e6e384cfc3affe578e7816bcebb35.svg",
+            "isPro": false,
+            "fullname": "Yang Liming",
+            "user": "chunfenri",
+            "type": "user"
+          },
+          "name": "Liming Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T09:03:24.346Z",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262ed",
+          "name": "Xiao Luo",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262ee",
+          "name": "Jinsheng Huang",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262ef",
+          "name": "Zhiping Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262f0",
+          "name": "Jingshu Peng",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262f1",
+          "name": "Chengzhong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262f2",
+          "name": "Jiaming Ji",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262f3",
+          "name": "Xuanzhe Liu",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262f4",
+          "name": "Sirui Han",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262f5",
+          "name": "Ming Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683d04c751706d12b2c262f6",
+          "name": "Yike Guo",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/642da1cd99f3110ac27caca5/ilkQ2K5LD4SPQ5oCcV2aB.png"
+      ],
+      "publishedAt": "2025-05-30T15:36:19.000Z",
+      "submittedOnDailyAt": "2025-06-04T01:04:36.480Z",
+      "title": "FinMME: 財務モデルデータセットの評価用ベンチマークデータセット",
+      "submittedOnDailyBy": {
+        "_id": "642da1cd99f3110ac27caca5",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642da1cd99f3110ac27caca5/C1QJY3R_ZdaeANG1y8iW7.jpeg",
+        "isPro": false,
+        "fullname": "junyu",
+        "user": "luojunyu",
+        "type": "user"
+      },
+      "summary": "多モデル大語言モデル（MLLMs）は近年急速に進化しています。しかし、財務領域では有効で専門的な多モデル評価データセットが欠如しています。財務領域でのMLLMsの開発を進めるために、私たちはFinMMEを紹介します。FinMMEは18つの財務領域と6つの資産クラスを拡張し、10種類の主なチャートタイプと21種類のサブタイプを扱い、11,000点以上の高品質の財務研究サンプルを含みます。データの品質を確保するために、20人のアノテーターと謹重に設計された検証機構を使用しています。また、FinScoreを開発しました。FinScoreは、ハウシューリングペナルティーと多次元能力評価を採用し、無偏視的な評価を提供します。拡張した実験結果は、状態の最先端のモデルのようにGPT-4oもFinMMEで不満足な性能を示し、その難易度を明らかにしています。ベンチマークは、異なるプロンプトによる予測変化が1%以下であることを示し、現在のデータセットと比べて上位の信頼性を示しています。私たちのデータセットと評価プロトコルは、https://huggingface.co/datasets/luojunyu/FinMME と https://github.com/luo-junyu/FinMME から利用できます。",
+      "upvotes": 11,
+      "discussionId": "683d04c951706d12b2c26367",
+      "projectPage": "https://huggingface.co/datasets/luojunyu/FinMME",
+      "githubRepo": "https://github.com/luo-junyu/FinMME",
+      "ai_summary": "FinMME is a comprehensive multimodal dataset for financial research and FinScore is an evaluation system that highlights the challenges faced by even advanced models like GPT-4o in the finance domain.",
+      "ai_keywords": [
+        "Multimodal Large Language Models",
+        "FinMME",
+        "financial research samples",
+        "high-quality dataset",
+        "financial domains",
+        "asset classes",
+        "chart types",
+        "data quality",
+        "FinScore",
+        "hallucination penalties",
+        "multi-dimensional capability assessment",
+        "benchmark dataset",
+        "prediction robustness"
+      ]
+    },
+    "publishedAt": "2025-05-30T11:36:19.000Z",
+    "title": "FinMME: Benchmark Dataset for Financial Multi-Modal Reasoning Evaluation",
+    "summary": "Multimodal Large Language Models (MLLMs) have experienced rapid development\nin recent years. However, in the financial domain, there is a notable lack of\neffective and specialized multimodal evaluation datasets. To advance the\ndevelopment of MLLMs in the finance domain, we introduce FinMME, encompassing\nmore than 11,000 high-quality financial research samples across 18 financial\ndomains and 6 asset classes, featuring 10 major chart types and 21 subtypes. We\nensure data quality through 20 annotators and carefully designed validation\nmechanisms. Additionally, we develop FinScore, an evaluation system\nincorporating hallucination penalties and multi-dimensional capability\nassessment to provide an unbiased evaluation. Extensive experimental results\ndemonstrate that even state-of-the-art models like GPT-4o exhibit\nunsatisfactory performance on FinMME, highlighting its challenging nature. The\nbenchmark exhibits high robustness with prediction variations under different\nprompts remaining below 1%, demonstrating superior reliability compared to\nexisting datasets. Our dataset and evaluation protocol are available at\nhttps://huggingface.co/datasets/luojunyu/FinMME and\nhttps://github.com/luo-junyu/FinMME.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/642da1cd99f3110ac27caca5/ilkQ2K5LD4SPQ5oCcV2aB.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.24714.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "642da1cd99f3110ac27caca5",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/642da1cd99f3110ac27caca5/C1QJY3R_ZdaeANG1y8iW7.jpeg",
+      "fullname": "junyu",
+      "name": "luojunyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.03126",
+      "authors": [
+        {
+          "_id": "683fb3719f37285365b080c9",
+          "user": {
+            "_id": "672a037c19f1f942483f680c",
+            "avatarUrl": "/avatars/a48464044e9eb11a2bc062be05d9aa9a.svg",
+            "isPro": false,
+            "fullname": "qiulu",
+            "user": "qiulu66",
+            "type": "user"
+          },
+          "name": "Lu Qiu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:56:04.988Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb3719f37285365b080ca",
+          "user": {
+            "_id": "630b094f8b327c7b8b94d24c",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/630b094f8b327c7b8b94d24c/Fd0ugLOHJZIi8oUZScOmX.jpeg",
+            "isPro": false,
+            "fullname": "Yizhuo Li",
+            "user": "liyz",
+            "type": "user"
+          },
+          "name": "Yizhuo Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:56:02.456Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb3719f37285365b080cb",
+          "name": "Yuying Ge",
+          "hidden": false
+        },
+        {
+          "_id": "683fb3719f37285365b080cc",
+          "name": "Yixiao Ge",
+          "hidden": false
+        },
+        {
+          "_id": "683fb3719f37285365b080cd",
+          "name": "Ying Shan",
+          "hidden": false
+        },
+        {
+          "_id": "683fb3719f37285365b080ce",
+          "name": "Xihui Liu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T17:55:18.000Z",
+      "submittedOnDailyAt": "2025-06-04T03:58:52.500Z",
+      "title": "アニメシューター：ベースデータセットのビデオ生成\n\nAnimeShooter: リファレンスガイドされたビデオ生成のための多段階アニメーションデータセット",
+      "submittedOnDailyBy": {
+        "_id": "630b094f8b327c7b8b94d24c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/630b094f8b327c7b8b94d24c/Fd0ugLOHJZIi8oUZScOmX.jpeg",
+        "isPro": false,
+        "fullname": "Yizhuo Li",
+        "user": "liyz",
+        "type": "user"
+      },
+      "summary": "最近、AIジェネレーティドコンテンツ（AIGC）の進展は、アニメーションの生産を大幅に加速しました。興味深いアニメーションを作成するためには、ノートリープとキャラクターリンクを含むコラーシーな多ショットビデオクリップを生成することが重要です。しかし、現在の公開データセットは主に世界中の実世界スケーナリオを焦点にしており、キャラクターの一致性を確保するためのリファレンス画像が不足しています。この隙を埋めるために、我々はAnimeShooter、リファレンスをガイドする多ショットアニメーションデータセットを紹介します。AnimeShooterは、自動化プロセスでの詳細なヒューリスティックなアノテーションと、ショット間の強い可視的一致性を特徴としています。ストーリーレベルのアノテーションは、ノートリープの概要を提供し、ストーリーライン、キーシーン、マインキャラクタープロフィールとリファレンス画像を含みます。一方、ショットレベルのアノテーションは、ストーリーを連続したショットに分解し、シーン、キャラクター、ノートリープと説明的な可視的キャプションを含むようにアノテートします。また、特別なサブセットであるAnimeShooter-audioは、各ショットにサンクローニングサウンドトラック、音声説明と音源を提供しています。AnimeShooterの効果を示すために、リファレンスをガイドする多ショットビデオ生成タスクの基準を確立するために、我々はAnimeShooterGenを紹介します。これは、多モーダル大語言モデル（MLLM）とビデオディフュージョンモデルを拡張しています。リファレンス画像と前回生成されたショットは、MLLMで最初に処理され、リファレンスとコンテキストに関する認識を持つ表現を生成します。これらの表現は、ディフュージョンモデルの条件として使用され、次のショットを解確します。実験結果から、AnimeShooterで訓練されたモデルは、ショット間の可視的一致性とリファレンス可視的ガイドに従うことを示し、我々のデータセットがコラーシーなアニメーションビデオ生成に対しての価値を明らかにしています。",
+      "upvotes": 10,
+      "discussionId": "683fb3749f37285365b08167",
+      "projectPage": "https://qiulu66.github.io/animeshooter",
+      "githubRepo": "https://github.com/qiulu66/Anime-Shooter",
+      "ai_summary": "AnimeShooter, a reference-guided multi-shot animation dataset, enhances coherent animated video generation by incorporating comprehensive hierarchical annotations and visual consistency, and AnimeShooterGen leverages MLLMs and video diffusion models to achieve superior results.",
+      "ai_keywords": [
+        "AnimeShooter",
+        "reference-guided",
+        "multimodal large language models (MLLMs)",
+        "video diffusion models",
+        "hierarchical annotations",
+        "visual consistency",
+        "cross-shot visual consistency",
+        "reference visual guidance"
+      ]
+    },
+    "publishedAt": "2025-06-03T13:55:18.000Z",
+    "title": "AnimeShooter: A Multi-Shot Animation Dataset for Reference-Guided Video\n  Generation",
+    "summary": "Recent advances in AI-generated content (AIGC) have significantly accelerated\nanimation production. To produce engaging animations, it is essential to\ngenerate coherent multi-shot video clips with narrative scripts and character\nreferences. However, existing public datasets primarily focus on real-world\nscenarios with global descriptions, and lack reference images for consistent\ncharacter guidance. To bridge this gap, we present AnimeShooter, a\nreference-guided multi-shot animation dataset. AnimeShooter features\ncomprehensive hierarchical annotations and strong visual consistency across\nshots through an automated pipeline. Story-level annotations provide an\noverview of the narrative, including the storyline, key scenes, and main\ncharacter profiles with reference images, while shot-level annotations\ndecompose the story into consecutive shots, each annotated with scene,\ncharacters, and both narrative and descriptive visual captions. Additionally, a\ndedicated subset, AnimeShooter-audio, offers synchronized audio tracks for each\nshot, along with audio descriptions and sound sources. To demonstrate the\neffectiveness of AnimeShooter and establish a baseline for the reference-guided\nmulti-shot video generation task, we introduce AnimeShooterGen, which leverages\nMultimodal Large Language Models (MLLMs) and video diffusion models. The\nreference image and previously generated shots are first processed by MLLM to\nproduce representations aware of both reference and context, which are then\nused as the condition for the diffusion model to decode the subsequent shot.\nExperimental results show that the model trained on AnimeShooter achieves\nsuperior cross-shot visual consistency and adherence to reference visual\nguidance, which highlight the value of our dataset for coherent animated video\ngeneration.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03126.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "630b094f8b327c7b8b94d24c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/630b094f8b327c7b8b94d24c/Fd0ugLOHJZIi8oUZScOmX.jpeg",
+      "fullname": "Yizhuo Li",
+      "name": "liyz",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.00910",
+      "authors": [
+        {
+          "_id": "683fcd9956d0f1cfb34f1d51",
+          "name": "Seongjae Kang",
+          "hidden": false
+        },
+        {
+          "_id": "683fcd9956d0f1cfb34f1d52",
+          "name": "Dong Bok Lee",
+          "hidden": false
+        },
+        {
+          "_id": "683fcd9956d0f1cfb34f1d53",
+          "name": "Hyungjoon Jang",
+          "hidden": false
+        },
+        {
+          "_id": "683fcd9956d0f1cfb34f1d54",
+          "name": "Dongseop Kim",
+          "hidden": false
+        },
+        {
+          "_id": "683fcd9956d0f1cfb34f1d55",
+          "name": "Sung Ju Hwang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-01T08:54:37.000Z",
+      "submittedOnDailyAt": "2025-06-04T03:10:05.743Z",
+      "title": "PCoreSet: 視覚言語モデルからの知識収納による効果的な活性学習",
+      "submittedOnDailyBy": {
+        "_id": "6357a08f8ed056fa1ccd3b38",
+        "avatarUrl": "/avatars/07d4ca8f3197a6945ad71e6150801135.svg",
+        "isPro": false,
+        "fullname": "erjui",
+        "user": "erjui",
+        "type": "user"
+      },
+      "summary": "知識転移（KD）は、教師モデルの知識を活用して、軽量さやタスク専門性を持つモデルを訓練するために広く使用されているフレームワークです。しかし、そのアプリケーションとしてのアクティブ学習（AL）において、イテレーティブなサンプル選択を通じて記号化コストを最小化することを目的としていることは、まだ調査が浅かい状態です。この空間は、KDは通常、十分なラベル付けデータのアクセスを前提としていることから、ALはデータ不足のシナリオで、タスク専門的な教師モデルが通常に利用できないことから生じた空間であることから生まれています。この論文では、大規模な視覚言語モデル（VLMs）のゼロショットおよび少しショット能力を活用して、ALとKDを統合するActiveKDフレームワークを紹介します。ActiveKDの重要な面は、VLMsの構造化された予測バイアスであり、それらの予測が確率空間でクラスターを形成することです。この構造は、教師モデルの推論バイアスとして見なし、学生の学習に役立つ一般化可能な出力パターンを捉えることです。このバイアスを活用するために、Probabilistic CoreSet（PCoreSet）を提案します。PCoreSetは、特徴空間での覆範を最大化するよりも、確率空間での覆範を最大化する選択戦略で、記号化マネージメントバジェットの限りでも教師の知識をより効率的に伝えることを促進します。11データセットの評価により、PCoreSetはActiveKDフレームワーク内で現在の選択方法を一致していることを示し、ALとKDの交差点での研究を進めることを示しています。",
+      "upvotes": 9,
+      "discussionId": "683fcd9d56d0f1cfb34f1eb1",
+      "githubRepo": "https://github.com/erjui/PCoreSet",
+      "ai_summary": "ActiveKD integrates active learning with knowledge distillation using large vision-language models to efficiently select diverse, unlabeled samples for annotation.",
+      "ai_keywords": [
+        "knowledge distillation",
+        "active learning",
+        "task-specific models",
+        "teacher models",
+        "zero-shot",
+        "few-shot",
+        "large vision-language models",
+        "structured prediction bias",
+        "inductive bias",
+        "Probabilistic CoreSet",
+        "PCoreSet",
+        "probability space",
+        "categorically diverse samples"
+      ]
+    },
+    "publishedAt": "2025-06-01T04:54:37.000Z",
+    "title": "PCoreSet: Effective Active Learning through Knowledge Distillation from\n  Vision-Language Models",
+    "summary": "Knowledge distillation (KD) is a widely used framework for training compact,\ntask-specific models by leveraging the knowledge of teacher models. However,\nits application to active learning (AL), which aims to minimize annotation\ncosts through iterative sample selection, remains underexplored. This gap stems\nfrom the fact that KD typically assumes access to sufficient labeled data,\nwhereas AL operates in data-scarce scenarios where task-specific teacher models\nare often unavailable. In this paper, we introduce ActiveKD, a framework that\nintegrates AL with KD by leveraging the zero- and few-shot capabilities of\nlarge vision-language models (VLMs). A key aspect of ActiveKD is the structured\nprediction bias of VLMs -- i.e., their predictions form clusters in the\nprobability space. We regard this structure as an inductive bias of the teacher\nmodel, capturing generalizable output patterns beneficial to student learning.\nTo exploit this bias, we propose Probabilistic CoreSet (PCoreSet), a selection\nstrategy that maximizes coverage in the probability space rather than the\nfeature space. PCoreSet strategically selects categorically diverse unlabeled\nsamples, facilitating more efficient transfer of teacher knowledge under\nlimited annotation budgets. Evaluations on 11 datasets show that PCoreSet\nconsistently outperforms existing selection methods within the ActiveKD\nframework, advancing research at the intersection of AL and KD.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.00910.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6357a08f8ed056fa1ccd3b38",
+      "avatarUrl": "/avatars/07d4ca8f3197a6945ad71e6150801135.svg",
+      "fullname": "erjui",
+      "name": "erjui",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.02497",
+      "authors": [
+        {
+          "_id": "683fbc32917306517315589f",
+          "name": "Jiahao Chen",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc3291730651731558a0",
+          "name": "Hangjie Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc3291730651731558a1",
+          "name": "Yichen Qian",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc3291730651731558a2",
+          "name": "Jingyun Liang",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc3291730651731558a3",
+          "name": "Jiazheng Xing",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc3291730651731558a4",
+          "name": "Pengwei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc3291730651731558a5",
+          "name": "Weihua Chen",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc3291730651731558a6",
+          "name": "Fan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc3291730651731558a7",
+          "name": "Bing Su",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T06:25:00.000Z",
+      "submittedOnDailyAt": "2025-06-04T01:55:34.274Z",
+      "title": "LumosFlow: 動作ガイドされた長いビデオ生成",
+      "submittedOnDailyBy": {
+        "_id": "649d54b314afbb10ce2a9eeb",
+        "avatarUrl": "/avatars/15c325d8c2273ff63569f23015e98486.svg",
+        "isPro": false,
+        "fullname": "Hangjie Yuan",
+        "user": "JacobYuan",
+        "type": "user"
+      },
+      "summary": "長ビデオ生成は、エンターテイメントやシミュレーションなどの様々な分野で広く応用されており、注目を集めています。進展がありますが、時間的に一貫してそして視覚的に誘奪的な長シーケンスを合成することは難しい挑戦です。従来のアプローチは、短いクリップを順次生成し、結合するか、キーフレームを生成し、その間のフレームをヒューリスティックにインタープールすることで長ビデオを合成します。しかし、両方でも大きな挑戦が残っており、時間的なリペートや不自然的なトランジションなどの問題があります。本論文では、長ビデオ生成パイプラインを再検討し、LumosFlowという構造を導入します。LumosFlowは明示的に動きのガイドニングを採用しています。具体的には、最初に、大きな動きの間隔でキーフレームを生成するための大規模な動きのテキストからビデオの拡散モデル（LMTV-DM）を使用します。これにより、生成される長ビデオの内容の多様性を確保します。キーフレーム間のコンテキスト的なトランジションの補間が複雑であるため、間のフレームの補間を動きの生成と事後の修正に分解します。キーフレームのペアごとに、潜在的な光学フローの拡散モデル（LOF-DM）を使用して複雑な大きな動きの光学フローを合成し、その後、MotionControlNetを使用してフレームの生成をガイドし、質を向上させます。従来のビデオフレームの補間と比較して、15倍の補間を実現し、隣り合うフレームの間の適切な連続的な動きを確保します。実験は、我々の方法で、一貫した動きと外観を持つ長ビデオを生成できることを示します。コードとモデルは、認許後に公開されます。プロジェクトページは、https://jiahaochen1.github.io/LumosFlow/ です。",
+      "upvotes": 7,
+      "discussionId": "683fbc36917306517315597d",
+      "projectPage": "https://jiahaochen1.github.io/LumosFlow/",
+      "ai_summary": "LumosFlow uses LMTV-DM for key frame generation and LOF-DM followed by MotionControlNet for smooth intermediate frame interpolation, ensuring temporally coherent long video generation.",
+      "ai_keywords": [
+        "Large Motion Text-to-Video Diffusion Model",
+        "LMTV-DM",
+        "Latent Optical Flow Diffusion Model",
+        "LOF-DM",
+        "MotionControlNet",
+        "optical flows",
+        "frame interpolation",
+        "key frames",
+        "long video generation",
+        "motion guidance",
+        "synthetic long videos"
+      ]
+    },
+    "publishedAt": "2025-06-03T02:25:00.000Z",
+    "title": "LumosFlow: Motion-Guided Long Video Generation",
+    "summary": "Long video generation has gained increasing attention due to its widespread\napplications in fields such as entertainment and simulation. Despite advances,\nsynthesizing temporally coherent and visually compelling long sequences remains\na formidable challenge. Conventional approaches often synthesize long videos by\nsequentially generating and concatenating short clips, or generating key frames\nand then interpolate the intermediate frames in a hierarchical manner. However,\nboth of them still remain significant challenges, leading to issues such as\ntemporal repetition or unnatural transitions. In this paper, we revisit the\nhierarchical long video generation pipeline and introduce LumosFlow, a\nframework introduce motion guidance explicitly. Specifically, we first employ\nthe Large Motion Text-to-Video Diffusion Model (LMTV-DM) to generate key frames\nwith larger motion intervals, thereby ensuring content diversity in the\ngenerated long videos. Given the complexity of interpolating contextual\ntransitions between key frames, we further decompose the intermediate frame\ninterpolation into motion generation and post-hoc refinement. For each pair of\nkey frames, the Latent Optical Flow Diffusion Model (LOF-DM) synthesizes\ncomplex and large-motion optical flows, while MotionControlNet subsequently\nrefines the warped results to enhance quality and guide intermediate frame\ngeneration. Compared with traditional video frame interpolation, we achieve 15x\ninterpolation, ensuring reasonable and continuous motion between adjacent\nframes. Experiments show that our method can generate long videos with\nconsistent motion and appearance. Code and models will be made publicly\navailable upon acceptance. Our project page:\nhttps://jiahaochen1.github.io/LumosFlow/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.02497.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "649d54b314afbb10ce2a9eeb",
+      "avatarUrl": "/avatars/15c325d8c2273ff63569f23015e98486.svg",
+      "fullname": "Hangjie Yuan",
+      "name": "JacobYuan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.01144",
+      "authors": [
+        {
+          "_id": "683fca92c1e51fea3a470e93",
+          "name": "Ariel Shaulov",
+          "hidden": false
+        },
+        {
+          "_id": "683fca92c1e51fea3a470e94",
+          "user": {
+            "_id": "64972b8d27e41e26a32835d4",
+            "avatarUrl": "/avatars/00c76991b5421f592d632a750ec8b998.svg",
+            "isPro": false,
+            "fullname": "Itay Hazan",
+            "user": "itayhzn",
+            "type": "user"
+          },
+          "name": "Itay Hazan",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-06-04T06:31:03.556Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fca92c1e51fea3a470e95",
+          "name": "Lior Wolf",
+          "hidden": false
+        },
+        {
+          "_id": "683fca92c1e51fea3a470e96",
+          "user": {
+            "_id": "6181c72cdcc1df2c9de8a4d8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1655248010394-6181c72cdcc1df2c9de8a4d8.jpeg",
+            "isPro": false,
+            "fullname": "Hila Chefer",
+            "user": "Hila",
+            "type": "user"
+          },
+          "name": "Hila Chefer",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:36.782Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6181c72cdcc1df2c9de8a4d8/z3VoHZmxOtL3agHCaWWg4.mp4"
+      ],
+      "publishedAt": "2025-06-01T19:55:33.000Z",
+      "submittedOnDailyAt": "2025-06-04T02:58:51.483Z",
+      "title": "FlowMo: フローガイドニングに基づく動画の連続的な移動の記録",
+      "submittedOnDailyBy": {
+        "_id": "6181c72cdcc1df2c9de8a4d8",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1655248010394-6181c72cdcc1df2c9de8a4d8.jpeg",
+        "isPro": false,
+        "fullname": "Hila Chefer",
+        "user": "Hila",
+        "type": "user"
+      },
+      "summary": "文脈動画のディフュージョンモデルは、時間的な面貌（例えば動き、物理、動的な相互作用）をモデル化する能力が記録的に限られている。現在のアプローチは、この制限を解決するためにモデルの再学習または外部条件付与信号を導入して時間的な一貫性を強制する。本研究では、追加的な学習や助言入力を含めないまま、事前学習されたモデルの予測から意味のある時間的表現を抽出できるかを調査した。FlowMoという新しい学習不要のガイダンス方法を導入し、各ディフュージョンステップでモデルのみの予測を利用して動きの一貫性を向上させる。FlowMoは、連続するフレームに対応する潜在変数の間の距離を測定して外観無関心の時間的表現を得る。これにより、モデルが予測する潜在的な時間的構造を明らかにする。次に、時間的次元のパッチごとの分散を測定して動きの一貫性を評価し、これを動的に減少させるようモデルをガイドする。複数の文脈動画モデルの幅広い実験では、FlowMoは動きの一貫性を大幅に向上させ、画質またはプロンプトの対応を失わず、事前学習された動画ディフュージョンモデルの時間的な忠実性を向上させる効果的な「プラグとプレイ」ソリューションを提供することを示した。",
+      "upvotes": 7,
+      "discussionId": "683fca94c1e51fea3a470eee",
+      "projectPage": "https://arielshaulov.github.io/FlowMo/",
+      "githubRepo": "https://github.com/arielshaulov/FlowMo",
+      "ai_summary": "FlowMo, a training-free method, enhances motion coherence in pre-trained text-to-video diffusion models by leveraging their own predictions to reduce patch-wise temporal variance.",
+      "ai_keywords": [
+        "text-to-video diffusion models",
+        "temporal aspects",
+        "motion",
+        "physics",
+        "dynamic interactions",
+        "pre-trained model",
+        "FlowMo",
+        "guidance method",
+        "appearance-debiased",
+        "temporal representation",
+        "latents",
+        "patch-wise variance",
+        "sampling",
+        "temporal fidelity"
+      ]
+    },
+    "publishedAt": "2025-06-01T15:55:33.000Z",
+    "title": "FlowMo: Variance-Based Flow Guidance for Coherent Motion in Video\n  Generation",
+    "summary": "Text-to-video diffusion models are notoriously limited in their ability to\nmodel temporal aspects such as motion, physics, and dynamic interactions.\nExisting approaches address this limitation by retraining the model or\nintroducing external conditioning signals to enforce temporal consistency. In\nthis work, we explore whether a meaningful temporal representation can be\nextracted directly from the predictions of a pre-trained model without any\nadditional training or auxiliary inputs. We introduce FlowMo, a novel\ntraining-free guidance method that enhances motion coherence using only the\nmodel's own predictions in each diffusion step. FlowMo first derives an\nappearance-debiased temporal representation by measuring the distance between\nlatents corresponding to consecutive frames. This highlights the implicit\ntemporal structure predicted by the model. It then estimates motion coherence\nby measuring the patch-wise variance across the temporal dimension and guides\nthe model to reduce this variance dynamically during sampling. Extensive\nexperiments across multiple text-to-video models demonstrate that FlowMo\nsignificantly improves motion coherence without sacrificing visual quality or\nprompt alignment, offering an effective plug-and-play solution for enhancing\nthe temporal fidelity of pre-trained video diffusion models.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6181c72cdcc1df2c9de8a4d8/z3VoHZmxOtL3agHCaWWg4.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.01144.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6181c72cdcc1df2c9de8a4d8",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1655248010394-6181c72cdcc1df2c9de8a4d8.jpeg",
+      "fullname": "Hila Chefer",
+      "name": "Hila",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 14
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.01274",
+      "authors": [
+        {
+          "_id": "683fe4caf8916dcd6d1c936a",
+          "user": {
+            "_id": "673060959e631f353ae1b5e0",
+            "avatarUrl": "/avatars/d4b1e23de90ff1d02c38186a259b8d1e.svg",
+            "isPro": false,
+            "fullname": "Hosu Lee",
+            "user": "lakelee",
+            "type": "user"
+          },
+          "name": "Hosu Lee",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:26.062Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fe4caf8916dcd6d1c936b",
+          "user": {
+            "_id": "653238bed0f5a9e537ed966d",
+            "avatarUrl": "/avatars/e97a83e68e770baa1c5df847777cf213.svg",
+            "isPro": false,
+            "fullname": "Junho Kim",
+            "user": "arkimjh",
+            "type": "user"
+          },
+          "name": "Junho Kim",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:30.239Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fe4caf8916dcd6d1c936c",
+          "name": "Hyunjun Kim",
+          "hidden": false
+        },
+        {
+          "_id": "683fe4caf8916dcd6d1c936d",
+          "name": "Yong Man Ro",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-02T03:08:07.000Z",
+      "submittedOnDailyAt": "2025-06-04T04:50:22.651Z",
+      "title": "ReFoCUS: フレーム最適化をガイドする強化学習によるコンテキスト的理解",
+      "submittedOnDailyBy": {
+        "_id": "653238bed0f5a9e537ed966d",
+        "avatarUrl": "/avatars/e97a83e68e770baa1c5df847777cf213.svg",
+        "isPro": false,
+        "fullname": "Junho Kim",
+        "user": "arkimjh",
+        "type": "user"
+      },
+      "summary": "最近の大規模多モデル（LMMs）の進展により、視覚言語推理が効果的に可能になりましたが、映像内容の理解能力は、フレーム選択戦略の不適切性により制限されています。現在のアプローチは、静的ヒューリスティクスや外部の検索モジュールを使用して、映像-LLMにフレーム情報を供給することを主に依存していますが、これはクエリに関連する情報を提供することができません。本論文では、ReFoCUS（Reinforcement-guided Frame Optimization for Contextual UnderStanding）を紹介します。ReFoCUSは、フレームレベルのポリシー最適化フレームワークであり、最適化の目標を文字列の回答から画像入力選択に移し替えます。ReFoCUSは、強化学習を用いて、参照LMMから得られる報酬信号を用いて、時系列的な回答を支える最適なフレームの内在的な好みを反映したフレーム選択ポリシーを学習します。大規模な組み合わせフレーム空間を効率的に探索するために、時系列的な連続性を確保しながら複雑さを減らすために、自動回帰的な条件付き選択アーキテクチャを使用しています。我々のアプローチは、フレームレベルで明記した制御が必要ではありませんが、複数の映像QAベンチマークで理由論の性能を一貫して向上させ、フレーム選択とモデル内部のユーティリティの一致のベータを明らかにしています。",
+      "upvotes": 4,
+      "discussionId": "683fe4ccf8916dcd6d1c93b6",
+      "ai_summary": "ReFoCUS uses reinforcement learning to optimize frame selection for video-LLM, enhancing reasoning performance in video QA by aligning with model preferences.",
+      "ai_keywords": [
+        "Large Multi-modal Models",
+        "vision-language reasoning",
+        "frame selection strategies",
+        "reinforcement learning",
+        "frame selection policy",
+        "reference LMM",
+        "autoregressive architecture",
+        "conditional selection architecture",
+        "temporal coherence",
+        "video QA benchmarks"
+      ]
+    },
+    "publishedAt": "2025-06-01T23:08:07.000Z",
+    "title": "ReFoCUS: Reinforcement-guided Frame Optimization for Contextual\n  Understanding",
+    "summary": "Recent progress in Large Multi-modal Models (LMMs) has enabled effective\nvision-language reasoning, yet the ability to understand video content remains\nconstrained by suboptimal frame selection strategies. Existing approaches often\nrely on static heuristics or external retrieval modules to feed frame\ninformation into video-LLMs, which may fail to provide the query-relevant\ninformation. In this work, we introduce ReFoCUS (Reinforcement-guided Frame\nOptimization for Contextual UnderStanding), a novel frame-level policy\noptimization framework that shifts the optimization target from textual\nresponses to visual input selection. ReFoCUS learns a frame selection policy\nvia reinforcement learning, using reward signals derived from a reference LMM\nto reflect the model's intrinsic preferences for frames that best support\ntemporally grounded responses. To efficiently explore the large combinatorial\nframe space, we employ an autoregressive, conditional selection architecture\nthat ensures temporal coherence while reducing complexity. Our approach does\nnot require explicit supervision at the frame-level and consistently improves\nreasoning performance across multiple video QA benchmarks, highlighting the\nbenefits of aligning frame selection with model-internal utility.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.01274.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "653238bed0f5a9e537ed966d",
+      "avatarUrl": "/avatars/e97a83e68e770baa1c5df847777cf213.svg",
+      "fullname": "Junho Kim",
+      "name": "arkimjh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.24726",
+      "authors": [
+        {
+          "_id": "683ffca568402c738a947f4e",
+          "name": "Shelly Bensal",
+          "hidden": false
+        },
+        {
+          "_id": "683ffca568402c738a947f4f",
+          "name": "Umar Jamil",
+          "hidden": false
+        },
+        {
+          "_id": "683ffca568402c738a947f50",
+          "name": "Christopher Bryant",
+          "hidden": false
+        },
+        {
+          "_id": "683ffca568402c738a947f51",
+          "user": {
+            "_id": "60e61b3969bd0df25c9375da",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1625692968400-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Melisa Russak",
+            "user": "melisa",
+            "type": "user"
+          },
+          "name": "Melisa Russak",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:53:45.047Z",
+          "hidden": false
+        },
+        {
+          "_id": "683ffca568402c738a947f52",
+          "name": "Kiran Kamble",
+          "hidden": false
+        },
+        {
+          "_id": "683ffca568402c738a947f53",
+          "name": "Dmytro Mozolevskyi",
+          "hidden": false
+        },
+        {
+          "_id": "683ffca568402c738a947f54",
+          "name": "Muayad Ali",
+          "hidden": false
+        },
+        {
+          "_id": "683ffca568402c738a947f55",
+          "name": "Waseem AlShikh",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-30T15:49:42.000Z",
+      "submittedOnDailyAt": "2025-06-04T06:34:02.563Z",
+      "title": "Reflect, Retry, Reward: 自我改善のLLMsを強化学習によって実現する",
+      "submittedOnDailyBy": {
+        "_id": "60e61b3969bd0df25c9375da",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1625692968400-noauth.jpeg",
+        "isPro": false,
+        "fullname": "Melisa Russak",
+        "user": "melisa",
+        "type": "user"
+      },
+      "summary": "私たちは、自分自身を反省することと強化学習を通じて大規模な言語モデルの性能向上の方法を検討しています。モデルが不正解した場合に、より良い自分自身を反省するように動機を与えることで、合成データの生成が不可能であり、それだけ二値のフィードバックがある場合にも、モデルが複雑な可確認的なタスクを解く能力を向上させることができることを示します。我々のフレームワークは2ステップで機能します：最初、タスクを失敗した場合、モデルは前回の試行を分析するための自分自身を反省するコメントを生成します。次に、その自分自身を反省するコメントをもとにタスクを再度試みます。もしその後の試行が成功した場合、自分自身を反省するステップで生成されたトークンは報酬されます。実験結果によると、多様なモデルアーキテクチャで大幅な性能向上が見られ、数学式の書き方では34.7%の改善、関数呼び出しでは18.1%の改善が証明されています。特に、1.5億から7億パラメータの小さな微調校モデルは同じファミリーの10倍大きなモデルを上回ります。我々の新しいパラダイムは、限られた外部フィードバックを伴って難しいタスクで自動的に向上するようになるより有用で安定した言語モデルを開発するための興奮的な道筋です。",
+      "upvotes": 4,
+      "discussionId": "683ffca568402c738a947f7b",
+      "ai_summary": "A method using self-reflection and reinforcement learning improves the performance of large language models, especially with limited feedback, by rewarding self-reflections that lead to better task performance.",
+      "ai_keywords": [
+        "self-reflection",
+        "reinforcement learning",
+        "self-reflective commentary",
+        "performance gains",
+        "math equation writing",
+        "function calling",
+        "parameter-efficient fine-tuning"
+      ]
+    },
+    "publishedAt": "2025-05-30T11:49:42.000Z",
+    "title": "Reflect, Retry, Reward: Self-Improving LLMs via Reinforcement Learning",
+    "summary": "We explore a method for improving the performance of large language models\nthrough self-reflection and reinforcement learning. By incentivizing the model\nto generate better self-reflections when it answers incorrectly, we demonstrate\nthat a model's ability to solve complex, verifiable tasks can be enhanced even\nwhen generating synthetic data is infeasible and only binary feedback is\navailable. Our framework operates in two stages: first, upon failing a given\ntask, the model generates a self-reflective commentary analyzing its previous\nattempt; second, the model is given another attempt at the task with the\nself-reflection in context. If the subsequent attempt succeeds, the tokens\ngenerated during the self-reflection phase are rewarded. Our experimental\nresults show substantial performance gains across a variety of model\narchitectures, as high as 34.7% improvement at math equation writing and 18.1%\nimprovement at function calling. Notably, smaller fine-tuned models (1.5\nbillion to 7 billion parameters) outperform models in the same family that are\n10 times larger. Our novel paradigm is thus an exciting pathway to more useful\nand reliable language models that can self-improve on challenging tasks with\nlimited external feedback.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.24726.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60e61b3969bd0df25c9375da",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1625692968400-noauth.jpeg",
+      "fullname": "Melisa Russak",
+      "name": "melisa",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 30
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.03079",
+      "authors": [
+        {
+          "_id": "683fee0a179d710da07d4352",
+          "user": {
+            "_id": "634aab35dcf125e4dafc87b1",
+            "avatarUrl": "/avatars/aa2db84fd423e9eefe3ef3167c9d3999.svg",
+            "isPro": false,
+            "fullname": "YangXiuyu",
+            "user": "gzzyyxy",
+            "type": "user"
+          },
+          "name": "Xiuyu Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:54:13.216Z",
+          "hidden": true
+        },
+        {
+          "_id": "683fee0a179d710da07d4353",
+          "name": "Bohan Li",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d4354",
+          "name": "Shaocong Xu",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d4355",
+          "name": "Nan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d4356",
+          "name": "Chongjie Ye",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d4357",
+          "name": "Zhaoxi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d4358",
+          "name": "Minghan Qin",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d4359",
+          "name": "Yikang Ding",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d435a",
+          "name": "Xin Jin",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d435b",
+          "name": "Hang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "683fee0a179d710da07d435c",
+          "name": "Hao Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T17:00:32.000Z",
+      "submittedOnDailyAt": "2025-06-04T05:27:07.241Z",
+      "title": "ORV: 4D オペレーティングセンタリックロボットビデオ生成",
+      "submittedOnDailyBy": {
+        "_id": "634aab35dcf125e4dafc87b1",
+        "avatarUrl": "/avatars/aa2db84fd423e9eefe3ef3167c9d3999.svg",
+        "isPro": false,
+        "fullname": "YangXiuyu",
+        "user": "gzzyyxy",
+        "type": "user"
+      },
+      "summary": "テレオプションで実世界のロボットシミュレーションデータを取得することは、よく知られているように、時間と労力がかかる。最近、アクション駆動ゲノリティーモデルは、安全性の懸念を排除し、維持管理の努力を減らすことで、ロボット学習とシミュレーションに広く採用されてきた。しかし、これらの方法で使用されるアクションシーケンスは、グローバル的にコアスのないため、制御精度の限界と一般化能力の低い問題がある。これらの制限を解決するために、ロボットビデオ生成フレームワークORVを提案します。ORVは、4D語意的なオケイニティーシーケンスをファイングライン表現として利用し、ビデオ生成によりより正確な語意的的およびジェオメトリ的なガイドを提供します。オケイニティーベースの表現を拡換することで、ORVはシミュレーションデータを写実的なロボットビデオに無難に変換し、高い時間的な一貫性と精密な制御可能性を確保します。また、ロボットのプチ操作の多点ビデオの同時生成をサポートし、ロボット学習タスクのための重要な能力を提供します。拡張的な実験結果は、ORVは異なるデータセットとサブタスクで現在のベースライン方法を一貫して上回ることを示しています。デモ、コードとモデル：https://orangesodahub.github.io/ORV",
+      "upvotes": 3,
+      "discussionId": "683fee12179d710da07d45f4",
+      "projectPage": "https://orangesodahub.github.io/ORV/",
+      "githubRepo": "https://github.com/OrangeSodahub/ORV",
+      "ai_summary": "ORV, an Occupancy-centric Robot Video generation framework, uses 4D semantic occupancy sequences to produce photorealistic, temporally consistent, and precisely controllable robot videos, enhancing existing methods.",
+      "ai_keywords": [
+        "action-driven generative models",
+        "occupancy-centric",
+        "4D semantic occupancy sequences",
+        "video generation",
+        "photorealistic robot videos",
+        "temporal consistency",
+        "precise controllability",
+        "multi-view videos"
+      ]
+    },
+    "publishedAt": "2025-06-03T13:00:32.000Z",
+    "title": "ORV: 4D Occupancy-centric Robot Video Generation",
+    "summary": "Acquiring real-world robotic simulation data through teleoperation is\nnotoriously time-consuming and labor-intensive. Recently, action-driven\ngenerative models have gained widespread adoption in robot learning and\nsimulation, as they eliminate safety concerns and reduce maintenance efforts.\nHowever, the action sequences used in these methods often result in limited\ncontrol precision and poor generalization due to their globally coarse\nalignment. To address these limitations, we propose ORV, an Occupancy-centric\nRobot Video generation framework, which utilizes 4D semantic occupancy\nsequences as a fine-grained representation to provide more accurate semantic\nand geometric guidance for video generation. By leveraging occupancy-based\nrepresentations, ORV enables seamless translation of simulation data into\nphotorealistic robot videos, while ensuring high temporal consistency and\nprecise controllability. Furthermore, our framework supports the simultaneous\ngeneration of multi-view videos of robot gripping operations - an important\ncapability for downstream robotic learning tasks. Extensive experimental\nresults demonstrate that ORV consistently outperforms existing baseline methods\nacross various datasets and sub-tasks. Demo, Code and Model:\nhttps://orangesodahub.github.io/ORV",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03079.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "634aab35dcf125e4dafc87b1",
+      "avatarUrl": "/avatars/aa2db84fd423e9eefe3ef3167c9d3999.svg",
+      "fullname": "YangXiuyu",
+      "name": "gzzyyxy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.01789",
+      "authors": [
+        {
+          "_id": "683fb99c7c8d720be438000a",
+          "name": "Genta Indra Winata",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438000b",
+          "name": "David Anugraha",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438000c",
+          "name": "Emmy Liu",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438000d",
+          "name": "Alham Fikri Aji",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438000e",
+          "name": "Shou-Yi Hung",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438000f",
+          "name": "Aditya Parashar",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380010",
+          "user": {
+            "_id": "64d1e3a87e20ec9ea0020d03",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64d1e3a87e20ec9ea0020d03/xm-afh1AaqS0e9qpaPo7y.jpeg",
+            "isPro": false,
+            "fullname": "Patrick Amadeus Irawan",
+            "user": "patrickamadeus",
+            "type": "user"
+          },
+          "name": "Patrick Amadeus Irawan",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:55:30.937Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380011",
+          "name": "Ruochen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380012",
+          "name": "Zheng-Xin Yong",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380013",
+          "name": "Jan Christian Blaise Cruz",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380014",
+          "name": "Niklas Muennighoff",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380015",
+          "user": {
+            "_id": "6469949654873f0043b09c22",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6469949654873f0043b09c22/Lk7IJAR16Wa_sGJ2g81AQ.jpeg",
+            "isPro": false,
+            "fullname": "Seungone Kim",
+            "user": "seungone",
+            "type": "user"
+          },
+          "name": "Seungone Kim",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:55:22.158Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380016",
+          "name": "Hanyang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380017",
+          "user": {
+            "_id": "63139ff6b46fc4e24332fa84",
+            "avatarUrl": "/avatars/ee6923a7cb218f22535064a87761e497.svg",
+            "isPro": false,
+            "fullname": "Sudipta Kar",
+            "user": "cryptexcode",
+            "type": "user"
+          },
+          "name": "Sudipta Kar",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:55:28.286Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380018",
+          "name": "Kezia Erina Suryoraharjo",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be4380019",
+          "name": "M. Farid Adilazuarda",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438001a",
+          "name": "En-Shiun Annie Lee",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438001b",
+          "name": "Ayu Purwarianti",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438001c",
+          "name": "Derry Tanti Wijaya",
+          "hidden": false
+        },
+        {
+          "_id": "683fb99c7c8d720be438001d",
+          "name": "Monojit Choudhury",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-02T15:31:52.000Z",
+      "submittedOnDailyAt": "2025-06-04T01:42:44.251Z",
+      "title": "データシートは十分ではありません：データルビリィズムと自動化ジャンルの計測と責任",
+      "submittedOnDailyBy": {
+        "_id": "5f5c4b20e56d546cd6233098",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1637813888895-5f5c4b20e56d546cd6233098.jpeg",
+        "isPro": false,
+        "fullname": "Genta Indra Winata",
+        "user": "gentaiscool",
+        "type": "user"
+      },
+      "summary": "高品質データセットは、機械学習モデルの訓練と評価に基盤的な存在であるが、その作成、特に正確な人間のアノテーションによる作成は、大きな課題である。複数のデータセット論文の提出は、独自性、多様性、または厳密な品質管理に欠けていて、これらの欠点は、同価評価時によく見落とされる。提出も、データセットの構築と特性についての重要な詳細を省略していることが多い。既存のツールのように、datasheetsは転がし見せを促進するために用意されているが、主に説明的で標準化された、測定可能なデータの品質評価の方法を提供していない。同様に、会議でのメタデータの要求は責任を促すが、不均等に強制されている。これらの制限を解決するために、この立場論文は、データセットの評価プロセスにシステマティックな、レビューポイントに基づく評価指標の統合を主張している。また、これらの欠点を解決するために、合成データの生成に適切なツールとLLM-as-a-judgeのアプローチを採用したスケーラブルな、コスト効率的な方法を検討している。行動の呼びかけとして、データラボリックス（DataRubrics）を紹介し、これは人間やモデルから生成されたデータセットの品質を評価するための構造化されたフレームワークである。LLMベースの評価における最近の進歩を活用し、データラボリックスは、データセットの品質評価に対する再現可能な、スケーラブルな、行動可能な解決策を提供し、これにより、どのランナーや評価者がデータ中心的な研究における高いスタンダードを維持することができるようにする。また、LLMベースの評価の再現性をサポートするためのコードを、https://github.com/datarubrics/datarubrics でリリースしている。",
+      "upvotes": 3,
+      "discussionId": "683fb99e7c8d720be4380090"
+    },
+    "publishedAt": "2025-06-02T11:31:52.000Z",
+    "title": "Datasheets Aren't Enough: DataRubrics for Automated Quality Metrics and\n  Accountability",
+    "summary": "High-quality datasets are fundamental to training and evaluating machine\nlearning models, yet their creation-especially with accurate human\nannotations-remains a significant challenge. Many dataset paper submissions\nlack originality, diversity, or rigorous quality control, and these\nshortcomings are often overlooked during peer review. Submissions also\nfrequently omit essential details about dataset construction and properties.\nWhile existing tools such as datasheets aim to promote transparency, they are\nlargely descriptive and do not provide standardized, measurable methods for\nevaluating data quality. Similarly, metadata requirements at conferences\npromote accountability but are inconsistently enforced. To address these\nlimitations, this position paper advocates for the integration of systematic,\nrubric-based evaluation metrics into the dataset review process-particularly as\nsubmission volumes continue to grow. We also explore scalable, cost-effective\nmethods for synthetic data generation, including dedicated tools and\nLLM-as-a-judge approaches, to support more efficient evaluation. As a call to\naction, we introduce DataRubrics, a structured framework for assessing the\nquality of both human- and model-generated datasets. Leveraging recent advances\nin LLM-based evaluation, DataRubrics offers a reproducible, scalable, and\nactionable solution for dataset quality assessment, enabling both authors and\nreviewers to uphold higher standards in data-centric research. We also release\ncode to support reproducibility of LLM-based evaluations at\nhttps://github.com/datarubrics/datarubrics.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.01789.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5f5c4b20e56d546cd6233098",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1637813888895-5f5c4b20e56d546cd6233098.jpeg",
+      "fullname": "Genta Indra Winata",
+      "name": "gentaiscool",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 17
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.03096",
+      "authors": [
+        {
+          "_id": "684002718bd5bff9918ce018",
+          "user": {
+            "_id": "6310a6bb0a43f97f6c5567d3",
+            "avatarUrl": "/avatars/04b07c3a6c811337939c951567cb2bf2.svg",
+            "isPro": false,
+            "fullname": "Christian Schlarmann",
+            "user": "chs20",
+            "type": "user"
+          },
+          "name": "Christian Schlarmann",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:53:34.919Z",
+          "hidden": false
+        },
+        {
+          "_id": "684002718bd5bff9918ce019",
+          "name": "Francesco Croce",
+          "hidden": false
+        },
+        {
+          "_id": "684002718bd5bff9918ce01a",
+          "name": "Nicolas Flammarion",
+          "hidden": false
+        },
+        {
+          "_id": "684002718bd5bff9918ce01b",
+          "name": "Matthias Hein",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T17:27:12.000Z",
+      "submittedOnDailyAt": "2025-06-04T08:12:15.755Z",
+      "title": "FuseLIP: 離散トークンの早期融合による多モーダルエンベディング",
+      "submittedOnDailyBy": {
+        "_id": "6310a6bb0a43f97f6c5567d3",
+        "avatarUrl": "/avatars/04b07c3a6c811337939c951567cb2bf2.svg",
+        "isPro": false,
+        "fullname": "Christian Schlarmann",
+        "user": "chs20",
+        "type": "user"
+      },
+      "summary": "Contrastive language-image pre-trainingは、各モデルで異なるエンコーダーを使用して、共通的な潜在空間で文画像ペアの特徴量を調整します。このアプローチは、数多くのzero-shotタスクで驚異的な性能を収めますが、本来的に多モデル入力を処理することができません、つまり画像と文字を1つの特徴ベクトルにエンコードすることができません。対策として、追加のモジュールを使用して、単一モデルで抽出された特徴量を統合することが一般的な実践です。本稿では、FuseLIPという多モデル埋め込みの代替的なアーキテクチャを提出します。最近の離散画像トーキナイザーの進歩を活用し、テキストと画像トーキナイザーの拡張ボキャベリューに対して効果的な変換器モデルを提案します。この早期融合アプローチでは、各エンコーディングの深さで異なるモデルが相互作用し、一般的な遅延融合よりも豊富な表現を得ることができます。新しいデータセットをコレクトし、多モデルエンコーダモデルの難しいタスクを設計します。FuseLIPは、VQAやテキストガイドディング画像変換検索などの多モデル埋め込みタスクで他のアプローチよりも優れていますが、単一モデルタスクでは基準と比較的な性能を示します。",
+      "upvotes": 2,
+      "discussionId": "684002758bd5bff9918ce109"
+    },
+    "publishedAt": "2025-06-03T13:27:12.000Z",
+    "title": "FuseLIP: Multimodal Embeddings via Early Fusion of Discrete Tokens",
+    "summary": "Contrastive language-image pre-training aligns the features of text-image\npairs in a common latent space via distinct encoders for each modality. While\nthis approach achieves impressive performance in several zero-shot tasks, it\ncannot natively handle multimodal inputs, i.e., encoding image and text into a\nsingle feature vector. As a remedy, it is common practice to use additional\nmodules to merge the features extracted by the unimodal encoders. In this work,\nwe present FuseLIP, an alternative architecture for multimodal embedding.\nLeveraging recent progress in discrete image tokenizers, we propose to use a\nsingle transformer model which operates on an extended vocabulary of text and\nimage tokens. This early fusion approach allows the different modalities to\ninteract at each depth of encoding and obtain richer representations compared\nto common late fusion. We collect new datasets for multimodal pre-training and\nevaluation, designing challenging tasks for multimodal encoder models. We show\nthat FuseLIP outperforms other approaches in multimodal embedding tasks such as\nVQA and text-guided image transformation retrieval, while being comparable to\nbaselines on unimodal tasks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03096.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6310a6bb0a43f97f6c5567d3",
+      "avatarUrl": "/avatars/04b07c3a6c811337939c951567cb2bf2.svg",
+      "fullname": "Christian Schlarmann",
+      "name": "chs20",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.02454",
+      "authors": [
+        {
+          "_id": "683fb5d592425f86f2be5c40",
+          "name": "Zhaorui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d592425f86f2be5c41",
+          "name": "Bo Pan",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d592425f86f2be5c42",
+          "name": "Han Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d592425f86f2be5c43",
+          "name": "Yiyao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d592425f86f2be5c44",
+          "name": "Xingyu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d592425f86f2be5c45",
+          "name": "Minfeng Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d592425f86f2be5c46",
+          "name": "Bo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d592425f86f2be5c47",
+          "name": "Wei Chen",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64a568f5764b1dce366f9fd2/Jup3eQX_IL2nKhCQVaSWS.mp4"
+      ],
+      "publishedAt": "2025-06-03T05:18:19.000Z",
+      "submittedOnDailyAt": "2025-06-04T01:28:03.959Z",
+      "title": "マルチモーダルディープリサーチャー：テキストとチャートを交じり書くレポートの生成\n  効果的なフレームワークを使ってスクラッチから始める",
+      "submittedOnDailyBy": {
+        "_id": "64a568f5764b1dce366f9fd2",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64a568f5764b1dce366f9fd2/9THW2AJhEVmzltEAm9mMY.jpeg",
+        "isPro": false,
+        "fullname": "Zhaorui Yang",
+        "user": "zhaoruiyang",
+        "type": "user"
+      },
+      "summary": "ビジュアライゼーションは、概念と情報の有効な伝達に重要な役割を果たしています。理由と検索アウェイド生成の最近の進展により、大規模言語モデル（LLMs）は深い研究を行い、詳細なレポートを生成することができました。それにも関わらず、現在の深い研究フレームワークは主にテキストだけの内容を生成することを中心に、自動的な交差テキストとビジュアライゼーションの生成は調査されていません。この新しいタスクは、情報的なビジュアライゼーションの設計とテキストレポートとの有効な統合において重要な課題を抱えています。これらの課題を解決するために、私たちはビジュアライゼーションの正式的な説明（FDV）を提案します。FDVは、チャートの構造化されたテキスト的な表現であり、LLMsが学習し、多様的で高品質のビジュアライゼーションを生成することを可能にします。この表現に基づいて、私たちはMultimodal DeepResearcherというアガントフレームワークを介して、以下の4つのステップに分解します：（1）研究、（2）サンプルレポートのテキスト化、（3）計画、（4）モデルバージョンレポートの生成。生成されたモデルバージョンレポートの評価において、MultimodalReportBenchを開発しました。これは100の多様なテーマを含み、5つの専門的なメトリクスを用いて提供しています。モデルと評価方法の拡大の実験は、Multimodal DeepResearcherの効果性を示しています。特に、同じClaude 3.7 Sonnetモデルを使用して、Multimodal DeepResearcherはベースライン方法を超える82%の全体的な勝率を達成しました。",
+      "upvotes": 2,
+      "discussionId": "683fb5d792425f86f2be5c78",
+      "projectPage": "https://rickyang1114.github.io/multimodal-deepresearcher/",
+      "ai_summary": "A new framework, Multimodal DeepResearcher, enables Large Language Models to generate high-quality multimodal reports combining text and diverse visualizations through structured textual representations.",
+      "ai_keywords": [
+        "Formal Description of Visualization",
+        "FDV",
+        "Multimodal DeepResearcher",
+        "researching",
+        "exemplar report textualization",
+        "planning",
+        "multimodal report generation",
+        "MultimodalReportBench",
+        "multimodal reports"
+      ]
+    },
+    "publishedAt": "2025-06-03T01:18:19.000Z",
+    "title": "Multimodal DeepResearcher: Generating Text-Chart Interleaved Reports\n  From Scratch with Agentic Framework",
+    "summary": "Visualizations play a crucial part in effective communication of concepts and\ninformation. Recent advances in reasoning and retrieval augmented generation\nhave enabled Large Language Models (LLMs) to perform deep research and generate\ncomprehensive reports. Despite its progress, existing deep research frameworks\nprimarily focus on generating text-only content, leaving the automated\ngeneration of interleaved texts and visualizations underexplored. This novel\ntask poses key challenges in designing informative visualizations and\neffectively integrating them with text reports. To address these challenges, we\npropose Formal Description of Visualization (FDV), a structured textual\nrepresentation of charts that enables LLMs to learn from and generate diverse,\nhigh-quality visualizations. Building on this representation, we introduce\nMultimodal DeepResearcher, an agentic framework that decomposes the task into\nfour stages: (1) researching, (2) exemplar report textualization, (3) planning,\nand (4) multimodal report generation. For the evaluation of generated\nmultimodal reports, we develop MultimodalReportBench, which contains 100\ndiverse topics served as inputs along with 5 dedicated metrics. Extensive\nexperiments across models and evaluation methods demonstrate the effectiveness\nof Multimodal DeepResearcher. Notably, utilizing the same Claude 3.7 Sonnet\nmodel, Multimodal DeepResearcher achieves an 82\\% overall win rate over the\nbaseline method.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64a568f5764b1dce366f9fd2/Jup3eQX_IL2nKhCQVaSWS.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.02454.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64a568f5764b1dce366f9fd2",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64a568f5764b1dce366f9fd2/9THW2AJhEVmzltEAm9mMY.jpeg",
+      "fullname": "Zhaorui Yang",
+      "name": "zhaoruiyang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.02338",
+      "authors": [
+        {
+          "_id": "683fbc730ffa93c1611d513b",
+          "user": {
+            "_id": "64c8f4cec547ed5243ebd0a8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c8f4cec547ed5243ebd0a8/MiOH5YbMg8Gh9KYlQsLmX.jpeg",
+            "isPro": false,
+            "fullname": "Hyungjoo Chae",
+            "user": "hyungjoochae",
+            "type": "user"
+          },
+          "name": "Hyungjoo Chae",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:55:14.169Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc730ffa93c1611d513c",
+          "name": "Dongjin Kang",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc730ffa93c1611d513d",
+          "name": "Jihyuk Kim",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc730ffa93c1611d513e",
+          "name": "Beong-woo Kwak",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc730ffa93c1611d513f",
+          "name": "Sunghyun Park",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc730ffa93c1611d5140",
+          "name": "Haeju Park",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc730ffa93c1611d5141",
+          "name": "Jinyoung Yeo",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc730ffa93c1611d5142",
+          "name": "Moontae Lee",
+          "hidden": false
+        },
+        {
+          "_id": "683fbc730ffa93c1611d5143",
+          "name": "Kyungjae Lee",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T00:29:15.000Z",
+      "submittedOnDailyAt": "2025-06-04T01:55:22.453Z",
+      "title": "Open-Source Reasoningモデルの欠けた一つ：冷やかなスタートを避けるRLでの短縮コンテキストLLMのデータセット",
+      "submittedOnDailyBy": {
+        "_id": "64c8f4cec547ed5243ebd0a8",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c8f4cec547ed5243ebd0a8/MiOH5YbMg8Gh9KYlQsLmX.jpeg",
+        "isPro": false,
+        "fullname": "Hyungjoo Chae",
+        "user": "hyungjoochae",
+        "type": "user"
+      },
+      "summary": "R1の公開でより大規模な理由論モデル（LRM）が利用できるようになり、研究者は通常、R1の長いChain-of-Thought（CoT）推論を用いて新しいLRMを訓練しています。先行研究は、直接的な煉獄化でLRMの能力を再現できることを示していますが、現有モデル（例：R1）の依存関係が進歩の重要な制約となっていることが明らかです。独立したLRM開発の第一歩として、この論文は、推論時スケーリングに対して訓練されていないLLMを用いて長いCoTデータセットを構築する可能性を検討します。そのために、Long CoT Collectionという100KのCoT理由のデータセットを提供します。ここでは、o1の新しい理由論戦略を短いCoT LLMに導入し、思い出すことをより長く、思い出すことをより制御できるようにし、過度な考え方問題をより良い管理できるようにします。拡大的な分析は、データセットがR1と同等の質または少し低い質を達成していることを証明します。また、実験は、データセットでの訓練は一般的な理由論スキルを強化し、RLVRでの強化学習モデルの初期化による2-3倍の収益を得ることを示しています。",
+      "upvotes": 2,
+      "discussionId": "683fbc760ffa93c1611d51cc",
+      "ai_summary": "The Long CoT Collection dataset, generated by short CoT LLMs, enhances general reasoning skills and provides a strong foundation for reinforcement learning, achieving quality comparable to R1.",
+      "ai_keywords": [
+        "long chain-of-thought",
+        "CoT inferences",
+        "LRMs",
+        "direct distillation",
+        "inference-time scaling",
+        "CoT rationales",
+        "short CoT LLMs",
+        "reasoning strategies",
+        "thought budget",
+        "overthinking",
+        "reinforcement learning",
+        "RLVR"
+      ]
+    },
+    "publishedAt": "2025-06-02T20:29:15.000Z",
+    "title": "One Missing Piece for Open-Source Reasoning Models: A Dataset to\n  Mitigate Cold-Starting Short CoT LLMs in RL",
+    "summary": "With the release of R1, a publicly available large reasoning model (LRM),\nresearchers commonly train new LRMs by training language models on R1's long\nchain-of-thought (CoT) inferences. While prior works show that LRMs'\ncapabilities can be reproduced through direct distillation, the continued\nreliance on the existing models (e.g., R1) remains a critical limitation in\nadvancing the field. As a first step toward independent LRM development, this\npaper explores the possibility of constructing a long CoT dataset with LLMs\nthat are not trained for inference-time scaling. To this end, we present the\nLong CoT Collection, a dataset of 100K CoT rationales annotated using existing\nshort CoT LLMs. We develop a pipeline that induces o1's novel reasoning\nstrategies into short CoT LLMs, enabling them to think longer and introducing\ncontrollability over the thought budget to better manage the overthinking\nproblem. Our extensive analyses validate that our dataset achieves quality\ncomparable to--or slightly below--R1. Furthermore, our experiments demonstrate\nthat training on our dataset not only strengthens general reasoning skills, but\nalso provides a strong foundation for reinforcement learning--models\ninitialized on our data achieve 2-3x larger gains with RLVR.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.02338.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64c8f4cec547ed5243ebd0a8",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64c8f4cec547ed5243ebd0a8/MiOH5YbMg8Gh9KYlQsLmX.jpeg",
+      "fullname": "Hyungjoo Chae",
+      "name": "hyungjoochae",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 14
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.00413",
+      "authors": [
+        {
+          "_id": "683e703c33ac56778c2e51cd",
+          "user": {
+            "_id": "630139f1f6bea7dd15bdaf4e",
+            "avatarUrl": "/avatars/263536f6160f8c522d2a76ca2c4e4cc0.svg",
+            "isPro": false,
+            "fullname": "Daniel Israel",
+            "user": "danielmisrael",
+            "type": "user"
+          },
+          "name": "Daniel Israel",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-03T08:45:22.988Z",
+          "hidden": false
+        },
+        {
+          "_id": "683e703c33ac56778c2e51ce",
+          "name": "Guy Van den Broeck",
+          "hidden": false
+        },
+        {
+          "_id": "683e703c33ac56778c2e51cf",
+          "name": "Aditya Grover",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-31T06:10:10.000Z",
+      "submittedOnDailyAt": "2025-06-04T03:04:01.663Z",
+      "title": "Adaptive Parallel Decodingを用いてDiffusion LLMsを加速する",
+      "submittedOnDailyBy": {
+        "_id": "630139f1f6bea7dd15bdaf4e",
+        "avatarUrl": "/avatars/263536f6160f8c522d2a76ca2c4e4cc0.svg",
+        "isPro": false,
+        "fullname": "Daniel Israel",
+        "user": "danielmisrael",
+        "type": "user"
+      },
+      "summary": "LLMsの生成速度は、自動復元デコーディングによってボトルネックとなり、トークンが順番に一つずつ予測されます。代わりに、拡散大語言モデル（dLLMs）は理論的にトークンの並行生成が可能であることが示されていますが、実際には、質量を大幅に損ねない限り、自動復元モデルの速度を達成することが困難です。そこで、我々は、トークンの並行抽出の数を動的に調整する新しい方法、自動調節並行デコーディング（APD）を紹介します。これを実現するために、dLLMの境界確率と小さな助手自動復元モデルでの配列の統合確率の乗算混合を定義します。これは、推測デコーディングの標準設定を逆転させ、大きな自動復元モデルから小さなモデルからデコーディングを試みることを目的とします。また、APDを進化させるために、KVキャッチとマスクされた入力のサイズの制限を設定します。これらの方法は、トランプットと質量の調整を柔軟に行うために、3つの調節パラメータを提供します。そして、APDは、下流ベンチマークで質量の損失が最小限であり、明らかに高いトランプットを提供します。",
+      "upvotes": 2,
+      "discussionId": "683e703d33ac56778c2e51fe",
+      "ai_summary": "Adaptive parallel decoding (APD) enhances the throughput of diffusion large language models (dLLMs) by dynamically adjusting parallel token generation without significantly diminishing quality.",
+      "ai_keywords": [
+        "autoregressive decoding",
+        "diffusion large language models",
+        "dLLMs",
+        "adaptive parallel decoding",
+        "APD",
+        "marginal probabilities",
+        "joint probability",
+        "speculative decoding",
+        "KV caching",
+        "masked input"
+      ]
+    },
+    "publishedAt": "2025-05-31T02:10:10.000Z",
+    "title": "Accelerating Diffusion LLMs via Adaptive Parallel Decoding",
+    "summary": "The generation speed of LLMs are bottlenecked by autoregressive decoding,\nwhere tokens are predicted sequentially one by one. Alternatively, diffusion\nlarge language models (dLLMs) theoretically allow for parallel token\ngeneration, but in practice struggle to achieve the speed of autoregressive\nmodels without significantly sacrificing quality. We therefore introduce\nadaptive parallel decoding (APD), a novel method that dynamically adjusts the\nnumber of tokens sampled in parallel. We achieve this by defining a\nmultiplicative mixture between the dLLM marginal probabilities and the joint\nprobability of sequences under a small auxiliary autoregressive model. This\ninverts the standard setup of speculative decoding, where the goal is to sample\nfrom a large autoregressive verifier by drafting from a smaller model. We\nfurther optimize APD by enabling KV caching and limiting the size of the masked\ninput. Altogether, our method puts forward three tunable parameters to flexibly\ntradeoff throughput and quality. We show that APD provides markedly higher\nthroughput with minimal quality degradations on downstream benchmarks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.00413.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "630139f1f6bea7dd15bdaf4e",
+      "avatarUrl": "/avatars/263536f6160f8c522d2a76ca2c4e4cc0.svg",
+      "fullname": "Daniel Israel",
+      "name": "danielmisrael",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.16994",
+      "authors": [
+        {
+          "_id": "683fb5d3a09aefea70733fa3",
+          "user": {
+            "_id": "64e14c5b12a5504dda70e60d",
+            "avatarUrl": "/avatars/944b486bb037364ef7d9d2c826526708.svg",
+            "isPro": false,
+            "fullname": "Runyang",
+            "user": "dd101bb",
+            "type": "user"
+          },
+          "name": "Runyang You",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-06-04T07:34:53.226Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d3a09aefea70733fa4",
+          "user": {
+            "_id": "674038313ccfb67446ae2b35",
+            "avatarUrl": "/avatars/8a3c0fdf971363988731f9eb8b13658c.svg",
+            "isPro": false,
+            "fullname": "tensorslow",
+            "user": "tensorslow",
+            "type": "user"
+          },
+          "name": "Yongqi Li",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-06-04T02:56:21.008Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d3a09aefea70733fa5",
+          "name": "Xinyu Lin",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d3a09aefea70733fa6",
+          "user": {
+            "_id": "63b6dbc8ccebeadccc888456",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1673396893898-63b6dbc8ccebeadccc888456.jpeg",
+            "isPro": false,
+            "fullname": "Xin Zhang",
+            "user": "izhx",
+            "type": "user"
+          },
+          "name": "Xin Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:55:59.107Z",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d3a09aefea70733fa7",
+          "name": "Wenjie Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d3a09aefea70733fa8",
+          "name": "Wenjie Li",
+          "hidden": false
+        },
+        {
+          "_id": "683fb5d3a09aefea70733fa9",
+          "name": "Liqiang Nie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-22T17:55:43.000Z",
+      "submittedOnDailyAt": "2025-06-04T01:27:54.567Z",
+      "title": "R^2ec: 理由を持つ大きな推薦モデルへの向け方",
+      "submittedOnDailyBy": {
+        "_id": "63b6dbc8ccebeadccc888456",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1673396893898-63b6dbc8ccebeadccc888456.jpeg",
+        "isPro": false,
+        "fullname": "Xin Zhang",
+        "user": "izhx",
+        "type": "user"
+      },
+      "summary": "大モデルを推薦モデルとして拡張し、アイテムの生成またはエンコーディングを通じて強力な推薦モデルとして活用し、LLMの推理の最近の進歩は推薦の推理の検討に協力しています。現在の研究は、推薦プイプラインを増強するために、LLMを外部の推理モジュールとして位置づけています。しかし、このような離れた設計は、重要なリソースコストと最適な共通最適化の欠点に限られています。これらの問題を解決するために、我々は、固有の推理能力を持つ統一的な大モデルとして、\\name\\を提案します。最初に、モデルアーキテクチャを再考し、自動協調的な推理と推薦を促進することを目指します。その後、RecPOという対応する強化学習フレームワークを提案し、同時に推理と推薦の能力を最適化するために、一つのポリシー更新で \\name\\ を最適化します。RecPOは、推薦ラベルをみなじに利用して推理能力をシミュレートし、特殊化された推理アノテーションに依存しないようにします。3つのデータセットにおいて、多様な基準とともに実験を行い、\\name\\の効果を証明しました。Hit@5では相対的な向上率が68.67%、NDCG@20では45.21%を示しました。コードは、https://github.com/YRYangang/RRec にアクセスできます。",
+      "upvotes": 2,
+      "discussionId": "683fb5d5a09aefea70734001",
+      "githubRepo": "https://github.com/YRYangang/RRec",
+      "ai_summary": "A unified large recommender model with intrinsic reasoning capabilities is proposed, facilitating interleaved reasoning and recommendation using a reinforcement learning framework called RecPO.",
+      "ai_keywords": [
+        "recommender models",
+        "LLMs",
+        "intrinsic reasoning",
+        "autoregressive process",
+        "reinforcement learning",
+        "RecPO",
+        "fused reward scheme",
+        "Hit@5",
+        "NDCG@20"
+      ]
+    },
+    "publishedAt": "2025-05-22T13:55:43.000Z",
+    "title": "R^2ec: Towards Large Recommender Models with Reasoning",
+    "summary": "Large recommender models have extended LLMs as powerful recommenders via\nencoding or item generation, and recent breakthroughs in LLM reasoning\nsynchronously motivate the exploration of reasoning in recommendation. Current\nstudies usually position LLMs as external reasoning modules to yield auxiliary\nthought for augmenting conventional recommendation pipelines. However, such\ndecoupled designs are limited in significant resource cost and suboptimal joint\noptimization. To address these issues, we propose \\name, a unified large\nrecommender model with intrinsic reasoning capabilities. Initially, we\nreconceptualize the model architecture to facilitate interleaved reasoning and\nrecommendation in the autoregressive process. Subsequently, we propose RecPO, a\ncorresponding reinforcement learning framework that optimizes \\name\\ both the\nreasoning and recommendation capabilities simultaneously in a single policy\nupdate; RecPO introduces a fused reward scheme that solely leverages\nrecommendation labels to simulate the reasoning capability, eliminating\ndependency on specialized reasoning annotations. Experiments on three datasets\nwith various baselines verify the effectiveness of \\name, showing relative\nimprovements of 68.67\\% in Hit@5 and 45.21\\% in NDCG@20. Code available at\nhttps://github.com/YRYangang/RRec.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.16994.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63b6dbc8ccebeadccc888456",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1673396893898-63b6dbc8ccebeadccc888456.jpeg",
+      "fullname": "Xin Zhang",
+      "name": "izhx",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 19
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.03144",
+      "authors": [
+        {
+          "_id": "684015f08bd5bff99191dff4",
+          "user": {
+            "_id": "644b71ddb2e7823a76abcf91",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/644b71ddb2e7823a76abcf91/JPF7Eqeq2jx8i79nQ962K.jpeg",
+            "isPro": false,
+            "fullname": "zhou wei",
+            "user": "WeiChow",
+            "type": "user"
+          },
+          "name": "Wei Chow",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T09:56:45.423Z",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dff5",
+          "name": "Yuan Gao",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dff6",
+          "name": "Linfeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dff7",
+          "name": "Xian Wang",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dff8",
+          "name": "Qi Xu",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dff9",
+          "name": "Hang Song",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dffa",
+          "name": "Lingdong Kong",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dffb",
+          "name": "Ran Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dffc",
+          "name": "Yi Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dffd",
+          "name": "Yidong Cai",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dffe",
+          "name": "Botian Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191dfff",
+          "name": "Shilin Xu",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191e000",
+          "name": "Jiajun Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191e001",
+          "name": "Minghui Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191e002",
+          "name": "Xiangtai Li",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191e003",
+          "name": "Tianshu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191e004",
+          "name": "Siliang Tang",
+          "hidden": false
+        },
+        {
+          "_id": "684015f08bd5bff99191e005",
+          "name": "Juncheng Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T17:59:14.000Z",
+      "submittedOnDailyAt": "2025-06-04T08:16:40.362Z",
+      "title": "メリット: 交差した多言語語意検索による多条件クエリ",
+      "submittedOnDailyBy": {
+        "_id": "644b71ddb2e7823a76abcf91",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/644b71ddb2e7823a76abcf91/JPF7Eqeq2jx8i79nQ962K.jpeg",
+        "isPro": false,
+        "fullname": "zhou wei",
+        "user": "WeiChow",
+        "type": "user"
+      },
+      "summary": "セマンティック・リテライブラリーは、現代のアプリケーションにとって重要であるが、現在の研究ではまだ調査が浅い。既存のデータセットは、単一の言語、単一の画像、または単一のリテライブ条件に限定されており、画像をキャプションに置き換えた場合の性能の持続性があることから、視覚情報の表現力を完全に拡揮することができないことが明らかになっている。しかし、実用的なリテライブケースは、複数の画像を含む交差した多条件クエリによって構成されている。そこで、この論文では、MERIT（Interleaved Multi-Condition Semantic Retrieval）という、最初の多言語データセットを紹介し、5言語で7種類の異なる産品カテゴリーにわたり、320,000件のクエリと135,000件の産品を含む。MERIT上での拡換的な実験は、現在のモデルの制限を明らかにした：クエリの特定の条件要素を過去にして、グローバル的なセマンティック情報に焦点を当てている。そのため、Coralという新しい微調校フレームワークを提案し、予ったMLLMを適用することで、エンベディング再構成を組み込み、細かい条件要素を保存し、対比的学習を組み込み、詳細なグローバル的なセマンティック情報を抽出する。実験は、MERIT上では価格の45.9%の性能向上を示し、8つの既定のリテライブベンチマークで強い一般化能力を証明した。これらの貢献は、新しいデータセット、現在のアプローチの重要な制限の識別、新しい微調校フレームワークの創見として、交差した多条件セマンティックリテライブの将来の研究の基盤を立てている。",
+      "upvotes": 1,
+      "discussionId": "684015f38bd5bff99191e158"
+    },
+    "publishedAt": "2025-06-03T13:59:14.000Z",
+    "title": "MERIT: Multilingual Semantic Retrieval with Interleaved Multi-Condition\n  Query",
+    "summary": "Semantic retrieval is crucial for modern applications yet remains\nunderexplored in current research. Existing datasets are limited to single\nlanguages, single images, or singular retrieval conditions, often failing to\nfully exploit the expressive capacity of visual information as evidenced by\nmaintained performance when images are replaced with captions. However,\npractical retrieval scenarios frequently involve interleaved multi-condition\nqueries with multiple images. Hence, this paper introduces MERIT, the first\nmultilingual dataset for interleaved multi-condition semantic retrieval,\ncomprising 320,000 queries with 135,000 products in 5 languages, covering 7\ndistinct product categories. Extensive experiments on MERIT identify existing\nmodels's limitation: focusing solely on global semantic information while\nneglecting specific conditional elements in queries. Consequently, we propose\nCoral, a novel fine-tuning framework that adapts pre-trained MLLMs by\nintegrating embedding reconstruction to preserve fine-grained conditional\nelements and contrastive learning to extract comprehensive global semantics.\nExperiments demonstrate that Coral achieves a 45.9% performance improvement\nover conventional approaches on MERIT, with strong generalization capabilities\nvalidated across 8 established retrieval benchmarks. Collectively, our\ncontributions - a novel dataset, identification of critical limitations in\nexisting approaches, and an innovative fine-tuning framework - establish a\nfoundation for future research in interleaved multi-condition semantic\nretrieval.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.03144.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "644b71ddb2e7823a76abcf91",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/644b71ddb2e7823a76abcf91/JPF7Eqeq2jx8i79nQ962K.jpeg",
+      "fullname": "zhou wei",
+      "name": "WeiChow",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.02510",
+      "authors": [
+        {
+          "_id": "683faa31f0564d1fb4b9ffc6",
+          "user": {
+            "_id": "642656cbad1e3b0e6e91b752",
+            "avatarUrl": "/avatars/3bf0ee15fd528e09b2b889f5cce3cbd0.svg",
+            "isPro": false,
+            "fullname": "Jie Zhu",
+            "user": "amazingj",
+            "type": "user"
+          },
+          "name": "Jie Zhu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T08:57:01.885Z",
+          "hidden": false
+        },
+        {
+          "_id": "683faa31f0564d1fb4b9ffc7",
+          "name": "Junhui Li",
+          "hidden": false
+        },
+        {
+          "_id": "683faa31f0564d1fb4b9ffc8",
+          "name": "Yalong Wen",
+          "hidden": false
+        },
+        {
+          "_id": "683faa31f0564d1fb4b9ffc9",
+          "name": "Xiandong Li",
+          "hidden": false
+        },
+        {
+          "_id": "683faa31f0564d1fb4b9ffca",
+          "name": "Lifan Guo",
+          "hidden": false
+        },
+        {
+          "_id": "683faa31f0564d1fb4b9ffcb",
+          "name": "Feng Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-03T06:41:09.000Z",
+      "submittedOnDailyAt": "2025-06-04T00:38:17.377Z",
+      "title": "M^3FinMeeting: 多言語、多業界、多タスクの財務会議理解評価データセット",
+      "submittedOnDailyBy": {
+        "_id": "642656cbad1e3b0e6e91b752",
+        "avatarUrl": "/avatars/3bf0ee15fd528e09b2b889f5cce3cbd0.svg",
+        "isPro": false,
+        "fullname": "Jie Zhu",
+        "user": "amazingj",
+        "type": "user"
+      },
+      "summary": "最近の大規模言語モデル（LLMs）の進歩により、金融領域での性能評価のための新しいベンチマークが開発されました。しかし、現在の金融ベンチマークは、ニュース記事、収益報告書、または発表に基づいていることが多いため、金融会議の実世界の動態を捉えやすくなっていません。この空間を填ぐために、私たちは金融会議理解に向けて設計された新しいベンチマークを提案します。それは、多言語的、多業界分野、多タスクのデータセットです。まず、M^3FinMeetingは英語、中国語、日本語をサポートし、多様な言語コンテキストでの金融議論の理解を強化します。次に、グローバル産業分類標準（GICS）によって定義された様々な業界分野を掲載し、ベンチマークは広い範囲の金融活動を覆います。最後に、M^3FinMeetingは、要約、問題回答（QA）ペアの抽出、問題回答の3つのタスクを含み、より写実的で詳細な理解の評価を促進します。7つの人気LLMsとの実験結果から、最先端の長文脈モデルも大幅に改善の余地があることが明らかになり、M^3FinMeetingはLLMsの金融会議理解能力を評価するためのベンチマークの効果を示しています。",
+      "upvotes": 1,
+      "discussionId": "683faa32f0564d1fb4ba0005",
+      "projectPage": "https://github.com/aliyun/qwen-dianjin",
+      "githubRepo": "https://github.com/aliyun/qwen-dianjin",
+      "ai_summary": "A new multilingual, multi-sector, and multi-task benchmark, M³FinMeeting, evaluates large language models' performance in understanding financial meetings across different languages and industries.",
+      "ai_keywords": [
+        "large language models",
+        "multilingual",
+        "multi-sector",
+        "multi-task",
+        "benchmark",
+        "financial meeting understanding",
+        "Global Industry Classification Standard (GICS)",
+        "summarization",
+        "question-answer pair extraction",
+        "question answering"
+      ]
+    },
+    "publishedAt": "2025-06-03T02:41:09.000Z",
+    "title": "M^3FinMeeting: A Multilingual, Multi-Sector, and Multi-Task Financial\n  Meeting Understanding Evaluation Dataset",
+    "summary": "Recent breakthroughs in large language models (LLMs) have led to the\ndevelopment of new benchmarks for evaluating their performance in the financial\ndomain. However, current financial benchmarks often rely on news articles,\nearnings reports, or announcements, making it challenging to capture the\nreal-world dynamics of financial meetings. To address this gap, we propose a\nnovel benchmark called M^3FinMeeting, which is a multilingual,\nmulti-sector, and multi-task dataset designed for financial meeting\nunderstanding. First, M^3FinMeeting supports English, Chinese, and\nJapanese, enhancing comprehension of financial discussions in diverse\nlinguistic contexts. Second, it encompasses various industry sectors defined by\nthe Global Industry Classification Standard (GICS), ensuring that the benchmark\nspans a broad range of financial activities. Finally,\nM^3FinMeeting includes three tasks: summarization, question-answer\n(QA) pair extraction, and question answering, facilitating a more realistic and\ncomprehensive evaluation of understanding. Experimental results with seven\npopular LLMs reveal that even the most advanced long-context models have\nsignificant room for improvement, demonstrating the effectiveness of\nM^3FinMeeting as a benchmark for assessing LLMs' financial meeting\ncomprehension skills.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.02510.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "642656cbad1e3b0e6e91b752",
+      "avatarUrl": "/avatars/3bf0ee15fd528e09b2b889f5cce3cbd0.svg",
+      "fullname": "Jie Zhu",
+      "name": "amazingj",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.24362",
+      "authors": [
+        {
+          "_id": "68401045dd25841d998788cc",
+          "user": {
+            "_id": "61fbe8d2c5e6410373a76b2a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61fbe8d2c5e6410373a76b2a/m4yM6m2uagJxMselzEZfo.jpeg",
+            "isPro": false,
+            "fullname": "Anum Afzal",
+            "user": "anumafzal94",
+            "type": "user"
+          },
+          "name": "Anum Afzal",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-06-04T09:25:18.174Z",
+          "hidden": false
+        },
+        {
+          "_id": "68401045dd25841d998788cd",
+          "name": "Florian Matthes",
+          "hidden": false
+        },
+        {
+          "_id": "68401045dd25841d998788ce",
+          "user": {
+            "_id": "6493393f357b252af72196c5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6493393f357b252af72196c5/EWSy18XRcMRa_4XMM3Fu-.jpeg",
+            "isPro": false,
+            "fullname": "Gal Chechik",
+            "user": "galchechik",
+            "type": "user"
+          },
+          "name": "Gal Chechik",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-06-04T09:22:13.900Z",
+          "hidden": false
+        },
+        {
+          "_id": "68401045dd25841d998788cf",
+          "user": {
+            "_id": "66810e5877ed01ba880a4b40",
+            "avatarUrl": "/avatars/3068f4b16f03a51772e652d76b37f9c3.svg",
+            "isPro": false,
+            "fullname": "Yftah Ziser",
+            "user": "yziser",
+            "type": "user"
+          },
+          "name": "Yftah Ziser",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-06-04T09:22:13.900Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-30T08:54:28.000Z",
+      "submittedOnDailyAt": "2025-06-04T07:54:00.025Z",
+      "title": "知りながら言う：LLM の表現は、完了前にコンプリートされる前の思いやりの成功についての情報を含んでいます。",
+      "submittedOnDailyBy": {
+        "_id": "61fbe8d2c5e6410373a76b2a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61fbe8d2c5e6410373a76b2a/m4yM6m2uagJxMselzEZfo.jpeg",
+        "isPro": false,
+        "fullname": "Anum Afzal",
+        "user": "anumafzal94",
+        "type": "user"
+      },
+      "summary": "We 調査するのは、Chain-of-Thought (CoT) の零次元プロセスの成功が完了前に予測できるかどうかです。我々は、LLM の表現に基づく探査分類器が、一つのトークンが生成される前にも優秀な性能を示すことを発見し、これは、理由のプロセスに関する重要な情報が初期ステップの表現に既に存在していることを示しています。対比的に、強力な BERT ベースのベースラインでは、生成されたトークンをだけに依存しているため、浅い言語的コードに依存しているため、より深い理由のダイナミクスによるより低い性能を示しています。驚くことに、後の理由のステップを使用することは、分類を改善することはありません。追加のコンテキストが役に立たない場合、初期の表現は後のものに似ていることを示し、LLM は早期に鍵の情報をエンコードしていることを示しています。これは、理由のプロセスが早く終了でも損失がないことを意味します。これを検証するために、我々は早期停止実験を実施し、CoT の理由のプロセスを終了させることでも性能が向上することを示しますが、完全な理由のプロセスに比べても間違いが残っています。しかし、CoT の鎖を短縮するためのサブジェクト訓練や強化学習のようなアプローチは、我々の分類器のガイドを活用して、早期停止が効果的かどうかを識別することを可能にします。我々の見つけたものは、これらの方法をサポートすることを可能にし、CoT の効率を最適化しながらその利益を保持することを助けます。",
+      "upvotes": 1,
+      "discussionId": "68401045dd25841d998788f9"
+    },
+    "publishedAt": "2025-05-30T04:54:28.000Z",
+    "title": "Knowing Before Saying: LLM Representations Encode Information About\n  Chain-of-Thought Success Before Completion",
+    "summary": "We investigate whether the success of a zero-shot Chain-of-Thought (CoT)\nprocess can be predicted before completion. We discover that a probing\nclassifier, based on LLM representations, performs well even before a\nsingle token is generated, suggesting that crucial information about the\nreasoning process is already present in the initial steps representations. In\ncontrast, a strong BERT-based baseline, which relies solely on the generated\ntokens, performs worse, likely because it depends on shallow linguistic cues\nrather than deeper reasoning dynamics. Surprisingly, using later reasoning\nsteps does not always improve classification. When additional context is\nunhelpful, earlier representations resemble later ones more, suggesting LLMs\nencode key information early. This implies reasoning can often stop early\nwithout loss. To test this, we conduct early stopping experiments, showing that\ntruncating CoT reasoning still improves performance over not using CoT at all,\nthough a gap remains compared to full reasoning. However, approaches like\nsupervised learning or reinforcement learning designed to shorten CoT chains\ncould leverage our classifier's guidance to identify when early stopping is\neffective. Our findings provide insights that may support such methods, helping\nto optimize CoT's efficiency while preserving its benefits.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.24362.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "61fbe8d2c5e6410373a76b2a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61fbe8d2c5e6410373a76b2a/m4yM6m2uagJxMselzEZfo.jpeg",
+      "fullname": "Anum Afzal",
+      "name": "anumafzal94",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.24273",
+      "authors": [
+        {
+          "_id": "683f21ed6ba11d78e3e383f6",
+          "user": {
+            "_id": "65f7c56fc6356b5cc5ab8245",
+            "avatarUrl": "/avatars/ff8d3f3526e915f269274cc0dc5ca8ef.svg",
+            "isPro": false,
+            "fullname": "James Cai",
+            "user": "jamescai20",
+            "type": "user"
+          },
+          "name": "Hongyi James Cai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-04T09:01:32.571Z",
+          "hidden": false
+        },
+        {
+          "_id": "683f21ed6ba11d78e3e383f7",
+          "name": "Junlin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "683f21ed6ba11d78e3e383f8",
+          "user": {
+            "_id": "65d66cb2b06abf924b07ff76",
+            "avatarUrl": "/avatars/de94e2fe07040b7dc3053bcaafa64ffe.svg",
+            "isPro": false,
+            "fullname": "Xiaoyin Chen",
+            "user": "chenyn66",
+            "type": "user"
+          },
+          "name": "Xiaoyin Chen",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-06-03T16:25:17.851Z",
+          "hidden": false
+        },
+        {
+          "_id": "683f21ed6ba11d78e3e383f9",
+          "name": "Bhuwan Dhingra",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-30T06:49:00.000Z",
+      "submittedOnDailyAt": "2025-06-04T08:05:26.080Z",
+      "title": "どの程度の逆算が十分か？SFTとRLの相互作用を見つめてLLMの理由論を向上させるための研究",
+      "submittedOnDailyBy": {
+        "_id": "65f7c56fc6356b5cc5ab8245",
+        "avatarUrl": "/avatars/ff8d3f3526e915f269274cc0dc5ca8ef.svg",
+        "isPro": false,
+        "fullname": "James Cai",
+        "user": "jamescai20",
+        "type": "user"
+      },
+      "summary": "最近の大語言モデル（LLMs）の進歩は、数学的および逻辑的問題の解決能力を大幅に向上させ、確認可能な答えを持つ問題に特に効果的であることを示しています。特に、規範的微調（SFT）と強化学習（RL）の技術が使用されています。先行研究によると、RLは探索戦略を内包し、長いチャインオフサインソース（CoT）の推理を可能にし、バックトラックは自然と学習される能力として現れます。しかし、バックトラックの具体的な利益、特にそれが推理の向上にどのような程度の貢献をしているか、最適な使用範囲は理解されていません。本研究では、SFTとRLの間の動態を調査し、8つの理由タスク（Countdown、Sudoku、Arc 1D、Geometry、Color Cube Rotation、List Functions、Zebra Puzzles、Self Reference）において実験を行いました。結果として、SFTでの短いCoTシーケンスは、冷ややかスタートのRLと比べて、中度の貢献を与えることがわかりましたが、この貢献はタスクが難しくなると減少します。この見通しに基づいて、バックトラックのステップ数をシステマティックに変更した合成データセットを構築し、正確性（内容）または構造（バックトラックの頻度）の影響を単独に調査しました。結果として、以下のことがわかりました：（1）バックトラックを含む長いCoTは、一般的により良いおよび安定したRLの学習を引き起こします。（2）より難しい問題と大きな探索空間を持つ問題は、SFTステージでバックトラックの数が高くなることが多いです。また、絞り込みデータにおける実験では、RLの学習は長いCoTシーケンスの正確性に大きく影響されないことが示され、RLは構造的パターンよりも内容の正確性を優先していることがわかりました。まとめて、本研究の結果は、LLMsの推理の効果的なスケーリングに最適なトレーニング戦略の設計に実用的なヒントを提供します。",
+      "upvotes": 1,
+      "discussionId": "683f21ed6ba11d78e3e38434",
+      "ai_summary": "This study investigates the interplay between supervised fine-tuning and reinforcement learning in large language models, focusing on the role of backtracking in enhancing reasoning capabilities across various tasks.",
+      "ai_keywords": [
+        "supervised finetuning",
+        "reinforcement learning",
+        "chain-of-thought",
+        "backtracking",
+        "countdown",
+        "sudoku",
+        "arc 1d",
+        "geometry",
+        "color cube rotation",
+        "list functions",
+        "zebra puzzles",
+        "self reference",
+        "synthetic datasets",
+        "distilled data"
+      ]
+    },
+    "publishedAt": "2025-05-30T02:49:00.000Z",
+    "title": "How Much Backtracking is Enough? Exploring the Interplay of SFT and RL\n  in Enhancing LLM Reasoning",
+    "summary": "Recent breakthroughs in large language models (LLMs) have effectively\nimproved their reasoning abilities, particularly on mathematical and logical\nproblems that have verifiable answers, through techniques such as supervised\nfinetuning (SFT) and reinforcement learning (RL). Prior research indicates that\nRL effectively internalizes search strategies, enabling long chain-of-thought\n(CoT) reasoning, with backtracking emerging naturally as a learned capability.\nHowever, the precise benefits of backtracking, specifically, how significantly\nit contributes to reasoning improvements and the optimal extent of its use,\nremain poorly understood. In this work, we systematically investigate the\ndynamics between SFT and RL on eight reasoning tasks: Countdown, Sudoku, Arc\n1D, Geometry, Color Cube Rotation, List Functions, Zebra Puzzles, and Self\nReference. Our findings highlight that short CoT sequences used in SFT as a\nwarm-up do have moderate contribution to RL training, compared with cold-start\nRL; however such contribution diminishes when tasks become increasingly\ndifficult. Motivated by this observation, we construct synthetic datasets\nvarying systematically in the number of backtracking steps and conduct\ncontrolled experiments to isolate the influence of either the correctness\n(content) or the structure (i.e., backtrack frequency). We find that (1) longer\nCoT with backtracks generally induce better and more stable RL training, (2)\nmore challenging problems with larger search space tend to need higher numbers\nof backtracks during the SFT stage. Additionally, we demonstrate through\nexperiments on distilled data that RL training is largely unaffected by the\ncorrectness of long CoT sequences, suggesting that RL prioritizes structural\npatterns over content correctness. Collectively, our results offer practical\ninsights into designing optimal training strategies to effectively scale\nreasoning in LLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.24273.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65f7c56fc6356b5cc5ab8245",
+      "avatarUrl": "/avatars/ff8d3f3526e915f269274cc0dc5ca8ef.svg",
+      "fullname": "James Cai",
+      "name": "jamescai20",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2505.18079",
+      "authors": [
+        {
+          "_id": "68354eec0830dfc6782ba1c4",
+          "name": "Xiaoyi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68354eec0830dfc6782ba1c5",
+          "name": "Zhaoyang Jia",
+          "hidden": false
+        },
+        {
+          "_id": "68354eec0830dfc6782ba1c6",
+          "name": "Zongyu Guo",
+          "hidden": false
+        },
+        {
+          "_id": "68354eec0830dfc6782ba1c7",
+          "name": "Jiahao Li",
+          "hidden": false
+        },
+        {
+          "_id": "68354eec0830dfc6782ba1c8",
+          "name": "Bin Li",
+          "hidden": false
+        },
+        {
+          "_id": "68354eec0830dfc6782ba1c9",
+          "name": "Houqiang Li",
+          "hidden": false
+        },
+        {
+          "_id": "68354eec0830dfc6782ba1ca",
+          "name": "Yan Lu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-05-23T16:37:36.000Z",
+      "submittedOnDailyAt": "2025-06-04T07:20:42.262Z",
+      "title": "Deep Video Discovery: ツール使用を含むAgentic Search for Long-form Video\n  理解",
+      "submittedOnDailyBy": {
+        "_id": "6582b79aafc6b50a2cbaa5c8",
+        "avatarUrl": "/avatars/65fa21ca144177f232347084b0e057c5.svg",
+        "isPro": false,
+        "fullname": "Xiaoyi Zhang",
+        "user": "xyzhang626",
+        "type": "user"
+      },
+      "summary": "長期ビデオ理解は、時間的・空間的複雑性とその長期なコンテキストでの質問回答の難易度によって重大な課題を抱えています。ビデオ分析能力と長期コンテキスト処理において相当の進歩を示した大規模言語モデル（LLM）は、情報密度の高い1時間長のビデオの処理においても限界を見出しています。これらの限界を克服するために、我々はDeep Video Discovery agentを提案します。前のビデオアジェントが手動で剛性なワークフローを設計していた点と異なり、我々のアプローチはアジェントの自律性を強調しています。多粒性のビデオデータベース上で検索センタリックなツールを提供することで、DVD agentはLLMの先進的な推理能力を活用し、現在の観測状態から計画を立て、戦略的にツールを選択し、行動の適切なパラメータを設定し、集めた情報に基づいて内部の推理を反復的に調整します。複数の長期ビデオ理解ベンチマークにおいて詳細な評価を行い、システム全体の設計の優れた点を示します。DVD agentは、難しいLVBenchデータセットで先駆的な性能を達成し、先行研究を大幅に超えます。また、詳細な消滅試験とツール分析も提供し、長期ビデオ理解タスクに適した智能アジェントの進展につながるようなフィードバックを提供します。コードは後にリリースされます。",
+      "upvotes": 1,
+      "discussionId": "68354eed0830dfc6782ba1fe",
+      "ai_summary": "The Deep Video Discovery agent uses an autonomous agentic search strategy with large language models to overcome limitations in long-form video understanding, achieving state-of-the-art results on benchmarks like LVBench.",
+      "ai_keywords": [
+        "Deep Video Discovery agent",
+        "agentic search strategy",
+        "segmented video clips",
+        "multi-granular video database",
+        "advanced reasoning capability",
+        "LLM",
+        "autonomous nature",
+        "observation state",
+        "search-centric tools",
+        "internal reasoning",
+        "long video understanding benchmarks",
+        "LVBench",
+        "ablation studies",
+        "tool analyses"
+      ]
+    },
+    "publishedAt": "2025-05-23T12:37:36.000Z",
+    "title": "Deep Video Discovery: Agentic Search with Tool Use for Long-form Video\n  Understanding",
+    "summary": "Long-form video understanding presents significant challenges due to\nextensive temporal-spatial complexity and the difficulty of question answering\nunder such extended contexts. While Large Language Models (LLMs) have\ndemonstrated considerable advancements in video analysis capabilities and long\ncontext handling, they continue to exhibit limitations when processing\ninformation-dense hour-long videos. To overcome such limitations, we propose\nthe Deep Video Discovery agent to leverage an agentic search strategy over\nsegmented video clips. Different from previous video agents manually designing\na rigid workflow, our approach emphasizes the autonomous nature of agents. By\nproviding a set of search-centric tools on multi-granular video database, our\nDVD agent leverages the advanced reasoning capability of LLM to plan on its\ncurrent observation state, strategically selects tools, formulates appropriate\nparameters for actions, and iteratively refines its internal reasoning in light\nof the gathered information. We perform comprehensive evaluation on multiple\nlong video understanding benchmarks that demonstrates the advantage of the\nentire system design. Our DVD agent achieves SOTA performance, significantly\nsurpassing prior works by a large margin on the challenging LVBench dataset.\nComprehensive ablation studies and in-depth tool analyses are also provided,\nyielding insights to further advance intelligent agents tailored for long-form\nvideo understanding tasks. The code will be released later.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2505.18079.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6582b79aafc6b50a2cbaa5c8",
+      "avatarUrl": "/avatars/65fa21ca144177f232347084b0e057c5.svg",
+      "fullname": "Xiaoyi Zhang",
+      "name": "xyzhang626",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.02138",
+      "authors": [
+        {
+          "_id": "683fe27c4f32bd7bbca087fc",
+          "name": "Yarden Bakish",
+          "hidden": false
+        },
+        {
+          "_id": "683fe27c4f32bd7bbca087fd",
+          "name": "Itamar Zimerman",
+          "hidden": false
+        },
+        {
+          "_id": "683fe27c4f32bd7bbca087fe",
+          "name": "Hila Chefer",
+          "hidden": false
+        },
+        {
+          "_id": "683fe27c4f32bd7bbca087ff",
+          "name": "Lior Wolf",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-02T18:07:55.000Z",
+      "submittedOnDailyAt": "2025-06-04T04:51:22.070Z",
+      "title": "リプレースされたLRP：位置付き属性化がトランジフォーマーの説明性に欠けている欠陥の補間としての役割",
+      "submittedOnDailyBy": {
+        "_id": "65376feed325b3f02fb92c69",
+        "avatarUrl": "/avatars/e952918cf434d5302e9b1a404eccaf0e.svg",
+        "isPro": false,
+        "fullname": "Itamar Zimerman",
+        "user": "ItamarZ",
+        "type": "user"
+      },
+      "summary": "Transformersの有効な説明性ツールの開発は、深層学習研究の重要な課題です。この領域で最も望ましいアプローチの一つは、レイヤーワイズ・リレバンス・プロパゲーション（LRP）です。LRPは、事前定義されたルールに基づいて活性値を再配分し、関連スコアをネットワークから入力空間へと逆方向に伝播させます。しかし、現在のTransformerの説明性に関するLRPベースの方法は、Transformerアーキテクチャの重要な成分である位置エンコーディング（PE）を完全に無視しています。これは、保存性の破続と構造的および位置的特徴に関連した重要なような関連性の失われによることです。この制限を解決するために、Transformerの説明性の入力空間を位置とトークンのペアの集合として再定式化します。これにより、Rotary、Learnable、Absolute PEなどの様々な位置エンコーディング方法における属性の伝播を目的とする特別化された理論的に基づいたLRPルールを提案できます。微調編集された分類器とゼロショットの基盤モデル（例：LLaMA 3）に対しての拡張的な実験は、我々の方法が視覚とNLPの説明性タスクの両方で最先端となる方法に比べて显著に優れていることを示しています。我々のコードは公開的に利用可能です。",
+      "upvotes": 0,
+      "discussionId": "683fe27d4f32bd7bbca08867",
+      "githubRepo": "https://github.com/YardenBakish/PE-AWARE-LRP",
+      "ai_summary": "A specialized LRP method for Transformer explainability considers positional encoding, improving relevance propagation and outperforming existing methods.",
+      "ai_keywords": [
+        "Layer-wise Relevance Propagation (LRP)",
+        "Transformers",
+        "positional encoding (PE)",
+        "Rotary",
+        "Learnable",
+        "Absolute PE",
+        "vision",
+        "NLP explainability tasks"
+      ]
+    },
+    "publishedAt": "2025-06-02T14:07:55.000Z",
+    "title": "Revisiting LRP: Positional Attribution as the Missing Ingredient for\n  Transformer Explainability",
+    "summary": "The development of effective explainability tools for Transformers is a\ncrucial pursuit in deep learning research. One of the most promising approaches\nin this domain is Layer-wise Relevance Propagation (LRP), which propagates\nrelevance scores backward through the network to the input space by\nredistributing activation values based on predefined rules. However, existing\nLRP-based methods for Transformer explainability entirely overlook a critical\ncomponent of the Transformer architecture: its positional encoding (PE),\nresulting in violation of the conservation property, and the loss of an\nimportant and unique type of relevance, which is also associated with\nstructural and positional features. To address this limitation, we reformulate\nthe input space for Transformer explainability as a set of position-token\npairs. This allows us to propose specialized theoretically-grounded LRP rules\ndesigned to propagate attributions across various positional encoding methods,\nincluding Rotary, Learnable, and Absolute PE. Extensive experiments with both\nfine-tuned classifiers and zero-shot foundation models, such as LLaMA 3,\ndemonstrate that our method significantly outperforms the state-of-the-art in\nboth vision and NLP explainability tasks. Our code is publicly available.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.02138.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65376feed325b3f02fb92c69",
+      "avatarUrl": "/avatars/e952918cf434d5302e9b1a404eccaf0e.svg",
+      "fullname": "Itamar Zimerman",
+      "name": "ItamarZ",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.01565",
+      "authors": [
+        {
+          "_id": "684009f8a33aeee1125b5765",
+          "name": "Li Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "684009f8a33aeee1125b5766",
+          "name": "Lutong Yu",
+          "hidden": false
+        },
+        {
+          "_id": "684009f8a33aeee1125b5767",
+          "name": "Dongchu Xie",
+          "hidden": false
+        },
+        {
+          "_id": "684009f8a33aeee1125b5768",
+          "name": "Shaohuan Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "684009f8a33aeee1125b5769",
+          "name": "Wenyan Li",
+          "hidden": false
+        },
+        {
+          "_id": "684009f8a33aeee1125b576a",
+          "name": "Haizhou Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-02T11:43:46.000Z",
+      "submittedOnDailyAt": "2025-06-04T07:35:11.966Z",
+      "title": "ハンフバンチ：時代を越える文化理解と翻訳再作成の多模様ベンチマーク",
+      "submittedOnDailyBy": {
+        "_id": "619b506f70d03780cbec5806",
+        "avatarUrl": "/avatars/ea2b0b8f0a3eb16d53ef40da9981c397.svg",
+        "isPro": false,
+        "fullname": "wenyan li",
+        "user": "lyan62",
+        "type": "user"
+      },
+      "summary": "文化は地理と時間の両方で変化し、豊かで動的な領域です。しかし、現在のビジョン言語モデル（VLMs）による文化理解の研究は主に地理的多様性を強調し、時間的な重要な次元を遺漏しています。この隙を埋めるために、私たちは「漢服ベンチ」という新しい、専門家が編集した多様性のデータセットを紹介します。漢服は古代中国の時代を経過した伝統的な着物で、中国の時間的な文化的な面を反映し、中国現代社会でも高度に人気を持っています。漢服ベンチは、文化的な視覚的な理解と文化的な画像の再設計の2つの核心タスクを含みます。前者のタスクは、単一または複数の画像の入力に基づいて時間的・文化的な特徴認識を評価し、複数選択の視覚的な問答により調査されます。後者は、文化の要素を継承し、現代のコンテキストに適応して伝統的な着物を現代のデザインに変換することを焦点としています。我々の評価によると、閉じたVLMsは視覚的な文化理解において非専門家と比較的な性能を示し、人間の専門家に対しては10%の差異で落ち込みます。開放的なVLMsは非専門家よりももっと落ち込みます。タスクの再設計は、多面性の人間の評価により、最高の性能を示すモデルは成功率が42%でした。我々のベンチマークは、時間的な文化理解と創造的な適応の新しい方向における重要なテストベントを提供し、この分野での重大な挑戦を明らかにします。",
+      "upvotes": 0,
+      "discussionId": "684009faa33aeee1125b57bd",
+      "githubRepo": "https://github.com/lizhou21/TemporalCulture"
+    },
+    "publishedAt": "2025-06-02T07:43:46.000Z",
+    "title": "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural\n  Understanding and Transcreation",
+    "summary": "Culture is a rich and dynamic domain that evolves across both geography and\ntime. However, existing studies on cultural understanding with vision-language\nmodels (VLMs) primarily emphasize geographic diversity, often overlooking the\ncritical temporal dimensions. To bridge this gap, we introduce Hanfu-Bench, a\nnovel, expert-curated multimodal dataset. Hanfu, a traditional garment spanning\nancient Chinese dynasties, serves as a representative cultural heritage that\nreflects the profound temporal aspects of Chinese culture while remaining\nhighly popular in Chinese contemporary society. Hanfu-Bench comprises two core\ntasks: cultural visual understanding and cultural image transcreation.The\nformer task examines temporal-cultural feature recognition based on single- or\nmulti-image inputs through multiple-choice visual question answering, while the\nlatter focuses on transforming traditional attire into modern designs through\ncultural element inheritance and modern context adaptation. Our evaluation\nshows that closed VLMs perform comparably to non-experts on visual cutural\nunderstanding but fall short by 10\\% to human experts, while open VLMs lags\nfurther behind non-experts. For the transcreation task, multi-faceted human\nevaluation indicates that the best-performing model achieves a success rate of\nonly 42\\%. Our benchmark provides an essential testbed, revealing significant\nchallenges in this new direction of temporal cultural understanding and\ncreative adaptation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.01565.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "619b506f70d03780cbec5806",
+      "avatarUrl": "/avatars/ea2b0b8f0a3eb16d53ef40da9981c397.svg",
+      "fullname": "wenyan li",
+      "name": "lyan62",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  }
+]
