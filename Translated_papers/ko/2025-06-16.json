@@ -1,0 +1,1403 @@
+[
+  {
+    "paper": {
+      "id": "2506.11924",
+      "authors": [
+        {
+          "_id": "684faeba60b4a34dbe007ae2",
+          "name": "Min-Seop Kwak",
+          "hidden": false
+        },
+        {
+          "_id": "684faeba60b4a34dbe007ae3",
+          "name": "Junho Kim",
+          "hidden": false
+        },
+        {
+          "_id": "684faeba60b4a34dbe007ae4",
+          "name": "Sangdoo Yun",
+          "hidden": false
+        },
+        {
+          "_id": "684faeba60b4a34dbe007ae5",
+          "name": "Dongyoon Han",
+          "hidden": false
+        },
+        {
+          "_id": "684faeba60b4a34dbe007ae6",
+          "name": "Taekyoung Kim",
+          "hidden": false
+        },
+        {
+          "_id": "684faeba60b4a34dbe007ae7",
+          "name": "Seungryong Kim",
+          "hidden": false
+        },
+        {
+          "_id": "684faeba60b4a34dbe007ae8",
+          "name": "Jin-Hwa Kim",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-13T16:19:00.000Z",
+      "submittedOnDailyAt": "2025-06-16T04:13:42.201Z",
+      "title": "クロスモーダル 注意 뺏기 구축에 의한 뉴비우 이미지와 제멋토리의 합성",
+      "submittedOnDailyBy": {
+        "_id": "642673f185f26ab94af4b422",
+        "avatarUrl": "/avatars/289d611e0907f02f72d4e489468e039c.svg",
+        "isPro": false,
+        "fullname": "Bracio",
+        "user": "bracio9623",
+        "type": "user"
+      },
+      "summary": "이 문서는 덧분션 기반 프레임워크를 소개합니다. 이 프레임워크는 웜핑과 인패인트링 기법을 사용하여, 새로운 시각의 이미지와 제네릭을 동시에 생성합니다. 기존 방법들은 밀집한 자세의 이미지 또는 생성 모델을 사용하여, 특정 시각을 제한적으로 사용했습니다. 그러나 우리 방법은 간단한 제네릭 예측기를 사용하여, 참조 이미지에서 본 부분의 제네릭을 예측하고, 이미지와 제네릭의 새로운 시각 합성을 인패인트 태스크로 구성합니다. 생성된 이미지와 제네릭의 정확한 대응을 보장하기 위해, 우리는 이미지 덧분션 브랜치에서의 어텐션 맵을 훈련과 추론 모두에서 병렬적인 제네릭 덧분션 브랜치에 주입하고, 크로스 모달 어텐션 디스틸루션을 제안합니다. 이 다 태스크 접근법은 제네릭에 강인한 이미지 합성 및 명확한 제네릭 예측을 촉진합니다. 또한, 근접 기반의 메쉬 조건 부여를 도입하여, 깊이와 긍정적인 결합을 통합하고, 포인트 센트과 잘못된 예측 제네릭을 필터링하여, 생성 프로세스에 영향을 미치지 않도록 합니다. 실험적으로, 우리 방법은 시각 합성의 고정밀한 외부 뷰 합성을 실현하고, 보간 설정에서의 대응 질의 재구성을 제공하며, 3D 완결된 세부적인 제네릭에 대칭적인 컬러 포인트 센트를 생성합니다. 프로젝트 페이지는 https://cvlab-kaist.github.io/MoAI에서 사용 가능합니다.",
+      "upvotes": 22,
+      "discussionId": "684faebb60b4a34dbe007ae9",
+      "projectPage": "https://cvlab-kaist.github.io/MoAI/",
+      "githubRepo": "https://github.com/cvlab-kaist/MoAI",
+      "ai_summary": "A diffusion-based framework generates aligned novel views of images and geometry using warping-and-inpainting with cross-modal attention distillation and proximity-based mesh conditioning, achieving high-fidelity synthesis and 3D completion.",
+      "ai_keywords": [
+        "diffusion-based framework",
+        "warping-and-inpainting",
+        "off-the-shelf geometry predictors",
+        "cross-modal attention distillation",
+        "proximity-based mesh conditioning",
+        "novel-view synthesis",
+        "multi-task approach",
+        "geometrically robust image synthesis",
+        "well-defined geometry prediction",
+        "extrapolative view synthesis",
+        "3D completion"
+      ]
+    },
+    "publishedAt": "2025-06-13T12:19:00.000Z",
+    "title": "Aligned Novel View Image and Geometry Synthesis via Cross-modal\n  Attention Instillation",
+    "summary": "We introduce a diffusion-based framework that performs aligned novel view\nimage and geometry generation via a warping-and-inpainting methodology. Unlike\nprior methods that require dense posed images or pose-embedded generative\nmodels limited to in-domain views, our method leverages off-the-shelf geometry\npredictors to predict partial geometries viewed from reference images, and\nformulates novel-view synthesis as an inpainting task for both image and\ngeometry. To ensure accurate alignment between generated images and geometry,\nwe propose cross-modal attention distillation, where attention maps from the\nimage diffusion branch are injected into a parallel geometry diffusion branch\nduring both training and inference. This multi-task approach achieves\nsynergistic effects, facilitating geometrically robust image synthesis as well\nas well-defined geometry prediction. We further introduce proximity-based mesh\nconditioning to integrate depth and normal cues, interpolating between point\ncloud and filtering erroneously predicted geometry from influencing the\ngeneration process. Empirically, our method achieves high-fidelity\nextrapolative view synthesis on both image and geometry across a range of\nunseen scenes, delivers competitive reconstruction quality under interpolation\nsettings, and produces geometrically aligned colored point clouds for\ncomprehensive 3D completion. Project page is available at\nhttps://cvlab-kaist.github.io/MoAI.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.11924.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "642673f185f26ab94af4b422",
+      "avatarUrl": "/avatars/289d611e0907f02f72d4e489468e039c.svg",
+      "fullname": "Bracio",
+      "name": "bracio9623",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.09600",
+      "authors": [
+        {
+          "_id": "684fca8160b4a34dbe007b4f",
+          "name": "Itay Nakash",
+          "hidden": false
+        },
+        {
+          "_id": "684fca8160b4a34dbe007b50",
+          "name": "George Kour",
+          "hidden": false
+        },
+        {
+          "_id": "684fca8160b4a34dbe007b51",
+          "name": "Koren Lazar",
+          "hidden": false
+        },
+        {
+          "_id": "684fca8160b4a34dbe007b52",
+          "name": "Matan Vetzler",
+          "hidden": false
+        },
+        {
+          "_id": "684fca8160b4a34dbe007b53",
+          "name": "Guy Uziel",
+          "hidden": false
+        },
+        {
+          "_id": "684fca8160b4a34dbe007b54",
+          "name": "Ateret Anaby-Tavor",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/671f8106d677d3a764a6f9a5/99oCW2IrMaCeLyuyfgvbG.png"
+      ],
+      "publishedAt": "2025-06-11T10:59:47.000Z",
+      "submittedOnDailyAt": "2025-06-16T06:16:02.507Z",
+      "title": "효과적인 정책 준수 에이전트의 테마팅",
+      "submittedOnDailyBy": {
+        "_id": "671f8106d677d3a764a6f9a5",
+        "avatarUrl": "/avatars/90b4b00058aac30c060c5eac8debb1c7.svg",
+        "isPro": false,
+        "fullname": "itay nakash",
+        "user": "itaynakash",
+        "type": "user"
+      },
+      "summary": "タスク取向付きLLMベースのアガント는、広告込み返金資格やキャンセルルールなどの厳格な政策を持つ領域で増加しています。この課題は、アガントがこれらのルールと政策を一貫して実行し、違反するリクエストを適切に拒否しながらも、役立つような自然なインタラクションを維持することです。これには、アガントが悪意のあるユーザーの行動に対して強靭性を維持するためのデザインと評価の方法を開発する必要があります。私たちは、政策の遵守を目的とする敵対的なユーザーに対しての新しいターンモデルを提案します。これに対して、CRAFTという多エージェントのレッドチームシステムを提出し、ポリシーに関連付けられた說服的な戦略を用いて、サービスショットで政策の遵守を破壊することを目指します。DANプロンプト、感情操作、強制などの伝統的なジャイルブレイクメソッドを超えることができます。現在のtau-benchベンチマークに基づいて、tau-breakという補充ベンチマークを導入し、アガントが操縦されたユーザーの行動に対する強固な強靭性を評価するために設計します。最後に、数々の簡単でも効果的な防御戦略を評価します。これらの措置は一部の保護を提供しますが、強い研究に基づく安全証拠が必要となります。",
+      "upvotes": 15,
+      "discussionId": "684fca8160b4a34dbe007b55",
+      "ai_summary": "CRAFT, a multi-agent system using policy-aware persuasive strategies, challenges policy-adherent LLM-based agents in customer service to assess and improve their robustness against adversarial attacks.",
+      "ai_keywords": [
+        "LLM-based agents",
+        "policy-adherence",
+        "adversarial users",
+        "CRAFT",
+        "multi-agent red-teaming",
+        "policy-aware persuasive strategies",
+        "DAN prompts",
+        "emotional manipulation",
+        "coercive",
+        "tau-break",
+        "defense strategies",
+        "adversarial attacks"
+      ]
+    },
+    "publishedAt": "2025-06-11T06:59:47.000Z",
+    "title": "Effective Red-Teaming of Policy-Adherent Agents",
+    "summary": "Task-oriented LLM-based agents are increasingly used in domains with strict\npolicies, such as refund eligibility or cancellation rules. The challenge lies\nin ensuring that the agent consistently adheres to these rules and policies,\nappropriately refusing any request that would violate them, while still\nmaintaining a helpful and natural interaction. This calls for the development\nof tailored design and evaluation methodologies to ensure agent resilience\nagainst malicious user behavior. We propose a novel threat model that focuses\non adversarial users aiming to exploit policy-adherent agents for personal\nbenefit. To address this, we present CRAFT, a multi-agent red-teaming system\nthat leverages policy-aware persuasive strategies to undermine a\npolicy-adherent agent in a customer-service scenario, outperforming\nconventional jailbreak methods such as DAN prompts, emotional manipulation, and\ncoercive. Building upon the existing tau-bench benchmark, we introduce\ntau-break, a complementary benchmark designed to rigorously assess the agent's\nrobustness against manipulative user behavior. Finally, we evaluate several\nstraightforward yet effective defense strategies. While these measures provide\nsome protection, they fall short, highlighting the need for stronger,\nresearch-driven safeguards to protect policy-adherent agents from adversarial\nattacks",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/671f8106d677d3a764a6f9a5/99oCW2IrMaCeLyuyfgvbG.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.09600.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "671f8106d677d3a764a6f9a5",
+      "avatarUrl": "/avatars/90b4b00058aac30c060c5eac8debb1c7.svg",
+      "fullname": "itay nakash",
+      "name": "itaynakash",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.10892",
+      "authors": [
+        {
+          "_id": "684fb2f060b4a34dbe007aeb",
+          "name": "Subham Sekhar Sahoo",
+          "hidden": false
+        },
+        {
+          "_id": "684fb2f060b4a34dbe007aec",
+          "name": "Justin Deschenaux",
+          "hidden": false
+        },
+        {
+          "_id": "684fb2f060b4a34dbe007aed",
+          "name": "Aaron Gokaslan",
+          "hidden": false
+        },
+        {
+          "_id": "684fb2f060b4a34dbe007aee",
+          "name": "Guanghan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "684fb2f060b4a34dbe007aef",
+          "name": "Justin Chiu",
+          "hidden": false
+        },
+        {
+          "_id": "684fb2f060b4a34dbe007af0",
+          "name": "Volodymyr Kuleshov",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/661839d73b412cdc851299c1/GmIlLMVIuyWjydykQPOt2.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/661839d73b412cdc851299c1/TjIhoD3hxygzenitTi75x.qt"
+      ],
+      "publishedAt": "2025-06-12T16:55:35.000Z",
+      "submittedOnDailyAt": "2025-06-16T04:40:29.065Z",
+      "title": "Diffusion Duality\n\n확산의 이중성",
+      "submittedOnDailyBy": {
+        "_id": "661839d73b412cdc851299c1",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/661839d73b412cdc851299c1/xicwANPQPTFdWfblisL2-.png",
+        "isPro": false,
+        "fullname": "Subham Sekhar Sahoo",
+        "user": "s-sahoo",
+        "type": "user"
+      },
+      "summary": "統一 상태의 이산 확산 모델은 자동 조정 능력을 통해 빠른 문장 생성의 가능성을 가지고 있지만, 일반적으로 자동 순차 모델과 마스크 확산 모델에 비해서 성능이 떨어짐을 보입니다. 본 논문에서는 이러한 성능 차이를 줄이기 위해 중요한 키 포인트를 활용하고 있습니다. 統一 상태의 확산 프로세스는 베이지안 확산 아래로 자연스럽게 나타나는 것을 소홀히 여기고 있습니다. 우리 방법, Duo는 베이지안 확산으로부터 강력한 기술을 전달하고 학습 및 샘플링을 모두 개선하는 데 사용됩니다. 먼저, 베이지안 프로세스를 통해 커렉터 학습 전략을 통해 분산 감소를 통해 학습 속도를 2배로 향상시켰습니다. 커렉터 학습을 통해 학습된 모델은 7개의 벤치마크 중 3개를 0 shot perplexity에서 자동 순차 모델을 초과합니다. 다음으로, 이산적으로 적용 가능한 이산 일관성 스타일화 알고리즘을 제안하고, 이 알고리즘은 2개의 단계의 가속화를 통해 샘플링을 통해 확산 언어 모델에서 적은 단계 생성을 가능하게 하였습니다. 프로젝트 페이지에서 코드와 모델 체크포인트를 제공하고 있습니다: http://s-sahoo.github.io/duo",
+      "upvotes": 8,
+      "discussionId": "684fb2f060b4a34dbe007af1",
+      "projectPage": "https://s-sahoo.com/duo/",
+      "githubRepo": "https://github.com/s-sahoo/duo",
+      "ai_summary": "Duo improves uniform-state discrete diffusion models by transferring techniques from Gaussian diffusion, enhancing training speed and enabling fast few-step text generation.",
+      "ai_keywords": [
+        "discrete diffusion models",
+        "Gaussian diffusion",
+        "curriculum learning",
+        "Discrete Consistency Distillation",
+        "zero-shot perplexity",
+        "few-step generation"
+      ]
+    },
+    "publishedAt": "2025-06-12T12:55:35.000Z",
+    "title": "The Diffusion Duality",
+    "summary": "Uniform-state discrete diffusion models hold the promise of fast text\ngeneration due to their inherent ability to self-correct. However, they are\ntypically outperformed by autoregressive models and masked diffusion models. In\nthis work, we narrow this performance gap by leveraging a key insight:\nUniform-state diffusion processes naturally emerge from an underlying Gaussian\ndiffusion. Our method, Duo, transfers powerful techniques from Gaussian\ndiffusion to improve both training and sampling. First, we introduce a\ncurriculum learning strategy guided by the Gaussian process, doubling training\nspeed by reducing variance. Models trained with curriculum learning surpass\nautoregressive models in zero-shot perplexity on 3 of 7 benchmarks. Second, we\npresent Discrete Consistency Distillation, which adapts consistency\ndistillation from the continuous to the discrete setting. This algorithm\nunlocks few-step generation in diffusion language models by accelerating\nsampling by two orders of magnitude. We provide the code and model checkpoints\non the project page: http://s-sahoo.github.io/duo",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/661839d73b412cdc851299c1/GmIlLMVIuyWjydykQPOt2.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/661839d73b412cdc851299c1/TjIhoD3hxygzenitTi75x.qt"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.10892.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "661839d73b412cdc851299c1",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/661839d73b412cdc851299c1/xicwANPQPTFdWfblisL2-.png",
+      "fullname": "Subham Sekhar Sahoo",
+      "name": "s-sahoo",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.11928",
+      "authors": [
+        {
+          "_id": "684fae8d60b4a34dbe007acd",
+          "name": "Zihan Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ace",
+          "name": "Zerui Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007acf",
+          "name": "Zeyu Shen",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad0",
+          "name": "Shang Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad1",
+          "name": "Kaiyuan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad2",
+          "name": "Hansen He",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad3",
+          "name": "Dongruixuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad4",
+          "name": "Stanley Wei",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad5",
+          "name": "Hangyi Hao",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad6",
+          "name": "Jianzhu Yao",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad7",
+          "name": "Peiyao Sheng",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad8",
+          "name": "Zixuan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ad9",
+          "name": "Wenhao Chai",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ada",
+          "name": "Aleksandra Korolova",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007adb",
+          "name": "Peter Henderson",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007adc",
+          "name": "Sanjeev Arora",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007add",
+          "name": "Pramod Viswanath",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007ade",
+          "name": "Jingbo Shang",
+          "hidden": false
+        },
+        {
+          "_id": "684fae8d60b4a34dbe007adf",
+          "name": "Saining Xie",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-13T16:29:09.000Z",
+      "submittedOnDailyAt": "2025-06-16T04:13:30.111Z",
+      "title": "LiveCodeBench Pro: 올림픽메달리스트가 컴페티션프로그래밍에서 LLMs를 어떻게 판단하는지",
+      "submittedOnDailyBy": {
+        "_id": "637c7503fe115289cfecbe6b",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1676361945047-637c7503fe115289cfecbe6b.jpeg",
+        "isPro": false,
+        "fullname": "Wenhao Chai",
+        "user": "wchai",
+        "type": "user"
+      },
+      "summary": "최근의 보고서에 따르면, 대규모 언어 모델(LLMs)은 경쟁 프로그래밍에서 우승 선수를 초월하고 있다고 한다. 국제 알고리즘 대회의 메달리스트 그룹의 지식에 기반하여, 이 주장을 재검토하고 LLMs가 인간 전문가와 어떤 차이를 지고, 어떤 제한이 남아있는지 조사 중입니다. LiveCodeBench Pro라는 벤치마크를 소개합니다. 이 것은 Codeforces, ICPC, IOI에서 나온 문제를 기반으로, 데이터 오염을 줄이기 위해 연속적으로 업데이트되어 있습니다. 메달리스트 팀은 알고리즘의 카테고리에 대해 문제를 注記하고, 실패한 모델 생성을 제출하고 있습니다. 이 새로운 데이터와 벤치마크를 사용하여, 선두 모델은 외부 도구를 사용하지 않는 경우, 중난도 문제를 53%의 pass@1로 달성하고, 어려운 문제를 0%로 달성합니다. 이는 전문가인 인간이 뛰어난 영역입니다. 또, LLMs는 구현이 무거운 문제를 성공적으로 수행하지만, 복잡한 알고리즘적인 이유와 사례 분석에 고충하며, 잘못된 이유를 생성합니다. 높은 성능은 구현의 정확성과 도구의 확장에 의해 주도되지만, 상위 이유에 의해 주도되고 있지 않습니다. LiveCodeBench Pro는 인간의 Grand Master 수준과 큰 차이를 명확히 하고, 코드 센터의 LLM의 이유의 미래 개선을 계속해서 안내합니다.",
+      "upvotes": 6,
+      "discussionId": "684fae8d60b4a34dbe007ae0",
+      "ai_summary": "LLMs perform well on implementation-heavy competitive programming problems but struggle with nuanced algorithmic reasoning, as highlighted by LiveCodeBench Pro.",
+      "ai_keywords": [
+        "large language models",
+        "LLMs",
+        "competitive programming",
+        "LiveCodeBench Pro",
+        "Codeforces",
+        "ICPC",
+        "IOI",
+        "algorithmic categories",
+        "algorithmic reasoning",
+        "case analysis"
+      ]
+    },
+    "publishedAt": "2025-06-13T12:29:09.000Z",
+    "title": "LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive\n  Programming?",
+    "summary": "Recent reports claim that large language models (LLMs) now outperform elite\nhumans in competitive programming. Drawing on knowledge from a group of\nmedalists in international algorithmic contests, we revisit this claim,\nexamining how LLMs differ from human experts and where limitations still\nremain. We introduce LiveCodeBench Pro, a benchmark composed of problems from\nCodeforces, ICPC, and IOI that are continuously updated to reduce the\nlikelihood of data contamination. A team of Olympiad medalists annotates every\nproblem for algorithmic categories and conducts a line-by-line analysis of\nfailed model-generated submissions. Using this new data and benchmark, we find\nthat frontier models still have significant limitations: without external\ntools, the best model achieves only 53% pass@1 on medium-difficulty problems\nand 0% on hard problems, domains where expert humans still excel. We also find\nthat LLMs succeed at implementation-heavy problems but struggle with nuanced\nalgorithmic reasoning and complex case analysis, often generating confidently\nincorrect justifications. High performance appears largely driven by\nimplementation precision and tool augmentation, not superior reasoning.\nLiveCodeBench Pro thus highlights the significant gap to human grandmaster\nlevels, while offering fine-grained diagnostics to steer future improvements in\ncode-centric LLM reasoning.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.11928.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "637c7503fe115289cfecbe6b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1676361945047-637c7503fe115289cfecbe6b.jpeg",
+      "fullname": "Wenhao Chai",
+      "name": "wchai",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 34
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.11997",
+      "authors": [
+        {
+          "_id": "684fd0cb60b4a34dbe007b70",
+          "user": {
+            "_id": "6333650673c07e8aebb2e941",
+            "avatarUrl": "/avatars/bfcc236641671e88c2fe5426740071d3.svg",
+            "isPro": false,
+            "fullname": "Korbinian Poeppel",
+            "user": "korbip",
+            "type": "user"
+          },
+          "name": "Korbinian Pöppel",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-16T08:35:40.461Z",
+          "hidden": false
+        },
+        {
+          "_id": "684fd0cb60b4a34dbe007b71",
+          "name": "Richard Freinschlag",
+          "hidden": false
+        },
+        {
+          "_id": "684fd0cb60b4a34dbe007b72",
+          "name": "Thomas Schmied",
+          "hidden": false
+        },
+        {
+          "_id": "684fd0cb60b4a34dbe007b73",
+          "name": "Wei Lin",
+          "hidden": false
+        },
+        {
+          "_id": "684fd0cb60b4a34dbe007b74",
+          "name": "Sepp Hochreiter",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-13T17:51:37.000Z",
+      "submittedOnDailyAt": "2025-06-16T06:38:46.139Z",
+      "title": "pLSTM: 병렬화 가능한 직선형 소스 이동 마크네트워크",
+      "submittedOnDailyBy": {
+        "_id": "64c3849269b1a6796052eac7",
+        "avatarUrl": "/avatars/9f0c832d5b51b659c7bb83074f02a648.svg",
+        "isPro": false,
+        "fullname": "Thomas Schmied",
+        "user": "thomasschmied",
+        "type": "user"
+      },
+      "summary": "최근 xLSTM, Mamba와 같은 새로운 재현적 아키텍처가 언어 모델링에 Transformer를 도전하고 있습니다. 그러나 이러한 구조는 시퀀스만 적용할 수 있으며, 이미지나 분자 그래프와 같은 다차원 데이터 구조를 미리 정의된 순서로 처리해야 합니다. 반면, Multi-Dimensional RNNs(MDRNNs)은 2D 그리드, 트리, 방향성 비순환 그래프(DAG)와 같은 고차원 구조의 데이터에 적합합니다. 본 논문에서는 선형 RNN에 다차원성을 확장합니다. 일반적인 DAG의 선형 그래프에 작용하는 Source, Transition, 그리고 Mark 게이트를 사용하여 병렬 가능한 Linear Source Transition Mark 네트워크(pLSTMs)를 도입합니다. 이로써 병렬연관 스캔과 순차적인 선형 RNN의 챗킹 방식과 유사한 병렬화가 가능하지만, DAG에도 동일하게 적용할 수 있습니다. 1D와 2D의 정규 그리드(예: 이미지)에 대해 einsum 연산, 결합, 그리고 로직 시간의 패딩을 사용하여 효율적으로 구현할 수 있습니다. pLSTMs은 DAG의 긴 거리에서의 활성화와 경사 감소/발산 문제를 해결하기 위해 두 가지 다른 모드를 사용합니다: 방향성 전파 모드(P-mode)와 확산 분포 모드(D-mode). pLSTM의 긴 거리 능력을 보여주기 위해, 긴 거리의 방향 정보를 포함하는 합성적인 컴퓨터 비전 태스크「방향 마크의 외침」을 도입합니다. pLSTMs은 이미지 크기가 큰 데이터에도 잘 확장할 수 있으며, Transformer와는 달리 외침이 어렵습니다. 분자 그래프와 컴퓨터 비전의 기존 벤치마크에서도 강력한 성능을 나타냅니다. 코드와 데이터셋은 다음 URL에서 사용 가능합니다: https://github.com/ml-jku/plstm_experiments.",
+      "upvotes": 4,
+      "discussionId": "684fd0cb60b4a34dbe007b75",
+      "ai_summary": "pLSTMs are parallelizable linear RNNs designed for DAGs, demonstrating superior performance on long-range tasks and benchmarks compared to Transformers.",
+      "ai_keywords": [
+        "xLSTM",
+        "Mamba",
+        "Transformer",
+        "Multi-Dimensional RNNs",
+        "MDRNNs",
+        "parallelizable Linear Source Transition Mark networks",
+        "pLSTMs",
+        "Source gates",
+        "Transition gates",
+        "Mark gates",
+        "line graph",
+        "DAGs",
+        "parallel associative scans",
+        "chunkwise-recurrent",
+        "einsum operations",
+        "concatenations",
+        "padding",
+        "vanishing/exploding activation/gradient problem",
+        "directed propagation mode",
+        "diffusive distribution mode",
+        "arrow-pointing extrapolation",
+        "computer vision task",
+        "molecular graph",
+        "performance benchmarks"
+      ]
+    },
+    "publishedAt": "2025-06-13T13:51:37.000Z",
+    "title": "pLSTM: parallelizable Linear Source Transition Mark networks",
+    "summary": "Modern recurrent architectures, such as xLSTM and Mamba, have recently\nchallenged the Transformer in language modeling. However, their structure\nconstrains their applicability to sequences only or requires processing\nmulti-dimensional data structures, such as images or molecular graphs, in a\npre-defined sequential order. In contrast, Multi-Dimensional RNNs (MDRNNs) are\nwell suited for data with a higher level structure, like 2D grids, trees, and\ndirected acyclic graphs (DAGs). In this work, we extend the notion of\nmulti-dimensionality to linear RNNs. We introduce parallelizable Linear Source\nTransition Mark networks (pLSTMs) using Source, Transition, and Mark gates that\nact on the line graph of a general DAG. This enables parallelization in analogy\nto parallel associative scans and the chunkwise-recurrent form of sequential\nlinear RNNs, but for DAGs. For regular grids (1D and 2D), like images, this\nscheme can be efficiently implemented using einsum operations, concatenations,\nand padding in logarithmic time. pLSTMs tackle the vanishing/exploding\nactivation/gradient problem for long distances in DAGs via two distinct modes:\na directed propagation mode (P-mode) and a diffusive distribution mode\n(D-mode). To showcase the long-range capabilities of pLSTM, we introduce\narrow-pointing extrapolation as a synthetic computer vision task that contains\nlong-distance directional information. We demonstrate that pLSTMs generalize\nwell to larger image sizes, whereas Transformers struggle to extrapolate. On\nestablished molecular graph and computer vision benchmarks, pLSTMs also show\nstrong performance. Code and Datasets are available at:\nhttps://github.com/ml-jku/plstm_experiments.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.11997.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64c3849269b1a6796052eac7",
+      "avatarUrl": "/avatars/9f0c832d5b51b659c7bb83074f02a648.svg",
+      "fullname": "Thomas Schmied",
+      "name": "thomasschmied",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.09427",
+      "authors": [
+        {
+          "_id": "684fa6d060b4a34dbe007aa7",
+          "user": {
+            "_id": "66d94f2a36aa5055694dfe04",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/grAN83brH0E4_S0__yLdv.jpeg",
+            "isPro": false,
+            "fullname": "fengyukang",
+            "user": "finyorko",
+            "type": "user"
+          },
+          "name": "Yukang Feng",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-16T07:48:14.381Z",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007aa8",
+          "name": "Jianwen Sun",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007aa9",
+          "user": {
+            "_id": "6533f7ecb3852ed1ceb48e47",
+            "avatarUrl": "/avatars/5d767c093e73f06a89f625c3a5903902.svg",
+            "isPro": false,
+            "fullname": "Chuanhao Li",
+            "user": "cyrilli",
+            "type": "user"
+          },
+          "name": "Chuanhao Li",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-16T07:48:30.156Z",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007aaa",
+          "name": "Zizhen Li",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007aab",
+          "name": "Jiaxin Ai",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007aac",
+          "user": {
+            "_id": "665305eff0c8c891cae7fe01",
+            "avatarUrl": "/avatars/1f372e3bc6a4eb19ef702ec96a391c96.svg",
+            "isPro": false,
+            "fullname": "Fanrui Zhang",
+            "user": "fanrui00",
+            "type": "user"
+          },
+          "name": "Fanrui Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-16T07:49:04.386Z",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007aad",
+          "name": "Yifan Chang",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007aae",
+          "name": "Sizhuo Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007aaf",
+          "user": {
+            "_id": "6674d02914e2aebef893779e",
+            "avatarUrl": "/avatars/acdbe3820462b87126c8f1e14f0d1a60.svg",
+            "isPro": false,
+            "fullname": "ZhangShenglin",
+            "user": "ZhangShenglin",
+            "type": "user"
+          },
+          "name": "Shenglin Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-16T07:49:28.741Z",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007ab0",
+          "name": "Yu Dai",
+          "hidden": false
+        },
+        {
+          "_id": "684fa6d060b4a34dbe007ab1",
+          "user": {
+            "_id": "63527f4e7d071f23d085ad45",
+            "avatarUrl": "/avatars/99a51adef5673b3ac1a8c02eb47759c4.svg",
+            "isPro": false,
+            "fullname": "KAIPENG ZHANG",
+            "user": "kpzhang",
+            "type": "user"
+          },
+          "name": "Kaipeng Zhang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-16T07:49:35.126Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/65f1713552c38a91e0a445e8/1FHKfzv4w4VzV4nhqKCJ7.png"
+      ],
+      "publishedAt": "2025-06-11T06:21:20.000Z",
+      "submittedOnDailyAt": "2025-06-16T03:49:15.860Z",
+      "title": "고품질 데이터셋과 신뢰성 있는 평가에 기반한 실시간 캐릭터 이미지-텍스트 생성\n\n(注意：翻译中“实时”被翻译为“실시간”，以确保准确性和专业性)",
+      "submittedOnDailyBy": {
+        "_id": "65f1713552c38a91e0a445e8",
+        "avatarUrl": "/avatars/47ab3ada51c9b9976ac1cd0c4301c373.svg",
+        "isPro": false,
+        "fullname": "kaipeng",
+        "user": "kpzhang996",
+        "type": "user"
+      },
+      "summary": "최근의 대규모 다모달 모델(LMMs)의 발전은 다모달 모델 이해와 생성에서 뚜렷한 개선을 실현했습니다. 그러나 이러한 모델들은 현재의 훈련 데이터셋의 규모, 질 및 지시의 풍부성 제한으로, 겹치는 이미지-텍스트의 출력을 생성하는 것이 어렵습니다. 이를 대처하여, 우리는 Self-Evaluation with Iterative Refinement(SEIR) 메소드를 활용하여 구축한 대규모 다모달 모델 데이터셋을 소개합니다. InterSyn은 겹치는 이미지-텍스트의 응답을 포함하는 다턴, 지시를 주도하는 대화를 특징으로, 풍부한 물체 다양성과 엄밀한 자동 질량 편집을 제공하며, 다음 세대의 지시에 따른 LMMs의 훈련에 적합합니다. 또한 겹치는 다모달 모델 출력을 평가하는 신뢰성 있는 도구의 부족에 대처하여, SynJudge를 소개합니다. SynJudge는 텍스트 콘텐츠, 이미지 콘텐츠, 이미지 품질, 이미지-텍스트의 조화성의 4차원을定量적으로 평가하는 자동 평가 모델입니다.\n\n실험 연구에 따라, SEIR 메소드는 편집 없이 비교한 경우 대비 크게 높은 데이터셋 질을 실현했습니다. 또한 InterSyn을 사용하여 훈련된 LMMs는 모든 평가 지표에서 일관된 성능 향상을 보였으며, InterSyn의 다모달 시스템의 발전에 적절함을 확인했습니다.",
+      "upvotes": 4,
+      "discussionId": "684fa6d060b4a34dbe007ab2",
+      "ai_summary": "InterSyn, a large-scale dataset with tightly interleaved image-text outputs and automated quality refinement, improves multimodal understanding and generation through the SEIR method and SynJudge, an automatic evaluation tool.",
+      "ai_keywords": [
+        "Large Multimodal Models (LMMs)",
+        "multimodal understanding",
+        "multimodal generation",
+        "Self-Evaluation with Iterative Refinement (SEIR)",
+        "InterSyn",
+        "image-text outputs",
+        "SynJudge",
+        "text content",
+        "image content",
+        "image quality",
+        "image-text synergy"
+      ]
+    },
+    "publishedAt": "2025-06-11T02:21:20.000Z",
+    "title": "A High-Quality Dataset and Reliable Evaluation for Interleaved\n  Image-Text Generation",
+    "summary": "Recent advancements in Large Multimodal Models (LMMs) have significantly\nimproved multimodal understanding and generation. However, these models still\nstruggle to generate tightly interleaved image-text outputs, primarily due to\nthe limited scale, quality and instructional richness of current training\ndatasets. To address this, we introduce InterSyn, a large-scale multimodal\ndataset constructed using our Self-Evaluation with Iterative Refinement (SEIR)\nmethod. InterSyn features multi-turn, instruction-driven dialogues with tightly\ninterleaved imagetext responses, providing rich object diversity and rigorous\nautomated quality refinement, making it well-suited for training\nnext-generation instruction-following LMMs. Furthermore, to address the lack of\nreliable evaluation tools capable of assessing interleaved multimodal outputs,\nwe introduce SynJudge, an automatic evaluation model designed to quantitatively\nassess multimodal outputs along four dimensions: text content, image content,\nimage quality, and image-text synergy.\n  Experimental studies show that the SEIR method leads to substantially higher\ndataset quality compared to an otherwise identical process without refinement.\n  Moreover, LMMs trained on InterSyn achieve uniform performance gains across\nall evaluation metrics, confirming InterSyn's utility for advancing multimodal\nsystems.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/65f1713552c38a91e0a445e8/1FHKfzv4w4VzV4nhqKCJ7.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.09427.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65f1713552c38a91e0a445e8",
+      "avatarUrl": "/avatars/47ab3ada51c9b9976ac1cd0c4301c373.svg",
+      "fullname": "kaipeng",
+      "name": "kpzhang996",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.09366",
+      "authors": [
+        {
+          "_id": "684ae246dbd21a9cc27b111c",
+          "user": {
+            "_id": "62359088a17d7271859c88f4",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1647677549197-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Yuxuan Kuang",
+            "user": "yxK",
+            "type": "user"
+          },
+          "name": "Yuxuan Kuang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-16T07:17:03.322Z",
+          "hidden": false
+        },
+        {
+          "_id": "684ae246dbd21a9cc27b111d",
+          "name": "Haoran Geng",
+          "hidden": false
+        },
+        {
+          "_id": "684ae246dbd21a9cc27b111e",
+          "user": {
+            "_id": "64da71311d19239f50483005",
+            "avatarUrl": "/avatars/d97a7177adca180d795bf0f9ec66c65c.svg",
+            "isPro": false,
+            "fullname": "Amine Elhafsi",
+            "user": "AmineElhafsi",
+            "type": "user"
+          },
+          "name": "Amine Elhafsi",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-16T07:50:59.675Z",
+          "hidden": false
+        },
+        {
+          "_id": "684ae246dbd21a9cc27b111f",
+          "name": "Tan-Dzung Do",
+          "hidden": false
+        },
+        {
+          "_id": "684ae246dbd21a9cc27b1120",
+          "name": "Pieter Abbeel",
+          "hidden": false
+        },
+        {
+          "_id": "684ae246dbd21a9cc27b1121",
+          "user": {
+            "_id": "65369a95605a07338de78ab0",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/sGFjOjLT2akN-sn5beVWL.jpeg",
+            "isPro": false,
+            "fullname": "Jitendra Malik ",
+            "user": "jitendra1995",
+            "type": "user"
+          },
+          "name": "Jitendra Malik",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-16T07:51:18.391Z",
+          "hidden": false
+        },
+        {
+          "_id": "684ae246dbd21a9cc27b1122",
+          "name": "Marco Pavone",
+          "hidden": false
+        },
+        {
+          "_id": "684ae246dbd21a9cc27b1123",
+          "name": "Yue Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-11T03:24:26.000Z",
+      "submittedOnDailyAt": "2025-06-16T04:37:55.714Z",
+      "title": "스킬 브린더： 다양한 홈 노이드 전체적인 로코・마니피레이션을 위해 스킬 브린딩을 통해 적용합니다.",
+      "submittedOnDailyBy": {
+        "_id": "62359088a17d7271859c88f4",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1647677549197-noauth.jpeg",
+        "isPro": false,
+        "fullname": "Yuxuan Kuang",
+        "user": "yxK",
+        "type": "user"
+      },
+      "summary": "인형 로봇은 다양한 환경에서 일상적인 작업들을 수행할 때, 유연성과 인간처럼의 몸형으로 인해 중요한 잠재력을 가지고 있다. 최근의 연구에서는 최적제어와 강화학습을 활용하여, 인형 전체제어 및 이동작용에 대한 발전을 달성하고 있다. 그러나 이러한 방법들은, 만족스러운 행동을 달성하기 위해 각 작업에 대해 복잡한 작업특유의 조정이 필요하며, 다양한 작업에 대한 다양성과 스케일러빌리티를 제한하고 있다. 따라서, 우리는 새로운 단계별 강화학습 프레임워크인 SkillBlender를 소개하고, 다양한 인형 이동작용 작업들을 수행할 때의 다양성을 보장하는 방법을 제시한다. SkillBlender는 처음에는 목표 조건과 관련된 작업과 상관없는 기본스킬을 사전학습하고, 이들스킬을 동적으로 조합하여, 복잡한 이동작용 작업들을 수행하기 위한 최소한의 작업특유의 보상 설계를 필요로 하지 않도록 한다. 또한, SkillBench라는 병렬적이고 다른 몸형을 가진 다양한 컴퓨터 기니닝 벤치마크를 소개하고, 3가지의 몸형, 4가지의 기본스킬, 8가지의 어려운 이동작용 작업들을 포함하고 있는 정밀도와 가능성의 균형을 이루는 과학적인 평가기준을 부여하고 있다. 컴퓨터 기니닝 시험은 우리의 방법들이 모든 베이스라인을 크게 초과하며, 자연스럽게 행동을 정규화하고 보상훼핑을 피하여, 우리 일상의 시나리오에서 더욱 정확한 이동을 구현하는 것을 보여주고 있다. 우리의 코드와 벤치마크는 향후 연구를 촉진하기 위해, 커뮤니티에 공개될 예정이다. 프로젝트 페이지: https://usc-gvl.github.io/SkillBlender-web/",
+      "upvotes": 3,
+      "discussionId": "684ae246dbd21a9cc27b1124",
+      "projectPage": "https://usc-gvl.github.io/SkillBlender-web/",
+      "githubRepo": "https://github.com/Humanoid-SkillBlender/SkillBlender",
+      "ai_summary": "SkillBlender is a hierarchical reinforcement learning framework that uses pretrained primitive skills to efficiently solve diverse loco-manipulation tasks for humanoid robots.",
+      "ai_keywords": [
+        "reinforcement learning",
+        "SkillBlender",
+        "goal-conditioned",
+        "task-agnostic primitive skills",
+        "hierarchical reinforcement learning",
+        "SkillBench",
+        "cross-embodiment",
+        "simulated benchmark",
+        "loco-manipulation tasks",
+        "reward engineering",
+        "reward hacking"
+      ]
+    },
+    "publishedAt": "2025-06-10T23:24:26.000Z",
+    "title": "SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation\n  via Skill Blending",
+    "summary": "Humanoid robots hold significant potential in accomplishing daily tasks\nacross diverse environments thanks to their flexibility and human-like\nmorphology. Recent works have made significant progress in humanoid whole-body\ncontrol and loco-manipulation leveraging optimal control or reinforcement\nlearning. However, these methods require tedious task-specific tuning for each\ntask to achieve satisfactory behaviors, limiting their versatility and\nscalability to diverse tasks in daily scenarios. To that end, we introduce\nSkillBlender, a novel hierarchical reinforcement learning framework for\nversatile humanoid loco-manipulation. SkillBlender first pretrains\ngoal-conditioned task-agnostic primitive skills, and then dynamically blends\nthese skills to accomplish complex loco-manipulation tasks with minimal\ntask-specific reward engineering. We also introduce SkillBench, a parallel,\ncross-embodiment, and diverse simulated benchmark containing three embodiments,\nfour primitive skills, and eight challenging loco-manipulation tasks,\naccompanied by a set of scientific evaluation metrics balancing accuracy and\nfeasibility. Extensive simulated experiments show that our method significantly\noutperforms all baselines, while naturally regularizing behaviors to avoid\nreward hacking, resulting in more accurate and feasible movements for diverse\nloco-manipulation tasks in our daily scenarios. Our code and benchmark will be\nopen-sourced to the community to facilitate future research. Project page:\nhttps://usc-gvl.github.io/SkillBlender-web/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.09366.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62359088a17d7271859c88f4",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1647677549197-noauth.jpeg",
+      "fullname": "Yuxuan Kuang",
+      "name": "yxK",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.08477",
+      "authors": [
+        {
+          "_id": "684fb8cb60b4a34dbe007b05",
+          "name": "Fengjun Pan",
+          "hidden": false
+        },
+        {
+          "_id": "684fb8cb60b4a34dbe007b06",
+          "name": "Anh Tuan Luu",
+          "hidden": false
+        },
+        {
+          "_id": "684fb8cb60b4a34dbe007b07",
+          "user": {
+            "_id": "64cb02869e30a46f7b80b355",
+            "avatarUrl": "/avatars/81ce4ba78826b54f0e1b53eeaff87ee6.svg",
+            "isPro": false,
+            "fullname": "Xiaobao Wu",
+            "user": "bobxwu",
+            "type": "user"
+          },
+          "name": "Xiaobao Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-16T07:16:04.938Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-10T06:10:45.000Z",
+      "submittedOnDailyAt": "2025-06-16T04:59:02.024Z",
+      "title": "有害メム의 검출에 대한 설명과 가이드라인\n\n上海人工知能研究所에서 개발된 기계 학습 모델입니다. 이 모델은 효과적으로有害メム를 검출하기 위해 설명과 가이드라인을 함께 사용합니다.",
+      "submittedOnDailyBy": {
+        "_id": "64cb02869e30a46f7b80b355",
+        "avatarUrl": "/avatars/81ce4ba78826b54f0e1b53eeaff87ee6.svg",
+        "isPro": false,
+        "fullname": "Xiaobao Wu",
+        "user": "bobxwu",
+        "type": "user"
+      },
+      "summary": "有害メ모의 감지는 온라인 환경의 정직성을 유지하기 위해 중요합니다. 그러나 현재의 접근 방식은 리소스 효율성, 유연성, 설명성 등에 약점이 있으며, 콘텐츠 모델링 시스템의 실질적인 적용이 제한되어 있습니다. 이러한 도전에 대처하기 위해, 우리는有害メ모의 감지를 위한 새로운 프레임워크인 U-CoT+를 소개합니다. 이 프레임워크는 모델의 프로닝이나 미세 조정을 거의 그대로 유지하도록, 처음으로, 높은 정확도를 가진 메모로부터 텍스트로의 파이프라인을 개발합니다. 이 설계는 메모의 해석과 분류를 분리하고, 복잡한 라인플루م 내용을 즉시 이유에 연결하는 것을 피하고, 일반적인 대형 언어 모델(LLMs)을 사용하여 리소스 효율적인有害メ모의 감지를 가능하게 합니다. 이러한 텍스트 설명에 기반하여, 더욱 특정적이고 해석 가능한 인간이 만든 가이드라인을 포함하여, 0 shot CoT 프로닝의 기반으로 모델의 이유를 가이드하는 것을 실현합니다. 이 프레임워크는 플랫폼, 지역, 시간 등에 따라 다른有害성 감지 기준의 간단한 적응을 가능하게 하며, 높은 유연성과 설명성을 제공합니다. 7개의 벤치마크 데이터 세트에 대한 확장된 실험은 이 프레임워크의 효과성을 증명하고, 소규모 LLMs을 사용하여 설명적이고 리소스 효율적인有害メ모의 감지의 가능성에 특징을 둡니다. 코드와 데이터는 다음 URL에서 사용 가능합니다: https://anonymous.4open.science/r/HMC-AF2B/README.md.",
+      "upvotes": 2,
+      "discussionId": "684fb8cb60b4a34dbe007b08",
+      "ai_summary": "U-CoT+ is a novel framework for detecting harmful memes by converting them into textual descriptions and using human-crafted guidelines with zero-shot CoT prompting to achieve high flexibility and explainability with small-scale LLMs.",
+      "ai_keywords": [
+        "U-CoT+",
+        "meme-to-text pipeline",
+        "high-fidelity",
+        "zero-shot CoT prompting",
+        "human-crafted guidelines",
+        "large language models (LLMs)",
+        "harmful meme detection",
+        "explainability",
+        "flexibility",
+        "benchmark datasets"
+      ]
+    },
+    "publishedAt": "2025-06-10T02:10:45.000Z",
+    "title": "Detecting Harmful Memes with Decoupled Understanding and Guided CoT\n  Reasoning",
+    "summary": "Detecting harmful memes is essential for maintaining the integrity of online\nenvironments. However, current approaches often struggle with resource\nefficiency, flexibility, or explainability, limiting their practical deployment\nin content moderation systems. To address these challenges, we introduce\nU-CoT+, a novel framework for harmful meme detection. Instead of relying solely\non prompting or fine-tuning multimodal models, we first develop a high-fidelity\nmeme-to-text pipeline that converts visual memes into detail-preserving textual\ndescriptions. This design decouples meme interpretation from meme\nclassification, thus avoiding immediate reasoning over complex raw visual\ncontent and enabling resource-efficient harmful meme detection with general\nlarge language models (LLMs). Building on these textual descriptions, we\nfurther incorporate targeted, interpretable human-crafted guidelines to guide\nmodels' reasoning under zero-shot CoT prompting. As such, this framework allows\nfor easy adaptation to different harmfulness detection criteria across\nplatforms, regions, and over time, offering high flexibility and\nexplainability. Extensive experiments on seven benchmark datasets validate the\neffectiveness of our framework, highlighting its potential for explainable and\nlow-resource harmful meme detection using small-scale LLMs. Codes and data are\navailable at: https://anonymous.4open.science/r/HMC-AF2B/README.md.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.08477.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64cb02869e30a46f7b80b355",
+      "avatarUrl": "/avatars/81ce4ba78826b54f0e1b53eeaff87ee6.svg",
+      "fullname": "Xiaobao Wu",
+      "name": "bobxwu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.07464",
+      "authors": [
+        {
+          "_id": "684fd9a160b4a34dbe007b93",
+          "name": "Jinyoung Park",
+          "hidden": false
+        },
+        {
+          "_id": "684fd9a160b4a34dbe007b94",
+          "name": "Jeehye Na",
+          "hidden": false
+        },
+        {
+          "_id": "684fd9a160b4a34dbe007b95",
+          "name": "Jinyoung Kim",
+          "hidden": false
+        },
+        {
+          "_id": "684fd9a160b4a34dbe007b96",
+          "name": "Hyunwoo J. Kim",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-09T06:15:54.000Z",
+      "submittedOnDailyAt": "2025-06-16T07:17:50.892Z",
+      "title": "Difficulty-based Global Policy for Fine-tuning Video Reinforcement Learning",
+      "submittedOnDailyBy": {
+        "_id": "64b6eae88ba7d6c922c0434a",
+        "avatarUrl": "/avatars/6adac8242106ab12abeaa3584346c0cd.svg",
+        "isPro": false,
+        "fullname": "Jinyoung Park",
+        "user": "jinypark",
+        "type": "user"
+      },
+      "summary": "최근의 연구는, 强化学習(RL)에 기반한 훈련 후 처리가 대규모 언어 모델(LLMs)의 이해 능력을 향상시키는 효과성을 보여주고 있습니다. 특히, Group Relative Policy Optimization(GRPO)는, 그룹 기반의 정규화 보상을 사용하는 PPO 风의 강화 학습 알고리즘을 사용하며, 놀라운 성공을 보입니다. 그러나, GRPO를 Video Large Language Models(Video LLMs)에 적용하는 것은 약간의 연구가 이루어지지 않았습니다. 본 논문에서는, Video LLMs에서의 GRPO를 검토하고, 효과적인 학습을 방해하는 두 가지 주요 문제를 특정합니다: (1) 안전 게임의 의존관계와 (2) 우선의 사라짐 문제. 이러한 문제를 완화하기 위해, DeepVideo-R1을 제안합니다. DeepVideo-R1은, 우리가 제안한 Reg-GRPO(리지젼 GRPO)와 난이도에 대한 데이터 확장 전략을 사용하여 훈련된 Video Large Language Model입니다. Reg-GRPO는 GRPO의 목표를 회귀 태스크로 재구성하고, GRPO의 우선을 직접 예측합니다. 이 설계는, 클립PING와 min 함수 같은 안전 게임의 필요성을 제거하고, 우선 값에 대해 모델을 조정하고, 더 직접적인 정책의 가이드를 제공합니다. 또한, 난이도에 대한 데이터 확장 전략을 설계했습니다. 이는 해결 가능한 난이도 레벨에서 훈련 샘플을 동적으로 확장하고, 다양한 정보를 가진 보상 신호를 장려합니다. 우리의 세부적인 실험 결과를 통해, DeepVideo-R1이 여러 Video Reasoning 벤치마크에서 Video Reasoning 성능을 크게 향상시키는 것을 보여줍니다.",
+      "upvotes": 2,
+      "discussionId": "684fd9a160b4a34dbe007b97",
+      "ai_summary": "DeepVideo-R1 enhances video reasoning performance using Reg-GRPO, a regression-based GRPO approach, and difficulty-aware data augmentation for video large language models.",
+      "ai_keywords": [
+        "reinforcement learning",
+        "Group Relative Policy Optimization",
+        "GRPO",
+        "Policy Optimization",
+        "PPO",
+        "Video Large Language Models",
+        "Video LLMs",
+        "DeepVideo-R1",
+        "Reg-GRPO",
+        "regression task",
+        "advantage values",
+        "difficulty-aware data augmentation",
+        "video reasoning benchmarks"
+      ]
+    },
+    "publishedAt": "2025-06-09T02:15:54.000Z",
+    "title": "DeepVideo-R1: Video Reinforcement Fine-Tuning via Difficulty-aware\n  Regressive GRPO",
+    "summary": "Recent works have demonstrated the effectiveness of reinforcement learning\n(RL)-based post-training in enhancing the reasoning capabilities of large\nlanguage models (LLMs). In particular, Group Relative Policy Optimization\n(GRPO) has shown impressive success by employing a PPO-style reinforcement\nalgorithm with group-based normalized rewards. However, the application of GRPO\nto Video Large Language Models (Video LLMs) has been less studied. In this\npaper, we explore GRPO for video LLMs and identify two primary issues that\nimpede its effective learning: (1) reliance on safeguards, and (2) the\nvanishing advantage problem. To mitigate these challenges, we propose\nDeepVideo-R1, a video large language model trained with our proposed Reg-GRPO\n(Regressive GRPO) and difficulty-aware data augmentation strategy. Reg-GRPO\nreformulates the GRPO objective as a regression task, directly predicting the\nadvantage in GRPO. This design eliminates the need for safeguards like clipping\nand min functions, thereby facilitating more direct policy guidance by aligning\nthe model with the advantage values. We also design the difficulty-aware data\naugmentation strategy that dynamically augments training samples at solvable\ndifficulty levels, fostering diverse and informative reward signals. Our\ncomprehensive experiments show that DeepVideo-R1 significantly improves video\nreasoning performance across multiple video reasoning benchmarks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.07464.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b6eae88ba7d6c922c0434a",
+      "avatarUrl": "/avatars/6adac8242106ab12abeaa3584346c0cd.svg",
+      "fullname": "Jinyoung Park",
+      "name": "jinypark",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.11702",
+      "authors": [
+        {
+          "_id": "684fae8360b4a34dbe007ac9",
+          "user": {
+            "_id": "5fad8602b8423e1d80b8a965",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/5fad8602b8423e1d80b8a965/tRqTwcZmrGka8c1vFq2wX.jpeg",
+            "isPro": false,
+            "fullname": "Victor Gallego",
+            "user": "vicgalle",
+            "type": "user"
+          },
+          "name": "Víctor Gallego",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-06-16T05:42:55.745Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-13T12:17:38.000Z",
+      "submittedOnDailyAt": "2025-06-16T04:12:09.638Z",
+      "title": "키워드付き 데이터에 기반한 가변 조정의 선호 조정",
+      "submittedOnDailyBy": {
+        "_id": "5fad8602b8423e1d80b8a965",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/5fad8602b8423e1d80b8a965/tRqTwcZmrGka8c1vFq2wX.jpeg",
+        "isPro": false,
+        "fullname": "Victor Gallego",
+        "user": "vicgalle",
+        "type": "user"
+      },
+      "summary": "인간 Feedback 모델의 AI 조정에 대한 제안에서, Direct Preference Optimization (DPO)와 같은 방식은 일관된 정적 취향의 집합을 포함하고, 적응성을 제한하는 경우가 많습니다. 본 논문에서는 일관된 취향의 가정을 부수고, Configurable Preference Tuning (CPT)를 도입하여, 언어 모델에 대해 명시적으로 인간이 이해할 수 있는 지시에 기초하여 동적으로 조정할 수 있는 새로운 프레임워크를 제안합니다. CPT는 구조화된 미세한 규칙에 기반한 시스템 프롬프트로부터 얻은 데이터를 합성적으로 생성한 취향 데이터에 활용하여, 이러한 규칙에 안내된 취향을 사용하여 미세 조정하고, 추론 시 시스템 프롬프트에 대응하는 출력을 조정하는 것을 학습시킵니다. 이 접근법은 미세한 제어를 제공하면서, 더 복잡한 피드백을 모델화하는 구조를 제공합니다. 훈련 코드, 생성된 데이터셋, 미세 조정된 모델 등 실험적인 파일은 https://github.com/vicgalle/configurable-preference-tuning에 공개되어 있습니다.",
+      "upvotes": 1,
+      "discussionId": "684fae8460b4a34dbe007aca",
+      "ai_summary": "Configurable Preference Tuning enables language models to dynamically adjust their behavior based on human-interprettable directives, using rubric-guided preference data for fine-tuning and inference-time modulation.",
+      "ai_keywords": [
+        "Configurable Preference Tuning",
+        "Direct Preference Optimization",
+        "language models",
+        "fine-grained control",
+        "rubric-guided preferences",
+        "inference-time modulation"
+      ]
+    },
+    "publishedAt": "2025-06-13T08:17:38.000Z",
+    "title": "Configurable Preference Tuning with Rubric-Guided Synthetic Data",
+    "summary": "Models of human feedback for AI alignment, such as those underpinning Direct\nPreference Optimization (DPO), often bake in a singular, static set of\npreferences, limiting adaptability. This paper challenges the assumption of\nmonolithic preferences by introducing Configurable Preference Tuning (CPT), a\nnovel framework for endowing language models with the ability to dynamically\nadjust their behavior based on explicit, human-interpretable directives. CPT\nleverages synthetically generated preference data, conditioned on system\nprompts derived from structured, fine-grained rubrics that define desired\nattributes like writing style. By fine-tuning with these rubric-guided\npreferences, the LLM learns to modulate its outputs at inference time in\nresponse to the system prompt, without retraining. This approach not only\noffers fine-grained control but also provides a mechanism for modeling more\nnuanced and context-dependent human feedback. Several experimental artifacts,\nsuch as training code, generated datasets and fine-tuned models are released at\nhttps://github.com/vicgalle/configurable-preference-tuning",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.11702.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5fad8602b8423e1d80b8a965",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/5fad8602b8423e1d80b8a965/tRqTwcZmrGka8c1vFq2wX.jpeg",
+      "fullname": "Victor Gallego",
+      "name": "vicgalle",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 129
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.10128",
+      "authors": [
+        {
+          "_id": "684fed081d9b438aa3957a50",
+          "name": "Xiyao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a51",
+          "name": "Zhengyuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a52",
+          "name": "Chao Feng",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a53",
+          "name": "Yongyuan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a54",
+          "name": "Yuhang Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a55",
+          "name": "Xiaoyu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a56",
+          "name": "Ziyi Zang",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a57",
+          "name": "Ming Li",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a58",
+          "name": "Chung-Ching Lin",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a59",
+          "name": "Kevin Lin",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a5a",
+          "name": "Linjie Li",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a5b",
+          "name": "Furong Huang",
+          "hidden": false
+        },
+        {
+          "_id": "684fed081d9b438aa3957a5c",
+          "name": "Lijuan Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-11T19:16:54.000Z",
+      "submittedOnDailyAt": "2025-06-16T08:39:17.071Z",
+      "title": "ViCrit: 시각 프로젝트의 확인 가능한 강화 학습 에이전트 임무",
+      "submittedOnDailyBy": {
+        "_id": "655fed9fdef5905d38b84af3",
+        "avatarUrl": "/avatars/2cda4182dfd11a1e94743639e62328ea.svg",
+        "isPro": false,
+        "fullname": "Xiyao Wang",
+        "user": "russwang",
+        "type": "user"
+      },
+      "summary": "강화학습(RL)은 수학 논리나 코드 생성과 같은 어려워도 검증이 가능한 작업에 사용되어, 대규모 언어 모델(LLMs)의 미세 조정에 효과적인 결과를 보여주고 있습니다. 그러나 이 성공을 시각 인식에 확장하는 것은 시각 중심적인 작업의 부족으로 인해 발전이 늦어져 있습니다. 이에 ViCrit(Visual Caption Hallucination Critic)라는 RL의 대리 작업에 의해 해결책을 제안합니다. ViCrit은 VLMs를 모델화하고, 인간이 작성한 이미지의 캡션에 注入된 微妙한 합성적인 시각의 ハロエンショー를 定位하는 것을 학습시킵니다. 200문의 캡션을 시작으로, 객체, 속성, 수, 또는 공간 관계를 변경하여, 한 가지 시각적인 오류를 注入하고, 그 변경된 캡션과 이미지를 제공하면, 모델은 손상된 스パン을 특정하는 작업에 받습니다. 이 구성은 완전히 시각적인 어려움 유지하며, 쉽게 계산할 수 있는 명확한 이진적인 긍정 보상을 제공합니다. ViCrit 작업에 의해 학습된 모델은 다양한 VL 벤치마크에서 큰 효과를 보입니다. 중요한 점은, 이러한 개선은 자연 이미지의 훈련 데이터에서 추상 이미지 논리 및 시각적인 수학에도 적용되어, 시각적인 인식을 학습할 수 있음을 보여줍니다. 평가의ために, ViCrit-Bench라는 카테고리 균형 균형의 진단 벤치마크를 추가하고, 시각적인 오류의 종류를 일괄적으로 조사합니다. 이러한 결과는, 微视覚적인 ハロエンショー의 평가가 VLMs의 시각적인 인식을 강화하는 효과적이고 일반화 가능한 목표임을 보여줍니다.",
+      "upvotes": 1,
+      "discussionId": "684fed081d9b438aa3957a5d",
+      "githubRepo": "https://github.com/si0wang/ViCrit",
+      "ai_summary": "ViCrit, an RL task for fine-tuning VLMs, improves visual perception by training models to detect subtle hallucinations in image captions, with gains transferable to various visual domains.",
+      "ai_keywords": [
+        "reinforcement learning (RL)",
+        "large language models (LLMs)",
+        "vision-language models (VLMs)",
+        "visual caption hallucination critic",
+        "perceptual difficulty",
+        "binary reward",
+        "exact-match reward",
+        "ViCrit-Bench",
+        "abstract image reasoning",
+        "visual math"
+      ]
+    },
+    "publishedAt": "2025-06-11T15:16:54.000Z",
+    "title": "ViCrit: A Verifiable Reinforcement Learning Proxy Task for Visual\n  Perception in VLMs",
+    "summary": "Reinforcement learning (RL) has shown great effectiveness for fine-tuning\nlarge language models (LLMs) using tasks that are challenging yet easily\nverifiable, such as math reasoning or code generation. However, extending this\nsuccess to visual perception in vision-language models (VLMs) has been impeded\nby the scarcity of vision-centric tasks that are simultaneously challenging and\nunambiguously verifiable. To this end, we introduce ViCrit (Visual Caption\nHallucination Critic), an RL proxy task that trains VLMs to localize a subtle,\nsynthetic visual hallucination injected into paragraphs of human-written image\ncaptions. Starting from a 200-word captions, we inject a single, subtle visual\ndescription error-altering a few words on objects, attributes, counts, or\nspatial relations-and task the model to pinpoint the corrupted span given the\nimage and the modified caption. This formulation preserves the full perceptual\ndifficulty while providing a binary, exact-match reward that is easy to compute\nand unambiguous. Models trained with the ViCrit Task exhibit substantial gains\nacross a variety of VL benchmarks. Crucially, the improvements transfer beyond\nnatural-image training data to abstract image reasoning and visual math,\nshowing promises of learning to perceive rather than barely memorizing seen\nobjects. To facilitate evaluation, we further introduce ViCrit-Bench, a\ncategory-balanced diagnostic benchmark that systematically probes perception\nerrors across diverse image domains and error types. Together, our results\ndemonstrate that fine-grained hallucination criticism is an effective and\ngeneralizable objective for enhancing visual perception in VLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.10128.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "655fed9fdef5905d38b84af3",
+      "avatarUrl": "/avatars/2cda4182dfd11a1e94743639e62328ea.svg",
+      "fullname": "Xiyao Wang",
+      "name": "russwang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.11130",
+      "authors": [
+        {
+          "_id": "684fdd8e1d9b438aa39579c6",
+          "name": "Cheng Kang Chou",
+          "hidden": false
+        },
+        {
+          "_id": "684fdd8e1d9b438aa39579c7",
+          "name": "Chan-Jan Hsu",
+          "hidden": false
+        },
+        {
+          "_id": "684fdd8e1d9b438aa39579c8",
+          "name": "Ho-Lam Chung",
+          "hidden": false
+        },
+        {
+          "_id": "684fdd8e1d9b438aa39579c9",
+          "name": "Liang-Hsuan Tseng",
+          "hidden": false
+        },
+        {
+          "_id": "684fdd8e1d9b438aa39579ca",
+          "name": "Hsi-Chun Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "684fdd8e1d9b438aa39579cb",
+          "name": "Yu-Kuan Fu",
+          "hidden": false
+        },
+        {
+          "_id": "684fdd8e1d9b438aa39579cc",
+          "name": "Kuan Po Huang",
+          "hidden": false
+        },
+        {
+          "_id": "684fdd8e1d9b438aa39579cd",
+          "name": "Hung-Yi Lee",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-10T17:30:32.000Z",
+      "submittedOnDailyAt": "2025-06-16T07:32:50.759Z",
+      "title": "변환된 프레임워크를 활용한 ASR 강화용 TTS 합성 데이터",
+      "submittedOnDailyBy": {
+        "_id": "6213410828005421265b27d3",
+        "avatarUrl": "/avatars/930ac20daf640ca31fab713bf00c3268.svg",
+        "isPro": false,
+        "fullname": "許湛然",
+        "user": "Splend1dchan",
+        "type": "user"
+      },
+      "summary": "우리는 무라벨 데이터 세트를 사용하여 ASR 성능을 향상시키는 자동 개선 프레임워크를 제안합니다. 프로세스는 기존의 ASR 모델이 무라벨 음성에 대해 가상 라벨을 생성하고 이를 사용하여 고품질의 문자를 음성으로 변환(TTS) 시스템에 훈련하는 데 시작합니다. 다음으로, 합성된 음성과 문자 쌍은 원래의 ASR 시스템에 재활용되어 폐루프의 자동 개선 사이클을 완성합니다. 이 프레임워크의 효과를 보여주기 위해 태국어 일반화 음성에 사용되었습니다. 6,000시간의 무라벨 신호 데이터, 일정량의 문자 데이터, AI 모델에서 생성된 콘텐츠를 활용하여 Whisper-large-v2를 특수화하고 Twister 모델을 만들었습니다. Twister는 Whisper와 비교하여 태국어에서 오류율을 20% 줄이고, 태국어와 영어의 코드 스イッ칭 벤치마크에서 50% 줄였습니다. 이러한 결과를 통해 가상 라벨의 적응화 방법의 유효성을 보여주고, ASR 성능 향상의 실질적인 패스워드를 낮은 리소스 또는 영역 전문적인 설정에서 제공함을 보여줍니다.",
+      "upvotes": 1,
+      "discussionId": "684fdd8f1d9b438aa39579ce",
+      "ai_summary": "A self-refining framework enhances ASR performance using unlabeled datasets by integrating pseudo-labeling, TTS, and synthesized speech to create a specialized model.",
+      "ai_keywords": [
+        "self-refining framework",
+        "ASR",
+        "pseudo-labels",
+        "TTS",
+        "synthesized speech",
+        "Whisper-large-v2",
+        "Twister",
+        "error rates",
+        "Mandarin",
+        "Mandarin-English code-switching"
+      ]
+    },
+    "publishedAt": "2025-06-10T13:30:32.000Z",
+    "title": "A Self-Refining Framework for Enhancing ASR Using TTS-Synthesized Data",
+    "summary": "We propose a self-refining framework that enhances ASR performance with only\nunlabeled datasets. The process starts with an existing ASR model generating\npseudo-labels on unannotated speech, which are then used to train a\nhigh-fidelity text-to-speech (TTS) system. Then, synthesized speech text pairs\nare bootstrapped into the original ASR system, completing the closed-loop\nself-improvement cycle. We demonstrated the effectiveness of the framework on\nTaiwanese Mandarin speech. Leveraging 6,000 hours of unlabeled speech, a\nmoderate amount of text data, and synthetic content from the AI models, we\nadapt Whisper-large-v2 into a specialized model, Twister. Twister reduces error\nrates by up to 20% on Mandarin and 50% on Mandarin-English code-switching\nbenchmarks compared to Whisper. Results highlight the framework as a compelling\nalternative to pseudo-labeling self-distillation approaches and provides a\npractical pathway for improving ASR performance in low-resource or\ndomain-specific settings.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.11130.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6213410828005421265b27d3",
+      "avatarUrl": "/avatars/930ac20daf640ca31fab713bf00c3268.svg",
+      "fullname": "許湛然",
+      "name": "Splend1dchan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 13
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.08592",
+      "authors": [
+        {
+          "_id": "684cfefc3b733ba3336873a6",
+          "user": {
+            "_id": "650f0fac11f3210cf7a8a849",
+            "avatarUrl": "/avatars/687d56c3a6d4f5cdb34e424cdcff954d.svg",
+            "isPro": false,
+            "fullname": "Leon Xu",
+            "user": "lxucs",
+            "type": "user"
+          },
+          "name": "Liyan Xu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-16T07:50:16.178Z",
+          "hidden": false
+        },
+        {
+          "_id": "684cfefc3b733ba3336873a7",
+          "name": "Zhenlin Su",
+          "hidden": false
+        },
+        {
+          "_id": "684cfefc3b733ba3336873a8",
+          "name": "Mo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "684cfefc3b733ba3336873a9",
+          "name": "Jiangnan Li",
+          "hidden": false
+        },
+        {
+          "_id": "684cfefc3b733ba3336873aa",
+          "name": "Fandong Meng",
+          "hidden": false
+        },
+        {
+          "_id": "684cfefc3b733ba3336873ab",
+          "name": "Jie Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-10T09:00:33.000Z",
+      "submittedOnDailyAt": "2025-06-16T06:09:56.672Z",
+      "title": "Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity Dilemma of Embeddings\n\n밀집 Retrievers는 단순한 쿼리들에서 실패할 수 있습니다: 임베딩의 입자화 딜레마를 밝혀봅니다.",
+      "submittedOnDailyBy": {
+        "_id": "650f0fac11f3210cf7a8a849",
+        "avatarUrl": "/avatars/687d56c3a6d4f5cdb34e424cdcff954d.svg",
+        "isPro": false,
+        "fullname": "Leon Xu",
+        "user": "lxucs",
+        "type": "user"
+      },
+      "summary": "이 연구는 텍스트 인코더에서 관찰된 제한을 중점적으로 다루고 있습니다: 임베딩은 의미 내에서 미세한 엔티티 또는 이벤트를 인식할 수 없기 때문에, 간단한 경우라도 근접 검색이 실패할 수 있습니다. 이러한 행동을 조사하기 위해, 먼저 새로운 평가 데이터 세트를 소개합니다. 이 데이터 세트는 이미지 캡처이며, 질문은 엔티티 또는 이벤트를 질문하는 형식의 문장으로 구성되어 있습니다. 0 shot 평가에 따르면 인코더는 이러한 미세한 매칭에 실패할 가능성이 있음을 보여줍니다. 이를 개선하기 위해, 데이터 생성 전략을 제안하여 인코더를 미세 조정하고 CapRetrieval에서 최고의 성능을 달성했습니다. 이 과정에서, 임베딩이 미세한 신호를 표현하기 위해 전체적인 의미와 일치하는 높은 Granularity의 두难問題을 인식했습니다. 이 연구에서 사용된 데이터 세트, 코드, 모델은 https://github.com/lxucs/CapRetrieval에 공개되어 있습니다.",
+      "upvotes": 1,
+      "discussionId": "684cfefc3b733ba3336873ac",
+      "ai_summary": "A new dataset named CapRetrieval is introduced to evaluate the ability of text encoders to recognize fine-grained entities and events, highlighting challenges in dense retrieval tasks.",
+      "ai_keywords": [
+        "text encoders",
+        "embeddings",
+        "fine-grained entities",
+        "events",
+        "dense retrieval",
+        "zero-shot evaluation",
+        "data generation strategies",
+        "granularity dilemma"
+      ]
+    },
+    "publishedAt": "2025-06-10T05:00:33.000Z",
+    "title": "Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity\n  Dilemma of Embeddings",
+    "summary": "This work focuses on an observed limitation of text encoders: embeddings may\nnot be able to recognize fine-grained entities or events within the semantics,\nresulting in failed dense retrieval on even simple cases. To examine such\nbehaviors, we first introduce a new evaluation dataset in Chinese, named\nCapRetrieval, whose passages are image captions, and queries are phrases\ninquiring entities or events in various forms. Zero-shot evaluation suggests\nthat encoders may fail on these fine-grained matching, regardless of training\nsources or model sizes. Aiming for enhancement, we proceed to finetune encoders\nwith our proposed data generation strategies, which obtains the best\nperformance on CapRetrieval. Within this process, we further identify an issue\nof granularity dilemma, a challenge for embeddings to express fine-grained\nsalience while aligning with overall semantics. Our dataset, code and models in\nthis work are publicly released at https://github.com/lxucs/CapRetrieval.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.08592.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "650f0fac11f3210cf7a8a849",
+      "avatarUrl": "/avatars/687d56c3a6d4f5cdb34e424cdcff954d.svg",
+      "fullname": "Leon Xu",
+      "name": "lxucs",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.08915",
+      "authors": [
+        {
+          "_id": "684fe3711d9b438aa39579da",
+          "user": {
+            "_id": "6508647f0c87331947c4a46d",
+            "avatarUrl": "/avatars/9ddaf4ec53729cb69f65b314a7f4a9a0.svg",
+            "isPro": false,
+            "fullname": "Ananthu Aniraj",
+            "user": "ananthu-aniraj",
+            "type": "user"
+          },
+          "name": "Ananthu Aniraj",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-16T09:52:38.316Z",
+          "hidden": false
+        },
+        {
+          "_id": "684fe3711d9b438aa39579db",
+          "name": "Cassio F. Dantas",
+          "hidden": false
+        },
+        {
+          "_id": "684fe3711d9b438aa39579dc",
+          "name": "Dino Ienco",
+          "hidden": false
+        },
+        {
+          "_id": "684fe3711d9b438aa39579dd",
+          "name": "Diego Marcos",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-10T15:41:22.000Z",
+      "submittedOnDailyAt": "2025-06-16T08:04:59.344Z",
+      "title": "인종의 신뢰성付き 어텐션 맵을 이용한 비전 트랜스포머",
+      "submittedOnDailyBy": {
+        "_id": "6508647f0c87331947c4a46d",
+        "avatarUrl": "/avatars/9ddaf4ec53729cb69f65b314a7f4a9a0.svg",
+        "isPro": false,
+        "fullname": "Ananthu Aniraj",
+        "user": "ananthu-aniraj",
+        "type": "user"
+      },
+      "summary": "이곳에서는 학습된 이진 어텐션 마스크를 사용하여, 발견된 이미지 영역만 예측에 영향을 미칠 수 있도록 하는 어텐션 기반의 방법을 소개합니다. 컨텍스트는 물체 인식에 강한 영향을 미칩니다. 때로는 편향을 일으키는 표현을 불러일으키며, 특히 물체가 분포 외의 배경에 나타날 때 이러한 현상이 흔합니다. 반면, 이미지 수준의 물체 중심적인 문제에서는 관련 영역을 특정한 것이 필요합니다. 이를 해결하기 위해, 우리는 2단계의 프레임워크를 제안합니다: 단계1은 전체 이미지를 처리하여 물체의 부분을 발견하고 문제에 관련된 영역을 특정합니다. 단계2는 입력 어텐션 마스크를 사용하여 이러한 영역에 제한하여 집중적인 분석을 가능하게 하며, 잠재적으로 짧은 패스인 정보를 필터링합니다. 두 단계는 공동 학습되어, 단계2는 단계1을 정밀화할 수 있습니다. 다양한 벤치마크에서 확장된 실험은 우리의 접근 방식이 버려진 간접적인 상관관계와 분포 외의 배경에 대한 강건성을 크게 향상시켰음을 보여줍니다.",
+      "upvotes": 0,
+      "discussionId": "684fe3711d9b438aa39579de",
+      "githubRepo": "https://github.com/ananthu-aniraj/ifam",
+      "ai_summary": "An attention-based method using learned binary masks improves robustness in object perception by focusing on relevant image regions while filtering out spurious information.",
+      "ai_keywords": [
+        "attention-based method",
+        "learned binary attention masks",
+        "object perception",
+        "context",
+        "out-of-distribution backgrounds",
+        "image-level object-centric tasks",
+        "task-relevant regions",
+        "two-stage framework",
+        "receptive field",
+        "joint training",
+        "robustness",
+        "spurious correlations"
+      ]
+    },
+    "publishedAt": "2025-06-10T11:41:22.000Z",
+    "title": "Inherently Faithful Attention Maps for Vision Transformers",
+    "summary": "We introduce an attention-based method that uses learned binary attention\nmasks to ensure that only attended image regions influence the prediction.\nContext can strongly affect object perception, sometimes leading to biased\nrepresentations, particularly when objects appear in out-of-distribution\nbackgrounds. At the same time, many image-level object-centric tasks require\nidentifying relevant regions, often requiring context. To address this\nconundrum, we propose a two-stage framework: stage 1 processes the full image\nto discover object parts and identify task-relevant regions, while stage 2\nleverages input attention masking to restrict its receptive field to these\nregions, enabling a focused analysis while filtering out potentially spurious\ninformation. Both stages are trained jointly, allowing stage 2 to refine stage\n1. Extensive experiments across diverse benchmarks demonstrate that our\napproach significantly improves robustness against spurious correlations and\nout-of-distribution backgrounds.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.08915.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6508647f0c87331947c4a46d",
+      "avatarUrl": "/avatars/9ddaf4ec53729cb69f65b314a7f4a9a0.svg",
+      "fullname": "Ananthu Aniraj",
+      "name": "ananthu-aniraj",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
