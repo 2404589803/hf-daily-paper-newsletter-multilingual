@@ -1,0 +1,2444 @@
+[
+  {
+    "paper": {
+      "id": "2506.14429",
+      "authors": [
+        {
+          "_id": "68521a9a0164cd131671045c",
+          "name": "Xiaoran Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68521a9a0164cd131671045d",
+          "name": "Zhigeng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68521a9a0164cd131671045e",
+          "name": "Zengfeng Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68521a9a0164cd131671045f",
+          "name": "Qipeng Guo",
+          "hidden": false
+        },
+        {
+          "_id": "68521a9a0164cd1316710460",
+          "name": "Ziwei He",
+          "hidden": false
+        },
+        {
+          "_id": "68521a9a0164cd1316710461",
+          "name": "Xipeng Qiu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-17T11:45:37.000Z",
+      "submittedOnDailyAt": "2025-06-18T00:18:23.135Z",
+      "title": "LongLLaMA: 긴 문맥 능력을 해방하는 분산 LLM",
+      "submittedOnDailyBy": {
+        "_id": "64f033ef82c6eea604c4da8b",
+        "avatarUrl": "/avatars/51b93fea7fd68b4274ee03701245dcca.svg",
+        "isPro": false,
+        "fullname": "Liu Xiaoran",
+        "user": "LiuXR",
+        "type": "user"
+      },
+      "summary": "大語言拡散モデル（Large Language Diffusion Models, LLMs）는 NLP 연구의 중요한 초점으로 등장하고 있으며, 스케일라빌리티와 하류 태스크의 성능에 대한 큰 노력을 기울였습니다. 그러나 이들의 긴 문맥 능력은 조사되지 않았고, 체계적인 분석 및 문맥 확장 방법들이 부족합니다. 본 연구에서는 긴 문맥 성능을 비교하기 위한 첫 번째 체계적인 조사를 수행합니다. 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴 문맥 성능을 비교하기 위해 긴",
+      "upvotes": 27,
+      "discussionId": "68521a9a0164cd1316710462",
+      "ai_summary": "This study investigates long-context performance of diffusion LLMs compared to auto-regressive LLMs, identifies their unique characteristics, and proposes LongLLaDA, a training-free method for extending context windows.",
+      "ai_keywords": [
+        "diffusion LLMs",
+        "auto-regressive LLMs",
+        "stable perplexity",
+        "local perception",
+        "Rotary Position Embedding (RoPE) scaling theory",
+        "LongLLaDA",
+        "NTK-based RoPE extrapolation",
+        "context extrapolation scaling laws",
+        "long-context tasks"
+      ]
+    },
+    "publishedAt": "2025-06-17T07:45:37.000Z",
+    "title": "LongLLaDA: Unlocking Long Context Capabilities in Diffusion LLMs",
+    "summary": "Large Language Diffusion Models, or diffusion LLMs, have emerged as a\nsignificant focus in NLP research, with substantial effort directed toward\nunderstanding their scalability and downstream task performance. However, their\nlong-context capabilities remain unexplored, lacking systematic analysis or\nmethods for context extension. In this work, we present the first systematic\ninvestigation comparing the long-context performance of diffusion LLMs and\ntraditional auto-regressive LLMs. We first identify a unique characteristic of\ndiffusion LLMs, unlike auto-regressive LLMs, they maintain remarkably\n\\textit{stable perplexity} during direct context extrapolation.\nFurthermore, where auto-regressive models fail outright during the\nNeedle-In-A-Haystack task with context exceeding their pretrained length, we\ndiscover diffusion LLMs exhibit a distinct \\textit{local perception}\nphenomenon, enabling successful retrieval from recent context segments. We\nexplain both phenomena through the lens of Rotary Position Embedding (RoPE)\nscaling theory. Building on these observations, we propose LongLLaDA, a\ntraining-free method that integrates LLaDA with the NTK-based RoPE\nextrapolation. Our results validate that established extrapolation scaling laws\nremain effective for extending the context windows of diffusion LLMs.\nFurthermore, we identify long-context tasks where diffusion LLMs outperform\nauto-regressive LLMs and others where they fall short. Consequently, this study\nestablishes the first context extrapolation method for diffusion LLMs while\nproviding essential theoretical insights and empirical benchmarks critical for\nadvancing future research on long-context diffusion LLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14429.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64f033ef82c6eea604c4da8b",
+      "avatarUrl": "/avatars/51b93fea7fd68b4274ee03701245dcca.svg",
+      "fullname": "Liu Xiaoran",
+      "name": "LiuXR",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.12928",
+      "authors": [
+        {
+          "_id": "6851dd060164cd13167103d7",
+          "name": "King Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103d8",
+          "name": "Hanhao Li",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103d9",
+          "name": "Siwei Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103da",
+          "name": "Tianshun Xing",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103db",
+          "name": "Dehua Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103dc",
+          "name": "Xiangru Tang",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103dd",
+          "name": "Minghao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103de",
+          "name": "Jian Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103df",
+          "name": "Jiaheng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103e0",
+          "name": "Yuchen Eleanor Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103e1",
+          "name": "Changwang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103e2",
+          "name": "Chenghua Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103e3",
+          "name": "Jun Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103e4",
+          "name": "Ge Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6851dd060164cd13167103e5",
+          "name": "Wangchunshu Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-15T17:59:47.000Z",
+      "submittedOnDailyAt": "2025-06-18T04:21:02.464Z",
+      "title": "스케일링 테스트 시간 컴퓨트의 LLM 에이전트",
+      "submittedOnDailyBy": {
+        "_id": "638efcf4c67af472d316d424",
+        "avatarUrl": "/avatars/97a57859d7d87a3a8f1bb41d32a72bc2.svg",
+        "isPro": false,
+        "fullname": "Ge Zhang",
+        "user": "zhangysk",
+        "type": "user"
+      },
+      "summary": "측정 시 스케일링의 계산량을 확장하는 것은 대규모 언어 모델(LLMs)의 추론 능력 향상에 매우 성공적으로 사용되고 있습니다. 본 연구에서는 언어 에이전트에 대해 측정 시 스케일링 방법의 적용을 처음으로 체계적인 조사를 수행하고 그 효과 평가하는 것을 목표로 합니다. 특히, 다음과 같은 측정 시 스케일링 전략에 대해 조사하고 있습니다: 1. 병렬 샘플링 알고리즘; 2. 순차 수정 전략; 3. 검증 데이터와 결과를 통합하는 방법; 4. 로딩 아웃의 다양화 전략. 언어 에이전트에 측정 시 스케일링을 적용하는 경우의 다양한 설계 전략의 영향을 상세히 분석하고 다음과 같은 결과를 얻었습니다: 1. 측정 시 스케일링의 계산량을 확장하면 에이전트의 성능을 향상시킬 수 있습니다. 2. 언제 반省할 지는 에이전트에 매우 중요합니다. 3. 서로 다른 검증 방식과 결과를 통합하는 방법 중 리스트方式 모듈이 가장 효과적이며 4. 로딩 아웃의 다양화는 에이전트의 태스크 성능에 긍정적인 영향을 미칩니다.",
+      "upvotes": 26,
+      "discussionId": "6851dd060164cd13167103e6",
+      "ai_summary": "Systematic exploration of test-time scaling methods in large language agents reveals that computational scaling improves performance, especially through parallel sampling, sequential revision, effective verification, and increased rollout diversity.",
+      "ai_keywords": [
+        "parallel sampling algorithms",
+        "sequential revision strategies",
+        "verifiers",
+        "merging methods",
+        "diversified rollouts",
+        "test-time scaling",
+        "large language models"
+      ]
+    },
+    "publishedAt": "2025-06-15T13:59:47.000Z",
+    "title": "Scaling Test-time Compute for LLM Agents",
+    "summary": "Scaling test time compute has shown remarkable success in improving the\nreasoning abilities of large language models (LLMs). In this work, we conduct\nthe first systematic exploration of applying test-time scaling methods to\nlanguage agents and investigate the extent to which it improves their\neffectiveness. Specifically, we explore different test-time scaling strategies,\nincluding: (1) parallel sampling algorithms; (2) sequential revision\nstrategies; (3) verifiers and merging methods; (4)strategies for diversifying\nrollouts.We carefully analyze and ablate the impact of different design\nstrategies on applying test-time scaling on language agents, and have follow\nfindings: 1. Scaling test time compute could improve the performance of agents.\n2. Knowing when to reflect is important for agents. 3. Among different\nverification and result merging approaches, the list-wise method performs best.\n4. Increasing diversified rollouts exerts a positive effect on the agent's task\nperformance.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.12928.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "638efcf4c67af472d316d424",
+      "avatarUrl": "/avatars/97a57859d7d87a3a8f1bb41d32a72bc2.svg",
+      "fullname": "Ge Zhang",
+      "name": "zhangysk",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 49
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.13642",
+      "authors": [
+        {
+          "_id": "685129448a68fee7f6ba4c04",
+          "name": "Shaolei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685129448a68fee7f6ba4c05",
+          "name": "Shoutao Guo",
+          "hidden": false
+        },
+        {
+          "_id": "685129448a68fee7f6ba4c06",
+          "name": "Qingkai Fang",
+          "hidden": false
+        },
+        {
+          "_id": "685129448a68fee7f6ba4c07",
+          "name": "Yan Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "685129448a68fee7f6ba4c08",
+          "name": "Yang Feng",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64803e5dc57f629056c601f1/MBm95m2RAX6iKKBaKTma8.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/64803e5dc57f629056c601f1/PoLupV32gI1iLxILZccQS.mp4"
+      ],
+      "publishedAt": "2025-06-16T16:06:45.000Z",
+      "submittedOnDailyAt": "2025-06-18T00:16:02.465Z",
+      "title": "스트리م・オムニ：동시 다모달 인터랙션 및 대규모 언어・시각・음향 모델",
+      "submittedOnDailyBy": {
+        "_id": "64803e5dc57f629056c601f1",
+        "avatarUrl": "/avatars/a9e9c97c70714e3a29bef2cf929ee6b3.svg",
+        "isPro": false,
+        "fullname": "Shaolei Zhang",
+        "user": "zhangshaolei",
+        "type": "user"
+      },
+      "summary": "GPT-4o와 같은 대형 다모달 모델(LMMs)의 등장은 텍스트, 시각, 음성 모델의 통합을 지원하면서, 더 유연한 다모달 인터랙션의 연구를 촉진하고 있습니다. 현재의 LMMs는 일반적으로 모델의 시퀀스 차원과 모델의 표현을 연결하여, 대규모 언어 모델(LLM)의 백본에 입력합니다. 시퀀스 차원의 연결은 모델의 통합에 간단하지만, 모델의 대응을 학습하기 위해 큰 데이터가 필요합니다. 본 논문에서는 모델의 관계를 더 목적적으로 모델화하고, 더 효율적이고 유연한 모델의 대응을 실현하고자 합니다. 이를 위해, 효율적인 모델의 대응을 갖는 대규모 언어-시각-음성 모델인 Stream-Omni를 제안합니다. Stream-Omni는 LLM을 백본으로 사용하며, 시각과 음성은 텍스트에 기초하여 대응합니다. 시각이 텍스트와 의미적으로 보완적이 되는 경우, Stream-Omni는 시퀀스 차원의 연결을 사용하여 시각-텍스트의 대응을 실현합니다. 음성이 텍스트와 의미적으로 일치하는 경우, Stream-Omni는 CTC 기반의 레이어 차원의 매핑을 사용하여 음성-텍스트의 대응을 실현합니다. 이렇게, Stream-Omni는 데이터량(특히 음성)을 적게도 모델의 대응을 구현할 수 있으며, 텍스트의 기능은 모델의 다른 모델로 전달할 수 있습니다. 다양한 벤치마크에서의 실험은, Stream-Omni가 시각 이해, 음성 인터랙션, 시각 기반의 음성 인터랙션 태스크에 강력한 성능을 보여주고 있습니다. 레이어 차원의 매핑에 의해, Stream-Omni는 음성 인터랙션 중, ASR 번역이나 모델의 응답 등 중간 텍스트 출력을 동시에 제공하여, 사용자에게 상세한 다모달 경험을 제공합니다.",
+      "upvotes": 18,
+      "discussionId": "685129458a68fee7f6ba4c09",
+      "projectPage": "https://github.com/ictnlp/Stream-Omni",
+      "githubRepo": "https://github.com/ictnlp/Stream-Omni",
+      "ai_summary": "Stream-Omni, a large multimodal model, integrates text, vision, and speech by efficiently aligning modalities using sequence-dimension concatenation for vision and layer-dimension mapping for speech, achieving strong performance with less data.",
+      "ai_keywords": [
+        "GPT-4o-like",
+        "large multimodal models",
+        "LLM backbone",
+        "modality alignments",
+        "sequence-dimension concatenation",
+        "CTC-based layer-dimension mapping",
+        "visual understanding",
+        "speech interaction",
+        "vision-grounded speech interaction",
+        "ASR transcriptions",
+        "model responses"
+      ]
+    },
+    "publishedAt": "2025-06-16T12:06:45.000Z",
+    "title": "Stream-Omni: Simultaneous Multimodal Interactions with Large\n  Language-Vision-Speech Model",
+    "summary": "The emergence of GPT-4o-like large multimodal models (LMMs) has raised the\nexploration of integrating text, vision, and speech modalities to support more\nflexible multimodal interaction. Existing LMMs typically concatenate\nrepresentation of modalities along the sequence dimension and feed them into a\nlarge language model (LLM) backbone. While sequence-dimension concatenation is\nstraightforward for modality integration, it often relies heavily on\nlarge-scale data to learn modality alignments. In this paper, we aim to model\nthe relationships between modalities more purposefully, thereby achieving more\nefficient and flexible modality alignments. To this end, we propose\nStream-Omni, a large language-vision-speech model with efficient modality\nalignments, which can simultaneously support interactions under various\nmodality combinations. Stream-Omni employs LLM as the backbone and aligns the\nvision and speech to the text based on their relationships. For vision that is\nsemantically complementary to text, Stream-Omni uses sequence-dimension\nconcatenation to achieve vision-text alignment. For speech that is semantically\nconsistent with text, Stream-Omni introduces a CTC-based layer-dimension\nmapping to achieve speech-text alignment. In this way, Stream-Omni can achieve\nmodality alignments with less data (especially speech), enabling the transfer\nof text capabilities to other modalities. Experiments on various benchmarks\ndemonstrate that Stream-Omni achieves strong performance on visual\nunderstanding, speech interaction, and vision-grounded speech interaction\ntasks. Owing to the layer-dimensional mapping, Stream-Omni can simultaneously\nprovide intermediate text outputs (such as ASR transcriptions and model\nresponses) during speech interaction, offering users a comprehensive multimodal\nexperience.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64803e5dc57f629056c601f1/MBm95m2RAX6iKKBaKTma8.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/64803e5dc57f629056c601f1/PoLupV32gI1iLxILZccQS.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.13642.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64803e5dc57f629056c601f1",
+      "avatarUrl": "/avatars/a9e9c97c70714e3a29bef2cf929ee6b3.svg",
+      "fullname": "Shaolei Zhang",
+      "name": "zhangshaolei",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.14234",
+      "authors": [
+        {
+          "_id": "68522d7f0164cd13167104ee",
+          "name": "Md Tanzib Hosain",
+          "hidden": false
+        },
+        {
+          "_id": "68522d7f0164cd13167104ef",
+          "name": "Salman Rahman",
+          "hidden": false
+        },
+        {
+          "_id": "68522d7f0164cd13167104f0",
+          "name": "Md Kishor Morol",
+          "hidden": false
+        },
+        {
+          "_id": "68522d7f0164cd13167104f1",
+          "name": "Md Rizwan Parvez",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-17T06:47:19.000Z",
+      "submittedOnDailyAt": "2025-06-18T01:39:00.207Z",
+      "title": "솔버:协同作用의 효과적인 논리론을 통해, 올림픽 팀처럼 협력하여 해결하기 위한 홀리스틱한 경험 학습을 활용합니다.",
+      "submittedOnDailyBy": {
+        "_id": "65ae1c4468139e3c42973fe4",
+        "avatarUrl": "/avatars/b065a857dd763410caadea37a2dc01c4.svg",
+        "isPro": false,
+        "fullname": "Md Rizwan Parvez",
+        "user": "mparvez",
+        "type": "user"
+      },
+      "summary": "현재 복잡한 논리론리에서 놀라운 진전을 감안하더라도, 현재의 대규모 언어 모델(LLMs)은 일반적으로 독립적으로 동작하며, 문제에 대한 독립적인 시도로 취급되고, 경험적 지식의 축적이나 통합을 하지 않는다. 대조적으로, 올림픽이나 프로그래밍 대회 팀과 같은 전문적인 문제 해결자들은 풍부한 경험을 활용하고 있는: 훈련을 받아야 하는 지도를 받고, 과거의 문제를 통해 직감에 훈련을 받음, 도구의 사용과 라이브러리 기능의 지식을 활용하고, 동료의 전문인들과 함께 기술과 경험을 기반으로 전략을 적절하게 변경하고, 시도와 실패를 반복하여 논리론리를 개선하며, 컴페시션 중 다른 관련 문제에서도 배울 수 있다. Xolver라는 훈련 없이 다수의 에이전트의 논리론리 프레임워크를 소개합니다. Xolver는, LLM을 블랙박스로 보고, 지속적이고 진화적인 경험의 전체적인 이미지를 가지는 메모리를 부여합니다. Xolver는, 외부와 자신의 검색, 도구의 사용, 공동 처리, 에이전트 주도 평가, 반복적인 개선을 포함한 다양한 경험을 통합하고 있습니다. Xolver는, 추론 시 관련 전략, 코드 프레임, 추상적인 논리론리 패턴을 학습하고, 해결책을 처음부터 생성하는 것을 피하고, 독립적인 추론으로부터 경험에 기반한 언어 에이전트로의 전환을 보여주며, Xolver는, 오픈 웨이트 모델과 프라이빗 모델을 모두 기반으로 구축되어 있지만, 전문적인 논리론리 에이전트를 초과하는 경험적 성능을 유지하고 있습니다. Xolver는, 가벼운 백본(예: QWQ-32B)에서도, Qwen3-235B, Gemini 2.5 Pro, o3, o4-mini-highなど의 先進モデルを超えることが多くあります. Xolver는, o3-mini-high를 사용하여, GSM8K(98.1%), AIME'24(94.4%), AIME'25(93.7%), Math-500(99.8%), LiveCodeBench-V5(91.6%)で 새로운 최고 결과를 얻으며, 경험적인 학습을 핵심으로 하는 일반적인 에이전트의 개발에 대한 발전을 보여주며, 코드와 데이터는, https://kagnlp.github.io/xolver.github.io/에서 사용 가능합니다.",
+      "upvotes": 17,
+      "discussionId": "68522d7f0164cd13167104f2",
+      "ai_summary": "Xolver, a multi-agent reasoning framework, enhances large language models with persistent memory and diverse experience modalities, improving performance on complex reasoning tasks by avoiding generating solutions from scratch.",
+      "ai_keywords": [
+        "large language models",
+        "LLMs",
+        "multi-agent reasoning framework",
+        "persistent memory",
+        "experience-aware language agents",
+        "external and self-retrieval",
+        "tool use",
+        "collaborative interactions",
+        "agent-driven evaluation",
+        "iterative refinement",
+        "GSM8K",
+        "AIME'24",
+        "AIME'25",
+        "Math-500",
+        "LiveCodeBench-V5",
+        "generalist agents",
+        "expert-level reasoning"
+      ]
+    },
+    "publishedAt": "2025-06-17T02:47:19.000Z",
+    "title": "Xolver: Multi-Agent Reasoning with Holistic Experience Learning Just\n  Like an Olympiad Team",
+    "summary": "Despite impressive progress on complex reasoning, current large language\nmodels (LLMs) typically operate in isolation - treating each problem as an\nindependent attempt, without accumulating or integrating experiential\nknowledge. In contrast, expert problem solvers - such as Olympiad or\nprogramming contest teams - leverage a rich tapestry of experiences: absorbing\nmentorship from coaches, developing intuition from past problems, leveraging\nknowledge of tool usage and library functionality, adapting strategies based on\nthe expertise and experiences of peers, continuously refining their reasoning\nthrough trial and error, and learning from other related problems even during\ncompetition. We introduce Xolver, a training-free multi-agent reasoning\nframework that equips a black-box LLM with a persistent, evolving memory of\nholistic experience. Xolver integrates diverse experience modalities, including\nexternal and self-retrieval, tool use, collaborative interactions, agent-driven\nevaluation, and iterative refinement. By learning from relevant strategies,\ncode fragments, and abstract reasoning patterns at inference time, Xolver\navoids generating solutions from scratch - marking a transition from isolated\ninference toward experience-aware language agents. Built on both open-weight\nand proprietary models, Xolver consistently outperforms specialized reasoning\nagents. Even with lightweight backbones (e.g., QWQ-32B), it often surpasses\nadvanced models including Qwen3-235B, Gemini 2.5 Pro, o3, and o4-mini-high.\nWith o3-mini-high, it achieves new best results on GSM8K (98.1%), AIME'24\n(94.4%), AIME'25 (93.7%), Math-500 (99.8%), and LiveCodeBench-V5 (91.6%) -\nhighlighting holistic experience learning as a key step toward generalist\nagents capable of expert-level reasoning. Code and data are available at\nhttps://kagnlp.github.io/xolver.github.io/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14234.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65ae1c4468139e3c42973fe4",
+      "avatarUrl": "/avatars/b065a857dd763410caadea37a2dc01c4.svg",
+      "fullname": "Md Rizwan Parvez",
+      "name": "mparvez",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.13363",
+      "authors": [
+        {
+          "_id": "685234100164cd1316710508",
+          "name": "Lijun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685234100164cd1316710509",
+          "name": "Ruiyang Li",
+          "hidden": false
+        },
+        {
+          "_id": "685234100164cd131671050a",
+          "name": "Zhaocheng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685234100164cd131671050b",
+          "name": "Chenglin Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "685234100164cd131671050c",
+          "name": "Chong Li",
+          "hidden": false
+        },
+        {
+          "_id": "685234100164cd131671050d",
+          "name": "Jiehan Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "685234100164cd131671050e",
+          "name": "Qiang Ju",
+          "hidden": false
+        },
+        {
+          "_id": "685234100164cd131671050f",
+          "name": "Jian Xie",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/633e570be7d5ce7bfe037a53/-7W-jpcvZwQ046FQHgVdY.qt"
+      ],
+      "publishedAt": "2025-06-16T11:10:25.000Z",
+      "submittedOnDailyAt": "2025-06-18T02:12:29.534Z",
+      "title": "Efficient Medical VIE via Reinforcement Learning\n\n이 문장은 \"Reinforcement Learning을 통해 효율적인 의료 VIE\"라는 의미를 가지고 있습니다. \"VIE\"는 \"View\" 또는 \"Interface\"를 의미할 수 있으며, 이 논문은 reinforcement learning을 사용하여 의료 분야에서 효율적인 VIE를 제공하는 방법을 다루는 것으로 추정됩니다. reinforcement learning은 인공지능 분야에서 중요한 기술로, 학습을 통해 최적의 행동을 선택하는 방법을 제공합니다. 이 논문은 이러한 기술을 의료 VIE에 적용한 효율적인 방법을 제시하고 있습니다.",
+      "submittedOnDailyBy": {
+        "_id": "633e570be7d5ce7bfe037a53",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633e570be7d5ce7bfe037a53/zV8ULv4Mu7YIGZ8D3JtmK.jpeg",
+        "isPro": false,
+        "fullname": "Zhaocheng Liu",
+        "user": "zhaocheng",
+        "type": "user"
+      },
+      "summary": "Visual Information Extraction (VIE)는 의료 애플리케이션과 같은 보고서 분석이나 온라인 상담에 필요한 JSON 등 구조화된 포맷으로 무구조화된 문서 이미지를 변환하는 데 필요합니다. 기존의 방법은 OCR와 언어 모델을 기반으로 했지만, 끝말부터의 다모달 구조 모델은 JSON을 직접 생성할 수 있습니다. 그러나 의료 VIE의 효과성은 영역 고유의 스키마와 고가의 어노테이션 비용으로 제한됩니다. 우리의 접근법은 Verifiable Rewards (RLVR) 프레임워크를 기반으로, 100건의 어노테이션 샘플을 사용하여 이러한 문제를 해결합니다. 우리의 접근법은 데이터 세트의 다양성을 보장하고, 정확성과 재현율의 균형을 유지하는 증명 가능한 보상 구조를 사용하여 헤라미닝을 줄이고 영역 커버를 개선하고 이유론을 강화하는 새로운 샘플링 전략을 제안하고 있습니다. Qwen2.5-VL-7B를 RLVR 방법으로 微調節하여 의료 VIE 태스크에서 가장 先端的한 성능을 달성하고 F1, 정확도, 재현율을 크게 향상시켰습니다. 우리의 모델은 의료 데이터 세트와 유사한 태스크에서 뛰어나하지만, 다른 태스크에서 성능이 떨어지고 영역 고유의 최적화의 필요성을 강조하고 있습니다. 사례 연구는 VIE의 훈련 및 추론 시 이유론의 가치를 더욱 강조하고 있습니다.",
+      "upvotes": 17,
+      "discussionId": "685234100164cd1316710510",
+      "ai_summary": "An RLVR framework using fine-tuned Qwen2.5-VL-7B achieves state-of-the-art performance in medical VIE with limited annotated samples, enhancing reasoning and balance between precision and recall.",
+      "ai_keywords": [
+        "Reinforcement Learning with Verifiable Rewards (RLVR)",
+        "JSON generation",
+        "multimodal models",
+        "dataset diversity",
+        "precision-recall reward mechanism",
+        "hallucinations",
+        "field coverage",
+        "sampling strategies",
+        "fine-tuning",
+        "Qwen2.5-VL-7B",
+        "F1 score",
+        "case studies"
+      ]
+    },
+    "publishedAt": "2025-06-16T07:10:25.000Z",
+    "title": "Efficient Medical VIE via Reinforcement Learning",
+    "summary": "Visual Information Extraction (VIE) converts unstructured document images\ninto structured formats like JSON, critical for medical applications such as\nreport analysis and online consultations. Traditional methods rely on OCR and\nlanguage models, while end-to-end multimodal models offer direct JSON\ngeneration. However, domain-specific schemas and high annotation costs limit\ntheir effectiveness in medical VIE. We base our approach on the Reinforcement\nLearning with Verifiable Rewards (RLVR) framework to address these challenges\nusing only 100 annotated samples. Our approach ensures dataset diversity, a\nbalanced precision-recall reward mechanism to reduce hallucinations and improve\nfield coverage, and innovative sampling strategies to enhance reasoning\ncapabilities. Fine-tuning Qwen2.5-VL-7B with our RLVR method, we achieve\nstate-of-the-art performance on medical VIE tasks, significantly improving F1,\nprecision, and recall. While our models excel on tasks similar to medical\ndatasets, performance drops on dissimilar tasks, highlighting the need for\ndomain-specific optimization. Case studies further demonstrate the value of\nreasoning during training and inference for VIE.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/633e570be7d5ce7bfe037a53/-7W-jpcvZwQ046FQHgVdY.qt"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.13363.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "633e570be7d5ce7bfe037a53",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/633e570be7d5ce7bfe037a53/zV8ULv4Mu7YIGZ8D3JtmK.jpeg",
+      "fullname": "Zhaocheng Liu",
+      "name": "zhaocheng",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.14758",
+      "authors": [
+        {
+          "_id": "685239610164cd1316710553",
+          "user": {
+            "_id": "649e6761f9134a06ed1e0cea",
+            "avatarUrl": "/avatars/00b5dcb744c54a4aa18fe08efd70d6ff.svg",
+            "isPro": false,
+            "fullname": "Daixuan Cheng",
+            "user": "daixuancheng",
+            "type": "user"
+          },
+          "name": "Daixuan Cheng",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-06-18T06:57:21.864Z",
+          "hidden": false
+        },
+        {
+          "_id": "685239610164cd1316710554",
+          "name": "Shaohan Huang",
+          "hidden": false
+        },
+        {
+          "_id": "685239610164cd1316710555",
+          "name": "Xuekai Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "685239610164cd1316710556",
+          "name": "Bo Dai",
+          "hidden": false
+        },
+        {
+          "_id": "685239610164cd1316710557",
+          "name": "Wayne Xin Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "685239610164cd1316710558",
+          "name": "Zhenliang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685239610164cd1316710559",
+          "name": "Furu Wei",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/649e6761f9134a06ed1e0cea/UekvaawzSgcb5I120mngD.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/649e6761f9134a06ed1e0cea/UbAwRMdcT31OV6ORPZG52.png"
+      ],
+      "publishedAt": "2025-06-17T17:54:03.000Z",
+      "submittedOnDailyAt": "2025-06-18T02:33:04.259Z",
+      "title": "탐색의 이유: 엔트로피로부터의 시각\n\n(注意: 翻译结果已保持专业性和准确性，但由于原文使用了日语汉字，翻译时保留了原文的汉字，以确保准确性。如果需要完全使用韩语汉字，可以进一步调整。)",
+      "submittedOnDailyBy": {
+        "_id": "649e6761f9134a06ed1e0cea",
+        "avatarUrl": "/avatars/00b5dcb744c54a4aa18fe08efd70d6ff.svg",
+        "isPro": false,
+        "fullname": "Daixuan Cheng",
+        "user": "daixuancheng",
+        "type": "user"
+      },
+      "summary": "볼링 탐색과 채굴의 균형을 强化学習(RL)의 핵심 목표입니다. 최근의 언어 모델(LM)의 논리론의 향상에 따라 많은 방법이 채굴에 편향되어 있으며, 성능의 슬라이드(slide)에 자주 직면합니다. 본 논문에서는 RL에서 탐색의 신호로서의 엔트로피를 재평가하고, LM에서 탐색적인 논리론과의 관계를 조사합니다. 실험적 분석을 통해, 높은 엔트로피 영역과 탐색적인 논리론 행동의 3가지 종류와 강한 긍정적인 상관관계를 밝혀냈습니다: (1) 로직스텝을 결정하거나 결부하는 포인트 토큰, (2) 자각증정과 보정 등 반성적인 행동, (3) 기초 LM이 가볍게 탐색되지 않는 희귀한 행동. 이를 통해, 표준의 RL에 최소한의 변경으로 한 줄의 코드를 추가하는 방법을 제안합니다: 엔트로피 기반의 항을 우선 함수에 추가합니다. 전통적인 최대 엔트로피法是 불확실성을 촉발하여 탐색을 촉발하고, 이는 긴 또는 깊은 논리론 연결을 촉발하여 탐색을 촉발하는 것입니다. 특히, 우리 방법은 LM의 논리론 능력의 상한을 추정하는 Pass@K 메트릭에 의해 상당한 이득을 달성하고, 극단적으로 큰 K 값으로 평가되어도, LM의 논리론의 경계를 초월할 수 있습니다.",
+      "upvotes": 16,
+      "discussionId": "685239610164cd131671055a",
+      "ai_summary": "Introducing an entropy-based term to the advantage function in reinforcement learning enhances exploratory reasoning in language models, leading to improved performance on complex reasoning tasks.",
+      "ai_keywords": [
+        "reinforcement learning",
+        "entropy",
+        "exploratory reasoning",
+        "pivotal tokens",
+        "reflective actions",
+        "rare behaviors",
+        "advantage function",
+        "Pass@K"
+      ]
+    },
+    "publishedAt": "2025-06-17T13:54:03.000Z",
+    "title": "Reasoning with Exploration: An Entropy Perspective",
+    "summary": "Balancing exploration and exploitation is a central goal in reinforcement\nlearning (RL). Despite recent advances in enhancing language model (LM)\nreasoning, most methods lean toward exploitation, and increasingly encounter\nperformance plateaus. In this work, we revisit entropy -- a signal of\nexploration in RL -- and examine its relationship to exploratory reasoning in\nLMs. Through empirical analysis, we uncover strong positive correlations\nbetween high-entropy regions and three types of exploratory reasoning actions:\n(1) pivotal tokens that determine or connect logical steps, (2) reflective\nactions such as self-verification and correction, and (3) rare behaviors\nunder-explored by the base LMs. Motivated by this, we introduce a minimal\nmodification to standard RL with only one line of code: augmenting the\nadvantage function with an entropy-based term. Unlike traditional\nmaximum-entropy methods which encourage exploration by promoting uncertainty,\nwe encourage exploration by promoting longer and deeper reasoning chains.\nNotably, our method achieves significant gains on the Pass@K metric -- an\nupper-bound estimator of LM reasoning capabilities -- even when evaluated with\nextremely large K values, pushing the boundaries of LM reasoning.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/649e6761f9134a06ed1e0cea/UekvaawzSgcb5I120mngD.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/649e6761f9134a06ed1e0cea/UbAwRMdcT31OV6ORPZG52.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14758.png",
+    "numComments": 3,
+    "submittedBy": {
+      "_id": "649e6761f9134a06ed1e0cea",
+      "avatarUrl": "/avatars/00b5dcb744c54a4aa18fe08efd70d6ff.svg",
+      "fullname": "Daixuan Cheng",
+      "name": "daixuancheng",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.14245",
+      "authors": [
+        {
+          "_id": "68521c2a0164cd131671046b",
+          "name": "Xumeng Wen",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd131671046c",
+          "name": "Zihan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd131671046d",
+          "user": {
+            "_id": "64a7a2bad001860e0c34f7f2",
+            "avatarUrl": "/avatars/2433104071e4ae1c3e2d755d81d7964b.svg",
+            "isPro": false,
+            "fullname": "Shun Zheng",
+            "user": "shun-zheng",
+            "type": "user"
+          },
+          "name": "Shun Zheng",
+          "status": "extracted_confirmed",
+          "statusLastChangedAt": "2025-06-18T02:37:06.379Z",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd131671046e",
+          "name": "Zhijian Xu",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd131671046f",
+          "name": "Shengyu Ye",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd1316710470",
+          "name": "Zhirong Wu",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd1316710471",
+          "name": "Xiao Liang",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd1316710472",
+          "name": "Yang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd1316710473",
+          "name": "Junjie Li",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd1316710474",
+          "name": "Ziming Miao",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd1316710475",
+          "name": "Jiang Bian",
+          "hidden": false
+        },
+        {
+          "_id": "68521c2a0164cd1316710476",
+          "name": "Mao Yang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64a7a2bad001860e0c34f7f2/zpklFaaRznQyEa0t9Ji70.png"
+      ],
+      "publishedAt": "2025-06-17T07:06:56.000Z",
+      "submittedOnDailyAt": "2025-06-18T01:24:22.712Z",
+      "title": "실험적인 리워드를 증명 가능한 방식으로 학습한 강화학습은 기초 LLM에서 정확한 추론을 실질적으로 권장합니다.",
+      "submittedOnDailyBy": {
+        "_id": "64a7a2bad001860e0c34f7f2",
+        "avatarUrl": "/avatars/2433104071e4ae1c3e2d755d81d7964b.svg",
+        "isPro": false,
+        "fullname": "Shun Zheng",
+        "user": "shun-zheng",
+        "type": "user"
+      },
+      "summary": "RLVR（Verifiable Rewards를 사용한 Reinforcement Learning）는 Large Language Models (LLMs)의 논리 능력의 발전을 위해 기대되는 새로운 패러다임으로 등장했습니다. 그러나 이 효과성에 중요한 모순이 존재합니다: RLVR로 조정된 모델은 Pass@K 측정을 통해 의사결정의 탐색에 대한 기초 모델보다 떨어지고, RLVR는 논리다양성을 잃지 않고 기존 논리 경로를 재평가하는 것으로 가정되어 왔습니다. 본 연구에서는 이 모순을 해결하기 위해 문제를 특정한 원인을 찾았습니다: Pass@K 측정은 논리를 정확하게 평가할 수 없다는 점을 보여주었습니다. 이는 올바른 최종적인 답을 제공하여 인정받기 때문에, 불정확한 컨텍스트나 불완전한 컨텍스트(CoTs)가 발생할 수 있다는 것입니다. 이에대해 우리는 논리 경로와 최종적인 답이 모두 정확하다고 평가하는 더 정확한 평가 측정인 CoT-Pass@K를 도입했습니다. 우리는 RLVR는 전통적인 RL과 다르게 논리의 일관성을 장려하는 것을 특별히 기능시키는 새로운 이론적 기반을 제공했습니다. 우리의 실험 결과를 통해, CoT-Pass@K를 사용하여 RLVR는 모든 K의 값에 대해 올바른 논리의 일반화를 장려하는 것을 관찰했습니다. 또한 학습 동역학을 분석함으로써, 이러한 향상은 학습 과정의 초기 단계에서 나타나고, 평활하게 일반화되어 있습니다. 우리의 연구는 RLVR의 역할을 명확히하고 신뢰할 수 있는 평가 방법과 그의 진정한 실력을 인식하는 것을 확인했습니다.",
+      "upvotes": 12,
+      "discussionId": "68521c2a0164cd1316710477",
+      "ai_summary": "RLVR advances machine reasoning by incentivizing correct and logical thought chains, addressing limitations identified by a more precise evaluation metric, $CoT$-$Pass@K$.",
+      "ai_keywords": [
+        "Reinforcement Learning with Verifiable Rewards",
+        "LLMS",
+        "Pass@K",
+        "chains of thought",
+        "CoT-Pass@K",
+        "logical integrity",
+        "machine reasoning",
+        "training dynamics"
+      ]
+    },
+    "publishedAt": "2025-06-17T03:06:56.000Z",
+    "title": "Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes\n  Correct Reasoning in Base LLMs",
+    "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a\npromising paradigm for advancing the reasoning capabilities of Large Language\nModels (LLMs). However, a critical paradox clouds its efficacy: RLVR-tuned\nmodels often underperform their base models on the Pass@K metric for\nsolution-finding, leading to the hypothesis that RLVR merely re-weights\nexisting reasoning paths at the cost of reasoning diversity. In this work, we\nresolve this contradiction by identifying the source of the problem: the\nPass@K metric itself is a flawed measure of reasoning, as it credits correct\nfinal answers that probably arise from inaccurate or incomplete chains of\nthought (CoTs). To address this, we introduce a more precise evaluation metric,\nCoT-Pass@K, which mandates that both the reasoning path and the final\nanswer be correct. We provide a new theoretical foundation that formalizes how\nRLVR, unlike traditional RL, is uniquely structured to incentivize logical\nintegrity. Our empirical results are supportive: using CoT-Pass@K, we\nobserve that RLVR can incentivize the generalization of correct reasoning for\nall values of K. Furthermore, by analyzing the training dynamics, we find\nthat this enhanced reasoning capability emerges early in the training process\nand smoothly generalizes. Our work provides a clear perspective on the role of\nRLVR, offers a more reliable method for its evaluation, and confirms its\npotential to genuinely advance machine reasoning.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64a7a2bad001860e0c34f7f2/zpklFaaRznQyEa0t9Ji70.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14245.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64a7a2bad001860e0c34f7f2",
+      "avatarUrl": "/avatars/2433104071e4ae1c3e2d755d81d7964b.svg",
+      "fullname": "Shun Zheng",
+      "name": "shun-zheng",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.12860",
+      "authors": [
+        {
+          "_id": "685226a40164cd13167104bd",
+          "name": "Wanlong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104be",
+          "name": "Junxiao Xu",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104bf",
+          "name": "Fei Yu",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104c0",
+          "name": "Yukang Lin",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104c1",
+          "name": "Ke Ji",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104c2",
+          "name": "Wenyu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104c3",
+          "name": "Yan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104c4",
+          "name": "Yasheng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104c5",
+          "name": "Lifeng Shang",
+          "hidden": false
+        },
+        {
+          "_id": "685226a40164cd13167104c6",
+          "name": "Benyou Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-15T14:21:28.000Z",
+      "submittedOnDailyAt": "2025-06-18T02:06:38.533Z",
+      "title": "QFFT、무유의 문제 없는 무유의 이유 없는 미세 조정의 적응적 이유",
+      "submittedOnDailyBy": {
+        "_id": "64eb333e6878d90b031fa5c5",
+        "avatarUrl": "/avatars/a0d875b49d1c56be88f34854647306da.svg",
+        "isPro": false,
+        "fullname": "Wanlong Liu",
+        "user": "lwl-uestc",
+        "type": "user"
+      },
+      "summary": "최근의 긴 코트(CoT) 모델의 발전은 복잡한 태스크에 대한 성능을 향상시켰지만, 과도한 생각으로 인해 긴 이유를 포함하는 단계가 생성되고, 특히 간단한 질문에 대해 문제가 있습니다. 본 논문에서는 긴 및 짧은 CoT 모델의 이유 패턴을 재검토하고, 짧은 CoT의 패턴이 효율적으로 간결한 이유를 제공하고, 긴 CoT의 패턴은 짧은 CoT의 패턴이 어려워하는 어려운 시나리오에서 뛰어난 것을 관찰했습니다. 모델이 두 가지 패턴을 효과적으로 사용하도록 할 수 있는 것이 목표로, 문제 없는 미세 조정(QFFT)을 제안합니다. QFFT는 훈련 시 입력의 질문을 제거하고, 긴 CoT의 응답에서만 학습하는 미세 조정 접근법입니다. 이 접근법은 모델이 두 가지 이유의 패턴을 적응적으로 사용할 수 있도록 합니다: 짧은 CoT의 패턴을 우선시하고, 필요에 따라 긴 CoT의 패턴을 활성화합니다. 수학 데이터 세트에서 다양한 실험에 따라, QFFT는 평균 응답의 길이를 50% 이상 줄이고, 표준적인 성능을 달성했습니다. 또한, QFFT는 SFT보다 노이즈가 많은, 도메인 외의, 그리고 리소스가 낮은 시나리오에서도 우수한 성능을 나타냅니다.",
+      "upvotes": 12,
+      "discussionId": "685226a40164cd13167104c7",
+      "githubRepo": "https://github.com/LWL-cpu/Question-Free-Fine-Tuning",
+      "ai_summary": "Question-Free Fine-Tuning (QFFT) improves efficiency and adaptability in cognitive models by leveraging both short and long chain-of-thought patterns, reducing response length while maintaining performance across various scenarios.",
+      "ai_keywords": [
+        "Long Chain-of-Thought",
+        "Short Chain-of-Thought",
+        "Question-Free Fine-Tuning",
+        "fine-tuning",
+        "Supervised Fine-Tuning"
+      ]
+    },
+    "publishedAt": "2025-06-15T10:21:28.000Z",
+    "title": "QFFT, Question-Free Fine-Tuning for Adaptive Reasoning",
+    "summary": "Recent advancements in Long Chain-of-Thought (CoT) reasoning models have\nimproved performance on complex tasks, but they suffer from overthinking, which\ngenerates redundant reasoning steps, especially for simple questions. This\npaper revisits the reasoning patterns of Long and Short CoT models, observing\nthat the Short CoT patterns offer concise reasoning efficiently, while the Long\nCoT patterns excel in challenging scenarios where the Short CoT patterns\nstruggle. To enable models to leverage both patterns, we propose Question-Free\nFine-Tuning (QFFT), a fine-tuning approach that removes the input question\nduring training and learns exclusively from Long CoT responses. This approach\nenables the model to adaptively employ both reasoning patterns: it prioritizes\nthe Short CoT patterns and activates the Long CoT patterns only when necessary.\nExperiments on various mathematical datasets demonstrate that QFFT reduces\naverage response length by more than 50\\%, while achieving performance\ncomparable to Supervised Fine-Tuning (SFT). Additionally, QFFT exhibits\nsuperior performance compared to SFT in noisy, out-of-domain, and low-resource\nscenarios.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.12860.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64eb333e6878d90b031fa5c5",
+      "avatarUrl": "/avatars/a0d875b49d1c56be88f34854647306da.svg",
+      "fullname": "Wanlong Liu",
+      "name": "lwl-uestc",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.12278",
+      "authors": [
+        {
+          "_id": "685234030164cd1316710502",
+          "name": "Zheyuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "685234030164cd1316710503",
+          "name": "Zexi Kuang",
+          "hidden": false
+        },
+        {
+          "_id": "685234030164cd1316710504",
+          "name": "Xue Xia",
+          "hidden": false
+        },
+        {
+          "_id": "685234030164cd1316710505",
+          "name": "Yilun Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-13T23:56:17.000Z",
+      "submittedOnDailyAt": "2025-06-18T02:08:35.444Z",
+      "title": "LLMs는 알고리즘 문제를 고품질의 테스트 케이스를 생성할 수 있을까?  \nTestCase-Eval: 폴터카바레이션과 엑스포레이션의 체계적인 평가 시스템",
+      "submittedOnDailyBy": {
+        "_id": "62f662bcc58915315c4eccea",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+        "isPro": true,
+        "fullname": "Yilun Zhao",
+        "user": "yilunzhao",
+        "type": "user"
+      },
+      "summary": "TestCase-Eval는 테스트 케이스 생성에 있어서 LLM의 체계적인 평가의 새로운 벤치마크입니다. TestCase-Eval은 500개의 알고리즘 문제를 포함하며, Codeforces 플랫폼에서 제공되는 100,000개의 인간이 작성한 해결책을 포함합니다. 주요 두 가지 핵심 태스크에 초점을 맞추며 있습니다: 1) 공정한 검증, LLM 생성된 테스트 세트가 다양한 입력 시나리오를 감지하고 잠재적인 실패 모드의 넓은 범위를 커버하는 것을 평가합니다. 2) 공정한 검증, LLM이 특정의 비정상적인 코드 구현을 나타내는 타일러드 테스트 입력을 생성할 수 있는 것을 평가합니다. TestCase-Eval에서 19개의 가장 최신의 오픈 소스 및 소유권 LLM의 효과적인 테스트 케이스 생성의 강점과 한계를 상세하게 평가합니다.",
+      "upvotes": 12,
+      "discussionId": "685234030164cd1316710506",
+      "githubRepo": "https://github.com/FlowRays/TestCase-Eval",
+      "ai_summary": "TestCase-Eval is a benchmark for evaluating LLMs in generating comprehensive and targeted test cases for algorithm problems.",
+      "ai_keywords": [
+        "test-case generation",
+        "Fault Coverage",
+        "Fault Exposure",
+        "LLMs",
+        "algorithm problems",
+        "human-crafted solutions",
+        "Codeforces",
+        "test sets",
+        "failure modes",
+        "incorrect code implementation"
+      ]
+    },
+    "publishedAt": "2025-06-13T19:56:17.000Z",
+    "title": "Can LLMs Generate High-Quality Test Cases for Algorithm Problems?\n  TestCase-Eval: A Systematic Evaluation of Fault Coverage and Exposure",
+    "summary": "We introduce TestCase-Eval, a new benchmark for systematic evaluation of LLMs\nin test-case generation. TestCase-Eval includes 500 algorithm problems and\n100,000 human-crafted solutions from the Codeforces platform. It focuses on two\npivotal tasks: (1) Fault Coverage, which measures how well LLM-generated test\nsets probe diverse input scenarios and cover a wide range of potential failure\nmodes. (2) Fault Exposure, which evaluates whether LLMs can craft a tailored\ntest input that reveals a specific incorrect code implementation. We provide a\ncomprehensive assessment of 19 state-of-the-art open-source and proprietary\nLLMs on TestCase-Eval, offering insights into their strengths and limitations\nin generating effective test cases for algorithm problems.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.12278.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62f662bcc58915315c4eccea",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+      "fullname": "Yilun Zhao",
+      "name": "yilunzhao",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 13
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.14606",
+      "authors": [
+        {
+          "_id": "68521f240164cd131671047a",
+          "name": "Ahmed Heakl",
+          "hidden": false
+        },
+        {
+          "_id": "68521f240164cd131671047b",
+          "name": "Sarim Hashmi",
+          "hidden": false
+        },
+        {
+          "_id": "68521f240164cd131671047c",
+          "name": "Chaimaa Abi",
+          "hidden": false
+        },
+        {
+          "_id": "68521f240164cd131671047d",
+          "name": "Celine Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68521f240164cd131671047e",
+          "name": "Abdulrahman Mahmoud",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/656864e12d73834278a8dea7/G_EGzMfb1C6fX_o-yLFbl.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/656864e12d73834278a8dea7/G2UhoU9mbZ8tQ0VzmKLV5.png"
+      ],
+      "publishedAt": "2025-06-17T15:06:54.000Z",
+      "submittedOnDailyAt": "2025-06-18T00:38:14.336Z",
+      "title": "확실히予想: CISC에서 RISC로의 언어모델링 접근\n테스트가栏付한 트렌스파이어",
+      "submittedOnDailyBy": {
+        "_id": "656864e12d73834278a8dea7",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/656864e12d73834278a8dea7/sfAWS2eyPtFHb_2GZIypp.jpeg",
+        "isPro": true,
+        "fullname": "Ahmed Heakl",
+        "user": "ahmedheakl",
+        "type": "user"
+      },
+      "summary": "ハードウェアエコシステム는 급격하게 발전하고 있으며, 낮은 수준의 프로그래밍 언어를 서로 다른 명령어 집합 아키텍처(ISA) 사이로 신속하고 유연하게 번역하여, 기존 코드의 포터빌리티와 장기적인 안정성을 향상시키는 데 관심이 높아지고 있습니다. 이 번역 문제의 특히 어려운 클래스 중 하나는 복잡한(CISC)과 줄인(RISC) 하드웨어 아키텍처 사이의 번역입니다. 이 것은 명령어의 복잡성, 메모리 모델, 실행 패러다임의 기본적인 차이로 인해 어려워졌습니다. 본 연구에서는, LLM(대규모 훈련된 언어 모델)의 번역 능력과 설정된 소프트웨어 테스트 구조의 엄밀성을 통합한 ISA 중심의 번역 파이프라인 GG(Guaranteed Guess)를 통해 이 문제를 해결하고 있습니다. 우리 방법은 LLM을 사용하여 하나의 ISA에서 다른 ISA로 후보 번역을 생성하고, 이러한 번역을 소프트웨어 테스트 프레임워크에 삽입하여 번역의 신뢰도를 정량적으로 평가하는 것입니다. 우리의 GG 접근 방식은 두 개의 다양한 데이터 세트를 통해 평가되었으며, 단위 테스트에서 높은 코드 커버리지(>98%)를 달성하고, HumanEval 프로그램의 기능/세ман틱 정확성은 99%, BringupBench 프로그램의 경우 49%를 달성했습니다. 또한, Apple Silicon의 최신 Rosetta 2 프레임워크와 비교하여, 우리 접근 방식은 실행 시 성능이 1.73배, 에너지 효율이 1.47배, 메모리 사용량이 2.41배 개선되어, CISC-to-RISC의 실제적인 번역 작업에 대해 GG의 효과를 보여주었습니다. 우리는 코드, 데이터, 모델, 벤치마크를 공개하고, ISA 수준의 코드 번역 연구의 공통적 기반을 구축하는 것을 목표로 합니다.",
+      "upvotes": 10,
+      "discussionId": "68521f240164cd131671047f",
+      "projectPage": "https://ahmedheakl.github.io/Guaranteed-Guess/",
+      "githubRepo": "https://github.com/ahmedheakl/Guaranteed-Guess",
+      "ai_summary": "A novel ISA-centric transpilation pipeline using LLMs and software testing achieves high correctness and efficiency in translating between complex and reduced hardware architectures.",
+      "ai_keywords": [
+        "pre-trained large language models",
+        "software testing constructs",
+        "ISA-centric transpilation",
+        "complex-instruction set computing (CISC)",
+        "reduced-instruction set computing (RISC)",
+        "instruction set architecture (ISA)",
+        "HumanEval",
+        "BringupBench",
+        "Rosetta 2 framework",
+        "functional/semantic correctness",
+        "real-world CISC-to-RISC translation",
+        "memory models",
+        "execution paradigms",
+        "transpilation",
+        "hardware ecosystem",
+        "low-level programs",
+        "code portability",
+        "longevity"
+      ]
+    },
+    "publishedAt": "2025-06-17T11:06:54.000Z",
+    "title": "Guaranteed Guess: A Language Modeling Approach for CISC-to-RISC\n  Transpilation with Testing Guarantees",
+    "summary": "The hardware ecosystem is rapidly evolving, with increasing interest in\ntranslating low-level programs across different instruction set architectures\n(ISAs) in a quick, flexible, and correct way to enhance the portability and\nlongevity of existing code. A particularly challenging class of this\ntranspilation problem is translating between complex- (CISC) and reduced-\n(RISC) hardware architectures, due to fundamental differences in instruction\ncomplexity, memory models, and execution paradigms. In this work, we introduce\nGG (Guaranteed Guess), an ISA-centric transpilation pipeline that combines the\ntranslation power of pre-trained large language models (LLMs) with the rigor of\nestablished software testing constructs. Our method generates candidate\ntranslations using an LLM from one ISA to another, and embeds such translations\nwithin a software-testing framework to build quantifiable confidence in the\ntranslation. We evaluate our GG approach over two diverse datasets, enforce\nhigh code coverage (>98%) across unit tests, and achieve functional/semantic\ncorrectness of 99% on HumanEval programs and 49% on BringupBench programs,\nrespectively. Further, we compare our approach to the state-of-the-art Rosetta\n2 framework on Apple Silicon, showcasing 1.73x faster runtime performance,\n1.47x better energy efficiency, and 2.41x better memory usage for our\ntranspiled code, demonstrating the effectiveness of GG for real-world\nCISC-to-RISC translation tasks. We will open-source our codes, data, models,\nand benchmarks to establish a common foundation for ISA-level code translation\nresearch.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/656864e12d73834278a8dea7/G_EGzMfb1C6fX_o-yLFbl.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/656864e12d73834278a8dea7/G2UhoU9mbZ8tQ0VzmKLV5.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14606.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "656864e12d73834278a8dea7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/656864e12d73834278a8dea7/sfAWS2eyPtFHb_2GZIypp.jpeg",
+      "fullname": "Ahmed Heakl",
+      "name": "ahmedheakl",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 41
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.14603",
+      "authors": [
+        {
+          "_id": "68521f8a0164cd1316710481",
+          "name": "Amirmojtaba Sabour",
+          "hidden": false
+        },
+        {
+          "_id": "68521f8a0164cd1316710482",
+          "name": "Sanja Fidler",
+          "hidden": false
+        },
+        {
+          "_id": "68521f8a0164cd1316710483",
+          "name": "Karsten Kreis",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/656015f28138827138c70858/_yuUKzjzngNZzaUJCVwjR.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/656015f28138827138c70858/2FmUhOtaDCtAzFkNEx6Di.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/656015f28138827138c70858/MC_ZLBqT81dOpANroMLrm.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/656015f28138827138c70858/degPI6Z5IEf4v_y2_UL9V.jpeg"
+      ],
+      "publishedAt": "2025-06-17T15:06:07.000Z",
+      "submittedOnDailyAt": "2025-06-18T00:42:20.168Z",
+      "title": "Align Your Flow: 시간연속 흐름맵의 확장과 경험\n\n**주요 키워드:**\n- Align Your Flow\n- 시간연속 흐름맵\n- 확장\n- 경험\n\n**번역설명:**\n- \"Align Your Flow\"는 \"Flow\"를 조정하여 일의 효율성을 높일 수 있는 방법을 의미합니다.\n- \"시간연속 흐름맵\"은 시간과 흐름을 함께 고려하여 작업의 진행을 효율적으로 관리하는 도구를 의미합니다.\n- \"확장\"은 이 도구를 더 확장하거나 확장된 상태를 의미합니다.\n- \"경험\"은 사용자가 이 도구를 사용하면서 얻은 경험 또는 결과를 의미합니다.",
+      "submittedOnDailyBy": {
+        "_id": "656015f28138827138c70858",
+        "avatarUrl": "/avatars/b8471ae4d80f078c7c928fc3d8f49126.svg",
+        "isPro": false,
+        "fullname": "Amirmojtaba Sabour",
+        "user": "amsabour",
+        "type": "user"
+      },
+      "summary": "디フュージョン 및 흐름 기반 모델은 가장 先端의 생성 모델링 접근법으로 등장하지만, 이들은 여러 샘플링 단계가 필요합니다. 일치 모델은 이러한 모델을 효율적인 한 단계 생성기로 수용할 수 있습니다만, 흐름 기반 및 디フュージョン 기반 방법에 비하여 단계 수가 증가하면 성능이 당연히 떨어집니다. 이는 분석적 및 실험적으로도 입증되어 있습니다. 흐름 맵은 어떤 두 개의 노이즈 레벨을 연결할 수 있으며, 전체 단계 수에서도 효과적이라고 나타냅니다. 본 논문에서는, 흐름 맵의 훈련에 2개의 새로운 연속 시간 목표를 통해 기존의 일치 모델과 흐름 맵 매칭 목표를 확장한 새로운 훈련 방법을 소개합니다. 또한, 자기 지도를 사용하여 저품질 모델을 가이드한 디자이너화로 성능 향상을 나타내며 상대적인 최종 조정에서도 최소한의 샘플 다양성 손실로 추가의 밴스팅을 실현할 수 있음을 나타냅니다. 우리는 어려운 이미지 생성 벤치마크에서 강력한 흐름 맵 모델 \"Flow Map을 조정\"을 구축하고, ImageNet 64x64 및 512x512에서도 적은 단계로 가장 先端의 성능을 달성했습니다. 마지막으로, 문에서 이미지로의 흐름 맵 모델을 소개하며, 모든 현재의 비상대적인 훈련된 적은 단계 샘플러를 초과하는 성능을 나타냅니다.",
+      "upvotes": 8,
+      "discussionId": "68521f8a0164cd1316710484",
+      "projectPage": "https://research.nvidia.com/labs/toronto-ai/AlignYourFlow/",
+      "ai_summary": "Flow maps, introduced with new continuous-time objectives and training techniques, achieve state-of-the-art performance in few-step image and text-to-image generation.",
+      "ai_keywords": [
+        "diffusion models",
+        "flow-based models",
+        "consistency models",
+        "flow maps",
+        "noise levels",
+        "autoguidance",
+        "adversarial finetuning",
+        "Align Your Flow",
+        "ImageNet",
+        "text-to-image synthesis"
+      ]
+    },
+    "publishedAt": "2025-06-17T11:06:07.000Z",
+    "title": "Align Your Flow: Scaling Continuous-Time Flow Map Distillation",
+    "summary": "Diffusion- and flow-based models have emerged as state-of-the-art generative\nmodeling approaches, but they require many sampling steps. Consistency models\ncan distill these models into efficient one-step generators; however, unlike\nflow- and diffusion-based methods, their performance inevitably degrades when\nincreasing the number of steps, which we show both analytically and\nempirically. Flow maps generalize these approaches by connecting any two noise\nlevels in a single step and remain effective across all step counts. In this\npaper, we introduce two new continuous-time objectives for training flow maps,\nalong with additional novel training techniques, generalizing existing\nconsistency and flow matching objectives. We further demonstrate that\nautoguidance can improve performance, using a low-quality model for guidance\nduring distillation, and an additional boost can be achieved by adversarial\nfinetuning, with minimal loss in sample diversity. We extensively validate our\nflow map models, called Align Your Flow, on challenging image generation\nbenchmarks and achieve state-of-the-art few-step generation performance on both\nImageNet 64x64 and 512x512, using small and efficient neural networks. Finally,\nwe show text-to-image flow map models that outperform all existing\nnon-adversarially trained few-step samplers in text-conditioned synthesis.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/656015f28138827138c70858/_yuUKzjzngNZzaUJCVwjR.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/656015f28138827138c70858/2FmUhOtaDCtAzFkNEx6Di.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/656015f28138827138c70858/MC_ZLBqT81dOpANroMLrm.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/656015f28138827138c70858/degPI6Z5IEf4v_y2_UL9V.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14603.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "656015f28138827138c70858",
+      "avatarUrl": "/avatars/b8471ae4d80f078c7c928fc3d8f49126.svg",
+      "fullname": "Amirmojtaba Sabour",
+      "name": "amsabour",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.13977",
+      "authors": [
+        {
+          "_id": "68524ff90164cd13167105aa",
+          "name": "Shiting Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68524ff90164cd13167105ab",
+          "name": "Zhen Fang",
+          "hidden": false
+        },
+        {
+          "_id": "68524ff90164cd13167105ac",
+          "name": "Zehui Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68524ff90164cd13167105ad",
+          "name": "Siyu Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "68524ff90164cd13167105ae",
+          "name": "Junjie Ye",
+          "hidden": false
+        },
+        {
+          "_id": "68524ff90164cd13167105af",
+          "name": "Yu Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "68524ff90164cd13167105b0",
+          "name": "Lin Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68524ff90164cd13167105b1",
+          "name": "Qi Mao",
+          "hidden": false
+        },
+        {
+          "_id": "68524ff90164cd13167105b2",
+          "name": "Feng Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-11T17:59:18.000Z",
+      "submittedOnDailyAt": "2025-06-18T04:10:42.444Z",
+      "title": "CRITICTOOL: 工具调用错误在大规模语言模型自我批评能力评估中的可扩展性",
+      "submittedOnDailyBy": {
+        "_id": "64b0a5037a475fba70a7260d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64b0a5037a475fba70a7260d/MauBbb6raMA23yrR1Zq21.jpeg",
+        "isPro": false,
+        "fullname": "Zhen Fang",
+        "user": "CostaliyA",
+        "type": "user"
+      },
+      "summary": "대 언어 모뎀(LLMs)가 외부 도구를 활용할 수 있는 능력은 다양한 태스크를 수행할 수 있습니다. 그러나 태스크가 복잡해지고 장기적인 경우, 복잡한 도구 활용 과정이 의도한 오류를 유발할 수 있습니다. 이에 따라 이러한 오류를 효과적으로 처리하는 방법, 특히 인식, 진단, 그리고 그로부터 회복하는 방법들이 도구 학습의 발전의 중요한 연구 방향으로 등장했습니다. 본 논문에서는 경쟁적인 도구 평가 벤치마크에서 발생하는 오류의 종류를 검토합니다. 이를 기반으로 CRITICTOOL이라는, 도구 학습에 특화된 상세한 평가 벤치마크를 통해 연구를 진행합니다. 새로운 데이터 셋 구축의 진화 전략을 기반으로, CRITICTOOL은 다양한 도구 사용 오류를 가지고 있으며, 그 복잡성을 변화시킵니다. CRITICTOOL에서 광범위한 실험을 수행하고 구축된 벤치마크 전략의 일반화 및 효과성을 증명합니다. 또한 각 LLM의 도구 반성 능력에 대한 깊은 분석을 수행하고, LLM의 도구 학습 분야에 새로운 시각을 제공합니다. 코드는 https://github.com/Shellorley0513/CriticTool{https://github.com/Shellorley0513/CriticTool}에 접근할 수 있습니다.",
+      "upvotes": 7,
+      "discussionId": "68524ff90164cd13167105b3",
+      "githubRepo": "https://github.com/Shellorley0513/CriticTool",
+      "ai_summary": "A comprehensive benchmark, CRITICTOOL, evaluates and enhances the robustness of large language models in handling errors during tool usage.",
+      "ai_keywords": [
+        "large language models",
+        "tool learning",
+        "function-calling process",
+        "error identification",
+        "error diagnosis",
+        "error recovery",
+        "evolutionary strategy",
+        "dataset construction",
+        "tool reflection ability",
+        "critique evaluation benchmark"
+      ]
+    },
+    "publishedAt": "2025-06-11T13:59:18.000Z",
+    "title": "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language\n  Models in Tool-Calling Error Scenarios",
+    "summary": "The ability of large language models (LLMs) to utilize external tools has\nenabled them to tackle an increasingly diverse range of tasks. However, as the\ntasks become more complex and long-horizon, the intricate tool utilization\nprocess may trigger various unexpected errors. Therefore, how to effectively\nhandle such errors, including identifying, diagnosing, and recovering from\nthem, has emerged as a key research direction for advancing tool learning. In\nthis work, we first extensively analyze the types of errors encountered during\nthe function-calling process on several competitive tool evaluation benchmarks.\nBased on it, we introduce CRITICTOOL, a comprehensive critique evaluation\nbenchmark specialized for tool learning. Building upon a novel evolutionary\nstrategy for dataset construction, CRITICTOOL holds diverse tool-use errors\nwith varying complexities, which better reflects real-world scenarios. We\nconduct extensive experiments on CRITICTOOL, and validate the generalization\nand effectiveness of our constructed benchmark strategy. We also provide an\nin-depth analysis of the tool reflection ability on various LLMs, offering a\nnew perspective on the field of tool learning in LLMs. The code is available at\nhttps://github.com/Shellorley0513/CriticTool{https://github.com/Shellorley0513/CriticTool}.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.13977.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b0a5037a475fba70a7260d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64b0a5037a475fba70a7260d/MauBbb6raMA23yrR1Zq21.jpeg",
+      "fullname": "Zhen Fang",
+      "name": "CostaliyA",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.13651",
+      "authors": [
+        {
+          "_id": "6850cf555e07650ecce88fe2",
+          "name": "Kaiyuan Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fe3",
+          "name": "Yixin Ren",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fe4",
+          "name": "Yang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fe5",
+          "name": "Xiaobo Hu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fe6",
+          "name": "Haotong Tian",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fe7",
+          "name": "Tianbao Xie",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fe8",
+          "name": "Fangfu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fe9",
+          "name": "Haoye Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fea",
+          "name": "Hongzhang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88feb",
+          "name": "Yuan Gong",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fec",
+          "name": "Chen Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fed",
+          "name": "Han Hou",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fee",
+          "name": "Hui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fef",
+          "name": "James Pan",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff0",
+          "name": "Jianan Lou",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff1",
+          "name": "Jiayi Mao",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff2",
+          "name": "Jizheng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff3",
+          "name": "Jinpeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff4",
+          "name": "Kangyi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff5",
+          "name": "Kenkun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff6",
+          "name": "Rui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff7",
+          "name": "Run Li",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff8",
+          "name": "Tong Niu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ff9",
+          "name": "Wenlong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ffa",
+          "name": "Wenqi Yan",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ffb",
+          "name": "Xuanzheng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ffc",
+          "name": "Yuchen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ffd",
+          "name": "Yi-Hsin Hung",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88ffe",
+          "name": "Yuan Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce88fff",
+          "name": "Zexuan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce89000",
+          "name": "Zihan Yin",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce89001",
+          "name": "Zijian Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6850cf555e07650ecce89002",
+          "name": "Zhiwen Mo",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-16T16:16:14.000Z",
+      "submittedOnDailyAt": "2025-06-18T04:38:47.336Z",
+      "title": "xbench: 전문의에 맞는 현실적인 평가에 기반한 Agents의 생산성 스케일링 추적",
+      "submittedOnDailyBy": {
+        "_id": "6505a02f9310ce8c400edc63",
+        "avatarUrl": "/avatars/bbf781594fc8c812316711aa8e2797aa.svg",
+        "isPro": false,
+        "fullname": "Fangfu Liu",
+        "user": "Liuff23",
+        "type": "user"
+      },
+      "summary": "디나임, 직업에 맞는 평가 시스템 \"xbench\"을 소개합니다. 이 시스템은 AI 에이전트의 능력과 실제 세계적인 생산성 사이의 간극을 메우는 데 설계되었습니다. 현재의 평가 기반은 주로 독립적인 기술 스킬을 중심으로 초점을 맞추는 경우가 많지만, 이는 에이전트가 전문 환경에서 제공하는 경제적 가치를 정확하게 반영하지 않습니다. 이러한 문제를 해결하기 위해, \"xbench\"는 업계 전문가가 정한 평가 태스크를 대상으로, 비즈니스적으로 중요한 영역을 타겟으로 설정했습니다. 우리의 프레임워크는 생산성 가치를 수렴적으로 연결된 메트릭을 생성하고, 기술-시장 적합도 (TMF) 예측을 가능하게 하며, 시간이 지나면 제품 능력의 추이를 추적하는 것을 촉진합니다. 초기 구현으로, 우리는 두 개의 베이스마크를 제공합니다: \"채용\"과 \"마케팅\". \"채용\"에서, 실제 세계적인 하이프로팅 비즈니스 시나리오에서 50개의 태스크를 수집하여 에이전트의 기업 매핑, 정보 검색, 그리고 능력 채용 능력을 평가합니다. \"마케팅\"에서, 인플루언서가 광고업자의 필요에 맞게 광고를 만드는 능력을 평가하고, 836명의 후보인플루언서의 챗봇을 사용하여 50개의 비즈니스의 광고업자의 요구를 충족하는 성능을 평가합니다. 우리는 현대적인 고급 에이전트의 초기 평가 결과를 제공하고, 이 전문 분야의 기준을 확립합니다. https://xbench.org에서, 연속적으로 업데이트된 평가 세트와 평가를 제공합니다.",
+      "upvotes": 5,
+      "discussionId": "6850cf555e07650ecce89003",
+      "projectPage": "https://xbench.org/",
+      "githubRepo": "https://github.com/xbench-ai/xbench-evals"
+    },
+    "publishedAt": "2025-06-16T12:16:14.000Z",
+    "title": "xbench: Tracking Agents Productivity Scaling with Profession-Aligned\n  Real-World Evaluations",
+    "summary": "We introduce xbench, a dynamic, profession-aligned evaluation suite designed\nto bridge the gap between AI agent capabilities and real-world productivity.\nWhile existing benchmarks often focus on isolated technical skills, they may\nnot accurately reflect the economic value agents deliver in professional\nsettings. To address this, xbench targets commercially significant domains with\nevaluation tasks defined by industry professionals. Our framework creates\nmetrics that strongly correlate with productivity value, enables prediction of\nTechnology-Market Fit (TMF), and facilitates tracking of product capabilities\nover time. As our initial implementations, we present two benchmarks:\nRecruitment and Marketing. For Recruitment, we collect 50 tasks from real-world\nheadhunting business scenarios to evaluate agents' abilities in company\nmapping, information retrieval, and talent sourcing. For Marketing, we assess\nagents' ability to match influencers with advertiser needs, evaluating their\nperformance across 50 advertiser requirements using a curated pool of 836\ncandidate influencers. We present initial evaluation results for leading\ncontemporary agents, establishing a baseline for these professional domains.\nOur continuously updated evalsets and evaluations are available at\nhttps://xbench.org.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.13651.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6505a02f9310ce8c400edc63",
+      "avatarUrl": "/avatars/bbf781594fc8c812316711aa8e2797aa.svg",
+      "fullname": "Fangfu Liu",
+      "name": "Liuff23",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.14002",
+      "authors": [
+        {
+          "_id": "685210eb0164cd131671043e",
+          "name": "Siyu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685210eb0164cd131671043f",
+          "name": "Heejune Sheen",
+          "hidden": false
+        },
+        {
+          "_id": "685210eb0164cd1316710440",
+          "name": "Xuyuan Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "685210eb0164cd1316710441",
+          "name": "Tianhao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685210eb0164cd1316710442",
+          "name": "Zhuoran Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-16T20:58:05.000Z",
+      "submittedOnDailyAt": "2025-06-18T00:09:08.222Z",
+      "title": "Sparse Autoencoder를 사용하여 LLM의 다중미의성을 제어하는 증명된 특성 복원법",
+      "submittedOnDailyBy": {
+        "_id": "683229900411a9d65cd410c0",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/VqwvpUYF8CQAKPHMNfLyw.png",
+        "isPro": false,
+        "fullname": "Siyu Chen",
+        "user": "Siyuc",
+        "type": "user"
+      },
+      "summary": "우리는 대언어 모델의 해석에서 스패르스 오토인코더(SAE)를 사용하여 이론적으로 근거 있는 특징량 복원을 실현하는 문제를 연구하고 있습니다. 현재의 SAE의 훈련 알고리즘은 엄격한 수학적 보장을 부족하며, 하이퍼파라미터의 민감성과 불안정성 등 실용적인 제한을 받습니다. 이러한 문제를 대처하기 위해, 우리는 처음으로 특징량 복원 문제를 위한 새로운 통계적 프레임워크를 제안합니다. 이 프레임워크는 다미의 특징량을 잠재적인 한 의미의 개념의 스패르스한 혼합으로 모델링한 새로운 특징량의 특정성을 포함합니다. 이 프레임워크에 기반하여, 우리는 \"바이ア스 어드밴션\" 기술을 기반으로 새로운 SAE의 훈련 알고리즘을 제안합니다. 이 기술은 신경망의 바이ア스 파라미터를 적절한 활성의 스패르스성을 보장하기 위해 적응적으로 조정하는 것을 목표로 합니다. 이론적으로 이 알고리즘은 입력 데이터가 우리가 제안한 통계적 모델로부터 샘플링된 경우 모든 한 의미의 특징량을 올바르게 복원할 수 있음을 증명합니다. 또한, 우리는 이 알고리즘의 실험적 개선 버전인 그룹 바이ア스 어드밴션(GBA)을 개발하고, 15억 파라미터 정도의 LLM에 대해 벤치마크 방법과 비교하여 높은 성능을 나타냅니다. 이 연구는 SAE의 훈련을 이해하는 기초적인 단계이며, 이론적인 복원 보장을 가진 첫 번째 SAE 알고리즘을 제공하며, 구조적 해석성을 높이고 투명하고 신뢰할 수 있는 AI 시스템의 개발에 기여합니다.",
+      "upvotes": 4,
+      "discussionId": "685210ec0164cd1316710443",
+      "ai_summary": "A new statistical framework and training algorithm, Group Bias Adaptation, enhance Sparse Autoencoders for recovering monosemantic features in Large Language Models, offering theoretical guarantees and superior performance.",
+      "ai_keywords": [
+        "Sparse Autoencoders",
+        "feature recovery",
+        "statistical framework",
+        "feature identifiability",
+        "polysemantic features",
+        "monosemantic concepts",
+        "bias adaptation",
+        "Group Bias Adaptation",
+        "Large Language Models",
+        "theoretical recovery guarantees",
+        "mechnistic interpretability"
+      ]
+    },
+    "publishedAt": "2025-06-16T16:58:05.000Z",
+    "title": "Taming Polysemanticity in LLMs: Provable Feature Recovery via Sparse\n  Autoencoders",
+    "summary": "We study the challenge of achieving theoretically grounded feature recovery\nusing Sparse Autoencoders (SAEs) for the interpretation of Large Language\nModels. Existing SAE training algorithms often lack rigorous mathematical\nguarantees and suffer from practical limitations such as hyperparameter\nsensitivity and instability. To address these issues, we first propose a novel\nstatistical framework for the feature recovery problem, which includes a new\nnotion of feature identifiability by modeling polysemantic features as sparse\nmixtures of underlying monosemantic concepts. Building on this framework, we\nintroduce a new SAE training algorithm based on ``bias adaptation'', a\ntechnique that adaptively adjusts neural network bias parameters to ensure\nappropriate activation sparsity. We theoretically prove that this\nalgorithm correctly recovers all monosemantic features when input data is\nsampled from our proposed statistical model. Furthermore, we develop an\nimproved empirical variant, Group Bias Adaptation (GBA), and\ndemonstrate its superior performance against benchmark methods when\napplied to LLMs with up to 1.5 billion parameters. This work represents a\nfoundational step in demystifying SAE training by providing the first SAE\nalgorithm with theoretical recovery guarantees, thereby advancing the\ndevelopment of more transparent and trustworthy AI systems through enhanced\nmechanistic interpretability.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14002.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "683229900411a9d65cd410c0",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/VqwvpUYF8CQAKPHMNfLyw.png",
+      "fullname": "Siyu Chen",
+      "name": "Siyuc",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.10100",
+      "authors": [
+        {
+          "_id": "68522b190164cd13167104d9",
+          "name": "Yantai Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68522b190164cd13167104da",
+          "name": "Yuhao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68522b190164cd13167104db",
+          "name": "Zichen Wen",
+          "hidden": false
+        },
+        {
+          "_id": "68522b190164cd13167104dc",
+          "name": "Luo Zhongwei",
+          "hidden": false
+        },
+        {
+          "_id": "68522b190164cd13167104dd",
+          "name": "Chang Zou",
+          "hidden": false
+        },
+        {
+          "_id": "68522b190164cd13167104de",
+          "name": "Zhipeng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68522b190164cd13167104df",
+          "name": "Chuan Wen",
+          "hidden": false
+        },
+        {
+          "_id": "68522b190164cd13167104e0",
+          "name": "Linfeng Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-11T18:34:57.000Z",
+      "submittedOnDailyAt": "2025-06-18T01:30:42.708Z",
+      "title": "EfficientVLA: 훈련없이 가속화와 압축을 위한 시각 언어 행동 모델",
+      "submittedOnDailyBy": {
+        "_id": "653b8c3e97a4d71d950e2f20",
+        "avatarUrl": "/avatars/b68880022e14556d0be58c69615db3be.svg",
+        "isPro": false,
+        "fullname": "Zichen Wen",
+        "user": "zichenwen",
+        "type": "user"
+      },
+      "summary": "Vision-Language-Action (VLA) 모델, 특히 분기 기반의 아키텍처가 구조화된 지능을 보여주는 가변적 가능성은 있지만, 고유의 및 추론 시의冗領에 의한 높은 계산량과 메모리 요구에 의해 엄격한 제한을 받습니다. 현재의 가속효과를 목표로 하는 적용에 의해, 분리된 부적절함을 해결하려고 시도 중이지만, 이러한 각각의 해결책은 VLA 파이프라인 전체의 다양한 계산과 메모리 버틀넥을 총체적으로 해결할 수 없으며, 실용적인 기능성을 제한하고 있습니다. EfficientVLA라는 구조화된, 학습없이 추론 가속 프레임워크를 소개합니다. 이것은 다면적인冗領를 일련적으로 활용하여 이러한 벽을 체계적으로 제거함으로써 실용적인 기능성을 강화합니다. EfficientVLA는 3가지의 목표책을 단순화된 방식으로 통합하고 있습니다: 언어 모듈에서 기능적으로 무용한 레이어를 제거하는 (레이어간冗領 분석에 의한 가이드), 시각 처리 패스웨이를 태스크에 맞는 전략으로 최적화하는 (태스크키시와 정보 커버를 균형 있게 하는 간결한, 다양한 시각 토큰의 선택), 반복적인 분기 기반의 행동헤드 내의 시간적인 계산冗領를 줄이는 (전략적으로 캐시와 재활용하는 키의 중간 특징량). 표준의 VLA 모델 CogACT에 이 방법을 적용한 결과, 추론 속도가 1.93배가 되었으며, FLOPs를 28.9%로 억제하였고, SIMPLER 벤치마크에서 성공률이 0.6%만 감소했습니다.",
+      "upvotes": 4,
+      "discussionId": "68522b190164cd13167104e1",
+      "ai_summary": "EfficientVLA accelerates Vision-Language-Action models by pruning language layers, optimizing visual token selection, and caching intermediate features in the diffusion-based action head.",
+      "ai_keywords": [
+        "diffusion-based architectures",
+        "inference acceleration framework",
+        "pruning",
+        "inter-layer redundancies",
+        "visual tokens",
+        "task-aware strategy",
+        "iterative diffusion-based action head",
+        "caching",
+        "FLOPs",
+        "SIMPLER benchmark"
+      ]
+    },
+    "publishedAt": "2025-06-11T14:34:57.000Z",
+    "title": "EfficientVLA: Training-Free Acceleration and Compression for\n  Vision-Language-Action Models",
+    "summary": "Vision-Language-Action (VLA) models, particularly diffusion-based\narchitectures, demonstrate transformative potential for embodied intelligence\nbut are severely hampered by high computational and memory demands stemming\nfrom extensive inherent and inference-time redundancies. While existing\nacceleration efforts often target isolated inefficiencies, such piecemeal\nsolutions typically fail to holistically address the varied computational and\nmemory bottlenecks across the entire VLA pipeline, thereby limiting practical\ndeployability. We introduce EfficientVLA, a structured and training-free\ninference acceleration framework that systematically eliminates these barriers\nby cohesively exploiting multifaceted redundancies. EfficientVLA\nsynergistically integrates three targeted strategies: (1) pruning of\nfunctionally inconsequential layers from the language module, guided by an\nanalysis of inter-layer redundancies; (2) optimizing the visual processing\npathway through a task-aware strategy that selects a compact, diverse set of\nvisual tokens, balancing task-criticality with informational coverage; and (3)\nalleviating temporal computational redundancy within the iterative\ndiffusion-based action head by strategically caching and reusing key\nintermediate features. We apply our method to a standard VLA model CogACT,\nyielding a 1.93X inference speedup and reduces FLOPs to 28.9%, with only a 0.6%\nsuccess rate drop in the SIMPLER benchmark.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.10100.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "653b8c3e97a4d71d950e2f20",
+      "avatarUrl": "/avatars/b68880022e14556d0be58c69615db3be.svg",
+      "fullname": "Zichen Wen",
+      "name": "zichenwen",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.10038",
+      "authors": [
+        {
+          "_id": "68523b4a0164cd131671055d",
+          "name": "Giannis Daras",
+          "hidden": false
+        },
+        {
+          "_id": "68523b4a0164cd131671055e",
+          "user": {
+            "_id": "67d204c05422de5644126f0b",
+            "avatarUrl": "/avatars/8a9ac73d93785f48e63184d612b9fff1.svg",
+            "isPro": false,
+            "fullname": "Adrian Rodriguez Munoz",
+            "user": "adrianrm",
+            "type": "user"
+          },
+          "name": "Adrian Rodriguez-Munoz",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-06-18T04:06:37.569Z",
+          "hidden": false
+        },
+        {
+          "_id": "68523b4a0164cd131671055f",
+          "name": "Adam Klivans",
+          "hidden": false
+        },
+        {
+          "_id": "68523b4a0164cd1316710560",
+          "name": "Antonio Torralba",
+          "hidden": false
+        },
+        {
+          "_id": "68523b4a0164cd1316710561",
+          "name": "Constantinos Daskalakis",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-10T22:37:39.000Z",
+      "submittedOnDailyAt": "2025-06-18T02:40:58.837Z",
+      "title": "Ambient Diffusion Omni: 나쁜 데이터를 통해도 좋은 모델을 학습하는 방법",
+      "submittedOnDailyBy": {
+        "_id": "5f45f44b79c1ba4c353d1035",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/5f45f44b79c1ba4c353d1035/6piqagYr7RNCy6XwJGWCG.jpeg",
+        "isPro": false,
+        "fullname": "Giannis Daras",
+        "user": "giannisdaras",
+        "type": "user"
+      },
+      "summary": "우리는 저품질, 합성된, 그리고 분포외의 이미지들을 사용하여, 분포모델의 품질을 향상시키는 방법을 제시합니다. 일반적으로 분포모델은 웹이나 다른 소스에서 고품질으로 필터링된 데이터 풀에서 훈련됩니다. 우리는 일반적으로 버려지는 저품질 이미지에 큰 가치를示して 있습니다. 우리는 Ambient Diffusion Omni라는 간단하고 원칙적인 프레임워크를 제시하고, 훈련 중에 모든 이미지에서 신호를 추출할 수 있는 분포모델을 학습시키는 방법을 제시합니다. 우리의 프레임워크는 자연적인 이미지의 두 가지 특성을 활용합니다 -- 스펙트럴 파워의 감쇠와 지역성. 먼저, 우리는 가우스 브레이어, JPEG 압축, 그리고 동작 브레이어로 합성적으로 악화된 이미지들을 사용하여, 분포모델을 성공적으로 훈련할 수 있는 것을 증명합니다. 다음으로, 우리는 프레임워크를 사용하여, 최신의 ImageNet FID를 달성하고, 텍스트로부터 이미지 생성하는 생성모델링의 이미지의 품질과 다양성에서 상당한 향상을 나타냅니다. 핵심 아이디어는 노이즈가, 원하는 고품질의 분포와 실제로 관찰되는 혼잡 분포 사이에 초기의 편향을 덧셈하는 것입니다. 우리는 학습된 데이터의 편향과 유한한 무편 데이터 사이에서의 전환을 분석하고, 우리의 접근 방식을 엄격한 이론적인 증명을 제공합니다.",
+      "upvotes": 3,
+      "discussionId": "68523b4a0164cd1316710562",
+      "projectPage": "https://giannisdaras.github.io/publication/ambient_omni",
+      "githubRepo": "https://github.com/giannisdaras/ambient-omni",
+      "ai_summary": "Ambient Diffusion Omni framework leverages low-quality images to enhance diffusion models by utilizing properties of natural images and shows improvements in ImageNet FID and text-to-image quality.",
+      "ai_keywords": [
+        "diffusion models",
+        "synthetic images",
+        "out-of-distribution images",
+        "Ambient Diffusion Omni",
+        "spectral power law decay",
+        "locality",
+        "Gaussian blur",
+        "JPEG compression",
+        "motion blur",
+        "ImageNet FID",
+        "text-to-image generative modeling",
+        "noise dampening",
+        "biased data",
+        "limited unbiased data"
+      ]
+    },
+    "publishedAt": "2025-06-10T18:37:39.000Z",
+    "title": "Ambient Diffusion Omni: Training Good Models with Bad Data",
+    "summary": "We show how to use low-quality, synthetic, and out-of-distribution images to\nimprove the quality of a diffusion model. Typically, diffusion models are\ntrained on curated datasets that emerge from highly filtered data pools from\nthe Web and other sources. We show that there is immense value in the\nlower-quality images that are often discarded. We present Ambient Diffusion\nOmni, a simple, principled framework to train diffusion models that can extract\nsignal from all available images during training. Our framework exploits two\nproperties of natural images -- spectral power law decay and locality. We first\nvalidate our framework by successfully training diffusion models with images\nsynthetically corrupted by Gaussian blur, JPEG compression, and motion blur. We\nthen use our framework to achieve state-of-the-art ImageNet FID, and we show\nsignificant improvements in both image quality and diversity for text-to-image\ngenerative modeling. The core insight is that noise dampens the initial skew\nbetween the desired high-quality distribution and the mixed distribution we\nactually observe. We provide rigorous theoretical justification for our\napproach by analyzing the trade-off between learning from biased data versus\nlimited unbiased data across diffusion times.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.10038.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5f45f44b79c1ba4c353d1035",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/5f45f44b79c1ba4c353d1035/6piqagYr7RNCy6XwJGWCG.jpeg",
+      "fullname": "Giannis Daras",
+      "name": "giannisdaras",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.05336",
+      "authors": [
+        {
+          "_id": "68425a7ab63271ff41652734",
+          "name": "Ghazi Shazan Ahmad",
+          "hidden": false
+        },
+        {
+          "_id": "68425a7ab63271ff41652735",
+          "user": {
+            "_id": "656864e12d73834278a8dea7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/656864e12d73834278a8dea7/sfAWS2eyPtFHb_2GZIypp.jpeg",
+            "isPro": true,
+            "fullname": "Ahmed Heakl",
+            "user": "ahmedheakl",
+            "type": "user"
+          },
+          "name": "Ahmed Heakl",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-07T05:48:53.401Z",
+          "hidden": false
+        },
+        {
+          "_id": "68425a7ab63271ff41652736",
+          "name": "Hanan Gani",
+          "hidden": false
+        },
+        {
+          "_id": "68425a7ab63271ff41652737",
+          "name": "Abdelrahman Shaker",
+          "hidden": false
+        },
+        {
+          "_id": "68425a7ab63271ff41652738",
+          "name": "Zhiqiang Shen",
+          "hidden": false
+        },
+        {
+          "_id": "68425a7ab63271ff41652739",
+          "name": "Ranjay Krishna",
+          "hidden": false
+        },
+        {
+          "_id": "68425a7ab63271ff4165273a",
+          "name": "Fahad Shahbaz Khan",
+          "hidden": false
+        },
+        {
+          "_id": "68425a7ab63271ff4165273b",
+          "name": "Salman Khan",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/656864e12d73834278a8dea7/7r2x8C0UYFCrqk95QpBGr.mp4"
+      ],
+      "publishedAt": "2025-06-05T17:59:29.000Z",
+      "submittedOnDailyAt": "2025-06-18T01:30:20.599Z",
+      "title": "VideoMolmo: 스펙트럴-타임그라운드링과 지시손",
+      "submittedOnDailyBy": {
+        "_id": "656864e12d73834278a8dea7",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/656864e12d73834278a8dea7/sfAWS2eyPtFHb_2GZIypp.jpeg",
+        "isPro": true,
+        "fullname": "Ahmed Heakl",
+        "user": "ahmedheakl",
+        "type": "user"
+      },
+      "summary": "시간 공간 위치는 다양한 분야에서 정밀한 상호작용에 중요합니다. 생물학 연구에서 자동 운행으로 광범위하게 범위가 넓습니다. 현재의 영상 기반의 접근 방식은 추적에 뛰어나지만, 큰 언어 모델의 복잡한 논리론 능력을 갖지 않으므로, 맥락 이해와 일반화에 제한이 있습니다. VideoMolmo라는 광범위한 다양한 모델을 소개합니다. 이것은 맥락을 기반으로 하는 미세한 시간 공간의 지침을 목표로 설계되었습니다. Molmo 아키텍처를 기반으로 VideoMolmo는 시간 모듈을 도입하고, 注意 기능을 활용하여 각 프레임을 이전 프레임에 조건부하여 시간적 일관성을 보장합니다. 또한 새로운 시간 마스크 융합 프로세스를 도입하고, SAM2를 사용하여 양방향적인 점의 전파를 실현하며, 영상 시퀀스의 연속성을 크게 향상시킵니다. 이 2 단계 분해, LLM을 사용하여 먼저 정확한 지침 좌표를 생성하고, 순차적인 마스크 융합 모듈을 요청하여 맥락 이해를 단순화하고 해석성을 향상시킵니다. 적절한 데이터 세트가 없기 때문에 72k의 영상- 캡처 페어를 포함하는 상세한 데이터 세트를 준비했습니다. VideoMolmo의 일반화를 평가하기 위해 VPoS-Bench라는 어려운 분포 외 벤치마크를 도입하고, 5개의 실세계 스케너를 제시합니다: 셀트 라킹, 비엿 컴퓨팅 비지니스, 자동 운행, 영상-GUI 상호작용, 로보틱스. 또한, Referring Video Object Segmentation (Refer-VOS)과 Reasoning VOS 태스크에도 평가가 이루어집니다. 기존 모델과 비교하여, VideoMolmo는 시간 공간의 지침 정확성과 논리론 능력을 크게 향상시킵니다. 코드와 모델은 https://github.com/mbzuai-oryx/VideoMolmo에서 공개됩니다.",
+      "upvotes": 3,
+      "discussionId": "68425a80b63271ff416528f2",
+      "projectPage": "https://mbzuai-oryx.github.io/VideoMolmo/",
+      "githubRepo": "https://github.com/mbzuai-oryx/VideoMolmo",
+      "ai_summary": "VideoMolmo, a multimodal model incorporating a temporal attention mechanism and SAM2 for mask fusion, enhances spatio-temporal pointing accuracy and reasoning capabilities in diverse real-world scenarios.",
+      "ai_keywords": [
+        "Molmo",
+        "attention mechanism",
+        "temporal mask fusion",
+        "SAM2",
+        "bidirectional point propagation",
+        "VideoMolmo",
+        "LLM",
+        "sequential mask-fusion module",
+        "VPoS-Bench",
+        "Referring Video Object Segmentation",
+        "Reasoning VOS"
+      ]
+    },
+    "publishedAt": "2025-06-05T13:59:29.000Z",
+    "title": "VideoMolmo: Spatio-Temporal Grounding Meets Pointing",
+    "summary": "Spatio-temporal localization is vital for precise interactions across diverse\ndomains, from biological research to autonomous navigation and interactive\ninterfaces. Current video-based approaches, while proficient in tracking, lack\nthe sophisticated reasoning capabilities of large language models, limiting\ntheir contextual understanding and generalization. We introduce VideoMolmo, a\nlarge multimodal model tailored for fine-grained spatio-temporal pointing\nconditioned on textual descriptions. Building upon the Molmo architecture,\nVideoMolmo incorporates a temporal module utilizing an attention mechanism to\ncondition each frame on preceding frames, ensuring temporal consistency.\nAdditionally, our novel temporal mask fusion pipeline employs SAM2 for\nbidirectional point propagation, significantly enhancing coherence across video\nsequences. This two-step decomposition, i.e., first using the LLM to generate\nprecise pointing coordinates, then relying on a sequential mask-fusion module\nto produce coherent segmentation, not only simplifies the task for the language\nmodel but also enhances interpretability. Due to the lack of suitable datasets,\nwe curate a comprehensive dataset comprising 72k video-caption pairs annotated\nwith 100k object points. To evaluate the generalization of VideoMolmo, we\nintroduce VPoS-Bench, a challenging out-of-distribution benchmark spanning five\nreal-world scenarios: Cell Tracking, Egocentric Vision, Autonomous Driving,\nVideo-GUI Interaction, and Robotics. We also evaluate our model on Referring\nVideo Object Segmentation (Refer-VOS) and Reasoning VOS tasks. In comparison to\nexisting models, VideoMolmo substantially improves spatio-temporal pointing\naccuracy and reasoning capability. Our code and models are publicly available\nat https://github.com/mbzuai-oryx/VideoMolmo.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/656864e12d73834278a8dea7/7r2x8C0UYFCrqk95QpBGr.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.05336.png",
+    "numComments": 5,
+    "submittedBy": {
+      "_id": "656864e12d73834278a8dea7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/656864e12d73834278a8dea7/sfAWS2eyPtFHb_2GZIypp.jpeg",
+      "fullname": "Ahmed Heakl",
+      "name": "ahmedheakl",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 41
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.14755",
+      "authors": [
+        {
+          "_id": "685225250164cd13167104aa",
+          "name": "Zhengxiang Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "685225250164cd13167104ab",
+          "name": "Dongping Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685225250164cd13167104ac",
+          "name": "Mingyang Fu",
+          "hidden": false
+        },
+        {
+          "_id": "685225250164cd13167104ad",
+          "name": "Tianyi Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-17T17:50:16.000Z",
+      "submittedOnDailyAt": "2025-06-18T01:05:46.554Z",
+      "title": "최적화 길이 압축在大규모 계산 모델에应用",
+      "submittedOnDailyBy": {
+        "_id": "647f5af5b0e96764589f3b2a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+        "isPro": false,
+        "fullname": "Tianyi Zhou",
+        "user": "zhoutianyi",
+        "type": "user"
+      },
+      "summary": "대논리 모형(LRMs)는 놀라운 성공을 거둔 반면, 필요한지 않거나 너무 상세한 논리 키를 생성하는 문제를 겪고 있습니다. 이 문제를 핵심으로 \"무효한 생각\"이라는 것을 식별했습니다. 모형은 올바른 답을 얻은 후, 그 작업을 재확인하는 것을 좋아합니다. 이러한 구체적인 불적절성을 해결하기 위해, 일반적인 효율성과 효율성 원칙을 초월하여, 두 가지 새로운, 세밀한 원칙을 제안합니다: Brevity(단결성), 이는冗장(冗長)을 제거하는 것을 주장하고, Sufficiency(충분성), 이는 중요한 논리 단계를 보존하는 것을 확인합니다. 이러한 원칙에 따라, Group Relative Policy Optimization(GRPO)에 기반한 후 학습 방법인 LC-R1을 소개합니다. LC-R1은 전체의 단결성을 보장하기 위해 Length Reward와, 생각 과정의 무효한 부분을 제거하기 위해 특별히 설계된 Compress Reward의 새로운 조합을 사용합니다. 논리 벤치마크에서 광범위한 실험은 LC-R1이 길이(약 50%)를 크게 줄이고, 정확도가 약간(약 2%) 떨어지지만, 고압축을 우선시한 팍팍(Poor Man's) 경계상의 유리한 전환점을 달성하는 것을 보여줍니다. 또한, LC-R1의 강건성을 평가하고, 효율적인 계산 모형의 개발에 유익한 힌트를 제공합니다. 코드는 https://github.com/zxiangx/LC-R1에 릴리즈되어 있습니다.",
+      "upvotes": 1,
+      "discussionId": "685225250164cd13167104ae",
+      "githubRepo": "https://github.com/zxiangx/LC-R1",
+      "ai_summary": "LC-R1, a post-training method guided by Brevity and Sufficiency principles, reduces unnecessary reasoning in Large Reasoning Models with minimal accuracy loss.",
+      "ai_keywords": [
+        "Large Reasoning Models",
+        "LRM",
+        "post-training method",
+        "Group Relative Policy Optimization",
+        "GRPO",
+        "Length Reward",
+        "Compress Reward",
+        "reasoning benchmarks",
+        "Pareto frontier"
+      ]
+    },
+    "publishedAt": "2025-06-17T13:50:16.000Z",
+    "title": "Optimizing Length Compression in Large Reasoning Models",
+    "summary": "Large Reasoning Models (LRMs) have achieved remarkable success, yet they\noften suffer from producing unnecessary and verbose reasoning chains. We\nidentify a core aspect of this issue as \"invalid thinking\" -- models tend to\nrepeatedly double-check their work after having derived the correct answer. To\naddress this specific inefficiency, we move beyond the general principles of\nEfficacy and Efficiency to propose two new, fine-grained principles: Brevity,\nwhich advocates for eliminating redundancy, and Sufficiency, which ensures\ncritical reasoning steps are preserved. Guided by these principles, we\nintroduce LC-R1, a post-training method based on Group Relative Policy\nOptimization (GRPO). LC-R1 employs a novel combination of a Length Reward for\noverall conciseness and a Compress Reward that is specifically designed to\nremove the invalid portion of the thinking process. Extensive experiments on\nmultiple reasoning benchmarks demonstrate that LC-R1 achieves a significant\nreduction in sequence length (~50%) with only a marginal (~2%) drop in\naccuracy, achieving a favorable trade-off point on the Pareto frontier that\nprioritizes high compression. Our analysis further validates the robustness of\nLC-R1 and provides valuable insights for developing more powerful yet\ncomputationally efficient LRMs. Our code is released at\nhttps://github.com/zxiangx/LC-R1.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14755.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "647f5af5b0e96764589f3b2a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+      "fullname": "Tianyi Zhou",
+      "name": "zhoutianyi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 14
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.14731",
+      "authors": [
+        {
+          "_id": "685236ac0164cd1316710512",
+          "name": "Ring Team",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710513",
+          "name": "Bin Hu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710514",
+          "name": "Cai Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710515",
+          "name": "Deng Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710516",
+          "name": "Ding Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710517",
+          "name": "Dingnan Jin",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710518",
+          "name": "Feng Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710519",
+          "name": "Hao Dai",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671051a",
+          "name": "Hongzhi Luan",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671051b",
+          "name": "Jia Guo",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671051c",
+          "name": "Jiaming Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671051d",
+          "name": "Jiewei Wu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671051e",
+          "name": "Jun Mei",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671051f",
+          "name": "Jun Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710520",
+          "name": "Junbo Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710521",
+          "name": "Junwu Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710522",
+          "name": "Kaihong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710523",
+          "name": "Kuan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710524",
+          "name": "Lei Liang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710525",
+          "name": "Liang Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710526",
+          "name": "Liangcheng Fu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710527",
+          "name": "Longfei Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710528",
+          "name": "Qiang Gao",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710529",
+          "name": "Qing Cui",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671052a",
+          "name": "Quan Wan",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671052b",
+          "name": "Shaomian Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671052c",
+          "name": "Shuaicheng Li",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671052d",
+          "name": "Tongkai Yang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671052e",
+          "name": "Wang Ren",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671052f",
+          "name": "Xiaodong Yan",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710530",
+          "name": "Xiaopei Wan",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710531",
+          "name": "Xiaoyun Feng",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710532",
+          "name": "Xin Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710533",
+          "name": "Xinxing Yang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710534",
+          "name": "Xinyu Kong",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710535",
+          "name": "Xuemin Yang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710536",
+          "name": "Yang Li",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710537",
+          "name": "Yingting Wu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710538",
+          "name": "Yongkang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd1316710539",
+          "name": "Zhankai Xu",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671053a",
+          "name": "Zhenduo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671053b",
+          "name": "Zhenglei Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671053c",
+          "name": "Zhenyu Huang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671053d",
+          "name": "Zhiqiang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671053e",
+          "name": "Zihao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685236ac0164cd131671053f",
+          "name": "Zujie Wen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-17T17:12:34.000Z",
+      "submittedOnDailyAt": "2025-06-18T03:14:38.830Z",
+      "title": "링라이트: C3PO를 통해 안정화된 강화학습에 기반한 Scalable Reasoning를 LLM에 적용한 방법",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": true,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "Ring-lite를 소개합니다. 이 모델은 강화학습(RL)에 의해 최적화된 Mixture-of-Experts(MoE) 기반의 대규모 언어 모델로, 효율적이고 견고한 논리론 능력을 달성할 수 있습니다. Ling-lite 모델을 기반으로, 168억 파라미터, 2억7500만 개의 활성 파라미터를 가진 공개 모델로 구축되었습니다. 이 접근법은 상대적으로 모델이 필요로 하는 파라미터의 1/3 정도만 활성으로 유지시키며, 어려운 벤치마크(예: AIME, LiveCodeBench, GPQA-Diamond)에서 가장 先端(SOTA)의 소규모 논리론 모델의 성능을匹敵(匹敵)할 수 있습니다. 이를 달성하기 위해, MoE의 RL 학습에서 기록되지 않은 문제점을 밝혀내는 데, 통합 학습 プイルオフィン을 도입했습니다. 먼저, RL 학습 중 최적화의 불안정성을 식별하고, Constrained Contextual Computation Policy Optimization(C3PO)를 제안했습니다. 이 방법은 알고리즘과 시스템의 공적 설계 방법론을 사용하여, 학습의 안정성을 높일 수 있는 새로운 접근법으로, 계산의 효율성을 향상시킵니다. 다음으로, 템플릿 손실에 기반한 경험적 증거를 제시하고, 이를 통해 RL 학습의 후속 프로세스에서 성능-효율성 변환을 개선하는 것을 증명했습니다. 마지막으로, 2단계 학습 패러다임을 개발하여, 다양한 데이터를 통합하고, 혼합 데이터 세트에서 학습에 의한 영역 충돌을 해결했습니다. 모델, 데이터 세트, 코드를 공개합니다.",
+      "upvotes": 1,
+      "discussionId": "685236ad0164cd1316710540",
+      "ai_summary": "Ring-lite uses a MoE architecture and reinforcement learning to efficiently match SOTA reasoning models while activating fewer parameters and addressing challenges specific to MoE training.",
+      "ai_keywords": [
+        "Mixture-of-Experts (MoE)",
+        "reinforcement learning (RL)",
+        "Ling-lite",
+        "AIME",
+        "LiveCodeBench",
+        "GPQA-Diamond",
+        "Constrained Contextual Computation Policy Optimization(C3PO)",
+        "entropy loss",
+        "two-stage training paradigm"
+      ]
+    },
+    "publishedAt": "2025-06-17T13:12:34.000Z",
+    "title": "Ring-lite: Scalable Reasoning via C3PO-Stabilized Reinforcement Learning\n  for LLMs",
+    "summary": "We present Ring-lite, a Mixture-of-Experts (MoE)-based large language model\noptimized via reinforcement learning (RL) to achieve efficient and robust\nreasoning capabilities. Built upon the publicly available Ling-lite model, a\n16.8 billion parameter model with 2.75 billion activated parameters, our\napproach matches the performance of state-of-the-art (SOTA) small-scale\nreasoning models on challenging benchmarks (e.g., AIME, LiveCodeBench,\nGPQA-Diamond) while activating only one-third of the parameters required by\ncomparable models. To accomplish this, we introduce a joint training pipeline\nintegrating distillation with RL, revealing undocumented challenges in MoE RL\ntraining. First, we identify optimization instability during RL training, and\nwe propose Constrained Contextual Computation Policy Optimization(C3PO), a\nnovel approach that enhances training stability and improves computational\nthroughput via algorithm-system co-design methodology. Second, we empirically\ndemonstrate that selecting distillation checkpoints based on entropy loss for\nRL training, rather than validation metrics, yields superior\nperformance-efficiency trade-offs in subsequent RL training. Finally, we\ndevelop a two-stage training paradigm to harmonize multi-domain data\nintegration, addressing domain conflicts that arise in training with mixed\ndataset. We will release the model, dataset, and code.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14731.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": true,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7130
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.14702",
+      "authors": [
+        {
+          "_id": "6852331e0164cd13167104fb",
+          "name": "Daniel D'souza",
+          "hidden": false
+        },
+        {
+          "_id": "6852331e0164cd13167104fc",
+          "name": "Julia Kreutzer",
+          "hidden": false
+        },
+        {
+          "_id": "6852331e0164cd13167104fd",
+          "name": "Adrien Morisot",
+          "hidden": false
+        },
+        {
+          "_id": "6852331e0164cd13167104fe",
+          "name": "Ahmet Üstün",
+          "hidden": false
+        },
+        {
+          "_id": "6852331e0164cd13167104ff",
+          "name": "Sara Hooker",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6658011eaba105a066e37e1b/RBQEHm8CJA9fKsg4bupgs.png"
+      ],
+      "publishedAt": "2025-06-17T16:40:42.000Z",
+      "submittedOnDailyAt": "2025-06-18T02:55:26.808Z",
+      "title": "「보슴장 쏘리：학습 시의 마커를 활용한 쉼의 실시간 시간 지점 타겟화」",
+      "submittedOnDailyBy": {
+        "_id": "6658011eaba105a066e37e1b",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6658011eaba105a066e37e1b/VPwyTv1bnVMQbVMoMQzcf.jpeg",
+        "isPro": false,
+        "fullname": "Daniel D'souza",
+        "user": "dsouzadaniel",
+        "type": "user"
+      },
+      "summary": "현대 기계 학습의 가장 심각한 문제 중 하나는 희소하고 표현 부족한 특성의 긴 꼬리 부분에서 우수한 성능을 유지하는 것입니다. 대규모 일반 모델은 여러 태스크로 훈련되어 있지만, 고빈도 상황에 적합합니다. 훈련 후, 훈련 코퍼스에 부족한 특성의 특정 태스크에 모델을 적용하는 것은 어렵습니다. 특정 테스트 케이스의 출력 품질을 최대화하기 위해, 프론트 엔지니어링이나 피쳐샷 엔지니어링을 의존시키면, 모델이 작은 변화에 매우 민감하거나, 예상하지 못한 반응을 하거나, 고정된 시스템 프론트엔지니어링을 의존하여 성능을 유지하는 데서 실망할 수 있습니다. 본 연구에서는, \"훈련 프로토콜을 최적화하고 추론 시 부족한 태스크의 제어성과 성능을 양방향으로 구현할 수 있는지?\"라는 질문을 제기하고 있습니다. 훈련과 추론 기술의 차이를 재평가하고, 긴 꼬리 성능을 향상시키면서, 사용자에게 모델이 적절하게 응답하는 제어 기능을 제공하는 것을 목표로 합니다. 데이터의 특성과 태스크의 원인을 상세한 트래크로 작성하고, 추론 시 생성 속성을 명확하게 제어하고, 암묵적으로 조건부 생성을 시도하고 있습니다. 기초 모델을 미세 조정하여, 이러한 마커를 자동 추론할 수 있도록 합니다. 이 원칙적이고 유연한 접근法是, 특히 훈련 분포의 긴 꼬리 부분에서 성능 향상을 명확히 보여주며, 평균 5.7%의 우위율을 상승하는 것을 보입니다. 마커를 사용하여 개방된 생성 품질의 평균 우위율은 5.7%의 상승을 나타내며, 부족한 영역에서 9.1% 이상의 증가를 보입니다. 또한, CodeRepair나 부족한 태스크에 대한 상대적인 우위율을 14.1%를 초과하고, 길이 지시에 따른 평가에서 절대적인 개선은 35.3%를 초과합니다.",
+      "upvotes": 1,
+      "discussionId": "6852331e0164cd1316710500",
+      "ai_summary": "A principled approach to fine-tuning models for better performance and controllability on underrepresented use cases is developed through automatic inference of generation attributes.",
+      "ai_keywords": [
+        "prompt engineering",
+        "few-shot examples",
+        "controllability",
+        "performance",
+        "long-tail",
+        "training protocols",
+        "inference techniques",
+        "taxonomy",
+        "data characteristics",
+        "task provenance",
+        "fine-tuning",
+        "generation attributes",
+        "markers",
+        "underrepresented domains",
+        "CodeRepair",
+        "length instruction following"
+      ]
+    },
+    "publishedAt": "2025-06-17T12:40:42.000Z",
+    "title": "Treasure Hunt: Real-time Targeting of the Long Tail using Training-Time\n  Markers",
+    "summary": "One of the most profound challenges of modern machine learning is performing\nwell on the long-tail of rare and underrepresented features. Large\ngeneral-purpose models are trained for many tasks, but work best on\nhigh-frequency use cases. After training, it is hard to adapt a model to\nperform well on specific use cases underrepresented in the training corpus.\nRelying on prompt engineering or few-shot examples to maximize the output\nquality on a particular test case can be frustrating, as models can be highly\nsensitive to small changes, react in unpredicted ways or rely on a fixed system\nprompt for maintaining performance. In this work, we ask: \"Can we optimize our\ntraining protocols to both improve controllability and performance on\nunderrepresented use cases at inference time?\" We revisit the divide between\ntraining and inference techniques to improve long-tail performance while\nproviding users with a set of control levers the model is trained to be\nresponsive to. We create a detailed taxonomy of data characteristics and task\nprovenance to explicitly control generation attributes and implicitly condition\ngenerations at inference time. We fine-tune a base model to infer these markers\nautomatically, which makes them optional at inference time. This principled and\nflexible approach yields pronounced improvements in performance, especially on\nexamples from the long tail of the training distribution. While we observe an\naverage lift of 5.7% win rates in open-ended generation quality with our\nmarkers, we see over 9.1% gains in underrepresented domains. We also observe\nrelative lifts of up to 14.1% on underrepresented tasks like CodeRepair and\nabsolute improvements of 35.3% on length instruction following evaluations.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6658011eaba105a066e37e1b/RBQEHm8CJA9fKsg4bupgs.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14702.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6658011eaba105a066e37e1b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6658011eaba105a066e37e1b/VPwyTv1bnVMQbVMoMQzcf.jpeg",
+      "fullname": "Daniel D'souza",
+      "name": "dsouzadaniel",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.13901",
+      "authors": [
+        {
+          "_id": "685252860164cd13167105c7",
+          "name": "Abhilekh Borah",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105c8",
+          "name": "Chhavi Sharma",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105c9",
+          "name": "Danush Khanna",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105ca",
+          "name": "Utkarsh Bhatt",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105cb",
+          "name": "Gurpreet Singh",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105cc",
+          "name": "Hasnat Md Abdullah",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105cd",
+          "name": "Raghav Kaushik Ravi",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105ce",
+          "name": "Vinija Jain",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105cf",
+          "name": "Jyoti Patel",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105d0",
+          "name": "Shubham Singh",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105d1",
+          "name": "Vasu Sharma",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105d2",
+          "name": "Arpita Vats",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105d3",
+          "name": "Rahul Raja",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105d4",
+          "name": "Aman Chadha",
+          "hidden": false
+        },
+        {
+          "_id": "685252860164cd13167105d5",
+          "name": "Amitava Das",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-16T18:22:28.000Z",
+      "submittedOnDailyAt": "2025-06-18T04:17:43.427Z",
+      "title": "알라인먼트 젝스 삐 삐 인디텍스 (AQI): 거부보다 멀리: 잠재적인 기하학, 클러스터의 분산성, 레이어웨이즈를 통해 AQI의 고유한 알라인먼트 다이아제스트",
+      "submittedOnDailyBy": {
+        "_id": "63a4754927f1f64ed7238dac",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4754927f1f64ed7238dac/aH-eJF-31g4vof9jv2gmI.jpeg",
+        "isPro": false,
+        "fullname": "Aman Chadha",
+        "user": "amanchadha",
+        "type": "user"
+      },
+      "summary": "アラインメント는 훌륭하지 않고 필수적이다. 대형 언어 모델(LLMs)은 교육, 의료, 직업, 법률 등 고관여 분야에 접어들고, 그 행동은 반드시 인간의 alignment의 가치와 안전한 제약에 확실하게 반영되어야 한다. 그러나 현재의 평가는 부정율, G-Eval 점수, 독성 클래시퍼 등 행동의 대리人来에 중대한 결함이 있다. alignment 모델은 젓가락 브레이크, 생성의 랜덤성, alignment의 팩시닝에 취약하다.\n\n이 문제를 해결하기 위해, 우리는 alignment 품질 인덱스(AQI)를 소개한다. 이 새로운 기하학적인, 프론트트 불변 메트릭은 LLM의 alignment를 실험적으로 평가하며, 잠재 공간에서 안전하고 불안안한 행동을 분리해 분석한다. DBS(Davies-Bouldin Score), DI(Dunn Index), XBI(Xie-Beni Index), CHI(Calinski-Harabasz Index) 등 측정을 결합하여, AQI는 클러스터링의 품질을 파악하고, 숨겨진 부적절한 alignment 및 젓가락 브레이크 위험을 감지할 수 있다. AQI는 alignment의 팩시닝의 조기 경보 신호로도役를 한다. 행동과 상관없이 강력한, 디코딩 불변인 도구로, 안전성 에러트레이닝을 단호하게 한다.\n\n또한, 우리는 LITMUS 데이터 세트를 제안한다. 이 데이터 세트는 이러한 어려운 조건에서 강력한 평가를 촉발한다. DPO, GRPO, RLHF 조건으로 훈련된 서로 다른 모델에 대해 LITMUS에서 실험은, AQI와 외부의 판단자와 관계, 거부 메트릭에 의해 드러난 취약성을 밝혀낸다. 우리의 구현은 공개적으로 이용이 가능한 것으로, 이 분야의 미래 연구를 촉발한다.",
+      "upvotes": 1,
+      "discussionId": "685252870164cd13167105d6",
+      "ai_summary": "A new evaluation metric called Alignment Quality Index (AQI) assesses the alignment of large language models by analyzing latent space activations, capturing clustering quality to detect misalignments and fake alignment, and complementing existing behavioral proxies.",
+      "ai_keywords": [
+        "Alignment Quality Index (AQI)",
+        "latent space",
+        "Davies-Bouldin Score (DBS)",
+        "Dunn Index (DI)",
+        "Xie-Beni Index (XBI)",
+        "Calinski-Harabasz Index (CHI)",
+        "LITMUS dataset",
+        "DPO",
+        "GRPO",
+        "RLHF",
+        "alignment faking",
+        "external judges"
+      ]
+    },
+    "publishedAt": "2025-06-16T14:22:28.000Z",
+    "title": "Alignment Quality Index (AQI) : Beyond Refusals: AQI as an Intrinsic\n  Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise\n  Pooled Representations",
+    "summary": "Alignment is no longer a luxury, it is a necessity. As large language models\n(LLMs) enter high-stakes domains like education, healthcare, governance, and\nlaw, their behavior must reliably reflect human-aligned values and safety\nconstraints. Yet current evaluations rely heavily on behavioral proxies such as\nrefusal rates, G-Eval scores, and toxicity classifiers, all of which have\ncritical blind spots. Aligned models are often vulnerable to jailbreaking,\nstochasticity of generation, and alignment faking.\n  To address this issue, we introduce the Alignment Quality Index (AQI). This\nnovel geometric and prompt-invariant metric empirically assesses LLM alignment\nby analyzing the separation of safe and unsafe activations in latent space. By\ncombining measures such as the Davies-Bouldin Score (DBS), Dunn Index (DI),\nXie-Beni Index (XBI), and Calinski-Harabasz Index (CHI) across various\nformulations, AQI captures clustering quality to detect hidden misalignments\nand jailbreak risks, even when outputs appear compliant. AQI also serves as an\nearly warning signal for alignment faking, offering a robust, decoding\ninvariant tool for behavior agnostic safety auditing.\n  Additionally, we propose the LITMUS dataset to facilitate robust evaluation\nunder these challenging conditions. Empirical tests on LITMUS across different\nmodels trained under DPO, GRPO, and RLHF conditions demonstrate AQI's\ncorrelation with external judges and ability to reveal vulnerabilities missed\nby refusal metrics. We make our implementation publicly available to foster\nfuture research in this area.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.13901.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63a4754927f1f64ed7238dac",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4754927f1f64ed7238dac/aH-eJF-31g4vof9jv2gmI.jpeg",
+      "fullname": "Aman Chadha",
+      "name": "amanchadha",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.13599",
+      "authors": [
+        {
+          "_id": "685220810164cd131671048e",
+          "name": "Yuwei Du",
+          "hidden": false
+        },
+        {
+          "_id": "685220810164cd131671048f",
+          "name": "Jie Feng",
+          "hidden": false
+        },
+        {
+          "_id": "685220810164cd1316710490",
+          "name": "Jian Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "685220810164cd1316710491",
+          "name": "Yong Li",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6465d3bd63e7e09dd02e95c3/t_3QiPaJ54vNcgeYZKMgy.jpeg"
+      ],
+      "publishedAt": "2025-06-16T15:24:07.000Z",
+      "submittedOnDailyAt": "2025-06-18T01:27:33.225Z",
+      "title": "CAMS: 도시 GPT를 포트폴리오로 하는 도시인 이동성 Агенс트 프레임워크의 시뮬레이션",
+      "submittedOnDailyBy": {
+        "_id": "6465d3bd63e7e09dd02e95c3",
+        "avatarUrl": "/avatars/b2798bd5f8368f956bf7fab79d9432f0.svg",
+        "isPro": false,
+        "fullname": "Jie Feng",
+        "user": "JJ-TMT",
+        "type": "user"
+      },
+      "summary": "인간 이동 시뮬레이션은 많은 현실 세계의 응용 분야에서 중요한 역할을 수행하고 있습니다. 최근, 데이터 주도 접근법의 한계를 해결하기 위해, 연구자들은 대규모 언어 모델(LLMs)의 공동 지식과 추론 능력을 활용하여 인간 이동 시뮬레이션을 가속화하는 방법을 탐색하고 있습니다. 그러나 이러한 방법은 도시 공간의 불충분한 모델링과 개인 이동 패턴과 집단 이동 분포의 나쁜 통합을 포함한 여러 중요한 결함이 있습니다. 이러한 도전에 대처하기 위해, 우리는 언어 기반의 도시 기반 모델을 활용하여 도시 공간에서의 인간 이동을 시뮬레이션하는 에이전트 프레임워크인 'CAMS'를 제안합니다. CAMS는 MobExtractor, GeoGenerator, TrajEnhancer의 3개의 핵심 모듈로 구성되어 있으며, 사용자 프로필에 기반하여 템플릿 모델의 이동 패턴을 추출하고 새로운 패턴을 합성하고 집단의 지식을 검토하여 Anchor 포인트를 생성하고 도시 공간의 후보 큐인스kill을 생성하고 실제 이동 패턴에 기반하여 DPO를 통해 트래지렉트를 생성합니다. 실제 세계의 데이터 셋에 대한 실험 결과로부터, CAMS는 외부적으로 제공된 지리적 지역 정보에 의존하지 않지만, 높은 성능을 발휘하고 있습니다. 또한 개인 이동 패턴과 집단 이동 제약을 전체적으로 모델링함으로써, CAMS는 더욱 현실적이고 적절한 트래지렉트를 생성합니다. 일반적으로, CAMS는 에이전트 프레임워크와 도시 지식을 가진 LLMs를 통합하는 새로운 패러다임을 구축하고, 인간 이동 시뮬레이션에 새로운 가능성을 개척합니다.",
+      "upvotes": 1,
+      "discussionId": "685220820164cd1316710492",
+      "ai_summary": "CAMS integrates an agentic framework with urban-knowledgeable large language models to simulate human mobility more realistically by modeling individual and collective patterns.",
+      "ai_keywords": [
+        "large language models",
+        "CityGPT",
+        "agentic framework",
+        "human mobility simulation",
+        "urban spaces",
+        "individual mobility patterns",
+        "collective mobility distributions",
+        "MobExtractor",
+        "GeoGenerator",
+        "TrajEnhancer",
+        "DPO",
+        "trajectory preference alignment",
+        "real-world datasets"
+      ]
+    },
+    "publishedAt": "2025-06-16T11:24:07.000Z",
+    "title": "CAMS: A CityGPT-Powered Agentic Framework for Urban Human Mobility\n  Simulation",
+    "summary": "Human mobility simulation plays a crucial role in various real-world\napplications. Recently, to address the limitations of traditional data-driven\napproaches, researchers have explored leveraging the commonsense knowledge and\nreasoning capabilities of large language models (LLMs) to accelerate human\nmobility simulation. However, these methods suffer from several critical\nshortcomings, including inadequate modeling of urban spaces and poor\nintegration with both individual mobility patterns and collective mobility\ndistributions. To address these challenges, we propose CityGPT-Powered\nAgentic framework for Mobility Simulation\n(CAMS), an agentic framework that leverages the language based urban\nfoundation model to simulate human mobility in urban space. CAMS\ncomprises three core modules, including MobExtractor to extract template\nmobility patterns and synthesize new ones based on user profiles, GeoGenerator\nto generate anchor points considering collective knowledge and generate\ncandidate urban geospatial knowledge using an enhanced version of CityGPT,\nTrajEnhancer to retrieve spatial knowledge based on mobility patterns and\ngenerate trajectories with real trajectory preference alignment via DPO.\nExperiments on real-world datasets show that CAMS achieves superior\nperformance without relying on externally provided geospatial information.\nMoreover, by holistically modeling both individual mobility patterns and\ncollective mobility constraints, CAMS generates more realistic and\nplausible trajectories. In general, CAMS establishes a new paradigm\nthat integrates the agentic framework with urban-knowledgeable LLMs for human\nmobility simulation.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6465d3bd63e7e09dd02e95c3/t_3QiPaJ54vNcgeYZKMgy.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.13599.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6465d3bd63e7e09dd02e95c3",
+      "avatarUrl": "/avatars/b2798bd5f8368f956bf7fab79d9432f0.svg",
+      "fullname": "Jie Feng",
+      "name": "JJ-TMT",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.13387",
+      "authors": [
+        {
+          "_id": "6852239f0164cd13167104a4",
+          "name": "Beilei Cui",
+          "hidden": false
+        },
+        {
+          "_id": "6852239f0164cd13167104a5",
+          "name": "Yiming Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6852239f0164cd13167104a6",
+          "name": "Long Bai",
+          "hidden": false
+        },
+        {
+          "_id": "6852239f0164cd13167104a7",
+          "name": "Hongliang Ren",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-16T11:50:00.000Z",
+      "submittedOnDailyAt": "2025-06-18T00:57:15.579Z",
+      "title": "TR2M: 랭그라우트와 스케일 지향적인 비교를 이용한 단 카메라의 상대적 깊이를 메트릭 깊이로 변환",
+      "submittedOnDailyBy": {
+        "_id": "68518fb45452a74491857c5b",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/SOYIB8T0LsNZM3ORcHXlr.png",
+        "isPro": false,
+        "fullname": "Beilei Cui",
+        "user": "BeileiCui",
+        "type": "user"
+      },
+      "summary": "이 연구에서는 일반적인 프레임워크를 제안하여 상대적인 깊이를 표준적인 깊이로 변환합니다. 현재의 단일레이어 깊이 추정 방법은 주로 표준적인 깊이 추정(MMDE)과 상대적인 깊이 추정(MRDE)로 나뉩니다. MMDE는 표준 스케일로 깊이를 추정하지만 특정 영역에 제한되어 있습니다. MRDE는 다른 영역에서도 일반화할 수 있지만 불확실한 스케일이 하위 애플리케이션에 방해됩니다. 이러한 점을 해결하고 상대적인 깊이를 표준적인 깊이로 변환하는 프레임워크를 구축하는 것이 목표입니다. 이전 방법은 언어를 입력으로 사용하며 리사이징을 위한 두 가지 요인을 추정했습니다. 우리 접근 방식에서는 TR2M은 텍스트 설명과 이미지를 입력으로 사용하며 상대적인 깊이를 표준적인 깊이로 변환하기 위해 픽셀 수준에서 두 개의 리사이징 맵을 추정합니다. 두 모듈의 특징은 교차 모듈 어텐션 모듈을 사용하여 더 나은 스케일 정보를捉捉합니다. 높은 신뢰도의 표준적인 깊이를 구축하고 필터링하여 더 상세한 슈퍼바이저를 제공하는 전략을 설계했습니다. 또한 스케일에 대한 대비 학습을 개발하여 깊이 분포를 가이드로 하여 스케일 분포에 맞는 고유의 지식을 학습시킵니다. TR2M은 다수의 학습 파라미터를 사용하며 다양한 영역에서 훈련된 훈련 데이터셋을 위해 사용됩니다. 실험은 기존 데이터셋에서 우수한 성능을 보여주며 5개의未见 데이터셋에서 뛰어난 0 shot 능력을 밝혀냅니다. 언어의 도움을 받아 상대적인 깊이를 표준적인 깊이로 변환하는 픽셀 수준에서 큰 가능성에 대한 가능성을 보여줍니다. 코드는 다음 URL에서 사용 가능합니다: https://github.com/BeileiCui/TR2M",
+      "upvotes": 0,
+      "discussionId": "6852239f0164cd13167104a8",
+      "ai_summary": "A framework, TR2M, uses multimodal inputs to rescale relative depth to metric depth, enhancing performance across various datasets through cross-modality attention and contrastive learning.",
+      "ai_keywords": [
+        "relative depth estimation",
+        "metric depth estimation",
+        "cross-modality attention",
+        "contrastive learning",
+        "rescale maps",
+        "pseudo metric depth",
+        "intrinsically aligned scale distribution"
+      ]
+    },
+    "publishedAt": "2025-06-16T07:50:00.000Z",
+    "title": "TR2M: Transferring Monocular Relative Depth to Metric Depth with\n  Language Descriptions and Scale-Oriented Contrast",
+    "summary": "This work presents a generalizable framework to transfer relative depth to\nmetric depth. Current monocular depth estimation methods are mainly divided\ninto metric depth estimation (MMDE) and relative depth estimation (MRDE). MMDEs\nestimate depth in metric scale but are often limited to a specific domain.\nMRDEs generalize well across different domains, but with uncertain scales which\nhinders downstream applications. To this end, we aim to build up a framework to\nsolve scale uncertainty and transfer relative depth to metric depth. Previous\nmethods used language as input and estimated two factors for conducting\nrescaling. Our approach, TR2M, utilizes both text description and image as\ninputs and estimates two rescale maps to transfer relative depth to metric\ndepth at pixel level. Features from two modalities are fused with a\ncross-modality attention module to better capture scale information. A strategy\nis designed to construct and filter confident pseudo metric depth for more\ncomprehensive supervision. We also develop scale-oriented contrastive learning\nto utilize depth distribution as guidance to enforce the model learning about\nintrinsic knowledge aligning with the scale distribution. TR2M only exploits a\nsmall number of trainable parameters to train on datasets in various domains\nand experiments not only demonstrate TR2M's great performance in seen datasets\nbut also reveal superior zero-shot capabilities on five unseen datasets. We\nshow the huge potential in pixel-wise transferring relative depth to metric\ndepth with language assistance. (Code is available at:\nhttps://github.com/BeileiCui/TR2M)",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.13387.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "68518fb45452a74491857c5b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/SOYIB8T0LsNZM3ORcHXlr.png",
+      "fullname": "Beilei Cui",
+      "name": "BeileiCui",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  }
+]
