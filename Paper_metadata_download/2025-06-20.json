@@ -1,0 +1,465 @@
+[
+  {
+    "paper": {
+      "id": "2506.14965",
+      "authors": [
+        {
+          "_id": "68538be099bf39f9665c79b9",
+          "name": "Zhoujun Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79ba",
+          "name": "Shibo Hao",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79bb",
+          "name": "Tianyang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79bc",
+          "name": "Fan Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79bd",
+          "name": "Yutao Xie",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79be",
+          "name": "Feng Yao",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79bf",
+          "name": "Yuexin Bian",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c0",
+          "name": "Yonghao Zhuang",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c1",
+          "name": "Nilabjo Dey",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c2",
+          "name": "Yuheng Zha",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c3",
+          "name": "Yi Gu",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c4",
+          "name": "Kun Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c5",
+          "name": "Yuqi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c6",
+          "name": "Yuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c7",
+          "name": "Richard Fan",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c8",
+          "name": "Jianshu She",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79c9",
+          "name": "Chengqian Gao",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79ca",
+          "name": "Abulhair Saparov",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79cb",
+          "name": "Haonan Li",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79cc",
+          "name": "Taylor W. Killian",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79cd",
+          "name": "Mikhail Yurochkin",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79ce",
+          "name": "Zhengzhong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79cf",
+          "name": "Eric P. Xing",
+          "hidden": false
+        },
+        {
+          "_id": "68538be099bf39f9665c79d0",
+          "name": "Zhiting Hu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-17T20:24:00.000Z",
+      "submittedOnDailyAt": "2025-06-20T06:25:47.447Z",
+      "title": "Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain\n  Perspective",
+      "submittedOnDailyBy": {
+        "_id": "6083902e1e36b13a64497d91",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6083902e1e36b13a64497d91/h4rGHMn2c6z5GesF0F6VU.png",
+        "isPro": false,
+        "fullname": "cheng",
+        "user": "zhoujun",
+        "type": "user"
+      },
+      "summary": "Reinforcement learning (RL) has emerged as a promising approach to improve\nlarge language model (LLM) reasoning, yet most open efforts focus narrowly on\nmath and code, limiting our understanding of its broader applicability to\ngeneral reasoning. A key challenge lies in the lack of reliable, scalable RL\nreward signals across diverse reasoning domains. We introduce Guru, a curated\nRL reasoning corpus of 92K verifiable examples spanning six reasoning\ndomains--Math, Code, Science, Logic, Simulation, and Tabular--each built\nthrough domain-specific reward design, deduplication, and filtering to ensure\nreliability and effectiveness for RL training. Based on Guru, we systematically\nrevisit established findings in RL for LLM reasoning and observe significant\nvariation across domains. For example, while prior work suggests that RL\nprimarily elicits existing knowledge from pretrained models, our results reveal\na more nuanced pattern: domains frequently seen during pretraining (Math, Code,\nScience) easily benefit from cross-domain RL training, while domains with\nlimited pretraining exposure (Logic, Simulation, and Tabular) require in-domain\ntraining to achieve meaningful performance gains, suggesting that RL is likely\nto facilitate genuine skill acquisition. Finally, we present Guru-7B and\nGuru-32B, two models that achieve state-of-the-art performance among open\nmodels RL-trained with publicly available data, outperforming best baselines by\n7.9% and 6.7% on our 17-task evaluation suite across six reasoning domains. We\nalso show that our models effectively improve the Pass@k performance of their\nbase models, particularly on complex tasks less likely to appear in pretraining\ndata. We release data, models, training and evaluation code to facilitate\ngeneral-purpose reasoning at: https://github.com/LLM360/Reasoning360",
+      "upvotes": 6,
+      "discussionId": "68538be099bf39f9665c79d1",
+      "ai_summary": "Guru, a diverse RL reasoning corpus, highlights domain-specific training needs and demonstrates improved performance in complex tasks for RL-enhanced LLMs.",
+      "ai_keywords": [
+        "reinforcement learning",
+        "large language model",
+        "RL reasoning",
+        "curated RL reasoning corpus",
+        "domain-specific reward design",
+        "dereplication",
+        "filtering",
+        "cross-domain RL training",
+        "in-domain training",
+        "Guru-7B",
+        "Guru-32B",
+        "Pass@k performance"
+      ]
+    },
+    "publishedAt": "2025-06-17T16:24:00.000Z",
+    "title": "Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain\n  Perspective",
+    "summary": "Reinforcement learning (RL) has emerged as a promising approach to improve\nlarge language model (LLM) reasoning, yet most open efforts focus narrowly on\nmath and code, limiting our understanding of its broader applicability to\ngeneral reasoning. A key challenge lies in the lack of reliable, scalable RL\nreward signals across diverse reasoning domains. We introduce Guru, a curated\nRL reasoning corpus of 92K verifiable examples spanning six reasoning\ndomains--Math, Code, Science, Logic, Simulation, and Tabular--each built\nthrough domain-specific reward design, deduplication, and filtering to ensure\nreliability and effectiveness for RL training. Based on Guru, we systematically\nrevisit established findings in RL for LLM reasoning and observe significant\nvariation across domains. For example, while prior work suggests that RL\nprimarily elicits existing knowledge from pretrained models, our results reveal\na more nuanced pattern: domains frequently seen during pretraining (Math, Code,\nScience) easily benefit from cross-domain RL training, while domains with\nlimited pretraining exposure (Logic, Simulation, and Tabular) require in-domain\ntraining to achieve meaningful performance gains, suggesting that RL is likely\nto facilitate genuine skill acquisition. Finally, we present Guru-7B and\nGuru-32B, two models that achieve state-of-the-art performance among open\nmodels RL-trained with publicly available data, outperforming best baselines by\n7.9% and 6.7% on our 17-task evaluation suite across six reasoning domains. We\nalso show that our models effectively improve the Pass@k performance of their\nbase models, particularly on complex tasks less likely to appear in pretraining\ndata. We release data, models, training and evaluation code to facilitate\ngeneral-purpose reasoning at: https://github.com/LLM360/Reasoning360",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14965.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6083902e1e36b13a64497d91",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6083902e1e36b13a64497d91/h4rGHMn2c6z5GesF0F6VU.png",
+      "fullname": "cheng",
+      "name": "zhoujun",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.15154",
+      "authors": [
+        {
+          "_id": "685393f499bf39f9665c79db",
+          "name": "Anuradha Chopra",
+          "hidden": false
+        },
+        {
+          "_id": "685393f499bf39f9665c79dc",
+          "name": "Abhinaba Roy",
+          "hidden": false
+        },
+        {
+          "_id": "685393f499bf39f9665c79dd",
+          "name": "Dorien Herremans",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/655431b2997379e9b0999d23/zAwOQ2zY8-8Eu7bUhFURQ.png"
+      ],
+      "publishedAt": "2025-06-18T05:51:36.000Z",
+      "submittedOnDailyAt": "2025-06-20T04:32:59.096Z",
+      "title": "SonicVerse: Multi-Task Learning for Music Feature-Informed Captioning",
+      "submittedOnDailyBy": {
+        "_id": "655431b2997379e9b0999d23",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/655431b2997379e9b0999d23/OhHCPCXfOS61Z7CSewUCU.png",
+        "isPro": false,
+        "fullname": "Dorien Herremans",
+        "user": "dorienh",
+        "type": "user"
+      },
+      "summary": "Detailed captions that accurately reflect the characteristics of a music\npiece can enrich music databases and drive forward research in music AI. This\npaper introduces a multi-task music captioning model, SonicVerse, that\nintegrates caption generation with auxiliary music feature detection tasks such\nas key detection, vocals detection, and more, so as to directly capture both\nlow-level acoustic details as well as high-level musical attributes. The key\ncontribution is a projection-based architecture that transforms audio input\ninto language tokens, while simultaneously detecting music features through\ndedicated auxiliary heads. The outputs of these heads are also projected into\nlanguage tokens, to enhance the captioning input. This framework not only\nproduces rich, descriptive captions for short music fragments but also directly\nenables the generation of detailed time-informed descriptions for longer music\npieces, by chaining the outputs using a large-language model. To train the\nmodel, we extended the MusicBench dataset by annotating it with music features\nusing MIRFLEX, a modular music feature extractor, resulting in paired audio,\ncaptions and music feature data. Experimental results show that incorporating\nfeatures in this way improves the quality and detail of the generated captions.",
+      "upvotes": 2,
+      "discussionId": "685393f599bf39f9665c79de",
+      "ai_summary": "SonicVerse, a multi-task music captioning model, integrates audio feature detection to enhance caption quality and enable detailed descriptions of music pieces.",
+      "ai_keywords": [
+        "multi-task music captioning",
+        "SonicVerse",
+        "caption generation",
+        "key detection",
+        "vocals detection",
+        "projection-based architecture",
+        "language tokens",
+        "auxiliary heads",
+        "time-informed descriptions",
+        "large-language model",
+        "MusicBench dataset",
+        "MIRFLEX",
+        "music feature extractor"
+      ]
+    },
+    "publishedAt": "2025-06-18T01:51:36.000Z",
+    "title": "SonicVerse: Multi-Task Learning for Music Feature-Informed Captioning",
+    "summary": "Detailed captions that accurately reflect the characteristics of a music\npiece can enrich music databases and drive forward research in music AI. This\npaper introduces a multi-task music captioning model, SonicVerse, that\nintegrates caption generation with auxiliary music feature detection tasks such\nas key detection, vocals detection, and more, so as to directly capture both\nlow-level acoustic details as well as high-level musical attributes. The key\ncontribution is a projection-based architecture that transforms audio input\ninto language tokens, while simultaneously detecting music features through\ndedicated auxiliary heads. The outputs of these heads are also projected into\nlanguage tokens, to enhance the captioning input. This framework not only\nproduces rich, descriptive captions for short music fragments but also directly\nenables the generation of detailed time-informed descriptions for longer music\npieces, by chaining the outputs using a large-language model. To train the\nmodel, we extended the MusicBench dataset by annotating it with music features\nusing MIRFLEX, a modular music feature extractor, resulting in paired audio,\ncaptions and music feature data. Experimental results show that incorporating\nfeatures in this way improves the quality and detail of the generated captions.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/655431b2997379e9b0999d23/zAwOQ2zY8-8Eu7bUhFURQ.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.15154.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "655431b2997379e9b0999d23",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/655431b2997379e9b0999d23/OhHCPCXfOS61Z7CSewUCU.png",
+      "fullname": "Dorien Herremans",
+      "name": "dorienh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.09827",
+      "authors": [
+        {
+          "_id": "685519bb4f1add9d4c5c5cbd",
+          "user": {
+            "_id": "61a24fc72101184cfb29c965",
+            "avatarUrl": "/avatars/e32aa61016caef50de28c16b30196799.svg",
+            "isPro": false,
+            "fullname": "Christoph Schuhmann",
+            "user": "ChristophSchuhmann",
+            "type": "user"
+          },
+          "name": "Christoph Schuhmann",
+          "status": "extracted_pending",
+          "statusLastChangedAt": "2025-06-20T08:20:12.243Z",
+          "hidden": false
+        },
+        {
+          "_id": "685519bb4f1add9d4c5c5cbe",
+          "name": "Robert Kaczmarczyk",
+          "hidden": false
+        },
+        {
+          "_id": "685519bb4f1add9d4c5c5cbf",
+          "name": "Gollam Rabby",
+          "hidden": false
+        },
+        {
+          "_id": "685519bb4f1add9d4c5c5cc0",
+          "user": {
+            "_id": "62e7dd4036a8e8a82700041c",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62e7dd4036a8e8a82700041c/Dgk9mXYLVd4LpiNLWjn-q.jpeg",
+            "isPro": false,
+            "fullname": "Felix Friedrich",
+            "user": "felfri",
+            "type": "user"
+          },
+          "name": "Felix Friedrich",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-20T08:57:36.090Z",
+          "hidden": false
+        },
+        {
+          "_id": "685519bb4f1add9d4c5c5cc1",
+          "name": "Maurice Kraus",
+          "hidden": false
+        },
+        {
+          "_id": "685519bb4f1add9d4c5c5cc2",
+          "name": "Kourosh Nadi",
+          "hidden": false
+        },
+        {
+          "_id": "685519bb4f1add9d4c5c5cc3",
+          "name": "Huu Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "685519bb4f1add9d4c5c5cc4",
+          "name": "Kristian Kersting",
+          "hidden": false
+        },
+        {
+          "_id": "685519bb4f1add9d4c5c5cc5",
+          "name": "Sören Auer",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/62e7dd4036a8e8a82700041c/tvkMYrIKiGhbIVAuaxvlt.png"
+      ],
+      "publishedAt": "2025-06-11T15:06:59.000Z",
+      "submittedOnDailyAt": "2025-06-20T06:53:47.262Z",
+      "title": "EmoNet-Voice: A Fine-Grained, Expert-Verified Benchmark for Speech\n  Emotion Detection",
+      "submittedOnDailyBy": {
+        "_id": "62e7dd4036a8e8a82700041c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62e7dd4036a8e8a82700041c/Dgk9mXYLVd4LpiNLWjn-q.jpeg",
+        "isPro": false,
+        "fullname": "Felix Friedrich",
+        "user": "felfri",
+        "type": "user"
+      },
+      "summary": "The advancement of text-to-speech and audio generation models necessitates\nrobust benchmarks for evaluating the emotional understanding capabilities of AI\nsystems. Current speech emotion recognition (SER) datasets often exhibit\nlimitations in emotional granularity, privacy concerns, or reliance on acted\nportrayals. This paper introduces EmoNet-Voice, a new resource for speech\nemotion detection, which includes EmoNet-Voice Big, a large-scale pre-training\ndataset (featuring over 4,500 hours of speech across 11 voices, 40 emotions,\nand 4 languages), and EmoNet-Voice Bench, a novel benchmark dataset with human\nexpert annotations. EmoNet-Voice is designed to evaluate SER models on a\nfine-grained spectrum of 40 emotion categories with different levels of\nintensities. Leveraging state-of-the-art voice generation, we curated synthetic\naudio snippets simulating actors portraying scenes designed to evoke specific\nemotions. Crucially, we conducted rigorous validation by psychology experts who\nassigned perceived intensity labels. This synthetic, privacy-preserving\napproach allows for the inclusion of sensitive emotional states often absent in\nexisting datasets. Lastly, we introduce Empathic Insight Voice models that set\na new standard in speech emotion recognition with high agreement with human\nexperts. Our evaluations across the current model landscape exhibit valuable\nfindings, such as high-arousal emotions like anger being much easier to detect\nthan low-arousal states like concentration.",
+      "upvotes": 1,
+      "discussionId": "685519bb4f1add9d4c5c5cc6",
+      "ai_summary": "EmoNet-Voice, a new resource with large pre-training and benchmark datasets, advances speech emotion recognition by offering fine-grained emotion evaluation with synthetic, privacy-preserving audio.",
+      "ai_keywords": [
+        "speech emotion recognition",
+        "SER",
+        "EmoNet-Voice",
+        "EmoNet-Voice Big",
+        "EmoNet-Voice Bench",
+        "human expert annotations",
+        "synthetic audio snippets",
+        "psychology experts",
+        "high-arousal emotions",
+        "low-arousal states",
+        "Empathic Insight Voice models"
+      ]
+    },
+    "publishedAt": "2025-06-11T11:06:59.000Z",
+    "title": "EmoNet-Voice: A Fine-Grained, Expert-Verified Benchmark for Speech\n  Emotion Detection",
+    "summary": "The advancement of text-to-speech and audio generation models necessitates\nrobust benchmarks for evaluating the emotional understanding capabilities of AI\nsystems. Current speech emotion recognition (SER) datasets often exhibit\nlimitations in emotional granularity, privacy concerns, or reliance on acted\nportrayals. This paper introduces EmoNet-Voice, a new resource for speech\nemotion detection, which includes EmoNet-Voice Big, a large-scale pre-training\ndataset (featuring over 4,500 hours of speech across 11 voices, 40 emotions,\nand 4 languages), and EmoNet-Voice Bench, a novel benchmark dataset with human\nexpert annotations. EmoNet-Voice is designed to evaluate SER models on a\nfine-grained spectrum of 40 emotion categories with different levels of\nintensities. Leveraging state-of-the-art voice generation, we curated synthetic\naudio snippets simulating actors portraying scenes designed to evoke specific\nemotions. Crucially, we conducted rigorous validation by psychology experts who\nassigned perceived intensity labels. This synthetic, privacy-preserving\napproach allows for the inclusion of sensitive emotional states often absent in\nexisting datasets. Lastly, we introduce Empathic Insight Voice models that set\na new standard in speech emotion recognition with high agreement with human\nexperts. Our evaluations across the current model landscape exhibit valuable\nfindings, such as high-arousal emotions like anger being much easier to detect\nthan low-arousal states like concentration.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/62e7dd4036a8e8a82700041c/tvkMYrIKiGhbIVAuaxvlt.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.09827.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62e7dd4036a8e8a82700041c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62e7dd4036a8e8a82700041c/Dgk9mXYLVd4LpiNLWjn-q.jpeg",
+      "fullname": "Felix Friedrich",
+      "name": "felfri",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 11
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.14837",
+      "authors": [
+        {
+          "_id": "6854ea7a7bc8d012d4ca998d",
+          "name": "Chengzhi Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6854ea7a7bc8d012d4ca998e",
+          "name": "Yuyang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6854ea7a7bc8d012d4ca998f",
+          "user": {
+            "_id": "64a16b1aeacb4b50ba1c889d",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64a16b1aeacb4b50ba1c889d/EhWoBGL6LlFGIVTUsp2F4.jpeg",
+            "isPro": false,
+            "fullname": "Lai Wei",
+            "user": "WaltonFuture",
+            "type": "user"
+          },
+          "name": "Lai Wei",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-20T08:57:40.628Z",
+          "hidden": false
+        },
+        {
+          "_id": "6854ea7a7bc8d012d4ca9990",
+          "name": "Lichao Sun",
+          "hidden": false
+        },
+        {
+          "_id": "6854ea7a7bc8d012d4ca9991",
+          "name": "Weiran Huang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-15T14:10:16.000Z",
+      "submittedOnDailyAt": "2025-06-20T03:28:58.032Z",
+      "title": "Improved Iterative Refinement for Chart-to-Code Generation via\n  Structured Instruction",
+      "submittedOnDailyBy": {
+        "_id": "64a16b1aeacb4b50ba1c889d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64a16b1aeacb4b50ba1c889d/EhWoBGL6LlFGIVTUsp2F4.jpeg",
+        "isPro": false,
+        "fullname": "Lai Wei",
+        "user": "WaltonFuture",
+        "type": "user"
+      },
+      "summary": "Recently, multimodal large language models (MLLMs) have attracted increasing\nresearch attention due to their powerful visual understanding capabilities.\nWhile they have achieved impressive results on various vision tasks, their\nperformance on chart-to-code generation remains suboptimal. This task requires\nMLLMs to generate executable code that can reproduce a given chart, demanding\nnot only precise visual understanding but also accurate translation of visual\nelements into structured code. Directly prompting MLLMs to perform this complex\ntask often yields unsatisfactory results. To address this challenge, we propose\n{ChartIR}, an iterative refinement method based on structured instruction.\nFirst, we distinguish two tasks: visual understanding and code translation. To\naccomplish the visual understanding component, we design two types of\nstructured instructions: description and difference. The description\ninstruction captures the visual elements of the reference chart, while the\ndifference instruction characterizes the discrepancies between the reference\nchart and the generated chart. These instructions effectively transform visual\nfeatures into language representations, thereby facilitating the subsequent\ncode translation process. Second, we decompose the overall chart generation\npipeline into two stages: initial code generation and iterative refinement,\nenabling progressive enhancement of the final output. Experimental results show\nthat, compared to other method, our method achieves superior performance on\nboth the open-source model Qwen2-VL and the closed-source model GPT-4o.",
+      "upvotes": 0,
+      "discussionId": "6854ea7a7bc8d012d4ca9992",
+      "ai_summary": "ChartIR uses structured instruction and iterative refinement to improve MLLM performance in chart-to-code generation by separating visual understanding and code translation tasks.",
+      "ai_keywords": [
+        "multimodal large language models",
+        "MLLMs",
+        "visual understanding",
+        "code translation",
+        "structured instruction",
+        "description instruction",
+        "difference instruction",
+        "language representations",
+        "initial code generation",
+        "iterative refinement",
+        "Qwen2-VL",
+        "GPT-4o"
+      ]
+    },
+    "publishedAt": "2025-06-15T10:10:16.000Z",
+    "title": "Improved Iterative Refinement for Chart-to-Code Generation via\n  Structured Instruction",
+    "summary": "Recently, multimodal large language models (MLLMs) have attracted increasing\nresearch attention due to their powerful visual understanding capabilities.\nWhile they have achieved impressive results on various vision tasks, their\nperformance on chart-to-code generation remains suboptimal. This task requires\nMLLMs to generate executable code that can reproduce a given chart, demanding\nnot only precise visual understanding but also accurate translation of visual\nelements into structured code. Directly prompting MLLMs to perform this complex\ntask often yields unsatisfactory results. To address this challenge, we propose\n{ChartIR}, an iterative refinement method based on structured instruction.\nFirst, we distinguish two tasks: visual understanding and code translation. To\naccomplish the visual understanding component, we design two types of\nstructured instructions: description and difference. The description\ninstruction captures the visual elements of the reference chart, while the\ndifference instruction characterizes the discrepancies between the reference\nchart and the generated chart. These instructions effectively transform visual\nfeatures into language representations, thereby facilitating the subsequent\ncode translation process. Second, we decompose the overall chart generation\npipeline into two stages: initial code generation and iterative refinement,\nenabling progressive enhancement of the final output. Experimental results show\nthat, compared to other method, our method achieves superior performance on\nboth the open-source model Qwen2-VL and the closed-source model GPT-4o.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14837.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64a16b1aeacb4b50ba1c889d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64a16b1aeacb4b50ba1c889d/EhWoBGL6LlFGIVTUsp2F4.jpeg",
+      "fullname": "Lai Wei",
+      "name": "WaltonFuture",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  }
+]
