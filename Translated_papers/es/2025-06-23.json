@@ -1,0 +1,1443 @@
+[
+  {
+    "paper": {
+      "id": "2506.16406",
+      "authors": [
+        {
+          "_id": "6858d099c0c8e29df8ea3ccb",
+          "name": "Zhiyuan Liang",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3ccc",
+          "name": "Dongwen Tang",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3ccd",
+          "name": "Yuhao Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cce",
+          "name": "Xuanlei Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3ccf",
+          "name": "Mingjia Shi",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd0",
+          "name": "Wangbo Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd1",
+          "name": "Zekai Li",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd2",
+          "name": "Peihao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd3",
+          "name": "Konstantin Schürholt",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd4",
+          "name": "Damian Borth",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd5",
+          "name": "Michael M. Bronstein",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd6",
+          "name": "Yang You",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd7",
+          "name": "Zhangyang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6858d099c0c8e29df8ea3cd8",
+          "user": {
+            "_id": "655452b8432af1b1116394d1",
+            "avatarUrl": "/avatars/85860fb3c2d09c9c23e7677d7129cca3.svg",
+            "isPro": false,
+            "fullname": "Kai Wang",
+            "user": "VictorKai1996NUS",
+            "type": "user"
+          },
+          "name": "Kai Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-23T08:14:35.657Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/655452b8432af1b1116394d1/ZdZe7m_v8V6alBd1NZa-m.mp4"
+      ],
+      "publishedAt": "2025-06-19T15:38:21.000Z",
+      "submittedOnDailyAt": "2025-06-23T02:39:37.807Z",
+      "title": "Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights",
+      "submittedOnDailyBy": {
+        "_id": "655452b8432af1b1116394d1",
+        "avatarUrl": "/avatars/85860fb3c2d09c9c23e7677d7129cca3.svg",
+        "isPro": false,
+        "fullname": "Kai Wang",
+        "user": "VictorKai1996NUS",
+        "type": "user"
+      },
+      "summary": "Ejemplos de métodos de ajuste eficiente de parámetros modernos (PEFT) incluyen la técnica de LoRA, que se utiliza para reducir los costos de personalización de grandes modelos de lenguaje (LLMs), pero requiere una ejecución de optimización diferente para cada conjunto de datos de descarga. Presentamos Drag-and-Drop LLMs (DnD). DnD mapea directamente los actualizaciones de pesos de LoRA a múltiples tareas sin etiquetas, evitando el entrenamiento por tarea. Un encoder de texto ligero transforma cada batch de tarea en un vector de condición, que son luego transformados por un decodificador hipercombinatorial continuo para todos los matrices de LoRA. Un conjunto de puntos de chequeo de varias tareas entrenados, DnD genera parámetros específicos para cada tarea, logrando: i) una reducción del overhead de 12,000 veces más que el entrenamiento completo de archivos, ii) una mejora del 30% en promedio en pruebas de inferencia de conocimiento, matemáticas, programación y diversidad de modelos, y iii) una fuerte capacidad de expansión en diferentes dominios de datos, incluso sin datos objetivos o etiquetas previamente vistos. Nuestros resultados muestran que la generación de parámetros condicionales es una alternativa rápida para la especialización de LLMs en vez de ajustes basados en gradientes. Nuestro proyecto está disponible en https://jerryliang24.github.io/DnD.",
+      "upvotes": 56,
+      "discussionId": "6858d099c0c8e29df8ea3cd9",
+      "projectPage": "https://jerryliang24.github.io/DnD/",
+      "ai_summary": "Drag-and-Drop LLMs generate task-specific parameters through prompt-conditioned parameter generation, achieving significant efficiency gains and cross-domain generalization without per-task training.",
+      "ai_keywords": [
+        "Parameter-Efficient Fine-Tuning",
+        "PEFT",
+        "low-rank adaptation",
+        "LoRA",
+        "large language models",
+        "prompts",
+        "condition embeddings",
+        "hyper-convolutional decoder",
+        "LoRA matrices",
+        "common-sense reasoning",
+        "math",
+        "coding",
+        "multimodal benchmarks"
+      ]
+    },
+    "publishedAt": "2025-06-19T11:38:21.000Z",
+    "title": "Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights",
+    "summary": "Modern Parameter-Efficient Fine-Tuning (PEFT) methods such as low-rank\nadaptation (LoRA) reduce the cost of customizing large language models (LLMs),\nyet still require a separate optimization run for every downstream dataset. We\nintroduce Drag-and-Drop LLMs (\\textit{DnD)}, a prompt-conditioned\nparameter generator that eliminates per-task training by mapping a handful of\nunlabeled task prompts directly to LoRA weight updates. A lightweight text\nencoder distills each prompt batch into condition embeddings, which are then\ntransformed by a cascaded hyper-convolutional decoder into the full set of LoRA\nmatrices. Once trained in a diverse collection of prompt-checkpoint pairs, DnD\nproduces task-specific parameters in seconds, yielding i) up to\n12,000times lower overhead than full fine-tuning, ii) average gains\nup to 30\\% in performance over the strongest training LoRAs on unseen\ncommon-sense reasoning, math, coding, and multimodal benchmarks, and iii)\nrobust cross-domain generalization despite never seeing the target data or\nlabels. Our results demonstrate that prompt-conditioned parameter generation is\na viable alternative to gradient-based adaptation for rapidly specializing\nLLMs. Our project is available at\nhttps://jerryliang24.github.io/DnD{https://jerryliang24.github.io/DnD}.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/655452b8432af1b1116394d1/ZdZe7m_v8V6alBd1NZa-m.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.16406.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "655452b8432af1b1116394d1",
+      "avatarUrl": "/avatars/85860fb3c2d09c9c23e7677d7129cca3.svg",
+      "fullname": "Kai Wang",
+      "name": "VictorKai1996NUS",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.16054",
+      "authors": [
+        {
+          "_id": "6858e225c0c8e29df8ea3d0f",
+          "user": {
+            "_id": "6454568636821f6860fed410",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6454568636821f6860fed410/VsKn0GawOBZo1hmqHnmV1.png",
+            "isPro": false,
+            "fullname": "Tianchen Zhao",
+            "user": "A-suozhang",
+            "type": "user"
+          },
+          "name": "Tianchen Zhao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-23T08:14:13.425Z",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d10",
+          "name": "Ke Hong",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d11",
+          "name": "Xinhao Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d12",
+          "name": "Xuefeng Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d13",
+          "name": "Huixia Li",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d14",
+          "name": "Feng Ling",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d15",
+          "name": "Ruiqi Xie",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d16",
+          "name": "Siqi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d17",
+          "name": "Hongyu Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d18",
+          "name": "Yichong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6858e225c0c8e29df8ea3d19",
+          "name": "Yu Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-19T06:25:02.000Z",
+      "submittedOnDailyAt": "2025-06-23T03:52:52.372Z",
+      "title": "Parroantensión: Método de implementación eficiente de atención esparsa y softed para el aprendizaje de patrones",
+      "submittedOnDailyBy": {
+        "_id": "6454568636821f6860fed410",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6454568636821f6860fed410/VsKn0GawOBZo1hmqHnmV1.png",
+        "isPro": false,
+        "fullname": "Tianchen Zhao",
+        "user": "A-suozhang",
+        "type": "user"
+      },
+      "summary": "En la generación visual, la complejidad bidimensional de las estructuras de atención provoca un aumento en el costo de memoria y en el costo de cálculo, especialmente exige secuencias de tokens largas para la generación de imágenes de alta resolución y de videos multiframe. Para enfrentar esto, los estudios previos han explorado métodos como esparso-partitioning y cuenta-partitioning, pero en situaciones de baja densidad y ancho de bit reducido, se enfrentan grandes desafíos. A través de un análisis sistemático, hemos reconocido que las características de dispersión y irregularidad de los patrones de atención son las dificultades fundamentales. Por lo tanto, proponemos una estrategia de reestructuración de los patrones de atención en lugar de diseñar especializados métodos de esparso-partitioning o cuenta-partitioning. Inspirados en la concentración local de la extracción de características visuales, hemos diseñado la nueva técnica **Token Reordering from Pattern Perspective (PARO)**, que integra diferentes patrones de atención en patrones de bloque cercanos al hardware. Esta integración simplifica y fortalece significativamente los métodos de esparso-partitioning y cuenta-partitioning. Evaluamos la eficiencia y eficacia de cada decisión de diseño, y finalmente, determinamos los métodos que se ajustan al patrón uniforme. Nuestro enfoque, **PAROAttention**, logra la generación de vídeos y imágenes sin pérdida de calidad, obtiene resultados similares a los basados en FP, funciona con una densidad evidentemente baja (aproximadamente 20%-30%) y ancho de bit reducido (INT8/INT4), y puede aumentar la velocidad de procesamiento en terminales hasta 1.9x a 2.7x.",
+      "upvotes": 35,
+      "discussionId": "6858e225c0c8e29df8ea3d1a",
+      "projectPage": "https://a-suozhang.xyz/paroattn.github.io/",
+      "ai_summary": "PAROAttention reorganizes visual attention patterns to enable efficient sparsification and quantization, reducing memory and computational costs with minimal impact on performance.",
+      "ai_keywords": [
+        "attention mechanisms",
+        "sparsification",
+        "quantization",
+        "visual attention patterns",
+        "Pattern-Aware token ReOrdering (PARO)",
+        "local aggregation",
+        "hardware-friendly block-wise pattern",
+        "end-to-end latency speedup",
+        "INT8/INT4",
+        "PAROAttention"
+      ]
+    },
+    "publishedAt": "2025-06-19T02:25:02.000Z",
+    "title": "PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and\n  Quantized Attention in Visual Generation Models",
+    "summary": "In visual generation, the quadratic complexity of attention mechanisms\nresults in high memory and computational costs, especially for longer token\nsequences required in high-resolution image or multi-frame video generation. To\naddress this, prior research has explored techniques such as sparsification and\nquantization. However, these techniques face significant challenges under low\ndensity and reduced bitwidths. Through systematic analysis, we identify that\nthe core difficulty stems from the dispersed and irregular characteristics of\nvisual attention patterns. Therefore, instead of introducing specialized\nsparsification and quantization design to accommodate such patterns, we propose\nan alternative strategy: *reorganizing* the attention pattern to alleviate the\nchallenges. Inspired by the local aggregation nature of visual feature\nextraction, we design a novel **Pattern-Aware token ReOrdering (PARO)**\ntechnique, which unifies the diverse attention patterns into a\nhardware-friendly block-wise pattern. This unification substantially simplifies\nand enhances both sparsification and quantization. We evaluate the\nperformance-efficiency trade-offs of various design choices and finalize a\nmethodology tailored for the unified pattern. Our approach, **PAROAttention**,\nachieves video and image generation with lossless metrics, and nearly identical\nresults from full-precision (FP) baselines, while operating at notably lower\ndensity (~20%-30%) and bitwidth (**INT8/INT4**), achieving a **1.9x** to\n**2.7x** end-to-end latency speedup.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.16054.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6454568636821f6860fed410",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6454568636821f6860fed410/VsKn0GawOBZo1hmqHnmV1.png",
+      "fullname": "Tianchen Zhao",
+      "name": "A-suozhang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.16035",
+      "authors": [
+        {
+          "_id": "6858d76cc0c8e29df8ea3cdb",
+          "user": {
+            "_id": "638828121901766b88076aa1",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/638828121901766b88076aa1/rXlOO7eewmmaSN_hQIVz7.jpeg",
+            "isPro": false,
+            "fullname": "Vishesh Tripathi",
+            "user": "vishesh-t27",
+            "type": "user"
+          },
+          "name": "Vishesh Tripathi",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-23T08:14:30.878Z",
+          "hidden": false
+        },
+        {
+          "_id": "6858d76cc0c8e29df8ea3cdc",
+          "name": "Tanmay Odapally",
+          "hidden": false
+        },
+        {
+          "_id": "6858d76cc0c8e29df8ea3cdd",
+          "name": "Indraneel Das",
+          "hidden": false
+        },
+        {
+          "_id": "6858d76cc0c8e29df8ea3cde",
+          "user": {
+            "_id": "64103f66928400b4164308f0",
+            "avatarUrl": "/avatars/6799d4a365776f83cecf7b9f468f3d4f.svg",
+            "isPro": false,
+            "fullname": "uday allu",
+            "user": "udayallu",
+            "type": "user"
+          },
+          "name": "Uday Allu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-23T08:14:33.310Z",
+          "hidden": false
+        },
+        {
+          "_id": "6858d76cc0c8e29df8ea3cdf",
+          "name": "Biddwan Ahmed",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-19T05:11:43.000Z",
+      "submittedOnDailyAt": "2025-06-23T03:13:41.130Z",
+      "title": "Visión Guía Drag: La Expansión del RAG Utilizando la Comprensión de Documentos de Modelo",
+      "submittedOnDailyBy": {
+        "_id": "638828121901766b88076aa1",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/638828121901766b88076aa1/rXlOO7eewmmaSN_hQIVz7.jpeg",
+        "isPro": false,
+        "fullname": "Vishesh Tripathi",
+        "user": "vishesh-t27",
+        "type": "user"
+      },
+      "summary": "El sistema de Retière-Leading-Rag tiene un impacto innovador en la búsqueda de información y en las respuestas a las preguntas, pero los métodos tradicionales de bloqueo basados en texto enfrentan dificultades con estructuras documentales complejas, tablas de múltiples páginas, elementos visuales insertados y relaciones contextuales que superan las fronteras de las páginas. Proponemos un nuevo método de acceso a documentos basado en modelos de grandes escalas (LMMs) que procesa PDFs de manera de formación de páginas, manteniendo la coherencia semántica y la estructura de corrección. Nuestro método procesa documentos de manera de formación de páginas y preserva el contexto entre bloques, permitiendo el tratamiento preciso de tablas de múltiples páginas, elementos visuales insertados y contenidos de proceso. Nuestro enfoque se evaluó en conjunto con conjuntos de datos de cálculos generados automáticamente, demostrando mejoras en la calidad de bloques y en el rendimiento de los sistemas RAG. Nuestro enfoque guiado por guías visuales logra una mayor precisión en comparación con los sistemas RAG tradicionales, conservando mayores estructuras documentales y coherencia semántica en análisis cualitativo.",
+      "upvotes": 33,
+      "discussionId": "6858d76cc0c8e29df8ea3ce0",
+      "ai_summary": "A novel multimodal document chunking approach using Large Multimodal Models (LMMs) enhances RAG performance by accurately processing complex PDF documents, including multi-page tables and embedded visuals.",
+      "ai_keywords": [
+        "Retrieval-Augmented Generation (RAG)",
+        "Large Multimodal Models (LMMs)",
+        "document chunking",
+        "semantic coherence",
+        "structural integrity",
+        "cross-batch context preservation",
+        "vision-guided approach"
+      ]
+    },
+    "publishedAt": "2025-06-19T01:11:43.000Z",
+    "title": "Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal\n  Document Understanding",
+    "summary": "Retrieval-Augmented Generation (RAG) systems have revolutionized information\nretrieval and question answering, but traditional text-based chunking methods\nstruggle with complex document structures, multi-page tables, embedded figures,\nand contextual dependencies across page boundaries. We present a novel\nmultimodal document chunking approach that leverages Large Multimodal Models\n(LMMs) to process PDF documents in batches while maintaining semantic coherence\nand structural integrity. Our method processes documents in configurable page\nbatches with cross-batch context preservation, enabling accurate handling of\ntables spanning multiple pages, embedded visual elements, and procedural\ncontent. We evaluate our approach on a curated dataset of PDF documents with\nmanually crafted queries, demonstrating improvements in chunk quality and\ndownstream RAG performance. Our vision-guided approach achieves better accuracy\ncompared to traditional vanilla RAG systems, with qualitative analysis showing\nsuperior preservation of document structure and semantic coherence.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.16035.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "638828121901766b88076aa1",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/638828121901766b88076aa1/rXlOO7eewmmaSN_hQIVz7.jpeg",
+      "fullname": "Vishesh Tripathi",
+      "name": "vishesh-t27",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 10
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.09049",
+      "authors": [
+        {
+          "_id": "6858c341c0c8e29df8ea3c7f",
+          "user": {
+            "_id": "64eadcb03d76028d805a7818",
+            "avatarUrl": "/avatars/528e4fded4419caf08589b2ed40437bc.svg",
+            "isPro": false,
+            "fullname": "Li Kang",
+            "user": "FACEONG",
+            "type": "user"
+          },
+          "name": "Li Kang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-23T08:14:50.165Z",
+          "hidden": false
+        },
+        {
+          "_id": "6858c341c0c8e29df8ea3c80",
+          "name": "Xiufeng Song",
+          "hidden": false
+        },
+        {
+          "_id": "6858c341c0c8e29df8ea3c81",
+          "name": "Heng Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6858c341c0c8e29df8ea3c82",
+          "name": "Yiran Qin",
+          "hidden": false
+        },
+        {
+          "_id": "6858c341c0c8e29df8ea3c83",
+          "name": "Jie Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c341c0c8e29df8ea3c84",
+          "name": "Xiaohong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6858c341c0c8e29df8ea3c85",
+          "name": "Philip Torr",
+          "hidden": false
+        },
+        {
+          "_id": "6858c341c0c8e29df8ea3c86",
+          "name": "Lei Bai",
+          "hidden": false
+        },
+        {
+          "_id": "6858c341c0c8e29df8ea3c87",
+          "name": "Zhenfei Yin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-10T17:59:44.000Z",
+      "submittedOnDailyAt": "2025-06-23T01:31:50.738Z",
+      "title": "VIKI-R: Aprendizaje por Reforzamiento para la Cooperación Cooperativa de Multiagentes en la Simulación",
+      "submittedOnDailyBy": {
+        "_id": "64eadcb03d76028d805a7818",
+        "avatarUrl": "/avatars/528e4fded4419caf08589b2ed40437bc.svg",
+        "isPro": false,
+        "fullname": "Li Kang",
+        "user": "FACEONG",
+        "type": "user"
+      },
+      "summary": "La colaboración de entidades múltiples es un problema esencial en entornos dinámicos para la inteligencia artificial, requiriendo inferencia visual y estrategias de colaboración escalables. En los últimos estudios, se ha utilizado la planificación de entidades múltiples con modelos de lenguaje grande (LLMs), pero se ha comenzado a aplicar modelos de lenguaje visual (VLMs) para inferencia visual. Sin embargo, este enfoque VLM está limitado en su soporte para diferentes tipos de entidades. En este trabajo, presentamos VIKI-Bench. VIKI-Bench es el primer marco estructurado para la colaboración de entidades múltiples, caracterizado por tres niveles estructurados: activación de máquinas, planificación de tareas y reconocimiento visual de proyectos. Incluye diferentes robots, observaciones visuales y señales de sub-ejecutivos estructurados, evaluando inferencias basadas en entradas visuales. Proponemos un marco de dos etapas llamado VIKI-R, que optimiza modelos de lenguaje visual (VLM) con explicaciones continuas de OBS (Observación) y realiza aprendizaje por refuerzo en señales de recompensa multinivel. En experimentos extendidos, VIKI-R demostró superioridad significativamente en todos los niveles de tareas frente a métodos de referencia. Además, la aprendizaje por refuerzo reveló patrones de colaboración complejos entre diferentes máquinas. VIKI-Bench y VIKI-R proporcionan un marco de prueba unificado para la colaboración de entidades múltiples y de visión en sistemas de inteligencia artificial de entidades múltiples.",
+      "upvotes": 24,
+      "discussionId": "6858c341c0c8e29df8ea3c88",
+      "projectPage": "https://faceong.github.io/VIKI-R/",
+      "githubRepo": "https://github.com/MARS-EAI/VIKI-R",
+      "ai_summary": "VIKI-Bench and VIKI-R provide a benchmark and framework for evaluating and improving visual-driven cooperation among diverse embodied agents using vision-language models and reinforcement learning.",
+      "ai_keywords": [
+        "embodied agents",
+        "VIKI-Bench",
+        "multi-agent cooperation",
+        "vision-language models",
+        "VIKI-R",
+        "Chain-of-Thought",
+        "reinforcement learning",
+        "compositional cooperation",
+        "multi-level reward signals",
+        "robot embodiments",
+        "multi-view visual observations",
+        "structured supervision signals"
+      ]
+    },
+    "publishedAt": "2025-06-10T13:59:44.000Z",
+    "title": "VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement\n  Learning",
+    "summary": "Coordinating multiple embodied agents in dynamic environments remains a core\nchallenge in artificial intelligence, requiring both perception-driven\nreasoning and scalable cooperation strategies. While recent works have\nleveraged large language models (LLMs) for multi-agent planning, a few have\nbegun to explore vision-language models (VLMs) for visual reasoning. However,\nthese VLM-based approaches remain limited in their support for diverse\nembodiment types. In this work, we introduce VIKI-Bench, the first hierarchical\nbenchmark tailored for embodied multi-agent cooperation, featuring three\nstructured levels: agent activation, task planning, and trajectory perception.\nVIKI-Bench includes diverse robot embodiments, multi-view visual observations,\nand structured supervision signals to evaluate reasoning grounded in visual\ninputs. To demonstrate the utility of VIKI-Bench, we propose VIKI-R, a\ntwo-stage framework that fine-tunes a pretrained vision-language model (VLM)\nusing Chain-of-Thought annotated demonstrations, followed by reinforcement\nlearning under multi-level reward signals. Our extensive experiments show that\nVIKI-R significantly outperforms baselines method across all task levels.\nFurthermore, we show that reinforcement learning enables the emergence of\ncompositional cooperation patterns among heterogeneous agents. Together,\nVIKI-Bench and VIKI-R offer a unified testbed and method for advancing\nmulti-agent, visual-driven cooperation in embodied AI systems.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.09049.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64eadcb03d76028d805a7818",
+      "avatarUrl": "/avatars/528e4fded4419caf08589b2ed40437bc.svg",
+      "fullname": "Li Kang",
+      "name": "FACEONG",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.17206",
+      "authors": [
+        {
+          "_id": "6858c5b5c0c8e29df8ea3c95",
+          "name": "Yukun Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c5b5c0c8e29df8ea3c96",
+          "name": "Yanning Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6858c5b5c0c8e29df8ea3c97",
+          "name": "Jianan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c5b5c0c8e29df8ea3c98",
+          "name": "Kaiyi Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c5b5c0c8e29df8ea3c99",
+          "name": "Xihui Liu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-20T17:55:06.000Z",
+      "submittedOnDailyAt": "2025-06-23T01:41:47.575Z",
+      "title": "DreamCube: Simulación 3D de Cuerpos de Poliedros Simultáneos",
+      "submittedOnDailyBy": {
+        "_id": "638ee900ee7e45e0474a5712",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/638ee900ee7e45e0474a5712/KLli_eCbWwffKR7oLDmV3.jpeg",
+        "isPro": false,
+        "fullname": "Yukun Huang",
+        "user": "KevinHuang",
+        "type": "user"
+      },
+      "summary": "La síntesis de panorámica 3D requiere alta calidad y diversidad en visión y geometría, pero es un desafío difícil de superar. Los métodos actuales utilizan modelos basados en 2D con aprendizaje previo para obtener una rica imagen generación, pero su incompatibilidad con la panorámica 3D limita su eficacia. En este artículo, se muestra cómo aplicar operadores en modelos basados en 2D para sincronizar múltiples caras, lo que permite expandir su capacidad a todo el espacio 360 grados. Basándonos en esta idea, se presenta DreamCube, un modelo distribuido de RGB-D para la generación de panorámica 3D. Este modelo busca maximizar la reutilización de la generación de imágenes de los modelos basados en 2D, al mismo tiempo que logra diferentes caras y geometría precisa, manteniendo la coincidencia multiforme. Extensos experimentos muestran la efectividad de nuestro enfoque en la generación de imágenes panorámicas, simulación de panorámica y creación de escenarios 3D.",
+      "upvotes": 13,
+      "discussionId": "6858c5b6c0c8e29df8ea3c9a",
+      "projectPage": "https://yukun-huang.github.io/DreamCube/",
+      "githubRepo": "https://github.com/yukun-huang/DreamCube",
+      "ai_summary": "Multi-plane synchronization extends 2D foundation models to 3D panorama generation, introducing DreamCube to achieve diverse appearances and accurate geometry.",
+      "ai_keywords": [
+        "multi-plane synchronization",
+        "2D foundation models",
+        "DreamCube",
+        "RGB-D diffusion model",
+        "panoramic image generation",
+        "panoramic depth estimation",
+        "3D scene generation"
+      ]
+    },
+    "publishedAt": "2025-06-20T13:55:06.000Z",
+    "title": "DreamCube: 3D Panorama Generation via Multi-plane Synchronization",
+    "summary": "3D panorama synthesis is a promising yet challenging task that demands\nhigh-quality and diverse visual appearance and geometry of the generated\nomnidirectional content. Existing methods leverage rich image priors from\npre-trained 2D foundation models to circumvent the scarcity of 3D panoramic\ndata, but the incompatibility between 3D panoramas and 2D single views limits\ntheir effectiveness. In this work, we demonstrate that by applying multi-plane\nsynchronization to the operators from 2D foundation models, their capabilities\ncan be seamlessly extended to the omnidirectional domain. Based on this design,\nwe further introduce DreamCube, a multi-plane RGB-D diffusion model for 3D\npanorama generation, which maximizes the reuse of 2D foundation model priors to\nachieve diverse appearances and accurate geometry while maintaining multi-view\nconsistency. Extensive experiments demonstrate the effectiveness of our\napproach in panoramic image generation, panoramic depth estimation, and 3D\nscene generation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.17206.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "638ee900ee7e45e0474a5712",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/638ee900ee7e45e0474a5712/KLli_eCbWwffKR7oLDmV3.jpeg",
+      "fullname": "Yukun Huang",
+      "name": "KevinHuang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.17201",
+      "authors": [
+        {
+          "_id": "6858c46fc0c8e29df8ea3c8a",
+          "name": "Jiaqi Li",
+          "hidden": false
+        },
+        {
+          "_id": "6858c46fc0c8e29df8ea3c8b",
+          "name": "Junshu Tang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c46fc0c8e29df8ea3c8c",
+          "name": "Zhiyong Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6858c46fc0c8e29df8ea3c8d",
+          "name": "Longhuang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "6858c46fc0c8e29df8ea3c8e",
+          "name": "Yuan Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6858c46fc0c8e29df8ea3c8f",
+          "name": "Shuai Shao",
+          "hidden": false
+        },
+        {
+          "_id": "6858c46fc0c8e29df8ea3c90",
+          "name": "Tianbao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "6858c46fc0c8e29df8ea3c91",
+          "name": "Zhiguo Cao",
+          "hidden": false
+        },
+        {
+          "_id": "6858c46fc0c8e29df8ea3c92",
+          "name": "Qinglin Lu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-20T17:50:37.000Z",
+      "submittedOnDailyAt": "2025-06-23T01:35:50.876Z",
+      "title": "Juego de formas Clásico: Se utiliza historias híbridas condicionadas para la generación interactiva de videos de alta dinámica.",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": true,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "Recientemente, las tecnologías de generación de vídeo basadas en difusión y controlables han logrado éxito en la síntesis de vídeos de alta calidad y coherencia temporal, permitiendo la construcción de juegos interactivos satisfactorios. Sin embargo, los métodos actuales están limitados en la movilidad, generalidad, coherencia a largo plazo y eficiencia, y restringen la capacidad de producción de videos de juegos de diferentes tipos. Para resolver estos deficiencias, presentamos un nuevo marco de trabajo para la generación de vídeos interactivos de alta movilidad en entornos de juego llamado \"Contribute Game Craft\". Para implementar el control de movimientos de manera detallada, compartimos la entrada estándar de teclado y mouse para integrarlos en el espacio de representación de la cámara y promovemos una interrupción suave entre diferentes maneras de moverse. Además, proponemos una estrategia de entrenamiento condicional de historia mixta para expandir automáticamente las secuencias de vídeo mientras se almacenan los datos de visión del juego. Además, para mejorar la eficiencia de inferencia y la jugabilidad, transformamos el modelo para mantener la coherencia a largo plazo mientras reducimos el sobrecarga de cálculo y construimos un modelo adecuado para la deployment en tiempo real en entornos interactivos complejos. El modelo se entrenó en un grande conjunto de datos que incluye 100 juegos AAA con 1 millón de registros de juegos de juego, asegurando una amplia variedad de datos y mejorando precisión y control con conjuntos de datos de síntesis más ajustados. Los datos de visión del juego editados mejoran significativamente la calidad visual, la realismo y la posibilidad de control de movimiento. Los experimentos extendidos demuestran que \"Contribute Game Craft\" supera significativamente a los modelos existentes y mejora la realismo y la jugabilidad de la generación de vídeos interactivos.",
+      "upvotes": 11,
+      "discussionId": "6858c46fc0c8e29df8ea3c93",
+      "ai_summary": "Hunyuan-GameCraft is a novel framework for high-dynamic interactive video generation in game environments that addresses limitations in dynamics, generality, and efficiency through unified input representation, hybrid history-conditioned training, and model distillation.",
+      "ai_keywords": [
+        "diffusion-based",
+        "controllable video generation",
+        "temporally coherent video synthesis",
+        "high-dynamic interactive video generation",
+        "shared camera representation space",
+        "hybrid history-conditioned training strategy",
+        "model distillation",
+        "real-time deployment",
+        "large-scale dataset",
+        "synthetic dataset",
+        "game scene data"
+      ]
+    },
+    "publishedAt": "2025-06-20T13:50:37.000Z",
+    "title": "Hunyuan-GameCraft: High-dynamic Interactive Game Video Generation with\n  Hybrid History Condition",
+    "summary": "Recent advances in diffusion-based and controllable video generation have\nenabled high-quality and temporally coherent video synthesis, laying the\ngroundwork for immersive interactive gaming experiences. However, current\nmethods face limitations in dynamics, generality, long-term consistency, and\nefficiency, which limit the ability to create various gameplay videos. To\naddress these gaps, we introduce Hunyuan-GameCraft, a novel framework for\nhigh-dynamic interactive video generation in game environments. To achieve\nfine-grained action control, we unify standard keyboard and mouse inputs into a\nshared camera representation space, facilitating smooth interpolation between\nvarious camera and movement operations. Then we propose a hybrid\nhistory-conditioned training strategy that extends video sequences\nautoregressively while preserving game scene information. Additionally, to\nenhance inference efficiency and playability, we achieve model distillation to\nreduce computational overhead while maintaining consistency across long\ntemporal sequences, making it suitable for real-time deployment in complex\ninteractive environments. The model is trained on a large-scale dataset\ncomprising over one million gameplay recordings across over 100 AAA games,\nensuring broad coverage and diversity, then fine-tuned on a carefully annotated\nsynthetic dataset to enhance precision and control. The curated game scene data\nsignificantly improves the visual fidelity, realism and action controllability.\nExtensive experiments demonstrate that Hunyuan-GameCraft significantly\noutperforms existing models, advancing the realism and playability of\ninteractive game video generation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.17201.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": true,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7170
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.16504",
+      "authors": [
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c63",
+          "name": "Zeqiang Lai",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c64",
+          "name": "Yunfei Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c65",
+          "name": "Haolin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c66",
+          "name": "Zibo Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c67",
+          "name": "Qingxiang Lin",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c68",
+          "name": "Huiwen Shi",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c69",
+          "name": "Xianghui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c6a",
+          "name": "Mingxin Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c6b",
+          "name": "Shuhui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c6c",
+          "name": "Yifei Feng",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c6d",
+          "name": "Sheng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c6e",
+          "name": "Xin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c6f",
+          "name": "Di Luo",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c70",
+          "name": "Fan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c71",
+          "name": "Fang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c72",
+          "name": "Lifu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c73",
+          "name": "Sicong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c74",
+          "name": "Yixuan Tang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c75",
+          "name": "Yulin Cai",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c76",
+          "name": "Zebin He",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c77",
+          "name": "Tian Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c78",
+          "name": "Yuhong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c79",
+          "name": "Jie Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c7a",
+          "name": "Linus",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c7b",
+          "name": "Jingwei Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6858c1fcc0c8e29df8ea3c7c",
+          "name": "Chunchao Guo",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-19T17:57:40.000Z",
+      "submittedOnDailyAt": "2025-06-23T01:25:30.602Z",
+      "title": "Final detail high-quality 3D asset generation for hand-held 3D 2.5",
+      "submittedOnDailyBy": {
+        "_id": "63044b89eedc089484c995ad",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/T4mOIQLaQdM5_oviaw_Cp.png",
+        "isPro": false,
+        "fullname": "Zeqiang Lai",
+        "user": "ZeqiangLai",
+        "type": "user"
+      },
+      "summary": "Este informe presenta un potente modelo de hojas de difusión 3D llamado Hunyuan3D 2.5. Este modelo se centra en la generación de bienes 3D de alta calidad detallada. Hunyuan3D 2.5 mantiene la misma pipla de dos etapas que su anterior versión, Hunyuan3D 2.0, pero presenta importantes avances en la generación de formas y texturas. En la generación de formas, se introdujo un nuevo modelo de fundamento de formas LATTICE, que se entrenó utilizando conjuntos de datos de alta calidad escalados, tamaños de modelo y computación. Nuestro modelo más grande alcanza un total de 10B parámetros, manteniendo la precisión en la captura de imágenes-3D, creando formas 3D suaves y detalladas, con superficies de malla limpias y con poca deslizancia, reduciendo significativamente la diferencia entre las formas 3D generadas y las formas 3D manuales. En la generación de texturas, Hunyuan3D 2.5 expandió el modelo de pintura de Hunyuan3D 2.0, introduciendo una arquitectura poligonal extendida y un renglón basado en la física (PBR), lo que, según nuestra evaluación extendida, permite una generación de texturas más claramente mejor que las anteriores en todos los aspectos.",
+      "upvotes": 9,
+      "discussionId": "6858c1fdc0c8e29df8ea3c7d",
+      "ai_summary": "Hunyuan3D 2.5, a suite of 3D diffusion models, advances shape and texture generation with a new LATTICE model and physical-based rendering in a multi-view architecture.",
+      "ai_keywords": [
+        "3D diffusion models",
+        "LATTICE",
+        "scaled high-quality datasets",
+        "model-size",
+        "compute",
+        "parameters",
+        "sharp and detailed 3D shape",
+        "mesh surface",
+        "precise image-3D",
+        "physical-based rendering",
+        "multi-view architecture",
+        "end-to-end texture generation"
+      ]
+    },
+    "publishedAt": "2025-06-19T13:57:40.000Z",
+    "title": "Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate\n  Details",
+    "summary": "In this report, we present Hunyuan3D 2.5, a robust suite of 3D diffusion\nmodels aimed at generating high-fidelity and detailed textured 3D assets.\nHunyuan3D 2.5 follows two-stages pipeline of its previous version Hunyuan3D\n2.0, while demonstrating substantial advancements in both shape and texture\ngeneration. In terms of shape generation, we introduce a new shape foundation\nmodel -- LATTICE, which is trained with scaled high-quality datasets,\nmodel-size, and compute. Our largest model reaches 10B parameters and generates\nsharp and detailed 3D shape with precise image-3D following while keeping mesh\nsurface clean and smooth, significantly closing the gap between generated and\nhandcrafted 3D shapes. In terms of texture generation, it is upgraded with\nphyiscal-based rendering (PBR) via a novel multi-view architecture extended\nfrom Hunyuan3D 2.0 Paint model. Our extensive evaluation shows that Hunyuan3D\n2.5 significantly outperforms previous methods in both shape and end-to-end\ntexture generation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.16504.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63044b89eedc089484c995ad",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/T4mOIQLaQdM5_oviaw_Cp.png",
+      "fullname": "Zeqiang Lai",
+      "name": "ZeqiangLai",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 11
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.15745",
+      "authors": [
+        {
+          "_id": "685911a30e4ad7e2197582f3",
+          "name": "Minsoo Kim",
+          "hidden": false
+        },
+        {
+          "_id": "685911a30e4ad7e2197582f4",
+          "name": "Kyuhong Shim",
+          "hidden": false
+        },
+        {
+          "_id": "685911a30e4ad7e2197582f5",
+          "name": "Jungwook Choi",
+          "hidden": false
+        },
+        {
+          "_id": "685911a30e4ad7e2197582f6",
+          "name": "Simyung Chang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-18T02:22:14.000Z",
+      "submittedOnDailyAt": "2025-06-23T07:10:57.325Z",
+      "title": "InfiniPot-V: Tecnología de compresión basada en el uso de memoria limitada para la comprensión de vídeos en streaming.",
+      "submittedOnDailyBy": {
+        "_id": "63c0e2503bdc86f8108da51b",
+        "avatarUrl": "/avatars/7d47f11992f030b3d831e45102581d1f.svg",
+        "isPro": false,
+        "fullname": "Minsoo Kim",
+        "user": "minsoo2333",
+        "type": "user"
+      },
+      "summary": "Los modelos de lenguaje grande de multimodal (MLLMs) modernos pueden realizar un análisis lógico sobre largos videos, pero su cache Key Value (KV) crece linealmente en el tiempo, lo que lo hace superar rápidamente las memorias fijas de teléfonos inteligentes, lentes de AR y drones de exploración. Los algoritmos de compresión existentes se basan en la suposición de que el video completo y las solicitudes del usuario se utilizan en el modo offline o necesitan la construcción completa del cache, lo que resulta en que la memoria aumenta proporcionalmente a la longitud del video. InfiniPot-V es el primer modelo que no requiere entrenamiento inicial, es un marco sin restricciones y forza un cache de memoria inrelacionada con la longitud del video para el entendimiento de los videos en streaming. Mientras se codifica el video, monitorea el cache y ejecuta un paso de compresión ligero cuando alcanza la tolerancia del usuario. Esto elimina repeticiones temporales de texto mediante el método de Redundancia en el eje temporal (TaR) o mantiene textos significativos utilizando la clasificación de Norma del Valor (VaN). A través de 4 MLLMs de código abierto, 4 marcos de referencia de videos largos y 2 marcos de referencia de videos en streaming, InfiniPot-V redució el uso máximo de memoria GPU en un 94%, manteniendo la generación en tiempo real y satisfaciendo o superando la precisión de un cache completo. Resuelve los límites del cache KV y cierra los errores de asistencia de videos en streaming en línea, sin necesidad de conocer conocimientos de entrenamiento o solicitudes.",
+      "upvotes": 4,
+      "discussionId": "685911a30e4ad7e2197582f7",
+      "ai_summary": "InfiniPot-V is a training-free, query-agnostic framework that compresses the key-value cache during video encoding to maintain a fixed memory cap for streaming video understanding, enhancing real-time performance and accuracy.",
+      "ai_keywords": [
+        "multimodal large language models",
+        "key-value cache",
+        "Temporal-axis Redundancy",
+        "Value-Norm ranking",
+        "long-video benchmarks",
+        "streaming-video benchmarks",
+        "real-time generation",
+        "multi-turn dialogues",
+        "on-device streaming video assistants"
+      ]
+    },
+    "publishedAt": "2025-06-17T22:22:14.000Z",
+    "title": "InfiniPot-V: Memory-Constrained KV Cache Compression for Streaming Video\n  Understanding",
+    "summary": "Modern multimodal large language models (MLLMs) can reason over hour-long\nvideo, yet their key-value (KV) cache grows linearly with time--quickly\nexceeding the fixed memory of phones, AR glasses, and edge robots. Prior\ncompression schemes either assume the whole video and user query are available\noffline or must first build the full cache, so memory still scales with stream\nlength. InfiniPot-V is the first training-free, query-agnostic framework that\nenforces a hard, length-independent memory cap for streaming video\nunderstanding. During video encoding it monitors the cache and, once a user-set\nthreshold is reached, runs a lightweight compression pass that (i) removes\ntemporally redundant tokens via Temporal-axis Redundancy (TaR) metric and (ii)\nkeeps semantically significant tokens via Value-Norm (VaN) ranking. Across four\nopen-source MLLMs and four long-video and two streaming-video benchmarks,\nInfiniPot-V cuts peak GPU memory by up to 94%, sustains real-time generation,\nand matches or surpasses full-cache accuracy--even in multi-turn dialogues. By\ndissolving the KV cache bottleneck without retraining or query knowledge,\nInfiniPot-V closes the gap for on-device streaming video assistants.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.15745.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c0e2503bdc86f8108da51b",
+      "avatarUrl": "/avatars/7d47f11992f030b3d831e45102581d1f.svg",
+      "fullname": "Minsoo Kim",
+      "name": "minsoo2333",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.17213",
+      "authors": [
+        {
+          "_id": "685914860e4ad7e219758301",
+          "name": "Xiuyu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "685914860e4ad7e219758302",
+          "name": "Shuhan Tan",
+          "hidden": false
+        },
+        {
+          "_id": "685914860e4ad7e219758303",
+          "name": "Philipp Krähenbühl",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-20T17:59:21.000Z",
+      "submittedOnDailyAt": "2025-06-23T07:17:59.369Z",
+      "title": "Long-term Traffic Simulation Cross-Automatic Abductive Movement and Scenario Generation",
+      "submittedOnDailyBy": {
+        "_id": "634aab35dcf125e4dafc87b1",
+        "avatarUrl": "/avatars/aa2db84fd423e9eefe3ef3167c9d3999.svg",
+        "isPro": false,
+        "fullname": "YangXiuyu",
+        "user": "gzzyyxy",
+        "type": "user"
+      },
+      "summary": "Un simulador de transporte ideal se utiliza para reproducir movimientos realistas a largo plazo desde que se instalan sistemas de conducción autónoma. Los modelos y referencias existentes se centran en la simulación de movimientos en calles cerradas, lo que presenta problemas en la simulación a largo plazo. Los agentes efectivos se extienden en lugares cuando se introducen nuevos áreas. Proponemos InfGen, un modelo unitario que intercambia la simulación de movimientos en calles cerradas y la generación de lugares. InfGen se auto-adapta entre las dos modalidades, lo que permite a la simulación a largo plazo ser más estable. InfGen supera a todos los métodos en la simulación de transporte a corto plazo de 9 segundos y en la simulación a largo plazo de 30 segundos. El código y modelo de InfGen están disponibles en https://orangesodahub.github.io/InfGen.",
+      "upvotes": 2,
+      "discussionId": "685914860e4ad7e219758304",
+      "projectPage": "https://orangesodahub.github.io/InfGen/",
+      "githubRepo": "https://github.com/OrangeSodahub/infgen/",
+      "ai_summary": "InfGen, a unified next-token prediction model, enables stable long-term traffic simulation by interleaving closed-loop motion simulation and scene generation.",
+      "ai_keywords": [
+        "next-token prediction",
+        "closed-loop motion simulation",
+        "scene generation",
+        "long-term traffic simulation"
+      ]
+    },
+    "publishedAt": "2025-06-20T13:59:21.000Z",
+    "title": "Long-term Traffic Simulation with Interleaved Autoregressive Motion and\n  Scenario Generation",
+    "summary": "An ideal traffic simulator replicates the realistic long-term point-to-point\ntrip that a self-driving system experiences during deployment. Prior models and\nbenchmarks focus on closed-loop motion simulation for initial agents in a\nscene. This is problematic for long-term simulation. Agents enter and exit the\nscene as the ego vehicle enters new regions. We propose InfGen, a unified\nnext-token prediction model that performs interleaved closed-loop motion\nsimulation and scene generation. InfGen automatically switches between\nclosed-loop motion simulation and scene generation mode. It enables stable\nlong-term rollout simulation. InfGen performs at the state-of-the-art in\nshort-term (9s) traffic simulation, and significantly outperforms all other\nmethods in long-term (30s) simulation. The code and model of InfGen will be\nreleased at https://orangesodahub.github.io/InfGen",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.17213.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "634aab35dcf125e4dafc87b1",
+      "avatarUrl": "/avatars/aa2db84fd423e9eefe3ef3167c9d3999.svg",
+      "fullname": "YangXiuyu",
+      "name": "gzzyyxy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.17202",
+      "authors": [
+        {
+          "_id": "68591c310e4ad7e219758306",
+          "name": "Teng Li",
+          "hidden": false
+        },
+        {
+          "_id": "68591c310e4ad7e219758307",
+          "name": "Quanfeng Lu",
+          "hidden": false
+        },
+        {
+          "_id": "68591c310e4ad7e219758308",
+          "name": "Lirui Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "68591c310e4ad7e219758309",
+          "name": "Hao Li",
+          "hidden": false
+        },
+        {
+          "_id": "68591c310e4ad7e21975830a",
+          "name": "Xizhou Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "68591c310e4ad7e21975830b",
+          "name": "Yu Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "68591c310e4ad7e21975830c",
+          "name": "Jun Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68591c310e4ad7e21975830d",
+          "name": "Wenqi Shao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-20T17:52:31.000Z",
+      "submittedOnDailyAt": "2025-06-23T07:51:10.698Z",
+      "title": "UniFork: Investigamos la diversidad de modelos para lograr comprensiones y generaciones variadas a partir de un solo modelo.",
+      "submittedOnDailyBy": {
+        "_id": "64897b1f0ec897cfe579a399",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64897b1f0ec897cfe579a399/ICR_75b877BaSE94gjBuj.jpeg",
+        "isPro": false,
+        "fullname": "wenq",
+        "user": "wenqsun",
+        "type": "user"
+      },
+      "summary": "La integración de la comprensión e generación de imágenes ha surgido como un paradigma deseado en el desarrollo de la inteligencia artificial multimodelo. A pesar de los recientes avances, la diseño óptimo de las arquitecturas de estos modelos integrados es un desafío abierto. En este estudio, se analizan las acciones de modelos de experiencias especializadas en tareas, empezando con los modelos integrados actuales. De esta análisis, se han descubierto hallazgos importantes: la comprensión de la tarea aumenta con la profundidad de la red, lo que fomenta una mejor comprensión mediante la construcción de información significativa. En contraste, la tarea de generación muestra una tendencia diferente: la acumulación de modelo en las capas iniciales, que disminuye a profundidad, recuperando detalles espaciales. Estos patrones de modelo de respuesta generan conflictos básicos en un fondo transformador completamente compartido. Basándose en estas observaciones, se propone una nueva arquitectura en forma de Y llamada UniFork, que permite compartir la aprendizaje de representaciones entre capas superficiales y evitar interferencias entre tareas utilizando ramificaciones especializadas en profundidad. Esta diseño equilibra mejor la comparación y la especialización de tareas. Las experimentaciones de desaparición ampliadas muestran que UniFork supera las arquitecturas transformadores completamente compartidas generales y muestra un rendimiento igual o mejor que los modelos especializados en tareas.",
+      "upvotes": 2,
+      "discussionId": "68591c310e4ad7e21975830e",
+      "ai_summary": "A Y-shaped architecture, UniFork, balances shared learning and task specialization for unified image understanding and generation, outperforming conventional fully shared Transformer models.",
+      "ai_keywords": [
+        "modality alignment",
+        "network depth",
+        "semantic information",
+        "spatial details",
+        "Transformer backbones",
+        "Y-shaped architecture",
+        "task-specific branches",
+        "task interference",
+        "ablation experiments",
+        "fully shared Transformer architectures",
+        "task-specific models"
+      ]
+    },
+    "publishedAt": "2025-06-20T13:52:31.000Z",
+    "title": "UniFork: Exploring Modality Alignment for Unified Multimodal\n  Understanding and Generation",
+    "summary": "Unified image understanding and generation has emerged as a promising\nparadigm in multimodal artificial intelligence. Despite recent progress, the\noptimal architectural design for such unified models remains an open challenge.\nIn this work, we start by analyzing the modality alignment behaviors of\ntask-specific expert models for understanding and generation, as well as\ncurrent unified models. Our analysis reveals a crucial observation:\nunderstanding tasks benefit from a progressively increasing modality alignment\nacross network depth, which helps build up semantic information for better\ncomprehension; In contrast, generation tasks follow a different trend: modality\nalignment increases in the early layers but decreases in the deep layers to\nrecover spatial details. These divergent alignment patterns create a\nfundamental conflict in fully shared Transformer backbones, where a uniform\nrepresentational flow often leads to performance compromises across two tasks.\nMotivated by this finding, we introduce UniFork, a novel Y-shaped architecture\nthat shares the shallow layers for cross-task representation learning, while\nemploying task-specific branches in deeper layers to avoid task interference.\nThis design effectively balances shared learning and task specialization.\nThrough extensive ablation experiments, we demonstrate that Unifork\nconsistently outperforms conventional fully shared Transformer architectures,\nand achieves performance on par with or better than task-specific models.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.17202.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64897b1f0ec897cfe579a399",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64897b1f0ec897cfe579a399/ICR_75b877BaSE94gjBuj.jpeg",
+      "fullname": "wenq",
+      "name": "wenqsun",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 10
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.15442",
+      "authors": [
+        {
+          "_id": "68552b394f1add9d4c5c5cd4",
+          "name": "Team Hunyuan3D",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cd5",
+          "name": "Shuhui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cd6",
+          "name": "Mingxin Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cd7",
+          "name": "Yifei Feng",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cd8",
+          "name": "Xin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cd9",
+          "name": "Sheng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cda",
+          "name": "Zebin He",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cdb",
+          "name": "Di Luo",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cdc",
+          "name": "Haolin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cdd",
+          "name": "Yunfei Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cde",
+          "name": "Qingxiang Lin",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cdf",
+          "name": "Zeqiang Lai",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce0",
+          "name": "Xianghui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce1",
+          "name": "Huiwen Shi",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce2",
+          "name": "Zibo Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce3",
+          "name": "Bowen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce4",
+          "name": "Hongyu Yan",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce5",
+          "name": "Lifu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce6",
+          "name": "Sicong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce7",
+          "name": "Jihong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce8",
+          "name": "Meng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ce9",
+          "name": "Liang Dong",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cea",
+          "name": "Yiwen Jia",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ceb",
+          "name": "Yulin Cai",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cec",
+          "name": "Jiaao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5ced",
+          "name": "Yixuan Tang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cee",
+          "name": "Dongyuan Guo",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cef",
+          "name": "Junlin Yu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf0",
+          "name": "Hao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf1",
+          "name": "Zheng Ye",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf2",
+          "name": "Peng He",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf3",
+          "name": "Runzhou Wu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf4",
+          "name": "Shida Wei",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf5",
+          "name": "Chao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf6",
+          "name": "Yonghao Tan",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf7",
+          "name": "Yifu Sun",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf8",
+          "name": "Lin Niu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cf9",
+          "name": "Shirui Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cfa",
+          "name": "Bojian Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cfb",
+          "name": "Shu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cfc",
+          "name": "Shilin Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cfd",
+          "name": "Xiang Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cfe",
+          "name": "Xiaofeng Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5cff",
+          "name": "Kai Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d00",
+          "name": "Jianchen Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d01",
+          "name": "Peng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d02",
+          "name": "Tian Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d03",
+          "name": "Di Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d04",
+          "name": "Yuhong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d05",
+          "name": "Linus",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d06",
+          "name": "Jie Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d07",
+          "name": "Jingwei Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68552b394f1add9d4c5c5d08",
+          "name": "Chunchao Guo",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-18T13:14:46.000Z",
+      "submittedOnDailyAt": "2025-06-23T07:17:03.771Z",
+      "title": "Formyun 3D 2.1: de imágenes a alta calidad de activos 3D, utilizando materiales PBR que cumplen con los criterios de producción.",
+      "submittedOnDailyBy": {
+        "_id": "647d9e881a1fcad2fdbf4954",
+        "avatarUrl": "/avatars/92ee8727d5c9063d852d3537b7690843.svg",
+        "isPro": false,
+        "fullname": "SeanYoung",
+        "user": "SeanYoungxh",
+        "type": "user"
+      },
+      "summary": "El campo de la creación de contenido 3D mediante AI (AIGC) ha acelerado significativamente la producción de modelos 3D en el ámbito de los juegos, películas y diseño. Se han desarrollado innovaciones significativas, cambiando la dirección de la generación 3D, pero este campo sigue siendo un área que solo puede ser abordada por investigadores, desarrolladores y diseñadores debido a la complejidad asociada con la recopilación, procesamiento y entrenamiento de modelos 3D. Para enfrentar estos desafíos, este tutorial presenta un estudio de caso utilizando la versión 2.1 de Hunyuan3D. Este tutorial ofrece una guía paso a paso para procesar datos 3D, entrenar modelos de generación 3D y evaluar su rendimiento utilizando el sistema avanzado de generación de asambleas 3D con alta resolución y texturas. Este sistema está constituido por dos componentes clave: Hunyuan3D-DiT para la generación de formas y Hunyuan3D-Paint para la síntesis de texturas. Se revisa de manera integral el flujo de trabajo desde la preparación de datos hasta la implementación, y al final del tutorial se destaca la necesidad de conocimientos para ajustar o desarrollar potentes modelos de generación 3D adecuados para juegos, realidad virtual e industria de diseño.",
+      "upvotes": 2,
+      "discussionId": "68552b394f1add9d4c5c5d09",
+      "ai_summary": "The tutorial provides a comprehensive guide on using Hunyuan3D 2.1 for generating high-resolution, textured 3D models, covering data preparation, model architecture, training, evaluation, and deployment.",
+      "ai_keywords": [
+        "Hunyuan3D-DiT",
+        "Hunyuan3D-Paint",
+        "3D generative model",
+        "texture synthesis",
+        "data preparation",
+        "model architecture",
+        "training strategies",
+        "evaluation metrics",
+        "deployment"
+      ]
+    },
+    "publishedAt": "2025-06-18T09:14:46.000Z",
+    "title": "Hunyuan3D 2.1: From Images to High-Fidelity 3D Assets with\n  Production-Ready PBR Material",
+    "summary": "3D AI-generated content (AIGC) is a passionate field that has significantly\naccelerated the creation of 3D models in gaming, film, and design. Despite the\ndevelopment of several groundbreaking models that have revolutionized 3D\ngeneration, the field remains largely accessible only to researchers,\ndevelopers, and designers due to the complexities involved in collecting,\nprocessing, and training 3D models. To address these challenges, we introduce\nHunyuan3D 2.1 as a case study in this tutorial. This tutorial offers a\ncomprehensive, step-by-step guide on processing 3D data, training a 3D\ngenerative model, and evaluating its performance using Hunyuan3D 2.1, an\nadvanced system for producing high-resolution, textured 3D assets. The system\ncomprises two core components: the Hunyuan3D-DiT for shape generation and the\nHunyuan3D-Paint for texture synthesis. We will explore the entire workflow,\nincluding data preparation, model architecture, training strategies, evaluation\nmetrics, and deployment. By the conclusion of this tutorial, you will have the\nknowledge to finetune or develop a robust 3D generative model suitable for\napplications in gaming, virtual reality, and industrial design.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.15442.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "647d9e881a1fcad2fdbf4954",
+      "avatarUrl": "/avatars/92ee8727d5c9063d852d3537b7690843.svg",
+      "fullname": "SeanYoung",
+      "name": "SeanYoungxh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.15925",
+      "authors": [
+        {
+          "_id": "6858c714c0c8e29df8ea3c9c",
+          "user": {
+            "_id": "64698ed0dcbb937d56b9dd02",
+            "avatarUrl": "/avatars/407afd70356f9d0669d4e2d39b9a8740.svg",
+            "isPro": false,
+            "fullname": "Narutatsu Ri",
+            "user": "narutatsuri",
+            "type": "user"
+          },
+          "name": "Narutatsu Ri",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-23T08:14:39.250Z",
+          "hidden": false
+        },
+        {
+          "_id": "6858c714c0c8e29df8ea3c9d",
+          "name": "Nicholas Deas",
+          "hidden": false
+        },
+        {
+          "_id": "6858c714c0c8e29df8ea3c9e",
+          "name": "Kathleen McKeown",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-19T00:01:43.000Z",
+      "submittedOnDailyAt": "2025-06-23T01:47:16.594Z",
+      "title": "Generación basada en re-ranking para la creación de resumenes con visión sesgada",
+      "submittedOnDailyBy": {
+        "_id": "64698ed0dcbb937d56b9dd02",
+        "avatarUrl": "/avatars/407afd70356f9d0669d4e2d39b9a8740.svg",
+        "isPro": false,
+        "fullname": "Narutatsu Ri",
+        "user": "narutatsuri",
+        "type": "user"
+      },
+      "summary": "En entornos realistas como la política, la generación de resumenes imparciales es una de las aplicaciones importantes de los grandes modelos de lenguaje (LLMs). Sin embargo, los actuales marcos de evaluación utilizan métricas tradicionales para medir características principales como coherencia o fidelidad, sin confirmar la posibilidad de aplicación. Además, los esfuerzos en el desarrollo de herramientas de resumen mejoradas siguen en estados iniciales. Buscamos resolver estas deficiencias mediante dos acciones: (1) especificar métricas confiables para medir la calidad de los resumenes de punto de vista, y (2) investigar si los métodos basados en LLMs pueden mejorar el efecto de la inferencia 0-shot. En particular, construimos un conjunto de prueba utilizando notas humanas para benchmarkar la confiabilidad de las métricas, demostrando que las métricas tradicionales caen en comparación con las basadas en modelos de lenguaje, y son reconocidas como fuertes evaluadores. Con estas métricas, mostramos que los métodos basados en rinank obtienen resultados fuertes, y destacamos que la ajuste de preferencias utilizando datos generados y etiquetas de rinank puede mejorar el rendimiento. Nuestro objetivo es contribuir a la evaluación y el desarrollo confiables de los métodos de resumen de punto de vista.",
+      "upvotes": 1,
+      "discussionId": "6858c714c0c8e29df8ea3c9f",
+      "githubRepo": "https://github.com/narutatsuri/Unbiased-Perspective-Summarization",
+      "ai_summary": "Reranking and preference tuning improve the quality of perspective summaries generated by LLMs, as measured by language model-based metrics that outperform traditional ones.",
+      "ai_keywords": [
+        "Large Language Models",
+        "perspective summarization",
+        "coverage",
+        "faithfulness",
+        "metric reliability",
+        "reranking-based methods",
+        "preference tuning",
+        "synthetically generated data",
+        "reranking-labeled data"
+      ]
+    },
+    "publishedAt": "2025-06-18T20:01:43.000Z",
+    "title": "Reranking-based Generation for Unbiased Perspective Summarization",
+    "summary": "Generating unbiased summaries in real-world settings such as political\nperspective summarization remains a crucial application of Large Language\nModels (LLMs). Yet, existing evaluation frameworks rely on traditional metrics\nfor measuring key attributes such as coverage and faithfulness without\nverifying their applicability, and efforts to develop improved summarizers are\nstill nascent. We address these gaps by (1) identifying reliable metrics for\nmeasuring perspective summary quality, and (2) investigating the efficacy of\nLLM-based methods beyond zero-shot inference. Namely, we build a test set for\nbenchmarking metric reliability using human annotations and show that\ntraditional metrics underperform compared to language model-based metrics,\nwhich prove to be strong evaluators. Using these metrics, we show that\nreranking-based methods yield strong results, and preference tuning with\nsynthetically generated and reranking-labeled data further boosts performance.\nOur findings aim to contribute to the reliable evaluation and development of\nperspective summarization methods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.15925.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64698ed0dcbb937d56b9dd02",
+      "avatarUrl": "/avatars/407afd70356f9d0669d4e2d39b9a8740.svg",
+      "fullname": "Narutatsu Ri",
+      "name": "narutatsuri",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  }
+]
