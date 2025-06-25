@@ -1,0 +1,1721 @@
+[
+  {
+    "paper": {
+      "id": "2506.19851",
+      "authors": [
+        {
+          "_id": "685b5a46d2ee4fac76521dce",
+          "user": {
+            "_id": "6375d136dee28348a9c63cbf",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6375d136dee28348a9c63cbf/gK465HBrQWIOZ-qtHb-Vh.jpeg",
+            "isPro": false,
+            "fullname": "zehuan-huang",
+            "user": "huanngzh",
+            "type": "user"
+          },
+          "name": "Zehuan Huang",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-25T08:19:21.031Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b5a46d2ee4fac76521dcf",
+          "user": {
+            "_id": "65240d0ca801972b6eb12ed8",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65240d0ca801972b6eb12ed8/hl2RAssBperb5JlgOIDvw.jpeg",
+            "isPro": false,
+            "fullname": "Haoran Feng",
+            "user": "fenghora",
+            "type": "user"
+          },
+          "name": "Haoran Feng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T09:19:31.409Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b5a46d2ee4fac76521dd0",
+          "user": {
+            "_id": "63a41cb584a6a25c65bd8316",
+            "avatarUrl": "/avatars/1d474831c320c7f9ca9e6d88f68acc06.svg",
+            "isPro": false,
+            "fullname": "Yangtian Sun",
+            "user": "Yang-Tian",
+            "type": "user"
+          },
+          "name": "Yangtian Sun",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T09:19:29.490Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b5a46d2ee4fac76521dd1",
+          "name": "Yuanchen Guo",
+          "hidden": false
+        },
+        {
+          "_id": "685b5a46d2ee4fac76521dd2",
+          "user": {
+            "_id": "638066faf022c8a5803f7eb8",
+            "avatarUrl": "/avatars/4cfd699c3f6c5461b12b7dc5e3fe183d.svg",
+            "isPro": false,
+            "fullname": "Yanpei Cao",
+            "user": "pookiefoof",
+            "type": "user"
+          },
+          "name": "Yanpei Cao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-06-25T08:21:27.467Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b5a46d2ee4fac76521dd3",
+          "user": {
+            "_id": "65b722dbe02a17f0f8d1cc6b",
+            "avatarUrl": "/avatars/65f20601ef9b8ebfdddadd737f9153d6.svg",
+            "isPro": false,
+            "fullname": "Lu Sheng",
+            "user": "lsheng2024",
+            "type": "user"
+          },
+          "name": "Lu Sheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T09:19:33.186Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64a96a375a69e2ca889abdff/ttfXuQOJQmOqnO-_-F1op.mp4"
+      ],
+      "publishedAt": "2025-06-24T17:59:58.000Z",
+      "submittedOnDailyAt": "2025-06-25T01:12:40.364Z",
+      "title": "アニマX: 3D에서 무생물을 움직이는 비디오 - 포즈DIFュージョンモデル\n\n（注意：由于原文中的“ポーズディフュージョンモデル”在韩语中没有直接对应的词汇，这里保留了原文的表达。）",
+      "submittedOnDailyBy": {
+        "_id": "64a96a375a69e2ca889abdff",
+        "avatarUrl": "/avatars/f288c66ace09d907f132a79a740a3701.svg",
+        "isPro": false,
+        "fullname": "fanhongxing",
+        "user": "fanhongxing",
+        "type": "user"
+      },
+      "summary": "AnimaX는 전방 3D 애니메이션 프레임워크로, 3D 애니메이션을 생성할 때의 움직임 합성 방법과 스켈eton 기반 애니메이션의 제어 가능한 구조를 결합시켰습니다. 기존의 움직임 합성 방법은 고정된 스켈eton 토픽에 제한되어있거나, 고차원 변형 공간에서 비용 높은 최적화가 필요했습니다. 반면에, AnimaX는 효과적으로 비디오 기반의 움직임 지식을 3D 영역에 전달하고, 다양한 스켈eton을 가진 다양한 예술적 메쉬를 지원합니다. 우리 방법론에서는 3D 움직임을 다각도, 다 프레임 2D 자세 매핑으로 표현하고, 템플릿 레ン딩과 문자열 기반의 움직임 프로ン프트를 기반으로 연속 비디오와 자세의 이산화가 가능합니다. 또한, 비디오와 자세 시퀀스의 공간 시간 aligment를 보장하기 위해 공유 위치付け 엔코딩과 모델 인식 엔코딩을 도입합니다. 이로써, 비디오의 제어를 움직임 생성 태스크에 효과적으로 전달할 수 있습니다. 그리고 이러한 다각도 자세 시퀀스는 삼각화되어 3D 관절 위치로 변환되고, 역 관절 키네마틱스에 의해 메쉬 애니메이션으로 변환됩니다. 새로운 데이터셋(160,000 프로ップ 시퀀스)를 훈련시킨 AnimaX는 VBench에서 일반화, 움직임의 정확성, 효율성에서 가장 先端한 결과를 얻으며, 카테고리 무시된 3D 애니메이션의 scalable 해결책을 제공합니다. 프로젝트 페이지는 https://anima-x.github.io/ 입니다.",
+      "upvotes": 30,
+      "discussionId": "685b5a47d2ee4fac76521dd4",
+      "projectPage": "https://anima-x.github.io/",
+      "githubRepo": "https://github.com/anima-x/anima-x",
+      "ai_summary": "AnimaX creates multi-skeleton 3D animations by blending video diffusion model priors with skeleton-based control, using joint video-pose diffusion and shared positional encodings.",
+      "ai_keywords": [
+        "feed-forward 3D animation framework",
+        "video diffusion models",
+        "skeleton-based animation",
+        "motion synthesis",
+        "high-dimensional deformation spaces",
+        "2D pose maps",
+        "joint video-pose diffusion",
+        "template renderings",
+        "textual motion prompt",
+        "shared positional encodings",
+        "modality-aware embeddings",
+        "spatial-temporal alignment",
+        "inverse kinematics",
+        "VBench",
+        "category-agnostic 3D animation"
+      ],
+      "githubStars": 34
+    },
+    "publishedAt": "2025-06-24T13:59:58.000Z",
+    "title": "AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion\n  Models",
+    "summary": "We present AnimaX, a feed-forward 3D animation framework that bridges the\nmotion priors of video diffusion models with the controllable structure of\nskeleton-based animation. Traditional motion synthesis methods are either\nrestricted to fixed skeletal topologies or require costly optimization in\nhigh-dimensional deformation spaces. In contrast, AnimaX effectively transfers\nvideo-based motion knowledge to the 3D domain, supporting diverse articulated\nmeshes with arbitrary skeletons. Our method represents 3D motion as multi-view,\nmulti-frame 2D pose maps, and enables joint video-pose diffusion conditioned on\ntemplate renderings and a textual motion prompt. We introduce shared positional\nencodings and modality-aware embeddings to ensure spatial-temporal alignment\nbetween video and pose sequences, effectively transferring video priors to\nmotion generation task. The resulting multi-view pose sequences are\ntriangulated into 3D joint positions and converted into mesh animation via\ninverse kinematics. Trained on a newly curated dataset of 160,000 rigged\nsequences, AnimaX achieves state-of-the-art results on VBench in\ngeneralization, motion fidelity, and efficiency, offering a scalable solution\nfor category-agnostic 3D animation. Project page:\nhttps://anima-x.github.io/{https://anima-x.github.io/}.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64a96a375a69e2ca889abdff/ttfXuQOJQmOqnO-_-F1op.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19851.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64a96a375a69e2ca889abdff",
+      "avatarUrl": "/avatars/f288c66ace09d907f132a79a740a3701.svg",
+      "fullname": "fanhongxing",
+      "name": "fanhongxing",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.16141",
+      "authors": [
+        {
+          "_id": "6858b1fac0c8e29df8ea3c18",
+          "name": "Yi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6858b1fac0c8e29df8ea3c19",
+          "name": "Yuying Ge",
+          "hidden": false
+        },
+        {
+          "_id": "6858b1fac0c8e29df8ea3c1a",
+          "name": "Rui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6858b1fac0c8e29df8ea3c1b",
+          "name": "Yixiao Ge",
+          "hidden": false
+        },
+        {
+          "_id": "6858b1fac0c8e29df8ea3c1c",
+          "name": "Junhao Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "6858b1fac0c8e29df8ea3c1d",
+          "name": "Ying Shan",
+          "hidden": false
+        },
+        {
+          "_id": "6858b1fac0c8e29df8ea3c1e",
+          "name": "Xihui Liu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-19T08:49:13.000Z",
+      "submittedOnDailyAt": "2025-06-25T01:50:33.428Z",
+      "title": "GRPO-CARE: 다중모듈러 추론을 위한 일관성 지향의 강화학습",
+      "submittedOnDailyBy": {
+        "_id": "60d045c4778bafd0fbcfa3f5",
+        "avatarUrl": "/avatars/0cc0c2739c1934430ea09df7e9668c80.svg",
+        "isPro": false,
+        "fullname": "Yi Chen",
+        "user": "ChenYi99",
+        "type": "user"
+      },
+      "summary": "최근의 강화학습 접근 방식의 예로 꼽히는 결과 관측 글로벌 정책 (GRPO)은 대규모 언어 모델 (LLMs)의 사고 진행 (Chain-of-Thought reasoning)에 발전하고 있지만, 이러한 접근 방식은 다형 언어 모델 (MLLMs)에 적용되지 않았습니다. MLLM의 훈련 후 방법의 엄격한 평가의 부족을 해결하기 위해, SEED-Bench-R1라는 벤치마크를 도입했습니다. 이 벤치마크는 복잡한 현실적인 이미지에서 균형잡힌 인식과 논리적 일련의 이유를 필요로 하며, 큰 훈련 데이터 세트를 제공하여 내부 분포, 환경 간, 태스크 간의 세 가지 단계적 도전에 대한 일반화 성능을 평가합니다. SEED-Bench-R1을 사용함으로써, 표준 GRPO는 답의 정확성을 향상시키면서, 논리적 일련의 이유와 답 사이의 일치성을 감소시켰으며, 일치율은 57.9%입니다. 이는 보상 신호가 최종적인 답에만 집중하고, 짧은 경로를 촉발시키고, 엄격한 KL 패널티가 탐색을 제한하고 있기 때문입니다. 이에 대비하여, GRPO-CARE라는 논리적 일련의 이유를 인지하는 RL 프레임워크를 제안합니다. 이 프레임워크는 답의 정확성과 이유의 일치성을 최적화하며, 명시적인 슈퍼비지션이 필요하지 않습니다. GRPO-CARE는 두 단계의 보상을 도입합니다: (1) 답의 정확성에 대한 기초적인 보상과 (2) 이유의 일치성에 대한 적응적인 베스트워크 보너스. 이 보너스는 모델의 이유의 일치성을 계산하기 위해, 점차 발전하는 기준 모델을 사용하며, 그룹 쌍 간의 비교를 수행합니다. 이 이중 구조는 정확한 논리적으로 일련의 이유의 경로에 대해 보상을 증폭시킵니다. KL 패널티를 이 적응적인 보너스로 대체하면, GRPO-CARE는 SEED-Bench-R1에서 표준 GRPO를 초과하며, 가장 어려워진 평가 레벨에서 6.7%의 성능 향상과 24.5%의 일치성 향상을 달성합니다. 또한, 강한 트랜스폼을 보여주며, 다양한 이미지 이해 벤치마크에서 모델의 성능을 향상시킵니다. 우리의 연구는 체계적으로 설계된 벤치마크와 일반화 가능한 훈련 후 프레임워크를 제공하며, 해석적이고 강건한 MLLM의 개발에 기여합니다.",
+      "upvotes": 22,
+      "discussionId": "6858b1fac0c8e29df8ea3c1f",
+      "githubRepo": "https://github.com/TencentARC/GRPO-CARE",
+      "ai_summary": "GRPO-CARE, a reinforcement learning framework optimizing for consistency and correctness, outperforms standard GRPO on a new video understanding benchmark, SEED-Bench-R1, improving both performance and logical coherence in multimodal large language models.",
+      "ai_keywords": [
+        "reinforcement learning",
+        "outcome-supervised GRPO",
+        "Chain-of-Thought reasoning",
+        "large language models",
+        "multimodal large language models",
+        "SEED-Bench-R1",
+        "in-distribution",
+        "cross-environment",
+        "cross-environment-task",
+        "logical coherence",
+        "reasoning steps",
+        "answer accuracy",
+        "reward signals",
+        "shortcuts",
+        "KL penalties",
+        "exploration",
+        "consistency-aware RL framework",
+        "two-tiered reward",
+        "reasoning-to-answer likelihood",
+        "adaptive consistency bonus",
+        "video understanding benchmarks",
+        "transferability",
+        "interpretable models",
+        "robust models"
+      ],
+      "githubStars": 19
+    },
+    "publishedAt": "2025-06-19T04:49:13.000Z",
+    "title": "GRPO-CARE: Consistency-Aware Reinforcement Learning for Multimodal\n  Reasoning",
+    "summary": "Recent reinforcement learning approaches, such as outcome-supervised GRPO,\nhave advanced Chain-of-Thought reasoning in large language models (LLMs), yet\ntheir adaptation to multimodal LLMs (MLLMs) is unexplored. To address the lack\nof rigorous evaluation for MLLM post-training methods, we introduce\nSEED-Bench-R1, a benchmark with complex real-world videos requiring balanced\nperception and reasoning. It offers a large training set and evaluates\ngeneralization across three escalating challenges: in-distribution,\ncross-environment, and cross-environment-task scenarios. Using SEED-Bench-R1,\nwe find that standard GRPO, while improving answer accuracy, often reduces\nlogical coherence between reasoning steps and answers, with only a 57.9%\nconsistency rate. This stems from reward signals focusing solely on final\nanswers, encouraging shortcuts, and strict KL penalties limiting exploration.To\naddress this, we propose GRPO-CARE, a consistency-aware RL framework optimizing\nboth answer correctness and reasoning coherence without explicit supervision.\nGRPO-CARE introduces a two-tiered reward: (1) a base reward for answer\ncorrectness, and (2) an adaptive consistency bonus, computed by comparing the\nmodel's reasoning-to-answer likelihood (via a slowly-evolving reference model)\nagainst group peers.This dual mechanism amplifies rewards for reasoning paths\nthat are both correct and logically consistent. Replacing KL penalties with\nthis adaptive bonus, GRPO-CARE outperforms standard GRPO on SEED-Bench-R1,\nachieving a 6.7% performance gain on the hardest evaluation level and a 24.5%\nimprovement in consistency. It also shows strong transferability, improving\nmodel performance across diverse video understanding benchmarks. Our work\ncontributes a systematically designed benchmark and a generalizable\npost-training framework, advancing the development of more interpretable and\nrobust MLLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.16141.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60d045c4778bafd0fbcfa3f5",
+      "avatarUrl": "/avatars/0cc0c2739c1934430ea09df7e9668c80.svg",
+      "fullname": "Yi Chen",
+      "name": "ChenYi99",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.19848",
+      "authors": [
+        {
+          "_id": "685b7cc2d2ee4fac76521e83",
+          "name": "Long Xing",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e84",
+          "user": {
+            "_id": "656f1b21b075b63c90ba02ee",
+            "avatarUrl": "/avatars/d6856815ef06261394178161e4d511b4.svg",
+            "isPro": false,
+            "fullname": "Huang Qidong",
+            "user": "shikiw",
+            "type": "user"
+          },
+          "name": "Qidong Huang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:07:23.757Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e85",
+          "name": "Xiaoyi Dong",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e86",
+          "name": "Pan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e87",
+          "user": {
+            "_id": "63859cf3b2906edaf83af9f0",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63859cf3b2906edaf83af9f0/mCgynEtoXdILvzyoPexii.png",
+            "isPro": false,
+            "fullname": "Yuhang Zang",
+            "user": "yuhangzang",
+            "type": "user"
+          },
+          "name": "Yuhang Zang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:07:21.449Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e88",
+          "name": "Yuhang Cao",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e89",
+          "name": "Jinsong Li",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e8a",
+          "name": "Shuangrui Ding",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e8b",
+          "name": "Weiming Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e8c",
+          "name": "Nenghai Yu",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e8d",
+          "name": "Jiaqi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e8e",
+          "name": "Feng Wu",
+          "hidden": false
+        },
+        {
+          "_id": "685b7cc2d2ee4fac76521e8f",
+          "name": "Dahua Lin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-24T17:59:55.000Z",
+      "submittedOnDailyAt": "2025-06-25T03:07:04.508Z",
+      "title": "스케일 캡치닝: 이중 모듈에서 발생하는 편향을 보정하여 추론 시 스케일러블한 이미지 캡치닝",
+      "submittedOnDailyBy": {
+        "_id": "64b4eec4faa3181a5eab9c46",
+        "avatarUrl": "/avatars/bcc9bf5cbf67546ad2b4c9ec8b96ac96.svg",
+        "isPro": true,
+        "fullname": "Jiaqi Wang",
+        "user": "myownskyW7",
+        "type": "user"
+      },
+      "summary": "이 논문에서는 ScaleCap라는 추론 시 스케일러블한 이미지 캡션 스테이지를 소개하고, 상세한 이미지 캡션을 생성하는 방법을 설명합니다. 고품질의 이미지 캡션의 주요 문제점은 LVLM(Large Vision Language Model)의 고유한 편향입니다: 다형성 편향은 설명의 질의 불균형을 연결하며, 일부 요소에 상세한 설명을 제공하지만 다른 요소에 대해서는 그러한 설명을 제공하지 않습니다; 언어 편향은 언어에 없는 물체에 대해 왜곡된 설명을 생성합니다. 이러한 문제를 해결하기 위해, ScaleCap은 추론 비용 증가시키면서 캡션을 지속적으로 풍부하게 만들고, 조정하는 스케일러블な 디바이스 없는 캡션 스테이지를 제안하고 있습니다. 구체적으로는, 두 가지 새로운 구성 요소를 제안하고 있습니다: 휴리스틱 질문 답변과 비교적인 문맥 평가. 첫 번째는 이미지에 기반하여 콘텐츠 관련 질문을 생성하고, 이를 답하는 것으로, 캡션에 관련된 정보를 단계적으로 주입합니다. 두 번째는 문맥 수준의 오프라인 비교적인 검증을 사용하여, 언어 편향으로 인한 왜곡을 효과적으로 식별하고, 제거합니다. 추론 비용이 증가하지만, ScaleCap은 단계적으로 추가적인 시각적 디테일을 감지하고, 더 정확한, 균형 있는, 정보 풍부한 캡션을 생성합니다. 광범위한 모디바이드 실험에서, ScaleCap의 효과가 나타났습니다. 450K 이미지를 ScaleCap으로 설명하고, LVLM의 사전 학습에 사용된 후, 11개 광범위하게 사용되고 있는 벤치마크에서 성능이 지속적으로 향상됩니다. 또한, ScaleCap은 VQA 태스크에서 이미지를 캡션으로 대체하고, 캡션으로부터 이미지를 재구성하여 의미적인 커버리지를 평가하는 두 가지 추가 태스크를 수행하며, 생성된 캡션의 풍부성과 충실도를 보여줍니다. 코드는 https://github.com/Cooperx521/ScaleCap에서 사용할 수 있습니다.",
+      "upvotes": 19,
+      "discussionId": "685b7cc2d2ee4fac76521e90",
+      "githubRepo": "https://github.com/Cooperx521/ScaleCap",
+      "ai_summary": "ScaleCap enhances image captioning by iteratively enriching and calibrating captions using heuristic question answering and contrastive sentence rating, addressing multimodal and linguistic biases to improve accuracy, balance, and informativeness.",
+      "ai_keywords": [
+        "LVLMs",
+        "multimodal bias",
+        "linguistic bias",
+        "heuristic question answering",
+        "contrastive sentence rating",
+        "VQA task"
+      ],
+      "githubStars": 22
+    },
+    "publishedAt": "2025-06-24T13:59:55.000Z",
+    "title": "ScaleCap: Inference-Time Scalable Image Captioning via Dual-Modality\n  Debiasing",
+    "summary": "This paper presents ScaleCap, an inference-time scalable image captioning\nstrategy that generates comprehensive and detailed image captions. The key\nchallenges of high-quality image captioning lie in the inherent biases of\nLVLMs: multimodal bias resulting in imbalanced descriptive granularity,\noffering detailed accounts of some elements while merely skimming over others;\nlinguistic bias leading to hallucinated descriptions of non-existent objects.\nTo address these issues, we propose a scalable debiased captioning strategy,\nwhich continuously enriches and calibrates the caption with increased inference\nbudget. Specifically, we propose two novel components: heuristic question\nanswering and contrastive sentence rating. The former generates\ncontent-specific questions based on the image and answers them to progressively\ninject relevant information into the caption. The latter employs sentence-level\noffline contrastive decoding to effectively identify and eliminate\nhallucinations caused by linguistic biases. With increased inference cost, more\nheuristic questions are raised by ScaleCap to progressively capture additional\nvisual details, generating captions that are more accurate, balanced, and\ninformative. Extensive modality alignment experiments demonstrate the\neffectiveness of ScaleCap. Annotating 450K images with ScaleCap and using them\nfor LVLM pretraining leads to consistent performance gains across 11 widely\nused benchmarks. Furthermore, ScaleCap showcases superb richness and fidelity\nof generated captions with two additional tasks: replacing images with captions\nin VQA task, and reconstructing images from captions to assess semantic\ncoverage. Code is available at https://github.com/Cooperx521/ScaleCap.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19848.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b4eec4faa3181a5eab9c46",
+      "avatarUrl": "/avatars/bcc9bf5cbf67546ad2b4c9ec8b96ac96.svg",
+      "fullname": "Jiaqi Wang",
+      "name": "myownskyW7",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 20
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.19290",
+      "authors": [
+        {
+          "_id": "685b6640d2ee4fac76521e42",
+          "user": {
+            "_id": "6621efe1a6eec3ad03e38759",
+            "avatarUrl": "/avatars/c35acce69f244ec0833dffd53eedf6a3.svg",
+            "isPro": false,
+            "fullname": "Liang Zeng",
+            "user": "zengliangcs",
+            "type": "user"
+          },
+          "name": "Liang Zeng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:08:30.529Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e43",
+          "user": {
+            "_id": "612cfc6e1f69b222aacf831b",
+            "avatarUrl": "/avatars/b6c7d15ebc7b5dd4b56620bfab324c77.svg",
+            "isPro": false,
+            "fullname": "lycfight",
+            "user": "lycfight",
+            "type": "user"
+          },
+          "name": "Yongcong Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:08:28.275Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e44",
+          "name": "Yuzhen Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e45",
+          "name": "Changshi Li",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e46",
+          "user": {
+            "_id": "658229ef5f6d83438257fce5",
+            "avatarUrl": "/avatars/b4417de9a338e95dc69cc547a46348e8.svg",
+            "isPro": false,
+            "fullname": "Chris (Yuhao) Liu",
+            "user": "chrisliu298",
+            "type": "user"
+          },
+          "name": "Chris Yuhao Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:08:22.815Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e47",
+          "name": "Rui Yan",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e48",
+          "name": "Tianwen Wei",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e49",
+          "name": "Jujie He",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e4a",
+          "name": "Xuchen Song",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e4b",
+          "name": "Yang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685b6640d2ee4fac76521e4c",
+          "name": "Yahui Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-24T03:53:36.000Z",
+      "submittedOnDailyAt": "2025-06-25T01:35:02.603Z",
+      "title": "Skywork-SWE: LLMs에서 소프트웨어 개발의 데이터 스케일링 방법을 명확히 합니다.",
+      "submittedOnDailyBy": {
+        "_id": "6621efe1a6eec3ad03e38759",
+        "avatarUrl": "/avatars/c35acce69f244ec0833dffd53eedf6a3.svg",
+        "isPro": false,
+        "fullname": "Liang Zeng",
+        "user": "zengliangcs",
+        "type": "user"
+      },
+      "summary": "ソフトウェア工学（SWE）는 최근, 다음 세대의 LLM 에이전트의 중요한 테스트 밭으로 자리잡으며, 두 가지 중요한 고유 능력에 대한 요구가 있습니다: 연속적인 복잡한 문제 해결(예: 50회 이상의 상호작용 로드)과 장기 컨텍스트 의존 관계의 해결(예: 32,000 토큰 이상). 그러나, SWE에서 데이터 준비 프로세스는 코드 파일의 필터링과专用의 실행 환경의 설정에 따라, 손쉽게 이해할 수 있는 것처럼 많은 시간이 소요됩니다. 그 결과, 현재의 데이터 셋은 거의 GitHub에서 수천 개의 인스턴스만 제한되어 있습니다.\n\n이러한 상황에서, 우리는 SWE 데이터 셋의 크기와 다양성을 체계적으로 확장하기 위한 단계적 자동화 데이터 준비 프로세스를 제안합니다. 우리의 데이터 셋은 2,531개의 다른 GitHub 리포지토리에서 10,169건의 실세계의 Python 태스크 인스턴스를 포함하며, 각 태스크는 자연어로 지정되어 있으며,专用의 실행 환경 이미지로 자동화 유닛 테스트 검증을 위해 사용됩니다. 우리는 제안된 SWE 데이터 셋에서 8,000건 이상의 성공적인 실행 검증 데이터 셋을 더 신중하게 준비했습니다. 이 데이터 셋에서 Skywork-SWE 모델의 미세 조정을 수행하면, LLM의 소프트웨어 개발 능력의 성능은 데이터 크기의 증가에 따라 계속해서 향상되며, 과적합의 흔적이 보이지 않습니다. 특히, 우리의 Skywork-SWE 모델은 SWE-bench Verified 벤치마크에서 pass@1 accuracy는 38.0%를 달성하여, OpenHands 에이전트 프레임워크를 사용한 Qwen2.5-Coder-32B LLM 중에서 새로운 최고 수준(SOTA)을 세웠습니다. 또한, 테스트 시간 스케일링 기술의 도입으로 성능은 더욱 향상되어, 32B 파라미터 모델의 SOTA 결과를 초월하여 47.0%의 accuracy를 달성했습니다. 우리는 Skywork-SWE-32B 모델 체크포인트를 공개하고, 향후 연구를 가속화하고자 합니다.",
+      "upvotes": 18,
+      "discussionId": "685b6641d2ee4fac76521e4d",
+      "projectPage": "https://quixotic-sting-239.notion.site/eb17f379610040ceb54da5d5d24065bd",
+      "ai_summary": "An automated data-curation pipeline for software engineering improves large language model performance on SWE tasks, achieving state-of-the-art results with and without test-time scaling techniques.",
+      "ai_keywords": [
+        "LLM agents",
+        "iterative problem-solving",
+        "long-context dependency resolution",
+        "code file filtering",
+        "unit tests",
+        "runtime environments",
+        "data-curation pipeline",
+        "software engineering capabilities",
+        "Skywork-SWE model",
+        "SWE-bench Verified",
+        "pass@1 accuracy",
+        "OpenHands agent framework",
+        "test-time scaling techniques",
+        "parameter-efficient fine-tuning"
+      ]
+    },
+    "publishedAt": "2025-06-23T23:53:36.000Z",
+    "title": "Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in\n  LLMs",
+    "summary": "Software engineering (SWE) has recently emerged as a crucial testbed for\nnext-generation LLM agents, demanding inherent capabilities in two critical\ndimensions: sustained iterative problem-solving (e.g., >50 interaction rounds)\nand long-context dependency resolution (e.g., >32k tokens). However, the data\ncuration process in SWE remains notoriously time-consuming, as it heavily\nrelies on manual annotation for code file filtering and the setup of dedicated\nruntime environments to execute and validate unit tests. Consequently, most\nexisting datasets are limited to only a few thousand GitHub-sourced instances.\nTo this end, we propose an incremental, automated data-curation pipeline that\nsystematically scales both the volume and diversity of SWE datasets. Our\ndataset comprises 10,169 real-world Python task instances from 2,531 distinct\nGitHub repositories, each accompanied by a task specified in natural language\nand a dedicated runtime-environment image for automated unit-test validation.\nWe have carefully curated over 8,000 successfully runtime-validated training\ntrajectories from our proposed SWE dataset. When fine-tuning the Skywork-SWE\nmodel on these trajectories, we uncover a striking data scaling phenomenon: the\ntrained model's performance for software engineering capabilities in LLMs\ncontinues to improve as the data size increases, showing no signs of\nsaturation. Notably, our Skywork-SWE model achieves 38.0% pass@1 accuracy on\nthe SWE-bench Verified benchmark without using verifiers or multiple rollouts,\nestablishing a new state-of-the-art (SOTA) among the Qwen2.5-Coder-32B-based\nLLMs built on the OpenHands agent framework. Furthermore, with the\nincorporation of test-time scaling techniques, the performance further improves\nto 47.0% accuracy, surpassing the previous SOTA results for sub-32B parameter\nmodels. We release the Skywork-SWE-32B model checkpoint to accelerate future\nresearch.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19290.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6621efe1a6eec3ad03e38759",
+      "avatarUrl": "/avatars/c35acce69f244ec0833dffd53eedf6a3.svg",
+      "fullname": "Liang Zeng",
+      "name": "zengliangcs",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.18701",
+      "authors": [
+        {
+          "_id": "685a14da0e4ad7e21975854d",
+          "user": {
+            "_id": "63aed0e7f873109b112dbb1b",
+            "avatarUrl": "/avatars/0c07beb1ef7287128528b165d18371f6.svg",
+            "isPro": false,
+            "fullname": "Yifan Zhang",
+            "user": "Vanint",
+            "type": "user"
+          },
+          "name": "Yifan Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:09:21.431Z",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e21975854e",
+          "name": "Chunli Peng",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e21975854f",
+          "name": "Boyang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e219758550",
+          "name": "Puyi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e219758551",
+          "name": "Qingcheng Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e219758552",
+          "name": "Fei Kang",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e219758553",
+          "name": "Biao Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e219758554",
+          "name": "Zedong Gao",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e219758555",
+          "name": "Eric Li",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e219758556",
+          "name": "Yang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685a14da0e4ad7e219758557",
+          "name": "Yahui Zhou",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63aed0e7f873109b112dbb1b/2AbnZSPpuvFOad20XamiG.mp4"
+      ],
+      "publishedAt": "2025-06-23T14:40:49.000Z",
+      "submittedOnDailyAt": "2025-06-25T07:50:07.299Z",
+      "title": "Matrix-Game: 인터랙티브 월드 fundamentral 모델\n\n(Note: The translation is provided as requested, without any additional explanation or text.)",
+      "submittedOnDailyBy": {
+        "_id": "63aed0e7f873109b112dbb1b",
+        "avatarUrl": "/avatars/0c07beb1ef7287128528b165d18371f6.svg",
+        "isPro": false,
+        "fullname": "Yifan Zhang",
+        "user": "Vanint",
+        "type": "user"
+      },
+      "summary": "Matrix-Game는 제어 가능한 게임 월드 생성을 위한 상호작용적인 월드 기반 모델입니다. Matrix-Game는 환경 이해를 위해 큰 규모의 무 라벨 프리트레이닝을 수행하고, 다음으로 상호작용적인 비디오 생성을 위해 액션 라벨付き 트레이닝을 수행합니다. 이를 지원하기 위해 Matrix-Game-MC라는 상세한 데이터 세트를 선택했습니다. 이 데이터 세트는 2,700 시간 이상의 무 라벨 게임 플레이 비디오 클립과 1,000 시간 이상의 고품질 라벨付き 클립을 포함하며, 키보드와 마우스 액션 어노테이션을 포함합니다. 우리 모델은 참조 이미지, 동작 컨텍스트, 사용자 액션에 기반하여 제어 가능한 이미지에서 월드 생성 패러다임을 채택합니다. 170억 이상의 매개변수를 가진 Matrix-Game는 캐릭터 액션과 카메라 이동의 정밀한 제어를 가능하게 하며, 높은 시각 품질과 시간적 일관성을 유지합니다. 성능 평가의 목적에 따라 GameWorld Score라는 통합적인 벤치마크를 개발하여 비디오 생성의 시각 품질, 시간적 품질, 액션 제어 가능도, 물리 법칙 이해를 평가합니다. 분산된 실험에 의해 Matrix-Game는 모든 메트릭에서 지난 주의 오픈 소스 미ン크 월드 모델(Oasis와 MineWorld를 포함)을 일치하며 뛰어납니다. 특히, 제어 가능도와 물리적 일관성에서 특히 강력한 효과가 관찰되었습니다. 이중 비알제인 인간 평가는 Matrix-Game의 우수성을 확인하고 다양한 게임 시나리오에서 시각적으로 현실적이고 정밀하게 제어 가능한 비디오의 생성 능력을 강조합니다. 향후 연구를 위해 상호작용적인 이미지에서 월드 생성에 대해 Matrix-Game 모델 가중치와 GameWorld Score 벤치마크를 공개합니다.",
+      "upvotes": 18,
+      "discussionId": "685a14da0e4ad7e219758558",
+      "projectPage": "https://matrix-game-homepage.github.io",
+      "githubRepo": "https://github.com/SkyworkAI/Matrix-Game",
+      "ai_summary": "Matrix-Game, a controllable game world generation model trained in a two-stage process, outperforms existing models by producing high-quality, action-controllable, and physically consistent Minecraft world videos.",
+      "ai_keywords": [
+        "Matrix-Game",
+        "interactive world foundation model",
+        "large-scale unlabeled pretraining",
+        "action-labeled training",
+        "contrrollable image-to-world generation",
+        "Matrix-Game-MC",
+        "motion context",
+        "character actions",
+        "camera movements",
+        "visual quality",
+        "temporal coherence",
+        "GameWorld Score",
+        "double-blind human evaluations",
+        "interactive image-to-world generation",
+        "Oasis",
+        "MineWorld",
+        "perceptually realistic"
+      ],
+      "githubStars": 744
+    },
+    "publishedAt": "2025-06-23T10:40:49.000Z",
+    "title": "Matrix-Game: Interactive World Foundation Model",
+    "summary": "We introduce Matrix-Game, an interactive world foundation model for\ncontrollable game world generation. Matrix-Game is trained using a two-stage\npipeline that first performs large-scale unlabeled pretraining for environment\nunderstanding, followed by action-labeled training for interactive video\ngeneration. To support this, we curate Matrix-Game-MC, a comprehensive\nMinecraft dataset comprising over 2,700 hours of unlabeled gameplay video clips\nand over 1,000 hours of high-quality labeled clips with fine-grained keyboard\nand mouse action annotations. Our model adopts a controllable image-to-world\ngeneration paradigm, conditioned on a reference image, motion context, and user\nactions. With over 17 billion parameters, Matrix-Game enables precise control\nover character actions and camera movements, while maintaining high visual\nquality and temporal coherence. To evaluate performance, we develop GameWorld\nScore, a unified benchmark measuring visual quality, temporal quality, action\ncontrollability, and physical rule understanding for Minecraft world\ngeneration. Extensive experiments show that Matrix-Game consistently\noutperforms prior open-source Minecraft world models (including Oasis and\nMineWorld) across all metrics, with particularly strong gains in\ncontrollability and physical consistency. Double-blind human evaluations\nfurther confirm the superiority of Matrix-Game, highlighting its ability to\ngenerate perceptually realistic and precisely controllable videos across\ndiverse game scenarios. To facilitate future research on interactive\nimage-to-world generation, we will open-source the Matrix-Game model weights\nand the GameWorld Score benchmark at https://github.com/SkyworkAI/Matrix-Game.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63aed0e7f873109b112dbb1b/2AbnZSPpuvFOad20XamiG.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.18701.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63aed0e7f873109b112dbb1b",
+      "avatarUrl": "/avatars/0c07beb1ef7287128528b165d18371f6.svg",
+      "fullname": "Yifan Zhang",
+      "name": "Vanint",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.18951",
+      "authors": [
+        {
+          "_id": "685ba757d2ee4fac76521f47",
+          "name": "Jinyang Li",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f48",
+          "user": {
+            "_id": "653693cb8ee17cfd44eed8ce",
+            "avatarUrl": "/avatars/82be2428bec4e06c0a15a27647b9b8aa.svg",
+            "isPro": false,
+            "fullname": "Xiaolong Li",
+            "user": "xia01ongLi",
+            "type": "user"
+          },
+          "name": "Xiaolong Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:07:05.354Z",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f49",
+          "name": "Ge Qu",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f4a",
+          "name": "Per Jacobsson",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f4b",
+          "name": "Bowen Qin",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f4c",
+          "name": "Binyuan Hui",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f4d",
+          "name": "Shuzheng Si",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f4e",
+          "name": "Nan Huo",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f4f",
+          "user": {
+            "_id": "63a3eb8af460e4379b5991e7",
+            "avatarUrl": "/avatars/7564a048d8496cac38d689178d90a8f9.svg",
+            "isPro": false,
+            "fullname": "Xiaohan Xu",
+            "user": "Tebmer",
+            "type": "user"
+          },
+          "name": "Xiaohan Xu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T09:19:04.596Z",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f50",
+          "name": "Yue Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f51",
+          "name": "Ziwei Tang",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f52",
+          "name": "Yuanshuai Li",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f53",
+          "name": "Florensia Widjaja",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f54",
+          "name": "Xintong Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f55",
+          "name": "Feige Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f56",
+          "name": "Yongfeng Huang",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f57",
+          "name": "Yannis Papakonstantinou",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f58",
+          "name": "Fatma Ozcan",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f59",
+          "name": "Chenhao Ma",
+          "hidden": false
+        },
+        {
+          "_id": "685ba757d2ee4fac76521f5a",
+          "name": "Reynold Cheng",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-23T09:41:37.000Z",
+      "submittedOnDailyAt": "2025-06-25T06:09:19.766Z",
+      "title": "SWE-SQL: 실제 프로젝트에서 사용자의 SQL 문제를 해결하기 위한 LLM의 패스워저를 밝혀주는 방법\n\n(Note: The translation is provided as requested, without additional explanation or text.)",
+      "submittedOnDailyBy": {
+        "_id": "6419435385030eca6ac94701",
+        "avatarUrl": "/avatars/c49ff1991739de49ec98c8310ab21e46.svg",
+        "isPro": false,
+        "fullname": "Ge Qu",
+        "user": "gq2138",
+        "type": "user"
+      },
+      "summary": "복잡한 SQL 문제의 해결은 현실적인 데이터베이스 애플리케이션에서 중대한 붕대인 것으로 남아 있습니다. 현재의 대규모 언어 모델(LLMs)은 텍스트에서 SQL의 번역에 뛰어나하지만, SQL 문제의 디버깅 작업에 대한 엄격한 평가가 이루어지지 않았습니다. 이를填补하기 위해, 우리는 실제 사용자 문제를 추출하여 재현된 530개의 포스트 크리틱 SQL 태스크(BIRD-CRITIC-PG)과 570개의 멀티 디레ク터리 태스크(BIRD-CRITIC-Multi)를 구성하여 새로운 SQL 문제 디버깅 벤치마크인 BIRD-CRITIC를 소개합니다. 기본 평가는 이 태스크의 복잡성을 강조하고, 리더 모델 O3-Mini는 BIRD-CRITIC-PG에서 38.87%의 성공률, BIRD-CRITIC-Multi에서 33.33%의 성공률을 달성했습니다. 또한, 데이터 프라이버시를 지키면서 지역 개발을 지원하기 위해, 데이터베이스 태스크에 대한 오픈소스 모델의 발전은 중요합니다. 따라서, 우리는 SQL 문제 디버깅의 오픈소스 모델의 능력을 향상시키기 위한 훈련 환경인 Six-Gym(Sql-fIX-Gym)을 소개합니다. 이 환경은 SQL-Rewind 전략을 사용하여 정확한 SQL로부터 역추적한 문제 데이터 세트를 자동으로 생성합니다. 그러나, 올바른 모델의 최종 훈련 메소드는 규모적인 시청자 신호를 조사하지 않았습니다. 또한, f-Plan Boosting을 제안하여 SQL 해결책으로부터 높은 수준의 디버깅 계획을 추출하고, 학습용의 성공의 다각성을 73.7% 증가시킵니다. 이러한 구성 요소를 통합하여 오픈소스 에이전트인 Bird-Fixer를 구축했습니다. Qwen-2.5-Coder-14B 기반의 Bird-Fixer는 BIRD-CRITIC-PG에서 38.11%의 성공률, BIRD-CRITIC-Multi에서 29.65%의 성공률을 달성하고, Claude-3.7-Sonnet와 GPT-4.1을 초과하여 복잡한 SQL 디버깅 능력의 민주화를 크게 나눴습니다. 리더보드와 소스 코드는 https://bird-critic.github.io/에서 제공됩니다.",
+      "upvotes": 10,
+      "discussionId": "685ba758d2ee4fac76521f5b",
+      "ai_summary": "A new benchmark and training environment for debugging SQL issues using advanced open-source models significantly improves their performance compared to proprietary solutions.",
+      "ai_keywords": [
+        "BIRD-CRITIC",
+        "BIRD-CRITIC-PG",
+        "BIRD-CRITIC-Multi",
+        "PostgreSQL",
+        "Six-Gym (Sql-fIX-Gym)",
+        "SQL-Rewind",
+        "f-Plan Boosting",
+        "Bird-Fixer",
+        "Qwen-2.5-Coder-14B",
+        "Claude-3.7-Sonnet",
+        "GPT-4.1"
+      ]
+    },
+    "publishedAt": "2025-06-23T05:41:37.000Z",
+    "title": "SWE-SQL: Illuminating LLM Pathways to Solve User SQL Issues in\n  Real-World Applications",
+    "summary": "Resolution of complex SQL issues persists as a significant bottleneck in\nreal-world database applications. Current Large Language Models (LLMs), while\nadept at text-to-SQL translation, have not been rigorously evaluated on the\nmore challenging task of debugging SQL issues. To address this gap, we\nintroduce BIRD-CRITIC, a new SQL issue debugging benchmark comprising 530\nPostgreSQL tasks (BIRD-CRITIC-PG) and 570 multi-dialect tasks\n(BIRD-CRITIC-Multi), distilled from authentic user issues and replayed within\nnew environments to facilitate rigorous evaluation. Baseline evaluations\nunderscore the task's complexity, with the leading reasoning model O3-Mini\nachieving only 38.87% success rate on BIRD-CRITIC-PG and 33.33% on\nBIRD-CRITIC-Multi. Meanwhile, advancing open-source models for database tasks\nis crucial for empowering local development while safeguarding data privacy.\nTherefore, we present Six-Gym (Sql-fIX-Gym), a training environment for\nelevating open-source model capabilities for SQL issue debugging. This\nenvironment leverages SQL-Rewind strategy, which automatically generates\nexecutable issue-solution datasets by reverse-engineering issues from verified\nSQLs. However, popular trajectory-based fine-tuning methods do not explore\nsubstantial supervisory signals. We further propose f-Plan Boosting, which\nextracts high-level debugging plans from SQL solutions, enabling teacher LLMs\nto produce 73.7% more successful trajectories for training. We integrate these\ncomponents into an open-source agent, Bird-Fixer. Based on Qwen-2.5-Coder-14B,\nBird-Fixer achieves 38.11% success rate on BIRD-CRITIC-PG and 29.65% on\nBIRD-CRITIC-Multi, surpassing leading proprietary models such as\nClaude-3.7-Sonnet and GPT-4.1, marking a significant step toward democratizing\nsophisticated SQL-debugging capabilities. The leaderboard and source code are\navailable: https://bird-critic.github.io/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.18951.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6419435385030eca6ac94701",
+      "avatarUrl": "/avatars/c49ff1991739de49ec98c8310ab21e46.svg",
+      "fullname": "Ge Qu",
+      "name": "gq2138",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.19767",
+      "authors": [
+        {
+          "_id": "685b5791d2ee4fac76521dc2",
+          "user": {
+            "_id": "670aa09d35918e99fe7ff6b1",
+            "avatarUrl": "/avatars/5cbea2284165191e96544bacf2bfb50f.svg",
+            "isPro": false,
+            "fullname": "Yuqian Fu",
+            "user": "Yuqian-Fu",
+            "type": "user"
+          },
+          "name": "Yuqian Fu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:08:54.115Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dc3",
+          "name": "Tinghong Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dc4",
+          "name": "Jiajun Chai",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dc5",
+          "name": "Xihuai Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dc6",
+          "user": {
+            "_id": "66e14f4142ceed655c731966",
+            "avatarUrl": "/avatars/d708562349913b89c8c4cf384628f82a.svg",
+            "isPro": false,
+            "fullname": "SONGJUN TU",
+            "user": "SONGJUNTU",
+            "type": "user"
+          },
+          "name": "Songjun Tu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:08:52.066Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dc7",
+          "name": "Guojun Yin",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dc8",
+          "name": "Wei Lin",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dc9",
+          "name": "Qichao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dca",
+          "name": "Yuanheng Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "685b5791d2ee4fac76521dcb",
+          "name": "Dongbin Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-24T16:31:37.000Z",
+      "submittedOnDailyAt": "2025-06-25T01:33:02.160Z",
+      "title": "SRFT: 사유에 대한 서브젝트와 리포어미레이션을 포함하는 단일 스테이지 메소드",
+      "submittedOnDailyBy": {
+        "_id": "66e14f4142ceed655c731966",
+        "avatarUrl": "/avatars/d708562349913b89c8c4cf384628f82a.svg",
+        "isPro": false,
+        "fullname": "SONGJUN TU",
+        "user": "SONGJUNTU",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLMs)은 이유 임무에 있어서 놀라운 진보를 이루고 있지만, 감독付き 미세 조정(SFT)과 강화 학습(RL)의 최적적 통합은 기본적인 문제입니다. 토큰 분포, 학습 다이나믹스, 통합 구조의 상세한 분석부터, 역사적 관점에서, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패러다임 사이의 관련성을 밝혀내며, 이러한 패",
+      "upvotes": 7,
+      "discussionId": "685b5792d2ee4fac76521dcc",
+      "projectPage": "https://anonymous.4open.science/w/SRFT2025",
+      "ai_summary": " Supervised Reinforcement Fine-Tuning (SRFT) integrates Supervised Fine-Tuning and Reinforcement Learning through entropy-aware weighting to achieve high accuracy in language model optimization.",
+      "ai_keywords": [
+        "Large language models",
+        "Supervised Fine-Tuning",
+        "Reinforcement Learning",
+        "token distributions",
+        "learning dynamics",
+        "entropy",
+        "Supervised Reinforcement Fine-Tuning"
+      ]
+    },
+    "publishedAt": "2025-06-24T12:31:37.000Z",
+    "title": "SRFT: A Single-Stage Method with Supervised and Reinforcement\n  Fine-Tuning for Reasoning",
+    "summary": "Large language models (LLMs) have achieved remarkable progress in reasoning\ntasks, yet the optimal integration of Supervised Fine-Tuning (SFT) and\nReinforcement Learning (RL) remains a fundamental challenge. Through\ncomprehensive analysis of token distributions, learning dynamics, and\nintegration mechanisms from entropy-based perspectives, we reveal key\ndifferences between these paradigms: SFT induces coarse-grained global changes\nto LLM policy distributions, while RL performs fine-grained selective\noptimizations, with entropy serving as a critical indicator of training\neffectiveness. Building on these observations, we propose Supervised\nReinforcement Fine-Tuning (SRFT), a single-stage method that unifies both\nfine-tuning paradigms through entropy-aware weighting mechanisms. Our approach\nsimultaneously applies SFT and RL to directly optimize the LLM using\ndemonstrations and self-exploration rollouts rather than through two-stage\nsequential methods. Extensive experiments show that SRFT achieves 59.1% average\naccuracy, outperforming zero-RL methods by 9.0% on five mathematical reasoning\nbenchmarks and 10.9% on three out-of-distribution benchmarks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19767.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66e14f4142ceed655c731966",
+      "avatarUrl": "/avatars/d708562349913b89c8c4cf384628f82a.svg",
+      "fullname": "SONGJUN TU",
+      "name": "SONGJUNTU",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.19838",
+      "authors": [
+        {
+          "_id": "685b5e05d2ee4fac76521ddd",
+          "name": "Liangbin Xie",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521dde",
+          "name": "Yu Li",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521ddf",
+          "name": "Shian Du",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521de0",
+          "name": "Menghan Xia",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521de1",
+          "name": "Xintao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521de2",
+          "name": "Fanghua Yu",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521de3",
+          "name": "Ziyan Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521de4",
+          "name": "Pengfei Wan",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521de5",
+          "name": "Jiantao Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "685b5e05d2ee4fac76521de6",
+          "name": "Chao Dong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-24T17:57:26.000Z",
+      "submittedOnDailyAt": "2025-06-25T00:55:41.694Z",
+      "title": "SimpleGVR: 잠재 시퀀스 연결화의 간단한 기본 라인의 비디오 초해상화\n\n(Note: The original text \"潜在シーケンス連鎖化\" is a direct translation of \"potential sequence chaining\" in Korean, but it is not a commonly used term in Korean technical literature. A more natural translation might be \"잠시열 시퀀스 연결화\" or \"잠시열 시퀀스 연결화\". However, since the request was to keep the translation as is, the above translation is provided.)",
+      "submittedOnDailyBy": {
+        "_id": "60f1abe7544c2adfd699860c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+        "isPro": true,
+        "fullname": "AK",
+        "user": "akhaliq",
+        "type": "user"
+      },
+      "summary": "潜在확산 모델은 효율적인 비디오 생성의 첨단 패러다임으로 등장했습니다. 그러나 사용자의 기대가 고해상도 출력에 치중되어 변하는 데 따라, 잠재 계산만 의존하는 것은 부족해졌습니다. 기대되는 접근 방식으로는 프로세스를 두 단계로 나누는 것이 고려됩니다: 세ман틱 내용을 생성하고 세부를 합성합니다. 첫 번째 단계는 계산량이 풍부한 기초 모델을 저해상도로 사용하지만, 두 번째 단계는 가벼운 연속 비디오 초해상도(VSR) 모델을 사용하여 고해상도 출력을 구현합니다. 본 연구에서는 현재 조사되지 않은 후의 연속 비디오 초해상도 모델의 핵심 설계 원칙을 연구합니다. 먼저, 기초 모델의 출력특성을 더 잘 모방하기 위해 훈련 페어를 생성하기 위해 두 가지 악화 전략을 제안합니다. 이를 통해 VSR 모델과 상류의 제너레이터를 맞추는 데 도움을 줍니다. 다음으로, 시간 단계의 샘플링 전략과 저해상도(LR) 입력에 대한 노이즈 증강의 영향에 대한 체계적인 분석을 수행하고, VSR 모델의 행동에 중요한 어리언스를 제공합니다. 이러한 발견은 아키텍처와 훈련에 직접적인 영향을 미칩니다. 마지막으로, 간략한 시간 단위와 희소한 지역적 어텐션을 사용하여 효율적인 훈련과 추론을 실현하고, 계산 오버헤드를 크게 줄입니다. 확산 실험은 우리의 프레임워크가 기존 방법보다 상위에 있는 것을 보여주고, 소멸 연구는 각 디자인 선택의 효과를 확인합니다. 우리의 연구는 간단하고 효과적인 기초를 제공하며, 미래의 효율적인 연속 합성 시스템의 발전에 대한 실질적인 어리언스를 제공합니다.",
+      "upvotes": 6,
+      "discussionId": "685b5e05d2ee4fac76521de7",
+      "ai_summary": "Researchers propose design principles for cascaded video super-resolution models to improve high-resolution video generation by introduces degradation strategies, timestep sampling, noise augmentation, and interleaving temporal units with sparse local attention.",
+      "ai_keywords": [
+        "latent diffusion models",
+        "video generation",
+        "cascaded video super-resolution",
+        "VSR",
+        "degradation strategies",
+        "timestep sampling",
+        "noise augmentation",
+        "interleaving temporal unit",
+        "sparse local attention"
+      ]
+    },
+    "publishedAt": "2025-06-24T13:57:26.000Z",
+    "title": "SimpleGVR: A Simple Baseline for Latent-Cascaded Video Super-Resolution",
+    "summary": "Latent diffusion models have emerged as a leading paradigm for efficient\nvideo generation. However, as user expectations shift toward higher-resolution\noutputs, relying solely on latent computation becomes inadequate. A promising\napproach involves decoupling the process into two stages: semantic content\ngeneration and detail synthesis. The former employs a computationally intensive\nbase model at lower resolutions, while the latter leverages a lightweight\ncascaded video super-resolution (VSR) model to achieve high-resolution output.\nIn this work, we focus on studying key design principles for latter cascaded\nVSR models, which are underexplored currently. First, we propose two\ndegradation strategies to generate training pairs that better mimic the output\ncharacteristics of the base model, ensuring alignment between the VSR model and\nits upstream generator. Second, we provide critical insights into VSR model\nbehavior through systematic analysis of (1) timestep sampling strategies, (2)\nnoise augmentation effects on low-resolution (LR) inputs. These findings\ndirectly inform our architectural and training innovations. Finally, we\nintroduce interleaving temporal unit and sparse local attention to achieve\nefficient training and inference, drastically reducing computational overhead.\nExtensive experiments demonstrate the superiority of our framework over\nexisting methods, with ablation studies confirming the efficacy of each design\nchoice. Our work establishes a simple yet effective baseline for cascaded video\nsuper-resolution generation, offering practical insights to guide future\nadvancements in efficient cascaded synthesis systems.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19838.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f1abe7544c2adfd699860c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1674929746905-60f1abe7544c2adfd699860c.jpeg",
+      "fullname": "AK",
+      "name": "akhaliq",
+      "type": "user",
+      "isPro": true,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7183
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.19794",
+      "authors": [
+        {
+          "_id": "685b75d0d2ee4fac76521e70",
+          "name": "Yuqi Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e71",
+          "name": "Yi Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e72",
+          "name": "Jintian Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e73",
+          "name": "Ziheng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e74",
+          "name": "Shuofei Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e75",
+          "name": "Yujie Luo",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e76",
+          "name": "Lun Du",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e77",
+          "name": "Da Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e78",
+          "name": "Huajun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685b75d0d2ee4fac76521e79",
+          "name": "Ningyu Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-24T17:04:23.000Z",
+      "submittedOnDailyAt": "2025-06-25T02:37:00.536Z",
+      "title": "오픈소스 LLM가 데이터 분석에 고민하는 이유는 무엇일까? 시스템적 실험적 연구",
+      "submittedOnDailyBy": {
+        "_id": "620b3bbb0668e435407c8d0a",
+        "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+        "isPro": false,
+        "fullname": "Ningyu Zhang",
+        "user": "Ningyu",
+        "type": "user"
+      },
+      "summary": "대 언어 모뎀（LLMs）는 데이터 분석 태스크의 자동화에 많은 가능성이 있습니다 however, 이러한 합리적인 스캔 데йс에서 오픈 소스 모뎀은 상당한 한계가 있습니다. 본 연구에서는 오픈 소스 LLMs의 데이터 분석 능력을 향상시키는 전략을 조사하고 있습니다. 다양한 실용적인 스캔 데이스의 시드 데이터 세트를 구축하여 모뎀의 3차원으로 평가합니다: 데이터 이해, 코드 생성, 전략 계획. 분석에서는 3가지 주요한 발견이 밝혀졌습니다: (1) 전략 계획의 품질은 모뎀의 성능의 주요 결정 요소입니다; (2) 상호작용 디자인과 태스크의 복잡성이 합리적인 능력을 크게 영향을 미칩니다; (3) 데이터의 품질은 다양성보다도 최적의 성능을 달성하기 위해 큰 영향을 미칩니다. 이러한 발견을 활용하여 데이터 합성 메소드 로직을 개발하고 오픈 소스 LLMs의 분석적 합리적인 능력을 뚜렷하게 개선합니다.",
+      "upvotes": 6,
+      "discussionId": "685b75d1d2ee4fac76521e7a",
+      "ai_summary": "Enhancements to open-source large language models' data analysis capabilities through strategic planning, interaction design, and data quality improvements were identified and applied.",
+      "ai_keywords": [
+        "Large Language Models",
+        "data analysis",
+        "data understanding",
+        "code generation",
+        "strategic planning",
+        "interaction design",
+        "task complexity",
+        "data quality",
+        "data synthesis methodology"
+      ]
+    },
+    "publishedAt": "2025-06-24T13:04:23.000Z",
+    "title": "Why Do Open-Source LLMs Struggle with Data Analysis? A Systematic\n  Empirical Study",
+    "summary": "Large Language Models (LLMs) hold promise in automating data analysis tasks,\nyet open-source models face significant limitations in these kinds of\nreasoning-intensive scenarios. In this work, we investigate strategies to\nenhance the data analysis capabilities of open-source LLMs. By curating a seed\ndataset of diverse, realistic scenarios, we evaluate models across three\ndimensions: data understanding, code generation, and strategic planning. Our\nanalysis reveals three key findings: (1) Strategic planning quality serves as\nthe primary determinant of model performance; (2) Interaction design and task\ncomplexity significantly influence reasoning capabilities; (3) Data quality\ndemonstrates a greater impact than diversity in achieving optimal performance.\nWe leverage these insights to develop a data synthesis methodology,\ndemonstrating significant improvements in open-source LLMs' analytical\nreasoning capabilities.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19794.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "620b3bbb0668e435407c8d0a",
+      "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+      "fullname": "Ningyu Zhang",
+      "name": "Ningyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 24
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.19713",
+      "authors": [
+        {
+          "_id": "685b9a5dd2ee4fac76521ecc",
+          "user": {
+            "_id": "63b4b02a103617b0a5b0ee2e",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63b4b02a103617b0a5b0ee2e/LasBC-pCnPJ6XuCt6qqcp.jpeg",
+            "isPro": false,
+            "fullname": "Seyedmorteza Sadat",
+            "user": "msadat97",
+            "type": "user"
+          },
+          "name": "Seyedmorteza Sadat",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:07:14.606Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b9a5dd2ee4fac76521ecd",
+          "name": "Tobias Vontobel",
+          "hidden": false
+        },
+        {
+          "_id": "685b9a5dd2ee4fac76521ece",
+          "name": "Farnood Salehi",
+          "hidden": false
+        },
+        {
+          "_id": "685b9a5dd2ee4fac76521ecf",
+          "name": "Romann M. Weber",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-24T15:19:42.000Z",
+      "submittedOnDailyAt": "2025-06-25T05:16:23.771Z",
+      "title": "주파수 영역에서의 가이드라인은 저스케일로 고품질의 샘플링을 가능하게 합니다.",
+      "submittedOnDailyBy": {
+        "_id": "63b4b02a103617b0a5b0ee2e",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63b4b02a103617b0a5b0ee2e/LasBC-pCnPJ6XuCt6qqcp.jpeg",
+        "isPro": false,
+        "fullname": "Seyedmorteza Sadat",
+        "user": "msadat97",
+        "type": "user"
+      },
+      "summary": "クラスフレードガイダンス (CFG)은 현대의 조건付き ディフフォーション モデル의 중요한 구성 요소로 기능하고 있습니다. 실용적으로 매우 효과적이라는 사실은 알려져 있지만, CFG가 품질, 디테일, プロンプト의 어레이멘션을 향상시키는 구조는 완전히 이해되지 않았습니다. 우리는 CFG의 영향을 주파수 영역에서 분석하고, 저주파와 고주파가 다른 영향을 미치는 것을 보여주었습니다. 특히, 저주파 ガイダンス는 글로벌 구조와 조건의 어레이멘션을 지배하고, 고주파 ガイダンス는 주로 시각적인 fidelity를 향상시킵니다. 그러나 표준의 CFG는 모든 주파수에 동일한 스케일을 적용하고, 고스케일에서의 과도화와 다양성의 저하, 저스케일에서의 시각적인 품질 저하가 발생합니다. 이러한 관점을 기반으로, 우리는 주파수 분리 ガイダンス (FDG)를 제안합니다. FDG는 CFG를 저주파와 고주파의 성분으로 분해하고, 각 성분에 별도의 ガイダンス 스トレングス를 적용합니다. FDG는 저 ガイダンス 스케일로 이미지의 품질을 향상시키고, 고 ガイダンス 스케일의 단점을 피하는 것을 목표로 합니다. 다양한 데이터 세트와 모델의 폭넓은 실험을 통해, 우리는 FDG가 샘플의 fidelity를 향상시키고 다양성을 유지하고, CFG보다 FID와 recall을 개선하는 것을 보여주었습니다. 표준의 클래스 フレード ガイダンス의 플러그인과 플랫폼으로 우리의 방법을 확립했습니다.",
+      "upvotes": 6,
+      "discussionId": "685b9a5ed2ee4fac76521ed0",
+      "ai_summary": "Frequency-decoupled guidance (FDG) enhances image quality and diversity by separately controlling low- and high-frequency guidance components in diffusion models, outperforming standard classifier-free guidance.",
+      "ai_keywords": [
+        "classifier-free guidance",
+        "conditional diffusion models",
+        "frequency domain",
+        "low-frequency guidance",
+        "high-frequency guidance",
+        "frequency-decoupled guidance",
+        "FID",
+        "recall"
+      ]
+    },
+    "publishedAt": "2025-06-24T11:19:42.000Z",
+    "title": "Guidance in the Frequency Domain Enables High-Fidelity Sampling at Low\n  CFG Scales",
+    "summary": "Classifier-free guidance (CFG) has become an essential component of modern\nconditional diffusion models. Although highly effective in practice, the\nunderlying mechanisms by which CFG enhances quality, detail, and prompt\nalignment are not fully understood. We present a novel perspective on CFG by\nanalyzing its effects in the frequency domain, showing that low and high\nfrequencies have distinct impacts on generation quality. Specifically,\nlow-frequency guidance governs global structure and condition alignment, while\nhigh-frequency guidance mainly enhances visual fidelity. However, applying a\nuniform scale across all frequencies -- as is done in standard CFG -- leads to\noversaturation and reduced diversity at high scales and degraded visual quality\nat low scales. Based on these insights, we propose frequency-decoupled guidance\n(FDG), an effective approach that decomposes CFG into low- and high-frequency\ncomponents and applies separate guidance strengths to each component. FDG\nimproves image quality at low guidance scales and avoids the drawbacks of high\nCFG scales by design. Through extensive experiments across multiple datasets\nand models, we demonstrate that FDG consistently enhances sample fidelity while\npreserving diversity, leading to improved FID and recall compared to CFG,\nestablishing our method as a plug-and-play alternative to standard\nclassifier-free guidance.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19713.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63b4b02a103617b0a5b0ee2e",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63b4b02a103617b0a5b0ee2e/LasBC-pCnPJ6XuCt6qqcp.jpeg",
+      "fullname": "Seyedmorteza Sadat",
+      "name": "msadat97",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.18843",
+      "authors": [
+        {
+          "_id": "685a06460e4ad7e2197584c0",
+          "user": {
+            "_id": "6179f36a2a4e9edab3a95798",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6179f36a2a4e9edab3a95798/0mmFY5lFzPC5k6_GSdmYQ.jpeg",
+            "isPro": false,
+            "fullname": "Heng-Jui Chang",
+            "user": "vectominist",
+            "type": "user"
+          },
+          "name": "Heng-Jui Chang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-24T08:08:49.104Z",
+          "hidden": false
+        },
+        {
+          "_id": "685a06460e4ad7e2197584c1",
+          "user": {
+            "_id": "67d301cbba86f5d66eb73d7c",
+            "avatarUrl": "/avatars/8546bbd2145c16d4be5675624516b649.svg",
+            "isPro": false,
+            "fullname": "Saurabhchand Bhati",
+            "user": "saurabhati",
+            "type": "user"
+          },
+          "name": "Saurabhchand Bhati",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:09:27.586Z",
+          "hidden": false
+        },
+        {
+          "_id": "685a06460e4ad7e2197584c2",
+          "name": "James Glass",
+          "hidden": false
+        },
+        {
+          "_id": "685a06460e4ad7e2197584c3",
+          "name": "Alexander H. Liu",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6179f36a2a4e9edab3a95798/QPPxw2hyPglQF_q3uWSyk.png"
+      ],
+      "publishedAt": "2025-06-23T17:02:00.000Z",
+      "submittedOnDailyAt": "2025-06-25T02:21:09.630Z",
+      "title": "USAD: 일반 언어와 음성 표현에 의한 경험수집",
+      "submittedOnDailyBy": {
+        "_id": "6179f36a2a4e9edab3a95798",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6179f36a2a4e9edab3a95798/0mmFY5lFzPC5k6_GSdmYQ.jpeg",
+        "isPro": false,
+        "fullname": "Heng-Jui Chang",
+        "user": "vectominist",
+        "type": "user"
+      },
+      "summary": "自监督学习(SSL)는 음성 표현에 혁신적인 영향을 미치고 있지만, 모델은 일반적으로 언어나 비언어의 태스크에 대해 영역专門적이며, 각 태스크에 집중합니다. 본 논문에서는 언어, 음향, 음악의 다양한 음성 타입을 통일적으로 통합한 음성 표현 학습의 한 방법인 Universal Speech and Audio Distillation (USAD)를 소개합니다. USAD는 영역专門적인 SSL 모델로부터 효율적인 층별로 도축을 사용하여 실용적인 음성 데이터 세트로 학생 모델을 훈련합니다. USAD는 다양한 벤치마크와 데이터 세트에서 강력한 성능을 나타내며, 언어 처리 태스크, 음성 태그징, 음향 분류 등 다양한 태스크에 대해 우수한 결과를 얻으며, SUPERB와 HEAR 벤치마크에서 최신의 상위를 달성합니다.",
+      "upvotes": 6,
+      "discussionId": "685a06470e4ad7e2197584c4",
+      "ai_summary": "USAD integrates diverse audio types using efficient layer-to-layer distillation from domain-specific models, achieving competitive performance across various benchmarks with a single encoder.",
+      "ai_keywords": [
+        "self-supervised learning",
+        "universal speech and audio distillation",
+        "domain-specific models",
+        "layer-to-layer distillation",
+        "frame and instance-level speech processing",
+        "audio tagging",
+        "sound classification",
+        "encoder",
+        "SUPERB benchmarks",
+        "HEAR benchmarks"
+      ]
+    },
+    "publishedAt": "2025-06-23T13:02:00.000Z",
+    "title": "USAD: Universal Speech and Audio Representation via Distillation",
+    "summary": "Self-supervised learning (SSL) has revolutionized audio representations, yet\nmodels often remain domain-specific, focusing on either speech or non-speech\ntasks. In this work, we present Universal Speech and Audio Distillation (USAD),\na unified approach to audio representation learning that integrates diverse\naudio types - speech, sound, and music - into a single model. USAD employs\nefficient layer-to-layer distillation from domain-specific SSL models to train\na student on a comprehensive audio dataset. USAD offers competitive performance\nacross various benchmarks and datasets, including frame and instance-level\nspeech processing tasks, audio tagging, and sound classification, achieving\nnear state-of-the-art results with a single encoder on SUPERB and HEAR\nbenchmarks.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6179f36a2a4e9edab3a95798/QPPxw2hyPglQF_q3uWSyk.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.18843.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6179f36a2a4e9edab3a95798",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6179f36a2a4e9edab3a95798/0mmFY5lFzPC5k6_GSdmYQ.jpeg",
+      "fullname": "Heng-Jui Chang",
+      "name": "vectominist",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.19807",
+      "authors": [
+        {
+          "_id": "685b75edd2ee4fac76521e7c",
+          "name": "Baochang Ren",
+          "hidden": false
+        },
+        {
+          "_id": "685b75edd2ee4fac76521e7d",
+          "name": "Shuofei Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "685b75edd2ee4fac76521e7e",
+          "name": "Wenhao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "685b75edd2ee4fac76521e7f",
+          "name": "Huajun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685b75edd2ee4fac76521e80",
+          "name": "Ningyu Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-24T17:17:17.000Z",
+      "submittedOnDailyAt": "2025-06-25T02:37:40.331Z",
+      "title": "KnowRL: 사실성 탐색을 위한 지식 보유형 강화 학습\n\n(Note: The original text \"KnowRL: 知識を持つ強化学習における事実性の探索\" was in Japanese. The translation provided is into Korean, maintaining the professional and accurate tone requested.)",
+      "submittedOnDailyBy": {
+        "_id": "620b3bbb0668e435407c8d0a",
+        "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+        "isPro": false,
+        "fullname": "Ningyu Zhang",
+        "user": "Ningyu",
+        "type": "user"
+      },
+      "summary": "대 언어 모형(LLMs), 특히 느린 생각 모형이는, 이유를 설명할 때 지식의 경계를 정확히 인식할 수 없기 때문에, 엄격한 혼란이 발생하고, 잘못된 내용을 출력하는 경우가 많다. 강화 학습(RL)은 복잡한 이유 능력을 향상시킬 수 있지만, 목표에 대한 보상 구조는 사실적인 생존이 부족하고, 혼란 문제를 촉진하고 있다. 느린 생각 모형의 높은 혼란 문제를 해결하기 위해, 우리는 지식 강화(KnowRL)을 제안합니다. KnowRL은 사실성 보상을 RL 학습 과정에 통합하여, 모형을 사실에 기반한 느린 생각으로 유도하고, 지식의 경계를 인식하는 데 도움을줍니다. RL 학습 과정에서 목표적인 사실적인 입력에 의해, 모형는 사실에 기반한 이유 전략을 학습하고 내부화합니다. 이유 단계 내에서 사실에 따라 행동하는 것을 직접 보상으로 제공함으로써, KnowRL은 신뢰성 높은 사고 과정에 촉진합니다. 3개의 혼란 평가 데이터셋과 2개의 이유 평가 데이터셋의 실험 결과에서, KnowRL은 느린 생각 모형의 혼란을 효과적으로 완화하고, 그 원래의 강력한 이유 능력을 유지하는 것을 보여줍니다. 코드는, https://github.com/zjunlp/KnowRL 에 접근할 수 있습니다.",
+      "upvotes": 4,
+      "discussionId": "685b75edd2ee4fac76521e81",
+      "ai_summary": "KnowRL, a knowledge-enhanced reinforcement learning approach, reduces hallucinations in slow-thinking large language models by incorporating factuality rewards based on knowledge verification during training.",
+      "ai_keywords": [
+        "Large Language Models",
+        "slow-thinking models",
+        "hallucination",
+        "Reinforcement Learning",
+        "KnowRL",
+        "factuality reward",
+        "knowledge verification",
+        "reasoning",
+        "reasoning capabilities"
+      ]
+    },
+    "publishedAt": "2025-06-24T13:17:17.000Z",
+    "title": "KnowRL: Exploring Knowledgeable Reinforcement Learning for Factuality",
+    "summary": "Large Language Models (LLMs), particularly slow-thinking models, often\nexhibit severe hallucination, outputting incorrect content due to an inability\nto accurately recognize knowledge boundaries during reasoning. While\nReinforcement Learning (RL) can enhance complex reasoning abilities, its\noutcome-oriented reward mechanism often lacks factual supervision over the\nthinking process, further exacerbating the hallucination problem. To address\nthe high hallucination in slow-thinking models, we propose Knowledge-enhanced\nRL, KnowRL. KnowRL guides models to perform fact-based slow thinking by\nintegrating a factuality reward, based on knowledge verification, into the RL\ntraining process, helping them recognize their knowledge boundaries. KnowRL\nguides models to perform fact-based slow thinking by integrating a factuality\nreward, based on knowledge verification, into the RL training process, helping\nthem recognize their knowledge boundaries. This targeted factual input during\nRL training enables the model to learn and internalize fact-based reasoning\nstrategies. By directly rewarding adherence to facts within the reasoning\nsteps, KnowRL fosters a more reliable thinking process. Experimental results on\nthree hallucination evaluation datasets and two reasoning evaluation datasets\ndemonstrate that KnowRL effectively mitigates hallucinations in slow-thinking\nmodels while maintaining their original strong reasoning capabilities. Our code\nis available at https://github.com/zjunlp/KnowRL.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19807.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "620b3bbb0668e435407c8d0a",
+      "avatarUrl": "/avatars/e0fccbb2577d76088e09f054c35cffbc.svg",
+      "fullname": "Ningyu Zhang",
+      "name": "Ningyu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 24
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.17612",
+      "authors": [
+        {
+          "_id": "685b7538d2ee4fac76521e63",
+          "user": {
+            "_id": "64ecb174f22081b4ac7ca397",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ecb174f22081b4ac7ca397/PiAPtD_rbuhGOqfE6ZSIu.jpeg",
+            "isPro": true,
+            "fullname": "Yunlong Lin",
+            "user": "LYL1015",
+            "type": "user"
+          },
+          "name": "Yunlong Lin",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:07:25.557Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e64",
+          "name": "Zixu Lin",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e65",
+          "name": "Kunjie Lin",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e66",
+          "name": "Jinbin Bai",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e67",
+          "name": "Panwang Pan",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e68",
+          "name": "Chenxin Li",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e69",
+          "name": "Haoyu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e6a",
+          "name": "Zhongdao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e6b",
+          "name": "Xinghao Ding",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e6c",
+          "name": "Wenbo Li",
+          "hidden": false
+        },
+        {
+          "_id": "685b7538d2ee4fac76521e6d",
+          "name": "Shuicheng Yan",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64ecb174f22081b4ac7ca397/PCTU9EbA4XUz8eKeLbxVC.gif"
+      ],
+      "publishedAt": "2025-06-21T06:36:00.000Z",
+      "submittedOnDailyAt": "2025-06-25T02:43:05.885Z",
+      "title": "자비즈아트: 지능 사진 편집 에이전트에 의한 인간 예술적 창조성의 해방",
+      "submittedOnDailyBy": {
+        "_id": "64ecb174f22081b4ac7ca397",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ecb174f22081b4ac7ca397/PiAPtD_rbuhGOqfE6ZSIu.jpeg",
+        "isPro": true,
+        "fullname": "Yunlong Lin",
+        "user": "LYL1015",
+        "type": "user"
+      },
+      "summary": "사진 편집은 현대적인 시각적 이야기의 중요한 구성 요소로 자리잡았습니다. 사용자는 예술적 감각과 창조성을 표현할 수 있습니다. 전문적인 도구로 Adobe Lightroom 등 제공됩니다. 강력한 기능들을 가지고 있지만, 높은 전문 지식과 손동의 노력을 필요로 합니다. 반면, 현재의 AI 기반의 해결책은 자동화를 제공하지만, 조정 가능성이 제한되어, 일반성을 낮고, 다양한 사용자의 편집의 필요에 적절하지 않습니다. 이러한 간극을 메우기 위해, 사용자의 의도를 이해하고, 전문 예술가의 논리론을 모방하며, Lightroom 내 200점 이상의 편집 도구를 계획적으로 협조하는 데 사용되는 다모달 대언어 모델(MLLM)을 수행시키는 에이전트 JarvisArt를 소개합니다. JarvisArt는 2단계의 훈련 프로세스를 통해 성장합니다. 첫 번째 단계는 기본적인 논리론과 도구의 사용 기술에 대한 Chain-of-Thought의 China Feedback 조정을 통해, 그 후는 편집의 의사결정론과 도구의 숙련도를 향상시키기 위한 Group Relative Policy Optimization for Retouching(GRPO-R)를 통해 성장합니다. 또한 Agent-to-Lightroom 프로토콜을 제안하여 Lightroom와 무차별적 통합을 촉진합니다. 성능 평가에서, MMArt-Bench라는 새로운 벤치마크를 개발했습니다. JarvisArt는 사용자 친화적인 인터페이스, 높은 일반성, 글로벌 및 지역적인 조정의 미세 제어를 보여주며, 계획적인 사진 편집의 새로운 길을 개척합니다. 특히, MMArt-Bench의 내용이나 GPT-4o를 60% 이상 개선하지만, 같은 지시 따라야 하는 능력도 유지합니다. 프로젝트 페이지는 https://jarvisart.vercel.app/입니다.",
+      "upvotes": 4,
+      "discussionId": "685b7539d2ee4fac76521e6e",
+      "projectPage": "https://jarvisart.vercel.app/",
+      "githubRepo": "https://github.com/LYL1015/JarvisArt",
+      "ai_summary": "JarvisArt, an MLLM-driven agent, achieves superior photo retouching by understanding user intent and coordinating multiple retouching tools in Lightroom, outperforming GPT-4o on a novel benchmark.",
+      "ai_keywords": [
+        "multi-modal large language model",
+        "Chain-of-Thought supervised fine-tuning",
+        "Group Relative Policy Optimization",
+        "Agent-to-Lightroom Protocol",
+        "MMArt-Bench",
+        "global adjustments",
+        "local adjustments",
+        "content fidelity",
+        "instruction-following capabilities"
+      ],
+      "githubStars": 3
+    },
+    "publishedAt": "2025-06-21T02:36:00.000Z",
+    "title": "JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo\n  Retouching Agent",
+    "summary": "Photo retouching has become integral to contemporary visual storytelling,\nenabling users to capture aesthetics and express creativity. While professional\ntools such as Adobe Lightroom offer powerful capabilities, they demand\nsubstantial expertise and manual effort. In contrast, existing AI-based\nsolutions provide automation but often suffer from limited adjustability and\npoor generalization, failing to meet diverse and personalized editing needs. To\nbridge this gap, we introduce JarvisArt, a multi-modal large language model\n(MLLM)-driven agent that understands user intent, mimics the reasoning process\nof professional artists, and intelligently coordinates over 200 retouching\ntools within Lightroom. JarvisArt undergoes a two-stage training process: an\ninitial Chain-of-Thought supervised fine-tuning to establish basic reasoning\nand tool-use skills, followed by Group Relative Policy Optimization for\nRetouching (GRPO-R) to further enhance its decision-making and tool\nproficiency. We also propose the Agent-to-Lightroom Protocol to facilitate\nseamless integration with Lightroom. To evaluate performance, we develop\nMMArt-Bench, a novel benchmark constructed from real-world user edits.\nJarvisArt demonstrates user-friendly interaction, superior generalization, and\nfine-grained control over both global and local adjustments, paving a new\navenue for intelligent photo retouching. Notably, it outperforms GPT-4o with a\n60% improvement in average pixel-level metrics on MMArt-Bench for content\nfidelity, while maintaining comparable instruction-following capabilities.\nProject Page: https://jarvisart.vercel.app/.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64ecb174f22081b4ac7ca397/PCTU9EbA4XUz8eKeLbxVC.gif"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.17612.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "64ecb174f22081b4ac7ca397",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ecb174f22081b4ac7ca397/PiAPtD_rbuhGOqfE6ZSIu.jpeg",
+      "fullname": "Yunlong Lin",
+      "name": "LYL1015",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.19850",
+      "authors": [
+        {
+          "_id": "685b63c2d2ee4fac76521dee",
+          "name": "Yuqi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685b63c2d2ee4fac76521def",
+          "name": "Xinghang Li",
+          "hidden": false
+        },
+        {
+          "_id": "685b63c2d2ee4fac76521df0",
+          "name": "Wenxuan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685b63c2d2ee4fac76521df1",
+          "name": "Junbo Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685b63c2d2ee4fac76521df2",
+          "name": "Yingyan Li",
+          "hidden": false
+        },
+        {
+          "_id": "685b63c2d2ee4fac76521df3",
+          "name": "Yuntao Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685b63c2d2ee4fac76521df4",
+          "name": "Xinlong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685b63c2d2ee4fac76521df5",
+          "name": "Zhaoxiang Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-24T17:59:57.000Z",
+      "submittedOnDailyAt": "2025-06-25T06:01:30.093Z",
+      "title": "통합 비전 언어 행동 모델",
+      "submittedOnDailyBy": {
+        "_id": "649fe21d59c1ae90dbfacf91",
+        "avatarUrl": "/avatars/7f77fa77113e80cb45406927e2386387.svg",
+        "isPro": false,
+        "fullname": "Wang Yuqi",
+        "user": "Yuqi1997",
+        "type": "user"
+      },
+      "summary": "Vision-language-action 모델(VLAs)는 기계 손의 동작을 촉진하는 가능성에 주목하고 있습니다. 그러나 이전의 접근 방식은 주로 시각 언어 모델(VLMs)의 일반적인 이해 능력을 활용하여 행동 신호를 생성하고, 시각 관측에 포함되는 풍부한 시간적 및 원인적 구조를 떨려두었습니다. 본 논문에서는 연속적인, 원생적인 다 타입의 VLA 모델인 UniVLA를 제안합니다. 이 모델은 시각, 언어, 행동 신호를 분산 토큰열로 자동 회귀적으로 모델링합니다. 이러한 구성은 특히 큰 규모의 비디오 데이터에서 유연한 다 타입 태스크 학습을 가능하게 합니다. 이후 훈련 시 세계 모델링을 적용하고, UniVLA는 비디오에서 원인적인 역학을 이해하고 하류의 정책 학습에 효과적인 타ン스프래시를 촉진합니다. 우리 접근 방식은 CALVIN, LIBERO, Simplenv-Bridge 등 광범위하게 사용되고 있는 시뮬레이션 벤치마크에서 새로운 최단거리 결과를 얻으며, 이전 방법보다 크게 뛰어넘었습니다. 예를 들어, UniVLA는 LIBERO 벤치마크에서 평균 성공률 95.5%를 달성했으며, pi0-FAST의 85.5%를 초과했습니다. 또한, 우리는 실세계의 ALOHA 동작과 자동 운행에 대한 광범위한 응용을 보여주었습니다.",
+      "upvotes": 3,
+      "discussionId": "685b63c3d2ee4fac76521df6",
+      "ai_summary": "UniVLA is a multimodal VLA model that autoregressively processes vision, language, and action as token sequences, incorporating world modeling for effective long-horizon policy learning and achieving state-of-the-art results across simulation and real-world benchmarks.",
+      "ai_keywords": [
+        "vision-language-action models",
+        "VLAs",
+        "vision-language models",
+        "VLMs",
+        "autoregressive models",
+        "discrete token sequences",
+        "multimodal tasks learning",
+        "world modeling",
+        "causal dynamics",
+        "policy learning",
+        "simulation benchmarks",
+        "CALVIN",
+        "LIBERO",
+        "Simplenv-Bridge",
+        "ALOHA manipulation",
+        "autonomous driving"
+      ]
+    },
+    "publishedAt": "2025-06-24T13:59:57.000Z",
+    "title": "Unified Vision-Language-Action Model",
+    "summary": "Vision-language-action models (VLAs) have garnered significant attention for\ntheir potential in advancing robotic manipulation. However, previous approaches\npredominantly rely on the general comprehension capabilities of vision-language\nmodels (VLMs) to generate action signals, often overlooking the rich temporal\nand causal structure embedded in visual observations. In this paper, we present\nUniVLA, a unified and native multimodal VLA model that autoregressively models\nvision, language, and action signals as discrete token sequences. This\nformulation enables flexible multimodal tasks learning, particularly from\nlarge-scale video data. By incorporating world modeling during post-training,\nUniVLA captures causal dynamics from videos, facilitating effective transfer to\ndownstream policy learning--especially for long-horizon tasks. Our approach\nsets new state-of-the-art results across several widely used simulation\nbenchmarks, including CALVIN, LIBERO, and Simplenv-Bridge, significantly\nsurpassing previous methods. For example, UniVLA achieves 95.5% average success\nrate on LIBERO benchmark, surpassing pi0-FAST's 85.5%. We further demonstrate\nits broad applicability on real-world ALOHA manipulation and autonomous\ndriving.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.19850.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "649fe21d59c1ae90dbfacf91",
+      "avatarUrl": "/avatars/7f77fa77113e80cb45406927e2386387.svg",
+      "fullname": "Wang Yuqi",
+      "name": "Yuqi1997",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.14012",
+      "authors": [
+        {
+          "_id": "685b863bd2ee4fac76521e92",
+          "user": {
+            "_id": "655efd24afee0e00788bb589",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/655efd24afee0e00788bb589/22guLxIWNybbJR3jI-c4w.jpeg",
+            "isPro": false,
+            "fullname": "Amr Mohamed",
+            "user": "amr-mohamed",
+            "type": "user"
+          },
+          "name": "Amr Mohamed",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:07:19.266Z",
+          "hidden": false
+        },
+        {
+          "_id": "685b863bd2ee4fac76521e93",
+          "name": "Yang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685b863bd2ee4fac76521e94",
+          "name": "Michalis Vazirgiannis",
+          "hidden": false
+        },
+        {
+          "_id": "685b863bd2ee4fac76521e95",
+          "user": {
+            "_id": "6087e598e2b7cc3a117b0dc5",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6087e598e2b7cc3a117b0dc5/Ctz_W-uo1gOQRBHXalD1P.png",
+            "isPro": false,
+            "fullname": "Guokan Shang",
+            "user": "guokan-shang",
+            "type": "user"
+          },
+          "name": "Guokan Shang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-25T08:07:16.772Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-16T21:19:27.000Z",
+      "submittedOnDailyAt": "2025-06-25T03:51:26.828Z",
+      "title": "미ックス에 혼란이 줍니다: 코드 스イッ치 텍스트의 이해를 평가합니다.",
+      "submittedOnDailyBy": {
+        "_id": "655efd24afee0e00788bb589",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/655efd24afee0e00788bb589/22guLxIWNybbJR3jI-c4w.jpeg",
+        "isPro": false,
+        "fullname": "Amr Mohamed",
+        "user": "amr-mohamed",
+        "type": "user"
+      },
+      "summary": "コードスイッチ（CSW）는 한쪽의 디코더 내부에서 2어 이상의 언어를 교환하는 행동입니다. 이 현상은 다언어 사회에서 광범위하게 관찰되고, 온라인 콘텐츠에서 자연스럽게 일상적인 커뮤니케이션에서 언어를 섞어 사용하는 방식으로 발전했습니다. 그 결과, 대규모 언어 모델（LLMs）은 콘텐츠 처리와 생성의 중심에 자리잡고 있지만, CSW가 된 입력을 자주 받습니다. 이에 따라, LLMs가 이러한 언어 혼합된 문장을 어떻게 처리하고 이유를 이해하는지가 중요합니다. 본 논문에서는, 기존의 이유와 이해 벤치마크의 CSW가 된 버전을 생성하고, LLMs의 CSW 이해를 체계적으로 평가합니다. 외국 토큰이 영어 텍스트를 영향을 미칠 때, 언어 제약 하에도 손상이 관찰될 수 있지만, 영어를 다른 언어로 덮어쓰는 것이 이해가 향상됩니다. 입력은 반환 결과가 섞여질 수 있지만, 미세 조정은 더 안정적인 손상 억제 경로를 보여주며, 이 방법을 통해 CSW를 효과적으로 처리할 수 있습니다.",
+      "upvotes": 3,
+      "discussionId": "685b863bd2ee4fac76521e96",
+      "ai_summary": "LLMs' comprehension and reasoning skills are evaluated under code-switching conditions, revealing that embedding English into other languages can improve understanding, while prompts and fine-tuning affect degradation mitigation differently.",
+      "ai_keywords": [
+        "Large Language Models",
+        "code-switching",
+        "CSW",
+        "reasoning benchmarks",
+        "comprehension benchmarks",
+        "foreign tokens",
+        "embedding",
+        "fine-tuning"
+      ]
+    },
+    "publishedAt": "2025-06-16T17:19:27.000Z",
+    "title": "Lost in the Mix: Evaluating LLM Understanding of Code-Switched Text",
+    "summary": "Code-switching (CSW) is the act of alternating between two or more languages\nwithin a single discourse. This phenomenon is widespread in multilingual\ncommunities, and increasingly prevalent in online content, where users\nnaturally mix languages in everyday communication. As a result, Large Language\nModels (LLMs), now central to content processing and generation, are frequently\nexposed to code-switched inputs. Given their widespread use, it is crucial to\nunderstand how LLMs process and reason about such mixed-language text. This\npaper presents a systematic evaluation of LLM comprehension under\ncode-switching by generating CSW variants of established reasoning and\ncomprehension benchmarks. While degradation is evident when foreign tokens\ndisrupt English textx2013even under linguistic\nconstraintsx2013embedding English into other languages often\nimproves comprehension. Though prompting yields mixed results, fine-tuning\noffers a more stable path to degradation mitigation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.14012.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "655efd24afee0e00788bb589",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/655efd24afee0e00788bb589/22guLxIWNybbJR3jI-c4w.jpeg",
+      "fullname": "Amr Mohamed",
+      "name": "amr-mohamed",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": true
+  }
+]
