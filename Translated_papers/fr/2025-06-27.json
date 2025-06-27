@@ -1,0 +1,1396 @@
+[
+  {
+    "paper": {
+      "id": "2506.20670",
+      "authors": [
+        {
+          "_id": "685c9ef4696820ba1f28f263",
+          "user": {
+            "_id": "652fbe8cb2acab0b82f855a6",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/652fbe8cb2acab0b82f855a6/lVpzeEoFRQ6dnGAoNS9b3.jpeg",
+            "isPro": false,
+            "fullname": "Jinming Wu",
+            "user": "kimingng",
+            "type": "user"
+          },
+          "name": "Jinming Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-26T09:24:03.068Z",
+          "hidden": false
+        },
+        {
+          "_id": "685c9ef4696820ba1f28f264",
+          "name": "Zihao Deng",
+          "hidden": false
+        },
+        {
+          "_id": "685c9ef4696820ba1f28f265",
+          "name": "Wei Li",
+          "hidden": false
+        },
+        {
+          "_id": "685c9ef4696820ba1f28f266",
+          "name": "Yiding Liu",
+          "hidden": false
+        },
+        {
+          "_id": "685c9ef4696820ba1f28f267",
+          "name": "Bo You",
+          "hidden": false
+        },
+        {
+          "_id": "685c9ef4696820ba1f28f268",
+          "name": "Bo Li",
+          "hidden": false
+        },
+        {
+          "_id": "685c9ef4696820ba1f28f269",
+          "name": "Zejun Ma",
+          "hidden": false
+        },
+        {
+          "_id": "685c9ef4696820ba1f28f26a",
+          "name": "Ziwei Liu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-25T17:59:42.000Z",
+      "submittedOnDailyAt": "2025-06-27T00:45:57.876Z",
+      "title": "MMSearch-R1 : Recherche de la LMM qui attribue des raisons",
+      "submittedOnDailyBy": {
+        "_id": "652fbe8cb2acab0b82f855a6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/652fbe8cb2acab0b82f855a6/lVpzeEoFRQ6dnGAoNS9b3.jpeg",
+        "isPro": false,
+        "fullname": "Jinming Wu",
+        "user": "kimingng",
+        "type": "user"
+      },
+      "summary": "L'adoption fiable de modèles à grande échelle multimodales en réalité (LMMs) est due à la complexité et à la nature dynamique de l'information réelle, ce qui nécessite accès à des sources de connaissances externes. Les méthodes actuelles, comme la génération améliorée avec recherche (RAG) et l'ingénierie de prompts pour agents de recherche, dépendent d'un flux inflexible, ce qui réduit l'efficacité en raison de comportements de recherche inefficaces ou excessifs. Nous présentons le cadre d'apprentissage par renforcement end-to-end MMSearch-R1, qui permet aux LMMs de réaliser des recherches multiétapes dans des environnements internet réels pour résoudre des problèmes. Notre cadre intègre des outils de recherche d'images et de texte, et en se basant sur les récompenses et les sanctions de recherche déterminées par les résultats de recherche, décide comment le modèle appelle la recherche. Pour l'apprentissage, grâce à un flux semi-automatique couvrant une diversité de connaissances d'images et de texte, des échantillons nécessaires et non nécessaires pour la recherche sont sélectionnés de manière équilibrée, ce qui est crucial pour former des comportements de recherche efficaces. Les expériences étendues sur des tâches de VQA intenses en connaissances et en exploration de l'information montrent que notre modèle dépasse les limites basées sur RAG de taille de modèle identique et se positionne en concurrence avec le rendement des modèles plus grands basés sur RAG, réduisant le demandé de recherche de plus de 30%. De plus, les clés des résultats expérimentaux sont analysées et une vision opérationnelle est fournie pour encourager le progrès de la recherche en recherche multimodal.",
+      "upvotes": 32,
+      "discussionId": "685c9ef5696820ba1f28f26b",
+      "githubRepo": "https://github.com/EvolvingLMMs-Lab/multimodal-search-r1",
+      "ai_summary": "MMSearch-R1, a reinforcement learning framework, enables large multimodal models to perform efficient, on-demand, multi-turn search in real-world environments, outperforming existing approaches.",
+      "ai_keywords": [
+        "multimodal models",
+        "retrieval-augmented generation",
+        "prompt engineered search agents",
+        "reinforcement learning",
+        "image search",
+        "text search",
+        "outcome-based reward",
+        "search penalty",
+        "multimodal search VQA dataset",
+        "knowledge-intensive VQA tasks",
+        "info-seeking VQA tasks"
+      ],
+      "githubStars": 149
+    },
+    "publishedAt": "2025-06-25T13:59:42.000Z",
+    "title": "MMSearch-R1: Incentivizing LMMs to Search",
+    "summary": "Robust deployment of large multimodal models (LMMs) in real-world scenarios\nrequires access to external knowledge sources, given the complexity and dynamic\nnature of real-world information. Existing approaches such as\nretrieval-augmented generation (RAG) and prompt engineered search agents rely\non rigid pipelines, often leading to inefficient or excessive search behaviors.\nWe present MMSearch-R1, the first end-to-end reinforcement learning framework\nthat enables LMMs to perform on-demand, multi-turn search in real-world\nInternet environments. Our framework integrates both image and text search\ntools, allowing the model to reason about when and how to invoke them guided by\nan outcome-based reward with a search penalty. To support training, We collect\na multimodal search VQA dataset through a semi-automated pipeline that covers\ndiverse visual and textual knowledge needs and curate a search-balanced subset\nwith both search-required and search-free samples, which proves essential for\nshaping efficient and on-demand search behavior. Extensive experiments on\nknowledge-intensive and info-seeking VQA tasks show that our model not only\noutperforms RAG-based baselines of the same model size, but also matches the\nperformance of a larger RAG-based model while reducing search calls by over\n30%. We further analyze key empirical findings to offer actionable insights for\nadvancing research in multimodal search.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.20670.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "652fbe8cb2acab0b82f855a6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/652fbe8cb2acab0b82f855a6/lVpzeEoFRQ6dnGAoNS9b3.jpeg",
+      "fullname": "Jinming Wu",
+      "name": "kimingng",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.21539",
+      "authors": [
+        {
+          "_id": "685e06f771131fa43be08abe",
+          "name": "Jun Cen",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08abf",
+          "name": "Chaohui Yu",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac0",
+          "user": {
+            "_id": "649d54b314afbb10ce2a9eeb",
+            "avatarUrl": "/avatars/15c325d8c2273ff63569f23015e98486.svg",
+            "isPro": false,
+            "fullname": "Hangjie Yuan",
+            "user": "JacobYuan",
+            "type": "user"
+          },
+          "name": "Hangjie Yuan",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:56:57.326Z",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac1",
+          "name": "Yuming Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac2",
+          "name": "Siteng Huang",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac3",
+          "name": "Jiayan Guo",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac4",
+          "name": "Xin Li",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac5",
+          "name": "Yibing Song",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac6",
+          "name": "Hao Luo",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac7",
+          "name": "Fan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac8",
+          "name": "Deli Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "685e06f771131fa43be08ac9",
+          "name": "Hao Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-26T17:55:40.000Z",
+      "submittedOnDailyAt": "2025-06-27T01:21:09.686Z",
+      "title": "WorldVLA : Le défi pour les modèles de comportement auto-retour mondiaux",
+      "submittedOnDailyBy": {
+        "_id": "649d54b314afbb10ce2a9eeb",
+        "avatarUrl": "/avatars/15c325d8c2273ff63569f23015e98486.svg",
+        "isPro": false,
+        "fullname": "Hangjie Yuan",
+        "user": "JacobYuan",
+        "type": "user"
+      },
+      "summary": "World VLA introduit un modèle automatique de récupération d'actions qui intègre la compréhension et la génération d'actions et d'images. Notre World VLA intègre le modèle Vision-Language-Action (VLA) et le modèle de mot dans un seul cadre. Le modèle de mot utilise la compréhension d'actions et d'images pour prédire des images futures et apprend les lois physiques potentielles de l'environnement pour améliorer la génération d'actions. D'autre part, le modèle d'actions génère l'action suivante en se basant sur des observations d'images, aide à comprendre la vision et contribue également à la génération visuelle du modèle de mot. World VLA montre un rendement supérieur aux modèles d'actions uniques ou de mot et met en avant l'amélioration mutuelle entre les deux. De plus, il a été constaté que la performance du modèle d'actions s'améliore lorsque des séquences d'actions sont générées automatiquement. Ce phénomène est attribué à la propagation d'erreurs due à la capacité limitée de généralisation dans la prédiction d'actions. Pour résoudre ce problème, une stratégie de masquage d'actions est proposée, qui masque sélectivement l'action avant de la générer, et il est montré que cela améliore significativement le rendement dans la tâche de génération d'actions en chaîne.",
+      "upvotes": 18,
+      "discussionId": "685e06f871131fa43be08aca",
+      "projectPage": "https://github.com/alibaba-damo-academy/WorldVLA",
+      "githubRepo": "https://github.com/alibaba-damo-academy/WorldVLA",
+      "ai_summary": "WorldVLA, an autoregressive action world model integrating vision-language-action (VLA) and world models, enhances performance through mutual understanding and generation, improving action prediction and sequence generation with an attention mask strategy.",
+      "ai_keywords": [
+        "autoregressive action world model",
+        "Vision-Language-Action (VLA) model",
+        "world model",
+        "action generation",
+        "action prediction",
+        "attention mask strategy"
+      ],
+      "githubStars": 53
+    },
+    "publishedAt": "2025-06-26T13:55:40.000Z",
+    "title": "WorldVLA: Towards Autoregressive Action World Model",
+    "summary": "We present WorldVLA, an autoregressive action world model that unifies action\nand image understanding and generation. Our WorldVLA intergrates\nVision-Language-Action (VLA) model and world model in one single framework. The\nworld model predicts future images by leveraging both action and image\nunderstanding, with the purpose of learning the underlying physics of the\nenvironment to improve action generation. Meanwhile, the action model generates\nthe subsequent actions based on image observations, aiding in visual\nunderstanding and in turn helps visual generation of the world model. We\ndemonstrate that WorldVLA outperforms standalone action and world models,\nhighlighting the mutual enhancement between the world model and the action\nmodel. In addition, we find that the performance of the action model\ndeteriorates when generating sequences of actions in an autoregressive manner.\nThis phenomenon can be attributed to the model's limited generalization\ncapability for action prediction, leading to the propagation of errors from\nearlier actions to subsequent ones. To address this issue, we propose an\nattention mask strategy that selectively masks prior actions during the\ngeneration of the current action, which shows significant performance\nimprovement in the action chunk generation task.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.21539.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "649d54b314afbb10ce2a9eeb",
+      "avatarUrl": "/avatars/15c325d8c2273ff63569f23015e98486.svg",
+      "fullname": "Hangjie Yuan",
+      "name": "JacobYuan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.21551",
+      "authors": [
+        {
+          "_id": "685e12a171131fa43be08af1",
+          "name": "Ziyue Li",
+          "hidden": false
+        },
+        {
+          "_id": "685e12a171131fa43be08af2",
+          "user": {
+            "_id": "64a8121e35fab7cd04c30ed0",
+            "avatarUrl": "/avatars/48849b84703158772f1022932331b143.svg",
+            "isPro": false,
+            "fullname": "Chenrui Fan",
+            "user": "Fcr09",
+            "type": "user"
+          },
+          "name": "Chenrui Fan",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:56:55.357Z",
+          "hidden": false
+        },
+        {
+          "_id": "685e12a171131fa43be08af3",
+          "user": {
+            "_id": "647f5af5b0e96764589f3b2a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+            "isPro": false,
+            "fullname": "Tianyi Zhou",
+            "user": "zhoutianyi",
+            "type": "user"
+          },
+          "name": "Tianyi Zhou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:56:53.481Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/B_SAKrX_CUkbOy_G2Utsz.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/GMugplIqsF3q7PFg2Ywia.png"
+      ],
+      "publishedAt": "2025-06-26T17:59:58.000Z",
+      "submittedOnDailyAt": "2025-06-27T02:17:48.590Z",
+      "title": "Moniteur de Grokking dans le Pré-entraînement de LLM\nTransition vers la généralisation de la mémoire d'apprentissage dans les tests",
+      "submittedOnDailyBy": {
+        "_id": "647f5af5b0e96764589f3b2a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+        "isPro": false,
+        "fullname": "Tianyi Zhou",
+        "user": "zhoutianyi",
+        "type": "user"
+      },
+      "summary": "Grokking, c'est-à-dire, le phénomène où la perte d'entraînement converge et l'efficacité de test continue d'augmenter, est un phénomène qui apparaît récemment lors de l'entraînement de réseaux neuronaux, semblant montrer une structure de nouvelles capacités comme si elles étaient imperceptibles. Dans des recherches précédentes, on entraîne généralement des modèles petits pendant des milliers d'époques sur des séries temporelles diverses ou sur des tâches très spécifiques. Dans notre étude, nous avons effectué le premier analyse de Grokking sur un point de vérification de prédiction d'un modèle de langage de 7B (LLM). Nous avons évalué la perte d'entraînement et la généralisation, et effectué des évaluations sur différentes tâches de benchmark, y compris l'inférence mathématique, la génération de code et la recherche de connaissances propres à la vision commune ou au domaine.\n\nNotre étude a montré, d'abord, que Grokking peut être observé sur des points de vérification de prédiction de modèles d'une grande taille. Cependant, d'autres données entrent dans la phase de Grokking de manière désaccordée. De plus, nous avons investigué la dynamique interne du LLM pour comprendre la \"découverte de la généralisation\". En particulier, les pas d'entraînement (paseway, c'est-à-dire la sélection de droites dans chaque couche) se transforment structurellement en directions plus partagées entre les instances, de manière aléatoire. De plus, bien que la perte d'entraînement converge, la complexité des paseway diminue. Cela montre la transformation de la mémoire en généralisation et fournit une interprétation structurale de la généralisation tardive. Dans cette étude, nous avons développé deux nouvelles métriques : la distance des paseway et la complexité d'un paseway. Ces métriques peuvent prédire l'amélioration de la généralisation sur différentes tâches de benchmark, sont efficaces et simples à calculer, et dépendent uniquement des données d'entraînement. Ces métriques fournissent des valeurs pratiques et permettent de surveiller la généralisation sur des points de vérification de prédiction, sans faire nécessairement l'entraînement final ou les tests. Théoriquement, les paseway structurels peuvent réduire la complexité du modèle et améliorer la généralisation.",
+      "upvotes": 14,
+      "discussionId": "685e12a271131fa43be08af4",
+      "ai_summary": "Grokking, or continued test performance improvement after training loss convergence, is observed during pretraining of a large language model, showcasing a memorization-to-generalization process.",
+      "ai_keywords": [
+        "grokking",
+        "training loss",
+        "generalization",
+        "pretraining",
+        "large language model",
+        "OLMoE",
+        "math reasoning",
+        "code generation",
+        "knowledge retrieval",
+        "expert choices",
+        "pathway distance",
+        "pathway complexity",
+        "generalization bound"
+      ]
+    },
+    "publishedAt": "2025-06-26T13:59:58.000Z",
+    "title": "Where to find Grokking in LLM Pretraining? Monitor\n  Memorization-to-Generalization without Test",
+    "summary": "Grokking, i.e., test performance keeps improving long after training loss\nconverged, has been recently witnessed in neural network training, making the\nmechanism of generalization and other emerging capabilities such as reasoning\nmysterious. While prior studies usually train small models on a few toy or\nhighly-specific tasks for thousands of epochs, we conduct the first study of\ngrokking on checkpoints during one-pass pretraining of a 7B large language\nmodel (LLM), i.e., OLMoE. We compute the training loss and evaluate\ngeneralization on diverse benchmark tasks, including math reasoning, code\ngeneration, and commonsense/domain-specific knowledge retrieval tasks.\n  Our study, for the first time, verifies that grokking still happens in the\npretraining of large-scale foundation models, though different data may enter\ngrokking stages asynchronously. We further demystify grokking's \"emergence of\ngeneralization\" by investigating LLM internal dynamics. Specifically, we find\nthat training samples' pathways (i.e., expert choices across layers) evolve\nfrom random, instance-specific to more structured and shareable between samples\nduring grokking. Also, the complexity of a sample's pathway reduces despite the\nconverged loss. These indicate a memorization-to-generalization conversion,\nproviding a mechanistic explanation of delayed generalization. In the study, we\ndevelop two novel metrics to quantify pathway distance and the complexity of a\nsingle pathway. We show their ability to predict the generalization improvement\non diverse downstream tasks. They are efficient, simple to compute and solely\ndependent on training data. Hence, they have practical value for pretraining,\nenabling us to monitor the generalization performance without finetuning and\ntest. Theoretically, we show that more structured pathways reduce model\ncomplexity and improve the generalization bound.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/B_SAKrX_CUkbOy_G2Utsz.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/GMugplIqsF3q7PFg2Ywia.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.21551.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "647f5af5b0e96764589f3b2a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+      "fullname": "Tianyi Zhou",
+      "name": "zhoutianyi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 15
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.21520",
+      "authors": [
+        {
+          "_id": "685e61f671131fa43be08b80",
+          "name": "Polina Karpikova",
+          "hidden": false
+        },
+        {
+          "_id": "685e61f671131fa43be08b81",
+          "name": "Daniil Selikhanovych",
+          "hidden": false
+        },
+        {
+          "_id": "685e61f671131fa43be08b82",
+          "name": "Kirill Struminsky",
+          "hidden": false
+        },
+        {
+          "_id": "685e61f671131fa43be08b83",
+          "name": "Ruslan Musaev",
+          "hidden": false
+        },
+        {
+          "_id": "685e61f671131fa43be08b84",
+          "name": "Maria Golitsyna",
+          "hidden": false
+        },
+        {
+          "_id": "685e61f671131fa43be08b85",
+          "name": "Dmitry Baranchuk",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-26T17:41:07.000Z",
+      "submittedOnDailyAt": "2025-06-27T07:52:02.348Z",
+      "title": "MADrive : Modèle de Simulation de Trajectoire de Voiture avec Contrôle de Mémoire",
+      "submittedOnDailyBy": {
+        "_id": "64a42977250bfdecd9570a9e",
+        "avatarUrl": "/avatars/df5d7cf159e6bb9e961e1c77d1b89d36.svg",
+        "isPro": false,
+        "fullname": "Daniil Selikhanovych",
+        "user": "apryc1",
+        "type": "user"
+      },
+      "summary": "Le progrès récent de la reconstruction de scènes se concentre sur la modélisation de haute réalité dans les environnements de conduite autonome (AD). Cependant, ce résultat est étroitement lié à l'observation de l'objet, et il est difficile de soutenir la synthèse de scènes de conduite considérablement modifiées. Dans cet article, nous présentons le cadre de travail de reconstruction de scènes avec mémoire 'MADrive'. Ce cadre de travail a été conçu pour élargir les fonctions des méthodes actuelles de reconstruction de scènes, remplaçant les véhicules observés par des véhicules 3D actifs similaires visuellement dans une base de mémoire. En particulier, nous introduisons 'MAD-Cars', qui est un ensemble de données de {sim}70K de vidéos de véhicules en 360 degrés dans leur nature, permettant la recherche des instances de véhicules les plus similaires dans la base de mémoire et la reconstruction des 3D actifs correspondants aux vidéos, ce qui est intégré dans le scénario cible par des ajustements de direction et d'illumination. De cette manière, une représentation complète des véhicules est fournie et la synthèse de configurations considérablement modifiées est facilitée. La page du projet est disponible sur https://yandex-research.github.io/madrive/.",
+      "upvotes": 11,
+      "discussionId": "685e61f771131fa43be08b86",
+      "projectPage": "https://yandex-research.github.io/madrive/",
+      "ai_summary": "MADrive enhances scene reconstruction for autonomous driving by integrating visually similar 3D car assets from an external memory bank to achieve photorealistic synthesis of altered scenarios.",
+      "ai_keywords": [
+        "3D Gaussian splatting",
+        "scene reconstruction",
+        "memory-augmented reconstruction",
+        "MADrive",
+        "MAD-Cars",
+        "360° car videos",
+        "retrieval module",
+        "3D asset reconstruction",
+        "orientation alignment",
+        "relighting"
+      ]
+    },
+    "publishedAt": "2025-06-26T13:41:07.000Z",
+    "title": "MADrive: Memory-Augmented Driving Scene Modeling",
+    "summary": "Recent advances in scene reconstruction have pushed toward highly realistic\nmodeling of autonomous driving (AD) environments using 3D Gaussian splatting.\nHowever, the resulting reconstructions remain closely tied to the original\nobservations and struggle to support photorealistic synthesis of significantly\naltered or novel driving scenarios. This work introduces MADrive, a\nmemory-augmented reconstruction framework designed to extend the capabilities\nof existing scene reconstruction methods by replacing observed vehicles with\nvisually similar 3D assets retrieved from a large-scale external memory bank.\nSpecifically, we release MAD-Cars, a curated dataset of {sim}70K 360{\\deg}\ncar videos captured in the wild and present a retrieval module that finds the\nmost similar car instances in the memory bank, reconstructs the corresponding\n3D assets from video, and integrates them into the target scene through\norientation alignment and relighting. The resulting replacements provide\ncomplete multi-view representations of vehicles in the scene, enabling\nphotorealistic synthesis of substantially altered configurations, as\ndemonstrated in our experiments. Project page:\nhttps://yandex-research.github.io/madrive/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.21520.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64a42977250bfdecd9570a9e",
+      "avatarUrl": "/avatars/df5d7cf159e6bb9e961e1c77d1b89d36.svg",
+      "fullname": "Daniil Selikhanovych",
+      "name": "apryc1",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 0
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.21506",
+      "authors": [
+        {
+          "_id": "685df93d71131fa43be08a96",
+          "user": {
+            "_id": "6500870f1e14749e84f8f887",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6500870f1e14749e84f8f887/wfvx4BZvh2OyW-vpq5jEy.jpeg",
+            "isPro": false,
+            "fullname": "Boyu Gou",
+            "user": "BoyuNLP",
+            "type": "user"
+          },
+          "name": "Boyu Gou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:57:06.439Z",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a97",
+          "name": "Zanming Huang",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a98",
+          "user": {
+            "_id": "65ace92f64c9b93eca5c2bce",
+            "avatarUrl": "/avatars/9fca9d018ba751a9dba79621bf0c83f1.svg",
+            "isPro": false,
+            "fullname": "Yuting Ning",
+            "user": "nnnyt",
+            "type": "user"
+          },
+          "name": "Yuting Ning",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:57:04.054Z",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a99",
+          "name": "Yu Gu",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a9a",
+          "name": "Michael Lin",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a9b",
+          "name": "Weijian Qi",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a9c",
+          "name": "Andrei Kopanev",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a9d",
+          "name": "Botao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a9e",
+          "name": "Bernal Jiménez Gutiérrez",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08a9f",
+          "user": {
+            "_id": "60a4ebfbaa9320dbbe69e37c",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60a4ebfbaa9320dbbe69e37c/QLaEohXCWaUy8YX3wKQ_w.jpeg",
+            "isPro": false,
+            "fullname": "Yiheng Shu",
+            "user": "yhshu",
+            "type": "user"
+          },
+          "name": "Yiheng Shu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:57:01.825Z",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa0",
+          "name": "Chan Hee Song",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa1",
+          "name": "Jiaman Wu",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa2",
+          "name": "Shijie Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa3",
+          "name": "Hanane Nour Moussa",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa4",
+          "name": "Tianshu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa5",
+          "name": "Jian Xie",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa6",
+          "name": "Yifei Li",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa7",
+          "name": "Tianci Xue",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa8",
+          "name": "Zeyi Liao",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aa9",
+          "name": "Kai Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aaa",
+          "name": "Boyuan Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aab",
+          "name": "Zhaowei Cai",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aac",
+          "name": "Viktor Rozgic",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aad",
+          "name": "Morteza Ziyadi",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aae",
+          "name": "Huan Sun",
+          "hidden": false
+        },
+        {
+          "_id": "685df93d71131fa43be08aaf",
+          "name": "Yu Su",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-26T17:32:50.000Z",
+      "submittedOnDailyAt": "2025-06-27T00:23:59.896Z",
+      "title": "Mind2Web 2 : Recherche sur l'Évaluation de la Recherche de Résultats dans l'Agent-comme-Juge",
+      "submittedOnDailyBy": {
+        "_id": "6500870f1e14749e84f8f887",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6500870f1e14749e84f8f887/wfvx4BZvh2OyW-vpq5jEy.jpeg",
+        "isPro": false,
+        "fullname": "Boyu Gou",
+        "user": "BoyuNLP",
+        "type": "user"
+      },
+      "summary": "La recherche agentielle, comme dans le cas des systèmes tels que Deep Research, est un méthode où des modèles de langage grands effectuent des recherches automatiques sur Internet, synthétisent des informations et insèrent des sources pour fournir des réponses détaillées. Cette forme d'interaction avec l'information à l'échelle de l'Internet offre un changement significatif. Bien que son objectif soit d'améliorer l'efficacité et de réduire le fardeau cognitif, la complexité et l'extension ouverte de la recherche agentielle dépassent actuellement les cadres d'évaluation et les méthodes. Dans cet article, nous présentons Mind2Web 2, un cadre d'évaluation de 130 tâches pratiques et de haute qualité au fil du temps. Ce cadre d'évaluation a été développé avec la participation de plus de 1 000 heures de travail humain, et nécessite des recherches en temps réel sur Internet et la synthèse d'informations détaillées. Nous proposons le cadre d'évaluation par agent pour évaluer la variation du temps et la complexité des réponses. Notre méthode base la construction d'agents d'évaluation spécialisés dans les tâches dans la conception de révisions dans des structures d'arbre, et évalue automatiquement la précision des réponses et l'identification des sources. Les 9 systèmes avancés et le rendement humain sont évalués avec un analyse détaillée des erreurs, permettant d'obtenir des insights pour les futurs développements. Le meilleur système, OpenAI Deep Research, atteint le rendement humain dans des temps réduits (environ 50-70% de temps réduits) et montre un grand potentiel. Mind2Web 2 fournit un cadre de développement pour les prochains systèmes de recherche agentielle et un cadre de évaluation strict.",
+      "upvotes": 8,
+      "discussionId": "685df93d71131fa43be08ab0",
+      "projectPage": "https://osu-nlp-group.github.io/Mind2Web-2",
+      "githubRepo": "https://github.com/OSU-NLP-Group/Mind2Web-2/",
+      "ai_summary": "Mind2Web 2 benchmark evaluates agentic search systems with a suite of realistic, long-horizon tasks, introducing an Agent-as-a-Judge framework to assess accuracy and source attribution.",
+      "ai_keywords": [
+        "Deep Research systems",
+        "large language models",
+        "autonomous browsing",
+        "information synthesis",
+        "citation-backed answers",
+        "evaluation benchmarks",
+        "search horizons",
+        "static answers",
+        "Mind2Web 2",
+        "high-quality tasks",
+        "real-time web browsing",
+        "extensive information synthesis",
+        "task-specific judge agents",
+        "tree-structured rubric design",
+        "answer correctness",
+        "source attribution",
+        "agentic search systems",
+        "human performance",
+        "error analysis",
+        "OpenAI Deep Research"
+      ],
+      "githubStars": 3
+    },
+    "publishedAt": "2025-06-26T13:32:50.000Z",
+    "title": "Mind2Web 2: Evaluating Agentic Search with Agent-as-a-Judge",
+    "summary": "Agentic search such as Deep Research systems, where large language models\nautonomously browse the web, synthesize information, and return comprehensive\ncitation-backed answers, represents a major shift in how users interact with\nweb-scale information. While promising greater efficiency and cognitive\noffloading, the growing complexity and open-endedness of agentic search have\noutpaced existing evaluation benchmarks and methodologies, which largely assume\nshort search horizons and static answers. In this paper, we introduce Mind2Web\n2, a benchmark of 130 realistic, high-quality, and long-horizon tasks that\nrequire real-time web browsing and extensive information synthesis, constructed\nwith over 1,000 hours of human labor. To address the challenge of evaluating\ntime-varying and complex answers, we propose a novel Agent-as-a-Judge\nframework. Our method constructs task-specific judge agents based on a\ntree-structured rubric design to automatically assess both answer correctness\nand source attribution. We conduct a comprehensive evaluation of nine frontier\nagentic search systems and human performance, along with a detailed error\nanalysis to draw insights for future development. The best-performing system,\nOpenAI Deep Research, can already achieve 50-70% of human performance while\nspending half the time, showing a great potential. Altogether, Mind2Web 2\nprovides a rigorous foundation for developing and benchmarking the next\ngeneration of agentic search systems.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.21506.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6500870f1e14749e84f8f887",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6500870f1e14749e84f8f887/wfvx4BZvh2OyW-vpq5jEy.jpeg",
+      "fullname": "Boyu Gou",
+      "name": "BoyuNLP",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.21547",
+      "authors": [
+        {
+          "_id": "685e004071131fa43be08ab2",
+          "name": "Jianyun Xu",
+          "hidden": false
+        },
+        {
+          "_id": "685e004071131fa43be08ab3",
+          "user": {
+            "_id": "66863d26e2b71e3d09189ae9",
+            "avatarUrl": "/avatars/3c0e6f30e053f2e622ae75e1dc43edba.svg",
+            "isPro": false,
+            "fullname": "Song Wang",
+            "user": "songw-zju",
+            "type": "user"
+          },
+          "name": "Song Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:56:59.774Z",
+          "hidden": false
+        },
+        {
+          "_id": "685e004071131fa43be08ab4",
+          "name": "Ziqian Ni",
+          "hidden": false
+        },
+        {
+          "_id": "685e004071131fa43be08ab5",
+          "name": "Chunyong Hu",
+          "hidden": false
+        },
+        {
+          "_id": "685e004071131fa43be08ab6",
+          "name": "Sheng Yang",
+          "hidden": false
+        },
+        {
+          "_id": "685e004071131fa43be08ab7",
+          "name": "Jianke Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "685e004071131fa43be08ab8",
+          "name": "Qiang Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-26T17:59:14.000Z",
+      "submittedOnDailyAt": "2025-06-27T00:53:00.453Z",
+      "title": "SAM4D : Segmenter où que ce soit avec des flux de caméra et de LiDAR",
+      "submittedOnDailyBy": {
+        "_id": "66863d26e2b71e3d09189ae9",
+        "avatarUrl": "/avatars/3c0e6f30e053f2e622ae75e1dc43edba.svg",
+        "isPro": false,
+        "fullname": "Song Wang",
+        "user": "songw-zju",
+        "type": "user"
+      },
+      "summary": "SAM4D est un modèle multimodal et temporel qui se concentre sur la segmentation induite par le temps dans le flux de caméras et de LiDAR. Il introduit l'Encodage Positionnel Unifié Multi-modal (UMPE) pour partager les caractéristiques des caméras et des LiDAR et les aligner dans l'espace 3D, permettant ainsi des interactions et des programmations infinitésimales entre modes. De plus, il propose l'Attention d'Étendue de Mouvement à Connaissance de l'État (MCMA) pour améliorer la cohérence temporelle et la recherche de caractéristiques à long terme en utilisant la correction automatique du mouvement, garantissant une segmentation robuste face aux changements dynamiques dans les scénarios de conduite autonome. Pour éviter les erreurs de cartographie, il développe un moteur de données multimodal qui intègre la masquage vidéo dans VFM, la reconstruction spatio-temporelle 4D et la fusion de masques entre modes. Ce cadre permet la génération de labels pour les caméras et les LiDAR à une vitesse beaucoup plus rapide que l'annotation humaine, tout en maintenant la précision sémantique obtenue dans VFM dans la représentation point-cloud. Il construit Waymo-4DSeg pour effectuer de nombreux expériments et montre la forte capacité de segmentation entre modes et la grande possibilité d'annotation des données proposée par SAM4D.",
+      "upvotes": 6,
+      "discussionId": "685e004071131fa43be08ab9",
+      "projectPage": "https://SAM4D-Project.github.io",
+      "githubRepo": "https://github.com/CN-ADLab/SAM4D",
+      "ai_summary": "SAM4D is a multi-modal and temporal foundation model for segmentation in autonomous driving using Unified Multi-modal Positional Encoding and Motion-aware Cross-modal Memory Attention, with a multi-modal automated data engine generating pseudo-labels.",
+      "ai_keywords": [
+        "multi-modal",
+        "temporal foundation model",
+        "promptable segmentation",
+        "camera",
+        "LiDAR",
+        "Unified Multi-modal Positional Encoding",
+        "shared 3D space",
+        "cross-modal prompting",
+        "Motion-aware Cross-modal Memory Attention",
+        "ego-motion compensation",
+        "temporal consistency",
+        "spatiotemporal 4D reconstruction",
+        "cross-modal masklet fusion",
+        "pseudo-labels",
+        "Waymo-4DSeg"
+      ],
+      "githubStars": 11
+    },
+    "publishedAt": "2025-06-26T13:59:14.000Z",
+    "title": "SAM4D: Segment Anything in Camera and LiDAR Streams",
+    "summary": "We present SAM4D, a multi-modal and temporal foundation model designed for\npromptable segmentation across camera and LiDAR streams. Unified Multi-modal\nPositional Encoding (UMPE) is introduced to align camera and LiDAR features in\na shared 3D space, enabling seamless cross-modal prompting and interaction.\nAdditionally, we propose Motion-aware Cross-modal Memory Attention (MCMA),\nwhich leverages ego-motion compensation to enhance temporal consistency and\nlong-horizon feature retrieval, ensuring robust segmentation across dynamically\nchanging autonomous driving scenes. To avoid annotation bottlenecks, we develop\na multi-modal automated data engine that synergizes VFM-driven video masklets,\nspatiotemporal 4D reconstruction, and cross-modal masklet fusion. This\nframework generates camera-LiDAR aligned pseudo-labels at a speed orders of\nmagnitude faster than human annotation while preserving VFM-derived semantic\nfidelity in point cloud representations. We conduct extensive experiments on\nthe constructed Waymo-4DSeg, which demonstrate the powerful cross-modal\nsegmentation ability and great potential in data annotation of proposed SAM4D.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.21547.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66863d26e2b71e3d09189ae9",
+      "avatarUrl": "/avatars/3c0e6f30e053f2e622ae75e1dc43edba.svg",
+      "fullname": "Song Wang",
+      "name": "songw-zju",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.21552",
+      "authors": [
+        {
+          "_id": "685e161b71131fa43be08b04",
+          "user": {
+            "_id": "6332253749a95639154cc894",
+            "avatarUrl": "/avatars/f8e53fff5a324591026114c431cd407e.svg",
+            "isPro": false,
+            "fullname": "Yutong Bai",
+            "user": "Emma02",
+            "type": "user"
+          },
+          "name": "Yutong Bai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:56:43.620Z",
+          "hidden": false
+        },
+        {
+          "_id": "685e161b71131fa43be08b05",
+          "user": {
+            "_id": "658a1f4a35f23c0f1c4f689f",
+            "avatarUrl": "/avatars/e800fcbbcd242f311c3896a603862416.svg",
+            "isPro": false,
+            "fullname": "Danny Tran",
+            "user": "dans123",
+            "type": "user"
+          },
+          "name": "Danny Tran",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:56:45.405Z",
+          "hidden": false
+        },
+        {
+          "_id": "685e161b71131fa43be08b06",
+          "name": "Amir Bar",
+          "hidden": false
+        },
+        {
+          "_id": "685e161b71131fa43be08b07",
+          "name": "Yann LeCun",
+          "hidden": false
+        },
+        {
+          "_id": "685e161b71131fa43be08b08",
+          "name": "Trevor Darrell",
+          "hidden": false
+        },
+        {
+          "_id": "685e161b71131fa43be08b09",
+          "name": "Jitendra Malik",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-26T17:59:59.000Z",
+      "submittedOnDailyAt": "2025-06-27T03:04:29.837Z",
+      "title": "Prévision de vidéos centrées sur moi en conditions complètement conditionnelles",
+      "submittedOnDailyBy": {
+        "_id": "6332253749a95639154cc894",
+        "avatarUrl": "/avatars/f8e53fff5a324591026114c431cd407e.svg",
+        "isPro": false,
+        "fullname": "Yutong Bai",
+        "user": "Emma02",
+        "type": "user"
+      },
+      "summary": "Nous utilisons des images passées et des positions 3D du corps pour entraîner un modèle (PEVA) qui prédit des vidéos egocentriques (vidéos à partir du point de vue de l'individu) à travers les comportements humains. Nous établissons des trajectoires de position mobile basées sur la structure hiérarchique des articulations du corps, et notre modèle apprend à expliquer comment l'action physique d'une personne a transformé l'environnement à partir de sa perspective. Nous entraînons un auto-régressif diffuseur transformer conditionnel basé sur un grand ensemble de données appelé Nymeria, qui enregistre des vidéos egocentriques et des positions corporelles réelles dans le monde. De plus, nous concevons un protocole d'évaluation avancé qui inclut des tâches plus difficiles, et il est possible de faire un analyse détaillée des prédictions spécifiques et du contrôle du modèle. Notre étude pose pour la première fois le défi de modéliser des problèmes complexes dans des environnements réels et concrets en prédisant des vidéos à partir de la perspective humaine.",
+      "upvotes": 3,
+      "discussionId": "685e161b71131fa43be08b0a",
+      "ai_summary": "A model trained on real-world egocentric video and body pose predicts video from human actions using an auto-regressive conditional diffusion transformer, evaluated with a hierarchical protocol of tasks.",
+      "ai_keywords": [
+        "auto-regressive conditional diffusion transformer"
+      ]
+    },
+    "publishedAt": "2025-06-26T13:59:59.000Z",
+    "title": "Whole-Body Conditioned Egocentric Video Prediction",
+    "summary": "We train models to Predict Ego-centric Video from human Actions (PEVA), given\nthe past video and an action represented by the relative 3D body pose. By\nconditioning on kinematic pose trajectories, structured by the joint hierarchy\nof the body, our model learns to simulate how physical human actions shape the\nenvironment from a first-person point of view. We train an auto-regressive\nconditional diffusion transformer on Nymeria, a large-scale dataset of\nreal-world egocentric video and body pose capture. We further design a\nhierarchical evaluation protocol with increasingly challenging tasks, enabling\na comprehensive analysis of the model's embodied prediction and control\nabilities. Our work represents an initial attempt to tackle the challenges of\nmodeling complex real-world environments and embodied agent behaviors with\nvideo prediction from the perspective of a human.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.21552.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6332253749a95639154cc894",
+      "avatarUrl": "/avatars/f8e53fff5a324591026114c431cd407e.svg",
+      "fullname": "Yutong Bai",
+      "name": "Emma02",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.16655",
+      "authors": [
+        {
+          "_id": "6858de6bc0c8e29df8ea3d03",
+          "name": "Co Tran",
+          "hidden": false
+        },
+        {
+          "_id": "6858de6bc0c8e29df8ea3d04",
+          "user": {
+            "_id": "66b681906c8d3b36786b764c",
+            "avatarUrl": "/avatars/c04e97278b2275e2b34182229efa1c20.svg",
+            "isPro": true,
+            "fullname": "Salman",
+            "user": "parachas",
+            "type": "user"
+          },
+          "name": "Salman Paracha",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-23T08:14:15.659Z",
+          "hidden": false
+        },
+        {
+          "_id": "6858de6bc0c8e29df8ea3d05",
+          "name": "Adil Hafeez",
+          "hidden": false
+        },
+        {
+          "_id": "6858de6bc0c8e29df8ea3d06",
+          "user": {
+            "_id": "622e9e56165ba2c1bcbc76da",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1648869498279-622e9e56165ba2c1bcbc76da.jpeg",
+            "isPro": false,
+            "fullname": "Shuguang Chen",
+            "user": "nehcgs",
+            "type": "user"
+          },
+          "name": "Shuguang Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-24T08:09:48.654Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/66b681906c8d3b36786b764c/yAiHzS_Ymy5geNcfh2s1K.png"
+      ],
+      "publishedAt": "2025-06-19T23:57:41.000Z",
+      "submittedOnDailyAt": "2025-06-27T03:00:21.170Z",
+      "title": "Arkcrotor : La Coincidence entre la Racine des LLM et les Intérêts Humains",
+      "submittedOnDailyBy": {
+        "_id": "66b681906c8d3b36786b764c",
+        "avatarUrl": "/avatars/c04e97278b2275e2b34182229efa1c20.svg",
+        "isPro": true,
+        "fullname": "Salman",
+        "user": "parachas",
+        "type": "user"
+      },
+      "summary": "La rapide expansion des modèles de langage grand (LLM) a conduit à ce que la technique de routage devienne un aspect crucial dans l'opération de chaque modèle, car chacun a été optimisé pour ses fortes, styles ou profils latino-costais. Cependant, les approches actuelles de routage dans les LLM présentent deux limitations principales : l'évaluation du rendement basée sur des benchmarks ne peut pas capturer les préférences subjectives des utilisateurs et souvent sélectionne un ensemble limité de modèles. Dans cet article, on propose un cadre de routage qui guide la sélection de modèles pour qu'ils soient adaptés à des zones ou types d'actions spécifiques, comme des voyages ou l'édition d'images, en fonction des préférences de l'utilisateur. Cette structure pratique permet de codifier les préférences dans la décision de routage. En particulier, on présente le modèle Arch-Router de 150M, qui apprend à cartographier les préférences de zone et d'action vers la sélection de modèles. De plus, on peut ajouter de nouveaux modèles à la route sans faire de retraining ou de modifications architecturales. Les expériences avec des ensembles de données de dialogue ont démontré que cette approche atteint des résultats SOTA en termes de concordance entre les requêtes et les préférences humaines, dépassant les modèles de profil. Cette approche évite les critères subjectifs dans l'évaluation, rendant la décision de routage transparente et flexible. Le modèle peut être utilisé sur la URL suivante : https://huggingface.co/katanemo/Arch-Router-1.5B.",
+      "upvotes": 3,
+      "discussionId": "6858de6bc0c8e29df8ea3d07",
+      "githubRepo": "https://github.com/katanemo/archgw/",
+      "ai_summary": "A preference-aligned routing framework using a compact 1.5B model effectively matches queries to user-defined domains and action types, outperforming proprietary models in subjective evaluation criteria.",
+      "ai_keywords": [
+        "large language models",
+        "LLM routing",
+        "Arch-Router",
+        "domain-action preferences"
+      ],
+      "githubStars": 2768
+    },
+    "publishedAt": "2025-06-19T19:57:41.000Z",
+    "title": "Arch-Router: Aligning LLM Routing with Human Preferences",
+    "summary": "With the rapid proliferation of large language models (LLMs) -- each\noptimized for different strengths, style, or latency/cost profile -- routing\nhas become an essential technique to operationalize the use of different\nmodels. However, existing LLM routing approaches are limited in two key ways:\nthey evaluate performance using benchmarks that often fail to capture human\npreferences driven by subjective evaluation criteria, and they typically select\nfrom a limited pool of models. In this work, we propose a preference-aligned\nrouting framework that guides model selection by matching queries to\nuser-defined domains (e.g., travel) or action types (e.g., image editing) --\noffering a practical mechanism to encode preferences in routing decisions.\nSpecifically, we introduce Arch-Router, a compact 1.5B model that\nlearns to map queries to domain-action preferences for model routing decisions.\nOur approach also supports seamlessly adding new models for routing without\nrequiring retraining or architectural modifications. Experiments on\nconversational datasets demonstrate that our approach achieves state-of-the-art\n(SOTA) results in matching queries with human preferences, outperforming top\nproprietary models. Our approach captures subjective evaluation criteria and\nmakes routing decisions more transparent and flexible. Our model is available\nat: https://huggingface.co/katanemo/Arch-Router-1.5B.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/66b681906c8d3b36786b764c/yAiHzS_Ymy5geNcfh2s1K.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.16655.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66b681906c8d3b36786b764c",
+      "avatarUrl": "/avatars/c04e97278b2275e2b34182229efa1c20.svg",
+      "fullname": "Salman",
+      "name": "parachas",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.20911",
+      "authors": [
+        {
+          "_id": "685e151c71131fa43be08afe",
+          "name": "Advait Gupta",
+          "hidden": false
+        },
+        {
+          "_id": "685e151c71131fa43be08aff",
+          "name": "Rishie Raj",
+          "hidden": false
+        },
+        {
+          "_id": "685e151c71131fa43be08b00",
+          "name": "Dang Nguyen",
+          "hidden": false
+        },
+        {
+          "_id": "685e151c71131fa43be08b01",
+          "user": {
+            "_id": "647f5af5b0e96764589f3b2a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+            "isPro": false,
+            "fullname": "Tianyi Zhou",
+            "user": "zhoutianyi",
+            "type": "user"
+          },
+          "name": "Tianyi Zhou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:56:47.348Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/NtOZn2DhSh9N1uAbfrj7k.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/ZIpYLZ5fG1gO1XJd-jFkj.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/wxV2SepqrDMNMwErA1pdC.png"
+      ],
+      "publishedAt": "2025-06-26T00:33:43.000Z",
+      "submittedOnDailyAt": "2025-06-27T03:18:51.228Z",
+      "title": "FaSTA^* : Outil d'accès agente sous-routine mineur pour l'édition efficace d'images multi-rotation avec la main et le stylo",
+      "submittedOnDailyBy": {
+        "_id": "647f5af5b0e96764589f3b2a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+        "isPro": false,
+        "fullname": "Tianyi Zhou",
+        "user": "zhoutianyi",
+        "type": "user"
+      },
+      "summary": "Le coût efficace reconnu des nouvelles neurosciences pour le cognitif d'agents vise à résoudre des tâches d'édition d'images multiniveaux complexes, comme \"détecter un banc dans une image, le changer de couleurs rose et ensuite éliminer un chat pour obtenir une vision plus claire, et changer une muraille en orange\". Cela combine la planification de tâches à haut niveau et à haute vitesse effectuées avec des modèles de langage grands (LLMs) avec l'utilisation lente, précise et de outils locaux, ainsi que la recherche A^* pour trouver des chemins d'outils coûteux efficaces. Pour réduire les coûts de A^* dans des tâches similaires, des modèles de LLMs sont utilisés pour inférer des raisons sur des chemins d'outils précédemment réussis, et des sous-routines communes sont extraites et modifiées de manière répétée pour les adapter à de nouvelles tâches futures. Les sous-routines symboliques réutilisables réduiront significativement le coût de la recherche dans des images similaires de la même catégorie de tâches et permettront à l'agent \"FaSTA^*\", capable de choisir des chemins d'outils rapides ou lents comme une personne, de réaliser des tâches de manière efficace : initialement, les LLMs planifient des tâches à haute vitesse, essayant de sélectionner des sous-routines basées sur des règles pour de nombreuses tâches, mais lorsqu'ils sont confrontés à de nouvelles ou difficiles tâches, la recherche lente de A^* est activée. En comparaison avec les méthodes récentes d'édition d'images, FaSTA^* est très efficace en termes de calcul et compétit avec les limites des leaders de base en termes de succès.",
+      "upvotes": 1,
+      "discussionId": "685e151d71131fa43be08b02",
+      "githubRepo": "https://github.com/tianyi-lab/FaSTAR",
+      "ai_summary": "A neurosymbolic agent combines language models for fast subtask planning with A$^*$ search for detailed toolpaths, creating a cost-efficient multi-turn image editing solution.",
+      "ai_keywords": [
+        "neurosymbolic agent",
+        "LLM",
+        "A$^*$ search",
+        "subtask planning",
+        "toolpath",
+        "inductive reasoning",
+        "symbolic subroutines",
+        "adaptive fast-slow planning"
+      ],
+      "githubStars": 1
+    },
+    "publishedAt": "2025-06-25T20:33:43.000Z",
+    "title": "FaSTA^*: Fast-Slow Toolpath Agent with Subroutine Mining for Efficient\n  Multi-turn Image Editing",
+    "summary": "We develop a cost-efficient neurosymbolic agent to address challenging\nmulti-turn image editing tasks such as \"Detect the bench in the image while\nrecoloring it to pink. Also, remove the cat for a clearer view and recolor the\nwall to yellow.'' It combines the fast, high-level subtask planning by large\nlanguage models (LLMs) with the slow, accurate, tool-use, and local A^*\nsearch per subtask to find a cost-efficient toolpath -- a sequence of calls to\nAI tools. To save the cost of A^* on similar subtasks, we perform inductive\nreasoning on previously successful toolpaths via LLMs to continuously\nextract/refine frequently used subroutines and reuse them as new tools for\nfuture tasks in an adaptive fast-slow planning, where the higher-level\nsubroutines are explored first, and only when they fail, the low-level A^*\nsearch is activated. The reusable symbolic subroutines considerably save\nexploration cost on the same types of subtasks applied to similar images,\nyielding a human-like fast-slow toolpath agent \"FaSTA^*'': fast subtask\nplanning followed by rule-based subroutine selection per subtask is attempted\nby LLMs at first, which is expected to cover most tasks, while slow A^*\nsearch is only triggered for novel and challenging subtasks. By comparing with\nrecent image editing approaches, we demonstrate FaSTA^* is significantly more\ncomputationally efficient while remaining competitive with the state-of-the-art\nbaseline in terms of success rate.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/NtOZn2DhSh9N1uAbfrj7k.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/ZIpYLZ5fG1gO1XJd-jFkj.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/647f5af5b0e96764589f3b2a/wxV2SepqrDMNMwErA1pdC.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.20911.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "647f5af5b0e96764589f3b2a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/VJ4cDyjp5M3V5WmI5gPIU.jpeg",
+      "fullname": "Tianyi Zhou",
+      "name": "zhoutianyi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 15
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.20430",
+      "authors": [
+        {
+          "_id": "685e119b71131fa43be08adf",
+          "name": "Weike Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae0",
+          "name": "Chaoyi Wu",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae1",
+          "name": "Yanjie Fan",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae2",
+          "name": "Xiaoman Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae3",
+          "name": "Pengcheng Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae4",
+          "name": "Yuze Sun",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae5",
+          "name": "Xiao Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae6",
+          "name": "Yanfeng Wang",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae7",
+          "name": "Ya Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae8",
+          "name": "Yongguo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08ae9",
+          "name": "Kun Sun",
+          "hidden": false
+        },
+        {
+          "_id": "685e119b71131fa43be08aea",
+          "name": "Weidi Xie",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64365addfae287005149dd24/fw_obfpXb7KTCzzHWtZIc.jpeg"
+      ],
+      "publishedAt": "2025-06-25T13:42:26.000Z",
+      "submittedOnDailyAt": "2025-06-27T02:10:11.490Z",
+      "title": "Système de Magie du Kombu Diagnostic de Lara Zeiji Régénération basée sur les traces",
+      "submittedOnDailyBy": {
+        "_id": "64365addfae287005149dd24",
+        "avatarUrl": "/avatars/bd6d4512d66fd9fd7fd5476ea7a44b46.svg",
+        "isPro": false,
+        "fullname": "Weike Zhao",
+        "user": "Angelakeke",
+        "type": "user"
+      },
+      "summary": "Le syndrome rare affecte plus de 300 millions de personnes à l'échelle mondiale, mais son diagnostic précis est un problème très difficile à travers le temps. Ce problème est principalement dû à la diversité clinique, la faible taux d'incidence individuelle et aux limites du savoir de nombreux médecins sur les syndromes rares. Dans ce contexte, nous présentons DeepRare, le premier système de diagnostic de syndromes rares. Ce système est basé sur des modèles de langage grands (LLM) et dispose de fonctions pour traiter différents types d'entrées cliniques. DeepRare génère des hypothèses de diagnostic ordonnées par priorité et relie chaque hypothèse à un analyse transparente, à des étapes intermédiaires et à des preuves médicales probables.\n\nDeepRare est constitué de trois composants importants : un hôte central et un module de mémoire à long terme, un serveur de surveillance spécialisé. Ce module intègre plus de 40 outils spécialisés et sources de connaissance médicale à l'échelle web, ainsi que l'accès à des informations cliniques actualisées. Ce design modulaire et scalable permet de maintenir la complexité du diagnostic tout en garantissant l'intégrité et l'applicabilité. DeepRare a été évalué sur 8 ensembles de données. Ce système a montré un rendement spécialisé sur 2,919 maladies et a atteint une précision de 100% sur 1,013 maladies. Dans des évaluations basées sur l'HPO, DeepRare a dépassé 15 autres méthodes (outils de diagnostic bioinformatique traditionnel, LLM, autres systèmes de surveillance) et a atteint une moyenne de Recall@1 de 57.18%, dépassant le second meilleur méthode (LLM de raisonnement) avec une différence efficace de 23.79%. Dans des scénarios d'entrée variés, DeepRare a dépassé Exomiser dans 53.20% des cas à 70.60%. Lors de vérification manuelle des chaînes de raisonnement, les experts cliniques ont atteint 95.40% d'accord. De plus, le système DeepRare a été implémenté sous forme d'application web avec une interface utilisateur amicale pour le web.",
+      "upvotes": 1,
+      "discussionId": "685e119b71131fa43be08aeb",
+      "ai_summary": "DeepRare, a large language model-based system, provides accurate rare disease diagnoses using heterogeneous clinical inputs and outperforms other diagnostic methods across various datasets.",
+      "ai_keywords": [
+        "large language model",
+        "LLm",
+        "diagnostic hypotheses",
+        "chain of reasoning",
+        "long-term memory module",
+        "domain-specific analytical tasks",
+        "medical knowledge sources",
+        "HPO-based evaluations",
+        "Recall@1 score",
+        "multi-modal input scenarios",
+        "web application"
+      ]
+    },
+    "publishedAt": "2025-06-25T09:42:26.000Z",
+    "title": "An Agentic System for Rare Disease Diagnosis with Traceable Reasoning",
+    "summary": "Rare diseases collectively affect over 300 million individuals worldwide, yet\ntimely and accurate diagnosis remains a pervasive challenge. This is largely\ndue to their clinical heterogeneity, low individual prevalence, and the limited\nfamiliarity most clinicians have with rare conditions. Here, we introduce\nDeepRare, the first rare disease diagnosis agentic system powered by a large\nlanguage model (LLM), capable of processing heterogeneous clinical inputs. The\nsystem generates ranked diagnostic hypotheses for rare diseases, each\naccompanied by a transparent chain of reasoning that links intermediate\nanalytic steps to verifiable medical evidence.\n  DeepRare comprises three key components: a central host with a long-term\nmemory module; specialized agent servers responsible for domain-specific\nanalytical tasks integrating over 40 specialized tools and web-scale,\nup-to-date medical knowledge sources, ensuring access to the most current\nclinical information. This modular and scalable design enables complex\ndiagnostic reasoning while maintaining traceability and adaptability. We\nevaluate DeepRare on eight datasets. The system demonstrates exceptional\ndiagnostic performance among 2,919 diseases, achieving 100% accuracy for 1013\ndiseases. In HPO-based evaluations, DeepRare significantly outperforms other 15\nmethods, like traditional bioinformatics diagnostic tools, LLMs, and other\nagentic systems, achieving an average Recall@1 score of 57.18% and surpassing\nthe second-best method (Reasoning LLM) by a substantial margin of 23.79\npercentage points. For multi-modal input scenarios, DeepRare achieves 70.60% at\nRecall@1 compared to Exomiser's 53.20% in 109 cases. Manual verification of\nreasoning chains by clinical experts achieves 95.40% agreements. Furthermore,\nthe DeepRare system has been implemented as a user-friendly web application\nhttp://raredx.cn/doctor.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64365addfae287005149dd24/fw_obfpXb7KTCzzHWtZIc.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.20430.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64365addfae287005149dd24",
+      "avatarUrl": "/avatars/bd6d4512d66fd9fd7fd5476ea7a44b46.svg",
+      "fullname": "Weike Zhao",
+      "name": "Angelakeke",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.15196",
+      "authors": [
+        {
+          "_id": "685d2b86696820ba1f28f3a8",
+          "user": {
+            "_id": "64d9a2439fef656cfd570232",
+            "avatarUrl": "/avatars/57e7282c21bb5eb716163ea4d679c158.svg",
+            "isPro": false,
+            "fullname": "Xianliang Yang",
+            "user": "VictorYXL",
+            "type": "user"
+          },
+          "name": "Xianliang Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:57:23.564Z",
+          "hidden": false
+        },
+        {
+          "_id": "685d2b86696820ba1f28f3a9",
+          "name": "Ling Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "685d2b86696820ba1f28f3aa",
+          "name": "Haolong Qian",
+          "hidden": false
+        },
+        {
+          "_id": "685d2b86696820ba1f28f3ab",
+          "name": "Lei Song",
+          "hidden": false
+        },
+        {
+          "_id": "685d2b86696820ba1f28f3ac",
+          "name": "Jiang Bian",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-18T07:20:01.000Z",
+      "submittedOnDailyAt": "2025-06-27T07:32:20.633Z",
+      "title": "HurlaXenics : Utilise les LMs pour résoudre des problèmes d'optimisation de combinaisons complexes.",
+      "submittedOnDailyBy": {
+        "_id": "64d9a2439fef656cfd570232",
+        "avatarUrl": "/avatars/57e7282c21bb5eb716163ea4d679c158.svg",
+        "isPro": false,
+        "fullname": "Xianliang Yang",
+        "user": "VictorYXL",
+        "type": "user"
+      },
+      "summary": "L'algorithme heuristique joue un rôle crucial dans l'optimisation combinatoire (OC), mais son design traditionnel dépend largement de connaissances manuelles et est difficile à généraliser largement aux différentes instances. Nous présentons le cadre HeurAgenix, qui utilise des modèles de langage grands (LLMs) pour : premièrement, évoluer des heuristiques et, deuxièmement, sélectionner automatiquement des stratégies d'évolution. Lors de l'étape d'évolution, HeurAgenix utilise un LLM pour comparer des solutions heuristiques initiales et de haute qualité, extrayant des stratégies évolutives réutilisables. Pendant la résolution des problèmes, HeurAgenix sélectionne dynamiquement l'heuristique la plus appropriée pour chaque état du problème, en utilisant la capacité d'observation du LLM. Pour garantir la flexibilité, cette sélection peut être un LLM plus récent ou un modèle léger entraîné, toujours que celui-ci ait des coûts d'inférence faibles. Pour atténuer la manque de sous-solutions fiables en raison de la complexité de l'OC, nous entraînons un sélecteur heuristique léger en utilisant un approche de rivalité duale qui combine la sélection et les signaux d'état. Les expériences extensives sur des benchmarks standards montrent que HeurAgenix dépasse les hyperheuristiques basées sur des LLMs actuels et peut compétir ou dépasser les solveurs professionnels. Le code est disponible sur https://github.com/microsoft/HeurAgenix.",
+      "upvotes": 1,
+      "discussionId": "685d2b87696820ba1f28f3ad",
+      "projectPage": "https://github.com/microsoft/HeurAgenix",
+      "githubRepo": "https://github.com/microsoft/HeurAgenix",
+      "ai_summary": "HeurAgenix, a two-stage hyper-heuristic framework using large language models, evolves and selects heuristics dynamically for combinatorial optimization problems, achieving performance on par with specialized solvers.",
+      "ai_keywords": [
+        "hyper-heuristic framework",
+        "large language models (LLMs)",
+        "heuristic evolution",
+        "selection preferences",
+        "state perception",
+        "dual-reward mechanism",
+        "combinatorial optimization (CO)"
+      ],
+      "githubStars": 20
+    },
+    "publishedAt": "2025-06-18T03:20:01.000Z",
+    "title": "HeurAgenix: Leveraging LLMs for Solving Complex Combinatorial\n  Optimization Challenges",
+    "summary": "Heuristic algorithms play a vital role in solving combinatorial optimization\n(CO) problems, yet traditional designs depend heavily on manual expertise and\nstruggle to generalize across diverse instances. We introduce\nHeurAgenix, a two-stage hyper-heuristic framework powered by large\nlanguage models (LLMs) that first evolves heuristics and then selects among\nthem automatically. In the heuristic evolution phase, HeurAgenix leverages an\nLLM to compare seed heuristic solutions with higher-quality solutions and\nextract reusable evolution strategies. During problem solving, it dynamically\npicks the most promising heuristic for each problem state, guided by the LLM's\nperception ability. For flexibility, this selector can be either a\nstate-of-the-art LLM or a fine-tuned lightweight model with lower inference\ncost. To mitigate the scarcity of reliable supervision caused by CO complexity,\nwe fine-tune the lightweight heuristic selector with a dual-reward mechanism\nthat jointly exploits singals from selection preferences and state perception,\nenabling robust selection under noisy annotations. Extensive experiments on\ncanonical benchmarks show that HeurAgenix not only outperforms existing\nLLM-based hyper-heuristics but also matches or exceeds specialized solvers.\nCode is available at https://github.com/microsoft/HeurAgenix.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.15196.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64d9a2439fef656cfd570232",
+      "avatarUrl": "/avatars/57e7282c21bb5eb716163ea4d679c158.svg",
+      "fullname": "Xianliang Yang",
+      "name": "VictorYXL",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.21103",
+      "authors": [
+        {
+          "_id": "685e38fe71131fa43be08b3e",
+          "user": {
+            "_id": "65f15414f2c28f56ad2d663b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f15414f2c28f56ad2d663b/KLI4KQcVauCH9tCO4WC5w.jpeg",
+            "isPro": false,
+            "fullname": "Tim Lawson",
+            "user": "tim-lawson",
+            "type": "user"
+          },
+          "name": "Tim Lawson",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:56:41.555Z",
+          "hidden": false
+        },
+        {
+          "_id": "685e38fe71131fa43be08b3f",
+          "name": "Laurence Aitchison",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-26T09:01:19.000Z",
+      "submittedOnDailyAt": "2025-06-27T07:54:14.957Z",
+      "title": "Le méthode d'entraînement qui passe par les couches intermédiaires d'un Transformer",
+      "submittedOnDailyBy": {
+        "_id": "65f15414f2c28f56ad2d663b",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f15414f2c28f56ad2d663b/KLI4KQcVauCH9tCO4WC5w.jpeg",
+        "isPro": false,
+        "fullname": "Tim Lawson",
+        "user": "tim-lawson",
+        "type": "user"
+      },
+      "summary": "La optimisation des conditions est une stratégie fréquemment utilisée pour améliorer l'efficacité des Transformers. Les méthodes actuelles se concentrent souvent sur l'élimination ou le saut de modules individuels (par exemple, des couches de densification dans le modèle de tokenisation) ou sur le saut de couches de manière indépendante. Cependant, les études d'interprétabilité indiquent que les couches intermédiaires d'un Transformer contiennent plus d'information non nécessaire, tandis que les couches initiales concentrent l'information sur la position des tokens. En se basant sur ces observations, nous proposons une nouvelle architecture qui saute un nombre possible de couches intermédiaires. Plus précisément, la structure des portes entraînées décide si le bloc central symétrique est sauté ou non en fonction de l'entrée, et la structure d'attention avec des portes bloque l'attention vers les tokens suivants sur les tokens sautés. La normalisation résiduelle est contrôlée à travers des échelles comme 'dropout' ou 'layer normalization', et la sparseness des portes est gérée par des pertes de normalisation adaptatives. Notre objectif était de réduire la demande en calcul de 'tokens courts' et potentiellement de développer des couches de représentation multiniveaux, mais dans les tailles évaluées, la comparaison avec une base dense de peu de couches montre que l'on n'a pas observé d'amélioration dans la perte évaluée ni dans le compromis entre perte et FLOPS. Notre code est disponible sur https://github.com/tim-lawson/skip-middle.",
+      "upvotes": 0,
+      "discussionId": "685e38ff71131fa43be08b40",
+      "githubRepo": "https://github.com/tim-lawson/skip-middle",
+      "ai_summary": "A novel conditional computation architecture for Transformers dynamically skips middle layers based on input and a gating mechanism, but does not outperform dense baselines in reducing computational cost or improving validation performance.",
+      "ai_keywords": [
+        "conditional computation",
+        "Transformers",
+        "mixture-of-experts layers",
+        "skip layers",
+        "gating mechanism",
+        "gated attention mechanism",
+        "residual norms",
+        "sandwich normalization",
+        "perilayernorm",
+        "adaptive regularization loss",
+        "token positions",
+        "multi-level representational hierarchy"
+      ],
+      "githubStars": 0
+    },
+    "publishedAt": "2025-06-26T05:01:19.000Z",
+    "title": "Learning to Skip the Middle Layers of Transformers",
+    "summary": "Conditional computation is a popular strategy to make Transformers more\nefficient. Existing methods often target individual modules (e.g.,\nmixture-of-experts layers) or skip layers independently of one another.\nHowever, interpretability research has demonstrated that the middle layers of\nTransformers exhibit greater redundancy, and that early layers aggregate\ninformation into token positions. Guided by these insights, we propose a novel\narchitecture that dynamically skips a variable number of layers from the middle\noutward. In particular, a learned gating mechanism determines whether to bypass\na symmetric span of central blocks based on the input, and a gated attention\nmechanism prevents subsequent tokens from attending to skipped token positions.\nResidual norms are controlled with a 'sandwich' or 'perilayernorm' scheme and\ngate sparsity with an adaptive regularization loss. We had aimed to reduce\ncompute requirements for 'simpler' tokens and potentially foster an emergent\nmulti-level representational hierarchy but, at the scales investigated, our\napproach does not achieve improvements in the trade-off between validation\ncross-entropy and estimated FLOPs compared to dense baselines with fewer\nlayers. We release our code at https://github.com/tim-lawson/skip-middle.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.21103.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65f15414f2c28f56ad2d663b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f15414f2c28f56ad2d663b/KLI4KQcVauCH9tCO4WC5w.jpeg",
+      "fullname": "Tim Lawson",
+      "name": "tim-lawson",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.18729",
+      "authors": [
+        {
+          "_id": "685d3bfd696820ba1f28f3b7",
+          "user": {
+            "_id": "6665b1f48c8082c85956a038",
+            "avatarUrl": "/avatars/bed84c343deb4c10e8165a501b152e79.svg",
+            "isPro": false,
+            "fullname": "Fang Duo Tsai",
+            "user": "fundwotsai2001",
+            "type": "user"
+          },
+          "name": "Fang-Duo Tsai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-06-27T08:57:21.464Z",
+          "hidden": false
+        },
+        {
+          "_id": "685d3bfd696820ba1f28f3b8",
+          "name": "Shih-Lun Wu",
+          "hidden": false
+        },
+        {
+          "_id": "685d3bfd696820ba1f28f3b9",
+          "name": "Weijaw Lee",
+          "hidden": false
+        },
+        {
+          "_id": "685d3bfd696820ba1f28f3ba",
+          "name": "Sheng-Ping Yang",
+          "hidden": false
+        },
+        {
+          "_id": "685d3bfd696820ba1f28f3bb",
+          "name": "Bo-Rui Chen",
+          "hidden": false
+        },
+        {
+          "_id": "685d3bfd696820ba1f28f3bc",
+          "name": "Hao-Chung Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "685d3bfd696820ba1f28f3bd",
+          "name": "Yi-Hsuan Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-23T15:08:03.000Z",
+      "submittedOnDailyAt": "2025-06-27T07:46:34.631Z",
+      "title": "MuseControlLight : Système de génération de musique multifonctionnel avec un condensateur léger installé",
+      "submittedOnDailyBy": {
+        "_id": "6665b1f48c8082c85956a038",
+        "avatarUrl": "/avatars/bed84c343deb4c10e8165a501b152e79.svg",
+        "isPro": false,
+        "fullname": "Fang Duo Tsai",
+        "user": "fundwotsai2001",
+        "type": "user"
+      },
+      "summary": "Le propose le MuseControlLite. C'est une structure légère qui utilise des caractéristiques musicales temporelles et des signaux de référence pour ajuster un modèle de génération de musique à partir de texte. L'un des principaux découvertes est que les vecteurs de position, qui sont peu utilisés dans des conditions textuelles, peuvent être importants conditionnellement et peuvent être représentés comme des fonctions temporelles. Par exemple, dans le contrôle de la mélodie, en ajoutant un vecteur de position de rotation à la couche d'attention croisée du décodage dans le modèle de transformer pré-entraîné (Stable Audio Open), la précision du contrôle augmente de 56,6% à 61,1%, ce qui nécessite seulement 6,75 fois moins de paramètres d'entraînement que la dernière structure d'ajustement. En évaluant différents formats d'entrée et de sortie de voix, le MuseControlLite montre une contrôlabilité supérieure à MusicGen-Large et Stable Audio Open ControlNet, et démontre que le coût d'ajustement est significativement moins élevé, nécessitant seulement 85M paramètres d'entraînement. Les sources de code, les points de vérification du modèle et des exemples sont disponibles sur la suivante URL :\nhttps://musecontrollite.github.io/web/",
+      "upvotes": 0,
+      "discussionId": "685d3bfd696820ba1f28f3be",
+      "projectPage": "https://musecontrollite.github.io/web/",
+      "githubRepo": "https://github.com/fundwotsai2001/MuseControlLite",
+      "ai_summary": "Rotary positional embeddings enhance time-varying control in text-to-music generation models with fewer parameters.",
+      "ai_keywords": [
+        "positional embeddings",
+        "rotary positional embeddings",
+        "cross-attention layers",
+        "decoupled cross-attention layers",
+        "diffusion Transformer",
+        "MusicGen-Large",
+        "Stable Audio Open ControlNet",
+        "audio inpainting",
+        "audio outpainting"
+      ],
+      "githubStars": 16
+    },
+    "publishedAt": "2025-06-23T11:08:03.000Z",
+    "title": "MuseControlLite: Multifunctional Music Generation with Lightweight\n  Conditioners",
+    "summary": "We propose MuseControlLite, a lightweight mechanism designed to fine-tune\ntext-to-music generation models for precise conditioning using various\ntime-varying musical attributes and reference audio signals. The key finding is\nthat positional embeddings, which have been seldom used by text-to-music\ngeneration models in the conditioner for text conditions, are critical when the\ncondition of interest is a function of time. Using melody control as an\nexample, our experiments show that simply adding rotary positional embeddings\nto the decoupled cross-attention layers increases control accuracy from 56.6%\nto 61.1%, while requiring 6.75 times fewer trainable parameters than\nstate-of-the-art fine-tuning mechanisms, using the same pre-trained diffusion\nTransformer model of Stable Audio Open. We evaluate various forms of musical\nattribute control, audio inpainting, and audio outpainting, demonstrating\nimproved controllability over MusicGen-Large and Stable Audio Open ControlNet\nat a significantly lower fine-tuning cost, with only 85M trainble parameters.\nSource code, model checkpoints, and demo examples are available at:\nhttps://musecontrollite.github.io/web/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.18729.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6665b1f48c8082c85956a038",
+      "avatarUrl": "/avatars/bed84c343deb4c10e8165a501b152e79.svg",
+      "fullname": "Fang Duo Tsai",
+      "name": "fundwotsai2001",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  }
+]
