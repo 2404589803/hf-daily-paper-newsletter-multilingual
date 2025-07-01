@@ -1,0 +1,357 @@
+[
+  {
+    "paper": {
+      "id": "2506.23044",
+      "authors": [
+        {
+          "_id": "686347cd588cea0da970c87a",
+          "user": {
+            "_id": "636f4c6b5d2050767e4a1491",
+            "avatarUrl": "/avatars/630c2ae12937fdb16ccd3280bc05729d.svg",
+            "isPro": false,
+            "fullname": "Guo-Hua Wang",
+            "user": "Flourish",
+            "type": "user"
+          },
+          "name": "Guo-Hua Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-01T10:13:51.516Z",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c87b",
+          "name": "Shanshan Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c87c",
+          "name": "Xinjie Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c87d",
+          "name": "Liangfu Cao",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c87e",
+          "name": "Pengxin Zhan",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c87f",
+          "name": "Lunhao Duan",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c880",
+          "name": "Shiyin Lu",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c881",
+          "name": "Minghao Fu",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c882",
+          "name": "Xiaohao Chen",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c883",
+          "name": "Jianshan Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c884",
+          "name": "Yang Li",
+          "hidden": false
+        },
+        {
+          "_id": "686347cd588cea0da970c885",
+          "name": "Qing-Guo Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-29T00:40:17.000Z",
+      "submittedOnDailyAt": "2025-07-01T04:30:09.856Z",
+      "title": "Informe Technique de OBIS-U1",
+      "submittedOnDailyBy": {
+        "_id": "636f4c6b5d2050767e4a1491",
+        "avatarUrl": "/avatars/630c2ae12937fdb16ccd3280bc05729d.svg",
+        "isPro": false,
+        "fullname": "Guo-Hua Wang",
+        "user": "Flourish",
+        "type": "user"
+      },
+      "summary": "Dans ce rapport, un modèle intégré Ovis-U1 avec 3 milliards de paramètres est présenté. Ce modèle intègre une compréhension de différents types, la génération d'images à partir de texte et l'édition d'images. Basé sur la série Ovis, Ovis-U1 combine un décodéur visuel basé sur la diffusion et un décodéur de tokens bi-directionnel pour permettre des tâches de génération d'images au niveau de GPT-4o. A différence de modèles précédents, Ovis-U1 ne utilise pas une MLLM fixe pour des tâches de génération. Au lieu de cela, il utilise une nouvelle approche d'entraînement intégré qui commence avec un modèle de langage. En comparaison avec des modèles entraînés uniquement pour des tâches de compréhension et de génération de langage, l'entraînement intégré montre un meilleur rendement et démontre les avantages de l'intégration de ces deux tâches. Ovis-U1 a atteint un score de 69,6 sur le benchmark multimodal de OpenCompass, dépassant des modèles récents tels que Ristretto-3B et SAIL-VL-1,5-2B. En génération d'images à partir de texte, il a atteint des scores de 83,72 sur DPG-Bench et de 0,89 sur GenEval, et en édition d'images, des scores de 4,00 sur ImgEdit-Bench et de 6,42 sur GEdit-Bench-EN. Comme version initiale de la série de modèles Ovis, Ovis-U1 dépasse les limites de compréhension, génération et édition d'images.",
+      "upvotes": 30,
+      "discussionId": "686347cd588cea0da970c886",
+      "githubRepo": "https://github.com/AIDC-AI/Ovis-U1",
+      "ai_summary": "Ovis-U1, a 3-billion-parameter model, combines multimodal understanding, text-to-image generation, and image editing, achieving state-of-the-art performance in various benchmarks.",
+      "ai_keywords": [
+        "diffusion-based visual decoder",
+        "bidirectional token refiner",
+        "unified training",
+        "OpenCompass",
+        "DPG-Bench",
+        "GenEval",
+        "ImgEdit-Bench",
+        "GEdit-Bench-EN"
+      ],
+      "githubStars": 137
+    },
+    "publishedAt": "2025-06-28T20:40:17.000Z",
+    "title": "Ovis-U1 Technical Report",
+    "summary": "In this report, we introduce Ovis-U1, a 3-billion-parameter unified model\nthat integrates multimodal understanding, text-to-image generation, and image\nediting capabilities. Building on the foundation of the Ovis series, Ovis-U1\nincorporates a diffusion-based visual decoder paired with a bidirectional token\nrefiner, enabling image generation tasks comparable to leading models like\nGPT-4o. Unlike some previous models that use a frozen MLLM for generation\ntasks, Ovis-U1 utilizes a new unified training approach starting from a\nlanguage model. Compared to training solely on understanding or generation\ntasks, unified training yields better performance, demonstrating the\nenhancement achieved by integrating these two tasks. Ovis-U1 achieves a score\nof 69.6 on the OpenCompass Multi-modal Academic Benchmark, surpassing recent\nstate-of-the-art models such as Ristretto-3B and SAIL-VL-1.5-2B. In\ntext-to-image generation, it excels with scores of 83.72 and 0.89 on the\nDPG-Bench and GenEval benchmarks, respectively. For image editing, it achieves\n4.00 and 6.42 on the ImgEdit-Bench and GEdit-Bench-EN, respectively. As the\ninitial version of the Ovis unified model series, Ovis-U1 pushes the boundaries\nof multimodal understanding, generation, and editing.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.23044.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "636f4c6b5d2050767e4a1491",
+      "avatarUrl": "/avatars/630c2ae12937fdb16ccd3280bc05729d.svg",
+      "fullname": "Guo-Hua Wang",
+      "name": "Flourish",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.23858",
+      "authors": [
+        {
+          "_id": "686347d3588cea0da970c888",
+          "name": "Jianzong Wu",
+          "hidden": false
+        },
+        {
+          "_id": "686347d3588cea0da970c889",
+          "user": {
+            "_id": "64560a2aaaaf85a98fa9a4b9",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64560a2aaaaf85a98fa9a4b9/2Kp0S0sMVpKqo81s-l_Yt.png",
+            "isPro": false,
+            "fullname": "Liang Hou",
+            "user": "lianghou",
+            "type": "user"
+          },
+          "name": "Liang Hou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-01T10:13:49.312Z",
+          "hidden": false
+        },
+        {
+          "_id": "686347d3588cea0da970c88a",
+          "name": "Haotian Yang",
+          "hidden": false
+        },
+        {
+          "_id": "686347d3588cea0da970c88b",
+          "name": "Xin Tao",
+          "hidden": false
+        },
+        {
+          "_id": "686347d3588cea0da970c88c",
+          "name": "Ye Tian",
+          "hidden": false
+        },
+        {
+          "_id": "686347d3588cea0da970c88d",
+          "name": "Pengfei Wan",
+          "hidden": false
+        },
+        {
+          "_id": "686347d3588cea0da970c88e",
+          "name": "Di Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686347d3588cea0da970c88f",
+          "name": "Yunhai Tong",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-30T13:52:31.000Z",
+      "submittedOnDailyAt": "2025-07-01T00:59:37.837Z",
+      "title": "VMoBA : Modèle de Diffusion de Vidéo Utilisant la Mélange et la Synthèse de Blocs et de l'Attention des Blocs",
+      "submittedOnDailyBy": {
+        "_id": "657a6eed1ccc3c2a5ea7b585",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/RIQIF-JJdNI0SwJEq_9z7.jpeg",
+        "isPro": true,
+        "fullname": "Jianzong Wu",
+        "user": "jianzongwu",
+        "type": "user"
+      },
+      "summary": "La complexité du deuxième niveau du mécanisme d'attention total est un grand limite pour les modèles de diffusion vidéo (VDMs) qui génèrent des vidéos longues et à haute résolution. Des méthodes d'attention rares ont été proposées, mais beaucoup sont conçues pour accélérer l'inférence sans lien avec l'entraînement, ou ne peuvent pas détecter des caractéristiques temporo-spatiales uniques dans les données vidéo natives. Dans cet article, nous présentons un nouveau mécanisme d'attention rare conçu spécifiquement pour les VDMs : l'Attention Mixture de Blocs Vidéo (VMoBA). Basé sur un analyse profonde des motifs d'attention des transformeurs vidéo entraînés, cette analyse révèle une forte localisation temporo-spatiale, l'importance de la requête variable et le niveau de concentration des têtes d'attention. VMoBA renforce le cadre original de MoBA avec trois principales modifications : (1) un plan de division de blocs récursifs en trois dimensions (1D-2D-3D), qui adapte efficacement et dynamiquement différents motifs d'attention temporo-spatiale ; (2) la sélection de blocs globaux, qui priorise l'interaction de blocs entre requête et clé dans les têtes d'attention les plus significatives ; (3) la sélection de blocs basée sur des seuils, qui détermine dynamiquement la quantité de blocs participant basé sur la similitude cumulée. Des expériences extensives montrent que VMoBA accélère significativement l'entraînement des VDMs, atteignant une vitesse de FLOPs de 2,92 fois et une réduction du retard de 1,48 fois, tout en atteignant des qualités de génération comparables ou supérieures à l'attention complète. De plus, VMoBA montre un rendement compétitif en inférence sans entraînement et fournit une vitesse de FLOPs de 2,40 fois et une réduction du retard de 1,35 fois dans la génération de vidéos à haute résolution.",
+      "upvotes": 22,
+      "discussionId": "686347d3588cea0da970c890",
+      "projectPage": "https://github.com/KwaiVGI/VMoBA",
+      "githubRepo": "https://github.com/KwaiVGI/VMoBA",
+      "ai_summary": "VMoBA, a novel sparse attention mechanism for Video Diffusion Models (VDMs), accelerates training and inference by addressing the quadratic complexity of full attention mechanisms while maintaining or improving video generation quality.",
+      "ai_keywords": [
+        "quadartic complexity",
+        "full attention mechanisms",
+        "Video Diffusion Models",
+        "VDMs",
+        "sparse attention methods",
+        "in-depth analysis",
+        "attention patterns",
+        "video transformers",
+        "spatio-temporal locality",
+        "query importance",
+        "head-specific concentration",
+        "layer-wise recurrent block partition scheme",
+        "global block selection",
+        "threshold-based block selection",
+        "FLOPs",
+        "latency",
+        "high-res video generation"
+      ],
+      "githubStars": 13
+    },
+    "publishedAt": "2025-06-30T09:52:31.000Z",
+    "title": "VMoBA: Mixture-of-Block Attention for Video Diffusion Models",
+    "summary": "The quadratic complexity of full attention mechanisms poses a significant\nbottleneck for Video Diffusion Models (VDMs) aiming to generate long-duration,\nhigh-resolution videos. While various sparse attention methods have been\nproposed, many are designed as training-free inference accelerators or do not\noptimally capture the unique spatio-temporal characteristics inherent in video\ndata when trained natively. This paper introduces Video Mixture of Block\nAttention (VMoBA), a novel sparse attention mechanism specifically adapted for\nVDMs. Motivated by an in-depth analysis of attention patterns within\npre-trained video transformers, which revealed strong spatio-temporal locality,\nvarying query importance, and head-specific concentration levels, VMoBA\nenhances the original MoBA framework with three key modifications: (1) a\nlayer-wise recurrent block partition scheme (1D-2D-3D) to dynamically adapt to\ndiverse spatio-temporal attention patterns and improve efficiency; (2) global\nblock selection to prioritize the most salient query-key block interactions\nacross an entire attention head; and (3) threshold-based block selection to\ndynamically determine the number of attended blocks based on their cumulative\nsimilarity. Extensive experiments demonstrate that VMoBA significantly\naccelerates the training of VDMs on longer sequences, achieving 2.92x FLOPs and\n1.48x latency speedup, while attaining comparable or even superior generation\nquality to full attention. Furthermore, VMoBA exhibits competitive performance\nin training-free inference, offering 2.40x FLOPs and 1.35x latency speedup for\nhigh-res video generation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.23858.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "657a6eed1ccc3c2a5ea7b585",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/RIQIF-JJdNI0SwJEq_9z7.jpeg",
+      "fullname": "Jianzong Wu",
+      "name": "jianzongwu",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 14
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.24123",
+      "authors": [
+        {
+          "_id": "68634673588cea0da970c862",
+          "name": "Yue Ma",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c863",
+          "name": "Qingyan Bai",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c864",
+          "name": "Hao Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c865",
+          "name": "Ka Leong Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c866",
+          "name": "Qiuyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c867",
+          "name": "Hongyu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c868",
+          "name": "Zichen Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c869",
+          "name": "Haofan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c86a",
+          "user": {
+            "_id": "6478a982256b62e219917d67",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/PUJ-N2cQxgEmDGfyjajyA.jpeg",
+            "isPro": false,
+            "fullname": "JingyeChen22",
+            "user": "JingyeChen22",
+            "type": "user"
+          },
+          "name": "Jingye Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-01T10:14:05.849Z",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c86b",
+          "name": "Yujun Shen",
+          "hidden": false
+        },
+        {
+          "_id": "68634673588cea0da970c86c",
+          "name": "Qifeng Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-30T17:59:06.000Z",
+      "submittedOnDailyAt": "2025-07-01T01:00:32.385Z",
+      "title": "El Karakchi : Personnalisation des images de la technologie de style prestationnée",
+      "submittedOnDailyBy": {
+        "_id": "63f0baf66309c84d5f4a2226",
+        "avatarUrl": "/avatars/a122f7d92441bd2feef7d4eda993fab7.svg",
+        "isPro": false,
+        "fullname": "Meme155",
+        "user": "Meme145",
+        "type": "user"
+      },
+      "summary": "El Caligrafía introduit un nouveau cadre de travail basé sur la différenciation. Ce cadre intègre de manière évolutive l'amélioration du texte à l'échelle supérieure et le design artistique du texte, proposant de nouvelles idées pour son application dans le design numérique et les applications graphiques. Pour résoudre la généralisation et la dépendance des données dans le design du texte, le cadre offre trois contributions technologiques principales. Premièrement, il utilise des modèles générés d'images à partir de texte entraîné préalablement et de grands modèles de langage pour développer une structure d'auto-apprentissage qui permet la création automatique de références de texte stylistique. Deuxièmement, il introduit un cadre de style codifié localement à travers un codificateur stylistique entraînable, extrayant des caractéristiques stylistiques fortes d'images de référence. Ce cadre est constitué de Qformer et de couches linéaires. En outre, le cadre utilise une structure de génération de texte qui insère des images de référence directement dans le processus de désinfection, promouvant une précision de coincidence avec l'objet de style. Caligrafía évalue largement, tant quantitativement que qualitativement, dans une large gamme de sources et de contextes de design, répliquant précisément les détails complexes d'un style et déterminant avec précision la position des lettres. En automatisant le design du texte de haute qualité et visuellement cohérent, Caligrafía dépasse les modèles traditionnels et confère de la force et de la créativité aux praticiens modernes dans l'art numérique, le branding et le design du texte de contenu.",
+      "upvotes": 20,
+      "discussionId": "68634673588cea0da970c86d",
+      "projectPage": "https://calligrapher2025.github.io/Calligrapher/",
+      "githubRepo": "https://github.com/Calligrapher2025/Calligrapher",
+      "ai_summary": "Calligrapher uses a diffusion-based framework with self-distillation and localized style injection to generate high-quality, stylistically consistent digital typography.",
+      "ai_keywords": [
+        "diffusion-based framework",
+        "self-distillation mechanism",
+        "text-to-image generative model",
+        "large language model",
+        "localized style injection",
+        "Qformer",
+        "linear layers",
+        "style encoder",
+        "in-context generation mechanism",
+        "denoising process",
+        "stylistic details",
+        "glyph positioning"
+      ],
+      "githubStars": 21
+    },
+    "publishedAt": "2025-06-30T13:59:06.000Z",
+    "title": "Calligrapher: Freestyle Text Image Customization",
+    "summary": "We introduce Calligrapher, a novel diffusion-based framework that\ninnovatively integrates advanced text customization with artistic typography\nfor digital calligraphy and design applications. Addressing the challenges of\nprecise style control and data dependency in typographic customization, our\nframework incorporates three key technical contributions. First, we develop a\nself-distillation mechanism that leverages the pre-trained text-to-image\ngenerative model itself alongside the large language model to automatically\nconstruct a style-centric typography benchmark. Second, we introduce a\nlocalized style injection framework via a trainable style encoder, which\ncomprises both Qformer and linear layers, to extract robust style features from\nreference images. An in-context generation mechanism is also employed to\ndirectly embed reference images into the denoising process, further enhancing\nthe refined alignment of target styles. Extensive quantitative and qualitative\nevaluations across diverse fonts and design contexts confirm Calligrapher's\naccurate reproduction of intricate stylistic details and precise glyph\npositioning. By automating high-quality, visually consistent typography,\nCalligrapher surpasses traditional models, empowering creative practitioners in\ndigital art, branding, and contextual typographic design.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.24123.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63f0baf66309c84d5f4a2226",
+      "avatarUrl": "/avatars/a122f7d92441bd2feef7d4eda993fab7.svg",
+      "fullname": "Meme155",
+      "name": "Meme145",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  }
+]
