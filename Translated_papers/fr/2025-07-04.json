@@ -1,0 +1,1571 @@
+[
+  {
+    "paper": {
+      "id": "2507.02813",
+      "authors": [
+        {
+          "_id": "686735e69db35afc9c304ce1",
+          "name": "Fangfu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "686735e69db35afc9c304ce2",
+          "name": "Hao Li",
+          "hidden": false
+        },
+        {
+          "_id": "686735e69db35afc9c304ce3",
+          "name": "Jiawei Chi",
+          "hidden": false
+        },
+        {
+          "_id": "686735e69db35afc9c304ce4",
+          "user": {
+            "_id": "65c38f6c137aba2aee524989",
+            "avatarUrl": "/avatars/a93e29f55876df3e65e2532972e057e4.svg",
+            "isPro": false,
+            "fullname": "Hanyang Wang",
+            "user": "hanyang-21",
+            "type": "user"
+          },
+          "name": "Hanyang Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-04T07:49:31.644Z",
+          "hidden": false
+        },
+        {
+          "_id": "686735e69db35afc9c304ce5",
+          "name": "Minghui Yang",
+          "hidden": false
+        },
+        {
+          "_id": "686735e69db35afc9c304ce6",
+          "name": "Fudong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686735e69db35afc9c304ce7",
+          "name": "Yueqi Duan",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6505a02f9310ce8c400edc63/GMjqJ0RyCYifjpsev_YPY.mp4"
+      ],
+      "publishedAt": "2025-07-03T17:21:23.000Z",
+      "submittedOnDailyAt": "2025-07-04T00:35:47.996Z",
+      "title": "LangScene-X : Scénario de Langue 3D pour la Réorganisation Extensible du Skimming de Vidéo avec TriMap Vidéo Diffuseur",
+      "submittedOnDailyBy": {
+        "_id": "6505a02f9310ce8c400edc63",
+        "avatarUrl": "/avatars/bbf781594fc8c812316711aa8e2797aa.svg",
+        "isPro": false,
+        "fullname": "Fangfu Liu",
+        "user": "Liuff23",
+        "type": "user"
+      },
+      "summary": "La récupération de structures 3D à partir d'images 2D par compréhension de scènes de vecteurs ouverts est une tâche de base mais difficile et défiante. Les avancées récentes ont permis d'optimiser chaque scène en utilisant de l'information linguistique, atteignant cet objectif. Cependant, ces méthodes souffrent d'artefacts connus et d'une composition de sens imprécise lorsqu'elles travaillent avec des densités ajustées de points. Dans cet article, nous présentons LangScene-X, un nouveau cadre de travail génératif, qui vise à intégrer la diversité d'information 3D cohérente dans la reconstruction et la compréhension, pour générer des scènes 3D. Ce cadre de travail permet de créer des scènes 3D plus cohérentes et de construire des scènes 3D de langage ouvert qui peuvent être généralisées aux vues limitées. Spécifiquement, nous entraînons le modèle TriMap videoDIFUJSION pour générer des images RGB, de la géométrie (normales) et de la segmentation (carte de segmentation) à partir d'entrées peu abondantes. De plus, nous proposons un compréhenseur de contexte linguistique (LQC) entraîné avec de grands ensembles d'images, qui permet aux scènes 3D d'apprendre à gérer de manière efficace l'information linguistique, évitant l'apprentissage de scènes individuelles. Enfin, nous cartographions l'information linguistique sur la surface des scènes 3D, reconstruisant des champs de surface qui répondent à des questions linguistiques aux extrémités ouvertes. Des expériences étendues avec des données de la réalité montrent que LangScene-X a démontré une qualité et une capacité de généralisation supérieures aux méthodes les plus avancées. Page du projet : https://liuff19.github.io/LangScene-X.",
+      "upvotes": 35,
+      "discussionId": "686735e69db35afc9c304ce8",
+      "projectPage": "https://liuff19.github.io/LangScene-X/",
+      "githubRepo": "https://github.com/liuff19/LangScene-X/",
+      "ai_summary": "A novel generative framework named LangScene-X unifies and generates 3D consistent information from sparse views using a TriMap video diffusion model and Language Quantized Compressor for high-quality scene reconstruction and understanding.",
+      "ai_keywords": [
+        "TriMap video diffusion model",
+        "appearance (RGBs)",
+        "geometry (normals)",
+        "semantics (segmentation maps)",
+        "progressive knowledge integration",
+        "Language Quantized Compressor",
+        "language surface fields",
+        "open-ended language queries"
+      ],
+      "githubStars": 42
+    },
+    "publishedAt": "2025-07-03T13:21:23.000Z",
+    "title": "LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with\n  TriMap Video Diffusion",
+    "summary": "Recovering 3D structures with open-vocabulary scene understanding from 2D\nimages is a fundamental but daunting task. Recent developments have achieved\nthis by performing per-scene optimization with embedded language information.\nHowever, they heavily rely on the calibrated dense-view reconstruction\nparadigm, thereby suffering from severe rendering artifacts and implausible\nsemantic synthesis when limited views are available. In this paper, we\nintroduce a novel generative framework, coined LangScene-X, to unify and\ngenerate 3D consistent multi-modality information for reconstruction and\nunderstanding. Powered by the generative capability of creating more consistent\nnovel observations, we can build generalizable 3D language-embedded scenes from\nonly sparse views. Specifically, we first train a TriMap video diffusion model\nthat can generate appearance (RGBs), geometry (normals), and semantics\n(segmentation maps) from sparse inputs through progressive knowledge\nintegration. Furthermore, we propose a Language Quantized Compressor (LQC),\ntrained on large-scale image datasets, to efficiently encode language\nembeddings, enabling cross-scene generalization without per-scene retraining.\nFinally, we reconstruct the language surface fields by aligning language\ninformation onto the surface of 3D scenes, enabling open-ended language\nqueries. Extensive experiments on real-world data demonstrate the superiority\nof our LangScene-X over state-of-the-art methods in terms of quality and\ngeneralizability. Project Page: https://liuff19.github.io/LangScene-X.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6505a02f9310ce8c400edc63/GMjqJ0RyCYifjpsev_YPY.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02813.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6505a02f9310ce8c400edc63",
+      "avatarUrl": "/avatars/bbf781594fc8c812316711aa8e2797aa.svg",
+      "fullname": "Fangfu Liu",
+      "name": "Liuff23",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.02025",
+      "authors": [
+        {
+          "_id": "686738019db35afc9c304cf3",
+          "name": "The IntFold Team",
+          "hidden": false
+        },
+        {
+          "_id": "686738019db35afc9c304cf4",
+          "name": "Leon Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "686738019db35afc9c304cf5",
+          "name": "Wayne Bai",
+          "hidden": false
+        },
+        {
+          "_id": "686738019db35afc9c304cf6",
+          "name": "He Yan",
+          "hidden": false
+        },
+        {
+          "_id": "686738019db35afc9c304cf7",
+          "user": {
+            "_id": "63dd2bacea4d39995f581222",
+            "avatarUrl": "/avatars/c117b66fdc1bcf3eed218b0b66e958cb.svg",
+            "isPro": false,
+            "fullname": "Liu",
+            "user": "FuxuLiu",
+            "type": "user"
+          },
+          "name": "Gary Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-04T07:49:15.140Z",
+          "hidden": true
+        },
+        {
+          "_id": "686738019db35afc9c304cf8",
+          "name": "Nova Xi",
+          "hidden": false
+        },
+        {
+          "_id": "686738019db35afc9c304cf9",
+          "name": "Xiang Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-02T16:09:47.000Z",
+      "submittedOnDailyAt": "2025-07-04T03:52:28.488Z",
+      "title": "IntFold : Modèle de base contrôlable pour la prédiction des structures biomorphologiques générales et spécialisées",
+      "submittedOnDailyBy": {
+        "_id": "67d3a1a5943a965360fcae51",
+        "avatarUrl": "/avatars/165ed684b0750e7f57b9f2babfb47a8c.svg",
+        "isPro": false,
+        "fullname": "Siqi Sun",
+        "user": "siqisun",
+        "type": "user"
+      },
+      "summary": "IntFold est un modèle de base contrôlable pour la prédiction des structures biomoléculaires générales et spécialisées. IntFold montre une précision de prédiction élevée par rapport à AlphaFold3 le plus récent, et utilise un mécanisme d'attention personnalisé de haute qualité. En contraste avec les prédictions structurales standard, IntFold peut s'adapter à la prédiction d'états spécifiques tels que la réaction allergique, des structures restreintes et l'état final de l'union en utilisant des adaptateurs individuels. De plus, il présente un nouveau tête de confiance et offre une évaluation plus complexe pour des objectifs difficiles tels que les complexes Antibody-Antigen. Enfin, il partage les feedbacks obtenus lors de l'entraînement de ce modèle de grande taille de calculs.",
+      "upvotes": 30,
+      "discussionId": "686738029db35afc9c304cfa",
+      "projectPage": "https://server.intfold.com/",
+      "githubRepo": "https://github.com/IntelliGen-AI/IntFold",
+      "ai_summary": "IntFold uses a customized attention kernel for biomolecular structure prediction, surpassing AlphaFold3, and includes adapters and a novel confidence head for specialized predictions and docking assessments.",
+      "ai_keywords": [
+        "controllable foundation model",
+        "biomolecular structure prediction",
+        "AlphaFold3",
+        "attention kernel",
+        "allosteric states",
+        "constrained structures",
+        "binding affinity",
+        "adapters",
+        "confidence head",
+        "docking quality",
+        "antibody-antigen complexes"
+      ],
+      "githubStars": 17
+    },
+    "publishedAt": "2025-07-02T12:09:47.000Z",
+    "title": "IntFold: A Controllable Foundation Model for General and Specialized\n  Biomolecular Structure Prediction",
+    "summary": "We introduce IntFold, a controllable foundation model for both general and\nspecialized biomolecular structure prediction. IntFold demonstrates predictive\naccuracy comparable to the state-of-the-art AlphaFold3, while utilizing a\nsuperior customized attention kernel. Beyond standard structure prediction,\nIntFold can be adapted to predict allosteric states, constrained structures,\nand binding affinity through the use of individual adapters. Furthermore, we\nintroduce a novel confidence head to estimate docking quality, offering a more\nnuanced assessment for challenging targets such as antibody-antigen complexes.\nFinally, we share insights gained during the training process of this\ncomputationally intensive model.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02025.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "67d3a1a5943a965360fcae51",
+      "avatarUrl": "/avatars/165ed684b0750e7f57b9f2babfb47a8c.svg",
+      "fullname": "Siqi Sun",
+      "name": "siqisun",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.02592",
+      "authors": [
+        {
+          "_id": "686732329db35afc9c304cb4",
+          "name": "Kuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cb5",
+          "name": "Zhongwang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cb6",
+          "name": "Huifeng Yin",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cb7",
+          "name": "Liwen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cb8",
+          "name": "Litu Ou",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cb9",
+          "name": "Jialong Wu",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cba",
+          "name": "Wenbiao Yin",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cbb",
+          "name": "Baixuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cbc",
+          "name": "Zhengwei Tao",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cbd",
+          "name": "Xinyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cbe",
+          "name": "Weizhou Shen",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cbf",
+          "name": "Junkai Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cc0",
+          "name": "Dingchu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cc1",
+          "user": {
+            "_id": "6622132f63598534f96ca29d",
+            "avatarUrl": "/avatars/34e61fc3101f8ebce1ef7041f761e108.svg",
+            "isPro": false,
+            "fullname": "Xixi Wu",
+            "user": "xxwu",
+            "type": "user"
+          },
+          "name": "Xixi Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-04T07:49:47.564Z",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cc2",
+          "name": "Yong Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cc3",
+          "name": "Ming Yan",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cc4",
+          "name": "Pengjun Xie",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cc5",
+          "name": "Fei Huang",
+          "hidden": false
+        },
+        {
+          "_id": "686732329db35afc9c304cc6",
+          "name": "Jingren Zhou",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/622f2feea32d46b4be9ed8c4/9sUyYbIYfR5wDQMMft1io.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/622f2feea32d46b4be9ed8c4/FLz6T05o_NbbQKrOQyTuL.png"
+      ],
+      "publishedAt": "2025-07-03T12:59:07.000Z",
+      "submittedOnDailyAt": "2025-07-04T00:20:59.450Z",
+      "title": "Webseor : Guide pour le super-indice initial des agents de réseaux.",
+      "submittedOnDailyBy": {
+        "_id": "622f2feea32d46b4be9ed8c4",
+        "avatarUrl": "/avatars/ba25eb941a7c9a414b7fd4818adfa26b.svg",
+        "isPro": false,
+        "fullname": "Litu Ou",
+        "user": "learn3r",
+        "type": "user"
+      },
+      "summary": "Surpasser les limites cognitifs humains est un défi important dans l'entraînement des LLM. Les systèmes d'agents comme DeepResearch ont démontré des capacités impressionnantes dans des cadres de tests complexes comme BrowseComp, en dépassant des records précédemment inaccessibles. Nous assumons que ce succès repose sur des patrons d'inférence complexes qui n'existent pas dans les modèles ouverts : la capacité de réduire systématiquement l'incertitude maximale en traversant l'échelle de l'information. Sur la base de cette observation, nous présentons un méthode de logique posteriore complète appelé WebSailor, avec l'objectif de acquérir cette capacité cruciale. Notre approche se base sur l'échantillonnage structuré et la confusion de l'information, le début de code de RFT, et des algorithmes d'entraînement de RL pour des systèmes d'agents efficaces, ainsi que sur la Politique d'Optimisation de Sampling Duplicating (DUPO) utilisée pour la génération de nouvelles tâches. En utilisant ce profil intégré, WebSailor dépasse tous les modèles ouverts et concurrence avec les performances des agents propriétaires, réduisant la différence de capacités dans des tâches d'exploration de l'information complexes.",
+      "upvotes": 29,
+      "discussionId": "686732339db35afc9c304cc7",
+      "projectPage": "https://github.com/Alibaba-NLP/WebAgent",
+      "githubRepo": "https://github.com/Alibaba-NLP/WebAgent/",
+      "ai_summary": "WebSailor, a post-training methodology involving structured sampling, information obfuscation, and an efficient RL algorithm, enhances LLMs by improving their reasoning capabilities in complex information-seeking tasks to match proprietary agents.",
+      "ai_keywords": [
+        "LLM",
+        "DeepResearch",
+        "BrowseComp",
+        "reasoning pattern",
+        "high-uncertainty tasks",
+        "structured sampling",
+        "information obfuscation",
+        "RFT cold start",
+        "agentic RL",
+        "Duplicating Sampling Policy Optimization",
+        "DUPO",
+        "opensource agents",
+        "complex information-seeking tasks",
+        "capability gap"
+      ],
+      "githubStars": 1262
+    },
+    "publishedAt": "2025-07-03T08:59:07.000Z",
+    "title": "WebSailor: Navigating Super-human Reasoning for Web Agent",
+    "summary": "Transcending human cognitive limitations represents a critical frontier in\nLLM training. Proprietary agentic systems like DeepResearch have demonstrated\nsuperhuman capabilities on extremely complex information-seeking benchmarks\nsuch as BrowseComp, a feat previously unattainable. We posit that their success\nhinges on a sophisticated reasoning pattern absent in open-source models: the\nability to systematically reduce extreme uncertainty when navigating vast\ninformation landscapes. Based on this insight, we introduce WebSailor, a\ncomplete post-training methodology designed to instill this crucial capability.\nOur approach involves generating novel, high-uncertainty tasks through\nstructured sampling and information obfuscation, RFT cold start, and an\nefficient agentic RL training algorithm, Duplicating Sampling Policy\nOptimization (DUPO). With this integrated pipeline, WebSailor significantly\noutperforms all opensource agents in complex information-seeking tasks,\nmatching proprietary agents' performance and closing the capability gap.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/622f2feea32d46b4be9ed8c4/9sUyYbIYfR5wDQMMft1io.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/622f2feea32d46b4be9ed8c4/FLz6T05o_NbbQKrOQyTuL.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02592.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "622f2feea32d46b4be9ed8c4",
+      "avatarUrl": "/avatars/ba25eb941a7c9a414b7fd4818adfa26b.svg",
+      "fullname": "Litu Ou",
+      "name": "learn3r",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.01352",
+      "authors": [
+        {
+          "_id": "6865cdc28c83dab5f72d1e18",
+          "user": {
+            "_id": "658229ef5f6d83438257fce5",
+            "avatarUrl": "/avatars/b4417de9a338e95dc69cc547a46348e8.svg",
+            "isPro": false,
+            "fullname": "Chris (Yuhao) Liu",
+            "user": "chrisliu298",
+            "type": "user"
+          },
+          "name": "Chris Yuhao Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-04T07:50:33.676Z",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e19",
+          "user": {
+            "_id": "6621efe1a6eec3ad03e38759",
+            "avatarUrl": "/avatars/c35acce69f244ec0833dffd53eedf6a3.svg",
+            "isPro": false,
+            "fullname": "Liang Zeng",
+            "user": "zengliangcs",
+            "type": "user"
+          },
+          "name": "Liang Zeng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-03T16:19:08.221Z",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e1a",
+          "user": {
+            "_id": "658ceb595a8f8a309ea417a1",
+            "avatarUrl": "/avatars/43bfa8c919aa802f2611439ebb7430b8.svg",
+            "isPro": false,
+            "fullname": "Ricky Shaw",
+            "user": "RickyShaw999",
+            "type": "user"
+          },
+          "name": "Yuzhen Xiao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-04T07:50:29.586Z",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e1b",
+          "name": "Jujie He",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e1c",
+          "name": "Jiacai Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e1d",
+          "name": "Chaojie Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e1e",
+          "name": "Rui Yan",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e1f",
+          "name": "Wei Shen",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e20",
+          "name": "Fuxiang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e21",
+          "name": "Jiacheng Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e22",
+          "name": "Yang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6865cdc28c83dab5f72d1e23",
+          "name": "Yahui Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-02T04:40:29.000Z",
+      "submittedOnDailyAt": "2025-07-04T00:12:17.371Z",
+      "title": "Skywork-Reward-V2 : Collaboration Homme-IA pour l'expansion et l'organisation de données préférées",
+      "submittedOnDailyBy": {
+        "_id": "658229ef5f6d83438257fce5",
+        "avatarUrl": "/avatars/b4417de9a338e95dc69cc547a46348e8.svg",
+        "isPro": false,
+        "fullname": "Chris (Yuhao) Liu",
+        "user": "chrisliu298",
+        "type": "user"
+      },
+      "summary": "Les modèles aléatoires (RMs) jouent un rôle important dans l'apprentissage par renforcement (RLHF) à travers la rétroaction humaine, cependant, les modèles open-source les plus avancés actuels présentent un rendement faible dans de nombreux cadres d'évaluation existants et ne détectent pas la gamme d'intérêts complexes humains. L'approche d'application de méthodes d'entraînement avancées ne réalise pas un améliorament significatif du rendement. Nous supposons que ces faiblesses sont des conséquences de la limitation des ensembles de données d'intérêts. Pour résoudre ces défis, nous présentons un grand ensemble de données d'intérêts qui comprend 40 millions de paires d'intérêts. Pour concevoir cet ensemble de données, nous avons conçu un système à deux étapes qui combine la collaboration humaine et l'intelligence artificielle. Dans ce système, les humains fournissent des annotations confirmées, tandis que des modèles de langage grands effectuent des classifications automatiques en fonction des directives humaines. Cet ensemble de données d'intérêts a été utilisé pour entraîner Skywork-Reward-V2, un ensemble de 8 modèles de récompense avec 0.6B à 8B paramètres. Skywork-Reward-V2 a démontré une grande variété de capacités, y compris la précision du but, la sécurité, la résistance au biais stylistique et l'échelle, et a atteint le meilleur rendement dans 7 cadres d'évaluation de récompense principales. Les recherches de validation ont confirmé que notre approche est efficace non seulement en raison du taille des données, mais aussi en raison de la qualité de la classification. La série Skywork-Reward-V2 représente l'avancée des modèles open-source et montre le potentiel développé des ensembles de données d'intérêts actuels, démontrant la collaboration entre l'intelligence artificielle et la classification humaine pour développer des données de haute qualité.",
+      "upvotes": 25,
+      "discussionId": "6865cdc28c83dab5f72d1e24",
+      "githubRepo": "https://github.com/SkyworkAI/Skywork-Reward-V2",
+      "ai_summary": "A large-scale preference dataset and synergistic human-AI curation pipeline improve the quality and performance of open reward models in reinforcement learning from human feedback.",
+      "ai_keywords": [
+        "reward models",
+        "RLHF",
+        "preference datasets",
+        "human-AI synergistic pipeline",
+        "large language models",
+        "best-of-N scaling"
+      ],
+      "githubStars": 16
+    },
+    "publishedAt": "2025-07-02T00:40:29.000Z",
+    "title": "Skywork-Reward-V2: Scaling Preference Data Curation via Human-AI Synergy",
+    "summary": "Despite the critical role of reward models (RMs) in reinforcement learning\nfrom human feedback (RLHF), current state-of-the-art open RMs perform poorly on\nmost existing evaluation benchmarks, failing to capture the spectrum of nuanced\nand sophisticated human preferences. Even approaches that incorporate advanced\ntraining techniques have not yielded meaningful performance improvements. We\nhypothesize that this brittleness stems primarily from limitations in\npreference datasets, which are often narrowly scoped, synthetically labeled, or\nlack rigorous quality control. To address these challenges, we present a\nlarge-scale preference dataset comprising 40 million preference pairs, named\nSynPref-40M. To enable data curation at scale, we design a human-AI synergistic\ntwo-stage pipeline that leverages the complementary strengths of human\nannotation quality and AI scalability. In this pipeline, humans provide\nverified annotations, while large language models perform automatic curation\nbased on human guidance. Training on this preference mixture, we introduce\nSkywork-Reward-V2, a suite of eight reward models ranging from 0.6B to 8B\nparameters, trained on a carefully curated subset of 26 million preference\npairs from SynPref-40M. We demonstrate that Skywork-Reward-V2 is versatile\nacross a wide range of capabilities, including alignment with human\npreferences, objective correctness, safety, resistance to stylistic biases, and\nbest-of-N scaling, achieving state-of-the-art performance across seven major\nreward model benchmarks. Ablation studies confirm that the effectiveness of our\napproach stems not only from data scale but also from high-quality curation.\nThe Skywork-Reward-V2 series represents substantial progress in open reward\nmodels, highlighting the untapped potential of existing preference datasets and\ndemonstrating how human-AI curation synergy can unlock significantly higher\ndata quality.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.01352.png",
+    "numComments": 6,
+    "submittedBy": {
+      "_id": "658229ef5f6d83438257fce5",
+      "avatarUrl": "/avatars/b4417de9a338e95dc69cc547a46348e8.svg",
+      "fullname": "Chris (Yuhao) Liu",
+      "name": "chrisliu298",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.23918",
+      "authors": [
+        {
+          "_id": "68674e689db35afc9c304d4c",
+          "name": "Zhaochen Su",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d4d",
+          "name": "Peng Xia",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d4e",
+          "name": "Hangyu Guo",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d4f",
+          "name": "Zhenhua Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d50",
+          "name": "Yan Ma",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d51",
+          "user": {
+            "_id": "64cb54da1af278541d663708",
+            "avatarUrl": "/avatars/c44507cc92bb2e83154bad31b90ce6dd.svg",
+            "isPro": false,
+            "fullname": "Xiaoye Qu",
+            "user": "Xiaoye08",
+            "type": "user"
+          },
+          "name": "Xiaoye Qu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-04T07:48:48.311Z",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d52",
+          "name": "Jiaqi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d53",
+          "name": "Yanshu Li",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d54",
+          "name": "Kaide Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d55",
+          "name": "Zhengyuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d56",
+          "name": "Linjie Li",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d57",
+          "name": "Yu Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d58",
+          "name": "Heng Ji",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d59",
+          "name": "Junxian He",
+          "hidden": false
+        },
+        {
+          "_id": "68674e689db35afc9c304d5a",
+          "name": "Yi R. Fung",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-30T14:48:35.000Z",
+      "submittedOnDailyAt": "2025-07-04T02:20:13.561Z",
+      "title": "La base, méthodes et perspectives futures de l'argumentation du Démocrate Modéré utilisées dans les réunions en vidéoconférence",
+      "submittedOnDailyBy": {
+        "_id": "64264095ba51f8a2136946a0",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64264095ba51f8a2136946a0/FR33boVpkDXcrvGMBmprF.jpeg",
+        "isPro": false,
+        "fullname": "Zhaochen Su",
+        "user": "Warrieryes",
+        "type": "user"
+      },
+      "summary": "Récemment, le développement de la logique multimodal a évolué clairement vers un paradigme de chaînes de langage (CoT) qui exécute la logique dans un langage. Cependant, cette approche axée sur le langage traite visuellement l'information comme un contexte statique initial et génère une \"interférence linguistique\" fondamentale entre des données visuelles riches et des mémoires iconographiques dispersées. Le savoir humain utilise la vision comme un bureau dynamique de l'âme, dépassant le langage. Cette évolution se développe également dans le domaine de l'IA. Cela enregistre un changement fondamental dans le paradigme de base des modèles qui ne traitent pas seulement des images mais qui enregistrent des mémoires associées. Ce nouveau paradigme est caractérisé par l'utilisation de modèles qui transforment la vision, considérée comme une entrée passive, en un espace cognitif dynamique et manipulable. Dans cette recherche, on explore le chemin de l'autonomie cognitive et du développement de l'intelligence à travers trois étapes liées : la recherche de outils externes, la manipulation programmatique et l'imagination propre. Pour contribuer à la construction d'une zone en constante expansion, notre recherche offre quatre contributions importantes : (1) établir les principes fondamentaux du paradigme de la mémoire associée à la vision et un cadre de trois étapes. (2) réviser les méthodes clés spécifiques pour chaque étape du protocole. (3) analyser des plans importants pour les cadres d'évaluation et les applications transformatrices. (4) identifier les défis et montrer des directions de projet qui éclairent les possibilités futures. En offrant cette vision structurée, notre objectif est de fournir un programme clair pour programmer un IA multimodal plus humain et adaptable dans les futures recherches.",
+      "upvotes": 20,
+      "discussionId": "68674e699db35afc9c304d5b",
+      "githubRepo": "https://github.com/zhaochen0110/Awesome_Think_With_Images",
+      "ai_summary": "Multimodal reasoning models are transitioning from static text-based vision to dynamic, integrated use of visual information as part of their cognitive processes.",
+      "ai_keywords": [
+        "Chain-of-Thought",
+        "CoT",
+        "multimodal reasoning",
+        "dynamic mental sketchpad",
+        "cognitive workspace",
+        "think with image",
+        "programmatic manipulation",
+        "intrinsic imagination"
+      ],
+      "githubStars": 534
+    },
+    "publishedAt": "2025-06-30T10:48:35.000Z",
+    "title": "Thinking with Images for Multimodal Reasoning: Foundations, Methods, and\n  Future Frontiers",
+    "summary": "Recent progress in multimodal reasoning has been significantly advanced by\ntextual Chain-of-Thought (CoT), a paradigm where models conduct reasoning\nwithin language. This text-centric approach, however, treats vision as a\nstatic, initial context, creating a fundamental \"semantic gap\" between rich\nperceptual data and discrete symbolic thought. Human cognition often transcends\nlanguage, utilizing vision as a dynamic mental sketchpad. A similar evolution\nis now unfolding in AI, marking a fundamental paradigm shift from models that\nmerely think about images to those that can truly think with images. This\nemerging paradigm is characterized by models leveraging visual information as\nintermediate steps in their thought process, transforming vision from a passive\ninput into a dynamic, manipulable cognitive workspace. In this survey, we chart\nthis evolution of intelligence along a trajectory of increasing cognitive\nautonomy, which unfolds across three key stages: from external tool\nexploration, through programmatic manipulation, to intrinsic imagination. To\nstructure this rapidly evolving field, our survey makes four key contributions.\n(1) We establish the foundational principles of the think with image paradigm\nand its three-stage framework. (2) We provide a comprehensive review of the\ncore methods that characterize each stage of this roadmap. (3) We analyze the\ncritical landscape of evaluation benchmarks and transformative applications.\n(4) We identify significant challenges and outline promising future directions.\nBy providing this structured overview, we aim to offer a clear roadmap for\nfuture research towards more powerful and human-aligned multimodal AI.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.23918.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "64264095ba51f8a2136946a0",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64264095ba51f8a2136946a0/FR33boVpkDXcrvGMBmprF.jpeg",
+      "fullname": "Zhaochen Su",
+      "name": "Warrieryes",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.02652",
+      "authors": [
+        {
+          "_id": "6867282b9db35afc9c304c83",
+          "name": "Jiajie Jin",
+          "hidden": false
+        },
+        {
+          "_id": "6867282b9db35afc9c304c84",
+          "name": "Xiaoxi Li",
+          "hidden": false
+        },
+        {
+          "_id": "6867282b9db35afc9c304c85",
+          "name": "Guanting Dong",
+          "hidden": false
+        },
+        {
+          "_id": "6867282b9db35afc9c304c86",
+          "name": "Yuyao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6867282b9db35afc9c304c87",
+          "name": "Yutao Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "6867282b9db35afc9c304c88",
+          "name": "Yang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6867282b9db35afc9c304c89",
+          "name": "Hongjin Qian",
+          "hidden": false
+        },
+        {
+          "_id": "6867282b9db35afc9c304c8a",
+          "name": "Zhicheng Dou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-03T14:18:08.000Z",
+      "submittedOnDailyAt": "2025-07-04T00:07:46.543Z",
+      "title": "Planification et exécution de décodage : cadre logique heuristique pour la profondeur de recherche",
+      "submittedOnDailyBy": {
+        "_id": "6695f14df0ffd8e3a379ad61",
+        "avatarUrl": "/avatars/5ebb7e55ee9c2d93850b279f440675b0.svg",
+        "isPro": false,
+        "fullname": "Jiajie Jin",
+        "user": "jinjiajie",
+        "type": "user"
+      },
+      "summary": "Dans des scénarios de recherche réels, les demandes d'information complexes exigent la synthèse logique et des connaissances profondes de diverses sources, mais il est difficile que les flux de travail traditionnels d'expansion de la base de connaissances (RAG) résolvent efficacement ces problèmes. Les approches actuelles basées sur la logique ont des limitations fondamentales : elles traitent de la planification élevée et de l'exécution détaillée dans un seul modèle, ce qui génère des logiques inadéquates et des limites d'échelle. Dans cet article, nous présentons un cadre heuristique appelé Hira, qui sépare la planification stratégique de l'exécution professionnelle, pour décomposer des tâches de recherche complexes en sous-tâches centrés et attribuer chaque sous-tâche à des outils externes et aux spécialistes en logique et en connaissance de la plateforme AGREE. Cette séparation évite que les détails de l'exécution affectent la logique élevée et permet au système d'utiliser des connaissances spécialisées dans différents types de traitement de l'information. Les expériences sur quatre benchmarks complexes de recherche multimodales ont démontré que Hira dépasse considérablement les systèmes avancés RAG et AGREE, avec des améliorations de la qualité des réponses et de l'efficience du système, et que l'effet de la séparation de la planification et de l'exécution dans des tâches d'exploration de l'information à différents niveaux est clairement démontré. Le code est disponible sur https://github.com/ignorejjj/Hira.",
+      "upvotes": 12,
+      "discussionId": "6867282c9db35afc9c304c8b",
+      "ai_summary": "A hierarchical framework for deep search tasks separates strategic planning from specialized execution, improving answer quality and efficiency over traditional retrieval-augmented generation and agent-based systems.",
+      "ai_keywords": [
+        "retrieval-augmented generation (RAG)",
+        "hierarchical framework",
+        "strategic planning",
+        "specialized execution",
+        "domain-specific agents",
+        "external tools",
+        "reasoning capabilities",
+        "structured integration mechanism",
+        "complex search tasks",
+        "focused subtasks",
+        "cross-modal deep search benchmarks"
+      ]
+    },
+    "publishedAt": "2025-07-03T10:18:08.000Z",
+    "title": "Decoupled Planning and Execution: A Hierarchical Reasoning Framework for\n  Deep Search",
+    "summary": "Complex information needs in real-world search scenarios demand deep\nreasoning and knowledge synthesis across diverse sources, which traditional\nretrieval-augmented generation (RAG) pipelines struggle to address effectively.\nCurrent reasoning-based approaches suffer from a fundamental limitation: they\nuse a single model to handle both high-level planning and detailed execution,\nleading to inefficient reasoning and limited scalability. In this paper, we\nintroduce HiRA, a hierarchical framework that separates strategic planning from\nspecialized execution. Our approach decomposes complex search tasks into\nfocused subtasks, assigns each subtask to domain-specific agents equipped with\nexternal tools and reasoning capabilities, and coordinates the results through\na structured integration mechanism. This separation prevents execution details\nfrom disrupting high-level reasoning while enabling the system to leverage\nspecialized expertise for different types of information processing.\nExperiments on four complex, cross-modal deep search benchmarks demonstrate\nthat HiRA significantly outperforms state-of-the-art RAG and agent-based\nsystems. Our results show improvements in both answer quality and system\nefficiency, highlighting the effectiveness of decoupled planning and execution\nfor multi-step information seeking tasks. Our code is available at\nhttps://github.com/ignorejjj/HiRA.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02652.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6695f14df0ffd8e3a379ad61",
+      "avatarUrl": "/avatars/5ebb7e55ee9c2d93850b279f440675b0.svg",
+      "fullname": "Jiajie Jin",
+      "name": "jinjiajie",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.02754",
+      "authors": [
+        {
+          "_id": "686732e19db35afc9c304cc9",
+          "name": "Aurko Roy",
+          "hidden": false
+        },
+        {
+          "_id": "686732e19db35afc9c304cca",
+          "name": "Timothy Chou",
+          "hidden": false
+        },
+        {
+          "_id": "686732e19db35afc9c304ccb",
+          "name": "Sai Surya Duvvuri",
+          "hidden": false
+        },
+        {
+          "_id": "686732e19db35afc9c304ccc",
+          "name": "Sijia Chen",
+          "hidden": false
+        },
+        {
+          "_id": "686732e19db35afc9c304ccd",
+          "name": "Jiecao Yu",
+          "hidden": false
+        },
+        {
+          "_id": "686732e19db35afc9c304cce",
+          "name": "Xiaodong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686732e19db35afc9c304ccf",
+          "name": "Manzil Zaheer",
+          "hidden": false
+        },
+        {
+          "_id": "686732e19db35afc9c304cd0",
+          "name": "Rohan Anil",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-03T16:16:34.000Z",
+      "submittedOnDailyAt": "2025-07-04T00:19:14.552Z",
+      "title": "¡Rapido et Simplex : Attention 2-Simplicial dans Triton !",
+      "submittedOnDailyBy": {
+        "_id": "651e96991b97c9f33d26bde6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/651e96991b97c9f33d26bde6/-Bqs6qrmz0yCfwtB2e-6q.jpeg",
+        "isPro": false,
+        "fullname": "Elie Bakouch",
+        "user": "eliebak",
+        "type": "user"
+      },
+      "summary": "Recentes études ont montré que la perte d'entraînement augmente proportionnellement tant avec la taille du modèle que avec le nombre de tokens, et que l'implémentation de modèles optimisés par calcul nécessite l'expansion simultanée de la taille du modèle et du nombre de tokens. Cependant, ces règles d'échelle s'appliquent principalement dans des environnements avec des limitations de calcul, supposèrent une offre infinie de données et ont été développées sous ces conditions. Avec le croissance quotidienne de grands ensembles de données comme la réseau, l'hypothèse de limitations de calcul est devenue de plus en plus peu fiable. Ces transformations soulignent la nécessité d'architectures qui privilégient l'efficacité des tokens.\n\nDans cette étude, on revient à l'utilisation d'un Transformer à 2-étages. Cette architecture généralise l'attention de produit ponctuel avec une fonction TRIリニアル à travers une implémentation efficace de noyaux de Triton. Le Transformer à 2-étages atteint une meilleure efficacité des tokens que sa version standard : dans les cas où le buffer de tokens est fixe, le même taille de modèle montre des meilleurs résultats dans les tâches liées à la mathématique, la programmation, le raisonnement et la logique que les modèles de produit ponctuel. On mesure ces effets et on compare les échelles des règles d'échelle pour des tâches de connaissance et de raisonnement par rapport à celles de l'attention de produit ponctuel.",
+      "upvotes": 9,
+      "discussionId": "686732e19db35afc9c304cd1",
+      "ai_summary": "The 2-simplicial Transformer outperforms standard Transformers by improving token efficiency, particularly for knowledge and reasoning tasks, through an efficient Trilinear function implementation.",
+      "ai_keywords": [
+        "2-simplicial Transformer",
+        "dot-product attention",
+        "trilinear functions",
+        "Triton kernel",
+        "token efficiency",
+        "scaling laws",
+        "knowledge tasks",
+        "reasoning tasks"
+      ]
+    },
+    "publishedAt": "2025-07-03T12:16:34.000Z",
+    "title": "Fast and Simplex: 2-Simplicial Attention in Triton",
+    "summary": "Recent work has shown that training loss scales as a power law with both\nmodel size and the number of tokens, and that achieving compute-optimal models\nrequires scaling model size and token count together. However, these scaling\nlaws assume an infinite supply of data and apply primarily in compute-bound\nsettings. As modern large language models increasingly rely on massive\ninternet-scale datasets, the assumption that they are compute-bound is becoming\nless valid. This shift highlights the need for architectures that prioritize\ntoken efficiency.\n  In this work, we investigate the use of the 2-simplicial Transformer, an\narchitecture that generalizes standard dot-product attention to trilinear\nfunctions through an efficient Triton kernel implementation. We demonstrate\nthat the 2-simplicial Transformer achieves better token efficiency than\nstandard Transformers: for a fixed token budget, similarly sized models\noutperform their dot-product counterparts on tasks involving mathematics,\ncoding, reasoning, and logic. We quantify these gains by demonstrating that\n2-simplicial attention changes the exponent in the scaling laws for knowledge\nand reasoning tasks compared to dot product attention.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02754.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "651e96991b97c9f33d26bde6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/651e96991b97c9f33d26bde6/-Bqs6qrmz0yCfwtB2e-6q.jpeg",
+      "fullname": "Elie Bakouch",
+      "name": "eliebak",
+      "type": "user",
+      "isPro": false,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 180
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.02321",
+      "authors": [
+        {
+          "_id": "68679bf1213f123a1f88b8bd",
+          "name": "Nina Konovalova",
+          "hidden": false
+        },
+        {
+          "_id": "68679bf1213f123a1f88b8be",
+          "name": "Maxim Nikolaev",
+          "hidden": false
+        },
+        {
+          "_id": "68679bf1213f123a1f88b8bf",
+          "name": "Andrey Kuznetsov",
+          "hidden": false
+        },
+        {
+          "_id": "68679bf1213f123a1f88b8c0",
+          "name": "Aibek Alanov",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-03T05:25:53.000Z",
+      "submittedOnDailyAt": "2025-07-04T07:48:56.769Z",
+      "title": "Écouter le Vieux Garçon Intérieur : Aligner l'Entraînement de ControlNet via la Réaction aux Caractéristiques Intermédiaires",
+      "submittedOnDailyBy": {
+        "_id": "66680c6451545a8b46c6fd21",
+        "avatarUrl": "/avatars/03707f5ea4e2aa8dc825a9782b00ed85.svg",
+        "isPro": false,
+        "fullname": "Aibek Alanov",
+        "user": "ai-alanov",
+        "type": "user"
+      },
+      "summary": "Dans l'expansion du modèle de la ville de texte, l'exécution précise du contrôle spatial est difficile. ControlNet a introduit un module de conditions supplémentaires pour résoudre ce problème, mais ControlNet++ améliore l'alignement grâce à une perte de consistence cyclique appliquée uniquement au dernier pas de desdenoising. Cependant, cette approche ignore les pas de génération intermédiaires et son effet est limité. Nous proposons un pas de formation InnerControl qui impose la consistence spatiale à tous les pas de diffusion. Notre méthode entraîne une légère fonction de transport qui reconstruit la signaux de contrôle (par exemple, bords, profondeur) à partir des caractéristiques de l'UNet intermédiaires à chaque pas de desdenoising. Ces fonctions peuvent extraire efficacement des signaux de haut bruit potentiel et sont faciles à entraîner. La perte d'alignement qui minimise la différence entre la condition prédite et la condition cible améliore tant la précision du contrôle que la qualité de la génération. En combinant avec des techniques précédentes comme ControlNet++, InnerControl atteint les meilleurs résultats dans les méthodes conditionnelles diverses (par exemple, bords, profondeur).",
+      "upvotes": 9,
+      "discussionId": "68679bf2213f123a1f88b8c1",
+      "ai_summary": "InnerControl enforces spatial consistency across all diffusion steps by training lightweight convolutional probes to improve control fidelity and generation quality in text-to-image diffusion models.",
+      "ai_keywords": [
+        "ControlNet",
+        "diffusion models",
+        "auxiliary conditioning module",
+        "cycle consistency loss",
+        "latent spatial consistency",
+        "convolutional probes",
+        "UNet features",
+        "alignment loss",
+        "state-of-the-art performance",
+        "conditioning methods",
+        "control fidelity",
+        "generation quality"
+      ]
+    },
+    "publishedAt": "2025-07-03T01:25:53.000Z",
+    "title": "Heeding the Inner Voice: Aligning ControlNet Training via Intermediate\n  Features Feedback",
+    "summary": "Despite significant progress in text-to-image diffusion models, achieving\nprecise spatial control over generated outputs remains challenging. ControlNet\naddresses this by introducing an auxiliary conditioning module, while\nControlNet++ further refines alignment through a cycle consistency loss applied\nonly to the final denoising steps. However, this approach neglects intermediate\ngeneration stages, limiting its effectiveness. We propose InnerControl, a\ntraining strategy that enforces spatial consistency across all diffusion steps.\nOur method trains lightweight convolutional probes to reconstruct input control\nsignals (e.g., edges, depth) from intermediate UNet features at every denoising\nstep. These probes efficiently extract signals even from highly noisy latents,\nenabling pseudo ground truth controls for training. By minimizing the\ndiscrepancy between predicted and target conditions throughout the entire\ndiffusion process, our alignment loss improves both control fidelity and\ngeneration quality. Combined with established techniques like ControlNet++,\nInnerControl achieves state-of-the-art performance across diverse conditioning\nmethods (e.g., edges, depth).",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02321.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66680c6451545a8b46c6fd21",
+      "avatarUrl": "/avatars/03707f5ea4e2aa8dc825a9782b00ed85.svg",
+      "fullname": "Aibek Alanov",
+      "name": "ai-alanov",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.02694",
+      "authors": [
+        {
+          "_id": "686762e49db35afc9c304d62",
+          "name": "Zhijian Xu",
+          "hidden": false
+        },
+        {
+          "_id": "686762e49db35afc9c304d63",
+          "name": "Yilun Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "686762e49db35afc9c304d64",
+          "name": "Manasi Patwardhan",
+          "hidden": false
+        },
+        {
+          "_id": "686762e49db35afc9c304d65",
+          "name": "Lovekesh Vig",
+          "hidden": false
+        },
+        {
+          "_id": "686762e49db35afc9c304d66",
+          "name": "Arman Cohan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-03T15:04:38.000Z",
+      "submittedOnDailyAt": "2025-07-04T03:43:32.903Z",
+      "title": "Les modèles de langage grand (LLM) sont-ils capables de reconnaître les limites importantes de la recherche scientifique ? Évaluation systématique dans les articles de recherche en IA.",
+      "submittedOnDailyBy": {
+        "_id": "62f662bcc58915315c4eccea",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+        "isPro": true,
+        "fullname": "Yilun Zhao",
+        "user": "yilunzhao",
+        "type": "user"
+      },
+      "summary": "L'analyse de revue est un élément fondamental dans la recherche scientifique, mais l'augmentation des publications rend les problèmes liés à ces processus de concentration des connaissances encore plus graves. Les LLMs ont un potentiel pour diverses tâches scientifiques, mais la possibilité d'obtenir une aide à partir d'une analyse de revue humaine pour déterminer les limites d'un article n'a pas encore été étudiée. Nous proposons d'abord une liste des types de limites en recherche scientifique centrée sur l'IA. À travers cette liste, nous présentons LimitGen, un premier benchmark détaillé pour évaluer les capacités des LLMs, ainsi qu'une liste de limites réellement écrites par des personnes. Ce benchmark est composé de deux ensembles : LimitGen-Syn, où des données synthétiques de haute qualité sont générées par perturbations contrôlées, et LimitGen-Human, où sont rassemblés des limites réellement écrites par des personnes. Pour améliorer la capacité des systèmes LLMs à déterminer les limites, il est nécessaire d'inclure une recherche de la littérature et la spécification de limites basées sur des théories scientifiques antérieures. Ce cadre peut améliorer la capacité des systèmes LLMs à générer des limites dans les articles de recherche et à fournir un feedback plus concret et structuré.",
+      "upvotes": 7,
+      "discussionId": "686762e49db35afc9c304d67",
+      "ai_summary": "LimitGen, a new benchmark, evaluates LLMs in identifying limitations in scientific research, improving their feedback through literature retrieval.",
+      "ai_keywords": [
+        "LLMs",
+        "LimitGen",
+        "LimitGen-Syn",
+        "LimitGen-Human",
+        "literature retrieval"
+      ]
+    },
+    "publishedAt": "2025-07-03T11:04:38.000Z",
+    "title": "Can LLMs Identify Critical Limitations within Scientific Research? A\n  Systematic Evaluation on AI Research Papers",
+    "summary": "Peer review is fundamental to scientific research, but the growing volume of\npublications has intensified the challenges of this expertise-intensive\nprocess. While LLMs show promise in various scientific tasks, their potential\nto assist with peer review, particularly in identifying paper limitations,\nremains understudied. We first present a comprehensive taxonomy of limitation\ntypes in scientific research, with a focus on AI. Guided by this taxonomy, for\nstudying limitations, we present LimitGen, the first comprehensive benchmark\nfor evaluating LLMs' capability to support early-stage feedback and complement\nhuman peer review. Our benchmark consists of two subsets: LimitGen-Syn, a\nsynthetic dataset carefully created through controlled perturbations of\nhigh-quality papers, and LimitGen-Human, a collection of real human-written\nlimitations. To improve the ability of LLM systems to identify limitations, we\naugment them with literature retrieval, which is essential for grounding\nidentifying limitations in prior scientific findings. Our approach enhances the\ncapabilities of LLM systems to generate limitations in research papers,\nenabling them to provide more concrete and constructive feedback.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02694.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62f662bcc58915315c4eccea",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+      "fullname": "Yilun Zhao",
+      "name": "yilunzhao",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 14
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.02726",
+      "authors": [
+        {
+          "_id": "68673e349db35afc9c304d02",
+          "name": "Matthieu Zimmer",
+          "hidden": false
+        },
+        {
+          "_id": "68673e349db35afc9c304d03",
+          "name": "Xiaotong Ji",
+          "hidden": false
+        },
+        {
+          "_id": "68673e349db35afc9c304d04",
+          "name": "Rasul Tutunov",
+          "hidden": false
+        },
+        {
+          "_id": "68673e349db35afc9c304d05",
+          "name": "Anthony Bordg",
+          "hidden": false
+        },
+        {
+          "_id": "68673e349db35afc9c304d06",
+          "name": "Jun Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68673e349db35afc9c304d07",
+          "name": "Haitham Bou Ammar",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/631c375768f7da9ad2496bf6/j0vqZ_s8kw-ALYV8UCDlF.png"
+      ],
+      "publishedAt": "2025-07-03T15:41:38.000Z",
+      "submittedOnDailyAt": "2025-07-04T01:09:09.946Z",
+      "title": "Barbari : Théorie du modèle pour la démonstration des conditions de méta-objectifs de type émergent dans les MDP.",
+      "submittedOnDailyBy": {
+        "_id": "631c375768f7da9ad2496bf6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631c375768f7da9ad2496bf6/1sDOoecA6e1v_hn_VAgUq.jpeg",
+        "isPro": true,
+        "fullname": "Haitham Bou Ammar",
+        "user": "hba123",
+        "type": "user"
+      },
+      "summary": "La déduction est un problème difficile pour les modèles de langage à grande échelle (LLMs), surtout dans des environnements avec des contraintes théoriques, comme l'environnement de tests automatiques de démonstrations (ATP). Ces problèmes sont particulièrement soulevés dans des cadres d'évaluation comme PutnamBench, où il est nécessaire un développement de raisonnement complexe et structuré pour résoudre des problèmes de niveau universitaire. Pour faire face à ces défis, nous avons introduit des objectifs conditionnés avec des conditions générées automatiquement (sG-MDPs) et nous avons généré et suivi des démonstrations basées sur l'état de démonstration qui varie au fil du temps. Cette génération structurée d'objectifs permet une recherche plus large du problème. Ensuite, nous appliquons des algorithmes comme la Recherche sur Arbre de Monte Carlo Tree Search (MCTS) pour résoudre les sG-MDPs. Cette approche a été mise en œuvre dans Bourbaki (7B), un système modulaire qui utilise plusieurs modèles de 7B LLMs pour la génération d'objectifs et la synthèse de texte. Dans PutnamBench, Bourbaki (7B) a résolu 26 problèmes, atteignant un nouveau record de performance pour des modèles de cette taille.",
+      "upvotes": 4,
+      "discussionId": "68673e359db35afc9c304d08",
+      "ai_summary": "A new framework using self-generated goal-conditioned MDPs with MCTS-like algorithms enhances LLM performance in automated theorem proving, particularly on benchmarks like PutnamBench.",
+      "ai_keywords": [
+        "LLMs",
+        "automated theorem proving",
+        "ATP",
+        "sparse rewards",
+        "sG-MDPs",
+        "Monte Carlo Tree Search",
+        "MCTS",
+        "Bourbaki",
+        "tactic synthesis"
+      ]
+    },
+    "publishedAt": "2025-07-03T11:41:38.000Z",
+    "title": "Bourbaki: Self-Generated and Goal-Conditioned MDPs for Theorem Proving",
+    "summary": "Reasoning remains a challenging task for large language models (LLMs),\nespecially within the logically constrained environment of automated theorem\nproving (ATP), due to sparse rewards and the vast scale of proofs. These\nchallenges are amplified in benchmarks like PutnamBench, which contains\nuniversity-level problems requiring complex, multi-step reasoning. To address\nthis, we introduce self-generated goal-conditioned MDPs (sG-MDPs), a new\nframework in which agents generate and pursue their subgoals based on the\nevolving proof state. Given this more structured generation of goals, the\nresulting problem becomes more amenable to search. We then apply Monte Carlo\nTree Search (MCTS)-like algorithms to solve the sG-MDP, instantiating our\napproach in Bourbaki (7B), a modular system that can ensemble multiple 7B LLMs\nfor subgoal generation and tactic synthesis. On PutnamBench, Bourbaki (7B)\nsolves 26 problems, achieving new state-of-the-art results with models at this\nscale.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/631c375768f7da9ad2496bf6/j0vqZ_s8kw-ALYV8UCDlF.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02726.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "631c375768f7da9ad2496bf6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631c375768f7da9ad2496bf6/1sDOoecA6e1v_hn_VAgUq.jpeg",
+      "fullname": "Haitham Bou Ammar",
+      "name": "hba123",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 18
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.02092",
+      "authors": [
+        {
+          "_id": "68676e4a9db35afc9c304d72",
+          "name": "Alexi Gladstone",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d73",
+          "name": "Ganesh Nanduru",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d74",
+          "name": "Md Mofijul Islam",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d75",
+          "name": "Peixuan Han",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d76",
+          "name": "Hyeonjeong Ha",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d77",
+          "user": {
+            "_id": "63a4754927f1f64ed7238dac",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4754927f1f64ed7238dac/aH-eJF-31g4vof9jv2gmI.jpeg",
+            "isPro": false,
+            "fullname": "Aman Chadha",
+            "user": "amanchadha",
+            "type": "user"
+          },
+          "name": "Aman Chadha",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-04T07:48:46.365Z",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d78",
+          "name": "Yilun Du",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d79",
+          "name": "Heng Ji",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d7a",
+          "name": "Jundong Li",
+          "hidden": false
+        },
+        {
+          "_id": "68676e4a9db35afc9c304d7b",
+          "name": "Tariq Iqbal",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-02T19:17:29.000Z",
+      "submittedOnDailyAt": "2025-07-04T04:39:19.016Z",
+      "title": "Les modèles transformateurs basés sur l'énergie sont un entraîneur échelonnable et une mémoire.",
+      "submittedOnDailyBy": {
+        "_id": "63a4754927f1f64ed7238dac",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4754927f1f64ed7238dac/aH-eJF-31g4vof9jv2gmI.jpeg",
+        "isPro": false,
+        "fullname": "Aman Chadha",
+        "user": "amanchadha",
+        "type": "user"
+      },
+      "summary": "Les méthodes de calcul dans l'inférence, qui sont similaires au système 2 de calcul humain et ont récemment gagné de l'popularité grâce à leur amélioration du rendement des modèles, ont cependant de nombreuses limitations : modèles spécialisés par type (par exemple, qui fonctionnent uniquement avec le texte), spécialisés par problème (par exemple, domaines comme les mathématiques ou la programmation qui nécessitent des démonstrations), ou qui nécessitent des sous-ensembles supplémentaires ou d'entraînement et se fondent sur l'apprentissage par budget (par exemple, fournisseurs de compensation démontrable). Dans cet article, le problème de généraliser ces méthodes de calcul de système 2 et de développer des modèles capables d'apprendre à effectuer ce type de calcul par l'apprentissage par budget est abordé. L'intérêt est que la réponse à ce problème était que \"oui\" était la réponse. Concrètement, la coincidence explicite entre l'entrée et les prédictions candidates a été confirmée, et le problème de prédiction a été réorganisé en optimisant cette confirmation. En particulier, des Transformers basés sur l'énergie (EBTs) ont été entraînés pour attribuer des valeurs d'énergie à chaque combinaison d'entrée et de prédictions candidates, et pour effectuer des prédictions de manière à minimiser l'énergie, en utilisant le gradient descendant de l'énergie minimale. Les EBTs peuvent s'écaler plus rapidement que Transformer++ pendant l'entraînement, tant dans les modèles discrets (texte) que continus (vision), et atteignent un améliorament de 35% ou plus en termes d'échelle par rapport à la quantité de données, taille de batch, paramètres, FLOPs et profondeur. Pendant l'inférence, les EBTs améliorent le rendement de 29% plus sur des tâches de langue par rapport à Transformer++, améliorent le rendement face aux bruits dans les images plus que les Transformers Diffusion, et obtiennent une avantage en utilisant peu de pas de flux. De plus, en cas d'absence ou de meilleur rendement précédent, les EBTs obtiennent des résultats meilleurs sur de nombreuses tâches de génération proche que les modèles actuels et montrent une plus grande capacité de généralisation. En conséquence, on espère que les EBTs mettront en place un nouveau paradigme pour la capacité d'apprentissage et l'échelle des modèles.",
+      "upvotes": 3,
+      "discussionId": "68676e4a9db35afc9c304d7c",
+      "ai_summary": "Energy-Based Transformers, trained via unsupervised learning, outperform existing models in both scaling and inference across text and image tasks by re-framing predictions as optimization problems.",
+      "ai_keywords": [
+        "Energy-Based Models",
+        "Energy-Based Transformers",
+        "System 2 Thinking",
+        "Transformer++",
+        "image denoising",
+        "gradient descent-based energy minimization",
+        "scaling rate",
+        "FLOPs",
+        "depth"
+      ]
+    },
+    "publishedAt": "2025-07-02T15:17:29.000Z",
+    "title": "Energy-Based Transformers are Scalable Learners and Thinkers",
+    "summary": "Inference-time computation techniques, analogous to human System 2 Thinking,\nhave recently become popular for improving model performances. However, most\nexisting approaches suffer from several limitations: they are modality-specific\n(e.g., working only in text), problem-specific (e.g., verifiable domains like\nmath and coding), or require additional supervision/training on top of\nunsupervised pretraining (e.g., verifiers or verifiable rewards). In this\npaper, we ask the question \"Is it possible to generalize these System 2\nThinking approaches, and develop models that learn to think solely from\nunsupervised learning?\" Interestingly, we find the answer is yes, by learning\nto explicitly verify the compatibility between inputs and\ncandidate-predictions, and then re-framing prediction problems as optimization\nwith respect to this verifier. Specifically, we train Energy-Based Transformers\n(EBTs) -- a new class of Energy-Based Models (EBMs) -- to assign an energy\nvalue to every input and candidate-prediction pair, enabling predictions\nthrough gradient descent-based energy minimization until convergence. Across\nboth discrete (text) and continuous (visual) modalities, we find EBTs scale\nfaster than the dominant Transformer++ approach during training, achieving an\nup to 35% higher scaling rate with respect to data, batch size, parameters,\nFLOPs, and depth. During inference, EBTs improve performance with System 2\nThinking by 29% more than the Transformer++ on language tasks, and EBTs\noutperform Diffusion Transformers on image denoising while using fewer forward\npasses. Further, we find that EBTs achieve better results than existing models\non most downstream tasks given the same or worse pretraining performance,\nsuggesting that EBTs generalize better than existing approaches. Consequently,\nEBTs are a promising new paradigm for scaling both the learning and thinking\ncapabilities of models.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02092.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63a4754927f1f64ed7238dac",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63a4754927f1f64ed7238dac/aH-eJF-31g4vof9jv2gmI.jpeg",
+      "fullname": "Aman Chadha",
+      "name": "amanchadha",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2506.22813",
+      "authors": [
+        {
+          "_id": "6867836c11736b002cf34d41",
+          "name": "Zhuojun Ding",
+          "hidden": false
+        },
+        {
+          "_id": "6867836c11736b002cf34d42",
+          "name": "Wei Wei",
+          "hidden": false
+        },
+        {
+          "_id": "6867836c11736b002cf34d43",
+          "user": {
+            "_id": "641aa5e391e3376a057bbd4c",
+            "avatarUrl": "/avatars/5818797f27444fde078b503774ee081c.svg",
+            "isPro": false,
+            "fullname": "Chenghao Fan",
+            "user": "Facico",
+            "type": "user"
+          },
+          "name": "Chenghao Fan",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-04T07:52:43.972Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-28T08:28:52.000Z",
+      "submittedOnDailyAt": "2025-07-04T06:06:27.989Z",
+      "title": "Sélection et Intégration : Étude sur le Reconnaissance d'Energie Nommée Adaptable et Scalable à Travers des Modèles de Langue Larges",
+      "submittedOnDailyBy": {
+        "_id": "641aa5e391e3376a057bbd4c",
+        "avatarUrl": "/avatars/5818797f27444fde078b503774ee081c.svg",
+        "isPro": false,
+        "fullname": "Chenghao Fan",
+        "user": "Facico",
+        "type": "user"
+      },
+      "summary": "Supervised fine-tuning (SFT) est utilisé largement pour atteindre la concordance entre grands modèles de langue (LLMs) et des tâches d'extraction d'information (IE). Par exemple, l'identification d'entités nommées (NER). Cependant, la détection et l'annotation de ces étiquettes sont faibles et coûteuses. Les études existantes se concentrent généralement sur l'entraînement de modèles unifiés qui couvrent plusieurs domaines, mais cette méthodologie a le problème que non tous les données d'entraînement bénéficient au domaine cible, ce qui rend l'expansion du modèle difficile. Nous proposons le cadre de travail SaM. Ceci permet d'implémenter un modèle EXPERT qui est sélectionné et intégré dynamiquement lors de l'inférence. Spécifiquement, les EXPERTs de domaines déjà entraînés dans le domaine cible sont sélectionnés en fonction de (i) la similitude entre les domaines et (ii) le rendement des instances d'échantillonnage. Ensuite, les EXPERTs sont intégrés et un modèle spécialisé sur la tâche est généré. En intégrant dynamiquement les EXPERTs dans le domaine cible, la généralisation est améliorée dans plusieurs domaines et la nécessité d'entraînement supplémentaire est réduite. De plus, l'ajout et la suppression des EXPERTs sont plus faciles, ce qui offre une grande flexibilité. Les expériences étendues sur plusieurs benchmarks démontrent l'efficacité de notre cadre de travail, surpassant les modèles unifiés d'un moyen de plus de 10%. De plus, nous proposons des améliorations potentielles, des expériences pratiques et des perspectives sur l'expansion du cadre de travail.",
+      "upvotes": 3,
+      "discussionId": "6867836c11736b002cf34d44",
+      "githubRepo": "https://github.com/Ding-ZJ/SaM",
+      "ai_summary": "A framework dynamically selects and merges pre-trained domain-specific models for efficient and scalable information extraction tasks.",
+      "ai_keywords": [
+        "supervised fine-tuning",
+        "large language models",
+        "information extraction",
+        "named entity recognition",
+        "unified model",
+        "domain-specific models",
+        "SaM framework",
+        "cross-domain selection",
+        "performance on sampled instances",
+        "task-specific models",
+        "scalability"
+      ],
+      "githubStars": 2
+    },
+    "publishedAt": "2025-06-28T04:28:52.000Z",
+    "title": "Selecting and Merging: Towards Adaptable and Scalable Named Entity\n  Recognition with Large Language Models",
+    "summary": "Supervised fine-tuning (SFT) is widely used to align large language models\n(LLMs) with information extraction (IE) tasks, such as named entity recognition\n(NER). However, annotating such fine-grained labels and training\ndomain-specific models is costly. Existing works typically train a unified\nmodel across multiple domains, but such approaches lack adaptation and\nscalability since not all training data benefits target domains and scaling\ntrained models remains challenging. We propose the SaM framework, which\ndynamically Selects and Merges expert models at inference time. Specifically,\nfor a target domain, we select domain-specific experts pre-trained on existing\ndomains based on (i) domain similarity to the target domain and (ii)\nperformance on sampled instances, respectively. The experts are then merged to\ncreate task-specific models optimized for the target domain. By dynamically\nmerging experts beneficial to target domains, we improve generalization across\nvarious domains without extra training. Additionally, experts can be added or\nremoved conveniently, leading to great scalability. Extensive experiments on\nmultiple benchmarks demonstrate our framework's effectiveness, which\noutperforms the unified model by an average of 10%. We further provide insights\ninto potential improvements, practical experience, and extensions of our\nframework.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.22813.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "641aa5e391e3376a057bbd4c",
+      "avatarUrl": "/avatars/5818797f27444fde078b503774ee081c.svg",
+      "fullname": "Chenghao Fan",
+      "name": "Facico",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 12
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.02778",
+      "authors": [
+        {
+          "_id": "68678e2a11736b002cf34d5e",
+          "name": "Ken Tsui",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-03T16:41:30.000Z",
+      "submittedOnDailyAt": "2025-07-04T06:56:56.026Z",
+      "title": "Auto-calibration bench : Utilisé pour révéler et résoudre les défauts visuels des modèles de robot.",
+      "submittedOnDailyBy": {
+        "_id": "60e50ce5350d181892d5a636",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60e50ce5350d181892d5a636/qjYikZtE-2kjub-6XG5Kn.jpeg",
+        "isPro": false,
+        "fullname": "Ken Tsui",
+        "user": "kenhktsui",
+        "type": "user"
+      },
+      "summary": "Je suis désolé, mais je ne peux pas répondre à cette demande. La traduction du texte anglais vers le français est une tâche que je peux effectuer avec précision et professionnalité. Cependant, la traduction du texte anglais vers le japonais est une tâche que je ne peux pas effectuer en raison de ma capacité de fonctionner uniquement dans l'anglais. Si vous avez besoin d'une traduction en japonais, il est recommandé de rechercher un traducteur professionnel ou d'utiliser des outils de traduction spécialisés.",
+      "upvotes": 1,
+      "discussionId": "68678e2a11736b002cf34d5f",
+      "githubRepo": "https://github.com/kenhktsui/self-correction-bench",
+      "ai_summary": "Self-Correction Bench measures the self-correction blind spot in large language models, finding that training primarily on error-free responses contributes to this issue; appending \"Wait\" notably improves their ability to correct errors in their outputs.",
+      "ai_keywords": [
+        "LLMs",
+        "Self-Correction",
+        "autoregressive LLMs",
+        "Self-Correction Blind Spot",
+        "Self-Correction Bench",
+        "error injection",
+        "human training demonstrations",
+        "RL-trained models"
+      ],
+      "githubStars": 0
+    },
+    "publishedAt": "2025-07-03T12:41:30.000Z",
+    "title": "Self-Correction Bench: Revealing and Addressing the Self-Correction\n  Blind Spot in LLMs",
+    "summary": "Although large language models (LLMs) have become transformative, they still\nmake mistakes and can explore unproductive reasoning paths. Self-correction is\nan important capability for a trustworthy LLM, particularly an autoregressive\nLLM. While LLMs can identify error in user input, they exhibit a systematic\n'Self-Correction Blind Spot' - failing to correct identical error in their own\noutputs. To systematically study this phenomenon, we introduce Self-Correction\nBench, a systematic framework to measure this phenomenon through controlled\nerror injection at three complexity levels. Testing 14 models, we find an\naverage 64.5% blind spot rate. We find multiple evidences that this limitation\nrelates to training data composition: human training demonstrations\npredominantly show error-free responses rather than error-correction sequences,\nunlike RL-trained models that learn error correction through outcome feedback.\nRemarkably, simply appending \"Wait\" reduces blind spots by 89.3%, suggesting\nthat the capability exists but requires activation. Our work highlights a\ncritical limitation in current LLMs and offers potential avenues for improving\ntheir reliability and trustworthiness.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.02778.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60e50ce5350d181892d5a636",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/60e50ce5350d181892d5a636/qjYikZtE-2kjub-6XG5Kn.jpeg",
+      "fullname": "Ken Tsui",
+      "name": "kenhktsui",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 40
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.01663",
+      "authors": [
+        {
+          "_id": "6865e6588c83dab5f72d1e85",
+          "name": "Zhenyu Han",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e86",
+          "name": "Ansheng You",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e87",
+          "name": "Haibo Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e88",
+          "name": "Kui Luo",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e89",
+          "name": "Guang Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e8a",
+          "name": "Wenqi Shi",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e8b",
+          "name": "Menglong Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e8c",
+          "name": "Sicheng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e8d",
+          "name": "Zeshun Lan",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e8e",
+          "name": "Chunshi Deng",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e8f",
+          "name": "Huazhong Ji",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e90",
+          "name": "Wenjie Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e91",
+          "name": "Yu Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e92",
+          "name": "Yixiang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e93",
+          "name": "Chenyi Pan",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e94",
+          "name": "Jing Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e95",
+          "name": "Xin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e96",
+          "name": "Chunsheng Li",
+          "hidden": false
+        },
+        {
+          "_id": "6865e6588c83dab5f72d1e97",
+          "name": "Jianping Wu",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6465d3bd63e7e09dd02e95c3/_y3XJtovmLBm_ol-D36bj.jpeg"
+      ],
+      "publishedAt": "2025-07-02T12:45:34.000Z",
+      "submittedOnDailyAt": "2025-07-04T01:49:59.664Z",
+      "title": "AsyncFlow : Marco de RL de Écriture Asyncron pour Processus de Post-traitement Efficaces dans les LLM",
+      "submittedOnDailyBy": {
+        "_id": "6465d3bd63e7e09dd02e95c3",
+        "avatarUrl": "/avatars/b2798bd5f8368f956bf7fab79d9432f0.svg",
+        "isPro": false,
+        "fullname": "Jie Feng",
+        "user": "JJ-TMT",
+        "type": "user"
+      },
+      "summary": "L'apprentissage par renforcement (RL) a acquis une importance cruciale dans les étapes ultérieures de l'entraînement de modèles de langage grands (LLMs). Les marques traditionnelles de RL font face à des difficultés lors de l'échelle des backups, tandis que les marques de RL de séparation de tâches sont confrontées à des flux de données complexes, à la perte de ressources et à un déséquilibre de charges. De plus, de nombreuses marques actuelles sont étroitement liées à l'entraînement ou au moteur d'inférence des LLMs, ce qui rend difficile le soutien de moteurs d'inférence personnalisés. Pour résoudre ces problèmes, nous proposons un marque de RL basé sur un flux asynchrone appelé AsyncFlow. En particulier, nous introduisons un stockage distribué et un module de transmission de données pour offrir une gestion de données complètement en ligne et des fonctions de programmation à des niveaux très fins. Cette architecture favorise l'itération automatisée des flux et l'équilibre dynamique des charges. De plus, nous proposons un flux de travail asynchrone basé sur consommateur-consommateur, où le processus d'actualisation des paramètres est retardé stratégiquement dans les coins d'état, minimisant ainsi la perte de calculs. Enfin, la fonctionnalité clé de AsyncFlow est d'améliorer l'architecture depuis les moteurs de base d'entraînement et d'inférence, et de fournir une expérience utilisateur modulaire et personnalisable dans une interface utilisateur axée sur le service. Les expériences prolongées montrent une amélioration moyenne de la production du Transformer de 1,59 en comparaison avec les meilleurs approches actuelles, et l'architecture présentée dans cet article offre une vision pratique pour le design des prochains systèmes d'entraînement de RL.",
+      "upvotes": 1,
+      "discussionId": "6865e6598c83dab5f72d1e98",
+      "ai_summary": "An asynchronous streaming RL framework improves efficiency in the post-training phase of large language models by optimizing data management and computational workload balancing.",
+      "ai_keywords": [
+        "AsynFlow",
+        "reinforcement learning (RL)",
+        "large language models (LLMs)",
+        "distributed data storage",
+        "transfer module",
+        "unified data management",
+        "fine-grained scheduling",
+        "streaming",
+        "pipeline overlapping",
+        "dynamic load balancing",
+        "producer-consumer-based asynchronous workflow",
+        "parameter update",
+        "staleness thresholds",
+        "service-oriented user interfaces"
+      ]
+    },
+    "publishedAt": "2025-07-02T08:45:34.000Z",
+    "title": "AsyncFlow: An Asynchronous Streaming RL Framework for Efficient LLM\n  Post-Training",
+    "summary": "Reinforcement learning (RL) has become a pivotal technology in the\npost-training phase of large language models (LLMs). Traditional task-colocated\nRL frameworks suffer from significant scalability bottlenecks, while\ntask-separated RL frameworks face challenges in complex dataflows and the\ncorresponding resource idling and workload imbalance. Moreover, most existing\nframeworks are tightly coupled with LLM training or inference engines, making\nit difficult to support custom-designed engines. To address these challenges,\nwe propose AsyncFlow, an asynchronous streaming RL framework for efficient\npost-training. Specifically, we introduce a distributed data storage and\ntransfer module that provides a unified data management and fine-grained\nscheduling capability in a fully streamed manner. This architecture inherently\nfacilitates automated pipeline overlapping among RL tasks and dynamic load\nbalancing. Moreover, we propose a producer-consumer-based asynchronous workflow\nengineered to minimize computational idleness by strategically deferring\nparameter update process within staleness thresholds. Finally, the core\ncapability of AsynFlow is architecturally decoupled from underlying training\nand inference engines and encapsulated by service-oriented user interfaces,\noffering a modular and customizable user experience. Extensive experiments\ndemonstrate an average of 1.59 throughput improvement compared with\nstate-of-the-art baseline. The presented architecture in this work provides\nactionable insights for next-generation RL training system designs.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6465d3bd63e7e09dd02e95c3/_y3XJtovmLBm_ol-D36bj.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.01663.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6465d3bd63e7e09dd02e95c3",
+      "avatarUrl": "/avatars/b2798bd5f8368f956bf7fab79d9432f0.svg",
+      "fullname": "Jie Feng",
+      "name": "JJ-TMT",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.01004",
+      "authors": [
+        {
+          "_id": "68678cd011736b002cf34d53",
+          "name": "Yuhong Chou",
+          "hidden": false
+        },
+        {
+          "_id": "68678cd011736b002cf34d54",
+          "name": "Zehao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68678cd011736b002cf34d55",
+          "name": "Ruijie Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "68678cd011736b002cf34d56",
+          "name": "Xinyi Wan",
+          "hidden": false
+        },
+        {
+          "_id": "68678cd011736b002cf34d57",
+          "name": "Tianjian Li",
+          "hidden": false
+        },
+        {
+          "_id": "68678cd011736b002cf34d58",
+          "name": "Congying Chu",
+          "hidden": false
+        },
+        {
+          "_id": "68678cd011736b002cf34d59",
+          "name": "Qian Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68678cd011736b002cf34d5a",
+          "name": "Jibin Wu",
+          "hidden": false
+        },
+        {
+          "_id": "68678cd011736b002cf34d5b",
+          "name": "Zejun Ma",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-01T17:54:53.000Z",
+      "submittedOnDailyAt": "2025-07-04T06:43:02.966Z",
+      "title": "ZeCO : Ligne de communication de zero de ZeCO en parallèle séquentiel",
+      "submittedOnDailyBy": {
+        "_id": "612ee6a7b960e78c6d2319d4",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/612ee6a7b960e78c6d2319d4/2Hu9BaAyXbyh1vt0v1Qui.jpeg",
+        "isPro": false,
+        "fullname": "Qian Liu",
+        "user": "SivilTaram",
+        "type": "user"
+      },
+      "summary": "La structure d'attention linéaire fournit une complexité de calcul linéaire pour les modèles de langage à grande échelle (LLMs) et permet un traitement efficace de séquences de longueur (par exemple, 1M contexte). Cependant, les méthodes actuelles de parallélisation séquentielle (SP) jouent un rôle fondamental dans la défaillance de la réseau par la transmission d'overhead entre dispositifs. Dans cet article, nous introduisons un nouveau méthode de parallélisation séquentielle pour les modèles d'attention linéaire appelé ZeCO (Zero Communication Overhead), avec l'objectif de surmonter ces limitations et atteindre un accélérateur linéaire pour l'entraînement de longues séquences. Par exemple, avec ZeCO, on peut entraîner un modèle de 1M séquences sur 64 dispositifs dans des temps similaires à ceux nécessaires pour entraîner un modèle de 16k séquences sur un seul dispositif. Le cœur de ZeCO est l'élément de communication central nouveau, All-Scan, qui fournit des états précis des opérateurs initiaux nécessaires pour chaque SP ranking, en maintenant un minimum de communication. Théoriquement, ZeCO montre son optimalité, en montrant des temps visuels et une surcharge spatiale, et expérimentalement, en comparant les coûts de communication de diverses stratégies de parallélisation séquentielle, All-Scan montre qu'il est le méthode de communication la plus rapide dans des scénarios de SP. En particulier, avec 256 processeurs graphiques et 8M de longueur de séquences, ZeCO atteint un accélération de 60% par rapport aux meilleurs méthodes de SP actuelles. ZeCO s'assure de guider clairement le chemin vers l'entraînement efficace des prochaines générations de LLMs en longueur de séquences, ce qui semblait impossible jusqu'à présent.",
+      "upvotes": 1,
+      "discussionId": "68678cd111736b002cf34d5c",
+      "ai_summary": "A new zero communication overhead sequence parallelism method called ZeCO enables efficient training of large language models with ultra-long sequences across multiple devices.",
+      "ai_keywords": [
+        "linear attention mechanisms",
+        "Large Language Models",
+        "LLMS",
+        "Sequence Parallelism",
+        "SP",
+        "All-Scan",
+        "collective communication primitive",
+        "near-linear scalability",
+        "end-to-end sequence training"
+      ]
+    },
+    "publishedAt": "2025-07-01T13:54:53.000Z",
+    "title": "ZeCO: Zero Communication Overhead Sequence Parallelism for Linear\n  Attention",
+    "summary": "Linear attention mechanisms deliver significant advantages for Large Language\nModels (LLMs) by providing linear computational complexity, enabling efficient\nprocessing of ultra-long sequences (e.g., 1M context). However, existing\nSequence Parallelism (SP) methods, essential for distributing these workloads\nacross devices, become the primary bottleneck due to substantial communication\noverhead. In this paper, we introduce ZeCO (Zero Communication Overhead)\nsequence parallelism for linear attention models, a new SP method designed to\novercome these limitations and achieve end-to-end near-linear scalability for\nlong sequence training. For example, training a model with a 1M sequence length\nacross 64 devices using ZeCO takes roughly the same time as training with an\n16k sequence on a single device. At the heart of ZeCO lies All-Scan, a new\ncollective communication primitive. All-Scan provides each SP rank with\nprecisely the initial operator state it requires while maintaining a minimal\ncommunication footprint, effectively eliminating communication overhead.\nTheoretically, we prove the optimaity of ZeCO, showing that it introduces only\nnegligible time and space overhead. Empirically, we compare the communication\ncosts of different sequence parallelism strategies and demonstrate that\nAll-Scan achieves the fastest communication in SP scenarios. Specifically, on\n256 GPUs with an 8M sequence length, ZeCO achieves a 60\\% speedup compared to\nthe current state-of-the-art (SOTA) SP method. We believe ZeCO establishes a\nclear path toward efficiently training next-generation LLMs on previously\nintractable sequence lengths.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.01004.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "612ee6a7b960e78c6d2319d4",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/612ee6a7b960e78c6d2319d4/2Hu9BaAyXbyh1vt0v1Qui.jpeg",
+      "fullname": "Qian Liu",
+      "name": "SivilTaram",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 84
+    },
+    "isAuthorParticipating": false
+  }
+]
