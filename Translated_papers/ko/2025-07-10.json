@@ -1,0 +1,1510 @@
+[
+  {
+    "paper": {
+      "id": "2507.07095",
+      "authors": [
+        {
+          "_id": "686f2579d938c25d68441b43",
+          "name": "Ke Fan",
+          "hidden": false
+        },
+        {
+          "_id": "686f2579d938c25d68441b44",
+          "name": "Shunlin Lu",
+          "hidden": false
+        },
+        {
+          "_id": "686f2579d938c25d68441b45",
+          "user": {
+            "_id": "6853b71ec1be83a29eb5ba36",
+            "avatarUrl": "/avatars/ae205c2ec2c421a0d7851755b4f123a2.svg",
+            "isPro": false,
+            "fullname": "Minyue Dai",
+            "user": "Jixi111",
+            "type": "user"
+          },
+          "name": "Minyue Dai",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T07:09:19.845Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f2579d938c25d68441b46",
+          "name": "Runyi Yu",
+          "hidden": false
+        },
+        {
+          "_id": "686f2579d938c25d68441b47",
+          "name": "Lixing Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "686f2579d938c25d68441b48",
+          "name": "Zhiyang Dou",
+          "hidden": false
+        },
+        {
+          "_id": "686f2579d938c25d68441b49",
+          "name": "Junting Dong",
+          "hidden": false
+        },
+        {
+          "_id": "686f2579d938c25d68441b4a",
+          "name": "Lizhuang Ma",
+          "hidden": false
+        },
+        {
+          "_id": "686f2579d938c25d68441b4b",
+          "name": "Jingbo Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-09T17:52:04.000Z",
+      "submittedOnDailyAt": "2025-07-10T01:12:54.854Z",
+      "title": "Go to Zero: 마이너스 쉼크의 동작 생성에 대해 (백만 스케일 데이터 사용)",
+      "submittedOnDailyBy": {
+        "_id": "66d59dc9b005ad82ca6fc61d",
+        "avatarUrl": "/avatars/0ba424690afd1144a89665c5bacdfde7.svg",
+        "isPro": false,
+        "fullname": "Runyi YU",
+        "user": "IngridYU",
+        "type": "user"
+      },
+      "summary": "텍스트에 기반한 다양한 자연스러운 인간 동작 시퀀스를 생성하는 것은 컴퓨터 비전, 그래픽, 로봇학 분야에서 기본적이고 어려운 연구 분야입니다. 이 분야에서는 발전이 있었지만, 현재의 방법들은 학습 데이터 세트의 크기가 제한되어 있어 0-shot 일반화 능력에 대한 많은 문제를 가지고 있습니다. 또한 평가 프레임워크의 부족으로 개선 방향을 정할 수 없게 되어 이 문제를 방해하고 있습니다. 본 논문에서는 텍스트로부터 동작을 생성하는 것을 새로운 시대에 끌어들이고, 0-shot 일반화 능력을 달성하는 것을 목표로 합니다. 이를 위해 먼저 효율적인 Annotation Pipeline을 개발하고 지금까지 가장 큰 인간 동작 데이터 세트인 MotionMillion을 소개합니다. 이 데이터 세트는 200만 페이지의 고품질 동작 시퀀스를 특징으로 2,000시간 이상의 동작 시퀀스를 가지고 있습니다. 또한 MotionMillion-Eval을 제안합니다. 이는 0-shot 동작 생성을 평가하기 위한 가장 넓은 벤치마크입니다. scalable한 아키텍처를 활용하여 모델을 7B 파라미터로 확장하고 MotionMillion-Eval에서 성능을 검증합니다. 이 결과는 영역 외의 복잡한 구조의 동작에 강한 일반화 능력을 보여주고, 0-shot의 인간 동작 생성에 대한 중요한 단계를 기록합니다. 코드는 https://github.com/VankouF/MotionMillion-Codes 에 액세스할 수 있습니다.",
+      "upvotes": 32,
+      "discussionId": "686f2579d938c25d68441b4c",
+      "ai_summary": "A new dataset and evaluation framework improve zero-shot text-to-motion generation through a large-scale, high-quality dataset and a scalable model architecture.",
+      "ai_keywords": [
+        "MotionMillion",
+        "MotionMillion-Eval",
+        "zero-shot motion generation",
+        "scalable architecture"
+      ]
+    },
+    "publishedAt": "2025-07-09T13:52:04.000Z",
+    "title": "Go to Zero: Towards Zero-shot Motion Generation with Million-scale Data",
+    "summary": "Generating diverse and natural human motion sequences based on textual\ndescriptions constitutes a fundamental and challenging research area within the\ndomains of computer vision, graphics, and robotics. Despite significant\nadvancements in this field, current methodologies often face challenges\nregarding zero-shot generalization capabilities, largely attributable to the\nlimited size of training datasets. Moreover, the lack of a comprehensive\nevaluation framework impedes the advancement of this task by failing to\nidentify directions for improvement. In this work, we aim to push\ntext-to-motion into a new era, that is, to achieve the generalization ability\nof zero-shot. To this end, firstly, we develop an efficient annotation pipeline\nand introduce MotionMillion-the largest human motion dataset to date, featuring\nover 2,000 hours and 2 million high-quality motion sequences. Additionally, we\npropose MotionMillion-Eval, the most comprehensive benchmark for evaluating\nzero-shot motion generation. Leveraging a scalable architecture, we scale our\nmodel to 7B parameters and validate its performance on MotionMillion-Eval. Our\nresults demonstrate strong generalization to out-of-domain and complex\ncompositional motions, marking a significant step toward zero-shot human motion\ngeneration. The code is available at\nhttps://github.com/VankouF/MotionMillion-Codes.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.07095.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "66d59dc9b005ad82ca6fc61d",
+      "avatarUrl": "/avatars/0ba424690afd1144a89665c5bacdfde7.svg",
+      "fullname": "Runyi YU",
+      "name": "IngridYU",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.06448",
+      "authors": [
+        {
+          "_id": "686f326dd938c25d68441b6a",
+          "name": "Zhenhailong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b6b",
+          "name": "Xuehang Guo",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b6c",
+          "name": "Sofia Stoica",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b6d",
+          "user": {
+            "_id": "645b10e80c73ea27d13f7aca",
+            "avatarUrl": "/avatars/95e565306472a15067440b5b43e07a6f.svg",
+            "isPro": false,
+            "fullname": "xuhaiyang",
+            "user": "xhyandwyy",
+            "type": "user"
+          },
+          "name": "Haiyang Xu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T07:09:17.834Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b6e",
+          "name": "Hongru Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b6f",
+          "name": "Hyeonjeong Ha",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b70",
+          "name": "Xiusi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b71",
+          "name": "Yangyi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b72",
+          "name": "Ming Yan",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b73",
+          "name": "Fei Huang",
+          "hidden": false
+        },
+        {
+          "_id": "686f326dd938c25d68441b74",
+          "name": "Heng Ji",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-08T23:22:34.000Z",
+      "submittedOnDailyAt": "2025-07-10T01:56:27.555Z",
+      "title": "Perception-Aware Policy Optimization for Multimodal Reasoning\n\n感知感知策略优化用于多模态推理",
+      "submittedOnDailyBy": {
+        "_id": "628d7265db4cd1d1717c884f",
+        "avatarUrl": "/avatars/dff2a3dd10d84b4a73fa486402de7219.svg",
+        "isPro": false,
+        "fullname": "Zhenhailong Wang",
+        "user": "mikewang",
+        "type": "user"
+      },
+      "summary": "RLVR는 Large Language Models (LLMs)가 강력한 다스텝 추론 능력을 갖출 때 매우 효과적인 전략임을 증명되어 있습니다. 그러나 그 설계와 최적화는 텍스트 영역에 제한되어 있기 때문에, 다모델 추론 태스크에 적용될 때 성능이 최적화되지 않습니다. 특히, 현재의 다모델 추론에서 오류의 주요 원인은 시각 입력의 관찰을 나타내는 것으로 밝혀졌습니다. 이러한 문제를 해결하기 위해, Perception-Aware Policy Optimization (PAPO)를 제안합니다. PAPO는 GRPO의 간단하고 효과적인 확장이며, 모델이 이유를 배우고 내부의 서브프라이즈 신호를 관찰하도록 유도합니다. 특히, PAPO는 추가 데이터 커리러레이션, 외부 보상 모델, 또는 소유권 모델에 의존하지 않습니다. 구체적으로는, GRPO의 객체에 Implicit Perception Loss를 추가하여 KL 분산항을 사용하며, 이는 간단하지만 다양한 다모델 벤치마크에서 상당한 전체적인 개선 (4.4%)를 초래합니다. 이 개선은 시각 의존성이 높은 태스크에서 더욱 명확하게 (8.0%) 관찰됩니다. 또한, PAPO로 인해 관찰 오류가 크게 감소 (30.5%)하고 관찰 능력이 향상되어 확인되었습니다. PAPO에 대한 자세한 분석을 수행하고 Double Entropy Loss를 사용하여 엄격하게 분석하여 완화했습니다. 총, 우리의 연구는 RLVR의 학습 객체와 시각 기반의 이유를 촉발하는 새로운 RL 프레임워크의 기초를 구축합니다. 프로젝트 페이지: https://mikewangwzhl.github.io/PAPO.",
+      "upvotes": 23,
+      "discussionId": "686f326dd938c25d68441b75",
+      "projectPage": "https://mikewangwzhl.github.io/PAPO",
+      "githubRepo": "https://github.com/MikeWangWZHL/PAPO",
+      "ai_summary": "Perception-Aware Policy Optimization (PAPO) enhances reinforcement learning with verifiable rewards for multimodal reasoning by integrating implicit perception loss, improving visual perception and reasoning.",
+      "ai_keywords": [
+        "Reinforcement Learning with Verifiable Rewards (RLVR)",
+        "Large Language Models (LLMs)",
+        "multimodal reasoning tasks",
+        "Perception-Aware Policy Optimization (PAPO)",
+        "GRPO",
+        "Implicit Perception Loss",
+        "KL divergence",
+        "Double Entropy Loss",
+        "visually grounded reasoning"
+      ],
+      "githubStars": 10
+    },
+    "publishedAt": "2025-07-08T19:22:34.000Z",
+    "title": "Perception-Aware Policy Optimization for Multimodal Reasoning",
+    "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has proven to be a\nhighly effective strategy for endowing Large Language Models (LLMs) with robust\nmulti-step reasoning abilities. However, its design and optimizations remain\ntailored to purely textual domains, resulting in suboptimal performance when\napplied to multimodal reasoning tasks. In particular, we observe that a major\nsource of error in current multimodal reasoning lies in the perception of\nvisual inputs. To address this bottleneck, we propose Perception-Aware Policy\nOptimization (PAPO), a simple yet effective extension of GRPO that encourages\nthe model to learn to perceive while learning to reason, entirely from internal\nsupervision signals. Notably, PAPO does not rely on additional data curation,\nexternal reward models, or proprietary models. Specifically, we introduce the\nImplicit Perception Loss in the form of a KL divergence term to the GRPO\nobjective, which, despite its simplicity, yields significant overall\nimprovements (4.4%) on diverse multimodal benchmarks. The improvements are more\npronounced, approaching 8.0%, on tasks with high vision dependency. We also\nobserve a substantial reduction (30.5%) in perception errors, indicating\nimproved perceptual capabilities with PAPO. We conduct comprehensive analysis\nof PAPO and identify a unique loss hacking issue, which we rigorously analyze\nand mitigate through a Double Entropy Loss. Overall, our work introduces a\ndeeper integration of perception-aware supervision into RLVR learning\nobjectives and lays the groundwork for a new RL framework that encourages\nvisually grounded reasoning. Project page: https://mikewangwzhl.github.io/PAPO.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.06448.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "628d7265db4cd1d1717c884f",
+      "avatarUrl": "/avatars/dff2a3dd10d84b4a73fa486402de7219.svg",
+      "fullname": "Zhenhailong Wang",
+      "name": "mikewang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.06920",
+      "authors": [
+        {
+          "_id": "686f1da1d938c25d68441b1b",
+          "user": {
+            "_id": "677e869467f3bb8d8215eec6",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/677e869467f3bb8d8215eec6/kEC6JOKObgLHA22jRcP4H.jpeg",
+            "isPro": false,
+            "fullname": "Zihan Ma",
+            "user": "MichaelErchi",
+            "type": "user"
+          },
+          "name": "Zihan Ma",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T07:09:33.413Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f1da1d938c25d68441b1c",
+          "name": "Taolin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686f1da1d938c25d68441b1d",
+          "name": "Maosong Cao",
+          "hidden": false
+        },
+        {
+          "_id": "686f1da1d938c25d68441b1e",
+          "name": "Wenwei Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686f1da1d938c25d68441b1f",
+          "name": "Minnan Luo",
+          "hidden": false
+        },
+        {
+          "_id": "686f1da1d938c25d68441b20",
+          "name": "Songyang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686f1da1d938c25d68441b21",
+          "name": "Kai Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-09T14:58:47.000Z",
+      "submittedOnDailyAt": "2025-07-10T00:31:10.862Z",
+      "title": "리ティディング・バリデーション을 재검토하고 LLM 코드 생성: 코드 생성에서 테스트로",
+      "submittedOnDailyBy": {
+        "_id": "677e869467f3bb8d8215eec6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/677e869467f3bb8d8215eec6/kEC6JOKObgLHA22jRcP4H.jpeg",
+        "isPro": false,
+        "fullname": "Zihan Ma",
+        "user": "MichaelErchi",
+        "type": "user"
+      },
+      "summary": "대 언어 모형（LLMs）는 HumanEval, LiveCodeBench 등 코드 생성 벤치마크에서 최근에 눈에 띄는 성공을 거두었다. 그러나 세부적인 조사에 따르면, 이러한 평가 시스템은 일반적으로 한정된 수의 동질한 테스트 케이스를 포함하고 있으며, 거의 모든 오류를 감지하지 못하는 것을 명확히 한다. 이는 측정된 성능을 인공적으로 상승시키고 시각화 가능한 보상을 활용하는 강화 학습 프레임워크（RLVR）에서 정확한 보상 평가가 파괴되는 일과 함께 나타난다. 이러한 중요한 결함이 해결하기 위해, 테스트 케이스 생성（TCG） 태스크를 체계적으로 조사하기 위해, 다양한 메트릭을 제안하여 다양한 테스트 시스템의 세부 사항을 엄격하게 양수화하고, 인간의 프로그래밍 지식과 LLM의 논리력 능력을 조합한 인간-LLM 협력 방법（SAGA）을 도입하여 생성되는 테스트 케이스의 커버리지와 질을 크게 향상시키는 것을 목표로 한다. 또한, TCGBench를 개발하여 TCG 태스크의 연구를 지원한다. 실험 결과를 따르면, SAGA는 TCGBench에서 감지율은 90.62%, 검증 데이터의 정확도는 32.58%이다. SAGA가 합성한 코드 생성 평가 벤치마크의 Verifier Accuracy（Verifier Acc）는 LiveCodeBench-v6보다 10.78% 높다. 이러한 결과는 우리 제안된 방법의 효과를 보여준다. 우리는 이 연구가 신뢰할 수 있는 LLM 코드 평가의 scalable 기반 구축에 기여하고, 코드 생성의 RLVR의 발전을 촉진하고, 자동화된 대립 테스트 합성과 적응적인 벤치마크 통합을 위한 길을 열어주는 것을 희망한다.",
+      "upvotes": 18,
+      "discussionId": "686f1da1d938c25d68441b22",
+      "ai_summary": "A human-LLM collaborative method enhances code generation test case generation, improving reliability and detection rates in code evaluation benchmarks.",
+      "ai_keywords": [
+        "large language models",
+        "code-generation",
+        "HumanEval",
+        "LiveCodeBench",
+        "test-case generation",
+        "multi-dimensional metrics",
+        "human-LLM collaboration",
+        "SAGA",
+        "TCGBench",
+        "reinforcement learning frameworks",
+        "verifiable rewards",
+        "RLVR",
+        "verifier accuracy",
+        "adversarial test synthesis",
+        "adaptive benchmark integration"
+      ]
+    },
+    "publishedAt": "2025-07-09T10:58:47.000Z",
+    "title": "Rethinking Verification for LLM Code Generation: From Generation to\n  Testing",
+    "summary": "Large language models (LLMs) have recently achieved notable success in\ncode-generation benchmarks such as HumanEval and LiveCodeBench. However, a\ndetailed examination reveals that these evaluation suites often comprise only a\nlimited number of homogeneous test cases, resulting in subtle faults going\nundetected. This not only artificially inflates measured performance but also\ncompromises accurate reward estimation in reinforcement learning frameworks\nutilizing verifiable rewards (RLVR). To address these critical shortcomings, we\nsystematically investigate the test-case generation (TCG) task by proposing\nmulti-dimensional metrics designed to rigorously quantify test-suite\nthoroughness. Furthermore, we introduce a human-LLM collaborative method\n(SAGA), leveraging human programming expertise with LLM reasoning capability,\naimed at significantly enhancing both the coverage and the quality of generated\ntest cases. In addition, we develop a TCGBench to facilitate the study of the\nTCG task. Experiments show that SAGA achieves a detection rate of 90.62% and a\nverifier accuracy of 32.58% on TCGBench. The Verifier Accuracy (Verifier Acc)\nof the code generation evaluation benchmark synthesized by SAGA is 10.78%\nhigher than that of LiveCodeBench-v6. These results demonstrate the\neffectiveness of our proposed method. We hope this work contributes to building\na scalable foundation for reliable LLM code evaluation, further advancing RLVR\nin code generation, and paving the way for automated adversarial test synthesis\nand adaptive benchmark integration.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.06920.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "677e869467f3bb8d8215eec6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/677e869467f3bb8d8215eec6/kEC6JOKObgLHA22jRcP4H.jpeg",
+      "fullname": "Zihan Ma",
+      "name": "MichaelErchi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.07105",
+      "authors": [
+        {
+          "_id": "686f5cbad938c25d68441bb2",
+          "user": {
+            "_id": "643e9efa2263cdc630f88f5c",
+            "avatarUrl": "/avatars/96cea51f17e7d41ffb6a4b438e05f5cb.svg",
+            "isPro": false,
+            "fullname": "Yushen Zuo",
+            "user": "YSZuo",
+            "type": "user"
+          },
+          "name": "Yushen Zuo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T09:12:43.813Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bb3",
+          "name": "Qi Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bb4",
+          "name": "Mingyang Wu",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bb5",
+          "name": "Xinrui Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bb6",
+          "name": "Renjie Li",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bb7",
+          "name": "Jian Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bb8",
+          "name": "Yide Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bb9",
+          "name": "Gengchen Mai",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bba",
+          "name": "Lihong V. Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bbb",
+          "name": "James Zou",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bbc",
+          "name": "Xiaoyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bbd",
+          "name": "Ming-Hsuan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "686f5cbad938c25d68441bbe",
+          "user": {
+            "_id": "62548d5fef3debb2ddf91217",
+            "avatarUrl": "/avatars/14975b45568f9c399c92c3986b6ce83e.svg",
+            "isPro": false,
+            "fullname": "Zhengzhong Tu",
+            "user": "vztu",
+            "type": "user"
+          },
+          "name": "Zhengzhong Tu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T09:12:41.972Z",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/62548d5fef3debb2ddf91217/ESnx_PS3_HUQoNDY5cSqI.png"
+      ],
+      "publishedAt": "2025-07-09T17:59:19.000Z",
+      "submittedOnDailyAt": "2025-07-10T04:56:36.746Z",
+      "title": "4KAgent: 4K 초해상도 에이전트\n\n(Note: The translation is provided as requested, maintaining professionalism and accuracy.)",
+      "submittedOnDailyBy": {
+        "_id": "62548d5fef3debb2ddf91217",
+        "avatarUrl": "/avatars/14975b45568f9c399c92c3986b6ce83e.svg",
+        "isPro": false,
+        "fullname": "Zhengzhong Tu",
+        "user": "vztu",
+        "type": "user"
+      },
+      "summary": "우리는 4KAgent를 제시합니다. 이는 모든 이미지를 4K 해상도(반복적으로 적용할 경우 더 높은 해상도까지)로 일관된 agentic 슈퍼 리졸루션 일반화 시스템입니다. 우리의 시스템은 극히 낮은 해상도에서 심한 저해상도를 가진 이미지를 변환하여, 예를 들어 256x256 해상도에서 매우 왜곡된 입력을 결정적인 4K 해상도의 이미지로 바꾸는 것을 가능하게 합니다. 4KAgent는 세 개의 핵심 구성 요소로 구성되어 있습니다: (1) 프로파일링, 특정 사용 사례에 기반한 4KAgent 파이프라인의 사용자定制; (2) 감각 에이전트, 시각 언어 모델과 이미지 품질 평가 전문가를 활용하여 입력 이미지를 분석하고 맞춤형 복원 계획을 작성하는 것; (3) 복원 에이전트, 재귀적인 실행-반영 패러다임에 따라 최적의 출력을 선택하여 계획을 수행하는 것. 또한 4KAgent는 특수화된 얼굴 복원 파이프라인을 포함하여, 포트레이트 및 셀프 피otos의 얼굴 디테일을 크게 향상시킵니다. 우리는 11개의 다른 작업 카테고리를 포함하여 총 26개의 다양한 벤치마크를 통해 4KAgent를 엄격하게 평가했습니다. 이 평가는 자연 이미지, 포트레이트 사진, AI 생성 콘텐츠, 위성 영상, 플루로렌스 미croscopy, 그리고 의료 영상(예: 광학대장관, 초음파, X-ray)을 포함하여 광범위한 영상 분야의 최신 수준을 세팅했습니다. 우리의 평가는 감각적(예: NIQE, MUSIQ)과 정확성(예: PSNR) 지표에서 우수한 성능을 보여주었습니다. 낮은 수준의 시각 작업의 새로운 agentic 패러다임 구축을 통해, 다양한 연구 커뮤니티에서 시각 중심의 자율 에이전트의 더 넓은 관심과 혁신을 촉진하고자 합니다. 모든 코드, 모델, 그리고 결과를 https://4kagent.github.io에서 공개하겠습니다.",
+      "upvotes": 15,
+      "discussionId": "686f5cbbd938c25d68441bbf",
+      "projectPage": "https://4kagent.github.io/",
+      "githubRepo": "https://github.com/taco-group/4KAgent",
+      "ai_summary": "4KAgent, a unified agentic super-resolution system, enhances low-resolution images to 4K using profiling, perception, and restoration agents, achieving state-of-the-art performance across various imaging domains.",
+      "ai_keywords": [
+        "agentic super-resolution",
+        "Profiling",
+        "Perception Agent",
+        "vision-language models",
+        "image quality assessment",
+        "Restoration Agent",
+        "recursive execution-reflection",
+        "quality-driven mixture-of-experts",
+        "face restoration pipeline",
+        "NIQE",
+        "MUSIQ",
+        "PSNR",
+        "low-level vision tasks",
+        "autonomous agents"
+      ],
+      "githubStars": 8
+    },
+    "publishedAt": "2025-07-09T13:59:19.000Z",
+    "title": "4KAgent: Agentic Any Image to 4K Super-Resolution",
+    "summary": "We present 4KAgent, a unified agentic super-resolution generalist system\ndesigned to universally upscale any image to 4K resolution (and even higher, if\napplied iteratively). Our system can transform images from extremely low\nresolutions with severe degradations, for example, highly distorted inputs at\n256x256, into crystal-clear, photorealistic 4K outputs. 4KAgent comprises three\ncore components: (1) Profiling, a module that customizes the 4KAgent pipeline\nbased on bespoke use cases; (2) A Perception Agent, which leverages\nvision-language models alongside image quality assessment experts to analyze\nthe input image and make a tailored restoration plan; and (3) A Restoration\nAgent, which executes the plan, following a recursive execution-reflection\nparadigm, guided by a quality-driven mixture-of-expert policy to select the\noptimal output for each step. Additionally, 4KAgent embeds a specialized face\nrestoration pipeline, significantly enhancing facial details in portrait and\nselfie photos. We rigorously evaluate our 4KAgent across 11 distinct task\ncategories encompassing a total of 26 diverse benchmarks, setting new\nstate-of-the-art on a broad spectrum of imaging domains. Our evaluations cover\nnatural images, portrait photos, AI-generated content, satellite imagery,\nfluorescence microscopy, and medical imaging like fundoscopy, ultrasound, and\nX-ray, demonstrating superior performance in terms of both perceptual (e.g.,\nNIQE, MUSIQ) and fidelity (e.g., PSNR) metrics. By establishing a novel agentic\nparadigm for low-level vision tasks, we aim to catalyze broader interest and\ninnovation within vision-centric autonomous agents across diverse research\ncommunities. We will release all the code, models, and results at:\nhttps://4kagent.github.io.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/62548d5fef3debb2ddf91217/ESnx_PS3_HUQoNDY5cSqI.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.07105.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62548d5fef3debb2ddf91217",
+      "avatarUrl": "/avatars/14975b45568f9c399c92c3986b6ce83e.svg",
+      "fullname": "Zhengzhong Tu",
+      "name": "vztu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.06457",
+      "authors": [
+        {
+          "_id": "686f2371d938c25d68441b36",
+          "name": "Dustin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b37",
+          "user": {
+            "_id": "63ff09f24852102d4871c19c",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63ff09f24852102d4871c19c/lyE3xemtZss3qebK5sEXw.png",
+            "isPro": false,
+            "fullname": "Rui-Jie Zhu",
+            "user": "ridger",
+            "type": "user"
+          },
+          "name": "Rui-Jie Zhu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T07:09:30.737Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b38",
+          "name": "Steven Abreu",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b39",
+          "name": "Yong Shan",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b3a",
+          "name": "Taylor Kergan",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b3b",
+          "name": "Yuqi Pan",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b3c",
+          "name": "Yuhong Chou",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b3d",
+          "name": "Zheng Li",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b3e",
+          "name": "Ge Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b3f",
+          "name": "Wenhao Huang",
+          "hidden": false
+        },
+        {
+          "_id": "686f2371d938c25d68441b40",
+          "name": "Jason Eshraghian",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-08T23:54:11.000Z",
+      "submittedOnDailyAt": "2025-07-10T02:04:35.136Z",
+      "title": "하이브리드 선형 어텐션의 체계적인 분석",
+      "submittedOnDailyBy": {
+        "_id": "63ff09f24852102d4871c19c",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63ff09f24852102d4871c19c/lyE3xemtZss3qebK5sEXw.png",
+        "isPro": false,
+        "fullname": "Rui-Jie Zhu",
+        "user": "ridger",
+        "type": "user"
+      },
+      "summary": "Transformers는 긴 시퀀스에 대해 두차적인 복잡성과 메모리 문제를 겪으며, 고정 크기의 은닉 상태 사용과 선형 어텐션 구조 도입으로 해결됩니다. 그러나 선형 모델은 일반적으로 메모리 성능이 제한되어, 선형 어텐션과 완전 어텐션 계층을 조합한 하이브리드 아키텍처가 도입되었습니다. 하이브리드 아키텍처의 연구가 광범위하게 진행되어 있지만, 선형 어텐션 구성 요소의 선택에 대한 심도있는 조사가 부족합니다. 우리는 선형 어텐션 모델이 벡터 재현에서 발전한 게이팅 구조까지 구축하고, 단일과 하이브리드화된 것을 모두 평가합니다. 이를 위해, 우리는 72개의 모델을 훈련하고 오픈소스했습니다: 340M 파라미터(20B 토큰)의 모델 36개와 1.3B 파라미터(100B 토큰)의 모델 36개, 5개의 하이브리드 비율로 6개의 선형 어텐션의 변체를 포함합니다. 표준의 언어 모델링과 메모리 태스크 벤치마크를 통해, 최상위의 단일 선형 모델은 반드시 하이브리드 모델보다 뛰어나지 않은 것을 명확히 합니다. 언어 모델링은 선형 어텐션에서 완전 어텐션의 비율로 안정되고, 완전 어텐션 계층의 증가로 메모리 성능이 유의미하게 향상되고, 특히 3:1의 비율 이하에서는 효과적이며. 우리의 연구는 선택적인 게이팅, 계층적 재현, 제어된 잊음을 하이브리드 모델에서 중요하다고 밝혔습니다. HGRN-2나 GatedDeltaNet 같은 아키텍처를 권장하고, 선형 어텐션과 완전 어텐션의 비율이 3:1에서 6:1의 범위로 효율적으로 Transformer 수준의 메모리 성능을 달성하는 것을 목표로 합니다. 우리의 모델은 https://huggingface.co/collections/m-a-p/hybrid-linear-attention-research-686c488a63d609d2f20e2b1e 에서 오픈소스되어 있습니다.",
+      "upvotes": 13,
+      "discussionId": "686f2371d938c25d68441b41",
+      "projectPage": "https://huggingface.co/collections/m-a-p/hybrid-linear-attention-research-686c488a63d609d2f20e2b1e",
+      "ai_summary": "Research evaluates various linear attention models and their integration with full attention in Transformers, identifying key mechanisms like selective gating and hierarchical recurrence for enhanced recall performance.",
+      "ai_keywords": [
+        "quadratic complexity",
+        "linear attention mechanisms",
+        "full attention layers",
+        "hybrid architectures",
+        "vector recurrences",
+        "gating mechanisms",
+        "recall performance",
+        "language modeling",
+        "recall tasks",
+        "selective gating",
+        "hierarchical recurrence",
+        "controlled forgetting",
+        "HGRN-2",
+        "GatedDeltaNet"
+      ]
+    },
+    "publishedAt": "2025-07-08T19:54:11.000Z",
+    "title": "A Systematic Analysis of Hybrid Linear Attention",
+    "summary": "Transformers face quadratic complexity and memory issues with long sequences,\nprompting the adoption of linear attention mechanisms using fixed-size hidden\nstates. However, linear models often suffer from limited recall performance,\nleading to hybrid architectures that combine linear and full attention layers.\nDespite extensive hybrid architecture research, the choice of linear attention\ncomponent has not been deeply explored. We systematically evaluate various\nlinear attention models across generations - vector recurrences to advanced\ngating mechanisms - both standalone and hybridized. To enable this\ncomprehensive analysis, we trained and open-sourced 72 models: 36 at 340M\nparameters (20B tokens) and 36 at 1.3B parameters (100B tokens), covering six\nlinear attention variants across five hybridization ratios. Benchmarking on\nstandard language modeling and recall tasks reveals that superior standalone\nlinear models do not necessarily excel in hybrids. While language modeling\nremains stable across linear-to-full attention ratios, recall significantly\nimproves with increased full attention layers, particularly below a 3:1 ratio.\nOur study highlights selective gating, hierarchical recurrence, and controlled\nforgetting as critical for effective hybrid models. We recommend architectures\nsuch as HGRN-2 or GatedDeltaNet with a linear-to-full ratio between 3:1 and 6:1\nto achieve Transformer-level recall efficiently. Our models are open-sourced at\nhttps://huggingface.co/collections/m-a-p/hybrid-linear-attention-research-686c488a63d609d2f20e2b1e.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.06457.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63ff09f24852102d4871c19c",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63ff09f24852102d4871c19c/lyE3xemtZss3qebK5sEXw.png",
+      "fullname": "Rui-Jie Zhu",
+      "name": "ridger",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 23
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.07017",
+      "authors": [
+        {
+          "_id": "686f39e8d938c25d68441b89",
+          "user": {
+            "_id": "64ab99dcb76bfd863eba64c1",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ab99dcb76bfd863eba64c1/UBXwDPx17X-gl-SzBPvrc.jpeg",
+            "isPro": false,
+            "fullname": "TY.Zheng",
+            "user": "aaabiao",
+            "type": "user"
+          },
+          "name": "Tianyu Zheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T07:09:04.799Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b8a",
+          "user": {
+            "_id": "65d2251f98b4a470bf6a26e3",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65d2251f98b4a470bf6a26e3/C4T0LHYGejrI9mu_k3M8p.jpeg",
+            "isPro": false,
+            "fullname": "xts",
+            "user": "xtsssss",
+            "type": "user"
+          },
+          "name": "Tianshun Xing",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T09:12:45.801Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b8b",
+          "name": "Qingshui Gu",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b8c",
+          "name": "Taoran Liang",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b8d",
+          "name": "Xingwei Qu",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b8e",
+          "name": "Xin Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b8f",
+          "name": "Yizhi Li",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b90",
+          "name": "Zhoufutu Wen",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b91",
+          "name": "Chenghua Lin",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b92",
+          "name": "Wenhao Huang",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b93",
+          "name": "Qian Liu",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b94",
+          "name": "Ge Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686f39e8d938c25d68441b95",
+          "name": "Zejun Ma",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-09T16:45:48.000Z",
+      "submittedOnDailyAt": "2025-07-10T02:29:04.666Z",
+      "title": "First Return, Entropy-Eliciting Explore",
+      "submittedOnDailyBy": {
+        "_id": "638efcf4c67af472d316d424",
+        "avatarUrl": "/avatars/97a57859d7d87a3a8f1bb41d32a72bc2.svg",
+        "isPro": false,
+        "fullname": "Ge Zhang",
+        "user": "zhangysk",
+        "type": "user"
+      },
+      "summary": "確認できる報酬からの強化学習（RLVR）는 대규모 언어 모델（LLMs）의 의사결정 능력 향상에 도움을 줄 수 있지만, 불안정한 탐색에 어려움을 겪습니다. 우리는 의사결정의 높은 불확실성을 갖는 이유의 경로에서, 문맥 기반의 중간적인 피드백을 구축하기 위한 목표지향적인 로봇 봇을 제안합니다. FR3E（First Return, Entropy-Eliciting Explore）는 밀집한 슈퍼바이온에 의존하지 않도록 특정한 지침을 제공합니다. 수학적인 이유 벤치마크（AIME24）에서 실험 결과를 통해, FR3E는 안정적인 학습을 촉진하고 긴, 코라어른한 대답을 생성하고, 완전히 정확한 경로의 비율을 증가시킵니다. 이러한 결과를 통해, 더 강건하고 구조화된 탐색을 통해 LLM의 의사결정 능력 향상을 위한 프레임워크의 효과가 밝혀져 있습니다.",
+      "upvotes": 12,
+      "discussionId": "686f39e8d938c25d68441b96",
+      "ai_summary": "FR3E enhances LLM reasoning by providing structured exploration through targeted rollouts at high-uncertainty points, leading to more stable training and accurate responses.",
+      "ai_keywords": [
+        "Reinforcement Learning from Verifiable Rewards",
+        "RLVR",
+        "Large Language Models",
+        "LLMs",
+        "FR3E",
+        "First Return",
+        "Entropy-Eliciting Explore",
+        "structured exploration",
+        "high-uncertainty decision points",
+        "reasoning trajectories",
+        "targeted rollouts",
+        "semantically grounded intermediate feedback",
+        "mathematical reasoning benchmarks",
+        "AIME24",
+        "stable training",
+        "coherent responses",
+        "fully correct trajectories"
+      ]
+    },
+    "publishedAt": "2025-07-09T12:45:48.000Z",
+    "title": "First Return, Entropy-Eliciting Explore",
+    "summary": "Reinforcement Learning from Verifiable Rewards (RLVR) improves the reasoning\nabilities of Large Language Models (LLMs) but it struggles with unstable\nexploration. We propose FR3E (First Return, Entropy-Eliciting Explore), a\nstructured exploration framework that identifies high-uncertainty decision\npoints in reasoning trajectories and performs targeted rollouts to construct\nsemantically grounded intermediate feedback. Our method provides targeted\nguidance without relying on dense supervision. Empirical results on\nmathematical reasoning benchmarks(AIME24) show that FR3E promotes more stable\ntraining, produces longer and more coherent responses, and increases the\nproportion of fully correct trajectories. These results highlight the\nframework's effectiveness in improving LLM reasoning through more robust and\nstructured exploration.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.07017.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "638efcf4c67af472d316d424",
+      "avatarUrl": "/avatars/97a57859d7d87a3a8f1bb41d32a72bc2.svg",
+      "fullname": "Ge Zhang",
+      "name": "zhangysk",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 50
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.05687",
+      "authors": [
+        {
+          "_id": "686e2c00a5f0f70d9de40c8c",
+          "name": "Shangzhan Li",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c8d",
+          "name": "Zefan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c8e",
+          "name": "Ye He",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c8f",
+          "name": "Yuxuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c90",
+          "user": {
+            "_id": "62ccd26d376917c022420a46",
+            "avatarUrl": "/avatars/629858b1c7419dbcdbead3484a36abd1.svg",
+            "isPro": false,
+            "fullname": "Qi Shi",
+            "user": "qshi",
+            "type": "user"
+          },
+          "name": "Qi Shi",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-09T08:49:03.237Z",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c91",
+          "name": "Jianling Li",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c92",
+          "name": "Yonggang Hu",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c93",
+          "name": "Wanxiang Che",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c94",
+          "name": "Xu Han",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c95",
+          "name": "Zhiyuan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "686e2c00a5f0f70d9de40c96",
+          "name": "Maosong Sun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-08T05:38:24.000Z",
+      "submittedOnDailyAt": "2025-07-10T00:44:20.590Z",
+      "title": "AutoTriton: 자동トリトン 프로그래밍에 의한 강화학습",
+      "submittedOnDailyBy": {
+        "_id": "62ccd26d376917c022420a46",
+        "avatarUrl": "/avatars/629858b1c7419dbcdbead3484a36abd1.svg",
+        "isPro": false,
+        "fullname": "Qi Shi",
+        "user": "qshi",
+        "type": "user"
+      },
+      "summary": "ディープラーニング의 커널 개발은 하드웨어 기능의 최적화를 수행하는 데 필요하며, 메모리 관리, 병렬 계산, 하드웨어 고유의 최적화에 대한 조정을 위해 실험적인 조정을 엄격히 수행해야 합니다. Domain-specific language처럼 Triton은 낮은 수준의 세부 사항을 추상화하여 GPU 프로그래밍을 간단히 하지만, 개발자는 타일 사이즈, 메모리 접근 패턴 등 중요한 파라미터를 손으로 조정해야 하며, 최적의 성능과 광범위한 도입에 큰 벽이 있습니다. 이 연구에서는 첫 번째 Triton 프로그래밍에专用한 모델인 AutoTriton을 소개하며, 강화학습(RL)을 갖습니다. AutoTriton은 고품질의 데이터 감시 파이프라인을 사용하여 Triton 프로그래밍의 기본적인 지식을 조정하기 위해 지도 학습(SFT)을 수행하고, Group Relative Policy Optimization(GRPO) 알고리즘을 사용하여 규칙 기반의 보상과 실행 기반의 보상을 조합하여 Triton 프로그래밍 능력을 향상시킵니다. TritonBench와 KernelBench의 5개의 평가 채널에서 수행한 실험은 우리의 8B 모델 AutoTriton이主流의 큰 규모의 모델과 같은 성능을 달성했다고 보여줍니다. 이러한 결과를 통해, RL이 자동으로 고성능의 커널을 생성할 가능성을 보여주고, 고성능의 커널은 AI 시스템의 핵심 부분이라는 것을 보여줍니다. 이 혁신은 더 효율적인 AI 시스템의 구축에 중요한 기초를 제공하고 있습니다. 모델과 코드는 https://github.com/AI9Stars/AutoTriton에서 사용 가능합니다.",
+      "upvotes": 8,
+      "discussionId": "686e2c00a5f0f70d9de40c97"
+    },
+    "publishedAt": "2025-07-08T01:38:24.000Z",
+    "title": "AutoTriton: Automatic Triton Programming with Reinforcement Learning in\n  LLMs",
+    "summary": "Kernel development in deep learning requires optimizing computational units\nacross hardware while balancing memory management, parallelism, and\nhardware-specific optimizations through extensive empirical tuning. Although\ndomain-specific languages like Triton simplify GPU programming by abstracting\nlow-level details, developers must still manually tune critical parameters such\nas tile sizes and memory access patterns through iterative experimentation,\ncreating substantial barriers to optimal performance and wider adoption. In\nthis work, we introduce AutoTriton, the first model dedicated to Triton\nprogramming powered by reinforcement learning (RL). AutoTriton performs\nsupervised fine-tuning (SFT) to be equipped with essential Triton programming\nexpertise using a high-quality data gathering pipeline, and conducts RL with\nGroup Relative Policy Optimization (GRPO) algorithm, combining a rule-based\nreward and an execution-based reward to further improve Triton programming\nability, sequentially. Experiments across five evaluation channels of\nTritonBench and KernelBench illustrate that our 8B model AutoTriton achieves\nperformance comparable to mainstream large models, including Claude-4-Sonnet\nand DeepSeek-R1-0528. Further experimental analysis demonstrates the crucial\nrole of each module within AutoTriton, including the SFT stage, the RL stage,\nand the reward design strategy. These findings underscore the promise of RL for\nautomatically generating high-performance kernels, and since high-performance\nkernels are core components of AI systems, this breakthrough establishes an\nimportant foundation for building more efficient AI systems. The model and code\nwill be available at https://github.com/AI9Stars/AutoTriton.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.05687.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62ccd26d376917c022420a46",
+      "avatarUrl": "/avatars/629858b1c7419dbcdbead3484a36abd1.svg",
+      "fullname": "Qi Shi",
+      "name": "qshi",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.06804",
+      "authors": [
+        {
+          "_id": "686f1f4dd938c25d68441b24",
+          "name": "Zhenwen Liang",
+          "hidden": false
+        },
+        {
+          "_id": "686f1f4dd938c25d68441b25",
+          "name": "Linfeng Song",
+          "hidden": false
+        },
+        {
+          "_id": "686f1f4dd938c25d68441b26",
+          "name": "Yang Li",
+          "hidden": false
+        },
+        {
+          "_id": "686f1f4dd938c25d68441b27",
+          "name": "Tao Yang",
+          "hidden": false
+        },
+        {
+          "_id": "686f1f4dd938c25d68441b28",
+          "name": "Feng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "686f1f4dd938c25d68441b29",
+          "name": "Haitao Mi",
+          "hidden": false
+        },
+        {
+          "_id": "686f1f4dd938c25d68441b2a",
+          "name": "Dong Yu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-07T22:38:49.000Z",
+      "submittedOnDailyAt": "2025-07-10T00:33:32.493Z",
+      "title": "복잡한 IMO 문제에 대한 설명을 받아 해결하기 위한 방법의 개발",
+      "submittedOnDailyBy": {
+        "_id": "62ffa3f8311cad266f9af236",
+        "avatarUrl": "/avatars/203dac40bc546ee25a01d8715a4b3049.svg",
+        "isPro": false,
+        "fullname": "Zhenwen Liang",
+        "user": "invokerliang",
+        "type": "user"
+      },
+      "summary": "形式언어에서의 자동정리 증명(ATP)는 인공지능의 기초적인 문제입니다. 라저트・란그저지거모렐 모델(LLMs)은 놀라운 발전을 거둬왔지만, 강력한 비정식적인 논리론의 능력과 정식적인 정리 증명의 성능 사이에 큰 공백이 남아 있습니다. 최근의 연구에 따르면 비정식적인 정확도는 80%를 초과하고, 정식적인 성공률은 PutnamBench 같은 벤치마크에서 8% 미만입니다. 우리는 이러한 공백이 남아있는 이유는 현재의 최전단적인 증명기들이 논리론과 정리 증명을 엄격하게 연결하고, 깊은 논리론을 우선시하며 얕은 텍스트 기반의 전략으로 훈련되어 있기 때문이라고 주장합니다. 이러한 기본적인 공백을 건너뜁을 수 있는 데, 우리는 고수준의 논리론과 저수준의 정리 생성을 분리하는 새로운 프레임워크를 제안합니다. 우리의 접근법은 강력한 일반적인 Reasoner와 효율적인 Prover의 두 가지 특수화된 모델을 사용합니다. Reasoner는 다양한 전략적인 부분 목표의 정리를 생성하고, Prover는 이를 엄격하게 증명합니다. 이 모듈화된 설계는 모델의 모든 논리론의 가능성을 해방하고, 종단에서의 훈련의 단점을 피합니다. 우리의 방법은 2000년 이후의 어려운 IMO 문제의 어려운 세트에서 평가되었습니다. 이 문제 세트에서 이전에 오픈소스의 증명기가 성공을 보고 있지 않았기 때문에. 우리의 분리된 프레임워크는 이러한 문제 중 5개를 성공적으로 처리하고, 특히 어려운 수학적인 도전에 대한 자동 논리론에 대해 중요한 단계를 보여주었습니다. 향후의 연구를 위해, 우리는 광범위한 IMO 문제의 생성된 및 증명된 정리의 완전한 데이터 세트를 릴리즈합니다. 이 데이터 세트는 https://tencent-imo.github.io/ 에서 사용 가능합니다.",
+      "upvotes": 8,
+      "discussionId": "686f1f4ed938c25d68441b2b",
+      "ai_summary": "A novel framework decouples reasoning and proving in ATP to improve formal proving performance, achieving success on challenging IMO problems.",
+      "ai_keywords": [
+        "Automated Theorem Proving",
+        "Large Language Models",
+        "formal proving",
+        "informal reasoning",
+        "PutnamBench",
+        "subgoal lemmas",
+        "Reasoner",
+        "Prover",
+        "modular design",
+        "end-to-end training",
+        "IMO problems"
+      ]
+    },
+    "publishedAt": "2025-07-07T18:38:49.000Z",
+    "title": "Towards Solving More Challenging IMO Problems via Decoupled Reasoning\n  and Proving",
+    "summary": "Automated Theorem Proving (ATP) in formal languages is a foundational\nchallenge for AI. While Large Language Models (LLMs) have driven remarkable\nprogress, a significant gap remains between their powerful informal reasoning\ncapabilities and their weak formal proving performance. Recent studies show\nthat the informal accuracy exceeds 80% while formal success remains below 8% on\nbenchmarks like PutnamBench. We argue this gap persists because current\nstate-of-the-art provers, by tightly coupling reasoning and proving, are\ntrained with paradigms that inadvertently punish deep reasoning in favor of\nshallow, tactic-based strategies. To bridge this fundamental gap, we propose a\nnovel framework that decouples high-level reasoning from low-level proof\ngeneration. Our approach utilizes two distinct, specialized models: a powerful,\ngeneral-purpose Reasoner to generate diverse, strategic subgoal lemmas, and an\nefficient Prover to rigorously verify them. This modular design liberates the\nmodel's full reasoning potential and bypasses the pitfalls of end-to-end\ntraining. We evaluate our method on a challenging set of post-2000 IMO\nproblems, a problem set on which no prior open-source prover has reported\nsuccess. Our decoupled framework successfully solves 5 of these problems,\ndemonstrating a significant step towards automated reasoning on exceptionally\ndifficult mathematical challenges. To foster future research, we release our\nfull dataset of generated and verified lemmas for a wide range of IMO problems,\navailable at https://tencent-imo.github.io/ .",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.06804.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62ffa3f8311cad266f9af236",
+      "avatarUrl": "/avatars/203dac40bc546ee25a01d8715a4b3049.svg",
+      "fullname": "Zhenwen Liang",
+      "name": "invokerliang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2506.24044",
+      "authors": [
+        {
+          "_id": "68681d82213f123a1f88b973",
+          "user": {
+            "_id": "683daabc402acb18654e4674",
+            "avatarUrl": "/avatars/9307b4c1c248e45b2daa8ffa1d74d4b4.svg",
+            "isPro": false,
+            "fullname": "Sicong Jiang",
+            "user": "Max2045",
+            "type": "user"
+          },
+          "name": "Sicong Jiang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-05T07:52:40.893Z",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b974",
+          "name": "Zilin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b975",
+          "name": "Kangan Qian",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b976",
+          "name": "Ziang Luo",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b977",
+          "name": "Tianze Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b978",
+          "name": "Yang Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b979",
+          "name": "Yihong Tang",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b97a",
+          "name": "Menglin Kong",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b97b",
+          "name": "Yunlong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b97c",
+          "name": "Siwen Jiao",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b97d",
+          "name": "Hao Ye",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b97e",
+          "name": "Zihao Sheng",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b97f",
+          "name": "Xin Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b980",
+          "name": "Tuopu Wen",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b981",
+          "name": "Zheng Fu",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b982",
+          "name": "Sikai Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b983",
+          "name": "Kun Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b984",
+          "name": "Diange Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b985",
+          "name": "Seongjin Choi",
+          "hidden": false
+        },
+        {
+          "_id": "68681d82213f123a1f88b986",
+          "name": "Lijun Sun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-06-30T16:50:02.000Z",
+      "submittedOnDailyAt": "2025-07-10T01:10:17.895Z",
+      "title": "시각・언어・액션 모델에 대한 자율주행에 관한 조사",
+      "submittedOnDailyBy": {
+        "_id": "683daabc402acb18654e4674",
+        "avatarUrl": "/avatars/9307b4c1c248e45b2daa8ffa1d74d4b4.svg",
+        "isPro": false,
+        "fullname": "Sicong Jiang",
+        "user": "Max2045",
+        "type": "user"
+      },
+      "summary": "多モデル大語言モデル（MLLM）の急速な進歩は、視覚認知、自然言語理解、制御を一つのポリシー内に統合するVision-Language-Action（VLA）パラダイムの実現に道が鋭く開かれた。自動運転領域の研究者は、これらの方法を車両ドメインに適用している。これらのモデルは、高レベルの指示を理解でき、複雑な交通場面を理由的に考え、自らの判断を下す自動運転車に望みを寄せている。しかし、文献は分断していて、急速に拡大している。この調査は、自動運転用のVLA（VLA4AD）の最初の全面的な概要を提供します。私たちは、（i）最近の作品で共有されるアーキテクチャのビルディングブロックを正式化し、（ii）早期の説明者から理由的コンプーツのVLAモデルへの進化を追跡し、（iii）自動運転ドメインでのVLAの進歩に基づいて20より多くの代表的なモデルを比較します。また、既存のデータセットとベンチマークを統合し、駆転安全性、精度、説明の質を共同に測定するプロトコルを主張します。最後に、開放されている挑戦（強固性、実時間効率、正式的な証明）を詳細に説明し、VLA4ADの将来の方向を概観します。この調査は、解釈可能な社会的に一致した自動運転車の進歩について簡潔で完全なリソースとして提供します。GitHubリポジトリは、https://github.com/JohnsonJiang1996/Awesome-VLA4AD{SicongJiang/Awesome-VLA4AD}にあります。",
+      "upvotes": 7,
+      "discussionId": "68681d82213f123a1f88b987",
+      "githubRepo": "https://github.com/JohnsonJiang1996/Awesome-VLA4AD",
+      "ai_summary": "This survey provides a comprehensive overview of Vision-Language-Action (VLA) paradigms and their adaptation for autonomous driving, detailing architectural components, evolution of models, datasets, and future challenges.",
+      "ai_keywords": [
+        "multimodal large language models",
+        "Vision-Language-Action",
+        "VLA",
+        "VLA for Autonomous Driving",
+        "VLA4AD",
+        "explainer",
+        "reasoning-centric models",
+        "autonomous driving",
+        "driving safety",
+        "accuracy",
+        "explanation quality",
+        "robustness",
+        "real-time efficiency",
+        "formal verification",
+        "interpretable socially aligned autonomous vehicles"
+      ],
+      "githubStars": 173
+    },
+    "publishedAt": "2025-06-30T12:50:02.000Z",
+    "title": "A Survey on Vision-Language-Action Models for Autonomous Driving",
+    "summary": "The rapid progress of multimodal large language models (MLLM) has paved the\nway for Vision-Language-Action (VLA) paradigms, which integrate visual\nperception, natural language understanding, and control within a single policy.\nResearchers in autonomous driving are actively adapting these methods to the\nvehicle domain. Such models promise autonomous vehicles that can interpret\nhigh-level instructions, reason about complex traffic scenes, and make their\nown decisions. However, the literature remains fragmented and is rapidly\nexpanding. This survey offers the first comprehensive overview of VLA for\nAutonomous Driving (VLA4AD). We (i) formalize the architectural building blocks\nshared across recent work, (ii) trace the evolution from early explainer to\nreasoning-centric VLA models, and (iii) compare over 20 representative models\naccording to VLA's progress in the autonomous driving domain. We also\nconsolidate existing datasets and benchmarks, highlighting protocols that\njointly measure driving safety, accuracy, and explanation quality. Finally, we\ndetail open challenges - robustness, real-time efficiency, and formal\nverification - and outline future directions of VLA4AD. This survey provides a\nconcise yet complete reference for advancing interpretable socially aligned\nautonomous vehicles. Github repo is available at\nhttps://github.com/JohnsonJiang1996/Awesome-VLA4AD{SicongJiang/Awesome-VLA4AD}.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2506.24044.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "683daabc402acb18654e4674",
+      "avatarUrl": "/avatars/9307b4c1c248e45b2daa8ffa1d74d4b4.svg",
+      "fullname": "Sicong Jiang",
+      "name": "Max2045",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.06853",
+      "authors": [
+        {
+          "_id": "686f4142d938c25d68441b98",
+          "user": {
+            "_id": "64e84ec6d41a68b065bf78a7",
+            "avatarUrl": "/avatars/bae3c5e3210b40af6e4f113e85f3e206.svg",
+            "isPro": false,
+            "fullname": "Liang Wang",
+            "user": "AzureLeon1",
+            "type": "user"
+          },
+          "name": "Liang Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T07:09:02.989Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441b99",
+          "name": "Yu Rong",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441b9a",
+          "name": "Tingyang Xu",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441b9b",
+          "name": "Zhenyi Zhong",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441b9c",
+          "name": "Zhiyuan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441b9d",
+          "name": "Pengju Wang",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441b9e",
+          "name": "Deli Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441b9f",
+          "name": "Qiang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441ba0",
+          "name": "Shu Wu",
+          "hidden": false
+        },
+        {
+          "_id": "686f4142d938c25d68441ba1",
+          "name": "Liang Wang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64e84ec6d41a68b065bf78a7/zoojDRIzYMaSv2bj_dh7R.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/64e84ec6d41a68b065bf78a7/Lc9mfYTjI12Vz0qsq_JWj.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/64e84ec6d41a68b065bf78a7/brRCb577NUJrWNDqDkcMJ.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/64e84ec6d41a68b065bf78a7/LV-8rRgSCOr0UmateiCPM.jpeg"
+      ],
+      "publishedAt": "2025-07-09T13:57:20.000Z",
+      "submittedOnDailyAt": "2025-07-10T03:05:48.871Z",
+      "title": "DiffSpectra: 분자 구조의 명확화로 인한 스펙트럼에서의 분기 모델",
+      "submittedOnDailyBy": {
+        "_id": "64e84ec6d41a68b065bf78a7",
+        "avatarUrl": "/avatars/bae3c5e3210b40af6e4f113e85f3e206.svg",
+        "isPro": false,
+        "fullname": "Liang Wang",
+        "user": "AzureLeon1",
+        "type": "user"
+      },
+      "summary": "분자 구조의 명확화는 화학의 기초적인 문제로, 화합물의 식별, 합성, 약물 개발에 깊은 영향을 미칩니다. 전통적인 방법은 전문가의 해석에 크게 의존하며,scalability가 낮은 경향이 있습니다. 선두의 기계 학습 방법들은 검색 기반의 전략을 도입했지만, 한정된 리브러리 의존성이 새로운 분자에 대한 일반화에 제한을 가집니다. 생성 모델은 바람직한 대체로 될 수 있지만, 대부분은 자동 회귀적인 SMILES 기반의 아키텍처를 채택하고, 3D 구조를 무시하며, 다양한 스펙트럼 모델러이터를 통합하는 것이 어렵습니다. 본 연구에서는, DiffSpectras라는 2D 및 3D 분자 구조를 직접적으로 2D와 3D의 분자 구조를 추론하는 생성 프레임워크를 제안합니다. DiffSpectras는 구조의 명확화를 조건부 생성 프로세스로 구성하고 있습니다. 노이즈 제거 네트워크는 Diffusion Molecule Transformer로 파라미터화되어, SE(3) Invariant의 아키텍처로 토폴로지 및 기하학적 정보를 통합하고 있습니다. 조건부은 SpecFormer로 제공되며, 다양한 스펙트럼으로부터의 스펙트럼 내의 의존관계를捉える 딥러닝 도구입니다. 확장 검증은 DiffSpectras가 구조의 명확화에 높은 정확도를 달성하고, 샘플링에서 16.01%의 top-1 정확도와 96.86%의 top-20 정확도를 통해 정확한 구조를 복원하는 것을 보여줍니다. 모델은 3D 기하 모델링, SpecFormer의 사전 학습, 그리고 다양한 조건부 조건에 의해 크게 향상되었습니다. 이러한 결과를 통해, 스펙트럼 조건부 분산 모델링이 분자 구조의 명확화에 대한 도전을 해결하는 효과성을 명확히 해줍니다. 우리 지식에 따르면, DiffSpectras는 새로운 분자 구조의 명확화에 대한 다양한 스펙트럼의 이유와 2D/3D의 공통 생성 모델링을 통합하는 첫 번째 프레임워크입니다.",
+      "upvotes": 2,
+      "discussionId": "686f4142d938c25d68441ba2",
+      "ai_summary": "DiffSpectra uses diffusion models with SE(3)-equivariant architecture and SpecFormer spectral encoder to accurately infer both 2D and 3D molecular structures from multi-modal spectral data.",
+      "ai_keywords": [
+        "diffusion models",
+        "SE(3)-equivariant architecture",
+        "Diffusion Molecule Transformer",
+        "SpecFormer",
+        "spectral encoder",
+        "multi-modal spectral reasoning",
+        "joint 2D/3D generative modeling",
+        "de novo molecular structure elucidation"
+      ]
+    },
+    "publishedAt": "2025-07-09T09:57:20.000Z",
+    "title": "DiffSpectra: Molecular Structure Elucidation from Spectra using\n  Diffusion Models",
+    "summary": "Molecular structure elucidation from spectra is a foundational problem in\nchemistry, with profound implications for compound identification, synthesis,\nand drug development. Traditional methods rely heavily on expert interpretation\nand lack scalability. Pioneering machine learning methods have introduced\nretrieval-based strategies, but their reliance on finite libraries limits\ngeneralization to novel molecules. Generative models offer a promising\nalternative, yet most adopt autoregressive SMILES-based architectures that\noverlook 3D geometry and struggle to integrate diverse spectral modalities. In\nthis work, we present DiffSpectra, a generative framework that directly infers\nboth 2D and 3D molecular structures from multi-modal spectral data using\ndiffusion models. DiffSpectra formulates structure elucidation as a conditional\ngeneration process. Its denoising network is parameterized by Diffusion\nMolecule Transformer, an SE(3)-equivariant architecture that integrates\ntopological and geometric information. Conditioning is provided by SpecFormer,\na transformer-based spectral encoder that captures intra- and inter-spectral\ndependencies from multi-modal spectra. Extensive experiments demonstrate that\nDiffSpectra achieves high accuracy in structure elucidation, recovering exact\nstructures with 16.01% top-1 accuracy and 96.86% top-20 accuracy through\nsampling. The model benefits significantly from 3D geometric modeling,\nSpecFormer pre-training, and multi-modal conditioning. These results highlight\nthe effectiveness of spectrum-conditioned diffusion modeling in addressing the\nchallenge of molecular structure elucidation. To our knowledge, DiffSpectra is\nthe first framework to unify multi-modal spectral reasoning and joint 2D/3D\ngenerative modeling for de novo molecular structure elucidation.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64e84ec6d41a68b065bf78a7/zoojDRIzYMaSv2bj_dh7R.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/64e84ec6d41a68b065bf78a7/Lc9mfYTjI12Vz0qsq_JWj.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/64e84ec6d41a68b065bf78a7/brRCb577NUJrWNDqDkcMJ.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/64e84ec6d41a68b065bf78a7/LV-8rRgSCOr0UmateiCPM.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.06853.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64e84ec6d41a68b065bf78a7",
+      "avatarUrl": "/avatars/bae3c5e3210b40af6e4f113e85f3e206.svg",
+      "fullname": "Liang Wang",
+      "name": "AzureLeon1",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.05455",
+      "authors": [
+        {
+          "_id": "686f5ec6d938c25d68441bc1",
+          "user": {
+            "_id": "628c29a54c5a62a1d216c560",
+            "avatarUrl": "/avatars/d21b4da766f87f47228112958666643b.svg",
+            "isPro": false,
+            "fullname": "Ashima Suvarna",
+            "user": "Ashima",
+            "type": "user"
+          },
+          "name": "Ashima Suvarna",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-10T09:12:39.834Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f5ec6d938c25d68441bc2",
+          "user": {
+            "_id": "6543d269326cb9a32bd58e40",
+            "avatarUrl": "/avatars/ddabbd80844e3dff676a8c2a182d920c.svg",
+            "isPro": false,
+            "fullname": "Christina",
+            "user": "christinachance",
+            "type": "user"
+          },
+          "name": "Christina Chance",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-07-10T09:16:25.997Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f5ec6d938c25d68441bc3",
+          "name": "Karolina Naranjo",
+          "hidden": false
+        },
+        {
+          "_id": "686f5ec6d938c25d68441bc4",
+          "user": {
+            "_id": "6189ddd0992df2640e3e7d40",
+            "avatarUrl": "/avatars/925f2308fc412ae352b57a1b71815028.svg",
+            "isPro": false,
+            "fullname": "Hamid Palangi",
+            "user": "hamidpalangi",
+            "type": "user"
+          },
+          "name": "Hamid Palangi",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-07-10T09:16:36.140Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f5ec6d938c25d68441bc5",
+          "user": {
+            "_id": "65d9787bec3dc9ccf7344f6f",
+            "avatarUrl": "/avatars/ab361193ed2287158f803fc792bb2df5.svg",
+            "isPro": false,
+            "fullname": "Sophie Hao",
+            "user": "notaphonologist",
+            "type": "user"
+          },
+          "name": "Sophie Hao",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2025-07-10T09:16:42.125Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f5ec6d938c25d68441bc6",
+          "name": "Thomas Hartvigsen",
+          "hidden": false
+        },
+        {
+          "_id": "686f5ec6d938c25d68441bc7",
+          "name": "Saadia Gabriel",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-07T20:15:18.000Z",
+      "submittedOnDailyAt": "2025-07-10T05:04:25.096Z",
+      "title": "모델카테지션즈: 온라인안전에서 커뮤니티의 목소리를 대표하는 것",
+      "submittedOnDailyBy": {
+        "_id": "61c5c25705aa54027c52f7b3",
+        "avatarUrl": "/avatars/8a89e040dc331b7a83d9a704c4fc29d2.svg",
+        "isPro": false,
+        "fullname": "Hritik Bansal",
+        "user": "hbXNov",
+        "type": "user"
+      },
+      "summary": "自動有毒言語検出은 안전하고 인kluüs이브한 온라인 공간의 구축에 중대한 역할을 합니다. 그러나, 이는 매우 주관적인 작업으로, 有毒言語의 이해는 커뮤니티의 규칙과 실제 경험을 통해 형성됩니다. 현재의 有毒言語検出 모델은 다양한 注釈자의 시각을 단일의 真実으로 훔치며, 그 중요한 맥락에 특화된 有毒言語의 개념을 제거하고 있습니다. 이에 대해, 우리는 MODELCITIZENS라는 데이터셋을 소개합니다. 이 데이터셋은 6.8K개의 소셜 미디어의 포스트와 40K개의 有毒言語의 注釈을 포함하며, 다양한 인디드нти티 그룹을 커버합니다. 대화의 맥락이 有毒言語에 미치는 영향에 대해捉えるため, MODELCITIZENS의 포스트에 LLM 생성된 대화 시나리오를 추가하고 있습니다. 최신의 有毒言語検出 도구（例如：OpenAI Moderation API、GPT-o4-mini）은 MODELCITIZENS에서 낮은 성능을 보입니다, 맥락 추가된 포스트에서 더욱 저하되어 있습니다. 마지막으로, LLAMACITIZEN-8B와 GEMMACITIZEN-12B를 릴리즈합니다. 이 모델은 MODELCITIZENS에서 微調節된 LLaMA와 Gemma의 기반 모델이며, 분포 내 평가에서 GPT-o4-mini를 5.5% 이상 초과합니다. 우리의 발견은 커뮤니티에 의한 注釈와 모델링의 중요성을 강조하며, 인kluüs이브한 콘텐츠 Moderation의 데이터, 모델 및 코드는 https://github.com/asuvarna31/modelcitizens에 제공됩니다.",
+      "upvotes": 2,
+      "discussionId": "686f5ec7d938c25d68441bc8",
+      "ai_summary": "A new dataset and models for toxic language detection incorporate diverse community perspectives and conversational context, improving accuracy over existing tools.",
+      "ai_keywords": [
+        "MODELCITIZENS",
+        "LLM-generated conversational scenarios",
+        "OpenAI Moderation API",
+        "GPT-o4-mini",
+        "LLAMACITIZEN-8B",
+        "GEMMACITIZEN-12B",
+        "LLaMA-based models",
+        "Gemma-based models",
+        "in-distribution evaluations",
+        "community-informed annotation",
+        "inclusive content moderation"
+      ]
+    },
+    "publishedAt": "2025-07-07T16:15:18.000Z",
+    "title": "ModelCitizens: Representing Community Voices in Online Safety",
+    "summary": "Automatic toxic language detection is critical for creating safe, inclusive\nonline spaces. However, it is a highly subjective task, with perceptions of\ntoxic language shaped by community norms and lived experience. Existing\ntoxicity detection models are typically trained on annotations that collapse\ndiverse annotator perspectives into a single ground truth, erasing important\ncontext-specific notions of toxicity such as reclaimed language. To address\nthis, we introduce MODELCITIZENS, a dataset of 6.8K social media posts and 40K\ntoxicity annotations across diverse identity groups. To capture the role of\nconversational context on toxicity, typical of social media posts, we augment\nMODELCITIZENS posts with LLM-generated conversational scenarios.\nState-of-the-art toxicity detection tools (e.g. OpenAI Moderation API,\nGPT-o4-mini) underperform on MODELCITIZENS, with further degradation on\ncontext-augmented posts. Finally, we release LLAMACITIZEN-8B and\nGEMMACITIZEN-12B, LLaMA- and Gemma-based models finetuned on MODELCITIZENS,\nwhich outperform GPT-o4-mini by 5.5% on in-distribution evaluations. Our\nfindings highlight the importance of community-informed annotation and modeling\nfor inclusive content moderation. The data, models and code are available at\nhttps://github.com/asuvarna31/modelcitizens.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.05455.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "61c5c25705aa54027c52f7b3",
+      "avatarUrl": "/avatars/8a89e040dc331b7a83d9a704c4fc29d2.svg",
+      "fullname": "Hritik Bansal",
+      "name": "hbXNov",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.06260",
+      "authors": [
+        {
+          "_id": "686f14e3d938c25d68441af8",
+          "name": "Satyapriya Krishna",
+          "hidden": false
+        },
+        {
+          "_id": "686f14e3d938c25d68441af9",
+          "name": "Ninareh Mehrabi",
+          "hidden": false
+        },
+        {
+          "_id": "686f14e3d938c25d68441afa",
+          "name": "Abhinav Mohanty",
+          "hidden": false
+        },
+        {
+          "_id": "686f14e3d938c25d68441afb",
+          "name": "Matteo Memelli",
+          "hidden": false
+        },
+        {
+          "_id": "686f14e3d938c25d68441afc",
+          "name": "Vincent Ponzo",
+          "hidden": false
+        },
+        {
+          "_id": "686f14e3d938c25d68441afd",
+          "name": "Payal Motwani",
+          "hidden": false
+        },
+        {
+          "_id": "686f14e3d938c25d68441afe",
+          "name": "Rahul Gupta",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-07T13:33:35.000Z",
+      "submittedOnDailyAt": "2025-07-10T00:10:50.485Z",
+      "title": "フロンティアモデル의 안정성 프레임워크를 기반으로 Amazon의 Nova Premier의 주요 위험을 평가합니다.",
+      "submittedOnDailyBy": {
+        "_id": "6186fef1b1085ab638324e7f",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6186fef1b1085ab638324e7f/BL6_WJCkxB-BatBUBilT8.jpeg",
+        "isPro": false,
+        "fullname": "Satya",
+        "user": "skrishna",
+        "type": "user"
+      },
+      "summary": "노바프리미아는 Amazon의 가장 능력있는 다모달기반 모델이자 교사입니다. 노바프리미아는 1,000,000 토크의 컨텍스트 윈도우에서 문장, 이미지, 비디오를 처리하고, 하나의 프로ン퓰트에 대규모 코드베이스, 400 페이지의 문서, 90분의 비디오 분석을 가능하게 합니다. 우리는 프론티ア 모델 보안 프레임워크의 기반에 노바프리미아의 중요한 리스크 프로파일의 첫 번째 세부적인 평가를 제공합니다. 평가는 화학, 생물학, 방사선 및 원자력(CBRN), 공격적인 사이버 운영, 자동화 AI 개발 연구의 3가지 고위험 분야를 목표로, 자동 벤치마크, 전문가 테스트 팀과 업로드 연구를 조합하여 모델이 릴리즈 시퀀스를 초과하는지 결정합니다. 우리는 방법과 핵심 발견을 요약합니다. 이 평가에 기반하여, 노바프리미아는 2025년 파리 AI 보안 심포니에서 발표한 커미션먼트에 따라 공개할 수 있음을 확인합니다. 새로운 리스크와 프론티ア 모델에 관련된 능력이 인식되기까지, 우리는 보안 평가와 뮤테이션 파이프라인을 계속 진행합니다.",
+      "upvotes": 0,
+      "discussionId": "686f14e4d938c25d68441aff"
+    },
+    "publishedAt": "2025-07-07T09:33:35.000Z",
+    "title": "Evaluating the Critical Risks of Amazon's Nova Premier under the\n  Frontier Model Safety Framework",
+    "summary": "Nova Premier is Amazon's most capable multimodal foundation model and teacher\nfor model distillation. It processes text, images, and video with a\none-million-token context window, enabling analysis of large codebases,\n400-page documents, and 90-minute videos in a single prompt. We present the\nfirst comprehensive evaluation of Nova Premier's critical risk profile under\nthe Frontier Model Safety Framework. Evaluations target three high-risk domains\n-- Chemical, Biological, Radiological & Nuclear (CBRN), Offensive Cyber\nOperations, and Automated AI R&D -- and combine automated benchmarks, expert\nred-teaming, and uplift studies to determine whether the model exceeds release\nthresholds. We summarize our methodology and report core findings. Based on\nthis evaluation, we find that Nova Premier is safe for public release as per\nour commitments made at the 2025 Paris AI Safety Summit. We will continue to\nenhance our safety evaluation and mitigation pipelines as new risks and\ncapabilities associated with frontier models are identified.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.06260.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6186fef1b1085ab638324e7f",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6186fef1b1085ab638324e7f/BL6_WJCkxB-BatBUBilT8.jpeg",
+      "fullname": "Satya",
+      "name": "skrishna",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.01702",
+      "authors": [
+        {
+          "_id": "686f7ef5d938c25d6844295f",
+          "name": "Zixin Chen",
+          "hidden": false
+        },
+        {
+          "_id": "686f7ef5d938c25d68442960",
+          "name": "Hongzhan Lin",
+          "hidden": false
+        },
+        {
+          "_id": "686f7ef5d938c25d68442961",
+          "name": "Kaixin Li",
+          "hidden": false
+        },
+        {
+          "_id": "686f7ef5d938c25d68442962",
+          "name": "Ziyang Luo",
+          "hidden": false
+        },
+        {
+          "_id": "686f7ef5d938c25d68442963",
+          "name": "Zhen Ye",
+          "hidden": false
+        },
+        {
+          "_id": "686f7ef5d938c25d68442964",
+          "name": "Guang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "686f7ef5d938c25d68442965",
+          "name": "Zhiyong Huang",
+          "hidden": false
+        },
+        {
+          "_id": "686f7ef5d938c25d68442966",
+          "name": "Jing Ma",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-02T13:32:30.000Z",
+      "submittedOnDailyAt": "2025-07-10T07:21:57.693Z",
+      "title": "AdamMeme: ハームフルネス에 대한 다중구조의 대규모 언어 모델의 논리론의 기능에 대한 적응적인 조사를 수행합니다.",
+      "submittedOnDailyBy": {
+        "_id": "6499466c7d1edf7cb612a9a6",
+        "avatarUrl": "/avatars/c2e18594aa0879db8226f2a04496fb0b.svg",
+        "isPro": false,
+        "fullname": "Hongzhan Lin",
+        "user": "danielhzlin",
+        "type": "user"
+      },
+      "summary": "ソシャルメディア 시대에 다양한 메모의 증식은 다양한 메모의 유해성을 이해하기 위해 다양한 대 언어 모델(mLLMs)가 효과적으로 이해하는 것이 필요합니다. 현재의 mLLMs의 유해 메모 이해를 평가하기 위한 벤치마크는 정적 데이터 세트를 사용하여 정확도 기준을 기반으로 모델 독립 평가를 수행하고 있습니다. 이러한 벤치마크는 온라인 메모가 동적으로 변화함에 따라 최신적이고 세부적인 평가를 제공하지 못합니다. 이러한 문제를 해결하기 위해, 우리는 mLLMs의 메모의 유해성을 이해하기 위한 논리적인 성능을 적응적으로 검증하기 위한 유연한 에이전트 기반 평가 프레임워크 \"AdamMeme\"을 제안합니다. 에이전트 간의 협력에 의해, AdamMeme는 어려운 샘플을 포함하는 메모 데이터를 반복적으로 업데이트하고, mLLMs가 유해성을 해석하는 방법의 특정한 제한을 밝혀냅니다. 확장된 실험에 따라, 우리의 프레임워크는 다양한 목표 mLLMs의 성능의 변화를 체계적으로 밝혀내고, 모델 고유의 약점을 상세하고 FINEGRINE 분석을 제공합니다. 우리의 코드는 https://github.com/Lbotirx/AdamMeme에 공개되어 있습니다.",
+      "upvotes": 0,
+      "discussionId": "686f7ef5d938c25d68442967",
+      "ai_summary": "AdamMeme, an adaptive agent-based framework, evaluates multimodal Large Language Models' understanding of harmful memes through iterative updates and multi-agent collaboration, revealing model-specific weaknesses.",
+      "ai_keywords": [
+        "multimodal Large Language Models",
+        "meme harmfulness",
+        "agent-based evaluation framework",
+        "multi-agent collaboration",
+        "meme data updates",
+        "model-specific weaknesses"
+      ]
+    },
+    "publishedAt": "2025-07-02T09:32:30.000Z",
+    "title": "AdamMeme: Adaptively Probe the Reasoning Capacity of Multimodal Large\n  Language Models on Harmfulness",
+    "summary": "The proliferation of multimodal memes in the social media era demands that\nmultimodal Large Language Models (mLLMs) effectively understand meme\nharmfulness. Existing benchmarks for assessing mLLMs on harmful meme\nunderstanding rely on accuracy-based, model-agnostic evaluations using static\ndatasets. These benchmarks are limited in their ability to provide up-to-date\nand thorough assessments, as online memes evolve dynamically. To address this,\nwe propose AdamMeme, a flexible, agent-based evaluation framework that\nadaptively probes the reasoning capabilities of mLLMs in deciphering meme\nharmfulness. Through multi-agent collaboration, AdamMeme provides comprehensive\nevaluations by iteratively updating the meme data with challenging samples,\nthereby exposing specific limitations in how mLLMs interpret harmfulness.\nExtensive experiments show that our framework systematically reveals the\nvarying performance of different target mLLMs, offering in-depth, fine-grained\nanalyses of model-specific weaknesses. Our code is available at\nhttps://github.com/Lbotirx/AdamMeme.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.01702.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6499466c7d1edf7cb612a9a6",
+      "avatarUrl": "/avatars/c2e18594aa0879db8226f2a04496fb0b.svg",
+      "fullname": "Hongzhan Lin",
+      "name": "danielhzlin",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  }
+]
