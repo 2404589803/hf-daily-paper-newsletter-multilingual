@@ -1,0 +1,881 @@
+[
+  {
+    "paper": {
+      "id": "2507.07104",
+      "authors": [
+        {
+          "_id": "686f95e9706a6ea4654189ff",
+          "user": {
+            "_id": "66e0b013733965882099cc37",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66e0b013733965882099cc37/CkTK2kV2v-TfdYiwsW6Tx.jpeg",
+            "isPro": true,
+            "fullname": "Tiezheng Zhang",
+            "user": "PatZhang11",
+            "type": "user"
+          },
+          "name": "Tiezheng Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-11T08:03:27.231Z",
+          "hidden": false
+        },
+        {
+          "_id": "686f95e9706a6ea465418a00",
+          "name": "Yitong Li",
+          "hidden": false
+        },
+        {
+          "_id": "686f95e9706a6ea465418a01",
+          "name": "Yu-cheng Chou",
+          "hidden": false
+        },
+        {
+          "_id": "686f95e9706a6ea465418a02",
+          "name": "Jieneng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "686f95e9706a6ea465418a03",
+          "name": "Alan Yuille",
+          "hidden": false
+        },
+        {
+          "_id": "686f95e9706a6ea465418a04",
+          "name": "Chen Wei",
+          "hidden": false
+        },
+        {
+          "_id": "686f95e9706a6ea465418a05",
+          "user": {
+            "_id": "64b5ba6060274cbb296d6288",
+            "avatarUrl": "/avatars/67e0343954dda6e92ed3f6e7976f9f87.svg",
+            "isPro": true,
+            "fullname": "Junfei Xiao",
+            "user": "lambertxiao",
+            "type": "user"
+          },
+          "name": "Junfei Xiao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-11T08:03:25.003Z",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-09T17:59:04.000Z",
+      "submittedOnDailyAt": "2025-07-16T04:05:40.175Z",
+      "title": "비전-라ングワード-비전 자동 인코더：확대 가능한 지식 공급\nDIFFUSION 모델로부터",
+      "submittedOnDailyBy": {
+        "_id": "64b5ba6060274cbb296d6288",
+        "avatarUrl": "/avatars/67e0343954dda6e92ed3f6e7976f9f87.svg",
+        "isPro": true,
+        "fullname": "Junfei Xiao",
+        "user": "lambertxiao",
+        "type": "user"
+      },
+      "summary": "Vision-Language-Vision (VLV) 자동 인코더 프레임워크를 통해, VLMs의 최상위 구축을 위한 강력한 캡처 능력이 필요하지만, 이는 수 백억의 고품질 이미지-텍스트 페어의 훈련으로, 수 수백만 GPU 시간이 필요합니다. 본 논문에서는, 이러한 훈련 비용을 줄이는 방법을 제안합니다. 이 프레임워크는 시각 인코더, 텍스트에서 이미지로의 (T2I) 디퓨전 모델의 디코더, 그리고 그 후, 대규모 언어 모델 (LLM)을 전략적으로 활용합니다. 특히, 언어 표현 공간을 정규화하고, 텍스트에서 이미지로의 디퓨전 모델의 훈련 디코더를 고정함으로써, 정보 밴드널을 생성합니다. VLV 파이프라인은, 연속적인 매핑을 사용하여, 텍스트 조건付き 디퓨전 모델에서의 지식을 효과적으로 디자이너링하고, 고품질의 재구성으로 세부적인 설명을 제공합니다. 또한, 사전 학습된 LLM을 미세 조정하여, 중간 언어 표현을 세부적인 설명으로 변환함으로써, GPT-4o나 Gemini 2.0 Flash와 같은 수준의 시뮬레이션 모델을 구축합니다. 이 방법은 특이적인 비용 효율성을 보여주며, 데이터 요구를 크게 줄입니다. 주로, 단일 모달의 이미지로 훈련하며, 기존 사전 학습된 모델 (이미지 인코더, T2I 디퓨전 모델, LLM)의 최대 활용도를 극대화함으로써, 큰 이미지-텍스트 페어 데이터 세트의 필요성을 회避하고, 총 훈련 비용을 1,000 USD를 초과하지 않도록 합니다.",
+      "upvotes": 13,
+      "discussionId": "686f95e9706a6ea465418a06",
+      "projectPage": "https://lambert-x.github.io/Vision-Language-Vision/",
+      "githubRepo": "https://github.com/Tiezheng11/Vision-Language-Vision",
+      "ai_summary": "The VLV auto-encoder framework uses pretrained vision and text models to create a cost-effective and data-efficient captioning system.",
+      "ai_keywords": [
+        "Vision-Language Models",
+        "VLV auto-encoder",
+        "vision encoder",
+        "Text-to-Image diffusion model",
+        "Large Language Model",
+        "information bottleneck",
+        "continuous embeddings",
+        "semantic understanding",
+        "captioning",
+        "fine-tuning",
+        "GPT-4o",
+        "Gemini 2.0 Flash"
+      ],
+      "githubStars": 19
+    },
+    "publishedAt": "2025-07-09T13:59:04.000Z",
+    "title": "Vision-Language-Vision Auto-Encoder: Scalable Knowledge Distillation\n  from Diffusion Models",
+    "summary": "Building state-of-the-art Vision-Language Models (VLMs) with strong\ncaptioning capabilities typically necessitates training on billions of\nhigh-quality image-text pairs, requiring millions of GPU hours. This paper\nintroduces the Vision-Language-Vision (VLV) auto-encoder framework, which\nstrategically leverages key pretrained components: a vision encoder, the\ndecoder of a Text-to-Image (T2I) diffusion model, and subsequently, a Large\nLanguage Model (LLM). Specifically, we establish an information bottleneck by\nregularizing the language representation space, achieved through freezing the\npretrained T2I diffusion decoder. Our VLV pipeline effectively distills\nknowledge from the text-conditioned diffusion model using continuous\nembeddings, demonstrating comprehensive semantic understanding via high-quality\nreconstructions. Furthermore, by fine-tuning a pretrained LLM to decode the\nintermediate language representations into detailed descriptions, we construct\na state-of-the-art (SoTA) captioner comparable to leading models like GPT-4o\nand Gemini 2.0 Flash. Our method demonstrates exceptional cost-efficiency and\nsignificantly reduces data requirements; by primarily utilizing single-modal\nimages for training and maximizing the utility of existing pretrained models\n(image encoder, T2I diffusion model, and LLM), it circumvents the need for\nmassive paired image-text datasets, keeping the total training expenditure\nunder $1,000 USD.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.07104.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b5ba6060274cbb296d6288",
+      "avatarUrl": "/avatars/67e0343954dda6e92ed3f6e7976f9f87.svg",
+      "fullname": "Junfei Xiao",
+      "name": "lambertxiao",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.11407",
+      "authors": [
+        {
+          "_id": "68774564257d4f04353707dc",
+          "name": "LG AI Research",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707de",
+          "name": "Kyunghoon Bae",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707df",
+          "name": "Eunbi Choi",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e0",
+          "name": "Kibong Choi",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e1",
+          "name": "Stanley Jungkyu Choi",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e2",
+          "name": "Yemuk Choi",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e3",
+          "name": "Kyubeen Han",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e4",
+          "name": "Seokhee Hong",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e5",
+          "name": "Junwon Hwang",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e6",
+          "name": "Taewan Hwang",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e7",
+          "name": "Joonwon Jang",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e8",
+          "name": "Hyojin Jeon",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707e9",
+          "name": "Kijeong Jeon",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707ea",
+          "name": "Gerrard Jeongwon Jo",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707eb",
+          "name": "Hyunjik Jo",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707ec",
+          "name": "Jiyeon Jung",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707ed",
+          "name": "Euisoon Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707ee",
+          "name": "Hyosang Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707ef",
+          "name": "Jihoon Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f0",
+          "name": "Joonkee Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f1",
+          "name": "Seonghwan Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f2",
+          "name": "Soyeon Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f3",
+          "name": "Sunkyoung Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f4",
+          "name": "Yireun Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f5",
+          "name": "Yongil Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f6",
+          "name": "Youchul Kim",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f7",
+          "name": "Edward Hwayoung Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f8",
+          "name": "Gwangho Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707f9",
+          "name": "Haeju Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707fa",
+          "name": "Honglak Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707fb",
+          "name": "Jinsik Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707fc",
+          "name": "Kyungmin Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707fd",
+          "name": "Sangha Park",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707fe",
+          "name": "Young Min Paik",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f04353707ff",
+          "name": "Yongmin Park",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f0435370800",
+          "name": "Youngyong Park",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f0435370801",
+          "name": "Sanghyun Seo",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f0435370802",
+          "name": "Sihoon Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f0435370803",
+          "name": "Heuiyeen Yeen",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f0435370804",
+          "name": "Sihyuk Yi",
+          "hidden": false
+        },
+        {
+          "_id": "68774564257d4f0435370805",
+          "name": "Hyeongu Yun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-15T15:24:51.000Z",
+      "submittedOnDailyAt": "2025-07-16T07:04:54.982Z",
+      "title": "EXAONE 4.0: 논리 모드와 비논리 모드를 통합한 통일된 크기의 대언어 모델",
+      "submittedOnDailyBy": {
+        "_id": "660260cf1737e5cd4a826550",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/660260cf1737e5cd4a826550/AlSfoM2WtqPjLtYR6x7Wf.jpeg",
+        "isPro": false,
+        "fullname": "Yireun Kim",
+        "user": "yireun",
+        "type": "user"
+      },
+      "summary": "이 기술보고서는 EXAONE 4.0를 통해 Non-reasoning 모드와 Reasoning 모드를 통합하여 EXAONE 3.5의 우수한 사용자 경험과 EXAONE Deep의 높은 Reasoning 능력의 두 가지 장점을 모두 실현하고자 합니다. 에이전트형 AI 시대를 위한 EXAONE 4.0는 기본적인 기능으로 에이전트형 도구의 사용 등을 지원하고, 영어와 한국어를 추가하여 스페인어도 지원합니다. EXAONE 4.0 모델 시리즈는 고성능을 위한 중형 32B 모델과 모바일 앱을 위한 소형 1.2B 모델의 두 가지 크기로 구성되어 있습니다. EXAONE 4.0는 같은 클래스의 오픈 소스 모델보다 높은 성능을 보여주며, 고급 모델과 비교하여 경쟁력을 가지고 있습니다. 모델은 연구의 목적에 따라 공개적으로 사용할 수 있으며, https://huggingface.co/LGAI-EXAONE에서 쉽게 다운로드할 수 있습니다.",
+      "upvotes": 11,
+      "discussionId": "68774564257d4f0435370806",
+      "ai_summary": "EXAONE 4.0 integrates non-reasoning and reasoning modes, supports multilingualism, and offers models optimized for high performance and on-device use, demonstrating superior performance compared to open-weight models.",
+      "ai_keywords": [
+        "Non-reasoning mode",
+        "Reasoning mode",
+        "agentic tool use",
+        "multilingual capabilities",
+        "mid-size model",
+        "small-size model",
+        "high performance",
+        "on-device applications",
+        "open-weight models",
+        "frontier-class models"
+      ]
+    },
+    "publishedAt": "2025-07-15T11:24:51.000Z",
+    "title": "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and\n  Reasoning Modes",
+    "summary": "This technical report introduces EXAONE 4.0, which integrates a Non-reasoning\nmode and a Reasoning mode to achieve both the excellent usability of EXAONE 3.5\nand the advanced reasoning abilities of EXAONE Deep. To pave the way for the\nagentic AI era, EXAONE 4.0 incorporates essential features such as agentic tool\nuse, and its multilingual capabilities are extended to support Spanish in\naddition to English and Korean. The EXAONE 4.0 model series consists of two\nsizes: a mid-size 32B model optimized for high performance, and a small-size\n1.2B model designed for on-device applications. The EXAONE 4.0 demonstrates\nsuperior performance compared to open-weight models in its class and remains\ncompetitive even against frontier-class models. The models are publicly\navailable for research purposes and can be easily downloaded via\nhttps://huggingface.co/LGAI-EXAONE.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.11407.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "660260cf1737e5cd4a826550",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/660260cf1737e5cd4a826550/AlSfoM2WtqPjLtYR6x7Wf.jpeg",
+      "fullname": "Yireun Kim",
+      "name": "yireun",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.09404",
+      "authors": [
+        {
+          "_id": "68774155257d4f04353707d3",
+          "name": "Mustafa Shukor",
+          "hidden": false
+        },
+        {
+          "_id": "68774155257d4f04353707d4",
+          "name": "Louis Bethune",
+          "hidden": false
+        },
+        {
+          "_id": "68774155257d4f04353707d5",
+          "name": "Dan Busbridge",
+          "hidden": false
+        },
+        {
+          "_id": "68774155257d4f04353707d6",
+          "name": "David Grangier",
+          "hidden": false
+        },
+        {
+          "_id": "68774155257d4f04353707d7",
+          "name": "Enrico Fini",
+          "hidden": false
+        },
+        {
+          "_id": "68774155257d4f04353707d8",
+          "name": "Alaaeldin El-Nouby",
+          "hidden": false
+        },
+        {
+          "_id": "68774155257d4f04353707d9",
+          "name": "Pierre Ablin",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-12T21:16:08.000Z",
+      "submittedOnDailyAt": "2025-07-16T04:39:10.654Z",
+      "title": "최적의 데이터의 혼합의 스케일링 법칙",
+      "submittedOnDailyBy": {
+        "_id": "62bdeedd01dc22b4d22a371e",
+        "avatarUrl": "/avatars/3cc0643feb53bf2e895ec12c275d5483.svg",
+        "isPro": false,
+        "fullname": "Mustafa Shukor",
+        "user": "mshukor",
+        "type": "user"
+      },
+      "summary": "대규모의 기초 모델은 일반적으로 여러 분야의 데이터를 사용하여 훈련됩니다. 데이터의 혼잡(각 분야의 사용률)은 모델의 성능에 중요한 역할을 합니다. 이러한 혼잡의 선택에 대한 표준적인 접근 방식은 실험과 오류에 의존하며, 대규모의 훈련에 대해서는 실용적이지 않습니다. 우리는 스케일링 라우저를 사용하여 특정 타겟 분야에 적합한 최적의 데이터 혼잡을 결정하는 방법을 제안합니다. 우리의 접근 방식은 N 크기의 모델이 D 토큰과 특정 분야의 가중치 벡터 h로 훈련된 경우의 손실을 정확하게 예측할 수 있습니다. 우리는 이러한 스케일링 라우저의 일반성을 증명하기 위해, 3가지 다른 대규모 설정에서 그 예측력을 보여주었습니다: 대규모 언어 모델(LLM), 원생 다모디얼 모델(NMM), 대규모 시각 모델(LVM)의 훈련. 또한, 이러한 스케일링 라우저는 새로운 데이터 혼잡과 스케일의 폭에 적용할 수 있습니다: 그 파라미터는 적은 스케일의 훈련에서 정확하게 추정될 수 있으며, 이를 사용하여 큰 스케일과 새 지식을 기반한 분야 가중치로 성능을 예측할 수 있습니다. 스케일링 라우저는 주어진 훈련 데이터베이스(N, D)의 가정하에, 타겟 분야에 적합한 최적의 영역 가중치를 구할 수 있으며, 고가의 실험과 오류의 방법 대신 원리적인 접근 방식을 제공합니다.",
+      "upvotes": 8,
+      "discussionId": "68774156257d4f04353707da",
+      "ai_summary": "Scaling laws predict optimal data mixtures for large foundation models, improving performance across different domains and scales.",
+      "ai_keywords": [
+        "scaling laws",
+        "large language model",
+        "native multimodal model",
+        "large vision models",
+        "domain weights",
+        "parameter estimation",
+        "performance prediction",
+        "training budget"
+      ]
+    },
+    "publishedAt": "2025-07-12T17:16:08.000Z",
+    "title": "Scaling Laws for Optimal Data Mixtures",
+    "summary": "Large foundation models are typically trained on data from multiple domains,\nwith the data mixture--the proportion of each domain used--playing a critical\nrole in model performance. The standard approach to selecting this mixture\nrelies on trial and error, which becomes impractical for large-scale\npretraining. We propose a systematic method to determine the optimal data\nmixture for any target domain using scaling laws. Our approach accurately\npredicts the loss of a model of size N trained with D tokens and a specific\ndomain weight vector h. We validate the universality of these scaling laws by\ndemonstrating their predictive power in three distinct and large-scale\nsettings: large language model (LLM), native multimodal model (NMM), and large\nvision models (LVM) pretraining. We further show that these scaling laws can\nextrapolate to new data mixtures and across scales: their parameters can be\naccurately estimated using a few small-scale training runs, and used to\nestimate the performance at larger scales and unseen domain weights. The\nscaling laws allow to derive the optimal domain weights for any target domain\nunder a given training budget (N,D), providing a principled alternative to\ncostly trial-and-error methods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.09404.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62bdeedd01dc22b4d22a371e",
+      "avatarUrl": "/avatars/3cc0643feb53bf2e895ec12c275d5483.svg",
+      "fullname": "Mustafa Shukor",
+      "name": "mshukor",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 59
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.10787",
+      "authors": [
+        {
+          "_id": "68771a98257d4f04353707b2",
+          "user": {
+            "_id": "62f662bcc58915315c4eccea",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+            "isPro": true,
+            "fullname": "Yilun Zhao",
+            "user": "yilunzhao",
+            "type": "user"
+          },
+          "name": "Yilun Zhao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-16T08:15:45.442Z",
+          "hidden": false
+        },
+        {
+          "_id": "68771a98257d4f04353707b3",
+          "name": "Chengye Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68771a98257d4f04353707b4",
+          "name": "Chuhan Li",
+          "hidden": false
+        },
+        {
+          "_id": "68771a98257d4f04353707b5",
+          "name": "Arman Cohan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-14T20:35:25.000Z",
+      "submittedOnDailyAt": "2025-07-16T01:51:11.312Z",
+      "title": "다모달 기초 모델은 구조도를 이해할 수 있는가? 과학 논문에 대한 정보 탐색 QA에 관한 실험 연구",
+      "submittedOnDailyBy": {
+        "_id": "62f662bcc58915315c4eccea",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+        "isPro": true,
+        "fullname": "Yilun Zhao",
+        "user": "yilunzhao",
+        "type": "user"
+      },
+      "summary": "이 논문에서, 과학 문헌 내의 스케치 다이어그램의 해석 능력을 평가하기 위해 설계된 첫 번째 벤치마크인 \"MISS-QA\"를 소개합니다. MISS-QA는 465편의 과학 논문에 대한 1,500건의 전문가가 설명한 샘플로 구성되어 있습니다. 이 벤치마크에서는 모델은 연구 개요를 나타내는 스케치 다이어그램을 해석하고, 논문의 브라우저 컨텍스트에 기반하여 적절한 정보를 탐색하는 질문에 답하는 것을 목표로 합니다. 18개의 선도 모델의 성능을 평가하고 있습니다. o4-mini, Gemini-2.5-Flash, Qwen2.5-VL 등을 포함합니다. 이 모델과 인간 전문가 사이에서 MISS-QA에서 분명히 성능의 차이를 보여주며, 모델의 성능을 평가하고 오차 분석을 자세히 수행하여 현재 모델의 강점과 한계를 명확히 하고, 과학 문헌 이해를 향상시키기 위한 핵심 지점을 제공합니다.",
+      "upvotes": 4,
+      "discussionId": "68771a98257d4f04353707b6",
+      "githubRepo": "https://github.com/yilunzhao/MISS-QA",
+      "ai_summary": "A benchmark evaluates multimodal models' ability to interpret scientific schematic diagrams and answer related questions, revealing performance gaps and insights for improvement.",
+      "ai_keywords": [
+        "multimodal foundation models",
+        "schematic diagrams",
+        "scientific literature",
+        "information-seeking questions",
+        "error analysis"
+      ],
+      "githubStars": 0
+    },
+    "publishedAt": "2025-07-14T16:35:25.000Z",
+    "title": "Can Multimodal Foundation Models Understand Schematic Diagrams? An\n  Empirical Study on Information-Seeking QA over Scientific Papers",
+    "summary": "This paper introduces MISS-QA, the first benchmark specifically designed to\nevaluate the ability of models to interpret schematic diagrams within\nscientific literature. MISS-QA comprises 1,500 expert-annotated examples over\n465 scientific papers. In this benchmark, models are tasked with interpreting\nschematic diagrams that illustrate research overviews and answering\ncorresponding information-seeking questions based on the broader context of the\npaper. We assess the performance of 18 frontier multimodal foundation models,\nincluding o4-mini, Gemini-2.5-Flash, and Qwen2.5-VL. We reveal a significant\nperformance gap between these models and human experts on MISS-QA. Our analysis\nof model performance on unanswerable questions and our detailed error analysis\nfurther highlight the strengths and limitations of current models, offering key\ninsights to enhance models in comprehending multimodal scientific literature.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.10787.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62f662bcc58915315c4eccea",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62f662bcc58915315c4eccea/zOAQLONfMP88zr70sxHK-.jpeg",
+      "fullname": "Yilun Zhao",
+      "name": "yilunzhao",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 14
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.09411",
+      "authors": [
+        {
+          "_id": "68771a0b257d4f04353707a9",
+          "user": {
+            "_id": "6159f88235226e98eaa28b39",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633286253722-noauth.jpeg",
+            "isPro": false,
+            "fullname": "Md Ajwad Akil",
+            "user": "Ajwad",
+            "type": "user"
+          },
+          "name": "Md Ajwad Akil",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-16T08:15:48.362Z",
+          "hidden": false
+        },
+        {
+          "_id": "68771a0b257d4f04353707aa",
+          "name": "Adrian Shuai Li",
+          "hidden": false
+        },
+        {
+          "_id": "68771a0b257d4f04353707ab",
+          "name": "Imtiaz Karim",
+          "hidden": false
+        },
+        {
+          "_id": "68771a0b257d4f04353707ac",
+          "name": "Arun Iyengar",
+          "hidden": false
+        },
+        {
+          "_id": "68771a0b257d4f04353707ad",
+          "name": "Ashish Kundu",
+          "hidden": false
+        },
+        {
+          "_id": "68771a0b257d4f04353707ae",
+          "name": "Vinny Parla",
+          "hidden": false
+        },
+        {
+          "_id": "68771a0b257d4f04353707af",
+          "name": "Elisa Bertino",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-12T22:11:10.000Z",
+      "submittedOnDailyAt": "2025-07-16T01:54:43.633Z",
+      "title": "LLMalMorph: LLMalMorph: LLMalMorph는 대 언어 모델을 사용하여 변종 마르웰의 생성 가능성을 연구하고 있습니다.",
+      "submittedOnDailyBy": {
+        "_id": "6159f88235226e98eaa28b39",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633286253722-noauth.jpeg",
+        "isPro": false,
+        "fullname": "Md Ajwad Akil",
+        "user": "Ajwad",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLMs)는 소프트웨어 개발을 혁신하고 코드 생성을 자동화하는 데 중요한 역할을 합니다. 이러한 발전에 의해 이 논문에서는 LLMs가 악성코드의 소스 코드를 변경하여 변종을 생성할 가능성을 조사합니다. LLMalMorph라는 반자동화된 프레임워크를 소개합니다. LLMalMorph는 LLMs의 의미적 및 문법적 코드 이해를 활용하여 악성코드의 변종을 생성하기 위한 새로운 코드를 생성합니다. LLMalMorph는 악성코드의 소스 코드에서 함수 수준의 정보를 추출하고 전략적으로 정의된 코드 변환 프로노프와 함께 LLM을 코드 변환에 가이드합니다. 복잡한 피드백의 微調節을 피하기 위해. LLMalMorph의 평가에서 10가지 다른 Windows 악성코드 샘플을 수집하여 618개의 변종을 생성했습니다. 세부적인 실험에서 이러한 악성코드 변종의 감지율을 일부 감소시키면서 악성코드 기능의 유지가 가능한 것으로 나타났습니다. 또한, 전문적인 ML 기반의 악성코드 검색베이스에서 최적화되지 않은 반면, 다수의 변종은 ML 기반의 악성코드 분류기에서 주목되는 공격 성공률을 달성했습니다. 또한, 현재의 LLM 기능에 대한 악성코드 변종의 생성의 제한을 논의하고 이新兴 기술이 악성코드 변종 생성의 더 넓은 맥락에서 위치를 평가합니다.",
+      "upvotes": 2,
+      "discussionId": "68771a0c257d4f04353707b0",
+      "ai_summary": "A semi-automated framework uses Large Language Models to generate malware variants, demonstrating reduced detection rates and notable attack success against ML classifiers.",
+      "ai_keywords": [
+        "Large Language Models",
+        "LLMalMorph",
+        "semantical code comprehension",
+        "syntactical code comprehension",
+        "function-level information",
+        "custom-engineered prompts",
+        "code transformations",
+        "antivirus engines",
+        "ML-based malware detectors",
+        "malware variant generation"
+      ]
+    },
+    "publishedAt": "2025-07-12T18:11:10.000Z",
+    "title": "LLMalMorph: On The Feasibility of Generating Variant Malware using\n  Large-Language-Models",
+    "summary": "Large Language Models (LLMs) have transformed software development and\nautomated code generation. Motivated by these advancements, this paper explores\nthe feasibility of LLMs in modifying malware source code to generate variants.\nWe introduce LLMalMorph, a semi-automated framework that leverages semantical\nand syntactical code comprehension by LLMs to generate new malware variants.\nLLMalMorph extracts function-level information from the malware source code and\nemploys custom-engineered prompts coupled with strategically defined code\ntransformations to guide the LLM in generating variants without\nresource-intensive fine-tuning. To evaluate LLMalMorph, we collected 10 diverse\nWindows malware samples of varying types, complexity and functionality and\ngenerated 618 variants. Our thorough experiments demonstrate that it is\npossible to reduce the detection rates of antivirus engines of these malware\nvariants to some extent while preserving malware functionalities. In addition,\ndespite not optimizing against any Machine Learning (ML)-based malware\ndetectors, several variants also achieved notable attack success rates against\nan ML-based malware classifier. We also discuss the limitations of current LLM\ncapabilities in generating malware variants from source code and assess where\nthis emerging technology stands in the broader context of malware variant\ngeneration.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.09411.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6159f88235226e98eaa28b39",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1633286253722-noauth.jpeg",
+      "fullname": "Md Ajwad Akil",
+      "name": "Ajwad",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.09075",
+      "authors": [
+        {
+          "_id": "687731d0257d4f04353707be",
+          "name": "Wasi Uddin Ahmad",
+          "hidden": false
+        },
+        {
+          "_id": "687731d0257d4f04353707bf",
+          "user": {
+            "_id": "6254f8e5d21e4cc386b881ad",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1649899774659-6254f8e5d21e4cc386b881ad.jpeg",
+            "isPro": false,
+            "fullname": "Somshubra Majumdar",
+            "user": "smajumdar94",
+            "type": "user"
+          },
+          "name": "Somshubra Majumdar",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-16T08:15:41.697Z",
+          "hidden": false
+        },
+        {
+          "_id": "687731d0257d4f04353707c0",
+          "name": "Aleksander Ficek",
+          "hidden": false
+        },
+        {
+          "_id": "687731d0257d4f04353707c1",
+          "name": "Sean Narenthiran",
+          "hidden": false
+        },
+        {
+          "_id": "687731d0257d4f04353707c2",
+          "name": "Mehrzad Samadi",
+          "hidden": false
+        },
+        {
+          "_id": "687731d0257d4f04353707c3",
+          "name": "Jocelyn Huang",
+          "hidden": false
+        },
+        {
+          "_id": "687731d0257d4f04353707c4",
+          "name": "Siddhartha Jain",
+          "hidden": false
+        },
+        {
+          "_id": "687731d0257d4f04353707c5",
+          "name": "Vahid Noroozi",
+          "hidden": false
+        },
+        {
+          "_id": "687731d0257d4f04353707c6",
+          "name": "Boris Ginsburg",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-11T23:35:54.000Z",
+      "submittedOnDailyAt": "2025-07-16T03:31:02.680Z",
+      "title": "OpenCodeReasoning-II: 자기 비판에 의한 간단한 테스트 시간 스케줄링 접근법",
+      "submittedOnDailyBy": {
+        "_id": "6254f8e5d21e4cc386b881ad",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1649899774659-6254f8e5d21e4cc386b881ad.jpeg",
+        "isPro": false,
+        "fullname": "Somshubra Majumdar",
+        "user": "smajumdar94",
+        "type": "user"
+      },
+      "summary": "최근의 근거 기반의 대규모 언어 모델(LLMs)의 발전, 특히 테스트 시 스케일링의 가능성으로 코드 생성과 평가의 중요한 기회가 생겼습니다. 그러나 이러한 발전은 고품질 데이터 세트의 근본적인 기반이 되어야 합니다. 본 연구에서는, 이전에 공개된 가장 큰 코드 근거 데이터 세트의 규모에 가까운 250만 개의 질문-답변-평가 튜플(약 35,000건의 고유의 프로그래밍 질문)을 포함하는 OpenCodeReasoning-II 데이터 세트를 소개합니다. 본 연구에서는 2단계의 규범적 조정 전략을 사용합니다. 첫 번째 단계에서는 코드 생성을 중점으로 하고, 두 번째 단계에서는 코드 생성과 평가의 모델의 공통 훈련을 수행합니다. 조정된 Qwen2.5-Instruct 모델은 코드 생성의 성능이 오픈 웨이트 추출 모델의 선두를 넘어서거나 같은 수준의 성능을 달성했습니다. 특히, 코드 생성과 평가 모델의 통합은 경쟁적인 코딩 성능에서 상당한 향상을 실현했습니다. 또한, LiveCodeBench Benchmark의 C++ 언어专用 확장 버전을 제시하고, 이 Benchmark를 사용하여 더 자세한 LLM 평가를 촉진합니다.",
+      "upvotes": 2,
+      "discussionId": "687731d0257d4f04353707c7"
+    },
+    "publishedAt": "2025-07-11T19:35:54.000Z",
+    "title": "OpenCodeReasoning-II: A Simple Test Time Scaling Approach via\n  Self-Critique",
+    "summary": "Recent advancements in reasoning-based Large Language Models (LLMs),\nparticularly their potential through test-time scaling, have created\nsignificant opportunities for distillation in code generation and critique.\nHowever, progress in both areas fundamentally depends on large-scale,\nhigh-quality datasets. In this work, we introduce OpenCodeReasoning-II, a\ndataset consists of 2.5M question-solution-critique triples (approx. 35K unique\nprogramming questions), making it nearly twice the size of the previous largest\npublicly available code reasoning dataset. In this work, we employ a two-stage\nsupervised fine-tuning strategy. The first stage focuses on fine-tuning for\ncode generation, while the second stage involves the joint training of models\nfor both code generation and critique. Our resulting finetuned Qwen2.5-Instruct\nmodels achieve performance in code generation that either exceeds or equals the\nbest prior open-weight distilled models. Notably, the integration of our code\ngeneration and critique models leads to significant improvements in competitive\ncoding performance. Furthermore, we present an extension of the LiveCodeBench\nbenchmark to specifically support the C++ programming language, thereby\nfacilitating more comprehensive LLM evaluation using this benchmark.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.09075.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6254f8e5d21e4cc386b881ad",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1649899774659-6254f8e5d21e4cc386b881ad.jpeg",
+      "fullname": "Somshubra Majumdar",
+      "name": "smajumdar94",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 27
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2507.08616",
+      "authors": [
+        {
+          "_id": "687764e0ff8f47a7f86442ad",
+          "name": "Florian Grötschla",
+          "hidden": false
+        },
+        {
+          "_id": "687764e0ff8f47a7f86442ae",
+          "name": "Luis Müller",
+          "hidden": false
+        },
+        {
+          "_id": "687764e0ff8f47a7f86442af",
+          "name": "Jan Tönshoff",
+          "hidden": false
+        },
+        {
+          "_id": "687764e0ff8f47a7f86442b0",
+          "name": "Mikhail Galkin",
+          "hidden": false
+        },
+        {
+          "_id": "687764e0ff8f47a7f86442b1",
+          "name": "Bryan Perozzi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-11T14:13:22.000Z",
+      "submittedOnDailyAt": "2025-07-16T07:08:39.797Z",
+      "title": "AgentsNet: 다Agent LLM의 협조와 협업논리\n\n(注意：翻译中\"LLM\"被保留为缩写，因为它是指\"Large Language Model\"，在专业领域中通常保持其缩写形式。)",
+      "submittedOnDailyBy": {
+        "_id": "63c09599dd793d5a62890e7d",
+        "avatarUrl": "/avatars/fed51ddd492b98e7cd4c3d1f82998635.svg",
+        "isPro": false,
+        "fullname": "Michael Galkin",
+        "user": "mgalkin",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLMs)은 특히 다 에이전트 시스템에서 강력한 문제 해결 능력을 보여주고 있습니다. 그러나 이러한 시스템의 등장은 복잡한 에이전트 네트워크가 효과적으로 자동적으로 조직화하고 협력하는 능력에 대한 몇 가지 의문이 있습니다. 표준의 이유론 벤치마크에서의 성능 평가는 다 에이전트 시스템이 이유론의 태스크를 해결할 수 있는 것을 보여줍니다. 그러나 이러한 시스템이 네트워크 토픽을 효과적으로 활용할 수 있는 능력이 있는지는 불분명합니다. 여기서 우리는 AgentsNet, 새로운 다 에이전트 이유론 벤치마크를 제안합니다. 분산 시스템과 그래프 이론의 고전적인 문제를 영감을 받아 AgentsNet은 에이전트 네트워크 토픽에 의한 협력, 자동적인 조직화, 효과적인 통신 전략을 형성하는 능력을 측정합니다. AgentsNet에서 우리는 다양한 기준 방법을 평가하며, 처음으로 조직과 통신의 기본적인 프로토콜을 합의하기 위해 균일한 네트워크의 에이전트를 포함합니다. 우리는 작은 네트워크에서 다양한 선도 LLMs가 강력한 성능을 보여주는 것을 확인했습니다. 그러나 네트워크의 크기가 커지면 그 성능이 떨어집니다. 기존의 다 에이전트 벤치마크는 최대 2-5 에이전트를 대상으로 합니다. 그러나 AgentsNet은 실제적으로 크기 제한 없이, 새로운 LLMs의 세대와 함께 scalable 합니다. 따라서 우리는 100 에이전트의 시스템에서도 선도 모델을 평가합니다.",
+      "upvotes": 1,
+      "discussionId": "687764e0ff8f47a7f86442b2",
+      "projectPage": "https://agentsnet.graphben.ch/",
+      "githubRepo": "https://github.com/floriangroetschla/AgentsNet",
+      "ai_summary": "AgentsNet is a new benchmark for evaluating multi-agent systems' ability to self-organize, communicate, and solve problems collaboratively across varying network sizes.",
+      "ai_keywords": [
+        "multi-agent systems",
+        "AgentsNet",
+        "distributed systems",
+        "graph theory",
+        "self-organization",
+        "communication",
+        "network topology",
+        "homogeneous networks",
+        "protocols",
+        "LLMs"
+      ],
+      "githubStars": 1
+    },
+    "publishedAt": "2025-07-11T10:13:22.000Z",
+    "title": "AgentsNet: Coordination and Collaborative Reasoning in Multi-Agent LLMs",
+    "summary": "Large-language models (LLMs) have demonstrated powerful problem-solving\ncapabilities, in particular when organized in multi-agent systems. However, the\nadvent of such systems also raises several questions on the ability of a\ncomplex network of agents to effectively self-organize and collaborate. While\nmeasuring performance on standard reasoning benchmarks indicates how well\nmulti-agent systems can solve reasoning tasks, it is unclear whether these\nsystems are able to leverage their topology effectively. Here, we propose\nAgentsNet, a new benchmark for multi-agent reasoning. By drawing inspiration\nfrom classical problems in distributed systems and graph theory, AgentsNet\nmeasures the ability of multi-agent systems to collaboratively form strategies\nfor problem-solving, self-organization, and effective communication given a\nnetwork topology. We evaluate a variety of baseline methods on AgentsNet\nincluding homogeneous networks of agents which first have to agree on basic\nprotocols for organization and communication. We find that some frontier LLMs\nare already demonstrating strong performance for small networks but begin to\nfall off once the size of the network scales. While existing multi-agent\nbenchmarks cover at most 2-5 agents, AgentsNet is practically unlimited in size\nand can scale with new generations of LLMs. As such, we also probe frontier\nmodels in a setup with up to 100 agents.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.08616.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c09599dd793d5a62890e7d",
+      "avatarUrl": "/avatars/fed51ddd492b98e7cd4c3d1f82998635.svg",
+      "fullname": "Michael Galkin",
+      "name": "mgalkin",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 13
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2507.07186",
+      "authors": [
+        {
+          "_id": "68708a2ac8391850d609787d",
+          "user": {
+            "_id": "610c1e1a423fe7d80928aefd",
+            "avatarUrl": "/avatars/8591584d678cf7fddace01e223953a63.svg",
+            "isPro": true,
+            "fullname": "Itay Itzhak",
+            "user": "itay1itzhak",
+            "type": "user"
+          },
+          "name": "Itay Itzhak",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-07-16T08:15:57.996Z",
+          "hidden": false
+        },
+        {
+          "_id": "68708a2ac8391850d609787e",
+          "name": "Yonatan Belinkov",
+          "hidden": false
+        },
+        {
+          "_id": "68708a2ac8391850d609787f",
+          "name": "Gabriel Stanovsky",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-07-09T18:01:14.000Z",
+      "submittedOnDailyAt": "2025-07-16T06:16:00.646Z",
+      "title": "예측 훈련에植入되고 미세 조정으로 기울임：LLM의 인지 편향의 원천의 사례 연구",
+      "submittedOnDailyBy": {
+        "_id": "610c1e1a423fe7d80928aefd",
+        "avatarUrl": "/avatars/8591584d678cf7fddace01e223953a63.svg",
+        "isPro": true,
+        "fullname": "Itay Itzhak",
+        "user": "itay1itzhak",
+        "type": "user"
+      },
+      "summary": "대 언어 모델(LLMs)는 캄비어 비어스를 나타내—불적절한 결산의 체계적인 경향, 이러한 것들이 인간에게도 보임과 같은 경향이다. 선행 연구는 이러한 비어스는 모델 간에 다릅니다, 그리고 명령 학습에 의해 확장되는 것을 발견했다. 그러나 이러한 비어스의 다른 점이 사전 학습, 세부 학습, 또는 학습의 스탯노미시스에 의한 랜덤 노이즈에 의해 유발된 것이지 아니한 것이 명확하지 않다. 우리는 이러한 원인을 분리하기 위해 두 단계의因果 실험적인 접근을 제안합니다. 처음으로, 다른 랜덤 시드를 사용하여 모델을 여러 번 세부 학습 시키고, 학습의 난수성이 캄비어 비어스를 30 이상의 영향을 미치는지 연구합니다. 다음으로, 크로스 학습을 도입하여 모델 간에 명령 데이터 세트를 교환하여 비어스의 원을 분리합니다. 이 교환은 서로 다른 비어스 패턴을 일으키는 데이터 세트를 사용하며, 비어스가 데이터 세트에 의존하는지 직접 검증합니다. 우리의 발견은, 학습의 난수성은 일부의 변이를 일으키는 데만 충분하지만, 비어스는 주로 사전 학습에 의해 형성되는 것을 보여줍니다: 같은 사전 학습 백본을 가진 모델은, 공통으로 finishing 훈련 데이터 세트를 공유하는 모델보다 비어스 패턴에 의해 유사하게 나타납니다. 이러한 견해는, 세부 학습 모델의 비어스를 이해하기 위해, 세부 학습의 영향을 초월하여 사전 학습의 원인을 고려하는 것이 필요함을 보여줍니다. 이 관점은, LLMs의 비어스의 평가와 완화를 위한 원칙적인 전략의 개발을 위해 미래의 노력을 가이드할 수 있습니다.",
+      "upvotes": 1,
+      "discussionId": "68708a2bc8391850d6097880",
+      "ai_summary": "Research identifies pretraining as the primary source of cognitive biases in large language models, distinguishing its influence from finetuning and training randomness.",
+      "ai_keywords": [
+        "large language models",
+        "cognitive biases",
+        "instruction tuning",
+        "pretraining",
+        "finetuning",
+        "training randomness",
+        "cross-tuning",
+        "dataset-dependent biases"
+      ]
+    },
+    "publishedAt": "2025-07-09T14:01:14.000Z",
+    "title": "Planted in Pretraining, Swayed by Finetuning: A Case Study on the\n  Origins of Cognitive Biases in LLMs",
+    "summary": "Large language models (LLMs) exhibit cognitive biases -- systematic\ntendencies of irrational decision-making, similar to those seen in humans.\nPrior work has found that these biases vary across models and can be amplified\nby instruction tuning. However, it remains unclear if these differences in\nbiases stem from pretraining, finetuning, or even random noise due to training\nstochasticity. We propose a two-step causal experimental approach to\ndisentangle these factors. First, we finetune models multiple times using\ndifferent random seeds to study how training randomness affects over 30\ncognitive biases. Second, we introduce cross-tuning -- swapping\ninstruction datasets between models to isolate bias sources. This swap uses\ndatasets that led to different bias patterns, directly testing whether biases\nare dataset-dependent. Our findings reveal that while training randomness\nintroduces some variability, biases are mainly shaped by pretraining: models\nwith the same pretrained backbone exhibit more similar bias patterns than those\nsharing only finetuning data. These insights suggest that understanding biases\nin finetuned models requires considering their pretraining origins beyond\nfinetuning effects. This perspective can guide future efforts to develop\nprincipled strategies for evaluating and mitigating bias in LLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2507.07186.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "610c1e1a423fe7d80928aefd",
+      "avatarUrl": "/avatars/8591584d678cf7fddace01e223953a63.svg",
+      "fullname": "Itay Itzhak",
+      "name": "itay1itzhak",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  }
+]
