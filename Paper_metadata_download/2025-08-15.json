@@ -1,0 +1,1409 @@
+[
+  {
+    "paper": {
+      "id": "2508.10433",
+      "authors": [
+        {
+          "_id": "689e8afda4caabb4320e5cca",
+          "name": "Runqi Qiao",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5ccb",
+          "name": "Qiuna Tan",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5ccc",
+          "name": "Peiqing Yang",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5ccd",
+          "name": "Yanzi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cce",
+          "name": "Xiaowan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5ccf",
+          "name": "Enhui Wan",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cd0",
+          "name": "Sitong Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cd1",
+          "name": "Guanting Dong",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cd2",
+          "name": "Yuchen Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cd3",
+          "name": "Yida Xu",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cd4",
+          "name": "Jie Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cd5",
+          "name": "Chong Sun",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cd6",
+          "name": "Chen Li",
+          "hidden": false
+        },
+        {
+          "_id": "689e8afda4caabb4320e5cd7",
+          "name": "Honggang Zhang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6683a05e74fb1736a4b7c934/ByDtHPTXv1Xt6pmngd3no.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/6683a05e74fb1736a4b7c934/dzhRhIcGJYT-gHIG0J9JU.png"
+      ],
+      "publishedAt": "2025-08-14T08:15:41.000Z",
+      "submittedOnDailyAt": "2025-08-15T01:02:46.436Z",
+      "title": "We-Math 2.0: A Versatile MathBook System for Incentivizing Visual\n  Mathematical Reasoning",
+      "submittedOnDailyBy": {
+        "_id": "6683a05e74fb1736a4b7c934",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6683a05e74fb1736a4b7c934/eiz6qlqIUjAWGy5zfg8Cs.jpeg",
+        "isPro": false,
+        "fullname": "QRQ",
+        "user": "RichardQRQ",
+        "type": "user"
+      },
+      "summary": "Multimodal Large Language Models (MLLMs) have demonstrated impressive\ncapabilities across various tasks, but still struggle with complex mathematical\nreasoning. Existing research primarily focuses on dataset construction and\nmethod optimization, often overlooking two critical aspects: comprehensive\nknowledge-driven design and model-centric data space modeling. In this paper,\nwe introduce We-Math 2.0, a unified system that integrates a structured\nmathematical knowledge system, model-centric data space modeling, and a\nreinforcement learning (RL)-based training paradigm to comprehensively enhance\nthe mathematical reasoning abilities of MLLMs. The key contributions of We-Math\n2.0 are fourfold: (1) MathBook Knowledge System: We construct a five-level\nhierarchical system encompassing 491 knowledge points and 1,819 fundamental\nprinciples. (2) MathBook-Standard & Pro: We develop MathBook-Standard, a\ndataset that ensures broad conceptual coverage and flexibility through dual\nexpansion. Additionally, we define a three-dimensional difficulty space and\ngenerate 7 progressive variants per problem to build MathBook-Pro, a\nchallenging dataset for robust training. (3) MathBook-RL: We propose a\ntwo-stage RL framework comprising: (i) Cold-Start Fine-tuning, which aligns the\nmodel with knowledge-oriented chain-of-thought reasoning; and (ii) Progressive\nAlignment RL, leveraging average-reward learning and dynamic data scheduling to\nachieve progressive alignment across difficulty levels. (4) MathBookEval: We\nintroduce a comprehensive benchmark covering all 491 knowledge points with\ndiverse reasoning step distributions. Experimental results show that\nMathBook-RL performs competitively with existing baselines on four widely-used\nbenchmarks and achieves strong results on MathBookEval, suggesting promising\ngeneralization in mathematical reasoning.",
+      "upvotes": 105,
+      "discussionId": "689e8afea4caabb4320e5cd8",
+      "projectPage": "https://we-math2.github.io/",
+      "githubRepo": "https://github.com/We-Math/We-Math2.0",
+      "ai_summary": "We-Math 2.0 enhances MLLMs' mathematical reasoning through a structured knowledge system, model-centric data space modeling, and reinforcement learning, demonstrating competitive performance on benchmarks.",
+      "ai_keywords": [
+        "Multimodal Large Language Models",
+        "MLLMs",
+        "mathematical reasoning",
+        "MathBook Knowledge System",
+        "MathBook-Standard",
+        "MathBook-Pro",
+        "MathBook-RL",
+        "Cold-Start Fine-tuning",
+        "Progressive Alignment RL",
+        "MathBookEval",
+        "chain-of-thought reasoning",
+        "average-reward learning",
+        "dynamic data scheduling"
+      ],
+      "githubStars": 79
+    },
+    "publishedAt": "2025-08-14T04:15:41.000Z",
+    "title": "We-Math 2.0: A Versatile MathBook System for Incentivizing Visual\n  Mathematical Reasoning",
+    "summary": "Multimodal Large Language Models (MLLMs) have demonstrated impressive\ncapabilities across various tasks, but still struggle with complex mathematical\nreasoning. Existing research primarily focuses on dataset construction and\nmethod optimization, often overlooking two critical aspects: comprehensive\nknowledge-driven design and model-centric data space modeling. In this paper,\nwe introduce We-Math 2.0, a unified system that integrates a structured\nmathematical knowledge system, model-centric data space modeling, and a\nreinforcement learning (RL)-based training paradigm to comprehensively enhance\nthe mathematical reasoning abilities of MLLMs. The key contributions of We-Math\n2.0 are fourfold: (1) MathBook Knowledge System: We construct a five-level\nhierarchical system encompassing 491 knowledge points and 1,819 fundamental\nprinciples. (2) MathBook-Standard & Pro: We develop MathBook-Standard, a\ndataset that ensures broad conceptual coverage and flexibility through dual\nexpansion. Additionally, we define a three-dimensional difficulty space and\ngenerate 7 progressive variants per problem to build MathBook-Pro, a\nchallenging dataset for robust training. (3) MathBook-RL: We propose a\ntwo-stage RL framework comprising: (i) Cold-Start Fine-tuning, which aligns the\nmodel with knowledge-oriented chain-of-thought reasoning; and (ii) Progressive\nAlignment RL, leveraging average-reward learning and dynamic data scheduling to\nachieve progressive alignment across difficulty levels. (4) MathBookEval: We\nintroduce a comprehensive benchmark covering all 491 knowledge points with\ndiverse reasoning step distributions. Experimental results show that\nMathBook-RL performs competitively with existing baselines on four widely-used\nbenchmarks and achieves strong results on MathBookEval, suggesting promising\ngeneralization in mathematical reasoning.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6683a05e74fb1736a4b7c934/ByDtHPTXv1Xt6pmngd3no.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/6683a05e74fb1736a4b7c934/dzhRhIcGJYT-gHIG0J9JU.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10433.png",
+    "numComments": 4,
+    "submittedBy": {
+      "_id": "6683a05e74fb1736a4b7c934",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6683a05e74fb1736a4b7c934/eiz6qlqIUjAWGy5zfg8Cs.jpeg",
+      "fullname": "QRQ",
+      "name": "RichardQRQ",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 8
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10711",
+      "authors": [
+        {
+          "_id": "689ea023a4caabb4320e5d43",
+          "name": "NextStep Team",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d44",
+          "name": "Chunrui Han",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d45",
+          "name": "Guopeng Li",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d46",
+          "name": "Jingwei Wu",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d47",
+          "name": "Quan Sun",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d48",
+          "name": "Yan Cai",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d49",
+          "name": "Yuang Peng",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d4a",
+          "name": "Zheng Ge",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d4b",
+          "name": "Deyu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d4c",
+          "name": "Haomiao Tang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d4d",
+          "name": "Hongyu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d4e",
+          "name": "Kenkun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d4f",
+          "name": "Ailin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d50",
+          "name": "Bin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d51",
+          "name": "Changxin Miao",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d52",
+          "name": "Deshan Sun",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d53",
+          "name": "En Yu",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d54",
+          "name": "Fukun Yin",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d55",
+          "name": "Gang Yu",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d56",
+          "name": "Hao Nie",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d57",
+          "name": "Haoran Lv",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d58",
+          "name": "Hanpeng Hu",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d59",
+          "name": "Jia Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d5a",
+          "name": "Jian Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d5b",
+          "name": "Jianjian Sun",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d5c",
+          "name": "Kaijun Tan",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d5d",
+          "name": "Kang An",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d5e",
+          "name": "Kangheng Lin",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d5f",
+          "name": "Liang Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d60",
+          "name": "Mei Chen",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d61",
+          "name": "Peng Xing",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d62",
+          "name": "Rui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d63",
+          "name": "Shiyu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d64",
+          "name": "Shutao Xia",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d65",
+          "name": "Tianhao You",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d66",
+          "name": "Wei Ji",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d67",
+          "name": "Xianfang Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d68",
+          "name": "Xin Han",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d69",
+          "name": "Xuelin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d6a",
+          "name": "Yana Wei",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d6b",
+          "name": "Yanming Xu",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d6c",
+          "name": "Yimin Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d6d",
+          "name": "Yingming Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d6e",
+          "name": "Yu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d6f",
+          "name": "Yucheng Han",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d70",
+          "name": "Ziyang Meng",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d71",
+          "name": "Binxing Jiao",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d72",
+          "name": "Daxin Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d73",
+          "name": "Xiangyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "689ea023a4caabb4320e5d74",
+          "name": "Yibo Zhu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T14:54:22.000Z",
+      "submittedOnDailyAt": "2025-08-15T01:41:51.831Z",
+      "title": "NextStep-1: Toward Autoregressive Image Generation with Continuous\n  Tokens at Scale",
+      "submittedOnDailyBy": {
+        "_id": "631ee086c1a8269da39265c6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631ee086c1a8269da39265c6/wUa1epGtTGcUv2mvrLUcD.png",
+        "isPro": false,
+        "fullname": "Yuang Peng",
+        "user": "yuangpeng",
+        "type": "user"
+      },
+      "summary": "Prevailing autoregressive (AR) models for text-to-image generation either\nrely on heavy, computationally-intensive diffusion models to process continuous\nimage tokens, or employ vector quantization (VQ) to obtain discrete tokens with\nquantization loss. In this paper, we push the autoregressive paradigm forward\nwith NextStep-1, a 14B autoregressive model paired with a 157M flow matching\nhead, training on discrete text tokens and continuous image tokens with\nnext-token prediction objectives. NextStep-1 achieves state-of-the-art\nperformance for autoregressive models in text-to-image generation tasks,\nexhibiting strong capabilities in high-fidelity image synthesis. Furthermore,\nour method shows strong performance in image editing, highlighting the power\nand versatility of our unified approach. To facilitate open research, we will\nrelease our code and models to the community.",
+      "upvotes": 86,
+      "discussionId": "689ea024a4caabb4320e5d75",
+      "projectPage": "https://stepfun.ai/research/en/nextstep1",
+      "githubRepo": "https://github.com/stepfun-ai/NextStep-1",
+      "ai_summary": "NextStep-1, a 14B autoregressive model with a 157M flow matching head, achieves state-of-the-art performance in text-to-image generation and image editing by processing discrete text tokens and continuous image tokens.",
+      "ai_keywords": [
+        "autoregressive models",
+        "diffusion models",
+        "vector quantization",
+        "flow matching",
+        "next-token prediction",
+        "high-fidelity image synthesis",
+        "image editing"
+      ],
+      "githubStars": 159
+    },
+    "publishedAt": "2025-08-14T10:54:22.000Z",
+    "title": "NextStep-1: Toward Autoregressive Image Generation with Continuous\n  Tokens at Scale",
+    "summary": "Prevailing autoregressive (AR) models for text-to-image generation either\nrely on heavy, computationally-intensive diffusion models to process continuous\nimage tokens, or employ vector quantization (VQ) to obtain discrete tokens with\nquantization loss. In this paper, we push the autoregressive paradigm forward\nwith NextStep-1, a 14B autoregressive model paired with a 157M flow matching\nhead, training on discrete text tokens and continuous image tokens with\nnext-token prediction objectives. NextStep-1 achieves state-of-the-art\nperformance for autoregressive models in text-to-image generation tasks,\nexhibiting strong capabilities in high-fidelity image synthesis. Furthermore,\nour method shows strong performance in image editing, highlighting the power\nand versatility of our unified approach. To facilitate open research, we will\nrelease our code and models to the community.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10711.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "631ee086c1a8269da39265c6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/631ee086c1a8269da39265c6/wUa1epGtTGcUv2mvrLUcD.png",
+      "fullname": "Yuang Peng",
+      "name": "yuangpeng",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10881",
+      "authors": [
+        {
+          "_id": "689ede65a4caabb4320e5e36",
+          "name": "Lingen Li",
+          "hidden": false
+        },
+        {
+          "_id": "689ede65a4caabb4320e5e37",
+          "name": "Guangzhi Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689ede65a4caabb4320e5e38",
+          "name": "Zhaoyang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "689ede65a4caabb4320e5e39",
+          "name": "Yaowei Li",
+          "hidden": false
+        },
+        {
+          "_id": "689ede65a4caabb4320e5e3a",
+          "name": "Xiaoyu Li",
+          "hidden": false
+        },
+        {
+          "_id": "689ede65a4caabb4320e5e3b",
+          "name": "Qi Dou",
+          "hidden": false
+        },
+        {
+          "_id": "689ede65a4caabb4320e5e3c",
+          "name": "Jinwei Gu",
+          "hidden": false
+        },
+        {
+          "_id": "689ede65a4caabb4320e5e3d",
+          "name": "Tianfan Xue",
+          "hidden": false
+        },
+        {
+          "_id": "689ede65a4caabb4320e5e3e",
+          "name": "Ying Shan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T17:50:11.000Z",
+      "submittedOnDailyAt": "2025-08-15T06:05:45.449Z",
+      "title": "ToonComposer: Streamlining Cartoon Production with Generative\n  Post-Keyframing",
+      "submittedOnDailyBy": {
+        "_id": "66837d3c48edefb453b0640a",
+        "avatarUrl": "/avatars/b16385eaa612578728e2c6460a76b38f.svg",
+        "isPro": false,
+        "fullname": "Lingen Li",
+        "user": "l-li",
+        "type": "user"
+      },
+      "summary": "Traditional cartoon and anime production involves keyframing, inbetweening,\nand colorization stages, which require intensive manual effort. Despite recent\nadvances in AI, existing methods often handle these stages separately, leading\nto error accumulation and artifacts. For instance, inbetweening approaches\nstruggle with large motions, while colorization methods require dense per-frame\nsketches. To address this, we introduce ToonComposer, a generative model that\nunifies inbetweening and colorization into a single post-keyframing stage.\nToonComposer employs a sparse sketch injection mechanism to provide precise\ncontrol using keyframe sketches. Additionally, it uses a cartoon adaptation\nmethod with the spatial low-rank adapter to tailor a modern video foundation\nmodel to the cartoon domain while keeping its temporal prior intact. Requiring\nas few as a single sketch and a colored reference frame, ToonComposer excels\nwith sparse inputs, while also supporting multiple sketches at any temporal\nlocation for more precise motion control. This dual capability reduces manual\nworkload and improves flexibility, empowering artists in real-world scenarios.\nTo evaluate our model, we further created PKBench, a benchmark featuring\nhuman-drawn sketches that simulate real-world use cases. Our evaluation\ndemonstrates that ToonComposer outperforms existing methods in visual quality,\nmotion consistency, and production efficiency, offering a superior and more\nflexible solution for AI-assisted cartoon production.",
+      "upvotes": 24,
+      "discussionId": "689ede65a4caabb4320e5e3f",
+      "projectPage": "https://lg-li.github.io/project/tooncomposer",
+      "githubRepo": "https://github.com/TencentARC/ToonComposer",
+      "ai_summary": "ToonComposer is a generative model that unifies inbetweening and colorization in cartoon production, using sparse sketches and a cartoon adaptation method to improve visual quality and efficiency.",
+      "ai_keywords": [
+        "sparse sketch injection",
+        "cartoon adaptation",
+        "spatial low-rank adapter",
+        "video foundation model",
+        "PKBench",
+        "visual quality",
+        "motion consistency",
+        "production efficiency"
+      ],
+      "githubStars": 25
+    },
+    "publishedAt": "2025-08-14T13:50:11.000Z",
+    "title": "ToonComposer: Streamlining Cartoon Production with Generative\n  Post-Keyframing",
+    "summary": "Traditional cartoon and anime production involves keyframing, inbetweening,\nand colorization stages, which require intensive manual effort. Despite recent\nadvances in AI, existing methods often handle these stages separately, leading\nto error accumulation and artifacts. For instance, inbetweening approaches\nstruggle with large motions, while colorization methods require dense per-frame\nsketches. To address this, we introduce ToonComposer, a generative model that\nunifies inbetweening and colorization into a single post-keyframing stage.\nToonComposer employs a sparse sketch injection mechanism to provide precise\ncontrol using keyframe sketches. Additionally, it uses a cartoon adaptation\nmethod with the spatial low-rank adapter to tailor a modern video foundation\nmodel to the cartoon domain while keeping its temporal prior intact. Requiring\nas few as a single sketch and a colored reference frame, ToonComposer excels\nwith sparse inputs, while also supporting multiple sketches at any temporal\nlocation for more precise motion control. This dual capability reduces manual\nworkload and improves flexibility, empowering artists in real-world scenarios.\nTo evaluate our model, we further created PKBench, a benchmark featuring\nhuman-drawn sketches that simulate real-world use cases. Our evaluation\ndemonstrates that ToonComposer outperforms existing methods in visual quality,\nmotion consistency, and production efficiency, offering a superior and more\nflexible solution for AI-assisted cartoon production.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10881.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66837d3c48edefb453b0640a",
+      "avatarUrl": "/avatars/b16385eaa612578728e2c6460a76b38f.svg",
+      "fullname": "Lingen Li",
+      "name": "l-li",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10833",
+      "authors": [
+        {
+          "_id": "689e97cda4caabb4320e5ce7",
+          "name": "Zhangxuan Gu",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5ce8",
+          "name": "Zhengwen Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5ce9",
+          "name": "Zhenyu Xu",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cea",
+          "name": "Xingran Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5ceb",
+          "name": "Shuheng Shen",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cec",
+          "name": "Yunfei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5ced",
+          "name": "Beitong Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cee",
+          "name": "Changhua Meng",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cef",
+          "name": "Tianyu Xia",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf0",
+          "name": "Weizhi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf1",
+          "name": "Yue Wen",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf2",
+          "name": "Jingya Dou",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf3",
+          "name": "Fei Tang",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf4",
+          "name": "Jinzhen Lin",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf5",
+          "name": "Yulin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf6",
+          "name": "Zhenlin Guo",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf7",
+          "name": "Yichen Gong",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf8",
+          "name": "Heng Jia",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cf9",
+          "name": "Changlong Gao",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cfa",
+          "name": "Yuan Guo",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cfb",
+          "name": "Yong Deng",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cfc",
+          "name": "Zhenyu Guo",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cfd",
+          "name": "Liang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "689e97cda4caabb4320e5cfe",
+          "name": "Weiqiang Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T16:58:07.000Z",
+      "submittedOnDailyAt": "2025-08-15T01:21:22.553Z",
+      "title": "UI-Venus Technical Report: Building High-performance UI Agents with RFT",
+      "submittedOnDailyBy": {
+        "_id": "60d2a2984956988b63753371",
+        "avatarUrl": "/avatars/412879e82a5bfc88431d8aa561acf26a.svg",
+        "isPro": false,
+        "fullname": "zhangxgu",
+        "user": "zhangxgu",
+        "type": "user"
+      },
+      "summary": "We present UI-Venus, a native UI agent that takes only screenshots as input\nbased on a multimodal large language model. UI-Venus achieves SOTA performance\non both UI grounding and navigation tasks using only several hundred thousand\nhigh-quality training samples through reinforcement finetune (RFT) based on\nQwen2.5-VL. Specifically, the 7B and 72B variants of UI-Venus obtain 94.1% /\n50.8% and 95.3% / 61.9% on the standard grounding benchmarks, i.e.,\nScreenspot-V2 / Pro, surpassing the previous SOTA baselines including\nopen-source GTA1 and closed-source UI-TARS-1.5.To show UI-Venus's summary and\nplaning ability, we also evaluate it on the AndroidWorld, an online UI\nnavigation arena, on which our 7B and 72B variants achieve 49.1% and 65.9%\nsuccess rate, also beating existing models.To achieve this, we introduce\ncarefully designed reward functions for both UI grounding and navigation tasks\nand corresponding efficient data cleaning strategies.To further boost\nnavigation performance, we propose Self-Evolving Trajectory History Alignment\n\\& Sparse Action Enhancement that refine historical reasoning traces and\nbalances the distribution of sparse but critical actions, leading to more\ncoherent planning and better generalization in complex UI tasks. Our\ncontributions include the publish of SOTA open-source UI agents, comprehensive\ndata cleaning protocols and a novel self-evolving framework for improving\nnavigation performance, which encourage further research and development in the\ncommunity. Code is available at https://github.com/antgroup/UI-Venus.",
+      "upvotes": 17,
+      "discussionId": "689e97cda4caabb4320e5cff",
+      "ai_summary": "UI-Venus, a multimodal large language model-based UI agent, achieves state-of-the-art performance in UI grounding and navigation tasks using reinforcement fine-tuning and novel self-evolving frameworks.",
+      "ai_keywords": [
+        "multimodal large language model",
+        "reinforcement finetune",
+        "Qwen2.5-VL",
+        "UI grounding",
+        "navigation tasks",
+        "Screenspot-V2",
+        "Pro",
+        "AndroidWorld",
+        "reward functions",
+        "data cleaning strategies",
+        "Self-Evolving Trajectory History Alignment",
+        "Sparse Action Enhancement"
+      ]
+    },
+    "publishedAt": "2025-08-14T12:58:07.000Z",
+    "title": "UI-Venus Technical Report: Building High-performance UI Agents with RFT",
+    "summary": "We present UI-Venus, a native UI agent that takes only screenshots as input\nbased on a multimodal large language model. UI-Venus achieves SOTA performance\non both UI grounding and navigation tasks using only several hundred thousand\nhigh-quality training samples through reinforcement finetune (RFT) based on\nQwen2.5-VL. Specifically, the 7B and 72B variants of UI-Venus obtain 94.1% /\n50.8% and 95.3% / 61.9% on the standard grounding benchmarks, i.e.,\nScreenspot-V2 / Pro, surpassing the previous SOTA baselines including\nopen-source GTA1 and closed-source UI-TARS-1.5.To show UI-Venus's summary and\nplaning ability, we also evaluate it on the AndroidWorld, an online UI\nnavigation arena, on which our 7B and 72B variants achieve 49.1% and 65.9%\nsuccess rate, also beating existing models.To achieve this, we introduce\ncarefully designed reward functions for both UI grounding and navigation tasks\nand corresponding efficient data cleaning strategies.To further boost\nnavigation performance, we propose Self-Evolving Trajectory History Alignment\n\\& Sparse Action Enhancement that refine historical reasoning traces and\nbalances the distribution of sparse but critical actions, leading to more\ncoherent planning and better generalization in complex UI tasks. Our\ncontributions include the publish of SOTA open-source UI agents, comprehensive\ndata cleaning protocols and a novel self-evolving framework for improving\nnavigation performance, which encourage further research and development in the\ncommunity. Code is available at https://github.com/antgroup/UI-Venus.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10833.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60d2a2984956988b63753371",
+      "avatarUrl": "/avatars/412879e82a5bfc88431d8aa561acf26a.svg",
+      "fullname": "zhangxgu",
+      "name": "zhangxgu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.09848",
+      "authors": [
+        {
+          "_id": "689dc868b083e610d741eb30",
+          "name": "Mo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb31",
+          "name": "Tsz Ting Chung",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb32",
+          "name": "Chulun Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb33",
+          "name": "Tong Li",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb34",
+          "name": "Rui Lu",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb35",
+          "name": "Jiangnan Li",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb36",
+          "name": "Liyan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb37",
+          "name": "Haoshu Lu",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb38",
+          "name": "Ning Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb39",
+          "name": "Jing Li",
+          "hidden": false
+        },
+        {
+          "_id": "689dc868b083e610d741eb3a",
+          "name": "Jie Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-13T14:28:25.000Z",
+      "submittedOnDailyAt": "2025-08-15T01:12:28.551Z",
+      "title": "PRELUDE: A Benchmark Designed to Require Global Comprehension and\n  Reasoning over Long Contexts",
+      "submittedOnDailyBy": {
+        "_id": "60ab6b2ee3de7c7440abb845",
+        "avatarUrl": "/avatars/22916bece3b5b951c016bf2ddd8dda1c.svg",
+        "isPro": false,
+        "fullname": "Cindy",
+        "user": "ttchungc",
+        "type": "user"
+      },
+      "summary": "We introduce PRELUDE, a benchmark for evaluating long-context understanding\nthrough the task of determining whether a character's prequel story is\nconsistent with the canonical narrative of the original book. Our task poses a\nstronger demand for global comprehension and deep reasoning than existing\nbenchmarks -- as the prequels are not part of the original story, assessing\ntheir plausibility typically requires searching and integrating information\nthat is only indirectly related. Empirically, 88% of instances require evidence\nfrom multiple parts of the narrative. Experimental results highlight the\nchallenge of our task: in-context learning, RAG and in-domain training with\nstate-of-the-art LLMs, and commercial DeepResearch services, lag behind humans\nby >15%. A further human study reveals that models often produce correct\nanswers with flawed reasoning, leading to an over 30% gap in reasoning accuracy\ncompared to humans. These findings underscore the substantial room for\nimprovement in long-context understanding and reasoning.",
+      "upvotes": 16,
+      "discussionId": "689dc869b083e610d741eb3b",
+      "projectPage": "https://gorov.github.io/prelude",
+      "ai_summary": "A benchmark called PRELUDE evaluates long-context understanding by assessing the consistency of prequel stories with original books, revealing significant challenges for models compared to humans.",
+      "ai_keywords": [
+        "PRELUDE",
+        "long-context understanding",
+        "in-context learning",
+        "RAG",
+        "state-of-the-art LLMs",
+        "DeepResearch",
+        "reasoning accuracy"
+      ]
+    },
+    "publishedAt": "2025-08-13T10:28:25.000Z",
+    "title": "PRELUDE: A Benchmark Designed to Require Global Comprehension and\n  Reasoning over Long Contexts",
+    "summary": "We introduce PRELUDE, a benchmark for evaluating long-context understanding\nthrough the task of determining whether a character's prequel story is\nconsistent with the canonical narrative of the original book. Our task poses a\nstronger demand for global comprehension and deep reasoning than existing\nbenchmarks -- as the prequels are not part of the original story, assessing\ntheir plausibility typically requires searching and integrating information\nthat is only indirectly related. Empirically, 88% of instances require evidence\nfrom multiple parts of the narrative. Experimental results highlight the\nchallenge of our task: in-context learning, RAG and in-domain training with\nstate-of-the-art LLMs, and commercial DeepResearch services, lag behind humans\nby >15%. A further human study reveals that models often produce correct\nanswers with flawed reasoning, leading to an over 30% gap in reasoning accuracy\ncompared to humans. These findings underscore the substantial room for\nimprovement in long-context understanding and reasoning.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.09848.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60ab6b2ee3de7c7440abb845",
+      "avatarUrl": "/avatars/22916bece3b5b951c016bf2ddd8dda1c.svg",
+      "fullname": "Cindy",
+      "name": "ttchungc",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10893",
+      "authors": [
+        {
+          "_id": "689efb1da4caabb4320e5e7a",
+          "name": "Yushi Lan",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e7b",
+          "name": "Yihang Luo",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e7c",
+          "name": "Fangzhou Hong",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e7d",
+          "name": "Shangchen Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e7e",
+          "name": "Honghua Chen",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e7f",
+          "name": "Zhaoyang Lyu",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e80",
+          "name": "Shuai Yang",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e81",
+          "name": "Bo Dai",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e82",
+          "name": "Chen Change Loy",
+          "hidden": false
+        },
+        {
+          "_id": "689efb1da4caabb4320e5e83",
+          "name": "Xingang Pan",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64b55f62e6b0c53f97e64034/aVp5jG26cRwWZc46-55Nf.gif"
+      ],
+      "publishedAt": "2025-08-14T17:58:05.000Z",
+      "submittedOnDailyAt": "2025-08-15T08:10:11.416Z",
+      "title": "STream3R: Scalable Sequential 3D Reconstruction with Causal Transformer",
+      "submittedOnDailyBy": {
+        "_id": "64b55f62e6b0c53f97e64034",
+        "avatarUrl": "/avatars/d5fc53de37d4fb0b5095a5fb21b43503.svg",
+        "isPro": true,
+        "fullname": "LAN YUSHI",
+        "user": "yslan",
+        "type": "user"
+      },
+      "summary": "We present STream3R, a novel approach to 3D reconstruction that reformulates\npointmap prediction as a decoder-only Transformer problem. Existing\nstate-of-the-art methods for multi-view reconstruction either depend on\nexpensive global optimization or rely on simplistic memory mechanisms that\nscale poorly with sequence length. In contrast, STream3R introduces an\nstreaming framework that processes image sequences efficiently using causal\nattention, inspired by advances in modern language modeling. By learning\ngeometric priors from large-scale 3D datasets, STream3R generalizes well to\ndiverse and challenging scenarios, including dynamic scenes where traditional\nmethods often fail. Extensive experiments show that our method consistently\noutperforms prior work across both static and dynamic scene benchmarks.\nMoreover, STream3R is inherently compatible with LLM-style training\ninfrastructure, enabling efficient large-scale pretraining and fine-tuning for\nvarious downstream 3D tasks. Our results underscore the potential of causal\nTransformer models for online 3D perception, paving the way for real-time 3D\nunderstanding in streaming environments. More details can be found in our\nproject page: https://nirvanalan.github.io/projects/stream3r.",
+      "upvotes": 7,
+      "discussionId": "689efb1da4caabb4320e5e84",
+      "projectPage": "https://nirvanalan.github.io/projects/stream3r/",
+      "githubRepo": "https://github.com/NIRVANALAN/STream3R",
+      "ai_summary": "STream3R reformulates 3D reconstruction as a decoder-only Transformer problem, using causal attention to efficiently process image sequences and outperform existing methods in both static and dynamic scenes.",
+      "ai_keywords": [
+        "Transformer",
+        "causal attention",
+        "3D reconstruction",
+        "pointmap prediction",
+        "multi-view reconstruction",
+        "global optimization",
+        "memory mechanisms",
+        "geometric priors",
+        "LLM-style training",
+        "pretraining",
+        "fine-tuning",
+        "online 3D perception",
+        "real-time 3D understanding",
+        "streaming environments"
+      ]
+    },
+    "publishedAt": "2025-08-14T13:58:05.000Z",
+    "title": "STream3R: Scalable Sequential 3D Reconstruction with Causal Transformer",
+    "summary": "We present STream3R, a novel approach to 3D reconstruction that reformulates\npointmap prediction as a decoder-only Transformer problem. Existing\nstate-of-the-art methods for multi-view reconstruction either depend on\nexpensive global optimization or rely on simplistic memory mechanisms that\nscale poorly with sequence length. In contrast, STream3R introduces an\nstreaming framework that processes image sequences efficiently using causal\nattention, inspired by advances in modern language modeling. By learning\ngeometric priors from large-scale 3D datasets, STream3R generalizes well to\ndiverse and challenging scenarios, including dynamic scenes where traditional\nmethods often fail. Extensive experiments show that our method consistently\noutperforms prior work across both static and dynamic scene benchmarks.\nMoreover, STream3R is inherently compatible with LLM-style training\ninfrastructure, enabling efficient large-scale pretraining and fine-tuning for\nvarious downstream 3D tasks. Our results underscore the potential of causal\nTransformer models for online 3D perception, paving the way for real-time 3D\nunderstanding in streaming environments. More details can be found in our\nproject page: https://nirvanalan.github.io/projects/stream3r.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64b55f62e6b0c53f97e64034/aVp5jG26cRwWZc46-55Nf.gif"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10893.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64b55f62e6b0c53f97e64034",
+      "avatarUrl": "/avatars/d5fc53de37d4fb0b5095a5fb21b43503.svg",
+      "fullname": "LAN YUSHI",
+      "name": "yslan",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10576",
+      "authors": [
+        {
+          "_id": "689e9eb4a4caabb4320e5d3a",
+          "name": "Zheng Qin",
+          "hidden": false
+        },
+        {
+          "_id": "689e9eb4a4caabb4320e5d3b",
+          "name": "Ruobing Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "689e9eb4a4caabb4320e5d3c",
+          "name": "Yabing Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689e9eb4a4caabb4320e5d3d",
+          "name": "Tianqi Li",
+          "hidden": false
+        },
+        {
+          "_id": "689e9eb4a4caabb4320e5d3e",
+          "name": "Yi Yuan",
+          "hidden": false
+        },
+        {
+          "_id": "689e9eb4a4caabb4320e5d3f",
+          "name": "Jingdong Chen",
+          "hidden": false
+        },
+        {
+          "_id": "689e9eb4a4caabb4320e5d40",
+          "name": "Le Wang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/676a52b5c32a51c8a39d5307/LIaSWGn6wk1CRhZBtXa02.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/676a52b5c32a51c8a39d5307/nq95U2jcbJuumsLZUC39u.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/676a52b5c32a51c8a39d5307/zGxKiqoSYP3KXy5F8O7SU.png"
+      ],
+      "publishedAt": "2025-08-14T12:14:15.000Z",
+      "submittedOnDailyAt": "2025-08-15T01:16:03.262Z",
+      "title": "HumanSense: From Multimodal Perception to Empathetic Context-Aware\n  Responses through Reasoning MLLMs",
+      "submittedOnDailyBy": {
+        "_id": "676a52b5c32a51c8a39d5307",
+        "avatarUrl": "/avatars/b7493ed8e8cc3aab8cc0ca89a326f3c4.svg",
+        "isPro": false,
+        "fullname": "ruobing zheng",
+        "user": "RobinRoaR",
+        "type": "user"
+      },
+      "summary": "While Multimodal Large Language Models (MLLMs) show immense promise for\nachieving truly human-like interactions, progress is hindered by the lack of\nfine-grained evaluation frameworks for human-centered scenarios, encompassing\nboth the understanding of complex human intentions and the provision of\nempathetic, context-aware responses. Here we introduce HumanSense, a\ncomprehensive benchmark designed to evaluate the human-centered perception and\ninteraction capabilities of MLLMs, with a particular focus on deep\nunderstanding of extended multimodal contexts and the formulation of rational\nfeedback. Our evaluation reveals that leading MLLMs still have considerable\nroom for improvement, particularly for advanced interaction-oriented tasks.\nSupplementing visual input with audio and text information yields substantial\nimprovements, and Omni-modal models show advantages on these tasks.\nFurthermore, we argue that appropriate feedback stems from a contextual\nanalysis of the interlocutor's needs and emotions, with reasoning ability\nserving as the key to unlocking it. Accordingly, we employ a multi-stage,\nmodality-progressive reinforcement learning to enhance the reasoning abilities\nof an Omni model, achieving substantial gains on evaluation results.\nAdditionally, we observe that successful reasoning processes exhibit highly\nconsistent thought patterns. By designing corresponding prompts, we also\nenhance the performance of non-reasoning models in a training-free manner.\nProject page:\nbrightpinkhttps://digital-avatar.github.io/ai/HumanSense/",
+      "upvotes": 5,
+      "discussionId": "689e9eb4a4caabb4320e5d41",
+      "projectPage": "https://digital-avatar.github.io/ai/HumanSense/",
+      "ai_summary": "HumanSense is a benchmark for evaluating human-centered perception and interaction in Multimodal Large Language Models, focusing on multimodal context understanding and rational feedback through reinforcement learning.",
+      "ai_keywords": [
+        "Multimodal Large Language Models",
+        "HumanSense",
+        "benchmark",
+        "human-centered perception",
+        "interaction capabilities",
+        "extended multimodal contexts",
+        "rational feedback",
+        "reinforcement learning",
+        "Omni-modal models",
+        "contextual analysis",
+        "reasoning abilities",
+        "thought patterns",
+        "prompts"
+      ]
+    },
+    "publishedAt": "2025-08-14T08:14:15.000Z",
+    "title": "HumanSense: From Multimodal Perception to Empathetic Context-Aware\n  Responses through Reasoning MLLMs",
+    "summary": "While Multimodal Large Language Models (MLLMs) show immense promise for\nachieving truly human-like interactions, progress is hindered by the lack of\nfine-grained evaluation frameworks for human-centered scenarios, encompassing\nboth the understanding of complex human intentions and the provision of\nempathetic, context-aware responses. Here we introduce HumanSense, a\ncomprehensive benchmark designed to evaluate the human-centered perception and\ninteraction capabilities of MLLMs, with a particular focus on deep\nunderstanding of extended multimodal contexts and the formulation of rational\nfeedback. Our evaluation reveals that leading MLLMs still have considerable\nroom for improvement, particularly for advanced interaction-oriented tasks.\nSupplementing visual input with audio and text information yields substantial\nimprovements, and Omni-modal models show advantages on these tasks.\nFurthermore, we argue that appropriate feedback stems from a contextual\nanalysis of the interlocutor's needs and emotions, with reasoning ability\nserving as the key to unlocking it. Accordingly, we employ a multi-stage,\nmodality-progressive reinforcement learning to enhance the reasoning abilities\nof an Omni model, achieving substantial gains on evaluation results.\nAdditionally, we observe that successful reasoning processes exhibit highly\nconsistent thought patterns. By designing corresponding prompts, we also\nenhance the performance of non-reasoning models in a training-free manner.\nProject page:\nbrightpinkhttps://digital-avatar.github.io/ai/HumanSense/",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/676a52b5c32a51c8a39d5307/LIaSWGn6wk1CRhZBtXa02.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/676a52b5c32a51c8a39d5307/nq95U2jcbJuumsLZUC39u.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/676a52b5c32a51c8a39d5307/zGxKiqoSYP3KXy5F8O7SU.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10576.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "676a52b5c32a51c8a39d5307",
+      "avatarUrl": "/avatars/b7493ed8e8cc3aab8cc0ca89a326f3c4.svg",
+      "fullname": "ruobing zheng",
+      "name": "RobinRoaR",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10751",
+      "authors": [
+        {
+          "_id": "689ec27fa4caabb4320e5df4",
+          "name": "Zhipeng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "689ec27fa4caabb4320e5df5",
+          "name": "Xiaobo Qin",
+          "hidden": false
+        },
+        {
+          "_id": "689ec27fa4caabb4320e5df6",
+          "name": "Youbin Wu",
+          "hidden": false
+        },
+        {
+          "_id": "689ec27fa4caabb4320e5df7",
+          "name": "Yue Ling",
+          "hidden": false
+        },
+        {
+          "_id": "689ec27fa4caabb4320e5df8",
+          "name": "Qinghao Ye",
+          "hidden": false
+        },
+        {
+          "_id": "689ec27fa4caabb4320e5df9",
+          "name": "Wayne Xin Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "689ec27fa4caabb4320e5dfa",
+          "name": "Guang Shi",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T15:34:47.000Z",
+      "submittedOnDailyAt": "2025-08-15T03:47:57.550Z",
+      "title": "Pass@k Training for Adaptively Balancing Exploration and Exploitation of\n  Large Reasoning Models",
+      "submittedOnDailyBy": {
+        "_id": "629b765ce1af194c641fcbc6",
+        "avatarUrl": "/avatars/7c53a4c2a1e528c19641a2b601731754.svg",
+        "isPro": false,
+        "fullname": "Zhipeng Chen",
+        "user": "TimothyCzp",
+        "type": "user"
+      },
+      "summary": "Reinforcement learning with verifiable rewards (RLVR), which typically adopts\nPass@1 as the reward, has faced the issues in balancing exploration and\nexploitation, causing policies to prefer conservative actions, converging to a\nlocal optimum. Identifying an appropriate reward metric is therefore crucial.\nRegarding the prior work, although Pass@k has been used in evaluation, its\nconnection to LLM exploration ability in RLVR remains largely overlooked. To\ninvestigate this, we first use Pass@k as the reward to train the policy model\n(i.e., Pass@k Training), and observe the improvement on its\nexploration ability. Next, we derive an analytical solution for the advantage\nof Pass@k Training, leading to an efficient and effective process. Building on\nthis, our analysis reveals that exploration and exploitation are not inherently\nconflicting objectives, while they can mutually enhance each other. Moreover,\nPass@k Training with analytical derivation essentially involves directly\ndesigning the advantage function. Inspired by this, we preliminarily explore\nthe advantage design for RLVR, showing promising results and highlighting a\npotential future direction.",
+      "upvotes": 4,
+      "discussionId": "689ec280a4caabb4320e5dfb",
+      "projectPage": "https://github.com/RUCAIBox/Passk_Training",
+      "githubRepo": "https://github.com/RUCAIBox/Passk_Training",
+      "ai_summary": "Using Pass@k as a reward in reinforcement learning with verifiable rewards improves exploration and reveals that exploration and exploitation can mutually enhance each other.",
+      "ai_keywords": [
+        "reinforcement learning",
+        "verifiable rewards",
+        "RLVR",
+        "Pass@1",
+        "Pass@k",
+        "policy model",
+        "exploration",
+        "exploitation",
+        "local optimum",
+        "advantage function"
+      ],
+      "githubStars": 3
+    },
+    "publishedAt": "2025-08-14T11:34:47.000Z",
+    "title": "Pass@k Training for Adaptively Balancing Exploration and Exploitation of\n  Large Reasoning Models",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR), which typically adopts\nPass@1 as the reward, has faced the issues in balancing exploration and\nexploitation, causing policies to prefer conservative actions, converging to a\nlocal optimum. Identifying an appropriate reward metric is therefore crucial.\nRegarding the prior work, although Pass@k has been used in evaluation, its\nconnection to LLM exploration ability in RLVR remains largely overlooked. To\ninvestigate this, we first use Pass@k as the reward to train the policy model\n(i.e., Pass@k Training), and observe the improvement on its\nexploration ability. Next, we derive an analytical solution for the advantage\nof Pass@k Training, leading to an efficient and effective process. Building on\nthis, our analysis reveals that exploration and exploitation are not inherently\nconflicting objectives, while they can mutually enhance each other. Moreover,\nPass@k Training with analytical derivation essentially involves directly\ndesigning the advantage function. Inspired by this, we preliminarily explore\nthe advantage design for RLVR, showing promising results and highlighting a\npotential future direction.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10751.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "629b765ce1af194c641fcbc6",
+      "avatarUrl": "/avatars/7c53a4c2a1e528c19641a2b601731754.svg",
+      "fullname": "Zhipeng Chen",
+      "name": "TimothyCzp",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10875",
+      "authors": [
+        {
+          "_id": "689eab50a4caabb4320e5dba",
+          "name": "Tianyi Li",
+          "hidden": false
+        },
+        {
+          "_id": "689eab50a4caabb4320e5dbb",
+          "name": "Mingda Chen",
+          "hidden": false
+        },
+        {
+          "_id": "689eab50a4caabb4320e5dbc",
+          "name": "Bowei Guo",
+          "hidden": false
+        },
+        {
+          "_id": "689eab50a4caabb4320e5dbd",
+          "name": "Zhiqiang Shen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T17:47:22.000Z",
+      "submittedOnDailyAt": "2025-08-15T07:17:53.320Z",
+      "title": "A Survey on Diffusion Language Models",
+      "submittedOnDailyBy": {
+        "_id": "649d5a3f4e08d59d20014652",
+        "avatarUrl": "/avatars/017eccd6aec02137c1beebfe4c951720.svg",
+        "isPro": false,
+        "fullname": "Zhiqiang Shen",
+        "user": "Jason0214",
+        "type": "user"
+      },
+      "summary": "Diffusion Language Models (DLMs) are rapidly emerging as a powerful and\npromising alternative to the dominant autoregressive (AR) paradigm. By\ngenerating tokens in parallel through an iterative denoising process, DLMs\npossess inherent advantages in reducing inference latency and capturing\nbidirectional context, thereby enabling fine-grained control over the\ngeneration process. While achieving a several-fold speed-up, recent\nadvancements have allowed DLMs to show performance comparable to their\nautoregressive counterparts, making them a compelling choice for various\nnatural language processing tasks. In this survey, we provide a holistic\noverview of the current DLM landscape. We trace its evolution and relationship\nwith other paradigms, such as autoregressive and masked language models, and\ncover both foundational principles and state-of-the-art models. Our work offers\nan up-to-date, comprehensive taxonomy and an in-depth analysis of current\ntechniques, from pre-training strategies to advanced post-training methods.\nAnother contribution of this survey is a thorough review of DLM inference\nstrategies and optimizations, including improvements in decoding parallelism,\ncaching mechanisms, and generation quality. We also highlight the latest\napproaches to multimodal extensions of DLMs and delineate their applications\nacross various practical scenarios. Furthermore, our discussion addresses the\nlimitations and challenges of DLMs, including efficiency, long-sequence\nhandling, and infrastructure requirements, while outlining future research\ndirections to sustain progress in this rapidly evolving field. Project GitHub\nis available at https://github.com/VILA-Lab/Awesome-DLMs.",
+      "upvotes": 2,
+      "discussionId": "689eab50a4caabb4320e5dbe",
+      "ai_summary": "Diffusion Language Models offer parallel token generation, reducing inference latency and capturing bidirectional context, and are compared to autoregressive models in various NLP tasks.",
+      "ai_keywords": [
+        "Diffusion Language Models",
+        "autoregressive",
+        "denoising process",
+        "inference latency",
+        "bidirectional context",
+        "pre-training strategies",
+        "post-training methods",
+        "decoding parallelism",
+        "caching mechanisms",
+        "generation quality",
+        "multimodal extensions"
+      ]
+    },
+    "publishedAt": "2025-08-14T13:47:22.000Z",
+    "title": "A Survey on Diffusion Language Models",
+    "summary": "Diffusion Language Models (DLMs) are rapidly emerging as a powerful and\npromising alternative to the dominant autoregressive (AR) paradigm. By\ngenerating tokens in parallel through an iterative denoising process, DLMs\npossess inherent advantages in reducing inference latency and capturing\nbidirectional context, thereby enabling fine-grained control over the\ngeneration process. While achieving a several-fold speed-up, recent\nadvancements have allowed DLMs to show performance comparable to their\nautoregressive counterparts, making them a compelling choice for various\nnatural language processing tasks. In this survey, we provide a holistic\noverview of the current DLM landscape. We trace its evolution and relationship\nwith other paradigms, such as autoregressive and masked language models, and\ncover both foundational principles and state-of-the-art models. Our work offers\nan up-to-date, comprehensive taxonomy and an in-depth analysis of current\ntechniques, from pre-training strategies to advanced post-training methods.\nAnother contribution of this survey is a thorough review of DLM inference\nstrategies and optimizations, including improvements in decoding parallelism,\ncaching mechanisms, and generation quality. We also highlight the latest\napproaches to multimodal extensions of DLMs and delineate their applications\nacross various practical scenarios. Furthermore, our discussion addresses the\nlimitations and challenges of DLMs, including efficiency, long-sequence\nhandling, and infrastructure requirements, while outlining future research\ndirections to sustain progress in this rapidly evolving field. Project GitHub\nis available at https://github.com/VILA-Lab/Awesome-DLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10875.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "649d5a3f4e08d59d20014652",
+      "avatarUrl": "/avatars/017eccd6aec02137c1beebfe4c951720.svg",
+      "fullname": "Zhiqiang Shen",
+      "name": "Jason0214",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10860",
+      "authors": [
+        {
+          "_id": "689e9a49a4caabb4320e5d12",
+          "name": "Zhaokun Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "689e9a49a4caabb4320e5d13",
+          "name": "Ziyin Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T17:31:18.000Z",
+      "submittedOnDailyAt": "2025-08-15T00:56:04.904Z",
+      "title": "From Black Box to Transparency: Enhancing Automated Interpreting\n  Assessment with Explainable AI in College Classrooms",
+      "submittedOnDailyBy": {
+        "_id": "6430bdd8cd31d174a9f900fb",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/Y9SPnRfpKSbYc7MhNdP-H.jpeg",
+        "isPro": false,
+        "fullname": "Ziyin Zhang",
+        "user": "Geralt-Targaryen",
+        "type": "user"
+      },
+      "summary": "Recent advancements in machine learning have spurred growing interests in\nautomated interpreting quality assessment. Nevertheless, existing research\nsuffers from insufficient examination of language use quality, unsatisfactory\nmodeling effectiveness due to data scarcity and imbalance, and a lack of\nefforts to explain model predictions. To address these gaps, we propose a\nmulti-dimensional modeling framework that integrates feature engineering, data\naugmentation, and explainable machine learning. This approach prioritizes\nexplainability over ``black box'' predictions by utilizing only\nconstruct-relevant, transparent features and conducting Shapley Value (SHAP)\nanalysis. Our results demonstrate strong predictive performance on a novel\nEnglish-Chinese consecutive interpreting dataset, identifying BLEURT and\nCometKiwi scores to be the strongest predictive features for fidelity,\npause-related features for fluency, and Chinese-specific phraseological\ndiversity metrics for language use. Overall, by placing particular emphasis on\nexplainability, we present a scalable, reliable, and transparent alternative to\ntraditional human evaluation, facilitating the provision of detailed diagnostic\nfeedback for learners and supporting self-regulated learning advantages not\nafforded by automated scores in isolation.",
+      "upvotes": 2,
+      "discussionId": "689e9a4aa4caabb4320e5d14",
+      "ai_summary": "A multi-dimensional modeling framework enhances automated interpreting quality assessment by integrating feature engineering, data augmentation, and explainable machine learning, focusing on transparency and detailed diagnostic feedback.",
+      "ai_keywords": [
+        "feature engineering",
+        "data augmentation",
+        "explainable machine learning",
+        "Shapley Value (SHAP)",
+        "BLEURT",
+        "CometKiwi",
+        "language use quality",
+        "model predictions",
+        "English-Chinese consecutive interpreting",
+        "fidelity",
+        "fluency",
+        "Chinese-specific phraseological diversity metrics",
+        "self-regulated learning"
+      ]
+    },
+    "publishedAt": "2025-08-14T13:31:18.000Z",
+    "title": "From Black Box to Transparency: Enhancing Automated Interpreting\n  Assessment with Explainable AI in College Classrooms",
+    "summary": "Recent advancements in machine learning have spurred growing interests in\nautomated interpreting quality assessment. Nevertheless, existing research\nsuffers from insufficient examination of language use quality, unsatisfactory\nmodeling effectiveness due to data scarcity and imbalance, and a lack of\nefforts to explain model predictions. To address these gaps, we propose a\nmulti-dimensional modeling framework that integrates feature engineering, data\naugmentation, and explainable machine learning. This approach prioritizes\nexplainability over ``black box'' predictions by utilizing only\nconstruct-relevant, transparent features and conducting Shapley Value (SHAP)\nanalysis. Our results demonstrate strong predictive performance on a novel\nEnglish-Chinese consecutive interpreting dataset, identifying BLEURT and\nCometKiwi scores to be the strongest predictive features for fidelity,\npause-related features for fluency, and Chinese-specific phraseological\ndiversity metrics for language use. Overall, by placing particular emphasis on\nexplainability, we present a scalable, reliable, and transparent alternative to\ntraditional human evaluation, facilitating the provision of detailed diagnostic\nfeedback for learners and supporting self-regulated learning advantages not\nafforded by automated scores in isolation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10860.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6430bdd8cd31d174a9f900fb",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/Y9SPnRfpKSbYc7MhNdP-H.jpeg",
+      "fullname": "Ziyin Zhang",
+      "name": "Geralt-Targaryen",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 5
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10637",
+      "authors": [
+        {
+          "_id": "689eee00a4caabb4320e5e5b",
+          "name": "Ryan Ramos",
+          "hidden": false
+        },
+        {
+          "_id": "689eee00a4caabb4320e5e5c",
+          "name": "Vladan Stojnić",
+          "hidden": false
+        },
+        {
+          "_id": "689eee00a4caabb4320e5e5d",
+          "name": "Giorgos Kordopatis-Zilos",
+          "hidden": false
+        },
+        {
+          "_id": "689eee00a4caabb4320e5e5e",
+          "name": "Yuta Nakashima",
+          "hidden": false
+        },
+        {
+          "_id": "689eee00a4caabb4320e5e5f",
+          "name": "Giorgos Tolias",
+          "hidden": false
+        },
+        {
+          "_id": "689eee00a4caabb4320e5e60",
+          "name": "Noa Garcia",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T13:34:13.000Z",
+      "submittedOnDailyAt": "2025-08-15T06:53:15.785Z",
+      "title": "Processing and acquisition traces in visual encoders: What does CLIP\n  know about your camera?",
+      "submittedOnDailyBy": {
+        "_id": "66a3ae59f33ff23e1c027ccd",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66a3ae59f33ff23e1c027ccd/tZzpESNPnmhty62xhHszF.jpeg",
+        "isPro": true,
+        "fullname": "Vladan Stojnic",
+        "user": "stojnvla",
+        "type": "user"
+      },
+      "summary": "Prior work has analyzed the robustness of visual encoders to image\ntransformations and corruptions, particularly in cases where such alterations\nare not seen during training. When this occurs, they introduce a form of\ndistribution shift at test time, often leading to performance degradation. The\nprimary focus has been on severe corruptions that, when applied aggressively,\ndistort useful signals necessary for accurate semantic predictions.\n  We take a different perspective by analyzing parameters of the image\nacquisition process and transformations that may be subtle or even\nimperceptible to the human eye. We find that such parameters are systematically\nencoded in the learned visual representations and can be easily recovered. More\nstrikingly, their presence can have a profound impact, either positively or\nnegatively, on semantic predictions. This effect depends on whether there is a\nstrong correlation or anti-correlation between semantic labels and these\nacquisition-based or processing-based labels. Our code and data are available\nat: https://github.com/ryan-caesar-ramos/visual-encoder-traces",
+      "upvotes": 1,
+      "discussionId": "689eee00a4caabb4320e5e61",
+      "githubRepo": "https://github.com/ryan-caesar-ramos/visual-encoder-traces",
+      "ai_summary": "Visual encoders encode subtle image acquisition parameters that can significantly impact semantic predictions based on their correlation with semantic labels.",
+      "ai_keywords": [
+        "visual encoders",
+        "image acquisition process",
+        "transformations",
+        "learned visual representations",
+        "semantic predictions",
+        "acquisition-based labels",
+        "processing-based labels"
+      ],
+      "githubStars": 0
+    },
+    "publishedAt": "2025-08-14T09:34:13.000Z",
+    "title": "Processing and acquisition traces in visual encoders: What does CLIP\n  know about your camera?",
+    "summary": "Prior work has analyzed the robustness of visual encoders to image\ntransformations and corruptions, particularly in cases where such alterations\nare not seen during training. When this occurs, they introduce a form of\ndistribution shift at test time, often leading to performance degradation. The\nprimary focus has been on severe corruptions that, when applied aggressively,\ndistort useful signals necessary for accurate semantic predictions.\n  We take a different perspective by analyzing parameters of the image\nacquisition process and transformations that may be subtle or even\nimperceptible to the human eye. We find that such parameters are systematically\nencoded in the learned visual representations and can be easily recovered. More\nstrikingly, their presence can have a profound impact, either positively or\nnegatively, on semantic predictions. This effect depends on whether there is a\nstrong correlation or anti-correlation between semantic labels and these\nacquisition-based or processing-based labels. Our code and data are available\nat: https://github.com/ryan-caesar-ramos/visual-encoder-traces",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10637.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66a3ae59f33ff23e1c027ccd",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66a3ae59f33ff23e1c027ccd/tZzpESNPnmhty62xhHszF.jpeg",
+      "fullname": "Vladan Stojnic",
+      "name": "stojnvla",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10482",
+      "authors": [
+        {
+          "_id": "689f01b1a4caabb4320e5ea2",
+          "name": "Mahdi Dhaini",
+          "hidden": false
+        },
+        {
+          "_id": "689f01b1a4caabb4320e5ea3",
+          "name": "Stephen Meisenbacher",
+          "hidden": false
+        },
+        {
+          "_id": "689f01b1a4caabb4320e5ea4",
+          "name": "Ege Erdogan",
+          "hidden": false
+        },
+        {
+          "_id": "689f01b1a4caabb4320e5ea5",
+          "name": "Florian Matthes",
+          "hidden": false
+        },
+        {
+          "_id": "689f01b1a4caabb4320e5ea6",
+          "name": "Gjergji Kasneci",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T09:34:29.000Z",
+      "submittedOnDailyAt": "2025-08-15T08:16:27.434Z",
+      "title": "When Explainability Meets Privacy: An Investigation at the Intersection\n  of Post-hoc Explainability and Differential Privacy in the Context of Natural\n  Language Processing",
+      "submittedOnDailyBy": {
+        "_id": "64ccf54986d8dc0caa7d1f64",
+        "avatarUrl": "/avatars/ba47e70e4bc07eb2ba6b648192a15243.svg",
+        "isPro": false,
+        "fullname": "Mahdi Dhaini",
+        "user": "mdhaini",
+        "type": "user"
+      },
+      "summary": "In the study of trustworthy Natural Language Processing (NLP), a number of\nimportant research fields have emerged, including that of\nexplainability and privacy. While research interest in both\nexplainable and privacy-preserving NLP has increased considerably in recent\nyears, there remains a lack of investigation at the intersection of the two.\nThis leaves a considerable gap in understanding of whether achieving\nboth explainability and privacy is possible, or whether the two are at\nodds with each other. In this work, we conduct an empirical investigation into\nthe privacy-explainability trade-off in the context of NLP, guided by the\npopular overarching methods of Differential Privacy (DP) and Post-hoc\nExplainability. Our findings include a view into the intricate relationship\nbetween privacy and explainability, which is formed by a number of factors,\nincluding the nature of the downstream task and choice of the text\nprivatization and explainability method. In this, we highlight the potential\nfor privacy and explainability to co-exist, and we summarize our findings in a\ncollection of practical recommendations for future work at this important\nintersection.",
+      "upvotes": 0,
+      "discussionId": "689f01b2a4caabb4320e5ea7",
+      "githubRepo": "https://github.com/dmah10/xpnlp",
+      "ai_summary": "The study investigates the relationship between privacy and explainability in NLP, using Differential Privacy and Post-hoc Explainability methods, and provides recommendations for balancing both.",
+      "ai_keywords": [
+        "Differential Privacy",
+        "Post-hoc Explainability"
+      ]
+    },
+    "publishedAt": "2025-08-14T05:34:29.000Z",
+    "title": "When Explainability Meets Privacy: An Investigation at the Intersection\n  of Post-hoc Explainability and Differential Privacy in the Context of Natural\n  Language Processing",
+    "summary": "In the study of trustworthy Natural Language Processing (NLP), a number of\nimportant research fields have emerged, including that of\nexplainability and privacy. While research interest in both\nexplainable and privacy-preserving NLP has increased considerably in recent\nyears, there remains a lack of investigation at the intersection of the two.\nThis leaves a considerable gap in understanding of whether achieving\nboth explainability and privacy is possible, or whether the two are at\nodds with each other. In this work, we conduct an empirical investigation into\nthe privacy-explainability trade-off in the context of NLP, guided by the\npopular overarching methods of Differential Privacy (DP) and Post-hoc\nExplainability. Our findings include a view into the intricate relationship\nbetween privacy and explainability, which is formed by a number of factors,\nincluding the nature of the downstream task and choice of the text\nprivatization and explainability method. In this, we highlight the potential\nfor privacy and explainability to co-exist, and we summarize our findings in a\ncollection of practical recommendations for future work at this important\nintersection.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10482.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64ccf54986d8dc0caa7d1f64",
+      "avatarUrl": "/avatars/ba47e70e4bc07eb2ba6b648192a15243.svg",
+      "fullname": "Mahdi Dhaini",
+      "name": "mdhaini",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  }
+]
