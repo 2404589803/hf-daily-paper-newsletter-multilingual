@@ -1,0 +1,1265 @@
+[
+  {
+    "paper": {
+      "id": "2508.10874",
+      "authors": [
+        {
+          "_id": "68a2e369a4caabb4320e64da",
+          "name": "Yuchen Fan",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64db",
+          "name": "Kaiyan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64dc",
+          "name": "Heng Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64dd",
+          "name": "Yuxin Zuo",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64de",
+          "name": "Yanxu Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64df",
+          "name": "Yu Fu",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e0",
+          "name": "Xinwei Long",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e1",
+          "name": "Xuekai Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e2",
+          "name": "Che Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e3",
+          "name": "Yuchen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e4",
+          "name": "Li Kang",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e5",
+          "name": "Gang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e6",
+          "name": "Cheng Huang",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e7",
+          "name": "Zhizhou He",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e8",
+          "name": "Bingning Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64e9",
+          "name": "Lei Bai",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64ea",
+          "name": "Ning Ding",
+          "hidden": false
+        },
+        {
+          "_id": "68a2e369a4caabb4320e64eb",
+          "name": "Bowen Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T17:46:01.000Z",
+      "submittedOnDailyAt": "2025-08-18T07:21:52.685Z",
+      "title": "SSRL: Self-Search Reinforcement Learning",
+      "submittedOnDailyBy": {
+        "_id": "672c2d7816766a76a747b7b5",
+        "avatarUrl": "/avatars/12c7b26d2b81721ccac3a5c71e32a1a1.svg",
+        "isPro": false,
+        "fullname": "Yuchen Fan",
+        "user": "yuchenFan",
+        "type": "user"
+      },
+      "summary": "We investigate the potential of large language models (LLMs) to serve as\nefficient simulators for agentic search tasks in reinforcement learning (RL),\nthereby reducing dependence on costly interactions with external search\nengines. To this end, we first quantify the intrinsic search capability of LLMs\nvia structured prompting and repeated sampling, which we term Self-Search. Our\nresults reveal that LLMs exhibit strong scaling behavior with respect to the\ninference budget, achieving high pass@k on question-answering benchmarks,\nincluding the challenging BrowseComp task. Building on these observations, we\nintroduce Self-Search RL (SSRL), which enhances LLMs' Self-Search capability\nthrough format-based and rule-based rewards. SSRL enables models to iteratively\nrefine their knowledge utilization internally, without requiring access to\nexternal tools. Empirical evaluations demonstrate that SSRL-trained policy\nmodels provide a cost-effective and stable environment for search-driven RL\ntraining, reducing reliance on external search engines and facilitating robust\nsim-to-real transfer. We draw the following conclusions: 1) LLMs possess world\nknowledge that can be effectively elicited to achieve high performance; 2) SSRL\ndemonstrates the potential of leveraging internal knowledge to reduce\nhallucination; 3) SSRL-trained models integrate seamlessly with external search\nengines without additional effort. Our findings highlight the potential of LLMs\nto support more scalable RL agent training.",
+      "upvotes": 29,
+      "discussionId": "68a2e369a4caabb4320e64ec",
+      "projectPage": "https://huggingface.co/collections/TsinghuaC3I/ssrl-6899957a64d4a31f7f43bc88",
+      "githubRepo": "https://github.com/TsinghuaC3I/SSRL",
+      "ai_summary": "LLMs can serve as efficient simulators for RL tasks, reducing reliance on external search engines through a method called Self-Search RL, which enhances internal knowledge utilization.",
+      "ai_keywords": [
+        "large language models",
+        "LLMs",
+        "reinforcement learning",
+        "RL",
+        "Self-Search",
+        "BrowseComp",
+        "pass@k",
+        "Self-Search RL",
+        "SSRL",
+        "format-based rewards",
+        "rule-based rewards",
+        "sim-to-real transfer",
+        "hallucination"
+      ],
+      "githubStars": 31
+    },
+    "publishedAt": "2025-08-14T13:46:01.000Z",
+    "title": "SSRL: Self-Search Reinforcement Learning",
+    "summary": "We investigate the potential of large language models (LLMs) to serve as\nefficient simulators for agentic search tasks in reinforcement learning (RL),\nthereby reducing dependence on costly interactions with external search\nengines. To this end, we first quantify the intrinsic search capability of LLMs\nvia structured prompting and repeated sampling, which we term Self-Search. Our\nresults reveal that LLMs exhibit strong scaling behavior with respect to the\ninference budget, achieving high pass@k on question-answering benchmarks,\nincluding the challenging BrowseComp task. Building on these observations, we\nintroduce Self-Search RL (SSRL), which enhances LLMs' Self-Search capability\nthrough format-based and rule-based rewards. SSRL enables models to iteratively\nrefine their knowledge utilization internally, without requiring access to\nexternal tools. Empirical evaluations demonstrate that SSRL-trained policy\nmodels provide a cost-effective and stable environment for search-driven RL\ntraining, reducing reliance on external search engines and facilitating robust\nsim-to-real transfer. We draw the following conclusions: 1) LLMs possess world\nknowledge that can be effectively elicited to achieve high performance; 2) SSRL\ndemonstrates the potential of leveraging internal knowledge to reduce\nhallucination; 3) SSRL-trained models integrate seamlessly with external search\nengines without additional effort. Our findings highlight the potential of LLMs\nto support more scalable RL agent training.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10874.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "672c2d7816766a76a747b7b5",
+      "avatarUrl": "/avatars/12c7b26d2b81721ccac3a5c71e32a1a1.svg",
+      "fullname": "Yuchen Fan",
+      "name": "yuchenFan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.11630",
+      "authors": [
+        {
+          "_id": "68a286afa4caabb4320e63b6",
+          "name": "Yi-Fan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63b7",
+          "name": "Xingyu Lu",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63b8",
+          "name": "Shukang Yin",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63b9",
+          "name": "Chaoyou Fu",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63ba",
+          "name": "Wei Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63bb",
+          "name": "Xiao Hu",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63bc",
+          "name": "Bin Wen",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63bd",
+          "name": "Kaiyu Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63be",
+          "name": "Changyi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63bf",
+          "name": "Tianke Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c0",
+          "name": "Haonan Fan",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c1",
+          "name": "Kaibing Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c2",
+          "name": "Jiankang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c3",
+          "name": "Haojie Ding",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c4",
+          "name": "Kaiyu Tang",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c5",
+          "name": "Zhang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c6",
+          "name": "Liang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c7",
+          "name": "Fan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c8",
+          "name": "Tingting Gao",
+          "hidden": false
+        },
+        {
+          "_id": "68a286afa4caabb4320e63c9",
+          "name": "Guorui Zhou",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/623d8ca4c29adf5ef6175615/EugCupc41u3ZdJyP6uqWm.png"
+      ],
+      "publishedAt": "2025-08-15T17:59:49.000Z",
+      "submittedOnDailyAt": "2025-08-18T00:21:09.935Z",
+      "title": "Thyme: Think Beyond Images",
+      "submittedOnDailyBy": {
+        "_id": "623d8ca4c29adf5ef6175615",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623d8ca4c29adf5ef6175615/q7lHao7UPwU1u7YLSP56m.jpeg",
+        "isPro": false,
+        "fullname": "Yi-Fan Zhang",
+        "user": "yifanzhang114",
+        "type": "user"
+      },
+      "summary": "Following OpenAI's introduction of the ``thinking with images'' concept,\nrecent efforts have explored stimulating the use of visual information in the\nreasoning process to enhance model performance in perception and reasoning\ntasks. However, to the best of our knowledge, no open-source work currently\noffers a feature set as rich as proprietary models (O3), which can perform\ndiverse image manipulations and simultaneously enhance logical reasoning\ncapabilities through code. In this paper, we make a preliminary attempt in this\ndirection by introducing Thyme (Think Beyond Images), a novel paradigm for\nenabling MLLMs to transcend existing ``think with images'' approaches by\nautonomously generating and executing diverse image processing and\ncomputational operations via executable code. This approach not only\nfacilitates a rich, on-the-fly set of image manipulations (e.g., cropping,\nrotation, contrast enhancement) but also allows for mathematical computations,\nall while maintaining high autonomy in deciding when and how to apply these\noperations. We activate this capability through a two-stage training strategy:\nan initial SFT on a curated dataset of 500K samples to teach code generation,\nfollowed by a RL phase to refine decision-making. For the RL stage, we manually\ncollect and design high-resolution question-answer pairs to increase the\nlearning difficulty, and we propose GRPO-ATS (Group Relative Policy\nOptimization with Adaptive Temperature Sampling), an algorithm that applies\ndistinct temperatures to text and code generation to balance reasoning\nexploration with code execution precision. We conduct extensive experimental\nanalysis and ablation studies. Comprehensive evaluations on nearly 20\nbenchmarks show that Thyme yields significant and consistent performance gains,\nparticularly in challenging high-resolution perception and complex reasoning\ntasks.",
+      "upvotes": 27,
+      "discussionId": "68a286afa4caabb4320e63ca",
+      "projectPage": "https://thyme-vl.github.io/",
+      "githubRepo": "https://github.com/yfzhang114/Thyme",
+      "ai_summary": "Thyme, a novel paradigm, enables MLLMs to autonomously perform image manipulations and computations, enhancing performance in perception and reasoning tasks through a two-stage training strategy and GRPO-ATS algorithm.",
+      "ai_keywords": [
+        "MLLMs",
+        "think with images",
+        "image processing",
+        "computational operations",
+        "executable code",
+        "SFT",
+        "RL",
+        "GRPO-ATS",
+        "Group Relative Policy Optimization",
+        "Adaptive Temperature Sampling"
+      ],
+      "githubStars": 53
+    },
+    "publishedAt": "2025-08-15T13:59:49.000Z",
+    "title": "Thyme: Think Beyond Images",
+    "summary": "Following OpenAI's introduction of the ``thinking with images'' concept,\nrecent efforts have explored stimulating the use of visual information in the\nreasoning process to enhance model performance in perception and reasoning\ntasks. However, to the best of our knowledge, no open-source work currently\noffers a feature set as rich as proprietary models (O3), which can perform\ndiverse image manipulations and simultaneously enhance logical reasoning\ncapabilities through code. In this paper, we make a preliminary attempt in this\ndirection by introducing Thyme (Think Beyond Images), a novel paradigm for\nenabling MLLMs to transcend existing ``think with images'' approaches by\nautonomously generating and executing diverse image processing and\ncomputational operations via executable code. This approach not only\nfacilitates a rich, on-the-fly set of image manipulations (e.g., cropping,\nrotation, contrast enhancement) but also allows for mathematical computations,\nall while maintaining high autonomy in deciding when and how to apply these\noperations. We activate this capability through a two-stage training strategy:\nan initial SFT on a curated dataset of 500K samples to teach code generation,\nfollowed by a RL phase to refine decision-making. For the RL stage, we manually\ncollect and design high-resolution question-answer pairs to increase the\nlearning difficulty, and we propose GRPO-ATS (Group Relative Policy\nOptimization with Adaptive Temperature Sampling), an algorithm that applies\ndistinct temperatures to text and code generation to balance reasoning\nexploration with code execution precision. We conduct extensive experimental\nanalysis and ablation studies. Comprehensive evaluations on nearly 20\nbenchmarks show that Thyme yields significant and consistent performance gains,\nparticularly in challenging high-resolution perception and complex reasoning\ntasks.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/623d8ca4c29adf5ef6175615/EugCupc41u3ZdJyP6uqWm.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.11630.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "623d8ca4c29adf5ef6175615",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/623d8ca4c29adf5ef6175615/q7lHao7UPwU1u7YLSP56m.jpeg",
+      "fullname": "Yi-Fan Zhang",
+      "name": "yifanzhang114",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 12
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10104",
+      "authors": [
+        {
+          "_id": "689efc0ba4caabb4320e5e86",
+          "name": "Oriane Siméoni",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e87",
+          "name": "Huy V. Vo",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e88",
+          "name": "Maximilian Seitzer",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e89",
+          "name": "Federico Baldassarre",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e8a",
+          "name": "Maxime Oquab",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e8b",
+          "name": "Cijo Jose",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e8c",
+          "name": "Vasil Khalidov",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e8d",
+          "name": "Marc Szafraniec",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e8e",
+          "name": "Seungeun Yi",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e8f",
+          "name": "Michaël Ramamonjisoa",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e90",
+          "name": "Francisco Massa",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e91",
+          "name": "Daniel Haziza",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e92",
+          "name": "Luca Wehrstedt",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e93",
+          "name": "Jianyuan Wang",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e94",
+          "name": "Timothée Darcet",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e95",
+          "name": "Théo Moutakanni",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e96",
+          "name": "Leonel Sentana",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e97",
+          "name": "Claire Roberts",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e98",
+          "name": "Andrea Vedaldi",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e99",
+          "name": "Jamie Tolan",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e9a",
+          "name": "John Brandt",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e9b",
+          "name": "Camille Couprie",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e9c",
+          "name": "Julien Mairal",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e9d",
+          "name": "Hervé Jégou",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e9e",
+          "name": "Patrick Labatut",
+          "hidden": false
+        },
+        {
+          "_id": "689efc0ba4caabb4320e5e9f",
+          "name": "Piotr Bojanowski",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-13T18:00:55.000Z",
+      "submittedOnDailyAt": "2025-08-18T07:19:00.667Z",
+      "title": "DINOv3",
+      "submittedOnDailyBy": {
+        "_id": "5f1158120c833276f61f1a84",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg",
+        "isPro": true,
+        "fullname": "Niels Rogge",
+        "user": "nielsr",
+        "type": "user"
+      },
+      "summary": "Self-supervised learning holds the promise of eliminating the need for manual\ndata annotation, enabling models to scale effortlessly to massive datasets and\nlarger architectures. By not being tailored to specific tasks or domains, this\ntraining paradigm has the potential to learn visual representations from\ndiverse sources, ranging from natural to aerial images -- using a single\nalgorithm. This technical report introduces DINOv3, a major milestone toward\nrealizing this vision by leveraging simple yet effective strategies. First, we\nleverage the benefit of scaling both dataset and model size by careful data\npreparation, design, and optimization. Second, we introduce a new method called\nGram anchoring, which effectively addresses the known yet unsolved issue of\ndense feature maps degrading during long training schedules. Finally, we apply\npost-hoc strategies that further enhance our models' flexibility with respect\nto resolution, model size, and alignment with text. As a result, we present a\nversatile vision foundation model that outperforms the specialized state of the\nart across a broad range of settings, without fine-tuning. DINOv3 produces\nhigh-quality dense features that achieve outstanding performance on various\nvision tasks, significantly surpassing previous self- and weakly-supervised\nfoundation models. We also share the DINOv3 suite of vision models, designed to\nadvance the state of the art on a wide spectrum of tasks and data by providing\nscalable solutions for diverse resource constraints and deployment scenarios.",
+      "upvotes": 16,
+      "discussionId": "689efc0ba4caabb4320e5ea0",
+      "ai_summary": "DINOv3, a self-supervised learning model, achieves superior performance across various vision tasks by scaling datasets and models, addressing dense feature degradation, and enhancing flexibility with post-hoc strategies.",
+      "ai_keywords": [
+        "self-supervised learning",
+        "DINOv3",
+        "data preparation",
+        "design",
+        "optimization",
+        "Gram anchoring",
+        "dense feature maps",
+        "post-hoc strategies",
+        "vision foundation model",
+        "high-quality dense features",
+        "vision tasks",
+        "weakly-supervised foundation models",
+        "scalable solutions",
+        "deployment scenarios"
+      ]
+    },
+    "publishedAt": "2025-08-13T14:00:55.000Z",
+    "title": "DINOv3",
+    "summary": "Self-supervised learning holds the promise of eliminating the need for manual\ndata annotation, enabling models to scale effortlessly to massive datasets and\nlarger architectures. By not being tailored to specific tasks or domains, this\ntraining paradigm has the potential to learn visual representations from\ndiverse sources, ranging from natural to aerial images -- using a single\nalgorithm. This technical report introduces DINOv3, a major milestone toward\nrealizing this vision by leveraging simple yet effective strategies. First, we\nleverage the benefit of scaling both dataset and model size by careful data\npreparation, design, and optimization. Second, we introduce a new method called\nGram anchoring, which effectively addresses the known yet unsolved issue of\ndense feature maps degrading during long training schedules. Finally, we apply\npost-hoc strategies that further enhance our models' flexibility with respect\nto resolution, model size, and alignment with text. As a result, we present a\nversatile vision foundation model that outperforms the specialized state of the\nart across a broad range of settings, without fine-tuning. DINOv3 produces\nhigh-quality dense features that achieve outstanding performance on various\nvision tasks, significantly surpassing previous self- and weakly-supervised\nfoundation models. We also share the DINOv3 suite of vision models, designed to\nadvance the state of the art on a wide spectrum of tasks and data by providing\nscalable solutions for diverse resource constraints and deployment scenarios.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10104.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "5f1158120c833276f61f1a84",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1608042047613-5f1158120c833276f61f1a84.jpeg",
+      "fullname": "Niels Rogge",
+      "name": "nielsr",
+      "type": "user",
+      "isPro": true,
+      "isHf": true,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 946
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.11203",
+      "authors": [
+        {
+          "_id": "68a29748a4caabb4320e640d",
+          "name": "Seungmi Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68a29748a4caabb4320e640e",
+          "name": "Kwan Yun",
+          "hidden": false
+        },
+        {
+          "_id": "68a29748a4caabb4320e640f",
+          "name": "Junyong Noh",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/639d445524af4747d8d2af52/okc2oEtYhUONdwsmLM3gf.jpeg"
+      ],
+      "publishedAt": "2025-08-15T04:29:46.000Z",
+      "submittedOnDailyAt": "2025-08-18T01:36:55.327Z",
+      "title": "StyleMM: Stylized 3D Morphable Face Model via Text-Driven Aligned Image\n  Translation",
+      "submittedOnDailyBy": {
+        "_id": "639d445524af4747d8d2af52",
+        "avatarUrl": "/avatars/6ca870edc993fd3db6b0db4e4848ef7a.svg",
+        "isPro": false,
+        "fullname": "kwan yun",
+        "user": "kwanY",
+        "type": "user"
+      },
+      "summary": "We introduce StyleMM, a novel framework that can construct a stylized 3D\nMorphable Model (3DMM) based on user-defined text descriptions specifying a\ntarget style. Building upon a pre-trained mesh deformation network and a\ntexture generator for original 3DMM-based realistic human faces, our approach\nfine-tunes these models using stylized facial images generated via text-guided\nimage-to-image (i2i) translation with a diffusion model, which serve as\nstylization targets for the rendered mesh. To prevent undesired changes in\nidentity, facial alignment, or expressions during i2i translation, we introduce\na stylization method that explicitly preserves the facial attributes of the\nsource image. By maintaining these critical attributes during image\nstylization, the proposed approach ensures consistent 3D style transfer across\nthe 3DMM parameter space through image-based training. Once trained, StyleMM\nenables feed-forward generation of stylized face meshes with explicit control\nover shape, expression, and texture parameters, producing meshes with\nconsistent vertex connectivity and animatability. Quantitative and qualitative\nevaluations demonstrate that our approach outperforms state-of-the-art methods\nin terms of identity-level facial diversity and stylization capability. The\ncode and videos are available at\n[kwanyun.github.io/stylemm_page](kwanyun.github.io/stylemm_page).",
+      "upvotes": 6,
+      "discussionId": "68a29748a4caabb4320e6410",
+      "projectPage": "https://kwanyun.github.io/stylemm_page/",
+      "githubRepo": "https://github.com/kwanyun/EAS",
+      "ai_summary": "StyleMM constructs stylized 3DMMs from text descriptions using a diffusion model for image-to-image translation while preserving facial attributes.",
+      "ai_keywords": [
+        "3D Morphable Model",
+        "3DMM",
+        "mesh deformation network",
+        "texture generator",
+        "text-guided image-to-image translation",
+        "diffusion model",
+        "stylization method",
+        "facial attributes",
+        "identity-level facial diversity",
+        "stylization capability"
+      ],
+      "githubStars": 3
+    },
+    "publishedAt": "2025-08-15T00:29:46.000Z",
+    "title": "StyleMM: Stylized 3D Morphable Face Model via Text-Driven Aligned Image\n  Translation",
+    "summary": "We introduce StyleMM, a novel framework that can construct a stylized 3D\nMorphable Model (3DMM) based on user-defined text descriptions specifying a\ntarget style. Building upon a pre-trained mesh deformation network and a\ntexture generator for original 3DMM-based realistic human faces, our approach\nfine-tunes these models using stylized facial images generated via text-guided\nimage-to-image (i2i) translation with a diffusion model, which serve as\nstylization targets for the rendered mesh. To prevent undesired changes in\nidentity, facial alignment, or expressions during i2i translation, we introduce\na stylization method that explicitly preserves the facial attributes of the\nsource image. By maintaining these critical attributes during image\nstylization, the proposed approach ensures consistent 3D style transfer across\nthe 3DMM parameter space through image-based training. Once trained, StyleMM\nenables feed-forward generation of stylized face meshes with explicit control\nover shape, expression, and texture parameters, producing meshes with\nconsistent vertex connectivity and animatability. Quantitative and qualitative\nevaluations demonstrate that our approach outperforms state-of-the-art methods\nin terms of identity-level facial diversity and stylization capability. The\ncode and videos are available at\n[kwanyun.github.io/stylemm_page](kwanyun.github.io/stylemm_page).",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/639d445524af4747d8d2af52/okc2oEtYhUONdwsmLM3gf.jpeg"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.11203.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "639d445524af4747d8d2af52",
+      "avatarUrl": "/avatars/6ca870edc993fd3db6b0db4e4848ef7a.svg",
+      "fullname": "kwan yun",
+      "name": "kwanY",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.11255",
+      "authors": [
+        {
+          "_id": "68a2ccd3a4caabb4320e6473",
+          "name": "MengChao Wang",
+          "hidden": false
+        },
+        {
+          "_id": "68a2ccd3a4caabb4320e6474",
+          "user": {
+            "_id": "653b195c5f1703225b2fd571",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/653b195c5f1703225b2fd571/aCDRKL6PBkzhh8-nzDiMo.jpeg",
+            "isPro": false,
+            "fullname": "wangqiang",
+            "user": "wangqiang9",
+            "type": "user"
+          },
+          "name": "Qiang Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-08-18T06:53:09.368Z",
+          "hidden": false
+        },
+        {
+          "_id": "68a2ccd3a4caabb4320e6475",
+          "name": "Fan Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "68a2ccd3a4caabb4320e6476",
+          "name": "Mu Xu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-15T06:43:46.000Z",
+      "submittedOnDailyAt": "2025-08-18T05:19:49.395Z",
+      "title": "FantasyTalking2: Timestep-Layer Adaptive Preference Optimization for\n  Audio-Driven Portrait Animation",
+      "submittedOnDailyBy": {
+        "_id": "653b195c5f1703225b2fd571",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/653b195c5f1703225b2fd571/aCDRKL6PBkzhh8-nzDiMo.jpeg",
+        "isPro": false,
+        "fullname": "wangqiang",
+        "user": "wangqiang9",
+        "type": "user"
+      },
+      "summary": "Recent advances in audio-driven portrait animation have demonstrated\nimpressive capabilities. However, existing methods struggle to align with\nfine-grained human preferences across multiple dimensions, such as motion\nnaturalness, lip-sync accuracy, and visual quality. This is due to the\ndifficulty of optimizing among competing preference objectives, which often\nconflict with one another, and the scarcity of large-scale, high-quality\ndatasets with multidimensional preference annotations. To address these, we\nfirst introduce Talking-Critic, a multimodal reward model that learns\nhuman-aligned reward functions to quantify how well generated videos satisfy\nmultidimensional expectations. Leveraging this model, we curate Talking-NSQ, a\nlarge-scale multidimensional human preference dataset containing 410K\npreference pairs. Finally, we propose Timestep-Layer adaptive multi-expert\nPreference Optimization (TLPO), a novel framework for aligning diffusion-based\nportrait animation models with fine-grained, multidimensional preferences. TLPO\ndecouples preferences into specialized expert modules, which are then fused\nacross timesteps and network layers, enabling comprehensive, fine-grained\nenhancement across all dimensions without mutual interference. Experiments\ndemonstrate that Talking-Critic significantly outperforms existing methods in\naligning with human preference ratings. Meanwhile, TLPO achieves substantial\nimprovements over baseline models in lip-sync accuracy, motion naturalness, and\nvisual quality, exhibiting superior performance in both qualitative and\nquantitative evaluations. Ours project page:\nhttps://fantasy-amap.github.io/fantasy-talking2/",
+      "upvotes": 5,
+      "discussionId": "68a2ccd4a4caabb4320e6477",
+      "projectPage": "https://fantasy-amap.github.io/fantasy-talking2/",
+      "githubRepo": "https://github.com/Fantasy-AMAP/fantasy-talking2",
+      "ai_summary": "A multimodal reward model and adaptive preference optimization framework improve audio-driven portrait animation by aligning with human preferences across multiple dimensions.",
+      "ai_keywords": [
+        "Talking-Critic",
+        "multimodal reward model",
+        "Talking-NSQ",
+        "Timestep-Layer adaptive multi-expert Preference Optimization (TLPO)",
+        "diffusion-based portrait animation models",
+        "expert modules",
+        "lip-sync accuracy",
+        "motion naturalness",
+        "visual quality"
+      ],
+      "githubStars": 7
+    },
+    "publishedAt": "2025-08-15T02:43:46.000Z",
+    "title": "FantasyTalking2: Timestep-Layer Adaptive Preference Optimization for\n  Audio-Driven Portrait Animation",
+    "summary": "Recent advances in audio-driven portrait animation have demonstrated\nimpressive capabilities. However, existing methods struggle to align with\nfine-grained human preferences across multiple dimensions, such as motion\nnaturalness, lip-sync accuracy, and visual quality. This is due to the\ndifficulty of optimizing among competing preference objectives, which often\nconflict with one another, and the scarcity of large-scale, high-quality\ndatasets with multidimensional preference annotations. To address these, we\nfirst introduce Talking-Critic, a multimodal reward model that learns\nhuman-aligned reward functions to quantify how well generated videos satisfy\nmultidimensional expectations. Leveraging this model, we curate Talking-NSQ, a\nlarge-scale multidimensional human preference dataset containing 410K\npreference pairs. Finally, we propose Timestep-Layer adaptive multi-expert\nPreference Optimization (TLPO), a novel framework for aligning diffusion-based\nportrait animation models with fine-grained, multidimensional preferences. TLPO\ndecouples preferences into specialized expert modules, which are then fused\nacross timesteps and network layers, enabling comprehensive, fine-grained\nenhancement across all dimensions without mutual interference. Experiments\ndemonstrate that Talking-Critic significantly outperforms existing methods in\naligning with human preference ratings. Meanwhile, TLPO achieves substantial\nimprovements over baseline models in lip-sync accuracy, motion naturalness, and\nvisual quality, exhibiting superior performance in both qualitative and\nquantitative evaluations. Ours project page:\nhttps://fantasy-amap.github.io/fantasy-talking2/",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.11255.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "653b195c5f1703225b2fd571",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/653b195c5f1703225b2fd571/aCDRKL6PBkzhh8-nzDiMo.jpeg",
+      "fullname": "wangqiang",
+      "name": "wangqiang9",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2508.10868",
+      "authors": [
+        {
+          "_id": "689e9c73a4caabb4320e5d2a",
+          "user": {
+            "_id": "66bb4d475d27918b4bd8595f",
+            "avatarUrl": "/avatars/974ec48aa6d41166799300b2ff44a92c.svg",
+            "isPro": false,
+            "fullname": "Yibo",
+            "user": "YiboZhang2001",
+            "type": "user"
+          },
+          "name": "Yibo Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-08-18T06:57:29.607Z",
+          "hidden": false
+        },
+        {
+          "_id": "689e9c73a4caabb4320e5d2b",
+          "name": "Li Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "689e9c73a4caabb4320e5d2c",
+          "name": "Rui Ma",
+          "hidden": false
+        },
+        {
+          "_id": "689e9c73a4caabb4320e5d2d",
+          "name": "Nan Cao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T17:43:25.000Z",
+      "submittedOnDailyAt": "2025-08-18T05:52:17.314Z",
+      "title": "TexVerse: A Universe of 3D Objects with High-Resolution Textures",
+      "submittedOnDailyBy": {
+        "_id": "66bb4d475d27918b4bd8595f",
+        "avatarUrl": "/avatars/974ec48aa6d41166799300b2ff44a92c.svg",
+        "isPro": false,
+        "fullname": "Yibo",
+        "user": "YiboZhang2001",
+        "type": "user"
+      },
+      "summary": "We introduce TexVerse, a large-scale 3D dataset featuring high-resolution\ntextures. While recent advances in large-scale 3D datasets have enhanced\nhigh-resolution geometry generation, creating high-resolution textures\nend-to-end remains underexplored due to the lack of suitable datasets. TexVerse\nfills this gap with a curated collection of over 858K unique high-resolution 3D\nmodels sourced from Sketchfab, including more than 158K models with physically\nbased rendering (PBR) materials. Each model encompasses all of its\nhigh-resolution variants, bringing the total to 1.6M 3D instances. TexVerse\nalso includes specialized subsets: TexVerse-Skeleton, with 69K rigged models,\nand TexVerse-Animation, with 54K animated models, both preserving original\nskeleton and animation data uploaded by the user. We also provide detailed\nmodel annotations describing overall characteristics, structural components,\nand intricate features. TexVerse offers a high-quality data resource with\nwide-ranging potential applications in texture synthesis, PBR material\ndevelopment, animation, and various 3D vision and graphics tasks.",
+      "upvotes": 5,
+      "discussionId": "689e9c73a4caabb4320e5d2e",
+      "githubRepo": "https://github.com/yiboz2001/TexVerse",
+      "ai_summary": "TexVerse is a large-scale 3D dataset with high-resolution textures, including PBR materials, rigged models, and animated models, suitable for texture synthesis, PBR material development, and 3D vision tasks.",
+      "ai_keywords": [
+        "physically based rendering",
+        "PBR materials",
+        "rigged models",
+        "animated models",
+        "texture synthesis",
+        "3D vision",
+        "3D graphics"
+      ],
+      "githubStars": 156
+    },
+    "publishedAt": "2025-08-14T13:43:25.000Z",
+    "title": "TexVerse: A Universe of 3D Objects with High-Resolution Textures",
+    "summary": "We introduce TexVerse, a large-scale 3D dataset featuring high-resolution\ntextures. While recent advances in large-scale 3D datasets have enhanced\nhigh-resolution geometry generation, creating high-resolution textures\nend-to-end remains underexplored due to the lack of suitable datasets. TexVerse\nfills this gap with a curated collection of over 858K unique high-resolution 3D\nmodels sourced from Sketchfab, including more than 158K models with physically\nbased rendering (PBR) materials. Each model encompasses all of its\nhigh-resolution variants, bringing the total to 1.6M 3D instances. TexVerse\nalso includes specialized subsets: TexVerse-Skeleton, with 69K rigged models,\nand TexVerse-Animation, with 54K animated models, both preserving original\nskeleton and animation data uploaded by the user. We also provide detailed\nmodel annotations describing overall characteristics, structural components,\nand intricate features. TexVerse offers a high-quality data resource with\nwide-ranging potential applications in texture synthesis, PBR material\ndevelopment, animation, and various 3D vision and graphics tasks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10868.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "66bb4d475d27918b4bd8595f",
+      "avatarUrl": "/avatars/974ec48aa6d41166799300b2ff44a92c.svg",
+      "fullname": "Yibo",
+      "name": "YiboZhang2001",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.11616",
+      "authors": [
+        {
+          "_id": "68a2a72ba4caabb4320e6421",
+          "user": {
+            "_id": "6355d5c460c1b72f62693983",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6355d5c460c1b72f62693983/RA4FJCgPyqMXgTaSvBUGq.jpeg",
+            "isPro": false,
+            "fullname": "Oscar Mañas",
+            "user": "oscmansan",
+            "type": "user"
+          },
+          "name": "Oscar Mañas",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-08-18T06:53:56.284Z",
+          "hidden": false
+        },
+        {
+          "_id": "68a2a72ba4caabb4320e6422",
+          "name": "Pierluca D'Oro",
+          "hidden": false
+        },
+        {
+          "_id": "68a2a72ba4caabb4320e6423",
+          "name": "Koustuv Sinha",
+          "hidden": false
+        },
+        {
+          "_id": "68a2a72ba4caabb4320e6424",
+          "name": "Adriana Romero-Soriano",
+          "hidden": false
+        },
+        {
+          "_id": "68a2a72ba4caabb4320e6425",
+          "name": "Michal Drozdzal",
+          "hidden": false
+        },
+        {
+          "_id": "68a2a72ba4caabb4320e6426",
+          "name": "Aishwarya Agrawal",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-15T17:29:06.000Z",
+      "submittedOnDailyAt": "2025-08-18T02:39:06.425Z",
+      "title": "Controlling Multimodal LLMs via Reward-guided Decoding",
+      "submittedOnDailyBy": {
+        "_id": "6355d5c460c1b72f62693983",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6355d5c460c1b72f62693983/RA4FJCgPyqMXgTaSvBUGq.jpeg",
+        "isPro": false,
+        "fullname": "Oscar Mañas",
+        "user": "oscmansan",
+        "type": "user"
+      },
+      "summary": "As Multimodal Large Language Models (MLLMs) gain widespread applicability, it\nis becoming increasingly desirable to adapt them for diverse user needs. In\nthis paper, we study the adaptation of MLLMs through controlled decoding. To\nachieve this, we introduce the first method for reward-guided decoding of MLLMs\nand demonstrate its application in improving their visual grounding. Our method\ninvolves building reward models for visual grounding and using them to guide\nthe MLLM's decoding process. Concretely, we build two separate reward models to\nindependently control the degree of object precision and recall in the model's\noutput. Our approach enables on-the-fly controllability of an MLLM's inference\nprocess in two ways: first, by giving control over the relative importance of\neach reward function during decoding, allowing a user to dynamically trade off\nobject precision for recall in image captioning tasks; second, by giving\ncontrol over the breadth of the search during decoding, allowing the user to\ncontrol the trade-off between the amount of test-time compute and the degree of\nvisual grounding. We evaluate our method on standard object hallucination\nbenchmarks, showing that it provides significant controllability over MLLM\ninference, while consistently outperforming existing hallucination mitigation\nmethods.",
+      "upvotes": 3,
+      "discussionId": "68a2a72ba4caabb4320e6427",
+      "ai_summary": "A reward-guided decoding method for Multimodal Large Language Models (MLLMs) improves visual grounding by controlling object precision and recall, offering dynamic trade-offs between compute and grounding quality.",
+      "ai_keywords": [
+        "Multimodal Large Language Models",
+        "MLLMs",
+        "reward-guided decoding",
+        "visual grounding",
+        "reward models",
+        "object precision",
+        "object recall",
+        "image captioning",
+        "object hallucination",
+        "hallucination mitigation"
+      ]
+    },
+    "publishedAt": "2025-08-15T13:29:06.000Z",
+    "title": "Controlling Multimodal LLMs via Reward-guided Decoding",
+    "summary": "As Multimodal Large Language Models (MLLMs) gain widespread applicability, it\nis becoming increasingly desirable to adapt them for diverse user needs. In\nthis paper, we study the adaptation of MLLMs through controlled decoding. To\nachieve this, we introduce the first method for reward-guided decoding of MLLMs\nand demonstrate its application in improving their visual grounding. Our method\ninvolves building reward models for visual grounding and using them to guide\nthe MLLM's decoding process. Concretely, we build two separate reward models to\nindependently control the degree of object precision and recall in the model's\noutput. Our approach enables on-the-fly controllability of an MLLM's inference\nprocess in two ways: first, by giving control over the relative importance of\neach reward function during decoding, allowing a user to dynamically trade off\nobject precision for recall in image captioning tasks; second, by giving\ncontrol over the breadth of the search during decoding, allowing the user to\ncontrol the trade-off between the amount of test-time compute and the degree of\nvisual grounding. We evaluate our method on standard object hallucination\nbenchmarks, showing that it provides significant controllability over MLLM\ninference, while consistently outperforming existing hallucination mitigation\nmethods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.11616.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6355d5c460c1b72f62693983",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6355d5c460c1b72f62693983/RA4FJCgPyqMXgTaSvBUGq.jpeg",
+      "fullname": "Oscar Mañas",
+      "name": "oscmansan",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2508.11116",
+      "authors": [
+        {
+          "_id": "68a28285a4caabb4320e63ae",
+          "user": {
+            "_id": "63664c8fa2abcdf2fd6425ed",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63664c8fa2abcdf2fd6425ed/IywpB0DXZ_twkmZmVSCCD.jpeg",
+            "isPro": false,
+            "fullname": "Li Zhuoqun",
+            "user": "lzq2021",
+            "type": "user"
+          },
+          "name": "Zhuoqun Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-08-18T06:54:00.985Z",
+          "hidden": false
+        },
+        {
+          "_id": "68a28285a4caabb4320e63af",
+          "name": "Xuanang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "68a28285a4caabb4320e63b0",
+          "name": "Hongyu Lin",
+          "hidden": false
+        },
+        {
+          "_id": "68a28285a4caabb4320e63b1",
+          "name": "Yaojie Lu",
+          "hidden": false
+        },
+        {
+          "_id": "68a28285a4caabb4320e63b2",
+          "name": "Xianpei Han",
+          "hidden": false
+        },
+        {
+          "_id": "68a28285a4caabb4320e63b3",
+          "name": "Le Sun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T23:43:46.000Z",
+      "submittedOnDailyAt": "2025-08-18T00:02:29.714Z",
+      "title": "PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical\n  Register Indexing",
+      "submittedOnDailyBy": {
+        "_id": "63664c8fa2abcdf2fd6425ed",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63664c8fa2abcdf2fd6425ed/IywpB0DXZ_twkmZmVSCCD.jpeg",
+        "isPro": false,
+        "fullname": "Li Zhuoqun",
+        "user": "lzq2021",
+        "type": "user"
+      },
+      "summary": "Paper search is an important activity for researchers, typically involving\nusing a query with description of a topic to find relevant papers. As research\ndeepens, paper search requirements may become more flexible, sometimes\ninvolving specific details such as module configuration rather than being\nlimited to coarse-grained topics. However, previous paper search systems are\nunable to meet these flexible-grained requirements, as these systems mainly\ncollect paper abstracts to construct index of corpus, which lack detailed\ninformation to support retrieval by finer-grained queries. In this work, we\npropose PaperRegister, consisted of offline hierarchical indexing and online\nadaptive retrieval, transforming traditional abstract-based index into\nhierarchical index tree for paper search, thereby supporting queries at\nflexible granularity. Experiments on paper search tasks across a range of\ngranularity demonstrate that PaperRegister achieves the state-of-the-art\nperformance, and particularly excels in fine-grained scenarios, highlighting\nthe good potential as an effective solution for flexible-grained paper search\nin real-world applications. Code for this work is in\nhttps://github.com/Li-Z-Q/PaperRegister.",
+      "upvotes": 3,
+      "discussionId": "68a28285a4caabb4320e63b4",
+      "githubRepo": "https://github.com/Li-Z-Q/PaperRegister",
+      "ai_summary": "PaperRegister enhances paper search by using hierarchical indexing and adaptive retrieval, supporting flexible and fine-grained queries beyond traditional abstract-based systems.",
+      "ai_keywords": [
+        "hierarchical indexing",
+        "adaptive retrieval",
+        "fine-grained queries"
+      ],
+      "githubStars": 2
+    },
+    "publishedAt": "2025-08-14T19:43:46.000Z",
+    "title": "PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical\n  Register Indexing",
+    "summary": "Paper search is an important activity for researchers, typically involving\nusing a query with description of a topic to find relevant papers. As research\ndeepens, paper search requirements may become more flexible, sometimes\ninvolving specific details such as module configuration rather than being\nlimited to coarse-grained topics. However, previous paper search systems are\nunable to meet these flexible-grained requirements, as these systems mainly\ncollect paper abstracts to construct index of corpus, which lack detailed\ninformation to support retrieval by finer-grained queries. In this work, we\npropose PaperRegister, consisted of offline hierarchical indexing and online\nadaptive retrieval, transforming traditional abstract-based index into\nhierarchical index tree for paper search, thereby supporting queries at\nflexible granularity. Experiments on paper search tasks across a range of\ngranularity demonstrate that PaperRegister achieves the state-of-the-art\nperformance, and particularly excels in fine-grained scenarios, highlighting\nthe good potential as an effective solution for flexible-grained paper search\nin real-world applications. Code for this work is in\nhttps://github.com/Li-Z-Q/PaperRegister.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.11116.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "63664c8fa2abcdf2fd6425ed",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63664c8fa2abcdf2fd6425ed/IywpB0DXZ_twkmZmVSCCD.jpeg",
+      "fullname": "Li Zhuoqun",
+      "name": "lzq2021",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2508.10461",
+      "authors": [
+        {
+          "_id": "689f5494a4caabb4320e5f33",
+          "user": {
+            "_id": "6789273bf3b11ab0bf61c45b",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/FncqNw7-Ql5KaOtorqJoF.png",
+            "isPro": false,
+            "fullname": "Prajit Sengupta",
+            "user": "prajit123",
+            "type": "user"
+          },
+          "name": "Prajit Sengupta",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-08-18T06:56:28.465Z",
+          "hidden": false
+        },
+        {
+          "_id": "689f5494a4caabb4320e5f34",
+          "name": "Islem Rekik",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T09:00:45.000Z",
+      "submittedOnDailyAt": "2025-08-18T06:45:38.243Z",
+      "title": "X-Node: Self-Explanation is All We Need",
+      "submittedOnDailyBy": {
+        "_id": "6789273bf3b11ab0bf61c45b",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/FncqNw7-Ql5KaOtorqJoF.png",
+        "isPro": false,
+        "fullname": "Prajit Sengupta",
+        "user": "prajit123",
+        "type": "user"
+      },
+      "summary": "Graph neural networks (GNNs) have achieved state-of-the-art results in\ncomputer vision and medical image classification tasks by capturing structural\ndependencies across data instances. However, their decision-making remains\nlargely opaque, limiting their trustworthiness in high-stakes clinical\napplications where interpretability is essential. Existing explainability\ntechniques for GNNs are typically post-hoc and global, offering limited insight\ninto individual node decisions or local reasoning. We introduce X-Node, a\nself-explaining GNN framework in which each node generates its own explanation\nas part of the prediction process. For every node, we construct a structured\ncontext vector encoding interpretable cues such as degree, centrality,\nclustering, feature saliency, and label agreement within its local topology. A\nlightweight Reasoner module maps this context into a compact explanation\nvector, which serves three purposes: (1) reconstructing the node's latent\nembedding via a decoder to enforce faithfulness, (2) generating a natural\nlanguage explanation using a pre-trained LLM (e.g., Grok or Gemini), and (3)\nguiding the GNN itself via a \"text-injection\" mechanism that feeds explanations\nback into the message-passing pipeline. We evaluate X-Node on two graph\ndatasets derived from MedMNIST and MorphoMNIST, integrating it with GCN, GAT,\nand GIN backbones. Our results show that X-Node maintains competitive\nclassification accuracy while producing faithful, per-node explanations.\nRepository: https://github.com/basiralab/X-Node.",
+      "upvotes": 2,
+      "discussionId": "689f5494a4caabb4320e5f35",
+      "githubRepo": "https://github.com/basiralab/X-Node",
+      "ai_summary": "X-Node is a self-explaining GNN framework that generates per-node explanations by encoding local topology features and integrating them into the message-passing pipeline, maintaining accuracy while enhancing interpretability.",
+      "ai_keywords": [
+        "Graph neural networks",
+        "GNNs",
+        "computer vision",
+        "medical image classification",
+        "structural dependencies",
+        "interpretability",
+        "explainability",
+        "X-Node",
+        "structured context vector",
+        "degree",
+        "centrality",
+        "clustering",
+        "feature saliency",
+        "label agreement",
+        "Reasoner module",
+        "explanation vector",
+        "latent embedding",
+        "decoder",
+        "natural language explanation",
+        "pre-trained LLM",
+        "text-injection mechanism",
+        "GCN",
+        "GAT",
+        "GIN",
+        "MedMNIST",
+        "MorphoMNIST"
+      ],
+      "githubStars": 0
+    },
+    "publishedAt": "2025-08-14T05:00:45.000Z",
+    "title": "X-Node: Self-Explanation is All We Need",
+    "summary": "Graph neural networks (GNNs) have achieved state-of-the-art results in\ncomputer vision and medical image classification tasks by capturing structural\ndependencies across data instances. However, their decision-making remains\nlargely opaque, limiting their trustworthiness in high-stakes clinical\napplications where interpretability is essential. Existing explainability\ntechniques for GNNs are typically post-hoc and global, offering limited insight\ninto individual node decisions or local reasoning. We introduce X-Node, a\nself-explaining GNN framework in which each node generates its own explanation\nas part of the prediction process. For every node, we construct a structured\ncontext vector encoding interpretable cues such as degree, centrality,\nclustering, feature saliency, and label agreement within its local topology. A\nlightweight Reasoner module maps this context into a compact explanation\nvector, which serves three purposes: (1) reconstructing the node's latent\nembedding via a decoder to enforce faithfulness, (2) generating a natural\nlanguage explanation using a pre-trained LLM (e.g., Grok or Gemini), and (3)\nguiding the GNN itself via a \"text-injection\" mechanism that feeds explanations\nback into the message-passing pipeline. We evaluate X-Node on two graph\ndatasets derived from MedMNIST and MorphoMNIST, integrating it with GCN, GAT,\nand GIN backbones. Our results show that X-Node maintains competitive\nclassification accuracy while producing faithful, per-node explanations.\nRepository: https://github.com/basiralab/X-Node.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10461.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6789273bf3b11ab0bf61c45b",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/FncqNw7-Ql5KaOtorqJoF.png",
+      "fullname": "Prajit Sengupta",
+      "name": "prajit123",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2508.10395",
+      "authors": [
+        {
+          "_id": "68a1e494a4caabb4320e6268",
+          "name": "Aditya Tomar",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e6269",
+          "name": "Coleman Hooper",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e626a",
+          "name": "Minjae Lee",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e626b",
+          "name": "Haocheng Xi",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e626c",
+          "name": "Rishabh Tiwari",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e626d",
+          "name": "Wonjun Kang",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e626e",
+          "name": "Luca Manolache",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e626f",
+          "name": "Michael W. Mahoney",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e6270",
+          "name": "Kurt Keutzer",
+          "hidden": false
+        },
+        {
+          "_id": "68a1e494a4caabb4320e6271",
+          "name": "Amir Gholami",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-14T06:52:38.000Z",
+      "submittedOnDailyAt": "2025-08-18T07:38:37.485Z",
+      "title": "XQuant: Breaking the Memory Wall for LLM Inference with KV Cache\n  Rematerialization",
+      "submittedOnDailyBy": {
+        "_id": "65fe49de871b36bf84c0ba05",
+        "avatarUrl": "/avatars/0fe082518fb9ea40e23414c83ee5043e.svg",
+        "isPro": false,
+        "fullname": "Aditya Tomar",
+        "user": "adityastomar",
+        "type": "user"
+      },
+      "summary": "Although LLM inference has emerged as a critical workload for many downstream\napplications, efficiently inferring LLMs is challenging due to the substantial\nmemory footprint and bandwidth requirements. In parallel, compute capabilities\nhave steadily outpaced both memory capacity and bandwidth over the last few\ndecades, a trend that remains evident in modern GPU hardware and exacerbates\nthe challenge of LLM inference. As such, new algorithms are emerging that trade\nincreased computation for reduced memory operations. To that end, we present\nXQuant, which takes advantage of this trend, enabling an order-of-magnitude\nreduction in memory consumption through low-bit quantization with substantial\naccuracy benefits relative to state-of-the-art KV cache quantization methods.\nWe accomplish this by quantizing and caching the layer input activations X,\ninstead of using standard KV caching, and then rematerializing the Keys and\nValues on-the-fly during inference. This results in an immediate 2times\nmemory savings compared to KV caching. By applying XQuant, we achieve up to\nsim 7.7times memory savings with <0.1 perplexity degradation compared to\nthe FP16 baseline. Furthermore, our approach leverages the fact that X values\nare similar across layers. Building on this observation, we introduce\nXQuant-CL, which exploits the cross-layer similarity in the X embeddings for\nextreme compression. Across different models, XQuant-CL attains up to\n10times memory savings relative to the FP16 baseline with only 0.01\nperplexity degradation, and 12.5times memory savings with only 0.1\nperplexity degradation. XQuant exploits the rapidly increasing compute\ncapabilities of hardware platforms to eliminate the memory bottleneck, while\nsurpassing state-of-the-art KV cache quantization methods and achieving\nnear-FP16 accuracy across a wide range of models.",
+      "upvotes": 2,
+      "discussionId": "68a1e495a4caabb4320e6272",
+      "ai_summary": "XQuant and XQuant-CL reduce memory consumption in LLM inference through low-bit quantization and cross-layer similarity exploitation, achieving significant memory savings with minimal accuracy loss.",
+      "ai_keywords": [
+        "LLM inference",
+        "low-bit quantization",
+        "KV cache quantization",
+        "layer input activations",
+        "rematerialization",
+        "XQuant",
+        "XQuant-CL",
+        "cross-layer similarity",
+        "memory savings",
+        "perplexity degradation",
+        "FP16 baseline"
+      ]
+    },
+    "publishedAt": "2025-08-14T02:52:38.000Z",
+    "title": "XQuant: Breaking the Memory Wall for LLM Inference with KV Cache\n  Rematerialization",
+    "summary": "Although LLM inference has emerged as a critical workload for many downstream\napplications, efficiently inferring LLMs is challenging due to the substantial\nmemory footprint and bandwidth requirements. In parallel, compute capabilities\nhave steadily outpaced both memory capacity and bandwidth over the last few\ndecades, a trend that remains evident in modern GPU hardware and exacerbates\nthe challenge of LLM inference. As such, new algorithms are emerging that trade\nincreased computation for reduced memory operations. To that end, we present\nXQuant, which takes advantage of this trend, enabling an order-of-magnitude\nreduction in memory consumption through low-bit quantization with substantial\naccuracy benefits relative to state-of-the-art KV cache quantization methods.\nWe accomplish this by quantizing and caching the layer input activations X,\ninstead of using standard KV caching, and then rematerializing the Keys and\nValues on-the-fly during inference. This results in an immediate 2times\nmemory savings compared to KV caching. By applying XQuant, we achieve up to\nsim 7.7times memory savings with <0.1 perplexity degradation compared to\nthe FP16 baseline. Furthermore, our approach leverages the fact that X values\nare similar across layers. Building on this observation, we introduce\nXQuant-CL, which exploits the cross-layer similarity in the X embeddings for\nextreme compression. Across different models, XQuant-CL attains up to\n10times memory savings relative to the FP16 baseline with only 0.01\nperplexity degradation, and 12.5times memory savings with only 0.1\nperplexity degradation. XQuant exploits the rapidly increasing compute\ncapabilities of hardware platforms to eliminate the memory bottleneck, while\nsurpassing state-of-the-art KV cache quantization methods and achieving\nnear-FP16 accuracy across a wide range of models.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10395.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65fe49de871b36bf84c0ba05",
+      "avatarUrl": "/avatars/0fe082518fb9ea40e23414c83ee5043e.svg",
+      "fullname": "Aditya Tomar",
+      "name": "adityastomar",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.06429",
+      "authors": [
+        {
+          "_id": "68a29911a4caabb4320e6417",
+          "name": "Guido Manni",
+          "hidden": false
+        },
+        {
+          "_id": "68a29911a4caabb4320e6418",
+          "name": "Clemente Lauretti",
+          "hidden": false
+        },
+        {
+          "_id": "68a29911a4caabb4320e6419",
+          "name": "Loredana Zollo",
+          "hidden": false
+        },
+        {
+          "_id": "68a29911a4caabb4320e641a",
+          "name": "Paolo Soda",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-08-08T16:16:43.000Z",
+      "submittedOnDailyAt": "2025-08-18T01:38:03.140Z",
+      "title": "SPARSE Data, Rich Results: Few-Shot Semi-Supervised Learning via\n  Class-Conditioned Image Translation",
+      "submittedOnDailyBy": {
+        "_id": "67bc77b8a4562caa581556ee",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qpVVbYJhqXK8e9KKDLbHR.png",
+        "isPro": false,
+        "fullname": "Guido Manni",
+        "user": "gvide",
+        "type": "user"
+      },
+      "summary": "Deep learning has revolutionized medical imaging, but its effectiveness is\nseverely limited by insufficient labeled training data. This paper introduces a\nnovel GAN-based semi-supervised learning framework specifically designed for\nlow labeled-data regimes, evaluated across settings with 5 to 50 labeled\nsamples per class. Our approach integrates three specialized neural networks --\na generator for class-conditioned image translation, a discriminator for\nauthenticity assessment and classification, and a dedicated classifier --\nwithin a three-phase training framework. The method alternates between\nsupervised training on limited labeled data and unsupervised learning that\nleverages abundant unlabeled images through image-to-image translation rather\nthan generation from noise. We employ ensemble-based pseudo-labeling that\ncombines confidence-weighted predictions from the discriminator and classifier\nwith temporal consistency through exponential moving averaging, enabling\nreliable label estimation for unlabeled data. Comprehensive evaluation across\neleven MedMNIST datasets demonstrates that our approach achieves statistically\nsignificant improvements over six state-of-the-art GAN-based semi-supervised\nmethods, with particularly strong performance in the extreme 5-shot setting\nwhere the scarcity of labeled data is most challenging. The framework maintains\nits superiority across all evaluated settings (5, 10, 20, and 50 shots per\nclass). Our approach offers a practical solution for medical imaging\napplications where annotation costs are prohibitive, enabling robust\nclassification performance even with minimal labeled data. Code is available at\nhttps://github.com/GuidoManni/SPARSE.",
+      "upvotes": 1,
+      "discussionId": "68a29912a4caabb4320e641b",
+      "githubRepo": "https://github.com/GuidoManni/SPARSE",
+      "ai_summary": "A GAN-based semi-supervised learning framework improves medical image classification with minimal labeled data by integrating specialized neural networks and ensemble-based pseudo-labeling.",
+      "ai_keywords": [
+        "GAN-based semi-supervised learning",
+        "class-conditioned image translation",
+        "discriminator",
+        "classifier",
+        "three-phase training framework",
+        "ensemble-based pseudo-labeling",
+        "confidence-weighted predictions",
+        "exponential moving averaging",
+        "MedMNIST datasets",
+        "5-shot setting"
+      ],
+      "githubStars": 0
+    },
+    "publishedAt": "2025-08-08T12:16:43.000Z",
+    "title": "SPARSE Data, Rich Results: Few-Shot Semi-Supervised Learning via\n  Class-Conditioned Image Translation",
+    "summary": "Deep learning has revolutionized medical imaging, but its effectiveness is\nseverely limited by insufficient labeled training data. This paper introduces a\nnovel GAN-based semi-supervised learning framework specifically designed for\nlow labeled-data regimes, evaluated across settings with 5 to 50 labeled\nsamples per class. Our approach integrates three specialized neural networks --\na generator for class-conditioned image translation, a discriminator for\nauthenticity assessment and classification, and a dedicated classifier --\nwithin a three-phase training framework. The method alternates between\nsupervised training on limited labeled data and unsupervised learning that\nleverages abundant unlabeled images through image-to-image translation rather\nthan generation from noise. We employ ensemble-based pseudo-labeling that\ncombines confidence-weighted predictions from the discriminator and classifier\nwith temporal consistency through exponential moving averaging, enabling\nreliable label estimation for unlabeled data. Comprehensive evaluation across\neleven MedMNIST datasets demonstrates that our approach achieves statistically\nsignificant improvements over six state-of-the-art GAN-based semi-supervised\nmethods, with particularly strong performance in the extreme 5-shot setting\nwhere the scarcity of labeled data is most challenging. The framework maintains\nits superiority across all evaluated settings (5, 10, 20, and 50 shots per\nclass). Our approach offers a practical solution for medical imaging\napplications where annotation costs are prohibitive, enabling robust\nclassification performance even with minimal labeled data. Code is available at\nhttps://github.com/GuidoManni/SPARSE.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.06429.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "67bc77b8a4562caa581556ee",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/qpVVbYJhqXK8e9KKDLbHR.png",
+      "fullname": "Guido Manni",
+      "name": "gvide",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2508.10894",
+      "authors": [
+        {
+          "_id": "68a2def4a4caabb4320e64ad",
+          "name": "Antoine Labatie",
+          "hidden": false
+        },
+        {
+          "_id": "68a2def4a4caabb4320e64ae",
+          "name": "Michael Vaccaro",
+          "hidden": false
+        },
+        {
+          "_id": "68a2def4a4caabb4320e64af",
+          "name": "Nina Lardiere",
+          "hidden": false
+        },
+        {
+          "_id": "68a2def4a4caabb4320e64b0",
+          "name": "Anatol Garioud",
+          "hidden": false
+        },
+        {
+          "_id": "68a2def4a4caabb4320e64b1",
+          "name": "Nicolas Gonthier",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6537c9477f862897572902f8/hnB0xHeO3aACFdF163Yyt.png"
+      ],
+      "publishedAt": "2025-08-14T17:58:45.000Z",
+      "submittedOnDailyAt": "2025-08-18T06:56:03.690Z",
+      "title": "MAESTRO: Masked AutoEncoders for Multimodal, Multitemporal, and\n  Multispectral Earth Observation Data",
+      "submittedOnDailyBy": {
+        "_id": "6537c9477f862897572902f8",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6537c9477f862897572902f8/QztGliJ4Ozsqm560GLPzw.png",
+        "isPro": false,
+        "fullname": "Anatol Garioud",
+        "user": "AGarioud",
+        "type": "user"
+      },
+      "summary": "Self-supervised learning holds great promise for remote sensing, but standard\nself-supervised methods must be adapted to the unique characteristics of Earth\nobservation data. We take a step in this direction by conducting a\ncomprehensive benchmark of fusion strategies and reconstruction target\nnormalization schemes for multimodal, multitemporal, and multispectral Earth\nobservation data. Based on our findings, we propose MAESTRO, a novel adaptation\nof the Masked Autoencoder, featuring optimized fusion strategies and a tailored\ntarget normalization scheme that introduces a spectral prior as a\nself-supervisory signal. Evaluated on four Earth observation datasets, MAESTRO\nsets a new state-of-the-art on tasks that strongly rely on multitemporal\ndynamics, while remaining highly competitive on tasks dominated by a single\nmono-temporal modality. Code to reproduce all our experiments is available at\nhttps://github.com/ignf/maestro.",
+      "upvotes": 0,
+      "discussionId": "68a2def4a4caabb4320e64b2",
+      "githubRepo": "https://github.com/IGNF/MAESTRO",
+      "ai_summary": "MAESTRO, an adapted Masked Autoencoder with optimized fusion strategies and spectral prior normalization, achieves state-of-the-art performance on multitemporal Earth observation tasks.",
+      "ai_keywords": [
+        "self-supervised learning",
+        "Masked Autoencoder",
+        "fusion strategies",
+        "reconstruction target normalization",
+        "multimodal",
+        "multitemporal",
+        "multispectral",
+        "Earth observation",
+        "spectral prior",
+        "self-supervisory signal"
+      ],
+      "githubStars": 9
+    },
+    "publishedAt": "2025-08-14T13:58:45.000Z",
+    "title": "MAESTRO: Masked AutoEncoders for Multimodal, Multitemporal, and\n  Multispectral Earth Observation Data",
+    "summary": "Self-supervised learning holds great promise for remote sensing, but standard\nself-supervised methods must be adapted to the unique characteristics of Earth\nobservation data. We take a step in this direction by conducting a\ncomprehensive benchmark of fusion strategies and reconstruction target\nnormalization schemes for multimodal, multitemporal, and multispectral Earth\nobservation data. Based on our findings, we propose MAESTRO, a novel adaptation\nof the Masked Autoencoder, featuring optimized fusion strategies and a tailored\ntarget normalization scheme that introduces a spectral prior as a\nself-supervisory signal. Evaluated on four Earth observation datasets, MAESTRO\nsets a new state-of-the-art on tasks that strongly rely on multitemporal\ndynamics, while remaining highly competitive on tasks dominated by a single\nmono-temporal modality. Code to reproduce all our experiments is available at\nhttps://github.com/ignf/maestro.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6537c9477f862897572902f8/hnB0xHeO3aACFdF163Yyt.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2508.10894.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6537c9477f862897572902f8",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6537c9477f862897572902f8/QztGliJ4Ozsqm560GLPzw.png",
+      "fullname": "Anatol Garioud",
+      "name": "AGarioud",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 14
+    },
+    "isAuthorParticipating": false
+  }
+]
