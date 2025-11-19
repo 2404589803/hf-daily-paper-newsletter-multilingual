@@ -1,0 +1,1696 @@
+[
+  {
+    "paper": {
+      "id": "2511.08577",
+      "authors": [
+        {
+          "_id": "6913f98dac231a5726571fe0",
+          "user": {
+            "_id": "6445fd9ba56444c355dcbcba",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fd9ba56444c355dcbcba/NCyRCD-MK-yA0_qY6I2y0.png",
+            "isPro": true,
+            "fullname": "Tianyu Fu",
+            "user": "fuvty",
+            "type": "user"
+          },
+          "name": "Tianyu Fu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:41:08.958Z",
+          "hidden": false
+        },
+        {
+          "_id": "6913f98dac231a5726571fe1",
+          "user": {
+            "_id": "66954ebfbcd81f395e9dca37",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66954ebfbcd81f395e9dca37/0C3m5YdxyXuK7dJBu4AdL.png",
+            "isPro": false,
+            "fullname": "Yichen You",
+            "user": "youyc22",
+            "type": "user"
+          },
+          "name": "Yichen You",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:41:07.355Z",
+          "hidden": false
+        },
+        {
+          "_id": "6913f98dac231a5726571fe2",
+          "name": "Zekai Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6913f98dac231a5726571fe3",
+          "name": "Guohao Dai",
+          "hidden": false
+        },
+        {
+          "_id": "6913f98dac231a5726571fe4",
+          "name": "Huazhong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6913f98dac231a5726571fe5",
+          "name": "Yu Wang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6445fd9ba56444c355dcbcba/6h7sv9rXj60DwGtljqCbU.mp4"
+      ],
+      "publishedAt": "2025-11-11T18:57:02.000Z",
+      "submittedOnDailyAt": "2025-11-19T02:54:11.874Z",
+      "title": "Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models",
+      "submittedOnDailyBy": {
+        "_id": "6445fd9ba56444c355dcbcba",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fd9ba56444c355dcbcba/NCyRCD-MK-yA0_qY6I2y0.png",
+        "isPro": true,
+        "fullname": "Tianyu Fu",
+        "user": "fuvty",
+        "type": "user"
+      },
+      "summary": "Improving reasoning capabilities of Large Language Models (LLMs), especially under parameter constraints, is crucial for real-world applications. Prior work proposes recurrent transformers, which allocate a fixed number of extra iterations per token to improve generation quality. After the first, standard forward pass, instead of verbalization, last-layer hidden states are fed back as inputs for additional iterations to refine token predictions. Yet we identify a latent overthinking phenomenon: easy token predictions that are already correct after the first pass are sometimes revised into errors in additional iterations. To address this, we propose Think-at-Hard (TaH), a dynamic latent thinking method that iterates deeper only at hard tokens. It employs a lightweight neural decider to trigger latent iterations only at tokens that are likely incorrect after the standard forward pass. During latent iterations, Low-Rank Adaptation (LoRA) modules shift the LLM objective from general next-token prediction to focused hard-token refinement. We further introduce a duo-causal attention mechanism that extends attention from the token sequence dimension to an additional iteration depth dimension. This enables cross-iteration information flow while maintaining full sequential parallelism. Experiments show that TaH boosts LLM reasoning performance across five challenging benchmarks while maintaining the same parameter count. Compared with baselines that iterate twice for all output tokens, TaH delivers 8.1-11.3% accuracy gains while exempting 94% of tokens from the second iteration. Against strong single-iteration Qwen3 models finetuned with the same data, it also delivers 4.0-5.0% accuracy gains. When allowing less than 3% additional parameters from LoRA and the iteration decider, the gains increase to 8.5-12.6% and 5.3-5.4%, respectively. Our code is available at https://github.com/thu-nics/TaH.",
+      "upvotes": 34,
+      "discussionId": "6913f98dac231a5726571fe6",
+      "githubRepo": "https://github.com/thu-nics/TaH",
+      "ai_summary": "Think-at-Hard (TaH) dynamically refines only hard tokens in LLMs using a neural decider and LoRA, improving reasoning performance with minimal additional parameters or iterations.",
+      "ai_keywords": [
+        "recurrent transformers",
+        "latent thinking",
+        "Think-at-Hard (TaH)",
+        "dynamic latent thinking",
+        "LoRA",
+        "Low-Rank Adaptation",
+        "duo-causal attention",
+        "cross-iteration information flow",
+        "sequential parallelism"
+      ],
+      "githubStars": 7,
+      "organization": {
+        "_id": "64b74b5fb727f8771ab887f9",
+        "name": "nics-efc",
+        "fullname": "Tsinghua-NICS-EFC",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/641031b1a78453b8d96b8420/vmgxct2WsyHcKT2x2NAYT.jpeg"
+      }
+    },
+    "publishedAt": "2025-11-11T13:57:02.000Z",
+    "title": "Think-at-Hard: Selective Latent Iterations to Improve Reasoning Language Models",
+    "summary": "Improving reasoning capabilities of Large Language Models (LLMs), especially under parameter constraints, is crucial for real-world applications. Prior work proposes recurrent transformers, which allocate a fixed number of extra iterations per token to improve generation quality. After the first, standard forward pass, instead of verbalization, last-layer hidden states are fed back as inputs for additional iterations to refine token predictions. Yet we identify a latent overthinking phenomenon: easy token predictions that are already correct after the first pass are sometimes revised into errors in additional iterations. To address this, we propose Think-at-Hard (TaH), a dynamic latent thinking method that iterates deeper only at hard tokens. It employs a lightweight neural decider to trigger latent iterations only at tokens that are likely incorrect after the standard forward pass. During latent iterations, Low-Rank Adaptation (LoRA) modules shift the LLM objective from general next-token prediction to focused hard-token refinement. We further introduce a duo-causal attention mechanism that extends attention from the token sequence dimension to an additional iteration depth dimension. This enables cross-iteration information flow while maintaining full sequential parallelism. Experiments show that TaH boosts LLM reasoning performance across five challenging benchmarks while maintaining the same parameter count. Compared with baselines that iterate twice for all output tokens, TaH delivers 8.1-11.3% accuracy gains while exempting 94% of tokens from the second iteration. Against strong single-iteration Qwen3 models finetuned with the same data, it also delivers 4.0-5.0% accuracy gains. When allowing less than 3% additional parameters from LoRA and the iteration decider, the gains increase to 8.5-12.6% and 5.3-5.4%, respectively. Our code is available at https://github.com/thu-nics/TaH.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6445fd9ba56444c355dcbcba/6h7sv9rXj60DwGtljqCbU.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.08577.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6445fd9ba56444c355dcbcba",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6445fd9ba56444c355dcbcba/NCyRCD-MK-yA0_qY6I2y0.png",
+      "fullname": "Tianyu Fu",
+      "name": "fuvty",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 10
+    },
+    "organization": {
+      "_id": "64b74b5fb727f8771ab887f9",
+      "name": "nics-efc",
+      "fullname": "Tsinghua-NICS-EFC",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/641031b1a78453b8d96b8420/vmgxct2WsyHcKT2x2NAYT.jpeg"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2511.10555",
+      "authors": [
+        {
+          "_id": "69170105a0c1cdddcec3727d",
+          "user": {
+            "_id": "64f9951e42f1c4a68c9882b3",
+            "avatarUrl": "/avatars/77fa010db659107a059d510e036025e0.svg",
+            "isPro": false,
+            "fullname": "Huijie Liu",
+            "user": "liuhuijie6410",
+            "type": "user"
+          },
+          "name": "Huijie Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:41:05.701Z",
+          "hidden": false
+        },
+        {
+          "_id": "69170105a0c1cdddcec3727e",
+          "user": {
+            "_id": "64969fb7b8d4efc75b014f99",
+            "avatarUrl": "/avatars/e2335de7b6dbe5cc08c09789ebcf9787.svg",
+            "isPro": false,
+            "fullname": "Shuhao cui",
+            "user": "hassassin",
+            "type": "user"
+          },
+          "name": "Shuhao Cui",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:41:03.942Z",
+          "hidden": false
+        },
+        {
+          "_id": "69170105a0c1cdddcec3727f",
+          "name": "Haoxiang Cao",
+          "hidden": false
+        },
+        {
+          "_id": "69170105a0c1cdddcec37280",
+          "name": "Shuai Ma",
+          "hidden": false
+        },
+        {
+          "_id": "69170105a0c1cdddcec37281",
+          "name": "Kai Wu",
+          "hidden": false
+        },
+        {
+          "_id": "69170105a0c1cdddcec37282",
+          "name": "Guoliang Kang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-13T17:56:10.000Z",
+      "submittedOnDailyAt": "2025-11-19T00:43:14.226Z",
+      "title": "A Style is Worth One Code: Unlocking Code-to-Style Image Generation with Discrete Style Space",
+      "submittedOnDailyBy": {
+        "_id": "68e741ea3edb0ff47e20084e",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e741ea3edb0ff47e20084e/OyBgFqcU4QWyPF_K58Gt5.jpeg",
+        "isPro": false,
+        "fullname": "Wu Kai",
+        "user": "KaiiWuu1993",
+        "type": "user"
+      },
+      "summary": "Innovative visual stylization is a cornerstone of artistic creation, yet generating novel and consistent visual styles remains a significant challenge. Existing generative approaches typically rely on lengthy textual prompts, reference images, or parameter-efficient fine-tuning to guide style-aware image generation, but often struggle with style consistency, limited creativity, and complex style representations. In this paper, we affirm that a style is worth one numerical code by introducing the novel task, code-to-style image generation, which produces images with novel, consistent visual styles conditioned solely on a numerical style code. To date, this field has only been primarily explored by the industry (e.g., Midjourney), with no open-source research from the academic community. To fill this gap, we propose CoTyle, the first open-source method for this task. Specifically, we first train a discrete style codebook from a collection of images to extract style embeddings. These embeddings serve as conditions for a text-to-image diffusion model (T2I-DM) to generate stylistic images. Subsequently, we train an autoregressive style generator on the discrete style embeddings to model their distribution, allowing the synthesis of novel style embeddings. During inference, a numerical style code is mapped to a unique style embedding by the style generator, and this embedding guides the T2I-DM to generate images in the corresponding style. Unlike existing methods, our method offers unparalleled simplicity and diversity, unlocking a vast space of reproducible styles from minimal input. Extensive experiments validate that CoTyle effectively turns a numerical code into a style controller, demonstrating a style is worth one code.",
+      "upvotes": 32,
+      "discussionId": "69170105a0c1cdddcec372a4",
+      "projectPage": "https://Kwai-Kolors.github.io/CoTyle/",
+      "githubRepo": "https://github.com/Kwai-Kolors/CoTyle",
+      "ai_summary": "A novel method, CoTyle, generates images in consistent visual styles using unique numerical style codes, filling an academic gap in code-to-style image generation.",
+      "ai_keywords": [
+        "discrete style codebook",
+        "style embeddings",
+        "text-to-image diffusion model",
+        "autoregressive style generator",
+        "numerical style code",
+        "style controller"
+      ],
+      "githubStars": 12,
+      "organization": {
+        "_id": "665f02ce9f9e5b38d0a256a8",
+        "name": "Kwai-Kolors",
+        "fullname": "Kolors Team, Kuaishou Technology",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/62f0babaef9cc6810cec02ff/sVnELkcfVo5kxg5308rkr.png"
+      }
+    },
+    "publishedAt": "2025-11-13T12:56:10.000Z",
+    "title": "A Style is Worth One Code: Unlocking Code-to-Style Image Generation with Discrete Style Space",
+    "summary": "Innovative visual stylization is a cornerstone of artistic creation, yet generating novel and consistent visual styles remains a significant challenge. Existing generative approaches typically rely on lengthy textual prompts, reference images, or parameter-efficient fine-tuning to guide style-aware image generation, but often struggle with style consistency, limited creativity, and complex style representations. In this paper, we affirm that a style is worth one numerical code by introducing the novel task, code-to-style image generation, which produces images with novel, consistent visual styles conditioned solely on a numerical style code. To date, this field has only been primarily explored by the industry (e.g., Midjourney), with no open-source research from the academic community. To fill this gap, we propose CoTyle, the first open-source method for this task. Specifically, we first train a discrete style codebook from a collection of images to extract style embeddings. These embeddings serve as conditions for a text-to-image diffusion model (T2I-DM) to generate stylistic images. Subsequently, we train an autoregressive style generator on the discrete style embeddings to model their distribution, allowing the synthesis of novel style embeddings. During inference, a numerical style code is mapped to a unique style embedding by the style generator, and this embedding guides the T2I-DM to generate images in the corresponding style. Unlike existing methods, our method offers unparalleled simplicity and diversity, unlocking a vast space of reproducible styles from minimal input. Extensive experiments validate that CoTyle effectively turns a numerical code into a style controller, demonstrating a style is worth one code.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.10555.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "68e741ea3edb0ff47e20084e",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68e741ea3edb0ff47e20084e/OyBgFqcU4QWyPF_K58Gt5.jpeg",
+      "fullname": "Wu Kai",
+      "name": "KaiiWuu1993",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "organization": {
+      "_id": "665f02ce9f9e5b38d0a256a8",
+      "name": "Kwai-Kolors",
+      "fullname": "Kolors Team, Kuaishou Technology",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/62f0babaef9cc6810cec02ff/sVnELkcfVo5kxg5308rkr.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.13853",
+      "authors": [
+        {
+          "_id": "691d33a20247f3d258ef3224",
+          "name": "Xinxin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "691d33a20247f3d258ef3225",
+          "name": "Zhaopan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "691d33a20247f3d258ef3226",
+          "name": "Kai Wang",
+          "hidden": false
+        },
+        {
+          "_id": "691d33a20247f3d258ef3227",
+          "name": "Yong Jae Lee",
+          "hidden": false
+        },
+        {
+          "_id": "691d33a20247f3d258ef3228",
+          "name": "Yuzhang Shang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-17T19:11:39.000Z",
+      "submittedOnDailyAt": "2025-11-19T00:34:13.944Z",
+      "title": "Can World Simulators Reason? Gen-ViRe: A Generative Visual Reasoning Benchmark",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "While Chain-of-Thought (CoT) prompting enables sophisticated symbolic reasoning in LLMs, it remains confined to discrete text and cannot simulate the continuous, physics-governed dynamics of the real world. Recent video generation models have emerged as potential world simulators through Chain-of-Frames (CoF) reasoning -- materializing thought as frame-by-frame visual sequences, with each frame representing a physically-grounded reasoning step. Despite compelling demonstrations, a challenge persists: existing benchmarks, focusing on fidelity or alignment, do not assess CoF reasoning and thus cannot measure core cognitive abilities in multi-step planning, algorithmic logic, or abstract pattern extrapolation. This evaluation void prevents systematic understanding of model capabilities and principled guidance for improvement. We introduce Gen-ViRe (Generative Visual Reasoning Benchmark), a framework grounded in cognitive science and real-world AI applications, which decomposes CoF reasoning into six cognitive dimensions -- from perceptual logic to abstract planning -- and 24 subtasks. Through multi-source data curation, minimal prompting protocols, and hybrid VLM-assisted evaluation with detailed criteria, Gen-ViRe delivers the first quantitative assessment of video models as reasoners. Our experiments on SOTA systems reveal substantial discrepancies between impressive visual quality and actual reasoning depth, establishing baselines and diagnostic tools to advance genuine world simulators.",
+      "upvotes": 28,
+      "discussionId": "691d33a20247f3d258ef3229",
+      "ai_summary": "Gen-ViRe benchmarks video models on reasoning abilities using a framework that decomposes Chain-of-Frames reasoning into cognitive dimensions and subtasks.",
+      "ai_keywords": [
+        "Chain-of-Thought",
+        "LLMs",
+        "Chain-of-Frames",
+        "perceptual logic",
+        "abstract planning",
+        "VLM-assisted evaluation",
+        "generative visual reasoning benchmark"
+      ]
+    },
+    "publishedAt": "2025-11-17T14:11:39.000Z",
+    "title": "Can World Simulators Reason? Gen-ViRe: A Generative Visual Reasoning Benchmark",
+    "summary": "While Chain-of-Thought (CoT) prompting enables sophisticated symbolic reasoning in LLMs, it remains confined to discrete text and cannot simulate the continuous, physics-governed dynamics of the real world. Recent video generation models have emerged as potential world simulators through Chain-of-Frames (CoF) reasoning -- materializing thought as frame-by-frame visual sequences, with each frame representing a physically-grounded reasoning step. Despite compelling demonstrations, a challenge persists: existing benchmarks, focusing on fidelity or alignment, do not assess CoF reasoning and thus cannot measure core cognitive abilities in multi-step planning, algorithmic logic, or abstract pattern extrapolation. This evaluation void prevents systematic understanding of model capabilities and principled guidance for improvement. We introduce Gen-ViRe (Generative Visual Reasoning Benchmark), a framework grounded in cognitive science and real-world AI applications, which decomposes CoF reasoning into six cognitive dimensions -- from perceptual logic to abstract planning -- and 24 subtasks. Through multi-source data curation, minimal prompting protocols, and hybrid VLM-assisted evaluation with detailed criteria, Gen-ViRe delivers the first quantitative assessment of video models as reasoners. Our experiments on SOTA systems reveal substantial discrepancies between impressive visual quality and actual reasoning depth, establishing baselines and diagnostic tools to advance genuine world simulators.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.13853.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 164
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.14159",
+      "authors": [
+        {
+          "_id": "691d34810247f3d258ef322b",
+          "name": "Huiyi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "691d34810247f3d258ef322c",
+          "name": "Jiawei Peng",
+          "hidden": false
+        },
+        {
+          "_id": "691d34810247f3d258ef322d",
+          "name": "Dehai Min",
+          "hidden": false
+        },
+        {
+          "_id": "691d34810247f3d258ef322e",
+          "name": "Changchang Sun",
+          "hidden": false
+        },
+        {
+          "_id": "691d34810247f3d258ef322f",
+          "name": "Kaijie Chen",
+          "hidden": false
+        },
+        {
+          "_id": "691d34810247f3d258ef3230",
+          "name": "Yan Yan",
+          "hidden": false
+        },
+        {
+          "_id": "691d34810247f3d258ef3231",
+          "name": "Xu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "691d34810247f3d258ef3232",
+          "name": "Lu Cheng",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-18T05:48:08.000Z",
+      "submittedOnDailyAt": "2025-11-19T00:37:57.562Z",
+      "title": "MVI-Bench: A Comprehensive Benchmark for Evaluating Robustness to Misleading Visual Inputs in LVLMs",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "Evaluating the robustness of Large Vision-Language Models (LVLMs) is essential for their continued development and responsible deployment in real-world applications. However, existing robustness benchmarks typically focus on hallucination or misleading textual inputs, while largely overlooking the equally critical challenge posed by misleading visual inputs in assessing visual understanding. To fill this important gap, we introduce MVI-Bench, the first comprehensive benchmark specially designed for evaluating how Misleading Visual Inputs undermine the robustness of LVLMs. Grounded in fundamental visual primitives, the design of MVI-Bench centers on three hierarchical levels of misleading visual inputs: Visual Concept, Visual Attribute, and Visual Relationship. Using this taxonomy, we curate six representative categories and compile 1,248 expertly annotated VQA instances. To facilitate fine-grained robustness evaluation, we further introduce MVI-Sensitivity, a novel metric that characterizes LVLM robustness at a granular level. Empirical results across 18 state-of-the-art LVLMs uncover pronounced vulnerabilities to misleading visual inputs, and our in-depth analyses on MVI-Bench provide actionable insights that can guide the development of more reliable and robust LVLMs. The benchmark and codebase can be accessed at https://github.com/chenyil6/MVI-Bench.",
+      "upvotes": 22,
+      "discussionId": "691d34820247f3d258ef3233",
+      "githubRepo": "https://github.com/chenyil6/MVI-Bench",
+      "ai_summary": "MVI-Bench evaluates the robustness of Large Vision-Language Models against misleading visual inputs using a hierarchical taxonomy and a novel sensitivity metric, revealing significant vulnerabilities.",
+      "ai_keywords": [
+        "Large Vision-Language Models",
+        "LVLMs",
+        "robustness",
+        "hallucination",
+        "misleading visual inputs",
+        "visual primitives",
+        "Visual Concept",
+        "Visual Attribute",
+        "Visual Relationship",
+        "VQA",
+        "MVI-Bench",
+        "MVI-Sensitivity"
+      ],
+      "githubStars": 1
+    },
+    "publishedAt": "2025-11-18T00:48:08.000Z",
+    "title": "MVI-Bench: A Comprehensive Benchmark for Evaluating Robustness to Misleading Visual Inputs in LVLMs",
+    "summary": "Evaluating the robustness of Large Vision-Language Models (LVLMs) is essential for their continued development and responsible deployment in real-world applications. However, existing robustness benchmarks typically focus on hallucination or misleading textual inputs, while largely overlooking the equally critical challenge posed by misleading visual inputs in assessing visual understanding. To fill this important gap, we introduce MVI-Bench, the first comprehensive benchmark specially designed for evaluating how Misleading Visual Inputs undermine the robustness of LVLMs. Grounded in fundamental visual primitives, the design of MVI-Bench centers on three hierarchical levels of misleading visual inputs: Visual Concept, Visual Attribute, and Visual Relationship. Using this taxonomy, we curate six representative categories and compile 1,248 expertly annotated VQA instances. To facilitate fine-grained robustness evaluation, we further introduce MVI-Sensitivity, a novel metric that characterizes LVLM robustness at a granular level. Empirical results across 18 state-of-the-art LVLMs uncover pronounced vulnerabilities to misleading visual inputs, and our in-depth analyses on MVI-Bench provide actionable insights that can guide the development of more reliable and robust LVLMs. The benchmark and codebase can be accessed at https://github.com/chenyil6/MVI-Bench.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.14159.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 164
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.13026",
+      "authors": [
+        {
+          "_id": "691bef486bfd5965c0fd38da",
+          "user": {
+            "_id": "68fa12db3fea62443368a82e",
+            "avatarUrl": "/avatars/e6059edebe9ee6e3b456d5cae1dab94c.svg",
+            "isPro": false,
+            "fullname": "jiaze li",
+            "user": "williamljz",
+            "type": "user"
+          },
+          "name": "Jiaze Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:40:42.203Z",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38db",
+          "name": "Hao Yin",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38dc",
+          "name": "Wenhui Tan",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38dd",
+          "name": "Jingyang Chen",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38de",
+          "user": {
+            "_id": "67c9728a30792f0621bb2c3c",
+            "avatarUrl": "/avatars/0d70477cbd046823d4abb7b4ba85b0a1.svg",
+            "isPro": false,
+            "fullname": "Xu",
+            "user": "Boshenxx",
+            "type": "user"
+          },
+          "name": "Boshen Xu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-18T14:07:43.657Z",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38df",
+          "name": "Yuxun Qu",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38e0",
+          "name": "Yijing Chen",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38e1",
+          "name": "Jianzhong Ju",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38e2",
+          "name": "Zhenbo Luo",
+          "hidden": false
+        },
+        {
+          "_id": "691bef486bfd5965c0fd38e3",
+          "name": "Jian Luan",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-17T06:25:12.000Z",
+      "submittedOnDailyAt": "2025-11-19T01:23:08.717Z",
+      "title": "REVISOR: Beyond Textual Reflection, Towards Multimodal Introspective Reasoning in Long-Form Video Understanding",
+      "submittedOnDailyBy": {
+        "_id": "67c9728a30792f0621bb2c3c",
+        "avatarUrl": "/avatars/0d70477cbd046823d4abb7b4ba85b0a1.svg",
+        "isPro": false,
+        "fullname": "Xu",
+        "user": "Boshenxx",
+        "type": "user"
+      },
+      "summary": "Self-reflection mechanisms that rely on purely text-based rethinking processes perform well in most multimodal tasks. However, when directly applied to long-form video understanding scenarios, they exhibit clear limitations. The fundamental reasons for this lie in two points: (1)long-form video understanding involves richer and more dynamic visual input, meaning rethinking only the text information is insufficient and necessitates a further rethinking process specifically targeting visual information; (2) purely text-based reflection mechanisms lack cross-modal interaction capabilities, preventing them from fully integrating visual information during reflection. Motivated by these insights, we propose REVISOR (REflective VIsual Segment Oriented Reasoning), a novel framework for tool-augmented multimodal reflection. REVISOR enables MLLMs to collaboratively construct introspective reflection processes across textual and visual modalities, significantly enhancing their reasoning capability for long-form video understanding. To ensure that REVISOR can learn to accurately review video segments highly relevant to the question during reinforcement learning, we designed the Dual Attribution Decoupled Reward (DADR) mechanism. Integrated into the GRPO training strategy, this mechanism enforces causal alignment between the model's reasoning and the selected video evidence. Notably, the REVISOR framework significantly enhances long-form video understanding capability of MLLMs without requiring supplementary supervised fine-tuning or external models, achieving impressive results on four benchmarks including VideoMME, LongVideoBench, MLVU, and LVBench.",
+      "upvotes": 18,
+      "discussionId": "691bef486bfd5965c0fd38e4"
+    },
+    "publishedAt": "2025-11-17T01:25:12.000Z",
+    "title": "REVISOR: Beyond Textual Reflection, Towards Multimodal Introspective Reasoning in Long-Form Video Understanding",
+    "summary": "Self-reflection mechanisms that rely on purely text-based rethinking processes perform well in most multimodal tasks. However, when directly applied to long-form video understanding scenarios, they exhibit clear limitations. The fundamental reasons for this lie in two points: (1)long-form video understanding involves richer and more dynamic visual input, meaning rethinking only the text information is insufficient and necessitates a further rethinking process specifically targeting visual information; (2) purely text-based reflection mechanisms lack cross-modal interaction capabilities, preventing them from fully integrating visual information during reflection. Motivated by these insights, we propose REVISOR (REflective VIsual Segment Oriented Reasoning), a novel framework for tool-augmented multimodal reflection. REVISOR enables MLLMs to collaboratively construct introspective reflection processes across textual and visual modalities, significantly enhancing their reasoning capability for long-form video understanding. To ensure that REVISOR can learn to accurately review video segments highly relevant to the question during reinforcement learning, we designed the Dual Attribution Decoupled Reward (DADR) mechanism. Integrated into the GRPO training strategy, this mechanism enforces causal alignment between the model's reasoning and the selected video evidence. Notably, the REVISOR framework significantly enhances long-form video understanding capability of MLLMs without requiring supplementary supervised fine-tuning or external models, achieving impressive results on four benchmarks including VideoMME, LongVideoBench, MLVU, and LVBench.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.13026.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "67c9728a30792f0621bb2c3c",
+      "avatarUrl": "/avatars/0d70477cbd046823d4abb7b4ba85b0a1.svg",
+      "fullname": "Xu",
+      "name": "Boshenxx",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2511.14582",
+      "authors": [
+        {
+          "_id": "691d5b270247f3d258ef3261",
+          "name": "Keda Tao",
+          "hidden": false
+        },
+        {
+          "_id": "691d5b270247f3d258ef3262",
+          "name": "Kele Shao",
+          "hidden": false
+        },
+        {
+          "_id": "691d5b270247f3d258ef3263",
+          "name": "Bohan Yu",
+          "hidden": false
+        },
+        {
+          "_id": "691d5b270247f3d258ef3264",
+          "name": "Weiqiang Wang",
+          "hidden": false
+        },
+        {
+          "_id": "691d5b270247f3d258ef3265",
+          "name": "Jian liu",
+          "hidden": false
+        },
+        {
+          "_id": "691d5b270247f3d258ef3266",
+          "name": "Huan Wang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-18T15:22:32.000Z",
+      "submittedOnDailyAt": "2025-11-19T03:23:19.438Z",
+      "title": "OmniZip: Audio-Guided Dynamic Token Compression for Fast Omnimodal Large Language Models",
+      "submittedOnDailyBy": {
+        "_id": "65ce28c6340c3e914285aa58",
+        "avatarUrl": "/avatars/ffaa6d6ce92274bff960f8ea229a37f8.svg",
+        "isPro": false,
+        "fullname": "Keda TAO",
+        "user": "KD-TAO",
+        "type": "user"
+      },
+      "summary": "Omnimodal large language models (OmniLLMs) have attracted increasing research attention of late towards unified audio-video understanding, wherein processing audio-video token sequences creates a significant computational bottleneck, however. Existing token compression methods have yet to accommodate this emerging need of jointly compressing multimodal tokens. To bridge this gap, we present OmniZip, a training-free, audio-guided audio-visual token-compression framework that optimizes multimodal token representation and accelerates inference. Specifically, OmniZip first identifies salient audio tokens, then computes an audio retention score for each time group to capture information density, thereby dynamically guiding video token pruning and preserving cues from audio anchors enhanced by cross-modal similarity. For each time window, OmniZip compresses the video tokens using an interleaved spatio-temporal scheme. Extensive empirical results demonstrate the merits of OmniZip - it achieves 3.42X inference speedup and 1.4X memory reduction over other top-performing counterparts, while maintaining performance with no training.",
+      "upvotes": 9,
+      "discussionId": "691d5b270247f3d258ef3267",
+      "ai_summary": "OmniZip is a training-free framework that compresses audio-visual tokens by dynamically pruning video tokens based on audio retention scores, achieving significant inference speedup and memory reduction without sacrificing performance.",
+      "ai_keywords": [
+        "omnillms",
+        "audio-visual token-compression",
+        "salient audio tokens",
+        "audio retention score",
+        "video token pruning",
+        "cross-modal similarity",
+        "interleaved spatio-temporal scheme"
+      ]
+    },
+    "publishedAt": "2025-11-18T10:22:32.000Z",
+    "title": "OmniZip: Audio-Guided Dynamic Token Compression for Fast Omnimodal Large Language Models",
+    "summary": "Omnimodal large language models (OmniLLMs) have attracted increasing research attention of late towards unified audio-video understanding, wherein processing audio-video token sequences creates a significant computational bottleneck, however. Existing token compression methods have yet to accommodate this emerging need of jointly compressing multimodal tokens. To bridge this gap, we present OmniZip, a training-free, audio-guided audio-visual token-compression framework that optimizes multimodal token representation and accelerates inference. Specifically, OmniZip first identifies salient audio tokens, then computes an audio retention score for each time group to capture information density, thereby dynamically guiding video token pruning and preserving cues from audio anchors enhanced by cross-modal similarity. For each time window, OmniZip compresses the video tokens using an interleaved spatio-temporal scheme. Extensive empirical results demonstrate the merits of OmniZip - it achieves 3.42X inference speedup and 1.4X memory reduction over other top-performing counterparts, while maintaining performance with no training.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.14582.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65ce28c6340c3e914285aa58",
+      "avatarUrl": "/avatars/ffaa6d6ce92274bff960f8ea229a37f8.svg",
+      "fullname": "Keda TAO",
+      "name": "KD-TAO",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.14366",
+      "authors": [
+        {
+          "_id": "691d30d20247f3d258ef31e0",
+          "name": "Hongwei Liu",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e1",
+          "name": "Junnan Liu",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e2",
+          "user": {
+            "_id": "654ce87af0b05673196a9f45",
+            "avatarUrl": "/avatars/7b9c854eb98e487e3057479b1c7860ac.svg",
+            "isPro": false,
+            "fullname": "Shudong Liu",
+            "user": "Sudanl",
+            "type": "user"
+          },
+          "name": "Shudong Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:39:19.734Z",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e3",
+          "name": "Haodong Duan",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e4",
+          "name": "Yuqiang Li",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e5",
+          "name": "Mao Su",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e6",
+          "name": "Xiaohong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e7",
+          "name": "Guangtao Zhai",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e8",
+          "name": "Xinyu Fang",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31e9",
+          "name": "Qianhong Ma",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31ea",
+          "name": "Taolin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31eb",
+          "name": "Zihan Ma",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31ec",
+          "name": "Yufeng Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31ed",
+          "name": "Peiheng Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31ee",
+          "name": "Linchen Xiao",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31ef",
+          "name": "Wenlong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f0",
+          "name": "Shijie Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f1",
+          "name": "Xingjian Ma",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f2",
+          "name": "Siqi Sun",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f3",
+          "name": "Jiaye Ge",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f4",
+          "name": "Meng Li",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f5",
+          "name": "Yuhong Liu",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f6",
+          "name": "Jianxin Dong",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f7",
+          "name": "Jiaying Li",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f8",
+          "name": "Hui Wu",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31f9",
+          "name": "Hanwen Liang",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31fa",
+          "name": "Jintai Lin",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31fb",
+          "name": "Yanting Wang",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31fc",
+          "name": "Jie Dong",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31fd",
+          "name": "Tong Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31fe",
+          "name": "Tianfan Fu",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef31ff",
+          "name": "Conghui He",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef3200",
+          "name": "Qi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef3201",
+          "name": "Songyang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef3202",
+          "name": "Lei Bai",
+          "hidden": false
+        },
+        {
+          "_id": "691d30d20247f3d258ef3203",
+          "name": "Kai Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-18T11:13:06.000Z",
+      "submittedOnDailyAt": "2025-11-19T00:22:12.147Z",
+      "title": "ATLAS: A High-Difficulty, Multidisciplinary Benchmark for Frontier Scientific Reasoning",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "The rapid advancement of Large Language Models (LLMs) has led to performance saturation on many established benchmarks, questioning their ability to distinguish frontier models. Concurrently, existing high-difficulty benchmarks often suffer from narrow disciplinary focus, oversimplified answer formats, and vulnerability to data contamination, creating a fidelity gap with real-world scientific inquiry. To address these challenges, we introduce ATLAS (AGI-Oriented Testbed for Logical Application in Science), a large-scale, high-difficulty, and cross-disciplinary evaluation suite composed of approximately 800 original problems. Developed by domain experts (PhD-level and above), ATLAS spans seven core scientific fields: mathematics, physics, chemistry, biology, computer science, earth science, and materials science. Its key features include: (1) High Originality and Contamination Resistance, with all questions newly created or substantially adapted to prevent test data leakage; (2) Cross-Disciplinary Focus, designed to assess models' ability to integrate knowledge and reason across scientific domains; (3) High-Fidelity Answers, prioritizing complex, open-ended answers involving multi-step reasoning and LaTeX-formatted expressions over simple multiple-choice questions; and (4) Rigorous Quality Control, employing a multi-stage process of expert peer review and adversarial testing to ensure question difficulty, scientific value, and correctness. We also propose a robust evaluation paradigm using a panel of LLM judges for automated, nuanced assessment of complex answers. Preliminary results on leading models demonstrate ATLAS's effectiveness in differentiating their advanced scientific reasoning capabilities. We plan to develop ATLAS into a long-term, open, community-driven platform to provide a reliable \"ruler\" for progress toward Artificial General Intelligence.",
+      "upvotes": 9,
+      "discussionId": "691d30d20247f3d258ef3204",
+      "ai_summary": "ATLAS, a large-scale, cross-disciplinary evaluation suite, addresses the limitations of existing benchmarks by providing high-difficulty, original, and high-fidelity scientific problems to assess the reasoning capabilities of Large Language Models.",
+      "ai_keywords": [
+        "Large Language Models",
+        "LLMs",
+        "ATLAS",
+        "AGI-Oriented Testbed",
+        "logical application",
+        "scientific inquiry",
+        "domain experts",
+        "multi-disciplinary",
+        "multi-step reasoning",
+        "LaTeX-formatted expressions",
+        "LLM judges",
+        "adversarial testing",
+        "expert peer review"
+      ]
+    },
+    "publishedAt": "2025-11-18T06:13:06.000Z",
+    "title": "ATLAS: A High-Difficulty, Multidisciplinary Benchmark for Frontier Scientific Reasoning",
+    "summary": "The rapid advancement of Large Language Models (LLMs) has led to performance saturation on many established benchmarks, questioning their ability to distinguish frontier models. Concurrently, existing high-difficulty benchmarks often suffer from narrow disciplinary focus, oversimplified answer formats, and vulnerability to data contamination, creating a fidelity gap with real-world scientific inquiry. To address these challenges, we introduce ATLAS (AGI-Oriented Testbed for Logical Application in Science), a large-scale, high-difficulty, and cross-disciplinary evaluation suite composed of approximately 800 original problems. Developed by domain experts (PhD-level and above), ATLAS spans seven core scientific fields: mathematics, physics, chemistry, biology, computer science, earth science, and materials science. Its key features include: (1) High Originality and Contamination Resistance, with all questions newly created or substantially adapted to prevent test data leakage; (2) Cross-Disciplinary Focus, designed to assess models' ability to integrate knowledge and reason across scientific domains; (3) High-Fidelity Answers, prioritizing complex, open-ended answers involving multi-step reasoning and LaTeX-formatted expressions over simple multiple-choice questions; and (4) Rigorous Quality Control, employing a multi-stage process of expert peer review and adversarial testing to ensure question difficulty, scientific value, and correctness. We also propose a robust evaluation paradigm using a panel of LLM judges for automated, nuanced assessment of complex answers. Preliminary results on leading models demonstrate ATLAS's effectiveness in differentiating their advanced scientific reasoning capabilities. We plan to develop ATLAS into a long-term, open, community-driven platform to provide a reliable \"ruler\" for progress toward Artificial General Intelligence.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.14366.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 164
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.14295",
+      "authors": [
+        {
+          "_id": "691d6caa0247f3d258ef32a6",
+          "name": "Mohammad Zbib",
+          "hidden": false
+        },
+        {
+          "_id": "691d6caa0247f3d258ef32a7",
+          "name": "Hasan Abed Al Kader Hammoud",
+          "hidden": false
+        },
+        {
+          "_id": "691d6caa0247f3d258ef32a8",
+          "name": "Sina Mukalled",
+          "hidden": false
+        },
+        {
+          "_id": "691d6caa0247f3d258ef32a9",
+          "name": "Nadine Rizk",
+          "hidden": false
+        },
+        {
+          "_id": "691d6caa0247f3d258ef32aa",
+          "name": "Fatima Karnib",
+          "hidden": false
+        },
+        {
+          "_id": "691d6caa0247f3d258ef32ab",
+          "name": "Issam Lakkis",
+          "hidden": false
+        },
+        {
+          "_id": "691d6caa0247f3d258ef32ac",
+          "user": {
+            "_id": "61f01168943fd4875cd86724",
+            "avatarUrl": "/avatars/415cc5388c16e2527d286bc56faeb810.svg",
+            "isPro": false,
+            "fullname": "Ammar Mohanna",
+            "user": "AmmarMohanna",
+            "type": "user"
+          },
+          "name": "Ammar Mohanna",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:39:11.874Z",
+          "hidden": false
+        },
+        {
+          "_id": "691d6caa0247f3d258ef32ad",
+          "name": "Bernard Ghanem",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-18T09:47:01.000Z",
+      "submittedOnDailyAt": "2025-11-19T04:45:52.000Z",
+      "title": "AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models",
+      "submittedOnDailyBy": {
+        "_id": "642b51385bf2355d02a23d15",
+        "avatarUrl": "/avatars/87985347643b2647555f2453fa4d94fb.svg",
+        "isPro": false,
+        "fullname": "Hasan Abed Al Kader Hammoud",
+        "user": "hammh0a",
+        "type": "user"
+      },
+      "summary": "We present AraLingBench: a fully human annotated benchmark for evaluating the Arabic linguistic competence of large language models (LLMs). The benchmark spans five core categories: grammar, morphology, spelling, reading comprehension, and syntax, through 150 expert-designed multiple choice questions that directly assess structural language understanding. Evaluating 35 Arabic and bilingual LLMs reveals that current models demonstrate strong surface level proficiency but struggle with deeper grammatical and syntactic reasoning. AraLingBench highlights a persistent gap between high scores on knowledge-based benchmarks and true linguistic mastery, showing that many models succeed through memorization or pattern recognition rather than authentic comprehension. By isolating and measuring fundamental linguistic skills, AraLingBench provides a diagnostic framework for developing Arabic LLMs. The full evaluation code is publicly available on GitHub.",
+      "upvotes": 9,
+      "discussionId": "691d6caa0247f3d258ef32ae",
+      "ai_summary": "AraLingBench evaluates Arabic and bilingual LLMs' linguistic competence using a benchmark with expert-designed questions across grammar, morphology, spelling, reading comprehension, and syntax, revealing gaps between surface proficiency and true comprehension.",
+      "ai_keywords": [
+        "large language models",
+        "LLMS",
+        "grammar",
+        "morphology",
+        "spelling",
+        "reading comprehension",
+        "syntax",
+        "multiple choice questions",
+        "structural language understanding"
+      ],
+      "organization": {
+        "_id": "6808bff3dd4333f8fe87db70",
+        "name": "IVUL-KAUST",
+        "fullname": "Image and Video Understanding Lab",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/6808bf97ffadd78ec71cb721/Xwkc8YwWKDbZj0fHSGXoa.png"
+      }
+    },
+    "publishedAt": "2025-11-18T04:47:01.000Z",
+    "title": "AraLingBench A Human-Annotated Benchmark for Evaluating Arabic Linguistic Capabilities of Large Language Models",
+    "summary": "We present AraLingBench: a fully human annotated benchmark for evaluating the Arabic linguistic competence of large language models (LLMs). The benchmark spans five core categories: grammar, morphology, spelling, reading comprehension, and syntax, through 150 expert-designed multiple choice questions that directly assess structural language understanding. Evaluating 35 Arabic and bilingual LLMs reveals that current models demonstrate strong surface level proficiency but struggle with deeper grammatical and syntactic reasoning. AraLingBench highlights a persistent gap between high scores on knowledge-based benchmarks and true linguistic mastery, showing that many models succeed through memorization or pattern recognition rather than authentic comprehension. By isolating and measuring fundamental linguistic skills, AraLingBench provides a diagnostic framework for developing Arabic LLMs. The full evaluation code is publicly available on GitHub.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.14295.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "642b51385bf2355d02a23d15",
+      "avatarUrl": "/avatars/87985347643b2647555f2453fa4d94fb.svg",
+      "fullname": "Hasan Abed Al Kader Hammoud",
+      "name": "hammh0a",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 15
+    },
+    "organization": {
+      "_id": "6808bff3dd4333f8fe87db70",
+      "name": "IVUL-KAUST",
+      "fullname": "Image and Video Understanding Lab",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/6808bf97ffadd78ec71cb721/Xwkc8YwWKDbZj0fHSGXoa.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.14460",
+      "authors": [
+        {
+          "_id": "691d3c0c0247f3d258ef3235",
+          "name": "Mingyue Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "691d3c0c0247f3d258ef3236",
+          "name": "Jie Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "691d3c0c0247f3d258ef3237",
+          "name": "Shuo Yu",
+          "hidden": false
+        },
+        {
+          "_id": "691d3c0c0247f3d258ef3238",
+          "name": "Ruiran Yan",
+          "hidden": false
+        },
+        {
+          "_id": "691d3c0c0247f3d258ef3239",
+          "name": "Yucong Luo",
+          "hidden": false
+        },
+        {
+          "_id": "691d3c0c0247f3d258ef323a",
+          "name": "Zirui Liu",
+          "hidden": false
+        },
+        {
+          "_id": "691d3c0c0247f3d258ef323b",
+          "name": "Daoyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "691d3c0c0247f3d258ef323c",
+          "name": "Qi Liu",
+          "hidden": false
+        },
+        {
+          "_id": "691d3c0c0247f3d258ef323d",
+          "name": "Enhong Chen",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-18T13:03:15.000Z",
+      "submittedOnDailyAt": "2025-11-19T01:10:13.793Z",
+      "title": "Agent-R1: Training Powerful LLM Agents with End-to-End Reinforcement Learning",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "Large Language Models (LLMs) are increasingly being explored for building Agents capable of active environmental interaction (e.g., via tool use) to solve complex problems. Reinforcement Learning (RL) is considered a key technology with significant potential for training such Agents; however, the effective application of RL to LLM Agents is still in its nascent stages and faces considerable challenges. Currently, this emerging field lacks in-depth exploration into RL approaches specifically tailored for the LLM Agent context, alongside a scarcity of flexible and easily extensible training frameworks designed for this purpose. To help advance this area, this paper first revisits and clarifies Reinforcement Learning methodologies for LLM Agents by systematically extending the Markov Decision Process (MDP) framework to comprehensively define the key components of an LLM Agent. Secondly, we introduce Agent-R1, a modular, flexible, and user-friendly training framework for RL-based LLM Agents, designed for straightforward adaptation across diverse task scenarios and interactive environments. We conducted experiments on Multihop QA benchmark tasks, providing initial validation for the effectiveness of our proposed methods and framework.",
+      "upvotes": 5,
+      "discussionId": "691d3c0c0247f3d258ef323e",
+      "githubRepo": "https://github.com/0russwest0/Agent-R1",
+      "ai_summary": "A new training framework for RL-based LLM Agents is introduced, extending MDP methodology and demonstrating effectiveness on Multihop QA tasks.",
+      "ai_keywords": [
+        "Reinforcement Learning",
+        "LLM Agents",
+        "Markov Decision Process",
+        "modular framework",
+        "flexible framework",
+        "user-friendly framework",
+        "RL approaches",
+        "Multihop QA"
+      ],
+      "githubStars": 882
+    },
+    "publishedAt": "2025-11-18T08:03:15.000Z",
+    "title": "Agent-R1: Training Powerful LLM Agents with End-to-End Reinforcement Learning",
+    "summary": "Large Language Models (LLMs) are increasingly being explored for building Agents capable of active environmental interaction (e.g., via tool use) to solve complex problems. Reinforcement Learning (RL) is considered a key technology with significant potential for training such Agents; however, the effective application of RL to LLM Agents is still in its nascent stages and faces considerable challenges. Currently, this emerging field lacks in-depth exploration into RL approaches specifically tailored for the LLM Agent context, alongside a scarcity of flexible and easily extensible training frameworks designed for this purpose. To help advance this area, this paper first revisits and clarifies Reinforcement Learning methodologies for LLM Agents by systematically extending the Markov Decision Process (MDP) framework to comprehensively define the key components of an LLM Agent. Secondly, we introduce Agent-R1, a modular, flexible, and user-friendly training framework for RL-based LLM Agents, designed for straightforward adaptation across diverse task scenarios and interactive environments. We conducted experiments on Multihop QA benchmark tasks, providing initial validation for the effectiveness of our proposed methods and framework.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.14460.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 164
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.14210",
+      "authors": [
+        {
+          "_id": "691d32b10247f3d258ef3220",
+          "name": "N Dinesh Reddy",
+          "hidden": false
+        },
+        {
+          "_id": "691d32b10247f3d258ef3221",
+          "name": "Sudeep Pillai",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-18T07:41:02.000Z",
+      "submittedOnDailyAt": "2025-11-19T00:30:21.273Z",
+      "title": "Orion: A Unified Visual Agent for Multimodal Perception, Advanced Visual Reasoning and Execution",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "We introduce Orion, a visual agent framework that can take in any modality and generate any modality. Using an agentic framework with multiple tool-calling capabilities, Orion is designed for visual AI tasks and achieves state-of-the-art results. Unlike traditional vision-language models that produce descriptive outputs, Orion orchestrates a suite of specialized computer vision tools, including object detection, keypoint localization, panoptic segmentation, Optical Character Recognition, and geometric analysis, to execute complex multi-step visual workflows. The system achieves competitive performance on MMMU, MMBench, DocVQA, and MMLongBench while extending monolithic vision-language models to production-grade visual intelligence. By combining neural perception with symbolic execution, Orion enables autonomous visual reasoning, marking a transition from passive visual understanding to active, tool-driven visual intelligence.",
+      "upvotes": 5,
+      "discussionId": "691d32b20247f3d258ef3222",
+      "ai_summary": "Orion, a visual agent framework, uses a suite of specialized computer vision tools to execute complex visual workflows, achieving competitive performance on multiple benchmarks and enabling autonomous visual reasoning.",
+      "ai_keywords": [
+        "agentic framework",
+        "tool-calling capabilities",
+        "object detection",
+        "keypoint localization",
+        "panoptic segmentation",
+        "Optical Character Recognition",
+        "geometric analysis",
+        "MMMU",
+        "MMBench",
+        "DocVQA",
+        "MMLongBench",
+        "neural perception",
+        "symbolic execution",
+        "autonomous visual reasoning"
+      ]
+    },
+    "publishedAt": "2025-11-18T02:41:02.000Z",
+    "title": "Orion: A Unified Visual Agent for Multimodal Perception, Advanced Visual Reasoning and Execution",
+    "summary": "We introduce Orion, a visual agent framework that can take in any modality and generate any modality. Using an agentic framework with multiple tool-calling capabilities, Orion is designed for visual AI tasks and achieves state-of-the-art results. Unlike traditional vision-language models that produce descriptive outputs, Orion orchestrates a suite of specialized computer vision tools, including object detection, keypoint localization, panoptic segmentation, Optical Character Recognition, and geometric analysis, to execute complex multi-step visual workflows. The system achieves competitive performance on MMMU, MMBench, DocVQA, and MMLongBench while extending monolithic vision-language models to production-grade visual intelligence. By combining neural perception with symbolic execution, Orion enables autonomous visual reasoning, marking a transition from passive visual understanding to active, tool-driven visual intelligence.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.14210.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 164
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.12884",
+      "authors": [
+        {
+          "_id": "691bea4f6bfd5965c0fd3837",
+          "name": "Worawalan Chatlatanagulchai",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd3838",
+          "user": {
+            "_id": "62b4f3b7464e664268bf4e85",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62b4f3b7464e664268bf4e85/atFIscmB37aur0a1zuQ2o.jpeg",
+            "isPro": false,
+            "fullname": "Leo",
+            "user": "hao-li",
+            "type": "user"
+          },
+          "name": "Hao Li",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-18T14:07:56.453Z",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd3839",
+          "name": "Yutaro Kashiwa",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd383a",
+          "name": "Brittany Reid",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd383b",
+          "name": "Kundjanasith Thonglek",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd383c",
+          "name": "Pattara Leelaprute",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd383d",
+          "name": "Arnon Rungsawang",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd383e",
+          "name": "Bundit Manaskasemsak",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd383f",
+          "name": "Bram Adams",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd3840",
+          "name": "Ahmed E. Hassan",
+          "hidden": false
+        },
+        {
+          "_id": "691bea4f6bfd5965c0fd3841",
+          "name": "Hajimu Iida",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-17T02:18:55.000Z",
+      "submittedOnDailyAt": "2025-11-19T00:32:43.060Z",
+      "title": "Agent READMEs: An Empirical Study of Context Files for Agentic Coding",
+      "submittedOnDailyBy": {
+        "_id": "62b4f3b7464e664268bf4e85",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62b4f3b7464e664268bf4e85/atFIscmB37aur0a1zuQ2o.jpeg",
+        "isPro": false,
+        "fullname": "Leo",
+        "user": "hao-li",
+        "type": "user"
+      },
+      "summary": "Agentic coding tools receive goals written in natural language as input, break them down into specific tasks, and write or execute the actual code with minimal human intervention. Central to this process are agent context files (\"READMEs for agents\") that provide persistent, project-level instructions. In this paper, we conduct the first large-scale empirical study of 2,303 agent context files from 1,925 repositories to characterize their structure, maintenance, and content. We find that these files are not static documentation but complex, difficult-to-read artifacts that evolve like configuration code, maintained through frequent, small additions. Our content analysis of 16 instruction types shows that developers prioritize functional context, such as build and run commands (62.3%), implementation details (69.9%), and architecture (67.7%). We also identify a significant gap: non-functional requirements like security (14.5%) and performance (14.5%) are rarely specified. These findings indicate that while developers use context files to make agents functional, they provide few guardrails to ensure that agent-written code is secure or performant, highlighting the need for improved tooling and practices.",
+      "upvotes": 2,
+      "discussionId": "691bea4f6bfd5965c0fd3842"
+    },
+    "publishedAt": "2025-11-16T21:18:55.000Z",
+    "title": "Agent READMEs: An Empirical Study of Context Files for Agentic Coding",
+    "summary": "Agentic coding tools receive goals written in natural language as input, break them down into specific tasks, and write or execute the actual code with minimal human intervention. Central to this process are agent context files (\"READMEs for agents\") that provide persistent, project-level instructions. In this paper, we conduct the first large-scale empirical study of 2,303 agent context files from 1,925 repositories to characterize their structure, maintenance, and content. We find that these files are not static documentation but complex, difficult-to-read artifacts that evolve like configuration code, maintained through frequent, small additions. Our content analysis of 16 instruction types shows that developers prioritize functional context, such as build and run commands (62.3%), implementation details (69.9%), and architecture (67.7%). We also identify a significant gap: non-functional requirements like security (14.5%) and performance (14.5%) are rarely specified. These findings indicate that while developers use context files to make agents functional, they provide few guardrails to ensure that agent-written code is secure or performant, highlighting the need for improved tooling and practices.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.12884.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62b4f3b7464e664268bf4e85",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62b4f3b7464e664268bf4e85/atFIscmB37aur0a1zuQ2o.jpeg",
+      "fullname": "Leo",
+      "name": "hao-li",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2511.14385",
+      "authors": [
+        {
+          "_id": "691d7b510247f3d258ef3303",
+          "user": {
+            "_id": "64d4b251071f4a335c97264e",
+            "avatarUrl": "/avatars/c14ae3eea034c1b39186a194425e9989.svg",
+            "isPro": false,
+            "fullname": "Mario Sanz",
+            "user": "mario-sanz",
+            "type": "user"
+          },
+          "name": "Mario Sanz-Guerrero",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:38:30.464Z",
+          "hidden": false
+        },
+        {
+          "_id": "691d7b510247f3d258ef3304",
+          "name": "Katharina von der Wense",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-18T11:45:24.000Z",
+      "submittedOnDailyAt": "2025-11-19T05:40:44.944Z",
+      "title": "Mitigating Label Length Bias in Large Language Models",
+      "submittedOnDailyBy": {
+        "_id": "64d4b251071f4a335c97264e",
+        "avatarUrl": "/avatars/c14ae3eea034c1b39186a194425e9989.svg",
+        "isPro": false,
+        "fullname": "Mario Sanz",
+        "user": "mario-sanz",
+        "type": "user"
+      },
+      "summary": "Large language models (LLMs) are powerful zero- and few-shot learners. However, when predicting over a set of candidate options, LLMs suffer from label biases, and existing calibration methods overlook biases arising from multi-token class labels. We tackle an issue we call label length bias, where labels of different lengths are treated inconsistently, even after standard length normalization. To mitigate it, we propose normalized contextual calibration (NCC), an effective method that normalizes and calibrates predictions at the full-label level. NCC achieves statistically significant improvements over prior approaches across multiple datasets and models, with gains of up to 10% F1. Moreover, NCC extends bias mitigation to broader tasks such as multiple-choice question answering. Our analysis shows that, when combined with in-context learning, NCC is less sensitive to few-shot example selection, requires fewer examples for competitive performance, and produces more reliable confidence estimates. These findings highlight the importance of mitigating full-label biases to improve the performance and robustness of LLM-based methods, particularly in real-world applications where class labels naturally consist of multiple tokens.",
+      "upvotes": 1,
+      "discussionId": "691d7b510247f3d258ef3305",
+      "ai_summary": "Normalized contextual calibration addresses label length bias in large language models, improving performance and reliability across various tasks.",
+      "ai_keywords": [
+        "large language models",
+        "zero-shot learners",
+        "few-shot learners",
+        "label biases",
+        "calibration methods",
+        "multi-token class labels",
+        "label length bias",
+        "normalized contextual calibration",
+        "F1",
+        "multiple-choice question answering",
+        "in-context learning",
+        "competitive performance",
+        "confidence estimates"
+      ]
+    },
+    "publishedAt": "2025-11-18T06:45:24.000Z",
+    "title": "Mitigating Label Length Bias in Large Language Models",
+    "summary": "Large language models (LLMs) are powerful zero- and few-shot learners. However, when predicting over a set of candidate options, LLMs suffer from label biases, and existing calibration methods overlook biases arising from multi-token class labels. We tackle an issue we call label length bias, where labels of different lengths are treated inconsistently, even after standard length normalization. To mitigate it, we propose normalized contextual calibration (NCC), an effective method that normalizes and calibrates predictions at the full-label level. NCC achieves statistically significant improvements over prior approaches across multiple datasets and models, with gains of up to 10% F1. Moreover, NCC extends bias mitigation to broader tasks such as multiple-choice question answering. Our analysis shows that, when combined with in-context learning, NCC is less sensitive to few-shot example selection, requires fewer examples for competitive performance, and produces more reliable confidence estimates. These findings highlight the importance of mitigating full-label biases to improve the performance and robustness of LLM-based methods, particularly in real-world applications where class labels naturally consist of multiple tokens.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.14385.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64d4b251071f4a335c97264e",
+      "avatarUrl": "/avatars/c14ae3eea034c1b39186a194425e9989.svg",
+      "fullname": "Mario Sanz",
+      "name": "mario-sanz",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2511.14086",
+      "authors": [
+        {
+          "_id": "691d2d580247f3d258ef31b8",
+          "name": "Yue Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "691d2d580247f3d258ef31b9",
+          "name": "Zun Wang",
+          "hidden": false
+        },
+        {
+          "_id": "691d2d580247f3d258ef31ba",
+          "name": "Han Lin",
+          "hidden": false
+        },
+        {
+          "_id": "691d2d580247f3d258ef31bb",
+          "name": "Jialu Li",
+          "hidden": false
+        },
+        {
+          "_id": "691d2d580247f3d258ef31bc",
+          "name": "Jianing Yang",
+          "hidden": false
+        },
+        {
+          "_id": "691d2d580247f3d258ef31bd",
+          "name": "Yonatan Bitton",
+          "hidden": false
+        },
+        {
+          "_id": "691d2d580247f3d258ef31be",
+          "name": "Idan Szpektor",
+          "hidden": false
+        },
+        {
+          "_id": "691d2d580247f3d258ef31bf",
+          "name": "Mohit Bansal",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-18T03:13:29.000Z",
+      "submittedOnDailyAt": "2025-11-19T00:09:47.523Z",
+      "title": "Error-Driven Scene Editing for 3D Grounding in Large Language Models",
+      "submittedOnDailyBy": {
+        "_id": "646e86350867c99c2d3f2ecf",
+        "avatarUrl": "/avatars/b89798ff623abffb169eacda2ac32fde.svg",
+        "isPro": true,
+        "fullname": "Han Lin",
+        "user": "hanlincs",
+        "type": "user"
+      },
+      "summary": "Despite recent progress in 3D-LLMs, they remain limited in accurately grounding language to visual and spatial elements in 3D environments. This limitation stems in part from training data that focuses on language reasoning rather than spatial understanding due to scarce 3D resources, leaving inherent grounding biases unresolved. To address this, we propose 3D scene editing as a key mechanism to generate precise visual counterfactuals that mitigate these biases through fine-grained spatial manipulation, without requiring costly scene reconstruction or large-scale 3D data collection. Furthermore, to make these edits targeted and directly address the specific weaknesses of the model, we introduce DEER-3D, an error-driven framework following a structured \"Decompose, Diagnostic Evaluation, Edit, and Re-train\" workflow, rather than broadly or randomly augmenting data as in conventional approaches. Specifically, upon identifying a grounding failure of the 3D-LLM, our framework first diagnoses the exact predicate-level error (e.g., attribute or spatial relation). It then executes minimal, predicate-aligned 3D scene edits, such as recoloring or repositioning, to produce targeted counterfactual supervision for iterative model fine-tuning, significantly enhancing grounding accuracy. We evaluate our editing pipeline across multiple benchmarks for 3D grounding and scene understanding tasks, consistently demonstrating improvements across all evaluated datasets through iterative refinement. DEER-3D underscores the effectiveness of targeted, error-driven scene editing in bridging linguistic reasoning capabilities with spatial grounding in 3D LLMs.",
+      "upvotes": 1,
+      "discussionId": "691d2d580247f3d258ef31c0",
+      "ai_summary": "An error-driven framework, DEER-3D, improves the grounding accuracy of 3D large language models by iteratively editing and retraining them with targeted counterfactuals.",
+      "ai_keywords": [
+        "3D-LLMs",
+        "visual counterfactuals",
+        "spatial manipulation",
+        "DEER-3D",
+        "predicate-level error",
+        "targeted scene edits",
+        "iterative fine-tuning",
+        "3D grounding",
+        "scene understanding"
+      ],
+      "organization": {
+        "_id": "669f9d1fec8789263c0e355a",
+        "name": "UNC-ChapelHill",
+        "fullname": "University of North Carolina at Chapel Hill",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/669f9c85bd649dba3b88e581/H5uB8_MCewnMtxEUnAvTL.png"
+      }
+    },
+    "publishedAt": "2025-11-17T22:13:29.000Z",
+    "title": "Error-Driven Scene Editing for 3D Grounding in Large Language Models",
+    "summary": "Despite recent progress in 3D-LLMs, they remain limited in accurately grounding language to visual and spatial elements in 3D environments. This limitation stems in part from training data that focuses on language reasoning rather than spatial understanding due to scarce 3D resources, leaving inherent grounding biases unresolved. To address this, we propose 3D scene editing as a key mechanism to generate precise visual counterfactuals that mitigate these biases through fine-grained spatial manipulation, without requiring costly scene reconstruction or large-scale 3D data collection. Furthermore, to make these edits targeted and directly address the specific weaknesses of the model, we introduce DEER-3D, an error-driven framework following a structured \"Decompose, Diagnostic Evaluation, Edit, and Re-train\" workflow, rather than broadly or randomly augmenting data as in conventional approaches. Specifically, upon identifying a grounding failure of the 3D-LLM, our framework first diagnoses the exact predicate-level error (e.g., attribute or spatial relation). It then executes minimal, predicate-aligned 3D scene edits, such as recoloring or repositioning, to produce targeted counterfactual supervision for iterative model fine-tuning, significantly enhancing grounding accuracy. We evaluate our editing pipeline across multiple benchmarks for 3D grounding and scene understanding tasks, consistently demonstrating improvements across all evaluated datasets through iterative refinement. DEER-3D underscores the effectiveness of targeted, error-driven scene editing in bridging linguistic reasoning capabilities with spatial grounding in 3D LLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.14086.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "646e86350867c99c2d3f2ecf",
+      "avatarUrl": "/avatars/b89798ff623abffb169eacda2ac32fde.svg",
+      "fullname": "Han Lin",
+      "name": "hanlincs",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3
+    },
+    "organization": {
+      "_id": "669f9d1fec8789263c0e355a",
+      "name": "UNC-ChapelHill",
+      "fullname": "University of North Carolina at Chapel Hill",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/669f9c85bd649dba3b88e581/H5uB8_MCewnMtxEUnAvTL.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.13954",
+      "authors": [
+        {
+          "_id": "691d89220247f3d258ef3340",
+          "name": "Nilay Kumar",
+          "hidden": false
+        },
+        {
+          "_id": "691d89220247f3d258ef3341",
+          "name": "Priyansh Bhandari",
+          "hidden": false
+        },
+        {
+          "_id": "691d89220247f3d258ef3342",
+          "name": "G. Maragatham",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/6Nd0QUPrrbsPi0b5LNazj.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/Bqkf-hcmIKpu0aC76itSX.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/MeOAEPCn8cpY6DUJFrWOC.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/V8FA9PJ0bRVoDvMe4x5A6.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/PkJgDBz1ov55YlHOPlANi.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/CgupuTnHC6_6e6a7xvDPq.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/zy__1GBcb82t7m795p8oZ.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/fk8MPAT1MYV5xao-3bnGv.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/ersC7V9PIE0LFf0a9z5Ae.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/l7K-YM_IZtW-dPoZBFCMw.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/UIdxNKui6Ns7xncWoaAvz.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/v86P3Q5aljri3eMd1z8Wb.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/4XrFr2HkTfzQKMWrW6A3g.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/r7iDkg1SgX-ZkbXpBqjzu.png",
+        "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/r8Cu-qdayurHTBTHHBMXT.png"
+      ],
+      "publishedAt": "2025-11-17T22:27:12.000Z",
+      "submittedOnDailyAt": "2025-11-19T07:33:25.212Z",
+      "title": "A Brain Wave Encodes a Thousand Tokens: Modeling Inter-Cortical Neural Interactions for Effective EEG-based Emotion Recognition",
+      "submittedOnDailyBy": {
+        "_id": "63cbb330f488db9bb3be6fe6",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63cbb330f488db9bb3be6fe6/66bg2FdIg4YSsqWzP8WAd.png",
+        "isPro": false,
+        "fullname": "Nilay K. Bhatnagar",
+        "user": "nnilayy",
+        "type": "user"
+      },
+      "summary": "Human emotions are difficult to convey through words and are often abstracted in the process; however, electroencephalogram (EEG) signals can offer a more direct lens into emotional brain activity. Recent studies show that deep learning models can process these signals to perform emotion recognition with high accuracy. However, many existing approaches overlook the dynamic interplay between distinct brain regions, which can be crucial to understanding how emotions unfold and evolve over time, potentially aiding in more accurate emotion recognition. To address this, we propose RBTransformer, a Transformer-based neural network architecture that models inter-cortical neural dynamics of the brain in latent space to better capture structured neural interactions for effective EEG-based emotion recognition. First, the EEG signals are converted into Band Differential Entropy (BDE) tokens, which are then passed through Electrode Identity embeddings to retain spatial provenance. These tokens are processed through successive inter-cortical multi-head attention blocks that construct an electrode x electrode attention matrix, allowing the model to learn the inter-cortical neural dependencies. The resulting features are then passed through a classification head to obtain the final prediction. We conducted extensive experiments, specifically under subject-dependent settings, on the SEED, DEAP, and DREAMER datasets, over all three dimensions, Valence, Arousal, and Dominance (for DEAP and DREAMER), under both binary and multi-class classification settings. The results demonstrate that the proposed RBTransformer outperforms all previous state-of-the-art methods across all three datasets, over all three dimensions under both classification settings. The source code is available at: https://github.com/nnilayy/RBTransformer.",
+      "upvotes": 1,
+      "discussionId": "691d89220247f3d258ef3343",
+      "githubRepo": "https://github.com/nnilayy/rbtransformer",
+      "ai_summary": "RBTransformer, a Transformer-based model, enhances EEG-based emotion recognition by capturing inter-cortical neural dynamics in latent space, outperforming existing methods on multiple datasets and dimensions.",
+      "ai_keywords": [
+        "RBTransformer",
+        "Transformer-based neural network",
+        "inter-cortical neural dynamics",
+        "latent space",
+        "Band Differential Entropy (BDE) tokens",
+        "Electrode Identity embeddings",
+        "inter-cortical multi-head attention blocks",
+        "classification head",
+        "SEED dataset",
+        "DEAP dataset",
+        "DREAMER dataset",
+        "Valence",
+        "Arousal",
+        "Dominance"
+      ]
+    },
+    "publishedAt": "2025-11-17T17:27:12.000Z",
+    "title": "A Brain Wave Encodes a Thousand Tokens: Modeling Inter-Cortical Neural Interactions for Effective EEG-based Emotion Recognition",
+    "summary": "Human emotions are difficult to convey through words and are often abstracted in the process; however, electroencephalogram (EEG) signals can offer a more direct lens into emotional brain activity. Recent studies show that deep learning models can process these signals to perform emotion recognition with high accuracy. However, many existing approaches overlook the dynamic interplay between distinct brain regions, which can be crucial to understanding how emotions unfold and evolve over time, potentially aiding in more accurate emotion recognition. To address this, we propose RBTransformer, a Transformer-based neural network architecture that models inter-cortical neural dynamics of the brain in latent space to better capture structured neural interactions for effective EEG-based emotion recognition. First, the EEG signals are converted into Band Differential Entropy (BDE) tokens, which are then passed through Electrode Identity embeddings to retain spatial provenance. These tokens are processed through successive inter-cortical multi-head attention blocks that construct an electrode x electrode attention matrix, allowing the model to learn the inter-cortical neural dependencies. The resulting features are then passed through a classification head to obtain the final prediction. We conducted extensive experiments, specifically under subject-dependent settings, on the SEED, DEAP, and DREAMER datasets, over all three dimensions, Valence, Arousal, and Dominance (for DEAP and DREAMER), under both binary and multi-class classification settings. The results demonstrate that the proposed RBTransformer outperforms all previous state-of-the-art methods across all three datasets, over all three dimensions under both classification settings. The source code is available at: https://github.com/nnilayy/RBTransformer.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/6Nd0QUPrrbsPi0b5LNazj.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/Bqkf-hcmIKpu0aC76itSX.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/MeOAEPCn8cpY6DUJFrWOC.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/V8FA9PJ0bRVoDvMe4x5A6.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/PkJgDBz1ov55YlHOPlANi.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/CgupuTnHC6_6e6a7xvDPq.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/zy__1GBcb82t7m795p8oZ.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/fk8MPAT1MYV5xao-3bnGv.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/ersC7V9PIE0LFf0a9z5Ae.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/l7K-YM_IZtW-dPoZBFCMw.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/UIdxNKui6Ns7xncWoaAvz.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/v86P3Q5aljri3eMd1z8Wb.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/4XrFr2HkTfzQKMWrW6A3g.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/r7iDkg1SgX-ZkbXpBqjzu.png",
+      "https://cdn-uploads.huggingface.co/production/uploads/63cbb330f488db9bb3be6fe6/r8Cu-qdayurHTBTHHBMXT.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.13954.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63cbb330f488db9bb3be6fe6",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63cbb330f488db9bb3be6fe6/66bg2FdIg4YSsqWzP8WAd.png",
+      "fullname": "Nilay K. Bhatnagar",
+      "name": "nnilayy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2511.13189",
+      "authors": [
+        {
+          "_id": "691ca0ae4d973d33ea1f9f9a",
+          "user": {
+            "_id": "617abac17b4dce0224d6b8e8",
+            "avatarUrl": "/avatars/f5334c6ca685153d8956827a320212da.svg",
+            "isPro": false,
+            "fullname": "Diego Ortego Hernández",
+            "user": "Diegooor",
+            "type": "user"
+          },
+          "name": "Diego Ortego",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:39:43.647Z",
+          "hidden": false
+        },
+        {
+          "_id": "691ca0ae4d973d33ea1f9f9b",
+          "name": "Marlon Rodríguez",
+          "hidden": false
+        },
+        {
+          "_id": "691ca0ae4d973d33ea1f9f9c",
+          "name": "Mario Almagro",
+          "hidden": false
+        },
+        {
+          "_id": "691ca0ae4d973d33ea1f9f9d",
+          "name": "Kunal Dahiya",
+          "hidden": false
+        },
+        {
+          "_id": "691ca0ae4d973d33ea1f9f9e",
+          "name": "David Jiménez",
+          "hidden": false
+        },
+        {
+          "_id": "691ca0ae4d973d33ea1f9f9f",
+          "name": "Juan C. SanMiguel",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-17T09:52:53.000Z",
+      "submittedOnDailyAt": "2025-11-19T06:21:54.317Z",
+      "title": "Large Language Models Meet Extreme Multi-label Classification: Scaling and Multi-modal Framework",
+      "submittedOnDailyBy": {
+        "_id": "617abac17b4dce0224d6b8e8",
+        "avatarUrl": "/avatars/f5334c6ca685153d8956827a320212da.svg",
+        "isPro": false,
+        "fullname": "Diego Ortego Hernández",
+        "user": "Diegooor",
+        "type": "user"
+      },
+      "summary": "Foundation models have revolutionized artificial intelligence across numerous domains, yet their transformative potential remains largely untapped in Extreme Multi-label Classification (XMC). Queries in XMC are associated with relevant labels from extremely large label spaces, where it is critical to strike a balance between efficiency and performance. Therefore, many recent approaches efficiently pose XMC as a maximum inner product search between embeddings learned from small encoder-only transformer architectures. In this paper, we address two important aspects in XMC: how to effectively harness larger decoder-only models, and how to exploit visual information while maintaining computational efficiency. We demonstrate that both play a critical role in XMC separately and can be combined for improved performance. We show that a few billion-size decoder can deliver substantial improvements while keeping computational overhead manageable. Furthermore, our Vision-enhanced eXtreme Multi-label Learning framework (ViXML) efficiently integrates foundation vision models by pooling a single embedding per image. This limits computational growth while unlocking multi-modal capabilities. Remarkably, ViXML with small encoders outperforms text-only decoder in most cases, showing that an image is worth billions of parameters. Finally, we present an extension of existing text-only datasets to exploit visual metadata and make them available for future benchmarking. Comprehensive experiments across four public text-only datasets and their corresponding image enhanced versions validate our proposals' effectiveness, surpassing previous state-of-the-art by up to +8.21\\% in P@1 on the largest dataset. ViXML's code is available at https://github.com/DiegoOrtego/vixml.",
+      "upvotes": 1,
+      "discussionId": "691ca0ae4d973d33ea1f9fa0",
+      "organization": {
+        "_id": "62f8054381f596cfe3c85405",
+        "name": "nielseniq",
+        "fullname": "NielsenIQ",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/61ac8f8a00d01045fca0ad2f/U1LNKmHfJpF-wRnbDLu0c.jpeg"
+      }
+    },
+    "publishedAt": "2025-11-17T04:52:53.000Z",
+    "title": "Large Language Models Meet Extreme Multi-label Classification: Scaling and Multi-modal Framework",
+    "summary": "Foundation models have revolutionized artificial intelligence across numerous domains, yet their transformative potential remains largely untapped in Extreme Multi-label Classification (XMC). Queries in XMC are associated with relevant labels from extremely large label spaces, where it is critical to strike a balance between efficiency and performance. Therefore, many recent approaches efficiently pose XMC as a maximum inner product search between embeddings learned from small encoder-only transformer architectures. In this paper, we address two important aspects in XMC: how to effectively harness larger decoder-only models, and how to exploit visual information while maintaining computational efficiency. We demonstrate that both play a critical role in XMC separately and can be combined for improved performance. We show that a few billion-size decoder can deliver substantial improvements while keeping computational overhead manageable. Furthermore, our Vision-enhanced eXtreme Multi-label Learning framework (ViXML) efficiently integrates foundation vision models by pooling a single embedding per image. This limits computational growth while unlocking multi-modal capabilities. Remarkably, ViXML with small encoders outperforms text-only decoder in most cases, showing that an image is worth billions of parameters. Finally, we present an extension of existing text-only datasets to exploit visual metadata and make them available for future benchmarking. Comprehensive experiments across four public text-only datasets and their corresponding image enhanced versions validate our proposals' effectiveness, surpassing previous state-of-the-art by up to +8.21\\% in P@1 on the largest dataset. ViXML's code is available at https://github.com/DiegoOrtego/vixml.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.13189.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "617abac17b4dce0224d6b8e8",
+      "avatarUrl": "/avatars/f5334c6ca685153d8956827a320212da.svg",
+      "fullname": "Diego Ortego Hernández",
+      "name": "Diegooor",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false
+    },
+    "organization": {
+      "_id": "62f8054381f596cfe3c85405",
+      "name": "nielseniq",
+      "fullname": "NielsenIQ",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/61ac8f8a00d01045fca0ad2f/U1LNKmHfJpF-wRnbDLu0c.jpeg"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2511.11270",
+      "authors": [
+        {
+          "_id": "691d7cd30247f3d258ef3311",
+          "user": {
+            "_id": "643fa1c718afbc4d1f3e5e94",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/643fa1c718afbc4d1f3e5e94/_cg3HHuycPGHnexJHbfwP.jpeg",
+            "isPro": false,
+            "fullname": "Giuseppe Vecchio",
+            "user": "gvecchio",
+            "type": "user"
+          },
+          "name": "Giuseppe Vecchio",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2025-11-19T08:38:21.153Z",
+          "hidden": false
+        },
+        {
+          "_id": "691d7cd30247f3d258ef3312",
+          "name": "Adrien Kaiser",
+          "hidden": false
+        },
+        {
+          "_id": "691d7cd30247f3d258ef3313",
+          "name": "Rouffet Romain",
+          "hidden": false
+        },
+        {
+          "_id": "691d7cd30247f3d258ef3314",
+          "name": "Rosalie Martin",
+          "hidden": false
+        },
+        {
+          "_id": "691d7cd30247f3d258ef3315",
+          "name": "Elena Garces",
+          "hidden": false
+        },
+        {
+          "_id": "691d7cd30247f3d258ef3316",
+          "name": "Tamy Boubekeur",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-11-14T13:05:10.000Z",
+      "submittedOnDailyAt": "2025-11-19T05:50:27.802Z",
+      "title": "Φeat: Physically-Grounded Feature Representation",
+      "submittedOnDailyBy": {
+        "_id": "643fa1c718afbc4d1f3e5e94",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/643fa1c718afbc4d1f3e5e94/_cg3HHuycPGHnexJHbfwP.jpeg",
+        "isPro": false,
+        "fullname": "Giuseppe Vecchio",
+        "user": "gvecchio",
+        "type": "user"
+      },
+      "summary": "Foundation models have emerged as effective backbones for many vision tasks. However, current self-supervised features entangle high-level semantics with low-level physical factors, such as geometry and illumination, hindering their use in tasks requiring explicit physical reasoning. In this paper, we introduce Φeat, a novel physically-grounded visual backbone that encourages a representation sensitive to material identity, including reflectance cues and geometric mesostructure. Our key idea is to employ a pretraining strategy that contrasts spatial crops and physical augmentations of the same material under varying shapes and lighting conditions. While similar data have been used in high-end supervised tasks such as intrinsic decomposition or material estimation, we demonstrate that a pure self-supervised training strategy, without explicit labels, already provides a strong prior for tasks requiring robust features invariant to external physical factors. We evaluate the learned representations through feature similarity analysis and material selection, showing that Φeat captures physically-grounded structure beyond semantic grouping. These findings highlight the promise of unsupervised physical feature learning as a foundation for physics-aware perception in vision and graphics. These findings highlight the promise of unsupervised physical feature learning as a foundation for physics-aware perception in vision and graphics.",
+      "upvotes": 1,
+      "discussionId": "691d7cd30247f3d258ef3317",
+      "ai_summary": "A physically-grounded visual backbone, $Φ$eat, is introduced to capture material identity through self-supervised training, demonstrating robust features invariant to external physical factors.",
+      "ai_keywords": [
+        "physically-grounded visual backbone",
+        "self-supervised training",
+        "spatial crops",
+        "physical augmentations",
+        "material identity",
+        "reflectance cues",
+        "geometric mesostructure",
+        "intrinsic decomposition",
+        "material estimation",
+        "physics-aware perception"
+      ],
+      "organization": {
+        "_id": "61e5d14f77496de0a6d95c6b",
+        "name": "adobe",
+        "fullname": "Adobe",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/1645217431826-61e35e517ac6b6d06cfa8081.png"
+      }
+    },
+    "publishedAt": "2025-11-14T08:05:10.000Z",
+    "title": "Φeat: Physically-Grounded Feature Representation",
+    "summary": "Foundation models have emerged as effective backbones for many vision tasks. However, current self-supervised features entangle high-level semantics with low-level physical factors, such as geometry and illumination, hindering their use in tasks requiring explicit physical reasoning. In this paper, we introduce Φeat, a novel physically-grounded visual backbone that encourages a representation sensitive to material identity, including reflectance cues and geometric mesostructure. Our key idea is to employ a pretraining strategy that contrasts spatial crops and physical augmentations of the same material under varying shapes and lighting conditions. While similar data have been used in high-end supervised tasks such as intrinsic decomposition or material estimation, we demonstrate that a pure self-supervised training strategy, without explicit labels, already provides a strong prior for tasks requiring robust features invariant to external physical factors. We evaluate the learned representations through feature similarity analysis and material selection, showing that Φeat captures physically-grounded structure beyond semantic grouping. These findings highlight the promise of unsupervised physical feature learning as a foundation for physics-aware perception in vision and graphics. These findings highlight the promise of unsupervised physical feature learning as a foundation for physics-aware perception in vision and graphics.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2511.11270.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "643fa1c718afbc4d1f3e5e94",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/643fa1c718afbc4d1f3e5e94/_cg3HHuycPGHnexJHbfwP.jpeg",
+      "fullname": "Giuseppe Vecchio",
+      "name": "gvecchio",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 24
+    },
+    "organization": {
+      "_id": "61e5d14f77496de0a6d95c6b",
+      "name": "adobe",
+      "fullname": "Adobe",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/1645217431826-61e35e517ac6b6d06cfa8081.png"
+    },
+    "isAuthorParticipating": true
+  }
+]
