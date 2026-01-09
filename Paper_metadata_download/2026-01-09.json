@@ -1,0 +1,2395 @@
+[
+  {
+    "paper": {
+      "id": "2601.05242",
+      "authors": [
+        {
+          "_id": "69607a225b7998385e63952a",
+          "user": {
+            "_id": "62b58c68a1bae3c711c41321",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62b58c68a1bae3c711c41321/FGQ1ifsPpmRi8P0ElxV5J.png",
+            "isPro": false,
+            "fullname": "LIU Shih-yang",
+            "user": "sliuau",
+            "type": "user"
+          },
+          "name": "Shih-Yang Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:01.190Z",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e63952b",
+          "name": "Xin Dong",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e63952c",
+          "user": {
+            "_id": "640928bd3461c51cf7378707",
+            "avatarUrl": "/avatars/b29fcb7388b81f8686086352f6321d06.svg",
+            "isPro": false,
+            "fullname": "Ximing Lu",
+            "user": "Ximing",
+            "type": "user"
+          },
+          "name": "Ximing Lu",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2026-01-09T08:49:57.401Z",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e63952d",
+          "name": "Shizhe Diao",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e63952e",
+          "name": "Peter Belcak",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e63952f",
+          "name": "Mingjie Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e639530",
+          "user": {
+            "_id": "64ae22dd1aee69ece065cdcd",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ae22dd1aee69ece065cdcd/JG7QaHIrr4i2k4uwR4pZK.png",
+            "isPro": false,
+            "fullname": "Min-Hung Chen",
+            "user": "cmhungsteve",
+            "type": "user"
+          },
+          "name": "Min-Hung Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:03.130Z",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e639531",
+          "name": "Hongxu Yin",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e639532",
+          "name": "Yu-Chiang Frank Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e639533",
+          "name": "Kwang-Ting Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e639534",
+          "name": "Yejin Choi",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e639535",
+          "name": "Jan Kautz",
+          "hidden": false
+        },
+        {
+          "_id": "69607a225b7998385e639536",
+          "name": "Pavlo Molchanov",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T18:59:24.000Z",
+      "submittedOnDailyAt": "2026-01-09T01:16:50.715Z",
+      "title": "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization",
+      "submittedOnDailyBy": {
+        "_id": "62b58c68a1bae3c711c41321",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62b58c68a1bae3c711c41321/FGQ1ifsPpmRi8P0ElxV5J.png",
+        "isPro": false,
+        "fullname": "LIU Shih-yang",
+        "user": "sliuau",
+        "type": "user"
+      },
+      "summary": "As language models become increasingly capable, users expect them to provide not only accurate responses but also behaviors aligned with diverse human preferences across a variety of scenarios. To achieve this, Reinforcement learning (RL) pipelines have begun incorporating multiple rewards, each capturing a distinct preference, to guide models toward these desired behaviors. However, recent work has defaulted to apply Group Relative Policy Optimization (GRPO) under multi-reward setting without examining its suitability. In this paper, we demonstrate that directly applying GRPO to normalize distinct rollout reward combinations causes them to collapse into identical advantage values, reducing the resolution of the training signal and resulting in suboptimal convergence and, in some cases, early training failure. We then introduce Group reward-Decoupled Normalization Policy Optimization (GDPO), a new policy optimization method to resolve these issues by decoupling the normalization of individual rewards, more faithfully preserving their relative differences and enabling more accurate multi-reward optimization, along with substantially improved training stability. We compare GDPO with GRPO across three tasks: tool calling, math reasoning, and coding reasoning, evaluating both correctness metrics (accuracy, bug ratio) and constraint adherence metrics (format, length). Across all settings, GDPO consistently outperforms GRPO, demonstrating its effectiveness and generalizability for multi-reward reinforcement learning optimization.",
+      "upvotes": 71,
+      "discussionId": "69607a225b7998385e639537",
+      "projectPage": "https://nvlabs.github.io/GDPO/",
+      "githubRepo": "https://github.com/NVlabs/GDPO",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "Multi-reward reinforcement learning suffers from reward normalization collapse in GRPO, which GDPO addresses by decoupling reward normalization for improved training stability and performance across reasoning tasks.",
+      "ai_keywords": [
+        "Reinforcement learning",
+        "Group Relative Policy Optimization",
+        "multi-reward setting",
+        "policy optimization",
+        "Group reward-Decoupled Normalization Policy Optimization",
+        "reward normalization",
+        "advantage values",
+        "training stability",
+        "multi-reward reinforcement learning"
+      ],
+      "githubStars": 8,
+      "organization": {
+        "_id": "60262b67268c201cdc8b7d43",
+        "name": "nvidia",
+        "fullname": "NVIDIA",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/1613114437487-60262a8e0703121c822a80b6.png"
+      }
+    },
+    "publishedAt": "2026-01-08T13:59:24.000Z",
+    "title": "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization",
+    "summary": "As language models become increasingly capable, users expect them to provide not only accurate responses but also behaviors aligned with diverse human preferences across a variety of scenarios. To achieve this, Reinforcement learning (RL) pipelines have begun incorporating multiple rewards, each capturing a distinct preference, to guide models toward these desired behaviors. However, recent work has defaulted to apply Group Relative Policy Optimization (GRPO) under multi-reward setting without examining its suitability. In this paper, we demonstrate that directly applying GRPO to normalize distinct rollout reward combinations causes them to collapse into identical advantage values, reducing the resolution of the training signal and resulting in suboptimal convergence and, in some cases, early training failure. We then introduce Group reward-Decoupled Normalization Policy Optimization (GDPO), a new policy optimization method to resolve these issues by decoupling the normalization of individual rewards, more faithfully preserving their relative differences and enabling more accurate multi-reward optimization, along with substantially improved training stability. We compare GDPO with GRPO across three tasks: tool calling, math reasoning, and coding reasoning, evaluating both correctness metrics (accuracy, bug ratio) and constraint adherence metrics (format, length). Across all settings, GDPO consistently outperforms GRPO, demonstrating its effectiveness and generalizability for multi-reward reinforcement learning optimization.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05242.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62b58c68a1bae3c711c41321",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/62b58c68a1bae3c711c41321/FGQ1ifsPpmRi8P0ElxV5J.png",
+      "fullname": "LIU Shih-yang",
+      "name": "sliuau",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "60262b67268c201cdc8b7d43",
+      "name": "nvidia",
+      "fullname": "NVIDIA",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/1613114437487-60262a8e0703121c822a80b6.png"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2601.04890",
+      "authors": [
+        {
+          "_id": "69608e7c5b7998385e639583",
+          "name": "Maksim Velikanov",
+          "hidden": false
+        },
+        {
+          "_id": "69608e7c5b7998385e639584",
+          "name": "Ilyas Chahed",
+          "hidden": false
+        },
+        {
+          "_id": "69608e7c5b7998385e639585",
+          "user": {
+            "_id": "6460c3811db65f878513bcaf",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6460c3811db65f878513bcaf/CRdJ8lXixDku3k8Rm5Stn.jpeg",
+            "isPro": false,
+            "fullname": "Jingwei Zuo",
+            "user": "JingweiZuo",
+            "type": "user"
+          },
+          "name": "Jingwei Zuo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:34:49.874Z",
+          "hidden": false
+        },
+        {
+          "_id": "69608e7c5b7998385e639586",
+          "name": "Dhia Eddine Rhaiem",
+          "hidden": false
+        },
+        {
+          "_id": "69608e7c5b7998385e639587",
+          "user": {
+            "_id": "62441d1d9fdefb55a0b7d12c",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/1648631057413-noauth.png",
+            "isPro": false,
+            "fullname": "Younes B",
+            "user": "ybelkada",
+            "type": "user"
+          },
+          "name": "Younes Belkada",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:34:47.914Z",
+          "hidden": false
+        },
+        {
+          "_id": "69608e7c5b7998385e639588",
+          "name": "Hakim Hacid",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T12:41:49.000Z",
+      "submittedOnDailyAt": "2026-01-09T02:55:50.938Z",
+      "title": "Learnable Multipliers: Freeing the Scale of Language Model Matrix Layers",
+      "submittedOnDailyBy": {
+        "_id": "6460c3811db65f878513bcaf",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6460c3811db65f878513bcaf/CRdJ8lXixDku3k8Rm5Stn.jpeg",
+        "isPro": false,
+        "fullname": "Jingwei Zuo",
+        "user": "JingweiZuo",
+        "type": "user"
+      },
+      "summary": "Applying weight decay (WD) to matrix layers is standard practice in large-language-model pretraining. Prior work suggests that stochastic gradient noise induces a Brownian-like expansion of the weight matrices W, whose growth is counteracted by WD, leading to a WD-noise equilibrium with a certain weight norm ||W||. In this work, we view the equilibrium norm as a harmful artifact of the training procedure, and address it by introducing learnable multipliers to learn the optimal scale. First, we attach a learnable scalar multiplier to W and confirm that the WD-noise equilibrium norm is suboptimal: the learned scale adapts to data and improves performance. We then argue that individual row and column norms are similarly constrained, and free their scale by introducing learnable per-row and per-column multipliers. Our method can be viewed as a learnable, more expressive generalization of muP multipliers. It outperforms a well-tuned muP baseline, reduces the computational overhead of multiplier tuning, and surfaces practical questions such as forward-pass symmetries and the width-scaling of the learned multipliers. Finally, we validate learnable multipliers with both Adam and Muon optimizers, where it shows improvement in downstream evaluations matching the improvement of the switching from Adam to Muon.",
+      "upvotes": 26,
+      "discussionId": "69608e7c5b7998385e639589",
+      "projectPage": "https://tiiuae.github.io/Falcon-H1/",
+      "githubRepo": "https://github.com/tiiuae/falcon-h1",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "Learnable multipliers are introduced to address weight decay-induced normalization artifacts in large language model training, outperforming traditional methods while reducing computational overhead.",
+      "ai_keywords": [
+        "weight decay",
+        "stochastic gradient noise",
+        "Brownian-like expansion",
+        "WD-noise equilibrium",
+        "learnable multipliers",
+        "matrix layers",
+        "weight norm",
+        "muP multipliers",
+        "Adam optimizer",
+        "Muon optimizer"
+      ],
+      "githubStars": 96,
+      "organization": {
+        "_id": "6448cad23adf50d86406b0a3",
+        "name": "tiiuae",
+        "fullname": "Technology Innovation Institute",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/61a8d1aac664736898ffc84f/AT6cAB5ZNwCcqFMal71WD.jpeg"
+      }
+    },
+    "publishedAt": "2026-01-08T07:41:49.000Z",
+    "title": "Learnable Multipliers: Freeing the Scale of Language Model Matrix Layers",
+    "summary": "Applying weight decay (WD) to matrix layers is standard practice in large-language-model pretraining. Prior work suggests that stochastic gradient noise induces a Brownian-like expansion of the weight matrices W, whose growth is counteracted by WD, leading to a WD-noise equilibrium with a certain weight norm ||W||. In this work, we view the equilibrium norm as a harmful artifact of the training procedure, and address it by introducing learnable multipliers to learn the optimal scale. First, we attach a learnable scalar multiplier to W and confirm that the WD-noise equilibrium norm is suboptimal: the learned scale adapts to data and improves performance. We then argue that individual row and column norms are similarly constrained, and free their scale by introducing learnable per-row and per-column multipliers. Our method can be viewed as a learnable, more expressive generalization of muP multipliers. It outperforms a well-tuned muP baseline, reduces the computational overhead of multiplier tuning, and surfaces practical questions such as forward-pass symmetries and the width-scaling of the learned multipliers. Finally, we validate learnable multipliers with both Adam and Muon optimizers, where it shows improvement in downstream evaluations matching the improvement of the switching from Adam to Muon.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.04890.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6460c3811db65f878513bcaf",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6460c3811db65f878513bcaf/CRdJ8lXixDku3k8Rm5Stn.jpeg",
+      "fullname": "Jingwei Zuo",
+      "name": "JingweiZuo",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 36,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "6448cad23adf50d86406b0a3",
+      "name": "tiiuae",
+      "fullname": "Technology Innovation Institute",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/61a8d1aac664736898ffc84f/AT6cAB5ZNwCcqFMal71WD.jpeg"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2601.05241",
+      "authors": [
+        {
+          "_id": "6960775a5b7998385e6394ff",
+          "user": {
+            "_id": "64ed876a74d9b58eabc769a4",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ed876a74d9b58eabc769a4/K4bJVW0FlqRtAAxJBJifR.jpeg",
+            "isPro": true,
+            "fullname": "Boyang Wang",
+            "user": "HikariDawn",
+            "type": "user"
+          },
+          "name": "Boyang Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:11.481Z",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639500",
+          "name": "Haoran Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639501",
+          "name": "Shujie Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639502",
+          "user": {
+            "_id": "64edb581067fbb625f893628",
+            "avatarUrl": "/avatars/d59893d6f1f752bb73255bd78b325fe9.svg",
+            "isPro": false,
+            "fullname": "hao",
+            "user": "wuzhi-hao",
+            "type": "user"
+          },
+          "name": "Jinkun Hao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:09.450Z",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639503",
+          "name": "Mingda Jia",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639504",
+          "name": "Qi Lv",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639505",
+          "name": "Yucheng Mao",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639506",
+          "name": "Zhaoyang Lyu",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639507",
+          "name": "Jia Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639508",
+          "name": "Xudong Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6960775a5b7998385e639509",
+          "name": "Jiangmiao Pang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T18:59:22.000Z",
+      "submittedOnDailyAt": "2026-01-09T02:54:13.651Z",
+      "title": "RoboVIP: Multi-View Video Generation with Visual Identity Prompting Augments Robot Manipulation",
+      "submittedOnDailyBy": {
+        "_id": "64ed876a74d9b58eabc769a4",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ed876a74d9b58eabc769a4/K4bJVW0FlqRtAAxJBJifR.jpeg",
+        "isPro": true,
+        "fullname": "Boyang Wang",
+        "user": "HikariDawn",
+        "type": "user"
+      },
+      "summary": "The diversity, quantity, and quality of manipulation data are critical for training effective robot policies. However, due to hardware and physical setup constraints, collecting large-scale real-world manipulation data remains difficult to scale across diverse environments. Recent work uses text-prompt conditioned image diffusion models to augment manipulation data by altering the backgrounds and tabletop objects in the visual observations. However, these approaches often overlook the practical need for multi-view and temporally coherent observations required by state-of-the-art policy models. Further, text prompts alone cannot reliably specify the scene setup. To provide the diffusion model with explicit visual guidance, we introduce visual identity prompting, which supplies exemplar images as conditioning inputs to guide the generation of the desired scene setup. To this end, we also build a scalable pipeline to curate a visual identity pool from large robotics datasets. Using our augmented manipulation data to train downstream vision-language-action and visuomotor policy models yields consistent performance gains in both simulation and real-robot settings.",
+      "upvotes": 18,
+      "discussionId": "6960775a5b7998385e63950a",
+      "projectPage": "https://robovip.github.io/RoboVIP/",
+      "githubRepo": "https://github.com/RoboVIP/RoboVIP_VDM",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "Visual identity prompting enhances manipulation data augmentation for robot policies by providing explicit visual guidance to diffusion models, improving policy performance in both simulation and real-world settings.",
+      "ai_keywords": [
+        "image diffusion models",
+        "visual identity prompting",
+        "manipulation data",
+        "vision-language-action models",
+        "visuomotor policy models",
+        "visual identity pool"
+      ],
+      "githubStars": 1
+    },
+    "publishedAt": "2026-01-08T13:59:22.000Z",
+    "title": "RoboVIP: Multi-View Video Generation with Visual Identity Prompting Augments Robot Manipulation",
+    "summary": "The diversity, quantity, and quality of manipulation data are critical for training effective robot policies. However, due to hardware and physical setup constraints, collecting large-scale real-world manipulation data remains difficult to scale across diverse environments. Recent work uses text-prompt conditioned image diffusion models to augment manipulation data by altering the backgrounds and tabletop objects in the visual observations. However, these approaches often overlook the practical need for multi-view and temporally coherent observations required by state-of-the-art policy models. Further, text prompts alone cannot reliably specify the scene setup. To provide the diffusion model with explicit visual guidance, we introduce visual identity prompting, which supplies exemplar images as conditioning inputs to guide the generation of the desired scene setup. To this end, we also build a scalable pipeline to curate a visual identity pool from large robotics datasets. Using our augmented manipulation data to train downstream vision-language-action and visuomotor policy models yields consistent performance gains in both simulation and real-robot settings.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05241.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "64ed876a74d9b58eabc769a4",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64ed876a74d9b58eabc769a4/K4bJVW0FlqRtAAxJBJifR.jpeg",
+      "fullname": "Boyang Wang",
+      "name": "HikariDawn",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 12,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2601.05167",
+      "authors": [
+        {
+          "_id": "69606c325b7998385e639481",
+          "user": {
+            "_id": "62ea79dd01ed9b0e8f61ccd3",
+            "avatarUrl": "/avatars/70af83e0e267be39fcd5f23b85e2dafa.svg",
+            "isPro": false,
+            "fullname": "Chengsong Huang",
+            "user": "ChengsongHuang",
+            "type": "user"
+          },
+          "name": "Chengsong Huang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:21.851Z",
+          "hidden": false
+        },
+        {
+          "_id": "69606c325b7998385e639482",
+          "name": "Tong Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "69606c325b7998385e639483",
+          "name": "Langlin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "69606c325b7998385e639484",
+          "name": "Jinyuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "69606c325b7998385e639485",
+          "name": "Haolin Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69606c325b7998385e639486",
+          "name": "Jiaxin Huang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T17:56:16.000Z",
+      "submittedOnDailyAt": "2026-01-09T00:17:45.320Z",
+      "title": "RelayLLM: Efficient Reasoning via Collaborative Decoding",
+      "submittedOnDailyBy": {
+        "_id": "62ea79dd01ed9b0e8f61ccd3",
+        "avatarUrl": "/avatars/70af83e0e267be39fcd5f23b85e2dafa.svg",
+        "isPro": false,
+        "fullname": "Chengsong Huang",
+        "user": "ChengsongHuang",
+        "type": "user"
+      },
+      "summary": "Large Language Models (LLMs) for complex reasoning is often hindered by high computational costs and latency, while resource-efficient Small Language Models (SLMs) typically lack the necessary reasoning capacity. Existing collaborative approaches, such as cascading or routing, operate at a coarse granularity by offloading entire queries to LLMs, resulting in significant computational waste when the SLM is capable of handling the majority of reasoning steps. To address this, we propose RelayLLM, a novel framework for efficient reasoning via token-level collaborative decoding. Unlike routers, RelayLLM empowers the SLM to act as an active controller that dynamically invokes the LLM only for critical tokens via a special command, effectively \"relaying\" the generation process. We introduce a two-stage training framework, including warm-up and Group Relative Policy Optimization (GRPO) to teach the model to balance independence with strategic help-seeking. Empirical results across six benchmarks demonstrate that RelayLLM achieves an average accuracy of 49.52%, effectively bridging the performance gap between the two models. Notably, this is achieved by invoking the LLM for only 1.07% of the total generated tokens, offering a 98.2% cost reduction compared to performance-matched random routers.",
+      "upvotes": 15,
+      "discussionId": "69606c325b7998385e639487",
+      "githubRepo": "https://github.com/Chengsong-Huang/RelayLLM",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "RelayLLM enables efficient collaborative reasoning between small and large language models through token-level dynamic invocation, achieving high accuracy with minimal computational overhead.",
+      "ai_keywords": [
+        "Large Language Models",
+        "Small Language Models",
+        "collaborative decoding",
+        "token-level collaboration",
+        "Group Relative Policy Optimization",
+        "policy optimization",
+        "dynamic invocation",
+        "computational efficiency",
+        "reasoning capacity"
+      ],
+      "githubStars": 2
+    },
+    "publishedAt": "2026-01-08T12:56:16.000Z",
+    "title": "RelayLLM: Efficient Reasoning via Collaborative Decoding",
+    "summary": "Large Language Models (LLMs) for complex reasoning is often hindered by high computational costs and latency, while resource-efficient Small Language Models (SLMs) typically lack the necessary reasoning capacity. Existing collaborative approaches, such as cascading or routing, operate at a coarse granularity by offloading entire queries to LLMs, resulting in significant computational waste when the SLM is capable of handling the majority of reasoning steps. To address this, we propose RelayLLM, a novel framework for efficient reasoning via token-level collaborative decoding. Unlike routers, RelayLLM empowers the SLM to act as an active controller that dynamically invokes the LLM only for critical tokens via a special command, effectively \"relaying\" the generation process. We introduce a two-stage training framework, including warm-up and Group Relative Policy Optimization (GRPO) to teach the model to balance independence with strategic help-seeking. Empirical results across six benchmarks demonstrate that RelayLLM achieves an average accuracy of 49.52%, effectively bridging the performance gap between the two models. Notably, this is achieved by invoking the LLM for only 1.07% of the total generated tokens, offering a 98.2% cost reduction compared to performance-matched random routers.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05167.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62ea79dd01ed9b0e8f61ccd3",
+      "avatarUrl": "/avatars/70af83e0e267be39fcd5f23b85e2dafa.svg",
+      "fullname": "Chengsong Huang",
+      "name": "ChengsongHuang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2601.05249",
+      "authors": [
+        {
+          "_id": "6960a8ce5b7998385e639615",
+          "user": {
+            "_id": "676ce504027822ead2b5f193",
+            "avatarUrl": "/avatars/91de797fc4a971a481b2dce82b579f66.svg",
+            "isPro": false,
+            "fullname": "YuanKangNeilLee",
+            "user": "NeilLeeNTU",
+            "type": "user"
+          },
+          "name": "Yuan-Kang Lee",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:24:03.428Z",
+          "hidden": false
+        },
+        {
+          "_id": "6960a8ce5b7998385e639616",
+          "name": "Kuan-Lin Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6960a8ce5b7998385e639617",
+          "name": "Chia-Che Chang",
+          "hidden": false
+        },
+        {
+          "_id": "6960a8ce5b7998385e639618",
+          "name": "Yu-Lun Liu",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6459d5da3b6fafd9664807ab/-GwLalmxp_ctrLFDuUq73.webp"
+      ],
+      "publishedAt": "2026-01-08T18:59:55.000Z",
+      "submittedOnDailyAt": "2026-01-09T04:35:57.571Z",
+      "title": "RL-AWB: Deep Reinforcement Learning for Auto White Balance Correction in Low-Light Night-time Scenes",
+      "submittedOnDailyBy": {
+        "_id": "6459d5da3b6fafd9664807ab",
+        "avatarUrl": "/avatars/57430d1bbde3a2fe5586e5fbcafb0e74.svg",
+        "isPro": false,
+        "fullname": "Yu-Lun Liu",
+        "user": "yulunliu",
+        "type": "user"
+      },
+      "summary": "Nighttime color constancy remains a challenging problem in computational photography due to low-light noise and complex illumination conditions. We present RL-AWB, a novel framework combining statistical methods with deep reinforcement learning for nighttime white balance. Our method begins with a statistical algorithm tailored for nighttime scenes, integrating salient gray pixel detection with novel illumination estimation. Building on this foundation, we develop the first deep reinforcement learning approach for color constancy that leverages the statistical algorithm as its core, mimicking professional AWB tuning experts by dynamically optimizing parameters for each image. To facilitate cross-sensor evaluation, we introduce the first multi-sensor nighttime dataset. Experiment results demonstrate that our method achieves superior generalization capability across low-light and well-illuminated images. Project page: https://ntuneillee.github.io/research/rl-awb/",
+      "upvotes": 14,
+      "discussionId": "6960a8ce5b7998385e639619",
+      "projectPage": "https://ntuneillee.github.io/research/rl-awb/",
+      "ai_summary": "A novel nighttime color constancy framework combines statistical methods with deep reinforcement learning to improve white balance adjustment under low-light conditions.",
+      "ai_keywords": [
+        "deep reinforcement learning",
+        "color constancy",
+        "white balance",
+        "statistical algorithms",
+        "illumination estimation",
+        "multi-sensor dataset"
+      ]
+    },
+    "publishedAt": "2026-01-08T13:59:55.000Z",
+    "title": "RL-AWB: Deep Reinforcement Learning for Auto White Balance Correction in Low-Light Night-time Scenes",
+    "summary": "Nighttime color constancy remains a challenging problem in computational photography due to low-light noise and complex illumination conditions. We present RL-AWB, a novel framework combining statistical methods with deep reinforcement learning for nighttime white balance. Our method begins with a statistical algorithm tailored for nighttime scenes, integrating salient gray pixel detection with novel illumination estimation. Building on this foundation, we develop the first deep reinforcement learning approach for color constancy that leverages the statistical algorithm as its core, mimicking professional AWB tuning experts by dynamically optimizing parameters for each image. To facilitate cross-sensor evaluation, we introduce the first multi-sensor nighttime dataset. Experiment results demonstrate that our method achieves superior generalization capability across low-light and well-illuminated images. Project page: https://ntuneillee.github.io/research/rl-awb/",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6459d5da3b6fafd9664807ab/-GwLalmxp_ctrLFDuUq73.webp"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05249.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6459d5da3b6fafd9664807ab",
+      "avatarUrl": "/avatars/57430d1bbde3a2fe5586e5fbcafb0e74.svg",
+      "fullname": "Yu-Lun Liu",
+      "name": "yulunliu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.04767",
+      "authors": [
+        {
+          "_id": "69609fe35b7998385e6395ed",
+          "name": "Zefang Zong",
+          "hidden": false
+        },
+        {
+          "_id": "69609fe35b7998385e6395ee",
+          "name": "Dingwei Chen",
+          "hidden": false
+        },
+        {
+          "_id": "69609fe35b7998385e6395ef",
+          "name": "Yang Li",
+          "hidden": false
+        },
+        {
+          "_id": "69609fe35b7998385e6395f0",
+          "name": "Qi Yi",
+          "hidden": false
+        },
+        {
+          "_id": "69609fe35b7998385e6395f1",
+          "name": "Bo Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "69609fe35b7998385e6395f2",
+          "name": "Chengming Li",
+          "hidden": false
+        },
+        {
+          "_id": "69609fe35b7998385e6395f3",
+          "name": "Bo Qian",
+          "hidden": false
+        },
+        {
+          "_id": "69609fe35b7998385e6395f4",
+          "name": "Peng Chen",
+          "hidden": false
+        },
+        {
+          "_id": "69609fe35b7998385e6395f5",
+          "name": "Jie Jiang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T09:35:49.000Z",
+      "submittedOnDailyAt": "2026-01-09T04:20:12.513Z",
+      "title": "AT^2PO: Agentic Turn-based Policy Optimization via Tree Search",
+      "submittedOnDailyBy": {
+        "_id": "64feba7efa64465422ce3003",
+        "avatarUrl": "/avatars/abdc7a3748f6a4e15ebc6aa8d616c87d.svg",
+        "isPro": false,
+        "fullname": "zongzefang",
+        "user": "zzfoutofspace",
+        "type": "user"
+      },
+      "summary": "LLM agents have emerged as powerful systems for tackling multi-turn tasks by interleaving internal reasoning and external tool interactions. Agentic Reinforcement Learning has recently drawn significant research attention as a critical post-training paradigm to further refine these capabilities. In this paper, we present AT^2PO (Agentic Turn-based Policy Optimization via Tree Search), a unified framework for multi-turn agentic RL that addresses three core challenges: limited exploration diversity, sparse credit assignment, and misaligned policy optimization. AT^2PO introduces a turn-level tree structure that jointly enables Entropy-Guided Tree Expansion for strategic exploration and Turn-wise Credit Assignment for fine-grained reward propagation from sparse outcomes. Complementing this, we propose Agentic Turn-based Policy Optimization, a turn-level learning objective that aligns policy updates with the natural decision granularity of agentic interactions. ATPO is orthogonal to tree search and can be readily integrated into any multi-turn RL pipeline. Experiments across seven benchmarks demonstrate consistent improvements over the state-of-the-art baseline by up to 1.84 percentage points in average, with ablation studies validating the effectiveness of each component. Our code is available at https://github.com/zzfoutofspace/ATPO.",
+      "upvotes": 14,
+      "discussionId": "69609fe35b7998385e6395f6",
+      "githubRepo": "https://github.com/zzfoutofspace/ATPO",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "AT²PO is a unified framework for multi-turn agentic reinforcement learning that improves exploration diversity, credit assignment, and policy optimization through tree search and turn-level learning objectives.",
+      "ai_keywords": [
+        "Agentic Reinforcement Learning",
+        "tree search",
+        "Entropy-Guided Tree Expansion",
+        "Turn-wise Credit Assignment",
+        "Agentic Turn-based Policy Optimization",
+        "multi-turn tasks",
+        "policy optimization",
+        "reward propagation",
+        "turn-level learning objective"
+      ],
+      "githubStars": 0,
+      "organization": {
+        "_id": "66543b6e420092799d2f625c",
+        "name": "tencent",
+        "fullname": "Tencent",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
+      }
+    },
+    "publishedAt": "2026-01-08T04:35:49.000Z",
+    "title": "AT^2PO: Agentic Turn-based Policy Optimization via Tree Search",
+    "summary": "LLM agents have emerged as powerful systems for tackling multi-turn tasks by interleaving internal reasoning and external tool interactions. Agentic Reinforcement Learning has recently drawn significant research attention as a critical post-training paradigm to further refine these capabilities. In this paper, we present AT^2PO (Agentic Turn-based Policy Optimization via Tree Search), a unified framework for multi-turn agentic RL that addresses three core challenges: limited exploration diversity, sparse credit assignment, and misaligned policy optimization. AT^2PO introduces a turn-level tree structure that jointly enables Entropy-Guided Tree Expansion for strategic exploration and Turn-wise Credit Assignment for fine-grained reward propagation from sparse outcomes. Complementing this, we propose Agentic Turn-based Policy Optimization, a turn-level learning objective that aligns policy updates with the natural decision granularity of agentic interactions. ATPO is orthogonal to tree search and can be readily integrated into any multi-turn RL pipeline. Experiments across seven benchmarks demonstrate consistent improvements over the state-of-the-art baseline by up to 1.84 percentage points in average, with ablation studies validating the effectiveness of each component. Our code is available at https://github.com/zzfoutofspace/ATPO.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.04767.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64feba7efa64465422ce3003",
+      "avatarUrl": "/avatars/abdc7a3748f6a4e15ebc6aa8d616c87d.svg",
+      "fullname": "zongzefang",
+      "name": "zzfoutofspace",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "66543b6e420092799d2f625c",
+      "name": "tencent",
+      "fullname": "Tencent",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/Lp3m-XLpjQGwBItlvn69q.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.05175",
+      "authors": [
+        {
+          "_id": "69606c015b7998385e639468",
+          "user": {
+            "_id": "65803d64defc9c0d30db4f88",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65803d64defc9c0d30db4f88/gVxJaB8vSUFj4r0vnTVbP.jpeg",
+            "isPro": true,
+            "fullname": "Shuming Liu",
+            "user": "sming256",
+            "type": "user"
+          },
+          "name": "Shuming Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:23.773Z",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639469",
+          "name": "Mingchen Zhuge",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63946a",
+          "name": "Changsheng Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63946b",
+          "name": "Jun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63946c",
+          "name": "Lemeng Wu",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63946d",
+          "name": "Zechun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63946e",
+          "name": "Chenchen Zhu",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63946f",
+          "name": "Zhipeng Cai",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639470",
+          "name": "Chong Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639471",
+          "name": "Haozhe Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639472",
+          "name": "Ernie Chang",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639473",
+          "name": "Saksham Suri",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639474",
+          "name": "Hongyu Xu",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639475",
+          "name": "Qi Qian",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639476",
+          "name": "Wei Wen",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639477",
+          "name": "Balakrishnan Varadarajan",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639478",
+          "name": "Zhuang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e639479",
+          "name": "Hu Xu",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63947a",
+          "name": "Florian Bordes",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63947b",
+          "name": "Raghuraman Krishnamoorthi",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63947c",
+          "name": "Bernard Ghanem",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63947d",
+          "name": "Vikas Chandra",
+          "hidden": false
+        },
+        {
+          "_id": "69606c015b7998385e63947e",
+          "name": "Yunyang Xiong",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/ukFTFnGpjfjCtH8xLwHyV.png"
+      ],
+      "publishedAt": "2026-01-08T18:00:59.000Z",
+      "submittedOnDailyAt": "2026-01-09T00:16:39.681Z",
+      "title": "VideoAuto-R1: Video Auto Reasoning via Thinking Once, Answering Twice",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "Chain-of-thought (CoT) reasoning has emerged as a powerful tool for multimodal large language models on video understanding tasks. However, its necessity and advantages over direct answering remain underexplored. In this paper, we first demonstrate that for RL-trained video models, direct answering often matches or even surpasses CoT performance, despite CoT producing step-by-step analyses at a higher computational cost. Motivated by this, we propose VideoAuto-R1, a video understanding framework that adopts a reason-when-necessary strategy. During training, our approach follows a Thinking Once, Answering Twice paradigm: the model first generates an initial answer, then performs reasoning, and finally outputs a reviewed answer. Both answers are supervised via verifiable rewards. During inference, the model uses the confidence score of the initial answer to determine whether to proceed with reasoning. Across video QA and grounding benchmarks, VideoAuto-R1 achieves state-of-the-art accuracy with significantly improved efficiency, reducing the average response length by ~3.3x, e.g., from 149 to just 44 tokens. Moreover, we observe a low rate of thinking-mode activation on perception-oriented tasks, but a higher rate on reasoning-intensive tasks. This suggests that explicit language-based reasoning is generally beneficial but not always necessary.",
+      "upvotes": 9,
+      "discussionId": "69606c015b7998385e63947f",
+      "projectPage": "https://ivul-kaust.github.io/projects/videoauto-r1/",
+      "githubRepo": "https://github.com/IVUL-KAUST/VideoAuto-R1/",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "VideoAuto-R1 framework employs a reason-when-necessary strategy for video understanding, using a Thinking Once, Answering Twice training paradigm with verifiable rewards and confidence-based reasoning activation during inference.",
+      "ai_keywords": [
+        "Chain-of-thought reasoning",
+        "multimodal large language models",
+        "video understanding",
+        "RL-trained video models",
+        "VideoAuto-R1",
+        "Thinking Once Answering Twice",
+        "verifiable rewards",
+        "confidence score",
+        "perception-oriented tasks",
+        "reasoning-intensive tasks"
+      ],
+      "githubStars": 8,
+      "organization": {
+        "_id": "5e63d8713071d5be688861b8",
+        "name": "facebook",
+        "fullname": "AI at Meta",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/1592839207516-noauth.png"
+      }
+    },
+    "publishedAt": "2026-01-08T13:00:59.000Z",
+    "title": "VideoAuto-R1: Video Auto Reasoning via Thinking Once, Answering Twice",
+    "summary": "Chain-of-thought (CoT) reasoning has emerged as a powerful tool for multimodal large language models on video understanding tasks. However, its necessity and advantages over direct answering remain underexplored. In this paper, we first demonstrate that for RL-trained video models, direct answering often matches or even surpasses CoT performance, despite CoT producing step-by-step analyses at a higher computational cost. Motivated by this, we propose VideoAuto-R1, a video understanding framework that adopts a reason-when-necessary strategy. During training, our approach follows a Thinking Once, Answering Twice paradigm: the model first generates an initial answer, then performs reasoning, and finally outputs a reviewed answer. Both answers are supervised via verifiable rewards. During inference, the model uses the confidence score of the initial answer to determine whether to proceed with reasoning. Across video QA and grounding benchmarks, VideoAuto-R1 achieves state-of-the-art accuracy with significantly improved efficiency, reducing the average response length by ~3.3x, e.g., from 149 to just 44 tokens. Moreover, we observe a low rate of thinking-mode activation on perception-oriented tasks, but a higher rate on reasoning-intensive tasks. This suggests that explicit language-based reasoning is generally beneficial but not always necessary.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/ukFTFnGpjfjCtH8xLwHyV.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05175.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 205,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "5e63d8713071d5be688861b8",
+      "name": "facebook",
+      "fullname": "AI at Meta",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/1592839207516-noauth.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.05138",
+      "authors": [
+        {
+          "_id": "69606cd45b7998385e639489",
+          "user": {
+            "_id": "6528fe394513680346a500ed",
+            "avatarUrl": "/avatars/3021a3be7d900e3928cdc375e2a2bf09.svg",
+            "isPro": false,
+            "fullname": "Sixiao Zheng (SII)",
+            "user": "sxzheng",
+            "type": "user"
+          },
+          "name": "Sixiao Zheng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:19.760Z",
+          "hidden": false
+        },
+        {
+          "_id": "69606cd45b7998385e63948a",
+          "name": "Minghao Yin",
+          "hidden": false
+        },
+        {
+          "_id": "69606cd45b7998385e63948b",
+          "name": "Wenbo Hu",
+          "hidden": false
+        },
+        {
+          "_id": "69606cd45b7998385e63948c",
+          "name": "Xiaoyu Li",
+          "hidden": false
+        },
+        {
+          "_id": "69606cd45b7998385e63948d",
+          "name": "Ying Shan",
+          "hidden": false
+        },
+        {
+          "_id": "69606cd45b7998385e63948e",
+          "name": "Yanwei Fu",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/vfMPtMKg_t5C1-6WqzYur.mp4"
+      ],
+      "publishedAt": "2026-01-08T17:28:52.000Z",
+      "submittedOnDailyAt": "2026-01-09T00:21:14.757Z",
+      "title": "VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "Video world models aim to simulate dynamic, real-world environments, yet existing methods struggle to provide unified and precise control over camera and multi-object motion, as videos inherently operate dynamics in the projected 2D image plane. To bridge this gap, we introduce VerseCrafter, a 4D-aware video world model that enables explicit and coherent control over both camera and object dynamics within a unified 4D geometric world state. Our approach is centered on a novel 4D Geometric Control representation, which encodes the world state through a static background point cloud and per-object 3D Gaussian trajectories. This representation captures not only an object's path but also its probabilistic 3D occupancy over time, offering a flexible, category-agnostic alternative to rigid bounding boxes or parametric models. These 4D controls are rendered into conditioning signals for a pretrained video diffusion model, enabling the generation of high-fidelity, view-consistent videos that precisely adhere to the specified dynamics. Unfortunately, another major challenge lies in the scarcity of large-scale training data with explicit 4D annotations. We address this by developing an automatic data engine that extracts the required 4D controls from in-the-wild videos, allowing us to train our model on a massive and diverse dataset.",
+      "upvotes": 9,
+      "discussionId": "69606cd45b7998385e63948f",
+      "ai_summary": "VerseCrafter is a 4D-aware video world model that enables unified control over camera and object dynamics through 4D geometric control representation and video diffusion models.",
+      "ai_keywords": [
+        "video world models",
+        "4D geometric control",
+        "point cloud",
+        "3D Gaussian trajectories",
+        "video diffusion model",
+        "view-consistent videos",
+        "automatic data engine",
+        "in-the-wild videos"
+      ]
+    },
+    "publishedAt": "2026-01-08T12:28:52.000Z",
+    "title": "VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control",
+    "summary": "Video world models aim to simulate dynamic, real-world environments, yet existing methods struggle to provide unified and precise control over camera and multi-object motion, as videos inherently operate dynamics in the projected 2D image plane. To bridge this gap, we introduce VerseCrafter, a 4D-aware video world model that enables explicit and coherent control over both camera and object dynamics within a unified 4D geometric world state. Our approach is centered on a novel 4D Geometric Control representation, which encodes the world state through a static background point cloud and per-object 3D Gaussian trajectories. This representation captures not only an object's path but also its probabilistic 3D occupancy over time, offering a flexible, category-agnostic alternative to rigid bounding boxes or parametric models. These 4D controls are rendered into conditioning signals for a pretrained video diffusion model, enabling the generation of high-fidelity, view-consistent videos that precisely adhere to the specified dynamics. Unfortunately, another major challenge lies in the scarcity of large-scale training data with explicit 4D annotations. We address this by developing an automatic data engine that extracts the required 4D controls from in-the-wild videos, allowing us to train our model on a massive and diverse dataset.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/vfMPtMKg_t5C1-6WqzYur.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05138.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 205,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2601.03425",
+      "authors": [
+        {
+          "_id": "69606e2d5b7998385e6394a1",
+          "user": {
+            "_id": "65d76cc5b9b7b8bf88faa916",
+            "avatarUrl": "/avatars/d95232cd0c307efab6197ade1a66190b.svg",
+            "isPro": true,
+            "fullname": "Yan Wang",
+            "user": "YanAdjeNole",
+            "type": "user"
+          },
+          "name": "Yan Wang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:15.313Z",
+          "hidden": false
+        },
+        {
+          "_id": "69606e2d5b7998385e6394a2",
+          "name": "Yitao Xu",
+          "hidden": false
+        },
+        {
+          "_id": "69606e2d5b7998385e6394a3",
+          "name": "Nanhan Shen",
+          "hidden": false
+        },
+        {
+          "_id": "69606e2d5b7998385e6394a4",
+          "name": "Jinyan Su",
+          "hidden": false
+        },
+        {
+          "_id": "69606e2d5b7998385e6394a5",
+          "name": "Jimin Huang",
+          "hidden": false
+        },
+        {
+          "_id": "69606e2d5b7998385e6394a6",
+          "name": "Zining Zhu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-06T21:29:45.000Z",
+      "submittedOnDailyAt": "2026-01-09T00:30:00.167Z",
+      "title": "The Illusion of Specialization: Unveiling the Domain-Invariant \"Standing Committee\" in Mixture-of-Experts Models",
+      "submittedOnDailyBy": {
+        "_id": "65d76cc5b9b7b8bf88faa916",
+        "avatarUrl": "/avatars/d95232cd0c307efab6197ade1a66190b.svg",
+        "isPro": true,
+        "fullname": "Yan Wang",
+        "user": "YanAdjeNole",
+        "type": "user"
+      },
+      "summary": "Mixture of Experts models are widely assumed to achieve domain specialization through sparse routing. In this work, we question this assumption by introducing COMMITTEEAUDIT, a post hoc framework that analyzes routing behavior at the level of expert groups rather than individual experts. Across three representative models and the MMLU benchmark, we uncover a domain-invariant Standing Committee. This is a compact coalition of routed experts that consistently captures the majority of routing mass across domains, layers, and routing budgets, even when architectures already include shared experts. Qualitative analysis further shows that Standing Committees anchor reasoning structure and syntax, while peripheral experts handle domain-specific knowledge. These findings reveal a strong structural bias toward centralized computation, suggesting that specialization in Mixture of Experts models is far less pervasive than commonly believed. This inherent bias also indicates that current training objectives, such as load-balancing losses that enforce uniform expert utilization, may be working against the model's natural optimization path, thereby limiting training efficiency and performance.",
+      "upvotes": 7,
+      "discussionId": "69606e2d5b7998385e6394a7",
+      "ai_summary": "Research challenges the assumption of domain specialization in Mixture of Experts models by identifying a persistent central committee of experts that dominates routing behavior across different domains and architectures.",
+      "ai_keywords": [
+        "Mixture of Experts",
+        "sparse routing",
+        "COMMITTEEAUDIT",
+        "domain specialization",
+        "Standing Committee",
+        "expert groups",
+        "routing behavior",
+        "MMLU benchmark",
+        "load-balancing losses",
+        "expert utilization"
+      ],
+      "organization": {
+        "_id": "658f4413674349122c0708e9",
+        "name": "TheFinAI",
+        "fullname": "The Fin AI",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/63b58ed5889aa6707f0bb0f4/ZK5nQKw34W3-eH3p4NAYc.jpeg"
+      }
+    },
+    "publishedAt": "2026-01-06T16:29:45.000Z",
+    "title": "The Illusion of Specialization: Unveiling the Domain-Invariant \"Standing Committee\" in Mixture-of-Experts Models",
+    "summary": "Mixture of Experts models are widely assumed to achieve domain specialization through sparse routing. In this work, we question this assumption by introducing COMMITTEEAUDIT, a post hoc framework that analyzes routing behavior at the level of expert groups rather than individual experts. Across three representative models and the MMLU benchmark, we uncover a domain-invariant Standing Committee. This is a compact coalition of routed experts that consistently captures the majority of routing mass across domains, layers, and routing budgets, even when architectures already include shared experts. Qualitative analysis further shows that Standing Committees anchor reasoning structure and syntax, while peripheral experts handle domain-specific knowledge. These findings reveal a strong structural bias toward centralized computation, suggesting that specialization in Mixture of Experts models is far less pervasive than commonly believed. This inherent bias also indicates that current training objectives, such as load-balancing losses that enforce uniform expert utilization, may be working against the model's natural optimization path, thereby limiting training efficiency and performance.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.03425.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65d76cc5b9b7b8bf88faa916",
+      "avatarUrl": "/avatars/d95232cd0c307efab6197ade1a66190b.svg",
+      "fullname": "Yan Wang",
+      "name": "YanAdjeNole",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "658f4413674349122c0708e9",
+      "name": "TheFinAI",
+      "fullname": "The Fin AI",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/63b58ed5889aa6707f0bb0f4/ZK5nQKw34W3-eH3p4NAYc.jpeg"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2601.05111",
+      "authors": [
+        {
+          "_id": "69606e265b7998385e639497",
+          "user": {
+            "_id": "64e14c5b12a5504dda70e60d",
+            "avatarUrl": "/avatars/944b486bb037364ef7d9d2c826526708.svg",
+            "isPro": false,
+            "fullname": "Runyang",
+            "user": "dd101bb",
+            "type": "user"
+          },
+          "name": "Runyang You",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:17.609Z",
+          "hidden": false
+        },
+        {
+          "_id": "69606e265b7998385e639498",
+          "name": "Hongru Cai",
+          "hidden": false
+        },
+        {
+          "_id": "69606e265b7998385e639499",
+          "name": "Caiqi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69606e265b7998385e63949a",
+          "name": "Qiancheng Xu",
+          "hidden": false
+        },
+        {
+          "_id": "69606e265b7998385e63949b",
+          "name": "Meng Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69606e265b7998385e63949c",
+          "name": "Tiezheng Yu",
+          "hidden": false
+        },
+        {
+          "_id": "69606e265b7998385e63949d",
+          "name": "Yongqi Li",
+          "hidden": false
+        },
+        {
+          "_id": "69606e265b7998385e63949e",
+          "name": "Wenjie Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T16:58:10.000Z",
+      "submittedOnDailyAt": "2026-01-09T00:25:38.567Z",
+      "title": "Agent-as-a-Judge",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "LLM-as-a-Judge has revolutionized AI evaluation by leveraging large language models for scalable assessments. However, as evaluands become increasingly complex, specialized, and multi-step, the reliability of LLM-as-a-Judge has become constrained by inherent biases, shallow single-pass reasoning, and the inability to verify assessments against real-world observations. This has catalyzed the transition to Agent-as-a-Judge, where agentic judges employ planning, tool-augmented verification, multi-agent collaboration, and persistent memory to enable more robust, verifiable, and nuanced evaluations. Despite the rapid proliferation of agentic evaluation systems, the field lacks a unified framework to navigate this shifting landscape. To bridge this gap, we present the first comprehensive survey tracing this evolution. Specifically, we identify key dimensions that characterize this paradigm shift and establish a developmental taxonomy. We organize core methodologies and survey applications across general and professional domains. Furthermore, we analyze frontier challenges and identify promising research directions, ultimately providing a clear roadmap for the next generation of agentic evaluation.",
+      "upvotes": 5,
+      "discussionId": "69606e265b7998385e63949f",
+      "githubRepo": "https://github.com/ModalityDance/Awesome-Agent-as-a-Judge",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "Large language models face limitations in evaluating complex, multi-step tasks, prompting the development of agent-based evaluation systems that utilize planning, tool-augmented verification, and multi-agent collaboration for more robust assessments.",
+      "ai_keywords": [
+        "LLM-as-a-Judge",
+        "Agent-as-a-Judge",
+        "agentic judges",
+        "planning",
+        "tool-augmented verification",
+        "multi-agent collaboration",
+        "persistent memory",
+        "evaluation systems",
+        "agentic evaluation"
+      ],
+      "githubStars": 6
+    },
+    "publishedAt": "2026-01-08T11:58:10.000Z",
+    "title": "Agent-as-a-Judge",
+    "summary": "LLM-as-a-Judge has revolutionized AI evaluation by leveraging large language models for scalable assessments. However, as evaluands become increasingly complex, specialized, and multi-step, the reliability of LLM-as-a-Judge has become constrained by inherent biases, shallow single-pass reasoning, and the inability to verify assessments against real-world observations. This has catalyzed the transition to Agent-as-a-Judge, where agentic judges employ planning, tool-augmented verification, multi-agent collaboration, and persistent memory to enable more robust, verifiable, and nuanced evaluations. Despite the rapid proliferation of agentic evaluation systems, the field lacks a unified framework to navigate this shifting landscape. To bridge this gap, we present the first comprehensive survey tracing this evolution. Specifically, we identify key dimensions that characterize this paradigm shift and establish a developmental taxonomy. We organize core methodologies and survey applications across general and professional domains. Furthermore, we analyze frontier challenges and identify promising research directions, ultimately providing a clear roadmap for the next generation of agentic evaluation.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05111.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 205,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.05239",
+      "authors": [
+        {
+          "_id": "69607a775b7998385e639541",
+          "name": "Xiao Fu",
+          "hidden": false
+        },
+        {
+          "_id": "69607a775b7998385e639542",
+          "name": "Shitao Tang",
+          "hidden": false
+        },
+        {
+          "_id": "69607a775b7998385e639543",
+          "name": "Min Shi",
+          "hidden": false
+        },
+        {
+          "_id": "69607a775b7998385e639544",
+          "name": "Xian Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69607a775b7998385e639545",
+          "name": "Jinwei Gu",
+          "hidden": false
+        },
+        {
+          "_id": "69607a775b7998385e639546",
+          "name": "Ming-Yu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69607a775b7998385e639547",
+          "name": "Dahua Lin",
+          "hidden": false
+        },
+        {
+          "_id": "69607a775b7998385e639548",
+          "name": "Chen-Hsuan Lin",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/65DnWFYt3ib6IDLweuVtz.mp4"
+      ],
+      "publishedAt": "2026-01-08T18:58:32.000Z",
+      "submittedOnDailyAt": "2026-01-09T01:19:02.879Z",
+      "title": "Plenoptic Video Generation",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "Camera-controlled generative video re-rendering methods, such as ReCamMaster, have achieved remarkable progress. However, despite their success in single-view setting, these works often struggle to maintain consistency across multi-view scenarios. Ensuring spatio-temporal coherence in hallucinated regions remains challenging due to the inherent stochasticity of generative models. To address it, we introduce PlenopticDreamer, a framework that synchronizes generative hallucinations to maintain spatio-temporal memory. The core idea is to train a multi-in-single-out video-conditioned model in an autoregressive manner, aided by a camera-guided video retrieval strategy that adaptively selects salient videos from previous generations as conditional inputs. In addition, Our training incorporates progressive context-scaling to improve convergence, self-conditioning to enhance robustness against long-range visual degradation caused by error accumulation, and a long-video conditioning mechanism to support extended video generation. Extensive experiments on the Basic and Agibot benchmarks demonstrate that PlenopticDreamer achieves state-of-the-art video re-rendering, delivering superior view synchronization, high-fidelity visuals, accurate camera control, and diverse view transformations (e.g., third-person to third-person, and head-view to gripper-view in robotic manipulation). Project page: https://research.nvidia.com/labs/dir/plenopticdreamer/",
+      "upvotes": 4,
+      "discussionId": "69607a775b7998385e639549",
+      "projectPage": "https://research.nvidia.com/labs/dir/plenopticdreamer/",
+      "ai_summary": "PlenopticDreamer enables consistent multi-view video re-rendering through synchronized generative hallucinations, leveraging camera-guided retrieval and progressive training mechanisms for improved temporal coherence and visual fidelity.",
+      "ai_keywords": [
+        "generative video re-rendering",
+        "spatio-temporal coherence",
+        "autoregressive training",
+        "camera-guided video retrieval",
+        "progressive context-scaling",
+        "self-conditioning",
+        "long-video conditioning",
+        "multi-in-single-out model",
+        "video-conditioned model"
+      ],
+      "organization": {
+        "_id": "60262b67268c201cdc8b7d43",
+        "name": "nvidia",
+        "fullname": "NVIDIA",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/1613114437487-60262a8e0703121c822a80b6.png"
+      }
+    },
+    "publishedAt": "2026-01-08T13:58:32.000Z",
+    "title": "Plenoptic Video Generation",
+    "summary": "Camera-controlled generative video re-rendering methods, such as ReCamMaster, have achieved remarkable progress. However, despite their success in single-view setting, these works often struggle to maintain consistency across multi-view scenarios. Ensuring spatio-temporal coherence in hallucinated regions remains challenging due to the inherent stochasticity of generative models. To address it, we introduce PlenopticDreamer, a framework that synchronizes generative hallucinations to maintain spatio-temporal memory. The core idea is to train a multi-in-single-out video-conditioned model in an autoregressive manner, aided by a camera-guided video retrieval strategy that adaptively selects salient videos from previous generations as conditional inputs. In addition, Our training incorporates progressive context-scaling to improve convergence, self-conditioning to enhance robustness against long-range visual degradation caused by error accumulation, and a long-video conditioning mechanism to support extended video generation. Extensive experiments on the Basic and Agibot benchmarks demonstrate that PlenopticDreamer achieves state-of-the-art video re-rendering, delivering superior view synchronization, high-fidelity visuals, accurate camera control, and diverse view transformations (e.g., third-person to third-person, and head-view to gripper-view in robotic manipulation). Project page: https://research.nvidia.com/labs/dir/plenopticdreamer/",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/65DnWFYt3ib6IDLweuVtz.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05239.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 205,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "60262b67268c201cdc8b7d43",
+      "name": "nvidia",
+      "fullname": "NVIDIA",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/1613114437487-60262a8e0703121c822a80b6.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.05163",
+      "authors": [
+        {
+          "_id": "696071945b7998385e6394b7",
+          "name": "Qintong Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394b8",
+          "name": "Xinjie Lv",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394b9",
+          "user": {
+            "_id": "644a4fbc2166258fccc664bc",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/8k3b44MbhQiWuo6i8BnYl.jpeg",
+            "isPro": false,
+            "fullname": "Jialong Wu",
+            "user": "callanwu",
+            "type": "user"
+          },
+          "name": "Jialong Wu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:13.405Z",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394ba",
+          "name": "Baixuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394bb",
+          "name": "Zhengwei Tao",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394bc",
+          "name": "Guochen Yan",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394bd",
+          "name": "Huanyao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394be",
+          "name": "Bin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394bf",
+          "name": "Jiahao Xu",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394c0",
+          "name": "Haitao Mi",
+          "hidden": false
+        },
+        {
+          "_id": "696071945b7998385e6394c1",
+          "name": "Wentao Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T17:54:32.000Z",
+      "submittedOnDailyAt": "2026-01-09T00:41:06.549Z",
+      "title": "DocDancer: Towards Agentic Document-Grounded Information Seeking",
+      "submittedOnDailyBy": {
+        "_id": "644a4fbc2166258fccc664bc",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/8k3b44MbhQiWuo6i8BnYl.jpeg",
+        "isPro": false,
+        "fullname": "Jialong Wu",
+        "user": "callanwu",
+        "type": "user"
+      },
+      "summary": "Document Question Answering (DocQA) focuses on answering questions grounded in given documents, yet existing DocQA agents lack effective tool utilization and largely rely on closed-source models. In this work, we introduce DocDancer, an end-to-end trained open-source Doc agent. We formulate DocQA as an information-seeking problem and propose a tool-driven agent framework that explicitly models document exploration and comprehension. To enable end-to-end training of such agents, we introduce an Exploration-then-Synthesis data synthesis pipeline that addresses the scarcity of high-quality training data for DocQA. Training on the synthesized data, the trained models on two long-context document understanding benchmarks, MMLongBench-Doc and DocBench, show their effectiveness. Further analysis provides valuable insights for the agentic tool design and synthetic data.",
+      "upvotes": 3,
+      "discussionId": "696071945b7998385e6394c2",
+      "ai_summary": "DocDancer is an end-to-end trained open-source document question answering agent that formulates the task as an information-seeking problem and uses a tool-driven framework with exploration and synthesis for training.",
+      "ai_keywords": [
+        "document question answering",
+        "information-seeking problem",
+        "tool-driven agent framework",
+        "document exploration",
+        "document comprehension",
+        "end-to-end training",
+        "data synthesis pipeline",
+        "long-context document understanding",
+        "MMLongBench-Doc",
+        "DocBench"
+      ],
+      "organization": {
+        "_id": "61dcd8e344f59573371b5cb6",
+        "name": "PekingUniversity",
+        "fullname": "Peking University",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/noauth/vavgrBsnkSejriUF4lXDE.png"
+      }
+    },
+    "publishedAt": "2026-01-08T12:54:32.000Z",
+    "title": "DocDancer: Towards Agentic Document-Grounded Information Seeking",
+    "summary": "Document Question Answering (DocQA) focuses on answering questions grounded in given documents, yet existing DocQA agents lack effective tool utilization and largely rely on closed-source models. In this work, we introduce DocDancer, an end-to-end trained open-source Doc agent. We formulate DocQA as an information-seeking problem and propose a tool-driven agent framework that explicitly models document exploration and comprehension. To enable end-to-end training of such agents, we introduce an Exploration-then-Synthesis data synthesis pipeline that addresses the scarcity of high-quality training data for DocQA. Training on the synthesized data, the trained models on two long-context document understanding benchmarks, MMLongBench-Doc and DocBench, show their effectiveness. Further analysis provides valuable insights for the agentic tool design and synthetic data.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05163.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "644a4fbc2166258fccc664bc",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/8k3b44MbhQiWuo6i8BnYl.jpeg",
+      "fullname": "Jialong Wu",
+      "name": "callanwu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 32,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "61dcd8e344f59573371b5cb6",
+      "name": "PekingUniversity",
+      "fullname": "Peking University",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/noauth/vavgrBsnkSejriUF4lXDE.png"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2601.05124",
+      "authors": [
+        {
+          "_id": "69608d7e5b7998385e639573",
+          "user": {
+            "_id": "64623cc1514ee1645bcfaecd",
+            "avatarUrl": "/avatars/f315de774325064bc78677f6d134484f.svg",
+            "isPro": false,
+            "fullname": "hrz",
+            "user": "hrz2000",
+            "type": "user"
+          },
+          "name": "Runze He",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:34:51.987Z",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e639574",
+          "name": "Yiji Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e639575",
+          "name": "Tiankai Hang",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e639576",
+          "name": "Zhimin Li",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e639577",
+          "name": "Yu Xu",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e639578",
+          "name": "Zijin Yin",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e639579",
+          "name": "Shiyi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e63957a",
+          "name": "Wenxun Dai",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e63957b",
+          "name": "Penghui Du",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e63957c",
+          "name": "Ao Ma",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e63957d",
+          "name": "Chunyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e63957e",
+          "name": "Qinglin Lu",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e63957f",
+          "name": "Jizhong Han",
+          "hidden": false
+        },
+        {
+          "_id": "69608d7e5b7998385e639580",
+          "name": "Jiao Dai",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T17:13:00.000Z",
+      "submittedOnDailyAt": "2026-01-09T03:17:37.094Z",
+      "title": "Re-Align: Structured Reasoning-guided Alignment for In-Context Image Generation and Editing",
+      "submittedOnDailyBy": {
+        "_id": "6428fd124fe87caede856311",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/5OrNPwZkxu3Dm1IInCxML.jpeg",
+        "isPro": false,
+        "fullname": "Xianghao Kong",
+        "user": "refkxh",
+        "type": "user"
+      },
+      "summary": "In-context image generation and editing (ICGE) enables users to specify visual concepts through interleaved image-text prompts, demanding precise understanding and faithful execution of user intent. Although recent unified multimodal models exhibit promising understanding capabilities, these strengths often fail to transfer effectively to image generation. We introduce Re-Align, a unified framework that bridges the gap between understanding and generation through structured reasoning-guided alignment. At its core lies the In-Context Chain-of-Thought (IC-CoT), a structured reasoning paradigm that decouples semantic guidance and reference association, providing clear textual target and mitigating confusion among reference images. Furthermore, Re-Align introduces an effective RL training scheme that leverages a surrogate reward to measure the alignment between structured reasoning text and the generated image, thereby improving the model's overall performance on ICGE tasks. Extensive experiments verify that Re-Align outperforms competitive methods of comparable model scale and resources on both in-context image generation and editing tasks.",
+      "upvotes": 2,
+      "discussionId": "69608d7f5b7998385e639581",
+      "projectPage": "https://hrz2000.github.io/realign/",
+      "githubRepo": "https://github.com/hrz2000/realign",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "Re-Align addresses the gap between understanding and generation in in-context image generation and editing through structured reasoning-guided alignment and reinforcement learning training.",
+      "ai_keywords": [
+        "In-Context Chain-of-Thought",
+        "structured reasoning",
+        "reinforcement learning",
+        "surrogate reward",
+        "multimodal models",
+        "image generation",
+        "image editing"
+      ],
+      "githubStars": 0
+    },
+    "publishedAt": "2026-01-08T12:13:00.000Z",
+    "title": "Re-Align: Structured Reasoning-guided Alignment for In-Context Image Generation and Editing",
+    "summary": "In-context image generation and editing (ICGE) enables users to specify visual concepts through interleaved image-text prompts, demanding precise understanding and faithful execution of user intent. Although recent unified multimodal models exhibit promising understanding capabilities, these strengths often fail to transfer effectively to image generation. We introduce Re-Align, a unified framework that bridges the gap between understanding and generation through structured reasoning-guided alignment. At its core lies the In-Context Chain-of-Thought (IC-CoT), a structured reasoning paradigm that decouples semantic guidance and reference association, providing clear textual target and mitigating confusion among reference images. Furthermore, Re-Align introduces an effective RL training scheme that leverages a surrogate reward to measure the alignment between structured reasoning text and the generated image, thereby improving the model's overall performance on ICGE tasks. Extensive experiments verify that Re-Align outperforms competitive methods of comparable model scale and resources on both in-context image generation and editing tasks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05124.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6428fd124fe87caede856311",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/5OrNPwZkxu3Dm1IInCxML.jpeg",
+      "fullname": "Xianghao Kong",
+      "name": "refkxh",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.03559",
+      "authors": [
+        {
+          "_id": "695f278c5fa3847525c41d76",
+          "name": "Shidong Cao",
+          "hidden": false
+        },
+        {
+          "_id": "695f278c5fa3847525c41d77",
+          "name": "Hongzhan Lin",
+          "hidden": false
+        },
+        {
+          "_id": "695f278c5fa3847525c41d78",
+          "name": "Yuxuan Gu",
+          "hidden": false
+        },
+        {
+          "_id": "695f278c5fa3847525c41d79",
+          "name": "Ziyang Luo",
+          "hidden": false
+        },
+        {
+          "_id": "695f278c5fa3847525c41d7a",
+          "name": "Jing Ma",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-07T03:58:42.000Z",
+      "submittedOnDailyAt": "2026-01-09T00:10:48.964Z",
+      "title": "DiffCoT: Diffusion-styled Chain-of-Thought Reasoning in LLMs",
+      "submittedOnDailyBy": {
+        "_id": "6499466c7d1edf7cb612a9a6",
+        "avatarUrl": "/avatars/c2e18594aa0879db8226f2a04496fb0b.svg",
+        "isPro": false,
+        "fullname": "Hongzhan Lin",
+        "user": "danielhzlin",
+        "type": "user"
+      },
+      "summary": "Chain-of-Thought (CoT) reasoning improves multi-step mathematical problem solving in large language models but remains vulnerable to exposure bias and error accumulation, as early mistakes propagate irreversibly through autoregressive decoding. In this work, we propose DiffCoT, a diffusion-styled CoT framework that reformulates CoT reasoning as an iterative denoising process. DiffCoT integrates diffusion principles at the reasoning-step level via a sliding-window mechanism, enabling unified generation and retrospective correction of intermediate steps while preserving token-level autoregression. To maintain causal consistency, we further introduce a causal diffusion noise schedule that respects the temporal structure of reasoning chains. Extensive experiments on three multi-step CoT reasoning benchmarks across diverse model backbones demonstrate that DiffCoT consistently outperforms existing CoT preference optimization methods, yielding improved robustness and error-correction capability in CoT reasoning.",
+      "upvotes": 2,
+      "discussionId": "695f278c5fa3847525c41d7b",
+      "ai_summary": "DiffCoT reformulates chain-of-thought reasoning as an iterative denoising process using diffusion principles, enabling unified generation and correction of intermediate steps while maintaining causal consistency.",
+      "ai_keywords": [
+        "chain-of-thought",
+        "diffusion models",
+        "denoising process",
+        "autoregressive decoding",
+        "exposure bias",
+        "error accumulation",
+        "sliding-window mechanism",
+        "causal consistency",
+        "causal diffusion noise schedule",
+        "reasoning chains",
+        "CoT preference optimization"
+      ]
+    },
+    "publishedAt": "2026-01-06T22:58:42.000Z",
+    "title": "DiffCoT: Diffusion-styled Chain-of-Thought Reasoning in LLMs",
+    "summary": "Chain-of-Thought (CoT) reasoning improves multi-step mathematical problem solving in large language models but remains vulnerable to exposure bias and error accumulation, as early mistakes propagate irreversibly through autoregressive decoding. In this work, we propose DiffCoT, a diffusion-styled CoT framework that reformulates CoT reasoning as an iterative denoising process. DiffCoT integrates diffusion principles at the reasoning-step level via a sliding-window mechanism, enabling unified generation and retrospective correction of intermediate steps while preserving token-level autoregression. To maintain causal consistency, we further introduce a causal diffusion noise schedule that respects the temporal structure of reasoning chains. Extensive experiments on three multi-step CoT reasoning benchmarks across diverse model backbones demonstrate that DiffCoT consistently outperforms existing CoT preference optimization methods, yielding improved robustness and error-correction capability in CoT reasoning.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.03559.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6499466c7d1edf7cb612a9a6",
+      "avatarUrl": "/avatars/c2e18594aa0879db8226f2a04496fb0b.svg",
+      "fullname": "Hongzhan Lin",
+      "name": "danielhzlin",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.03362",
+      "authors": [
+        {
+          "_id": "695fa6e22450f142afb3c507",
+          "user": {
+            "_id": "657dc1576dc01435cd9029d8",
+            "avatarUrl": "/avatars/3bba11ac7659fce61aeaedf40e2057a8.svg",
+            "isPro": false,
+            "fullname": "Xiang Zhang",
+            "user": "XiangZ",
+            "type": "user"
+          },
+          "name": "Xiang Zhang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:36:00.258Z",
+          "hidden": false
+        },
+        {
+          "_id": "695fa6e22450f142afb3c508",
+          "name": "Yang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "695fa6e22450f142afb3c509",
+          "name": "Lukas Mehl",
+          "hidden": false
+        },
+        {
+          "_id": "695fa6e22450f142afb3c50a",
+          "name": "Markus Gross",
+          "hidden": false
+        },
+        {
+          "_id": "695fa6e22450f142afb3c50b",
+          "name": "Christopher Schroers",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-06T19:02:34.000Z",
+      "submittedOnDailyAt": "2026-01-09T03:38:18.551Z",
+      "title": "Guardians of the Hair: Rescuing Soft Boundaries in Depth, Stereo, and Novel Views",
+      "submittedOnDailyBy": {
+        "_id": "657dc1576dc01435cd9029d8",
+        "avatarUrl": "/avatars/3bba11ac7659fce61aeaedf40e2057a8.svg",
+        "isPro": false,
+        "fullname": "Xiang Zhang",
+        "user": "XiangZ",
+        "type": "user"
+      },
+      "summary": "Soft boundaries, like thin hairs, are commonly observed in natural and computer-generated imagery, but they remain challenging for 3D vision due to the ambiguous mixing of foreground and background cues. This paper introduces Guardians of the Hair (HairGuard), a framework designed to recover fine-grained soft boundary details in 3D vision tasks. Specifically, we first propose a novel data curation pipeline that leverages image matting datasets for training and design a depth fixer network to automatically identify soft boundary regions. With a gated residual module, the depth fixer refines depth precisely around soft boundaries while maintaining global depth quality, allowing plug-and-play integration with state-of-the-art depth models. For view synthesis, we perform depth-based forward warping to retain high-fidelity textures, followed by a generative scene painter that fills disoccluded regions and eliminates redundant background artifacts within soft boundaries. Finally, a color fuser adaptively combines warped and inpainted results to produce novel views with consistent geometry and fine-grained details. Extensive experiments demonstrate that HairGuard achieves state-of-the-art performance across monocular depth estimation, stereo image/video conversion, and novel view synthesis, with significant improvements in soft boundary regions.",
+      "upvotes": 2,
+      "discussionId": "695fa6e22450f142afb3c50c",
+      "ai_summary": "HairGuard is a framework for recovering fine-grained soft boundary details in 3D vision tasks through specialized depth refinement and view synthesis techniques.",
+      "ai_keywords": [
+        "depth fixer network",
+        "gated residual module",
+        "depth-based forward warping",
+        "generative scene painter",
+        "color fuser",
+        "monocular depth estimation",
+        "stereo image conversion",
+        "novel view synthesis"
+      ],
+      "organization": {
+        "_id": "63263d7db8e57aab1a778773",
+        "name": "ethz",
+        "fullname": "ETH Zurich",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/xMcrQI8Yx8o697uhiCcoA.jpeg"
+      }
+    },
+    "publishedAt": "2026-01-06T14:02:34.000Z",
+    "title": "Guardians of the Hair: Rescuing Soft Boundaries in Depth, Stereo, and Novel Views",
+    "summary": "Soft boundaries, like thin hairs, are commonly observed in natural and computer-generated imagery, but they remain challenging for 3D vision due to the ambiguous mixing of foreground and background cues. This paper introduces Guardians of the Hair (HairGuard), a framework designed to recover fine-grained soft boundary details in 3D vision tasks. Specifically, we first propose a novel data curation pipeline that leverages image matting datasets for training and design a depth fixer network to automatically identify soft boundary regions. With a gated residual module, the depth fixer refines depth precisely around soft boundaries while maintaining global depth quality, allowing plug-and-play integration with state-of-the-art depth models. For view synthesis, we perform depth-based forward warping to retain high-fidelity textures, followed by a generative scene painter that fills disoccluded regions and eliminates redundant background artifacts within soft boundaries. Finally, a color fuser adaptively combines warped and inpainted results to produce novel views with consistent geometry and fine-grained details. Extensive experiments demonstrate that HairGuard achieves state-of-the-art performance across monocular depth estimation, stereo image/video conversion, and novel view synthesis, with significant improvements in soft boundary regions.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.03362.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "657dc1576dc01435cd9029d8",
+      "avatarUrl": "/avatars/3bba11ac7659fce61aeaedf40e2057a8.svg",
+      "fullname": "Xiang Zhang",
+      "name": "XiangZ",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "63263d7db8e57aab1a778773",
+      "name": "ethz",
+      "fullname": "ETH Zurich",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/5dd96eb166059660ed1ee413/xMcrQI8Yx8o697uhiCcoA.jpeg"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2512.23628",
+      "authors": [
+        {
+          "_id": "6960865d5b7998385e639560",
+          "name": "Shu Pu",
+          "hidden": false
+        },
+        {
+          "_id": "6960865d5b7998385e639561",
+          "name": "Boya Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "6960865d5b7998385e639562",
+          "name": "Kaichen Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "6960865d5b7998385e639563",
+          "name": "Mengyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "6960865d5b7998385e639564",
+          "name": "Zhuang Liu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-12-29T17:39:21.000Z",
+      "submittedOnDailyAt": "2026-01-09T02:11:30.755Z",
+      "title": "Memorization in 3D Shape Generation: An Empirical Study",
+      "submittedOnDailyBy": {
+        "_id": "663ba53b96c98cfb8ded1c4f",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/6-ipDyZbMYj_lfVurLjvh.png",
+        "isPro": true,
+        "fullname": "Shu Pu",
+        "user": "pudashi",
+        "type": "user"
+      },
+      "summary": "Generative models are increasingly used in 3D vision to synthesize novel shapes, yet it remains unclear whether their generation relies on memorizing training shapes. Understanding their memorization could help prevent training data leakage and improve the diversity of generated results. In this paper, we design an evaluation framework to quantify memorization in 3D generative models and study the influence of different data and modeling designs on memorization. We first apply our framework to quantify memorization in existing methods. Next, through controlled experiments with a latent vector-set (Vecset) diffusion model, we find that, on the data side, memorization depends on data modality, and increases with data diversity and finer-grained conditioning; on the modeling side, it peaks at a moderate guidance scale and can be mitigated by longer Vecsets and simple rotation augmentation. Together, our framework and analysis provide an empirical understanding of memorization in 3D generative models and suggest simple yet effective strategies to reduce it without degrading generation quality. Our code is available at https://github.com/zlab-princeton/3d_mem.",
+      "upvotes": 2,
+      "discussionId": "6960865e5b7998385e639565",
+      "ai_summary": "Researchers develop a framework to measure memorization in 3D generative models and identify factors affecting it, finding that data modality and model design parameters influence how much training data is remembered during generation.",
+      "ai_keywords": [
+        "generative models",
+        "3D vision",
+        "memorization",
+        "latent vector-set",
+        "diffusion model",
+        "data modality",
+        "data diversity",
+        "conditioning",
+        "guidance scale",
+        "Vecset",
+        "rotation augmentation"
+      ],
+      "organization": {
+        "_id": "6735d51c08a190b1caea1f29",
+        "name": "PrincetonUniversity",
+        "fullname": "Princeton University",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/6735d43222d14a01ae63fb6d/N7pHYiJcM_zqOnp5MWfo3.png"
+      }
+    },
+    "publishedAt": "2025-12-29T12:39:21.000Z",
+    "title": "Memorization in 3D Shape Generation: An Empirical Study",
+    "summary": "Generative models are increasingly used in 3D vision to synthesize novel shapes, yet it remains unclear whether their generation relies on memorizing training shapes. Understanding their memorization could help prevent training data leakage and improve the diversity of generated results. In this paper, we design an evaluation framework to quantify memorization in 3D generative models and study the influence of different data and modeling designs on memorization. We first apply our framework to quantify memorization in existing methods. Next, through controlled experiments with a latent vector-set (Vecset) diffusion model, we find that, on the data side, memorization depends on data modality, and increases with data diversity and finer-grained conditioning; on the modeling side, it peaks at a moderate guidance scale and can be mitigated by longer Vecsets and simple rotation augmentation. Together, our framework and analysis provide an empirical understanding of memorization in 3D generative models and suggest simple yet effective strategies to reduce it without degrading generation quality. Our code is available at https://github.com/zlab-princeton/3d_mem.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2512.23628.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "663ba53b96c98cfb8ded1c4f",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/6-ipDyZbMYj_lfVurLjvh.png",
+      "fullname": "Shu Pu",
+      "name": "pudashi",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "6735d51c08a190b1caea1f29",
+      "name": "PrincetonUniversity",
+      "fullname": "Princeton University",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/6735d43222d14a01ae63fb6d/N7pHYiJcM_zqOnp5MWfo3.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.05106",
+      "authors": [
+        {
+          "_id": "696073d35b7998385e6394c4",
+          "name": "Nuoya Xiong",
+          "hidden": false
+        },
+        {
+          "_id": "696073d35b7998385e6394c5",
+          "name": "Yuhang Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "696073d35b7998385e6394c6",
+          "name": "Hanqing Zeng",
+          "hidden": false
+        },
+        {
+          "_id": "696073d35b7998385e6394c7",
+          "name": "Zhaorun Chen",
+          "hidden": false
+        },
+        {
+          "_id": "696073d35b7998385e6394c8",
+          "name": "Furong Huang",
+          "hidden": false
+        },
+        {
+          "_id": "696073d35b7998385e6394c9",
+          "name": "Shuchao Bi",
+          "hidden": false
+        },
+        {
+          "_id": "696073d35b7998385e6394ca",
+          "name": "Lizhu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "696073d35b7998385e6394cb",
+          "name": "Zhuokai Zhao",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T16:53:16.000Z",
+      "submittedOnDailyAt": "2026-01-09T00:49:52.202Z",
+      "title": "Token-Level LLM Collaboration via FusionRoute",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user"
+      },
+      "summary": "Large language models (LLMs) exhibit strengths across diverse domains. However, achieving strong performance across these domains with a single general-purpose model typically requires scaling to sizes that are prohibitively expensive to train and deploy. On the other hand, while smaller domain-specialized models are much more efficient, they struggle to generalize beyond their training distributions. To address this dilemma, we propose FusionRoute, a robust and effective token-level multi-LLM collaboration framework in which a lightweight router simultaneously (i) selects the most suitable expert at each decoding step and (ii) contributes a complementary logit that refines or corrects the selected expert's next-token distribution via logit addition. Unlike existing token-level collaboration methods that rely solely on fixed expert outputs, we provide a theoretical analysis showing that pure expert-only routing is fundamentally limited: unless strong global coverage assumptions hold, it cannot in general realize the optimal decoding policy. By augmenting expert selection with a trainable complementary generator, FusionRoute expands the effective policy class and enables recovery of optimal value functions under mild conditions. Empirically, across both Llama-3 and Gemma-2 families and diverse benchmarks spanning mathematical reasoning, code generation, and instruction following, FusionRoute outperforms both sequence- and token-level collaboration, model merging, and direct fine-tuning, while remaining competitive with domain experts on their respective tasks.",
+      "upvotes": 1,
+      "discussionId": "696073d45b7998385e6394cc",
+      "ai_summary": "FusionRoute is a token-level multi-LLM collaboration framework that uses a lightweight router to select optimal experts and add complementary logits, outperforming existing methods in diverse tasks while maintaining efficiency.",
+      "ai_keywords": [
+        "large language models",
+        "token-level collaboration",
+        "multi-LLM collaboration",
+        "lightweight router",
+        "expert selection",
+        "logit addition",
+        "complementary generator",
+        "optimal decoding policy",
+        "model merging",
+        "direct fine-tuning"
+      ]
+    },
+    "publishedAt": "2026-01-08T11:53:16.000Z",
+    "title": "Token-Level LLM Collaboration via FusionRoute",
+    "summary": "Large language models (LLMs) exhibit strengths across diverse domains. However, achieving strong performance across these domains with a single general-purpose model typically requires scaling to sizes that are prohibitively expensive to train and deploy. On the other hand, while smaller domain-specialized models are much more efficient, they struggle to generalize beyond their training distributions. To address this dilemma, we propose FusionRoute, a robust and effective token-level multi-LLM collaboration framework in which a lightweight router simultaneously (i) selects the most suitable expert at each decoding step and (ii) contributes a complementary logit that refines or corrects the selected expert's next-token distribution via logit addition. Unlike existing token-level collaboration methods that rely solely on fixed expert outputs, we provide a theoretical analysis showing that pure expert-only routing is fundamentally limited: unless strong global coverage assumptions hold, it cannot in general realize the optimal decoding policy. By augmenting expert selection with a trainable complementary generator, FusionRoute expands the effective policy class and enables recovery of optimal value functions under mild conditions. Empirically, across both Llama-3 and Gemma-2 families and diverse benchmarks spanning mathematical reasoning, code generation, and instruction following, FusionRoute outperforms both sequence- and token-level collaboration, model merging, and direct fine-tuning, while remaining competitive with domain experts on their respective tasks.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.05106.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 205,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.04620",
+      "authors": [
+        {
+          "_id": "696099de5b7998385e6395ad",
+          "name": "Di Zhang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-08T05:49:01.000Z",
+      "submittedOnDailyAt": "2026-01-09T07:11:18.509Z",
+      "title": "AgentDevel: Reframing Self-Evolving LLM Agents as Release Engineering",
+      "submittedOnDailyBy": {
+        "_id": "64bce15bafd1e46c5504ad38",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64bce15bafd1e46c5504ad38/vkEjiu-mIagKlrXzDH75o.png",
+        "isPro": false,
+        "fullname": "Di Zhang",
+        "user": "di-zhang-fdu",
+        "type": "user"
+      },
+      "summary": "Recent progress in large language model (LLM) agents has largely focused on embedding self-improvement mechanisms inside the agent or searching over many concurrent variants. While these approaches can raise aggregate scores, they often yield unstable and hard-to-audit improvement trajectories, making it difficult to guarantee non-regression or to reason about failures across versions. We reframe agent improvement as release engineering: agents are treated as shippable artifacts, and improvement is externalized into a regression-aware release pipeline. We introduce AgentDevel, a release engineering pipeline that iteratively runs the current agent, produces implementation-blind, symptom-level quality signals from execution traces, synthesizes a single release candidate (RC) via executable diagnosis, and promotes it under flip-centered gating. AgentDevel features three core designs: (i) an implementation-blind LLM critic that characterizes failure appearances without accessing agent internals, (ii) script-based executable diagnosis that aggregates dominant symptom patterns and produces auditable engineering specifications, and (iii) flip-centered gating that prioritizes pass to fail regressions and fail to pass fixes as first-class evidence. Unlike population-based search or in-agent self-refinement, AgentDevel maintains a single canonical version line and emphasizes non-regression as a primary objective. Experiments on execution-heavy benchmarks demonstrate that AgentDevel yields stable improvements with significantly fewer regressions while producing reproducible, auditable artifacts. Overall, AgentDevel provides a practical development discipline for building, debugging, and releasing LLM agents as software development.",
+      "upvotes": 1,
+      "discussionId": "696099df5b7998385e6395ae",
+      "ai_summary": "AgentDevel presents a release engineering approach for large language model agents that treats them as shippable artifacts and emphasizes stable, auditable improvements through externalized testing and diagnostic processes.",
+      "ai_keywords": [
+        "large language model agents",
+        "release engineering",
+        "regression-aware release pipeline",
+        "implementation-blind LLM critic",
+        "executable diagnosis",
+        "flip-centered gating",
+        "canonical version line",
+        "auditability",
+        "reproducibility"
+      ]
+    },
+    "publishedAt": "2026-01-08T00:49:01.000Z",
+    "title": "AgentDevel: Reframing Self-Evolving LLM Agents as Release Engineering",
+    "summary": "Recent progress in large language model (LLM) agents has largely focused on embedding self-improvement mechanisms inside the agent or searching over many concurrent variants. While these approaches can raise aggregate scores, they often yield unstable and hard-to-audit improvement trajectories, making it difficult to guarantee non-regression or to reason about failures across versions. We reframe agent improvement as release engineering: agents are treated as shippable artifacts, and improvement is externalized into a regression-aware release pipeline. We introduce AgentDevel, a release engineering pipeline that iteratively runs the current agent, produces implementation-blind, symptom-level quality signals from execution traces, synthesizes a single release candidate (RC) via executable diagnosis, and promotes it under flip-centered gating. AgentDevel features three core designs: (i) an implementation-blind LLM critic that characterizes failure appearances without accessing agent internals, (ii) script-based executable diagnosis that aggregates dominant symptom patterns and produces auditable engineering specifications, and (iii) flip-centered gating that prioritizes pass to fail regressions and fail to pass fixes as first-class evidence. Unlike population-based search or in-agent self-refinement, AgentDevel maintains a single canonical version line and emphasizes non-regression as a primary objective. Experiments on execution-heavy benchmarks demonstrate that AgentDevel yields stable improvements with significantly fewer regressions while producing reproducible, auditable artifacts. Overall, AgentDevel provides a practical development discipline for building, debugging, and releasing LLM agents as software development.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.04620.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64bce15bafd1e46c5504ad38",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64bce15bafd1e46c5504ad38/vkEjiu-mIagKlrXzDH75o.png",
+      "fullname": "Di Zhang",
+      "name": "di-zhang-fdu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 166,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.04300",
+      "authors": [
+        {
+          "_id": "6960c0435b7998385e63967b",
+          "name": "Chenye Meng",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e63967c",
+          "name": "Zejian Li",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e63967d",
+          "name": "Zhongni Liu",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e63967e",
+          "name": "Yize Li",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e63967f",
+          "name": "Changle Xie",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e639680",
+          "name": "Kaixin Jia",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e639681",
+          "name": "Ling Yang",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e639682",
+          "name": "Huanghuang Deng",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e639683",
+          "name": "Shiying Ding",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e639684",
+          "name": "Shengyuan Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e639685",
+          "name": "Jiayi Li",
+          "hidden": false
+        },
+        {
+          "_id": "6960c0435b7998385e639686",
+          "name": "Lingyun Sun",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-07T18:11:22.000Z",
+      "submittedOnDailyAt": "2026-01-09T06:20:51.665Z",
+      "title": "Beyond Binary Preference: Aligning Diffusion Models to Fine-grained Criteria by Decoupling Attributes",
+      "submittedOnDailyBy": {
+        "_id": "66d1fb162e0412fa2aa4ffb0",
+        "avatarUrl": "/avatars/20620dd03d388f0262124f0c3523080d.svg",
+        "isPro": false,
+        "fullname": "Chenye Meng",
+        "user": "mengcy",
+        "type": "user"
+      },
+      "summary": "Post-training alignment of diffusion models relies on simplified signals, such as scalar rewards or binary preferences. This limits alignment with complex human expertise, which is hierarchical and fine-grained. To address this, we first construct a hierarchical, fine-grained evaluation criteria with domain experts, which decomposes image quality into multiple positive and negative attributes organized in a tree structure. Building on this, we propose a two-stage alignment framework. First, we inject domain knowledge to an auxiliary diffusion model via Supervised Fine-Tuning. Second, we introduce Complex Preference Optimization (CPO) that extends DPO to align the target diffusion to our non-binary, hierarchical criteria. Specifically, we reformulate the alignment problem to simultaneously maximize the probability of positive attributes while minimizing the probability of negative attributes with the auxiliary diffusion. We instantiate our approach in the domain of painting generation and conduct CPO training with an annotated dataset of painting with fine-grained attributes based on our criteria. Extensive experiments demonstrate that CPO significantly enhances generation quality and alignment with expertise, opening new avenues for fine-grained criteria alignment.",
+      "upvotes": 1,
+      "discussionId": "6960c0435b7998385e639687",
+      "ai_summary": "A two-stage framework for diffusion model alignment using hierarchical evaluation criteria and complex preference optimization demonstrates improved generation quality and expert alignment.",
+      "ai_keywords": [
+        "diffusion models",
+        "supervised fine-tuning",
+        "complex preference optimization",
+        "hierarchical evaluation criteria",
+        "domain knowledge",
+        "attribute decomposition",
+        "preference optimization",
+        "painting generation"
+      ],
+      "organization": {
+        "_id": "61bac2af530e5c78d7b99667",
+        "name": "zju",
+        "fullname": "Zhejiang University",
+        "avatar": "https://cdn-uploads.huggingface.co/production/uploads/5e1058e9fcf41d740b69966d/7G1xjlxwCdMEmKcxNR0n5.png"
+      }
+    },
+    "publishedAt": "2026-01-07T13:11:22.000Z",
+    "title": "Beyond Binary Preference: Aligning Diffusion Models to Fine-grained Criteria by Decoupling Attributes",
+    "summary": "Post-training alignment of diffusion models relies on simplified signals, such as scalar rewards or binary preferences. This limits alignment with complex human expertise, which is hierarchical and fine-grained. To address this, we first construct a hierarchical, fine-grained evaluation criteria with domain experts, which decomposes image quality into multiple positive and negative attributes organized in a tree structure. Building on this, we propose a two-stage alignment framework. First, we inject domain knowledge to an auxiliary diffusion model via Supervised Fine-Tuning. Second, we introduce Complex Preference Optimization (CPO) that extends DPO to align the target diffusion to our non-binary, hierarchical criteria. Specifically, we reformulate the alignment problem to simultaneously maximize the probability of positive attributes while minimizing the probability of negative attributes with the auxiliary diffusion. We instantiate our approach in the domain of painting generation and conduct CPO training with an annotated dataset of painting with fine-grained attributes based on our criteria. Extensive experiments demonstrate that CPO significantly enhances generation quality and alignment with expertise, opening new avenues for fine-grained criteria alignment.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.04300.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "66d1fb162e0412fa2aa4ffb0",
+      "avatarUrl": "/avatars/20620dd03d388f0262124f0c3523080d.svg",
+      "fullname": "Chenye Meng",
+      "name": "mengcy",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "61bac2af530e5c78d7b99667",
+      "name": "zju",
+      "fullname": "Zhejiang University",
+      "avatar": "https://cdn-uploads.huggingface.co/production/uploads/5e1058e9fcf41d740b69966d/7G1xjlxwCdMEmKcxNR0n5.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2601.02016",
+      "authors": [
+        {
+          "_id": "6960a4995b7998385e639609",
+          "user": {
+            "_id": "664ae70790135abe9ba76c28",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/664ae70790135abe9ba76c28/S9j90H0hjdJwf4x1kXIV0.png",
+            "isPro": false,
+            "fullname": "Matthias Bartolo",
+            "user": "mbar0075",
+            "type": "user"
+          },
+          "name": "Matthias Bartolo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:24:06.946Z",
+          "hidden": false
+        },
+        {
+          "_id": "6960a4995b7998385e63960a",
+          "name": "Dylan Seychell",
+          "hidden": false
+        },
+        {
+          "_id": "6960a4995b7998385e63960b",
+          "name": "Gabriel Hili",
+          "hidden": false
+        },
+        {
+          "_id": "6960a4995b7998385e63960c",
+          "name": "Matthew Montebello",
+          "hidden": false
+        },
+        {
+          "_id": "6960a4995b7998385e63960d",
+          "name": "Carl James Debono",
+          "hidden": false
+        },
+        {
+          "_id": "6960a4995b7998385e63960e",
+          "name": "Saviour Formosa",
+          "hidden": false
+        },
+        {
+          "_id": "6960a4995b7998385e63960f",
+          "name": "Konstantinos Makantasis",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-05T11:24:34.000Z",
+      "submittedOnDailyAt": "2026-01-09T04:20:37.776Z",
+      "title": "Enhancing Object Detection with Privileged Information: A Model-Agnostic Teacher-Student Approach",
+      "submittedOnDailyBy": {
+        "_id": "664ae70790135abe9ba76c28",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/664ae70790135abe9ba76c28/S9j90H0hjdJwf4x1kXIV0.png",
+        "isPro": false,
+        "fullname": "Matthias Bartolo",
+        "user": "mbar0075",
+        "type": "user"
+      },
+      "summary": "This paper investigates the integration of the Learning Using Privileged Information (LUPI) paradigm in object detection to exploit fine-grained, descriptive information available during training but not at inference. We introduce a general, model-agnostic methodology for injecting privileged information-such as bounding box masks, saliency maps, and depth cues-into deep learning-based object detectors through a teacher-student architecture. Experiments are conducted across five state-of-the-art object detection models and multiple public benchmarks, including UAV-based litter detection datasets and Pascal VOC 2012, to assess the impact on accuracy, generalization, and computational efficiency. Our results demonstrate that LUPI-trained students consistently outperform their baseline counterparts, achieving significant boosts in detection accuracy with no increase in inference complexity or model size. Performance improvements are especially marked for medium and large objects, while ablation studies reveal that intermediate weighting of teacher guidance optimally balances learning from privileged and standard inputs. The findings affirm that the LUPI framework provides an effective and practical strategy for advancing object detection systems in both resource-constrained and real-world settings.",
+      "upvotes": 1,
+      "discussionId": "6960a4995b7998385e639610",
+      "ai_summary": "Learning Using Privileged Information paradigm enhances object detection accuracy by integrating additional training-time information through teacher-student architectures without increasing inference complexity.",
+      "ai_keywords": [
+        "Learning Using Privileged Information",
+        "object detection",
+        "teacher-student architecture",
+        "bounding box masks",
+        "saliency maps",
+        "depth cues",
+        "model-agnostic methodology",
+        "UAV-based litter detection",
+        "Pascal VOC 2012",
+        "ablation studies",
+        "intermediate weighting"
+      ]
+    },
+    "publishedAt": "2026-01-05T06:24:34.000Z",
+    "title": "Enhancing Object Detection with Privileged Information: A Model-Agnostic Teacher-Student Approach",
+    "summary": "This paper investigates the integration of the Learning Using Privileged Information (LUPI) paradigm in object detection to exploit fine-grained, descriptive information available during training but not at inference. We introduce a general, model-agnostic methodology for injecting privileged information-such as bounding box masks, saliency maps, and depth cues-into deep learning-based object detectors through a teacher-student architecture. Experiments are conducted across five state-of-the-art object detection models and multiple public benchmarks, including UAV-based litter detection datasets and Pascal VOC 2012, to assess the impact on accuracy, generalization, and computational efficiency. Our results demonstrate that LUPI-trained students consistently outperform their baseline counterparts, achieving significant boosts in detection accuracy with no increase in inference complexity or model size. Performance improvements are especially marked for medium and large objects, while ablation studies reveal that intermediate weighting of teacher guidance optimally balances learning from privileged and standard inputs. The findings affirm that the LUPI framework provides an effective and practical strategy for advancing object detection systems in both resource-constrained and real-world settings.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.02016.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "664ae70790135abe9ba76c28",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/664ae70790135abe9ba76c28/S9j90H0hjdJwf4x1kXIV0.png",
+      "fullname": "Matthias Bartolo",
+      "name": "mbar0075",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2601.01887",
+      "authors": [
+        {
+          "_id": "696077705b7998385e63950c",
+          "name": "Jiawen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "696077705b7998385e63950d",
+          "user": {
+            "_id": "6433707307bad11484af1d2a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6433707307bad11484af1d2a/w5zB-zstJzY561n6q7m4D.jpeg",
+            "isPro": false,
+            "fullname": "Lipeng (Tony) He",
+            "user": "ttttonyhe",
+            "type": "user"
+          },
+          "name": "Lipeng He",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:35:07.378Z",
+          "hidden": false
+        },
+        {
+          "_id": "696077705b7998385e63950e",
+          "name": "Kejia Chen",
+          "hidden": false
+        },
+        {
+          "_id": "696077705b7998385e63950f",
+          "name": "Jian Lou",
+          "hidden": false
+        },
+        {
+          "_id": "696077705b7998385e639510",
+          "name": "Jian Liu",
+          "hidden": false
+        },
+        {
+          "_id": "696077705b7998385e639511",
+          "name": "Xiaohu Yang",
+          "hidden": false
+        },
+        {
+          "_id": "696077705b7998385e639512",
+          "name": "Ruoxi Jia",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-01-05T08:26:34.000Z",
+      "submittedOnDailyAt": "2026-01-09T01:06:01.987Z",
+      "title": "Safety at One Shot: Patching Fine-Tuned LLMs with A Single Instance",
+      "submittedOnDailyBy": {
+        "_id": "6433707307bad11484af1d2a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6433707307bad11484af1d2a/w5zB-zstJzY561n6q7m4D.jpeg",
+        "isPro": false,
+        "fullname": "Lipeng (Tony) He",
+        "user": "ttttonyhe",
+        "type": "user"
+      },
+      "summary": "Fine-tuning safety-aligned large language models (LLMs) can substantially compromise their safety. Previous approaches require many safety samples or calibration sets, which not only incur significant computational overhead during realignment but also lead to noticeable degradation in model utility. Contrary to this belief, we show that safety alignment can be fully recovered with only a single safety example, without sacrificing utility and at minimal cost. Remarkably, this recovery is effective regardless of the number of harmful examples used in fine-tuning or the size of the underlying model, and convergence is achieved within just a few epochs. Furthermore, we uncover the low-rank structure of the safety gradient, which explains why such efficient correction is possible. We validate our findings across five safety-aligned LLMs and multiple datasets, demonstrating the generality of our approach.",
+      "upvotes": 0,
+      "discussionId": "696077705b7998385e639513",
+      "ai_summary": "Safety alignment of large language models can be fully recovered with a single safety example, maintaining utility and achieving convergence in few epochs through identified low-rank gradient structures.",
+      "ai_keywords": [
+        "large language models",
+        "fine-tuning",
+        "safety alignment",
+        "harmful examples",
+        "low-rank structure",
+        "safety gradient",
+        "convergence"
+      ]
+    },
+    "publishedAt": "2026-01-05T03:26:34.000Z",
+    "title": "Safety at One Shot: Patching Fine-Tuned LLMs with A Single Instance",
+    "summary": "Fine-tuning safety-aligned large language models (LLMs) can substantially compromise their safety. Previous approaches require many safety samples or calibration sets, which not only incur significant computational overhead during realignment but also lead to noticeable degradation in model utility. Contrary to this belief, we show that safety alignment can be fully recovered with only a single safety example, without sacrificing utility and at minimal cost. Remarkably, this recovery is effective regardless of the number of harmful examples used in fine-tuning or the size of the underlying model, and convergence is achieved within just a few epochs. Furthermore, we uncover the low-rank structure of the safety gradient, which explains why such efficient correction is possible. We validate our findings across five safety-aligned LLMs and multiple datasets, demonstrating the generality of our approach.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2601.01887.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6433707307bad11484af1d2a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6433707307bad11484af1d2a/w5zB-zstJzY561n6q7m4D.jpeg",
+      "fullname": "Lipeng (Tony) He",
+      "name": "ttttonyhe",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 3,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2512.24160",
+      "authors": [
+        {
+          "_id": "6960b1f75b7998385e639626",
+          "user": {
+            "_id": "64c4c2291d44fc06afcf0801",
+            "avatarUrl": "/avatars/bf7d7080993cd180871eb9e3842ea8ed.svg",
+            "isPro": false,
+            "fullname": "nina ni",
+            "user": "water-fountain",
+            "type": "user"
+          },
+          "name": "TsaiChing Ni",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-01-09T08:23:58.842Z",
+          "hidden": false
+        },
+        {
+          "_id": "6960b1f75b7998385e639627",
+          "name": "ZhenQi Chen",
+          "hidden": false
+        },
+        {
+          "_id": "6960b1f75b7998385e639628",
+          "name": "YuanFu Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2025-12-30T11:45:22.000Z",
+      "submittedOnDailyAt": "2026-01-09T05:57:33.036Z",
+      "title": "Towards Open-Vocabulary Industrial Defect Understanding with a Large-Scale Multimodal Dataset",
+      "submittedOnDailyBy": {
+        "_id": "64c4c2291d44fc06afcf0801",
+        "avatarUrl": "/avatars/bf7d7080993cd180871eb9e3842ea8ed.svg",
+        "isPro": false,
+        "fullname": "nina ni",
+        "user": "water-fountain",
+        "type": "user"
+      },
+      "summary": "We present IMDD-1M, the first large-scale Industrial Multimodal Defect Dataset comprising 1,000,000 aligned image-text pairs, designed to advance multimodal learning for manufacturing and quality inspection. IMDD-1M contains high-resolution real-world defects spanning over 60 material categories and more than 400 defect types, each accompanied by expert-verified annotations and fine-grained textual descriptions detailing defect location, severity, and contextual attributes. This dataset enables a wide spectrum of applications, including classification, segmentation, retrieval, captioning, and generative modeling. Building upon IMDD-1M, we train a diffusion-based vision-language foundation model from scratch, specifically tailored for industrial scenarios. The model serves as a generalizable foundation that can be efficiently adapted to specialized domains through lightweight fine-tuning. With less than 5% of the task-specific data required by dedicated expert models, it achieves comparable performance, highlighting the potential of data-efficient foundation model adaptation for industrial inspection and generation, paving the way for scalable, domain-adaptive, and knowledge-grounded manufacturing intelligence.",
+      "upvotes": 0,
+      "discussionId": "6960b1f75b7998385e639629",
+      "ai_summary": "A large-scale industrial multimodal defect dataset with 1 million image-text pairs enables efficient foundation model adaptation for manufacturing quality inspection and generation tasks.",
+      "ai_keywords": [
+        "Industrial Multimodal Defect Dataset",
+        "vision-language foundation model",
+        "diffusion-based model",
+        "fine-grained textual descriptions",
+        "multimodal learning",
+        "domain-adaptive",
+        "data-efficient foundation model adaptation"
+      ]
+    },
+    "publishedAt": "2025-12-30T06:45:22.000Z",
+    "title": "Towards Open-Vocabulary Industrial Defect Understanding with a Large-Scale Multimodal Dataset",
+    "summary": "We present IMDD-1M, the first large-scale Industrial Multimodal Defect Dataset comprising 1,000,000 aligned image-text pairs, designed to advance multimodal learning for manufacturing and quality inspection. IMDD-1M contains high-resolution real-world defects spanning over 60 material categories and more than 400 defect types, each accompanied by expert-verified annotations and fine-grained textual descriptions detailing defect location, severity, and contextual attributes. This dataset enables a wide spectrum of applications, including classification, segmentation, retrieval, captioning, and generative modeling. Building upon IMDD-1M, we train a diffusion-based vision-language foundation model from scratch, specifically tailored for industrial scenarios. The model serves as a generalizable foundation that can be efficiently adapted to specialized domains through lightweight fine-tuning. With less than 5% of the task-specific data required by dedicated expert models, it achieves comparable performance, highlighting the potential of data-efficient foundation model adaptation for industrial inspection and generation, paving the way for scalable, domain-adaptive, and knowledge-grounded manufacturing intelligence.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2512.24160.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64c4c2291d44fc06afcf0801",
+      "avatarUrl": "/avatars/bf7d7080993cd180871eb9e3842ea8ed.svg",
+      "fullname": "nina ni",
+      "name": "water-fountain",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  }
+]
