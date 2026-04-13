@@ -1,0 +1,2478 @@
+[
+  {
+    "paper": {
+      "id": "2604.08626",
+      "authors": [
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebb3",
+          "name": "Weikai Huang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebb4",
+          "name": "Jieyu Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebb5",
+          "name": "Sijun Li",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebb6",
+          "name": "Taoyang Jia",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebb7",
+          "name": "Jiafei Duan",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebb8",
+          "name": "Yunqian Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebb9",
+          "name": "Jaemin Cho",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebba",
+          "name": "Mattew Wallingford",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebbb",
+          "name": "Rustin Soraki",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebbc",
+          "name": "Chris Dongjoo Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebbd",
+          "name": "Donovan Clay",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebbe",
+          "name": "Taira Anderson",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebbf",
+          "name": "Winson Han",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebc0",
+          "name": "Ali Farhadi",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebc1",
+          "name": "Bharath Hariharan",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebc2",
+          "name": "Zhongzheng Ren",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4e4b2b6b8dc66ffeebc3",
+          "name": "Ranjay Krishna",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/65cb0dcc4913057ac82a7a31/Onf0nOlpPSatpYaymwMfL.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/65cb0dcc4913057ac82a7a31/7SFbSWR7S6Y3s-TEjWTRk.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/65cb0dcc4913057ac82a7a31/TDAZbcNevNWEDH-RNEfwG.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/65cb0dcc4913057ac82a7a31/Y1X8199ofaaxXgB9JbRKQ.mp4"
+      ],
+      "publishedAt": "2026-04-09T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T00:47:44.980Z",
+      "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
+      "submittedOnDailyBy": {
+        "_id": "65cb0dcc4913057ac82a7a31",
+        "avatarUrl": "/avatars/034f39dc2a5af0d42015c013aad44490.svg",
+        "isPro": true,
+        "fullname": "Weikai Huang",
+        "user": "weikaih",
+        "type": "user",
+        "name": "weikaih"
+      },
+      "summary": "Understanding objects in 3D from a single image is a cornerstone of spatial intelligence. A key step toward this goal is monocular 3D object detection--recovering the extent, location, and orientation of objects from an input RGB image. To be practical in the open world, such a detector must generalize beyond closed-set categories, support diverse prompt modalities, and leverage geometric cues when available. Progress is hampered by two bottlenecks: existing methods are designed for a single prompt type and lack a mechanism to incorporate additional geometric cues, and current 3D datasets cover only narrow categories in controlled environments, limiting open-world transfer. In this work we address both gaps. First, we introduce WildDet3D, a unified geometry-aware architecture that natively accepts text, point, and box prompts and can incorporate auxiliary depth signals at inference time. Second, we present WildDet3D-Data, the largest open 3D detection dataset to date, constructed by generating candidate 3D boxes from existing 2D annotations and retaining only human-verified ones, yielding over 1M images across 13.5K categories in diverse real-world scenes. WildDet3D establishes a new state-of-the-art across multiple benchmarks and settings. In the open-world setting, it achieves 22.6/24.8 AP3D on our newly introduced WildDet3D-Bench with text and box prompts. On Omni3D, it reaches 34.2/36.4 AP3D with text and box prompts, respectively. In zero-shot evaluation, it achieves 40.3/48.9 ODS on Argoverse 2 and ScanNet. Notably, incorporating depth cues at inference time yields substantial additional gains (+20.7 AP on average across settings).",
+      "upvotes": 81,
+      "discussionId": "69dc4e4b2b6b8dc66ffeebc4",
+      "projectPage": "https://allenai.github.io/WildDet3D/",
+      "githubRepo": "https://github.com/allenai/WildDet3D",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "A unified 3D object detection framework with a large-scale dataset enables open-world detection with multiple prompt types and geometric cue integration.",
+      "ai_keywords": [
+        "monocular 3D object detection",
+        "geometry-aware architecture",
+        "text prompts",
+        "point prompts",
+        "box prompts",
+        "depth signals",
+        "open-world transfer",
+        "3D detection dataset",
+        "3D object detection",
+        "spatial intelligence"
+      ],
+      "githubStars": 229,
+      "organization": {
+        "_id": "5e70f3648ce3c604d78fe132",
+        "name": "allenai",
+        "fullname": "Ai2",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/652db071b62cf1f8463221e2/CxxwFiaomTa1MCX_B7-pT.png"
+      }
+    },
+    "publishedAt": "2026-04-08T20:00:00.000Z",
+    "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
+    "summary": "Understanding objects in 3D from a single image is a cornerstone of spatial intelligence. A key step toward this goal is monocular 3D object detection--recovering the extent, location, and orientation of objects from an input RGB image. To be practical in the open world, such a detector must generalize beyond closed-set categories, support diverse prompt modalities, and leverage geometric cues when available. Progress is hampered by two bottlenecks: existing methods are designed for a single prompt type and lack a mechanism to incorporate additional geometric cues, and current 3D datasets cover only narrow categories in controlled environments, limiting open-world transfer. In this work we address both gaps. First, we introduce WildDet3D, a unified geometry-aware architecture that natively accepts text, point, and box prompts and can incorporate auxiliary depth signals at inference time. Second, we present WildDet3D-Data, the largest open 3D detection dataset to date, constructed by generating candidate 3D boxes from existing 2D annotations and retaining only human-verified ones, yielding over 1M images across 13.5K categories in diverse real-world scenes. WildDet3D establishes a new state-of-the-art across multiple benchmarks and settings. In the open-world setting, it achieves 22.6/24.8 AP3D on our newly introduced WildDet3D-Bench with text and box prompts. On Omni3D, it reaches 34.2/36.4 AP3D with text and box prompts, respectively. In zero-shot evaluation, it achieves 40.3/48.9 ODS on Argoverse 2 and ScanNet. Notably, incorporating depth cues at inference time yields substantial additional gains (+20.7 AP on average across settings).",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/65cb0dcc4913057ac82a7a31/Onf0nOlpPSatpYaymwMfL.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/65cb0dcc4913057ac82a7a31/7SFbSWR7S6Y3s-TEjWTRk.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/65cb0dcc4913057ac82a7a31/TDAZbcNevNWEDH-RNEfwG.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/65cb0dcc4913057ac82a7a31/Y1X8199ofaaxXgB9JbRKQ.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.08626.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "65cb0dcc4913057ac82a7a31",
+      "avatarUrl": "/avatars/034f39dc2a5af0d42015c013aad44490.svg",
+      "fullname": "Weikai Huang",
+      "name": "weikaih",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "5e70f3648ce3c604d78fe132",
+      "name": "allenai",
+      "fullname": "Ai2",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/652db071b62cf1f8463221e2/CxxwFiaomTa1MCX_B7-pT.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.07413",
+      "authors": [
+        {
+          "_id": "69d85b1879548974da9464bd",
+          "user": {
+            "_id": "636865b8cca0a0a962c21f3f",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/Mja7cpws4gb2Jmdj_foPA.png",
+            "isPro": false,
+            "fullname": "Xiangru (Edward) Jian",
+            "user": "HideOnBush",
+            "type": "user",
+            "name": "HideOnBush"
+          },
+          "name": "Xiangru Jian",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-10T13:34:13.501Z",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464be",
+          "name": "Hao Xu",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464bf",
+          "user": {
+            "_id": "65164444bc0631719873af81",
+            "avatarUrl": "/avatars/dab8b90db8bbd00806268fe276e3ea36.svg",
+            "isPro": false,
+            "fullname": "Wei Pang",
+            "user": "weipang142857",
+            "type": "user",
+            "name": "weipang142857"
+          },
+          "name": "Wei Pang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-10T07:43:26.563Z",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c0",
+          "user": {
+            "_id": "68380f4f231cf484dd4e87f4",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/xp34hfiSLf-DiE1DVVhHk.png",
+            "isPro": false,
+            "fullname": "Xinjian Zhao",
+            "user": "Xinjiansz",
+            "type": "user",
+            "name": "Xinjiansz"
+          },
+          "name": "Xinjian Zhao",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:33:58.220Z",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c1",
+          "name": "Chengyu Tao",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c2",
+          "name": "Qixin Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c3",
+          "name": "Xikun Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c4",
+          "name": "Chao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c5",
+          "name": "Guanzhi Deng",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c6",
+          "name": "Alex Xue",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c7",
+          "name": "Juan Du",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c8",
+          "name": "Tianshu Yu",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464c9",
+          "name": "Garth Tarr",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464ca",
+          "name": "Linqi Song",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464cb",
+          "name": "Qiuzhuang Sun",
+          "hidden": false
+        },
+        {
+          "_id": "69d85b1879548974da9464cc",
+          "name": "Dacheng Tao",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/636865b8cca0a0a962c21f3f/c3KzlX0r8oAIH7RTFdU22.mp4"
+      ],
+      "publishedAt": "2026-04-08T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T00:33:25.125Z",
+      "title": "FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios",
+      "submittedOnDailyBy": {
+        "_id": "636865b8cca0a0a962c21f3f",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/Mja7cpws4gb2Jmdj_foPA.png",
+        "isPro": false,
+        "fullname": "Xiangru (Edward) Jian",
+        "user": "HideOnBush",
+        "type": "user",
+        "name": "HideOnBush"
+      },
+      "summary": "The manufacturing sector is increasingly adopting Multimodal Large Language Models (MLLMs) to transition from simple perception to autonomous execution, yet current evaluations fail to reflect the rigorous demands of real-world manufacturing environments. Progress is hindered by data scarcity and a lack of fine-grained domain semantics in existing datasets. To bridge this gap, we introduce FORGE. Wefirst construct a high-quality multimodal dataset that combines real-world 2D images and 3D point clouds, annotated with fine-grained domain semantics (e.g., exact model numbers). We then evaluate 18 state-of-the-art MLLMs across three manufacturing tasks, namely workpiece verification, structural surface inspection, and assembly verification, revealing significant performance gaps. Counter to conventional understanding, the bottleneck analysis shows that visual grounding is not the primary limiting factor. Instead, insufficient domain-specific knowledge is the key bottleneck, setting a clear direction for future research. Beyond evaluation, we show that our structured annotations can serve as an actionable training resource: supervised fine-tuning of a compact 3B-parameter model on our data yields up to 90.8% relative improvement in accuracy on held-out manufacturing scenarios, providing preliminary evidence for a practical pathway toward domain-adapted manufacturing MLLMs. The code and datasets are available at https://ai4manufacturing.github.io/forge-web.",
+      "upvotes": 66,
+      "discussionId": "69d85b1879548974da9464cd",
+      "projectPage": "https://ai4manufacturing.github.io/forge-web/",
+      "githubRepo": "https://github.com/AI4Manufacturing/FORGE",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "FORGE introduces a high-quality multimodal manufacturing dataset with fine-grained domain semantics to evaluate MLLMs on real-world tasks, revealing that domain-specific knowledge rather than visual grounding limits performance, and demonstrating that supervised fine-tuning on structured annotations significantly improves accuracy.",
+      "ai_keywords": [
+        "Multimodal Large Language Models",
+        "visual grounding",
+        "domain-specific knowledge",
+        "supervised fine-tuning",
+        "3B-parameter model",
+        "fine-grained domain semantics",
+        "workpiece verification",
+        "structural surface inspection",
+        "assembly verification"
+      ],
+      "githubStars": 6,
+      "organization": {
+        "_id": "6230c3ced93e84e2338765f3",
+        "name": "UWaterloo",
+        "fullname": "University of Waterloo",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1647363004040-6230c34bacb94a81eec91ed5.png"
+      }
+    },
+    "publishedAt": "2026-04-07T20:00:00.000Z",
+    "title": "FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios",
+    "summary": "The manufacturing sector is increasingly adopting Multimodal Large Language Models (MLLMs) to transition from simple perception to autonomous execution, yet current evaluations fail to reflect the rigorous demands of real-world manufacturing environments. Progress is hindered by data scarcity and a lack of fine-grained domain semantics in existing datasets. To bridge this gap, we introduce FORGE. Wefirst construct a high-quality multimodal dataset that combines real-world 2D images and 3D point clouds, annotated with fine-grained domain semantics (e.g., exact model numbers). We then evaluate 18 state-of-the-art MLLMs across three manufacturing tasks, namely workpiece verification, structural surface inspection, and assembly verification, revealing significant performance gaps. Counter to conventional understanding, the bottleneck analysis shows that visual grounding is not the primary limiting factor. Instead, insufficient domain-specific knowledge is the key bottleneck, setting a clear direction for future research. Beyond evaluation, we show that our structured annotations can serve as an actionable training resource: supervised fine-tuning of a compact 3B-parameter model on our data yields up to 90.8% relative improvement in accuracy on held-out manufacturing scenarios, providing preliminary evidence for a practical pathway toward domain-adapted manufacturing MLLMs. The code and datasets are available at https://ai4manufacturing.github.io/forge-web.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/636865b8cca0a0a962c21f3f/c3KzlX0r8oAIH7RTFdU22.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.07413.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "636865b8cca0a0a962c21f3f",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/Mja7cpws4gb2Jmdj_foPA.png",
+      "fullname": "Xiangru (Edward) Jian",
+      "name": "HideOnBush",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 10,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "6230c3ced93e84e2338765f3",
+      "name": "UWaterloo",
+      "fullname": "University of Waterloo",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1647363004040-6230c34bacb94a81eec91ed5.png"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2604.06870",
+      "authors": [
+        {
+          "_id": "69dc4b2c2b6b8dc66ffeeb35",
+          "name": "Dewei Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4b2c2b6b8dc66ffeeb36",
+          "name": "You Li",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4b2c2b6b8dc66ffeeb37",
+          "name": "Zongxin Yang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4b2c2b6b8dc66ffeeb38",
+          "name": "Yi Yang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-08T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T00:21:34.109Z",
+      "title": "RefineAnything: Multimodal Region-Specific Refinement for Perfect Local Details",
+      "submittedOnDailyBy": {
+        "_id": "65eaa1e2b11eeb516a973508",
+        "avatarUrl": "/avatars/beecd135bb940fdc02406f9063b3fa67.svg",
+        "isPro": true,
+        "fullname": "Dewei Zhou",
+        "user": "limuloo1999",
+        "type": "user",
+        "name": "limuloo1999"
+      },
+      "summary": "We introduce region-specific image refinement as a dedicated problem setting: given an input image and a user-specified region (e.g., a scribble mask or a bounding box), the goal is to restore fine-grained details while keeping all non-edited pixels strictly unchanged. Despite rapid progress in image generation, modern models still frequently suffer from local detail collapse (e.g., distorted text, logos, and thin structures). Existing instruction-driven editing models emphasize coarse-grained semantic edits and often either overlook subtle local defects or inadvertently change the background, especially when the region of interest occupies only a small portion of a fixed-resolution input. We present RefineAnything, a multimodal diffusion-based refinement model that supports both reference-based and reference-free refinement. Building on a counter-intuitive observation that crop-and-resize can substantially improve local reconstruction under a fixed VAE input resolution, we propose Focus-and-Refine, a region-focused refinement-and-paste-back strategy that improves refinement effectiveness and efficiency by reallocating the resolution budget to the target region, while a blended-mask paste-back guarantees strict background preservation. We further introduce a boundary-aware Boundary Consistency Loss to reduce seam artifacts and improve paste-back naturalness. To support this new setting, we construct Refine-30K (20K reference-based and 10K reference-free samples) and introduce RefineEval, a benchmark that evaluates both edited-region fidelity and background consistency. On RefineEval, RefineAnything achieves strong improvements over competitive baselines and near-perfect background preservation, establishing a practical solution for high-precision local refinement. Project Page: https://limuloo.github.io/RefineAnything/.",
+      "upvotes": 29,
+      "discussionId": "69dc4b2c2b6b8dc66ffeeb39",
+      "projectPage": "https://limuloo.github.io/RefineAnything/",
+      "githubRepo": "https://github.com/limuloo/RefineAnything",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "A multimodal diffusion-based model called RefineAnything is presented for region-specific image refinement that preserves backgrounds while enhancing local details, using a focus-and-refine strategy and boundary-aware loss functions.",
+      "ai_keywords": [
+        "multimodal diffusion-based refinement model",
+        "region-specific image refinement",
+        "counter-intuitive observation",
+        "crop-and-resize",
+        "Focus-and-Refine",
+        "blended-mask paste-back",
+        "Boundary Consistency Loss",
+        "VAE input resolution",
+        "reference-based refinement",
+        "reference-free refinement"
+      ],
+      "githubStars": 13,
+      "organization": {
+        "_id": "6345aadf5efccdc07f1365a5",
+        "name": "ZhejiangUniversity",
+        "fullname": "Zhejiang University",
+        "avatar": "https://www.gravatar.com/avatar/d1d414628877bec2958f95ad283c15e7?d=retro&size=100"
+      }
+    },
+    "publishedAt": "2026-04-07T20:00:00.000Z",
+    "title": "RefineAnything: Multimodal Region-Specific Refinement for Perfect Local Details",
+    "summary": "We introduce region-specific image refinement as a dedicated problem setting: given an input image and a user-specified region (e.g., a scribble mask or a bounding box), the goal is to restore fine-grained details while keeping all non-edited pixels strictly unchanged. Despite rapid progress in image generation, modern models still frequently suffer from local detail collapse (e.g., distorted text, logos, and thin structures). Existing instruction-driven editing models emphasize coarse-grained semantic edits and often either overlook subtle local defects or inadvertently change the background, especially when the region of interest occupies only a small portion of a fixed-resolution input. We present RefineAnything, a multimodal diffusion-based refinement model that supports both reference-based and reference-free refinement. Building on a counter-intuitive observation that crop-and-resize can substantially improve local reconstruction under a fixed VAE input resolution, we propose Focus-and-Refine, a region-focused refinement-and-paste-back strategy that improves refinement effectiveness and efficiency by reallocating the resolution budget to the target region, while a blended-mask paste-back guarantees strict background preservation. We further introduce a boundary-aware Boundary Consistency Loss to reduce seam artifacts and improve paste-back naturalness. To support this new setting, we construct Refine-30K (20K reference-based and 10K reference-free samples) and introduce RefineEval, a benchmark that evaluates both edited-region fidelity and background consistency. On RefineEval, RefineAnything achieves strong improvements over competitive baselines and near-perfect background preservation, establishing a practical solution for high-precision local refinement. Project Page: https://limuloo.github.io/RefineAnything/.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.06870.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "65eaa1e2b11eeb516a973508",
+      "avatarUrl": "/avatars/beecd135bb940fdc02406f9063b3fa67.svg",
+      "fullname": "Dewei Zhou",
+      "name": "limuloo1999",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 9,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "6345aadf5efccdc07f1365a5",
+      "name": "ZhejiangUniversity",
+      "fullname": "Zhejiang University",
+      "avatar": "https://www.gravatar.com/avatar/d1d414628877bec2958f95ad283c15e7?d=retro&size=100"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.08644",
+      "authors": [
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb6f",
+          "name": "Eunbi Choi",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb70",
+          "name": "Kibong Choi",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb71",
+          "name": "Sehyun Chun",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb72",
+          "name": "Seokhee Hong",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb73",
+          "name": "Junwon Hwang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb74",
+          "name": "Hyojin Jeon",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb75",
+          "name": "Ahra Jo",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb76",
+          "name": "Hyunjik Jo",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb77",
+          "name": "Yeonsik Jo",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb78",
+          "name": "Joonkee Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb79",
+          "name": "Seonghwan Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb7a",
+          "name": "Soyeon Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb7b",
+          "name": "Sunkyoung Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb7c",
+          "name": "Yireun Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb7d",
+          "name": "Yongil Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb7e",
+          "name": "Changhun Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb7f",
+          "name": "Haeju Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb80",
+          "name": "Jinsik Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb81",
+          "user": {
+            "_id": "6241349b9d7bad9474ed254a",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6241349b9d7bad9474ed254a/b09yztloFKapHBFPlhkQD.jpeg",
+            "isPro": false,
+            "fullname": "Kyungmin Lee",
+            "user": "lkm2835",
+            "type": "user",
+            "name": "lkm2835"
+          },
+          "name": "Kyungmin Lee",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:32:32.717Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb82",
+          "name": "Sangha Park",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb83",
+          "user": {
+            "_id": "640ebc823c82bd463ee89343",
+            "avatarUrl": "/avatars/1aad54a224b54c2a15bb0dd9ad343732.svg",
+            "isPro": true,
+            "fullname": "Kwangrok Ryoo",
+            "user": "Ryoo72",
+            "type": "user",
+            "name": "Ryoo72"
+          },
+          "name": "Kwangrok Ryoo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:32:30.670Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb84",
+          "name": "Minju Seo",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb85",
+          "name": "Sejong Yang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb86",
+          "name": "Heuiyeen Yeen",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb87",
+          "name": "Hwan Chang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb88",
+          "name": "Stanley Jungkyu Choi",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb89",
+          "name": "Yejin Choi",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb8a",
+          "name": "Kyubeen Han",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb8b",
+          "name": "Joonwon Jang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb8c",
+          "name": "Kijeong Jeon",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb8d",
+          "name": "Geunyeong Jeong",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb8e",
+          "name": "Gerrard Jeongwon Jo",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb8f",
+          "name": "Jiyeon Jung",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb90",
+          "name": "Daeseong Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb91",
+          "name": "Dohoon Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb92",
+          "name": "Dohyun Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb93",
+          "name": "Hyunseo Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb94",
+          "name": "Minu Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb95",
+          "name": "Myoungshin Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb96",
+          "name": "Youchul Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb97",
+          "name": "Byungoh Ko",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb98",
+          "name": "Christopher Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb99",
+          "name": "Edward Hwayoung Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb9a",
+          "name": "Honglak Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb9b",
+          "name": "Jiyoung Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb9c",
+          "name": "Sangeun Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb9d",
+          "name": "Seungwon Lim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb9e",
+          "name": "Woohyung Lim",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeb9f",
+          "name": "Jueun Mun",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba0",
+          "name": "Jaewoo Park",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba1",
+          "name": "Jimin Park",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba2",
+          "name": "Jinho Park",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba3",
+          "name": "Yongmin Park",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba4",
+          "name": "Wooseok Seo",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba5",
+          "name": "Yongwoo Song",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba6",
+          "name": "Sihyuk Yi",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba7",
+          "name": "Kyungjae Yoo",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4d7b2b6b8dc66ffeeba8",
+          "name": "Sangyeon Yoon",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-09T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T00:27:17.910Z",
+      "title": "EXAONE 4.5 Technical Report",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user",
+        "name": "taesiri"
+      },
+      "summary": "This technical report introduces EXAONE 4.5, the first open-weight vision language model released by LG AI Research. EXAONE 4.5 is architected by integrating a dedicated visual encoder into the existing EXAONE 4.0 framework, enabling native multimodal pretraining over both visual and textual modalities. The model is trained on large-scale data with careful curation, particularly emphasizing document-centric corpora that align with LG's strategic application domains. This targeted data design enables substantial performance gains in document understanding and related tasks, while also delivering broad improvements across general language capabilities. EXAONE 4.5 extends context length up to 256K tokens, facilitating long-context reasoning and enterprise-scale use cases. Comparative evaluations demonstrate that EXAONE 4.5 achieves competitive performance in general benchmarks while outperforming state-of-the-art models of similar scale in document understanding and Korean contextual reasoning. As part of LG's ongoing effort toward practical industrial deployment, EXAONE 4.5 is designed to be continuously extended with additional domains and application scenarios to advance AI for a better life.",
+      "upvotes": 28,
+      "discussionId": "69dc4d7b2b6b8dc66ffeeba9",
+      "githubRepo": "https://github.com/LG-AI-EXAONE/EXAONE-4.5",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "EXAONE 4.5 is an open-weight vision language model that integrates a visual encoder into EXAONE 4.0, achieving enhanced document understanding and general language capabilities through targeted data curation and extended context length.",
+      "ai_keywords": [
+        "vision language model",
+        "visual encoder",
+        "multimodal pretraining",
+        "document-centric corpora",
+        "context length",
+        "long-context reasoning",
+        "general benchmarks",
+        "document understanding",
+        "Korean contextual reasoning"
+      ],
+      "githubStars": 25
+    },
+    "publishedAt": "2026-04-08T20:00:00.000Z",
+    "title": "EXAONE 4.5 Technical Report",
+    "summary": "This technical report introduces EXAONE 4.5, the first open-weight vision language model released by LG AI Research. EXAONE 4.5 is architected by integrating a dedicated visual encoder into the existing EXAONE 4.0 framework, enabling native multimodal pretraining over both visual and textual modalities. The model is trained on large-scale data with careful curation, particularly emphasizing document-centric corpora that align with LG's strategic application domains. This targeted data design enables substantial performance gains in document understanding and related tasks, while also delivering broad improvements across general language capabilities. EXAONE 4.5 extends context length up to 256K tokens, facilitating long-context reasoning and enterprise-scale use cases. Comparative evaluations demonstrate that EXAONE 4.5 achieves competitive performance in general benchmarks while outperforming state-of-the-art models of similar scale in document understanding and Korean contextual reasoning. As part of LG's ongoing effort toward practical industrial deployment, EXAONE 4.5 is designed to be continuously extended with additional domains and application scenarios to advance AI for a better life.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.08644.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 269,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.08995",
+      "authors": [
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb55",
+          "name": "Zile Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb56",
+          "name": "Zexiang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb57",
+          "name": "Jaixing Li",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb58",
+          "name": "Kaichen Huang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb59",
+          "name": "Baixin Xu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb5a",
+          "user": {
+            "_id": "67a9b36a2fbf63093c19d3de",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67a9b36a2fbf63093c19d3de/LbB2XH0ezcJ_tdu4hU0Of.png",
+            "isPro": false,
+            "fullname": "康飞",
+            "user": "kangfei",
+            "type": "user",
+            "name": "kangfei"
+          },
+          "name": "Fei Kang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:32:35.288Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb5b",
+          "user": {
+            "_id": "67a9664af5f1253c64259c50",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/Jk9W1C8704pqxNOsqZ0d9.png",
+            "isPro": false,
+            "fullname": "an",
+            "user": "dearamy",
+            "type": "user",
+            "name": "dearamy"
+          },
+          "name": "Mengyin An",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:32:38.075Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb5c",
+          "name": "Peiyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb5d",
+          "name": "Biao Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb5e",
+          "name": "Yichen Wei",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb5f",
+          "name": "Yidan Xietian",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb60",
+          "name": "Jiangbo Pei",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb61",
+          "name": "Liang Hu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb62",
+          "user": {
+            "_id": "64f21a1fbb97012498ea6bca",
+            "avatarUrl": "/avatars/d17cc9ddc9054bca283fd45dca8e63ce.svg",
+            "isPro": false,
+            "fullname": "Boyi Jiang",
+            "user": "jiangby1993",
+            "type": "user",
+            "name": "jiangby1993"
+          },
+          "name": "Boyi Jiang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:32:40.376Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb63",
+          "name": "Hua Xue",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb64",
+          "name": "Zidong Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb65",
+          "name": "Haofeng Sun",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb66",
+          "name": "Wei Li",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb67",
+          "name": "Wanli Ouyang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb68",
+          "name": "Xianglong He",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb69",
+          "name": "Yang Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb6a",
+          "name": "Yangguang Li",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c9f2b6b8dc66ffeeb6b",
+          "name": "Yahui Zhou",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/qHY7khx3sk19AL7uFOMRb.mp4"
+      ],
+      "publishedAt": "2026-04-10T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T00:23:54.794Z",
+      "title": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user",
+        "name": "taesiri"
+      },
+      "summary": "With the advancement of interactive video generation, diffusion models have increasingly demonstrated their potential as world models. However, existing approaches still struggle to simultaneously achieve memory-enabled long-term temporal consistency and high-resolution real-time generation, limiting their applicability in real-world scenarios. To address this, we present Matrix-Game 3.0, a memory-augmented interactive world model designed for 720p real-time longform video generation. Building upon Matrix-Game 2.0, we introduce systematic improvements across data, model, and inference. First, we develop an upgraded industrial-scale infinite data engine that integrates Unreal Engine-based synthetic data, large-scale automated collection from AAA games, and real-world video augmentation to produce high-quality Video-Pose-Action-Prompt quadruplet data at scale. Second, we propose a training framework for long-horizon consistency: by modeling prediction residuals and re-injecting imperfect generated frames during training, the base model learns self-correction; meanwhile, camera-aware memory retrieval and injection enable the base model to achieve long horizon spatiotemporal consistency. Third, we design a multi-segment autoregressive distillation strategy based on Distribution Matching Distillation (DMD), combined with model quantization and VAE decoder pruning, to achieve efficient real-time inference. Experimental results show that Matrix-Game 3.0 achieves up to 40 FPS real-time generation at 720p resolution with a 5B model, while maintaining stable memory consistency over minute-long sequences. Scaling up to a 2x14B model further improves generation quality, dynamics, and generalization. Our approach provides a practical pathway toward industrial-scale deployable world models.",
+      "upvotes": 23,
+      "discussionId": "69dc4c9f2b6b8dc66ffeeb6c",
+      "projectPage": "https://matrix-game-v3.github.io/",
+      "ai_summary": "Matrix-Game 3.0 enhances interactive video generation through memory-augmented diffusion models that achieve real-time 720p video synthesis with long-term temporal consistency.",
+      "ai_keywords": [
+        "diffusion models",
+        "world models",
+        "real-time generation",
+        "long-term temporal consistency",
+        "Video-Pose-Action-Prompt",
+        "prediction residuals",
+        "camera-aware memory retrieval",
+        "autoregressive distillation",
+        "Distribution Matching Distillation",
+        "model quantization",
+        "VAE decoder pruning"
+      ]
+    },
+    "publishedAt": "2026-04-09T20:00:00.000Z",
+    "title": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
+    "summary": "With the advancement of interactive video generation, diffusion models have increasingly demonstrated their potential as world models. However, existing approaches still struggle to simultaneously achieve memory-enabled long-term temporal consistency and high-resolution real-time generation, limiting their applicability in real-world scenarios. To address this, we present Matrix-Game 3.0, a memory-augmented interactive world model designed for 720p real-time longform video generation. Building upon Matrix-Game 2.0, we introduce systematic improvements across data, model, and inference. First, we develop an upgraded industrial-scale infinite data engine that integrates Unreal Engine-based synthetic data, large-scale automated collection from AAA games, and real-world video augmentation to produce high-quality Video-Pose-Action-Prompt quadruplet data at scale. Second, we propose a training framework for long-horizon consistency: by modeling prediction residuals and re-injecting imperfect generated frames during training, the base model learns self-correction; meanwhile, camera-aware memory retrieval and injection enable the base model to achieve long horizon spatiotemporal consistency. Third, we design a multi-segment autoregressive distillation strategy based on Distribution Matching Distillation (DMD), combined with model quantization and VAE decoder pruning, to achieve efficient real-time inference. Experimental results show that Matrix-Game 3.0 achieves up to 40 FPS real-time generation at 720p resolution with a 5B model, while maintaining stable memory consistency over minute-long sequences. Scaling up to a 2x14B model further improves generation quality, dynamics, and generalization. Our approach provides a practical pathway toward industrial-scale deployable world models.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6039478ab3ecf716b1a5fd4d/qHY7khx3sk19AL7uFOMRb.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.08995.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 269,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.09450",
+      "authors": [
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeebf9",
+          "user": {
+            "_id": "66939fec286045211df7bbd7",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/7HPeUeZd5KIUwa6Z8oGXE.png",
+            "isPro": false,
+            "fullname": "Chen Lifeng",
+            "user": "Constant8868",
+            "type": "user",
+            "name": "Constant8868"
+          },
+          "name": "Lifeng Chen",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:32:06.716Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeebfa",
+          "name": "Tianqi You",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeebfb",
+          "name": "Hao Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeebfc",
+          "name": "Zhimin Bao",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeebfd",
+          "name": "Jile Jiao",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeebfe",
+          "name": "Xiao Han",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeebff",
+          "name": "Zhicai Ou",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeec00",
+          "name": "Tao Sun",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeec01",
+          "name": "Xiaofeng Mou",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeec02",
+          "name": "Xiaojie Jin",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5eaa2b6b8dc66ffeec03",
+          "name": "Yi Xu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-10T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T02:04:52.183Z",
+      "title": "ECHO: Efficient Chest X-ray Report Generation with One-step Block Diffusion",
+      "submittedOnDailyBy": {
+        "_id": "66939fec286045211df7bbd7",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/7HPeUeZd5KIUwa6Z8oGXE.png",
+        "isPro": false,
+        "fullname": "Chen Lifeng",
+        "user": "Constant8868",
+        "type": "user",
+        "name": "Constant8868"
+      },
+      "summary": "Chest X-ray report generation (CXR-RG) has the potential to substantially alleviate radiologists' workload. However, conventional autoregressive vision--language models (VLMs) suffer from high inference latency due to sequential token decoding. Diffusion-based models offer a promising alternative through parallel generation, but they still require multiple denoising iterations. Compressing multi-step denoising to a single step could further reduce latency, but often degrades textual coherence due to the mean-field bias introduced by token-factorized denoisers. To address this challenge, we propose ECHO, an efficient diffusion-based VLM (dVLM) for chest X-ray report generation. ECHO enables stable one-step-per-block inference via a novel Direct Conditional Distillation (DCD) framework, which mitigates the mean-field limitation by constructing unfactorized supervision from on-policy diffusion trajectories to encode joint token dependencies. In addition, we introduce a Response-Asymmetric Diffusion (RAD) training strategy that further improves training efficiency while maintaining model effectiveness. Extensive experiments demonstrate that ECHO surpasses state-of-the-art autoregressive methods, improving RaTE and SemScore by 64.33\\% and 60.58\\% respectively, while achieving an 8times inference speedup without compromising clinical accuracy.",
+      "upvotes": 14,
+      "discussionId": "69dc5eaa2b6b8dc66ffeec04",
+      "projectPage": "https://echo-midea-airc.github.io/",
+      "ai_summary": "ECHO is an efficient diffusion-based vision-language model for chest X-ray report generation that achieves faster inference through direct conditional distillation and response-asymmetric diffusion training while maintaining high clinical accuracy.",
+      "ai_keywords": [
+        "vision--language models",
+        "diffusion-based models",
+        "autoregressive models",
+        "denoising iterations",
+        "mean-field bias",
+        "token-factorized denoisers",
+        "Direct Conditional Distillation",
+        "Response-Asymmetric Diffusion",
+        "on-policy diffusion trajectories",
+        "joint token dependencies",
+        "inference speedup",
+        "clinical accuracy"
+      ],
+      "organization": {
+        "_id": "69dc8ba0ba9bca6e55fd1b10",
+        "name": "Midea-AIRC",
+        "fullname": "Midea AI Research Center",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67aab016929cde5e80e9727b/rL_SprKt4P3mwpCGjartp.png"
+      }
+    },
+    "publishedAt": "2026-04-09T20:00:00.000Z",
+    "title": "ECHO: Efficient Chest X-ray Report Generation with One-step Block Diffusion",
+    "summary": "Chest X-ray report generation (CXR-RG) has the potential to substantially alleviate radiologists' workload. However, conventional autoregressive vision--language models (VLMs) suffer from high inference latency due to sequential token decoding. Diffusion-based models offer a promising alternative through parallel generation, but they still require multiple denoising iterations. Compressing multi-step denoising to a single step could further reduce latency, but often degrades textual coherence due to the mean-field bias introduced by token-factorized denoisers. To address this challenge, we propose ECHO, an efficient diffusion-based VLM (dVLM) for chest X-ray report generation. ECHO enables stable one-step-per-block inference via a novel Direct Conditional Distillation (DCD) framework, which mitigates the mean-field limitation by constructing unfactorized supervision from on-policy diffusion trajectories to encode joint token dependencies. In addition, we introduce a Response-Asymmetric Diffusion (RAD) training strategy that further improves training efficiency while maintaining model effectiveness. Extensive experiments demonstrate that ECHO surpasses state-of-the-art autoregressive methods, improving RaTE and SemScore by 64.33\\% and 60.58\\% respectively, while achieving an 8times inference speedup without compromising clinical accuracy.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.09450.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "66939fec286045211df7bbd7",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/7HPeUeZd5KIUwa6Z8oGXE.png",
+      "fullname": "Chen Lifeng",
+      "name": "Constant8868",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "69dc8ba0ba9bca6e55fd1b10",
+      "name": "Midea-AIRC",
+      "fullname": "Midea AI Research Center",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/67aab016929cde5e80e9727b/rL_SprKt4P3mwpCGjartp.png"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2604.09168",
+      "authors": [
+        {
+          "_id": "69dc4bc22b6b8dc66ffeeb3c",
+          "user": {
+            "_id": "676e8818c84ae66f46855df3",
+            "avatarUrl": "/avatars/c6a113e8d9008a91251a0e5d74c66cd9.svg",
+            "isPro": false,
+            "fullname": "Sahil Goyal",
+            "user": "goyalsahil",
+            "type": "user",
+            "name": "goyalsahil"
+          },
+          "name": "Sahil Goyal",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T09:50:09.655Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4bc22b6b8dc66ffeeb3d",
+          "user": {
+            "_id": "68e95674143ae4e315fff5d4",
+            "avatarUrl": "/avatars/d5e701dfe3bf9f91c790425c69923ce4.svg",
+            "isPro": false,
+            "fullname": "Swayam Agrawal",
+            "user": "Swayam421",
+            "type": "user",
+            "name": "Swayam421"
+          },
+          "name": "Swayam Agrawal",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T09:50:11.575Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4bc22b6b8dc66ffeeb3e",
+          "name": "Gautham Govind Anil",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4bc22b6b8dc66ffeeb3f",
+          "name": "Prateek Jain",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4bc22b6b8dc66ffeeb40",
+          "name": "Sujoy Paul",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4bc22b6b8dc66ffeeb41",
+          "name": "Aditya Kusupati",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-10T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T00:19:57.426Z",
+      "title": "ELT: Elastic Looped Transformers for Visual Generation",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user",
+        "name": "taesiri"
+      },
+      "summary": "We introduce Elastic Looped Transformers (ELT), a highly parameter-efficient class of visual generative models based on a recurrent transformer architecture. While conventional generative models rely on deep stacks of unique transformer layers, our approach employs iterative, weight-shared transformer blocks to drastically reduce parameter counts while maintaining high synthesis quality. To effectively train these models for image and video generation, we propose the idea of Intra-Loop Self Distillation (ILSD), where student configurations (intermediate loops) are distilled from the teacher configuration (maximum training loops) to ensure consistency across the model's depth in a single training step. Our framework yields a family of elastic models from a single training run, enabling Any-Time inference capability with dynamic trade-offs between computational cost and generation quality, with the same parameter count. ELT significantly shifts the efficiency frontier for visual synthesis. With 4times reduction in parameter count under iso-inference-compute settings, ELT achieves a competitive FID of 2.0 on class-conditional ImageNet 256 times 256 and FVD of 72.8 on class-conditional UCF-101.",
+      "upvotes": 6,
+      "discussionId": "69dc4bc22b6b8dc66ffeeb42",
+      "ai_summary": "Elastic Looped Transformers utilize recurrent transformer architecture with weight-sharing and intra-loop self-distillation to achieve parameter-efficient visual generation with adjustable computational cost and generation quality.",
+      "ai_keywords": [
+        "recurrent transformer architecture",
+        "weight-sharing",
+        "parameter-efficient",
+        "visual generative models",
+        "Intra-Loop Self Distillation",
+        "student configurations",
+        "teacher configuration",
+        "Any-Time inference",
+        "FID",
+        "FVD"
+      ],
+      "organization": {
+        "_id": "60f6cbb2852126bac698c89e",
+        "name": "deepmind",
+        "fullname": "Deepmind",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1638956859875-5f1158120c833276f61f1a84.jpeg"
+      }
+    },
+    "publishedAt": "2026-04-09T20:00:00.000Z",
+    "title": "ELT: Elastic Looped Transformers for Visual Generation",
+    "summary": "We introduce Elastic Looped Transformers (ELT), a highly parameter-efficient class of visual generative models based on a recurrent transformer architecture. While conventional generative models rely on deep stacks of unique transformer layers, our approach employs iterative, weight-shared transformer blocks to drastically reduce parameter counts while maintaining high synthesis quality. To effectively train these models for image and video generation, we propose the idea of Intra-Loop Self Distillation (ILSD), where student configurations (intermediate loops) are distilled from the teacher configuration (maximum training loops) to ensure consistency across the model's depth in a single training step. Our framework yields a family of elastic models from a single training run, enabling Any-Time inference capability with dynamic trade-offs between computational cost and generation quality, with the same parameter count. ELT significantly shifts the efficiency frontier for visual synthesis. With 4times reduction in parameter count under iso-inference-compute settings, ELT achieves a competitive FID of 2.0 on class-conditional ImageNet 256 times 256 and FVD of 72.8 on class-conditional UCF-101.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.09168.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 269,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "60f6cbb2852126bac698c89e",
+      "name": "deepmind",
+      "fullname": "Deepmind",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1638956859875-5f1158120c833276f61f1a84.jpeg"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.09531",
+      "authors": [
+        {
+          "_id": "69dc4a742b6b8dc66ffeeb2c",
+          "name": "Guanyu Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4a742b6b8dc66ffeeb2d",
+          "name": "Yida Yin",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4a742b6b8dc66ffeeb2e",
+          "name": "Wenhao Chai",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4a742b6b8dc66ffeeb2f",
+          "name": "Shengbang Tong",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4a742b6b8dc66ffeeb30",
+          "name": "Xingyu Fu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4a742b6b8dc66ffeeb31",
+          "name": "Zhuang Liu",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-10T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T00:14:22.870Z",
+      "title": "VisionFoundry: Teaching VLMs Visual Perception with Synthetic Images",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user",
+        "name": "taesiri"
+      },
+      "summary": "Vision-language models (VLMs) still struggle with visual perception tasks such as spatial understanding and viewpoint recognition. One plausible contributing factor is that natural image datasets provide limited supervision for low-level visual skills. This motivates a practical question: can targeted synthetic supervision, generated from only a task keyword such as Depth Order, address these weaknesses? To investigate this question, we introduce VisionFoundry, a task-aware synthetic data generation pipeline that takes only the task name as input and uses large language models (LLMs) to generate questions, answers, and text-to-image (T2I) prompts, then synthesizes images with T2I models and verifies consistency with a proprietary VLM, requiring no reference images or human annotation. Using VisionFoundry, we construct VisionFoundry-10K, a synthetic visual question answering (VQA) dataset containing 10k image-question-answer triples spanning 10 tasks. Models trained on VisionFoundry-10K achieve substantial improvements on visual perception benchmarks: +7% on MMVP and +10% on CV-Bench-3D, while preserving broader capabilities and showing favorable scaling behavior as data size increases. Our results suggest that limited task-targeted supervision is an important contributor to this bottleneck and that synthetic supervision is a promising path toward more systematic training for VLMs.",
+      "upvotes": 5,
+      "discussionId": "69dc4a742b6b8dc66ffeeb32",
+      "projectPage": "https://zlab-princeton.github.io/VisionFoundry/",
+      "ai_summary": "VisionFoundry generates synthetic visual question answering data using large language models and text-to-image prompts to improve visual perception tasks in vision-language models.",
+      "ai_keywords": [
+        "vision-language models",
+        "synthetic data generation",
+        "visual question answering",
+        "large language models",
+        "text-to-image models",
+        "visual perception",
+        "MMVP",
+        "CV-Bench-3D"
+      ]
+    },
+    "publishedAt": "2026-04-09T20:00:00.000Z",
+    "title": "VisionFoundry: Teaching VLMs Visual Perception with Synthetic Images",
+    "summary": "Vision-language models (VLMs) still struggle with visual perception tasks such as spatial understanding and viewpoint recognition. One plausible contributing factor is that natural image datasets provide limited supervision for low-level visual skills. This motivates a practical question: can targeted synthetic supervision, generated from only a task keyword such as Depth Order, address these weaknesses? To investigate this question, we introduce VisionFoundry, a task-aware synthetic data generation pipeline that takes only the task name as input and uses large language models (LLMs) to generate questions, answers, and text-to-image (T2I) prompts, then synthesizes images with T2I models and verifies consistency with a proprietary VLM, requiring no reference images or human annotation. Using VisionFoundry, we construct VisionFoundry-10K, a synthetic visual question answering (VQA) dataset containing 10k image-question-answer triples spanning 10 tasks. Models trained on VisionFoundry-10K achieve substantial improvements on visual perception benchmarks: +7% on MMVP and +10% on CV-Bench-3D, while preserving broader capabilities and showing favorable scaling behavior as data size increases. Our results suggest that limited task-targeted supervision is an important contributor to this bottleneck and that synthetic supervision is a promising path toward more systematic training for VLMs.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.09531.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 269,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.04415",
+      "authors": [
+        {
+          "_id": "69dc5e972b6b8dc66ffeebec",
+          "name": "Zinuo Li",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebed",
+          "user": {
+            "_id": "652c9bdf4d0eef4a2b3c577f",
+            "avatarUrl": "/avatars/6e92eee19ae2c43e46a8b294c02f9915.svg",
+            "isPro": false,
+            "fullname": "Yongxin Guo",
+            "user": "Yongxin-Guo",
+            "type": "user",
+            "name": "Yongxin-Guo"
+          },
+          "name": "Yongxin Guo",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:32:09.172Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebee",
+          "name": "Jun Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebef",
+          "name": "Jiawei Zhan",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebf0",
+          "name": "Xi Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebf1",
+          "name": "Chengjie Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebf2",
+          "name": "Mohammed Bennamoun",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebf3",
+          "name": "Farid Boussaid",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebf4",
+          "name": "Feng Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "69dc5e972b6b8dc66ffeebf5",
+          "name": "Qiuhong Ke",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-06T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T01:47:07.462Z",
+      "title": "Structured Causal Video Reasoning via Multi-Objective Alignment",
+      "submittedOnDailyBy": {
+        "_id": "652c9bdf4d0eef4a2b3c577f",
+        "avatarUrl": "/avatars/6e92eee19ae2c43e46a8b294c02f9915.svg",
+        "isPro": false,
+        "fullname": "Yongxin Guo",
+        "user": "Yongxin-Guo",
+        "type": "user",
+        "name": "Yongxin-Guo"
+      },
+      "summary": "Human understanding of video dynamics is typically grounded in a structured mental representation of entities, actions, and temporal relations, rather than relying solely on immediate deductive reasoning. In contrast, existing Video-LLMs largely depend on unstructured video reasoning, where critical visual evidence is embedded in verbose textual descriptions and temporal causality is often weakly modeled. This leads to inefficient processes and fragile causal inference. To bridge this cognitive gap, we propose constructing a compact representation of salient events and their causal relationships, which we name Structured Event Facts, prior to the reasoning stage. This structured prior serves as an explicit constraint to promote concise and causally grounded reasoning, while also making intermediate evidence easier to verify. To effectively train models on such structured facts, we introduce CausalFact-60K and a four-stage training pipeline comprising facts alignment, format warm-start, thinking warm-start, and reinforcement learning-based post-training. During RL stage, we find that this framework introduces competing objectives, as structural completeness and causal fidelity must be balanced against reasoning length, making it difficult to optimize. We address this challenge by formulating the optimization as a Multi-Objective Reinforcement Learning (MORL) problem and explicitly optimizing toward the Pareto-Frontier to balance these trade-offs. As a result, we introduce Factum-4B, which yields more reliable reasoning and delivers stronger performance on challenging video understanding tasks requiring fine-grained temporal inference.",
+      "upvotes": 5,
+      "discussionId": "69dc5e972b6b8dc66ffeebf6",
+      "ai_summary": "Video-LLMs trained on structured event facts with causal relationships outperform existing methods on complex video understanding tasks requiring precise temporal inference.",
+      "ai_keywords": [
+        "Video-LLMs",
+        "structured event facts",
+        "causal relationships",
+        "temporal inference",
+        "CausalFact-60K",
+        "four-stage training pipeline",
+        "facts alignment",
+        "format warm-start",
+        "thinking warm-start",
+        "reinforcement learning",
+        "Multi-Objective Reinforcement Learning",
+        "Pareto-Frontier",
+        "Factum-4B"
+      ],
+      "organization": {
+        "_id": "6637390a5f67f8da32985497",
+        "name": "UniversityofWA",
+        "fullname": "University of Western Australia",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66373837e27ca178d6d83b3b/0AMA-hugSvyOSk1IEUvdW.png"
+      }
+    },
+    "publishedAt": "2026-04-05T20:00:00.000Z",
+    "title": "Structured Causal Video Reasoning via Multi-Objective Alignment",
+    "summary": "Human understanding of video dynamics is typically grounded in a structured mental representation of entities, actions, and temporal relations, rather than relying solely on immediate deductive reasoning. In contrast, existing Video-LLMs largely depend on unstructured video reasoning, where critical visual evidence is embedded in verbose textual descriptions and temporal causality is often weakly modeled. This leads to inefficient processes and fragile causal inference. To bridge this cognitive gap, we propose constructing a compact representation of salient events and their causal relationships, which we name Structured Event Facts, prior to the reasoning stage. This structured prior serves as an explicit constraint to promote concise and causally grounded reasoning, while also making intermediate evidence easier to verify. To effectively train models on such structured facts, we introduce CausalFact-60K and a four-stage training pipeline comprising facts alignment, format warm-start, thinking warm-start, and reinforcement learning-based post-training. During RL stage, we find that this framework introduces competing objectives, as structural completeness and causal fidelity must be balanced against reasoning length, making it difficult to optimize. We address this challenge by formulating the optimization as a Multi-Objective Reinforcement Learning (MORL) problem and explicitly optimizing toward the Pareto-Frontier to balance these trade-offs. As a result, we introduce Factum-4B, which yields more reliable reasoning and delivers stronger performance on challenging video understanding tasks requiring fine-grained temporal inference.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.04415.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "652c9bdf4d0eef4a2b3c577f",
+      "avatarUrl": "/avatars/6e92eee19ae2c43e46a8b294c02f9915.svg",
+      "fullname": "Yongxin Guo",
+      "name": "Yongxin-Guo",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 7,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "6637390a5f67f8da32985497",
+      "name": "UniversityofWA",
+      "fullname": "University of Western Australia",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/66373837e27ca178d6d83b3b/0AMA-hugSvyOSk1IEUvdW.png"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2603.27490",
+      "authors": [
+        {
+          "_id": "69dc69e52b6b8dc66ffeec29",
+          "name": "Zhaopeng Feng",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec2a",
+          "name": "Liangcai Su",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec2b",
+          "name": "Zhen Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec2c",
+          "name": "Xinyu Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec2d",
+          "name": "Xiaotian Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec2e",
+          "name": "Xiaobin Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec2f",
+          "name": "Runnan Fang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec30",
+          "name": "Qi Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec31",
+          "name": "Baixuan Li",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec32",
+          "name": "Shihao Cai",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec33",
+          "name": "Rui Ye",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec34",
+          "name": "Hui Chen",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec35",
+          "name": "Jiang Yong",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec36",
+          "name": "Joey Tianyi Zhou",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec37",
+          "name": "Chenxiong Qian",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec38",
+          "name": "Pengjun Xie",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec39",
+          "name": "Bryan Hooi",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec3a",
+          "name": "Zuozhu Liu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc69e52b6b8dc66ffeec3b",
+          "name": "Jingren Zhou",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-03-29T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T04:46:59.786Z",
+      "title": "AgentSwing: Adaptive Parallel Context Management Routing for Long-Horizon Web Agents",
+      "submittedOnDailyBy": {
+        "_id": "63c0bb2a3bdc86f8108c112a",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63c0bb2a3bdc86f8108c112a/QvZlSEnyud-UR4p1SaGCk.jpeg",
+        "isPro": false,
+        "fullname": "Zhaopeng Feng",
+        "user": "fzp0424",
+        "type": "user",
+        "name": "fzp0424"
+      },
+      "summary": "As large language models (LLMs) evolve into autonomous agents for long-horizon information-seeking, managing finite context capacity has become a critical bottleneck. Existing context management methods typically commit to a single fixed strategy throughout the entire trajectory. Such static designs may work well in some states, but they cannot adapt as the usefulness and reliability of the accumulated context evolve during long-horizon search. To formalize this challenge, we introduce a probabilistic framework that characterizes long-horizon success through two complementary dimensions: search efficiency and terminal precision. Building on this perspective, we propose AgentSwing, a state-aware adaptive parallel context management routing framework. At each trigger point, AgentSwing expands multiple context-managed branches in parallel and uses lookahead routing to select the most promising continuation. Experiments across diverse benchmarks and agent backbones show that AgentSwing consistently outperforms strong static context management methods, often matching or exceeding their performance with up to 3times fewer interaction turns while also improving the ultimate performance ceiling of long-horizon web agents. Beyond the empirical gains, the proposed probabilistic framework provides a principled lens for analyzing and designing future context management strategies for long-horizon agents.",
+      "upvotes": 4,
+      "discussionId": "69dc69e62b6b8dc66ffeec3c",
+      "ai_summary": "AgentSwing is a state-aware adaptive framework that improves long-horizon information-seeking by dynamically managing context through parallel branching and lookahead routing, outperforming static methods while reducing interaction requirements.",
+      "ai_keywords": [
+        "large language models",
+        "autonomous agents",
+        "context management",
+        "long-horizon information-seeking",
+        "probabilistic framework",
+        "parallel context management",
+        "lookahead routing",
+        "state-aware adaptive framework"
+      ],
+      "organization": {
+        "_id": "661f98de142a51d630dbbcc4",
+        "name": "Alibaba-NLP",
+        "fullname": "Alibaba-NLP",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63fc4c00a3c067e62899d32b/dfd_EcIfylvu3sdc2WMqX.png"
+      }
+    },
+    "publishedAt": "2026-03-28T20:00:00.000Z",
+    "title": "AgentSwing: Adaptive Parallel Context Management Routing for Long-Horizon Web Agents",
+    "summary": "As large language models (LLMs) evolve into autonomous agents for long-horizon information-seeking, managing finite context capacity has become a critical bottleneck. Existing context management methods typically commit to a single fixed strategy throughout the entire trajectory. Such static designs may work well in some states, but they cannot adapt as the usefulness and reliability of the accumulated context evolve during long-horizon search. To formalize this challenge, we introduce a probabilistic framework that characterizes long-horizon success through two complementary dimensions: search efficiency and terminal precision. Building on this perspective, we propose AgentSwing, a state-aware adaptive parallel context management routing framework. At each trigger point, AgentSwing expands multiple context-managed branches in parallel and uses lookahead routing to select the most promising continuation. Experiments across diverse benchmarks and agent backbones show that AgentSwing consistently outperforms strong static context management methods, often matching or exceeding their performance with up to 3times fewer interaction turns while also improving the ultimate performance ceiling of long-horizon web agents. Beyond the empirical gains, the proposed probabilistic framework provides a principled lens for analyzing and designing future context management strategies for long-horizon agents.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2603.27490.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "63c0bb2a3bdc86f8108c112a",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/63c0bb2a3bdc86f8108c112a/QvZlSEnyud-UR4p1SaGCk.jpeg",
+      "fullname": "Zhaopeng Feng",
+      "name": "fzp0424",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "661f98de142a51d630dbbcc4",
+      "name": "Alibaba-NLP",
+      "fullname": "Alibaba-NLP",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/63fc4c00a3c067e62899d32b/dfd_EcIfylvu3sdc2WMqX.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.09544",
+      "authors": [
+        {
+          "_id": "69dc73ee2b6b8dc66ffeec48",
+          "name": "Hadas Orgad",
+          "hidden": false
+        },
+        {
+          "_id": "69dc73ee2b6b8dc66ffeec49",
+          "name": "Boyi Wei",
+          "hidden": false
+        },
+        {
+          "_id": "69dc73ee2b6b8dc66ffeec4a",
+          "name": "Kaden Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "69dc73ee2b6b8dc66ffeec4b",
+          "name": "Martin Wattenberg",
+          "hidden": false
+        },
+        {
+          "_id": "69dc73ee2b6b8dc66ffeec4c",
+          "name": "Peter Henderson",
+          "hidden": false
+        },
+        {
+          "_id": "69dc73ee2b6b8dc66ffeec4d",
+          "name": "Seraphina Goldfarb-Tarrant",
+          "hidden": false
+        },
+        {
+          "_id": "69dc73ee2b6b8dc66ffeec4e",
+          "name": "Yonatan Belinkov",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/60f82853c53e95176a7c6d45/7ZEMc7pqKPHGtN0IyyzZb.png"
+      ],
+      "publishedAt": "2026-04-10T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T03:13:05.902Z",
+      "title": "Large Language Models Generate Harmful Content Using a Distinct, Unified Mechanism",
+      "submittedOnDailyBy": {
+        "_id": "60f82853c53e95176a7c6d45",
+        "avatarUrl": "/avatars/16f6ea944a014af6ebe60499f3460784.svg",
+        "isPro": false,
+        "fullname": "Hadas Orgad",
+        "user": "hadasor",
+        "type": "user",
+        "name": "hadasor"
+      },
+      "summary": "Large language models (LLMs) undergo alignment training to avoid harmful behaviors, yet the resulting safeguards remain brittle: jailbreaks routinely bypass them, and fine-tuning on narrow domains can induce ``emergent misalignment'' that generalizes broadly. Whether this brittleness reflects a fundamental lack of coherent internal organization for harmfulness remains unclear. Here we use targeted weight pruning as a causal intervention to probe the internal organization of harmfulness in LLMs. We find that harmful content generation depends on a compact set of weights that are general across harm types and distinct from benign capabilities. Aligned models exhibit a greater compression of harm generation weights than unaligned counterparts, indicating that alignment reshapes harmful representations internally--despite the brittleness of safety guardrails at the surface level. This compression explains emergent misalignment: if weights of harmful capabilities are compressed, fine-tuning that engages these weights in one domain can trigger broad misalignment. Consistent with this, pruning harm generation weights in a narrow domain substantially reduces emergent misalignment. Notably, LLMs harmful generation capability is dissociated from how they recognize and explain such content. Together, these results reveal a coherent internal structure for harmfulness in LLMs that may serve as a foundation for more principled approaches to safety.",
+      "upvotes": 2,
+      "discussionId": "69dc73ee2b6b8dc66ffeec4f",
+      "ai_summary": "Targeted weight pruning reveals that large language models have a compact, coherent internal structure for harmful content generation that differs from benign capabilities and contributes to emergent misalignment during fine-tuning.",
+      "ai_keywords": [
+        "large language models",
+        "alignment training",
+        "jailbreaks",
+        "emergent misalignment",
+        "weight pruning",
+        "causal intervention",
+        "harmful content generation",
+        "benign capabilities",
+        "internal organization"
+      ],
+      "organization": {
+        "_id": "654a8a339b8bd6406d4d16cf",
+        "name": "KempnerInstituteAI",
+        "fullname": "Kempner Institute",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6513090d0d463b73dcf21a37/PEC8Uy7oLquV7ru3wcWQK.png"
+      }
+    },
+    "publishedAt": "2026-04-09T20:00:00.000Z",
+    "title": "Large Language Models Generate Harmful Content Using a Distinct, Unified Mechanism",
+    "summary": "Large language models (LLMs) undergo alignment training to avoid harmful behaviors, yet the resulting safeguards remain brittle: jailbreaks routinely bypass them, and fine-tuning on narrow domains can induce ``emergent misalignment'' that generalizes broadly. Whether this brittleness reflects a fundamental lack of coherent internal organization for harmfulness remains unclear. Here we use targeted weight pruning as a causal intervention to probe the internal organization of harmfulness in LLMs. We find that harmful content generation depends on a compact set of weights that are general across harm types and distinct from benign capabilities. Aligned models exhibit a greater compression of harm generation weights than unaligned counterparts, indicating that alignment reshapes harmful representations internally--despite the brittleness of safety guardrails at the surface level. This compression explains emergent misalignment: if weights of harmful capabilities are compressed, fine-tuning that engages these weights in one domain can trigger broad misalignment. Consistent with this, pruning harm generation weights in a narrow domain substantially reduces emergent misalignment. Notably, LLMs harmful generation capability is dissociated from how they recognize and explain such content. Together, these results reveal a coherent internal structure for harmfulness in LLMs that may serve as a foundation for more principled approaches to safety.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/60f82853c53e95176a7c6d45/7ZEMc7pqKPHGtN0IyyzZb.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.09544.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "60f82853c53e95176a7c6d45",
+      "avatarUrl": "/avatars/16f6ea944a014af6ebe60499f3460784.svg",
+      "fullname": "Hadas Orgad",
+      "name": "hadasor",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "654a8a339b8bd6406d4d16cf",
+      "name": "KempnerInstituteAI",
+      "fullname": "Kempner Institute",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6513090d0d463b73dcf21a37/PEC8Uy7oLquV7ru3wcWQK.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.07786",
+      "authors": [
+        {
+          "_id": "69d9de9926c932a7c28101d4",
+          "user": {
+            "_id": "64f6aab8eedb7a26380d4c37",
+            "avatarUrl": "/avatars/9008682960bf68de3dc94cfe2c4860ea.svg",
+            "isPro": false,
+            "fullname": "Chanhyuk Choi",
+            "user": "coldhyuk",
+            "type": "user",
+            "name": "coldhyuk"
+          },
+          "name": "Chanhyuk Choi",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-11T10:40:59.340Z",
+          "hidden": false
+        },
+        {
+          "_id": "69d9de9926c932a7c28101d5",
+          "name": "Taesoo Kim",
+          "hidden": false
+        },
+        {
+          "_id": "69d9de9926c932a7c28101d6",
+          "name": "Donggyu Lee",
+          "hidden": false
+        },
+        {
+          "_id": "69d9de9926c932a7c28101d7",
+          "name": "Siyeol Jung",
+          "hidden": false
+        },
+        {
+          "_id": "69d9de9926c932a7c28101d8",
+          "name": "Taehwan Kim",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/64f6aab8eedb7a26380d4c37/FqXrEU7DcGiVnHdQowUTj.mp4",
+        "https://cdn-uploads.huggingface.co/production/uploads/64f6aab8eedb7a26380d4c37/L30XYBwVjme6sEA_M7tMo.mp4"
+      ],
+      "publishedAt": "2026-04-09T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T01:01:45.053Z",
+      "title": "Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video",
+      "submittedOnDailyBy": {
+        "_id": "64f6aab8eedb7a26380d4c37",
+        "avatarUrl": "/avatars/9008682960bf68de3dc94cfe2c4860ea.svg",
+        "isPro": false,
+        "fullname": "Chanhyuk Choi",
+        "user": "coldhyuk",
+        "type": "user",
+        "name": "coldhyuk"
+      },
+      "summary": "Talking face generation has gained significant attention as a core application of generative models. To enhance the expressiveness and realism of synthesized videos, emotion editing in talking face video plays a crucial role. However, existing approaches often limit expressive flexibility and struggle to generate extended emotions. Label-based methods represent emotions with discrete categories, which fail to capture a wide range of emotions. Audio-based methods can leverage emotionally rich speech signals - and even benefit from expressive text-to-speech (TTS) synthesis - but they fail to express the target emotions because emotions and linguistic contents are entangled in emotional speeches. Images-based methods, on the other hand, rely on target reference images to guide emotion transfer, yet they require high-quality frontal views and face challenges in acquiring reference data for extended emotions (e.g., sarcasm). To address these limitations, we propose Cross-Modal Emotion Transfer (C-MET), a novel approach that generates facial expressions based on speeches by modeling emotion semantic vectors between speech and visual feature spaces. C-MET leverages a large-scale pretrained audio encoder and a disentangled facial expression encoder to learn emotion semantic vectors that represent the difference between two different emotional embeddings across modalities. Extensive experiments on the MEAD and CREMA-D datasets demonstrate that our method improves emotion accuracy by 14% over state-of-the-art methods, while generating expressive talking face videos - even for unseen extended emotions. Code, checkpoint, and demo are available at https://chanhyeok-choi.github.io/C-MET/",
+      "upvotes": 2,
+      "discussionId": "69d9de9a26c932a7c28101d9",
+      "projectPage": "https://chanhyeok-choi.github.io/C-MET/#",
+      "githubRepo": "https://github.com/ChanHyeok-Choi/C-MET",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "A novel cross-modal emotion transfer approach generates expressive talking face videos by modeling emotion semantic vectors between speech and visual feature spaces, achieving superior emotion accuracy compared to existing methods.",
+      "ai_keywords": [
+        "emotional speeches",
+        "expressive text-to-speech",
+        "disentangled facial expression encoder",
+        "emotion semantic vectors",
+        "cross-modal emotion transfer",
+        "pretrained audio encoder"
+      ],
+      "githubStars": 2,
+      "organization": {
+        "_id": "62b158bbb7053ab38d30e66a",
+        "name": "UNIST",
+        "fullname": "Ulsan National Institute of Science and Technology",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1655789897457-62b1582cf5a8bea2588f2435.png"
+      }
+    },
+    "publishedAt": "2026-04-08T20:00:00.000Z",
+    "title": "Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video",
+    "summary": "Talking face generation has gained significant attention as a core application of generative models. To enhance the expressiveness and realism of synthesized videos, emotion editing in talking face video plays a crucial role. However, existing approaches often limit expressive flexibility and struggle to generate extended emotions. Label-based methods represent emotions with discrete categories, which fail to capture a wide range of emotions. Audio-based methods can leverage emotionally rich speech signals - and even benefit from expressive text-to-speech (TTS) synthesis - but they fail to express the target emotions because emotions and linguistic contents are entangled in emotional speeches. Images-based methods, on the other hand, rely on target reference images to guide emotion transfer, yet they require high-quality frontal views and face challenges in acquiring reference data for extended emotions (e.g., sarcasm). To address these limitations, we propose Cross-Modal Emotion Transfer (C-MET), a novel approach that generates facial expressions based on speeches by modeling emotion semantic vectors between speech and visual feature spaces. C-MET leverages a large-scale pretrained audio encoder and a disentangled facial expression encoder to learn emotion semantic vectors that represent the difference between two different emotional embeddings across modalities. Extensive experiments on the MEAD and CREMA-D datasets demonstrate that our method improves emotion accuracy by 14% over state-of-the-art methods, while generating expressive talking face videos - even for unseen extended emotions. Code, checkpoint, and demo are available at https://chanhyeok-choi.github.io/C-MET/",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/64f6aab8eedb7a26380d4c37/FqXrEU7DcGiVnHdQowUTj.mp4",
+      "https://cdn-uploads.huggingface.co/production/uploads/64f6aab8eedb7a26380d4c37/L30XYBwVjme6sEA_M7tMo.mp4"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.07786.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "64f6aab8eedb7a26380d4c37",
+      "avatarUrl": "/avatars/9008682960bf68de3dc94cfe2c4860ea.svg",
+      "fullname": "Chanhyuk Choi",
+      "name": "coldhyuk",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "62b158bbb7053ab38d30e66a",
+      "name": "UNIST",
+      "fullname": "Ulsan National Institute of Science and Technology",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1655789897457-62b1582cf5a8bea2588f2435.png"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2604.09237",
+      "authors": [
+        {
+          "_id": "69dca35b2b6b8dc66ffeecc6",
+          "name": "Shahar Levy",
+          "hidden": false
+        },
+        {
+          "_id": "69dca35b2b6b8dc66ffeecc7",
+          "name": "Eliya Habba",
+          "hidden": false
+        },
+        {
+          "_id": "69dca35b2b6b8dc66ffeecc8",
+          "name": "Reshef Mintz",
+          "hidden": false
+        },
+        {
+          "_id": "69dca35b2b6b8dc66ffeecc9",
+          "name": "Barak Raveh",
+          "hidden": false
+        },
+        {
+          "_id": "69dca35b2b6b8dc66ffeecca",
+          "name": "Renana Keydar",
+          "hidden": false
+        },
+        {
+          "_id": "69dca35b2b6b8dc66ffeeccb",
+          "name": "Gabriel Stanovsky",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-10T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T07:58:21.985Z",
+      "title": "ScheMatiQ: From Research Question to Structured Data through Interactive Schema Discovery",
+      "submittedOnDailyBy": {
+        "_id": "62cd15106f6f759f2666d03c",
+        "avatarUrl": "/avatars/695a6872f55119f08c8eef31e215a498.svg",
+        "isPro": false,
+        "fullname": "Eliya Habba",
+        "user": "eliyahabba",
+        "type": "user",
+        "name": "eliyahabba"
+      },
+      "summary": "Many disciplines pose natural-language research questions over large document collections whose answers typically require structured evidence, traditionally obtained by manually designing an annotation schema and exhaustively labeling the corpus, a slow and error-prone process. We introduce ScheMatiQ, which leverages calls to a backbone LLM to take a question and a corpus to produce a schema and a grounded database, with a web interface that lets steer and revise the extraction. In collaboration with domain experts, we show that ScheMatiQ yields outputs that support real-world analysis in law and computational biology. We release ScheMatiQ as open source with a public web interface, and invite experts across disciplines to use it with their own data. All resources, including the website, source code, and demonstration video, are available at: www.ScheMatiQ-ai.com",
+      "upvotes": 1,
+      "discussionId": "69dca35c2b6b8dc66ffeeccc",
+      "projectPage": "https://www.schematiq-ai.com/",
+      "githubRepo": "https://github.com/shaharl6000/ScheMatiQ",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "ScheMatiQ uses large language model calls to automatically generate annotation schemas and structured databases from document collections, supporting domain-specific analysis in law and computational biology through an interactive web interface.",
+      "ai_keywords": [
+        "large language model",
+        "annotation schema",
+        "document collections",
+        "structured evidence",
+        "web interface",
+        "domain experts",
+        "real-world analysis",
+        "open source",
+        "public web interface"
+      ],
+      "githubStars": 0,
+      "organization": {
+        "_id": "65157bc51e7b9224c9c6d460",
+        "name": "HUJI-IL",
+        "fullname": "The Hebrew University of Jerusalem",
+        "avatar": "https://www.gravatar.com/avatar/fbf7c0844f4246fadde2c5ef9867ccaf?d=retro&size=100"
+      }
+    },
+    "publishedAt": "2026-04-09T20:00:00.000Z",
+    "title": "ScheMatiQ: From Research Question to Structured Data through Interactive Schema Discovery",
+    "summary": "Many disciplines pose natural-language research questions over large document collections whose answers typically require structured evidence, traditionally obtained by manually designing an annotation schema and exhaustively labeling the corpus, a slow and error-prone process. We introduce ScheMatiQ, which leverages calls to a backbone LLM to take a question and a corpus to produce a schema and a grounded database, with a web interface that lets steer and revise the extraction. In collaboration with domain experts, we show that ScheMatiQ yields outputs that support real-world analysis in law and computational biology. We release ScheMatiQ as open source with a public web interface, and invite experts across disciplines to use it with their own data. All resources, including the website, source code, and demonstration video, are available at: www.ScheMatiQ-ai.com",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.09237.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62cd15106f6f759f2666d03c",
+      "avatarUrl": "/avatars/695a6872f55119f08c8eef31e215a498.svg",
+      "fullname": "Eliya Habba",
+      "name": "eliyahabba",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "65157bc51e7b9224c9c6d460",
+      "name": "HUJI-IL",
+      "fullname": "The Hebrew University of Jerusalem",
+      "avatar": "https://www.gravatar.com/avatar/fbf7c0844f4246fadde2c5ef9867ccaf?d=retro&size=100"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.08641",
+      "authors": [
+        {
+          "_id": "69dcbf292b6b8dc66ffeed20",
+          "name": "Ruixiang Jiang",
+          "hidden": false
+        },
+        {
+          "_id": "69dcbf292b6b8dc66ffeed21",
+          "name": "Changwen Chen",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/6351382f40dffad651ef3fbd/4PLl6xI4GsrcbMwQaRy5n.jpeg",
+        "https://cdn-uploads.huggingface.co/production/uploads/6351382f40dffad651ef3fbd/Jgko1fea26o4VlbVWb1VV.png"
+      ],
+      "publishedAt": "2026-04-09T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T08:36:14.368Z",
+      "title": "On Semiotic-Grounded Interpretive Evaluation of Generative Art",
+      "submittedOnDailyBy": {
+        "_id": "6351382f40dffad651ef3fbd",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6351382f40dffad651ef3fbd/f7zbpeQqKwYnzRHISTGTj.png",
+        "isPro": false,
+        "fullname": "JIANG",
+        "user": "Ruixiang",
+        "type": "user",
+        "name": "Ruixiang"
+      },
+      "summary": "Interpretation is essential to deciphering the language of art: audiences communicate with artists by recovering meaning from visual artifacts. However, current Generative Art (GenArt) evaluators remain fixated on surface-level image quality or literal prompt adherence, failing to assess the deeper symbolic or abstract meaning intended by the creator. We address this gap by formalizing a Peircean computational semiotic theory that models Human-GenArt Interaction (HGI) as cascaded semiosis. This framework reveals that artistic meaning is conveyed through three modes - iconic, symbolic, and indexical - yet existing evaluators operate heavily within the iconic mode, remaining structurally blind to the latter two. To overcome this structural blindness, we propose SemJudge. This evaluator explicitly assesses symbolic and indexical meaning in HGI via a Hierarchical Semiosis Graph (HSG) that reconstructs the meaning-making process from prompt to generated artifact. Extensive quantitative experiments show that SemJudge aligns more closely with human judgments than prior evaluators on an interpretation-intensive fine-art benchmark. User studies further demonstrate that SemJudge produces deeper, more insightful artistic interpretations, thereby paving the way for GenArt to move beyond the generation of \"pretty\" images toward a medium capable of expressing complex human experience. Project page: https://github.com/songrise/SemJudge.",
+      "upvotes": 1,
+      "discussionId": "69dcbf292b6b8dc66ffeed22",
+      "githubRepo": "https://github.com/songrise/SemJudge",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "Generative art evaluation framework based on Peircean semiotics assesses symbolic and indexical meaning through hierarchical semiosis graphs, improving alignment with human artistic interpretation.",
+      "ai_keywords": [
+        "Generative Art",
+        "Peircean computational semiotic theory",
+        "Human-GenArt Interaction",
+        "cascaded semiosis",
+        "iconic mode",
+        "symbolic mode",
+        "indexical mode",
+        "Hierarchical Semiosis Graph",
+        "artistic interpretation",
+        "semantic analysis"
+      ],
+      "githubStars": 1,
+      "organization": {
+        "_id": "66eec5bd518ccb4e62f1a471",
+        "name": "PolyU-ChenLab",
+        "fullname": "ChenLab @ The Hong Kong Polytechnic University",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6250eb5c1fd03f78d0ae550f/j9KS44PkCN62oH59_BXvF.png"
+      }
+    },
+    "publishedAt": "2026-04-08T20:00:00.000Z",
+    "title": "On Semiotic-Grounded Interpretive Evaluation of Generative Art",
+    "summary": "Interpretation is essential to deciphering the language of art: audiences communicate with artists by recovering meaning from visual artifacts. However, current Generative Art (GenArt) evaluators remain fixated on surface-level image quality or literal prompt adherence, failing to assess the deeper symbolic or abstract meaning intended by the creator. We address this gap by formalizing a Peircean computational semiotic theory that models Human-GenArt Interaction (HGI) as cascaded semiosis. This framework reveals that artistic meaning is conveyed through three modes - iconic, symbolic, and indexical - yet existing evaluators operate heavily within the iconic mode, remaining structurally blind to the latter two. To overcome this structural blindness, we propose SemJudge. This evaluator explicitly assesses symbolic and indexical meaning in HGI via a Hierarchical Semiosis Graph (HSG) that reconstructs the meaning-making process from prompt to generated artifact. Extensive quantitative experiments show that SemJudge aligns more closely with human judgments than prior evaluators on an interpretation-intensive fine-art benchmark. User studies further demonstrate that SemJudge produces deeper, more insightful artistic interpretations, thereby paving the way for GenArt to move beyond the generation of \"pretty\" images toward a medium capable of expressing complex human experience. Project page: https://github.com/songrise/SemJudge.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/6351382f40dffad651ef3fbd/4PLl6xI4GsrcbMwQaRy5n.jpeg",
+      "https://cdn-uploads.huggingface.co/production/uploads/6351382f40dffad651ef3fbd/Jgko1fea26o4VlbVWb1VV.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.08641.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6351382f40dffad651ef3fbd",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6351382f40dffad651ef3fbd/f7zbpeQqKwYnzRHISTGTj.png",
+      "fullname": "JIANG",
+      "name": "Ruixiang",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "66eec5bd518ccb4e62f1a471",
+      "name": "PolyU-ChenLab",
+      "fullname": "ChenLab @ The Hong Kong Polytechnic University",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/6250eb5c1fd03f78d0ae550f/j9KS44PkCN62oH59_BXvF.png"
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.08118",
+      "authors": [
+        {
+          "_id": "69dbbd5f2b6b8dc66ffeea5c",
+          "user": {
+            "_id": "62f8e107385d0a4e72029820",
+            "avatarUrl": "/avatars/7556fe55ecf553555f24c3599b8d3216.svg",
+            "isPro": false,
+            "fullname": "Ian Kennedy",
+            "user": "kennedyian94",
+            "type": "user",
+            "name": "kennedyian94"
+          },
+          "name": "Ian W. Kennedy",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T07:32:50.626Z",
+          "hidden": false
+        },
+        {
+          "_id": "69dbbd5f2b6b8dc66ffeea5d",
+          "name": "Nafise Sadat Moosavi",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/62f8e107385d0a4e72029820/2bW6viaESysGe3wQXzgEW.png"
+      ],
+      "publishedAt": "2026-04-09T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T09:29:32.867Z",
+      "title": "Initialisation Determines the Basin: Efficient Codebook Optimisation for Extreme LLM Quantization",
+      "submittedOnDailyBy": {
+        "_id": "62f8e107385d0a4e72029820",
+        "avatarUrl": "/avatars/7556fe55ecf553555f24c3599b8d3216.svg",
+        "isPro": false,
+        "fullname": "Ian Kennedy",
+        "user": "kennedyian94",
+        "type": "user",
+        "name": "kennedyian94"
+      },
+      "summary": "Additive quantization enables extreme LLM compression with O(1) lookup-table dequantization, making it attractive for edge deployment. Yet at 2-bit precision, it often fails catastrophically, even with extensive search and finetuning. We show that the dominant bottleneck is codebook initialisation. Greedy sequential initialisation frequently places the model in poor optimisation regions that subsequent beam search and PV-tuning struggle to overcome. We analyse this behaviour through the representational ratio ho = N/KM, which characterises the relationship between weight groups and codebook capacity, and propose OA-EM, an output-aware EM initialisation method using Hessian-weighted Mahalanobis distance. Across compression rates, search budgets, and three architectures (Llama 3.2 3B, Llama 3.1 8B, Qwen 2.5 3B), OA-EM consistently produces better solutions after PV-tuning and dominates the quality-compute frontier. The severity of the bottleneck scales with ho: moderate at 3 bpp but extreme at 2 bpp, where poor initialisation can degrade perplexity by orders of magnitude. More broadly, our results highlight the importance of optimisation geometry in compressed model spaces, where initialisation can dominate subsequent search and fine-tuning.",
+      "upvotes": 1,
+      "discussionId": "69dbbd5f2b6b8dc66ffeea5e",
+      "githubRepo": "https://github.com/kenno94-IK/aqlm-oaem",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "Additive quantization for LLM compression faces challenges at 2-bit precision due to codebook initialization issues, which OA-EM addresses through output-aware EM initialization based on Hessian-weighted Mahalanobis distance.",
+      "ai_keywords": [
+        "additive quantization",
+        "LLM compression",
+        "codebook initialization",
+        "greedy sequential initialization",
+        "beam search",
+        "PV-tuning",
+        "representational ratio",
+        "OA-EM",
+        "Hessian-weighted Mahalanobis distance",
+        "perplexity"
+      ]
+    },
+    "publishedAt": "2026-04-08T20:00:00.000Z",
+    "title": "Initialisation Determines the Basin: Efficient Codebook Optimisation for Extreme LLM Quantization",
+    "summary": "Additive quantization enables extreme LLM compression with O(1) lookup-table dequantization, making it attractive for edge deployment. Yet at 2-bit precision, it often fails catastrophically, even with extensive search and finetuning. We show that the dominant bottleneck is codebook initialisation. Greedy sequential initialisation frequently places the model in poor optimisation regions that subsequent beam search and PV-tuning struggle to overcome. We analyse this behaviour through the representational ratio ho = N/KM, which characterises the relationship between weight groups and codebook capacity, and propose OA-EM, an output-aware EM initialisation method using Hessian-weighted Mahalanobis distance. Across compression rates, search budgets, and three architectures (Llama 3.2 3B, Llama 3.1 8B, Qwen 2.5 3B), OA-EM consistently produces better solutions after PV-tuning and dominates the quality-compute frontier. The severity of the bottleneck scales with ho: moderate at 3 bpp but extreme at 2 bpp, where poor initialisation can degrade perplexity by orders of magnitude. More broadly, our results highlight the importance of optimisation geometry in compressed model spaces, where initialisation can dominate subsequent search and fine-tuning.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/62f8e107385d0a4e72029820/2bW6viaESysGe3wQXzgEW.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.08118.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "62f8e107385d0a4e72029820",
+      "avatarUrl": "/avatars/7556fe55ecf553555f24c3599b8d3216.svg",
+      "fullname": "Ian Kennedy",
+      "name": "kennedyian94",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2604.08540",
+      "authors": [
+        {
+          "_id": "69d866e579548974da946593",
+          "user": {
+            "_id": "6751ca13479c92354a2aaa01",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/uAgvKqyFSy0ujv4OlGyyg.png",
+            "isPro": false,
+            "fullname": "ZHOU",
+            "user": "liarliar",
+            "type": "user",
+            "name": "liarliar"
+          },
+          "name": "Ziwei Zhou",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-04-13T09:50:07.683Z",
+          "hidden": false
+        },
+        {
+          "_id": "69d866e579548974da946594",
+          "name": "Zeyuan Lai",
+          "hidden": false
+        },
+        {
+          "_id": "69d866e579548974da946595",
+          "name": "Rui Wang",
+          "hidden": false
+        },
+        {
+          "_id": "69d866e579548974da946596",
+          "name": "Yifan Yang",
+          "hidden": false
+        },
+        {
+          "_id": "69d866e579548974da946597",
+          "name": "Zhen Xing",
+          "hidden": false
+        },
+        {
+          "_id": "69d866e579548974da946598",
+          "name": "Yuqing Yang",
+          "hidden": false
+        },
+        {
+          "_id": "69d866e579548974da946599",
+          "name": "Qi Dai",
+          "hidden": false
+        },
+        {
+          "_id": "69d866e579548974da94659a",
+          "name": "Lili Qiu",
+          "hidden": false
+        },
+        {
+          "_id": "69d866e579548974da94659b",
+          "name": "Chong Luo",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-09T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T09:21:53.762Z",
+      "title": "AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation",
+      "submittedOnDailyBy": {
+        "_id": "6751ca13479c92354a2aaa01",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/uAgvKqyFSy0ujv4OlGyyg.png",
+        "isPro": false,
+        "fullname": "ZHOU",
+        "user": "liarliar",
+        "type": "user",
+        "name": "liarliar"
+      },
+      "summary": "Text-to-Audio-Video (T2AV) generation is rapidly becoming a core interface for media creation, yet its evaluation remains fragmented. Existing benchmarks largely assess audio and video in isolation or rely on coarse embedding similarity, failing to capture the fine-grained joint correctness required by realistic prompts. We introduce AVGen-Bench, a task-driven benchmark for T2AV generation featuring high-quality prompts across 11 real-world categories. To support comprehensive assessment, we propose a multi-granular evaluation framework that combines lightweight specialist models with Multimodal Large Language Models (MLLMs), enabling evaluation from perceptual quality to fine-grained semantic controllability. Our evaluation reveals a pronounced gap between strong audio-visual aesthetics and weak semantic reliability, including persistent failures in text rendering, speech coherence, physical reasoning, and a universal breakdown in musical pitch control. Code and benchmark resources are available at http://aka.ms/avgenbench.",
+      "upvotes": 1,
+      "discussionId": "69d866e579548974da94659c",
+      "projectPage": "https://microsoft.github.io/AVGen-Bench/",
+      "githubRepo": "https://github.com/microsoft/AVGen-Bench",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "AVGen-Bench presents a comprehensive benchmark for text-to-audio-video generation with multi-granular evaluation, revealing gaps between aesthetic quality and semantic accuracy.",
+      "ai_keywords": [
+        "Text-to-Audio-Video generation",
+        "multimodal large language models",
+        "audio-visual aesthetics",
+        "semantic reliability",
+        "multi-granular evaluation",
+        "perceptual quality",
+        "semantic controllability"
+      ],
+      "organization": {
+        "_id": "5e6485f787403103f9f1055e",
+        "name": "microsoft",
+        "fullname": "Microsoft",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png"
+      }
+    },
+    "publishedAt": "2026-04-08T20:00:00.000Z",
+    "title": "AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation",
+    "summary": "Text-to-Audio-Video (T2AV) generation is rapidly becoming a core interface for media creation, yet its evaluation remains fragmented. Existing benchmarks largely assess audio and video in isolation or rely on coarse embedding similarity, failing to capture the fine-grained joint correctness required by realistic prompts. We introduce AVGen-Bench, a task-driven benchmark for T2AV generation featuring high-quality prompts across 11 real-world categories. To support comprehensive assessment, we propose a multi-granular evaluation framework that combines lightweight specialist models with Multimodal Large Language Models (MLLMs), enabling evaluation from perceptual quality to fine-grained semantic controllability. Our evaluation reveals a pronounced gap between strong audio-visual aesthetics and weak semantic reliability, including persistent failures in text rendering, speech coherence, physical reasoning, and a universal breakdown in musical pitch control. Code and benchmark resources are available at http://aka.ms/avgenbench.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.08540.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6751ca13479c92354a2aaa01",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/uAgvKqyFSy0ujv4OlGyyg.png",
+      "fullname": "ZHOU",
+      "name": "liarliar",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "5e6485f787403103f9f1055e",
+      "name": "microsoft",
+      "fullname": "Microsoft",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2604.09201",
+      "authors": [
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb45",
+          "name": "Haoyu Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb46",
+          "name": "Zihao Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb47",
+          "name": "Jiaxi Gu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb48",
+          "name": "Haoran Chen",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb49",
+          "name": "Qingping Zheng",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb4a",
+          "name": "Pin Tang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb4b",
+          "name": "Yeyin Jin",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb4c",
+          "name": "Yuang Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb4d",
+          "name": "Junqi Cheng",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb4e",
+          "name": "Zenghui Lu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb4f",
+          "name": "Peng Shu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb50",
+          "name": "Zuxuan Wu",
+          "hidden": false
+        },
+        {
+          "_id": "69dc4c372b6b8dc66ffeeb51",
+          "name": "Yu-Gang Jiang",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-10T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T00:21:56.924Z",
+      "title": "CT-1: Vision-Language-Camera Models Transfer Spatial Reasoning Knowledge to Camera-Controllable Video Generation",
+      "submittedOnDailyBy": {
+        "_id": "6039478ab3ecf716b1a5fd4d",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+        "isPro": true,
+        "fullname": "taesiri",
+        "user": "taesiri",
+        "type": "user",
+        "name": "taesiri"
+      },
+      "summary": "Camera-controllable video generation aims to synthesize videos with flexible and physically plausible camera movements. However, existing methods either provide imprecise camera control from text prompts or rely on labor-intensive manual camera trajectory parameters, limiting their use in automated scenarios. To address these issues, we propose a novel Vision-Language-Camera model, termed CT-1 (Camera Transformer 1), a specialized model designed to transfer spatial reasoning knowledge to video generation by accurately estimating camera trajectories. Built upon vision-language modules and a Diffusion Transformer model, CT-1 employs a Wavelet-based Regularization Loss in the frequency domain to effectively learn complex camera trajectory distributions. These trajectories are integrated into a video diffusion model to enable spatially aware camera control that aligns with user intentions. To facilitate the training of CT-1, we design a dedicated data curation pipeline and construct CT-200K, a large-scale dataset containing over 47M frames. Experimental results demonstrate that our framework successfully bridges the gap between spatial reasoning and video synthesis, yielding faithful and high-quality camera-controllable videos and improving camera control accuracy by 25.7% over prior methods.",
+      "upvotes": 0,
+      "discussionId": "69dc4c372b6b8dc66ffeeb52",
+      "projectPage": "https://gulucaptain.github.io/Camera-Transformer-1/",
+      "githubRepo": "https://github.com/gulucaptain/Camera-Transformer-1",
+      "githubRepoAddedBy": "user",
+      "ai_summary": "A Vision-Language-Camera model called CT-1 generates videos with accurate camera control by learning camera trajectories through diffusion transformers and wavelet regularization loss.",
+      "ai_keywords": [
+        "vision-language modules",
+        "Diffusion Transformer model",
+        "Wavelet-based Regularization Loss",
+        "camera trajectory estimation",
+        "video diffusion model",
+        "spatial reasoning",
+        "camera control accuracy"
+      ],
+      "githubStars": 1
+    },
+    "publishedAt": "2026-04-09T20:00:00.000Z",
+    "title": "CT-1: Vision-Language-Camera Models Transfer Spatial Reasoning Knowledge to Camera-Controllable Video Generation",
+    "summary": "Camera-controllable video generation aims to synthesize videos with flexible and physically plausible camera movements. However, existing methods either provide imprecise camera control from text prompts or rely on labor-intensive manual camera trajectory parameters, limiting their use in automated scenarios. To address these issues, we propose a novel Vision-Language-Camera model, termed CT-1 (Camera Transformer 1), a specialized model designed to transfer spatial reasoning knowledge to video generation by accurately estimating camera trajectories. Built upon vision-language modules and a Diffusion Transformer model, CT-1 employs a Wavelet-based Regularization Loss in the frequency domain to effectively learn complex camera trajectory distributions. These trajectories are integrated into a video diffusion model to enable spatially aware camera control that aligns with user intentions. To facilitate the training of CT-1, we design a dedicated data curation pipeline and construct CT-200K, a large-scale dataset containing over 47M frames. Experimental results demonstrate that our framework successfully bridges the gap between spatial reasoning and video synthesis, yielding faithful and high-quality camera-controllable videos and improving camera control accuracy by 25.7% over prior methods.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.09201.png",
+    "numComments": 0,
+    "submittedBy": {
+      "_id": "6039478ab3ecf716b1a5fd4d",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6039478ab3ecf716b1a5fd4d/_Thy4E7taiSYBLKxEKJbT.jpeg",
+      "fullname": "taesiri",
+      "name": "taesiri",
+      "type": "user",
+      "isPro": true,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 269,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": false
+  },
+  {
+    "paper": {
+      "id": "2604.03480",
+      "authors": [
+        {
+          "_id": "69dcb1c02b6b8dc66ffeece2",
+          "name": "Mete Ismayilzada",
+          "hidden": false
+        },
+        {
+          "_id": "69dcb1c02b6b8dc66ffeece3",
+          "name": "Simone A. Luchini",
+          "hidden": false
+        },
+        {
+          "_id": "69dcb1c02b6b8dc66ffeece4",
+          "name": "Abdulkadir Gokce",
+          "hidden": false
+        },
+        {
+          "_id": "69dcb1c02b6b8dc66ffeece5",
+          "name": "Badr AlKhamissi",
+          "hidden": false
+        },
+        {
+          "_id": "69dcb1c02b6b8dc66ffeece6",
+          "name": "Antoine Bosselut",
+          "hidden": false
+        },
+        {
+          "_id": "69dcb1c02b6b8dc66ffeece7",
+          "name": "Antonio Laverghetta Jr.",
+          "hidden": false
+        },
+        {
+          "_id": "69dcb1c02b6b8dc66ffeece8",
+          "name": "Lonneke van der Plas",
+          "hidden": false
+        },
+        {
+          "_id": "69dcb1c02b6b8dc66ffeece9",
+          "name": "Roger E. Beaty",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-04-03T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-04-13T07:38:36.984Z",
+      "title": "Large Language Models Align with the Human Brain during Creative Thinking",
+      "submittedOnDailyBy": {
+        "_id": "6245ac954db06ca3fff5c3e5",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6245ac954db06ca3fff5c3e5/zjeR_SG-9DzlS3C0AjtYt.jpeg",
+        "isPro": false,
+        "fullname": "Mete Ismayilzada",
+        "user": "mismayil",
+        "type": "user",
+        "name": "mismayil"
+      },
+      "summary": "Creative thinking is a fundamental aspect of human cognition, and divergent thinking-the capacity to generate novel and varied ideas-is widely regarded as its core generative engine. Large language models (LLMs) have recently demonstrated impressive performance on divergent thinking tests and prior work has shown that models with higher task performance tend to be more aligned to human brain activity. However, existing brain-LLM alignment studies have focused on passive, non-creative tasks. Here, we explore brain alignment during creative thinking using fMRI data from 170 participants performing the Alternate Uses Task (AUT). We extract representations from LLMs varying in size (270M-72B) and measure alignment to brain responses via Representational Similarity Analysis (RSA), targeting the creativity-related default mode and frontoparietal networks. We find that brain-LLM alignment scales with model size (default mode network only) and idea originality (both networks), with effects strongest early in the creative process. We further show that post-training objectives shape alignment in functionally selective ways: a creativity-optimized Llama-3.1-8B-Instruct preserves alignment with high-creativity neural responses while reducing alignment with low-creativity ones; a human behavior fine-tuned model elevates alignment with both; and a reasoning-trained variant shows the opposite pattern, suggesting chain-of-thought training steers representations away from creative neural geometry toward analytical processing. These results demonstrate that post-training objectives selectively reshape LLM representations relative to the neural geometry of human creative thought.",
+      "upvotes": 0,
+      "discussionId": "69dcb1c02b6b8dc66ffeecea",
+      "ai_summary": "Large language models show varying alignment with brain activity during creative thinking tasks, with model size and post-training objectives influencing how well their representations match neural responses in creativity-related brain networks.",
+      "ai_keywords": [
+        "large language models",
+        "divergent thinking",
+        "fMRI",
+        "Representational Similarity Analysis",
+        "default mode network",
+        "frontoparietal networks",
+        "Alternate Uses Task",
+        "brain-LLM alignment",
+        "post-training objectives",
+        "creative thinking",
+        "neural geometry"
+      ],
+      "organization": {
+        "_id": "623c72b6483fb88b35620a27",
+        "name": "PennState",
+        "fullname": "Pennsylvania State University",
+        "avatar": "https://www.gravatar.com/avatar/b3578c3ac0fec6a791bb71c68bf8a92a?d=retro&size=100"
+      }
+    },
+    "publishedAt": "2026-04-02T20:00:00.000Z",
+    "title": "Large Language Models Align with the Human Brain during Creative Thinking",
+    "summary": "Creative thinking is a fundamental aspect of human cognition, and divergent thinking-the capacity to generate novel and varied ideas-is widely regarded as its core generative engine. Large language models (LLMs) have recently demonstrated impressive performance on divergent thinking tests and prior work has shown that models with higher task performance tend to be more aligned to human brain activity. However, existing brain-LLM alignment studies have focused on passive, non-creative tasks. Here, we explore brain alignment during creative thinking using fMRI data from 170 participants performing the Alternate Uses Task (AUT). We extract representations from LLMs varying in size (270M-72B) and measure alignment to brain responses via Representational Similarity Analysis (RSA), targeting the creativity-related default mode and frontoparietal networks. We find that brain-LLM alignment scales with model size (default mode network only) and idea originality (both networks), with effects strongest early in the creative process. We further show that post-training objectives shape alignment in functionally selective ways: a creativity-optimized Llama-3.1-8B-Instruct preserves alignment with high-creativity neural responses while reducing alignment with low-creativity ones; a human behavior fine-tuned model elevates alignment with both; and a reasoning-trained variant shows the opposite pattern, suggesting chain-of-thought training steers representations away from creative neural geometry toward analytical processing. These results demonstrate that post-training objectives selectively reshape LLM representations relative to the neural geometry of human creative thought.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2604.03480.png",
+    "numComments": 1,
+    "submittedBy": {
+      "_id": "6245ac954db06ca3fff5c3e5",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6245ac954db06ca3fff5c3e5/zjeR_SG-9DzlS3C0AjtYt.jpeg",
+      "fullname": "Mete Ismayilzada",
+      "name": "mismayil",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 6,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "623c72b6483fb88b35620a27",
+      "name": "PennState",
+      "fullname": "Pennsylvania State University",
+      "avatar": "https://www.gravatar.com/avatar/b3578c3ac0fec6a791bb71c68bf8a92a?d=retro&size=100"
+    },
+    "isAuthorParticipating": false
+  }
+]
